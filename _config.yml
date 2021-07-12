@@ -30,7 +30,12 @@ navigation:
     knowledge-base:
         position: 6100
         title: "Knowledge Base"
-
+    for-more-help:
+        position: 7100
+        title: "Not to be shown-for-more-help"
+    quickstart:
+        position: 8100
+        title: "Not to be shown-quickstart"
 ## The application virtual path
 baseurl: /reporting
 

@@ -12,9 +12,17 @@ navigation:
     getting-started:
         position: 1100
         title: "Getting Started"
-
-    knowledge-base:
+    troubleshooting:
         position: 2100
+        title: "Troubleshooting"
+    designing-reports:
+        position: 3100
+        title: "Designing Reports"
+    designing-reports/converting-reports-from-other-reporting-solutions:
+        position: 1100
+        title: "Converting reports from other reporting solutions"
+    knowledge-base:
+        position: 1100
         title: "Knowledge Base"
 
 ## The application virtual path

@@ -9,12 +9,8 @@ exclude: [README.md,Gemfile,Gemfile.lock,api_sort.rb,build_kb.rb,switch-ruby.cmd
 exclude_navigation: [knowledge-base/*]
 navigation:
 ## List your directory names and order here, like this:   
-    getting-started:
-        position: 1100
-        title: "Getting Started"
-
     knowledge-base:
-        position: 2100
+        position: 1100
         title: "Knowledge Base"
 
 ## The application virtual path

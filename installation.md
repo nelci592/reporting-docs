@@ -67,7 +67,7 @@ To access internal builds:
 1. (Applicable only if __Examples Setup__ was selected.) In the __Setup Wizard__ dialog, select your              __Database Server__ and the authentication for the connection.              The Wizard detects all running instances and lists them in the input field.            
 
 >note To enable the Wizard to detect all running SQL Server instances, run the[SQL Server Browser Service](http://technet.microsoft.com/en-us/library/ms181087(v=sql.105).aspx).
->
+>  
 ![](images/installWizard3.png)
 
 ## Directories and Assemblies

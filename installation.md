@@ -62,12 +62,14 @@ To access internal builds:
 
 * The examples use the MS SQL Server [AdventureWorks database](http://msdn.microsoft.com/en-us/library/ms124659%28SQL.100%29.aspx).                  Unless already available on your machine, the AdventureWorks database will also be deployed locally.                  To recover it,                  [download AdventureWorks from codeplex](http://msftdbprodsamples.codeplex.com/releases/view/4004).                
 
-* Alternatively, you can install AdventureWorks by manually executing the SQL script from the installer. To use this option, navigate to                  __[InstallDir]/Examples/Data/AdventureWorks OLTP__.                  For the script to run correctly, uncomment the `SET @data_path = 'C:\Program Files\Microsoft SQL Server\90\Tools\Samples\AdventureWorks OLTP\';`                  statement and specify the correct path to the CVS data files which are in the same folder as the SQL script file.                ![](images/installWizard2.png)
+* Alternatively, you can install AdventureWorks by manually executing the SQL script from the installer. To use this option, navigate to                  __[InstallDir]/Examples/Data/AdventureWorks OLTP__.                  For the script to run correctly, uncomment the `SET @data_path = 'C:\Program Files\Microsoft SQL Server\90\Tools\Samples\AdventureWorks OLTP\';`                  statement and specify the correct path to the CVS data files which are in the same folder as the SQL script file.                
+![](images/installWizard2.png)
 
 1. (Applicable only if __Examples Setup__ was selected.) In the __Setup Wizard__ dialog, select your              __Database Server__ and the authentication for the connection.              The Wizard detects all running instances and lists them in the input field.            
 
->note To enable the Wizard to detect all running SQL Server instances, run the[SQL Server Browser Service](http://technet.microsoft.com/en-us/library/ms181087(v=sql.105).aspx).
+>note To enable the Wizard to detect all running SQL Server instances, run the [SQL Server Browser Service](http://technet.microsoft.com/en-us/library/ms181087(v=sql.105).aspx).
 >  
+
 ![](images/installWizard3.png)
 
 ## Directories and Assemblies

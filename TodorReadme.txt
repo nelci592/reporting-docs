@@ -3,4 +3,6 @@ D:\Documentation migration tool-original\Help\telerikreporting\using-reports-in-
 
 clear '\r\n' in ALERTS
 
-add '\r\n' before IMAGES
+add '  \r\n' before IMAGES
+
+TABLES

@@ -82,7 +82,8 @@ To access internal builds:
 ## Installing Telerik Reporting
 
 1. In the dialog which appears after you execute the MSI file, confirm that you have read and accepted the License Agreement.
-            ![](images/installWizard1.png)
+              
+  ![](images/installWizard1.png)
 
 1. In the next customization dialog, select the desired features.
             
@@ -108,7 +109,8 @@ To access internal builds:
                   __[InstallDir]/Examples/Data/AdventureWorks OLTP__.
                   For the script to run correctly, uncomment the `SET @data_path = 'C:\Program Files\Microsoft SQL Server\90\Tools\Samples\AdventureWorks OLTP\';`
                   statement and specify the correct path to the CVS data files which are in the same folder as the SQL script file.
-                ![](images/installWizard2.png)
+                  
+  ![](images/installWizard2.png)
 
 1. (Applicable only if __Examples Setup__ was selected.) In the __Setup Wizard__ dialog, select your
               __Database Server__ and the authentication for the connection.
@@ -116,7 +118,8 @@ To access internal builds:
             
 
 >note To enable the Wizard to detect all running SQL Server instances, run the                [SQL Server Browser Service](http://technet.microsoft.com/en-us/library/ms181087(v=sql.105).aspx).              
-![](images/installWizard3.png)
+  
+  ![](images/installWizard3.png)
 
 ## Directories and Assemblies
 

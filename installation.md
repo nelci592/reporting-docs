@@ -76,7 +76,11 @@ To access internal builds:
               For internal builds from earlier releases, select the respective Telerik Reporting version.
             
 
->note The __Downloads__ page lists previously downloaded products. For any missing products or product versions, contact the Sales team through the support ticketing system by submitting a __[General Feedback](https://www.telerik.com/account/support-tickets/general-feedback)__ thread.
+>note The __Downloads__ page lists previously downloaded products. For any missing products or product versions,
+            contact the Sales team through the support ticketing system by submitting a __[
+                  General Feedback
+                ](https://www.telerik.com/account/support-tickets/general-feedback)__ thread.
+>
 
 
 ## Installing Telerik Reporting

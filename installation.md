@@ -156,9 +156,7 @@ The following tables describe the folder structure for the redistributable assem
 
 | Directory | Description |
 | ------ | ------ |
-|`...Progress\Telerik Reportingsuiteversion\Bin`|
-
-* `Telerik.Reporting.dll`
+|`...Progress\Telerik Reportingsuiteversion\Bin`|* `Telerik.Reporting.dll`
 
 * `Telerik.ReportViewer.Mvc.dll`
 

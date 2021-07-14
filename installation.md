@@ -156,31 +156,7 @@ The following tables describe the folder structure for the redistributable assem
 
 | Directory | Description |
 | ------ | ------ |
-|`...Progress\Telerik Reportingsuiteversion\Bin`|* `Telerik.Reporting.dll`
-
-* `Telerik.ReportViewer.Mvc.dll`
-
-* `Telerik.ReportViewer.WebForms.dll`
-
-* `Telerik.ReportViewer.WinForms.dll`
-
-* `Telerik.ReportViewer.Silverlight.dll`
-
-* `Telerik.ReportViewer.Wpf.dll`
-
-* `Telerik.Reporting.Adomd.dll`
-
-* `Telerik.Reporting.Service.dll`
-
-* `Telerik.Reporting.Services.ServiceStack.dll`
-
-* `Telerik.Reporting.Services.WebApi.dll`
-
-* `Telerik.Reporting.XpsRendering.dll`
-
-* `Telerik.Reporting.OpenXmlRendering.dll`
-
-* `Telerik.Reporting.Cache.Database.dll`|
+|`...Progress\Telerik Reportingsuiteversion\Bin`|* `Telerik.Reporting.dll`<br />* `Telerik.ReportViewer.Mvc.dll`<br />* `Telerik.ReportViewer.WebForms.dll`<br />* `Telerik.ReportViewer.WinForms.dll`<br />* `Telerik.ReportViewer.Silverlight.dll`<br />* `Telerik.ReportViewer.Wpf.dll`<br />* `Telerik.Reporting.Adomd.dll`<br />* `Telerik.Reporting.Service.dll`<br />* `Telerik.Reporting.Services.ServiceStack.dll`<br />* `Telerik.Reporting.Services.WebApi.dll`<br />* `Telerik.Reporting.XpsRendering.dll`<br />* `Telerik.Reporting.OpenXmlRendering.dll`<br />* `Telerik.Reporting.Cache.Database.dll`|
 |`...Progress\Telerik Reportingsuiteversion\Bin\netstandard2.0`|
 
 * `Telerik.Reporting.dll`

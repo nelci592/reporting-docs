@@ -5,4 +5,4 @@ clear '\r\n' in ALERTS
 
 add '  \r\n' before IMAGES
 
-TABLES
+TABLES with multiple lines in the same cell

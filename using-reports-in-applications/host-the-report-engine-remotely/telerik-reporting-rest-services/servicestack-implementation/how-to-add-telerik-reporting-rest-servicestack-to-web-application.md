@@ -71,7 +71,8 @@ Create a new class which derives from
 Here is a sample implementation with the setup:
             
 
-{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````C#
+{{source=CodeSnippets\MvcCS\ServiceStack\ReportsHost.cs region=ReportsHost_Implementation}}
+````C#
 	    public class ReportsHost : Telerik.Reporting.Services.ServiceStack.ReportsHostBase
 	    {
 	        public ReportsHost()
@@ -92,7 +93,8 @@ Here is a sample implementation with the setup:
 
 
 
-{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````VB
+{{source=CodeSnippets\MvcVB\ServiceStack\ReportsHost.vb region=ReportsHost_Implementation}}
+````VB
 	Imports Telerik.Reporting.Services
 	
 	Public Class ReportsHost
@@ -110,7 +112,7 @@ Here is a sample implementation with the setup:
 	        Me.ReportServiceConfiguration = reportServiceConfiguration
 	    End Sub
 	End Class
-	'#End Region
+````
 
 
 
@@ -134,7 +136,8 @@ __To configure the Telerik Reporting REST service from the application configura
               T:Telerik.Reporting.Services.ConfigSectionReportServiceConfiguration class.
             
 
-{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````C#
+{{source=CodeSnippets\MvcCS\ServiceStack\ReportsHostConfigSection.cs region=ReportsHostConfigSectionImplementation}}
+````C#
 	    public class ReportsHost : Telerik.Reporting.Services.ServiceStack.ReportsHostBase
 	    {
 	        public ReportsHost()
@@ -148,7 +151,8 @@ __To configure the Telerik Reporting REST service from the application configura
 
 
 
-{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````VB
+{{source=CodeSnippets\MvcVB\ServiceStack\ReportsHostConfigSection.vb region=ReportsHostConfigSectionImplementation}}
+````VB
 	    Public Class ReportsHost
 	        Inherits Telerik.Reporting.Services.ServiceStack.ReportsHostBase
 	        Public Sub New()
@@ -157,8 +161,7 @@ __To configure the Telerik Reporting REST service from the application configura
 	            Me.ReportServiceConfiguration = reportServiceConfiguration
 	        End Sub
 	    End Class
-	    '#End Region
-	End Namespace
+````
 
 
 
@@ -166,7 +169,8 @@ Then add the __restReportService__ configuration element containing the service 
               [Telerik Reporting Configuration Section]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/overview%}).
             
 
-{{source=System.Xml.XmlAttribute region=}}
+{{source=CodeSnippets\MvcCS\ReportServiceConfigurationSnippets\ConfigSectionConfiguration.xml}}
+
 
 
 
@@ -177,7 +181,8 @@ Add a new or use the existing __Global Application Class__ (global.asax) to crea
               the ServiceStack reports service in the __Application_Start__ method:
             
 
-{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````C#
+{{source=CodeSnippets\MvcCS\ServiceStack\Application.cs region=ServiceStack_Application_Start}}
+````C#
 	        protected void Application_Start()
 	        {
 	            new ReportsHost().Init();
@@ -186,13 +191,13 @@ Add a new or use the existing __Global Application Class__ (global.asax) to crea
 
 
 
-{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````VB
+{{source=CodeSnippets\MvcVB\ServiceStack\Application.vb region=ServiceStack_Application_Start}}
+````VB
 	    Protected Sub Application_Start()
 	        Dim reportsHost As New ReportsHost()
 	        reportsHost.Init()
 	    End Sub
-	    '#End Region
-	End Class
+````
 
 
 

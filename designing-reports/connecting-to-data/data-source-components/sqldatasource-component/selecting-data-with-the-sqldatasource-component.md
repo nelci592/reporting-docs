@@ -40,7 +40,8 @@ The following code example shows how to set the __ConnectionString__ and __
 
 
 
-{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````C#
+{{source=CodeSnippets\CS\API\Telerik\Reporting\SqlDataSourceSnippets.cs region=SelectCommandSnippet}}
+````C#
 	            Telerik.Reporting.SqlDataSource sqlDataSource = new Telerik.Reporting.SqlDataSource();
 	            sqlDataSource.ConnectionString = "MyAdventureWorksDB";
 	            sqlDataSource.SelectCommand = "SELECT FirstName, LastName FROM Person.Contact";
@@ -48,61 +49,12 @@ The following code example shows how to set the __ConnectionString__ and __
 
 
 
-{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````VB
+{{source=CodeSnippets\VB\API\Telerik\Reporting\SqlDataSourceSnippets.vb region=SelectCommandSnippet}}
+````VB
 	        Dim sqlDataSource As Telerik.Reporting.SqlDataSource = New Telerik.Reporting.SqlDataSource()
 	        sqlDataSource.ConnectionString = "MyAdventureWorksDB"
 	        sqlDataSource.SelectCommand = "SELECT FirstName, LastName FROM Person.Contact"
-	        '#End Region
-	    End Sub
-	
-	    <Microsoft.VisualStudio.TestTools.UnitTesting.TestMethod()>
-	    Public Sub StoredProcedureSnippet()
-	        '#Region StoredProcedureSnippet
-	        Dim sqlDataSource As Telerik.Reporting.SqlDataSource = New Telerik.Reporting.SqlDataSource()
-	        sqlDataSource.ConnectionString = "MyAdventureWorksDB"
-	        sqlDataSource.SelectCommand = "GetAllContacts"
-	        sqlDataSource.SelectCommandType = SqlDataSourceCommandType.StoredProcedure
-	        '#End Region
-	    End Sub
-	
-	    <Microsoft.VisualStudio.TestTools.UnitTesting.TestMethod()>
-	    Public Sub NamedParametersSnippet()
-	        '#Region NamedParametersSnippet
-	        Dim sqlDataSource As Telerik.Reporting.SqlDataSource = New Telerik.Reporting.SqlDataSource()
-	        sqlDataSource.ConnectionString = "MyAdventureWorksDB"
-	        sqlDataSource.SelectCommand = "SELECT * FROM Person.Contact WHERE FirstName = @FirstName AND LastName = @LastName"
-	        sqlDataSource.Parameters.Add("@FirstName", System.Data.DbType.String, "John")
-	        sqlDataSource.Parameters.Add("@LastName", System.Data.DbType.String, "Smith")
-	        '#End Region
-	    End Sub
-	
-	    <Microsoft.VisualStudio.TestTools.UnitTesting.TestMethod()>
-	    Public Sub PositionalParametersSnippet()
-	        '#Region PositionalParametersSnippet
-	        Dim sqlDataSource As Telerik.Reporting.SqlDataSource = New Telerik.Reporting.SqlDataSource()
-	        sqlDataSource.ProviderName = "System.Data.OleDb"
-	        sqlDataSource.ConnectionString = "Provider=SQLOLEDB;Data Source=(local)\SQLEXPRESS;Initial Catalog=AdventureWorks;Integrated Security=SSPI"
-	        sqlDataSource.SelectCommand = "SELECT * FROM Person.Contact WHERE FirstName = ? AND LastName = ?"
-	        sqlDataSource.Parameters.Add("FirstName", System.Data.DbType.String, "John")
-	        sqlDataSource.Parameters.Add("LastName", System.Data.DbType.String, "Smith")
-	        '#End Region
-	    End Sub
-	
-	    <Microsoft.VisualStudio.TestTools.UnitTesting.TestMethod()>
-	    Public Sub BindingExpressionSnippet()
-	        '#Region BindingExpressionSnippet
-	        Dim report As Telerik.Reporting.Report = New Telerik.Reporting.Report()
-	        report.ReportParameters.Add("FirstName", ReportParameterType.String, "John")
-	        report.ReportParameters.Add("LastName", ReportParameterType.String, "Smith")
-	        Dim sqlDataSource As Telerik.Reporting.SqlDataSource = New Telerik.Reporting.SqlDataSource()
-	        sqlDataSource.ConnectionString = "MyAdventureWorksDB"
-	        sqlDataSource.SelectCommand = "SELECT * FROM Person.Contact WHERE FirstName = @FirstName AND LastName = @LastName"
-	        sqlDataSource.Parameters.Add("@FirstName", System.Data.DbType.String, "=Parameters.FirstName")
-	        sqlDataSource.Parameters.Add("@LastName", System.Data.DbType.String, "=Parameters.LastName")
-	        report.DataSource = sqlDataSource
-	        '#End Region
-	    End Sub
-	End Class
+````
 
 
 
@@ -131,7 +83,8 @@ To configure the __SqlDataSource__ component to use this stored procedure, set t
 
 
 
-{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````C#
+{{source=CodeSnippets\CS\API\Telerik\Reporting\SqlDataSourceSnippets.cs region=StoredProcedureSnippet}}
+````C#
 	            Telerik.Reporting.SqlDataSource sqlDataSource = new Telerik.Reporting.SqlDataSource();
 	            sqlDataSource.ConnectionString = "MyAdventureWorksDB";
 	            sqlDataSource.SelectCommand = "GetAllContacts";
@@ -140,52 +93,13 @@ To configure the __SqlDataSource__ component to use this stored procedure, set t
 
 
 
-{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````VB
+{{source=CodeSnippets\VB\API\Telerik\Reporting\SqlDataSourceSnippets.vb region=StoredProcedureSnippet}}
+````VB
 	        Dim sqlDataSource As Telerik.Reporting.SqlDataSource = New Telerik.Reporting.SqlDataSource()
 	        sqlDataSource.ConnectionString = "MyAdventureWorksDB"
 	        sqlDataSource.SelectCommand = "GetAllContacts"
 	        sqlDataSource.SelectCommandType = SqlDataSourceCommandType.StoredProcedure
-	        '#End Region
-	    End Sub
-	
-	    <Microsoft.VisualStudio.TestTools.UnitTesting.TestMethod()>
-	    Public Sub NamedParametersSnippet()
-	        '#Region NamedParametersSnippet
-	        Dim sqlDataSource As Telerik.Reporting.SqlDataSource = New Telerik.Reporting.SqlDataSource()
-	        sqlDataSource.ConnectionString = "MyAdventureWorksDB"
-	        sqlDataSource.SelectCommand = "SELECT * FROM Person.Contact WHERE FirstName = @FirstName AND LastName = @LastName"
-	        sqlDataSource.Parameters.Add("@FirstName", System.Data.DbType.String, "John")
-	        sqlDataSource.Parameters.Add("@LastName", System.Data.DbType.String, "Smith")
-	        '#End Region
-	    End Sub
-	
-	    <Microsoft.VisualStudio.TestTools.UnitTesting.TestMethod()>
-	    Public Sub PositionalParametersSnippet()
-	        '#Region PositionalParametersSnippet
-	        Dim sqlDataSource As Telerik.Reporting.SqlDataSource = New Telerik.Reporting.SqlDataSource()
-	        sqlDataSource.ProviderName = "System.Data.OleDb"
-	        sqlDataSource.ConnectionString = "Provider=SQLOLEDB;Data Source=(local)\SQLEXPRESS;Initial Catalog=AdventureWorks;Integrated Security=SSPI"
-	        sqlDataSource.SelectCommand = "SELECT * FROM Person.Contact WHERE FirstName = ? AND LastName = ?"
-	        sqlDataSource.Parameters.Add("FirstName", System.Data.DbType.String, "John")
-	        sqlDataSource.Parameters.Add("LastName", System.Data.DbType.String, "Smith")
-	        '#End Region
-	    End Sub
-	
-	    <Microsoft.VisualStudio.TestTools.UnitTesting.TestMethod()>
-	    Public Sub BindingExpressionSnippet()
-	        '#Region BindingExpressionSnippet
-	        Dim report As Telerik.Reporting.Report = New Telerik.Reporting.Report()
-	        report.ReportParameters.Add("FirstName", ReportParameterType.String, "John")
-	        report.ReportParameters.Add("LastName", ReportParameterType.String, "Smith")
-	        Dim sqlDataSource As Telerik.Reporting.SqlDataSource = New Telerik.Reporting.SqlDataSource()
-	        sqlDataSource.ConnectionString = "MyAdventureWorksDB"
-	        sqlDataSource.SelectCommand = "SELECT * FROM Person.Contact WHERE FirstName = @FirstName AND LastName = @LastName"
-	        sqlDataSource.Parameters.Add("@FirstName", System.Data.DbType.String, "=Parameters.FirstName")
-	        sqlDataSource.Parameters.Add("@LastName", System.Data.DbType.String, "=Parameters.LastName")
-	        report.DataSource = sqlDataSource
-	        '#End Region
-	    End Sub
-	End Class
+````
 
 
 

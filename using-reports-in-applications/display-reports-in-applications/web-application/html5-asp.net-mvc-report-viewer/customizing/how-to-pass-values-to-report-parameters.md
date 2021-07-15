@@ -68,7 +68,8 @@ At this point you have a running MVC application that displays a report in the H
 
 These are the model and the view model that we will use for our view:
 
-	{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````
+	{{source=CodeSnippets\MvcCS\Models\InvoiceViewModel.cs region=InvoiceViewModel}}
+````
 	    public class InvoiceModel
 	    {
 	        public int Id { get; set; }
@@ -101,7 +102,8 @@ These are the model and the view model that we will use for our view:
 
 
 
-	{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````
+	{{source=CodeSnippets\MvcVB\Models\InvoiceViewModel.vb region=InvoiceViewModel}}
+````
 	Public Class InvoiceModel
 	    Public Property Id() As Integer
 	        Get
@@ -154,7 +156,7 @@ These are the model and the view model that we will use for our view:
 	        Me.invoices = invoices
 	    End Sub
 	End Class
-	'#End Region
+````
 
 
 
@@ -166,7 +168,8 @@ And this is how we will fill with data our view model before displaying the view
                   HomeController.cs|vb file and update the InvoiceParameters method as follows:
                 
 
-	{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````
+	{{source=CodeSnippets\MvcCS\Controllers\HomeController.cs region=InvoiceViewModelData}}
+````
 	        public ActionResult InvoiceParameters()
 	        {
 	            var invoices = new List<InvoiceModel>
@@ -185,7 +188,8 @@ And this is how we will fill with data our view model before displaying the view
 
 
 
-	{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````
+	{{source=CodeSnippets\MvcVB\Controllers\HomeController.vb region=InvoiceViewModelData}}
+````
 	    Public Function InvoiceParameters() As ActionResult
 	        Dim invoices = New List(Of InvoiceModel)() From { _
 	            New InvoiceModel() With { _
@@ -207,9 +211,7 @@ And this is how we will fill with data our view model before displaying the view
 	
 	        Return View(items)
 	    End Function
-	    '#End Region
-	
-	End Class
+````
 
 
 
@@ -243,7 +245,8 @@ Now initialize the report viewer. We will use the minimal set of all
                   Please note how the value from the custom UI is used to set the __OrderNumber__ report parameter initially:
                 
 
-	{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````
+	{{source=CodeSnippets\MvcCS\Views\Home\InvoiceParameters.cshtml region=ParametersExample}}
+````
 	@{
 	    var typeReportSource = new TypeReportSource() { TypeName = typeof(Invoice).AssemblyQualifiedName };
 	    typeReportSource.Parameters.Add("OrderNumber", Model.SelectedInvoice);
@@ -263,7 +266,8 @@ Now initialize the report viewer. We will use the minimal set of all
 
 
 
-	{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````
+	{{source=CodeSnippets\MvcVB\Views\Home\InvoiceParameters.vbhtml region=ParametersExample}}
+````
 	@Code
 	    Dim typeReportSource = New TypeReportSource() With {.TypeName = GetType(Invoice).AssemblyQualifiedName}
 	    typeReportSource.Parameters.Add("OrderNumber", Model.SelectedInvoice)

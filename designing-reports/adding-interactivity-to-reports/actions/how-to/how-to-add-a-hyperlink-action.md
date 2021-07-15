@@ -36,7 +36,8 @@ Add a hyperlink to a URL when you want users to be able to click a link in a rep
 
 ## Adding a Hyperlink action programatically
 
-{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````C#
+{{source=CodeSnippets\CS\API\Telerik\Reporting\ActionSnippets.cs region=AddNewNavigateToUrlSnippet}}
+````C#
 	
 	            Telerik.Reporting.NavigateToUrlAction UrlAction1 = new Telerik.Reporting.NavigateToUrlAction();
 	            UrlAction1.Url = "http://demos.telerik.com/reporting";
@@ -46,49 +47,14 @@ Add a hyperlink to a URL when you want users to be able to click a link in a rep
 
 
 
-{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````VB
+{{source=CodeSnippets\VB\API\Telerik\Reporting\ActionSnippets.vb region=AddNewNavigateToUrlSnippet}}
+````VB
 	
 	        Dim UrlAction1 As New Telerik.Reporting.NavigateToUrlAction()
 	        UrlAction1.Url = "http://demos.telerik.com/reporting"
 	        textBox1.Action = UrlAction1
 	
-	        '#End Region
-	
-	        Assert.AreEqual("http://demos.telerik.com/reporting", UrlAction1.Url)
-	    End Sub
-	
-	    <TestMethod()> _
-	    Public Sub Toggle_Visibility_Snippet()
-	        Dim textBox1 As New Telerik.Reporting.TextBox()
-	        Dim textBox2 As New Telerik.Reporting.TextBox()
-	
-	        '#Region "AddNewToggleVisibilitySnippet"
-	
-	        Dim toggleVisibilityAction1 As New Telerik.Reporting.ToggleVisibilityAction()
-	        textBox1.Action = toggleVisibilityAction1
-	        toggleVisibilityAction1.DisplayExpandedMark = False
-	        toggleVisibilityAction1.Targets.AddRange(New Telerik.Reporting.IToggleVisibilityTarget() {textBox2})
-	
-	        '#End Region
-	
-	    End Sub
-	
-	    <TestMethod()> _
-	    Public Sub CustomAction_Snippet()
-	        Dim textBox1 As New Telerik.Reporting.TextBox()
-	
-	        '#Region "AddNewCustomActionSnippet"
-	
-	        Dim customAction As New Telerik.Reporting.CustomAction()
-	        customAction.Parameters.Add("param1", "=Fields.Name")
-	        customAction.Parameters.Add("param2", "=Now()")
-	        textBox1.Action = customAction
-	
-	        '#End Region
-	
-	    End Sub
-	
-	End Class
+````
 
 
 

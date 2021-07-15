@@ -45,7 +45,8 @@ The example below demonstrates getting a reference to the detail section of the 
 
 The second example demonstrates getting a reference to the detail section of the report, finding all its children and setting a BackgroundColor to them:
 
-{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````C#
+{{source=CodeSnippets\CS\API\Telerik\Reporting\Processing\EventsSnippets.cs region=AddSectionDataBindingSnippet}}
+````C#
 	        private void detail_ItemDataBinding(object sender, EventArgs e)
 	        {
 	            Telerik.Reporting.Processing.DetailSection section = (sender as Telerik.Reporting.Processing.DetailSection);
@@ -60,7 +61,8 @@ The second example demonstrates getting a reference to the detail section of the
 
 
 
-{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````VB
+{{source=CodeSnippets\VB\API\Telerik\Reporting\Processing\EventsSnippets.vb region=AddSectionDataBindingSnippet}}
+````VB
 	    Private Sub detail_ItemDataBinding(sender As Object, e As EventArgs)
 	        Dim section As Telerik.Reporting.Processing.DetailSection = TryCast(sender, Telerik.Reporting.Processing.DetailSection)
 	        Dim txt As Telerik.Reporting.Processing.TextBox = DirectCast(Telerik.Reporting.Processing.ElementTreeHelper.GetChildByName(section, "textBox1"), Telerik.Reporting.Processing.TextBox)
@@ -69,12 +71,12 @@ The second example demonstrates getting a reference to the detail section of the
 	            txt.Style.BackgroundColor = System.Drawing.Color.Blue
 	        End If
 	    End Sub
-	    '#End Region
-	End Class
+````
 
 
 
-{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````C#
+{{source=CodeSnippets\CS\API\Telerik\Reporting\Processing\Access_Processing_Instances_Children_Snippets.cs region=Using_ILayoutElementContainer_Children_Snippet}}
+````C#
 			void DetailSection_ItemDataBinding_Using_ILayoutElementContainer_Children(object sender, EventArgs e)
 			{
 				Processing.DetailSection processingInstance = (Processing.DetailSection)sender;
@@ -95,7 +97,8 @@ The second example demonstrates getting a reference to the detail section of the
 
 
 
-{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````VB
+{{source=CodeSnippets\VB\API\Telerik\Reporting\Processing\Access_Processing_Instances_Children_Snippets.vb region=Using_ILayoutElementContainer_Children_Snippet}}
+````VB
 	    Private Sub DetailSection_ItemDataBinding_Using_ILayoutElementContainer_Children(sender As Object, e As EventArgs)
 	        Dim processingInstance As Processing.DetailSection = DirectCast(sender, Processing.DetailSection)
 	        Dim processingContainer As Processing.ILayoutElementContainer = TryCast(processingInstance, Processing.ILayoutElementContainer)
@@ -108,7 +111,6 @@ The second example demonstrates getting a reference to the detail section of the
 	            Next
 	        End If
 	    End Sub
-	    '#End Region
-	End Class
+````
 
 

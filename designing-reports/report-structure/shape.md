@@ -88,7 +88,8 @@ The Shape report item supports creating a custom shapes programmatically. The fo
         that will form the shape. The points coordinates are relative and do not depend on the item's size or position in the report.
       
 
-{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````c#
+{{source=CodeSnippets\CS\API\Telerik\Reporting\ShapeSnippets.cs region=CustomShapeClassDeclarationSnippet}}
+````c#
 	        class CustomShapeType : Drawing.Shapes.ShapeBase
 	        {
 	            public override object Clone()
@@ -119,7 +120,8 @@ The Shape report item supports creating a custom shapes programmatically. The fo
 
 
 
-{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````vb.net
+{{source=CodeSnippets\VB\API\Telerik\Reporting\ShapeSnippets.vb region=CustomShapeClassDeclarationSnippet}}
+````vb.net
 	    Class CustomShapeType
 	        Inherits Drawing.Shapes.ShapeBase
 	
@@ -132,17 +134,7 @@ The Shape report item supports creating a custom shapes programmatically. The fo
 	            MyBase.AddLines(points, False)
 	        End Sub
 	    End Class
-	    '#End Region
-	
-	    '#Region "CreateCustomShapeSnippet"
-	    Private Function CreateShape() As Shape
-	        Dim shape = New Telerik.Reporting.Shape() With {.ShapeType = New CustomShapeType(), .Size = New Drawing.SizeU(Drawing.Unit.Cm(2), Drawing.Unit.Cm(2)), .Location = New Drawing.PointU(Drawing.Unit.Cm(1), Drawing.Unit.Cm(1))}
-	        shape.Style.Color = System.Drawing.Color.Green
-	        shape.Style.LineWidth = Drawing.Unit.Pixel(5)
-	        Return shape
-	    End Function
-	    '#End Region
-	End Class
+````
 
 
 
@@ -150,7 +142,8 @@ The Shape item can be created at runtime and added to a report item container (s
         The snippet below shows how to instantiate a Shape item of __CustomShape__ type:
       
 
-{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````c#
+{{source=CodeSnippets\CS\API\Telerik\Reporting\ShapeSnippets.cs region=CreateCustomShapeSnippet}}
+````c#
 	        Shape CreateShape()
 	        {
 	            var shape = new Telerik.Reporting.Shape()
@@ -169,15 +162,15 @@ The Shape item can be created at runtime and added to a report item container (s
 
 
 
-{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````vb.net
+{{source=CodeSnippets\VB\API\Telerik\Reporting\ShapeSnippets.vb region=CreateCustomShapeSnippet}}
+````vb.net
 	    Private Function CreateShape() As Shape
 	        Dim shape = New Telerik.Reporting.Shape() With {.ShapeType = New CustomShapeType(), .Size = New Drawing.SizeU(Drawing.Unit.Cm(2), Drawing.Unit.Cm(2)), .Location = New Drawing.PointU(Drawing.Unit.Cm(1), Drawing.Unit.Cm(1))}
 	        shape.Style.Color = System.Drawing.Color.Green
 	        shape.Style.LineWidth = Drawing.Unit.Pixel(5)
 	        Return shape
 	    End Function
-	    '#End Region
-	End Class
+````
 
 
 

@@ -47,7 +47,8 @@ As explained in [Understanding Events]({%slug telerikreporting/using-reports-in-
           needed:
         
 
-{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````C#
+{{source=CodeSnippets\CS\API\Telerik\Reporting\Processing\EventsSnippets.cs region=AddTextBoxItemDataBindingSnippet}}
+````C#
 	        private void textBox1_ItemDataBinding(object sender, EventArgs e)
 	        {
 	            Telerik.Reporting.Processing.TextBox txt = (Telerik.Reporting.Processing.TextBox)sender;
@@ -61,7 +62,8 @@ As explained in [Understanding Events]({%slug telerikreporting/using-reports-in-
 
 
 
-{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````VB
+{{source=CodeSnippets\VB\API\Telerik\Reporting\Processing\EventsSnippets.vb region=AddTextBoxItemDataBindingSnippet}}
+````VB
 	    Private Sub textBox1_ItemDataBinding(sender As Object, e As EventArgs) Handles textBox1.ItemDataBinding
 	        Dim txt As Telerik.Reporting.Processing.TextBox = DirectCast(sender, Telerik.Reporting.Processing.TextBox)
 	        Dim dataObject As Telerik.Reporting.Processing.IDataObject = DirectCast(txt.DataObject, Telerik.Reporting.Processing.IDataObject)
@@ -69,25 +71,7 @@ As explained in [Understanding Events]({%slug telerikreporting/using-reports-in-
 	            txt.Style.BackgroundColor = System.Drawing.Color.Blue
 	        End If
 	    End Sub
-	    '#End Region
-	
-	    Public Sub Using_ReportSection_Events()
-	        detail.Name = "detail"
-	        report1.Items.Add(detail)
-	        detail.Items.Add(textBox1)
-	    End Sub
-	
-	    '#Region "AddSectionDataBindingSnippet"
-	    Private Sub detail_ItemDataBinding(sender As Object, e As EventArgs)
-	        Dim section As Telerik.Reporting.Processing.DetailSection = TryCast(sender, Telerik.Reporting.Processing.DetailSection)
-	        Dim txt As Telerik.Reporting.Processing.TextBox = DirectCast(Telerik.Reporting.Processing.ElementTreeHelper.GetChildByName(section, "textBox1"), Telerik.Reporting.Processing.TextBox)
-	        Dim title As Object = section.DataObject("Title")
-	        If DirectCast(title, String) = "Developer" Then
-	            txt.Style.BackgroundColor = System.Drawing.Color.Blue
-	        End If
-	    End Sub
-	    '#End Region
-	End Class
+````
 
 
 

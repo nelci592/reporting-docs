@@ -62,7 +62,8 @@ step of the [DataSource Components]({%slug telerikreporting/designing-reports/co
 
 1. To allow a user to select or change a parameter value, set __Visible__ to __True__.Add a Report Parameter programmatically
 
-{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````C#
+{{source=CodeSnippets\CS\API\Telerik\Reporting\ReportSnippets.cs region=AddNewReportParameterSnippet}}
+````C#
 	
 	            Telerik.Reporting.ReportParameter reportParameter1 = new Telerik.Reporting.ReportParameter();
 	            reportParameter1.Name = "Parameter1";
@@ -78,7 +79,8 @@ step of the [DataSource Components]({%slug telerikreporting/designing-reports/co
 
 
 
-{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````VB
+{{source=CodeSnippets\VB\API\Telerik\Reporting\ReportSnippets.vb region=AddNewReportParameterSnippet}}
+````VB
 	
 	        Dim reportParameter1 As New Telerik.Reporting.ReportParameter()
 	        reportParameter1.Name = "Parameter1"
@@ -90,35 +92,7 @@ step of the [DataSource Components]({%slug telerikreporting/designing-reports/co
 	        reportParameter1.Visible = True
 	        report1.ReportParameters.Add(reportParameter1)
 	
-	        '#End Region
-	
-	        Dim objectDataSource1 As New Telerik.Reporting.ObjectDataSource()
-	
-	        '#Region Define_AvailableValues_for_ReportParameter_Snippet()
-	
-	        reportParameter1.AvailableValues.DataSource = objectDataSource1
-	        reportParameter1.AvailableValues.ValueMember = "= Fields.EmployeeID"
-	        reportParameter1.AvailableValues.DisplayMember = "= Fields.FirstName"
-	        Dim filter1 As New Telerik.Reporting.Filter()
-	        filter1.Expression = "=Fields.ProductCategory"
-	        filter1.Operator = Telerik.Reporting.FilterOperator.Equal
-	        filter1.Value = "=Parameters.ProductCategory"
-	        reportParameter1.AvailableValues.Filters.AddRange(New Telerik.Reporting.Filter() {filter1})
-	        Dim sorting1 As New Telerik.Reporting.Sorting()
-	        sorting1.Expression = "=Fields.ProductSubcategory"
-	        sorting1.Direction = Telerik.Reporting.SortDirection.Asc
-	        reportParameter1.AvailableValues.Sortings.AddRange(New Telerik.Reporting.Sorting() {sorting1})
-	
-	        '#End Region
-	
-	        Assert.AreEqual(1, report1.ReportParameters.Count)
-	        Assert.AreEqual("Parameter1", report1.ReportParameters(0).Name)
-	        Assert.AreEqual("Enter Value for Parameter1", report1.ReportParameters(0).Text)
-	        Assert.AreEqual("=10", report1.ReportParameters(0).Value)
-	
-	    End Sub
-	
-	End Class
+````
 
 Defining AvailableValues for ReportParameter’s UI using Report Designer
 
@@ -143,7 +117,8 @@ If no DataSource is specified, available values are not loaded.
 			of the items provided to the user to choose from. Sorting is defined 
 			using the [Edit Sorting Dialog.]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/edit-sorting-dialog%})Defining AvailableValues for ReportParameter’s UI programmatically
 
-{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````C#
+{{source=CodeSnippets\CS\API\Telerik\Reporting\ReportSnippets.cs region=Define_AvailableValues_for_ReportParameter_Snippet}}
+````C#
 	
 	            reportParameter1.AvailableValues.DataSource = objectDataSource1;
 	            reportParameter1.AvailableValues.ValueMember = "= Fields.EmployeeID";
@@ -162,7 +137,8 @@ If no DataSource is specified, available values are not loaded.
 
 
 
-{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````VB
+{{source=CodeSnippets\VB\API\Telerik\Reporting\ReportSnippets.vb region=Define_AvailableValues_for_ReportParameter_Snippet}}
+````VB
 	
 	        reportParameter1.AvailableValues.DataSource = objectDataSource1
 	        reportParameter1.AvailableValues.ValueMember = "= Fields.EmployeeID"
@@ -177,16 +153,7 @@ If no DataSource is specified, available values are not loaded.
 	        sorting1.Direction = Telerik.Reporting.SortDirection.Asc
 	        reportParameter1.AvailableValues.Sortings.AddRange(New Telerik.Reporting.Sorting() {sorting1})
 	
-	        '#End Region
-	
-	        Assert.AreEqual(1, report1.ReportParameters.Count)
-	        Assert.AreEqual("Parameter1", report1.ReportParameters(0).Name)
-	        Assert.AreEqual("Enter Value for Parameter1", report1.ReportParameters(0).Text)
-	        Assert.AreEqual("=10", report1.ReportParameters(0).Value)
-	
-	    End Sub
-	
-	End Class
+````
 
 
 

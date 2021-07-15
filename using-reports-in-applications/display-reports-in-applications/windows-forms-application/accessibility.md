@@ -40,7 +40,8 @@ The accessibility routines capture the keyboard events to provide shortcut key a
           The code snippets below demonstrate how to change the default shortcut for navigating to the menu area:
         
 
-{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````C#
+{{source=CodeSnippets\CS\API\Telerik\ReportViewer\WinForms\Form1.cs region=WinFormsViewerAccessibilityKeyMapSnippet}}
+````C#
 	        private void SetToolbarShortcutKey()
 	        {
 	            //substituting the default 'M' key to access the toolbar with 'T'
@@ -53,7 +54,8 @@ The accessibility routines capture the keyboard events to provide shortcut key a
 
 
 
-{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````VB
+{{source=CodeSnippets\VB\API\Telerik\ReportViewer\WinForms\Form1.vb region=WinFormsViewerAccessibilityKeyMapSnippet}}
+````VB
 	
 	    Private Sub SetToolbarShortcutKey()
 	        ' substituting the default 'M' key to access the toolbar with 'T'

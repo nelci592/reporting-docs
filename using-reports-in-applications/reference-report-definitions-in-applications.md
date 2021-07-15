@@ -62,7 +62,8 @@ When the report engine is embedded in the current application (i.e. the *Telerik
 For this example we will use a TypeReportSource. The TypeReportSource specifies the report by its Assembly Qualified Name. The Reporting Engine uses [Reflection](https://msdn.microsoft.com/en-us/library/ms173183(v=vs.110).aspx) to create an instance of the report class through its default parameterless constructor.
         
 
-{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````C#
+{{source=CodeSnippets\CS\API\Telerik\Reporting\Processing\ReportProcessorSnippets.cs region=Export_Single_Stream_Snippet}}
+````C#
 	
 	            var reportProcessor = new Telerik.Reporting.Processing.ReportProcessor();
 	
@@ -112,7 +113,8 @@ For this example we will use a TypeReportSource. The TypeReportSource specifies 
 
 
 
-{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````VB
+{{source=CodeSnippets\VB\API\Telerik\Reporting\Processing\ReportProcessorSnippets.vb region=Export_Single_Stream_Snippet}}
+````VB
 	
 	        Dim reportProcessor As New Telerik.Reporting.Processing.ReportProcessor()
 	
@@ -157,70 +159,7 @@ For this example we will use a TypeReportSource. The TypeReportSource specifies 
 	            fs.Write(result.DocumentBytes, 0, result.DocumentBytes.Length)
 	        End Using
 	
-	        '#End Region
-	
-	        System.Diagnostics.Debug.WriteLine("File written at: " + filePath)
-	
-	        Assert.IsNotNull(result.DocumentBytes)
-	    End Sub
-	
-	    Class ReportCatalog
-	        Inherits Report
-	    End Class
-	
-	
-	    <TestMethod()> _
-	    Public Sub RenderReport_Test()
-	        Dim reportSource As New InstanceReportSource()
-	
-	        reportSource.ReportDocument = New Report1()
-	
-	        Assert.IsTrue(Me.RenderReport(reportSource))
-	    End Sub
-	
-	    '#Region "Export_CreateStream_Callback_Snippet"
-	
-	    Dim streams As New System.Collections.Generic.List(Of System.IO.Stream)()
-	
-	    Public Function RenderReport(reportSource As ReportSource) As Boolean
-	        Dim reportProcessor As New Telerik.Reporting.Processing.ReportProcessor()
-	        Dim documentName As String = ""
-	
-	        'specify the output format of the produced image.
-	        Dim deviceInfo As New System.Collections.Hashtable()
-	        deviceInfo("OutputFormat") = "JPEG"
-	
-	        Dim result As Boolean = reportProcessor.RenderReport("IMAGE", reportSource, deviceInfo, AddressOf Me.CreateStream, documentName)
-	        Me.CloseStreams()
-	
-	        Return result
-	    End Function
-	
-	    Private Sub CloseStreams()
-	        For Each stream As System.IO.Stream In Me.streams
-	            stream.Close()
-	        Next
-	        Me.streams.Clear()
-	    End Sub
-	
-	    Private Function CreateStream(name As String, extension As String, encoding As System.Text.Encoding, mimeType As String) As System.IO.Stream
-	        Dim path As String = System.IO.Path.GetTempPath()
-	        Dim filePath As String = System.IO.Path.Combine(path, name + "." + extension)
-	
-	        Dim fs As New System.IO.FileStream(filePath, System.IO.FileMode.Create)
-	        Me.streams.Add(fs)
-	        Return fs
-	    End Function
-	
-	    '#End Region
-	
-	    Private Class MyReport
-	        Inherits Report
-	    End Class
-	End Class
-	
-	
-	
+````
 
 
 

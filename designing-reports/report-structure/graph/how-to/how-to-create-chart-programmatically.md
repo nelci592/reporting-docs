@@ -21,7 +21,8 @@ The steps below show how to create a minimal chart definition with the Graph ite
 
 
 
-{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````C#
+{{source=CodeSnippets\CS\API\Telerik\Reporting\GraphSnippets.cs region=AddNewGraphColumnChartType}}
+````C#
 	            //Instantiate a new Graph
 	            var graph1 = new Telerik.Reporting.Graph();
 	            //The name property should be set for all report objects!
@@ -111,7 +112,8 @@ The steps below show how to create a minimal chart definition with the Graph ite
 
 
 
-{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````VB
+{{source=CodeSnippets\VB\API\Telerik\Reporting\GraphSnippets.vb region=AddNewGraphColumnChartType}}
+````VB
 	       'Instantiate a new Graph
 	        Dim graph1 = New Graph()
 	        'The name property should be set for all report objects!
@@ -196,49 +198,7 @@ The steps below show how to create a minimal chart definition with the Graph ite
 	        barSeries1.SeriesGroup = orderDateGroup
 	        barSeries1.Y = "=IsNull(Sum(Fields.LineTotal), 0) / 1000.0"
 	        graph1.Series.Add(barSeries1)
-	        '#End Region
-	    End Sub
-	
-	    <TestMethod()> _
-	    Public Sub Add_Filter_To_Graph()
-	
-	        Dim graph1 As New Telerik.Reporting.Graph()
-	
-	        '#region AddNewFilterSnippet
-	
-	        Dim filter1 As New Telerik.Reporting.Filter()
-	        filter1.Expression = "=Fields.ProductID"
-	        filter1.Operator = Telerik.Reporting.FilterOperator.GreaterThan
-	        filter1.Value = "=10"
-	
-	        graph1.Filters.Add(filter1)
-	
-	        '#End Region
-	
-	        Assert.AreEqual(1, graph1.Filters.Count)
-	        Assert.AreEqual("=Fields.ProductID", graph1.Filters(0).Expression)
-	        Assert.AreEqual(Telerik.Reporting.FilterOperator.GreaterThan, graph1.Filters(0).Operator)
-	        Assert.AreEqual("=10", graph1.Filters(0).Value)
-	    End Sub
-	
-	    <TestMethod()> _
-	    Public Sub Add_Sorting_To_Graph()
-	        Dim graph1 As New Telerik.Reporting.Graph()
-	
-	        '#region AddNewSortSnippet
-	
-	        Dim sorting1 As New Telerik.Reporting.Sorting()
-	        sorting1.Expression = "=Fields.ProductID"
-	        sorting1.Direction = Telerik.Reporting.SortDirection.Asc
-	
-	        graph1.Sortings.Add(sorting1)
-	        '#End Region
-	
-	        Assert.AreEqual(1, graph1.Sortings.Count)
-	        Assert.AreEqual("=Fields.ProductID", graph1.Sortings(0).Expression)
-	        Assert.AreEqual(Telerik.Reporting.SortDirection.Asc, graph1.Sortings(0).Direction)
-	    End Sub
-	End Class
+````
 
 
 

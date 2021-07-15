@@ -48,7 +48,8 @@ Add the instance of the ReportViewer to a __RadAjaxManager__ control.
 
 
 
-{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````C#
+{{source=CodeSnippets\CS\API\Telerik\ReportViewer\WebForms\WebForm1.aspx.cs region=Webviewer_SetReportSourceOnByttonClick}}
+````C#
 	        protected void Button1_Click(object sender, EventArgs e)
 	        {
 	            var typeReportSource = new Telerik.Reporting.TypeReportSource();
@@ -59,15 +60,14 @@ Add the instance of the ReportViewer to a __RadAjaxManager__ control.
 
 
 
-{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````VB
+{{source=CodeSnippets\VB\API\Telerik\ReportViewer\WebForms\WebForm1.aspx.vb region=Webviewer_SetReportSourceOnByttonClick}}
+````VB
 	    Protected Sub Button1_Click(sender As Object, e As EventArgs)
 	        Dim typeReportSource As New Telerik.Reporting.TypeReportSource()
 	        typeReportSource.TypeName = "ListBoundReport, VB.ReportLibrary"
 	        ReportViewer1.ReportSource = typeReportSource
 	    End Sub
-	    '#End Region
-	
-	End Class
+````
 
 
 
@@ -91,7 +91,8 @@ Wrap the instance of the ReportViewer into UpdatePanel ContentTemplate:#_ASP.NET
 
 
 
-{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````C#
+{{source=CodeSnippets\CS\API\Telerik\ReportViewer\WebForms\WebForm1.aspx.cs region=Webviewer_SetReportSourceOnByttonClick}}
+````C#
 	        protected void Button1_Click(object sender, EventArgs e)
 	        {
 	            var typeReportSource = new Telerik.Reporting.TypeReportSource();
@@ -102,15 +103,14 @@ Wrap the instance of the ReportViewer into UpdatePanel ContentTemplate:#_ASP.NET
 
 
 
-{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````VB
+{{source=CodeSnippets\VB\API\Telerik\ReportViewer\WebForms\WebForm1.aspx.vb region=Webviewer_SetReportSourceOnByttonClick}}
+````VB
 	    Protected Sub Button1_Click(sender As Object, e As EventArgs)
 	        Dim typeReportSource As New Telerik.Reporting.TypeReportSource()
 	        typeReportSource.TypeName = "ListBoundReport, VB.ReportLibrary"
 	        ReportViewer1.ReportSource = typeReportSource
 	    End Sub
-	    '#End Region
-	
-	End Class
+````
 
 
 

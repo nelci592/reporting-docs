@@ -26,7 +26,8 @@ The ReportViewer usually passes absolute [Uri](http://msdn.microsoft.com/en-us/l
 
 The example below illustrates how to implement and use a custom __IReportServiceClientFactory__:
 
-{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````C#
+{{source=CodeSnippets\SilverlightCS\API\Telerik\ReportViewer\Silverlight\CustomBindingsSnippets.cs region=UsingCustomBindings}}
+````C#
 	    using System;
 	    using System.ServiceModel;
 	    using System.Windows.Controls;
@@ -62,7 +63,8 @@ The example below illustrates how to implement and use a custom __IReportService
 
 
 
-{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````VB
+{{source=CodeSnippets\SilverlightVB\API\Telerik\ReportViewer\Silverlight\CustomBindingsSnippets.vb region=UsingCustomBindings}}
+````VB
 	Imports System
 	Imports System.ServiceModel
 	Imports System.Windows.Controls

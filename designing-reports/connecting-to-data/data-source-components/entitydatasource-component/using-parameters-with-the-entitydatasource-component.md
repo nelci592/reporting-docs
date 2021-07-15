@@ -28,7 +28,8 @@ The __EntityDataSource__ component can call a method of the __ObjectContext/DbCo
           let us extend the __AdventureWorksEntities__ context using a partial class that defines the following method:
           
 
-{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````C#
+{{source=CodeSnippets\CS\API\Telerik\Reporting\EntityDataSourceSnippets.cs region=SampleMethodSnippet}}
+````C#
 	
 	        partial class AdventureWorksEntities
 	        {
@@ -42,7 +43,8 @@ The __EntityDataSource__ component can call a method of the __ObjectContext/DbCo
 
 
 
-{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````VB
+{{source=CodeSnippets\VB\API\Telerik\Reporting\EntityDataSourceSnippets.vb region=SampleMethodSnippet}}
+````VB
 	
 	    Partial Class AdventureWorksEntities
 	        Public Function GetProducts(ByVal color As String, ByVal price As Decimal) As System.Collections.Generic.List(Of Product)
@@ -50,149 +52,7 @@ The __EntityDataSource__ component can call a method of the __ObjectContext/DbCo
 	        End Function
 	    End Class
 	
-	    '#End Region
-	
-	    '#Region LinqQuerySnippet
-	
-	    Public Class ReportData
-	        Public Property CategoryName As String
-	        Public Property SubcategoryName As String
-	        Public Property ProductName As String
-	        Public Property ListPrice As Decimal
-	    End Class
-	
-	    Partial Class AdventureWorksEntities
-	        Public Function GetProducts(ByVal category As String, ByVal subcategory As String) As System.Collections.Generic.List(Of ReportData)
-	            Dim result = From productCategory In Me.ProductCategories
-	                         Where productCategory.Name.StartsWith(category)
-	                         From productSubcategory In productCategory.ProductSubcategories
-	                         Where productCategory.Name.StartsWith(subcategory)
-	                         From product In productSubcategory.Products
-	                         Select New ReportData With
-	                         {
-	                             .CategoryName = productCategory.Name,
-	                             .SubcategoryName = productSubcategory.Name,
-	                             .ProductName = product.Name,
-	                             .ListPrice = product.ListPrice
-	                         }
-	
-	            Return result.ToList()
-	        End Function
-	    End Class
-	
-	    '#End Region
-	
-	    Partial Public Class AdventureWorksEntities
-	        Implements System.IDisposable
-	
-	        Public ReadOnly Property ProductCategories As System.Collections.Generic.List(Of ProductCategory)
-	            Get
-	                Return New System.Collections.Generic.List(Of ProductCategory)
-	            End Get
-	        End Property
-	
-	        Public ReadOnly Property ProductSubcategories As System.Collections.Generic.List(Of ProductSubcategory)
-	            Get
-	                Return New System.Collections.Generic.List(Of ProductSubcategory)
-	            End Get
-	        End Property
-	
-	        Public ReadOnly Property ProductModels As System.Collections.Generic.List(Of ProductModel)
-	            Get
-	                Return New System.Collections.Generic.List(Of ProductModel)
-	            End Get
-	        End Property
-	
-	        Public ReadOnly Property Products As System.Collections.Generic.List(Of Product)
-	            Get
-	                Return New System.Collections.Generic.List(Of Product)
-	            End Get
-	        End Property
-	
-	        Public Sub Dispose() Implements IDisposable.Dispose
-	        End Sub
-	    End Class
-	
-	    Public Class ProductCategory
-	        Public ReadOnly Property Name As String
-	            Get
-	                Return String.Empty
-	            End Get
-	        End Property
-	
-	        Public ReadOnly Property ProductSubcategories As System.Collections.Generic.List(Of ProductSubcategory)
-	            Get
-	                Return New System.Collections.Generic.List(Of ProductSubcategory)
-	            End Get
-	        End Property
-	    End Class
-	
-	    Public Class ProductSubcategory
-	        Public ReadOnly Property Name As String
-	            Get
-	                Return String.Empty
-	            End Get
-	        End Property
-	
-	        Public ReadOnly Property ProductCategory As ProductCategory
-	            Get
-	                Return New ProductCategory()
-	            End Get
-	        End Property
-	
-	        Public ReadOnly Property Products As System.Collections.Generic.List(Of Product)
-	            Get
-	                Return New System.Collections.Generic.List(Of Product)
-	            End Get
-	        End Property
-	    End Class
-	
-	    Public Class ProductModel
-	        Public ReadOnly Property Name As String
-	            Get
-	                Return String.Empty
-	            End Get
-	        End Property
-	
-	        Public ReadOnly Property Products As System.Collections.Generic.List(Of Product)
-	            Get
-	                Return New System.Collections.Generic.List(Of Product)
-	            End Get
-	        End Property
-	    End Class
-	
-	    Public Class Product
-	        Public ReadOnly Property Name As String
-	            Get
-	                Return String.Empty
-	            End Get
-	        End Property
-	
-	        Public ReadOnly Property Color As String
-	            Get
-	                Return String.Empty
-	            End Get
-	        End Property
-	
-	        Public ReadOnly Property ListPrice As Decimal
-	            Get
-	                Return Decimal.Zero
-	            End Get
-	        End Property
-	
-	        Public ReadOnly Property ProductSubcategory As ProductSubcategory
-	            Get
-	                Return New ProductSubcategory()
-	            End Get
-	        End Property
-	
-	        Public ReadOnly Property ProductModel As ProductModel
-	            Get
-	                Return New ProductModel()
-	            End Get
-	        End Property
-	    End Class
-	End Class
+````
 
 
 
@@ -203,7 +63,8 @@ To call the above method specify its name to the __ContextMember__ property and 
           to the previous method programmatically:
           
 
-{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````C#
+{{source=CodeSnippets\CS\API\Telerik\Reporting\EntityDataSourceSnippets.cs region=MethodBindingSnippet}}
+````C#
 	
 	            var entityDataSource = new Telerik.Reporting.EntityDataSource();
 	
@@ -220,7 +81,8 @@ To call the above method specify its name to the __ContextMember__ property and 
 
 
 
-{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````VB
+{{source=CodeSnippets\VB\API\Telerik\Reporting\EntityDataSourceSnippets.vb region=MethodBindingSnippet}}
+````VB
 	
 	        Dim entityDataSource As New Telerik.Reporting.EntityDataSource()
 	
@@ -233,210 +95,7 @@ To call the above method specify its name to the __ContextMember__ property and 
 	
 	        report.DataSource = entityDataSource
 	
-	        '#End Region
-	    End Sub
-	
-	    <Microsoft.VisualStudio.TestTools.UnitTesting.TestMethod()>
-	    Public Sub ParameterBindingSnippet()
-	        '#Region ParameterBindingSnippet
-	
-	        Dim entityDataSource As New Telerik.Reporting.EntityDataSource()
-	
-	        entityDataSource.Context = GetType(AdventureWorksEntities)
-	        entityDataSource.ContextMember = "GetProducts"
-	        entityDataSource.Parameters.Add("color", GetType(String), "=Parameters.Color.Value")
-	        entityDataSource.Parameters.Add("price", GetType(Decimal), "=Parameters.Price.Value")
-	
-	        Dim report As New Report1()
-	
-	        report.DataSource = entityDataSource
-	        report.ReportParameters.Add("Color", Telerik.Reporting.ReportParameterType.String, "Black")
-	        report.ReportParameters.Add("Price", Telerik.Reporting.ReportParameterType.Float, 100)
-	
-	        '#End Region
-	    End Sub
-	
-	    <Microsoft.VisualStudio.TestTools.UnitTesting.TestMethod()>
-	    Public Sub LinqBindingSnippet()
-	        '#Region LinqBindingSnippet
-	
-	        Dim entityDataSource As New Telerik.Reporting.EntityDataSource()
-	
-	        entityDataSource.Context = GetType(AdventureWorksEntities)
-	        entityDataSource.ContextMember = "GetProducts"
-	        entityDataSource.Parameters.Add("category", GetType(String), "Bike")
-	        entityDataSource.Parameters.Add("subcategory", GetType(String), "Road")
-	
-	        Dim report As New Report1()
-	
-	        report.DataSource = entityDataSource
-	
-	        '#End Region
-	    End Sub
-	
-	    '#Region SampleObjectSnippet
-	
-	    Public Class SampleBusinessObject
-	        Public Function GetProducts() As System.Collections.Generic.List(Of Product)
-	            Using context As AdventureWorksEntities = New AdventureWorksEntities()
-	                Return context.Products.ToList()
-	            End Using
-	        End Function
-	    End Class
-	
-	    '#End Region
-	
-	    '#Region SampleMethodSnippet
-	
-	    Partial Class AdventureWorksEntities
-	        Public Function GetProducts(ByVal color As String, ByVal price As Decimal) As System.Collections.Generic.List(Of Product)
-	            Return Me.Products.Where(Function(product) product.Color = color And product.ListPrice <= price).ToList()
-	        End Function
-	    End Class
-	
-	    '#End Region
-	
-	    '#Region LinqQuerySnippet
-	
-	    Public Class ReportData
-	        Public Property CategoryName As String
-	        Public Property SubcategoryName As String
-	        Public Property ProductName As String
-	        Public Property ListPrice As Decimal
-	    End Class
-	
-	    Partial Class AdventureWorksEntities
-	        Public Function GetProducts(ByVal category As String, ByVal subcategory As String) As System.Collections.Generic.List(Of ReportData)
-	            Dim result = From productCategory In Me.ProductCategories
-	                         Where productCategory.Name.StartsWith(category)
-	                         From productSubcategory In productCategory.ProductSubcategories
-	                         Where productCategory.Name.StartsWith(subcategory)
-	                         From product In productSubcategory.Products
-	                         Select New ReportData With
-	                         {
-	                             .CategoryName = productCategory.Name,
-	                             .SubcategoryName = productSubcategory.Name,
-	                             .ProductName = product.Name,
-	                             .ListPrice = product.ListPrice
-	                         }
-	
-	            Return result.ToList()
-	        End Function
-	    End Class
-	
-	    '#End Region
-	
-	    Partial Public Class AdventureWorksEntities
-	        Implements System.IDisposable
-	
-	        Public ReadOnly Property ProductCategories As System.Collections.Generic.List(Of ProductCategory)
-	            Get
-	                Return New System.Collections.Generic.List(Of ProductCategory)
-	            End Get
-	        End Property
-	
-	        Public ReadOnly Property ProductSubcategories As System.Collections.Generic.List(Of ProductSubcategory)
-	            Get
-	                Return New System.Collections.Generic.List(Of ProductSubcategory)
-	            End Get
-	        End Property
-	
-	        Public ReadOnly Property ProductModels As System.Collections.Generic.List(Of ProductModel)
-	            Get
-	                Return New System.Collections.Generic.List(Of ProductModel)
-	            End Get
-	        End Property
-	
-	        Public ReadOnly Property Products As System.Collections.Generic.List(Of Product)
-	            Get
-	                Return New System.Collections.Generic.List(Of Product)
-	            End Get
-	        End Property
-	
-	        Public Sub Dispose() Implements IDisposable.Dispose
-	        End Sub
-	    End Class
-	
-	    Public Class ProductCategory
-	        Public ReadOnly Property Name As String
-	            Get
-	                Return String.Empty
-	            End Get
-	        End Property
-	
-	        Public ReadOnly Property ProductSubcategories As System.Collections.Generic.List(Of ProductSubcategory)
-	            Get
-	                Return New System.Collections.Generic.List(Of ProductSubcategory)
-	            End Get
-	        End Property
-	    End Class
-	
-	    Public Class ProductSubcategory
-	        Public ReadOnly Property Name As String
-	            Get
-	                Return String.Empty
-	            End Get
-	        End Property
-	
-	        Public ReadOnly Property ProductCategory As ProductCategory
-	            Get
-	                Return New ProductCategory()
-	            End Get
-	        End Property
-	
-	        Public ReadOnly Property Products As System.Collections.Generic.List(Of Product)
-	            Get
-	                Return New System.Collections.Generic.List(Of Product)
-	            End Get
-	        End Property
-	    End Class
-	
-	    Public Class ProductModel
-	        Public ReadOnly Property Name As String
-	            Get
-	                Return String.Empty
-	            End Get
-	        End Property
-	
-	        Public ReadOnly Property Products As System.Collections.Generic.List(Of Product)
-	            Get
-	                Return New System.Collections.Generic.List(Of Product)
-	            End Get
-	        End Property
-	    End Class
-	
-	    Public Class Product
-	        Public ReadOnly Property Name As String
-	            Get
-	                Return String.Empty
-	            End Get
-	        End Property
-	
-	        Public ReadOnly Property Color As String
-	            Get
-	                Return String.Empty
-	            End Get
-	        End Property
-	
-	        Public ReadOnly Property ListPrice As Decimal
-	            Get
-	                Return Decimal.Zero
-	            End Get
-	        End Property
-	
-	        Public ReadOnly Property ProductSubcategory As ProductSubcategory
-	            Get
-	                Return New ProductSubcategory()
-	            End Get
-	        End Property
-	
-	        Public ReadOnly Property ProductModel As ProductModel
-	            Get
-	                Return New ProductModel()
-	            End Get
-	        End Property
-	    End Class
-	End Class
+````
 
 
 
@@ -447,7 +106,8 @@ When declaring a data source parameter you can specify a default value for that 
           following code snippet:
           
 
-{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````C#
+{{source=CodeSnippets\CS\API\Telerik\Reporting\EntityDataSourceSnippets.cs region=ParameterBindingSnippet}}
+````C#
 	
 	            var entityDataSource = new Telerik.Reporting.EntityDataSource();
 	
@@ -466,7 +126,8 @@ When declaring a data source parameter you can specify a default value for that 
 
 
 
-{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````VB
+{{source=CodeSnippets\VB\API\Telerik\Reporting\EntityDataSourceSnippets.vb region=ParameterBindingSnippet}}
+````VB
 	
 	        Dim entityDataSource As New Telerik.Reporting.EntityDataSource()
 	
@@ -481,190 +142,7 @@ When declaring a data source parameter you can specify a default value for that 
 	        report.ReportParameters.Add("Color", Telerik.Reporting.ReportParameterType.String, "Black")
 	        report.ReportParameters.Add("Price", Telerik.Reporting.ReportParameterType.Float, 100)
 	
-	        '#End Region
-	    End Sub
-	
-	    <Microsoft.VisualStudio.TestTools.UnitTesting.TestMethod()>
-	    Public Sub LinqBindingSnippet()
-	        '#Region LinqBindingSnippet
-	
-	        Dim entityDataSource As New Telerik.Reporting.EntityDataSource()
-	
-	        entityDataSource.Context = GetType(AdventureWorksEntities)
-	        entityDataSource.ContextMember = "GetProducts"
-	        entityDataSource.Parameters.Add("category", GetType(String), "Bike")
-	        entityDataSource.Parameters.Add("subcategory", GetType(String), "Road")
-	
-	        Dim report As New Report1()
-	
-	        report.DataSource = entityDataSource
-	
-	        '#End Region
-	    End Sub
-	
-	    '#Region SampleObjectSnippet
-	
-	    Public Class SampleBusinessObject
-	        Public Function GetProducts() As System.Collections.Generic.List(Of Product)
-	            Using context As AdventureWorksEntities = New AdventureWorksEntities()
-	                Return context.Products.ToList()
-	            End Using
-	        End Function
-	    End Class
-	
-	    '#End Region
-	
-	    '#Region SampleMethodSnippet
-	
-	    Partial Class AdventureWorksEntities
-	        Public Function GetProducts(ByVal color As String, ByVal price As Decimal) As System.Collections.Generic.List(Of Product)
-	            Return Me.Products.Where(Function(product) product.Color = color And product.ListPrice <= price).ToList()
-	        End Function
-	    End Class
-	
-	    '#End Region
-	
-	    '#Region LinqQuerySnippet
-	
-	    Public Class ReportData
-	        Public Property CategoryName As String
-	        Public Property SubcategoryName As String
-	        Public Property ProductName As String
-	        Public Property ListPrice As Decimal
-	    End Class
-	
-	    Partial Class AdventureWorksEntities
-	        Public Function GetProducts(ByVal category As String, ByVal subcategory As String) As System.Collections.Generic.List(Of ReportData)
-	            Dim result = From productCategory In Me.ProductCategories
-	                         Where productCategory.Name.StartsWith(category)
-	                         From productSubcategory In productCategory.ProductSubcategories
-	                         Where productCategory.Name.StartsWith(subcategory)
-	                         From product In productSubcategory.Products
-	                         Select New ReportData With
-	                         {
-	                             .CategoryName = productCategory.Name,
-	                             .SubcategoryName = productSubcategory.Name,
-	                             .ProductName = product.Name,
-	                             .ListPrice = product.ListPrice
-	                         }
-	
-	            Return result.ToList()
-	        End Function
-	    End Class
-	
-	    '#End Region
-	
-	    Partial Public Class AdventureWorksEntities
-	        Implements System.IDisposable
-	
-	        Public ReadOnly Property ProductCategories As System.Collections.Generic.List(Of ProductCategory)
-	            Get
-	                Return New System.Collections.Generic.List(Of ProductCategory)
-	            End Get
-	        End Property
-	
-	        Public ReadOnly Property ProductSubcategories As System.Collections.Generic.List(Of ProductSubcategory)
-	            Get
-	                Return New System.Collections.Generic.List(Of ProductSubcategory)
-	            End Get
-	        End Property
-	
-	        Public ReadOnly Property ProductModels As System.Collections.Generic.List(Of ProductModel)
-	            Get
-	                Return New System.Collections.Generic.List(Of ProductModel)
-	            End Get
-	        End Property
-	
-	        Public ReadOnly Property Products As System.Collections.Generic.List(Of Product)
-	            Get
-	                Return New System.Collections.Generic.List(Of Product)
-	            End Get
-	        End Property
-	
-	        Public Sub Dispose() Implements IDisposable.Dispose
-	        End Sub
-	    End Class
-	
-	    Public Class ProductCategory
-	        Public ReadOnly Property Name As String
-	            Get
-	                Return String.Empty
-	            End Get
-	        End Property
-	
-	        Public ReadOnly Property ProductSubcategories As System.Collections.Generic.List(Of ProductSubcategory)
-	            Get
-	                Return New System.Collections.Generic.List(Of ProductSubcategory)
-	            End Get
-	        End Property
-	    End Class
-	
-	    Public Class ProductSubcategory
-	        Public ReadOnly Property Name As String
-	            Get
-	                Return String.Empty
-	            End Get
-	        End Property
-	
-	        Public ReadOnly Property ProductCategory As ProductCategory
-	            Get
-	                Return New ProductCategory()
-	            End Get
-	        End Property
-	
-	        Public ReadOnly Property Products As System.Collections.Generic.List(Of Product)
-	            Get
-	                Return New System.Collections.Generic.List(Of Product)
-	            End Get
-	        End Property
-	    End Class
-	
-	    Public Class ProductModel
-	        Public ReadOnly Property Name As String
-	            Get
-	                Return String.Empty
-	            End Get
-	        End Property
-	
-	        Public ReadOnly Property Products As System.Collections.Generic.List(Of Product)
-	            Get
-	                Return New System.Collections.Generic.List(Of Product)
-	            End Get
-	        End Property
-	    End Class
-	
-	    Public Class Product
-	        Public ReadOnly Property Name As String
-	            Get
-	                Return String.Empty
-	            End Get
-	        End Property
-	
-	        Public ReadOnly Property Color As String
-	            Get
-	                Return String.Empty
-	            End Get
-	        End Property
-	
-	        Public ReadOnly Property ListPrice As Decimal
-	            Get
-	                Return Decimal.Zero
-	            End Get
-	        End Property
-	
-	        Public ReadOnly Property ProductSubcategory As ProductSubcategory
-	            Get
-	                Return New ProductSubcategory()
-	            End Get
-	        End Property
-	
-	        Public ReadOnly Property ProductModel As ProductModel
-	            Get
-	                Return New ProductModel()
-	            End Get
-	        End Property
-	    End Class
-	End Class
+````
 
 
 

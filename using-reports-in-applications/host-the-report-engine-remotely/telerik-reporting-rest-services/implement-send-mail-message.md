@@ -16,7 +16,8 @@ This tutorial elaborates how to implement the SendMailMessage method of the [Rep
         This is required to enable the send document endpoint used for [HTML5 Report Viewer Send Mail Message]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/send-mail-message%}) functionality.
       To send e-mail use the MailMessage with SMTP client as shown in the following code snippet:
 
-{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````C#
+{{source=CodeSnippets\MvcCS\Controllers\ReportsController.cs region=SendMailMessage_Implementation}}
+````C#
 	        protected override HttpStatusCode SendMailMessage(MailMessage mailMessage)
 	        {
 	            using (var smtpClient = new SmtpClient("smtp.companyname.com", 25))
@@ -32,7 +33,8 @@ This tutorial elaborates how to implement the SendMailMessage method of the [Rep
 
 
 
-{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````VB
+{{source=CodeSnippets\MvcVB\Controllers\ReportsController.vb region=SendMailMessage_Implementation}}
+````VB
 	    Protected Overrides Function SendMailMessage(ByVal mailMessage As MailMessage) As HttpStatusCode
 	        Using smtpClient = New SmtpClient("smtp.companyname.com", 25)
 	            smtpClient.DeliveryMethod = SmtpDeliveryMethod.Network
@@ -42,43 +44,7 @@ This tutorial elaborates how to implement the SendMailMessage method of the [Rep
 	
 	        Return HttpStatusCode.OK
 	    End Function
-	    '#End Region
-	End Class
-	'#End Region
-	
-	'#Region "ReportsControllerOnGetDocument"
-	Public Class ReportController
-	    Inherits Telerik.Reporting.Services.WebApi.ReportsControllerBase
-	    Protected Overrides Sub OnGetDocument(args As GetDocumentEventArgs)
-	        'modify the rendered document in args.DocumentBytes 
-	        If args.Extension = "PDF" Then
-	        End If
-	    End Sub
-	End Class
-	'#End Region
-	
-	'#Region "ReportsHostOnGetDocument"
-	Public Class ReportHost
-	    Inherits Telerik.Reporting.Services.ServiceStack.ReportsHostBase
-	    Protected Overrides Sub OnGetDocument(args As GetDocumentEventArgs)
-	        'modify the rendered document in args.DocumentBytes 
-	        If args.Extension = "PDF" Then
-	        End If
-	    End Sub
-	End Class
-	'#End Region
-	
-	'#Region "ReportsHostOnCreateDocument"
-	Public Class ReportHost2
-	    Inherits Telerik.Reporting.Services.ServiceStack.ReportsHostBase
-	    Protected Overrides Sub OnCreateDocument(args As CreateDocumentEventArgs)
-	        If args.Extension = "PDF" Then
-	            args.DeviceInfo.Add("OwnerPassword", "password1")
-	            args.DeviceInfo.Add("UserPassword", "password2")
-	        End If
-	    End Sub
-	End Class
-	'#End Region
+````
 
 
 

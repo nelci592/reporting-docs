@@ -37,7 +37,8 @@ The ReportViewer control uses the __ASP.NET session state__ to preserve the repo
             Instead the report item should be taken from the Items collection of the report. Consider the following examples:
                 __Wrong__
 
-{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````C#
+{{source=CodeSnippets\CS\API\Telerik\Reporting\Processing\OutProcSnippets.cs region=WrongItemDataBinding}}
+````C#
 	        void Report1_WrongItemDataBinding(object sender, System.EventArgs e)
 	        {
 	            this.textBox1.Value = "New Value";
@@ -46,41 +47,17 @@ The ReportViewer control uses the __ASP.NET session state__ to preserve the repo
 
 
 
-{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````VB
+{{source=CodeSnippets\VB\API\Telerik\Reporting\Processing\OutProcSnippets.vb region=WrongItemDataBinding}}
+````VB
 	    Private Sub Report1_WrongItemDataBinding(sender As System.Object, e As System.EventArgs) Handles MyBase.NeedDataSource
 	        Me.TextBox1.Value = "New Value"
 	    End Sub
-	    '#End Region
-	
-	    '#region CorrectItemDataBinding
-	    Private Sub Report1_CorrectItemDataBinding(sender As System.Object, e As System.EventArgs) Handles MyBase.NeedDataSource
-	        Dim processingReport = DirectCast(sender, Telerik.Reporting.Processing.Report)
-	        Dim reportDef = DirectCast(processingReport.ItemDefinition, Telerik.Reporting.Report)
-	        Dim textBox As Telerik.Reporting.TextBox = DirectCast(reportDef.Items.Find("TextBox1", True)(0), Telerik.Reporting.TextBox)
-	        textBox.Value = "New value"
-	    End Sub
-	    '#End Region
-	
-	    '#region AttachItemsEvents
-	    Private Sub Report1_ItemDataBinding(sender As System.Object, e As System.EventArgs) Handles MyBase.ItemDataBinding
-	        Dim processingReport = DirectCast(sender, Telerik.Reporting.Processing.Report)
-	        Dim reportDef = DirectCast(processingReport.ItemDefinition, Telerik.Reporting.Report)
-	        Dim chart As Telerik.Reporting.Chart = DirectCast(reportDef.Items.Find("Chart1", True)(0), Telerik.Reporting.Chart)
-	        AddHandler chart.NeedDataSource, AddressOf Chart1_NeedDataSource
-	    End Sub
-	
-	    Private Sub Chart1_NeedDataSource(sender As System.Object, e As System.EventArgs)
-	        Dim processingChart = DirectCast(sender, Telerik.Reporting.Processing.Chart)
-	        Dim chartDef = DirectCast(sender, Telerik.Reporting.Chart)
-	        ' ...
-	    End Sub
-	    '#End Region
-	
-	End Class
+````
 
 __Correct__
 
-{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````C#
+{{source=CodeSnippets\CS\API\Telerik\Reporting\Processing\OutProcSnippets.cs region=CorrectItemDataBinding}}
+````C#
 	        void Report1_CorrectItemDataBinding(object sender, System.EventArgs e)
 	        {
 	            Telerik.Reporting.Processing.Report processingReport = (Telerik.Reporting.Processing.Report)sender;
@@ -92,31 +69,15 @@ __Correct__
 
 
 
-{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````VB
+{{source=CodeSnippets\VB\API\Telerik\Reporting\Processing\OutProcSnippets.vb region=CorrectItemDataBinding}}
+````VB
 	    Private Sub Report1_CorrectItemDataBinding(sender As System.Object, e As System.EventArgs) Handles MyBase.NeedDataSource
 	        Dim processingReport = DirectCast(sender, Telerik.Reporting.Processing.Report)
 	        Dim reportDef = DirectCast(processingReport.ItemDefinition, Telerik.Reporting.Report)
 	        Dim textBox As Telerik.Reporting.TextBox = DirectCast(reportDef.Items.Find("TextBox1", True)(0), Telerik.Reporting.TextBox)
 	        textBox.Value = "New value"
 	    End Sub
-	    '#End Region
-	
-	    '#region AttachItemsEvents
-	    Private Sub Report1_ItemDataBinding(sender As System.Object, e As System.EventArgs) Handles MyBase.ItemDataBinding
-	        Dim processingReport = DirectCast(sender, Telerik.Reporting.Processing.Report)
-	        Dim reportDef = DirectCast(processingReport.ItemDefinition, Telerik.Reporting.Report)
-	        Dim chart As Telerik.Reporting.Chart = DirectCast(reportDef.Items.Find("Chart1", True)(0), Telerik.Reporting.Chart)
-	        AddHandler chart.NeedDataSource, AddressOf Chart1_NeedDataSource
-	    End Sub
-	
-	    Private Sub Chart1_NeedDataSource(sender As System.Object, e As System.EventArgs)
-	        Dim processingChart = DirectCast(sender, Telerik.Reporting.Processing.Chart)
-	        Dim chartDef = DirectCast(sender, Telerik.Reporting.Chart)
-	        ' ...
-	    End Sub
-	    '#End Region
-	
-	End Class
+````
 
 
 
@@ -125,7 +86,8 @@ __Correct__
             them in the ItemDataBinding event of the Report. For example:
               
 
-{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````C#
+{{source=CodeSnippets\CS\API\Telerik\Reporting\Processing\OutProcSnippets.cs region=AttachItemsEvents}}
+````C#
 	        void Report1_ItemDataBinding(object sender, System.EventArgs e)
 	        {
 	            Telerik.Reporting.Processing.Report processingReport = (Telerik.Reporting.Processing.Report)sender;
@@ -144,7 +106,8 @@ __Correct__
 
 
 
-{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````VB
+{{source=CodeSnippets\VB\API\Telerik\Reporting\Processing\OutProcSnippets.vb region=AttachItemsEvents}}
+````VB
 	    Private Sub Report1_ItemDataBinding(sender As System.Object, e As System.EventArgs) Handles MyBase.ItemDataBinding
 	        Dim processingReport = DirectCast(sender, Telerik.Reporting.Processing.Report)
 	        Dim reportDef = DirectCast(processingReport.ItemDefinition, Telerik.Reporting.Report)
@@ -157,9 +120,7 @@ __Correct__
 	        Dim chartDef = DirectCast(sender, Telerik.Reporting.Chart)
 	        ' ...
 	    End Sub
-	    '#End Region
-	
-	End Class
+````
 
 
 

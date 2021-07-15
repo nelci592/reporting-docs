@@ -43,7 +43,8 @@ Lets start with the model now. In case all you need is a report viewer that is u
 Then you can use it directly when you are initializing the report viewer:
         
 
-{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````c#
+{{source=CodeSnippets\MvcCS\Views\Home\SimpleModelBinding.cshtml region=Example}}
+````c#
 	@(Html.TelerikReporting().ReportViewer()
 	       .Id("reportViewer1")
 	       .ServiceUrl("/api/reports/")
@@ -58,7 +59,8 @@ Then you can use it directly when you are initializing the report viewer:
 
 
 
-{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````vb.net
+{{source=CodeSnippets\MvcVB\Views\Home\SimpleModelBinding.vbhtml region=Example}}
+````vb.net
 	@Code
 	    Html.TelerikReporting().ReportViewer() _
 	    .Id("reportViewer1") _
@@ -108,7 +110,8 @@ Now in case you have a more complex scenario where the report viewer depends on 
           Check this snippet:
         
 
-{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````c#
+{{source=CodeSnippets\MvcCS\Models\TemplatedReportViewerViewModel.cs region=AdvancedModelBindingViewModel}}
+````c#
 	    public class TemplatedReportViewerViewModel
 	    {
 	        public string TemplateUri { get; set; }
@@ -118,12 +121,13 @@ Now in case you have a more complex scenario where the report viewer depends on 
 
 
 
-{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````vb.net
+{{source=CodeSnippets\MvcVB\Models\TemplatedReportViewerViewModel.vb region=AdvancedModelBindingViewModel}}
+````vb.net
 	Public Class TemplatedReportViewerViewModel
 	    Public Property TemplateUri() As String
 	    Public Property ReportSource() As UriReportSource
 	End Class
-	'#End Region
+````
 
 
 
@@ -131,7 +135,8 @@ Once you have the model you should create your own logic to populate it (note th
           Then use the model for your view to make it strongly typed:
         
 
-{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````c#
+{{source=CodeSnippets\MvcCS\Views\Home\AdvancedModelBinding.cshtml region=Example}}
+````c#
 	@(Html.TelerikReporting().ReportViewer()
 	       .Id("reportViewer1")
 	       .ServiceUrl("/api/reports/")
@@ -146,7 +151,8 @@ Once you have the model you should create your own logic to populate it (note th
 
 
 
-{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````vb.net
+{{source=CodeSnippets\MvcVB\Views\Home\AdvancedModelBinding.vbhtml region=Example}}
+````vb.net
 	@Code
 	    Html.TelerikReporting().ReportViewer() _
 	    .Id("reportViewer1") _
@@ -196,7 +202,8 @@ There are cases when the supported report sources (Type and Uri) will not be eno
           For example you could pass the id of the report in the database:
         
 
-{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````c#
+{{source=CodeSnippets\MvcCS\Views\Home\CustomModelBinding.cshtml region=Example1}}
+````c#
 	@(Html.TelerikReporting().ReportViewer()
 	       .Id("reportViewer1")
 	       .ServiceUrl("/api/reports/")
@@ -211,7 +218,8 @@ There are cases when the supported report sources (Type and Uri) will not be eno
 
 
 
-{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````vb.net
+{{source=CodeSnippets\MvcVB\Views\Home\CustomModelBinding.vbhtml region=Example1}}
+````vb.net
 	@Code
 	    Html.TelerikReporting().ReportViewer() _
 	    .Id("reportViewer1") _
@@ -267,7 +275,8 @@ There are cases when the supported report sources (Type and Uri) will not be eno
 You can also add parameters, like this:
         
 
-{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````c#
+{{source=CodeSnippets\MvcCS\Views\Home\CustomModelBinding.cshtml region=Example2}}
+````c#
 	@(Html.TelerikReporting().ReportViewer()
 	       .Id("reportViewer1")
 	       .ServiceUrl("/api/reports/")
@@ -282,7 +291,8 @@ You can also add parameters, like this:
 
 
 
-{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````vb.net
+{{source=CodeSnippets\MvcVB\Views\Home\CustomModelBinding.vbhtml region=Example2}}
+````vb.net
 	@Code
 	    Html.TelerikReporting().ReportViewer() _
 	    .Id("reportViewer1") _
@@ -324,7 +334,8 @@ You can also add parameters, like this:
 The view can also be strongly typed:
         
 
-{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````c#
+{{source=CodeSnippets\MvcCS\Views\Home\AdvancedCustomModelBinding.cshtml region=Example}}
+````c#
 	@(Html.TelerikReporting().ReportViewer()
 	       .Id("reportViewer1")
 	       .ServiceUrl("/api/reports/")
@@ -339,7 +350,8 @@ The view can also be strongly typed:
 
 
 
-{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````vb.net
+{{source=CodeSnippets\MvcVB\Views\Home\AdvancedCustomModelBinding.vbhtml region=Example}}
+````vb.net
 	@Code
 	    Html.TelerikReporting().ReportViewer() _
 	    .Id("reportViewer1") _
@@ -382,7 +394,8 @@ Finally on the server side your custom report source resolver can implement the 
           the id and create a report source as per your needs:
         
 
-{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````c#
+{{source=CodeSnippets\MvcCS\Controllers\CustomResolverReportsController.cs region=ModelBindingReportResolver_Implementation}}
+````c#
 	    class ModelBindingReportSourceResolver : IReportSourceResolver
 	    {
 	        public Telerik.Reporting.ReportSource Resolve(string reportId, OperationOrigin operationOrigin, IDictionary<string, object> currentParameterValues)
@@ -404,7 +417,8 @@ Finally on the server side your custom report source resolver can implement the 
 
 
 
-{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````vb.net
+{{source=CodeSnippets\MvcVB\Controllers\CustomResolverReportsController.vb region=ModelBindingReportResolver_Implementation}}
+````vb.net
 	Class ModelBindingReportSourceResolver
 	    Implements IReportSourceResolver
 	    Public Function Resolve(reportId As String, operationOrigin As OperationOrigin, currentParameterValues As IDictionary(Of String, Object)) As Telerik.Reporting.ReportSource Implements Telerik.Reporting.Services.IReportSourceResolver.Resolve
@@ -419,6 +433,6 @@ Finally on the server side your custom report source resolver can implement the 
 	        }
 	    End Function
 	End Class
-	'#End Region
+````
 
 

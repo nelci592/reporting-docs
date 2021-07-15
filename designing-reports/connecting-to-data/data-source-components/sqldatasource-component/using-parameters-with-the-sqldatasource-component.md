@@ -65,7 +65,8 @@ With named parameters, the order in which the parameters are specified in the co
 
 
 
-{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````C#
+{{source=CodeSnippets\CS\API\Telerik\Reporting\SqlDataSourceSnippets.cs region=NamedParametersSnippet}}
+````C#
 	            Telerik.Reporting.SqlDataSource sqlDataSource = new Telerik.Reporting.SqlDataSource();
 	            sqlDataSource.ConnectionString = "MyAdventureWorksDB";
 	            sqlDataSource.SelectCommand = "SELECT * FROM Person.Contact WHERE FirstName = @FirstName AND LastName = @LastName";
@@ -75,42 +76,14 @@ With named parameters, the order in which the parameters are specified in the co
 
 
 
-{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````VB
+{{source=CodeSnippets\VB\API\Telerik\Reporting\SqlDataSourceSnippets.vb region=NamedParametersSnippet}}
+````VB
 	        Dim sqlDataSource As Telerik.Reporting.SqlDataSource = New Telerik.Reporting.SqlDataSource()
 	        sqlDataSource.ConnectionString = "MyAdventureWorksDB"
 	        sqlDataSource.SelectCommand = "SELECT * FROM Person.Contact WHERE FirstName = @FirstName AND LastName = @LastName"
 	        sqlDataSource.Parameters.Add("@FirstName", System.Data.DbType.String, "John")
 	        sqlDataSource.Parameters.Add("@LastName", System.Data.DbType.String, "Smith")
-	        '#End Region
-	    End Sub
-	
-	    <Microsoft.VisualStudio.TestTools.UnitTesting.TestMethod()>
-	    Public Sub PositionalParametersSnippet()
-	        '#Region PositionalParametersSnippet
-	        Dim sqlDataSource As Telerik.Reporting.SqlDataSource = New Telerik.Reporting.SqlDataSource()
-	        sqlDataSource.ProviderName = "System.Data.OleDb"
-	        sqlDataSource.ConnectionString = "Provider=SQLOLEDB;Data Source=(local)\SQLEXPRESS;Initial Catalog=AdventureWorks;Integrated Security=SSPI"
-	        sqlDataSource.SelectCommand = "SELECT * FROM Person.Contact WHERE FirstName = ? AND LastName = ?"
-	        sqlDataSource.Parameters.Add("FirstName", System.Data.DbType.String, "John")
-	        sqlDataSource.Parameters.Add("LastName", System.Data.DbType.String, "Smith")
-	        '#End Region
-	    End Sub
-	
-	    <Microsoft.VisualStudio.TestTools.UnitTesting.TestMethod()>
-	    Public Sub BindingExpressionSnippet()
-	        '#Region BindingExpressionSnippet
-	        Dim report As Telerik.Reporting.Report = New Telerik.Reporting.Report()
-	        report.ReportParameters.Add("FirstName", ReportParameterType.String, "John")
-	        report.ReportParameters.Add("LastName", ReportParameterType.String, "Smith")
-	        Dim sqlDataSource As Telerik.Reporting.SqlDataSource = New Telerik.Reporting.SqlDataSource()
-	        sqlDataSource.ConnectionString = "MyAdventureWorksDB"
-	        sqlDataSource.SelectCommand = "SELECT * FROM Person.Contact WHERE FirstName = @FirstName AND LastName = @LastName"
-	        sqlDataSource.Parameters.Add("@FirstName", System.Data.DbType.String, "=Parameters.FirstName")
-	        sqlDataSource.Parameters.Add("@LastName", System.Data.DbType.String, "=Parameters.LastName")
-	        report.DataSource = sqlDataSource
-	        '#End Region
-	    End Sub
-	End Class
+````
 
 Using Parameters with the OLE DB and ODBC Providers
 
@@ -139,7 +112,8 @@ The following example shows how to specify parameters for a __SqlDataSource__ co
 
 
 
-{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````C#
+{{source=CodeSnippets\CS\API\Telerik\Reporting\SqlDataSourceSnippets.cs region=PositionalParametersSnippet}}
+````C#
 	            Telerik.Reporting.SqlDataSource sqlDataSource = new Telerik.Reporting.SqlDataSource();
 	            sqlDataSource.ProviderName = "System.Data.OleDb";
 	            sqlDataSource.ConnectionString = "Provider=SQLOLEDB;Data Source=(local)\\SQLEXPRESS;Initial Catalog=AdventureWorks;Integrated Security=SSPI";
@@ -150,31 +124,15 @@ The following example shows how to specify parameters for a __SqlDataSource__ co
 
 
 
-{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````VB
+{{source=CodeSnippets\VB\API\Telerik\Reporting\SqlDataSourceSnippets.vb region=PositionalParametersSnippet}}
+````VB
 	        Dim sqlDataSource As Telerik.Reporting.SqlDataSource = New Telerik.Reporting.SqlDataSource()
 	        sqlDataSource.ProviderName = "System.Data.OleDb"
 	        sqlDataSource.ConnectionString = "Provider=SQLOLEDB;Data Source=(local)\SQLEXPRESS;Initial Catalog=AdventureWorks;Integrated Security=SSPI"
 	        sqlDataSource.SelectCommand = "SELECT * FROM Person.Contact WHERE FirstName = ? AND LastName = ?"
 	        sqlDataSource.Parameters.Add("FirstName", System.Data.DbType.String, "John")
 	        sqlDataSource.Parameters.Add("LastName", System.Data.DbType.String, "Smith")
-	        '#End Region
-	    End Sub
-	
-	    <Microsoft.VisualStudio.TestTools.UnitTesting.TestMethod()>
-	    Public Sub BindingExpressionSnippet()
-	        '#Region BindingExpressionSnippet
-	        Dim report As Telerik.Reporting.Report = New Telerik.Reporting.Report()
-	        report.ReportParameters.Add("FirstName", ReportParameterType.String, "John")
-	        report.ReportParameters.Add("LastName", ReportParameterType.String, "Smith")
-	        Dim sqlDataSource As Telerik.Reporting.SqlDataSource = New Telerik.Reporting.SqlDataSource()
-	        sqlDataSource.ConnectionString = "MyAdventureWorksDB"
-	        sqlDataSource.SelectCommand = "SELECT * FROM Person.Contact WHERE FirstName = @FirstName AND LastName = @LastName"
-	        sqlDataSource.Parameters.Add("@FirstName", System.Data.DbType.String, "=Parameters.FirstName")
-	        sqlDataSource.Parameters.Add("@LastName", System.Data.DbType.String, "=Parameters.LastName")
-	        report.DataSource = sqlDataSource
-	        '#End Region
-	    End Sub
-	End Class
+````
 
 Binding SQL Query Parameters to Report Parameters
 
@@ -184,7 +142,8 @@ The following code example shows how to bind the parameters of an SQL query to t
 
 
 
-{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````C#
+{{source=CodeSnippets\CS\API\Telerik\Reporting\SqlDataSourceSnippets.cs region=BindingExpressionSnippet}}
+````C#
 	            var report = new Report1();
 	            report.ReportParameters.Add("FirstName", ReportParameterType.String, "John");
 	            report.ReportParameters.Add("LastName", ReportParameterType.String, "Smith");
@@ -198,7 +157,8 @@ The following code example shows how to bind the parameters of an SQL query to t
 
 
 
-{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````VB
+{{source=CodeSnippets\VB\API\Telerik\Reporting\SqlDataSourceSnippets.vb region=BindingExpressionSnippet}}
+````VB
 	        Dim report As Telerik.Reporting.Report = New Telerik.Reporting.Report()
 	        report.ReportParameters.Add("FirstName", ReportParameterType.String, "John")
 	        report.ReportParameters.Add("LastName", ReportParameterType.String, "Smith")
@@ -208,8 +168,6 @@ The following code example shows how to bind the parameters of an SQL query to t
 	        sqlDataSource.Parameters.Add("@FirstName", System.Data.DbType.String, "=Parameters.FirstName")
 	        sqlDataSource.Parameters.Add("@LastName", System.Data.DbType.String, "=Parameters.LastName")
 	        report.DataSource = sqlDataSource
-	        '#End Region
-	    End Sub
-	End Class
+````
 
 

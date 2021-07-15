@@ -102,7 +102,8 @@ To run the localized report in a specific language that is different from the th
 >important Note that the culture settings must be applied before creating an instance of the report.            This ensures the correct report's resource file will be used on processing the document.          
 
 
-{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````C#
+{{source=CodeSnippets\CS\API\Telerik\Reporting\LocalizationSnippets.cs region=SetThreadCulture}}
+````C#
 	            //Create new CultureInfo
 	            var cultureInfo = new System.Globalization.CultureInfo("es-MX");
 	
@@ -123,7 +124,8 @@ To run the localized report in a specific language that is different from the th
 
 
 
-{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````VB
+{{source=CodeSnippets\VB\API\Telerik\Reporting\LocalizationSnippets.vb region=SetThreadCulture}}
+````VB
 	
 	        'Create new CultureInfo
 	        Dim cultureInfo = New System.Globalization.CultureInfo("es-MX")
@@ -140,11 +142,7 @@ To run the localized report in a specific language that is different from the th
 	        ' If this is a Windows application, refresh the report
 	        reportViewer1.RefreshReport()
 	
-	        '#End Region
-	
-	    End Sub
-	
-	End Class
+````
 
 
 

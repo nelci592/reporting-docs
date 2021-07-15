@@ -25,7 +25,8 @@ Except the preconfigured cache providers, additional providers can be used. To d
 
 ## 
 
-{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````C#
+{{source=CodeSnippets\CS\API\Telerik\Reporting\CustomCacheProviderSnippets.cs region=CustomCacheProviderImplementation}}
+````C#
 	
 	    public class MyCacheProvider : Telerik.Reporting.Cache.Interfaces.ICacheProvider
 	    {
@@ -39,7 +40,8 @@ Except the preconfigured cache providers, additional providers can be used. To d
 
 
 
-{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````VB
+{{source=CodeSnippets\VB\API\Telerik\Reporting\CustomCacheProviderSnippets.vb region=CustomCacheProviderImplementation}}
+````VB
 	
 	    Public Class MyCacheProvider
 	        Implements Telerik.Reporting.Cache.Interfaces.ICacheProvider
@@ -50,50 +52,12 @@ Except the preconfigured cache providers, additional providers can be used. To d
 	
 	    End Class
 	
-	    '#End Region
-	
-	    '#Region "CustomCacheImplementation"
-	
-	    Public Class MyCache
-	        Implements Telerik.Reporting.Cache.Interfaces.ICache
-	
-	        ReadOnly cache As System.Collections.Generic.Dictionary(Of String, Byte())
-	
-	        Public Sub New(parameters As System.Collections.IDictionary)
-	
-	            ' The 'parameters' dictionary is initialized from the Telerik.Reporting/Cache configuration section.
-	
-	            Me.cache = New System.Collections.Generic.Dictionary(Of String, Byte())()
-	        End Sub
-	
-	        Public Function HasValue(key As String) As Boolean Implements ICache.HasValue
-	            Return Me.cache.ContainsKey(key)
-	        End Function
-	
-	        Public Function GetValue(key As String) As Byte() Implements ICache.GetValue
-	            Return Me.cache(key)
-	        End Function
-	
-	        Public Sub SetValue(key As String, value As Byte()) Implements ICache.SetValue
-	            Me.cache(key) = value
-	        End Sub
-	
-	        Public Sub Clear() Implements ICache.Clear
-	            Me.cache.Clear()
-	        End Sub
-	
-	        Public Sub Dispose() Implements IDisposable.Dispose
-	            Me.Clear()
-	        End Sub
-	    End Class
-	
-	    '#End Region
-	
-	End Class
+````
 
 
 
-{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````C#
+{{source=CodeSnippets\CS\API\Telerik\Reporting\CustomCacheProviderSnippets.cs region=CustomCacheImplementation}}
+````C#
 	    
 	    public class MyCache : Telerik.Reporting.Cache.Interfaces.ICache
 	    {
@@ -136,7 +100,8 @@ Except the preconfigured cache providers, additional providers can be used. To d
 
 
 
-{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````VB
+{{source=CodeSnippets\VB\API\Telerik\Reporting\CustomCacheProviderSnippets.vb region=CustomCacheImplementation}}
+````VB
 	
 	    Public Class MyCache
 	        Implements Telerik.Reporting.Cache.Interfaces.ICache
@@ -171,9 +136,7 @@ Except the preconfigured cache providers, additional providers can be used. To d
 	        End Sub
 	    End Class
 	
-	    '#End Region
-	
-	End Class
+````
 
 
 

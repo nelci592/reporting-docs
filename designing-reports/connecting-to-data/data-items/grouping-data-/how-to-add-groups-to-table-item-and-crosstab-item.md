@@ -244,7 +244,8 @@ A new details group is added as a child group in the Grouping pane in the
 
 1. Click __OK__.Adding a group to Table data item programatically
 
-{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````C#
+{{source=CodeSnippets\CS\API\Telerik\Reporting\TableSnippets.cs region=AddNewGroupSnippet}}
+````C#
 	
 	            Telerik.Reporting.TableGroup group1 = new Telerik.Reporting.TableGroup();
 	            group1.Name = "ProductID1";
@@ -266,7 +267,8 @@ A new details group is added as a child group in the Grouping pane in the
 
 
 
-{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````VB
+{{source=CodeSnippets\VB\API\Telerik\Reporting\TableSnippets.vb region=AddNewGroupSnippet}}
+````VB
 	
 	        Dim group1 As New Telerik.Reporting.TableGroup()
 	        group1.Name = "RowGroup1"
@@ -283,18 +285,6 @@ A new details group is added as a child group in the Grouping pane in the
 	        group1.ReportItem = textBox1
 	
 	        table1.RowGroups.Add(group1)
-	        '#End Region
-	
-	        Assert.AreEqual(1, table1.RowGroups.Count)
-	        Assert.AreEqual("=Fields.ProductID", table1.RowGroups(0).Groupings(0).Expression)
-	
-	        Assert.AreEqual("=Fields.ProductID", table1.RowGroups(0).Filters(0).Expression)
-	        Assert.AreEqual(Telerik.Reporting.FilterOperator.Equal, table1.RowGroups(0).Filters(0).[Operator])
-	        Assert.AreEqual("=10", table1.RowGroups(0).Filters(0).Value)
-	
-	        Assert.AreEqual("=Fields.ProductID", table1.RowGroups(0).Sortings(0).Expression)
-	        Assert.AreEqual(Telerik.Reporting.SortDirection.Asc, table1.RowGroups(0).Sortings(0).Direction)
-	    End Sub
-	End Class
+````
 
 T:Telerik.Reporting.TableP:Telerik.Reporting.Table.ColumnGroupsP:Telerik.Reporting.Table.RowGroups

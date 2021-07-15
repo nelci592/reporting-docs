@@ -126,7 +126,8 @@ When complicated logic should be applied or .NET framework routines need to be u
             Switch to code window and place the following code snippet:
             
 
-{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````C#
+{{source=CodeSnippets\CS\API\Telerik\Reporting\Expressions\ReportItemDataObjectSnippets.cs region=ReportItemDataObjectGetContactInfo}}
+````C#
 	        public static string GetContactInfo(object sender)
 	        {
 	            var dataObject = (Telerik.Reporting.Processing.IDataObject)sender;
@@ -142,7 +143,8 @@ When complicated logic should be applied or .NET framework routines need to be u
 
 
 
-{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````VB
+{{source=CodeSnippets\VB\API\Telerik\Reporting\Expressions\ReportItemDataObjectSnippets.vb region=ReportItemDataObjectGetContactInfo}}
+````VB
 	    Public Shared Function GetContactInfo(sender As Object) As String
 	        Dim dataObject = DirectCast(sender, Telerik.Reporting.Processing.IDataObject)
 	        Dim contactInfo = TryCast(dataObject("AdditionalContactInfo"), String)

@@ -65,7 +65,8 @@ Determines character encoding used to encode the barcode contents. By default it
 
 ## Examples
 
-{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````cs
+{{source=CodeSnippets\CS\API\Telerik\Reporting\BarcodeSnippets.cs region=Barcode_DataMatrixEncoder_Settings}}
+````cs
 	            var encoder = new Telerik.Reporting.Barcodes.DataMatrixEncoder();
 	
 	            encoder.Encodation = Telerik.Reporting.Barcodes.DataMatrix.Encodation.Ascii;
@@ -77,7 +78,8 @@ Determines character encoding used to encode the barcode contents. By default it
 
 
 
-{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````vbnet
+{{source=CodeSnippets\VB\API\Telerik\Reporting\BarcodeSnippets.vb region=Barcode_DataMatrixEncoder_Settings}}
+````vbnet
 	        Dim encoder = New Telerik.Reporting.Barcodes.DataMatrixEncoder()
 	
 	        encoder.Encodation = Telerik.Reporting.Barcodes.DataMatrix.Encodation.Ascii
@@ -85,11 +87,7 @@ Determines character encoding used to encode the barcode contents. By default it
 	        encoder.TextEncoding = System.Text.UTF8Encoding.UTF8
 	
 	        Me.barcode1.Encoder = encoder
-	        '#End Region
-	
-	        Assert.IsNotNull(Me.barcode1.Encoder)
-	    End Sub
-	End Class
+````
 
 
 

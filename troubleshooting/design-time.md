@@ -29,7 +29,8 @@ The most reliable way to specify a report for the ReportViewer is to do this pro
           report viewer, on the Page_Load event of the page:
         
 
-{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````C#
+{{source=CodeSnippets\CS\API\Telerik\ReportViewer\WebForms\WebForm1.aspx.cs region=Webviewer_SetReportSource}}
+````C#
 	        protected void Page_Load(object sender, EventArgs e)
 	        {
 	            if (!IsPostBack)
@@ -43,7 +44,8 @@ The most reliable way to specify a report for the ReportViewer is to do this pro
 
 
 
-{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````VB
+{{source=CodeSnippets\VB\API\Telerik\ReportViewer\WebForms\WebForm1.aspx.vb region=Webviewer_SetReportSource}}
+````VB
 	    Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
 	        If Not IsPostBack Then
 	            Dim typeReportSource As New Telerik.Reporting.TypeReportSource()
@@ -52,16 +54,7 @@ The most reliable way to specify a report for the ReportViewer is to do this pro
 	            ReportViewer1.RefreshReport()
 	        End If
 	    End Sub
-	    '#End Region
-	````VB
-	    Protected Sub Button1_Click(sender As Object, e As EventArgs)
-	        Dim typeReportSource As New Telerik.Reporting.TypeReportSource()
-	        typeReportSource.TypeName = "ListBoundReport, VB.ReportLibrary"
-	        ReportViewer1.ReportSource = typeReportSource
-	    End Sub
-	    '#End Region
-	
-	End Class
+````
 
 
 

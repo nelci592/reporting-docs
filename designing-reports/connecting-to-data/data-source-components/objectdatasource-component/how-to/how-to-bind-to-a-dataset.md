@@ -18,7 +18,8 @@ In the code snippet below a DataSet object is filled with three tables and then 
 
 
 
-{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````C#
+{{source=CodeSnippets\CS\API\Telerik\Reporting\ObjectDataSourceSnippets.cs region=HowToBindToDataSetSnippet}}
+````C#
 	
 	        private void Form5_Load(object sender, EventArgs e)
 	        {
@@ -72,7 +73,8 @@ In the code snippet below a DataSet object is filled with three tables and then 
 
 
 
-{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````VB
+{{source=CodeSnippets\VB\API\Telerik\Reporting\ObjectDataSourceSnippets.vb region=HowToBindToDataSetSnippet}}
+````VB
 	
 	    Private Sub Form5_Load(ByVal sender As System.Object, ByVal e As System.EventArgs)
 	
@@ -125,22 +127,6 @@ In the code snippet below a DataSet object is filled with three tables and then 
 	        Return dataSet
 	    End Function
 	
-	    '#End Region
-	End Class
-	
-	Class SampleDataSourceSnippets
-	
-	    '#Region SampleDataSource
-	    Class Product
-	        'properties
-	    End Class
-	
-	    <DataObject()>
-	    Class Products
-	        'objects
-	    End Class
-	
-	    '#End Region
-	End Class
+````
 
 

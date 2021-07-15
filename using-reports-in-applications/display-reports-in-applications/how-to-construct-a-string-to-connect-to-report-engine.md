@@ -35,7 +35,8 @@ You can use a T:Telerik.ReportViewer.Common.EmbeddedConnectionInfo instance to h
           leave it empty - the viewer will use the embedded report engine by default.
         
 
-{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````C#
+{{source=CodeSnippets\CS\API\Telerik\ReportViewer\WinForms\Form1.cs region=WinFormsEmbeddedReportEngineConnectionSnippet}}
+````C#
 	        private void SetEmbeddedReportEngineConnection(object sender, System.EventArgs e)
 	        {
 	            this.reportViewer1.ReportEngineConnection = new Telerik.ReportViewer.Common.EmbeddedConnectionInfo().ConnectionString;
@@ -45,7 +46,8 @@ You can use a T:Telerik.ReportViewer.Common.EmbeddedConnectionInfo instance to h
 
 
 
-{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````VB
+{{source=CodeSnippets\VB\API\Telerik\ReportViewer\WinForms\Form1.vb region=WinFormsEmbeddedReportEngineConnectionSnippet}}
+````VB
 	    Private Sub SetEmbeddedReportEngineConnection(sender As Object, e As System.EventArgs)
 	        Me.ReportViewer1.ReportEngineConnection = New Telerik.ReportViewer.Common.EmbeddedConnectionInfo().ConnectionString
 	        'if the ReportEngineConnection property is set to null or empty string, it will use the EmbeddedReportEngineConnectionInfo by default.
@@ -178,7 +180,8 @@ __Example: __`engine=ReportServer;uri=http://localhost:83;username=admin;passwor
 You can use a T:Telerik.ReportViewer.Common.ReportServerConnectionInfo instance to help you create the connection string.
         
 
-{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````C#
+{{source=CodeSnippets\CS\API\Telerik\ReportViewer\WinForms\Form1.cs region=WinFormsReportServerReportEngineConnectionSnippet}}
+````C#
 	        private void SetReportServerReportEngineConnection(object sender, System.EventArgs e)
 	        {
 	            this.reportViewer1.ReportEngineConnection = new Telerik.ReportViewer.Common.ReportServerConnectionInfo("http://reportserver:83", "user", "pass", 20).ConnectionString;
@@ -187,7 +190,8 @@ You can use a T:Telerik.ReportViewer.Common.ReportServerConnectionInfo instance 
 
 
 
-{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````VB
+{{source=CodeSnippets\VB\API\Telerik\ReportViewer\WinForms\Form1.vb region=WinFormsReportServerReportEngineConnectionSnippet}}
+````VB
 	    Private Sub SetReportServerReportEngineConnection(sender As Object, e As System.EventArgs)
 	        Me.ReportViewer1.ReportEngineConnection = New Telerik.ReportViewer.Common.ReportServerConnectionInfo("http://reportserver:83", "user", "pass", 20).ConnectionString
 	    End Sub
@@ -313,7 +317,8 @@ __Example: __`engine=RestService;uri=http://localhost:18103/api/reports;token=au
 You can use a T:Telerik.ReportViewer.Common.RestServiceConnectionInfo instance to help you create the connection string.
         
 
-{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````C#
+{{source=CodeSnippets\CS\API\Telerik\ReportViewer\WinForms\Form1.cs region=WinFormsRestServiceReportEngineConnectionSnippet}}
+````C#
 	        private void SetRestServiceReportEngineConnection(object sender, System.EventArgs e)
 	        {
 	            this.reportViewer1.ReportEngineConnection = new Telerik.ReportViewer.Common.RestServiceConnectionInfo("http://servicehost:83/api/reports", "authToken", 20).ConnectionString;
@@ -322,7 +327,8 @@ You can use a T:Telerik.ReportViewer.Common.RestServiceConnectionInfo instance t
 
 
 
-{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````VB
+{{source=CodeSnippets\VB\API\Telerik\ReportViewer\WinForms\Form1.vb region=WinFormsRestServiceReportEngineConnectionSnippet}}
+````VB
 	    Private Sub SetRestServiceReportEngineConnection(sender As Object, e As System.EventArgs)
 	        Me.ReportViewer1.ReportEngineConnection = New Telerik.ReportViewer.Common.RestServiceConnectionInfo("http://servicehost:83/api/reports", "authToken", 20).ConnectionString
 	    End Sub

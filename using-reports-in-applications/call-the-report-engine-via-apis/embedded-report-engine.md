@@ -35,7 +35,8 @@ Some formats (MHTML, PDF, XLS(X), RTF, DOCX, PPTX, CSV) produce a single documen
           M:Telerik.Reporting.Processing.ReportProcessor.RenderReport(System.String,Telerik.Reporting.ReportSource,System.Collections.Hashtable):
         
 
-{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````C#
+{{source=CodeSnippets\CS\API\Telerik\Reporting\Processing\ReportProcessorSnippets.cs region=Export_Single_Stream_Snippet}}
+````C#
 	
 	            var reportProcessor = new Telerik.Reporting.Processing.ReportProcessor();
 	
@@ -85,7 +86,8 @@ Some formats (MHTML, PDF, XLS(X), RTF, DOCX, PPTX, CSV) produce a single documen
 
 
 
-{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````VB
+{{source=CodeSnippets\VB\API\Telerik\Reporting\Processing\ReportProcessorSnippets.vb region=Export_Single_Stream_Snippet}}
+````VB
 	
 	        Dim reportProcessor As New Telerik.Reporting.Processing.ReportProcessor()
 	
@@ -130,70 +132,7 @@ Some formats (MHTML, PDF, XLS(X), RTF, DOCX, PPTX, CSV) produce a single documen
 	            fs.Write(result.DocumentBytes, 0, result.DocumentBytes.Length)
 	        End Using
 	
-	        '#End Region
-	
-	        System.Diagnostics.Debug.WriteLine("File written at: " + filePath)
-	
-	        Assert.IsNotNull(result.DocumentBytes)
-	    End Sub
-	
-	    Class ReportCatalog
-	        Inherits Report
-	    End Class
-	
-	
-	    <TestMethod()> _
-	    Public Sub RenderReport_Test()
-	        Dim reportSource As New InstanceReportSource()
-	
-	        reportSource.ReportDocument = New Report1()
-	
-	        Assert.IsTrue(Me.RenderReport(reportSource))
-	    End Sub
-	
-	    '#Region "Export_CreateStream_Callback_Snippet"
-	
-	    Dim streams As New System.Collections.Generic.List(Of System.IO.Stream)()
-	
-	    Public Function RenderReport(reportSource As ReportSource) As Boolean
-	        Dim reportProcessor As New Telerik.Reporting.Processing.ReportProcessor()
-	        Dim documentName As String = ""
-	
-	        'specify the output format of the produced image.
-	        Dim deviceInfo As New System.Collections.Hashtable()
-	        deviceInfo("OutputFormat") = "JPEG"
-	
-	        Dim result As Boolean = reportProcessor.RenderReport("IMAGE", reportSource, deviceInfo, AddressOf Me.CreateStream, documentName)
-	        Me.CloseStreams()
-	
-	        Return result
-	    End Function
-	
-	    Private Sub CloseStreams()
-	        For Each stream As System.IO.Stream In Me.streams
-	            stream.Close()
-	        Next
-	        Me.streams.Clear()
-	    End Sub
-	
-	    Private Function CreateStream(name As String, extension As String, encoding As System.Text.Encoding, mimeType As String) As System.IO.Stream
-	        Dim path As String = System.IO.Path.GetTempPath()
-	        Dim filePath As String = System.IO.Path.Combine(path, name + "." + extension)
-	
-	        Dim fs As New System.IO.FileStream(filePath, System.IO.FileMode.Create)
-	        Me.streams.Add(fs)
-	        Return fs
-	    End Function
-	
-	    '#End Region
-	
-	    Private Class MyReport
-	        Inherits Report
-	    End Class
-	End Class
-	
-	
-	
+````
 
 
 
@@ -214,7 +153,8 @@ Some formats produce multiple files, for example HTML outputs all pages and rela
           format - BMP, GIF, JPEG. Here is an example that renders a report as a JPEG image:
         
 
-{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````C#
+{{source=CodeSnippets\CS\API\Telerik\Reporting\Processing\ReportProcessorSnippets.cs region=Export_CreateStream_Callback_Snippet}}
+````C#
 	
 	        System.Collections.Generic.List<System.IO.Stream> streams =
 	            new System.Collections.Generic.List<System.IO.Stream>();
@@ -290,7 +230,8 @@ Some formats produce multiple files, for example HTML outputs all pages and rela
 
 
 
-{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````VB
+{{source=CodeSnippets\VB\API\Telerik\Reporting\Processing\ReportProcessorSnippets.vb region=Export_CreateStream_Callback_Snippet}}
+````VB
 	
 	    Dim streams As New System.Collections.Generic.List(Of System.IO.Stream)()
 	
@@ -324,15 +265,7 @@ Some formats produce multiple files, for example HTML outputs all pages and rela
 	        Return fs
 	    End Function
 	
-	    '#End Region
-	
-	    Private Class MyReport
-	        Inherits Report
-	    End Class
-	End Class
-	
-	
-	
+````
 
 
 

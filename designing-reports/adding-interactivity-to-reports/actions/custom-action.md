@@ -23,7 +23,8 @@ To define a T:Telerik.Reporting.CustomAction use the [Edit Action Dialog]({%slug
 Here is an example how to get the custom action's parameters in __InteractiveActionExecuting()__ event of __WinForms Report Viewer__.
       
 
-{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````C#
+{{source=CodeSnippets\CS\API\Telerik\ReportViewer\WinForms\Form1.cs region=WinFormsCustomInteractiveActionExecutingEventSnippet}}
+````C#
 	
 	        void reportViewer1_CustomInteractiveActionExecuting(object sender, Telerik.ReportViewer.Common.InteractiveActionCancelEventArgs args)
 	        {
@@ -47,7 +48,8 @@ Here is an example how to get the custom action's parameters in __InteractiveAct
 
 
 
-{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````VB
+{{source=CodeSnippets\VB\API\Telerik\ReportViewer\WinForms\Form1.vb region=WinFormsCustomInteractiveActionExecutingEventSnippet}}
+````VB
 	    ' Handles the InteractiveActionExecuting event
 	    ' Do not forget to add the WithEvents clause on ReportViewer1 instantiation if needed.
 	    Private Sub reportViewer1_CustomInteractiveActionExecuting(sender As Object, args As Telerik.ReportViewer.Common.InteractiveActionCancelEventArgs) Handles ReportViewer1.InteractiveActionExecuting

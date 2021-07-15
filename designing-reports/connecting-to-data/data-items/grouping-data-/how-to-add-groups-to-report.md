@@ -192,7 +192,8 @@ Report groups are defined by adding __Group__ objects to the report’s __Groups
 
 ## Adding a group to a Report programatically
 
-{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````C#
+{{source=CodeSnippets\CS\API\Telerik\Reporting\ReportSnippets.cs region=AddNewGroupSnippet}}
+````C#
 	
 	            Telerik.Reporting.Group group1 = new Telerik.Reporting.Group();
 	            group1.Name = "group1";
@@ -212,7 +213,8 @@ Report groups are defined by adding __Group__ objects to the report’s __Groups
 
 
 
-{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````VB
+{{source=CodeSnippets\VB\API\Telerik\Reporting\ReportSnippets.vb region=AddNewGroupSnippet}}
+````VB
 	
 	        Dim group1 As New Telerik.Reporting.Group()
 	        group1.Name = "group1"
@@ -227,64 +229,7 @@ Report groups are defined by adding __Group__ objects to the report’s __Groups
 	        group1.Sortings.Add(New Telerik.Reporting.Sorting("=Fields.ProductID", Telerik.Reporting.SortDirection.Asc))
 	
 	        report1.Groups.Add(group1)
-	        '#End Region
-	
-	        Assert.AreEqual(1, report1.Groups.Count)
-	        Assert.AreEqual("=Fields.ProductID", report1.Groups(0).Groupings(0).Expression)
-	
-	        Assert.AreEqual("=Fields.ProductID", report1.Groups(0).Filters(0).Expression)
-	        Assert.AreEqual(Telerik.Reporting.FilterOperator.Equal, report1.Groups(0).Filters(0).[Operator])
-	        Assert.AreEqual("=10", report1.Groups(0).Filters(0).Value)
-	
-	        Assert.AreEqual("=Fields.ProductID", report1.Groups(0).Sortings(0).Expression)
-	        Assert.AreEqual(Telerik.Reporting.SortDirection.Asc, report1.Groups(0).Sortings(0).Direction)
-	    End Sub
-	
-	    <TestMethod()> _
-	    Public Sub Add_ReportParameter_To_Report()
-	        Dim report1 As New Report1()
-	
-	        '#Region "AddNewReportParameterSnippet"
-	
-	        Dim reportParameter1 As New Telerik.Reporting.ReportParameter()
-	        reportParameter1.Name = "Parameter1"
-	        reportParameter1.Text = "Enter Value for Parameter1"
-	        reportParameter1.Type = Telerik.Reporting.ReportParameterType.Integer
-	        reportParameter1.AllowBlank = False
-	        reportParameter1.AllowNull = False
-	        reportParameter1.Value = "=10"
-	        reportParameter1.Visible = True
-	        report1.ReportParameters.Add(reportParameter1)
-	
-	        '#End Region
-	
-	        Dim objectDataSource1 As New Telerik.Reporting.ObjectDataSource()
-	
-	        '#Region Define_AvailableValues_for_ReportParameter_Snippet()
-	
-	        reportParameter1.AvailableValues.DataSource = objectDataSource1
-	        reportParameter1.AvailableValues.ValueMember = "= Fields.EmployeeID"
-	        reportParameter1.AvailableValues.DisplayMember = "= Fields.FirstName"
-	        Dim filter1 As New Telerik.Reporting.Filter()
-	        filter1.Expression = "=Fields.ProductCategory"
-	        filter1.Operator = Telerik.Reporting.FilterOperator.Equal
-	        filter1.Value = "=Parameters.ProductCategory"
-	        reportParameter1.AvailableValues.Filters.AddRange(New Telerik.Reporting.Filter() {filter1})
-	        Dim sorting1 As New Telerik.Reporting.Sorting()
-	        sorting1.Expression = "=Fields.ProductSubcategory"
-	        sorting1.Direction = Telerik.Reporting.SortDirection.Asc
-	        reportParameter1.AvailableValues.Sortings.AddRange(New Telerik.Reporting.Sorting() {sorting1})
-	
-	        '#End Region
-	
-	        Assert.AreEqual(1, report1.ReportParameters.Count)
-	        Assert.AreEqual("Parameter1", report1.ReportParameters(0).Name)
-	        Assert.AreEqual("Enter Value for Parameter1", report1.ReportParameters(0).Text)
-	        Assert.AreEqual("=10", report1.ReportParameters(0).Value)
-	
-	    End Sub
-	
-	End Class
+````
 
 
 

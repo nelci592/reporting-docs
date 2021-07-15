@@ -63,7 +63,8 @@ Make sure that the project have the following assembly references:
 [How to implement the ReportsController in an application]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-web-api-implementation/how-to-implement-the-reportscontroller-in-an-application%});
             
 
-{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````C#
+{{source=CodeSnippets\MvcCS\SelfHostedSnippets\Program.cs region=SelfHostedRestService}}
+````C#
 	    using System;
 	    using System.Linq;
 	    using System.Web.Http.SelfHost;
@@ -88,7 +89,8 @@ Make sure that the project have the following assembly references:
 
 
 
-{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````VB
+{{source=CodeSnippets\MvcVB\SelfHostedSnippets\Program.vb region=SelfHostedRestService}}
+````VB
 	Imports System.Web.Http.SelfHost
 	Imports Telerik.Reporting.Services.WebApi
 	
@@ -109,7 +111,7 @@ Make sure that the project have the following assembly references:
 	
 	End Class
 	
-	'#End Region
+````
 
 
 

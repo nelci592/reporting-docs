@@ -12,6 +12,10 @@ TABLES with multiple lines in the same cell - change '\r\n' with '<br/>'.
 
 BOLD externalLink - change XSLT schema for legacyBold 
 
+code tag - sourceFile fixed to the local one
+
+
+
 
 
 Remaining:

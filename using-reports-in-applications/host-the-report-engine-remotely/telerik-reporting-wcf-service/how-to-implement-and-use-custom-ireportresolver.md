@@ -48,7 +48,8 @@ Telerik Reports definitions to be exposed through the Reporting Service
 Implement the Telerik.Reporting.Service.IReportResolver
                     
 
-{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````C#
+{{source=CodeSnippets\CS\API\Telerik\Reporting\Service\ReportServiceBaseSnippets.cs region=ReportResolverBasic}}
+````C#
 	    class ReportResolver : IReportResolver
 	    {
 	        public ReportSource Resolve(string report)
@@ -61,7 +62,8 @@ Implement the Telerik.Reporting.Service.IReportResolver
 
 
 
-{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````VB
+{{source=CodeSnippets\VB\API\Telerik\Reporting\Service\ReportServiceBaseSnippets.vb region=ReportResolverBasic}}
+````VB
 	    Class ReportResolver
 	        Implements IReportResolver
 	        Public Function Resolve(report As String) As ReportSource Implements IReportResolver.Resolve
@@ -69,41 +71,15 @@ Implement the Telerik.Reporting.Service.IReportResolver
 	            Throw New NotImplementedException()
 	        End Function
 	    End Class
-	    '#End Region
-	    '#Region ReportResolverWithFallBack
-	    Class ReportResolverWithFallBack
-	        Implements IReportResolver
-	        ReadOnly parentResolver As IReportResolver
-	
-	        Public Sub New(parentResolver As IReportResolver)
-	            Me.parentResolver = parentResolver
-	        End Sub
-	
-	        Public Function Resolve(report As String) As ReportSource Implements IReportResolver.Resolve
-	            Dim reportDocument As IReportDocument = Nothing
-	            reportDocument = Me.CustomReportResolver(report)
-	
-	            If reportDocument Is Nothing AndAlso Me.parentResolver IsNot Nothing Then
-	                reportDocument = Me.parentResolver.Resolve(report)
-	            End If
-	
-	            Return reportDocument
-	        End Function
-	
-	        Public Function CustomReportResolver(report As String) As ReportSource
-	            'TODO implement custom report resolving mechanism
-	            Return Nothing
-	        End Function
-	    End Class
-	    '#End Region
-	End Class
+````
 
 
 
 In order to utilize your IReportResolver implementation, create a Telerik.Reporting.Service subclass and in your subclass constructor pass your IReportResolver implementation to the Telerik.Reporting.ServiceBase.ReportResolver property:
                     
 
-{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````C#
+{{source=CodeSnippets\CS\API\Telerik\Reporting\Service\ReportServiceBaseSnippets.cs region=ReportServiceReportResolverBasic}}
+````C#
 	    class CustomReportService : ReportService
 	    {
 	        static readonly IReportResolver resolver = new ReportResolver();
@@ -117,7 +93,8 @@ In order to utilize your IReportResolver implementation, create a Telerik.Report
 
 
 
-{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````VB
+{{source=CodeSnippets\VB\API\Telerik\Reporting\Service\ReportServiceBaseSnippets.vb region=ReportServiceReportResolverBasic}}
+````VB
 	    Class CustomReportService
 	        Inherits ReportService
 	        Shared ReadOnly resolver As IReportResolver = New ReportResolver()
@@ -126,52 +103,7 @@ In order to utilize your IReportResolver implementation, create a Telerik.Report
 	            Me.ReportResolver = resolver
 	        End Sub
 	    End Class
-	    '#End Region
-	    '#Region ReportServiceReportResolverWithFallBack
-	    Class ReportServiceWithResolverFallback
-	        Inherits ReportService
-	        Shared ReadOnly resolvers As IReportResolver = New ReportResolverWithFallBack(New ReportTypeResolver(New ReportFileResolverWeb(Nothing)))
-	        Public Sub New()
-	            Me.ReportResolver = resolvers
-	        End Sub
-	    End Class
-	    '#End Region
-	    '#Region ReportResolverBasic
-	    Class ReportResolver
-	        Implements IReportResolver
-	        Public Function Resolve(report As String) As ReportSource Implements IReportResolver.Resolve
-	            'TODO implement custom report resolving mechanism
-	            Throw New NotImplementedException()
-	        End Function
-	    End Class
-	    '#End Region
-	    '#Region ReportResolverWithFallBack
-	    Class ReportResolverWithFallBack
-	        Implements IReportResolver
-	        ReadOnly parentResolver As IReportResolver
-	
-	        Public Sub New(parentResolver As IReportResolver)
-	            Me.parentResolver = parentResolver
-	        End Sub
-	
-	        Public Function Resolve(report As String) As ReportSource Implements IReportResolver.Resolve
-	            Dim reportDocument As IReportDocument = Nothing
-	            reportDocument = Me.CustomReportResolver(report)
-	
-	            If reportDocument Is Nothing AndAlso Me.parentResolver IsNot Nothing Then
-	                reportDocument = Me.parentResolver.Resolve(report)
-	            End If
-	
-	            Return reportDocument
-	        End Function
-	
-	        Public Function CustomReportResolver(report As String) As ReportSource
-	            'TODO implement custom report resolving mechanism
-	            Return Nothing
-	        End Function
-	    End Class
-	    '#End Region
-	End Class
+````
 
 
 
@@ -183,7 +115,8 @@ Even if you use your own IReportResolver implementation you can still fallback t
 Add to your IReportResolver implementation a constructor with parameter IReportDocument parentResolver. Then use the parentResolver if the custom report resolving mechanism fails.
                     
 
-{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````C#
+{{source=CodeSnippets\CS\API\Telerik\Reporting\Service\ReportServiceBaseSnippets.cs region=ReportResolverWithFallBack}}
+````C#
 	    class ReportResolverWithFallBack : IReportResolver
 	    {
 	        readonly IReportResolver parentResolver;
@@ -216,7 +149,8 @@ Add to your IReportResolver implementation a constructor with parameter IReportD
 
 
 
-{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````VB
+{{source=CodeSnippets\VB\API\Telerik\Reporting\Service\ReportServiceBaseSnippets.vb region=ReportResolverWithFallBack}}
+````VB
 	    Class ReportResolverWithFallBack
 	        Implements IReportResolver
 	        ReadOnly parentResolver As IReportResolver
@@ -241,15 +175,15 @@ Add to your IReportResolver implementation a constructor with parameter IReportD
 	            Return Nothing
 	        End Function
 	    End Class
-	    '#End Region
-	End Class
+````
 
 
 
 Add to Telerik.Reporting.Service subclass the IReportResolver implementations in a chain. Thus the custom one will be executed first, if it fails the second one and so on.
                     
 
-{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````C#
+{{source=CodeSnippets\CS\API\Telerik\Reporting\Service\ReportServiceBaseSnippets.cs region=ReportServiceReportResolverWithFallBack}}
+````C#
 	    class ReportServiceWithResolverFallback : ReportService
 	    {
 	        static readonly IReportResolver resolvers = new ReportResolverWithFallBack(
@@ -264,7 +198,8 @@ Add to Telerik.Reporting.Service subclass the IReportResolver implementations in
 
 
 
-{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````VB
+{{source=CodeSnippets\VB\API\Telerik\Reporting\Service\ReportServiceBaseSnippets.vb region=ReportServiceReportResolverWithFallBack}}
+````VB
 	    Class ReportServiceWithResolverFallback
 	        Inherits ReportService
 	        Shared ReadOnly resolvers As IReportResolver = New ReportResolverWithFallBack(New ReportTypeResolver(New ReportFileResolverWeb(Nothing)))
@@ -272,43 +207,7 @@ Add to Telerik.Reporting.Service subclass the IReportResolver implementations in
 	            Me.ReportResolver = resolvers
 	        End Sub
 	    End Class
-	    '#End Region
-	    '#Region ReportResolverBasic
-	    Class ReportResolver
-	        Implements IReportResolver
-	        Public Function Resolve(report As String) As ReportSource Implements IReportResolver.Resolve
-	            'TODO implement custom report resolving mechanism
-	            Throw New NotImplementedException()
-	        End Function
-	    End Class
-	    '#End Region
-	    '#Region ReportResolverWithFallBack
-	    Class ReportResolverWithFallBack
-	        Implements IReportResolver
-	        ReadOnly parentResolver As IReportResolver
-	
-	        Public Sub New(parentResolver As IReportResolver)
-	            Me.parentResolver = parentResolver
-	        End Sub
-	
-	        Public Function Resolve(report As String) As ReportSource Implements IReportResolver.Resolve
-	            Dim reportDocument As IReportDocument = Nothing
-	            reportDocument = Me.CustomReportResolver(report)
-	
-	            If reportDocument Is Nothing AndAlso Me.parentResolver IsNot Nothing Then
-	                reportDocument = Me.parentResolver.Resolve(report)
-	            End If
-	
-	            Return reportDocument
-	        End Function
-	
-	        Public Function CustomReportResolver(report As String) As ReportSource
-	            'TODO implement custom report resolving mechanism
-	            Return Nothing
-	        End Function
-	    End Class
-	    '#End Region
-	End Class
+````
 
 
 
@@ -333,7 +232,8 @@ Add .svc file (e.g. ReportService.svc) to reference your Telerik.Reporting.Servi
 Register the Reporting Service endpoints with service name your Telerik.Reporting.Service.ReportService subclass  in the web.config:
                     
 
-{{source=System.Xml.XmlAttribute region=}}
+{{source=CodeSnippets\CS\API\Telerik\Reporting\Service\HostedSubclassService.xml}}
+
 
 
 

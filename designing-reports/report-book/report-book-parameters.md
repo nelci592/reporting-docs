@@ -43,7 +43,8 @@ You can control parameter merging via the
               refer to the parameter directly by the value of its Name property.
             
 
-{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````c#
+{{source=CodeSnippets\CS\API\Telerik\Reporting\ReportSourceSnippets.cs region=Set_Values_For_Unique_Or_Mergable_ReportParameters_In_ReportSource_Snippet}}
+````c#
 	            var typeReportSource = new Telerik.Reporting.TypeReportSource();
 	            typeReportSource.TypeName = typeof(MyReportBook).AssemblyQualifiedName;
 	
@@ -54,47 +55,15 @@ You can control parameter merging via the
 
 
 
-{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````vb
+{{source=CodeSnippets\VB\API\Telerik\Reporting\ReportSourceSnippets.vb region=Set_Values_For_Unique_Or_Mergable_ReportParameters_In_ReportSource_Snippet}}
+````vb
 	        Dim typeReportSource As New Telerik.Reporting.TypeReportSource()
 	        typeReportSource.TypeName = GetType(MyReportBook).AssemblyQualifiedName
 	
 	        ' Passing a value for unique Or repeating report parameter that should have one And the same value
 	        ' for all reports part of the report book thru the report source
 	        typeReportSource.Parameters.Add(New Telerik.Reporting.Parameter("ProductCategory", "Bikes"))
-	        '#End Region
-	
-	        Assert.IsNotNull(typeReportSource)
-	    End Sub
-	
-	
-	    <TestMethod>
-	    Public Sub Set_Values_For_NotMergable_ReportParameters_In_ReportSource_Snippet()
-	        '#Region Set_Values_For_NotMergable_ReportParameters_In_ReportSource_Snippet
-	        Dim typeReportSource As New Telerik.Reporting.TypeReportSource()
-	        typeReportSource.TypeName = GetType(MyReportBook).AssemblyQualifiedName
-	
-	        ' Passing a value for Not mergeable report parameter targeting the FIRST report in the report book
-	        ' thru the report source
-	        typeReportSource.Parameters.Add(New Telerik.Reporting.Parameter("reports(0).ClientID", 102))
-	
-	        ' Passing a value for Not mergeable report parameter targeting the SECOND report in the report book
-	        ' thru the report source
-	        typeReportSource.Parameters.Add(New Telerik.Reporting.Parameter("reports(1).ClientID", 103))
-	        '#End Region
-	
-	        Assert.IsNotNull(typeReportSource)
-	    End Sub
-	
-	
-	    Class MyReportBook
-	        Inherits Telerik.Reporting.ReportBook
-	    End Class
-	
-	    Class Invoice
-	        Inherits Report
-	    End Class
-	
-	End Class
+````
 
 
 
@@ -103,7 +72,8 @@ You can control parameter merging via the
               This is done by denoting the target report by its zero-based index inside the report book.
             
 
-{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````c#
+{{source=CodeSnippets\CS\API\Telerik\Reporting\ReportSourceSnippets.cs region=Set_Values_For_NotMergable_ReportParameters_In_ReportSource_Snippet}}
+````c#
 	            var typeReportSource = new Telerik.Reporting.TypeReportSource();
 	            typeReportSource.TypeName = typeof(MyReportBook).AssemblyQualifiedName;
 	
@@ -118,7 +88,8 @@ You can control parameter merging via the
 
 
 
-{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````vb
+{{source=CodeSnippets\VB\API\Telerik\Reporting\ReportSourceSnippets.vb region=Set_Values_For_NotMergable_ReportParameters_In_ReportSource_Snippet}}
+````vb
 	        Dim typeReportSource As New Telerik.Reporting.TypeReportSource()
 	        typeReportSource.TypeName = GetType(MyReportBook).AssemblyQualifiedName
 	
@@ -129,21 +100,7 @@ You can control parameter merging via the
 	        ' Passing a value for Not mergeable report parameter targeting the SECOND report in the report book
 	        ' thru the report source
 	        typeReportSource.Parameters.Add(New Telerik.Reporting.Parameter("reports(1).ClientID", 103))
-	        '#End Region
-	
-	        Assert.IsNotNull(typeReportSource)
-	    End Sub
-	
-	
-	    Class MyReportBook
-	        Inherits Telerik.Reporting.ReportBook
-	    End Class
-	
-	    Class Invoice
-	        Inherits Report
-	    End Class
-	
-	End Class
+````
 
 
 

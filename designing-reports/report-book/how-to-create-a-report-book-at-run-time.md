@@ -40,7 +40,8 @@ In the sample below we add two reports:
           created with the Standalone Designer. It is added wrapped in a UriReportSource. 
           You need to specify the relative or full path to the TRDP file:
 
-{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````C#
+{{source=CodeSnippets\CS\API\Telerik\Reporting\ReportBookSnippets.cs region=CreateReportBook}}
+````C#
 	            var reportBook = new ReportBook();
 	            var weekdayReportSource = new TypeReportSource();
 	            weekdayReportSource.TypeName = typeof(WeekdayReport).AssemblyQualifiedName;
@@ -53,7 +54,8 @@ In the sample below we add two reports:
 
 
 
-{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````VB
+{{source=CodeSnippets\VB\API\Telerik\Reporting\ReportBookSnippets.vb region=CreateReportBook}}
+````VB
 	        Dim reportBook = New ReportBook()
 	        Dim weekdayReportSource = New TypeReportSource()
 	        weekdayReportSource.TypeName = GetType(WeekendReport).AssemblyQualifiedName
@@ -62,13 +64,7 @@ In the sample below we add two reports:
 	        Dim glossaryReportSource = New UriReportSource()
 	        glossaryReportSource.Uri = "Reports\Glossary.trdp"
 	        reportBook.ReportSources.Add(glossaryReportSource)
-	        '#End Region
-	    End Sub
-	
-	    Friend Class WeekendReport
-	    End Class
-	
-	End Class
+````
 
 
 

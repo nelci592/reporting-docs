@@ -53,7 +53,8 @@ If the loaded assembly contains many __public static__ (__Public Shared__
 
 __Example:__
 
-{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````C#
+{{source=CodeSnippets\CS\API\Telerik\Reporting\Expressions\UserFunctionsSnippets.cs region=UserFunctionsAttributeIsVisibleSnippet}}
+````C#
 	    
 	    public class Report1 : Telerik.Reporting.Report
 	    {
@@ -71,7 +72,8 @@ __Example:__
 
 
 
-{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````VB
+{{source=CodeSnippets\VB\API\Telerik\Reporting\Expressions\UserFunctionsSnippets.vb region=UserFunctionsAttributeIsVisibleSnippet}}
+````VB
 	Public Class Report1
 	    Inherits Telerik.Reporting.Report
 	    '...
@@ -114,7 +116,8 @@ The DescriptionAttribute allows you to specify a description for the user functi
 
 __Example:__
 
-{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````C#
+{{source=CodeSnippets\CS\API\Telerik\Reporting\Expressions\UserFunctionsSnippets.cs region=UserFunctionsAttributeSnippet}}
+````C#
 	    
 	    public static class MyUserFunctions
 	    {
@@ -129,7 +132,8 @@ __Example:__
 
 
 
-{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````VB
+{{source=CodeSnippets\VB\API\Telerik\Reporting\Expressions\UserFunctionsSnippets.vb region=UserFunctionsAttributeSnippet}}
+````VB
 	Public NotInheritable Class MyUserFunctions
 	    <[Function](Category:="My Functions", [Namespace]:="My", Description:="Say Hi")> _
 	    Public Shared Function Greet(name As String) As String

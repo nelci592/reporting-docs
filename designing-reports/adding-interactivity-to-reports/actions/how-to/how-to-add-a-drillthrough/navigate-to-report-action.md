@@ -47,7 +47,8 @@ A report can contain links to other reports. The report that opens when you clic
 
 ## Adding a drillthrough action programatically
 
-{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````C#
+{{source=CodeSnippets\CS\API\Telerik\Reporting\ActionSnippets.cs region=AddNewNavigateToReportSnippet}}
+````C#
 	
 	            Telerik.Reporting.TypeReportSource reportSource = new Telerik.Reporting.TypeReportSource();
 	            reportSource.TypeName = "ReportLibrary1.Report1, ReportLibrary1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null";
@@ -61,7 +62,8 @@ A report can contain links to other reports. The report that opens when you clic
 
 
 
-{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````VB
+{{source=CodeSnippets\VB\API\Telerik\Reporting\ActionSnippets.vb region=AddNewNavigateToReportSnippet}}
+````VB
 	        Dim reportSource As New Telerik.Reporting.TypeReportSource()
 	        reportSource.TypeName = "ReportLibrary1.Report1, ReportLibrary1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
 	        reportSource.Parameters.Add(New Telerik.Reporting.Parameter("OrderNumber", "SO43659"))
@@ -70,78 +72,7 @@ A report can contain links to other reports. The report that opens when you clic
 	        reportAction1.ReportSource = reportSource
 	        textBox1.Action = reportAction1
 	
-	        '#End Region
-	
-	        Assert.AreEqual("OrderNumber", reportSource.Parameters(0).Name)
-	        Assert.AreEqual("SO43659", reportSource.Parameters(0).Value)
-	        Assert.AreEqual("ReportLibrary1.Report1, ReportLibrary1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", reportSource.TypeName)
-	    End Sub
-	
-	    <TestMethod()> _
-	    Public Sub Navigate_To_BookMark()
-	        Dim textBox1 As New Telerik.Reporting.TextBox()
-	        Dim textBox2 As New Telerik.Reporting.TextBox()
-	
-	        '#Region "AddNewNavigateToBookMarkSnippet"
-	
-	        Dim bookmarkAction1 As New Telerik.Reporting.NavigateToBookmarkAction()
-	        textBox2.DocumentMapText = "MyBookMark"
-	        bookmarkAction1.TargetBookmarkId = "MyBookMark"
-	        textBox1.Action = bookmarkAction1
-	
-	        '#End Region
-	
-	        Assert.AreEqual("MyBookMark", bookmarkAction1.TargetBookmarkId)
-	        Assert.AreEqual("MyBookMark", textBox2.DocumentMapText)
-	    End Sub
-	
-	    <TestMethod()> _
-	    Public Sub Navigate_To_Url()
-	        Dim textBox1 As New Telerik.Reporting.TextBox()
-	
-	        '#Region "AddNewNavigateToUrlSnippet"
-	
-	        Dim UrlAction1 As New Telerik.Reporting.NavigateToUrlAction()
-	        UrlAction1.Url = "http://demos.telerik.com/reporting"
-	        textBox1.Action = UrlAction1
-	
-	        '#End Region
-	
-	        Assert.AreEqual("http://demos.telerik.com/reporting", UrlAction1.Url)
-	    End Sub
-	
-	    <TestMethod()> _
-	    Public Sub Toggle_Visibility_Snippet()
-	        Dim textBox1 As New Telerik.Reporting.TextBox()
-	        Dim textBox2 As New Telerik.Reporting.TextBox()
-	
-	        '#Region "AddNewToggleVisibilitySnippet"
-	
-	        Dim toggleVisibilityAction1 As New Telerik.Reporting.ToggleVisibilityAction()
-	        textBox1.Action = toggleVisibilityAction1
-	        toggleVisibilityAction1.DisplayExpandedMark = False
-	        toggleVisibilityAction1.Targets.AddRange(New Telerik.Reporting.IToggleVisibilityTarget() {textBox2})
-	
-	        '#End Region
-	
-	    End Sub
-	
-	    <TestMethod()> _
-	    Public Sub CustomAction_Snippet()
-	        Dim textBox1 As New Telerik.Reporting.TextBox()
-	
-	        '#Region "AddNewCustomActionSnippet"
-	
-	        Dim customAction As New Telerik.Reporting.CustomAction()
-	        customAction.Parameters.Add("param1", "=Fields.Name")
-	        customAction.Parameters.Add("param2", "=Now()")
-	        textBox1.Action = customAction
-	
-	        '#End Region
-	
-	    End Sub
-	
-	End Class
+````
 
 
 

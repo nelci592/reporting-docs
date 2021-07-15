@@ -78,7 +78,8 @@ A report item can initially display or be hidden when a user views a report. The
 
 ## Adding a drilldown action programatically
 
-{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````C#
+{{source=CodeSnippets\CS\API\Telerik\Reporting\ActionSnippets.cs region=AddNewToggleVisibilitySnippet}}
+````C#
 	
 	            Telerik.Reporting.ToggleVisibilityAction toggleVisibilityAction1 = new Telerik.Reporting.ToggleVisibilityAction();
 	            textBox1.Action = toggleVisibilityAction1;
@@ -89,33 +90,15 @@ A report item can initially display or be hidden when a user views a report. The
 
 
 
-{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````VB
+{{source=CodeSnippets\VB\API\Telerik\Reporting\ActionSnippets.vb region=AddNewToggleVisibilitySnippet}}
+````VB
 	
 	        Dim toggleVisibilityAction1 As New Telerik.Reporting.ToggleVisibilityAction()
 	        textBox1.Action = toggleVisibilityAction1
 	        toggleVisibilityAction1.DisplayExpandedMark = False
 	        toggleVisibilityAction1.Targets.AddRange(New Telerik.Reporting.IToggleVisibilityTarget() {textBox2})
 	
-	        '#End Region
-	
-	    End Sub
-	
-	    <TestMethod()> _
-	    Public Sub CustomAction_Snippet()
-	        Dim textBox1 As New Telerik.Reporting.TextBox()
-	
-	        '#Region "AddNewCustomActionSnippet"
-	
-	        Dim customAction As New Telerik.Reporting.CustomAction()
-	        customAction.Parameters.Add("param1", "=Fields.Name")
-	        customAction.Parameters.Add("param2", "=Now()")
-	        textBox1.Action = customAction
-	
-	        '#End Region
-	
-	    End Sub
-	
-	End Class
+````
 
 
 

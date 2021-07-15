@@ -61,7 +61,8 @@ Essentially, both the FNC1 property and the ApplicationIndicator data is applied
 
 ## Examples
 
-{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````cs
+{{source=CodeSnippets\CS\API\Telerik\Reporting\BarcodeSnippets.cs region=Barcode_QRCodeEncoder_Settings}}
+````cs
 	            var encoder = new Telerik.Reporting.Barcodes.QRCodeEncoder();
 	
 	            encoder.Version = 10;
@@ -76,7 +77,8 @@ Essentially, both the FNC1 property and the ApplicationIndicator data is applied
 
 
 
-{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````vbnet
+{{source=CodeSnippets\VB\API\Telerik\Reporting\BarcodeSnippets.vb region=Barcode_QRCodeEncoder_Settings}}
+````vbnet
 	        Dim encoder = New Telerik.Reporting.Barcodes.QRCodeEncoder()
 	
 	        encoder.Version = 10
@@ -87,45 +89,7 @@ Essentially, both the FNC1 property and the ApplicationIndicator data is applied
 	        encoder.ApplicationIndicator = "00"
 	
 	        Me.barcode1.Encoder = encoder
-	        '#End Region
-	
-	        Assert.IsNotNull(Me.barcode1.Encoder)
-	
-	    End Sub
-	
-	    <TestMethod()>
-	    Public Sub Set_PDF417Encoder_Settings()
-	
-	        '#Region "Barcode_PDF417Encoder_Settings"
-	        Dim encoder = New Telerik.Reporting.Barcodes.PDF417Encoder()
-	
-	        encoder.Columns = 3
-	        encoder.Rows = 3
-	        encoder.Encoding = Telerik.Reporting.Barcodes.PDF417.EncodingMode.Auto
-	        encoder.ErrorCorrectionLevel = 2
-	
-	        Me.barcode1.Encoder = encoder
-	        '#End Region
-	
-	        Assert.IsNotNull(Me.barcode1.Encoder)
-	    End Sub
-	
-	    <TestMethod()>
-	    Public Sub Set_DataMatrixEncoder_Settings()
-	
-	        '#Region "Barcode_DataMatrixEncoder_Settings"
-	        Dim encoder = New Telerik.Reporting.Barcodes.DataMatrixEncoder()
-	
-	        encoder.Encodation = Telerik.Reporting.Barcodes.DataMatrix.Encodation.Ascii
-	        encoder.SymbolSize = Telerik.Reporting.Barcodes.DataMatrix.SymbolSize.SquareAuto
-	        encoder.TextEncoding = System.Text.UTF8Encoding.UTF8
-	
-	        Me.barcode1.Encoder = encoder
-	        '#End Region
-	
-	        Assert.IsNotNull(Me.barcode1.Encoder)
-	    End Sub
-	End Class
+````
 
 
 

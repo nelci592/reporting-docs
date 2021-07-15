@@ -93,7 +93,8 @@ We will apply embedded implicit styles for the Fluent theme in our example proje
             The next step is to merge these ResourceDictionaries in the App.xaml file:
               
 
-{{source=System.Xml.XmlAttribute region=}}
+{{source=CodeSnippets\CS\API\Telerik\ReportViewer\Wpf\App.xaml}}
+
 
 
 

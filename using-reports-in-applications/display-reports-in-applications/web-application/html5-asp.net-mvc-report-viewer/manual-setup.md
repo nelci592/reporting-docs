@@ -179,7 +179,8 @@ If Kendo is used on the page or the CDN is prefered make sure the following widg
 
 Add the HTML5 ASP.NET MVC Report Viewer to the same view:
 
-{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````c#
+{{source=CodeSnippets\MvcCS\Views\Home\Index.cshtml region=RazorExample}}
+````c#
 	@(Html.TelerikReporting().ReportViewer()
 	       .Id("reportViewer1")
 	       .ServiceUrl("/api/reports/")
@@ -196,7 +197,8 @@ Add the HTML5 ASP.NET MVC Report Viewer to the same view:
 
 
 
-{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````vb.net
+{{source=CodeSnippets\MvcVB\Views\Home\Index.vbhtml region=RazorExample}}
+````vb.net
 	@Code
 	    Html.TelerikReporting().ReportViewer() _
 	    .Id("reportViewer1") _
@@ -254,13 +256,15 @@ Render the deferred initialization statement for the Report Viewer scripts (reme
                   In case that you do not need the script tag to be rendered just set to false the default argument.
                 
 
-{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````c#
+{{source=CodeSnippets\MvcCS\Views\Home\Index.cshtml region=DeferredScriptsExample}}
+````c#
 	@(Html.TelerikReporting().DeferredScripts())
 ````
 
 
 
-{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````vb.net
+{{source=CodeSnippets\MvcVB\Views\Home\Index.vbhtml region=DeferredScriptsExample}}
+````vb.net
 	@Code
 	    Html.TelerikReporting().DeferredScripts()
 	End Code

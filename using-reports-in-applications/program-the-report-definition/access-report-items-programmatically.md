@@ -32,7 +32,8 @@ In the examples below we show how to access a report item from within the report
 >note In the code example below we are referring to a  * __Processing.TextBox__ * , not Report1.TextBox.  The Processing.TextBox represents the TextBox during processing and has a different set of properties than the Report1.TextBox used when defining the report.
 
 
-{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````C#
+{{source=CodeSnippets\CS\API\Telerik\Reporting\Processing\EventsSnippets.cs region=AddSectionDataBindingSnippet}}
+````C#
 	        private void detail_ItemDataBinding(object sender, EventArgs e)
 	        {
 	            Telerik.Reporting.Processing.DetailSection section = (sender as Telerik.Reporting.Processing.DetailSection);
@@ -47,7 +48,8 @@ In the examples below we show how to access a report item from within the report
 
 
 
-{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````VB
+{{source=CodeSnippets\VB\API\Telerik\Reporting\Processing\EventsSnippets.vb region=AddSectionDataBindingSnippet}}
+````VB
 	    Private Sub detail_ItemDataBinding(sender As Object, e As EventArgs)
 	        Dim section As Telerik.Reporting.Processing.DetailSection = TryCast(sender, Telerik.Reporting.Processing.DetailSection)
 	        Dim txt As Telerik.Reporting.Processing.TextBox = DirectCast(Telerik.Reporting.Processing.ElementTreeHelper.GetChildByName(section, "textBox1"), Telerik.Reporting.Processing.TextBox)
@@ -56,8 +58,7 @@ In the examples below we show how to access a report item from within the report
 	            txt.Style.BackgroundColor = System.Drawing.Color.Blue
 	        End If
 	    End Sub
-	    '#End Region
-	End Class
+````
 
 
 

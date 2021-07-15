@@ -23,7 +23,8 @@ The T:Telerik.Reporting.ReportPackager
 
 The following sample code snipped demonstrates how to package a predefined .TRDX (XML) report definition:
 
-{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````C#
+{{source=CodeSnippets\CS\API\Telerik\Reporting\ReportPackagerSnippets.cs region=CreatePackageFromXmlReportSnippet}}
+````C#
 	            var reportPackager = new ReportPackager();
 	            using (var targetStream = System.IO.File.Create("PackagedReport2.trdp"))
 	            {
@@ -34,27 +35,14 @@ The following sample code snipped demonstrates how to package a predefined .TRDX
 
 
 
-{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````VB
+{{source=CodeSnippets\VB\API\Telerik\Reporting\ReportPackagerSnippets.vb region=CreatePackageFromXmlReportSnippet}}
+````VB
 	        Dim reportPackager = New ReportPackager()
 	        Using targetStream = System.IO.File.Create("PackagedReport3.trdp")
 	            Dim xmlString = System.IO.File.ReadAllText("Report1.trdx")
 	            reportPackager.Package(xmlString, targetStream)
 	        End Using
-	        '#End Region
-	    End Sub
-	
-	    <TestMethod> _
-	    <DeploymentItem("Report1.trdp")> _
-	    Public Sub UnpackageTrdpSnippet()
-	        '#Region "UnpackageTrdpSnippet"
-	        Dim reportPackager = New ReportPackager()
-	        Using sourcetStream = System.IO.File.OpenRead("Report1.trdp")
-	            Dim report = reportPackager.Unpackage(sourcetStream)
-	        End Using
-	        '#End Region
-	    End Sub
-	End Class
-	
+````
 
 
 
@@ -62,7 +50,8 @@ The following sample code snipped demonstrates how to package a predefined .TRDX
 
 The following sample code snipped demonstrates how to package a predefined CLR report definition:
 
-{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````C#
+{{source=CodeSnippets\CS\API\Telerik\Reporting\ReportPackagerSnippets.cs region=CreatePackageFromClrReportSnippet}}
+````C#
 	            var report = new Report1();
 	            var reportPackager = new ReportPackager();
 	            using (var targetStream = System.IO.File.Create("PackageReport1.trdp"))
@@ -73,39 +62,14 @@ The following sample code snipped demonstrates how to package a predefined CLR r
 
 
 
-{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````VB
+{{source=CodeSnippets\VB\API\Telerik\Reporting\ReportPackagerSnippets.vb region=CreatePackageFromClrReportSnippet}}
+````VB
 	        Dim report = New Report1()
 	        Dim reportPackager = New ReportPackager()
 	        Using targetStream = System.IO.File.Create("PackagedReport2.trdp")
 	            reportPackager.Package(report, targetStream)
 	        End Using
-	        '#End Region
-	    End Sub
-	
-	    <TestMethod>
-	    <DeploymentItem("Report1.trdx")>
-	    Public Sub CreatePackageFromXmlReportSnippet()
-	        '#Region "CreatePackageFromXmlReportSnippet"
-	        Dim reportPackager = New ReportPackager()
-	        Using targetStream = System.IO.File.Create("PackagedReport3.trdp")
-	            Dim xmlString = System.IO.File.ReadAllText("Report1.trdx")
-	            reportPackager.Package(xmlString, targetStream)
-	        End Using
-	        '#End Region
-	    End Sub
-	
-	    <TestMethod> _
-	    <DeploymentItem("Report1.trdp")> _
-	    Public Sub UnpackageTrdpSnippet()
-	        '#Region "UnpackageTrdpSnippet"
-	        Dim reportPackager = New ReportPackager()
-	        Using sourcetStream = System.IO.File.OpenRead("Report1.trdp")
-	            Dim report = reportPackager.Unpackage(sourcetStream)
-	        End Using
-	        '#End Region
-	    End Sub
-	End Class
-	
+````
 
 
 
@@ -113,7 +77,8 @@ The following sample code snipped demonstrates how to package a predefined CLR r
 
 The following sample code snipped demonstrates how to unpackage a predefined .TRDP report definition:
 
-{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````C#
+{{source=CodeSnippets\CS\API\Telerik\Reporting\ReportPackagerSnippets.cs region=UnpackageTrdpSnippet}}
+````C#
 	            var reportPackager = new ReportPackager();
 	            using (var sourceStream = System.IO.File.OpenRead("Report1.trdp"))
 	            {
@@ -123,15 +88,13 @@ The following sample code snipped demonstrates how to unpackage a predefined .TR
 
 
 
-{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````VB
+{{source=CodeSnippets\VB\API\Telerik\Reporting\ReportPackagerSnippets.vb region=UnpackageTrdpSnippet}}
+````VB
 	        Dim reportPackager = New ReportPackager()
 	        Using sourcetStream = System.IO.File.OpenRead("Report1.trdp")
 	            Dim report = reportPackager.Unpackage(sourcetStream)
 	        End Using
-	        '#End Region
-	    End Sub
-	End Class
-	
+````
 
 
 

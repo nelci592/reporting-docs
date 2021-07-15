@@ -22,7 +22,8 @@ A document map provides a set of navigational links to report items in the rende
 The document map is also used to provide a set of navigational links to reports in a [Report Book]({%slug telerikreporting/designing-reports/report-book/overview%}).
       
 
-![](images/SilverlightViewer1.png)
+  
+  ![](images/SilverlightViewer1.png)
 
 The Document map is defined by setting the P:Telerik.Reporting.ReportItemBase.DocumentMapText and 
     		P:Telerik.Reporting.ReportItemBase.BookmarkId properties of any report item/group. The __BookmarkID__

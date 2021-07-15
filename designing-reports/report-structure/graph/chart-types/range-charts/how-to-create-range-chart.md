@@ -13,7 +13,8 @@ position: 1
 
 
 In this article we will show you how to create a Range chart using the Graph item.
-      ![Range Area Chart](images/Graph/RangeAreaChart.png)
+        
+  ![Range Area Chart](images/Graph/RangeAreaChart.png)
 
 ## 
 

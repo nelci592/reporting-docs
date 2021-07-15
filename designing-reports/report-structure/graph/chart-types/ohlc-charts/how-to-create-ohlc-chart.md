@@ -13,7 +13,8 @@ position: 1
 
 
 In this article we will show you how to create an OHLC chart using the Graph item.
-      ![ohlc](images/Graph/OhlcChart.png)Create an OHLC chart using the Graph Wizard
+        
+  ![ohlc](images/Graph/OhlcChart.png)Create an OHLC chart using the Graph Wizard
 
 The Graph Wizard provides a fast and efficient way to create complex charts. The wizard starts every time you start creating a new graph in
               [Standalone Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview%}) or
@@ -61,7 +62,8 @@ You can click the __Finish__ button or setup additional properties of the DateTi
             
 
 Format the axis labels, set their angle and add additional styling if necessary. Your chart should look like the one below:
-            ![graph-howto-create-ohlc-chart](images/Graph/graph-howto-create-ohlc-chart.png)
+              
+  ![graph-howto-create-ohlc-chart](images/Graph/graph-howto-create-ohlc-chart.png)
 
 The marker width is automatically calculated based on two properties. The first property is the X scale's
               P:Telerik.Reporting.Scale.SpacingSlotCount.

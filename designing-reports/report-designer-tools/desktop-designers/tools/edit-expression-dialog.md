@@ -28,4 +28,5 @@ the expression. In the figure below an expression with two database Fields
 multiplied provide an extended price value. For a list of the supported 
 expression elements see [Using Item Binding Expressions]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/overview%}).
 
-![](images/UI014.png)
+  
+  ![](images/UI014.png)

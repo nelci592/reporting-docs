@@ -24,7 +24,8 @@ Scatter charts are different from other chart types because, instead of using th
       
 
 The following image illustrates a scatter chart:
-      ![scatter-chart](images/Graph/scatter-chart.png)
+        
+  ![scatter-chart](images/Graph/scatter-chart.png)
 
 ## Bubble Charts
 
@@ -35,7 +36,8 @@ Bubble charts can be considered a variation of the scatter charts, in which the 
 
 The following Bubble chart sample report has a category set to sales person so that it aggregates sales 
   					data per sales person. However, the value of last year's sales is shown on the x-axis.
-  				![bubble-chart](images/Graph/bubble-chart.png)
+  				  
+  ![bubble-chart](images/Graph/bubble-chart.png)
 
 ## Design Considerations for Scatter Charts
 

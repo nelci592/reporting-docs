@@ -29,7 +29,9 @@ This section describes the common settings for one-dimensional barcodes.
               P:Telerik.Reporting.ReportItemBase.Style object and/or
               vertically through the __VerticalAlign__ property of the
               P:Telerik.Reporting.ReportItemBase.Style object.
-            ![barcode-textalign-property](images/Barcodes/barcode-textalign-property.png)![barcode-verticalalign-property](images/Barcodes/barcode-verticalalign-property.png)
+              
+  ![barcode-textalign-property](images/Barcodes/barcode-textalign-property.png)  
+  ![barcode-verticalalign-property](images/Barcodes/barcode-verticalalign-property.png)
 
 ## Additional information on Code128
 

@@ -15,7 +15,8 @@ position: 2
 This section discusses more in-depth how to pass parameters to a method of the __ObjectContext/DbContext__ with
         the __EntityDataSource__ component. The provided examples and code snippets assume an existing
         __Entity Data Model__ of the __Adventure Works__ sample database with the following structure:
-      ![](images/DataSources/EntityDataSourceAdventureWorksEntityModel.png)
+        
+  ![](images/DataSources/EntityDataSourceAdventureWorksEntityModel.png)
 
 >note The [EntityDataSource Wizard]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/entitydatasource-wizard%}) can detect parameters          of the data-retrieval method, and it will ask you to provide values for them at  __Configure Data Source Parameters__  step.        
 

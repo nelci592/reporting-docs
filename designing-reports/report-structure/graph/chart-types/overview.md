@@ -31,18 +31,18 @@ Examples of many of these types of charts are available as sample reports in the
 
 | Chart type | Display ratio data | Display stock data | Display linear data | Display multi-value data |
 | ------ | ------ | ------ | ------ | ------ |
-|[Bar Charts]({%slug telerikreporting/designing-reports/report-structure/graph/chart-types/bar-charts/overview%})|||![checkmark](images/checkmark.gif)||
-|[Line Charts]({%slug telerikreporting/designing-reports/report-structure/graph/chart-types/line-charts/overview%})|||![checkmark](images/checkmark.gif)||
-|[Area Charts]({%slug telerikreporting/designing-reports/report-structure/graph/chart-types/area-charts/overview%})|||![checkmark](images/checkmark.gif)||
-|[Column Charts]({%slug telerikreporting/designing-reports/report-structure/graph/chart-types/column-charts/overview%})|||![checkmark](images/checkmark.gif)||
-|[Pie Charts]({%slug telerikreporting/designing-reports/report-structure/graph/chart-types/pie-charts/overview%})|![checkmark](images/checkmark.gif)||||
-|[Doughnut Charts](9ed47840-c3ab-48c8-9845-f43066ba981e#choosing-a-chart-type)|![checkmark](images/checkmark.gif)||||
-|[Polar Charts]({%slug telerikreporting/designing-reports/report-structure/graph/chart-types/polar-charts/overview%})|![checkmark](images/checkmark.gif)||||
-|[Range Charts]({%slug telerikreporting/designing-reports/report-structure/graph/chart-types/range-charts/overview%})|||![checkmark](images/checkmark.gif)|![checkmark](images/checkmark.gif)|
-|[Scatter Charts]({%slug telerikreporting/designing-reports/report-structure/graph/chart-types/scatter-charts/overview%})|![checkmark](images/checkmark.gif)||![checkmark](images/checkmark.gif)||
-|[Bubble Charts]({%slug telerikreporting/designing-reports/report-structure/graph/chart-types/scatter-charts/overview%})|![checkmark](images/checkmark.gif)||![checkmark](images/checkmark.gif)||
-|[Sparklines]({%slug telerikreporting/designing-reports/report-structure/graph/chart-types/sparklines%})|![checkmark](images/checkmark.gif)|![checkmark](images/checkmark.gif)|![checkmark](images/checkmark.gif)|![checkmark](images/checkmark.gif)|
-|[OHLC Charts]({%slug telerikreporting/designing-reports/report-structure/graph/chart-types/ohlc-charts/overview%})||![checkmark](images/checkmark.gif)|![checkmark](images/checkmark.gif)|![checkmark](images/checkmark.gif|
+|[Bar Charts]({%slug telerikreporting/designing-reports/report-structure/graph/chart-types/bar-charts/overview%})|||  <br/>  ![checkmark](images/checkmark.gif)||
+|[Line Charts]({%slug telerikreporting/designing-reports/report-structure/graph/chart-types/line-charts/overview%})|||  <br/>  ![checkmark](images/checkmark.gif)||
+|[Area Charts]({%slug telerikreporting/designing-reports/report-structure/graph/chart-types/area-charts/overview%})|||  <br/>  ![checkmark](images/checkmark.gif)||
+|[Column Charts]({%slug telerikreporting/designing-reports/report-structure/graph/chart-types/column-charts/overview%})|||  <br/>  ![checkmark](images/checkmark.gif)||
+|[Pie Charts]({%slug telerikreporting/designing-reports/report-structure/graph/chart-types/pie-charts/overview%})|  <br/>  ![checkmark](images/checkmark.gif)||||
+|[Doughnut Charts](9ed47840-c3ab-48c8-9845-f43066ba981e#choosing-a-chart-type)|  <br/>  ![checkmark](images/checkmark.gif)||||
+|[Polar Charts]({%slug telerikreporting/designing-reports/report-structure/graph/chart-types/polar-charts/overview%})|  <br/>  ![checkmark](images/checkmark.gif)||||
+|[Range Charts]({%slug telerikreporting/designing-reports/report-structure/graph/chart-types/range-charts/overview%})|||  <br/>  ![checkmark](images/checkmark.gif)|  <br/>  ![checkmark](images/checkmark.gif)|
+|[Scatter Charts]({%slug telerikreporting/designing-reports/report-structure/graph/chart-types/scatter-charts/overview%})|  <br/>  ![checkmark](images/checkmark.gif)||  <br/>  ![checkmark](images/checkmark.gif)||
+|[Bubble Charts]({%slug telerikreporting/designing-reports/report-structure/graph/chart-types/scatter-charts/overview%})|  <br/>  ![checkmark](images/checkmark.gif)||  <br/>  ![checkmark](images/checkmark.gif)||
+|[Sparklines]({%slug telerikreporting/designing-reports/report-structure/graph/chart-types/sparklines%})|  <br/>  ![checkmark](images/checkmark.gif)|  <br/>  ![checkmark](images/checkmark.gif)|  <br/>  ![checkmark](images/checkmark.gif)|  <br/>  ![checkmark](images/checkmark.gif)|
+|[OHLC Charts]({%slug telerikreporting/designing-reports/report-structure/graph/chart-types/ohlc-charts/overview%})||  <br/>  ![checkmark](images/checkmark.gif)|  <br/>  ![checkmark](images/checkmark.gif)|  <br/>  ![checkmark](images/checkmark.gif|
 
 
 

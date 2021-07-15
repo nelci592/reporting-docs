@@ -25,7 +25,8 @@ Spaklines and data bars are created by adding the required [chart type]({%slug t
         For more information, see [Formatting a Graph]({%slug telerikreporting/designing-reports/report-structure/graph/formatting-a-graph/overview%}).
       
 
-The image below shows a typical usage of the sparkline chart type in a table:![Sparkline Chart](images/Graph/SparklineChart.png)
+The image below shows a typical usage of the sparkline chart type in a table:  
+  ![Sparkline Chart](images/Graph/SparklineChart.png)
 
 ## Sparklines Chart Variations
 

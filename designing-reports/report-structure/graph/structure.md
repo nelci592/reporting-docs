@@ -12,9 +12,11 @@ position: 1
 
 Graph elements
 
-The images below show the basic elements of a chart:![Bar Line Chart Structure](images/DataItems/Graph/BarLineChartStructure.png)
+The images below show the basic elements of a chart:  
+  ![Bar Line Chart Structure](images/DataItems/Graph/BarLineChartStructure.png)
 
-Fig.1 *Combined Column and Line charts in a Graph item with Cartesian coordinate system.*![Rose Chart Structure](images/DataItems/Graph/RoseChartStructure.png)
+Fig.1 *Combined Column and Line charts in a Graph item with Cartesian coordinate system.*  
+  ![Rose Chart Structure](images/DataItems/Graph/RoseChartStructure.png)
 
 Fig.2 *Rose (Bar) chart in a Graph item with Polar coordinate system.*
 

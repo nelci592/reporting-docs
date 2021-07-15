@@ -61,7 +61,8 @@ The controls which the __Report Header__ and the __Report Footer__ contain are d
             
 
 1. Drag __LineTotal__ to __Values__.
-            ![Pie](images/Pie.PNG)
+              
+  ![Pie](images/Pie.PNG)
 
 1. Mark the graph to add the filtering and sorting functionalities. As a result, the top five stores from the database will be rendered.
             
@@ -104,7 +105,8 @@ In the generated report, the __Color Palette__ is set in the following way:
           Color [A=255, R=32, G=176, B=212]
         
 
-![Report With Graph](images/ReportWithGraph.PNG)
+  
+  ![Report With Graph](images/ReportWithGraph.PNG)
 
 ## Next Steps
 

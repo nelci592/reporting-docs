@@ -36,7 +36,8 @@ step of the [DataSource Components]({%slug telerikreporting/designing-reports/co
 
 1. Click the ellipses on the __Report.ReportParameters__ 
 				  property. This invokes the __ReportParameter Collection editor__.
-					      ![](images/ReportParameterEditor.png)
+					        
+  ![](images/ReportParameterEditor.png)
 
 1. Click the __Add__ button to create a new parameter.
 				  

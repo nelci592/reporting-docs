@@ -6,7 +6,7 @@ article names should not start with a dot '.'. Rename the article D:\Documentati
 
 clear '\r\n' in ALERTS
 
-add '  \r\n' before IMAGES
+add '  \r\n' before '!['
 
 TABLES with multiple lines in the same cell - change '\r\n' with '<br/>'.
 

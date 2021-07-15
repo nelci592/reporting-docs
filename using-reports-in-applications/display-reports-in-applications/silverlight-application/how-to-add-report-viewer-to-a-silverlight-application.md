@@ -84,7 +84,8 @@ This article explains the steps needed to create an application which uses the S
 1. Add the ReportViewer to the MainPage.xaml from the __ToolBox__
               through __Visual Studio__ or __Expression Blend__.
               You should skip points #5, #6 and #7 if you have done that, as they describe how to register the report viewer manually.
-            ![](images/SilverlightBlend.png)
+              
+  ![](images/SilverlightBlend.png)
 
 1. Open __MainPage.xaml__
 

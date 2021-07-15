@@ -56,6 +56,7 @@ Make sure the P:Telerik.Reporting.BarSeries.DataPointLabelConnectorStyle has its
 
 
 The image below shows how a Pie Chart would look when the properties in question are set properly.             
-           ![Outside Column Pie Chart 2](images/Graph/OutsideColumnPieChart2.png)P:Telerik.Reporting.BarSeries.DataPointLabelAlignmentP:Telerik.Reporting.BarSeries.DataPointLabelOffsetP:Telerik.Reporting.BarSeries.DataPointLabelConnectorStyle
+             
+  ![Outside Column Pie Chart 2](images/Graph/OutsideColumnPieChart2.png)P:Telerik.Reporting.BarSeries.DataPointLabelAlignmentP:Telerik.Reporting.BarSeries.DataPointLabelOffsetP:Telerik.Reporting.BarSeries.DataPointLabelConnectorStyle
 
  * [Overview]({%slug telerikreporting/designing-reports/report-structure/graph/chart-types/pie-charts/overview%})

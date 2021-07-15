@@ -27,7 +27,8 @@ This article is part of the Demo report guide on getting started with Telerik Re
             Each newly created report renders the __pageHeaderSection__, __detailSection__,
               __pageFooterSection__ sections.
               The report also provides the __Report Header__ and __Report Footer__ sections which are hidden by default.
-            ![initialview](images/initialview.PNG)
+              
+  ![initialview](images/initialview.PNG)
 
 ## Next Steps
 

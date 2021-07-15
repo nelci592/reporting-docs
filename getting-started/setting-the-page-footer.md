@@ -38,7 +38,8 @@ This article is part of the Demo report guide on getting started with Telerik Re
 ## Previewing the Result
 
 Preview the result by clicking __Preview__ > __PrintPreview__.
-        ![Footer Added](images/FooterAdded.PNG)
+          
+  ![Footer Added](images/FooterAdded.PNG)
 
 ## Next Steps
 

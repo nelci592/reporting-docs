@@ -31,7 +31,8 @@ If the __searchMetadataOnDemand__ property is set to
           to the search dialog.
         
 
-## Search dialog![html 5-viewer-search-dialog](images/HTML5ReportViewer/html5-viewer-search-dialog.png)
+## Search dialog  
+  ![html 5-viewer-search-dialog](images/HTML5ReportViewer/html5-viewer-search-dialog.png)
 
 The search dialog is a Kendo Window Widget, that stays on top of the report viewer. Since it's not modal, the viewer remains fully functional even when the search dialog is shown.
           The dialog can be closed with the close button in the top right corner or using the __search__ button on the toolbar.

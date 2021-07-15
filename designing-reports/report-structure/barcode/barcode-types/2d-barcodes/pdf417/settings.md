@@ -30,20 +30,23 @@ This is an enumeration, which determines the types of symbols, which will be acc
 * __Byte__The Byte Compaction mode enables a sequence of 8-bit bytes to be encoded into a sequence of codewords. 
   				  	It is accomplished by a Base 256 to Base 900 conversion, which achieves a compaction ratio of six bytes to five codewords. 
   				  	Characters with ascii codes from 0 to 255 are acceptable. The table below lists all the characters and their values.
-  				  ![barcode-pdf 417-table 1-byte](images/Barcodes/barcode-pdf417-table1-byte.png)
+  				    
+  ![barcode-pdf 417-table 1-byte](images/Barcodes/barcode-pdf417-table1-byte.png)
 
 * __Numeric__The numeric mode allows encoding of numeric symbols only [0-9]. Any other characters are discarded. 
   				  
 
 * __Text__The text mode allows encoding of text characters – upper and lowercase letters, as well as digits, 
   				  	punctuation and some additional characters. The complete character table is listed below:
-  				  ![barcode-pdf 417-table 2-text](images/Barcodes/barcode-pdf417-table2-text.png)
+  				    
+  ![barcode-pdf 417-table 2-text](images/Barcodes/barcode-pdf417-table2-text.png)
 
 ## Error Correction Level
 
 This is an integer value from 0 to 8. This value determines how many error correction clusters will be 
 			added to the rendered data. The table below lists the values for each level of error correction: 
-		  ![barcode-pdf 417-table 3-error-correction](images/Barcodes/barcode-pdf417-table3-error-correction.png)
+		    
+  ![barcode-pdf 417-table 3-error-correction](images/Barcodes/barcode-pdf417-table3-error-correction.png)
 
 ## Rows and Columns
 

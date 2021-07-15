@@ -48,7 +48,8 @@ This article is part of the Demo report guide on getting started with Telerik Re
 ## Previewing the Result
 
 Preview the result by clicking __Preview__ > __PrintPreview__.
-        ![FinalGS](images/FinalGS.PNG)
+          
+  ![FinalGS](images/FinalGS.PNG)
 
 ## Previous Steps
 

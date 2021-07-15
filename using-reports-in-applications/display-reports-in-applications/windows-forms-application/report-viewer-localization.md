@@ -26,11 +26,13 @@ When the __*Report Viewer*__ tries to load any localized resource and does not f
 
 The best way to store your resources is to generalize them as much as possible. That means to store localized strings in resource files for neutral cultures rather than specific cultures whenever possible. For instance, if you have resources for the French Belgian ("fr-BE") culture and the resources immediately above are the fallback resources in English, a problem may result when someone uses your application on a system configured for the French Canadian culture. The __*Report Viewer*__ will look for a __RESX__ file named "fr-CA", it will not find it and will load the fallback resource, which is English, instead of loading the French resources. The following picture shows this undesirable scenario.
 
-![](images/localization1.png)
+  
+  ![](images/localization1.png)
 
 If you follow the recommended practice of placing as many resources as possible in a neutral resource file for the "fr" culture, the French Canadian user would not see resources marked for the "fr-BE" culture, but he or she would still see strings in French. The following situation demonstrates this preferred scenario.
 
-![](images/localization2.png)
+  
+  ![](images/localization2.png)
 
 ## Naming Conventions for the Localization Resources
 
@@ -61,7 +63,8 @@ As described above, if for example the current UI culture is set to French Belgi
 
 1. Telerik.ReportViewer.WinForms.Resources.resx
 
-![](images/localization3.png)
+  
+  ![](images/localization3.png)
 
 The above diagram illustrates a simple view of the resource fallback for a UI culture set to "fr-BE". The __*Report Viewer*__ handles the case probing the "fr-BE" __RESX__ resource file for the requested key first, and subsequently falls back to the neutral French culture "fr", ultimately looking in the default assembly resources for a value if a value has still not been found.
 

@@ -13,7 +13,8 @@ position: 1
 
 
 In this article we will show you how to create a Column chart using the Graph item.
-      ![Column Chart](images/Graph/ColumnChart.png)
+        
+  ![Column Chart](images/Graph/ColumnChart.png)
 
 ## 
 

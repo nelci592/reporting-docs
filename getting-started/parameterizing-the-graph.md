@@ -37,7 +37,8 @@ This article is part of the Demo report guide on getting started with Telerik Re
             
 
 1. Set __ReportYear__ as in the following way:
-            ![RP](images/RP.PNG)
+              
+  ![RP](images/RP.PNG)
 
 1. Right-click __graphDataSource__. Select __Configure__ and click __Next__
               until the __Configure data source command__ is displayed.
@@ -53,7 +54,8 @@ This article is part of the Demo report guide on getting started with Telerik Re
 
 
 1. Set __Configure data source parameters__ dialog in the following way:
-            ![CDP](images/CDP.PNG)
+              
+  ![CDP](images/CDP.PNG)
 
 1. Set __Configure Design Time Parameters__:
             
@@ -68,7 +70,8 @@ This article is part of the Demo report guide on getting started with Telerik Re
 ## Previewing the Result
 
 Preview the result by clicking __Preview__ > __PrintPreview__.
-        ![Report Parameter Preview](images/ReportParameterPreview.PNG)
+          
+  ![Report Parameter Preview](images/ReportParameterPreview.PNG)
 
 ## Next Steps
 

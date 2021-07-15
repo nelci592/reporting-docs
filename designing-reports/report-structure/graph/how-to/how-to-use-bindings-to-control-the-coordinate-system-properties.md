@@ -62,7 +62,8 @@ Expand the report's __DataSource__ property and click on the __Add new DataSourc
 
 * When you click __Parse CSV...__ on the next page, you should see the result of the parsed file, which should look
                   like this:
-                ![Graph BindingsCSVPreview Results](images/Graph/HowToUseBindingsToControlCoordSystemProperties/GraphBindingsCSVPreviewResults.png)Click __Finish__ when you are ready.
+                  
+  ![Graph BindingsCSVPreview Results](images/Graph/HowToUseBindingsToControlCoordSystemProperties/GraphBindingsCSVPreviewResults.png)Click __Finish__ when you are ready.
                 
 
 The easiest way to define the groupings for a data item is to use the [GroupExplorer tool window]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/group-explorer%}).
@@ -92,7 +93,8 @@ According to our scenario, the group header will contain all the items used to d
 
 * If you use [Standalone Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview%}),
                       click on the __Insert__ menu select __Line__ and then __Line with Markers__.
-                    ![Graph Bindings Line With Markers](images/Graph/HowToUseBindingsToControlCoordSystemProperties/GraphBindingsLineWithMarkers.png)
+                      
+  ![Graph Bindings Line With Markers](images/Graph/HowToUseBindingsToControlCoordSystemProperties/GraphBindingsLineWithMarkers.png)
 
 * If you use the [Visual Studio Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/overview%}),
                       drag the __Graph Wizard__ from the __Visual Studio toolbox__. Then select __Line__ and __Line with Markers__ and click
@@ -118,7 +120,8 @@ According to our scenario, the group header will contain all the items used to d
 
 * To change the scale type, select the X-axis by clicking on it or on its labels and in the
                       *Property Browser* window select __DateTime Scale__ for the __Scale__ property:
-                    ![Change Scale Type](images/Graph/HowToBarLineSeries/ChangeScaleType.png)
+                      
+  ![Change Scale Type](images/Graph/HowToBarLineSeries/ChangeScaleType.png)
 
 * For better layout set the X-axis
                       P:Telerik.Reporting.GraphAxis.LabelFormat
@@ -139,7 +142,8 @@ According to our scenario, the group header will contain all the items used to d
 If you now preview your report, it should display a label and a graph for each vehicle in the data source.
               However, looking at the second graph that shows the *Cadillac ELR* data,
               you will notice that its layout needs some improvements.
-            ![Graph Bindings Original Layout ELR](images/Graph/HowToUseBindingsToControlCoordSystemProperties/GraphBindingsOriginalLayout_ELR.png)
+              
+  ![Graph Bindings Original Layout ELR](images/Graph/HowToUseBindingsToControlCoordSystemProperties/GraphBindingsOriginalLayout_ELR.png)
 
 * The datapoint marker on __August'14__ is cut, because the Y axis scale maximum value is automatically
                   calculated as 200, which is exactly the value that this datapoint represents. In this case it will be useful if we can
@@ -156,7 +160,8 @@ The above problems can be resolved using coordinate system's
               P:Telerik.Reporting.GraphCoordinateSystem.Bindings.
               Expand the coordinate system properties in the __PropertyGrid__ and bring the Bindings dialog up
               by clicking on the button on the right side of the __Bindings__ property, as shown below:
-            ![Graph Bindings Property Grid](images/Graph/HowToUseBindingsToControlCoordSystemProperties/GraphBindingsPropertyGrid.png)
+              
+  ![Graph Bindings Property Grid](images/Graph/HowToUseBindingsToControlCoordSystemProperties/GraphBindingsPropertyGrid.png)
 
 * Add a new binding and select `YAxis.Scale.Maximum` as a __Property path__.
                   Since we want to bind the scale maximum with the current graph data, it is a good idea to raise the maximum by 10%.
@@ -175,7 +180,8 @@ The above problems can be resolved using coordinate system's
                   `=IIF(CountDistinct(Fields.MonthYear) > 10, 'Months', 'Auto')`.
                 When you preview your report with the bindings applied, the graph that shows the *Cadillac ELR* data 
                   should look like the one below:
-                ![Graph Bindings Fixed Layout ELR](images/Graph/HowToUseBindingsToControlCoordSystemProperties/GraphBindingsFixedLayout_ELR.png)
+                  
+  ![Graph Bindings Fixed Layout ELR](images/Graph/HowToUseBindingsToControlCoordSystemProperties/GraphBindingsFixedLayout_ELR.png)
 
 In this article we demonstrated how to set dynamically the graph's coordinate system properties using __Bindings__.
             All the described steps are valid for both

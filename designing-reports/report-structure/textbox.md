@@ -12,7 +12,8 @@ position: 7
 
 
 
-The TextBox report item is used to display text on a report. This screenshot shows two TextBox report items.![](images/Textbox.png)
+The TextBox report item is used to display text on a report. This screenshot shows two TextBox report items.  
+  ![](images/Textbox.png)
 
 TextBox can display literal text for titles, descriptions, and labels, or dynamic text based on expressions. Every
         cell in a Table or CrossTab also contains a TextBox, which can be formatted the same way as stand-alone TextBoxes in your report.
@@ -116,7 +117,8 @@ The screenshot below shows a __TextBox__ with the in-place editor active.
         
 >caption In Place Editor
 
-![](images/Items001.png)
+  
+  ![](images/Items001.png)
 
 ## Using Expression editor
 
@@ -126,7 +128,8 @@ Information on using the expression editor is available in the [Edit Expression 
 >note Pressing the Enter key inserts a new line in the expression. Enclose the new line within double quotes ("") to             insert a new line in the string resulting from the evaluated expression.          
 
 
-![](images/UI014.png)
+  
+  ![](images/UI014.png)
 
 
 

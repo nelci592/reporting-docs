@@ -22,7 +22,9 @@ It is important to carefully prepare and understand your data before you create 
 
 ## Similarities to the Table Item
 
-One way to think about how a Graph item works is to compare it to a Table item:![Table Comparison](images/DataItems/Graph/TableComparison.png)![Graph Comparison](images/DataItems/Graph/GraphComparison.png)
+One way to think about how a Graph item works is to compare it to a Table item:  
+  ![Table Comparison](images/DataItems/Graph/TableComparison.png)  
+  ![Graph Comparison](images/DataItems/Graph/GraphComparison.png)
 
 Conceptually, they both use the same multidimensional data model:
 

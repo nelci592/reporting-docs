@@ -15,7 +15,8 @@ position: 2
 This section discusses more in-depth how to pass parameters to a method of the __OpenAccessContext__ with
         the __OpenAccessDataSource__ component. The provided examples and code snippets assume an existing
         __Telerik Data Access Model__ of the __Adventure Works__ sample database with the following structure:
-      ![](images/DataSources/OpenAccessDataSourceAdventureWorksEntityModel.png)
+        
+  ![](images/DataSources/OpenAccessDataSourceAdventureWorksEntityModel.png)
 
 >note The [OpenAccessDataSource Wizard]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/openaccessdatasource-wizard%}) can detect parameters          of the data-retrieval method, and it will ask you to provide values for them at  __Configure Data Source Parameters__  step.        
 

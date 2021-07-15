@@ -46,7 +46,8 @@ This article is part of the Demo report guide on getting started with Telerik Re
 ## Previewing the Result
 
 Preview the result by clicking __Preview__ > __PrintPreview__.
-        ![Page Header](images/PageHeader.PNG)
+          
+  ![Page Header](images/PageHeader.PNG)
 
 ## Next Steps
 

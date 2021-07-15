@@ -21,7 +21,8 @@ To add new ShapeMap series to the map follow these steps:
 
 1. Open __Series__ collection editor and __Add__ new
               T:Telerik.Reporting.ShapeMapSeries item, as shown below:
-            ![Choropleth Add Shape Map Series](images/Map/Choropleth/Choropleth_AddShapeMapSeries.png)
+              
+  ![Choropleth Add Shape Map Series](images/Map/Choropleth/Choropleth_AddShapeMapSeries.png)
 
 1. Set the P:Telerik.Reporting.ShapeMapSeries.ShapeMapGroup to an existing
               T:Telerik.Reporting.ShapeMapGroup instance or create a new one from scratch.
@@ -83,7 +84,8 @@ To add new ShapeMap series to the map follow these steps:
                   if it detects a valid URL. It is not necessary to provide the __.shp__ file extension.
                 Using the __Map Relation Pairs dialog__, setup the __RelationPairs__ property, pairing the fields 
                   from the analytical data set with fields from the spatial data set, produced by the DBF file that is contained in the Shapefile bundle.
-                ![Choropleth Map Relation Pairs Dialog](images/Map/Choropleth/Choropleth_MapRelationPairsDialog.png)
+                  
+  ![Choropleth Map Relation Pairs Dialog](images/Map/Choropleth/Choropleth_MapRelationPairsDialog.png)
 
 >important The engine will join the analytical data set with the spatial data set, preserving all the records from the spatial data set.                    In terms of SQL, if the spatial data set is "left" and the analytical data set is "right", the processing engine will produce a                    [Left outer join](http://en.wikipedia.org/wiki/Join_(SQL)#Left_outer_join).                  
 
@@ -93,7 +95,8 @@ To add new ShapeMap series to the map follow these steps:
 
 When all the properties are set, the __ShapeMapSeries__ instance should look similar to the following one in the
           __Property Grid__:
-        ![Choropleth Shape Map Series Layout In Property Grid](images/Map/Choropleth/Choropleth_ShapeMapSeries_LayoutInPropertyGrid.png)
+          
+  ![Choropleth Shape Map Series Layout In Property Grid](images/Map/Choropleth/Choropleth_ShapeMapSeries_LayoutInPropertyGrid.png)
 
  * [Map Overview]({%slug telerikreporting/designing-reports/report-structure/map/structure/overview%})
 

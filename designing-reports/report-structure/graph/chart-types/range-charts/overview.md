@@ -16,7 +16,8 @@ A range chart type displays a set of data points that are each defined by multip
       The range chart emphasizes on the distance between the two values. Category labels are displayed on the category axis. 
       The plain range chart fills in the area between the top and bottom value for each data point.
 
-The following image displays a plain range chart with one range area series:![Range Area Chart](images/Graph/RangeAreaChart.png)
+The following image displays a plain range chart with one range area series:  
+  ![Range Area Chart](images/Graph/RangeAreaChart.png)
 
 ## Range Chart Variations
 

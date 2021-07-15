@@ -53,7 +53,8 @@ In the example solution below "MyReportSolution" there are three projects.
 * "MyWindowsApplication" is a Windows forms application that also references "MyReportLib".
 >caption Example solution
 
-![](images/BestPractices1.png)
+  
+  ![](images/BestPractices1.png)
 
 ## Create a Report Library with a report definition.
 

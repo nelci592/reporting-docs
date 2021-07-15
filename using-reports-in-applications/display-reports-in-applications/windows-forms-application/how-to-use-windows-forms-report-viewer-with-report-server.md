@@ -32,7 +32,8 @@ To create a form and host the report viewer in it, you can either use the item t
 
 As soon as the report viewer is on your form, select it and locate the __ReportEngineConnection__ property.
                   invoke the UI editor by pressing the ellipsis button. The Report Engine Connection Editor dialog should appear:
-                ![Winforms Connection Editor](images/WinformsConnectionEditor.png)
+                  
+  ![Winforms Connection Editor](images/WinformsConnectionEditor.png)
 
 The __Reporting engine__ combobox provides the following options:
                 
@@ -69,7 +70,8 @@ Click __OK__ when ready. The dialog will close and the resulting connection stri
                 
 
 Locate the __ReportSource__ property. Invoke the UI editor by pressing the ellipsis button. The Report Source Editor dialog should appear:
-                ![Winforms Report Source Editor](images/WinformsReportSourceEditor.png)
+                  
+  ![Winforms Report Source Editor](images/WinformsReportSourceEditor.png)
 
 Select the __Report server__ option. The dialog will try to connect to a report server instance, using the credentials you provided earlier. In case it succeeds, the dialog
                   will populate its *Category* and *Report Name* comboboxes, allowing you to select the desired report.

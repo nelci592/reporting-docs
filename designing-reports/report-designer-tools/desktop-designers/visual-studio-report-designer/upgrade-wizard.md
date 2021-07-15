@@ -95,7 +95,8 @@ Once your solution is opened in the IDE, it would notify you with "File Modifica
           been modified outside of the environment and you should press "Reload" in order to reload the updated project:
         
 
-![](images/upgwiz5.png)
+  
+  ![](images/upgwiz5.png)
 
 ## In case you receive compilation errors and/or warnings
 

@@ -67,7 +67,8 @@ You can override a GlobalStyle by modifying the Style properties of an individua
         	properties that can be set through the style sheet. Any changes you make through the Edit Style dialog box override 
         	settings made through the report's __StyleSheet__ property.
 
-![](images/Style3.png) 
+  
+  ![](images/Style3.png) 
 
 ## Resetting Global Styles
 
@@ -78,7 +79,8 @@ If you have overridden a style using a report item's Style properties, it is pos
 
 1. Click __Reset Style__.
 
-![](images/ReportStyleRuleG.png)
+  
+  ![](images/ReportStyleRuleG.png)
 
 ____ 
 

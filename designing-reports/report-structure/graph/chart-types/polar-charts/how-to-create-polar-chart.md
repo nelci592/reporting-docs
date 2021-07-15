@@ -13,7 +13,8 @@ position: 1
 
 
 In this article we will show you how to create a Polar chart using the Graph item.
-      ![Polar Chart](images/Graph/PolarChart.png)
+        
+  ![Polar Chart](images/Graph/PolarChart.png)
 
 ## 
 

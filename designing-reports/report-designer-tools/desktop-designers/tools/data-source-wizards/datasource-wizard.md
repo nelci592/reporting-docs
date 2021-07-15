@@ -36,7 +36,8 @@ The Data Source Wizard allows you to select from one of the available data sourc
 * OpenClientDataSource - represents OpenEdge AppServer ABL procedures which provide data to data items
           
 
-![](images/DataSourceWizard1.png)
+  
+  ![](images/DataSourceWizard1.png)
 
 and selecting one of those choices, starts the respective wizard:
 
@@ -66,7 +67,8 @@ There are two ways to start the Data Source wizard:
                 
 
 * The Data Source Wizard is started
-                ![](images/DataSourceWizard2.png)
+                  
+  ![](images/DataSourceWizard2.png)
 
 1. From the [Report Wizard]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/report-wizards/band-report-wizard/overview%}),
               [Table and CrossTab Wizards]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/report-wizards/table-and-crosstab-wizards%}),
@@ -80,4 +82,5 @@ There are two ways to start the Data Source wizard:
                 
 
 * The Data Source Wizard is started
-                ![](images/DataSourceWizard3.png)
+                  
+  ![](images/DataSourceWizard3.png)

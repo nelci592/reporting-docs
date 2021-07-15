@@ -194,7 +194,8 @@ Add Watermarks to the Report via defined page range:
 ## Design-time support
 
 For better design experience, the watermarks are shown in the designer by default. They can be switched on/off with the watermarks button, located on the toolstrip at the bottom left corner of the designer window.
-        ![report-designer-toolstrip-watermarks-focused](images/Designer/report-designer-toolstrip-watermarks-focused.png)
+          
+  ![report-designer-toolstrip-watermarks-focused](images/Designer/report-designer-toolstrip-watermarks-focused.png)
 
 The value of the text watermarks is not evaluated and it is shown 'as-is' in the designer.
           Note that the position of the watermark in design-time is calculated based on the report size in designer and might differ from the watermark you will see in the previewed report.

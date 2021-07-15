@@ -88,7 +88,8 @@ The PageNumber function has an overload which takes a PageExec function as a sin
 `= PageNumber(PageExec("group1", Fields.GroupName))`
 
 >note Where it is applicable, use page breaks for the Group/Section/Report Item (or its parent section) used in the  __scope__  parameter.            This will prevent instances of the specified scope belonging to different sequences of pages to be present on the same page.            The most common example is the last page number from the first page sequence to be overlapping on the same page with            the first page number from the next page sequence.            If such scenario occurs, use  *First(expression)*  or  *Last(expression)*  aggregates            in the  __aggregateFunction__  parameter to specify which page sequence you would like to use to display the page number,            as shown in the image below:          
-![Reset Page Last First](images/ResetPageLastFirst.png)
+  
+  ![Reset Page Last First](images/ResetPageLastFirst.png)
 
 >warning Using PageNumber or PageCount functions inside conditional statements implemented with the            [Conditional and Null-coalescing operators]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/operators%})            ( __?:__  and  __??__ ) may prevent these functions from executing for a particular page.            This will disrupt the current page sequence and the functions may produce unexpected results.            In this case it is recommended to use the [Conditional Functions]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/functions/conditional-functions%}) instead of the above operators.          
 

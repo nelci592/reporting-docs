@@ -29,7 +29,8 @@ To create a form and host the report viewer in it, you can either use the item t
 
 As soon as the report viewer is on your form, select it and locate the __ReportEngineConnection__ property.
                   invoke the UI editor by pressing the ellipsis button. The Report Engine Connection dialog should appear:
-                ![wpf-connection-editor-rest-service](images/wpf-connection-editor-rest-service.png)
+                  
+  ![wpf-connection-editor-rest-service](images/wpf-connection-editor-rest-service.png)
 
 The __Reporting engine__ combobox provides the following options:
                 
@@ -66,7 +67,8 @@ Click __OK__ when ready. The dialog will close and the resulting connection stri
                 
 
 Locate the __ReportSource__ property. Invoke the UI editor by pressing the ellipsis button. The Report Source Editor dialog should appear:
-                ![Wpf Report Source Editor](images/WpfReportSourceEditor.png)
+                  
+  ![Wpf Report Source Editor](images/WpfReportSourceEditor.png)
 
 >important When the                    P:Telerik.ReportViewer.Wpf.ReportViewer.ReportEngineConnection                    property has  __Engine__  set to  *RestService*  or  *ReportServer* ,                    the viewer will serialize the report source identifier property                    ( __URI__  for                    T:Telerik.Reporting.UriReportSource,                     __TypeName__  for                    T:Telerik.Reporting.TypeReportSource,                     __ReportDocument__  for                    T:Telerik.Reporting.InstanceReportSource and                     __XML__  for                    T:Telerik.Reporting.XmlReportSource) and send it to the service resolver.                  The  *REST service*  will use the  __ReportSourceResolver__  instances included in its                    T:Telerik.Reporting.Service.ReportServiceConfiguration to resolve the report by the provided identifier.                    However, the  *REST service* 's default implementation includes only                    T:Telerik.Reporting.Service.UriReportSourceResolver and                    T:Telerik.Reporting.Service.TypeReportSourceResolver,                    so you need to provide a                    [Custom Report Source Resolver]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-service-report-source-resolver/how-to-implement-a-custom-report-source-resolver%}) if you use another type of                    T:Telerik.Reporting.ReportSource.                  
 
@@ -76,7 +78,8 @@ In this scenario we will use a T:Telerik.Reporting.UriReportSource.
                 
 
 Expand the __ReportSource__ node in Properties window. In the provided __Uri__ textbox enter the category and the name of the report you want to display using the following format: `{Category}/{ReportName}`, as shown below:
-                ![Wpf Set Uri Report Source Property Grid](images/WpfSetUriReportSourcePropertyGrid.png)
+                  
+  ![Wpf Set Uri Report Source Property Grid](images/WpfSetUriReportSourcePropertyGrid.png)
 
 Click __OK__ when ready. The dialog will close and the resulting report source will be populated as a value of the __ReportSource__ property.
                 

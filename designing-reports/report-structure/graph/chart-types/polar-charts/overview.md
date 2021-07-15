@@ -17,7 +17,8 @@ A polar chart displays a series as a set of points that are grouped by category 
       point is from the center, the greater is its value. Category labels are displayed on the perimeter of the chart. 
       
 
-The following image displays a Rose polar chart:![Polar Chart](images/Graph/PolarChart.png)
+The following image displays a Rose polar chart:  
+  ![Polar Chart](images/Graph/PolarChart.png)
 
 ## Polar Chart Variations
 

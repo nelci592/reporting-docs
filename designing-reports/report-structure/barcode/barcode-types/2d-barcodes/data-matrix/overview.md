@@ -17,7 +17,8 @@ Data Matrix barcode is a two-dimensional type of code used widely in industry fo
         or 16x48 for rectangular codes. To provide better readability, the Data Matrix code includes error correction algorithm, allowing to reconstruct up to 30% of damaged code image.
       
 
-## Data Matrix Barcode Structure![barcode-datamatrix-structure](images/Barcodes/barcode-datamatrix-structure.png)
+## Data Matrix Barcode Structure  
+  ![barcode-datamatrix-structure](images/Barcodes/barcode-datamatrix-structure.png)
 
 * __Finder pattern__ - the L-shaped lines at the bottom and left of the code are called "finder pattern". It is used by the readers for orientation, adjustment and to correct distortion.
             

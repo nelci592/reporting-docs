@@ -36,7 +36,7 @@ The following pictures show how the column chart would look like with different 
 
 
 
-|![Category Scale Spacing Slot Count 1](images/Graph/CategoryScale_SpacingSlotCount_1.png)|![Category Scale Spacing Slot Count 1a](images/Graph/CategoryScale_SpacingSlotCount_1a.png|
+|  <br/>  ![Category Scale Spacing Slot Count 1](images/Graph/CategoryScale_SpacingSlotCount_1.png)|  <br/>  ![Category Scale Spacing Slot Count 1a](images/Graph/CategoryScale_SpacingSlotCount_1a.png|
 
 
 
@@ -48,7 +48,7 @@ The default value of __1__ produces an empty space which size is equal to a sing
 >caption 
 
 
-|![Category Scale Spacing Slot Count 0](images/Graph/CategoryScale_SpacingSlotCount_0.png)|![Category Scale Spacing Slot Count 0a](images/Graph/CategoryScale_SpacingSlotCount_0a.png|
+|  <br/>  ![Category Scale Spacing Slot Count 0](images/Graph/CategoryScale_SpacingSlotCount_0.png)|  <br/>  ![Category Scale Spacing Slot Count 0a](images/Graph/CategoryScale_SpacingSlotCount_0a.png|
 
 
 
@@ -60,7 +60,7 @@ When the value is set to __0__, the data points will occupy all the available sl
 >caption 
 
 
-|![Category Scale Spacing Slot Count 3](images/Graph/CategoryScale_SpacingSlotCount_3.png)|![Category Scale Spacing Slot Count 3a](images/Graph/CategoryScale_SpacingSlotCount_3a.png|
+|  <br/>  ![Category Scale Spacing Slot Count 3](images/Graph/CategoryScale_SpacingSlotCount_3.png)|  <br/>  ![Category Scale Spacing Slot Count 3a](images/Graph/CategoryScale_SpacingSlotCount_3a.png|
 
 
 
@@ -80,7 +80,8 @@ To change the __Scale.SpacingSlotCount__ property, follow these steps:
             
 
 1. Modify the property according to your requirements, i.e. in order to increase the empty space, increase the __SpacingSlotCount__ value.
-            ![Graph Axis Spacing Slot Count Selected](images/Graph/GraphAxis_SpacingSlotCount_Selected.png)
+              
+  ![Graph Axis Spacing Slot Count Selected](images/Graph/GraphAxis_SpacingSlotCount_Selected.png)
 
 # See Also
 

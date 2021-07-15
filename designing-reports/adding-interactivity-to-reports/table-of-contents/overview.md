@@ -17,10 +17,12 @@ The table of contents (TOC) provides a summary/overview of the report structure 
         The user can click the entries in the table of contents to navigate to the report page which displays that item. The table of contents is part of the report and can be
         displayed before or after the report header/footer section. As such it will be included in the page numbering of the report. The following image illustrates the table of contents
         section during design-time and at run-time.
-      ![toc 01](images/toc01.png)
+        
+  ![toc 01](images/toc01.png)
 
 The table of contents can be added to the report by enabling it from the report's context menu:
-      ![toc Report Context Menu](images/tocReportContextMenu.png)
+        
+  ![toc Report Context Menu](images/tocReportContextMenu.png)
 
 ## Structure
 
@@ -38,7 +40,8 @@ At run-time, the table of contents entries are defined by the P:Telerik.Reportin
 The table of contents definition contains a title and a hierarchy of levels. The title text can be configured using the 
           P:Telerik.Reporting.TocSection.Title
           property. Its style is controlled via the P:Telerik.Reporting.TocSection.TitleStyle property.
-        ![toc Context Menu](images/tocContextMenu.png)
+          
+  ![toc Context Menu](images/tocContextMenu.png)
 
 The P:Telerik.Reporting.TocSection.Levels property contains the properties and styles for each TOC level. 
           The hierarchy of levels corresponds to the hierarchical structure of the report sections, items, and groups

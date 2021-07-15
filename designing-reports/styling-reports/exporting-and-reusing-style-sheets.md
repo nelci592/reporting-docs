@@ -30,7 +30,8 @@ Styles created in a report can be exported and then used in other reports. You c
 
 1. 
             Select one or more of the styles in the Members box on the left. Use Windows keyboard combinations to select more than one style.
-            ![](images/ReportStyleExport.png)
+              
+  ![](images/ReportStyleExport.png)
 
 1. 
             Click the __Export__ button. This will open the __Save As__ dialog box.

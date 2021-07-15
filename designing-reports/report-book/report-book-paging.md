@@ -25,13 +25,16 @@ The PageNumberingStyle enumeration has three values with self-explanatory names.
 __The value of the TextBox in the PageHeader is equal to = "Page: " + PageNumber + " of " + PageCount__
 >caption PageNumberingStyle.Continue
 
-![](images/ReportBook_PageNumberingContinue.png)
+  
+  ![](images/ReportBook_PageNumberingContinue.png)
 >caption PageNumberingStyle.ResetNumbering
 
-![](images/ReportBook_PageNumberingStyleResetNumbering.png)
+  
+  ![](images/ReportBook_PageNumberingStyleResetNumbering.png)
 >caption PageNumberingStyle.ResetNumberingAndCount
 
-![](images/ReportBook_PageNumberingStyleResetNumberingAndCount.png)
+  
+  ![](images/ReportBook_PageNumberingStyleResetNumberingAndCount.png)
 
 # See Also
 

@@ -46,7 +46,8 @@ In the Standalone Designer:
 1. Select the report item that you want to place and click on it.
             
 
-## To Move a Report Item![](images/ReportDesign002.png)
+## To Move a Report Item  
+  ![](images/ReportDesign002.png)
 
 Move the mouse over the report item until you see the cross hair cursor (see image above), then click and drag the report item.
 
@@ -54,7 +55,8 @@ Move the mouse over the report item until you see the cross hair cursor (see ima
 
 1. Click on the report item to select it.
 
-1. Click and drag one of the size handles on the edge of the report item to the desired size.![](images/ReportDesign003.png)
+1. Click and drag one of the size handles on the edge of the report item to the desired size.  
+  ![](images/ReportDesign003.png)
 
 ## Controlling Height
 

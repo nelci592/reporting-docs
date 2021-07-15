@@ -25,7 +25,8 @@ The code is divided into rows and columns, which accommodate all the encoded dat
         
 
 The PDF417 barcode has the following structure:
-        ![barcode pdf 417 structure](images/Barcodes/barcode-pdf417-structure.png)
+          
+  ![barcode pdf 417 structure](images/Barcodes/barcode-pdf417-structure.png)
 
 The __Data codewords__ are located in the middle section of the barcode and include the following sections:
         

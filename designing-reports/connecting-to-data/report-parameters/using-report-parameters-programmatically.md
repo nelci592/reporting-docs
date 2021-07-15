@@ -43,6 +43,7 @@ Example:
 1. Leave the Value for the __@ManagerID__ data source parameter empty and finish the wizard.
 
 1. Create the following layout for the report
+    
   ![](images/DesignParameters008.png)
 
 1. [Add a report 
@@ -89,6 +90,7 @@ Example:
 
 1. Select a parameter from the available values in the parameter editor 
    and click __Preview__.
-   ![](images/DesignParameters009.png)
+     
+  ![](images/DesignParameters009.png)
 
 # See Also

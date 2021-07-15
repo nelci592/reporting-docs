@@ -31,7 +31,8 @@ If the P:Telerik.ReportViewer.WinForms.SearchMetadataOnDemand property is set to
           to the search dialog.
         
 
-## Search dialog![winforms-viewer-search-dialog](images/winforms-viewer-search-dialog.png)
+## Search dialog  
+  ![winforms-viewer-search-dialog](images/winforms-viewer-search-dialog.png)
 
 The search dialog is a standalone WinForms form, toggled either from the report viewer toolbar or with the __Ctrl+F__ key combination.
           The dialog stays on top of the report viewer, but since it's not modal, the viewer remains fully functional even when the search dialog is shown. 

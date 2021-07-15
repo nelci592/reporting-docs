@@ -95,7 +95,8 @@ For Pie Charts with lots of data points the best approach might be to use a comb
           P:Telerik.Reporting.BarSeries.DataPointLabelOffset set to __0.5cm__
           and P:Telerik.Reporting.BarSeries.DataPointLabelConnectorStyle__.Visible__
           set to __true__.
-        ![Outside Column Pie Chart](images/Graph/OutsideColumnPieChart.png)
+          
+  ![Outside Column Pie Chart](images/Graph/OutsideColumnPieChart.png)
 
 >note The algorithm that moves the data point labels, preventing them from overlapping, is activated only when the labels have their            P:Telerik.Reporting.GraphSeriesBase.DataPointLabelAngle set to a multiple of  __2*π__  radians in degrees (i.e. 0, 360, etc.).          
 

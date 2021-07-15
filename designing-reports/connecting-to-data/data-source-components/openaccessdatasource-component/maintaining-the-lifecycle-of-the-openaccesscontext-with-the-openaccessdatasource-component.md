@@ -16,7 +16,8 @@ This section discusses how to maintain the lifecycle of the __OpenAccessContext_
     	__OpenAccessDataSource__ component. The provided examples and code snippets assume an existing __Telerik Data Access Model__ 
     	of the __Adventure Works__ sample database with the following structure:
 
-![](images/DataSources/OpenAccessDataSourceAdventureWorksEntityModel.png)
+  
+  ![](images/DataSources/OpenAccessDataSourceAdventureWorksEntityModel.png)
 
 ## 
 

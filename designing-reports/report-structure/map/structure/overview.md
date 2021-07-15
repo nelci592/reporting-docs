@@ -16,7 +16,8 @@ Map item enables you to visualize an aggregated business data in a geographical 
 
 ## Map elements
 
-The image below show the basic elements of a map:![Map Elements](images/Map/MapElements.png)
+The image below show the basic elements of a map:  
+  ![Map Elements](images/Map/MapElements.png)
 
 Fig.1 *Map Item showing a PointMap series*
 

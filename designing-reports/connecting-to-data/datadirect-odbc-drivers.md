@@ -116,7 +116,8 @@ __Example usage:__
           ` - uninstalls the 32-bit  SQL Server and Oracle drivers and outputs "OK" if uninstallation succeeds.
         
 
-## Graphical User Interface Installer![datadirect-drivers-installer-gui](images/DataSources/datadirect-drivers-installer-gui.png)
+## Graphical User Interface Installer  
+  ![datadirect-drivers-installer-gui](images/DataSources/datadirect-drivers-installer-gui.png)
 
 The drivers can be installed or uninstalled using a Windows Forms application, which makes the installation process more intuitive and convenient.
           It provides the same options as the CLI installer and adds the ability to output the installation log to an external file.

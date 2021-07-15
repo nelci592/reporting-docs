@@ -29,7 +29,8 @@ To create a form and host the report viewer in it, you can either use the item t
 
 As soon as the report viewer is on your form, select it and locate the __ReportEngineConnection__ property.
                   invoke the UI editor by pressing the ellipsis button. The Report Engine Connection Editor dialog should appear:
-                ![Winforms Connection Editor REST](images/WinformsConnectionEditor_REST.png)
+                  
+  ![Winforms Connection Editor REST](images/WinformsConnectionEditor_REST.png)
 
 The __Reporting engine__ combobox provides the following options:
                 
@@ -66,7 +67,8 @@ Click __OK__ when ready. The dialog will close and the resulting connection stri
                 
 
 Locate the __ReportSource__ property. Invoke the UI editor by pressing the ellipsis button. The Report Source Editor dialog should appear:
-                ![Winforms Report Source Editor URL](images/WinformsReportSourceEditor_URL.png)
+                  
+  ![Winforms Report Source Editor URL](images/WinformsReportSourceEditor_URL.png)
 
 >important When the                    P:Telerik.ReportViewer.WinForms.ReportViewerBase.ReportEngineConnection                    property has  __Engine__  set to  *RestService* ,                    the viewer will serialize the report source identifier property                    ( __URI__  for                    T:Telerik.Reporting.UriReportSource,                     __TypeName__  for                    T:Telerik.Reporting.TypeReportSource,                     __ReportDocument__  for                    T:Telerik.Reporting.InstanceReportSource and                     __XML__  for                    T:Telerik.Reporting.XmlReportSource) and send it to the service resolver.                  The  *REST service*  will use the  __ReportResolver__  instances included in its                    T:Telerik.Reporting.Service.ReportServiceConfiguration to resolve the report by the provided identifier.                    However, the  *REST service* 's default implementation includes only                    T:Telerik.Reporting.Service.ReportFileResolver and                    T:Telerik.Reporting.Service.ReportTypeResolver,                    so you need to provide a                    [Custom Report Source Resolver]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-service-report-source-resolver/how-to-implement-a-custom-report-source-resolver%}) if you use another type of                    T:Telerik.Reporting.ReportSource.                  
 

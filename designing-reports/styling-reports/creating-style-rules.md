@@ -44,7 +44,8 @@ See [Understanding Style Selectors]({%slug telerikreporting/designing-reports/st
 ## Using the StyleRule Collection Editor
 
 1. In the StyleRule Collection Editor, click __Add__. A new rule will be added to the Members list and you will see the Selectors and Style properties for the rule.
-        ![](images/ReportStyleRuleA.png)
+          
+  ![](images/ReportStyleRuleA.png)
 
 1. Click the __Selectors__ property, then click the ellipsis button that appears to the right of __(Collection)__. This action will open TypeSelector Collection Editor.  
 
@@ -53,10 +54,12 @@ See [Understanding Style Selectors]({%slug telerikreporting/designing-reports/st
 
 
 1. Click __TypeSelector__ from the list. Note: TypeSelector is the default type created when you click the __Add__ button.
-        ![](images/ReportStyleRuleB.png)
+          
+  ![](images/ReportStyleRuleB.png)
 
 1.  Click the __Type__ property of the new TypeSelector, and then click the ellipsis button.
-        ![](images/ReportStyleRuleC.png)
+          
+  ![](images/ReportStyleRuleC.png)
 
 1. Select the __Telerik.Reporting.TextBox__ and click __OK__. The StyleRule will now apply to all __TextBox__ report items on the report. 
 
@@ -70,7 +73,8 @@ See [Understanding Style Selectors]({%slug telerikreporting/designing-reports/st
 1. Click __OK__ to save the rules and close the editor window.
 
 
-![](images/ReportStyleRuleD.png)
+  
+  ![](images/ReportStyleRuleD.png)
 
 ## Creating a TypeSelector StyleRule in Code
 
@@ -135,7 +139,8 @@ The following code demonstrates the four steps required to create a __TypeSelec
 
 
 1. Type a name for the Style into the __StyleName__ property.
-        ![](images/ReportStyleRuleE.png)
+          
+  ![](images/ReportStyleRuleE.png)
 
 1. Click __OK__ to return to the StyleRule Collection Editor. 
 
@@ -198,7 +203,8 @@ Each report item has a __StyleName__ property.
 
 Type the __StyleName__ of the desired __StyleRule__ into the report item's __StyleName__ property to apply the formatting of the __StyleRule__.
 
-![](images/ReportStyleRuleF.png)  
+  
+  ![](images/ReportStyleRuleF.png)  
 
 ## Creating a DescendantSelector StyleRule
 
@@ -214,10 +220,12 @@ Type the __StyleName__ of the desired __StyleRule__ into the report item's __St
 
 
 1. Click __DescendantSelector__ from the list.
-        ![](images/ReportStyleRuleH.png)The __DescendantSelector__ is made up of additional __Selectors__.
+          
+  ![](images/ReportStyleRuleH.png)The __DescendantSelector__ is made up of additional __Selectors__.
 
 1. Click the __Selectors__ property, and then click the ellipsis button to open up a new TypeSelector Collection Editor window.
-        ![](images/ReportStyleRuleI.png)In this new TypeSelector Collection Editor window, you will define the Selectors that make up the DescendantSelector.
+          
+  ![](images/ReportStyleRuleI.png)In this new TypeSelector Collection Editor window, you will define the Selectors that make up the DescendantSelector.
 
 1. Click __Add__ to add a new __TypeSelector__. 
 
@@ -229,13 +237,15 @@ Type the __StyleName__ of the desired __StyleRule__ into the report item's __St
 
 
 1. Add another new __TypeSelector__ and set its type to __Telerik.Reporting.TextBox__.
-        ![](images/ReportStyleRuleJ.png)
+          
+  ![](images/ReportStyleRuleJ.png)
 
 1. Click __OK__ to close the window and return to the TypeSelector Collection Editor window for the DescendantSelector. 
 
 
 1. Click __OK__ to close this window and return to the StyleRule Collection Editor window.
-        ![](images/ReportStyleRuleK.png)
+          
+  ![](images/ReportStyleRuleK.png)
 
 1. Expand the __Style__ property to define the formatting for the __DetailSection TextBox StyleRule__. 
 

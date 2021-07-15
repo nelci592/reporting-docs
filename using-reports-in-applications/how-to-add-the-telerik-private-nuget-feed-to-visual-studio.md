@@ -34,7 +34,8 @@ Choose feed __Name__, set the feed __URL__ to: __https://nuget.telerik.com/nuget
             
 >caption Figure 1: Visual Studio NuGet Package Manager and Telerik NuGet Feed:
 
-![nuged feed](images/nuged-feed-in-npm.png)
+  
+  ![nuged feed](images/nuged-feed-in-npm.png)
 
 Create or load your project.
             
@@ -55,7 +56,8 @@ Enter your credentials only once by selecting the __Remember my password__ check
             
 >caption Figure 2: Enter your Telerik.com credentials to access the Telerik NuGet feed:
 
-![nuget Wcredentials](images/nuget-credentials.png)
+  
+  ![nuget Wcredentials](images/nuget-credentials.png)
 
 Now all the packages that are licensed (paid or trial) to the above users are available in the Visual Studio NuGet Package manager.
             

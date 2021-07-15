@@ -16,7 +16,8 @@ The HTML5 Report Viewer is a pure HTML5/JavaScript/CSS3 jQuery-based widget that
         reports in an HTML page. The layout/styling is based on pure HTML5 templates and CSS3 styles and is fully customizable.
         The default implementation supports mobile as well as desktop browsers. The responsive layout adapts itself to the device display
         for best viewing experience. Visual appearance can be customized by the Kendo UI theming mechanism.
-      ![html 5-report-viewer](images/HTML5ReportViewer/html5-report-viewer.png)
+        
+  ![html 5-report-viewer](images/HTML5ReportViewer/html5-report-viewer.png)
 
 ## Report Preview Area
 

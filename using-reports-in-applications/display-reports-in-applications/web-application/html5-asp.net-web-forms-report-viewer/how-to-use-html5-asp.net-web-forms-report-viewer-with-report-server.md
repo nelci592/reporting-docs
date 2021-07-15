@@ -72,7 +72,8 @@ The VS item template will integrate HTML5 WebForms Report Viewer in an .aspx pag
 
 * __Runtime credentials__ - enter Username and Password for Registered user or choose
                       [Guest user](https://docs.telerik.com/report-server/implementer-guide/user-management/guest-user) if it suits your needs. Make sure your Report Server instance has its Guest account enabled.
-                    ![item-template-reporting-engine-rs](images/item-template-reporting-engine-rs.png)
+                      
+  ![item-template-reporting-engine-rs](images/item-template-reporting-engine-rs.png)
 
 1. __'Setup Report Source for Report Server'__ will choose a report definition for the report viewer. There are two things
                   that you should select, but in case you are using Guest account, you will have to fill-in the fields manually. It is because the Guest user
@@ -83,11 +84,13 @@ The VS item template will integrate HTML5 WebForms Report Viewer in an .aspx pag
                     
 
 * __Report name__ - select a report from the available reports.
-                    ![item-template-report-source-rs](images/item-template-report-source-rs.png)
+                      
+  ![item-template-report-source-rs](images/item-template-report-source-rs.png)
 
 1. __'Configure Report Viewer'__ exposes the option to enable
                   [accessibility]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/accessibility%}) for the report viewer.
-                ![Item Template Accessibility](images/item-template-accessibility.png)
+                  
+  ![Item Template Accessibility](images/item-template-accessibility.png)
 
 After finishing, the item template automatically do the following:
         

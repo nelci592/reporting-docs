@@ -61,11 +61,13 @@ On the following page add the __SalesPersonName__ field to the __RowGroups__ box
 
 Set the row group's __Filters__ to `"Count(Fields.CategoryName) Top N =5"`.
               Your group properties should now be set like this:
-            ![di Nest Graph In Table Row Group Properties](images/DataItems/di_NestGraphInTable_RowGroupProperties.png)
+              
+  ![di Nest Graph In Table Row Group Properties](images/DataItems/di_NestGraphInTable_RowGroupProperties.png)
 
 Set the crosstab headers to `"Person Name"` and `"Total Sales"`
               and the row group textbox expressions to `"Fields.SalesPersonName"` and `"Count(CategoryName)"`:
-            ![di Nest Graph In Table Cross Tab Layout](images/DataItems/di_NestGraphInTable_CrossTabLayout.png)
+              
+  ![di Nest Graph In Table Cross Tab Layout](images/DataItems/di_NestGraphInTable_CrossTabLayout.png)
 
 If you preview the report now, you will see that the crosstab shows the top 5 sales agents
               along with their sales count by year.
@@ -84,7 +86,8 @@ Select the data source and on the next page add the __CategoryName__ field
               where it will be automatically changed to `Count(CategoryName)`.
               You can make some additional adjustments like removing the graph title, aligning the texts
               and resizing the crosstab's rows and columns. Finally your crosstab should look like the one below:
-            ![di Nest Graph In Table Crosstab With Graph](images/DataItems/di_NestGraphInTable_CrosstabWithGraph.png)
+              
+  ![di Nest Graph In Table Crosstab With Graph](images/DataItems/di_NestGraphInTable_CrosstabWithGraph.png)
 
 If you preview the report, you will notice that the chart data stays the same on every row and column of the crosstab.
               That's why we connected it to the whole dataset. In order to connect it to the current row group data,
@@ -93,7 +96,8 @@ If you preview the report, you will notice that the chart data stays the same on
             
 
 Open the Graph's [Bindings]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/bindings%}) editor and create a new binding for the DataSource property as shown below:
-            ![di Nest Graph In Table Bindings Editor](images/DataItems/di_NestGraphInTable_BindingsEditor.png)
+              
+  ![di Nest Graph In Table Bindings Editor](images/DataItems/di_NestGraphInTable_BindingsEditor.png)
 
 Since we are explicitly binding the __DataSource__ property, we don't need to declare it
               in the Graph's properties, so you can set it to __No Data Source__. Please note that this will

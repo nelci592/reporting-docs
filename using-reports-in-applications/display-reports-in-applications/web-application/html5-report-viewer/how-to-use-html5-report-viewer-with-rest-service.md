@@ -58,7 +58,8 @@ The item template adds .html page with HTML5 Report Viewer
 
 * __Use existing REST service__ - in case there is a REST service already configured.
                       Choosing this option, will require to enter a valid REST service URI.
-                    ![item-template-reporting-engine-rest](images/item-template-reporting-engine-rest.png)
+                      
+  ![item-template-reporting-engine-rest](images/item-template-reporting-engine-rest.png)
 
 1. __'Configure report source'__ will choose a report definition for the report viewer. If
                   __Create new REST service__ option was previously selected, you will have to choose one of the following three options.
@@ -99,11 +100,13 @@ The item template adds .html page with HTML5 Report Viewer
                           types in the solution. The engine will search for report types in all projects in the solution that have Telerik Reporting reference
                           included. The VS item template will add the required __connection string__ from the reports project configuration
                           file (if exists).
-                        ![item-template-report-source-rest](images/item-template-report-source-rest.png)
+                          
+  ![item-template-report-source-rest](images/item-template-report-source-rest.png)
 
 1. __'Configure Report Viewer'__ exposes the option to enable
                   [accessibility]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/accessibility%}) for the report viewer.
-                ![Item Template Accessibility](images/item-template-accessibility.png)
+                  
+  ![Item Template Accessibility](images/item-template-accessibility.png)
 
 After finishing, the item template automatically does the following:
         

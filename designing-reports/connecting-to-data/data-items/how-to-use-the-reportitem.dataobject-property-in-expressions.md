@@ -162,7 +162,8 @@ This scenario takes place when the currently bound data object have to be used a
           products color in a crosstab placed in the group header.
         
 
-The following screenshot shows the expected report output that should be created as a result of this example:![dataobject-report-output](images/DataItems/dataobject-report-output.png)Steps:
+The following screenshot shows the expected report output that should be created as a result of this example:  
+  ![dataobject-report-output](images/DataItems/dataobject-report-output.png)Steps:
 
 1. 
             Create or open an existing report.
@@ -248,7 +249,8 @@ Alternatively you may use the crosstab wizard choosing the SqlDataSource used fo
             and __=ReportItem.DataObject__ as an __Expression__, as shown in the following screenshot.
             This means that when the crosstab is processed its data source will be replaced with the result
             of the binding expression evaluation. This way it will be populated with the data of the current group insance.
-            ![dataobject-edit-bindings](images/DataItems/dataobject-edit-bindings.png)
+              
+  ![dataobject-edit-bindings](images/DataItems/dataobject-edit-bindings.png)
 
 1. 
             Preview or start your report. You should now see the products information listed in the details section for every group and a summary info about the products colors summarized in the group headers.

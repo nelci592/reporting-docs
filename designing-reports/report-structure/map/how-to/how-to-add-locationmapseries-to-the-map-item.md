@@ -56,7 +56,8 @@ To add new PointMap, PieMap or a ColumnMap series to the map follow these steps:
 
 When all the properties are set, the __LocationMapSeries__ instance should look similar to the following one in the 
           __Property Grid__:
-        ![Map Add Location Map Series](images/Map/Map_AddLocationMapSeries.png)
+          
+  ![Map Add Location Map Series](images/Map/Map_AddLocationMapSeries.png)
 
  * [Pie Charts]({%slug telerikreporting/designing-reports/report-structure/graph/chart-types/pie-charts/overview%})
 

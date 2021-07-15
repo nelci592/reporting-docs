@@ -34,7 +34,8 @@ You specify a calculated field manually by creating an
 * [OpenAccessDataSource]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/openaccessdatasource-wizard%})
 
 by clicking on the ellipsis of the __CalculatedFields__ property.
-          ![](images/CalculatedFields.png)
+            
+  ![](images/CalculatedFields.png)
 
 The dialog accepts __Name__, __DataType__ and __Expression__.
           

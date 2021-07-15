@@ -28,7 +28,8 @@ The first page of the wizard presents four different invoice layouts to choose f
               On the right is a sample picture displaying the resulting invoice design.
               These four layouts correspond with four predefined reports that are used as a base templates and once the wizard finishes,
               it will apply the changes onto the selected one and load it into the designer.
-            ![Invoice Wizard 1 Select Template](images/Templates/Invoice/InvoiceWizard_1_SelectTemplate.png)
+              
+  ![Invoice Wizard 1 Select Template](images/Templates/Invoice/InvoiceWizard_1_SelectTemplate.png)
 
 Once you select the appropriate layout and go to the next page, you need to define the data scenario you will be using when creating the invoice.
             
@@ -37,7 +38,8 @@ Once you select the appropriate layout and go to the next page, you need to defi
                 
 
 * The __Header-Details scenario__ is more common and contains two data sources – the first one is for the static data, related with the company and contains fields that are not to be listed in the invoice details. Such fields are CompanyName, Phone, Fax, ShipTo, BillTo, etc. The second data source contains the data for the items, listed in the invoice – ProductNumber, Description, Price, Taxes, Discounts, etc.
-                ![Invoice Wizard 2 Select Data Scenario](images/Templates/Invoice/InvoiceWizard_2_SelectDataScenario.png)
+                  
+  ![Invoice Wizard 2 Select Data Scenario](images/Templates/Invoice/InvoiceWizard_2_SelectDataScenario.png)
 
 The next couple of pages guide the user through the data source setup. If the __Plain Data scenario__
               is selected, the Wizard will start a “create-and-setup” sequence for a single data source.
@@ -47,7 +49,8 @@ The next couple of pages guide the user through the data source setup. If the __
 These wizard pages are common for the most of the report wizards, so we won’t explain their structure and behavior in details.
               However, the last page of the data source sequence is newly introduced and it defines the relations between the predefined
               template fields and the fields from the data sources which were set in the previous step.
-            ![Invoice Wizard 3 Field Mapping](images/Templates/Invoice/InvoiceWizard_3_FieldMapping.png)
+              
+  ![Invoice Wizard 3 Field Mapping](images/Templates/Invoice/InvoiceWizard_3_FieldMapping.png)
 
 The FieldMappings form consists of a treeview that contains the data source fields (on the left) and a grid with two columns for template and mapped fields (on the right).
               The data source fields should be mapped to the template fields, which are shown in the left column of the grid. On the right column are displayed the already mapped fields.
@@ -63,11 +66,13 @@ You can map the data source fields to the template fields by dragging them from 
             
 
 In case you need to delete a mapping, you can do this by using the DEL key or selecting "<< none >>" from the combobox. For convenience, the data source fields that are already mapped are displayed in a gray color in the treeview.
-            ![Invoice Wizard 4 Field Mapping Done](images/Templates/Invoice/InvoiceWizard_4_FieldMapping_Done.png)
+              
+  ![Invoice Wizard 4 Field Mapping Done](images/Templates/Invoice/InvoiceWizard_4_FieldMapping_Done.png)
 
 Once you are done mapping the fields, click Next to go to the __Summary page__. It displays a brief information about
               the selected layout, data scenario and the defined mappings. It will also display a message if you are missing some mandatory mapping so you could go back and fix it if it is not intentional.
-            ![Invoice Wizard 5 Summary](images/Templates/Invoice/InvoiceWizard_5_Summary.png)
+              
+  ![Invoice Wizard 5 Summary](images/Templates/Invoice/InvoiceWizard_5_Summary.png)
 
 When you are all set, you can click Finish and the designer will load the produced invoice report, ready to be used. 
               If you have setup the data sources and field mappings properly, you should just click __Preview__ and your invoice will be displayed.

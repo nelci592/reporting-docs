@@ -29,12 +29,14 @@ In this how-to article we will show you how to create a Map which will present t
 Start the Map Wizard:
 
 * If you create a new report, select the __Map Wizard__ icon from the __Available Templates__ page.
-                ![Item Template Map Wizard](images/Map/ItemTemplate_MapWizard.png)
+                  
+  ![Item Template Map Wizard](images/Map/ItemTemplate_MapWizard.png)
 
 * If you want to add the Map item to an existing report, you have to select the __Map__ item
                   from the __Insert__ menu.
                   This will bring up the __Map Wizard__ which will guide you through the creation process.
-                ![Insert Menu Select Map](images/Map/InsertMenu_SelectMap.png)
+                  
+  ![Insert Menu Select Map](images/Map/InsertMenu_SelectMap.png)
 
 Add new
               [CSV Data Source]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/csvdatasource-wizard%})
@@ -60,7 +62,8 @@ Add new
 
 1. When you click __Parse CSV...__ on the next page, you should see the result of the parsed file, which should look
                   like this:
-                ![CSV Preview Results](images/Map/CSV_PreviewResults.png)Click __Finish__ when you are ready.
+                  
+  ![CSV Preview Results](images/Map/CSV_PreviewResults.png)Click __Finish__ when you are ready.
                 
 
 In the *Available data sources* list you should see the datasource you've already created.
@@ -87,7 +90,8 @@ In the next page you have to select the fields which will be used to build the m
                 
 
 Your __Arrange map fields__ page should look like the one shown below:
-            ![Column Chart Arrange Map Fields](images/Map/ColumnChart_ArrangeMapFields.png)
+              
+  ![Column Chart Arrange Map Fields](images/Map/ColumnChart_ArrangeMapFields.png)
 
 Once the mandatory fields are set up, the __Next__ button will get enabled and you can go to the next page.
             
@@ -102,14 +106,16 @@ On the __Choose a location provider__ page you have to select the location provi
               T:Telerik.Reporting.BingLocationProvider.
               They both require a valid client token (key) to authenticate the geocoding requests that will be sent from the Map item.
               Once you have obtained the key, you should paste it in the *Client token* box, as shown below:
-            ![ChooseALocation Provider](images/Map/ChooseALocationProvider.png)
+              
+  ![ChooseALocation Provider](images/Map/ChooseALocationProvider.png)
 
 When you click __Finish__, the Wizard will create the definition of the Map item, show it in the designer
               and will start to request the geocode and tiles information from the providers asynchronously. Initially it will take a few seconds to fetch
               all the data from the geocoding service, but the following requests should be executed faster. The tiles, needed to prepare the map background,
               will be displayed as they arrive, but the map will stay responsive and you can examine and change its definition.
               When finished, your map should look like this:
-            ![Map Column Chart Done](images/Map/MapColumnChart_Done.png)
+              
+  ![Map Column Chart Done](images/Map/MapColumnChart_Done.png)
 
 Now we will add a
               T:Telerik.Reporting.PointMapSeries
@@ -133,7 +139,8 @@ The easiest way to add a series to the already created __Map__ or __Graph__ is t
                 
 
 Your __Arrange map fields__ page should look like the one shown below:
-            ![Point Arrange Map Fields](images/Map/Point_ArrangeMapFields.png)
+              
+  ![Point Arrange Map Fields](images/Map/Point_ArrangeMapFields.png)
 
 When you click the __Finish__ button, the map will display the two series together, rendered in the
               order they have been created. That's why you will see the column charts being overlapped by the circles.
@@ -182,10 +189,12 @@ The map needs some more setup and styling in order to make it look good. Select 
 * In order to match the column series colors with the real world medal colors, you need to define a custom ColorPalette.
                   The process is explained [here]({%slug telerikreporting/designing-reports/report-structure/graph/formatting-a-graph/series%})
                   and the colors used for this example are shown on the following screenshot:
-                ![Medals Color Codes](images/Map/MedalsColorCodes.png)
+                  
+  ![Medals Color Codes](images/Map/MedalsColorCodes.png)
 
 * If you wish, you can change the map size, adjust the fonts properties and try various styling, but finally your map should look like this:
-                ![Map Point And Column Chart Done](images/Map/MapPointAndColumnChart_Done.png)
+                  
+  ![Map Point And Column Chart Done](images/Map/MapPointAndColumnChart_Done.png)
 
 As you may have noticed, the information about the occupied places is present in the CSV file as integer numbers, that's why the
               legend displays it this way. But the report will look better if the information about the places is displayed with medal names - 
@@ -250,7 +259,8 @@ In order to display the meaningful names of the olympic associations, we will ad
                 
 
 * Add new report parameter named __associationParam__ and set its properties as shown at the following screenshot:
-                ![association Param](images/Map/AssociationParam.png)By default the parameter will be set to the association with `Id = 1`, which means that the report
+                  
+  ![association Param](images/Map/AssociationParam.png)By default the parameter will be set to the association with `Id = 1`, which means that the report
                   initially will show all the teams that are members of __Pan-American Sports Organization__. However, because it is a multivalue
                   parameter, you can add all the Association IDs in its __Value__ property.
                 
@@ -282,7 +292,8 @@ Since the column charts on the map are not suitable to display any labels on the
 * Select the __Count__ field and drag it to *Detail Values* box, where it will be transformed to
                   __Sum(Count)__.
                 Your __Arrange fields__ page should look like the one shown below:
-                ![Arrange Crosstab Fields](images/Map/ArrangeCrosstabFields.png)
+                  
+  ![Arrange Crosstab Fields](images/Map/ArrangeCrosstabFields.png)
 
 * On the __Choose Layout__ page select *Blocked layout, subtotals below* option
                   and select __Finish__ if you do not need to choose from any predefined stylings.
@@ -296,14 +307,16 @@ Since the column charts on the map are not suitable to display any labels on the
                   [ConditionalFormatting Rules]({%slug telerikreporting/designing-reports/styling-reports/conditional-formatting%}) to the textbox with the value 
                   *=Fields.Medal*
                   , as shown below:
-                ![Medals Conditional Formatting Rules Dialog](images/Map/MedalsConditionalFormattingRulesDialog.png)
+                  
+  ![Medals Conditional Formatting Rules Dialog](images/Map/MedalsConditionalFormattingRulesDialog.png)
 
 * In order to have the information in your crosstab sorted properly, you can set `=Sum(Fields.Count) Desc`
                   as a sorting for the row group and `=Fields.Place Asc` as a sorting for the column group.
                 
 
 * You can change the table styling by your choice, but finally when you preview the report, the crosstab should look like the one below:
-                ![Crosstab Done](images/Map/Crosstab_Done.png)
+                  
+  ![Crosstab Done](images/Map/Crosstab_Done.png)
 
 In this step we will add some interactivity to our report, allowing the user to select a national team from the crosstab and changing
               the map extent according to its selection. The drill-through action will use an invisible report parameter which will store
@@ -348,7 +361,8 @@ In this step we will add some interactivity to our report, allowing the user to 
                   find it among the data points on the map. Select the __PointMapSeries__ and set a new
                   P:Telerik.Reporting.GraphSeriesBase.DataPointConditionalFormatting
                   rule, as shown here:
-                ![Point Map Data Point Conditional Formatting](images/Map/PointMapDataPointConditionalFormatting.png)
+                  
+  ![Point Map Data Point Conditional Formatting](images/Map/PointMapDataPointConditionalFormatting.png)
 
 Finally we will add a small Graph showing a
               [Column Chart]({%slug telerikreporting/designing-reports/report-structure/graph/chart-types/column-charts/how-to-create-column-chart%})
@@ -378,7 +392,8 @@ Finally we will add a small Graph showing a
                 
 
 When you are finished, you can preview your report and it should look similar to this one:
-            ![Map Olympic Medals Done](images/Map/MapOlympicMedals_Done.png)
+              
+  ![Map Olympic Medals Done](images/Map/MapOlympicMedals_Done.png)
 
 In this example we demonstrated some of the newest features of Telerik Reporting along with a couple of advanced techniques that can be used
             to make your reports more dynamic and more interactive, and all that without writing a single line of code.

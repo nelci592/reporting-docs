@@ -32,7 +32,8 @@ To create a window and host the report viewer in it, you can either use the item
 
 As soon as the report viewer is on your form, select it and locate the __ReportEngineConnection__ property.
                   invoke the UI editor by pressing the ellipsis button. The Report Engine Connection dialog should appear:
-                ![wpf-connection-editor-report-server](images/wpf-connection-editor-report-server.png)
+                  
+  ![wpf-connection-editor-report-server](images/wpf-connection-editor-report-server.png)
 
 The __Reporting engine__ combobox provides the following options:
                 
@@ -69,7 +70,8 @@ Click __OK__ when ready. The dialog will close and the resulting connection stri
                 
 
 Locate the __ReportSource__ property. Invoke the UI editor by pressing the __New__ button. The default property editor, provided by Visual Studio, should appear:
-                ![Wpf Report Source Editor](images/WpfReportSourceEditor.png)
+                  
+  ![Wpf Report Source Editor](images/WpfReportSourceEditor.png)
 
 >important When the                    P:Telerik.ReportViewer.Wpf.ReportViewer.ReportEngineConnection                    property has  __Engine__  set to  *RestService*  or  *ReportServer* ,                    the viewer will serialize the report source identifier property                    ( __URI__  for                    T:Telerik.Reporting.UriReportSource,                     __TypeName__  for                    T:Telerik.Reporting.TypeReportSource,                     __ReportDocument__  for                    T:Telerik.Reporting.InstanceReportSource and                     __XML__  for                    T:Telerik.Reporting.XmlReportSource) and send it to the service resolver.                  The  *ReportServer*  will try to decompose the identifier using the format `{Category}/{ReportName}` and then look for the corresponding category and report name.                  
 
@@ -79,7 +81,8 @@ In this scenario we will use a T:Telerik.Reporting.UriReportSource.
                 
 
 Expand the __ReportSource__ node in Properties window. In the provided __Uri__ textbox enter the category and the name of the report you want to display using the following format: `{Category}/{ReportName}`, as shown below:
-                ![Wpf Set Uri Report Source Property Grid](images/WpfSetUriReportSourcePropertyGrid.png)
+                  
+  ![Wpf Set Uri Report Source Property Grid](images/WpfSetUriReportSourcePropertyGrid.png)
 
 Build and run your application. If your settings are configured correctly, you should see the report, hosted on your Report Server instance, displayed in the report viewer of your WPF application.
                   If not, check the

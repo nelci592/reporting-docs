@@ -25,4 +25,5 @@ Use the __New Rule__, and __Delete Rule __buttons to add, and delete formattingÂ
             Select the __Stop if true__ checkbox to interrupt rule processing if the rule conditions are satisfied.
           
 
-![Conditional Formatting Rules Dialog](images/ConditionalFormattingRulesDialog.png)
+  
+  ![Conditional Formatting Rules Dialog](images/ConditionalFormattingRulesDialog.png)

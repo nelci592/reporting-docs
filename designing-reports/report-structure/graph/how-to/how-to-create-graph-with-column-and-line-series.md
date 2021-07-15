@@ -20,7 +20,8 @@ Start the Graph Wizard:
 
 * If you use [Standalone Telerik Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview%})From the __Insert__ menu select __Column__ and then __Clustered Column__.
                   This will bring up the __Graph Wizard__ which will help you create the first series.
-                ![select Column](images/Graph/HowToBarLineSeries/selectColumn.png)
+                  
+  ![select Column](images/Graph/HowToBarLineSeries/selectColumn.png)
 
 * If you use the [Visual Studio Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/overview%}):Initiate the __Graph Wizard__ from the __Visual Studio toolbox__. Then select __Clustered Column__ chart type and click 
                   __OK__. 
@@ -69,7 +70,8 @@ The Wizard has detected that the field used as Category is of type DateTime, and
             
 
 The graph will display the column series and it should look like this:
-            ![Graph Layout 1](images/Graph/HowToBarLineSeries/GraphLayout1.png)
+              
+  ![Graph Layout 1](images/Graph/HowToBarLineSeries/GraphLayout1.png)
 
 The graph is displaying the date-time values on its X-axis, and the 'Auto' scale option divides each column into one column per month.
               To make the label for the X-axis easier to read, first select the X-axis, and in the *Property Browser* set a proper
@@ -92,6 +94,7 @@ To add another series to the graph, you can right-click on the graph and select 
 
 Name the series’ legend items accordingly using the property LegendItem.P:Telerik.Reporting.LegendItem.Value of both of your series.
               Finally your graph should look like the one shown below:
-            ![Graph Layout 3](images/Graph/HowToBarLineSeries/GraphLayout3.png)
+              
+  ![Graph Layout 3](images/Graph/HowToBarLineSeries/GraphLayout3.png)
 
  * [Graph Structure]({%slug telerikreporting/designing-reports/report-structure/graph/structure%})T:Telerik.Reporting.GraphAxisP:Telerik.Reporting.GraphAxis.LabelFormatP:Telerik.Reporting.GraphAxis.LabelPlacementP:Telerik.Reporting.GraphAxis.Scale

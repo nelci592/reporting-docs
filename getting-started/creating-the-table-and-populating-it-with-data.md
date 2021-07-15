@@ -26,7 +26,8 @@ This guide uses the __AdventureWorks__ database that is provided by Telerik Repo
         
 
 1. Select __Data__ > __SQL Data Source__ > __Existing data connections__ > __local:/Telerik.reporting.Examples.CSharp.Properties__.
-            ![3](images/3.PNG)
+              
+  ![3](images/3.PNG)
 
 1. Click __Next__ > __Use as a shared connection__ > __Next__.
             
@@ -94,7 +95,8 @@ Preview the result by clicking __Preview__ > __PrintPreview__.
             
 
 * The __BorderColor__ of the table is __34, 181, 115__.
-            ![Employees](images/Employees.PNG)
+              
+  ![Employees](images/Employees.PNG)
 
 ## Next Steps
 

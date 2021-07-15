@@ -98,7 +98,8 @@ Now that the data source is configured, you should set up the __Graph__ item:
 
 * In case you are using the [Standalone Telerik Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview%}),
                   select the report’s Detail section, and click on __Charts - Column - Clustered Column__ from the __Insert__ tab:
-                ![How To Add Drill Down Action 3 Select Clustered Column](images/Graph/HowToAddDrillDownAction/HowToAddDrillDownAction_3_SelectClusteredColumn.png)
+                  
+  ![How To Add Drill Down Action 3 Select Clustered Column](images/Graph/HowToAddDrillDownAction/HowToAddDrillDownAction_3_SelectClusteredColumn.png)
 
 This will bring up the __Graph Wizard__ which will do the rest of the work for you.
             
@@ -120,12 +121,14 @@ At last, drag the __LineTotal__ field to the *Values*
             
 
 Now the “*Arrange graph fields*” page should look like the one shown below:
-            ![How To Add Drill Down Action 4 Arrange Graph Fields](images/Graph/HowToAddDrillDownAction/HowToAddDrillDownAction_4_ArrangeGraphFields.png)
+              
+  ![How To Add Drill Down Action 4 Arrange Graph Fields](images/Graph/HowToAddDrillDownAction/HowToAddDrillDownAction_4_ArrangeGraphFields.png)
 
 Your chart is done. When you click __Finish__, you will see the graph displaying the product categories grouped by year.
               You can increase the Graph item in Width for better preview. When you click on __Preview__, you will see that every category
               has a small toggle mark that shows its subcategories when clicked, as shown below:
-            ![How To Add Drill Down Action 5 Drill Down Graph](images/Graph/HowToAddDrillDownAction/HowToAddDrillDownAction_5_DrillDownGraph.png)
+              
+  ![How To Add Drill Down Action 5 Drill Down Graph](images/Graph/HowToAddDrillDownAction/HowToAddDrillDownAction_5_DrillDownGraph.png)
 
 To see what the __Graph Wizard__ has done, you can examine the Graph’s
               P:Telerik.Reporting.Graph.CategoryGroups.
@@ -136,7 +139,8 @@ To see what the __Graph Wizard__ has done, you can examine the Graph’s
               to the __ProductSubCategoryGroup__, providing the ability to show or hide this group by clicking its parent’s toggle mark.
               Initially the __ProductSubCategoryGroup.Visible property__ is set to false to provide more compact view.
               The expanded view of the Graph’s __CategoryGroups__ should look like this:
-            ![How To Add Drill Down Action 6 Expanded Category Groups](images/Graph/HowToAddDrillDownAction/HowToAddDrillDownAction_6_ExpandedCategoryGroups.png)
+              
+  ![How To Add Drill Down Action 6 Expanded Category Groups](images/Graph/HowToAddDrillDownAction/HowToAddDrillDownAction_6_ExpandedCategoryGroups.png)
 
 __In conclusion:__
 

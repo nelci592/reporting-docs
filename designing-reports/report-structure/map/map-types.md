@@ -30,27 +30,31 @@ The supported map types are:
               The second values set is used as a measure and displays a bubble with variable size depending on the measured value, i.e. 
               the differences between the data points are based on the size of the point. The larger the point is, 
               the larger is the difference between the two data points.
-            ![Map Point Chart](images/Map/MapPointChart.png)
+              
+  ![Map Point Chart](images/Map/MapPointChart.png)
 
 * __Pie__ - such a chart is used to display grouped data as a Graph's
               [Pie Chart]({%slug telerikreporting/designing-reports/report-structure/graph/chart-types/pie-charts/overview%}) on every data point. As with the Point map type, the data point
               coordinates are defined by the GeoLocation group. The analytical data, needed to create the pie chart, is obtained using the child groups
               of the GeoLocation group. A how-to article that explains how to setup such a map, can be found
               [here]({%slug telerikreporting/designing-reports/report-structure/map/how-to/how-to-setup-a-map-using-the-map-wizard%}).
-            ![Map Pie Chart](images/Map/MapPieChart.png)
+              
+  ![Map Pie Chart](images/Map/MapPieChart.png)
 
 * __Column__ - identical to the __Pie chart type__, with the only difference that the analytical
               data is presented using the Graph's [Column Chart]({%slug telerikreporting/designing-reports/report-structure/graph/chart-types/column-charts/overview%}). A more advanced example
               that shows how to create such a map and add some additional extras, can be found
               [here]({%slug telerikreporting/designing-reports/report-structure/map/how-to/how-to-create-a-map-with-barchart-series-using-csv-data-source%}).
-            ![Map Column Chart](images/Map/MapColumnChart.png)
+              
+  ![Map Column Chart](images/Map/MapColumnChart.png)
 
 * [Choropleth](http://en.wikipedia.org/wiki/Choropleth_map)
                - a thematic map that uses graded color differences to display a
               measure over predefined regions or areas. It is one of the most popular ways to visualize how a measure varies across
               a geographic area. An example how to create a Choropleth map can be found 
               [here]({%slug telerikreporting/designing-reports/report-structure/map/how-to/how-to-setup-a-choropleth-using-the-map-wizard%}).
-          ![Choropleth Chart Type](images/Map/Choropleth/Choropleth_ChartType.png)The Choropleth item is basically a [Map item ]({%slug telerikreporting/designing-reports/report-structure/map/structure/overview%}) with a special kind of series and groups.
+            
+  ![Choropleth Chart Type](images/Map/Choropleth/Choropleth_ChartType.png)The Choropleth item is basically a [Map item ]({%slug telerikreporting/designing-reports/report-structure/map/structure/overview%}) with a special kind of series and groups.
               To create a choropleth map, there is no need to configure a [Location provider]({%slug telerikreporting/designing-reports/report-structure/map/structure/location-providers%})
               or use a T:Telerik.Reporting.GeoLocationMapGroup to obtain the coordinates of the data points.
               Instead, it uses a T:Telerik.Reporting.ShapeMapSeries instance, whose major distinction from the

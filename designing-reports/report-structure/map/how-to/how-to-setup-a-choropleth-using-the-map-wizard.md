@@ -26,7 +26,8 @@ In this how-to article we will show you how to use the [Standalone Report Design
 Start the Map Wizard:
 
 * If you create a new report, select the __Choropleth Wizard__ icon from the __Available Templates__ page.
-                ![Choropleth How To Simple Select Choropleth Wizard](images/Map/Choropleth/HowTo_SimpleChoropleth/Choropleth_HowToSimple_SelectChoroplethWizard.png)
+                  
+  ![Choropleth How To Simple Select Choropleth Wizard](images/Map/Choropleth/HowTo_SimpleChoropleth/Choropleth_HowToSimple_SelectChoroplethWizard.png)
 
 * If you want to add the Map item to an existing report, you have to select the __Choropleth__ item
                   from the __Insert__ menu.
@@ -58,7 +59,8 @@ Add new
                 
 
 * On the __Map columns to type__ page set the column types to match the actual data they represent, as shown below.
-                ![Choropleth How To Simple CSV Map Columns To Type](images/Map/Choropleth/HowTo_SimpleChoropleth/Choropleth_HowToSimple_CSV_MapColumnsToType.png)
+                  
+  ![Choropleth How To Simple CSV Map Columns To Type](images/Map/Choropleth/HowTo_SimpleChoropleth/Choropleth_HowToSimple_CSV_MapColumnsToType.png)
 
 * When you click __Parse CSV...__ on the next page, you should see the result of the parsed file.
                 Click __Finish__ when you are ready.
@@ -87,7 +89,8 @@ In the next page you have to select the source that will provide the spatial dat
                 
 
 Your __Choose a spatial data source__ page should look like the one shown below:
-            ![Choropleth How To Simple Choose Spatial Data Source](images/Map/Choropleth/HowTo_SimpleChoropleth/Choropleth_HowToSimple_ChooseSpatialDataSource.png)
+              
+  ![Choropleth How To Simple Choose Spatial Data Source](images/Map/Choropleth/HowTo_SimpleChoropleth/Choropleth_HowToSimple_ChooseSpatialDataSource.png)
 
 Once the mandatory fields are set up, the __Next__ button will get enabled and you can go to the next page.
             
@@ -115,11 +118,13 @@ On the following page you will set the fields that are specific to the choroplet
                 
 
 1. When you are done, your __Choropleth setup__ page should look like this:
-                ![Choropleth How To Simple Choropleth Setup](images/Map/Choropleth/HowTo_SimpleChoropleth/Choropleth_HowToSimple_ChoroplethSetup.png)
+                  
+  ![Choropleth How To Simple Choropleth Setup](images/Map/Choropleth/HowTo_SimpleChoropleth/Choropleth_HowToSimple_ChoroplethSetup.png)
 
 When you click the __Finish__ button, the map will display the choropleth map. After adding some formatting to the
               title and the legend, it should look like the one shown here:
-            ![Choropleth How To Simple Layout 1](images/Map/Choropleth/HowTo_SimpleChoropleth/Choropleth_HowToSimple_Layout1.png)
+              
+  ![Choropleth How To Simple Layout 1](images/Map/Choropleth/HowTo_SimpleChoropleth/Choropleth_HowToSimple_Layout1.png)
         Additional information
       
 
@@ -135,7 +140,8 @@ In our example we use a Shapefile for all the countries in the world, but we hav
 
 Another reason for having transparent areas is simple mismatching the fields that are used in the __Relation Pairs__. Take a
                   look at the following screenshot, showing a part of Africa:
-                ![Choropleth How To Simple Layout 2](images/Map/Choropleth/HowTo_SimpleChoropleth/Choropleth_HowToSimple_Layout2.png)
+                  
+  ![Choropleth How To Simple Layout 2](images/Map/Choropleth/HowTo_SimpleChoropleth/Choropleth_HowToSimple_Layout2.png)
 
 For this screenshot we made the data point labels __visible__ and set the following expression to them:
                   `= Format('{0} {1}', Fields.CNTRY_NAME, Sum(Fields.[Density (pop./km2)]))`.

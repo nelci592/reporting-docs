@@ -20,7 +20,8 @@ The __Web Service Data Source Wizard__ allows you to create a new or edit an exi
 ## 
 
 1. __Configure data retrieval__Setup the properties of the HTTP request which will retrieve data from the web service:
-            ![Web Service Data Source Request](images/DataSources/WebServiceDataSourceRequest.png)
+              
+  ![Web Service Data Source Request](images/DataSources/WebServiceDataSourceRequest.png)
 
 
 | Setting | Description |
@@ -34,7 +35,8 @@ The __Web Service Data Source Wizard__ allows you to create a new or edit an exi
 
 
 And/or enter data inline:
-            ![Web Service Data Source Inline File](images/DataSources/WebServiceDataSourceInlineFile.png)
+              
+  ![Web Service Data Source Inline File](images/DataSources/WebServiceDataSourceInlineFile.png)
 
 
 | Setting | Description |
@@ -44,7 +46,8 @@ And/or enter data inline:
 
 
 And/or reference an external data file:
-            ![Web Service Data Source External File](images/DataSources/WebServiceDataSourceExternalFile.png)
+              
+  ![Web Service Data Source External File](images/DataSources/WebServiceDataSourceExternalFile.png)
 
 
 | Setting | Description |
@@ -58,9 +61,11 @@ And/or reference an external data file:
 1. __Configure request parameters__The parameters of the HTTP request to be applied. The supported types are Query, Header, Cookie, and Inline.
               The inline parameters are parameters that are used to replace parameter tokens (@param1) in the URL and the Body fields
               with the expression result or static value.
-            ![Google Books Params](images/DataSources/GoogleBooksParams.png)
+              
+  ![Google Books Params](images/DataSources/GoogleBooksParams.png)
 
-1. __Basic Authentication__![Web Service Data Source Basic Authentication](images/DataSources/WebServiceDataSourceBasicAuthentication.png)
+1. __Basic Authentication__  
+  ![Web Service Data Source Basic Authentication](images/DataSources/WebServiceDataSourceBasicAuthentication.png)
 
 
 | Setting | Description |
@@ -71,7 +76,8 @@ And/or reference an external data file:
 
 
 
-1. __2-Step Authentication__![Web Service Data Source 2 Step Auth](images/DataSources/WebServiceDataSource2StepAuth.png)
+1. __2-Step Authentication__  
+  ![Web Service Data Source 2 Step Auth](images/DataSources/WebServiceDataSource2StepAuth.png)
 
 
 | Setting | Description |

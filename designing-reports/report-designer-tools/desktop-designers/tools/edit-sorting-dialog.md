@@ -14,7 +14,8 @@ position: 9
 
 The __Edit Sorting__ dialog controls the order that records are displayed in. The dialog populates the __Sortings__ collection. In the example below products are sorted first by Shelf, then Bin (in descending order) and finally by product Name.
 
-![](images/UI019.png)
+  
+  ![](images/UI019.png)
 
 ## Using the Edit Sorting Dialog
 

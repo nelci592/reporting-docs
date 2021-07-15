@@ -28,11 +28,14 @@ A QR code uses four standardized encoding modes (numeric, alphanumeric, byte/bin
 
 There are a total of 40 versions available in the QR code, from 21 by 21 modules to 177 by 177 modules,
           increasing in steps of 4 modules per side. Naturally, higher versions are used to encode larger amounts of data:
-        ![barcode-qrcode-version 1](images/Barcodes/barcode-qrcode-version1.png)![barcode-qrcode-version 40](images/Barcodes/barcode-qrcode-version40.png)
+          
+  ![barcode-qrcode-version 1](images/Barcodes/barcode-qrcode-version1.png)  
+  ![barcode-qrcode-version 40](images/Barcodes/barcode-qrcode-version40.png)
 
 Disregarding the data, which consists of the actual encoded data, along with the error correction bits,
           the structure of the code includes the module groups listed below:
-        ![barcode-qrcode-structure](images/Barcodes/barcode-qrcode-structure.png)
+          
+  ![barcode-qrcode-structure](images/Barcodes/barcode-qrcode-structure.png)
 
 * __Finder Pattern__The finder pattern is a concentric square of alternating colors, located in all corners of the symbol
               except the bottom right. They are used by decoders establish orientation. The center is a 3x3 black square
@@ -64,7 +67,8 @@ Disregarding the data, which consists of the actual encoded data, along with the
               finder pattern, and the other next to the lower left one.
             
 
-* __Blank Space__Additionally, around each QR code, there is an obligatory 4-modules-wide white space area: ![barcode-qrcode-blankspace](images/Barcodes/barcode-qrcode-blankspace.png)
+* __Blank Space__Additionally, around each QR code, there is an obligatory 4-modules-wide white space area:   
+  ![barcode-qrcode-blankspace](images/Barcodes/barcode-qrcode-blankspace.png)
 
 * __Data__The data occupies all available modules, not occupied by any of the formatting data segments mentioned above.
               If the data is smaller than the capacity of the remaining modules, it is padded, in order to ensure that all modules are used.

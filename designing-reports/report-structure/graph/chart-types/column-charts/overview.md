@@ -18,7 +18,8 @@ A column chart displays a series as a set of vertical bars that are grouped by c
         vertical bars with varying beginning and end points.
       
 
-The following image shows a typical column chart:![Column Chart](images/Graph/ColumnChart.png)
+The following image shows a typical column chart:  
+  ![Column Chart](images/Graph/ColumnChart.png)
 
 ## Column Chart Variations
 

@@ -44,7 +44,8 @@ Telerik Reporting uses a similar methodology for localization as Visual Studio u
         
 >caption Localized documents displayed in English and Spanish (see figure below):
 
-![](images/localize1.png)
+  
+  ![](images/localize1.png)
 
 To localize a report:
 

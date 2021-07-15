@@ -49,7 +49,8 @@ Standalone Report Designer provides both a graphical query designer and a text-b
 
 The following figure shows the graphical query designer.
 
-![Sql Query Designer Form](images/DataSources/SqlQueryDesignerForm.png)
+  
+  ![Sql Query Designer Form](images/DataSources/SqlQueryDesignerForm.png)
 
 Use the graphical query designer to explore the database tables and views,
           interactively build SQL SELECT statement and view the result for your query.

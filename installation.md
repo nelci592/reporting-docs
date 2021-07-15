@@ -156,28 +156,141 @@ The following tables describe the folder structure for the redistributable assem
 
 | Directory | Description |
 | ------ | ------ |
-`...Progress\Telerik Reportingsuiteversion\Bin`|<br/><br/>* `Telerik.Reporting.dll`<br/><br/>* `Telerik.ReportViewer.Mvc.dll`<br/><br/>* `Telerik.ReportViewer.WebForms.dll`<br/><br/>* `Telerik.ReportViewer.WinForms.dll`<br/><br/>* `Telerik.ReportViewer.Silverlight.dll`<br/><br/>* `Telerik.ReportViewer.Wpf.dll`<br/><br/>* `Telerik.Reporting.Adomd.dll`<br/><br/>* `Telerik.Reporting.Service.dll`<br/><br/>* `Telerik.Reporting.Services.ServiceStack.dll`<br/><br/>* `Telerik.Reporting.Services.WebApi.dll`<br/><br/>* `Telerik.Reporting.XpsRendering.dll`<br/><br/>* `Telerik.Reporting.OpenXmlRendering.dll`<br/><br/>* `Telerik.Reporting.Cache.Database.dll`|
-`...Progress\Telerik Reportingsuiteversion\Bin\netstandard2.0`|<br/><br/>* `Telerik.Reporting.dll`<br/><br/>* `Telerik.WebReportDesigner.Services.dll`<br/><br/>* `Telerik.ReportViewer.Blazor.dll`<br/><br/>* `Telerik.Reporting.WebServiceDataSource.dll`<br/><br/>* `Telerik.Reporting.Services.HttpClient.dll`<br/><br/>* `Telerik.Reporting.Services.AspNetCore.dll`<br/><br/>* `Telerik.Reporting.OpenXmlRendering.2.7.2.dll`<br/><br/>* `Telerik.Reporting.JsonSerialization.dll`<br/><br/>* `Telerik.Reporting.Data.Schema.dll`<br/><br/>* `Telerik.Reporting.Cache.StackExchangeRedis.dll`<br/><br/>* `Telerik.Reporting.Cache.StackExchangeRedis.2.dll`|
-`...Progress\Telerik Reportingsuiteversion\Bin\netcoreapp3.1`|<br/><br/>* `Telerik.Reporting.Services.AspNetCore.dll`<br/><br/>* `Telerik.WebReportDesigner.Services.dll`<br/><br/>* `Telerik.ReportViewer.WinForms.dll`<br/><br/>* `Telerik.ReportViewer.Wpf.dll`<br/><br/>* `Telerik.ReportViewer.Wpf.Themes.dll`|
-`...Progress\Telerik Reportingsuiteversion\Bin\net5.0`|<br/><br/>* `Telerik.WebReportDesigner.Services.dll`<br/><br/>* `Telerik.Reporting.Services.AspNetCore.dll`|
-`...Progress\Telerik Reportingsuiteversion\Bin\net5.0-windows`|<br/><br/>* `Telerik.ReportViewer.WinForms.dll`<br/><br/>* `Telerik.ReportViewer.Wpf.dll`<br/><br/>* `Telerik.ReportViewer.Wpf.Themes.dll`|
-`...Progress\Telerik Reportingsuiteversion\Bin\net6.0`|<br/><br/>* `Telerik.WebReportDesigner.Services.dll`<br/><br/>* `Telerik.Reporting.Services.AspNetCore.dll`|
-`...Progress\Telerik Reportingsuiteversion\Bin\net6.0-windows`|<br/><br/>* `Telerik.ReportViewer.WinForms.dll`<br/><br/>* `Telerik.ReportViewer.Wpf.dll`<br/><br/>* `Telerik.ReportViewer.Wpf.Themes.dll`|<br/><br/>The following table describes the folder structure for the installed samples.<br/>        <br/><br/>|
- Directory | Description |
- ------ | ------ |
-`...Progress\Telerik Reportingsuiteversion\Examples\bin`|The external dependencies.|
-`...Progress\Telerik Reportingsuiteversion\Examples\CSharp`|The C# example solutions.|
-`...Progress\Telerik Reportingsuiteversion\Examples\Data`|The AdventureWorks OLTP database installation scripts.|
-`...Progress\Telerik Reportingsuiteversion\Examples\VB`|The VB example solutions.|<br/><br/>The following table describes the folder structure for the Standalone Report Designer.<br/>        <br/><br/>|
- Directory | Description |
- ------ | ------ |
-`...Progress\Telerik Reportingsuiteversion\Report Designer`|The Standalone Report Designer.|
-`...Progress\Telerik Reportingsuiteversion\Report Designer\Examples`|The example reports.|<br/><br/>The following table describes the folder structure for miscellaneous ReportViewers files.<br/>        <br/><br/>|
- Directory | Description |
- ------ | ------ |
-`...Progress\Telerik Reportingsuiteversion\Html5\ReportViewer`|`The JavaScript and CSS files, and the template for the HTML5 Report Viewer.`|
-`...Progress\Telerik Reportingsuiteversion\Silverlight\Themes`|The Silverlight Report Viewer themes.|
-`...Progress\Telerik Reportingsuiteversion\Wpf\Themes`|WPF Report Viewer themes.|<br/><br/>The following table describes the folder structure for miscellaneous administrative utilities.<br/>        <br/><br/>|
- Directory | Description |
- ------ | ------ |
-`...Progress\Telerik Reportingsuiteversion\Tools`|The Database Cache Configurator.|
+|`...Progress\Telerik Reportingsuiteversion\Bin`|
+
+* `Telerik.Reporting.dll`
+
+* `Telerik.ReportViewer.Mvc.dll`
+
+* `Telerik.ReportViewer.WebForms.dll`
+
+* `Telerik.ReportViewer.WinForms.dll`
+
+* `Telerik.ReportViewer.Silverlight.dll`
+
+* `Telerik.ReportViewer.Wpf.dll`
+
+* `Telerik.Reporting.Adomd.dll`
+
+* `Telerik.Reporting.Service.dll`
+
+* `Telerik.Reporting.Services.ServiceStack.dll`
+
+* `Telerik.Reporting.Services.WebApi.dll`
+
+* `Telerik.Reporting.XpsRendering.dll`
+
+* `Telerik.Reporting.OpenXmlRendering.dll`
+
+* `Telerik.Reporting.Cache.Database.dll`|
+|`...Progress\Telerik Reportingsuiteversion\Bin\netstandard2.0`|
+
+* `Telerik.Reporting.dll`
+
+* `Telerik.WebReportDesigner.Services.dll`
+
+* `Telerik.ReportViewer.Blazor.dll`
+
+* `Telerik.Reporting.WebServiceDataSource.dll`
+
+* `Telerik.Reporting.Services.HttpClient.dll`
+
+* `Telerik.Reporting.Services.AspNetCore.dll`
+
+* `Telerik.Reporting.OpenXmlRendering.2.7.2.dll`
+
+* `Telerik.Reporting.JsonSerialization.dll`
+
+* `Telerik.Reporting.Data.Schema.dll`
+
+* `Telerik.Reporting.Cache.StackExchangeRedis.dll`
+
+* `Telerik.Reporting.Cache.StackExchangeRedis.2.dll`|
+|`...Progress\Telerik Reportingsuiteversion\Bin\netcoreapp3.1`|
+
+* `Telerik.Reporting.Services.AspNetCore.dll`
+
+* `Telerik.WebReportDesigner.Services.dll`
+
+* `Telerik.ReportViewer.WinForms.dll`
+
+* `Telerik.ReportViewer.Wpf.dll`
+
+* `Telerik.ReportViewer.Wpf.Themes.dll`|
+|`...Progress\Telerik Reportingsuiteversion\Bin\net5.0`|
+
+* `Telerik.WebReportDesigner.Services.dll`
+
+* `Telerik.Reporting.Services.AspNetCore.dll`|
+|`...Progress\Telerik Reportingsuiteversion\Bin\net5.0-windows`|
+
+* `Telerik.ReportViewer.WinForms.dll`
+
+* `Telerik.ReportViewer.Wpf.dll`
+
+* `Telerik.ReportViewer.Wpf.Themes.dll`|
+|`...Progress\Telerik Reportingsuiteversion\Bin\net6.0`|
+
+* `Telerik.WebReportDesigner.Services.dll`
+
+* `Telerik.Reporting.Services.AspNetCore.dll`|
+|`...Progress\Telerik Reportingsuiteversion\Bin\net6.0-windows`|
+
+* `Telerik.ReportViewer.WinForms.dll`
+
+* `Telerik.ReportViewer.Wpf.dll`
+
+* `Telerik.ReportViewer.Wpf.Themes.dll`|
+
+
+
+
+The following table describes the folder structure for the installed samples.
+        
+
+
+| Directory | Description |
+| ------ | ------ |
+|`...Progress\Telerik Reportingsuiteversion\Examples\bin`|The external dependencies.|
+|`...Progress\Telerik Reportingsuiteversion\Examples\CSharp`|The C# example solutions.|
+|`...Progress\Telerik Reportingsuiteversion\Examples\Data`|The AdventureWorks OLTP database installation scripts.|
+|`...Progress\Telerik Reportingsuiteversion\Examples\VB`|The VB example solutions.|
+
+
+
+
+The following table describes the folder structure for the Standalone Report Designer.
+        
+
+
+| Directory | Description |
+| ------ | ------ |
+|`...Progress\Telerik Reportingsuiteversion\Report Designer`|The Standalone Report Designer.|
+|`...Progress\Telerik Reportingsuiteversion\Report Designer\Examples`|The example reports.|
+
+
+
+
+The following table describes the folder structure for miscellaneous ReportViewers files.
+        
+
+
+| Directory | Description |
+| ------ | ------ |
+|`...Progress\Telerik Reportingsuiteversion\Html5\ReportViewer`|`The JavaScript and CSS files, and the template for the HTML5 Report Viewer.`|
+|`...Progress\Telerik Reportingsuiteversion\Silverlight\Themes`|The Silverlight Report Viewer themes.|
+|`...Progress\Telerik Reportingsuiteversion\Wpf\Themes`|WPF Report Viewer themes.|
+
+
+
+
+The following table describes the folder structure for miscellaneous administrative utilities.
+        
+
+
+| Directory | Description |
+| ------ | ------ |
+|`...Progress\Telerik Reportingsuiteversion\Tools`|The Database Cache Configurator.|
+
+
+

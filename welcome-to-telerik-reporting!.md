@@ -95,6 +95,11 @@ To see the full design and source code for each of the sample reports,
 
 ## Getting Started
 
+Get fast onboarding with our 
+          [Virtual Classroom video training course](https://learn.telerik.com/learn/course/38/Telerik%2520Reporting),
+          or follow the documentation for a self-paced step-by-step getting started experience with the following links:
+        
+
 * [Understanding the report lifecycle]({%slug telerikreporting/designing-reports/understanding-the-report-lifecycle%})
 
 * [Installation]({%slug telerikreporting/installation%})
@@ -118,6 +123,8 @@ To see the full design and source code for each of the sample reports,
 * [Code library](https://www.telerik.com/support/code-library/reporting)
 
 * [Contact support](https://www.telerik.com/account/support-tickets)
+
+* [Virtual Classroom](https://learn.telerik.com/learn/course/38/Telerik%2520Reporting)
 
 * [Submit a general feedback question](https://www.telerik.com/account/support-tickets/customer-service/)
 

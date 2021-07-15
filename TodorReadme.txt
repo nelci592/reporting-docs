@@ -5,6 +5,6 @@ clear '\r\n' in ALERTS
 
 add '  \r\n' before IMAGES
 
-TABLES with multiple lines in the same cell
+TABLES with multiple lines in the same cell - change '\r\n' with '<br/>'.
 
 TOKENS for the version

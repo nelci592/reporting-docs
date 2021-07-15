@@ -89,11 +89,43 @@ Selecting a Cross-section item can be done through the [Report Explorer]({%slug 
 The Cross-section item can be added programmatically to a report with the following code:
         
 
+{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````c#
+	        void CreateAndInitializeCrossSectionItem()
+	        {
+	            var reportGroup = report.Groups[0];
 	
-
-
-
+	            var crossSectionItem = new CrossSectionItem();
+	            report.Items.Add(crossSectionItem);
 	
+	            crossSectionItem.BeginSection = reportGroup.GroupHeader;
+	            crossSectionItem.BeginMargin = Drawing.Unit.Cm(0.5);
+	            crossSectionItem.EndSection = reportGroup.GroupFooter;
+	            crossSectionItem.EndMargin = Drawing.Unit.Cm(0.5);
+	
+	            crossSectionItem.Left = Drawing.Unit.Cm(1);
+	            crossSectionItem.Width = Drawing.Unit.Cm(1);
+	        }
+	
+````
+
+
+
+{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````vb.net
+	    Private Sub CreateAndInitializeCrossSectionItemSnippet()
+	        Dim reportGroup = report.Groups(0)
+	        Dim crossSectionItem = New Telerik.Reporting.CrossSectionItem()
+	        report.Items.Add(crossSectionItem)
+	
+	        crossSectionItem.BeginSection = reportGroup.GroupHeader
+	        crossSectionItem.BeginMargin = Telerik.Reporting.Drawing.Unit.Cm(0.5)
+	        crossSectionItem.EndSection = reportGroup.GroupFooter
+	        crossSectionItem.EndMargin = Telerik.Reporting.Drawing.Unit.Cm(0.5)
+	
+	        crossSectionItem.Left = Telerik.Reporting.Drawing.Unit.Cm(1)
+	        crossSectionItem.Width = Telerik.Reporting.Drawing.Unit.Cm(1)
+	    End Sub
+	    '#End Region
+	End Class
 
 
 

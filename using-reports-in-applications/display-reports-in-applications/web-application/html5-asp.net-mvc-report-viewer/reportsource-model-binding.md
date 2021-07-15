@@ -43,11 +43,57 @@ Lets start with the model now. In case all you need is a report viewer that is u
 Then you can use it directly when you are initializing the report viewer:
         
 
+{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````c#
+	@(Html.TelerikReporting().ReportViewer()
+	       .Id("reportViewer1")
+	       .ServiceUrl("/api/reports/")
+	       .TemplateUrl("/ReportViewer/templates/telerikReportViewerTemplate.html")
+	       .ReportSource(Model)
+	       .ViewMode(ViewMode.Interactive)
+	       .ScaleMode(ScaleMode.Specific)
+	       .Scale(1.0)
+	       .PersistSession(false)
+	)
+````
+
+
+
+{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````vb.net
+	@Code
+	    Html.TelerikReporting().ReportViewer() _
+	    .Id("reportViewer1") _
+	    .ServiceUrl("/api/reports/") _
+	    .TemplateUrl("/ReportViewer/templates/telerikReportViewerTemplate.html") _
+	    .ReportSource(Model) _
+	    .ViewMode(ViewMode.Interactive) _
+	    .ScaleMode(ScaleMode.Specific) _
+	    .Scale(1.0) _
+	    .PersistSession(False)
+	End Code
+	<!--#End Region-->
 	
-
-
-
+	@Section scripts
+	    <script src="http://kendo.cdn.telerik.com/2013.2.918/js/kendo.all.min.js"></script>
 	
+	    <script src="ReportViewer/js/utils.js"></script>
+	    <script src="ReportViewer/js/sr.js"> </script>
+	    <script src="ReportViewer/js/serviceClient.js"></script>
+	    <script src="ReportViewer/js/controller.js"></script>
+	    <script src="ReportViewer/js/touch.js"></script>
+	    <script src="ReportViewer/js/pagesArea.js"></script>
+	    <script src="ReportViewer/js/documentMapArea.js"></script>
+	    <script src="ReportViewer/js/parameters.js"></script>
+	    <script src="ReportViewer/js/parameterValidators.js"></script>
+	    <script src="ReportViewer/js/parametersArea.js"></script>
+	    <script src="ReportViewer/js/commandSet.js"></script>
+	    <script src="ReportViewer/js/history.js"></script>
+	    <script src="ReportViewer/js/mainMenu.js"></script>
+	    <script src="ReportViewer/js/sideMenu.js"></script>
+	    <script src="ReportViewer/js/binder.js"></script>
+	    <script src="ReportViewer/js/uiController.js"></script>
+	    <script src="ReportViewer/js/perspectives.js"></script>
+	    <script src="ReportViewer/js/reportViewer.js"></script>
+	End Section
 
 
 
@@ -62,11 +108,22 @@ Now in case you have a more complex scenario where the report viewer depends on 
           Check this snippet:
         
 
-	
+{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````c#
+	    public class TemplatedReportViewerViewModel
+	    {
+	        public string TemplateUri { get; set; }
+	        public UriReportSource ReportSource { get; set; }
+	    }
+````
 
 
 
-	
+{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````vb.net
+	Public Class TemplatedReportViewerViewModel
+	    Public Property TemplateUri() As String
+	    Public Property ReportSource() As UriReportSource
+	End Class
+	'#End Region
 
 
 
@@ -74,11 +131,57 @@ Once you have the model you should create your own logic to populate it (note th
           Then use the model for your view to make it strongly typed:
         
 
+{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````c#
+	@(Html.TelerikReporting().ReportViewer()
+	       .Id("reportViewer1")
+	       .ServiceUrl("/api/reports/")
+	       .TemplateUrl(Model.TemplateUri)
+	       .ReportSource(Model.ReportSource)
+	       .ViewMode(ViewMode.Interactive)
+	       .ScaleMode(ScaleMode.Specific)
+	       .Scale(1.0)
+	       .PersistSession(false)
+	)
+````
+
+
+
+{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````vb.net
+	@Code
+	    Html.TelerikReporting().ReportViewer() _
+	    .Id("reportViewer1") _
+	    .ServiceUrl("/api/reports/") _
+	    .TemplateUrl(Model.TemplateUri) _
+	    .ReportSource(Model.ReportSource) _
+	    .ViewMode(ViewMode.Interactive) _
+	    .ScaleMode(ScaleMode.Specific) _
+	    .Scale(1.0) _
+	    .PersistSession(False)
+	End Code
+	<!--#End Region-->
 	
-
-
-
+	@Section scripts
+	    <script src="http://kendo.cdn.telerik.com/2013.2.918/js/kendo.all.min.js"></script>
 	
+	    <script src="ReportViewer/js/utils.js"></script>
+	    <script src="ReportViewer/js/sr.js"> </script>
+	    <script src="ReportViewer/js/serviceClient.js"></script>
+	    <script src="ReportViewer/js/controller.js"></script>
+	    <script src="ReportViewer/js/touch.js"></script>
+	    <script src="ReportViewer/js/pagesArea.js"></script>
+	    <script src="ReportViewer/js/documentMapArea.js"></script>
+	    <script src="ReportViewer/js/parameters.js"></script>
+	    <script src="ReportViewer/js/parameterValidators.js"></script>
+	    <script src="ReportViewer/js/parametersArea.js"></script>
+	    <script src="ReportViewer/js/commandSet.js"></script>
+	    <script src="ReportViewer/js/history.js"></script>
+	    <script src="ReportViewer/js/mainMenu.js"></script>
+	    <script src="ReportViewer/js/sideMenu.js"></script>
+	    <script src="ReportViewer/js/binder.js"></script>
+	    <script src="ReportViewer/js/uiController.js"></script>
+	    <script src="ReportViewer/js/perspectives.js"></script>
+	    <script src="ReportViewer/js/reportViewer.js"></script>
+	End Section
 
 
 
@@ -93,33 +196,185 @@ There are cases when the supported report sources (Type and Uri) will not be eno
           For example you could pass the id of the report in the database:
         
 
+{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````c#
+	@(Html.TelerikReporting().ReportViewer()
+	       .Id("reportViewer1")
+	       .ServiceUrl("/api/reports/")
+	       .TemplateUrl("/ReportViewer/templates/telerikReportViewerTemplate.html")
+	       .ReportSource("73")
+	       .ViewMode(ViewMode.Interactive)
+	       .ScaleMode(ScaleMode.Specific)
+	       .Scale(1.0)
+	       .PersistSession(false)
+	)
+````
+
+
+
+{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````vb.net
+	@Code
+	    Html.TelerikReporting().ReportViewer() _
+	    .Id("reportViewer1") _
+	    .ServiceUrl("/api/reports/") _
+	    .TemplateUrl("/ReportViewer/templates/telerikReportViewerTemplate.html") _
+	    .ReportSource("73") _
+	    .ViewMode(ViewMode.Interactive) _
+	    .ScaleMode(ScaleMode.Specific) _
+	    .Scale(1.0) _
+	    .PersistSession(False)
+	End Code
+	<!--#End Region-->
 	
-
-
-
+	<!--#Region "Example2"-->
+	@Code
+	    Html.TelerikReporting().ReportViewer() _
+	    .Id("reportViewer1") _
+	    .ServiceUrl("/api/reports/") _
+	    .TemplateUrl("/ReportViewer/templates/telerikReportViewerTemplate.html") _
+	    .ReportSource("73", New Dictionary(Of String, Object)() From {{"parameter1", "value1"}, {"parameter2", "value2"}}) _
+	    .ViewMode(ViewMode.Interactive) _
+	    .ScaleMode(ScaleMode.Specific) _
+	    .Scale(1.0) _
+	    .PersistSession(False)
+	End Code
+	<!--#End Region-->
 	
+	@Section scripts
+	    <script src="http://kendo.cdn.telerik.com/2013.2.918/js/kendo.all.min.js"></script>
+	
+	    <script src="ReportViewer/js/utils.js"></script>
+	    <script src="ReportViewer/js/sr.js"> </script>
+	    <script src="ReportViewer/js/serviceClient.js"></script>
+	    <script src="ReportViewer/js/controller.js"></script>
+	    <script src="ReportViewer/js/touch.js"></script>
+	    <script src="ReportViewer/js/pagesArea.js"></script>
+	    <script src="ReportViewer/js/documentMapArea.js"></script>
+	    <script src="ReportViewer/js/parameters.js"></script>
+	    <script src="ReportViewer/js/parameterValidators.js"></script>
+	    <script src="ReportViewer/js/parametersArea.js"></script>
+	    <script src="ReportViewer/js/commandSet.js"></script>
+	    <script src="ReportViewer/js/history.js"></script>
+	    <script src="ReportViewer/js/mainMenu.js"></script>
+	    <script src="ReportViewer/js/sideMenu.js"></script>
+	    <script src="ReportViewer/js/binder.js"></script>
+	    <script src="ReportViewer/js/uiController.js"></script>
+	    <script src="ReportViewer/js/perspectives.js"></script>
+	    <script src="ReportViewer/js/reportViewer.js"></script>
+	End Section
 
 
 
 You can also add parameters, like this:
         
 
+{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````c#
+	@(Html.TelerikReporting().ReportViewer()
+	       .Id("reportViewer1")
+	       .ServiceUrl("/api/reports/")
+	       .TemplateUrl("/ReportViewer/templates/telerikReportViewerTemplate.html")
+	       .ReportSource("73", new Dictionary<string, object>() { { "parameter1", "value1" }, { "parameter2", "value2" } })
+	       .ViewMode(ViewMode.Interactive)
+	       .ScaleMode(ScaleMode.Specific)
+	       .Scale(1.0)
+	       .PersistSession(false)
+	)
+````
+
+
+
+{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````vb.net
+	@Code
+	    Html.TelerikReporting().ReportViewer() _
+	    .Id("reportViewer1") _
+	    .ServiceUrl("/api/reports/") _
+	    .TemplateUrl("/ReportViewer/templates/telerikReportViewerTemplate.html") _
+	    .ReportSource("73", New Dictionary(Of String, Object)() From {{"parameter1", "value1"}, {"parameter2", "value2"}}) _
+	    .ViewMode(ViewMode.Interactive) _
+	    .ScaleMode(ScaleMode.Specific) _
+	    .Scale(1.0) _
+	    .PersistSession(False)
+	End Code
+	<!--#End Region-->
 	
-
-
-
+	@Section scripts
+	    <script src="http://kendo.cdn.telerik.com/2013.2.918/js/kendo.all.min.js"></script>
 	
+	    <script src="ReportViewer/js/utils.js"></script>
+	    <script src="ReportViewer/js/sr.js"> </script>
+	    <script src="ReportViewer/js/serviceClient.js"></script>
+	    <script src="ReportViewer/js/controller.js"></script>
+	    <script src="ReportViewer/js/touch.js"></script>
+	    <script src="ReportViewer/js/pagesArea.js"></script>
+	    <script src="ReportViewer/js/documentMapArea.js"></script>
+	    <script src="ReportViewer/js/parameters.js"></script>
+	    <script src="ReportViewer/js/parameterValidators.js"></script>
+	    <script src="ReportViewer/js/parametersArea.js"></script>
+	    <script src="ReportViewer/js/commandSet.js"></script>
+	    <script src="ReportViewer/js/history.js"></script>
+	    <script src="ReportViewer/js/mainMenu.js"></script>
+	    <script src="ReportViewer/js/sideMenu.js"></script>
+	    <script src="ReportViewer/js/binder.js"></script>
+	    <script src="ReportViewer/js/uiController.js"></script>
+	    <script src="ReportViewer/js/perspectives.js"></script>
+	    <script src="ReportViewer/js/reportViewer.js"></script>
+	End Section
 
 
 
 The view can also be strongly typed:
         
 
+{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````c#
+	@(Html.TelerikReporting().ReportViewer()
+	       .Id("reportViewer1")
+	       .ServiceUrl("/api/reports/")
+	       .TemplateUrl("/ReportViewer/templates/telerikReportViewerTemplate.html")
+	       .ReportSource(Model.ReportSource, Model.Parameters)
+	       .ViewMode(ViewMode.Interactive)
+	       .ScaleMode(ScaleMode.Specific)
+	       .Scale(1.0)
+	       .PersistSession(false)
+	)
+````
+
+
+
+{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````vb.net
+	@Code
+	    Html.TelerikReporting().ReportViewer() _
+	    .Id("reportViewer1") _
+	    .ServiceUrl("/api/reports/") _
+	    .TemplateUrl("/ReportViewer/templates/telerikReportViewerTemplate.html") _
+	    .ReportSource(Model.ReportSource, Model.Parameters) _
+	    .ViewMode(ViewMode.Interactive) _
+	    .ScaleMode(ScaleMode.Specific) _
+	    .Scale(1.0) _
+	    .PersistSession(False)
+	End Code
+	<!--#End Region-->
 	
-
-
-
+	@Section scripts
+	    <script src="http://kendo.cdn.telerik.com/2013.2.918/js/kendo.all.min.js"></script>
 	
+	    <script src="ReportViewer/js/utils.js"></script>
+	    <script src="ReportViewer/js/sr.js"> </script>
+	    <script src="ReportViewer/js/serviceClient.js"></script>
+	    <script src="ReportViewer/js/controller.js"></script>
+	    <script src="ReportViewer/js/touch.js"></script>
+	    <script src="ReportViewer/js/pagesArea.js"></script>
+	    <script src="ReportViewer/js/documentMapArea.js"></script>
+	    <script src="ReportViewer/js/parameters.js"></script>
+	    <script src="ReportViewer/js/parameterValidators.js"></script>
+	    <script src="ReportViewer/js/parametersArea.js"></script>
+	    <script src="ReportViewer/js/commandSet.js"></script>
+	    <script src="ReportViewer/js/history.js"></script>
+	    <script src="ReportViewer/js/mainMenu.js"></script>
+	    <script src="ReportViewer/js/sideMenu.js"></script>
+	    <script src="ReportViewer/js/binder.js"></script>
+	    <script src="ReportViewer/js/uiController.js"></script>
+	    <script src="ReportViewer/js/perspectives.js"></script>
+	    <script src="ReportViewer/js/reportViewer.js"></script>
+	End Section
 
 
 
@@ -127,10 +382,43 @@ Finally on the server side your custom report source resolver can implement the 
           the id and create a report source as per your needs:
         
 
+{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````c#
+	    class ModelBindingReportSourceResolver : IReportSourceResolver
+	    {
+	        public Telerik.Reporting.ReportSource Resolve(string reportId, OperationOrigin operationOrigin, IDictionary<string, object> currentParameterValues)
+	        {
+	            var report = new Invoice();
+	            if (true) // condition here
+	            {
+	                // prepare your report here
+	            }
+	            else
+	            {
+	                // do something else with report here
+	            }
 	
+	            return new Telerik.Reporting.InstanceReportSource { ReportDocument = report };
+	        }
+	    }
+````
 
 
 
+{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````vb.net
+	Class ModelBindingReportSourceResolver
+	    Implements IReportSourceResolver
+	    Public Function Resolve(reportId As String, operationOrigin As OperationOrigin, currentParameterValues As IDictionary(Of String, Object)) As Telerik.Reporting.ReportSource Implements Telerik.Reporting.Services.IReportSourceResolver.Resolve
+	        Dim report = New Invoice() ' prepare your report here
+	        If True Then ' condition here
+	            ' do something else with report here
+	        Else
+	        End If
 	
+	        Return New Telerik.Reporting.InstanceReportSource() With {
+	            .ReportDocument = report
+	        }
+	    End Function
+	End Class
+	'#End Region
 
 

@@ -53,11 +53,68 @@ The following code sample illustrates how to pass a value to the *"@Year"*
           __ component:
         
 
+{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````c#
+	            Telerik.Reporting.CubeDataSource cubeDataSource = new Telerik.Reporting.CubeDataSource();
 	
+	            cubeDataSource.ConnectionString = "MyAdventureWorksDW";
+	            cubeDataSource.SelectCommand = "select non empty { [Measures].[Sales Amount] } on columns, " +
+	                                           "       non empty { [Product].[Category].[Category] * " +
+	                                           "                   [Product].[Subcategory].[Subcategory] } on rows " +
+	                                           "from [Adventure Works] " +
+	                                           "where StrToMember(@Year)";
+	            cubeDataSource.Parameters.Add("Year", "[CY 2001]");
+````
 
 
 
+{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````vb
+	        Dim cubeDataSource As Telerik.Reporting.CubeDataSource = New Telerik.Reporting.CubeDataSource()
 	
+	        cubeDataSource.ConnectionString = "MyAdventureWorksDW"
+	        cubeDataSource.SelectCommand = "select non empty { [Measures].[Sales Amount] } on columns, " & _
+	                                       "       non empty { [Product].[Category].[Category] * " & _
+	                                       "                   [Product].[Subcategory].[Subcategory] } on rows " & _
+	                                       "from [Adventure Works] " & _
+	                                       "where StrToMember(@Year)"
+	        cubeDataSource.Parameters.Add("Year", "[CY 2001]")
+	        '#End Region
+	    End Sub
+	
+	    <Microsoft.VisualStudio.TestTools.UnitTesting.TestMethod()>
+	    Public Sub MultiValueParameterSnippet()
+	        '#Region MultiValueParameterSnippet
+	        Dim cubeDataSource As Telerik.Reporting.CubeDataSource = New Telerik.Reporting.CubeDataSource()
+	
+	        cubeDataSource.ConnectionString = "MyAdventureWorksDW"
+	        cubeDataSource.SelectCommand = "select non empty { [Measures].[Sales Amount] } on columns, " & _
+	                                       "       non empty { [Product].[Category].[Category] * " & _
+	                                       "                   [Product].[Subcategory].[Subcategory] } on rows " & _
+	                                       "from [Adventure Works] " & _
+	                                       "where StrToSet(@Year)"
+	        cubeDataSource.Parameters.Add("Year", New String() {"[CY 2001]", "[CY 2002]"})
+	        '#End Region
+	    End Sub
+	
+	    <Microsoft.VisualStudio.TestTools.UnitTesting.TestMethod()>
+	    Public Sub ReportParameterSnippet()
+	        '#Region ReportParameterSnippet
+	        Dim cubeDataSource As Telerik.Reporting.CubeDataSource = New Telerik.Reporting.CubeDataSource()
+	
+	        cubeDataSource.ConnectionString = "MyAdventureWorksDW"
+	        cubeDataSource.SelectCommand = "select non empty { [Measures].[Sales Amount] } on columns, " & _
+	                                       "       non empty { [Product].[Category].[Category] * " & _
+	                                       "                   [Product].[Subcategory].[Subcategory] } on rows " & _
+	                                       "from [Adventure Works] " & _
+	                                       "where StrToMember(@Year)"
+	        cubeDataSource.Parameters.Add("Year", "=Parameters.Year.Value")
+	
+	        Dim report As New Report1()
+	
+	        report.DataSource = cubeDataSource
+	        report.ReportParameters.Add("Year", ReportParameterType.String, "[CY 2001]")
+	        '#End Region
+	    End Sub
+	End Class
 
 
 
@@ -80,11 +137,53 @@ When you need to pass multiple values as a single parameter to the query, use th
 Now it is possible to assign an array of years to the data source parameter:
         
 
+{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````c#
+	            Telerik.Reporting.CubeDataSource cubeDataSource = new Telerik.Reporting.CubeDataSource();
 	
+	            cubeDataSource.ConnectionString = "MyAdventureWorksDW";
+	            cubeDataSource.SelectCommand = "select non empty { [Measures].[Sales Amount] } on columns, " +
+	                                           "       non empty { [Product].[Category].[Category] * " +
+	                                           "                   [Product].[Subcategory].[Subcategory] } on rows " +
+	                                           "from [Adventure Works] " +
+	                                           "where StrToSet(@Year)";
+	            cubeDataSource.Parameters.Add("Year", new string[] { "[CY 2001]", "[CY 2002]" });
+````
 
 
 
+{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````vb
+	        Dim cubeDataSource As Telerik.Reporting.CubeDataSource = New Telerik.Reporting.CubeDataSource()
 	
+	        cubeDataSource.ConnectionString = "MyAdventureWorksDW"
+	        cubeDataSource.SelectCommand = "select non empty { [Measures].[Sales Amount] } on columns, " & _
+	                                       "       non empty { [Product].[Category].[Category] * " & _
+	                                       "                   [Product].[Subcategory].[Subcategory] } on rows " & _
+	                                       "from [Adventure Works] " & _
+	                                       "where StrToSet(@Year)"
+	        cubeDataSource.Parameters.Add("Year", New String() {"[CY 2001]", "[CY 2002]"})
+	        '#End Region
+	    End Sub
+	
+	    <Microsoft.VisualStudio.TestTools.UnitTesting.TestMethod()>
+	    Public Sub ReportParameterSnippet()
+	        '#Region ReportParameterSnippet
+	        Dim cubeDataSource As Telerik.Reporting.CubeDataSource = New Telerik.Reporting.CubeDataSource()
+	
+	        cubeDataSource.ConnectionString = "MyAdventureWorksDW"
+	        cubeDataSource.SelectCommand = "select non empty { [Measures].[Sales Amount] } on columns, " & _
+	                                       "       non empty { [Product].[Category].[Category] * " & _
+	                                       "                   [Product].[Subcategory].[Subcategory] } on rows " & _
+	                                       "from [Adventure Works] " & _
+	                                       "where StrToMember(@Year)"
+	        cubeDataSource.Parameters.Add("Year", "=Parameters.Year.Value")
+	
+	        Dim report As New Report1()
+	
+	        report.DataSource = cubeDataSource
+	        report.ReportParameters.Add("Year", ReportParameterType.String, "[CY 2001]")
+	        '#End Region
+	    End Sub
+	End Class
 
 
 
@@ -94,10 +193,42 @@ Instead of specifying the parameter values directly, you can use expressions to 
           interface of __Report Viewer__ can be used for choosing the slicing year:
         
 
+{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````c#
+	            var cubeDataSource = new Telerik.Reporting.CubeDataSource();
 	
-
-
-
+	            cubeDataSource.ConnectionString = "MyAdventureWorksDW";
+	            cubeDataSource.SelectCommand = "select non empty { [Measures].[Sales Amount] } on columns, " +
+	                                           "       non empty { [Product].[Category].[Category] * " +
+	                                           "                   [Product].[Subcategory].[Subcategory] } on rows " +
+	                                           "from [Adventure Works] " +
+	                                           "where StrToMember(@Year)";
+	            cubeDataSource.Parameters.Add("Year", "=Parameters.Year.Value");
 	
+	            var report = new Report1();
+	
+	            report.DataSource = cubeDataSource;
+	            report.ReportParameters.Add("Year", ReportParameterType.String, "[CY 2001]");
+````
+
+
+
+{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````vb
+	        Dim cubeDataSource As Telerik.Reporting.CubeDataSource = New Telerik.Reporting.CubeDataSource()
+	
+	        cubeDataSource.ConnectionString = "MyAdventureWorksDW"
+	        cubeDataSource.SelectCommand = "select non empty { [Measures].[Sales Amount] } on columns, " & _
+	                                       "       non empty { [Product].[Category].[Category] * " & _
+	                                       "                   [Product].[Subcategory].[Subcategory] } on rows " & _
+	                                       "from [Adventure Works] " & _
+	                                       "where StrToMember(@Year)"
+	        cubeDataSource.Parameters.Add("Year", "=Parameters.Year.Value")
+	
+	        Dim report As New Report1()
+	
+	        report.DataSource = cubeDataSource
+	        report.ReportParameters.Add("Year", ReportParameterType.String, "[CY 2001]")
+	        '#End Region
+	    End Sub
+	End Class
 
 

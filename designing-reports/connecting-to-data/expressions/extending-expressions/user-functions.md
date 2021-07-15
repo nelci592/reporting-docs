@@ -53,11 +53,36 @@ If the loaded assembly contains many __public static__ (__Public Shared__
 
 __Example:__
 
-	
+{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````C#
+	    
+	    public class Report1 : Telerik.Reporting.Report
+	    {
+	        //...
+	        [Function(IsVisible = false)]
+	        public static System.Drawing.Image ResolveUrl(string relativeUrl)
+	        {
+	            string path = System.Web.HttpContext.Current.Server.MapPath(relativeUrl);
+	            return System.Drawing.Image.FromFile(path);
+	        }
+	        //...
+	    }
+	    
+````
 
 
 
-	
+{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````VB
+	Public Class Report1
+	    Inherits Telerik.Reporting.Report
+	    '...
+	    <[Function](IsVisible:=False)> _
+	    Public Shared Function ResolveUrl(relativeUrl As String) As System.Drawing.Image
+	        Dim path As String = System.Web.HttpContext.Current.Server.MapPath(relativeUrl)
+	        Return System.Drawing.Image.FromFile(path)
+	    End Function
+	    '...
+	End Class
+````
 
 
 
@@ -89,11 +114,29 @@ The DescriptionAttribute allows you to specify a description for the user functi
 
 __Example:__
 
+{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````C#
+	    
+	    public static class MyUserFunctions
+	    {
+	        [Function(Category = "My Functions", Namespace = "My", Description = "Say Hi")]
+	        public static string Greet(string name)
+	        {
+	            return string.Format("Hello, {0}", name);
+	        }
+	    }
 	
+````
 
 
 
-	
+{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````VB
+	Public NotInheritable Class MyUserFunctions
+	    <[Function](Category:="My Functions", [Namespace]:="My", Description:="Say Hi")> _
+	    Public Shared Function Greet(name As String) As String
+	        Return String.Format("Hello, {0}", name)
+	    End Function
+	End Class
+````
 
 
 

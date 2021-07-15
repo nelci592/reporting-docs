@@ -114,7 +114,7 @@ This article explains the steps needed to create an application which uses the S
               The MainPage.xaml should look similar:
             
 
-	
+{{source=System.Xml.XmlAttribute region=}}
 
 
 

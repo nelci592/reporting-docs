@@ -43,11 +43,32 @@ The accessibility routines capture the keyboard events to provide shortcut key a
           The code snippets below demonstrate how to change the default shortcut for navigating to the menu area:
         
 
+{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````C#
+	        private void SetToolbarShortcutKey()
+	        {
+	            //Note that the accessibility classes are accessible after the report viewer loads its template, so this code should be called in or after Loaded event
+	            var keyMap = this.reportViewer1.AccessibilityKeyMap;
+	            keyMap.Remove((int)System.Windows.Input.Key.M);
+	            keyMap[(int)System.Windows.Input.Key.N] = Telerik.ReportViewer.Common.Accessibility.ShortcutKeys.MENU_AREA_KEY;
+	            this.reportViewer1.AccessibilityKeyMap = keyMap;
+	        }
+````
+
+
+
+{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````VB
+	    Private Sub SetToolbarShortcutKey()
 	
-
-
-
+	        'Note that the accessibility classes are accessible after the report viewer loads its template, so this code should be called in or after Loaded event
+	        Dim map As System.Collections.Generic.Dictionary(Of Integer, Telerik.ReportViewer.Common.Accessibility.ShortcutKeys) = Me.ReportViewer1.AccessibilityKeyMap
+	        map.Remove(CType(Input.Key.M, Integer))
+	        map(CType(Input.Key.T, Integer)) = Telerik.ReportViewer.Common.Accessibility.ShortcutKeys.MENU_AREA_KEY
+	        Me.ReportViewer1.AccessibilityKeyMap = map
 	
+	    End Sub
+	#End Region
+	
+	End Class
 
 
 

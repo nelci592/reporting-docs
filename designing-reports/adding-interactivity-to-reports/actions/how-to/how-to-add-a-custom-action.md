@@ -33,11 +33,29 @@ Adding a custom action using the Report Designer
               A message will appear, displaying information for the action's properties.
             Adding a custom action programatically
 
+{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````C#
 	
-
-
-
+	            Telerik.Reporting.CustomAction customAction = new Telerik.Reporting.CustomAction();
+	            customAction.Parameters.Add("param1", "=Fields.Name");
+	            customAction.Parameters.Add("param2", "=Now()");
+	            textBox1.Action = customAction;
 	
+````
+
+
+
+{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````VB
+	
+	        Dim customAction As New Telerik.Reporting.CustomAction()
+	        customAction.Parameters.Add("param1", "=Fields.Name")
+	        customAction.Parameters.Add("param2", "=Now()")
+	        textBox1.Action = customAction
+	
+	        '#End Region
+	
+	    End Sub
+	
+	End Class
 
 
 

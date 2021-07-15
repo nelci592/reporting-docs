@@ -25,11 +25,118 @@ The sample code below illustrates how to connect a __CubeDataSource__ component 
 					the __Adventure Works DW 2008R2__ sample database:
 				
 
+{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````c#
+	            Telerik.Reporting.CubeDataSource cubeDataSource = new Telerik.Reporting.CubeDataSource();
 	
+	            cubeDataSource.ConnectionString = "Data Source=localhost;Initial Catalog=Adventure Works DW 2008R2";
+	            cubeDataSource.SelectCommand = "select non empty { [Measures].[Sales Amount] } on columns, " +
+	                                           "       non empty { [Product].[Category].[Category] } on rows " +
+	                                           "from [Adventure Works]";
+````
 
 
 
+{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````vb
+	        Dim cubeDataSource As Telerik.Reporting.CubeDataSource = New Telerik.Reporting.CubeDataSource()
 	
+	        cubeDataSource.ConnectionString = "Data Source=localhost;Initial Catalog=Adventure Works DW 2008R2"
+	        cubeDataSource.SelectCommand = "select non empty { [Measures].[Sales Amount] } on columns, " & _
+	                                       "       non empty { [Product].[Category].[Category] } on rows " & _
+	                                       "from [Adventure Works]"
+	        '#End Region
+	    End Sub
+	
+	    <Microsoft.VisualStudio.TestTools.UnitTesting.TestMethod()>
+	    Public Sub ConnectionNameSnippet()
+	        '#Region ConnectionNameSnippet
+	        Dim cubeDataSource As Telerik.Reporting.CubeDataSource = New Telerik.Reporting.CubeDataSource()
+	
+	        cubeDataSource.ConnectionString = "MyAdventureWorksDW"
+	        cubeDataSource.SelectCommand = "select non empty { [Measures].[Sales Amount] } on columns, " & _
+	                                       "       non empty { [Product].[Category].[Category] } on rows " & _
+	                                       "from [Adventure Works]"
+	        '#End Region
+	    End Sub
+	
+	    <Microsoft.VisualStudio.TestTools.UnitTesting.TestMethod()>
+	    Public Sub SelectCommandSnippet()
+	        '#Region SelectCommandSnippet
+	        Dim cubeDataSource As Telerik.Reporting.CubeDataSource = New Telerik.Reporting.CubeDataSource()
+	
+	        cubeDataSource.ConnectionString = "MyAdventureWorksDW"
+	        cubeDataSource.SelectCommand = "select non empty { [Measures].[Sales Amount] } on columns, " & _
+	                                       "       non empty { [Product].[Category].[Category] * " & _
+	                                       "                   [Product].[Subcategory].[Subcategory] } on rows " & _
+	                                       "from [Adventure Works]"
+	        '#End Region
+	    End Sub
+	
+	    <Microsoft.VisualStudio.TestTools.UnitTesting.TestMethod()>
+	    Public Sub FieldMappingSnippet()
+	        '#Region FieldMappingSnippet
+	        Dim cubeDataSource As Telerik.Reporting.CubeDataSource = New Telerik.Reporting.CubeDataSource()
+	
+	        cubeDataSource.ConnectionString = "MyAdventureWorksDW"
+	        cubeDataSource.SelectCommand = "select non empty { [Measures].[Sales Amount] } on columns, " & _
+	                                       "       non empty { [Product].[Category].[Category] * " & _
+	                                       "                   [Product].[Subcategory].[Subcategory] } on rows " & _
+	                                       "from [Adventure Works]"
+	        cubeDataSource.Mappings.Add("[Measures].[Sales Amount]", "Sales")
+	        cubeDataSource.Mappings.Add("[Product].[Category].[Category].[MEMBER_CAPTION]", "Category")
+	        cubeDataSource.Mappings.Add("[Product].[Subcategory].[Subcategory].[MEMBER_CAPTION]", "Subcategory")
+	        '#End Region
+	    End Sub
+	
+	    <Microsoft.VisualStudio.TestTools.UnitTesting.TestMethod()>
+	    Public Sub SingleValueParameterSnippet()
+	        '#Region SingleValueParameterSnippet
+	        Dim cubeDataSource As Telerik.Reporting.CubeDataSource = New Telerik.Reporting.CubeDataSource()
+	
+	        cubeDataSource.ConnectionString = "MyAdventureWorksDW"
+	        cubeDataSource.SelectCommand = "select non empty { [Measures].[Sales Amount] } on columns, " & _
+	                                       "       non empty { [Product].[Category].[Category] * " & _
+	                                       "                   [Product].[Subcategory].[Subcategory] } on rows " & _
+	                                       "from [Adventure Works] " & _
+	                                       "where StrToMember(@Year)"
+	        cubeDataSource.Parameters.Add("Year", "[CY 2001]")
+	        '#End Region
+	    End Sub
+	
+	    <Microsoft.VisualStudio.TestTools.UnitTesting.TestMethod()>
+	    Public Sub MultiValueParameterSnippet()
+	        '#Region MultiValueParameterSnippet
+	        Dim cubeDataSource As Telerik.Reporting.CubeDataSource = New Telerik.Reporting.CubeDataSource()
+	
+	        cubeDataSource.ConnectionString = "MyAdventureWorksDW"
+	        cubeDataSource.SelectCommand = "select non empty { [Measures].[Sales Amount] } on columns, " & _
+	                                       "       non empty { [Product].[Category].[Category] * " & _
+	                                       "                   [Product].[Subcategory].[Subcategory] } on rows " & _
+	                                       "from [Adventure Works] " & _
+	                                       "where StrToSet(@Year)"
+	        cubeDataSource.Parameters.Add("Year", New String() {"[CY 2001]", "[CY 2002]"})
+	        '#End Region
+	    End Sub
+	
+	    <Microsoft.VisualStudio.TestTools.UnitTesting.TestMethod()>
+	    Public Sub ReportParameterSnippet()
+	        '#Region ReportParameterSnippet
+	        Dim cubeDataSource As Telerik.Reporting.CubeDataSource = New Telerik.Reporting.CubeDataSource()
+	
+	        cubeDataSource.ConnectionString = "MyAdventureWorksDW"
+	        cubeDataSource.SelectCommand = "select non empty { [Measures].[Sales Amount] } on columns, " & _
+	                                       "       non empty { [Product].[Category].[Category] * " & _
+	                                       "                   [Product].[Subcategory].[Subcategory] } on rows " & _
+	                                       "from [Adventure Works] " & _
+	                                       "where StrToMember(@Year)"
+	        cubeDataSource.Parameters.Add("Year", "=Parameters.Year.Value")
+	
+	        Dim report As New Report1()
+	
+	        report.DataSource = cubeDataSource
+	        report.ReportParameters.Add("Year", ReportParameterType.String, "[CY 2001]")
+	        '#End Region
+	    End Sub
+	End Class
 
 
 
@@ -59,10 +166,105 @@ When the connection string is stored in the configuration file you need to speci
 					__CubeDataSource__ component:
 				
 
+{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````c#
+	            Telerik.Reporting.CubeDataSource cubeDataSource = new Telerik.Reporting.CubeDataSource();
 	
+	            cubeDataSource.ConnectionString = "MyAdventureWorksDW";
+	            cubeDataSource.SelectCommand = "select non empty { [Measures].[Sales Amount] } on columns, " +
+	                                           "       non empty { [Product].[Category].[Category] } on rows " +
+	                                           "from [Adventure Works]";
+````
 
 
 
+{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````vb
+	        Dim cubeDataSource As Telerik.Reporting.CubeDataSource = New Telerik.Reporting.CubeDataSource()
 	
+	        cubeDataSource.ConnectionString = "MyAdventureWorksDW"
+	        cubeDataSource.SelectCommand = "select non empty { [Measures].[Sales Amount] } on columns, " & _
+	                                       "       non empty { [Product].[Category].[Category] } on rows " & _
+	                                       "from [Adventure Works]"
+	        '#End Region
+	    End Sub
+	
+	    <Microsoft.VisualStudio.TestTools.UnitTesting.TestMethod()>
+	    Public Sub SelectCommandSnippet()
+	        '#Region SelectCommandSnippet
+	        Dim cubeDataSource As Telerik.Reporting.CubeDataSource = New Telerik.Reporting.CubeDataSource()
+	
+	        cubeDataSource.ConnectionString = "MyAdventureWorksDW"
+	        cubeDataSource.SelectCommand = "select non empty { [Measures].[Sales Amount] } on columns, " & _
+	                                       "       non empty { [Product].[Category].[Category] * " & _
+	                                       "                   [Product].[Subcategory].[Subcategory] } on rows " & _
+	                                       "from [Adventure Works]"
+	        '#End Region
+	    End Sub
+	
+	    <Microsoft.VisualStudio.TestTools.UnitTesting.TestMethod()>
+	    Public Sub FieldMappingSnippet()
+	        '#Region FieldMappingSnippet
+	        Dim cubeDataSource As Telerik.Reporting.CubeDataSource = New Telerik.Reporting.CubeDataSource()
+	
+	        cubeDataSource.ConnectionString = "MyAdventureWorksDW"
+	        cubeDataSource.SelectCommand = "select non empty { [Measures].[Sales Amount] } on columns, " & _
+	                                       "       non empty { [Product].[Category].[Category] * " & _
+	                                       "                   [Product].[Subcategory].[Subcategory] } on rows " & _
+	                                       "from [Adventure Works]"
+	        cubeDataSource.Mappings.Add("[Measures].[Sales Amount]", "Sales")
+	        cubeDataSource.Mappings.Add("[Product].[Category].[Category].[MEMBER_CAPTION]", "Category")
+	        cubeDataSource.Mappings.Add("[Product].[Subcategory].[Subcategory].[MEMBER_CAPTION]", "Subcategory")
+	        '#End Region
+	    End Sub
+	
+	    <Microsoft.VisualStudio.TestTools.UnitTesting.TestMethod()>
+	    Public Sub SingleValueParameterSnippet()
+	        '#Region SingleValueParameterSnippet
+	        Dim cubeDataSource As Telerik.Reporting.CubeDataSource = New Telerik.Reporting.CubeDataSource()
+	
+	        cubeDataSource.ConnectionString = "MyAdventureWorksDW"
+	        cubeDataSource.SelectCommand = "select non empty { [Measures].[Sales Amount] } on columns, " & _
+	                                       "       non empty { [Product].[Category].[Category] * " & _
+	                                       "                   [Product].[Subcategory].[Subcategory] } on rows " & _
+	                                       "from [Adventure Works] " & _
+	                                       "where StrToMember(@Year)"
+	        cubeDataSource.Parameters.Add("Year", "[CY 2001]")
+	        '#End Region
+	    End Sub
+	
+	    <Microsoft.VisualStudio.TestTools.UnitTesting.TestMethod()>
+	    Public Sub MultiValueParameterSnippet()
+	        '#Region MultiValueParameterSnippet
+	        Dim cubeDataSource As Telerik.Reporting.CubeDataSource = New Telerik.Reporting.CubeDataSource()
+	
+	        cubeDataSource.ConnectionString = "MyAdventureWorksDW"
+	        cubeDataSource.SelectCommand = "select non empty { [Measures].[Sales Amount] } on columns, " & _
+	                                       "       non empty { [Product].[Category].[Category] * " & _
+	                                       "                   [Product].[Subcategory].[Subcategory] } on rows " & _
+	                                       "from [Adventure Works] " & _
+	                                       "where StrToSet(@Year)"
+	        cubeDataSource.Parameters.Add("Year", New String() {"[CY 2001]", "[CY 2002]"})
+	        '#End Region
+	    End Sub
+	
+	    <Microsoft.VisualStudio.TestTools.UnitTesting.TestMethod()>
+	    Public Sub ReportParameterSnippet()
+	        '#Region ReportParameterSnippet
+	        Dim cubeDataSource As Telerik.Reporting.CubeDataSource = New Telerik.Reporting.CubeDataSource()
+	
+	        cubeDataSource.ConnectionString = "MyAdventureWorksDW"
+	        cubeDataSource.SelectCommand = "select non empty { [Measures].[Sales Amount] } on columns, " & _
+	                                       "       non empty { [Product].[Category].[Category] * " & _
+	                                       "                   [Product].[Subcategory].[Subcategory] } on rows " & _
+	                                       "from [Adventure Works] " & _
+	                                       "where StrToMember(@Year)"
+	        cubeDataSource.Parameters.Add("Year", "=Parameters.Year.Value")
+	
+	        Dim report As New Report1()
+	
+	        report.DataSource = cubeDataSource
+	        report.ReportParameters.Add("Year", ReportParameterType.String, "[CY 2001]")
+	        '#End Region
+	    End Sub
+	End Class
 
 

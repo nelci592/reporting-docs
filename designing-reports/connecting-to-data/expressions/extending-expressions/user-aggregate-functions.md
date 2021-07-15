@@ -41,11 +41,174 @@ Apply T:Telerik.Reporting.Expressions.AggregateFunctionAttribute
         for the users of the aggregate function. The __Name__ 
         parameter of the attribute defines how to refer to the function in expressions.
 
+{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````C#
 	
-
-
-
+	    [AggregateFunction(Description = "Concatenation aggregate. Output: (value1, value2, ...)", Name = "Concatenate")]
+	    class ConcatenateAggregate : IAggregateFunction
+	    {
+	        string result;
 	
+	        public void Accumulate(object[] values)
+	        {
+	            // The aggregate function expects one parameter
+	            object value = values[0];
+	
+	            // null values are not aggregated
+	            if (null == value)
+	            {
+	                return;
+	            }
+	
+	            // The actual accumulation
+	            if (this.result.Length > 0)
+	            {
+	                result += ", ";
+	            }
+	            this.result += value.ToString();
+	        }
+	
+	        public object GetValue()
+	        {
+	            return string.Format("({0})", this.result);
+	        }
+	
+	        public void Init()
+	        {
+	            // Add aggregate function initialization code here if needed
+	            this.result = string.Empty;
+	        }
+	
+	        public void Merge(IAggregateFunction aggregateFunction)
+	        {
+	            ConcatenateAggregate aggregate = (ConcatenateAggregate)aggregateFunction;
+	
+	            if (aggregate.result.Length > 0)
+	            {
+	                if (this.result.Length > 0)
+	                {
+	                    result += ", ";
+	                }
+	                this.result += aggregate.result;
+	            }
+	        }
+	    }
+	
+````
+
+
+
+{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````VB
+	
+	<AggregateFunction(Description:="Concatenation aggregate. Output: (value1, value2, ...)", Name:="Concatenate")> _
+	Class ConcatenateAggregate
+	    Implements IAggregateFunction
+	    Private result As String
+	
+	    Public Sub Accumulate(ByVal values As Object()) Implements IAggregateFunction.Accumulate
+	        ' The aggregate function expects one parameter
+	        Dim value As Object = values(0)
+	
+	        ' null values are not aggregated
+	        If value Is Nothing Then
+	            Return
+	        End If
+	
+	        ' The actual accumulation
+	        If Me.result.Length > 0 Then
+	            result += ", "
+	        End If
+	        Me.result += value.ToString()
+	    End Sub
+	
+	    Public Function GetValue() As Object Implements IAggregateFunction.GetValue
+	        Return String.Format("({0})", Me.result)
+	    End Function
+	
+	    Public Sub Init() Implements IAggregateFunction.Init
+	        ' Add aggregate function initialization code here if needed
+	        Me.result = String.Empty
+	    End Sub
+	
+	    Public Sub Merge(ByVal aggregateFunction As IAggregateFunction) Implements IAggregateFunction.Merge
+	        Dim aggregate As ConcatenateAggregate = DirectCast(aggregateFunction, ConcatenateAggregate)
+	
+	        If aggregate.result.Length > 0 Then
+	            If Me.result.Length > 0 Then
+	                result += ", "
+	            End If
+	            Me.result += aggregate.result
+	        End If
+	    End Sub
+	End Class
+	
+	'#End Region
+	
+	'#region AggregateFunctionCollectAllValues
+	
+	<AggregateFunction(Description:="Collects all distinct values", Name:="AllValues")> _
+	Public Class AllValuesAggregateFunction
+	    Implements IAggregateFunction
+	    Private values As ArrayList
+	
+	    Public Sub Accumulate(values As Object()) Implements IAggregateFunction.Accumulate
+	        Dim value = values(0)
+	        Me.AccumulateCore(value)
+	    End Sub
+	
+	    Private Sub AccumulateCore(value As Object)
+	        If Not Me.values.Contains(value) Then
+	            Me.values.Add(value)
+	        End If
+	    End Sub
+	
+	    Public Function GetValue() As Object Implements IAggregateFunction.GetValue
+	        Return Me.values
+	    End Function
+	
+	    Public Sub Init() Implements IAggregateFunction.Init
+	        Me.values = New ArrayList()
+	    End Sub
+	
+	    Public Sub Merge(aggregateFunction As IAggregateFunction) Implements IAggregateFunction.Merge
+	        Dim otherFunction = DirectCast(aggregateFunction, AllValuesAggregateFunction)
+	        For Each value As Object In otherFunction.values
+	            Me.AccumulateCore(value)
+	        Next
+	    End Sub
+	End Class
+	
+	'#End Region
+	<TestClass()> _
+	Public Class ConcatenateAggregateTests
+	    Shared Sub Accumulate(ByVal [function] As IAggregateFunction, ByVal enumerable As IEnumerable)
+	        For Each value As Object In enumerable
+	            [function].Accumulate(New Object() {value})
+	        Next
+	    End Sub
+	
+	
+	    <TestMethod()> _
+	    Public Sub AccumulateTest()
+	        Dim data As Object() = New Object() _
+	                                { _
+	                                    New Object() {New Object() {}, "()"}, _
+	                                    New Object() {New Object() {Nothing}, "()"}, _
+	                                    New Object() {New Object() {0}, "(0)"}, _
+	                                    New Object() {New Object() {0, 1, 2}, "(0, 1, 2)"}, _
+	                                    New Object() {New Object() {"0", "1", "2"}, "(0, 1, 2)"} _
+	                                }
+	
+	        DataDrivenTest.Execute(data, AddressOf TestAction)
+	    End Sub
+	
+	    Sub TestAction(ByVal row As Object())
+	        Dim aggregate As ConcatenateAggregate = New ConcatenateAggregate()
+	        aggregate.Init()
+	        Accumulate(aggregate, DirectCast(row(0), IEnumerable))
+	
+	        Assert.AreEqual(row(1), aggregate.GetValue())
+	    End Sub
+	End Class
 
 
 

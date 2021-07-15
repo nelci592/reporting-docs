@@ -37,10 +37,31 @@ For each sort expression, follow these steps:
 
 1. Click OK.Adding sorting to Chart data item programatically
 
+{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````C#
 	
-
-
-
+	            Telerik.Reporting.Sorting sorting1 = new Telerik.Reporting.Sorting();
+	            sorting1.Expression = "=Fields.ProductID";
+	            sorting1.Direction = Telerik.Reporting.SortDirection.Asc;
 	
+	            chart1.Sortings.Add(sorting1);
+	
+````
+
+
+
+{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````VB
+	
+	        Dim sorting1 As New Telerik.Reporting.Sorting()
+	        sorting1.Expression = "=Fields.ProductID"
+	        sorting1.Direction = Telerik.Reporting.SortDirection.Asc
+	
+	        chart1.Sortings.Add(sorting1)
+	        '#End Region
+	
+	        Assert.AreEqual(1, chart1.Sortings.Count)
+	        Assert.AreEqual("=Fields.ProductID", chart1.Sortings(0).Expression)
+	        Assert.AreEqual(Telerik.Reporting.SortDirection.Asc, chart1.Sortings(0).Direction)
+	    End Sub
+	End Class
 
 T:Telerik.Reporting.ChartT:Telerik.Reporting.SortingT:Telerik.Reporting.SortingCollection

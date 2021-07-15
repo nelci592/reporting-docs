@@ -40,11 +40,35 @@ In the sample below we add two reports:
           created with the Standalone Designer. It is added wrapped in a UriReportSource. 
           You need to specify the relative or full path to the TRDP file:
 
+{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````C#
+	            var reportBook = new ReportBook();
+	            var weekdayReportSource = new TypeReportSource();
+	            weekdayReportSource.TypeName = typeof(WeekdayReport).AssemblyQualifiedName;
+	            reportBook.ReportSources.Add(weekdayReportSource);
 	
+	            var glossaryReportSource = new UriReportSource();
+	            glossaryReportSource.Uri = "Reports\\Glossary.trdp";
+	            reportBook.ReportSources.Add(glossaryReportSource);
+````
 
 
 
+{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````VB
+	        Dim reportBook = New ReportBook()
+	        Dim weekdayReportSource = New TypeReportSource()
+	        weekdayReportSource.TypeName = GetType(WeekendReport).AssemblyQualifiedName
+	        reportBook.ReportSources.Add(weekdayReportSource)
 	
+	        Dim glossaryReportSource = New UriReportSource()
+	        glossaryReportSource.Uri = "Reports\Glossary.trdp"
+	        reportBook.ReportSources.Add(glossaryReportSource)
+	        '#End Region
+	    End Sub
+	
+	    Friend Class WeekendReport
+	    End Class
+	
+	End Class
 
 
 

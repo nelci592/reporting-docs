@@ -64,11 +64,101 @@ To add Text Watermarks to the Report use the following steps:
 
 ## Add Text Watermark programmatically
 
+{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````C#
 	
-
-
-
+	            Telerik.Reporting.Drawing.TextWatermark textWatermark1 = new Telerik.Reporting.Drawing.TextWatermark();
+	            textWatermark1.Color = System.Drawing.Color.Red;
+	            textWatermark1.Font.Bold = true;
+	            textWatermark1.Font.Italic = false;
+	            textWatermark1.Font.Name = "Arial";
+	            textWatermark1.Font.Size = Telerik.Reporting.Drawing.Unit.Point(10D);
+	            textWatermark1.Font.Strikeout = false;
+	            textWatermark1.Font.Underline = false;
+	            textWatermark1.Orientation = Telerik.Reporting.Drawing.WatermarkOrientation.Diagonal;
+	            textWatermark1.Position = Telerik.Reporting.Drawing.WatermarkPosition.Behind;
+	            textWatermark1.PrintOnFirstPage = true;
+	            textWatermark1.PrintOnLastPage = true;
+	            textWatermark1.Text = "My Test Watermark";
+	            textWatermark1.Opacity = 0.3D;
+	            report1.PageSettings.Watermarks.Add(textWatermark1);
 	
+````
+
+
+
+{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````VB
+	
+	        Dim textWatermark1 As New Telerik.Reporting.Drawing.TextWatermark()
+	        textWatermark1.Color = System.Drawing.Color.Red
+	        textWatermark1.Font.Bold = True
+	        textWatermark1.Font.Italic = False
+	        textWatermark1.Font.Name = "Arial"
+	        textWatermark1.Font.Size = Telerik.Reporting.Drawing.Unit.Point(10.0)
+	        textWatermark1.Font.Strikeout = False
+	        textWatermark1.Font.Underline = False
+	        textWatermark1.Orientation = Telerik.Reporting.Drawing.WatermarkOrientation.Diagonal
+	        textWatermark1.Position = Telerik.Reporting.Drawing.WatermarkPosition.Behind
+	        textWatermark1.PrintOnFirstPage = True
+	        textWatermark1.PrintOnLastPage = True
+	        textWatermark1.Text = "My Test Watermark"
+	        textWatermark1.Opacity = 0.3
+	        report1.PageSettings.Watermarks.Add(textWatermark1)
+	
+	        '#End Region
+	
+	        Assert.AreEqual(1, report1.PageSettings.Watermarks.Count)
+	        Assert.AreEqual(Telerik.Reporting.Drawing.WatermarkPosition.Behind, report1.PageSettings.Watermarks(0).Position)
+	        Assert.AreEqual(Telerik.Reporting.Drawing.WatermarkOrientation.Diagonal, DirectCast(report1.PageSettings.Watermarks(0), TextWatermark).Orientation)
+	
+	    End Sub
+	
+	    <TestMethod()>
+	    Public Sub Add_Picture_Watermark()
+	
+	        Dim report1 As New Report1()
+	
+	        '#Region "AddNewPictureWatermarkSnippet"
+	
+	        Dim pictureWatermark1 As New Telerik.Reporting.Drawing.PictureWatermark()
+	        pictureWatermark1.Image = "http://www.telerik.com/images/reporting/cars/NSXGT_7.jpg"
+	        pictureWatermark1.Position = Telerik.Reporting.Drawing.WatermarkPosition.Behind
+	        pictureWatermark1.PrintOnFirstPage = True
+	        pictureWatermark1.PrintOnLastPage = True
+	        pictureWatermark1.Sizing = Telerik.Reporting.Drawing.WatermarkSizeMode.ScaleProportional
+	        pictureWatermark1.Opacity = 0.5
+	        report1.PageSettings.Watermarks.Add(pictureWatermark1)
+	
+	        '#End Region
+	
+	        Assert.AreEqual(1, report1.PageSettings.Watermarks.Count)
+	        Assert.AreEqual(Telerik.Reporting.Drawing.WatermarkPosition.Behind, report1.PageSettings.Watermarks(0).Position)
+	
+	    End Sub
+	
+	    <TestMethod()>
+	    Public Sub Add_Background_Overlay()
+	
+	        Dim report1 As New Report1()
+	
+	        '#Region "AddNewBackgroundOverlaySnippet"
+	
+	        Dim backgroundOverlay1 As New Telerik.Reporting.Drawing.BackgroundOverlay()
+	        backgroundOverlay1.Image = "http://www.telerik.com/images/reporting/cars/NSXGT_7.jpg"
+	        backgroundOverlay1.PrintOnFirstPage = True
+	        backgroundOverlay1.PrintOnLastPage = True
+	        backgroundOverlay1.Sizing = Telerik.Reporting.Drawing.WatermarkSizeMode.TopLeft
+	        backgroundOverlay1.RenderInReportDocument = True
+	        backgroundOverlay1.Opacity = 1
+	        report1.PageSettings.Watermarks.Add(backgroundOverlay1)
+	
+	        '#End Region
+	
+	        Assert.AreEqual(1, report1.PageSettings.Watermarks.Count)
+	        Assert.AreEqual(Telerik.Reporting.Drawing.WatermarkPosition.Behind, report1.PageSettings.Watermarks(0).Position)
+	
+	    End Sub
+	
+	End Class
 
 
 
@@ -113,11 +203,63 @@ To add Picture Watermarks to the Report use the following steps:
 
 ## Add Picture Watermark programmatically
 
+{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````C#
 	
-
-
-
+	            Telerik.Reporting.Drawing.PictureWatermark pictureWatermark1 = new Telerik.Reporting.Drawing.PictureWatermark();
+	            pictureWatermark1.Image = "http://www.telerik.com/images/reporting/cars/NSXGT_7.jpg";
+	            pictureWatermark1.Position = Telerik.Reporting.Drawing.WatermarkPosition.Behind;
+	            pictureWatermark1.PrintOnFirstPage = true;
+	            pictureWatermark1.PrintOnLastPage = true;
+	            pictureWatermark1.Sizing = Telerik.Reporting.Drawing.WatermarkSizeMode.ScaleProportional;
+	            pictureWatermark1.Opacity = 0.5D;
+	            report1.PageSettings.Watermarks.Add(pictureWatermark1);
 	
+````
+
+
+
+{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````VB
+	
+	        Dim pictureWatermark1 As New Telerik.Reporting.Drawing.PictureWatermark()
+	        pictureWatermark1.Image = "http://www.telerik.com/images/reporting/cars/NSXGT_7.jpg"
+	        pictureWatermark1.Position = Telerik.Reporting.Drawing.WatermarkPosition.Behind
+	        pictureWatermark1.PrintOnFirstPage = True
+	        pictureWatermark1.PrintOnLastPage = True
+	        pictureWatermark1.Sizing = Telerik.Reporting.Drawing.WatermarkSizeMode.ScaleProportional
+	        pictureWatermark1.Opacity = 0.5
+	        report1.PageSettings.Watermarks.Add(pictureWatermark1)
+	
+	        '#End Region
+	
+	        Assert.AreEqual(1, report1.PageSettings.Watermarks.Count)
+	        Assert.AreEqual(Telerik.Reporting.Drawing.WatermarkPosition.Behind, report1.PageSettings.Watermarks(0).Position)
+	
+	    End Sub
+	
+	    <TestMethod()>
+	    Public Sub Add_Background_Overlay()
+	
+	        Dim report1 As New Report1()
+	
+	        '#Region "AddNewBackgroundOverlaySnippet"
+	
+	        Dim backgroundOverlay1 As New Telerik.Reporting.Drawing.BackgroundOverlay()
+	        backgroundOverlay1.Image = "http://www.telerik.com/images/reporting/cars/NSXGT_7.jpg"
+	        backgroundOverlay1.PrintOnFirstPage = True
+	        backgroundOverlay1.PrintOnLastPage = True
+	        backgroundOverlay1.Sizing = Telerik.Reporting.Drawing.WatermarkSizeMode.TopLeft
+	        backgroundOverlay1.RenderInReportDocument = True
+	        backgroundOverlay1.Opacity = 1
+	        report1.PageSettings.Watermarks.Add(backgroundOverlay1)
+	
+	        '#End Region
+	
+	        Assert.AreEqual(1, report1.PageSettings.Watermarks.Count)
+	        Assert.AreEqual(Telerik.Reporting.Drawing.WatermarkPosition.Behind, report1.PageSettings.Watermarks(0).Position)
+	
+	    End Sub
+	
+	End Class
 
 
 
@@ -169,11 +311,40 @@ To add Background Overlay to the Report use the following steps:
 
 ## Add Background Overlay programmatically
 
+{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````C#
 	
-
-
-
+	            Telerik.Reporting.Drawing.BackgroundOverlay backgroundOverlay1 = new Telerik.Reporting.Drawing.BackgroundOverlay();
+	            backgroundOverlay1.Image = "http://www.telerik.com/images/reporting/cars/NSXGT_7.jpg";
+	            backgroundOverlay1.PrintOnFirstPage = true;
+	            backgroundOverlay1.PrintOnLastPage = true;
+	            backgroundOverlay1.Sizing = Telerik.Reporting.Drawing.WatermarkSizeMode.TopLeft;
+	            backgroundOverlay1.RenderInReportDocument = true;
+	            backgroundOverlay1.Opacity = 1D;
+	            report1.PageSettings.Watermarks.Add(backgroundOverlay1);
 	
+````
+
+
+
+{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````VB
+	
+	        Dim backgroundOverlay1 As New Telerik.Reporting.Drawing.BackgroundOverlay()
+	        backgroundOverlay1.Image = "http://www.telerik.com/images/reporting/cars/NSXGT_7.jpg"
+	        backgroundOverlay1.PrintOnFirstPage = True
+	        backgroundOverlay1.PrintOnLastPage = True
+	        backgroundOverlay1.Sizing = Telerik.Reporting.Drawing.WatermarkSizeMode.TopLeft
+	        backgroundOverlay1.RenderInReportDocument = True
+	        backgroundOverlay1.Opacity = 1
+	        report1.PageSettings.Watermarks.Add(backgroundOverlay1)
+	
+	        '#End Region
+	
+	        Assert.AreEqual(1, report1.PageSettings.Watermarks.Count)
+	        Assert.AreEqual(Telerik.Reporting.Drawing.WatermarkPosition.Behind, report1.PageSettings.Watermarks(0).Position)
+	
+	    End Sub
+	
+	End Class
 
 
 

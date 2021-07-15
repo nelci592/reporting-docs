@@ -119,11 +119,598 @@ The other way to localize the Silverlight __*Report Viewer*__ in a more flexible
   			simple, the property just has to return the correct translation for each resource key, as it is shown below:
   			
 
+	{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````
+	        public class CustomResources : Telerik.ReportViewer.Silverlight.ITextResources
+	        {
+	            public string AllFiles
+	            {
+	                get
+	                {
+	                    return "Todos Archivos";
+	                }
+	            }
 	
-
-
-
+	            public string BackToolTip
+	            {
+	                get
+	                {
+	                    return "Navega hacia atrás";
+	                }
+	            }
+	            public string CurrentPageToolTip
+	            {
+	                get
+	                {
+	                    return "Página corriente";
+	                }
+	            }
 	
+	
+	            //...... Implement the rest of the properties ...... 
+````
+
+
+
+	{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````
+	    Public Class CustomResources
+	        Implements Telerik.ReportViewer.Silverlight.ITextResources
+	
+	        Public ReadOnly Property AllFiles() As String Implements ReportViewer.Silverlight.ITextResources.AllFiles
+	            Get
+	                Return "Todos Archivos"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property BackToolTip() As String Implements ReportViewer.Silverlight.ITextResources.BackToolTip
+	            Get
+	                Return "Navega hacia atrás"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property CurrentPageToolTip() As String Implements ReportViewer.Silverlight.ITextResources.CurrentPageToolTip
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        '...... Implement the rest of the properties ......
+	        '#End Region
+	
+	        Public ReadOnly Property LabelOf As String Implements ReportViewer.Silverlight.ITextResources.LabelOf
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	        Public ReadOnly Property CancelPrintButtonText As String Implements ReportViewer.Silverlight.ITextResources.CancelPrintButtonText
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	        Public ReadOnly Property CancelExportButtonText As String Implements ReportViewer.Silverlight.ITextResources.CancelExportButtonText
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	        Public ReadOnly Property ReportParametersNullText As String Implements ReportViewer.Silverlight.ITextResources.ReportParametersNullText
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	        Public ReadOnly Property InvalidValueForParameter As String Implements ReportViewer.Silverlight.ITextResources.InvalidValueForParameter
+	            Get
+	                Return "Valor no válido para el parámetro"
+	            End Get
+	        End Property
+	        Public ReadOnly Property PrintButtonText As String Implements ReportViewer.Silverlight.ITextResources.PrintButtonText
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	        Public ReadOnly Property PreviewButtonText As String Implements ReportViewer.Silverlight.ITextResources.PreviewButtonText
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	        Public ReadOnly Property SaveButtonText As String Implements ReportViewer.Silverlight.ITextResources.SaveButtonText
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	        Public ReadOnly Property CannotConvertTypeError As String Implements ReportViewer.Silverlight.ITextResources.CannotConvertTypeError
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	        Public ReadOnly Property DocumentReadyForPrintMessage As String Implements ReportViewer.Silverlight.ITextResources.DocumentReadyForPrintMessage
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	        Public ReadOnly Property ExportingProgressMessage As String Implements ReportViewer.Silverlight.ITextResources.ExportingProgressMessage
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	        Public ReadOnly Property FileReadyToSaveMessage As String Implements ReportViewer.Silverlight.ITextResources.FileReadyToSaveMessage
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	        Public ReadOnly Property StartingPrintMessage As String Implements ReportViewer.Silverlight.ITextResources.StartingPrintMessage
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	        Public ReadOnly Property MultipleValuesNotSupportedError As String Implements ReportViewer.Silverlight.ITextResources.MultipleValuesNotSupportedError
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	        Public ReadOnly Property UnableToExportError As String Implements ReportViewer.Silverlight.ITextResources.UnableToExportError
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	        Public ReadOnly Property PreparingForPrintMessage As String Implements ReportViewer.Silverlight.ITextResources.PreparingForPrintMessage
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	        Public ReadOnly Property UpdatingParametersDoneMessage As String Implements ReportViewer.Silverlight.ITextResources.UpdatingParametersDoneMessage
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	        Public ReadOnly Property PrintProgressMessage As String Implements ReportViewer.Silverlight.ITextResources.PrintProgressMessage
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	        Public ReadOnly Property CancellingPrintMessage As String Implements ReportViewer.Silverlight.ITextResources.CancellingPrintMessage
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	        Public ReadOnly Property DocumentMapToolTip As String Implements ReportViewer.Silverlight.ITextResources.DocumentMapToolTip
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	        Public ReadOnly Property PrintingRequiresBrowserError As String Implements ReportViewer.Silverlight.ITextResources.PrintingRequiresBrowserError
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	        Public ReadOnly Property ExportToolTip As String Implements ReportViewer.Silverlight.ITextResources.ExportToolTip
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property FirstPageToolTip As String Implements ReportViewer.Silverlight.ITextResources.FirstPageToolTip
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property ForwardToolTip As String Implements ReportViewer.Silverlight.ITextResources.ForwardToolTip
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property LastPageToolTip As String Implements ReportViewer.Silverlight.ITextResources.LastPageToolTip
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property LoadingPageMessage As String Implements ReportViewer.Silverlight.ITextResources.LoadingPageMessage
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property NextPageToolTip As String Implements ReportViewer.Silverlight.ITextResources.NextPageToolTip
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property NoReportError As String Implements ReportViewer.Silverlight.ITextResources.NoReportError
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property PageNumberGreaterThanRangeError As String Implements ReportViewer.Silverlight.ITextResources.PageNumberGreaterThanRangeError
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property PageNumberLessThanRangeError As String Implements ReportViewer.Silverlight.ITextResources.PageNumberLessThanRangeError
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property ParametersToolTip As String Implements ReportViewer.Silverlight.ITextResources.ParametersToolTip
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property PreviousPageToolTip As String Implements ReportViewer.Silverlight.ITextResources.PreviousPageToolTip
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property PrintPreviewToolTip As String Implements ReportViewer.Silverlight.ITextResources.PrintPreviewToolTip
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property PrintToolTip As String Implements ReportViewer.Silverlight.ITextResources.PrintToolTip
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property ProcessingReportMessage As String Implements ReportViewer.Silverlight.ITextResources.ProcessingReportMessage
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property RefreshToolTip As String Implements ReportViewer.Silverlight.ITextResources.RefreshToolTip
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property ReportParametersAreaValidationError As String Implements ReportViewer.Silverlight.ITextResources.ReportParametersAreaValidationError
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property ReportParametersSelectAllText As String Implements ReportViewer.Silverlight.ITextResources.ReportParametersSelectAllText
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property ReportParametersValidationError() As String Implements ReportViewer.Silverlight.ITextResources.ReportParametersValidationError
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property TotalPagesToolTip As String Implements ReportViewer.Silverlight.ITextResources.TotalPagesToolTip
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property UpdatingParametersMessage As String Implements ReportViewer.Silverlight.ITextResources.UpdatingParametersMessage
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property ZoomToolTip As String Implements ReportViewer.Silverlight.ITextResources.ZoomToolTip
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property ZoomToPageWidth As String Implements ReportViewer.Silverlight.ITextResources.ZoomToPageWidth
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property ZoomToWholePage As String Implements ReportViewer.Silverlight.ITextResources.ZoomToWholePage
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property NoPageToDisplay As String Implements ReportViewer.Silverlight.ITextResources.NoPageToDisplay
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        '#Region "InterfaceLocalizationSnippetEnd"
+	    End Class
+	    '#End Region
+	
+	
+	    '#Region "InterfaceLocalizationUsingMethodsSnippetStart"
+	    Public Class CustomTextResources
+	        Implements Telerik.ReportViewer.Silverlight.ITextResources
+	
+	        Public ReadOnly Property AllFiles() As String Implements ReportViewer.Silverlight.ITextResources.AllFiles
+	            Get
+	                Return SqlHelper.GetViewerKeyFromDb(TextResourcesEnum.AllFiles)
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property BackToolTip() As String Implements ReportViewer.Silverlight.ITextResources.BackToolTip
+	            Get
+	                Return SqlHelper.GetViewerKeyFromDb(TextResourcesEnum.BackToolTip)
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property CurrentPageToolTip() As String Implements ReportViewer.Silverlight.ITextResources.CurrentPageToolTip
+	            Get
+	                Return SqlHelper.GetViewerKeyFromDb(TextResourcesEnum.CurrentPageToolTip)
+	            End Get
+	        End Property
+	
+	        '...... Implement the rest of the properties ......
+	        '#End Region
+	
+	        Public ReadOnly Property LabelOf As String Implements ReportViewer.Silverlight.ITextResources.LabelOf
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	        Public ReadOnly Property CancelExportButtonText As String Implements ReportViewer.Silverlight.ITextResources.CancelExportButtonText
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	        Public ReadOnly Property CancelPrintButtonText As String Implements ReportViewer.Silverlight.ITextResources.CancelPrintButtonText
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	        Public ReadOnly Property ReportParametersNullText As String Implements ReportViewer.Silverlight.ITextResources.ReportParametersNullText
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	        Public ReadOnly Property PrintButtonText As String Implements ReportViewer.Silverlight.ITextResources.PrintButtonText
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	        Public ReadOnly Property PreviewButtonText As String Implements ReportViewer.Silverlight.ITextResources.PreviewButtonText
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	        Public ReadOnly Property SaveButtonText As String Implements ReportViewer.Silverlight.ITextResources.SaveButtonText
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	        Public ReadOnly Property CannotConvertTypeError As String Implements ReportViewer.Silverlight.ITextResources.CannotConvertTypeError
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	        Public ReadOnly Property DocumentReadyForPrintMessage As String Implements ReportViewer.Silverlight.ITextResources.DocumentReadyForPrintMessage
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	        Public ReadOnly Property ExportingProgressMessage As String Implements ReportViewer.Silverlight.ITextResources.ExportingProgressMessage
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	        Public ReadOnly Property FileReadyToSaveMessage As String Implements ReportViewer.Silverlight.ITextResources.FileReadyToSaveMessage
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	        Public ReadOnly Property StartingPrintMessage As String Implements ReportViewer.Silverlight.ITextResources.StartingPrintMessage
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	        Public ReadOnly Property MultipleValuesNotSupportedError As String Implements ReportViewer.Silverlight.ITextResources.MultipleValuesNotSupportedError
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	        Public ReadOnly Property UnableToExportError As String Implements ReportViewer.Silverlight.ITextResources.UnableToExportError
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	        Public ReadOnly Property PreparingForPrintMessage As String Implements ReportViewer.Silverlight.ITextResources.PreparingForPrintMessage
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	        Public ReadOnly Property UpdatingParametersDoneMessage As String Implements ReportViewer.Silverlight.ITextResources.UpdatingParametersDoneMessage
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	        Public ReadOnly Property PrintProgressMessage As String Implements ReportViewer.Silverlight.ITextResources.PrintProgressMessage
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	        Public ReadOnly Property CancellingPrintMessage As String Implements ReportViewer.Silverlight.ITextResources.CancellingPrintMessage
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	        Public ReadOnly Property PrintingRequiresBrowserError As String Implements ReportViewer.Silverlight.ITextResources.PrintingRequiresBrowserError
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property DocumentMapToolTip As String Implements ReportViewer.Silverlight.ITextResources.DocumentMapToolTip
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property ExportToolTip As String Implements ReportViewer.Silverlight.ITextResources.ExportToolTip
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property FirstPageToolTip As String Implements ReportViewer.Silverlight.ITextResources.FirstPageToolTip
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property ForwardToolTip As String Implements ReportViewer.Silverlight.ITextResources.ForwardToolTip
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property LastPageToolTip As String Implements ReportViewer.Silverlight.ITextResources.LastPageToolTip
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property LoadingPageMessage As String Implements ReportViewer.Silverlight.ITextResources.LoadingPageMessage
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property NextPageToolTip As String Implements ReportViewer.Silverlight.ITextResources.NextPageToolTip
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property NoReportError As String Implements ReportViewer.Silverlight.ITextResources.NoReportError
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property PageNumberGreaterThanRangeError As String Implements ReportViewer.Silverlight.ITextResources.PageNumberGreaterThanRangeError
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property PageNumberLessThanRangeError As String Implements ReportViewer.Silverlight.ITextResources.PageNumberLessThanRangeError
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property ParametersToolTip As String Implements ReportViewer.Silverlight.ITextResources.ParametersToolTip
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property PreviousPageToolTip As String Implements ReportViewer.Silverlight.ITextResources.PreviousPageToolTip
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property PrintPreviewToolTip As String Implements ReportViewer.Silverlight.ITextResources.PrintPreviewToolTip
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property PrintToolTip As String Implements ReportViewer.Silverlight.ITextResources.PrintToolTip
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property ProcessingReportMessage As String Implements ReportViewer.Silverlight.ITextResources.ProcessingReportMessage
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property RefreshToolTip As String Implements ReportViewer.Silverlight.ITextResources.RefreshToolTip
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property ReportParametersAreaValidationError As String Implements ReportViewer.Silverlight.ITextResources.ReportParametersAreaValidationError
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property ReportParametersSelectAllText As String Implements ReportViewer.Silverlight.ITextResources.ReportParametersSelectAllText
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property InvalidValueForParameter As String Implements ReportViewer.Silverlight.ITextResources.InvalidValueForParameter
+	            Get
+	                Return "Valor no válido para el parámetro"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property ReportParametersValidationError() As String Implements ReportViewer.Silverlight.ITextResources.ReportParametersValidationError
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property TotalPagesToolTip As String Implements ReportViewer.Silverlight.ITextResources.TotalPagesToolTip
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property UpdatingParametersMessage As String Implements ReportViewer.Silverlight.ITextResources.UpdatingParametersMessage
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property ZoomToolTip As String Implements ReportViewer.Silverlight.ITextResources.ZoomToolTip
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property ZoomToPageWidth As String Implements ReportViewer.Silverlight.ITextResources.ZoomToPageWidth
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property ZoomToWholePage As String Implements ReportViewer.Silverlight.ITextResources.ZoomToWholePage
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property NoPageToDisplay As String Implements ReportViewer.Silverlight.ITextResources.NoPageToDisplay
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        '#Region "InterfaceLocalizationUsingMethodsSnippetEnd"
+	    End Class
+	    '#End Region
+	End Class
 
 
 
@@ -131,11 +718,319 @@ Instead of a hard-coded string the property can be set in a method/contructor or
   			for example retreives the resource key from a database.
   			
 
+	{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````
+	        public class CustomTextResources : Telerik.ReportViewer.Silverlight.ITextResources
+	        {
+	            public string AllFiles
+	            {
+	                get
+	                {
+	                    return SqlHelper.GetViewerKeyFromDb(TextResourcesEnum.AllFiles);
+	                }
+	            }
 	
-
-
-
+	            public string BackToolTip
+	            {
+	                get
+	                {
+	                    return SqlHelper.GetViewerKeyFromDb(TextResourcesEnum.BackToolTip);
+	                }
+	            }
 	
+	            public string CurrentPageToolTip
+	            {
+	                get
+	                {
+	                    return SqlHelper.GetViewerKeyFromDb(TextResourcesEnum.CurrentPageToolTip);
+	                }
+	            }
+	
+	            //...... Implement the rest of the properties ......
+````
+
+
+
+	{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````
+	    Public Class CustomTextResources
+	        Implements Telerik.ReportViewer.Silverlight.ITextResources
+	
+	        Public ReadOnly Property AllFiles() As String Implements ReportViewer.Silverlight.ITextResources.AllFiles
+	            Get
+	                Return SqlHelper.GetViewerKeyFromDb(TextResourcesEnum.AllFiles)
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property BackToolTip() As String Implements ReportViewer.Silverlight.ITextResources.BackToolTip
+	            Get
+	                Return SqlHelper.GetViewerKeyFromDb(TextResourcesEnum.BackToolTip)
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property CurrentPageToolTip() As String Implements ReportViewer.Silverlight.ITextResources.CurrentPageToolTip
+	            Get
+	                Return SqlHelper.GetViewerKeyFromDb(TextResourcesEnum.CurrentPageToolTip)
+	            End Get
+	        End Property
+	
+	        '...... Implement the rest of the properties ......
+	        '#End Region
+	
+	        Public ReadOnly Property LabelOf As String Implements ReportViewer.Silverlight.ITextResources.LabelOf
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	        Public ReadOnly Property CancelExportButtonText As String Implements ReportViewer.Silverlight.ITextResources.CancelExportButtonText
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	        Public ReadOnly Property CancelPrintButtonText As String Implements ReportViewer.Silverlight.ITextResources.CancelPrintButtonText
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	        Public ReadOnly Property ReportParametersNullText As String Implements ReportViewer.Silverlight.ITextResources.ReportParametersNullText
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	        Public ReadOnly Property PrintButtonText As String Implements ReportViewer.Silverlight.ITextResources.PrintButtonText
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	        Public ReadOnly Property PreviewButtonText As String Implements ReportViewer.Silverlight.ITextResources.PreviewButtonText
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	        Public ReadOnly Property SaveButtonText As String Implements ReportViewer.Silverlight.ITextResources.SaveButtonText
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	        Public ReadOnly Property CannotConvertTypeError As String Implements ReportViewer.Silverlight.ITextResources.CannotConvertTypeError
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	        Public ReadOnly Property DocumentReadyForPrintMessage As String Implements ReportViewer.Silverlight.ITextResources.DocumentReadyForPrintMessage
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	        Public ReadOnly Property ExportingProgressMessage As String Implements ReportViewer.Silverlight.ITextResources.ExportingProgressMessage
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	        Public ReadOnly Property FileReadyToSaveMessage As String Implements ReportViewer.Silverlight.ITextResources.FileReadyToSaveMessage
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	        Public ReadOnly Property StartingPrintMessage As String Implements ReportViewer.Silverlight.ITextResources.StartingPrintMessage
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	        Public ReadOnly Property MultipleValuesNotSupportedError As String Implements ReportViewer.Silverlight.ITextResources.MultipleValuesNotSupportedError
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	        Public ReadOnly Property UnableToExportError As String Implements ReportViewer.Silverlight.ITextResources.UnableToExportError
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	        Public ReadOnly Property PreparingForPrintMessage As String Implements ReportViewer.Silverlight.ITextResources.PreparingForPrintMessage
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	        Public ReadOnly Property UpdatingParametersDoneMessage As String Implements ReportViewer.Silverlight.ITextResources.UpdatingParametersDoneMessage
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	        Public ReadOnly Property PrintProgressMessage As String Implements ReportViewer.Silverlight.ITextResources.PrintProgressMessage
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	        Public ReadOnly Property CancellingPrintMessage As String Implements ReportViewer.Silverlight.ITextResources.CancellingPrintMessage
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	        Public ReadOnly Property PrintingRequiresBrowserError As String Implements ReportViewer.Silverlight.ITextResources.PrintingRequiresBrowserError
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property DocumentMapToolTip As String Implements ReportViewer.Silverlight.ITextResources.DocumentMapToolTip
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property ExportToolTip As String Implements ReportViewer.Silverlight.ITextResources.ExportToolTip
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property FirstPageToolTip As String Implements ReportViewer.Silverlight.ITextResources.FirstPageToolTip
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property ForwardToolTip As String Implements ReportViewer.Silverlight.ITextResources.ForwardToolTip
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property LastPageToolTip As String Implements ReportViewer.Silverlight.ITextResources.LastPageToolTip
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property LoadingPageMessage As String Implements ReportViewer.Silverlight.ITextResources.LoadingPageMessage
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property NextPageToolTip As String Implements ReportViewer.Silverlight.ITextResources.NextPageToolTip
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property NoReportError As String Implements ReportViewer.Silverlight.ITextResources.NoReportError
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property PageNumberGreaterThanRangeError As String Implements ReportViewer.Silverlight.ITextResources.PageNumberGreaterThanRangeError
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property PageNumberLessThanRangeError As String Implements ReportViewer.Silverlight.ITextResources.PageNumberLessThanRangeError
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property ParametersToolTip As String Implements ReportViewer.Silverlight.ITextResources.ParametersToolTip
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property PreviousPageToolTip As String Implements ReportViewer.Silverlight.ITextResources.PreviousPageToolTip
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property PrintPreviewToolTip As String Implements ReportViewer.Silverlight.ITextResources.PrintPreviewToolTip
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property PrintToolTip As String Implements ReportViewer.Silverlight.ITextResources.PrintToolTip
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property ProcessingReportMessage As String Implements ReportViewer.Silverlight.ITextResources.ProcessingReportMessage
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property RefreshToolTip As String Implements ReportViewer.Silverlight.ITextResources.RefreshToolTip
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property ReportParametersAreaValidationError As String Implements ReportViewer.Silverlight.ITextResources.ReportParametersAreaValidationError
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property ReportParametersSelectAllText As String Implements ReportViewer.Silverlight.ITextResources.ReportParametersSelectAllText
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property InvalidValueForParameter As String Implements ReportViewer.Silverlight.ITextResources.InvalidValueForParameter
+	            Get
+	                Return "Valor no válido para el parámetro"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property ReportParametersValidationError() As String Implements ReportViewer.Silverlight.ITextResources.ReportParametersValidationError
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property TotalPagesToolTip As String Implements ReportViewer.Silverlight.ITextResources.TotalPagesToolTip
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property UpdatingParametersMessage As String Implements ReportViewer.Silverlight.ITextResources.UpdatingParametersMessage
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property ZoomToolTip As String Implements ReportViewer.Silverlight.ITextResources.ZoomToolTip
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property ZoomToPageWidth As String Implements ReportViewer.Silverlight.ITextResources.ZoomToPageWidth
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property ZoomToWholePage As String Implements ReportViewer.Silverlight.ITextResources.ZoomToWholePage
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property NoPageToDisplay As String Implements ReportViewer.Silverlight.ITextResources.NoPageToDisplay
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        '#Region "InterfaceLocalizationUsingMethodsSnippetEnd"
+	    End Class
+	    '#End Region
+	End Class
 
 
 

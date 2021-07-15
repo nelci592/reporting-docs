@@ -63,13 +63,33 @@ Determines character encoding used to encode the barcode contents. By default it
         which uses more bits per character and may increase the size of the barcode image.
         
 
-## Examples#_C#_
+## Examples
 
+{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````cs
+	            var encoder = new Telerik.Reporting.Barcodes.DataMatrixEncoder();
 	
-
-#_VB.NET_
-
+	            encoder.Encodation = Telerik.Reporting.Barcodes.DataMatrix.Encodation.Ascii;
+	            encoder.SymbolSize = Telerik.Reporting.Barcodes.DataMatrix.SymbolSize.SquareAuto;
+	            encoder.TextEncoding = System.Text.UTF8Encoding.UTF8;
 	
+	            this.barcode1.Encoder = encoder;
+````
+
+
+
+{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````vbnet
+	        Dim encoder = New Telerik.Reporting.Barcodes.DataMatrixEncoder()
+	
+	        encoder.Encodation = Telerik.Reporting.Barcodes.DataMatrix.Encodation.Ascii
+	        encoder.SymbolSize = Telerik.Reporting.Barcodes.DataMatrix.SymbolSize.SquareAuto
+	        encoder.TextEncoding = System.Text.UTF8Encoding.UTF8
+	
+	        Me.barcode1.Encoder = encoder
+	        '#End Region
+	
+	        Assert.IsNotNull(Me.barcode1.Encoder)
+	    End Sub
+	End Class
 
 
 

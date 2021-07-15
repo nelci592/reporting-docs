@@ -244,10 +244,57 @@ A new details group is added as a child group in the Grouping pane in the
 
 1. Click __OK__.Adding a group to Table data item programatically
 
+{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````C#
 	
-
-
-
+	            Telerik.Reporting.TableGroup group1 = new Telerik.Reporting.TableGroup();
+	            group1.Name = "ProductID1";
+	            group1.Groupings.Add(new Telerik.Reporting.Grouping("=Fields.ProductID"));
+	            
+	            // If you need to filter the members of the group, apply filtering
+	            group1.Filters.Add(new Telerik.Reporting.Filter("=Fields.ProductID", Telerik.Reporting.FilterOperator.Equal, "=10"));
+	            
+	            // If you need to order the members of the group, apply sorting
+	            group1.Sortings.Add(new Telerik.Reporting.Sorting("=Fields.ProductID", Telerik.Reporting.SortDirection.Asc));
 	
+	            Telerik.Reporting.TextBox textBox1 = new Telerik.Reporting.TextBox();
+	            table1.Items.Add(textBox1);
+	            group1.ReportItem = textBox1;
+	           
+	            table1.RowGroups.Add(group1);
+	
+````
+
+
+
+{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````VB
+	
+	        Dim group1 As New Telerik.Reporting.TableGroup()
+	        group1.Name = "RowGroup1"
+	        group1.Groupings.Add(New Telerik.Reporting.Grouping("=Fields.ProductID"))
+	
+	        ' If you need to filter the members of the group, apply filtering
+	        group1.Filters.Add(New Telerik.Reporting.Filter("=Fields.ProductID", Telerik.Reporting.FilterOperator.Equal, "=10"))
+	
+	        ' If you need to order the members of the group, apply sorting
+	        group1.Sortings.Add(New Telerik.Reporting.Sorting("=Fields.ProductID", Telerik.Reporting.SortDirection.Asc))
+	
+	        Dim textBox1 As New Telerik.Reporting.TextBox()
+	        table1.Items.Add(textBox1)
+	        group1.ReportItem = textBox1
+	
+	        table1.RowGroups.Add(group1)
+	        '#End Region
+	
+	        Assert.AreEqual(1, table1.RowGroups.Count)
+	        Assert.AreEqual("=Fields.ProductID", table1.RowGroups(0).Groupings(0).Expression)
+	
+	        Assert.AreEqual("=Fields.ProductID", table1.RowGroups(0).Filters(0).Expression)
+	        Assert.AreEqual(Telerik.Reporting.FilterOperator.Equal, table1.RowGroups(0).Filters(0).[Operator])
+	        Assert.AreEqual("=10", table1.RowGroups(0).Filters(0).Value)
+	
+	        Assert.AreEqual("=Fields.ProductID", table1.RowGroups(0).Sortings(0).Expression)
+	        Assert.AreEqual(Telerik.Reporting.SortDirection.Asc, table1.RowGroups(0).Sortings(0).Direction)
+	    End Sub
+	End Class
 
 T:Telerik.Reporting.TableP:Telerik.Reporting.Table.ColumnGroupsP:Telerik.Reporting.Table.RowGroups

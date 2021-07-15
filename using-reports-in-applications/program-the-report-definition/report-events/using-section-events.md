@@ -45,18 +45,70 @@ The example below demonstrates getting a reference to the detail section of the 
 
 The second example demonstrates getting a reference to the detail section of the report, finding all its children and setting a BackgroundColor to them:
 
-	
+{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````C#
+	        private void detail_ItemDataBinding(object sender, EventArgs e)
+	        {
+	            Telerik.Reporting.Processing.DetailSection section = (sender as Telerik.Reporting.Processing.DetailSection);
+	            Telerik.Reporting.Processing.TextBox txt = (Telerik.Reporting.Processing.TextBox)Telerik.Reporting.Processing.ElementTreeHelper.GetChildByName(section, "textBox1");
+	            object title = section.DataObject["Title"];
+	            if ((string)title == "Developer")
+	            {
+	                txt.Style.BackgroundColor = System.Drawing.Color.Blue;
+	            }
+	        }
+````
 
 
 
-	
+{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````VB
+	    Private Sub detail_ItemDataBinding(sender As Object, e As EventArgs)
+	        Dim section As Telerik.Reporting.Processing.DetailSection = TryCast(sender, Telerik.Reporting.Processing.DetailSection)
+	        Dim txt As Telerik.Reporting.Processing.TextBox = DirectCast(Telerik.Reporting.Processing.ElementTreeHelper.GetChildByName(section, "textBox1"), Telerik.Reporting.Processing.TextBox)
+	        Dim title As Object = section.DataObject("Title")
+	        If DirectCast(title, String) = "Developer" Then
+	            txt.Style.BackgroundColor = System.Drawing.Color.Blue
+	        End If
+	    End Sub
+	    '#End Region
+	End Class
 
 
 
-	
+{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````C#
+			void DetailSection_ItemDataBinding_Using_ILayoutElementContainer_Children(object sender, EventArgs e)
+			{
+				Processing.DetailSection processingInstance = (Processing.DetailSection)sender;
+				Processing.ILayoutElementContainer processingContainer = processingInstance as Processing.ILayoutElementContainer;
+				if (null != processingContainer)
+				{
+					foreach (Processing.LayoutElement processingChild in processingContainer.Children)
+					{
+						Processing.VisualElement visualChild = processingChild as Processing.VisualElement;
+						if (null != visualChild)
+						{
+							visualChild.Style.BackgroundColor = System.Drawing.Color.Blue;
+						}
+					}
+				}
+			}
+````
 
 
 
-	
+{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````VB
+	    Private Sub DetailSection_ItemDataBinding_Using_ILayoutElementContainer_Children(sender As Object, e As EventArgs)
+	        Dim processingInstance As Processing.DetailSection = DirectCast(sender, Processing.DetailSection)
+	        Dim processingContainer As Processing.ILayoutElementContainer = TryCast(processingInstance, Processing.ILayoutElementContainer)
+	        If processingContainer IsNot Nothing Then
+	            For Each processingChild As Processing.LayoutElement In processingContainer.Children
+	                Dim visualChild As Processing.VisualElement = TryCast(processingChild, Processing.VisualElement)
+	                If visualChild IsNot Nothing Then
+	                    visualChild.Style.BackgroundColor = System.Drawing.Color.Blue
+	                End If
+	            Next
+	        End If
+	    End Sub
+	    '#End Region
+	End Class
 
 

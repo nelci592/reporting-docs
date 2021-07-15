@@ -36,7 +36,7 @@ In case you use *Telerik UI for WPF* version greater
           with the exact version of *Telerik UI for WPF* assemblies:
         
 
-	
+{{source=System.Xml.XmlAttribute region=}}
 
 
 

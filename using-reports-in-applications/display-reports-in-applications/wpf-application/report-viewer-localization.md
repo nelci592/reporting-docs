@@ -133,11 +133,879 @@ The other way to localize the WPF __*Report Viewer*__ in a more flexible manner 
           simple, the property just has to return the correct translation for each resource key, as it is shown below:
         
 
+	{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````
+	        class CustomResources : Telerik.ReportViewer.Wpf.ITextResources
+	        {
+	            public string AllFiles
+	            {
+	                get
+	                {
+	                    return "Todos Archivos";
+	                }
+	            }
+	            public string BackToolTip
+	            {
+	                get
+	                {
+	                    return "Navega hacia atrás";
+	                }
+	            }
+	            public string CurrentPageToolTip
+	            {
+	                get
+	                {
+	                    return "Página corriente";
+	                }
+	            }
 	
-
-
-
 	
+	            //...... Implement the rest of the properties ...... 
+````
+
+
+
+	{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````
+	    Class CustomResources
+	        Implements Telerik.ReportViewer.Wpf.ITextResources
+	
+	        Public ReadOnly Property AllFiles() As String Implements ReportViewer.Wpf.ITextResources.AllFiles
+	            Get
+	                Return "Todos Archivos"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property BackToolTip() As String Implements ReportViewer.Wpf.ITextResources.BackToolTip
+	            Get
+	                Return "Navega hacia atrás"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property CurrentPageToolTip() As String Implements ReportViewer.Wpf.ITextResources.CurrentPageToolTip
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        '...... Implement the rest of the properties ......
+	        '#End Region
+	
+	        Public ReadOnly Property CancelButtonText As String Implements ReportViewer.Wpf.ITextResources.CancelButtonText
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property LabelOf As String Implements ReportViewer.Wpf.ITextResources.LabelOf
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property ReportParametersNullText As String Implements ReportViewer.Wpf.ITextResources.ReportParametersNullText
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property PreviewButtonText As String Implements ReportViewer.Wpf.ITextResources.PreviewButtonText
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property DocumentMapToolTip As String Implements ReportViewer.Wpf.ITextResources.DocumentMapToolTip
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property ExportError As String Implements ReportViewer.Wpf.ITextResources.ExportError
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property ExportingMessage As String Implements ReportViewer.Wpf.ITextResources.ExportingMessage
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property ExportToolTip As String Implements ReportViewer.Wpf.ITextResources.ExportToolTip
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property FirstPageToolTip As String Implements ReportViewer.Wpf.ITextResources.FirstPageToolTip
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property ForwardToolTip As String Implements ReportViewer.Wpf.ITextResources.ForwardToolTip
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property LastPageToolTip As String Implements ReportViewer.Wpf.ITextResources.LastPageToolTip
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property LoadingPageMessage As String Implements ReportViewer.Wpf.ITextResources.LoadingPageMessage
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property NextPageToolTip As String Implements ReportViewer.Wpf.ITextResources.NextPageToolTip
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property NoReportError As String Implements ReportViewer.Wpf.ITextResources.NoReportError
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property PageNumberGreaterThanRangeError As String Implements ReportViewer.Wpf.ITextResources.PageNumberGreaterThanRangeError
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property PageNumberLessThanRangeError As String Implements ReportViewer.Wpf.ITextResources.PageNumberLessThanRangeError
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property PageSetupToolTip() As String Implements ReportViewer.Wpf.ITextResources.PageSetupToolTip
+	            Get
+	                Return "Página de configuración"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property ParametersToolTip As String Implements ReportViewer.Wpf.ITextResources.ParametersToolTip
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property PreviousPageToolTip As String Implements ReportViewer.Wpf.ITextResources.PreviousPageToolTip
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property PrintPreviewToolTip As String Implements ReportViewer.Wpf.ITextResources.PrintPreviewToolTip
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property PrintToolTip As String Implements ReportViewer.Wpf.ITextResources.PrintToolTip
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property ProcessingReportMessage As String Implements ReportViewer.Wpf.ITextResources.ProcessingReportMessage
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property RefreshToolTip As String Implements ReportViewer.Wpf.ITextResources.RefreshToolTip
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property ReportParametersAreaValidationError As String Implements ReportViewer.Wpf.ITextResources.ReportParametersAreaValidationError
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property ReportParametersSelectAllText As String Implements ReportViewer.Wpf.ITextResources.ReportParametersSelectAllText
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property InvalidValueForParameter As String Implements ReportViewer.Wpf.ITextResources.InvalidValueForParameter
+	            Get
+	                Return "Valor no válido para el parámetro"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property ReportParametersValidationError As String Implements ReportViewer.Wpf.ITextResources.ReportParametersValidationError
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property StopToolTip() As String Implements ReportViewer.Wpf.ITextResources.StopToolTip
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property TotalPagesToolTip As String Implements ReportViewer.Wpf.ITextResources.TotalPagesToolTip
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property UpdatingParametersMessage As String Implements ReportViewer.Wpf.ITextResources.UpdatingParametersMessage
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property ZoomToolTip As String Implements ReportViewer.Wpf.ITextResources.ZoomToolTip
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property ZoomToPageWidth As String Implements ReportViewer.Wpf.ITextResources.ZoomToPageWidth
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property ZoomToWholePage As String Implements ReportViewer.Wpf.ITextResources.ZoomToWholePage
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property NoPageToDisplay As String Implements ReportViewer.Wpf.ITextResources.NoPageToDisplay
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property SessionExpired As String Implements ReportViewer.Wpf.ITextResources.SessionExpired
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property AccessibilityReportContentsArea As String Implements ITextResources.AccessibilityReportContentsArea
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property AccessibilityDocumentMapArea As String Implements ITextResources.AccessibilityDocumentMapArea
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property AccessibilityParametersArea As String Implements ITextResources.AccessibilityParametersArea
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property AccessibilityParameter As String Implements ITextResources.AccessibilityParameter
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property AccessibilityParameterText As String Implements ITextResources.AccessibilityParameterText
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property AccessibilityParameterBoolean As String Implements ITextResources.AccessibilityParameterBoolean
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property AccessibilityParameterDateTime As String Implements ITextResources.AccessibilityParameterDateTime
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property AccessibilityParameterNumerical As String Implements ITextResources.AccessibilityParameterNumerical
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property AccessibilityParameterMultiSelect As String Implements ITextResources.AccessibilityParameterMultiSelect
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property AccessibilityParameterMultiValue As String Implements ITextResources.AccessibilityParameterMultiValue
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property AccessibilityParameterErrorMessage As String Implements ITextResources.AccessibilityParameterErrorMessage
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property AccessibilityPageNumberEditor As String Implements ITextResources.AccessibilityPageNumberEditor
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property AccessibilityPageNumberSelector As String Implements ITextResources.AccessibilityPageNumberSelector
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property AccessibilityReportViewerToolbar As String Implements ITextResources.AccessibilityReportViewerToolbar
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property AccessibilityStatus As String Implements ITextResources.AccessibilityStatus
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property AccessibilityStatusEnabled As String Implements ITextResources.AccessibilityStatusEnabled
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property AccessibilityStatusDisabled As String Implements ITextResources.AccessibilityStatusDisabled
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property AccessibilityToolbarButtonToggleParameters As String Implements ITextResources.AccessibilityToolbarButtonToggleParameters
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property AccessibilityToolbarButtonToggleDocumentMap As String Implements ITextResources.AccessibilityToolbarButtonToggleDocumentMap
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property AccessibilityStateChecked As String Implements ITextResources.AccessibilityStateChecked
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property AccessibilityStateUnchecked As String Implements ITextResources.AccessibilityStateUnchecked
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property SearchCaptionLabel As String Implements ITextResources.SearchCaptionLabel
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property SearchToolTip As String Implements ITextResources.SearchToolTip
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property SearchStopToolTip As String Implements ITextResources.SearchStopToolTip
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property SearchMatchCaseToolTip As String Implements ITextResources.SearchMatchCaseToolTip
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property SearchMatchWholeWordToolTip As String Implements ITextResources.SearchMatchWholeWordToolTip
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property SearchUseRegexToolTip As String Implements ITextResources.SearchUseRegexToolTip
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property SearchNoMetadata As String Implements ITextResources.SearchNoMetadata
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property SearchNoResults As String Implements ITextResources.SearchNoResults
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property SearchResultsFormatString As String Implements ITextResources.SearchResultsFormatString
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	        '#Region "InterfaceLocalizationSnippetEnd"
+	    End Class
+	    '#End Region
+	
+	
+	    '#Region "InterfaceLocalizationUsingMethodsSnippetStart"
+	    Class CustomTextResources
+	        Implements Telerik.ReportViewer.Wpf.ITextResources
+	
+	        Public ReadOnly Property AllFiles() As String Implements ReportViewer.Wpf.ITextResources.AllFiles
+	            Get
+	                Return SqlHelper.GetViewerKeyFromDb(TextResourcesEnum.AllFiles)
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property BackToolTip() As String Implements ReportViewer.Wpf.ITextResources.BackToolTip
+	            Get
+	                Return SqlHelper.GetViewerKeyFromDb(TextResourcesEnum.BackToolTip)
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property CurrentPageToolTip() As String Implements ReportViewer.Wpf.ITextResources.CurrentPageToolTip
+	            Get
+	                Return SqlHelper.GetViewerKeyFromDb(TextResourcesEnum.CurrentPageToolTip)
+	            End Get
+	        End Property
+	
+	        '...... Implement the rest of the properties ......
+	        '#End Region
+	
+	        Public ReadOnly Property CancelButtonText As String Implements ReportViewer.Wpf.ITextResources.CancelButtonText
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property LabelOf As String Implements ReportViewer.Wpf.ITextResources.LabelOf
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property ReportParametersNullText As String Implements ReportViewer.Wpf.ITextResources.ReportParametersNullText
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property PreviewButtonText As String Implements ReportViewer.Wpf.ITextResources.PreviewButtonText
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property DocumentMapToolTip As String Implements ReportViewer.Wpf.ITextResources.DocumentMapToolTip
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property ExportError As String Implements ReportViewer.Wpf.ITextResources.ExportError
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property ExportingMessage As String Implements ReportViewer.Wpf.ITextResources.ExportingMessage
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property ExportToolTip As String Implements ReportViewer.Wpf.ITextResources.ExportToolTip
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property FirstPageToolTip As String Implements ReportViewer.Wpf.ITextResources.FirstPageToolTip
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property ForwardToolTip As String Implements ReportViewer.Wpf.ITextResources.ForwardToolTip
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property LastPageToolTip As String Implements ReportViewer.Wpf.ITextResources.LastPageToolTip
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property LoadingPageMessage As String Implements ReportViewer.Wpf.ITextResources.LoadingPageMessage
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property NextPageToolTip As String Implements ReportViewer.Wpf.ITextResources.NextPageToolTip
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property NoReportError As String Implements ReportViewer.Wpf.ITextResources.NoReportError
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property PageNumberGreaterThanRangeError As String Implements ReportViewer.Wpf.ITextResources.PageNumberGreaterThanRangeError
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property PageNumberLessThanRangeError As String Implements ReportViewer.Wpf.ITextResources.PageNumberLessThanRangeError
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property PageSetupToolTip() As String Implements ReportViewer.Wpf.ITextResources.PageSetupToolTip
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property ParametersToolTip As String Implements ReportViewer.Wpf.ITextResources.ParametersToolTip
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property PreviousPageToolTip As String Implements ReportViewer.Wpf.ITextResources.PreviousPageToolTip
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property PrintPreviewToolTip As String Implements ReportViewer.Wpf.ITextResources.PrintPreviewToolTip
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property PrintToolTip As String Implements ReportViewer.Wpf.ITextResources.PrintToolTip
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property ProcessingReportMessage As String Implements ReportViewer.Wpf.ITextResources.ProcessingReportMessage
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property RefreshToolTip As String Implements ReportViewer.Wpf.ITextResources.RefreshToolTip
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property ReportParametersAreaValidationError As String Implements ReportViewer.Wpf.ITextResources.ReportParametersAreaValidationError
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property ReportParametersSelectAllText As String Implements ReportViewer.Wpf.ITextResources.ReportParametersSelectAllText
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property InvalidValueForParameter As String Implements ReportViewer.Wpf.ITextResources.InvalidValueForParameter
+	            Get
+	                Return "Valor no válido para el parámetro"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property ReportParametersValidationError As String Implements ReportViewer.Wpf.ITextResources.ReportParametersValidationError
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property StopToolTip() As String Implements ReportViewer.Wpf.ITextResources.StopToolTip
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property TotalPagesToolTip As String Implements ReportViewer.Wpf.ITextResources.TotalPagesToolTip
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property UpdatingParametersMessage As String Implements ReportViewer.Wpf.ITextResources.UpdatingParametersMessage
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property ZoomToolTip As String Implements ReportViewer.Wpf.ITextResources.ZoomToolTip
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property ZoomToPageWidth As String Implements ReportViewer.Wpf.ITextResources.ZoomToPageWidth
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property ZoomToWholePage As String Implements ReportViewer.Wpf.ITextResources.ZoomToWholePage
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property NoPageToDisplay As String Implements ReportViewer.Wpf.ITextResources.NoPageToDisplay
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property SessionExpired As String Implements ReportViewer.Wpf.ITextResources.SessionExpired
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property AccessibilityReportContentsArea As String Implements ITextResources.AccessibilityReportContentsArea
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property AccessibilityDocumentMapArea As String Implements ITextResources.AccessibilityDocumentMapArea
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property AccessibilityParametersArea As String Implements ITextResources.AccessibilityParametersArea
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property AccessibilityParameter As String Implements ITextResources.AccessibilityParameter
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property AccessibilityParameterText As String Implements ITextResources.AccessibilityParameterText
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property AccessibilityParameterBoolean As String Implements ITextResources.AccessibilityParameterBoolean
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property AccessibilityParameterDateTime As String Implements ITextResources.AccessibilityParameterDateTime
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property AccessibilityParameterNumerical As String Implements ITextResources.AccessibilityParameterNumerical
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property AccessibilityParameterMultiSelect As String Implements ITextResources.AccessibilityParameterMultiSelect
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property AccessibilityParameterMultiValue As String Implements ITextResources.AccessibilityParameterMultiValue
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property AccessibilityParameterErrorMessage As String Implements ITextResources.AccessibilityParameterErrorMessage
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property AccessibilityPageNumberEditor As String Implements ITextResources.AccessibilityPageNumberEditor
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property AccessibilityPageNumberSelector As String Implements ITextResources.AccessibilityPageNumberSelector
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property AccessibilityReportViewerToolbar As String Implements ITextResources.AccessibilityReportViewerToolbar
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property AccessibilityStatus As String Implements ITextResources.AccessibilityStatus
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property AccessibilityStatusEnabled As String Implements ITextResources.AccessibilityStatusEnabled
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property AccessibilityStatusDisabled As String Implements ITextResources.AccessibilityStatusDisabled
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property AccessibilityToolbarButtonToggleParameters As String Implements ITextResources.AccessibilityToolbarButtonToggleParameters
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property AccessibilityToolbarButtonToggleDocumentMap As String Implements ITextResources.AccessibilityToolbarButtonToggleDocumentMap
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property AccessibilityStateChecked As String Implements ITextResources.AccessibilityStateChecked
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property AccessibilityStateUnchecked As String Implements ITextResources.AccessibilityStateUnchecked
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property SearchCaptionLabel As String Implements ITextResources.SearchCaptionLabel
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property SearchToolTip As String Implements ITextResources.SearchToolTip
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property SearchStopToolTip As String Implements ITextResources.SearchStopToolTip
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property SearchMatchCaseToolTip As String Implements ITextResources.SearchMatchCaseToolTip
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property SearchMatchWholeWordToolTip As String Implements ITextResources.SearchMatchWholeWordToolTip
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property SearchUseRegexToolTip As String Implements ITextResources.SearchUseRegexToolTip
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property SearchNoMetadata As String Implements ITextResources.SearchNoMetadata
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property SearchNoResults As String Implements ITextResources.SearchNoResults
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property SearchResultsFormatString As String Implements ITextResources.SearchResultsFormatString
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	        '#Region "InterfaceLocalizationUsingMethodsSnippetEnd"
+	    End Class
+	    '#End Region
+	
+	    <TestMethod()>
+	    Public Sub TestMethod1()
+	    End Sub
+	
+	End Class
 
 
 
@@ -145,11 +1013,462 @@ Instead of a hard-coded string the property can be set in a method/contructor or
           for example retreives the resource key from a database.
         
 
+	{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````
+	        class CustomTextResources : Telerik.ReportViewer.Wpf.ITextResources
+	        {
 	
-
-
-
+	            public string AllFiles
+	            {
+	                get
+	                {
+	                    return SqlHelper.GetViewerKeyFromDb(TextResourcesEnum.AllFiles);
+	                }
+	            }
 	
+	            public string BackToolTip
+	            {
+	                get
+	                {
+	                    return SqlHelper.GetViewerKeyFromDb(TextResourcesEnum.BackToolTip);
+	                }
+	            }
+	
+	            public string CurrentPageToolTip
+	            {
+	                get
+	                {
+	                    return SqlHelper.GetViewerKeyFromDb(TextResourcesEnum.CurrentPageToolTip);
+	                }
+	            }
+	
+	            //...... Implement the rest of the properties ......
+````
+
+
+
+	{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````
+	    Class CustomTextResources
+	        Implements Telerik.ReportViewer.Wpf.ITextResources
+	
+	        Public ReadOnly Property AllFiles() As String Implements ReportViewer.Wpf.ITextResources.AllFiles
+	            Get
+	                Return SqlHelper.GetViewerKeyFromDb(TextResourcesEnum.AllFiles)
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property BackToolTip() As String Implements ReportViewer.Wpf.ITextResources.BackToolTip
+	            Get
+	                Return SqlHelper.GetViewerKeyFromDb(TextResourcesEnum.BackToolTip)
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property CurrentPageToolTip() As String Implements ReportViewer.Wpf.ITextResources.CurrentPageToolTip
+	            Get
+	                Return SqlHelper.GetViewerKeyFromDb(TextResourcesEnum.CurrentPageToolTip)
+	            End Get
+	        End Property
+	
+	        '...... Implement the rest of the properties ......
+	        '#End Region
+	
+	        Public ReadOnly Property CancelButtonText As String Implements ReportViewer.Wpf.ITextResources.CancelButtonText
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property LabelOf As String Implements ReportViewer.Wpf.ITextResources.LabelOf
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property ReportParametersNullText As String Implements ReportViewer.Wpf.ITextResources.ReportParametersNullText
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property PreviewButtonText As String Implements ReportViewer.Wpf.ITextResources.PreviewButtonText
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property DocumentMapToolTip As String Implements ReportViewer.Wpf.ITextResources.DocumentMapToolTip
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property ExportError As String Implements ReportViewer.Wpf.ITextResources.ExportError
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property ExportingMessage As String Implements ReportViewer.Wpf.ITextResources.ExportingMessage
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property ExportToolTip As String Implements ReportViewer.Wpf.ITextResources.ExportToolTip
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property FirstPageToolTip As String Implements ReportViewer.Wpf.ITextResources.FirstPageToolTip
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property ForwardToolTip As String Implements ReportViewer.Wpf.ITextResources.ForwardToolTip
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property LastPageToolTip As String Implements ReportViewer.Wpf.ITextResources.LastPageToolTip
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property LoadingPageMessage As String Implements ReportViewer.Wpf.ITextResources.LoadingPageMessage
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property NextPageToolTip As String Implements ReportViewer.Wpf.ITextResources.NextPageToolTip
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property NoReportError As String Implements ReportViewer.Wpf.ITextResources.NoReportError
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property PageNumberGreaterThanRangeError As String Implements ReportViewer.Wpf.ITextResources.PageNumberGreaterThanRangeError
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property PageNumberLessThanRangeError As String Implements ReportViewer.Wpf.ITextResources.PageNumberLessThanRangeError
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property PageSetupToolTip() As String Implements ReportViewer.Wpf.ITextResources.PageSetupToolTip
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property ParametersToolTip As String Implements ReportViewer.Wpf.ITextResources.ParametersToolTip
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property PreviousPageToolTip As String Implements ReportViewer.Wpf.ITextResources.PreviousPageToolTip
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property PrintPreviewToolTip As String Implements ReportViewer.Wpf.ITextResources.PrintPreviewToolTip
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property PrintToolTip As String Implements ReportViewer.Wpf.ITextResources.PrintToolTip
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property ProcessingReportMessage As String Implements ReportViewer.Wpf.ITextResources.ProcessingReportMessage
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property RefreshToolTip As String Implements ReportViewer.Wpf.ITextResources.RefreshToolTip
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property ReportParametersAreaValidationError As String Implements ReportViewer.Wpf.ITextResources.ReportParametersAreaValidationError
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property ReportParametersSelectAllText As String Implements ReportViewer.Wpf.ITextResources.ReportParametersSelectAllText
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property InvalidValueForParameter As String Implements ReportViewer.Wpf.ITextResources.InvalidValueForParameter
+	            Get
+	                Return "Valor no válido para el parámetro"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property ReportParametersValidationError As String Implements ReportViewer.Wpf.ITextResources.ReportParametersValidationError
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property StopToolTip() As String Implements ReportViewer.Wpf.ITextResources.StopToolTip
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property TotalPagesToolTip As String Implements ReportViewer.Wpf.ITextResources.TotalPagesToolTip
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property UpdatingParametersMessage As String Implements ReportViewer.Wpf.ITextResources.UpdatingParametersMessage
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property ZoomToolTip As String Implements ReportViewer.Wpf.ITextResources.ZoomToolTip
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property ZoomToPageWidth As String Implements ReportViewer.Wpf.ITextResources.ZoomToPageWidth
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property ZoomToWholePage As String Implements ReportViewer.Wpf.ITextResources.ZoomToWholePage
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property NoPageToDisplay As String Implements ReportViewer.Wpf.ITextResources.NoPageToDisplay
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property SessionExpired As String Implements ReportViewer.Wpf.ITextResources.SessionExpired
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property AccessibilityReportContentsArea As String Implements ITextResources.AccessibilityReportContentsArea
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property AccessibilityDocumentMapArea As String Implements ITextResources.AccessibilityDocumentMapArea
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property AccessibilityParametersArea As String Implements ITextResources.AccessibilityParametersArea
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property AccessibilityParameter As String Implements ITextResources.AccessibilityParameter
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property AccessibilityParameterText As String Implements ITextResources.AccessibilityParameterText
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property AccessibilityParameterBoolean As String Implements ITextResources.AccessibilityParameterBoolean
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property AccessibilityParameterDateTime As String Implements ITextResources.AccessibilityParameterDateTime
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property AccessibilityParameterNumerical As String Implements ITextResources.AccessibilityParameterNumerical
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property AccessibilityParameterMultiSelect As String Implements ITextResources.AccessibilityParameterMultiSelect
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property AccessibilityParameterMultiValue As String Implements ITextResources.AccessibilityParameterMultiValue
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property AccessibilityParameterErrorMessage As String Implements ITextResources.AccessibilityParameterErrorMessage
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property AccessibilityPageNumberEditor As String Implements ITextResources.AccessibilityPageNumberEditor
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property AccessibilityPageNumberSelector As String Implements ITextResources.AccessibilityPageNumberSelector
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property AccessibilityReportViewerToolbar As String Implements ITextResources.AccessibilityReportViewerToolbar
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property AccessibilityStatus As String Implements ITextResources.AccessibilityStatus
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property AccessibilityStatusEnabled As String Implements ITextResources.AccessibilityStatusEnabled
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property AccessibilityStatusDisabled As String Implements ITextResources.AccessibilityStatusDisabled
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property AccessibilityToolbarButtonToggleParameters As String Implements ITextResources.AccessibilityToolbarButtonToggleParameters
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property AccessibilityToolbarButtonToggleDocumentMap As String Implements ITextResources.AccessibilityToolbarButtonToggleDocumentMap
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property AccessibilityStateChecked As String Implements ITextResources.AccessibilityStateChecked
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property AccessibilityStateUnchecked As String Implements ITextResources.AccessibilityStateUnchecked
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property SearchCaptionLabel As String Implements ITextResources.SearchCaptionLabel
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property SearchToolTip As String Implements ITextResources.SearchToolTip
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property SearchStopToolTip As String Implements ITextResources.SearchStopToolTip
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property SearchMatchCaseToolTip As String Implements ITextResources.SearchMatchCaseToolTip
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property SearchMatchWholeWordToolTip As String Implements ITextResources.SearchMatchWholeWordToolTip
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property SearchUseRegexToolTip As String Implements ITextResources.SearchUseRegexToolTip
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property SearchNoMetadata As String Implements ITextResources.SearchNoMetadata
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property SearchNoResults As String Implements ITextResources.SearchNoResults
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property SearchResultsFormatString As String Implements ITextResources.SearchResultsFormatString
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	        '#Region "InterfaceLocalizationUsingMethodsSnippetEnd"
+	    End Class
+	    '#End Region
+	
+	    <TestMethod()>
+	    Public Sub TestMethod1()
+	    End Sub
+	
+	End Class
 
 
 

@@ -83,11 +83,25 @@ Invoke
                   at the beginning of the `Global.Application_Start (Global.asax)` method:
                 
 
+{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````c#
+	        protected void Application_Start()
+	        {
+	            ReportsControllerConfiguration.RegisterRoutes(GlobalConfiguration.Configuration);
+````
+
+
+
+{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````vb
+	    Sub Application_Start()
+	        ReportsControllerConfiguration.RegisterRoutes(GlobalConfiguration.Configuration)
+	        '#End Region
+	        AreaRegistration.RegisterAllAreas()
 	
-
-
-
-	
+	        WebApiConfig.Register(GlobalConfiguration.Configuration)
+	        FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters)
+	        RouteConfig.RegisterRoutes(RouteTable.Routes)
+	    End Sub
+	End Class
 
 
 

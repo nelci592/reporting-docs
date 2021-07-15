@@ -65,11 +65,123 @@ __ReportsControllerBase configuration in code:__
                   for more details.
                 
 
+{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````C#
+	    using System.Web;
+	    using Telerik.Reporting.Services;
+	    using Telerik.Reporting.Services.WebApi;
 	
-
-
-
+	    public class ReportsController : ReportsControllerBase
+	    {
+	        static readonly ReportServiceConfiguration configurationInstance =
+	            new ReportServiceConfiguration
+	            {
+	                HostAppId = "Application1",
+	                ReportSourceResolver = new UriReportSourceResolver(HttpContext.Current.Server.MapPath("~/Reports"))
+	                    .AddFallbackResolver(new TypeReportSourceResolver()),
+	                Storage = new Telerik.Reporting.Cache.File.FileStorage(),
+	            };
 	
+	        public ReportsController()
+	        {
+	            this.ReportServiceConfiguration = configurationInstance;
+	        }
+	
+	        #region SendMailMessage_Implementation
+	        protected override HttpStatusCode SendMailMessage(MailMessage mailMessage)
+	        {
+	            using (var smtpClient = new SmtpClient("smtp.companyname.com", 25))
+	            {
+	                smtpClient.DeliveryMethod = SmtpDeliveryMethod.Network;
+	                smtpClient.EnableSsl = true;
+	                smtpClient.Send(mailMessage);
+	            }
+	
+	            return HttpStatusCode.OK;
+	        }
+````
+
+
+
+{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````VB
+	Imports System.Web
+	Imports Telerik.Reporting.Cache.Interfaces
+	Imports Telerik.Reporting.Services
+	Imports Telerik.Reporting.Services.WebApi
+	Imports System.Net
+	Imports System.Net.Mail
+	
+	Public Class ReportsController
+	    Inherits ReportsControllerBase
+	
+	    Shared ReadOnly configurationInstance As ReportServiceConfiguration
+	
+	    Shared Sub New()
+	
+	        Dim resolver = New UriReportSourceResolver(HttpContext.Current.Server.MapPath("~/Reports")) _
+	                       .AddFallbackResolver(New TypeReportSourceResolver())
+	
+	        Dim reportServiceConfiguration As New ReportServiceConfiguration()
+	        reportServiceConfiguration.HostAppId = "Application1"
+	        reportServiceConfiguration.ReportSourceResolver = resolver
+	        reportServiceConfiguration.Storage = New Telerik.Reporting.Cache.File.FileStorage()
+	        configurationInstance = reportServiceConfiguration
+	    End Sub
+	
+	    Public Sub New()
+	        Me.ReportServiceConfiguration = configurationInstance
+	    End Sub
+	
+	    Protected Overrides Function CreateCache() As ICache
+	        Return Telerik.Reporting.Services.Engine.CacheFactory.CreateFileCache()
+	    End Function
+	
+	    '#Region SendMailMessage_Implementation
+	    Protected Overrides Function SendMailMessage(ByVal mailMessage As MailMessage) As HttpStatusCode
+	        Using smtpClient = New SmtpClient("smtp.companyname.com", 25)
+	            smtpClient.DeliveryMethod = SmtpDeliveryMethod.Network
+	            smtpClient.EnableSsl = True
+	            smtpClient.Send(mailMessage)
+	        End Using
+	
+	        Return HttpStatusCode.OK
+	    End Function
+	    '#End Region
+	End Class
+	'#End Region
+	
+	'#Region "ReportsControllerOnGetDocument"
+	Public Class ReportController
+	    Inherits Telerik.Reporting.Services.WebApi.ReportsControllerBase
+	    Protected Overrides Sub OnGetDocument(args As GetDocumentEventArgs)
+	        'modify the rendered document in args.DocumentBytes 
+	        If args.Extension = "PDF" Then
+	        End If
+	    End Sub
+	End Class
+	'#End Region
+	
+	'#Region "ReportsHostOnGetDocument"
+	Public Class ReportHost
+	    Inherits Telerik.Reporting.Services.ServiceStack.ReportsHostBase
+	    Protected Overrides Sub OnGetDocument(args As GetDocumentEventArgs)
+	        'modify the rendered document in args.DocumentBytes 
+	        If args.Extension = "PDF" Then
+	        End If
+	    End Sub
+	End Class
+	'#End Region
+	
+	'#Region "ReportsHostOnCreateDocument"
+	Public Class ReportHost2
+	    Inherits Telerik.Reporting.Services.ServiceStack.ReportsHostBase
+	    Protected Overrides Sub OnCreateDocument(args As CreateDocumentEventArgs)
+	        If args.Extension = "PDF" Then
+	            args.DeviceInfo.Add("OwnerPassword", "password1")
+	            args.DeviceInfo.Add("UserPassword", "password2")
+	        End If
+	    End Sub
+	End Class
+	'#End Region
 
 T:Telerik.Reporting.Services.WebApi.ReportsControllerBase inherits
                   [System.Web.Http.ApiController](http://msdn.microsoft.com/en-us/library/system.web.http.apicontroller.aspx)
@@ -95,11 +207,33 @@ __ReportsControllerBase configuration in configuration file:__
                   T:Telerik.Reporting.Services.ConfigSectionReportServiceConfiguration class.
                 
 
+{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````C#
+	    public class ReportsController : ReportsControllerBase
+	    {
+	        static Telerik.Reporting.Services.ConfigSectionReportServiceConfiguration configSectionConfigurationInstance =
+	            new Telerik.Reporting.Services.ConfigSectionReportServiceConfiguration();
 	
+	        public ReportsController()
+	        {
+	            this.ReportServiceConfiguration = configSectionConfigurationInstance;
+	        }
+	    }
+````
 
 
 
+{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````VB
+	    Public Class ReportsController
+	        Inherits ReportsControllerBase
 	
+	        Shared configSectionConfigurationInstance As New Telerik.Reporting.Services.ConfigSectionReportServiceConfiguration()
+	
+	        Public Sub New()
+	            Me.ReportServiceConfiguration = configSectionConfigurationInstance
+	        End Sub
+	    End Class
+	    '#End Region
+	End Namespace
 
 
 
@@ -107,7 +241,7 @@ __ReportsControllerBase configuration in configuration file:__
                   [Telerik Reporting Configuration Section]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/overview%}).
                 
 
-	
+{{source=System.Xml.XmlAttribute region=}}
 
 For more information see [restReportService Element]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/restreportservice-element%}).
                 

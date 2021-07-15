@@ -53,13 +53,96 @@ The Barcode item is used for automatic barcode generation directly from a numeri
                   In these cases this property will have no effect.
                 
 
-## Examples#_C#_
+## Examples
 
+{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````cs
+	            var encoder = new Telerik.Reporting.Barcodes.Code128AEncoder();
 	
-
-#_VB.NET_
-
+	            // Set any specific encoder settings...
+	            encoder.ShowText = false; // The default value is true.
 	
+	            this.barcode1.Encoder = encoder;
+	            this.barcode1.Angle = 90;
+	            this.barcode1.BarAlign = Telerik.Reporting.Drawing.HorizontalAlign.Left;
+	            this.barcode1.Checksum = true;
+	            this.barcode1.Module = Telerik.Reporting.Drawing.Unit.Point(3);
+	            this.barcode1.Stretch = false;
+	            this.barcode1.Value = "1234567890";
+````
+
+
+
+{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````vbnet
+	        Dim encoder = New Telerik.Reporting.Barcodes.Code128AEncoder()
+	
+	        ' Set any specific encoder settings...
+	        encoder.ShowText = False 'The default value is True
+	
+	        Me.barcode1.Encoder = encoder
+	        Me.barcode1.Angle = 90
+	        Me.barcode1.BarAlign = Telerik.Reporting.Drawing.HorizontalAlign.Left
+	        Me.barcode1.Checksum = True
+	        Me.barcode1.Module = Telerik.Reporting.Drawing.Unit.Point(3)
+	        Me.barcode1.Stretch = False
+	        Me.barcode1.Value = "1234567890"
+	        '#End Region
+	
+	        Assert.IsNotNull(Me.barcode1.Encoder)
+	    End Sub
+	
+	    <TestMethod()>
+	    Public Sub Set_QRCodeEncoder_Settings()
+	
+	        '#region Barcode_QRCodeEncoder_Settings
+	        Dim encoder = New Telerik.Reporting.Barcodes.QRCodeEncoder()
+	
+	        encoder.Version = 10
+	        encoder.ErrorCorrectionLevel = Telerik.Reporting.Barcodes.QRCode.ErrorCorrectionLevel.M
+	        encoder.ECI = Telerik.Reporting.Barcodes.QRCode.ECIMode.CP437
+	        encoder.Mode = Telerik.Reporting.Barcodes.QRCode.CodeMode.Alphanumeric
+	        encoder.FNC1 = Telerik.Reporting.Barcodes.QRCode.FNC1Mode.SecondPosition
+	        encoder.ApplicationIndicator = "00"
+	
+	        Me.barcode1.Encoder = encoder
+	        '#End Region
+	
+	        Assert.IsNotNull(Me.barcode1.Encoder)
+	
+	    End Sub
+	
+	    <TestMethod()>
+	    Public Sub Set_PDF417Encoder_Settings()
+	
+	        '#Region "Barcode_PDF417Encoder_Settings"
+	        Dim encoder = New Telerik.Reporting.Barcodes.PDF417Encoder()
+	
+	        encoder.Columns = 3
+	        encoder.Rows = 3
+	        encoder.Encoding = Telerik.Reporting.Barcodes.PDF417.EncodingMode.Auto
+	        encoder.ErrorCorrectionLevel = 2
+	
+	        Me.barcode1.Encoder = encoder
+	        '#End Region
+	
+	        Assert.IsNotNull(Me.barcode1.Encoder)
+	    End Sub
+	
+	    <TestMethod()>
+	    Public Sub Set_DataMatrixEncoder_Settings()
+	
+	        '#Region "Barcode_DataMatrixEncoder_Settings"
+	        Dim encoder = New Telerik.Reporting.Barcodes.DataMatrixEncoder()
+	
+	        encoder.Encodation = Telerik.Reporting.Barcodes.DataMatrix.Encodation.Ascii
+	        encoder.SymbolSize = Telerik.Reporting.Barcodes.DataMatrix.SymbolSize.SquareAuto
+	        encoder.TextEncoding = System.Text.UTF8Encoding.UTF8
+	
+	        Me.barcode1.Encoder = encoder
+	        '#End Region
+	
+	        Assert.IsNotNull(Me.barcode1.Encoder)
+	    End Sub
+	End Class
 
 
 

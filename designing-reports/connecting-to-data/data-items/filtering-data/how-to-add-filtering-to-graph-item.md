@@ -46,11 +46,54 @@ If you need to filter data on retrieval, see [Using Parameters with Data Source 
 
 ## Adding filters to Graph programatically
 
+{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````C#
 	
-
-
-
+	            Telerik.Reporting.Filter filter1 = new Telerik.Reporting.Filter();
+	            filter1.Expression = "=Fields.ProductID";
+	            filter1.Operator = Telerik.Reporting.FilterOperator.GreaterThan;
+	            filter1.Value = "=10";
 	
+	            graph1.Filters.Add(filter1);
+	
+````
+
+
+
+{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````VB
+	
+	        Dim filter1 As New Telerik.Reporting.Filter()
+	        filter1.Expression = "=Fields.ProductID"
+	        filter1.Operator = Telerik.Reporting.FilterOperator.GreaterThan
+	        filter1.Value = "=10"
+	
+	        graph1.Filters.Add(filter1)
+	
+	        '#End Region
+	
+	        Assert.AreEqual(1, graph1.Filters.Count)
+	        Assert.AreEqual("=Fields.ProductID", graph1.Filters(0).Expression)
+	        Assert.AreEqual(Telerik.Reporting.FilterOperator.GreaterThan, graph1.Filters(0).Operator)
+	        Assert.AreEqual("=10", graph1.Filters(0).Value)
+	    End Sub
+	
+	    <TestMethod()> _
+	    Public Sub Add_Sorting_To_Graph()
+	        Dim graph1 As New Telerik.Reporting.Graph()
+	
+	        '#region AddNewSortSnippet
+	
+	        Dim sorting1 As New Telerik.Reporting.Sorting()
+	        sorting1.Expression = "=Fields.ProductID"
+	        sorting1.Direction = Telerik.Reporting.SortDirection.Asc
+	
+	        graph1.Sortings.Add(sorting1)
+	        '#End Region
+	
+	        Assert.AreEqual(1, graph1.Sortings.Count)
+	        Assert.AreEqual("=Fields.ProductID", graph1.Sortings(0).Expression)
+	        Assert.AreEqual(Telerik.Reporting.SortDirection.Asc, graph1.Sortings(0).Direction)
+	    End Sub
+	End Class
 
 
 

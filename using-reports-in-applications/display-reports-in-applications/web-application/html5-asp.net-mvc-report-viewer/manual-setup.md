@@ -179,11 +179,68 @@ If Kendo is used on the page or the CDN is prefered make sure the following widg
 
 Add the HTML5 ASP.NET MVC Report Viewer to the same view:
 
+{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````c#
+	@(Html.TelerikReporting().ReportViewer()
+	       .Id("reportViewer1")
+	       .ServiceUrl("/api/reports/")
+	       .TemplateUrl("/ReportViewer/templates/telerikReportViewerTemplate.html")
+	       .ReportSource(new UriReportSource() { Uri = "Product Catalog.trdp" })
+	       .ViewMode(ViewMode.Interactive)
+	       .ScaleMode(ScaleMode.Specific)
+	       .Scale(1.0)
+	       .PersistSession(false)
+	       .EnableAccessibility(false)
+	       .Deferred()
+	       )
+````
+
+
+
+{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````vb.net
+	@Code
+	    Html.TelerikReporting().ReportViewer() _
+	    .Id("reportViewer1") _
+	    .ServiceUrl("/api/reports/") _
+	    .TemplateUrl("/ReportViewer/templates/telerikReportViewerTemplate.html") _
+	    .ReportSource(New UriReportSource() With {.Uri = "Product Catalog.trdp"}) _
+	    .ViewMode(ViewMode.Interactive) _
+	    .ScaleMode(ScaleMode.Specific) _
+	    .Scale(1.0) _
+	    .PersistSession(False) _
+	    .EnableAccessibility(False) _
+	    .Deferred()
+	End Code
+	<!--#End Region-->
 	
-
-
-
+	@Section scripts
+	    <script src="http://kendo.cdn.telerik.com/2013.2.918/js/kendo.all.min.js"></script>
 	
+	    <script src="ReportViewer/js/utils.js"></script>
+	    <script src="ReportViewer/js/sr.js"> </script>
+	    <script src="ReportViewer/js/serviceClient.js"></script>
+	    <script src="ReportViewer/js/controller.js"></script>
+	    <script src="ReportViewer/js/touch.js"></script>
+	    <script src="ReportViewer/js/pagesArea.js"></script>
+	    <script src="ReportViewer/js/documentMapArea.js"></script>
+	    <script src="ReportViewer/js/parameters.js"></script>
+	    <script src="ReportViewer/js/parameterValidators.js"></script>
+	    <script src="ReportViewer/js/parametersArea.js"></script>
+	    <script src="ReportViewer/js/commandSet.js"></script>
+	    <script src="ReportViewer/js/history.js"></script>
+	    <script src="ReportViewer/js/mainMenu.js"></script>
+	    <script src="ReportViewer/js/sideMenu.js"></script>
+	    <script src="ReportViewer/js/binder.js"></script>
+	    <script src="ReportViewer/js/uiController.js"></script>
+	    <script src="ReportViewer/js/perspectives.js"></script>
+	    <script src="ReportViewer/js/accessibility.js"></script>
+	    <script src="ReportViewer/js/reportViewer.js"></script>    
+	End Section
+	
+	<!--#Region "DeferredScriptsExample"-->
+	@Code
+	    Html.TelerikReporting().DeferredScripts()
+	End Code
+	<!--#End Region-->
 
 
 
@@ -197,11 +254,17 @@ Render the deferred initialization statement for the Report Viewer scripts (reme
                   In case that you do not need the script tag to be rendered just set to false the default argument.
                 
 
-	
+{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````c#
+	@(Html.TelerikReporting().DeferredScripts())
+````
 
 
 
-	
+{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````vb.net
+	@Code
+	    Html.TelerikReporting().DeferredScripts()
+	End Code
+	<!--#End Region-->
 
 
 

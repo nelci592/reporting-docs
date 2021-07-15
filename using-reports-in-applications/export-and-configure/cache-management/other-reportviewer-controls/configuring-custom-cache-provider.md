@@ -25,19 +25,155 @@ Except the preconfigured cache providers, additional providers can be used. To d
 
 ## 
 
+{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````C#
 	
-
-
-
+	    public class MyCacheProvider : Telerik.Reporting.Cache.Interfaces.ICacheProvider
+	    {
+	        public Cache.Interfaces.ICache CreateCache(System.Collections.IDictionary parameters)
+	        {
+	            return new MyCache(parameters);
+	        }
+	    }
 	
+````
 
 
 
+{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````VB
 	
-
-
-
+	    Public Class MyCacheProvider
+	        Implements Telerik.Reporting.Cache.Interfaces.ICacheProvider
 	
+	        Public Function CreateCache(parameters As IDictionary) As Telerik.Reporting.Cache.Interfaces.ICache Implements ICacheProvider.CreateCache
+	            Return New MyCache(parameters)
+	        End Function
+	
+	    End Class
+	
+	    '#End Region
+	
+	    '#Region "CustomCacheImplementation"
+	
+	    Public Class MyCache
+	        Implements Telerik.Reporting.Cache.Interfaces.ICache
+	
+	        ReadOnly cache As System.Collections.Generic.Dictionary(Of String, Byte())
+	
+	        Public Sub New(parameters As System.Collections.IDictionary)
+	
+	            ' The 'parameters' dictionary is initialized from the Telerik.Reporting/Cache configuration section.
+	
+	            Me.cache = New System.Collections.Generic.Dictionary(Of String, Byte())()
+	        End Sub
+	
+	        Public Function HasValue(key As String) As Boolean Implements ICache.HasValue
+	            Return Me.cache.ContainsKey(key)
+	        End Function
+	
+	        Public Function GetValue(key As String) As Byte() Implements ICache.GetValue
+	            Return Me.cache(key)
+	        End Function
+	
+	        Public Sub SetValue(key As String, value As Byte()) Implements ICache.SetValue
+	            Me.cache(key) = value
+	        End Sub
+	
+	        Public Sub Clear() Implements ICache.Clear
+	            Me.cache.Clear()
+	        End Sub
+	
+	        Public Sub Dispose() Implements IDisposable.Dispose
+	            Me.Clear()
+	        End Sub
+	    End Class
+	
+	    '#End Region
+	
+	End Class
+
+
+
+{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````C#
+	    
+	    public class MyCache : Telerik.Reporting.Cache.Interfaces.ICache
+	    {
+	        readonly System.Collections.Generic.IDictionary<string, byte[]> cache;
+	
+	        public MyCache(System.Collections.IDictionary parameters)
+	        {
+	            // The 'parameters' dictionary is initialized from the Telerik.Reporting/Cache configuration section.
+	
+	            this.cache = new System.Collections.Generic.Dictionary<string, byte[]>();
+	        }
+	
+	        public bool HasValue(string key)
+	        {
+	            return this.cache.ContainsKey(key);
+	        }
+	
+	        public byte[] GetValue(string key)
+	        {
+	            return this.cache[key];
+	        }
+	
+	        public void SetValue(string key, byte[] value)
+	        {
+	            this.cache[key] = value;
+	        }
+	
+	        public void Clear()
+	        {
+	            this.cache.Clear();
+	        }
+	
+	        public void Dispose()
+	        {
+	            this.Clear();
+	        }
+	    }
+	
+````
+
+
+
+{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````VB
+	
+	    Public Class MyCache
+	        Implements Telerik.Reporting.Cache.Interfaces.ICache
+	
+	        ReadOnly cache As System.Collections.Generic.Dictionary(Of String, Byte())
+	
+	        Public Sub New(parameters As System.Collections.IDictionary)
+	
+	            ' The 'parameters' dictionary is initialized from the Telerik.Reporting/Cache configuration section.
+	
+	            Me.cache = New System.Collections.Generic.Dictionary(Of String, Byte())()
+	        End Sub
+	
+	        Public Function HasValue(key As String) As Boolean Implements ICache.HasValue
+	            Return Me.cache.ContainsKey(key)
+	        End Function
+	
+	        Public Function GetValue(key As String) As Byte() Implements ICache.GetValue
+	            Return Me.cache(key)
+	        End Function
+	
+	        Public Sub SetValue(key As String, value As Byte()) Implements ICache.SetValue
+	            Me.cache(key) = value
+	        End Sub
+	
+	        Public Sub Clear() Implements ICache.Clear
+	            Me.cache.Clear()
+	        End Sub
+	
+	        Public Sub Dispose() Implements IDisposable.Dispose
+	            Me.Clear()
+	        End Sub
+	    End Class
+	
+	    '#End Region
+	
+	End Class
 
 
 

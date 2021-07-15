@@ -88,11 +88,61 @@ The Shape report item supports creating a custom shapes programmatically. The fo
         that will form the shape. The points coordinates are relative and do not depend on the item's size or position in the report.
       
 
+{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````c#
+	        class CustomShapeType : Drawing.Shapes.ShapeBase
+	        {
+	            public override object Clone()
+	            {
+	                return new CustomShapeType()
+	                {
+	                    Bounds = this.Bounds
+	                };
+	            }
 	
-
-
-
+	            protected override void CreateShape()
+	            {
+	                var points = new System.Drawing.PointF[]
+	                {
+	                    new System.Drawing.PointF(0.5f, 1.5f),
+	                    new System.Drawing.PointF(2, 0),
+	                    new System.Drawing.PointF(6, 4),
+	                    new System.Drawing.PointF(4, 6),
+	                    new System.Drawing.PointF(2, 4),
+	                    new System.Drawing.PointF(6, 0),
+	                    new System.Drawing.PointF(7.5f, 1.5f)
+	                };
 	
+	                base.AddLines(points, false);
+	            }
+	        }
+````
+
+
+
+{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````vb.net
+	    Class CustomShapeType
+	        Inherits Drawing.Shapes.ShapeBase
+	
+	        Public Overrides Function Clone() As Object
+	            Return New CustomShapeType() With {.Bounds = Me.Bounds}
+	        End Function
+	
+	        Protected Overrides Sub CreateShape()
+	            Dim points = New System.Drawing.PointF() {New System.Drawing.PointF(0.5F, 1.5F), New System.Drawing.PointF(2, 0), New System.Drawing.PointF(6, 4), New System.Drawing.PointF(4, 6), New System.Drawing.PointF(2, 4), New System.Drawing.PointF(6, 0), New System.Drawing.PointF(7.5F, 1.5F)}
+	            MyBase.AddLines(points, False)
+	        End Sub
+	    End Class
+	    '#End Region
+	
+	    '#Region "CreateCustomShapeSnippet"
+	    Private Function CreateShape() As Shape
+	        Dim shape = New Telerik.Reporting.Shape() With {.ShapeType = New CustomShapeType(), .Size = New Drawing.SizeU(Drawing.Unit.Cm(2), Drawing.Unit.Cm(2)), .Location = New Drawing.PointU(Drawing.Unit.Cm(1), Drawing.Unit.Cm(1))}
+	        shape.Style.Color = System.Drawing.Color.Green
+	        shape.Style.LineWidth = Drawing.Unit.Pixel(5)
+	        Return shape
+	    End Function
+	    '#End Region
+	End Class
 
 
 
@@ -100,11 +150,34 @@ The Shape item can be created at runtime and added to a report item container (s
         The snippet below shows how to instantiate a Shape item of __CustomShape__ type:
       
 
+{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````c#
+	        Shape CreateShape()
+	        {
+	            var shape = new Telerik.Reporting.Shape()
+	            {
+	                ShapeType = new CustomShapeType(),
+	                Size = new Drawing.SizeU(Drawing.Unit.Cm(2), Drawing.Unit.Cm(2)),
+	                Location = new Drawing.PointU(Drawing.Unit.Cm(1), Drawing.Unit.Cm(1)),
+	            };
+	            shape.Style.Color = System.Drawing.Color.Green;
+	            shape.Style.LineWidth = Drawing.Unit.Pixel(5);
 	
-
-
-
+	            return shape;
+	        }
 	
+````
+
+
+
+{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````vb.net
+	    Private Function CreateShape() As Shape
+	        Dim shape = New Telerik.Reporting.Shape() With {.ShapeType = New CustomShapeType(), .Size = New Drawing.SizeU(Drawing.Unit.Cm(2), Drawing.Unit.Cm(2)), .Location = New Drawing.PointU(Drawing.Unit.Cm(1), Drawing.Unit.Cm(1))}
+	        shape.Style.Color = System.Drawing.Color.Green
+	        shape.Style.LineWidth = Drawing.Unit.Pixel(5)
+	        Return shape
+	    End Function
+	    '#End Region
+	End Class
 
 
 

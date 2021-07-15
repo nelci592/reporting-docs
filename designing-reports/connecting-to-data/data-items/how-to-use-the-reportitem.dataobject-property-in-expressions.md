@@ -126,11 +126,31 @@ When complicated logic should be applied or .NET framework routines need to be u
             Switch to code window and place the following code snippet:
             
 
-	
+{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````C#
+	        public static string GetContactInfo(object sender)
+	        {
+	            var dataObject = (Telerik.Reporting.Processing.IDataObject)sender;
+	            var contactInfo = dataObject["AdditionalContactInfo"] as string;
+	            var xDoc = System.Xml.Linq.XDocument.Parse(contactInfo);
+	            var telephones = xDoc.Root
+	                                 .Elements()
+	                                 .Where(elem => elem.Name.LocalName == "telephoneNumber")
+	                                 .Select(elem => elem.Value);
+	            return string.Format("{0}{1}'s telephones: {2}", dataObject["Title"], dataObject["LastName"], string.Join("; ", telephones));
+	        }
+````
 
 
 
-	
+{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````VB
+	    Public Shared Function GetContactInfo(sender As Object) As String
+	        Dim dataObject = DirectCast(sender, Telerik.Reporting.Processing.IDataObject)
+	        Dim contactInfo = TryCast(dataObject("AdditionalContactInfo"), String)
+	        Dim xDoc = System.Xml.Linq.XDocument.Parse(contactInfo)
+	        Dim telephones = xDoc.Root.Elements().Where(Function(elem) elem.Name.LocalName = "telephoneNumber").[Select](Function(elem) elem.Value)
+	        Return String.Format("{0}{1}'s telephones: {2}", dataObject("Title"), dataObject("LastName"), String.Join("; ", telephones))
+	    End Function
+````
 
 In this step we process the passed data argument as IDataObject, retrieving the fields by name.
 

@@ -59,13 +59,73 @@ Essentially, both the FNC1 property and the ApplicationIndicator data is applied
 			allowing for special formatting.
         
 
-## Examples#_C#_
+## Examples
 
+{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````cs
+	            var encoder = new Telerik.Reporting.Barcodes.QRCodeEncoder();
 	
-
-#_VB.NET_
-
+	            encoder.Version = 10;
+	            encoder.ErrorCorrectionLevel = Telerik.Reporting.Barcodes.QRCode.ErrorCorrectionLevel.M;
+	            encoder.ECI = Telerik.Reporting.Barcodes.QRCode.ECIMode.CP437;
+	            encoder.Mode = Telerik.Reporting.Barcodes.QRCode.CodeMode.Alphanumeric;
+	            encoder.FNC1 = Telerik.Reporting.Barcodes.QRCode.FNC1Mode.SecondPosition;
+	            encoder.ApplicationIndicator = "00";
 	
+	            this.barcode1.Encoder = encoder;
+````
+
+
+
+{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````vbnet
+	        Dim encoder = New Telerik.Reporting.Barcodes.QRCodeEncoder()
+	
+	        encoder.Version = 10
+	        encoder.ErrorCorrectionLevel = Telerik.Reporting.Barcodes.QRCode.ErrorCorrectionLevel.M
+	        encoder.ECI = Telerik.Reporting.Barcodes.QRCode.ECIMode.CP437
+	        encoder.Mode = Telerik.Reporting.Barcodes.QRCode.CodeMode.Alphanumeric
+	        encoder.FNC1 = Telerik.Reporting.Barcodes.QRCode.FNC1Mode.SecondPosition
+	        encoder.ApplicationIndicator = "00"
+	
+	        Me.barcode1.Encoder = encoder
+	        '#End Region
+	
+	        Assert.IsNotNull(Me.barcode1.Encoder)
+	
+	    End Sub
+	
+	    <TestMethod()>
+	    Public Sub Set_PDF417Encoder_Settings()
+	
+	        '#Region "Barcode_PDF417Encoder_Settings"
+	        Dim encoder = New Telerik.Reporting.Barcodes.PDF417Encoder()
+	
+	        encoder.Columns = 3
+	        encoder.Rows = 3
+	        encoder.Encoding = Telerik.Reporting.Barcodes.PDF417.EncodingMode.Auto
+	        encoder.ErrorCorrectionLevel = 2
+	
+	        Me.barcode1.Encoder = encoder
+	        '#End Region
+	
+	        Assert.IsNotNull(Me.barcode1.Encoder)
+	    End Sub
+	
+	    <TestMethod()>
+	    Public Sub Set_DataMatrixEncoder_Settings()
+	
+	        '#Region "Barcode_DataMatrixEncoder_Settings"
+	        Dim encoder = New Telerik.Reporting.Barcodes.DataMatrixEncoder()
+	
+	        encoder.Encodation = Telerik.Reporting.Barcodes.DataMatrix.Encodation.Ascii
+	        encoder.SymbolSize = Telerik.Reporting.Barcodes.DataMatrix.SymbolSize.SquareAuto
+	        encoder.TextEncoding = System.Text.UTF8Encoding.UTF8
+	
+	        Me.barcode1.Encoder = encoder
+	        '#End Region
+	
+	        Assert.IsNotNull(Me.barcode1.Encoder)
+	    End Sub
+	End Class
 
 
 

@@ -68,11 +68,93 @@ At this point you have a running MVC application that displays a report in the H
 
 These are the model and the view model that we will use for our view:
 
+	{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````
+	    public class InvoiceModel
+	    {
+	        public int Id { get; set; }
+	        public string Value { get; set; }
+	    }
 	
-
-
-
+	    public class InvoiceViewModel
+	    {
+	        readonly List<InvoiceModel> invoices;
 	
+	        [Display(Name = "Invoices")]
+	        public int SelectedInvoiceId { get; set; }
+	
+	        public string SelectedInvoice
+	        {
+	            get { return this.invoices[this.SelectedInvoiceId].Value; }
+	        }
+	
+	        public IEnumerable<SelectListItem> InvoiceItems
+	        {
+	            get { return new SelectList(invoices, "Id", "Value"); }
+	        }
+	
+	        public InvoiceViewModel(List<InvoiceModel> invoices)
+	        {
+	            this.invoices = invoices;
+	        }
+	    }
+````
+
+
+
+	{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````
+	Public Class InvoiceModel
+	    Public Property Id() As Integer
+	        Get
+	            Return m_Id
+	        End Get
+	        Set(value As Integer)
+	            m_Id = value
+	        End Set
+	    End Property
+	    Private m_Id As Integer
+	    Public Property Value() As String
+	        Get
+	            Return m_Value
+	        End Get
+	        Set(value As String)
+	            m_Value = value
+	        End Set
+	    End Property
+	    Private m_Value As String
+	End Class
+	
+	Public Class InvoiceViewModel
+	    ReadOnly invoices As List(Of InvoiceModel)
+	
+	    <Display(Name:="Invoices")>
+	    Public Property SelectedInvoiceId() As Integer
+	        Get
+	            Return m_SelectedInvoiceId
+	        End Get
+	        Set(value As Integer)
+	            m_SelectedInvoiceId = value
+	        End Set
+	    End Property
+	
+	    Public ReadOnly Property SelectedInvoice() As String
+	        Get
+	            Return Me.invoices(Me.SelectedInvoiceId).Value
+	        End Get
+	    End Property
+	
+	    Private m_SelectedInvoiceId As Integer
+	
+	    Public ReadOnly Property InvoiceItems() As IEnumerable(Of SelectListItem)
+	        Get
+	            Return New SelectList(invoices, "Id", "Value")
+	        End Get
+	    End Property
+	
+	    Public Sub New(invoices As List(Of InvoiceModel))
+	        Me.invoices = invoices
+	    End Sub
+	End Class
+	'#End Region
 
 
 
@@ -84,11 +166,50 @@ And this is how we will fill with data our view model before displaying the view
                   HomeController.cs|vb file and update the InvoiceParameters method as follows:
                 
 
+	{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````
+	        public ActionResult InvoiceParameters()
+	        {
+	            var invoices = new List<InvoiceModel>
+	            {
+	                new InvoiceModel { Id = 0, Value = "SO51081" },
+	                new InvoiceModel { Id = 1, Value = "SO51082" },
+	                new InvoiceModel { Id = 2, Value = "SO51083" },
+	            };
 	
-
-
-
+	            var items = new InvoiceViewModel(invoices);
+	            items.SelectedInvoiceId = 1;
 	
+	            return View(items);
+	        }
+````
+
+
+
+	{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````
+	    Public Function InvoiceParameters() As ActionResult
+	        Dim invoices = New List(Of InvoiceModel)() From { _
+	            New InvoiceModel() With { _
+	                .Id = 0, _
+	                .Value = "SO51081" _
+	            }, _
+	            New InvoiceModel() With { _
+	                .Id = 1, _
+	                .Value = "SO51082" _
+	            }, _
+	            New InvoiceModel() With { _
+	                .Id = 2, _
+	                .Value = "SO51083" _
+	            } _
+	        }
+	
+	        Dim items = New InvoiceViewModel(invoices)
+	        items.SelectedInvoiceId = 1
+	
+	        Return View(items)
+	    End Function
+	    '#End Region
+	
+	End Class
 
 
 
@@ -122,11 +243,60 @@ Now initialize the report viewer. We will use the minimal set of all
                   Please note how the value from the custom UI is used to set the __OrderNumber__ report parameter initially:
                 
 
+	{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````
+	@{
+	    var typeReportSource = new TypeReportSource() { TypeName = typeof(Invoice).AssemblyQualifiedName };
+	    typeReportSource.Parameters.Add("OrderNumber", Model.SelectedInvoice);
+	}
 	
+	@(
+	    Html.TelerikReporting().ReportViewer()
+	        .Id("reportViewer1")
+	        .ServiceUrl("/api/reports/")
+	        .TemplateUrl("/ReportViewer/templates/telerikReportViewerTemplate.html")
+	        .ReportSource(typeReportSource)
+	        .ViewMode(ViewMode.Interactive)
+	        .ScaleMode(ScaleMode.Specific)
+	        .Scale(1.0)
+	)
+````
 
 
 
+	{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````
+	@Code
+	    Dim typeReportSource = New TypeReportSource() With {.TypeName = GetType(Invoice).AssemblyQualifiedName}
+	    typeReportSource.Parameters.Add("OrderNumber", Model.SelectedInvoice)
 	
+	    Html.TelerikReporting().ReportViewer() _
+	        .Id("reportViewer1") _
+	        .ServiceUrl("/api/reports/") _
+	        .TemplateUrl("/ReportViewer/templates/telerikReportViewerTemplate.html") _
+	        .ReportSource(typeReportSource) _
+	        .ViewMode(ViewMode.Interactive) _
+	        .ScaleMode(ScaleMode.Specific) _
+	        .Scale(1.0)
+	End Code
+	    <!--#End Region-->
+	
+	@Section styles
+	    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+	
+	    <script src="/kendo/js/kendo.all.min.js"></script>
+	
+	    <script src="ReportViewer/js/ReportViewer-7.2.13.1016.js"></script>
+	
+	    <script>
+	        $('#invoiceId').change(function () {
+	            var viewer = $("#reportViewer1").data("telerik_ReportViewer");
+	            viewer.reportSource({
+	                report: viewer.reportSource().report,
+	                parameters: { OrderNumber: $(this).val() }
+	            });
+	            viewer.refreshReport();
+	        });
+	    </script>
+	End Section
 
 
 

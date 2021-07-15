@@ -35,11 +35,126 @@ You can use a T:Telerik.ReportViewer.Common.EmbeddedConnectionInfo instance to h
           leave it empty - the viewer will use the embedded report engine by default.
         
 
+{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````C#
+	        private void SetEmbeddedReportEngineConnection(object sender, System.EventArgs e)
+	        {
+	            this.reportViewer1.ReportEngineConnection = new Telerik.ReportViewer.Common.EmbeddedConnectionInfo().ConnectionString;
+	            //if the ReportEngineConnection property is set to null or empty string, it will use the EmbeddedConnectionInfo by default. 
+	        }
+````
+
+
+
+{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````VB
+	    Private Sub SetEmbeddedReportEngineConnection(sender As Object, e As System.EventArgs)
+	        Me.ReportViewer1.ReportEngineConnection = New Telerik.ReportViewer.Common.EmbeddedConnectionInfo().ConnectionString
+	        'if the ReportEngineConnection property is set to null or empty string, it will use the EmbeddedReportEngineConnectionInfo by default.
+	    End Sub
+	#End Region
 	
-
-
-
+	#Region "WinFormsReportServerReportEngineConnectionSnippet"
+	    Private Sub SetReportServerReportEngineConnection(sender As Object, e As System.EventArgs)
+	        Me.ReportViewer1.ReportEngineConnection = New Telerik.ReportViewer.Common.ReportServerConnectionInfo("http://reportserver:83", "user", "pass", 20).ConnectionString
+	    End Sub
+	#End Region
 	
+	#Region "WinFormsRestServiceReportEngineConnectionSnippet"
+	    Private Sub SetRestServiceReportEngineConnection(sender As Object, e As System.EventArgs)
+	        Me.ReportViewer1.ReportEngineConnection = New Telerik.ReportViewer.Common.RestServiceConnectionInfo("http://servicehost:83/api/reports", "authToken", 20).ConnectionString
+	    End Sub
+	#End Region
+	
+	#Region "WinFormsCustomInteractiveActionExecutingEventSnippet"
+	    ' Handles the InteractiveActionExecuting event
+	    ' Do not forget to add the WithEvents clause on ReportViewer1 instantiation if needed.
+	    Private Sub reportViewer1_CustomInteractiveActionExecuting(sender As Object, args As Telerik.ReportViewer.Common.InteractiveActionCancelEventArgs) Handles ReportViewer1.InteractiveActionExecuting
+	
+	        Dim strB = New System.Text.StringBuilder()
+	        strB.AppendLine("ReportItem name: " + args.Action.ReportItemName)
+	
+	        Dim customAction = TryCast(args.Action, Telerik.Reporting.Processing.CustomAction)
+	        If customAction IsNot Nothing Then
+	            For Each p As KeyValuePair(Of String, Object) In customAction.Parameters
+	                strB.AppendLine(String.Format("Parameter ""{0}"" value: {1}", p.Key, p.Value))
+	            Next
+	        End If
+	
+	        strB.AppendLine(String.Format("Mouse cursor position: {0}; Item bounds: {1}", args.CursorPos, args.Bounds))
+	
+	        MessageBox.Show(strB.ToString())
+	    End Sub
+	#End Region
+	
+	#Region "WinFormsCancelingInteractiveActionExecutingEventSnippet"
+	    ' Handles the InteractiveActionExecuting event
+	    ' Do not forget to add the WithEvents clause on ReportViewer1 instantiation if needed.
+	    Private Sub reportViewer1_InteractiveActionExecuting(sender As Object, args As Telerik.ReportViewer.Common.InteractiveActionCancelEventArgs) Handles ReportViewer1.InteractiveActionExecuting
+	
+	        Dim navigateToUrlAction = TryCast(args.Action, Telerik.Reporting.Processing.NavigateToUrlAction)
+	        If navigateToUrlAction IsNot Nothing Then
+	            If Not navigateToUrlAction.Url.StartsWith("https") Then
+	                args.Cancel = MessageBox.Show("You are about to navigate to a non-secure page. Continue?", "Warning", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) <> System.Windows.Forms.DialogResult.Yes
+	            End If
+	        End If
+	    End Sub
+	#End Region
+	
+	#Region "WinFormsInteractiveActionEnterEventSnippet"
+	    ' Handles the InteractiveActionEnter event
+	    ' Do not forget to add the WithEvents clause on ReportViewer1 instantiation if needed.
+	    Private Sub reportViewer1_InteractiveActionEnter(sender As Object, args As Telerik.ReportViewer.Common.InteractiveActionEventArgs) Handles ReportViewer1.InteractiveActionEnter
+	
+	        Dim strB = New System.Text.StringBuilder()
+	        strB.AppendLine("You have just entered an action area.")
+	        strB.AppendLine("Action type: " + args.Action.[GetType]().Name)
+	        strB.AppendLine("ReportItem name: " + args.Action.ReportItemName)
+	        strB.AppendLine(String.Format("Mouse cursor position: {0}; Item bounds: {1}", args.CursorPos, args.Bounds))
+	
+	        Console.Out.WriteLine(strB.ToString())
+	    End Sub
+	#End Region
+	
+	#Region "WinFormsInteractiveActionLeaveEventSnippet"
+	    ' Handles the InteractiveActionLeave event
+	    ' Do not forget to add the WithEvents clause on ReportViewer1 instantiation if needed.
+	    Private Sub reportViewer1_InteractiveActionLeave(sender As Object, args As Telerik.ReportViewer.Common.InteractiveActionEventArgs) Handles ReportViewer1.InteractiveActionLeave
+	
+	        Dim strB = New System.Text.StringBuilder()
+	        strB.AppendLine("You have just left an action area.")
+	        strB.AppendLine("Action type: " + args.Action.[GetType]().Name)
+	        strB.AppendLine("ReportItem name: " + args.Action.ReportItemName)
+	        strB.AppendLine(String.Format("Item bounds: {0}", args.Bounds))
+	
+	        Console.Out.WriteLine(strB.ToString())
+	    End Sub
+	#End Region
+	
+	#Region "WinFormsViewerToolTipOpeningEventSnippet"
+	    ' Handles the ViewerToolTipOpening event
+	    ' Do not forget to add the WithEvents clause on ReportViewer1 instantiation if needed.
+	    Private Sub reportViewer1_ViewerToolTipOpening(sender As Object, args As Telerik.ReportViewer.Common.ToolTipOpeningEventArgs) Handles ReportViewer1.ViewerToolTipOpening
+	        If args.ToolTip.Title.Contains("DoNotShow") Then
+	            args.Cancel = True
+	        Else
+	            args.ToolTip.Title = "The tooltip title is changed!"
+	            args.ToolTip.Text += " (changed)"
+	        End If
+	    End Sub
+	#End Region
+	
+	
+	#Region "WinFormsViewerAccessibilityKeyMapSnippet"
+	
+	    Private Sub SetToolbarShortcutKey()
+	        ' substituting the default 'M' key to access the toolbar with 'T'
+	        Dim map As System.Collections.Generic.Dictionary(Of Integer, Telerik.ReportViewer.Common.Accessibility.ShortcutKeys) = Me.ReportViewer1.AccessibilityKeyMap
+	        map.Remove(CType(Keys.M, Integer))
+	        map(CType(Keys.T, Integer)) = Telerik.ReportViewer.Common.Accessibility.ShortcutKeys.MENU_AREA_KEY
+	        Me.ReportViewer1.AccessibilityKeyMap = map
+	    End Sub
+	#End Region
+	
+	End Class
 
 
 
@@ -63,11 +178,118 @@ __Example: __`engine=ReportServer;uri=http://localhost:83;username=admin;passwor
 You can use a T:Telerik.ReportViewer.Common.ReportServerConnectionInfo instance to help you create the connection string.
         
 
+{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````C#
+	        private void SetReportServerReportEngineConnection(object sender, System.EventArgs e)
+	        {
+	            this.reportViewer1.ReportEngineConnection = new Telerik.ReportViewer.Common.ReportServerConnectionInfo("http://reportserver:83", "user", "pass", 20).ConnectionString;
+	        }
+````
+
+
+
+{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````VB
+	    Private Sub SetReportServerReportEngineConnection(sender As Object, e As System.EventArgs)
+	        Me.ReportViewer1.ReportEngineConnection = New Telerik.ReportViewer.Common.ReportServerConnectionInfo("http://reportserver:83", "user", "pass", 20).ConnectionString
+	    End Sub
+	#End Region
 	
-
-
-
+	#Region "WinFormsRestServiceReportEngineConnectionSnippet"
+	    Private Sub SetRestServiceReportEngineConnection(sender As Object, e As System.EventArgs)
+	        Me.ReportViewer1.ReportEngineConnection = New Telerik.ReportViewer.Common.RestServiceConnectionInfo("http://servicehost:83/api/reports", "authToken", 20).ConnectionString
+	    End Sub
+	#End Region
 	
+	#Region "WinFormsCustomInteractiveActionExecutingEventSnippet"
+	    ' Handles the InteractiveActionExecuting event
+	    ' Do not forget to add the WithEvents clause on ReportViewer1 instantiation if needed.
+	    Private Sub reportViewer1_CustomInteractiveActionExecuting(sender As Object, args As Telerik.ReportViewer.Common.InteractiveActionCancelEventArgs) Handles ReportViewer1.InteractiveActionExecuting
+	
+	        Dim strB = New System.Text.StringBuilder()
+	        strB.AppendLine("ReportItem name: " + args.Action.ReportItemName)
+	
+	        Dim customAction = TryCast(args.Action, Telerik.Reporting.Processing.CustomAction)
+	        If customAction IsNot Nothing Then
+	            For Each p As KeyValuePair(Of String, Object) In customAction.Parameters
+	                strB.AppendLine(String.Format("Parameter ""{0}"" value: {1}", p.Key, p.Value))
+	            Next
+	        End If
+	
+	        strB.AppendLine(String.Format("Mouse cursor position: {0}; Item bounds: {1}", args.CursorPos, args.Bounds))
+	
+	        MessageBox.Show(strB.ToString())
+	    End Sub
+	#End Region
+	
+	#Region "WinFormsCancelingInteractiveActionExecutingEventSnippet"
+	    ' Handles the InteractiveActionExecuting event
+	    ' Do not forget to add the WithEvents clause on ReportViewer1 instantiation if needed.
+	    Private Sub reportViewer1_InteractiveActionExecuting(sender As Object, args As Telerik.ReportViewer.Common.InteractiveActionCancelEventArgs) Handles ReportViewer1.InteractiveActionExecuting
+	
+	        Dim navigateToUrlAction = TryCast(args.Action, Telerik.Reporting.Processing.NavigateToUrlAction)
+	        If navigateToUrlAction IsNot Nothing Then
+	            If Not navigateToUrlAction.Url.StartsWith("https") Then
+	                args.Cancel = MessageBox.Show("You are about to navigate to a non-secure page. Continue?", "Warning", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) <> System.Windows.Forms.DialogResult.Yes
+	            End If
+	        End If
+	    End Sub
+	#End Region
+	
+	#Region "WinFormsInteractiveActionEnterEventSnippet"
+	    ' Handles the InteractiveActionEnter event
+	    ' Do not forget to add the WithEvents clause on ReportViewer1 instantiation if needed.
+	    Private Sub reportViewer1_InteractiveActionEnter(sender As Object, args As Telerik.ReportViewer.Common.InteractiveActionEventArgs) Handles ReportViewer1.InteractiveActionEnter
+	
+	        Dim strB = New System.Text.StringBuilder()
+	        strB.AppendLine("You have just entered an action area.")
+	        strB.AppendLine("Action type: " + args.Action.[GetType]().Name)
+	        strB.AppendLine("ReportItem name: " + args.Action.ReportItemName)
+	        strB.AppendLine(String.Format("Mouse cursor position: {0}; Item bounds: {1}", args.CursorPos, args.Bounds))
+	
+	        Console.Out.WriteLine(strB.ToString())
+	    End Sub
+	#End Region
+	
+	#Region "WinFormsInteractiveActionLeaveEventSnippet"
+	    ' Handles the InteractiveActionLeave event
+	    ' Do not forget to add the WithEvents clause on ReportViewer1 instantiation if needed.
+	    Private Sub reportViewer1_InteractiveActionLeave(sender As Object, args As Telerik.ReportViewer.Common.InteractiveActionEventArgs) Handles ReportViewer1.InteractiveActionLeave
+	
+	        Dim strB = New System.Text.StringBuilder()
+	        strB.AppendLine("You have just left an action area.")
+	        strB.AppendLine("Action type: " + args.Action.[GetType]().Name)
+	        strB.AppendLine("ReportItem name: " + args.Action.ReportItemName)
+	        strB.AppendLine(String.Format("Item bounds: {0}", args.Bounds))
+	
+	        Console.Out.WriteLine(strB.ToString())
+	    End Sub
+	#End Region
+	
+	#Region "WinFormsViewerToolTipOpeningEventSnippet"
+	    ' Handles the ViewerToolTipOpening event
+	    ' Do not forget to add the WithEvents clause on ReportViewer1 instantiation if needed.
+	    Private Sub reportViewer1_ViewerToolTipOpening(sender As Object, args As Telerik.ReportViewer.Common.ToolTipOpeningEventArgs) Handles ReportViewer1.ViewerToolTipOpening
+	        If args.ToolTip.Title.Contains("DoNotShow") Then
+	            args.Cancel = True
+	        Else
+	            args.ToolTip.Title = "The tooltip title is changed!"
+	            args.ToolTip.Text += " (changed)"
+	        End If
+	    End Sub
+	#End Region
+	
+	
+	#Region "WinFormsViewerAccessibilityKeyMapSnippet"
+	
+	    Private Sub SetToolbarShortcutKey()
+	        ' substituting the default 'M' key to access the toolbar with 'T'
+	        Dim map As System.Collections.Generic.Dictionary(Of Integer, Telerik.ReportViewer.Common.Accessibility.ShortcutKeys) = Me.ReportViewer1.AccessibilityKeyMap
+	        map.Remove(CType(Keys.M, Integer))
+	        map(CType(Keys.T, Integer)) = Telerik.ReportViewer.Common.Accessibility.ShortcutKeys.MENU_AREA_KEY
+	        Me.ReportViewer1.AccessibilityKeyMap = map
+	    End Sub
+	#End Region
+	
+	End Class
 
 
 
@@ -91,11 +313,112 @@ __Example: __`engine=RestService;uri=http://localhost:18103/api/reports;token=au
 You can use a T:Telerik.ReportViewer.Common.RestServiceConnectionInfo instance to help you create the connection string.
         
 
+{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````C#
+	        private void SetRestServiceReportEngineConnection(object sender, System.EventArgs e)
+	        {
+	            this.reportViewer1.ReportEngineConnection = new Telerik.ReportViewer.Common.RestServiceConnectionInfo("http://servicehost:83/api/reports", "authToken", 20).ConnectionString;
+	        }
+````
+
+
+
+{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````VB
+	    Private Sub SetRestServiceReportEngineConnection(sender As Object, e As System.EventArgs)
+	        Me.ReportViewer1.ReportEngineConnection = New Telerik.ReportViewer.Common.RestServiceConnectionInfo("http://servicehost:83/api/reports", "authToken", 20).ConnectionString
+	    End Sub
+	#End Region
 	
-
-
-
+	#Region "WinFormsCustomInteractiveActionExecutingEventSnippet"
+	    ' Handles the InteractiveActionExecuting event
+	    ' Do not forget to add the WithEvents clause on ReportViewer1 instantiation if needed.
+	    Private Sub reportViewer1_CustomInteractiveActionExecuting(sender As Object, args As Telerik.ReportViewer.Common.InteractiveActionCancelEventArgs) Handles ReportViewer1.InteractiveActionExecuting
 	
+	        Dim strB = New System.Text.StringBuilder()
+	        strB.AppendLine("ReportItem name: " + args.Action.ReportItemName)
+	
+	        Dim customAction = TryCast(args.Action, Telerik.Reporting.Processing.CustomAction)
+	        If customAction IsNot Nothing Then
+	            For Each p As KeyValuePair(Of String, Object) In customAction.Parameters
+	                strB.AppendLine(String.Format("Parameter ""{0}"" value: {1}", p.Key, p.Value))
+	            Next
+	        End If
+	
+	        strB.AppendLine(String.Format("Mouse cursor position: {0}; Item bounds: {1}", args.CursorPos, args.Bounds))
+	
+	        MessageBox.Show(strB.ToString())
+	    End Sub
+	#End Region
+	
+	#Region "WinFormsCancelingInteractiveActionExecutingEventSnippet"
+	    ' Handles the InteractiveActionExecuting event
+	    ' Do not forget to add the WithEvents clause on ReportViewer1 instantiation if needed.
+	    Private Sub reportViewer1_InteractiveActionExecuting(sender As Object, args As Telerik.ReportViewer.Common.InteractiveActionCancelEventArgs) Handles ReportViewer1.InteractiveActionExecuting
+	
+	        Dim navigateToUrlAction = TryCast(args.Action, Telerik.Reporting.Processing.NavigateToUrlAction)
+	        If navigateToUrlAction IsNot Nothing Then
+	            If Not navigateToUrlAction.Url.StartsWith("https") Then
+	                args.Cancel = MessageBox.Show("You are about to navigate to a non-secure page. Continue?", "Warning", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) <> System.Windows.Forms.DialogResult.Yes
+	            End If
+	        End If
+	    End Sub
+	#End Region
+	
+	#Region "WinFormsInteractiveActionEnterEventSnippet"
+	    ' Handles the InteractiveActionEnter event
+	    ' Do not forget to add the WithEvents clause on ReportViewer1 instantiation if needed.
+	    Private Sub reportViewer1_InteractiveActionEnter(sender As Object, args As Telerik.ReportViewer.Common.InteractiveActionEventArgs) Handles ReportViewer1.InteractiveActionEnter
+	
+	        Dim strB = New System.Text.StringBuilder()
+	        strB.AppendLine("You have just entered an action area.")
+	        strB.AppendLine("Action type: " + args.Action.[GetType]().Name)
+	        strB.AppendLine("ReportItem name: " + args.Action.ReportItemName)
+	        strB.AppendLine(String.Format("Mouse cursor position: {0}; Item bounds: {1}", args.CursorPos, args.Bounds))
+	
+	        Console.Out.WriteLine(strB.ToString())
+	    End Sub
+	#End Region
+	
+	#Region "WinFormsInteractiveActionLeaveEventSnippet"
+	    ' Handles the InteractiveActionLeave event
+	    ' Do not forget to add the WithEvents clause on ReportViewer1 instantiation if needed.
+	    Private Sub reportViewer1_InteractiveActionLeave(sender As Object, args As Telerik.ReportViewer.Common.InteractiveActionEventArgs) Handles ReportViewer1.InteractiveActionLeave
+	
+	        Dim strB = New System.Text.StringBuilder()
+	        strB.AppendLine("You have just left an action area.")
+	        strB.AppendLine("Action type: " + args.Action.[GetType]().Name)
+	        strB.AppendLine("ReportItem name: " + args.Action.ReportItemName)
+	        strB.AppendLine(String.Format("Item bounds: {0}", args.Bounds))
+	
+	        Console.Out.WriteLine(strB.ToString())
+	    End Sub
+	#End Region
+	
+	#Region "WinFormsViewerToolTipOpeningEventSnippet"
+	    ' Handles the ViewerToolTipOpening event
+	    ' Do not forget to add the WithEvents clause on ReportViewer1 instantiation if needed.
+	    Private Sub reportViewer1_ViewerToolTipOpening(sender As Object, args As Telerik.ReportViewer.Common.ToolTipOpeningEventArgs) Handles ReportViewer1.ViewerToolTipOpening
+	        If args.ToolTip.Title.Contains("DoNotShow") Then
+	            args.Cancel = True
+	        Else
+	            args.ToolTip.Title = "The tooltip title is changed!"
+	            args.ToolTip.Text += " (changed)"
+	        End If
+	    End Sub
+	#End Region
+	
+	
+	#Region "WinFormsViewerAccessibilityKeyMapSnippet"
+	
+	    Private Sub SetToolbarShortcutKey()
+	        ' substituting the default 'M' key to access the toolbar with 'T'
+	        Dim map As System.Collections.Generic.Dictionary(Of Integer, Telerik.ReportViewer.Common.Accessibility.ShortcutKeys) = Me.ReportViewer1.AccessibilityKeyMap
+	        map.Remove(CType(Keys.M, Integer))
+	        map(CType(Keys.T, Integer)) = Telerik.ReportViewer.Common.Accessibility.ShortcutKeys.MENU_AREA_KEY
+	        Me.ReportViewer1.AccessibilityKeyMap = map
+	    End Sub
+	#End Region
+	
+	End Class
 
 
 

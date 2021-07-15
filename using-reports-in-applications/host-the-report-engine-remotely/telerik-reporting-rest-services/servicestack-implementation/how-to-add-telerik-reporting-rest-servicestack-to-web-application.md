@@ -71,11 +71,46 @@ Create a new class which derives from
 Here is a sample implementation with the setup:
             
 
+{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````C#
+	    public class ReportsHost : Telerik.Reporting.Services.ServiceStack.ReportsHostBase
+	    {
+	        public ReportsHost()
+	        {
+	            var reportsPath = System.Web.HttpContext.Current.Server.MapPath(@"~\Reports");
+	            var resolver = new Telerik.Reporting.Services.UriReportSourceResolver(reportsPath)
+	                .AddFallbackResolver(new Telerik.Reporting.Services.TypeReportSourceResolver());
 	
-
-
-
+	            var reportServiceConfiguration = new Telerik.Reporting.Services.ReportServiceConfiguration();
+	            reportServiceConfiguration.HostAppId = "Application1";
+	            reportServiceConfiguration.ReportSourceResolver = resolver;
+	            reportServiceConfiguration.Storage = new Telerik.Reporting.Cache.File.FileStorage();
 	
+	            this.ReportServiceConfiguration = reportServiceConfiguration;
+	        }
+	    }
+````
+
+
+
+{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````VB
+	Imports Telerik.Reporting.Services
+	
+	Public Class ReportsHost
+	    Inherits Telerik.Reporting.Services.ServiceStack.ReportsHostBase
+	    Public Sub New()
+	        Dim reportsPath = System.Web.HttpContext.Current.Server.MapPath("~\Reports")
+	        Dim resolver = New UriReportSourceResolver(reportsPath) _
+	                       .AddFallbackResolver(New TypeReportSourceResolver())
+	
+	        Dim reportServiceConfiguration = New ReportServiceConfiguration()
+	        reportServiceConfiguration.HostAppId = "Application1"
+	        reportServiceConfiguration.ReportSourceResolver = resolver
+	        reportServiceConfiguration.Storage = New Telerik.Reporting.Cache.File.FileStorage()
+	
+	        Me.ReportServiceConfiguration = reportServiceConfiguration
+	    End Sub
+	End Class
+	'#End Region
 
 
 
@@ -99,11 +134,31 @@ __To configure the Telerik Reporting REST service from the application configura
               T:Telerik.Reporting.Services.ConfigSectionReportServiceConfiguration class.
             
 
+{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````C#
+	    public class ReportsHost : Telerik.Reporting.Services.ServiceStack.ReportsHostBase
+	    {
+	        public ReportsHost()
+	        {
+	            var reportServiceConfiguration = new Telerik.Reporting.Services.ConfigSectionReportServiceConfiguration();
 	
+	            this.ReportServiceConfiguration = reportServiceConfiguration;
+	        }
+	    }
+````
 
 
 
+{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````VB
+	    Public Class ReportsHost
+	        Inherits Telerik.Reporting.Services.ServiceStack.ReportsHostBase
+	        Public Sub New()
+	            Dim reportServiceConfiguration = New Telerik.Reporting.Services.ConfigSectionReportServiceConfiguration()
 	
+	            Me.ReportServiceConfiguration = reportServiceConfiguration
+	        End Sub
+	    End Class
+	    '#End Region
+	End Namespace
 
 
 
@@ -111,7 +166,7 @@ Then add the __restReportService__ configuration element containing the service 
               [Telerik Reporting Configuration Section]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/overview%}).
             
 
-	
+{{source=System.Xml.XmlAttribute region=}}
 
 
 
@@ -122,11 +177,22 @@ Add a new or use the existing __Global Application Class__ (global.asax) to crea
               the ServiceStack reports service in the __Application_Start__ method:
             
 
-	
+{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````C#
+	        protected void Application_Start()
+	        {
+	            new ReportsHost().Init();
+	        }
+````
 
 
 
-	
+{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````VB
+	    Protected Sub Application_Start()
+	        Dim reportsHost As New ReportsHost()
+	        reportsHost.Init()
+	    End Sub
+	    '#End Region
+	End Class
 
 
 

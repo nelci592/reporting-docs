@@ -63,11 +63,53 @@ Make sure that the project have the following assembly references:
 [How to implement the ReportsController in an application]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-web-api-implementation/how-to-implement-the-reportscontroller-in-an-application%});
             
 
+{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````C#
+	    using System;
+	    using System.Linq;
+	    using System.Web.Http.SelfHost;
+	    using Telerik.Reporting.Services.WebApi;
 	
-
-
-
+	    class Program
+	    {
+	        static void Main(string[] args)
+	        {
+	            var config = new HttpSelfHostConfiguration("http://localhost:8080"); // use appropriate address
 	
+	            ReportsControllerConfiguration.RegisterRoutes(config);
+	
+	            var server = new HttpSelfHostServer(config);
+	            server.OpenAsync().Wait();
+	
+	            Console.WriteLine("Server is opened");
+	            Console.ReadKey();
+	        }
+	    }
+````
+
+
+
+{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````VB
+	Imports System.Web.Http.SelfHost
+	Imports Telerik.Reporting.Services.WebApi
+	
+	Public Class Program
+	
+	    Public Shared Sub Main(ByVal args As String())
+	
+	        Dim config = New HttpSelfHostConfiguration("http://localhost:8080")
+	        ' use appropriate address
+	        ReportsControllerConfiguration.RegisterRoutes(config)
+	
+	        Dim server = New HttpSelfHostServer(config)
+	        server.OpenAsync().Wait()
+	
+	        Console.WriteLine("Server is opened")
+	        Console.ReadKey()
+	    End Sub
+	
+	End Class
+	
+	'#End Region
 
 
 

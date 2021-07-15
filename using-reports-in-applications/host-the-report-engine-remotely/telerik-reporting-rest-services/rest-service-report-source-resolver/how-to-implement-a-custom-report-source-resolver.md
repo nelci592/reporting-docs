@@ -24,11 +24,90 @@ Create a class which implements the T:Telerik.Reporting.Services.IReportSourceRe
               The value of the *report* parameter will be initialized with the value of the __Report__ property of the report viewer's ReportSource object.
             
 
+{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````C#
+	    class CustomReportSourceResolver : IReportSourceResolver
+	    {
+	        public Telerik.Reporting.ReportSource Resolve(string reportId, OperationOrigin operationOrigin, IDictionary<string, object> currentParameterValues)
+	        {
+	            var cmdText = "SELECT Definition FROM Reports WHERE ID = @ReportId";
 	
-
-
-
+	            var reportXml = string.Empty;
+	            using (var conn = new System.Data.SqlClient.SqlConnection(@"server=(local)\sqlexpress;database=REPORTS;integrated security=true;"))
+	            {
+	                var command = new System.Data.SqlClient.SqlCommand(cmdText, conn);
+	                command.Parameters.Add("@ReportId", System.Data.SqlDbType.Int);
+	                command.Parameters["@ReportId"].Value = reportId;
 	
+	                try
+	                {
+	                    conn.Open();
+	                    reportXml = (string)command.ExecuteScalar();
+	                }
+	                catch (System.Exception ex)
+	                {
+	                    System.Diagnostics.Trace.WriteLine(ex.Message);
+	                }
+	            }
+	
+	            if (string.IsNullOrEmpty(reportXml))
+	            {
+	                throw new System.Exception("Unable to load a report with the specified ID: " + reportId);
+	            }
+	
+	            return new Telerik.Reporting.XmlReportSource { Xml = reportXml };
+	        }
+	    }
+````
+
+
+
+{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````VB
+	Class CustomReportSourceResolver
+	    Implements IReportSourceResolver
+	    Public Function Resolve(reportId As String, operationOrigin As OperationOrigin, currentParameterValues As IDictionary(Of String, Object)) As Telerik.Reporting.ReportSource Implements Telerik.Reporting.Services.IReportSourceResolver.Resolve
+	        Dim cmdText = "SELECT Definition FROM Reports WHERE ID = @ReportId"
+	
+	        Dim reportXml = ""
+	        Using conn = New System.Data.SqlClient.SqlConnection("server=(local)\sqlexpress;database=REPORTS;integrated security=true;")
+	            Dim command = New System.Data.SqlClient.SqlCommand(cmdText, conn)
+	            command.Parameters.Add("@ReportId", System.Data.SqlDbType.Int)
+	            command.Parameters("@ReportId").Value = reportId
+	
+	            Try
+	                conn.Open()
+	                reportXml = DirectCast(command.ExecuteScalar(), String)
+	            Catch ex As System.Exception
+	                System.Diagnostics.Trace.WriteLine(ex.Message)
+	            End Try
+	        End Using
+	
+	        If String.IsNullOrEmpty(reportXml) Then
+	            Throw New System.Exception(Convert.ToString("Unable to load a report with the specified ID: ") & reportId)
+	        End If
+	
+	        Dim reportSource As New Telerik.Reporting.XmlReportSource()
+	        reportSource.Xml = reportXml
+	        Return reportSource
+	    End Function
+	End Class
+	'#End Region
+	
+	'#Region "ModelBindingReportResolver_Implementation"
+	Class ModelBindingReportSourceResolver
+	    Implements IReportSourceResolver
+	    Public Function Resolve(reportId As String, operationOrigin As OperationOrigin, currentParameterValues As IDictionary(Of String, Object)) As Telerik.Reporting.ReportSource Implements Telerik.Reporting.Services.IReportSourceResolver.Resolve
+	        Dim report = New Invoice() ' prepare your report here
+	        If True Then ' condition here
+	            ' do something else with report here
+	        Else
+	        End If
+	
+	        Return New Telerik.Reporting.InstanceReportSource() With {
+	            .ReportDocument = report
+	        }
+	    End Function
+	End Class
+	'#End Region
 
 
 
@@ -37,11 +116,105 @@ Find the __ReportSourceResolver property__ in the P:Telerik.Reporting.Services.W
               class, and set it to an instance of the custom report source resolver or to a chain of resolver instances including the custom one:
             
 
+{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````C#
+	    public class CustomResolverReportsController : ReportsControllerBase
+	    {
+	        static ReportServiceConfiguration configurationInstance;
 	
-
-
-
+	        static CustomResolverReportsController()
+	        {
+	            var resolver = new UriReportSourceResolver(HttpContext.Current.Server.MapPath("~/Reports"))
+	                .AddFallbackResolver(new TypeReportSourceResolver()
+	                    .AddFallbackResolver(new CustomReportSourceResolver()));
 	
+	            configurationInstance = new ReportServiceConfiguration
+	            {
+	                HostAppId = "Application1",
+	                ReportSourceResolver = resolver,
+	                Storage = new Telerik.Reporting.Cache.File.FileStorage(),
+	            };
+	        }
+	
+	        public CustomResolverReportsController()
+	        {
+	            this.ReportServiceConfiguration = configurationInstance;
+	        }
+	    }
+````
+
+
+
+{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````VB
+	Public Class CustomResolverReportsController
+	    Inherits Telerik.Reporting.Services.WebApi.ReportsControllerBase
+	
+	    Shared configurationInstance As ReportServiceConfiguration
+	
+	    Shared Sub New()
+	        Dim resolver = New UriReportSourceResolver(HttpContext.Current.Server.MapPath("~/Reports")) _
+	                       .AddFallbackResolver(New TypeReportSourceResolver() _
+	                                            .AddFallbackResolver(New CustomReportSourceResolver()))
+	
+	        Dim reportServiceConfiguration As New ReportServiceConfiguration()
+	        reportServiceConfiguration.HostAppId = "Application1"
+	        reportServiceConfiguration.ReportSourceResolver = resolver
+	        reportServiceConfiguration.Storage = New Telerik.Reporting.Cache.File.FileStorage()
+	        configurationInstance = reportServiceConfiguration
+	    End Sub
+	
+	    Public Sub New()
+	        Me.ReportServiceConfiguration = configurationInstance
+	    End Sub
+	End Class
+	'#End Region
+	
+	'#Region "CustomReportResolver_Implementation"
+	Class CustomReportSourceResolver
+	    Implements IReportSourceResolver
+	    Public Function Resolve(reportId As String, operationOrigin As OperationOrigin, currentParameterValues As IDictionary(Of String, Object)) As Telerik.Reporting.ReportSource Implements Telerik.Reporting.Services.IReportSourceResolver.Resolve
+	        Dim cmdText = "SELECT Definition FROM Reports WHERE ID = @ReportId"
+	
+	        Dim reportXml = ""
+	        Using conn = New System.Data.SqlClient.SqlConnection("server=(local)\sqlexpress;database=REPORTS;integrated security=true;")
+	            Dim command = New System.Data.SqlClient.SqlCommand(cmdText, conn)
+	            command.Parameters.Add("@ReportId", System.Data.SqlDbType.Int)
+	            command.Parameters("@ReportId").Value = reportId
+	
+	            Try
+	                conn.Open()
+	                reportXml = DirectCast(command.ExecuteScalar(), String)
+	            Catch ex As System.Exception
+	                System.Diagnostics.Trace.WriteLine(ex.Message)
+	            End Try
+	        End Using
+	
+	        If String.IsNullOrEmpty(reportXml) Then
+	            Throw New System.Exception(Convert.ToString("Unable to load a report with the specified ID: ") & reportId)
+	        End If
+	
+	        Dim reportSource As New Telerik.Reporting.XmlReportSource()
+	        reportSource.Xml = reportXml
+	        Return reportSource
+	    End Function
+	End Class
+	'#End Region
+	
+	'#Region "ModelBindingReportResolver_Implementation"
+	Class ModelBindingReportSourceResolver
+	    Implements IReportSourceResolver
+	    Public Function Resolve(reportId As String, operationOrigin As OperationOrigin, currentParameterValues As IDictionary(Of String, Object)) As Telerik.Reporting.ReportSource Implements Telerik.Reporting.Services.IReportSourceResolver.Resolve
+	        Dim report = New Invoice() ' prepare your report here
+	        If True Then ' condition here
+	            ' do something else with report here
+	        Else
+	        End If
+	
+	        Return New Telerik.Reporting.InstanceReportSource() With {
+	            .ReportDocument = report
+	        }
+	    End Function
+	End Class
+	'#End Region
 
 
 

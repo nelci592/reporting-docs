@@ -100,13 +100,51 @@ To run the localized report in a specific language that is different from the th
             
 
 >important Note that the culture settings must be applied before creating an instance of the report.            This ensures the correct report's resource file will be used on processing the document.          
-#_[C#] Setting the language at runtime_
 
+
+{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````C#
+	            //Create new CultureInfo
+	            var cultureInfo = new System.Globalization.CultureInfo("es-MX");
 	
-
-#_[VB] Setting the language at runtime_
-
+			    // Set the language for static text (i.e. column headings, titles)
+			    System.Threading.Thread.CurrentThread.CurrentUICulture = cultureInfo;
 	
+			    // Set the language for dynamic text (i.e. date, time, money)
+			    System.Threading.Thread.CurrentThread.CurrentCulture = cultureInfo; 
+	
+	            reportViewer1.ReportSource = new Telerik.Reporting.InstanceReportSource
+	                {
+	                    ReportDocument = new Report1()
+	                };
+	
+			    // If this is a Windows application, refresh the report
+			    reportViewer1.RefreshReport();
+````
+
+
+
+{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````VB
+	
+	        'Create new CultureInfo
+	        Dim cultureInfo = New System.Globalization.CultureInfo("es-MX")
+	
+	        ' Set the language for static text (i.e. column headings, titles)
+	        System.Threading.Thread.CurrentThread.CurrentUICulture = cultureInfo
+	
+	        ' Set the language for dynamic text (i.e. date, time, money)
+	        System.Threading.Thread.CurrentThread.CurrentCulture = cultureInfo
+	
+	        reportViewer1.ReportSource = New Telerik.Reporting.InstanceReportSource() With { _
+	                .ReportDocument = New Report1()}
+	
+	        ' If this is a Windows application, refresh the report
+	        reportViewer1.RefreshReport()
+	
+	        '#End Region
+	
+	    End Sub
+	
+	End Class
 
 
 

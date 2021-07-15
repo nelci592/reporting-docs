@@ -17,11 +17,60 @@ position: 3
 In the report viewing application you can populate the values of 
         __ReportParameters__ collection members prior to displaying the report.
 
+{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````C#
 	
-
-
-
+	            Report1 report = new Report1();
+	            report.ReportParameters["ManagerID"].Value = "123";
 	
+````
+
+
+
+{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````VB
+	
+	        Dim report As New Report1()
+	        report.ReportParameters("ManagerID").Value = "123"
+	
+	        '#End Region
+	
+	        Dim instanceReportSource as new InstanceReportSource()
+	        instanceReportSource.ReportDocument = report
+	
+	        Dim processor = New ReportProcessor()
+	        processor.RenderReport("IMAGE", instanceReportSource, Nothing)
+	
+	        Assert.AreEqual("123", report.sqlDataSource1.Parameters("ManagerID").Value)
+	    End Sub
+	
+	    Private Class Report1
+	        Inherits Telerik.Reporting.Report
+	        Public sqlDataSource1 As ObjectDataSource
+	
+	        Public Sub New()
+	            Me.sqlDataSource1 = New ObjectDataSource() With { _
+	             .DataSource = GetType(TestDataSource), _
+	             .DataMember = "GetData" _
+	            }
+	            Me.sqlDataSource1.Parameters.Add("ManagerID", GetType(String))
+	
+	            Me.ReportParameters.Add("ManagerID", ReportParameterType.[String], Nothing)
+	        End Sub
+	
+	        '#region "Pass_Parameter_In_NeedDataSource"
+	
+	        Private Sub Report1_NeedDataSource(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.NeedDataSource
+	            'Take the Telerik.Reporting.Processing.Report instance
+	            Dim report As Telerik.Reporting.Processing.Report = DirectCast(sender, Telerik.Reporting.Processing.Report)
+	
+	            ' Transfer the value of the processing instance of ReportParameter
+	            ' to the parameter value of the sqlDataSource component
+	            Me.sqlDataSource1.Parameters(0).Value = report.Parameters("ManagerID").Value
+	
+	            ' Set the SqlDataSource component as it's DataSource
+	            report.DataSource = Me.sqlDataSource1
+	        End Sub
+	
+````
 
 
 
@@ -58,7 +107,7 @@ Example:
   the following query:
   
 
-	
+{{source=System.Xml.XmlAttribute region=}}
 
 
 
@@ -77,11 +126,40 @@ Example:
 1. Add the following code to the NeedDataSource event handler:
    
 
+{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````C#
 	
-
-
-
+	            private void Report1_NeedDataSource(object sender, System.EventArgs e)
+	            {
+	                //Take the Telerik.Reporting.Processing.Report instance
+	                Telerik.Reporting.Processing.Report report = (Telerik.Reporting.Processing.Report)sender;
 	
+	                // Transfer the value of the processing instance of ReportParameter
+	                // to the parameter value of the sqlDataSource component
+	                this.sqlDataSource1.Parameters[0].Value = report.Parameters["ManagerID"].Value;
+	
+	                // Set the SqlDataSource component as it's DataSource
+	                report.DataSource = this.sqlDataSource1;
+	            }
+	
+````
+
+
+
+{{source=System.Xml.XmlAttribute region=System.Xml.XmlAttribute}}````VB
+	
+	        Private Sub Report1_NeedDataSource(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.NeedDataSource
+	            'Take the Telerik.Reporting.Processing.Report instance
+	            Dim report As Telerik.Reporting.Processing.Report = DirectCast(sender, Telerik.Reporting.Processing.Report)
+	
+	            ' Transfer the value of the processing instance of ReportParameter
+	            ' to the parameter value of the sqlDataSource component
+	            Me.sqlDataSource1.Parameters(0).Value = report.Parameters("ManagerID").Value
+	
+	            ' Set the SqlDataSource component as it's DataSource
+	            report.DataSource = Me.sqlDataSource1
+	        End Sub
+	
+````
 
 
 

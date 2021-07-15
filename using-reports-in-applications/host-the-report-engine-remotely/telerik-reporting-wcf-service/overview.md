@@ -17,8 +17,7 @@ position: 0
 Telerik Reporting WCF Service enables the
           remote access to the T:Telerik.Reporting.Processing.ReportProcessor. The service
           acts as a communication interface between the client programs and the reporting engine. The service is responsible for managing the reports state and resources.
-          
-  ![](images/WCFService.png)
+        ![](images/WCFService.png)
 
 Telerik Reporting WCF Service exposes two contracts:
 

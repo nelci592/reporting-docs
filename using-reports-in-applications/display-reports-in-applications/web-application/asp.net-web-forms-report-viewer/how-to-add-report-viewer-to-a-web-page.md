@@ -22,8 +22,7 @@ To use Telerik Reports in web application, you need the Web report viewer:
 1. 
             Drag the __ReportViewer__
             control from the __Toolbox__ to the design surface of a web form.
-              
-  ![](images/WebReportViewer.png)By doing so, the ReportViewer control would register automatically the http handler it needs to function
+            ![](images/WebReportViewer.png)By doing so, the ReportViewer control would register automatically the http handler it needs to function
               properly in the web.config file of the web application/site.
             
 

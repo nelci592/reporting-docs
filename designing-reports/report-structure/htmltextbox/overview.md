@@ -127,8 +127,7 @@ The in-place editor for the HtmlTextBox report item allows you to quickly ente
 
 * Moving focus away from the HtmlTextBox also accepts all changes. 
 
-The screenshot below shows an HtmlTextBox with the in-place editor active.  
-  ![](images/HtmlTextBox3.png)
+The screenshot below shows an HtmlTextBox with the in-place editor active.![](images/HtmlTextBox3.png)
 
 The design time editor supports two modes:
 

@@ -14,8 +14,7 @@ position: 0
 
 The WPF Report Viewer allows developers to deliver reports produced
         by Telerik Reporting to any rich application developed with WPF.
-        
-  ![](images/SilverlightViewer1.png)
+      ![](images/SilverlightViewer1.png)
 
 ## 
 

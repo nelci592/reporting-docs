@@ -16,8 +16,7 @@ This section discusses various techniques for retrieving data from an __Entity D
     	of the __EntityDataSource__ component. The provided examples and code snippets assume an existing __Entity Data Model__ 
     	of the __Adventure Works__ sample database with the following structure:
 
-  
-  ![](images/DataSources/EntityDataSourceAdventureWorksEntityModel.png)
+![](images/DataSources/EntityDataSourceAdventureWorksEntityModel.png)
 
 ## 
 

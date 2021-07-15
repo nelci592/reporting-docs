@@ -32,8 +32,7 @@ To set the following group properties you have to select a group from the [Group
 * __Grouping__: The grouping property controls how groups of data are broken out in the report. Click the ellipsis for this property to invoke the [Edit Grouping Dialog]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/edit-grouping-dialog%}). This dialog allows you to specify grouping criteria that determine where the grouping level breaks occur. __Note__: It is also possible to have groups with no grouping criteria.
 
 * __Sorting__: This property controls the sorting order for the grouping data, not the report data. This level of sorting occurs before the sorting for the report as a whole. For example, Click the ellipsis button for this property to open the __Edit Sorting__ dialog. Click __Add__ to add a new sort expression. For each SortExpression, set the __FieldName__ property to the name of the field by which this group should sort records, and select either __Ascending__ or a __Descending__ sort order.
-			  
-  ![](images/groupProperties.png) 
+			![](images/groupProperties.png) 
       
 
 # See AlsoT:Telerik.Reporting.GroupHeaderSectionT:Telerik.Reporting.GroupFooterSectionT:Telerik.Reporting.Group

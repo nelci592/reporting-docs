@@ -18,8 +18,7 @@ This section discusses how to connect the __EntityDataSource__ component to an
         The provided examples and code snippets assume an existing
         __Entity Data Model__ of the __Adventure Works__ sample database with the following structure:
 
-  
-  ![](images/DataSources/EntityDataSourceAdventureWorksEntityModel.png)
+![](images/DataSources/EntityDataSourceAdventureWorksEntityModel.png)
 
 ## 
 
@@ -27,8 +26,7 @@ The simplest way to configure __EntityDataSource__ in __Report Designer__ is to 
       	the [EntityDataSource Wizard]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/entitydatasource-wizard%}). That wizard is started automatically when you create a new __EntityDataSource__, but you can invoke 
       	it manually at any time from the context menu associated with the data source by choosing __"Configure"__:
 
-  
-  ![](images/DataSources/EntityDataSourceConfigure.png)
+![](images/DataSources/EntityDataSourceConfigure.png)
 
 To configure the __EntityDataSource__ component programmatically you need to specify at least an __ObjectContext/DbContext__
       	and a property or a method from that __ObjectContext/DbContext__ which is responsible for data retrieval. Assign the type of 

@@ -29,8 +29,7 @@ Before using the database cache provider it is necessary to install the shared d
 -InstallDir-\Tools\DatabaseCacheConfigurator.exe
 
 where __InstallDir__ is the installation directory of __Telerik Reporting__.
-        
-  ![](images/SessionState/sessionmanagement3.png)
+      ![](images/SessionState/sessionmanagement3.png)
 
 Choose the desired target backend from the drop-down list and specify the connection string to the database being created in the text
         block below. It is recommended that the database specified in the connection string is different from your production database. Click the

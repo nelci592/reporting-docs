@@ -12,8 +12,7 @@ position: 13
 
 
 
-The CheckBox report item is used to display both text and a check mark on a report. This screenshot shows a CheckBox report item with CheckAlign property set to TopCenter and text aligned to Top and left.  
-  ![](images/checkboxitem1.jpg)
+The CheckBox report item is used to display both text and a check mark on a report. This screenshot shows a CheckBox report item with CheckAlign property set to TopCenter and text aligned to Top and left.![](images/checkboxitem1.jpg)
 
 
 
@@ -35,8 +34,7 @@ The text part of the Checkbox report item supports [
           information directly into the CheckBox.Text property to produce customized reports and mail merging.
         
 
-A view where each CheckBox is initialized with CheckAlign varying from TopLeft to BottomRight:   
-  ![](images/checkboxitem2.jpg)
+A view where each CheckBox is initialized with CheckAlign varying from TopLeft to BottomRight: ![](images/checkboxitem2.jpg)
 
 
 
@@ -59,14 +57,11 @@ You have a Status field that has three values:
 
 * DisApproved 
 
-* NotSet   
-  ![](images/checkboxEval1.png)
+* NotSet ![](images/checkboxEval1.png)
 
-In such case it is more convenient to use those values directly instead of trying to evaluate them as true/false. You can do that easily by using the TrueValue/FalseValue/IndeterminateValue properties:  
-  ![](images/checkboxEval2.png)
+In such case it is more convenient to use those values directly instead of trying to evaluate them as true/false. You can do that easily by using the TrueValue/FalseValue/IndeterminateValue properties:![](images/checkboxEval2.png)
 
-And here is the final result:  
-  ![](images/CheckBoxEval3.png)
+And here is the final result:![](images/CheckBoxEval3.png)
 
 
 

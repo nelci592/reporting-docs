@@ -57,8 +57,7 @@ __How to display a report in the Windows Forms Report Viewer:__
 1. Select __File | New | Project__ from the Visual Studio File menu.  Select the __Windows Application__
               project, give it a name and location. Verify that the targeted .NET framework version is .NET4+, Full profile as Client profile is not supported.
               Click the OK button to close the dialog.
-              
-  ![](images/QuickStart034.png)
+            ![](images/QuickStart034.png)
 
 1. Right-click the project References and select __Add Reference__ from the context menu.
               Select the reference for the
@@ -66,8 +65,7 @@ __How to display a report in the Windows Forms Report Viewer:__
               __Projects__ tab. Note: If the class library resides
               in another solution you will need to use the Browse tab and navigate to the
               assembly containing the report.
-              
-  ![](images/QuickStart035.png)
+            ![](images/QuickStart035.png)
 
 1. Add report viewer to the form as explained in [WinForms ReportViewer: Manual Setup]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/windows-forms-application/how-to-add-manually-report-viewer-to-a-windows-forms'-.net-framework-project%}) topic.
             
@@ -114,5 +112,4 @@ __How to display a report in the Windows Forms Report Viewer:__
             
 
 1. Press __F5__ to run the report. 
-              
-  ![](images/QuickStart037.png)
+            ![](images/QuickStart037.png)

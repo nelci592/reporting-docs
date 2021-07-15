@@ -13,8 +13,7 @@ position: 0
 
 
 The Windows Forms Report Viewer is designed to render Telerik __Reports__ within Windows Forms projects.
-        
-  ![](images/WinFormsViewer.png)
+      ![](images/WinFormsViewer.png)
 
 ## 
 

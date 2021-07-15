@@ -41,8 +41,7 @@ The context menu will conditionally display items depending on the area of the 
 
 In the figure below the menu is invoked in the area next to the report design surface. 
 
-  
-  ![](images/UI012.png)
+![](images/UI012.png)
 
 In the example below, a [TextBox]({%slug telerikreporting/designing-reports/report-structure/textbox%})
           was right-clicked to display its context menu. It includes the following menu items:
@@ -57,5 +56,4 @@ In the example below, a [TextBox]({%slug telerikreporting/designing-reports/repo
 * __Format__ Selecting this item displays the [Format Builder]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/format-builder-dialog%})
            dialog.
 
-* __Conditional Formatting:__ This menu item invokes the [Conditional Formatting Rules Dialog]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/conditional-formatting-rules-dialog%}). This dialog lets you define rules that when fired change the style formatting of the selected item.  
-  ![](images/UI013.png)
+* __Conditional Formatting:__ This menu item invokes the [Conditional Formatting Rules Dialog]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/conditional-formatting-rules-dialog%}). This dialog lets you define rules that when fired change the style formatting of the selected item.![](images/UI013.png)

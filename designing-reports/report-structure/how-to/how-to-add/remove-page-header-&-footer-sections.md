@@ -30,8 +30,7 @@ By default, every new report is created with a page header section and a page fo
             Select __Page Header__ or __Page Footer__.
           
 
-  
-  ![](images/ReportDesign001.png)
+![](images/ReportDesign001.png)
 
 ## Page Header/Footer Specifics
 

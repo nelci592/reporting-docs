@@ -37,8 +37,7 @@ Use the report design created in [Creating a Simple Report]({%slug telerikrepor
 1. Double click the "ProductList" TextBox report item in the report header. This will activate
             the "in place" editor, allowing you to enter text right in the designer without having to find the
             appropriate property in the Property Window. Add a space so the TextBox reads "Product List".
-            
-  ![](images/QuickStart021.png)
+          ![](images/QuickStart021.png)
 
 1. __Zoom__ to 150% from the __Zoom Combo Box__
             in the lower left corner of the design surface.
@@ -49,8 +48,7 @@ Use the report design created in [Creating a Simple Report]({%slug telerikrepor
                 header just to the right of the "Quantity" column. While dragging the TextBox, the
                 __Snap Lines__ will aid you in positioning it so it aligns
                 nicely with its neighbors.
-                
-  ![](images/QuickStart023.png)
+              ![](images/QuickStart023.png)
 
 * For [Standalone Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview%}):
               Select the target [report section]({%slug telerikreporting/designing-reports/report-structure/overview%}) and from the Insert tab click on the TextBox item.
@@ -70,8 +68,7 @@ Use the report design created in [Creating a Simple Report]({%slug telerikrepor
             property to "0.1in" and the __Size.Height__ property to "0.1in". Right click the
             __Shape__ item and select __Conditional Formatting__
             from the context menu.
-            
-  ![](images/QuickStart025.png)
+          ![](images/QuickStart025.png)
 
 1. The __Conditional Formatting Rules__ dialog will display.
           
@@ -97,8 +94,7 @@ Use the report design created in [Creating a Simple Report]({%slug telerikrepor
               
 
 * Add to the expression at the top of the dialog so the complete expression reads "= Fields.ReorderPoint * .5". This rule will fire when the quantity of a product falls below half of the ReorderPoint value. Click __OK__ to close the __Edit Expression__ dialog.
-                
-  ![](images/QuickStart026.png)
+              ![](images/QuickStart026.png)
 
 * On the __Conditional Formatting Rules__ dialog click the __Style__ button to display the __Style Builder__ dialog.
               
@@ -107,8 +103,7 @@ Use the report design created in [Creating a Simple Report]({%slug telerikrepor
               
 
 * Click __OK__ to close the dialog.Click __OK__ twice more to close the remaining rule dialogs.
-                
-  ![](images/QuickStart027.png)
+              ![](images/QuickStart027.png)
 
 1. Press __F6__ to build the report.
           
@@ -116,8 +111,7 @@ Use the report design created in [Creating a Simple Report]({%slug telerikrepor
 1. Click the __Preview__ button to display the report.
             Scroll through the data and notice that the "Quantity" values that are below 50% of the
             "Reorder point" are displayed in red.
-            
-  ![](images/QuickStart028.png)
+          ![](images/QuickStart028.png)
 
 1. The last set of steps to building this report design add an image item to the
             report and format the page footer. These last steps also use the
@@ -125,8 +119,7 @@ Use the report design created in [Creating a Simple Report]({%slug telerikrepor
             and the [Report Explorer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/report-explorer%}).
           From the [Telerik Reporting menu]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/telerik-reporting-menu%})
             select the [Data Explorer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-explorer%}).
-            
-  ![](images/QuickStart029.png)
+          ![](images/QuickStart029.png)
 
 1. Select the "ThumbNailPhoto" column from the
             [Data Explorer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/overview%})
@@ -137,8 +130,7 @@ Use the report design created in [Creating a Simple Report]({%slug telerikrepor
 
 1. After dropping the ThumbNailPhoto the DetailSection will be automatically resized to
             accommodate the entire PictureBox item:
-            
-  ![](images/QuickStart030.png)
+          ![](images/QuickStart030.png)
 
 1. The [Report Explorer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/report-explorer%})
             provides a hierarchical view of all the report sections and items in the report design. This allows
@@ -154,10 +146,8 @@ Use the report design created in [Creating a Simple Report]({%slug telerikrepor
 
 1. In the __Properties__ window set the __Style.BackgroundColor__
             property to "LightGray".
-            
-  ![](images/QuickStart031.png)
+          ![](images/QuickStart031.png)
 
 1. Click the __Preview__ button to view the report. Scroll through
             the report pages to find records that have images.
-            
-  ![](images/QuickStart033.png)
+          ![](images/QuickStart033.png)

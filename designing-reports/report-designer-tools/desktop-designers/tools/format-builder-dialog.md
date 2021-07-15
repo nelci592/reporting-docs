@@ -22,8 +22,7 @@ type of formatting you have assigned.For example, if you choose Currency formatt
 convert 3 into $3.00; if you choose Date formatting it would convert 3/1
 to March 1; if you choose Percent formatting, it would change 0.3 to 30% etc.
 
-##   
-  ![](images/UI015.png)
+## ![](images/UI015.png)
 
 If you want a format that is not included in the pre-made formats, you can make 
 your own custom format, using the Custom category. For example if you have a numeric field

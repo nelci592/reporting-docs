@@ -54,14 +54,12 @@ Each filter condition is made up of an __Expression__, __Operator __and __Value_
 * __Value __can be a literal value, "<blank>" or an expression defined in the [Edit Expression Dialog]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/edit-expression-dialog%}). When all the filter conditions are met, the rule is fired and the style is applied.
             
 
-  
-  ![](images/Style4.png)
+![](images/Style4.png)
 
 You can change the Text, Background, Edges and Line Style for the given item using the [Style Builder dialog]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/style-builder-dialog%}).
         
 
-  
-  ![](images/Style5.png)
+![](images/Style5.png)
 
 ## Samples with Conditional Formatting
 

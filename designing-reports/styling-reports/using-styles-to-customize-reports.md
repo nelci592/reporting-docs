@@ -31,8 +31,7 @@ To create a style sheet for a report, follow these steps:
 
 
 1. Expand the __Style__ property and customize your new __StyleRule__. For example, the screenshot below shows a __StyleRule__ that specifies a yellow background, blue text, and bold Times New Roman font.
-          
-  ![](images/Style1.png)
+        ![](images/Style1.png)
 
 1. Click in the __Selectors__ property, click the ellipsis button to open the TypeSelector Collection Editor. 
 
@@ -42,8 +41,7 @@ To create a style sheet for a report, follow these steps:
 
 
 1. Use the properties area of the TypeSelector Collection Editor to customize the new selector. For example, the screenshot below shows a __StyleSelector__ named __DataField__ which applies to __TextBox__ report items only.
-          
-  ![](images/Style2.png)
+        ![](images/Style2.png)
 
 1. Click __OK__ when you are done adding selectors for the current StyleRule. 
 

@@ -16,8 +16,7 @@ This section discusses how to maintain the lifecycle of the __ObjectContext/DbCo
     	__EntityDataSource__ component. The provided examples and code snippets assume an existing __Entity Data Model__ 
     	of the __Adventure Works__ sample database with the following structure:
 
-  
-  ![](images/DataSources/EntityDataSourceAdventureWorksEntityModel.png)
+![](images/DataSources/EntityDataSourceAdventureWorksEntityModel.png)
 
 ## 
 

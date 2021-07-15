@@ -156,8 +156,7 @@ If the report spans over several pages in width then its sections are stretched 
               printable area to the right edge of the right-most page’s printable area, as displayed in the following diagram:
             
 
-  
-  ![](images/SectionSpan.jpg)
+![](images/SectionSpan.jpg)
 
 >caution               If your report item (table) is too wide to fit on the page it will cause a horizontal overflow and will continue on the next page.              However whenever this happens if there is additional content below the table a blank page for each additional page              (needed by the table) will be generated. To understand this better consider the following example:            
 

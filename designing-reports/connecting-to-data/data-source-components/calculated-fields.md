@@ -29,8 +29,7 @@ You specify a calculated field manually by creating an
             
 
 * Click on the __CalculatedFields__ property ellipsis.
-              
-  ![](images/CalculatedFields.png)
+            ![](images/CalculatedFields.png)
 
 The dialog accepts __Name__, __DataType__ and
           __Expression__.

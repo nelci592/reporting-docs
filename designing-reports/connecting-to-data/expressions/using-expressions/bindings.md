@@ -33,7 +33,6 @@ When constructing a Binding instance with Binding constructor, you must specify:
 			Please refer to the API reference to check if a property 
 			supports binding.
 
-* an expression that will return the value for the property when evaluated at runtime.  
-  ![](images/UI/Bindings.png)
+* an expression that will return the value for the property when evaluated at runtime.![](images/UI/Bindings.png)
 
 # See AlsoT:Telerik.Reporting.BindingT:Telerik.Reporting.BindingCollection

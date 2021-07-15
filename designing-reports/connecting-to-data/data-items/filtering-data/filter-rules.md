@@ -68,7 +68,6 @@ For example, consider the simplified data in the example diagram below. The data
                     is first grouped by Country and filtered by Continent where Continent = 'EU'. This returns two records for Italy and Bulgaria. The data can be further
                     constrained by adding a report filter "City LIKE R%" that returns only "Roma" and "Russe". If the filtering criteria is satisfied, then the group is
                     included in the report. The data within the group is then further limited by the report filter.
-                  
-  ![](images/DesignGrouping013.png)
+                ![](images/DesignGrouping013.png)
 
 

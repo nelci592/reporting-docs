@@ -18,8 +18,7 @@ The SubReport report item lets you display one report within another report. It 
 >caution [Data Items]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/overview%}) cannot be used in page sections, because the latter are processed	   	after the report data has been processed. At this moment the report data source is not available anymore.
 
 
-  
-  ![](images/Subreport.png)
+![](images/Subreport.png)
 
 
 

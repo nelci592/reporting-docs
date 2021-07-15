@@ -48,8 +48,7 @@ Report items can be hidden or displayed by default, or hidden or displayed condi
 
 In a report with complex layout, changing the visibility of an item does not guarantee that the space it occupies would be filled in by the items below or to the right of it.
 
-The following visibility rules apply when rendering report items (red lines define layout dependency):  
-  ![](images/ReportItemLayout.png)
+The following visibility rules apply when rendering report items (red lines define layout dependency):![](images/ReportItemLayout.png)
 
 * If Item1 is hidden, all items below Item2 would remain in place. 
 

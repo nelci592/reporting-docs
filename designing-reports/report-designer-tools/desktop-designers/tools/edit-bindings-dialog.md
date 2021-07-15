@@ -20,8 +20,7 @@ Generally only some properties of certain report
 
 The Edit Bindings dialog is available in the property grid by
         clicking on the ellipsis of the Bindings property.
-        
-  ![](images/UI/Bindings.png)
+      ![](images/UI/Bindings.png)
 
 ## Add a Binding object
 

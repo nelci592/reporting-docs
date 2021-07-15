@@ -138,7 +138,7 @@ To automatically upgrade your project to a later Telerik Reporting version, use 
             
 
 1. If compilation errors or warnings occur, review the
-              __Release HistoryRelease History sectionhttps://www.telerik.com/support/whats-new/reporting/release-history_blank__
+              __[Release History](https://www.telerik.com/support/whats-new/reporting/release-history)__
               section for any obsolete or deleted properties, methods,
               and events, and handle these according to the instructions in the section.
               Review the release history for all releases between the previous and the latest version you installed.

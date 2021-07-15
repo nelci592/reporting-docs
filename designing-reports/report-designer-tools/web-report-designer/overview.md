@@ -80,7 +80,7 @@ The Web Report Designer uses a dedicated ASP.NET WebAPI REST service as a backen
               Mozilla Firefox 69.0 or higher, Microsoft Edge 79 or higher.
             
 
-* [jQuery](http://jquery.com/download/)__3.3.1__ or later.
+* [jQuery](http://jquery.com/download/)__ 3.3.1__ or later.
             
 
 * [Kendo UI](http://www.kendoui.com/) __kendosubsetversion__ or later.
@@ -96,7 +96,7 @@ The Web Report Designer uses a dedicated ASP.NET WebAPI REST service as a backen
               when the designer widget is loaded. The list of loaded resources:
             
 
-* [jQuery UI](https://jqueryui.com/)__1.12.1__ library.
+* [jQuery UI](https://jqueryui.com/)__ 1.12.1__ library.
                   We recommend using the version of jQuery UI subset that is
                   served by the Web Report Designer service because it includes a fix related to
                   the dragging and dropping components.

@@ -30,7 +30,8 @@ The online examples are available at
 
 You can also open the sample projects (C# or Visual Basic) in Visual Studio to see the full design and source 
           code for each of the sample reports. To open up the sample solutions go to the Start menu and select 
-          __Progress |__ __Telerik Reporting {version} C#/VB.NET Examples Solution.__
+          __Progress |__ __
+            Telerik Reporting {version} C#/VB.NET Examples Solution.__
             The Visual Studio examples contain applications for all supported platforms. You may also find the demos in the
             installation folder of the product. By default, this is
             "C:\Program Files (x86)\Progress\Telerik Reporting {version}\Examples\CSharp/VB".

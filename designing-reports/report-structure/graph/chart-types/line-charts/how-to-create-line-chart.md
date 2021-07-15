@@ -43,7 +43,9 @@ In this article we will show you how to create a Line chart using the Graph item
                 
 
 1. Open 
-              __SeriesGroups__ collection editor and click __Add__:
+              __[
+                  SeriesGroups
+                ](dc4689b1-891a-4f6a-93c7-de089b0ffa5e#SeriesGroupHierarchy)__ collection editor and click __Add__:
             
 
 1. Set the new group __Groupings__ to: *=Fields.ProductCategory*
@@ -53,7 +55,9 @@ In this article we will show you how to create a Line chart using the Graph item
 1. Set the __Name__ to *seriesGroup1*
 
 1. Open 
-              __CategoryGroups__ collection editor and click __Add__:
+              __[
+                  CategoryGroups
+                ](dc4689b1-891a-4f6a-93c7-de089b0ffa5e#CategoryGroupHierarchy)__ collection editor and click __Add__:
             
 
 1. Set the new group __Groupings__ to: *=Fields.OrderDate.Year*
@@ -63,7 +67,9 @@ In this article we will show you how to create a Line chart using the Graph item
 1. Set the __Name__ to *categoryGroup1*
 
 1. Open 
-              __CoordinateSystems__ collection editor and __Add__ a new __CartesianCoordinateSystem__.
+              __[
+                  CoordinateSystems
+                ](585fe887-1319-49a5-a848-869286f7c432#CoordinateSystems)__ collection editor and __Add__ a new __CartesianCoordinateSystem__.
             
 
 1. Leave the __Name__ to *cartesianCoordinateSystem1*.
@@ -75,7 +81,9 @@ In this article we will show you how to create a Line chart using the Graph item
 1. Set the __YAxis__ to __New Axis with Numerical Scale__.
                 
 
-1. Open __Series__ collection editor and __Add__ new __LineSeries__.
+1. Open __[
+                  Series
+                ](585fe887-1319-49a5-a848-869286f7c432#Series)__ collection editor and __Add__ new __LineSeries__.
             
 
 1. Set the __CategoryGroup__ to __categoryGroup1__.

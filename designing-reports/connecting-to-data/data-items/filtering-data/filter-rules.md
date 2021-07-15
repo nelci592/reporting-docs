@@ -17,19 +17,19 @@ Filters are used to limit the number of records in a report based on specified f
 
 ## Filter Rules
 
-Each filter rule is made up of an __Expression__, __Operator__and __Value__.
+Each filter rule is made up of an __Expression__, __Operator __and __Value__.
                 
 
-* __Expression__can be a data field from the __Fields__ collection or defined
+* __Expression __can be a data field from the __Fields__ collection or defined
                             using the [Edit Expression Dialog]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/edit-expression-dialog%}).
                         
 
-* __Operator__can be simple comparison operators but can also include __Like__
+* __Operator __can be simple comparison operators but can also include __Like__
                             and additional operators to include the top and bottom number of records and the top and bottom percentage of records. See the
                             table of operators below.
                         
 
-* __Value__can be a literal value, "<blank>" or an expression defined in the
+* __Value __can be a literal value, "<blank>" or an expression defined in the
                             [Edit Expression Dialog]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/edit-expression-dialog%}).
                         
 
@@ -57,7 +57,7 @@ Each filter rule is made up of an __Expression__, __Operator__and __Value__.
 
 ## Filters used at the Group and Report Level
 
-Filtering can be performed at the Group and Report level through the __Filters__property.
+Filtering can be performed at the Group and Report level through the __Filters __property.
                 
 
 Group filters are intended to limit the number of group members and the filter Expression can contains Aggregate functions.

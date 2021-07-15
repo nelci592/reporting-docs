@@ -48,7 +48,8 @@ These are viewers that operate on the same machine where reports are processed r
               ([ReportViewer controls integrated with Telerik Report Server](1d2ff87d-335f-4640-be56-e2737220a8c9#set-up-reportviewer-controls-that-are-integrated-with-telerik-report-server));
             
 
-* __[ASP.NET WebForms ReportViewer control]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/asp.net-web-forms-report-viewer/overview%})__:
+* __[ASP.NET WebForms ReportViewer control]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/asp.net-web-forms-report-viewer/overview%}) (obsolete as of Q3 2015)
+              __:
               reports are processed and rendered on the server machine where the ReportViewer is hosted.
             
 
@@ -148,7 +149,9 @@ __How this works:__
 
 __Setting the Client-Side ReportSource:__
 
-* __[Silverlight ReportViewer control]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/silverlight-application/overview%})__The Silverlight ReportViewer control has a __P:Telerik.ReportViewer.Silverlight.ReportViewer.Report__ that accepts a string. This is the *report description string*.
+* __[Silverlight ReportViewer control]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/silverlight-application/overview%})__The Silverlight ReportViewer control has a __P:Telerik.ReportViewer.Silverlight.ReportViewer.Report
+                property
+              __ that accepts a string. This is the *report description string*.
             The string can be a path to a TRDP or TRDX file or an assembly qualified name of a report class. For example:(__Report="./DashboardReport.trdp")__
               or (__Report="Telerik.Reporting.Examples.CSharp.BarcodesReport, CSharp.ReportLibrary, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null__").
               The string is sent to the [Telerik Reporting WCF service]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-wcf-service/overview%}) which internally resolves it to a
@@ -162,7 +165,8 @@ __Setting the Client-Side ReportSource:__
 >tip  __                  The Silverlight ReportViewer control works only with [Telerik Reporting WCF service instances]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-wcf-service/overview%})__ .                If you need to modify a report or execute custom logic on displaying a report resulting in the usage of an InstanceReportSource or XmlReportSource,                you will have to resolve manually the  *report description string*  via custom resolver for                the Reporting WCF service. For more details, check [                  How to: Implement and use custom IReportResolver                ]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-wcf-service/how-to-implement-and-use-custom-ireportresolver%}).              
 
 
-* __[HTML5 Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview%})__The HTML5 Viewer is a client-side widget that has a __client-side reportSource__.
+* __[HTML5 Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview%})(JavaScript declaration)
+              __The HTML5 Viewer is a client-side widget that has a __client-side reportSource __.
               The __reportSource.report__ part is a string - the *report description string*
               that can be a path to a TRDP or TRDX file, an assembly qualified name
               of a report class, or other custom information set via string. For example:

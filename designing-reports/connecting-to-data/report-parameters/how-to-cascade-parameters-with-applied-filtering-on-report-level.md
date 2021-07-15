@@ -38,7 +38,7 @@ To create cascading report parameters with applied filtering on report level fol
 
 1. Add new Report Parameter
 
-1. __Name__it __ProductCategoryID__.
+1. __Name __it __ProductCategoryID__.
 
 1. Set the __Type__ of the parameter to __Integer__.
 
@@ -69,7 +69,7 @@ To create cascading report parameters with applied filtering on report level fol
 
 1. Add new Report Parameter
 
-1. __Name__it __ProductSubcategoryID__.
+1. __Name __it __ProductSubcategoryID__.
 
 1. Set the __Type__ of the parameter to __Integer__.
 

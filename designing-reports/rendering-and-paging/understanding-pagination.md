@@ -134,8 +134,10 @@ Table/Crosstab items also support page breaks before and/or after each TableGrou
 
 In older Telerik Reporting versions, simple report items (i.e. non-container items) are always kept together on a page if possible. If not, they are rendered at
           the beginning of the next page. If they still cannot fit, because they are longer than a whole page, they are split.
-          The PictureBox, Shape and Chart items are always kept together.__In recent Telerik Reporting versions all items can be split between pages,
-            if they do not fit in.__
+          The PictureBox, Shape and Chart items are always kept together.__
+            In recent Telerik Reporting versions all items can be split between pages,
+            if they do not fit in.
+          __
 
 By default, groups are not kept together on a single page. You can instruct the rendering engine to try to keep the entire
           group or the group header with the first detail on a single page if possible by setting the GroupKeepTogether property of the

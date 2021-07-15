@@ -29,19 +29,25 @@ The Standalone Report Designer is part of the Telerik Reporting package. It is a
 
 ## Starting the Standalone Report Designer
 
-* __From the Windows Start menu:__
+* __
+                From the Windows Start menu:
+              __
 
 1. Open the Start menu, click __All Programs__, then click  __Telerik__ and then
-                  click __Reporting__.
+                  click __
+                    Reporting suiteversion__.
                 
 
-1. Click __Report Designer__.
+1. Click __
+                    Report Designer suiteversion__.
                 
 
 1. The Standalone Report Designer opens, and you can create or open a report.
                 
 
-* __From another desktop application:__Developers can enable users to start the Standalone Report Designer from another .NET desktop application. This is possible with the .NET Framework
+* __
+                From another desktop application:
+              __Developers can enable users to start the Standalone Report Designer from another .NET desktop application. This is possible with the .NET Framework
               [
                   Process.Start
                 ](
@@ -63,7 +69,9 @@ The Standalone Report Designer is part of the Telerik Reporting package. It is a
 The image above shows the major UI elements in the Standalone Report Designer:
         
 
-* __View tab:__
+* __
+                View tab:
+              __
               Lets you open the
               [Report Explorer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/report-explorer%}),
               [Data Explorer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-explorer%}),

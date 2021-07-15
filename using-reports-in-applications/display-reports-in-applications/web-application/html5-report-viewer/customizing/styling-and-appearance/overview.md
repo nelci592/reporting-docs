@@ -26,7 +26,7 @@ The styling and appearance of the HTML5 Report Viewer is controlled entirely thr
 All viewer related classes are supplied by a single CSS stylesheet referenced in the report viewer HTML template.
           The template is provided by the Reporting REST service. To force a custom template with  a custom or default CSS specify
           the __templateUrl__ of the HTML5 Viewer widget option. For reference you can use the templates
-          located in __%programfiles(x86)%\Progress\Reporting [VERSION]\Html5\ReportViewer\templates__:
+          located in __ %programfiles(x86)%\Progress\Reporting [VERSION]\Html5\ReportViewer\templates__:
         
 
 	

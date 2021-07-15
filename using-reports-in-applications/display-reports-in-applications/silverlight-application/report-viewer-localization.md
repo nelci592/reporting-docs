@@ -16,15 +16,15 @@ In the Silverlight Report Viewer, localized resources are stored in separate __
 
 ## Types of Resources in the Hierarchy
 
-* At the top of the hierarchy sit the fallback resources for the default UI culture, which is English ("en") by default. These are the only resources that do not have their own file. They are stored directly in the assembly of the __Report Viewer__.
+* At the top of the hierarchy sit the fallback resources for the default UI culture, which is English ("en") by default. These are the only resources that do not have their own file. They are stored directly in the assembly of the __*Report Viewer*__.
 
 * Below the fallback resources are the resources for any neutral cultures. A neutral culture is associated with a language but not a region. For example, French ("fr") is a neutral culture. Note that the fallback resources are also for a neutral culture, but a special one.
 
 * Below those are the resources for any specific cultures. A specific culture is associated with a language and a region. For example, French Canadian ("fr-CA") is a specific culture.
 
-When the __Report Viewer__ tries to load any localized resource and does not find it it will travel up the hierarchy until it finds a resource file containing the requested resource.
+When the __*Report Viewer*__ tries to load any localized resource and does not find it it will travel up the hierarchy until it finds a resource file containing the requested resource.
 
-The best way to store your resources is to generalize them as much as possible. That means to store localized strings in resource files for neutral cultures rather than specific cultures whenever possible. For instance, if you have resources for the French Belgian ("fr-BE") culture and the resources immediately above are the fallback resources in English, a problem may result when someone uses your application on a system configured for the French Canadian culture. The __Report Viewer__ will look for a __RESX__ file named "fr-CA", it will not find it and will load the fallback resource, which is English, instead of loading the French resources. The following picture shows this undesirable scenario.
+The best way to store your resources is to generalize them as much as possible. That means to store localized strings in resource files for neutral cultures rather than specific cultures whenever possible. For instance, if you have resources for the French Belgian ("fr-BE") culture and the resources immediately above are the fallback resources in English, a problem may result when someone uses your application on a system configured for the French Canadian culture. The __*Report Viewer*__ will look for a __RESX__ file named "fr-CA", it will not find it and will load the fallback resource, which is English, instead of loading the French resources. The following picture shows this undesirable scenario.
 
   
   ![](images/localization1.png)
@@ -51,11 +51,11 @@ Telerik.ReportViewer.Silverlight.TextResources.__fr-BE__.resx*
 Telerik.ReportViewer.Silverlight.TextResources.__fr__.resx*
 
 * It is possible to override the default resources for the language neutral culture, which are stored in the assembly of the 
-		__Report Viewer__. In that case the resource file should be named as follows:*
+		__*Report Viewer*__. In that case the resource file should be named as follows:*
 
 Telerik.ReportViewer.Silverlight.TextResources.resx*
 
-As described above, if for example the current UI culture is set to French Belgian, the __Report Viewer__ will search for localized __RESX__ resource files inside the main application folder in the following order:
+As described above, if for example the current UI culture is set to French Belgian, the __*Report Viewer*__ will search for localized __RESX__ resource files inside the main application folder in the following order:
 
 1. Telerik.ReportViewer.Silverlight.TextResources.__fr-BE__.resx
 
@@ -66,22 +66,22 @@ As described above, if for example the current UI culture is set to French Belgi
   
   ![](images/localization3.png)
 
-The above diagram illustrates a simple view of the resource fallback for a UI culture set to "fr-BE". The __Report Viewer__ handles the case probing the "fr-BE" __RESX__ resource file for the requested key first, and subsequently falls back to the neutral French culture "fr", ultimately looking in the default assembly resources for a value if a value has still not been found.
+The above diagram illustrates a simple view of the resource fallback for a UI culture set to "fr-BE". The __*Report Viewer*__ handles the case probing the "fr-BE" __RESX__ resource file for the requested key first, and subsequently falls back to the neutral French culture "fr", ultimately looking in the default assembly resources for a value if a value has still not been found.
 
 ## Adding Localization Resources for the Report Viewer
 
 1. Add a new __RESX__ resource file to the main project of the application. Name the newly-created __RESX__ file according to the naming convention described above.
 
-1. In the __Property Inspector__ specify the following properties for the resource file: 
+1. In the __*Property Inspector*__ specify the following properties for the resource file: 
 
 
-1. __Build Action:__ "*Embedded Resource*"
+1. __*Build Action:*__ "*Embedded Resource*"
 
-1. __Copy to Output Directory:__ "*Copy if newer*" or "*Copy always*"
+1. __*Copy to Output Directory:*__ "*Copy if newer*" or "*Copy always*"
 
-1. Open the __RESX__ resource file in the __Visual Studio Resource Editor__. Enter the required 
+1. Open the __RESX__ resource file in the __*Visual Studio Resource Editor*__. Enter the required 
 resource strings (T:Telerik.ReportViewer.Silverlight.TextResources) 
-to translate the __Report Viewer__ to the desired language.
+to translate the __*Report Viewer*__ to the desired language.
 
 1. Unload the project by right clicking on it and selecting "Unload Project"
 
@@ -100,21 +100,21 @@ to translate the __Report Viewer__ to the desired language.
 
 1. Reload and build the project
 
-1. Repeat steps from 1 to 3 for each desired translation of the __Report Viewer__. Steps 4 to 7 can be performed at the end only once.
+1. Repeat steps from 1 to 3 for each desired translation of the __*Report Viewer*__. Steps 4 to 7 can be performed at the end only once.
 
-1. Compile and run the project. When viewing a __Telerik Report__, the __Report Viewer__ should be translated according to the current UI culture.
+1. Compile and run the project. When viewing a __*Telerik Report*__, the __*Report Viewer*__ should be translated according to the current UI culture.
 
 ## Distributing an Application with a Localized Report Viewer
 
-In order to distribute an application that uses __Telerik Reporting__
-        	with a localized __Report Viewer__, one should distribute all of the required 
+In order to distribute an application that uses __*Telerik Reporting*__
+        	with a localized __*Report Viewer*__, one should distribute all of the required 
         	localization __RESX__ resource files, in addition to the main application assemblies. 
-        	For __Silverlight Applications__ the __RESX__
+        	For __*Silverlight Applications*__ the __RESX__
         	files should be placed in the "Localization" folder.
 
 ## Localization Using the ITextResources interface
 
-The other way to localize the Silverlight __Report Viewer__ in a more flexible manner is to create a class that implements the 
+The other way to localize the Silverlight __*Report Viewer*__ in a more flexible manner is to create a class that implements the 
   			ITextResources interface and to implement all its properties, which represent all tooltips and messages in the Report Viewer. After you implement ITextResources you have to pass an instance of your custom class to the TextResources property ot the report viewer. The logic is pretty
   			simple, the property just has to return the correct translation for each resource key, as it is shown below:
   			

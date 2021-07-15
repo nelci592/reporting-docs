@@ -34,7 +34,9 @@ To create a new report with this wizard:
               
 
 * __Right-click__ the project context menu and select
-                __Add | New Item | Telerik Report__.
+                __
+                  Add | New Item | Telerik Report suiteversion Wizard
+                __.
                 Enter a name for the report class and click the __Add__ button to close the dialog. Select report wizard form opens.
               
 
@@ -144,8 +146,10 @@ If you are using the [Standalone Report Designer]({%slug telerikreporting/design
                 
 
 * On the __Choose Report Layout__
-              page of the Report Wizard unselect the __Adjust
-                report items to fit available space__ checkbox.
+              page of the Report Wizard unselect the __
+                Adjust
+                report items to fit available space
+              __ checkbox.
               Click the __Next__ button.
             
 

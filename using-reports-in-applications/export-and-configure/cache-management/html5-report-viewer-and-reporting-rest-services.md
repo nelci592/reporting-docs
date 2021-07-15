@@ -88,12 +88,14 @@ The created cache records expiration period as well as other service settings ma
 
 Important cache management related properties of the IReportServiceConfiguration:
 
-* __P:Telerik.Reporting.Services.IReportServiceConfiguration.ClientSessionTimeout__Gets or sets a value in minutes indicating how long a client(viewer) session will be preserved in the service storage after the
+* __P:Telerik.Reporting.Services.IReportServiceConfiguration.ClientSessionTimeout property
+              __Gets or sets a value in minutes indicating how long a client(viewer) session will be preserved in the service storage after the
               last interaction initiated by this client. When this timeout expires, operations with the viewer will not be possible
               - there must be registered a new client(viewer).
             The entries of expired clients are removed automatically when a new HTML5 Viewer(client) is registered in the cache storage.
 
-* __P:Telerik.Reporting.Services.IReportServiceConfiguration.ReportSharingTimeout__Gets or sets a value in minutes indicating how long a rendered report document from a client will be available to be reused,
+* __P:Telerik.Reporting.Services.IReportServiceConfiguration.ReportSharingTimeout property
+              __Gets or sets a value in minutes indicating how long a rendered report document from a client will be available to be reused,
               by the current and other clients which request the same report, with the same report parameter values, and in the same rendering format.
               When a report is rendered once for a given set of report parameter values, it can be reused for the
               time set as ReportSharingTimeout. Setting the ReportSharingTimeout to zero (default) will cause each client request for a report to produce a

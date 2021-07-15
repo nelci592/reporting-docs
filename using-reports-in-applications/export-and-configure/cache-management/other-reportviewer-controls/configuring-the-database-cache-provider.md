@@ -20,8 +20,10 @@ The database cache provider stores the rendered pages and resources in database.
         the shared resources.
       
 
-Before using the database cache provider it is necessary to install the shared database. Start the __Database Cache
-          Configuration Tool__ that can be found in the following location:
+Before using the database cache provider it is necessary to install the shared database. Start the __
+          Database Cache
+          Configuration Tool
+        __ that can be found in the following location:
       
 
 -InstallDir-\Tools\DatabaseCacheConfigurator.exe

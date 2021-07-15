@@ -27,19 +27,19 @@ A common application design practice is to separate the presentation
 Any of the following data sources can be assigned to the DataSource property of the ObjectDataSource component:
 
 * Any component that implements
-              __IEnumerablehttp://msdn.microsoft.com/en-us/library/system.collections.ienumerable.aspx__,
+              __[IEnumerable](http://msdn.microsoft.com/en-us/library/system.collections.ienumerable.aspx)__,
               including
-              __System.Arrayhttp://msdn.microsoft.com/en-us/library/system.array.aspx__,
-              __IListhttp://msdn.microsoft.com/en-us/library/system.collections.ilist.aspx__,
-              __ICollectionhttp://msdn.microsoft.com/en-us/library/system.collections.icollection.aspx__,
-              and __BindingSourcehttp://msdn.microsoft.com/en-us/library/system.windows.forms.bindingsource.aspx__
+              __[System.Array](http://msdn.microsoft.com/en-us/library/system.array.aspx)__,
+              __[IList](http://msdn.microsoft.com/en-us/library/system.collections.ilist.aspx)__,
+              __[ICollection](http://msdn.microsoft.com/en-us/library/system.collections.icollection.aspx)__,
+              and __[BindingSource](http://msdn.microsoft.com/en-us/library/system.windows.forms.bindingsource.aspx)__
 
-* Any component that implements __IListSourcehttp://msdn.microsoft.com/en-us/library/system.componentmodel.ilistsource.aspx__,
-              including __DataTablehttp://msdn.microsoft.com/en-us/library/system.data.datatable(VS.80).aspx__,
-              __DataSethttp://msdn.microsoft.com/en-us/library/system.data.dataset.aspx__ and DataView
+* Any component that implements __[IListSource](http://msdn.microsoft.com/en-us/library/system.componentmodel.ilistsource.aspx)__,
+              including __[DataTable](http://msdn.microsoft.com/en-us/library/system.data.datatable(VS.80).aspx)__,
+              __[DataSet](http://msdn.microsoft.com/en-us/library/system.data.dataset.aspx)__ and DataView
             
 
-* Any component that implements __IDbDataAdapterhttp://msdn.microsoft.com/en-us/library/system.data.idbdataadapter.aspx__,
+* Any component that implements __[IDbDataAdapter](http://msdn.microsoft.com/en-us/library/system.data.idbdataadapter.aspx)__,
               including __SqlDataAdapter__ and __OleDbDataAdapter__
 
 * System.Type which represents the type of the business object

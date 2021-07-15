@@ -24,7 +24,7 @@ position: 1
 
 1. Required JavaScript libraries and files:
 
-* [jQuery](http://jquery.com/download/)__minimum required version 1.9.1__. As the HTML5 Report Viewer uses Kendo UI widgets, conform the jQuery version according to the
+* [jQuery](http://jquery.com/download/)__ minimum required version 1.9.1__. As the HTML5 Report Viewer uses Kendo UI widgets, conform the jQuery version according to the
                   [Kendo UI requirements](https://docs.telerik.com/kendo-ui/intro/supporting/jquery-support).
                 
 
@@ -34,7 +34,9 @@ position: 1
 
 * [Kendo UI](https://www.telerik.com/kendo-ui) Professional Q3 2015 (2015.3.1111) or higher.
                   Kendo UI Professional license is not required if you are only going to use the default widgets by the HTML5 Report Viewer.
-                  Telerik Reporting provides a JS file containing a subset of the used by default Kendo UI widgets called __telerikReportViewer.kendo-x.x.x.x.min.js__. For more information refer to [
+                  Telerik Reporting provides a JS file containing a subset of the used by default Kendo UI widgets called __
+                    telerikReportViewer.kendo-x.x.x.x.min.js
+                  __. For more information refer to [
                       Telerik Reporting License Agreement
                     ](https://www.telerik.com/purchase/license-agreement/reporting-dlw-s)
                   (point 4.2). By default, the subset is served from the Telerik Reporting REST Service.
@@ -45,8 +47,10 @@ position: 1
 
 ## Important Settings while configuring HTML5 Report Viewer page
 
-* __The HTML5 Viewer is designed to request its HTML template, HTML5 Report Viewer widget implementation and Kendo UI widgets subset
-                from the resources of the Reporting REST Service.__
+* __
+                The HTML5 Viewer is designed to request its HTML template, HTML5 Report Viewer widget implementation and Kendo UI widgets subset
+                from the resources of the Reporting REST Service.
+              __
 
 * The required CSS and JS files must be loaded before creating the HTML5 Viewer widget on the page.
 

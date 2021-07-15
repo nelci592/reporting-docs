@@ -43,7 +43,9 @@ In this article we will show you how to create a Polar chart using the Graph ite
                 
 
 1. Open
-              __SeriesGroups__ collection editor and click __Add__:
+              __[
+                  SeriesGroups
+                ](dc4689b1-891a-4f6a-93c7-de089b0ffa5e#SeriesGroupHierarchy)__ collection editor and click __Add__:
             
 
 1. Set the new group __Groupings__ to: *=Fields.OrderDate.Year*
@@ -53,7 +55,9 @@ In this article we will show you how to create a Polar chart using the Graph ite
 1. Set the __Name__ to *seriesGroup1*
 
 1. Open
-              __CategoryGroups__ collection editor and click __Add.__
+              __[
+                  CategoryGroups
+                ](dc4689b1-891a-4f6a-93c7-de089b0ffa5e#CategoryGroupHierarchy)__ collection editor and click __Add.__
 
 1. Set the new group __Groupings__ to: *=Fields.Category*
 
@@ -61,7 +65,9 @@ In this article we will show you how to create a Polar chart using the Graph ite
 
 1. Set the __Name__ to *categoryGroup1*
 
-1. Open __CoordinateSystems__ collection editor and __Add__ a new __PolarCoordinateSystem__.
+1. Open __[
+                  CoordinateSystems
+                ](585fe887-1319-49a5-a848-869286f7c432#CoordinateSystems)__ collection editor and __Add__ a new __PolarCoordinateSystem__.
             
 
 1. Leave the __Name__ to *polarCoordinateSystem1*.
@@ -73,7 +79,9 @@ In this article we will show you how to create a Polar chart using the Graph ite
 1. Set the __AngularAxis__ to __New Axis with Category Scale__.
                 
 
-1. Open __Series__ collection editor and __Add__ new __BarSeries__.
+1. Open __[
+                  Series
+                ](585fe887-1319-49a5-a848-869286f7c432#Series)__ collection editor and __Add__ new __BarSeries__.
             
 
 1. Set the __CategoryGroup__ to __categoryGroup1__.
@@ -85,7 +93,7 @@ In this article we will show you how to create a Polar chart using the Graph ite
 1. Set the __CoordinateSystem__ to __polarCoordinateSystem1__.
                 
 
-1. Set the __ArrangeMode__ to __Clustered__.
+1. Set the __ArrangeMode __ to __Clustered__.
                 
 
 1. Set the __Y__ value to *=IsNull(Sum(Fields.LineTotal), 0) / 1000.0*

@@ -32,7 +32,9 @@ The following example demonstrates a SQL query that retrieves
 
 
 
-The following code example shows how to set the __ConnectionString__ and __SelectCommand__ properties of a __SqlDataSource__ component to retrieve the
+The following code example shows how to set the __ConnectionString__ and __
+            SelectCommand
+          __ properties of a __SqlDataSource__ component to retrieve the
           data from the above SQL query:
         
 
@@ -46,7 +48,13 @@ The following code example shows how to set the __ConnectionString__ and __Selec
 
 
 
-If the database you are working with supports stored procedures, you can set the __SelectCommand__ property to the name of an existing stored procedure and the __SelectCommandType__ property to __StoredProcedure__ to indicate that the __SelectCommand__ property refers to a stored procedure. The following example demonstrates a simple
+If the database you are working with supports stored procedures, you can set the __
+            SelectCommand
+          __ property to the name of an existing stored procedure and the __
+            SelectCommandType
+          __ property to __StoredProcedure__ to indicate that the __
+            SelectCommand
+          __ property refers to a stored procedure. The following example demonstrates a simple
           stored procedure that you can create in SQL Server:
         
 
@@ -73,7 +81,9 @@ To configure the __SqlDataSource__ component to use this stored procedure, set t
 
 
 
-At run time, the __SqlDataSource__ component submits the text in the __SelectCommand__ property to the database, and the database returns the result of the SQL query or stored procedure
+At run time, the __SqlDataSource__ component submits the text in the __
+            SelectCommand
+          __ property to the database, and the database returns the result of the SQL query or stored procedure
           back to the __SqlDataSource__ component. Any data items that are bound to the data source
           component display the result set on your report.
         

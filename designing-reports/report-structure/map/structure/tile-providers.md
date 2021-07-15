@@ -100,7 +100,7 @@ The T:Telerik.Reporting.TileProvider class is used to request and download the i
               , if required by the provider's usage policy. In case the URL points to a valid image, it will be displayed in the lower left corner of the map area.
             
 
-* T:Telerik.Reporting.MapQuestTileProvider__(obsolete)__ - uses the
+* T:Telerik.Reporting.MapQuestTileProvider__ (obsolete)__ - uses the
               [MapQuest](http://www.mapquest.com/) tile servers that provides the tiles in two imagery sets: *OpenStreetMap Tiles* and the *MapQuest Open Aerial Tiles*.
               The tile server does not require a Client Token for authentication.
             The T:Telerik.Reporting.MapQuestTileProvider is being substituted by the

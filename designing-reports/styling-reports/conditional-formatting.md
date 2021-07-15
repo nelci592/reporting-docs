@@ -36,22 +36,22 @@ Conditional formatting allows you to style report items dynamically based on cer
 
 ## Adding Conditional Formatting Rules
 
-The __ConditionalFormatting__property contains a collection of formatting rules that are evaluated in the order they are defined.
+The __ConditionalFormatting __property contains a collection of formatting rules that are evaluated in the order they are defined.
           Each rule has an associated style that lets you change styling characteristics when the rule is satisfied. You can choose to stop evaluating rules if
           a particular rule condition is met.
         
 
-Each filter condition is made up of an __Expression__, __Operator__and __Value__.
+Each filter condition is made up of an __Expression__, __Operator __and __Value__.
         
 
-* __Expression__can be a data field from the __Fields__ collection or defined using the
+* __Expression __can be a data field from the __Fields__ collection or defined using the
               [Edit Expression Dialog]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/edit-expression-dialog%}).
             
 
-* __Operator__can be simple comparison operators but can also include __Like__and additional operators to include the top and bottom number of records and the top and bottom percentage of records. See the table of operators below.
+* __Operator __can be simple comparison operators but can also include __Like __and additional operators to include the top and bottom number of records and the top and bottom percentage of records. See the table of operators below.
             
 
-* __Value__can be a literal value, "<blank>" or an expression defined in the [Edit Expression Dialog]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/edit-expression-dialog%}). When all the filter conditions are met, the rule is fired and the style is applied.
+* __Value __can be a literal value, "<blank>" or an expression defined in the [Edit Expression Dialog]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/edit-expression-dialog%}). When all the filter conditions are met, the rule is fired and the style is applied.
             
 
   

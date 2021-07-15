@@ -40,7 +40,7 @@ Telerik Reporting supplies __report item__ components that are placed in the r
 
 ### Report Definition
 
-The Report Definition item is created during the first stage of the [Report Life Cycle]({%slug telerikreporting/designing-reports/understanding-the-report-lifecycle%}). This is the actual .NET class that represents the report. It is always a subclass __Telerik.Reporting.Report__ and contains information about report items and their properties. Report items are represented by the private fields of the report class.
+The Report Definition item is created during the first stage of the [Report Life Cycle]({%slug telerikreporting/designing-reports/understanding-the-report-lifecycle%}). This is the actual .NET class that represents the report. It is always a subclass __*Telerik.Reporting.Report*__ and contains information about report items and their properties. Report items are represented by the private fields of the report class.
 
 Let’s illustrate this with an example. While in design-time, if you add a TextBox to the Detail Section of the report that you are designing, a private field of type TextBox will be added to the code-behind file and some basic initialization code will be generated within the InitalizeComponent method of the report class.
 

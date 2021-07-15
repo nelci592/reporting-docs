@@ -100,8 +100,10 @@ Once your solution is opened in the IDE, it would notify you with "File Modifica
 
 ## In case you receive compilation errors and/or warnings
 
-This wizard __will not__ change any of your current code. As a result __you may receive compilation
-            errors and/or warnings__ for properties, methods and events marked as obsolete. In this case a manual update of your code
+This wizard __will not__ change any of your current code. As a result __
+            you may receive compilation
+            errors and/or warnings
+          __ for properties, methods and events marked as obsolete. In this case a manual update of your code
           is required. The [Release Notes](http://www.telerik.com/products/reporting/whats-new/release-history.aspx) contain the complete list of obsolete and deleted properties, methods and events including information
           on what to be used instead, and why. Please, review the release notes of all Telerik Reporting versions starting from the version you
           upgraded from to the version you upgraded to, including the ones in between for information on how to update your project.

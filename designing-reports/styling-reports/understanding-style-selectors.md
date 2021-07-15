@@ -34,7 +34,7 @@ When a style is defined as a __TypeSelector__, the formatting for that style is 
 
 An __AttributeSelector__ applies to all report items with a particular attribute (such as Color=Red). 
 
-Using an __AttributeSelector__Style Rule, you could specify that any report item on the report that has children (for example. where the value of the __HasChildren__ property is equal to __True__) should be __Bold__.
+Using an __AttributeSelector __Style Rule, you could specify that any report item on the report that has children (for example. where the value of the __HasChildren__ property is equal to __True__) should be __Bold__.
 
 ### StyleSelector
 
@@ -46,7 +46,7 @@ A __DescendantSelector__ applies to all parent/child report item combinations. T
 
 For example, you can specify that any __TextBox__ that exists inside of a __ReportHeaderSection__ should have a particular style using a __TypeSelector__ within the __DescendantSelector__. 
 
-Alternatively, you can create multiple __StyleSelector__Style Rules with the same Name and that descend from different report item types, such as __DetailSection__ or __GroupSection__. Report items with this Name value in their __StyleName__ property will apply the correct style based on where they are placed in the report , even if they are moved.
+Alternatively, you can create multiple __StyleSelector __Style Rules with the same Name and that descend from different report item types, such as __DetailSection__ or __GroupSection__. Report items with this Name value in their __StyleName__ property will apply the correct style based on where they are placed in the report , even if they are moved.
 
 # See Also
 

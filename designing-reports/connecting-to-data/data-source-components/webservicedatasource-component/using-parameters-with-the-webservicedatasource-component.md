@@ -22,7 +22,8 @@ The __WebServiceDataSource__ component can request data in JSON format from a ru
           
 
 * *Using Inline Parameters in Service Url*In the [WebServiceDataSource Wizard]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/webservicedatasource-wizard%}), the Service URL can be provided as
-                __constantUrl__, for example:
+                __*constantUrl*/@inlineParameter
+                __, for example:
               ![Web Service Data Source Urlx 750](images/WebServiceDataSourceUrlx750.png)In the next step of the Wizard it is necessary to set the run-time and the design-time values for the parameter:
               ![Web Service Data Source Inline Parameterx 750](images/WebServiceDataSourceInlineParameterx750.png)The final request made by the WebServiceDataSource component to the web service with the design-time
                 parameter value as captured by
@@ -44,7 +45,8 @@ The __WebServiceDataSource__ component can request data in JSON format from a ru
               ![Web Service Data Source Inline Parameter Request Url Bodyx 750](images/WebServiceDataSourceInlineParameterRequestUrlBodyx750.png)
 
 * __Query Parameters__The query type parameters will be automatically concatenated to the Service URL. The final URL will be in the format
-          __serviceUrl__For example, in a Web Api project to call the Action *GetWithQueryParameters(int id, string category)*
+          __*serviceUrl*?queryParameterName1=value1&queryParameterName2=value2&...
+            __For example, in a Web Api project to call the Action *GetWithQueryParameters(int id, string category)*
             the default service URL will be *http://localhost:50160/api/data/GetWithQueryParameters*.
             The images display how to set the query parameters in the Web Service Data Source Wizard of the Report Designer:
           ![Web Service Data Source Query Parameterx 750](images/WebServiceDataSourceQueryParameterx750.png)and how will the generated final URL for the design-time parameter values look in Fiddler:

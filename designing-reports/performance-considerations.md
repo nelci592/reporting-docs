@@ -88,7 +88,9 @@ To reduce the load on your reporting environment, you can use our Report Server 
               complexity may significantly slow down the rendering. If performance is important consider avoiding the PageCount object;
             
 
-* __Number of report items__The number of report items will affect loading time, just like the more information a web page requests, the longer it will take to load.
+* __
+                Number of report items
+              __The number of report items will affect loading time, just like the more information a web page requests, the longer it will take to load.
               Consider changing your large and slow report layout and create a report with [Actions]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/actions/overview%}) 
               (drill down, drill-through) and [Report Parameters]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/report-parameters%}) (on-demand data). Besides being beneficial to the end-user, 
               these features make the report faster and more efficient, lightening the reporting load by giving only the current state of requested data;
@@ -98,7 +100,9 @@ To reduce the load on your reporting environment, you can use our Report Server 
               specifics and if all reports process slowly only in a particular format try adding more memory, or choosing a different format;
             
 
-* __Excel Rendering__The Excel rendering engines create a complex matrix taking into account every item's coordinates and size, and then create a table with many table cells 
+* __
+                Excel Rendering
+              __The Excel rendering engines create a complex matrix taking into account every item's coordinates and size, and then create a table with many table cells 
               and rows, some of which are used merely as "spacers". This way an item's exact location and size are preserved, but at the cost of many calculations. 
               When a report has tons of items that are not vertically and horizontally aligned, the resulting table is gigantic. Align your items horizontally and 
               vertically relative to each other and make sure that you have NO warning signs in design-time. While in other formats the rendering locations and sizes 
@@ -106,7 +110,9 @@ To reduce the load on your reporting environment, you can use our Report Server 
               The more items are aligned horizontally and vertically, the less dummy spacer rows and cells will be created by the Excel rendering engine;
             
 
-* __Volume of the data retrieved from the data source__If your report(s) display large amounts of data, it may take a long time for the data to be retrieved from the datasource. With large amounts of 
+* __
+                Volume of the data retrieved from the data source
+              __If your report(s) display large amounts of data, it may take a long time for the data to be retrieved from the datasource. With large amounts of 
               datasource data you need to retrieve the smallest usable set of data to reduce network traffic, use resources effectively and to render reports quickly. 
               This can be achieved by using selections applied to data at the report level vs. user selections applied at the datasource - review the 
               [Overview]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/filtering-data/overview%}). Selections applied at 
@@ -122,31 +128,41 @@ To reduce the load on your reporting environment, you can use our Report Server 
               compiled code;
             
 
-* __Number of Subreport items__The subreport item references a report definition that should be processed separately. 
+* __
+                Number of Subreport items
+              __The subreport item references a report definition that should be processed separately. 
               This is expensive process and can be avoided with Table or List item that is bound to the same datasource and has the same layout as the subreport 
               report definition. If you need some data from the master data item (report) datasource for the child data item datasource parameter you can take 
               advantage of the [Data Source Components]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/overview%}) relations capability as elaborated in the 
               [How to use the ReportItem.DataObject property in expressions]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/how-to-use-the-reportitem.dataobject-property-in-expressions%}) article;
             
 
-* __Number of HtmlTextBox items__The HtmlTextBox content is parsed with a HTML parser and this is resource consuming process.
+* __
+                Number of HtmlTextBox items
+              __The HtmlTextBox content is parsed with a HTML parser and this is resource consuming process.
               When performance is important our recommendation is to avoid the extensive use of this item.
               Instead of the complex text styling in a single HtmlTextBox you can try to achieve the desired layout with multiple textboxes;
             
 
-* __Events__Interrupting the report processing with events comes at a price. Instead consider [
+* __
+                Events
+              __Interrupting the report processing with events comes at a price. Instead consider [
                 Using Expressions]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/overview%}) and [User Functions]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/extending-expressions/user-functions%}).
               If you have to keep the events make sure that no time and resource consuming actions in the event handlers are slowing down the report processing.
               
 
-* __Number of Chart items__The old __Chart item__ does not use the reporting data engine, but its own.
+* __
+                Number of Chart items
+              __The old __Chart item__ does not use the reporting data engine, but its own.
               As a result showing many charts involves extra data processing.
               In Q1 2013 we have introduced the [Graph item]({%slug telerikreporting/designing-reports/report-structure/graph/overview%}) The new item utilizes the optimized reporting
               data engine. Thus we highly recommend it over the obsolete Chart item. Still if you have to use the obsolete Chart item, avoid using the 
               IntelligentLabels function;
             
 
-* __Hidden Report Items__Hiding report items (setting their visibility to false) will not prevent the reporting engine from processing those items.
+* __
+                Hidden Report Items
+              __Hiding report items (setting their visibility to false) will not prevent the reporting engine from processing those items.
               It is required to process hidden items in order for other features of the report, such as 
               [Actions]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/actions/overview%}), to be working correctly.
               If such report item is a [Data Item]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/overview%})

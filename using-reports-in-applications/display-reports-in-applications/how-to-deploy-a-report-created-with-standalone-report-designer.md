@@ -21,7 +21,8 @@ The [Overview]({%slug telerikreporting/designing-reports/report-designer-tools/d
 To show a report created with the [Overview]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview%}), you have the following options:
         
 
-* __Use__ and a path to the TRDX|TRDP file:
+* __
+                Use T:Telerik.Reporting.UriReportSource__ and a path to the TRDX|TRDP file:
             
 
 	
@@ -32,7 +33,8 @@ To show a report created with the [Overview]({%slug telerikreporting/designing-r
 
 
 
-* __Use__ and read the plain XML of a TRDX file:
+* __
+                Use T:Telerik.Reporting.XmlReportSource__ and read the plain XML of a TRDX file:
             
 
 	

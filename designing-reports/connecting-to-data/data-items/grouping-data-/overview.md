@@ -79,9 +79,12 @@ Data items support groups in different manner according to their
 * __Report__ – Report groups are defined by
               adding __Group__ objects to the report’s
               __Groups__ collection. Report groups are
-              always nested according to the order in the __Groups__ collection. To display group data one should use the
-              __GroupHeaderSection__ and __GroupFooterSection__ that appear once for each group
-              member, respectively at start and end. The __DetailSection__ displays detail data in a report and always appears
+              always nested according to the order in the __Groups
+              __ collection. To display group data one should use the
+              __GroupHeaderSection__ and __
+              GroupFooterSection__ that appear once for each group
+              member, respectively at start and end. The __DetailSection
+              __ displays detail data in a report and always appears
               inside the innermost group (if any).
             
 
@@ -94,7 +97,8 @@ Data items support groups in different manner according to their
               page. __The Group Explorer__ tool window
               displays row group and column group members for the currently
               selected __Table__ data item on the design
-              surface. To create a group one should create a __TableGroup__ object and add it to the corresponding
+              surface. To create a group one should create a __
+              TableGroup__ object and add it to the corresponding
               group hierarchy. According to their different specialization the
               three derivatives of the __Table__ item works
               with groups in different manner:
@@ -121,7 +125,8 @@ __List__ – by default, supports the
 
 * 
 
-__Chart__ – use the __DataGroupColumn__ to define the name of the field to group the data by.
+__Chart__ – use the __DataGroupColumn
+              __ to define the name of the field to group the data by.
               At runtime the __Chart__ item will create new
               series for each member of the group. Currently this property does
               not support expressions.

@@ -12,7 +12,7 @@ position: 2
 
 
 
-The current article elaborates on how to setup a Map without using the __Map Wizard__. The described approach is
+The current article elaborates on how to setup a Map without using the __ Map Wizard__. The described approach is
         applicable when using the __Visual Studio Report Designer__
 
 ## 

@@ -208,7 +208,7 @@ Select the __medalsData__ data source, add a calculated field named __Medal__
 
 
 
-Now you can set the __columnMapSeries'__T:Telerik.Reporting.LegendItem.P:Telerik.Reporting.LegendItem.Value expression to
+Now you can set the __columnMapSeries' __T:Telerik.Reporting.LegendItem.P:Telerik.Reporting.LegendItem.Value expression to
               `=Fields.Medal` and style the legend by your choice.
             
 
@@ -256,7 +256,8 @@ In order to display the meaningful names of the olympic associations, we will ad
                 
 
 * Select the Map item and add a Filter Rule, that will filter out the teams with an AssociationId different than the ones, selected in the
-                  __associationParam__. Set the __Expression__ to `=Fields.AssociationId`,
+                  __associationParam__. Set the __
+                    Expression__ to `=Fields.AssociationId`,
                   the __Operator__ to `In` and the __Value__ to
                   `=Parameters.associationParam.Value`.
                 When you close the Filter Rules dialog, the designer gets updated and the map should show only the teams

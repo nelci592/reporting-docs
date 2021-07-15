@@ -23,7 +23,7 @@ When implementing the ReportsController you need to provide an T:Telerik.Reporti
 The Reporting REST Service's ReportSourceResolver handles reports on the server.
 
 T:Telerik.Reporting.Services.IReportSourceResolver defines the behavior of an object which takes a string as an argument
-          and resolves it to a valid __server-side__[ReportSource]({%slug telerikreporting/designing-reports/report-sources/overview%}) object.
+          and resolves it to a valid __server-side __[ReportSource]({%slug telerikreporting/designing-reports/report-sources/overview%}) object.
           The format of this string argument is a matter of imlpementation, which should contain rules for collaboration between the service clients and the report resolver on the server.
           For example, if the resolver implementation expects a string containing a path relative to the application root directory, then the client should send a string containing such path.
           If the resolver is built to resolve reports from a type name, then a type name should be provided from the service client.

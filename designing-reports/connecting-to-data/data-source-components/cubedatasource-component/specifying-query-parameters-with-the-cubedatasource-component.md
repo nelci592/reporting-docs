@@ -48,7 +48,9 @@ When creating a parameterized query, you identify the parameter name by prefixin
 
 
 The following code sample illustrates how to pass a value to the *"@Year"*
-          parameter of the query using the __Parameters__ collection of the __CubeDataSource__ component:
+          parameter of the query using the __Parameters__ collection of the __
+            CubeDataSource
+          __ component:
         
 
 	
@@ -59,7 +61,9 @@ The following code sample illustrates how to pass a value to the *"@Year"*
 
 
 
-When you need to pass multiple values as a single parameter to the query, use the __StrToSet__ function instead. For example, to pass several years for the slicing axis at once, we can
+When you need to pass multiple values as a single parameter to the query, use the __
+            StrToSet
+          __ function instead. For example, to pass several years for the slicing axis at once, we can
           modify the previous query as shown below:
         
 

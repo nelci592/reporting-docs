@@ -43,7 +43,7 @@ Change the base class from __Component__ to the appropriate Telerik Reporting Da
 __Save__ and __rebuild__ the project.
               
 
-Right click the component class ->__View Designer__
+Right click the component class ->__ View Designer__
 
 Click __Configure data source__
 

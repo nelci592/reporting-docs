@@ -41,7 +41,9 @@ In this article we will show you how to create a Pie chart using the Graph item.
                 
 
 1. Open 
-              __SeriesGroups__ collection editor and click __Add__:
+              __[
+                  SeriesGroups
+                ](dc4689b1-891a-4f6a-93c7-de089b0ffa5e#SeriesGroupHierarchy)__ collection editor and click __Add__:
             
 
 1. Set the new group __Groupings__ to: *=Fields.StoreName*
@@ -53,13 +55,17 @@ In this article we will show you how to create a Pie chart using the Graph item.
 1. Set the __Name__ to *seriesGroup1*
 
 1. Open 
-              __CategoryGroups__ collection editor and click __Add.__By default this will add a new static group (group without grouping).
+              __[
+                  CategoryGroups
+                ](dc4689b1-891a-4f6a-93c7-de089b0ffa5e#CategoryGroupHierarchy)__ collection editor and click __Add.__By default this will add a new static group (group without grouping).
             
 
 1. Set the __Name__ to *categoryGroup1*
 
 1. Open 
-              __CoordinateSystems__ collection editor and __Add__ a new __PolarCoordinateSystem__.
+              __[
+                  CoordinateSystems
+                ](585fe887-1319-49a5-a848-869286f7c432#CoordinateSystems)__ collection editor and __Add__ a new __PolarCoordinateSystem__.
             
 
 1. Leave the __Name__ to *polarCoordinateSystem1*.
@@ -75,7 +81,9 @@ In this article we will show you how to create a Pie chart using the Graph item.
 
 1. Expand AngularAxis node.Expand the axis Style node.Set Visible to False.
 
-1. Open __Series__ collection editor and __Add__ new __BarSeries__.
+1. Open __[
+                  Series
+                ](585fe887-1319-49a5-a848-869286f7c432#Series)__ collection editor and __Add__ new __BarSeries__.
             
 
 1. Set the __CategoryGroup__ to __categoryGroup1__.
@@ -87,7 +95,7 @@ In this article we will show you how to create a Pie chart using the Graph item.
 1. Set the __CoordinateSystem__ to __polarCoordinateSystem1__.
                 
 
-1. Set the __ArrangeMode__ to __Stacked100__.
+1. Set the __ArrangeMode __ to __Stacked100__.
                 
 
 1. Set the __X__ value to *=Sum(Fields.SubTotal)*

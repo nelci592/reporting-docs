@@ -18,9 +18,13 @@ Before utilizing the __CubeDataSource__ component in your reports you need to co
 
 ## 
 
-1. __Install the Microsoft ADOMD.NET client data provider__: The __CubeDataSource__ component requires the __Microsoft ADOMD.NET__
-              client data provider to be installed on your machine. The present version of __Telerik
-                Reporting__ is compiled against the __ADOMD.NET__ provider for
+1. __Install the Microsoft ADOMD.NET client data provider__: The __
+                CubeDataSource
+              __ component requires the __Microsoft ADOMD.NET__
+              client data provider to be installed on your machine. The present version of __
+                Telerik
+                Reporting
+              __ is compiled against the __ADOMD.NET__ provider for
               __SQL Server 2008 R2__.
             
 
@@ -28,16 +32,24 @@ Before utilizing the __CubeDataSource__ component in your reports you need to co
               the following assembly references to your report class library:
             
 
-* __Microsoft.AnalysisServices.AdomdClient__ - this is the __ADOMD.NET__ client data provider assembly which is normally located in the
+* __Microsoft.AnalysisServices.AdomdClient__ - this is the __
+                    ADOMD.NET
+                  __ client data provider assembly which is normally located in the
                   following directory after installation:
                 *"<Program Files>\Microsoft.NET\ADOMD.NET\<Product Version>".*Here *"<Program Files>"* is the directory with your
                   program files, and *"<Product Version>"* is the version
-                  of the installed product (this should be __100__ for __ADOMD.NET for SQL Server 2008 R2__).
+                  of the installed product (this should be __100__ for __
+                    ADOMD.NET for SQL Server 2008 R2
+                  __).
                 
 
-* __Telerik.Reporting.Adomd__ - this is the __Telerik
-                    Reporting__ provider assembly for __ADOMD.NET__ which
-                  is located in the *"Bin"* subdirectory of your __Telerik Reporting__ installation.
+* __Telerik.Reporting.Adomd__ - this is the __
+                    Telerik
+                    Reporting
+                  __ provider assembly for __ADOMD.NET__ which
+                  is located in the *"Bin"* subdirectory of your __
+                    Telerik Reporting
+                  __ installation.
                 
 
 1. __Add an assembly binding redirect if necessary:__ The current version

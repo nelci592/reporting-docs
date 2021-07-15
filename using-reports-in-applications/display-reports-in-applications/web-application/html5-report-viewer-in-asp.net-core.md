@@ -64,7 +64,8 @@ To be able to create the sample application on Windows, make sure you provide th
             
 
 1. In the __New Project__ dialog, expand __Installed > Templates > Visual C# > Web__,
-              and select __ASP.NET Core Web Application__ project template.
+              and select __
+                ASP.NET Core Web Application (.NET Framework)__ project template.
               Choose a name for the project and click __OK__.
             
 
@@ -191,7 +192,7 @@ public IActionResult Report()
 
 1. Add a view that contains the HTML5 Report Viewer.
             Open the __Views__ folder, right-click on the __Home__ folder and select
-              __Add > New Item > Installed > ASP.NET__.
+              __ Add > New Item > Installed > ASP.NET__.
               Then add a new __MVC View Page__ named __Report__.
               We want the Report action in the HomeController to target this view.
             

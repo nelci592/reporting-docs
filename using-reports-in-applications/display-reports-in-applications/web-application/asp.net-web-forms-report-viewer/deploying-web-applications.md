@@ -27,9 +27,13 @@ During the installation of Telerik Reporting on your machine, the Telerik assemb
 
 __Required assemblies:__
 
-* __Telerik.Reporting.dll__
+* __
+                Telerik.Reporting.dll
+              __
 
-* __Telerik.ReportViewer.WebForms.dll__
+* __
+                Telerik.ReportViewer.WebForms.dll
+              __
 
 __Optional assemblies:__
 

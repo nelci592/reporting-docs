@@ -38,7 +38,9 @@ When you configure the ObjectDataSource component the settings below are obligat
 
 ## Creating the DataSource
 
-1. Open __Visual Studio__ and create a new  [Class Library](https://docs.microsoft.com/en-us/cpp/mfc/class-library-overview?view=vs-2019).
+1. Open __
+                Visual Studio
+              __ and create a new  [Class Library](https://docs.microsoft.com/en-us/cpp/mfc/class-library-overview?view=vs-2019).
             
 
 >important The Standalone Report Designer is a WPF application built against .NET Framework 4.0.                For that reason, it cannot load and resolve classes from assemblies built against .NET Standard 2.1, .NET Core and .NET5.                You can see the                [.NET Standard compatibility chart](https://docs.microsoft.com/en-us/dotnet/standard/net-standard) which explains how and when the assemblies can be loaded in different framework versions.              
@@ -115,7 +117,7 @@ The additional attributes like __version__, __culture__ and __publicKeyToken__ a
 1. Navigate to __Data__ and click __Object Data Source__.
             
 
-1. Select from the __Available data source types__ and follow the Wizard instructions until the process is completed.
+1. Select from the __Available data source types __ and follow the Wizard instructions until the process is completed.
             
 
 ## 

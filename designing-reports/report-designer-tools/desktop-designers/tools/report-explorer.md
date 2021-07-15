@@ -26,7 +26,7 @@ __Report Explorer__ helps to rearrange items in your report - it supports basic 
 In the screenshot below you can see that the report is represented by the root node of the tree. Underneath that you see the styles, report parameters and the sections of the report and for each section/item the report items in the section/item.
       
 
-The __Report Explorer__ can be accessed from the [context menu]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/context-menu%})__View | Report Explorer__ when right-clicking the area next to the report design surface.
+The __Report Explorer__ can be accessed from the [context menu]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/context-menu%})__ View | Report Explorer__ when right-clicking the area next to the report design surface.
       
 
   

@@ -14,14 +14,18 @@ position: 1
 
 ## 
 
-When you configure the __SqlDataSource__ component, you set the __ProviderName__ property to the type of database (the default is __System.Data.SqlClient__)
+When you configure the __SqlDataSource__ component, you set the __
+            ProviderName
+          __ property to the type of database (the default is __System.Data.SqlClient__)
           and the __ConnectionString__ property to a connection string that includes information
           required to connect to the database. The contents of a connection string differ depending on what type of
           database the data source component is accessing. For example, the __System.Data.SqlClient__
           provider requires a server name, database (catalog) name, and information about how to authenticate the user
           when connecting to __SQL Server__. For information on valid connection strings, see the
           __ConnectionString__ property topics for the __SqlConnection__,
-          __OracleConnection__, __OleDbConnection__, and __OdbcConnection__ classes.
+          __OracleConnection__, __OleDbConnection__, and __
+            OdbcConnection
+          __ classes.
         
 
 
@@ -35,7 +39,9 @@ When you configure the __SqlDataSource__ component, you set the __ProviderName__
 
 
 Instead of setting connection strings at design time as property settings in the __SqlDataSource__
-          component, you can store them centrally as part of your application's configuration settings using the __connectionStrings__ configuration element. This enables you to manage connection strings independently
+          component, you can store them centrally as part of your application's configuration settings using the __
+            connectionStrings
+          __ configuration element. This enables you to manage connection strings independently
           of your reports, including encrypting them using __Protected Configuration__.
         
 

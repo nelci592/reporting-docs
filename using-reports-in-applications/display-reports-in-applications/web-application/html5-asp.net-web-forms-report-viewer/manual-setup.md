@@ -122,7 +122,7 @@ Configure the HTML5 ASP.NET Web Forms Report Viewer ReportSource using Visual St
 Set the viewer width and height.
                 
 
-(Optional) If you set the viewer's __Deferred__ to __true__, render the deferred initialization
+(Optional) If you set the viewer's __ Deferred__ to __true__, render the deferred initialization
                   statement for the Report Viewer (remember that they must be rendered after jQuery):
                 
 

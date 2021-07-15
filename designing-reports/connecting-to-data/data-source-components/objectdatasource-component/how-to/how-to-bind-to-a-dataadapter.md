@@ -12,11 +12,14 @@ position: 3
 
 
 
-The following example illustrates how to use a __DataAdapter__ as the source for an __ObjectDataSource__ component.
+The following example illustrates how to use a __DataAdapter
+			__ as the source for an __ObjectDataSource
+			__ component.
 		
 
 The __ObjectDataSource__ component allows you
-			to use directly a class that implements the __System.Data.IDataAdapter__ interface. In the sample code
+			to use directly a class that implements the __
+			System.Data.IDataAdapter__ interface. In the sample code
 			below an instance of the __SqlDataAdapter__
 			class is created and passed to the __DataSource__
 			property of the __ObjectDataSource__ component.

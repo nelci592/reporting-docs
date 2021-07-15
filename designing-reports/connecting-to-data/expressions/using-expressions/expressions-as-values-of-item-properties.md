@@ -33,7 +33,9 @@ If you want part of the expression to be put on another line you have to insert 
 
 __='Hi Mr.' + Fields.LastName + ', ' + Fields.FirstName + '!__
 
-__How are you today?'__
+__
+          How are you today?'
+        __
 
 On the design surface expressions are usually displayed surrounded
 		by square brackets ([]). For example, the expression __=Fields.PersonID__

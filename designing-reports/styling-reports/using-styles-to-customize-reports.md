@@ -54,7 +54,7 @@ To create a style sheet for a report, follow these steps:
 
 Telerik __Reporting__ will automatically apply styles that use __TypeSelectors__, __AttributeSelectors__, or __DescendantSelectors__ to the appropriate report items. For example, if you add a style to the report's __StyleSheet__ with a __TypeSelector__ of __Telerik.Reporting.TextBox__, that style will be inherited by all text box report items on the report.
 
-To apply a style that uses a __StyleSelector__to a report item, select the report item and set its __StyleName__ property to the __StyleName__ property of the __StyleSelector__.
+To apply a style that uses a __StyleSelector __to a report item, select the report item and set its __StyleName__ property to the __StyleName__ property of the __StyleSelector__.
 
 # See Also
 

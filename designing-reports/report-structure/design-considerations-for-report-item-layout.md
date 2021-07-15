@@ -29,7 +29,10 @@ In Telerik Reporting versions prior to R3 2016, sections/Panel item can grow to 
           the IntializeComponent() method call or use a [binding]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/bindings%}) to the item's Height property.
         
 
-__As of__
+__
+            As of [Telerik Reporting R3 2016](http://www.telerik.com/support/whats-new/reporting/release-history/telerik-reporting-r3-2016-(version-10-2-16-914)) report sections and Panel item have CanShrink property. If the container’s content is hidden or shrunk, when CanShrink is turned on,
+            the container will collapse accordingly.
+          __
 
 >note Report items can grow vertically even when their  __CanGrow__  property is set to false.            This behavior can be observed when the report item height is smaller than the report item font height, which causes the item to grow            vertically in order to accommodate at least a single line of text with the specified font style.          
 

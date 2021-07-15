@@ -29,7 +29,7 @@ All the keywords and their values are case insensitive where applicable.
 
 
 
-__Example:__`engine=embedded`
+__Example: __`engine=embedded`
 
 You can use a T:Telerik.ReportViewer.Common.EmbeddedConnectionInfo instance to help you create the connection string or
           leave it empty - the viewer will use the embedded report engine by default.
@@ -58,7 +58,7 @@ You can use a T:Telerik.ReportViewer.Common.EmbeddedConnectionInfo instance to h
 
 
 
-__Example:__`engine=ReportServer;uri=http://localhost:83;username=admin;password=pass;timeout=30;keepClientAlive=true`
+__Example: __`engine=ReportServer;uri=http://localhost:83;username=admin;password=pass;timeout=30;keepClientAlive=true`
 
 You can use a T:Telerik.ReportViewer.Common.ReportServerConnectionInfo instance to help you create the connection string.
         
@@ -86,7 +86,7 @@ You can use a T:Telerik.ReportViewer.Common.ReportServerConnectionInfo instance 
 
 
 
-__Example:__`engine=RestService;uri=http://localhost:18103/api/reports;token=authToken;useDefaultCredentials=true;timeout=30;keepClientAlive=true`
+__Example: __`engine=RestService;uri=http://localhost:18103/api/reports;token=authToken;useDefaultCredentials=true;timeout=30;keepClientAlive=true`
 
 You can use a T:Telerik.ReportViewer.Common.RestServiceConnectionInfo instance to help you create the connection string.
         

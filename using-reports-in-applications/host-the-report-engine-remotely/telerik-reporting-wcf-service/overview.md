@@ -49,9 +49,11 @@ The service main purpose is to provide access for the Silverlight Report Viewer 
               - returns all rendering extensions available for the report service.
             
 
-* M:Telerik.Reporting.Service.IReportService.Render(System.String,System.String,Telerik.Reporting.Service.NameValueDictionary,Telerik.Reporting.Service.NameValueDictionary)__(string format, string report,
+* M:Telerik.Reporting.Service.IReportService.Render(System.String,System.String,Telerik.Reporting.Service.NameValueDictionary,Telerik.Reporting.Service.NameValueDictionary)__
+                (string format, string report,
                 NameValueDictionary deviceInfo,
-                NameValueDictionary parameters)__
+                NameValueDictionary parameters)
+              __
               - renders the specified __report__ (assembly
               qualified type name) in the specified __format__
               (see ListRenderingExtensions operation above), with the given

@@ -23,7 +23,9 @@ Users often request data based on parameters that can be resolved or evaluated o
       
 
 The __SqlDataSource__ component supports parameterized SQL queries by associating the parameters
-        you add to the __Parameters__ collection with placeholders in the __SelectCommand__ query. Parameter values can be evaluated with any expression which conforms to the common expression
+        you add to the __Parameters__ collection with placeholders in the __
+          SelectCommand
+        __ query. Parameter values can be evaluated with any expression which conforms to the common expression
         syntax supported by the reporting engine. This grants you a great deal of flexibility on how you can supply your
         SQL queries with parameters. For example, you can bind a SQL query parameter directly to a report parameter without
         any extra coding at all.
@@ -31,7 +33,9 @@ The __SqlDataSource__ component supports parameterized SQL queries by associatin
 
 The syntax used for the placeholders varies, depending on the type of the database. If you are working with
         __SQL Server__, the parameter name begins with the *'@'* character,
-        and its name corresponds to the name of the parameter object in the Parameters collection. For __Oracle__ databases the parameters are prefixed with the *':'* character instead,
+        and its name corresponds to the name of the parameter object in the Parameters collection. For __
+          Oracle
+        __ databases the parameters are prefixed with the *':'* character instead,
         and are referenced by name in the __Parameters__ collection as well. If you are working with
         an __ODBC__ or __OLE DB__ database, parameters in a parameterized statement
         are not named and instead are specified with the placeholder character *'?'*.

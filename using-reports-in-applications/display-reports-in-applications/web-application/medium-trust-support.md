@@ -29,7 +29,7 @@ Telerik Reporting works in Medium Trust environment with the following except
 * The [XPS]({%slug telerikreporting/designing-reports/rendering-and-paging/design-considerations-for-report-rendering/xps-rendering-design-considerations%}) rendering extension requires Full Trust and is removed as option from the export dropdown.
             
 
-* [Creating TIFF images]() with __CCITT Group 3/Group 4__ or __RLE__compressions, require UnmanagedCode permission.
+* [Creating TIFF images]() with __CCITT Group 3/Group 4__ or __RLE __compressions, require UnmanagedCode permission.
             
 
 * [Picturebox]({%slug telerikreporting/designing-reports/report-structure/picturebox%}) item shows images from Web (Value is an URL) - requires WebPermission.

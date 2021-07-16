@@ -58,12 +58,12 @@ defaults:
 
 # Aliases available in the markdown template. The below will expand {{site.foo}} to Bar in the output
 # "foo": "Bar"
-"suiteversion":"15.1.21.616"
-"kendosubsetversion":"kendo version 12234"
-"buildversion":" build 1"
-"KB_Configure_the_Image_Rendering_Extension_to_Generate_TIFF_Files":"TIFF 345"
-"KB-converting-reports-from-various-versions-of-crystalreports":"Crystal 123"
-"KB-converting-reports-from-various-versions-of-activereports":"Active 123"
+suiteversion: "15.1.21.616"
+"kendosubsetversion": "kendo version 12234"
+"buildversion": " build 1"
+"KB_Configure_the_Image_Rendering_Extension_to_Generate_TIFF_Files": "TIFF 345"
+"KB-converting-reports-from-various-versions-of-crystalreports": "Crystal 123"
+"KB-converting-reports-from-various-versions-of-activereports": "Active 123"
 
 # Feedback Form Google Sheet ID
 ff-sheet-id: '1oqaFdgKdIlX6pbd7aeptzbAUv0tfzrC3UwaubBeEwcg'

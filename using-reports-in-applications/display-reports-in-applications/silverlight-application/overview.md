@@ -90,9 +90,7 @@ In order to use our Silverlight Report Viewer, you need a Silverlight applicati
 >note The Silverlight ReportViewer requires the Telerik Reporting WCF Service. For more information: [Telerik Reporting WCF Service]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-wcf-service/overview%}).          
 
 
-## 
-        How it works
-      
+## How it works
 
 The Silverlight ReportViewer control is a composite of Telerik UI for Silverlight controls.
           The viewer's functionality resides in Telerik.ReportViewer.Silverlight.dll and the viewer's UI in Telerik.ReportViewer.Silverlight.xaml.

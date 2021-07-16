@@ -18,9 +18,7 @@ This implementation of the Reporting REST service is based on the
         [.NET Framework](http://msdn.microsoft.com/netframework/).
       
 
-## 
-        Utilization
-      
+## Utilization
 
 You need to satisfy the following  [Requirements]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-web-api-implementation/requirements%})
           before utilizing this implementation of the service. These are the options for

@@ -39,17 +39,13 @@ To get the *ReportViewer* object from the target HTML element:
 
 
 
-## 
-        Report viewer methods
-      
+## Report viewer methods
 
 The report viewer exposes several methods through which you can change the report viewer state or alter it.
           For more information please check the complete list of [report viewer methods]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/methods/overview%}).
         
 
-## 
-        Report viewer commands
-      
+## Report viewer commands
 
 The report viewer exposes a set of commands, which can be invoked from both the report viewer toolbar or from code. 
           Most of those commands require the report viewer to be in a valid state, i.e. to have a valid and rendered report. 
@@ -63,9 +59,7 @@ The commands are implemented by using a command object with three methods -
           for a complete list of the commands check the [commands property]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/properties/commands%}).
         
 
-## 
-        Report viewer events
-      
+## Report viewer events
 
 Along the commands the report viewer also exposes events, which are fired at different moments during the lifecycle of the report viewer. 
           For a complete list of the events please check [telerikReportViewer Namespace, Events]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/telerikreportviewer-namespace/events%}). 

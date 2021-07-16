@@ -12,9 +12,7 @@ position: 1
 
 
 
-## 
-        1D Barcodes
-      
+## 1D Barcodes
 
 One-dimensional (1D) barcodes consists of lines and spaces of various widths that create specific patterns.
         

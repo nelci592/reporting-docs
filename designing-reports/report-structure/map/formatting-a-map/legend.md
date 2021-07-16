@@ -110,9 +110,7 @@ In the __Misc__ section set the __IsInsideThePlotArea property__ to __True__.
 To display the legend horizontally, move the legend to the top or bottom of the chart. This causes the legend to expand horizontally.
         
 
-## 
-        Sizing the Legend
-      
+## Sizing the Legend
 
 The legend can be absolutely or automatically sized.
           If the Height or Width fields are left empty, the engine will decide their run-time values according to the data.

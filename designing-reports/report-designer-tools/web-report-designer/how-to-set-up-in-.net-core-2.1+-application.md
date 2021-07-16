@@ -103,9 +103,7 @@ If you don't use NuGet packages, along with the above assemblies, you need to ad
 
 
 
-## 
-        Add Configuration Settings in the Startup.cs file
-      
+## Add Configuration Settings in the Startup.cs file
 
 The report generation engine can retrieve Sql Connection Strings and specific Report Generation Engine
           Settings that provide flexibility of the deployed application. It utilizes the

@@ -71,9 +71,7 @@ __External Data File Configuration:__
 
 
 
-## 
-        Basic Authentication Settings
-      
+## Basic Authentication Settings
 
 Below are listed the available settings for Basic authentication. The authentication scheme is defined in
           [The 'Basic' HTTP Authentication Scheme (RFC 7617)](https://tools.ietf.org/html/rfc7617). This scheme transmits credentials as username/password pairs, encoded using base64.
@@ -88,9 +86,7 @@ Below are listed the available settings for Basic authentication. The authentica
 
 
 
-## 
-        2-Step (Bearer) Authentication Settings
-      
+## 2-Step (Bearer) Authentication Settings
 
 Below are listed the available settings for 2-step (Bearer) authentication. The Bearer authentication scheme is defined in
           [The OAuth 2.0 Authorization Framework: Bearer Token Usage (RFC 6750)](https://tools.ietf.org/html/rfc6750). Bearer tokens can be used to access OAuth 2.0-protected resources.
@@ -121,9 +117,7 @@ Below are listed the available settings for 2-step (Bearer) authentication. The 
 
 
 
-## 
-        Cookie-Based Authentication
-      
+## Cookie-Based Authentication
 
 It is possible to leverage the 2-Step Authentication mechanism above in order to retrieve a session cookie from the server which will authenticate subsequent requests.
           In this scenario first a request will be sent to the server for authentication purposes and the response should contain the generated cookie for the authenticated user.

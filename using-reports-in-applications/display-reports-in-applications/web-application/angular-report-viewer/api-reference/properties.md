@@ -14,9 +14,7 @@ position: 3
 
 The report viewer exposes various commands via the commands property.
 
-## 
-        Commands
-      
+## Commands
 
 The __commands__ collection contains:
         

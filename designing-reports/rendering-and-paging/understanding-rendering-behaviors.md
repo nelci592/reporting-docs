@@ -76,7 +76,7 @@ When exporting a report to Image, PDF, RTF, XPS, Powerpoint, and Word, the follo
 
 * Pagination is applied to reports vertically and horizontally.
 
-## Skip Blank Pages in the Rendered Report 
+## Skip Blank Pages in the Rendered Report
 
 Since R1 2021 SP1, the rendering engine may be forced to skip all pages that do not contain significant content.
           The latter are considered blank and this includes all pages that __only__ contain items of the following type: Report, Group, any Section, empty SubReport item,

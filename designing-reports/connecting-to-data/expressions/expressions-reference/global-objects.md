@@ -65,7 +65,7 @@ Another option for accessing the report parameters' collection
 
 The current page number that can be used only in page header and footer. 
 
-## PageCount 
+## PageCount
 
 The total number of pages in the report that can be used
           only in page header and footer.

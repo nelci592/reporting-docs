@@ -74,9 +74,7 @@ In order to use the WPF Report Viewer, you need a WPF application.
 * (optional) Expression Blend
             
 
-## 
-        How it works
-      
+## How it works
 
 The WPF ReportViewer control is a composite of Telerik UI for WPF controls.
           The viewer's functionality resides in Telerik.ReportViewer.Wpf.dll and the viewer's UI in Telerik.ReportViewer.Wpf.xaml.

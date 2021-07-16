@@ -123,9 +123,7 @@ Continuous scroll mode is the default page mode. To change the page mode, check 
           in [Report Viewer Initialization]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/report-viewer-initialization%}) article.
         
 
-## 
-        How it works
-      
+## How it works
 
 The HTML5 Report Viewer is a composite of Telerik Kendo Ui widgets, which template consists of three files: HTML (UI), CSS (styles), JS (functionality).
           The viewer can be styled and customized with standard JavaScript, CSS and custom HTML. For more details refer to

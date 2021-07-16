@@ -14,11 +14,7 @@ position: 1
 
 The article lists commonly met issues on designing Telerik Reports.
 
-## 
-        I want to show my report in a ReportViewer control, but when
-        I click on the arrow in the ReportSource property from the property grid,
-        it does not show available reports - what is wrong?
-      
+## I want to show my report in a ReportViewer control, but when I click on the arrow in the ReportSource property from the property grid, it does not show available reports - what is wrong?
 
 Follow our [best practices](66CD7D60-7708-42D5-8BB4-506676E8679E) and have the report in a separate class library
           that is referenced in the application or website. Check if the class library containing the report is referenced in your application/website
@@ -58,10 +54,7 @@ The most reliable way to specify a report for the ReportViewer is to do this pro
 
 
 
-## 
-        A multi-column report shows fine when using Preview,
-        but when used as a subreport, it shows as a one-column report only.
-      
+## A multi-column report shows fine when using Preview, but when used as a subreport, it shows as a one-column report only.
 
 The multi-column functionality is intended to be used only in the main
           report because all report sections (excluding Page sections) are rendered in

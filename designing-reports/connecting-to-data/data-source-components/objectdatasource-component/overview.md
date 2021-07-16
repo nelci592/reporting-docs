@@ -45,9 +45,7 @@ Any of the following data sources can be assigned to the DataSource property of 
 * System.Type which represents the type of the business object
             
 
-## 
-        Requirements for the DataSource
-      
+## Requirements for the DataSource
 
 * If the __DataSource__ reference contains more than one table, you must set
           the __DataMember__ property to a string that specifies the table to bind to.

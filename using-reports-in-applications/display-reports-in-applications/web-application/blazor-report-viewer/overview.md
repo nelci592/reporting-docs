@@ -51,9 +51,7 @@ The Blazor viewer is based on the [HTML5 Report Viewer]({%slug telerikreporting/
           thus the client browser should conform to the HTML5 Report Viewer [Browser Support](143e5c03-e69d-416f-9ac0-85c397b22b8e#browser-support).
         
 
-## 
-        Demo
-      
+## Demo
 
 1. The complete example can be found in the installation folder of Telerik Reporting: C:\Program Files (x86)\Progress\Telerik Reporting __Version__\Examples\CSharp\.
             

@@ -55,7 +55,7 @@ The report definitions can be in plain text format or compressed in a zip archiv
 * Telerik Report Book Package (.trbp) is compressed in a zip archive report book XML definition.
             
 
-## How to: Identify the report definition schema version 
+## How to: Identify the report definition schema version
 
 The schema version is used by the Standalone Report Designer to identify supported report definitions. 
           The Standalone Report Designer supports the current XML schema version at the time of the designer 

@@ -146,9 +146,7 @@ To run the localized report in a specific language that is different from the th
 
 
 
-## 
-        Centralizing the localization of reports
-      
+## Centralizing the localization of reports
 
 Big applications with many reports tend to be hard to localize with the provided approach above,
           in such cases the recommended approach is creating a [User Function]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/extending-expressions/user-functions%})

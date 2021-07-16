@@ -20,17 +20,13 @@ The guide is separated into sections for readability reasons. Along with the ste
         behind each step.
       
 
-## 
-        Prerequisites
-      
+## Prerequisites
 
 * [Visual Studio 2019, version 16.3+](https://www.visualstudio.com/vs/)
 
 * [NET Core 3 SDK](https://www.microsoft.com/net/download/core)
 
-## 
-        Creating a Sample ASP.NET Core 3.1 Project
-      
+## Creating a Sample ASP.NET Core 3.1 Project
 
 First, you need to create a new ASP.NET Core project:
         
@@ -85,9 +81,7 @@ This guide applies the recommended NuGet package references approach to add the 
 >tip The recommended way of adding the necessary dependencies is to use the            [Progress Telerik proprietary NuGet feed]({%slug telerikreporting/using-reports-in-applications/how-to-add-the-telerik-private-nuget-feed-to-visual-studio%})            and reference the dependencies as NuGet packages. This would also add the indirect dependencies to your project            bringing easier dependency management.          Alternatively, the assemblies are available in the  __\Bin\netcoreapp3.1\__             folder of Telerik Reporting installation directory. However, this would require to manually add all indirect dependencies            listed in the Requirements section of the [](aee150e8-e29d-4739-b8b9-d8a973982efc#requirements) section            and also the following dependency packages:            [Microsoft.AspNetCore.Mvc.NewtonsoftJson version 5.0.0](https://www.nuget.org/packages/Microsoft.AspNetCore.Mvc.NewtonsoftJson/)            and            [DocumentFormat.OpenXML version 2.7.2.0 or above](https://www.nuget.org/packages/DocumentFormat.OpenXml/).            Note that you need the last reference only to enable the Office OpenXML document formats.          The Reporting engine relies on the GDI+ API which is available on the Windows OS. On Linux and macOS we use library called            [libgdiplus](https://www.mono-project.com/docs/gui/libgdiplus/)            instead. The GDI+ API is required for measuring, laying out, rendering the text glyphs and images.          
 
 
-## 
-        Setup the Startup.cs file for the Reports service
-      
+## Setup the Startup.cs file for the Reports service
 
 The __ConfigureServices__ method inside the __Startup.cs__ in the project should be modified
           in order to enable the Reports Service functionality.
@@ -133,9 +127,7 @@ app.UseEndpoints(endpoints =>
 
 
 
-## 
-        Add Configuration Settings (Optional)
-      
+## Add Configuration Settings (Optional)
 
 The report generation engine can retrieve Sql Connection Strings and specific Report Generation Engine Settings
           that provide flexibility of the deployed application. It utilizes the
@@ -240,9 +232,7 @@ The last supported type of __ConnectionStrings__ configuration uses an array to 
 
 
 
-## 
-        Setting up the REST service
-      
+## Setting up the REST service
 
 1. Create folder __Controllers__.
               Right-click on the project name and select __Add > New folder__.
@@ -295,18 +285,14 @@ namespace AspNetCoreDemo.Controllers
 
 
 
-## 
-        Test the service implementation
-      
+## Test the service implementation
 
 To ensure that the service operates, run the application and navigate to
           URL __{applicationRoot}/api/reports/formats__.
           It should return a JSON representing the supported rendering extensions.
         
 
-## 
-        Enable Cross-Origin Resource Sharing (CORS) (Optional)
-      
+## Enable Cross-Origin Resource Sharing (CORS) (Optional)
 
 You may need to enable [Cross-Origin Resource Sharing (CORS)](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS), for example, if you use the REST Service from clients hosted in different domains.
         

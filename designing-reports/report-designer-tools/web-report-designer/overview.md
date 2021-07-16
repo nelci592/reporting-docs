@@ -20,7 +20,7 @@ Telerik Web Report Designer is an HTML5/JavaScript/CSS3 jQuery-based widget that
 >important The current version of the Web Report Designer offers beyond-basics functionality, but is still under          active development. Please give it a thorough review to make sure the designer fits your scenario           before including it in a production project.        
 
 
-## Web Report Designer elements 
+## Web Report Designer elements
 
 The Web Report Designer consists of the following areas:  
   ![Web Report Designer With Dashboard Report](images/Designer/web-report-designer-dashboard.png)
@@ -48,9 +48,7 @@ The Web Report Designer consists of the following areas:
               and non-visual report components and configures their properties.
             
 
-## 
-        How it works
-      
+## How it works
 
 The Web Report Designer uses a dedicated ASP.NET WebAPI REST service as a backend. The service
           is responsible for the storage operations like creating, opening or saving report definitions

@@ -34,7 +34,7 @@ We use Report Viewers to load reports that are already processed and rendered se
         Report Viewer types below.
       
 
-## Set up ReportViewer controls that work with Telerik Reporting Engine 
+## Set up ReportViewer controls that work with Telerik Reporting Engine
 
 These are viewers that operate on the same machine where reports are processed rendered. These viewers include mechanisms for resolving reports:
 

@@ -34,9 +34,7 @@ Telerik Reporting supplies __report item__ components that are placed in the r
 
 
 
-## 
-        Definition item versus Processing item
-      
+## Definition item versus Processing item
 
 ### Report Definition
 

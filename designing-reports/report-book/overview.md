@@ -17,7 +17,7 @@ The main goal of a report book is combining different reports into one for the p
         report book, each report starting on a new page.
       
 
-##   Why to use a ReportBook:
+## Why to use a ReportBook:
 
 * You need to combine multiple reports into a single document for preview, print and export;
 

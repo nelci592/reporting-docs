@@ -101,9 +101,7 @@ app.UseStaticFiles();
 
 
 
-## 
-        Add Configuration Settings in the Startup.cs file (optional)
-      
+## Add Configuration Settings in the Startup.cs file (optional)
 
 The report generation engine can retrieve Sql Connection Strings and specific Report Generation Engine
           Settings that provide flexibility of the deployed application. It utilizes the

@@ -32,9 +32,7 @@ The report viewer requires a reference to a running Reports Web Service. The rep
 In case you need to host it locally, follow the article [How to Host Reports Service in ASP.NET Core 2.1 and 2.2]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-core-web-api-implementation/how-to-host-reports-service-in-asp.net-core-2.1-and-2.2%}).
         
 
-## 
-        Adding the HTML5 Report Viewer
-      
+## Adding the HTML5 Report Viewer
 
 1. This tutorial uses the __Barcodes Report.trdp__ report definitions file
               that must be located in a __Reports__ folder inside the project.

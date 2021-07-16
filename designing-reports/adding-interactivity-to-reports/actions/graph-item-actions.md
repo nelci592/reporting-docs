@@ -27,9 +27,7 @@ The labels for an axis with __CategoryScale__ are produced by the graph's catego
 >note When the axis uses a NumericalScale, LogarithmicScale, DateTimeScale, the labels for an axis are produced          automatically based on the Scale properties. In such case, only data points are clickable          after setting the Graph.CategoryGroups.Action property.        
 
 
-## 
-        Add action to a category group using the Graph Wizard
-      
+## Add action to a category group using the Graph Wizard
 
 The easiest way to setup drill-down graph categories is to use the Graph Wizard.
           When the category groups hierarchy contains more than one level (parent-child relation)

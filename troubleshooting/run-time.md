@@ -12,11 +12,7 @@ position: 2
 
 
 
-## 
-        Cannot create an object of type 'Telerik.Reporting.Report' from its
-        string representation 'MyNameSpace.MyClass, Version=1.0.0.0, Culture=neutral,
-        PublicKeyToken=null' for the 'Report' property.
-      
+## Cannot create an object of type 'Telerik.Reporting.Report' from its string representation 'MyNameSpace.MyClass, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null' for the 'Report' property.
 
 This error might occur if you are using website and you have the
           report class in the website directly. This is due to the fact that when
@@ -57,12 +53,7 @@ This exception might surface if you try to use objects which
          
       
 
-## 
-        When deploying a project with Telerik Reporting on a server, you 
-        get the following error: Could not load file or assembly
-        'Telerik.ReportViewer.WebForms, Version=x.x.x.x, Culture=neutral, PublicKeyToken=a9d7983dfcc261be'
-        or one of its dependencies. The system cannot find the file specified.
-      
+## When deploying a project with Telerik Reporting on a server, you  get the following error: Could not load file or assembly 'Telerik.ReportViewer.WebForms, Version=x.x.x.x, Culture=neutral, PublicKeyToken=a9d7983dfcc261be' or one of its dependencies. The system cannot find the file specified.
 
 During the installation of Telerik Reporting on a dev machine,
           the Telerik Reporting assemblies are added to GAC. When deploying a project

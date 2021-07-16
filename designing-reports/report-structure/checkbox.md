@@ -51,7 +51,7 @@ The check mark image depends on the value set in the __Value__ property. By de
 Also if your data fields return two/three distinctive values, which are not true/false you can change the TrueValue/FalseValue/IndeterminateValue properties to match your field values directly.
         
 
-## Example: 
+## Example:
 
 You have a Status field that has three values:
 

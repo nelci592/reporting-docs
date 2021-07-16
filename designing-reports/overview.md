@@ -134,9 +134,7 @@ This document presents some general report designing tips that you can apply reg
               For example, you can set default values for a parameter to values that you know are popular.
             
 
-## 
-        Working with Expressions
-      
+## Working with Expressions
 
 * Understand simple and complex expression formats. 
               You can type simple expression format directly into text boxes, properties in the Property grid, 

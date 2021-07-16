@@ -12,9 +12,7 @@ position: 0
 
 
 
-## 
-        commands
-      
+## commands
 
 The report viewer exposes all its available commands through the __commands__ collection:
         

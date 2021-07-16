@@ -144,9 +144,7 @@ The additional attributes like __version__, __culture__ and __publicKeyToken__ a
 1. Select from the __Available data source types __ and follow the Wizard instructions until the process is completed.
             
 
-## 
-        Configuration in the Report Viewers
-      
+## Configuration in the Report Viewers
 
 1. Add the reference which contains the data source to the project.
             
@@ -154,9 +152,7 @@ The additional attributes like __version__, __culture__ and __publicKeyToken__ a
 1. Open the project's configuration file and add the same assembly reference like the one required for the Standalone designer.
             
 
-## 
-        Sample
-      
+## Sample
 
 Sample report that uses Object DataSource can be found at the installation folder of Telerik Reporting:
               C:\Program Files (x86)\Progress\Telerik Reporting __{Version}__\Examples\CSharp\ReportLibrary\DataBinding

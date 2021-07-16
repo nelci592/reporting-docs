@@ -110,9 +110,7 @@ If you have already stored a token instead of storing the credentials as clear t
 
 ## Troubleshooting
 
-### 
-            After changing my Telerik password, I get [Telerik Nuget] The V2 feed at '...' returned an unexpected status code '401 Logon failed.' error
-          
+### After changing my Telerik password, I get [Telerik Nuget] The V2 feed at '...' returned an unexpected status code '401 Logon failed.' error
 
 After changing your Telerik password,
               you need to reset your credentials in the NuGet.config file.

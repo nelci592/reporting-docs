@@ -26,9 +26,7 @@ position: 2
                             Such can be referenced from another application or it can be hosted locally in the Blazor application as described below.
                         
 
-## 
-                Adding the Report Designer REST service and configuration
-            
+## Adding the Report Designer REST service and configuration
 
 1. Use NuGet package manager to add the __Telerik.WebReportDesigner.Services__ package. This will also resolve
                             other dependencies automatically. For more information, see
@@ -131,9 +129,7 @@ public class ReportDesignerController : ReportDesignerControllerBase
 
 
 
-## 
-                Adding the Blazor Web Report Designer component
-            
+## Adding the Blazor Web Report Designer component
 
 1. Add NuGet package reference to the __Telerik.WebReportDesigner.Blazor__
                             package hosted on the Progress Telerik proprietary NuGet feed.

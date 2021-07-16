@@ -15,9 +15,7 @@ position: 0
 This article provides solutions for issues you might encounter while installing and upgrading Telerik Reporting projects.
       
 
-## 
-        The installer fails and I am not able to install Telerik Reporting
-      
+## The installer fails and I am not able to install Telerik Reporting
 
 __
             Solution.
@@ -85,9 +83,7 @@ __
               [upgrading Telerik Reporting projects]({%slug telerikreporting/upgrade/overview%}).
             
 
-## 
-        The website project is not upgraded after running the Upgrade Wizard
-      
+## The website project is not upgraded after running the Upgrade Wizard
 
 __
             Cause.

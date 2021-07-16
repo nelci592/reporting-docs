@@ -18,9 +18,7 @@ This implementation of the Reporting REST service is based on the
         [.NET Core Framework](https://msdn.microsoft.com/netframework/).
       
 
-## 
-        Utilization
-      
+## Utilization
 
 These are the options for the service hosting:
         

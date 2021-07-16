@@ -14,10 +14,11 @@ BOLD externalLink - change XSLT schema for legacyBold
 
 code tag - sourceFile fixed to the local one. Need to provide correct paths to jeqyll
 
+TOKENS for the version - make <token> tag to {{site.tokenName}} and set it value in _config.yml
 
-
+For TITLES use normalize-space in XSLT
 
 
 Remaining:
 
-TOKENS for the version - make <token> tag to {{site.tokenName}} and set it value in _config.yml
+how to pass the real tokes to _config.yml

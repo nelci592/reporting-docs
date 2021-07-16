@@ -32,9 +32,7 @@ The report viewer requires a reference to a running Reports Web Service. The rep
 In case you need to host it locally, follow the article [How to Host Reports Service in ASP.NET Core in .NET 5]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-core-web-api-implementation/how-to-host-reports-service-in-asp.net-core-in-.net-5%}).
         
 
-## 
-        Adding the HTML5 Report Viewer
-      
+## Adding the HTML5 Report Viewer
 
 1. This tutorial uses the __Barcodes Report.trdp__ report definitions file
               that must be located in a __Reports__ folder inside the project.
@@ -78,9 +76,7 @@ app.UseStaticFiles();
 1. Finally, run the project to see the report.
             
 
-## 
-        Demo project
-      
+## Demo project
 
 A full example can be found in the installation folder of Telerik Reporting: C:\Program Files (x86)\Progress\Telerik Reporting {Version}\Examples\CSharp\.NET 5\AspNet5Demo
         

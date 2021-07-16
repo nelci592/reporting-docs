@@ -35,9 +35,7 @@ Multiple formats are supported through configuring the CsvDataSource settings.
 
 
 
-## 
-        CsvDataSource data format settings
-      
+## CsvDataSource data format settings
 
 Below are listed the available settings for formatting the data retrieved from the CSV document.
         

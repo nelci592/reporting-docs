@@ -28,9 +28,7 @@ position: 1
               In case you need to host it locally follow the article [How to Host Reports Service in ASP.NET Core 3.1]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-core-web-api-implementation/how-to-host-reports-service-in-asp.net-core-3.1%}).
             
 
-## 
-        Adding the HTML5 Report Viewer component
-      
+## Adding the HTML5 Report Viewer component
 
 1. Add NuGet package reference to the __Telerik.ReportViewer.Blazor__ (or __Telerik.ReportViewer.Blazor.Trial__)
               package hosted on the Progress Telerik proprietary NuGet feed.

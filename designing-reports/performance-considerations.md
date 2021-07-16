@@ -43,9 +43,7 @@ __Report Processing stages__
 1. Render the report to the desired media, perform paging and calculate page aggregates.
           
 
-## 
-        Environmental reporting performance factors and suggestions:
-      
+## Environmental reporting performance factors and suggestions:
 
 Report processing and rendering are memory intensive operations. The OLAP cube, constructed from the raw data, is kept in memory during the report life cycle. 
           This may be a reason for out-of-memory exceptions, especially when the process that renders the report is run in 32-bit mode. The rendering performance is 

@@ -26,9 +26,7 @@ The viewer works like the HTML5 Report Viewer in a client-server pair with the [
 >note The MVC wrapper of the HTML5 Report Viewer can be used in MVC projects, where the MVC project appears as the client for the Reporting REST Service.          Even if the Reporting REST Service is added in the same MVC project, the service does not operate in the MVC context.          If data modified in the MVC context is needed, it has to be saved in the data source, from where the Reporting REST service can access it.        
 
 
-## 
-        Requirements
-      
+## Requirements
 
 * The ASP.NET MVC Report Viewer is built on and requires
               [

@@ -61,9 +61,7 @@ The ASP.NET Report Viewer has the following useful features:
 
 * Show/Hide document map
 
-## 
-        How it works
-      
+## How it works
 
 The ASP.NET ReportViewer control is a composite of standard ASP.NET Web Server controls.
         

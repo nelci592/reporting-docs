@@ -62,9 +62,7 @@ The Standalone Report Designer is part of the Telerik Reporting package. It is a
                 ) Method.
             
 
-## 
-        Major UI Elements in the Standalone Report Designer
-        
+## Major UI Elements in the Standalone Report Designer  
   ![standalone-report-designer-overview](images/Designer/standalone-report-designer-overview.png)
 
 The image above shows the major UI elements in the Standalone Report Designer:

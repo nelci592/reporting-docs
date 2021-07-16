@@ -60,9 +60,7 @@ The toolbar on the Windows Forms Report Viewer provides basic functionality for 
 >note .NET Framework  __Client Profile__  is not supported.          
 
 
-## 
-        How it works
-      
+## How it works
 
 The Windows Forms ReportViewer control is a composite of standard Windows Forms controls.
         

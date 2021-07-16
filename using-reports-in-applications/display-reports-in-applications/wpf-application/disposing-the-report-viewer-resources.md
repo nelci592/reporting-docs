@@ -33,9 +33,7 @@ When the
           The model can be explicitly disposed when necessary with calling the M:Telerik.ReportViewer.Wpf.ReportViewer.DisposeModel method.
         
 
-## 
-        Hosting WPF Report Viewer in a RadTabItem which is not being removed from its RadTabControl
-      
+## Hosting WPF Report Viewer in a RadTabItem which is not being removed from its RadTabControl
 
 In this scenario the WPF Report Viewer is hosted in a
           [RadTabItem](https://docs.telerik.com/devtools/wpf/api/telerik.windows.controls.radtabitem)
@@ -45,9 +43,7 @@ In this scenario the WPF Report Viewer is hosted in a
           In this scenario the report viewer is kept in memory until the owner window is closed. The default behavior of the WPF report viewer will ensure that the resources are properly released.
         
 
-## 
-        Hosting WPF Report Viewer in a RadTabItem which is being removed from its RadTabControl
-      
+## Hosting WPF Report Viewer in a RadTabItem which is being removed from its RadTabControl
 
 In this scenario the WPF Report Viewer is hosted in a
           [RadTabItem](https://docs.telerik.com/devtools/wpf/api/telerik.windows.controls.radtabitem)

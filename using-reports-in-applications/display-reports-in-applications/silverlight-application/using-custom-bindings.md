@@ -96,13 +96,6 @@ The example below illustrates how to implement and use a custom __IReportService
 	
 	    End Function
 	End Class
-	#End Region
-	
-	Partial Public Class MainPage
-	    Dim ReportViewer1 As Telerik.ReportViewer.Silverlight.ReportViewer
-	
-	    Public Sub InitializeComponent()
-	    End Sub
-	End Class
+````
 
 

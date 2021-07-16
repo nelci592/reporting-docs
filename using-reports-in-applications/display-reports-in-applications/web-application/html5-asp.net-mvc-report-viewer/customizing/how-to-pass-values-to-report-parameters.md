@@ -281,26 +281,7 @@ Now initialize the report viewer. We will use the minimal set of all
 	        .ScaleMode(ScaleMode.Specific) _
 	        .Scale(1.0)
 	End Code
-	    <!--#End Region-->
-	
-	@Section styles
-	    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
-	
-	    <script src="/kendo/js/kendo.all.min.js"></script>
-	
-	    <script src="ReportViewer/js/ReportViewer-7.2.13.1016.js"></script>
-	
-	    <script>
-	        $('#invoiceId').change(function () {
-	            var viewer = $("#reportViewer1").data("telerik_ReportViewer");
-	            viewer.reportSource({
-	                report: viewer.reportSource().report,
-	                parameters: { OrderNumber: $(this).val() }
-	            });
-	            viewer.refreshReport();
-	        });
-	    </script>
-	End Section
+````
 
 
 

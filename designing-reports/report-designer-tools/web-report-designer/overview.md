@@ -84,7 +84,7 @@ The Web Report Designer uses a dedicated ASP.NET WebAPI REST service as a backen
 * [jQuery](http://jquery.com/download/)__ 3.3.1__ or later.
             
 
-* [Kendo UI](http://www.kendoui.com/) __kendosubsetversion__ or later.
+* [Kendo UI](http://www.kendoui.com/) __{{site.kendosubsetversion}}__ or later.
             
 
 * Telerik Report Viewer script. By default, it is requested from the service.

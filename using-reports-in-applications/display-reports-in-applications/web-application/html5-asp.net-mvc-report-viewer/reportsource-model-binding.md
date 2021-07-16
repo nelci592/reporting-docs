@@ -72,30 +72,7 @@ Then you can use it directly when you are initializing the report viewer:
 	    .Scale(1.0) _
 	    .PersistSession(False)
 	End Code
-	<!--#End Region-->
-	
-	@Section scripts
-	    <script src="http://kendo.cdn.telerik.com/2013.2.918/js/kendo.all.min.js"></script>
-	
-	    <script src="ReportViewer/js/utils.js"></script>
-	    <script src="ReportViewer/js/sr.js"> </script>
-	    <script src="ReportViewer/js/serviceClient.js"></script>
-	    <script src="ReportViewer/js/controller.js"></script>
-	    <script src="ReportViewer/js/touch.js"></script>
-	    <script src="ReportViewer/js/pagesArea.js"></script>
-	    <script src="ReportViewer/js/documentMapArea.js"></script>
-	    <script src="ReportViewer/js/parameters.js"></script>
-	    <script src="ReportViewer/js/parameterValidators.js"></script>
-	    <script src="ReportViewer/js/parametersArea.js"></script>
-	    <script src="ReportViewer/js/commandSet.js"></script>
-	    <script src="ReportViewer/js/history.js"></script>
-	    <script src="ReportViewer/js/mainMenu.js"></script>
-	    <script src="ReportViewer/js/sideMenu.js"></script>
-	    <script src="ReportViewer/js/binder.js"></script>
-	    <script src="ReportViewer/js/uiController.js"></script>
-	    <script src="ReportViewer/js/perspectives.js"></script>
-	    <script src="ReportViewer/js/reportViewer.js"></script>
-	End Section
+````
 
 
 
@@ -164,30 +141,7 @@ Once you have the model you should create your own logic to populate it (note th
 	    .Scale(1.0) _
 	    .PersistSession(False)
 	End Code
-	<!--#End Region-->
-	
-	@Section scripts
-	    <script src="http://kendo.cdn.telerik.com/2013.2.918/js/kendo.all.min.js"></script>
-	
-	    <script src="ReportViewer/js/utils.js"></script>
-	    <script src="ReportViewer/js/sr.js"> </script>
-	    <script src="ReportViewer/js/serviceClient.js"></script>
-	    <script src="ReportViewer/js/controller.js"></script>
-	    <script src="ReportViewer/js/touch.js"></script>
-	    <script src="ReportViewer/js/pagesArea.js"></script>
-	    <script src="ReportViewer/js/documentMapArea.js"></script>
-	    <script src="ReportViewer/js/parameters.js"></script>
-	    <script src="ReportViewer/js/parameterValidators.js"></script>
-	    <script src="ReportViewer/js/parametersArea.js"></script>
-	    <script src="ReportViewer/js/commandSet.js"></script>
-	    <script src="ReportViewer/js/history.js"></script>
-	    <script src="ReportViewer/js/mainMenu.js"></script>
-	    <script src="ReportViewer/js/sideMenu.js"></script>
-	    <script src="ReportViewer/js/binder.js"></script>
-	    <script src="ReportViewer/js/uiController.js"></script>
-	    <script src="ReportViewer/js/perspectives.js"></script>
-	    <script src="ReportViewer/js/reportViewer.js"></script>
-	End Section
+````
 
 
 
@@ -231,44 +185,7 @@ There are cases when the supported report sources (Type and Uri) will not be eno
 	    .Scale(1.0) _
 	    .PersistSession(False)
 	End Code
-	<!--#End Region-->
-	
-	<!--#Region "Example2"-->
-	@Code
-	    Html.TelerikReporting().ReportViewer() _
-	    .Id("reportViewer1") _
-	    .ServiceUrl("/api/reports/") _
-	    .TemplateUrl("/ReportViewer/templates/telerikReportViewerTemplate.html") _
-	    .ReportSource("73", New Dictionary(Of String, Object)() From {{"parameter1", "value1"}, {"parameter2", "value2"}}) _
-	    .ViewMode(ViewMode.Interactive) _
-	    .ScaleMode(ScaleMode.Specific) _
-	    .Scale(1.0) _
-	    .PersistSession(False)
-	End Code
-	<!--#End Region-->
-	
-	@Section scripts
-	    <script src="http://kendo.cdn.telerik.com/2013.2.918/js/kendo.all.min.js"></script>
-	
-	    <script src="ReportViewer/js/utils.js"></script>
-	    <script src="ReportViewer/js/sr.js"> </script>
-	    <script src="ReportViewer/js/serviceClient.js"></script>
-	    <script src="ReportViewer/js/controller.js"></script>
-	    <script src="ReportViewer/js/touch.js"></script>
-	    <script src="ReportViewer/js/pagesArea.js"></script>
-	    <script src="ReportViewer/js/documentMapArea.js"></script>
-	    <script src="ReportViewer/js/parameters.js"></script>
-	    <script src="ReportViewer/js/parameterValidators.js"></script>
-	    <script src="ReportViewer/js/parametersArea.js"></script>
-	    <script src="ReportViewer/js/commandSet.js"></script>
-	    <script src="ReportViewer/js/history.js"></script>
-	    <script src="ReportViewer/js/mainMenu.js"></script>
-	    <script src="ReportViewer/js/sideMenu.js"></script>
-	    <script src="ReportViewer/js/binder.js"></script>
-	    <script src="ReportViewer/js/uiController.js"></script>
-	    <script src="ReportViewer/js/perspectives.js"></script>
-	    <script src="ReportViewer/js/reportViewer.js"></script>
-	End Section
+````
 
 
 
@@ -304,30 +221,7 @@ You can also add parameters, like this:
 	    .Scale(1.0) _
 	    .PersistSession(False)
 	End Code
-	<!--#End Region-->
-	
-	@Section scripts
-	    <script src="http://kendo.cdn.telerik.com/2013.2.918/js/kendo.all.min.js"></script>
-	
-	    <script src="ReportViewer/js/utils.js"></script>
-	    <script src="ReportViewer/js/sr.js"> </script>
-	    <script src="ReportViewer/js/serviceClient.js"></script>
-	    <script src="ReportViewer/js/controller.js"></script>
-	    <script src="ReportViewer/js/touch.js"></script>
-	    <script src="ReportViewer/js/pagesArea.js"></script>
-	    <script src="ReportViewer/js/documentMapArea.js"></script>
-	    <script src="ReportViewer/js/parameters.js"></script>
-	    <script src="ReportViewer/js/parameterValidators.js"></script>
-	    <script src="ReportViewer/js/parametersArea.js"></script>
-	    <script src="ReportViewer/js/commandSet.js"></script>
-	    <script src="ReportViewer/js/history.js"></script>
-	    <script src="ReportViewer/js/mainMenu.js"></script>
-	    <script src="ReportViewer/js/sideMenu.js"></script>
-	    <script src="ReportViewer/js/binder.js"></script>
-	    <script src="ReportViewer/js/uiController.js"></script>
-	    <script src="ReportViewer/js/perspectives.js"></script>
-	    <script src="ReportViewer/js/reportViewer.js"></script>
-	End Section
+````
 
 
 
@@ -363,30 +257,7 @@ The view can also be strongly typed:
 	    .Scale(1.0) _
 	    .PersistSession(False)
 	End Code
-	<!--#End Region-->
-	
-	@Section scripts
-	    <script src="http://kendo.cdn.telerik.com/2013.2.918/js/kendo.all.min.js"></script>
-	
-	    <script src="ReportViewer/js/utils.js"></script>
-	    <script src="ReportViewer/js/sr.js"> </script>
-	    <script src="ReportViewer/js/serviceClient.js"></script>
-	    <script src="ReportViewer/js/controller.js"></script>
-	    <script src="ReportViewer/js/touch.js"></script>
-	    <script src="ReportViewer/js/pagesArea.js"></script>
-	    <script src="ReportViewer/js/documentMapArea.js"></script>
-	    <script src="ReportViewer/js/parameters.js"></script>
-	    <script src="ReportViewer/js/parameterValidators.js"></script>
-	    <script src="ReportViewer/js/parametersArea.js"></script>
-	    <script src="ReportViewer/js/commandSet.js"></script>
-	    <script src="ReportViewer/js/history.js"></script>
-	    <script src="ReportViewer/js/mainMenu.js"></script>
-	    <script src="ReportViewer/js/sideMenu.js"></script>
-	    <script src="ReportViewer/js/binder.js"></script>
-	    <script src="ReportViewer/js/uiController.js"></script>
-	    <script src="ReportViewer/js/perspectives.js"></script>
-	    <script src="ReportViewer/js/reportViewer.js"></script>
-	End Section
+````
 
 
 

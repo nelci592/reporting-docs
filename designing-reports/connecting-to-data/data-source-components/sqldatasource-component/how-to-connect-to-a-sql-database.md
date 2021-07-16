@@ -21,7 +21,7 @@ You can connect to a SQL database using the Telerik
 
 Open a Telerik Reporting in a [Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/overview%})
 
-* __In Microsoft Visual Studio__: From the Telerik Reporting suiteversion group in the Toolbox, select the
+* __In Microsoft Visual Studio__: From the Telerik Reporting {{site.suiteversion}} group in the Toolbox, select the
                   SqlDataSource component and click on the design surface to add it to the Report.
                 
 

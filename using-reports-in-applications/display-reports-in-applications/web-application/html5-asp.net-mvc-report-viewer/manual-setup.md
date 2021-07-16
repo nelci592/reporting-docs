@@ -212,37 +212,7 @@ Add the HTML5 ASP.NET MVC Report Viewer to the same view:
 	    .EnableAccessibility(False) _
 	    .Deferred()
 	End Code
-	<!--#End Region-->
-	
-	@Section scripts
-	    <script src="http://kendo.cdn.telerik.com/2013.2.918/js/kendo.all.min.js"></script>
-	
-	    <script src="ReportViewer/js/utils.js"></script>
-	    <script src="ReportViewer/js/sr.js"> </script>
-	    <script src="ReportViewer/js/serviceClient.js"></script>
-	    <script src="ReportViewer/js/controller.js"></script>
-	    <script src="ReportViewer/js/touch.js"></script>
-	    <script src="ReportViewer/js/pagesArea.js"></script>
-	    <script src="ReportViewer/js/documentMapArea.js"></script>
-	    <script src="ReportViewer/js/parameters.js"></script>
-	    <script src="ReportViewer/js/parameterValidators.js"></script>
-	    <script src="ReportViewer/js/parametersArea.js"></script>
-	    <script src="ReportViewer/js/commandSet.js"></script>
-	    <script src="ReportViewer/js/history.js"></script>
-	    <script src="ReportViewer/js/mainMenu.js"></script>
-	    <script src="ReportViewer/js/sideMenu.js"></script>
-	    <script src="ReportViewer/js/binder.js"></script>
-	    <script src="ReportViewer/js/uiController.js"></script>
-	    <script src="ReportViewer/js/perspectives.js"></script>
-	    <script src="ReportViewer/js/accessibility.js"></script>
-	    <script src="ReportViewer/js/reportViewer.js"></script>    
-	End Section
-	
-	<!--#Region "DeferredScriptsExample"-->
-	@Code
-	    Html.TelerikReporting().DeferredScripts()
-	End Code
-	<!--#End Region-->
+````
 
 
 
@@ -268,7 +238,7 @@ Render the deferred initialization statement for the Report Viewer scripts (reme
 	@Code
 	    Html.TelerikReporting().DeferredScripts()
 	End Code
-	<!--#End Region-->
+````
 
 
 

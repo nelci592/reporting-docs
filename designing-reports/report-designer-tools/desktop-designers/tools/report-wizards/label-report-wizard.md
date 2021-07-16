@@ -34,7 +34,7 @@ To create a new report with the wizard:
 
 * __Right-click__ the project context menu and select
                 __
-                  Add | New Item | Telerik Report suiteversion Wizard
+                  Add | New Item | Telerik Report {{site.suiteversion}} Wizard
                 __.
                 Enter a name for the report class and click the __Add__ button to close the dialog. Select report wizard form opens.
               

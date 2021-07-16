@@ -229,7 +229,7 @@ The complete Report view (Report.cshtml) should look like this:#_HTML_
 
 
 
->important The reference to the report viewer's JavaScript file ( *telerikReportViewer-buildversion.min.js* )                should be updated to the corresponding version of the Reporting NuGet package.              
+>important The reference to the report viewer's JavaScript file ( *telerikReportViewer-{{site.buildversion}}.min.js* )                should be updated to the corresponding version of the Reporting NuGet package.              
 
 
 1. To add a link to the __Report__ view in the __Home__ page navigation open

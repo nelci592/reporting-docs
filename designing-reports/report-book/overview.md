@@ -41,7 +41,7 @@ A Report Book is a class inheriting *Telerik.Reporting.ReportBook*.
 
 
 The [Report Book online demo](https://demos.telerik.com/reporting/report-book) is available also in the local Examples installed by default under *
-            ...Progress\Reporting suiteversion\Examples
+            ...Progress\Reporting {{site.suiteversion}}\Examples
           *.
           An example how to create a ReportBook instance at run-time can be found in [How to: Create a Report Book at run-time]({%slug telerikreporting/designing-reports/report-book/how-to-create-a-report-book-at-run-time%}).
         

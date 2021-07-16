@@ -35,11 +35,11 @@ The Standalone Report Designer is part of the Telerik Reporting package. It is a
 
 1. Open the Start menu, click __All Programs__, then click  __Telerik__ and then
                   click __
-                    Reporting suiteversion__.
+                    Reporting {{site.suiteversion}}__.
                 
 
 1. Click __
-                    Report Designer suiteversion__.
+                    Report Designer {{site.suiteversion}}__.
                 
 
 1. The Standalone Report Designer opens, and you can create or open a report.

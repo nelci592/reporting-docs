@@ -40,7 +40,7 @@ The HTML5 Viewer (JavaScript, MVC and WebForms), WinForms ReportViewer and WPF R
 * __WinForms ReportViewer control: __E:Telerik.ReportViewer.WinForms.ReportViewerBase.ViewerToolTipOpening event.
             
 
->note If you use the HTML5 Viewer, the new Tooltips functionality requires additional Kendo UI dependency.            This dependency is included in the Kendo UI subset bundle provided by Telerik Reporting -  *telerikReportViewer.kendo-buildversion.min.js* .          If you use a custom set of Kendo UI widgets, you can load  __kendo.tooltip.min.js__  of your version (2015.3.1111+) of Kendo UI.          
+>note If you use the HTML5 Viewer, the new Tooltips functionality requires additional Kendo UI dependency.            This dependency is included in the Kendo UI subset bundle provided by Telerik Reporting -  *telerikReportViewer.kendo-{{site.buildversion}}.min.js* .          If you use a custom set of Kendo UI widgets, you can load  __kendo.tooltip.min.js__  of your version (2015.3.1111+) of Kendo UI.          
 
 
 # See Also

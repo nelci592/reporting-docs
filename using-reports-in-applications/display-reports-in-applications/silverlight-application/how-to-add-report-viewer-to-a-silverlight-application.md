@@ -20,7 +20,7 @@ This article explains the steps needed to create an application which uses the S
 1. First you need to create a Silverlight project. Once you do, add references to the following NoXaml assemblies in your Silverlight project:
             
 
-* Telerik.ReportViewer.Silverlight.dll  (located in C:\Program Files (x86)\Progress\Reporting suiteversion\Bin)
+* Telerik.ReportViewer.Silverlight.dll  (located in C:\Program Files (x86)\Progress\Reporting {{site.suiteversion}}\Bin)
                 
 
 * System.Windows.Controls.dll
@@ -33,8 +33,8 @@ This article explains the steps needed to create an application which uses the S
               However you will still have to add all the xaml files mentioned in the next step, otherwise the Report Viewer will not show up as it will have no style.
             In case you use Telerik UI for Silverlight only for the report viewer, you can use Telerik UI for Silverlight assemblies and XAML that we provide with the local demos.
              They are internally unlocked for the Silverlight ReportViewer but can only be used with the report viewer. The Telerik UI for Silverlight assemblies are located in
-             C:\Program Files (x86)\Progress\Reporting suiteversion\Examples\CSharp\SilverlightDemo\bin).
-             The corresponding XAML resources can be found in C:\Program Files (x86)\Progress\Reporting suiteversion\Silverlight\Themes.
+             C:\Program Files (x86)\Progress\Reporting {{site.suiteversion}}\Examples\CSharp\SilverlightDemo\bin).
+             The corresponding XAML resources can be found in C:\Program Files (x86)\Progress\Reporting {{site.suiteversion}}\Silverlight\Themes.
             The Silverlight ReportViewer is build with the latest official release of Telerik UI for Silverlight.
               In this way we provide trouble free upgrade for most of the users.
               This means that you can use the latest version of Telerik UI for Silverlight in your project and report viewer.
@@ -55,7 +55,7 @@ This article explains the steps needed to create an application which uses the S
 * *Telerik.Windows.Controls.Navigation.xaml*
 
 * *Telerik.ReportViewer.Silverlight.xaml*The Telerik UI for Silverlight xaml files are located in
-              C:\Program Files (x86)\Progress\Reporting suiteversion\Silverlight\Themes).
+              C:\Program Files (x86)\Progress\Reporting {{site.suiteversion}}\Silverlight\Themes).
             
 
 1. The next step is to merge these ResourceDictionaries in the App.xaml file:#_XAML_

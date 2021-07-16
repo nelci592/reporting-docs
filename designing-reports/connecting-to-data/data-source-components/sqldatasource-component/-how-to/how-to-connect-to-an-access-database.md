@@ -18,7 +18,7 @@ You can connect to a Microsoft Access database using the Telerik
       data to data items (Report, Table, Chart).To connect to an Access database using the SqlDataSource control
 
 In Microsoft Visual Studio, open a Telerik Report. From the 
-            Telerik Reporting suiteversion group in the Toolbox, select the 
+            Telerik Reporting {{site.suiteversion}} group in the Toolbox, select the 
             SqlDataSource component and click on the design surface to add it 
             to the Report.
 

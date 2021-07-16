@@ -83,7 +83,7 @@ We will apply embedded implicit styles for the Fluent theme in our example proje
               use Telerik UI for WPF assemblies available with the local demos.
               They are internally unlocked for the WPF Report Viewer but can only be used with the report viewer.
               The .NET Framework assemblies containing *Telerik UI for WPF* are located in
-              %programfiles(x86)%\Progress\Telerik Reporting suiteversion\Bin\WpfViewerDependencies\Framework).
+              %programfiles(x86)%\Progress\Telerik Reporting {{site.suiteversion}}\Bin\WpfViewerDependencies\Framework).
             
 
 * Add reference to the Telerik.ReportViewer.Wpf.Themes assembly.
@@ -109,7 +109,7 @@ We will apply implicit styles for the Vista theme in our example project. Having
               use Telerik UI for WPF assemblies available with the local demos.
               They are internally unlocked for the WPF Report Viewer but can only be used with the report viewer.
               The Telerik UI for WPF assemblies are located in
-              %programfiles(x86)%\Progress\Reporting suiteversion\Examples\CSharp\WpfDemo\bin).
+              %programfiles(x86)%\Progress\Reporting {{site.suiteversion}}\Examples\CSharp\WpfDemo\bin).
             
 
 * 

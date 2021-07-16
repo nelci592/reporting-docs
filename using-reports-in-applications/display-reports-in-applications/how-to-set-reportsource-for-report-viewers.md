@@ -282,26 +282,7 @@ The *report description string* is sent to the [Telerik Reporting REST service](
 	        .ScaleMode(ScaleMode.Specific) _
 	        .Scale(1.0)
 	End Code
-	    <!--#End Region-->
-	
-	@Section styles
-	    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
-	
-	    <script src="/kendo/js/kendo.all.min.js"></script>
-	
-	    <script src="ReportViewer/js/ReportViewer-7.2.13.1016.js"></script>
-	
-	    <script>
-	        $('#invoiceId').change(function () {
-	            var viewer = $("#reportViewer1").data("telerik_ReportViewer");
-	            viewer.reportSource({
-	                report: viewer.reportSource().report,
-	                parameters: { OrderNumber: $(this).val() }
-	            });
-	            viewer.refreshReport();
-	        });
-	    </script>
-	End Section
+````
 
 To display another report or to update the *client parameters*' values of the current HTML5 Viewer object,
               you can update the HTML5 Viewer's reportSource by using the viewer object's [reportSource(rs)]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/methods/reportsource(rs)%})

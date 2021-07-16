@@ -154,7 +154,7 @@ Add the following script element at the bottom of the <body> element and create 
 
 
 
-where x.x.x.x is the HTML5 ReportViewer/Telerik Reporting version (e.g. buildversion).
+where x.x.x.x is the HTML5 ReportViewer/Telerik Reporting version (e.g. {{site.buildversion}}).
                   The relative paths that you use must reflect the project's structure.
                 
 

@@ -68,9 +68,7 @@ The accessibility routines capture the keyboard events to provide shortcut key a
 	        Me.ReportViewer1.AccessibilityKeyMap = map
 	
 	    End Sub
-	#End Region
-	
-	End Class
+````
 
 
 

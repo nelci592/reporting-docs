@@ -19,7 +19,7 @@ You can use the Telerik SqlDataSource component to connect to an Oracle
       To use the SqlDataSource control to connect to an Oracle database
 
 In Microsoft Visual Studio, open a Telerik Report. From the
-              Telerik Reporting suiteversion group in the Toolbox, select the
+              Telerik Reporting {{site.suiteversion}} group in the Toolbox, select the
               SqlDataSource component and click on the design surface to add it
               to the Report.
             

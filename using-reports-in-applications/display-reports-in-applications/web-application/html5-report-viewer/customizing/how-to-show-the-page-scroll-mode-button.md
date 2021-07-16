@@ -26,7 +26,7 @@ There are a few steps that should be done.
 
 Find Telerik Report Viewer template in your installation folder located in:
 
-__%programfiles(x86)%\Progress\Telerik Reporting suiteversion\Html5\ReportViewer\templates__
+__%programfiles(x86)%\Progress\Telerik Reporting {{site.suiteversion}}\Html5\ReportViewer\templates__
 
 Copy the template in your application folder
 

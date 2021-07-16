@@ -12,7 +12,7 @@ TABLES with multiple lines in the same cell - change '\r\n' with '<br/>'.
 
 BOLD externalLink - change XSLT schema for legacyBold 
 
-code tag - sourceFile fixed to the local one
+code tag - sourceFile fixed to the local one. Need to provide correct paths to jeqyll
 
 
 
@@ -20,4 +20,4 @@ code tag - sourceFile fixed to the local one
 
 Remaining:
 
-TOKENS for the version
+TOKENS for the version - make <token> tag to {{site.tokenName}} and set it value in _config.yml

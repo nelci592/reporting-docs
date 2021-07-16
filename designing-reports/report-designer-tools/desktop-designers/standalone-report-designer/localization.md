@@ -40,7 +40,7 @@ The resource files should be in a folder with the name of the target culture.
           *Report Designer folder\Resources\es-MX*
 
 The default localization resources are provided within the Telerik Reporting installation directory
-          (%PROGRAMFILES(x86)%\Progress\Telerik Reporting suiteversion\Bin\Resources)
+          (%PROGRAMFILES(x86)%\Progress\Telerik Reporting {{site.suiteversion}}\Bin\Resources)
         
 
 We provide reference translations for some popular languages in this GitHub repository:

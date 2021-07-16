@@ -64,9 +64,7 @@ The accessibility routines capture the keyboard events to provide shortcut key a
 	        map(CType(Keys.T, Integer)) = Telerik.ReportViewer.Common.Accessibility.ShortcutKeys.MENU_AREA_KEY
 	        Me.ReportViewer1.AccessibilityKeyMap = map
 	    End Sub
-	#End Region
-	
-	End Class
+````
 
 
 

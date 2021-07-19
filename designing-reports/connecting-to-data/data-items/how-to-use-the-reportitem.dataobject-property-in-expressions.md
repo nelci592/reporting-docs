@@ -28,9 +28,10 @@ The DataObject implements T:Telerik.Reporting.Processing.IDataObject interface w
         
 
 For example:
-      
+      #_C#_
 
-````
+	
+````c#
 public class Phone
  {
      public string Number { get; set; }
@@ -40,11 +41,13 @@ public class Phone
         return Number.Replace(' ','-');
      }
  }
-								````
-
-
-
+								
 ````
+
+#_VB.NET_
+
+	
+````vb.net
 Public Class Phone
 	Public Property Number() As String
 		Get
@@ -60,7 +63,8 @@ Public Class Phone
 		Return Number.Replace(" ", "-")
 	End Function
 End Class
-								````
+								
+````
 
 
 
@@ -99,7 +103,11 @@ When complicated logic should be applied or .NET framework routines need to be u
             Put the following text in the SqlDataSource's SelectCommand value:
             
 
-
+	
+              select Contact.*
+              from Person.Contact
+              where Contact.AdditionalContactInfo is not null
+            
 
 
 
@@ -191,7 +199,12 @@ The following screenshot shows the expected report output that should be created
             Add an SqlDataSource as a report's DataSource and set its SelectCommand property to:
             
 
-
+	
+              select top 100 Product.Name, Product.ProductNumber, Product.Color, Product.SafetyStockLevel
+              from Production.Product
+              where Product.Color is not null
+              order by Product.Name, Product.Color
+            
 
 
 

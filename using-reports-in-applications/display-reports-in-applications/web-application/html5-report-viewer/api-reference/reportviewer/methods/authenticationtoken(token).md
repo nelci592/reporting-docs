@@ -29,9 +29,11 @@ Parameters:
 Returns: the current *ReportViewer* object.
         
 
-````
+	
+````js
 var reportViewer = $("#reportViewer1").data("telerik_ReportViewer");
 reportViewer.authenticationToken("bad18eba1ff45jk7858b8ae88a77fa30");
-          ````
+          
+````
 
 

@@ -79,13 +79,15 @@ You will have to prepare the project for Telerik Reporting.
 
 Open the __project.json__ file.
           The "frameworks" property should look like this:
-        
+        #_HTML_
 
-````
+	
+````html
 "frameworks": {
     "net461": { }
 },
-                ````
+                
+````
 
 
 
@@ -132,7 +134,8 @@ For Office OpenXML document formats (XLSX, DOCX and PPTX) install the
               This is how a basic implementation of the controller should look like:
             
 
-````
+	
+````c#
   
 namespace WebApplication1.Controllers
 {
@@ -161,7 +164,8 @@ namespace WebApplication1.Controllers
          }
     }
 }
-			````
+			
+````
 
 
 
@@ -169,13 +173,15 @@ namespace WebApplication1.Controllers
               open the HomeController, added by the VS ASP.NET Core project template, and add an action method named Report:
             
 
-````
+	
+````c#
 public IActionResult Report()
 {
     ViewBag.Message = "Your reports page.";
     return View();
 }
-                ````
+                
+````
 
 
         Adding the HTML5 Report Viewer
@@ -203,10 +209,17 @@ public IActionResult Report()
               Copy the Kendo subset from {Telerik Reporting installation path}\Html5\ReportViewer folder to wwwroot.
             
 
->important Whenever you need to route a relative path you will have to use  *Url.Content*  helper, like this:              ````@Url.Content("~/api/reports/")                ````instead of simply pasting the path.
-The complete Report view (Report.cshtml) should look like this:
+>important Whenever you need to route a relative path you will have to use  *Url.Content*  helper, like this:              #_HTML_
 
+	
+````html@Url.Content("~/api/reports/")                
 ````
+
+instead of simply pasting the path.
+The complete Report view (Report.cshtml) should look like this:#_HTML_
+
+	
+````html
 @{
     Layout = null;
 }
@@ -221,106 +234,8 @@ The complete Report view (Report.cshtml) should look like this:
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
 
-    <link href="https://kendo.cdn.telerik.com/````````/styles/kendo.common.min.css" rel="stylesheet" />
-    <link href="https://kendo.cdn.telerik.com/````````/styles/kendo.blueopal.min.css" rel="stylesheet" />
-
-    <!-- the required Kendo subset is located in {Telerik Reporting installation path}\Html5\ReportViewer\js -->  
-    <script src="/ReportViewer/js/telerikReportViewer.kendo-x.x.x.x.min.js"></script>
-
-    <!--If Kendo CDN is prefered here are the required Kendo widgets and bundles
-    
-    The minimum required widgets:
-<script src="https://kendo.cdn.telerik.com/````````/js/kendo.core.min.js"></script>
-<script src="https://kendo.cdn.telerik.com/````````/js/kendo.fx.min.js"></script>
-<script src="https://kendo.cdn.telerik.com/````````/js/kendo.userevents.min.js"></script>
-<script src="https://kendo.cdn.telerik.com/````````/js/kendo.draganddrop.min.js"></script>
-<script src="https://kendo.cdn.telerik.com/````````/js/kendo.mobile.scroller.min.js"></script>
-<script src="https://kendo.cdn.telerik.com/````````/js/kendo.data.min.js"></script>
-<script src="https://kendo.cdn.telerik.com/````````/js/kendo.popup.min.js"></script>
-<script src="https://kendo.cdn.telerik.com/````````/js/kendo.list.min.js"></script>
-<script src="https://kendo.cdn.telerik.com/````````/js/kendo.combobox.min.js"></script>
-<script src="https://kendo.cdn.telerik.com/````````/js/kendo.selectable.min.js"></script>
-<script src="https://kendo.cdn.telerik.com/````````/js/kendo.calendar.min.js"></script>
-<script src="https://kendo.cdn.telerik.com/````````/js/kendo.datepicker.min.js"></script>
-<script src="https://kendo.cdn.telerik.com/````````/js/kendo.listview.min.js"></script>
-<script src="https://kendo.cdn.telerik.com/````````/js/kendo.menu.min.js"></script>
-<script src="https://kendo.cdn.telerik.com/````````/js/kendo.data.odata.min.js"></script>
-<script src="https://kendo.cdn.telerik.com/````````/js/kendo.panelbar.min.js"></script>
-<script src="https://kendo.cdn.telerik.com/````````/js/kendo.tooltip.min.js"></script>
-<script src="https://kendo.cdn.telerik.com/````````/js/kendo.treeview.min.js"></script>
-<script src="https://kendo.cdn.telerik.com/````````/js/kendo.window.min.js"></script>
-<script src="https://kendo.cdn.telerik.com/````````/js/kendo.touch.min.js"></script>
-
-    Widgets bundle:
-    kendo.all.min.js can be used instead of the above widget list
-    -->
-
-    <script src="/api/reports/resources/js/telerikReportViewer-````````.min.js"></script>
-
-    <style>
-        #reportViewer1 {
-            position: absolute;
-            left: 5px;
-            right: 5px;
-            top: 5px;
-            bottom: 5px;
-            overflow: hidden;
-            font-family: Verdana, Arial;
-        }
-    </style>
-</head>
-
-<body>
-    <div id="reportViewer1">
-        loading...
-    </div>
-
-    <script type="text/javascript">
-        $(document).ready(function () {
-            $("#reportViewer1")
-                .telerik_ReportViewer({
-                    // The URL of the service which will serve reports.
-                    // The URL corresponds to the name of the controller class (ReportsController).
-                    // For more information on how to configure the service please check http://www.telerik.com/help/reporting/telerik-reporting-rest-conception.html.
-                    serviceUrl: '@Url.Content("~/api/reports/")',
-
-                    // The URL for the report viewer template. The template can be edited -
-                    // new functionalities can be added and unneeded ones can be removed.
-                    // For more information please check http://www.telerik.com/help/reporting/html5-report-viewer-templates.html.
-                    @*templateUrl: '@Url.Content("~/ReportViewer/templates/telerikReportViewerTemplate-FA.html")',*@
-
-                    //ReportSource - report description
-                    reportSource: {
-
-                        // The report can be set to a report file name
-                        // or CLR type name (report class definition).
-                        report: "Barcodes Report.trdp",
-
-                        // Parameters name value dictionary
-                        parameters: {}
-                    },
-
-                    // Specifies whether the viewer is in interactive or print preview mode.
-                    // PRINT_PREVIEW - Displays the paginated report as if it is printed on paper. Interactivity is not enabled.
-                    // INTERACTIVE - Displays the report in its original width and height without paging. Additionally interactivity is enabled.
-                    viewMode: telerikReportViewer.ViewModes.INTERACTIVE,
-
-                    // Sets the scale mode of the viewer.
-                    // Three modes exist currently:
-                    // FIT_PAGE - The whole report will fit on the page (will zoom in or out), regardless of its width and height.
-                    // FIT_PAGE_WIDTH - The report will be zoomed in or out so that the width of the screen and the width of the report match.
-                    // SPECIFIC - Uses the scale to zoom in and out the report.
-                    scaleMode: telerikReportViewer.ScaleModes.SPECIFIC,
-
-                    // Zoom in and out the report using the scale
-                    // 1.0 is equal to 100%, i.e. the original size of the report
-                    scale: 1.0,
-                });
-        });
-    </script>
-</body>
-</html>
-                ````
+    <link href="https://kendo.cdn.telerik.com/
+````
 
 
 
@@ -329,20 +244,24 @@ The complete Report view (Report.cshtml) should look like this:
 
 1. To add a link to the __Report__ view in the __Home__ page navigation open
               *Views\Shared\_Layout.cshtml* page and add:
-            
+            #_HTML_
 
-````       
+	
+````html       
 	<li><a asp-area="" asp-controller="Home" asp-action="Report">Report</a></li>
+
 ````
 
 list item to the navigation. It should become like this:
-            
+            #_HTML_
 
-````       
+	
+````html       
     <li><a asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>
     <li><a asp-area="" asp-controller="Home" asp-action="About">About</a></li>
     <li><a asp-area="" asp-controller="Home" asp-action="Contact">Contact</a></li>
     <li><a asp-area="" asp-controller="Home" asp-action="Report">Report</a></li>
+
 ````
 
 

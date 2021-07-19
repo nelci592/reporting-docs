@@ -49,7 +49,14 @@ This article is part of the Demo report guide on getting started with Telerik Re
               The connection string looks similar to the following:
             
 
+	
+              <connectionStrings>
+              <add name="Telerik.Reporting.Examples.CSharp.Properties.Settings.TelerikConnectionString"
+              connectionString="Data Source=(local)\SQLEXPRESS;Initial Catalog=AdventureWorks;Integrated Security=SSPI"
+              providerName="System.Data.SqlClient"/>
+              </connectionStrings>
 
+            
 
 
 

@@ -52,10 +52,12 @@ The example below shows the use of the IN keyword in the WHERE clause of a T-SQL
           .
         
 
-````
+	
+````SQL
 SELECT        ProductID, Name, Color
 FROM            Production.Product
 WHERE        ProductID IN (@ProductID)
+
 ````
 
 
@@ -68,9 +70,11 @@ To test the approach in a report, add [SqlDataSource Component]({%slug telerikre
           [SqlDataSource Component]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/sqldatasource-component/overview%}) with the following query:
         
 
-````
+	
+````SQL
 SELECT        ProductID, Name
 FROM            Production.Product
+
 ````
 
 

@@ -44,9 +44,11 @@ In case you need to host it locally, follow the article [How to Host Reports Ser
               can serve static files:
             
 
-````
+	
+````c#
 app.UseStaticFiles();
-            ````
+            
+````
 
 
 
@@ -55,9 +57,10 @@ app.UseStaticFiles();
               [Manual Setup]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/manual-setup%}) help article.
               The required references to jQuery and Telerik Kendo UI CSS and JS files are listed in the example below.
               Copy the Kendo subset from {Telerik Reporting installation path}\Html5\ReportViewer folder to wwwroot.
-            The complete report viewer page should look like this:
+            The complete report viewer page should look like this:#_HTML_
 
-````
+	
+````html
 <!DOCTYPE html> 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head> 
@@ -68,49 +71,8 @@ app.UseStaticFiles();
   
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
   
-  <link href="https://kendo.cdn.telerik.com/````````/styles/kendo.common.min.css" rel="stylesheet" /> 
-  <link href="https://kendo.cdn.telerik.com/````````/styles/kendo.blueopal.min.css" rel="stylesheet" /> 
-  
-  <script src="/api/reports/resources/js/telerikReportViewer"></script>
-  
-  <style> 
-      #reportViewer1 { 
-          position: absolute; 
-          left: 5px; 
-          right: 5px; 
-          top: 50px; 
-          bottom: 5px; 
-          overflow: hidden; 
-          font-family: Verdana, Arial; 
-      } 
-  </style> 
-  
-</head> 
-<body> 
-  <div id="reportViewer1"> 
-      loading... 
-  </div> 
-  
-  <script> 
-      $(document).ready(function () { 
-          $("#reportViewer1") 
-              .telerik_ReportViewer({ 
-                  serviceUrl: "api/reports/", 
-                  reportSource: { 
-                      report: "Barcodes Report.trdp", 
-                      parameters: {} 
-                  }, 
-                  viewMode: telerikReportViewer.ViewModes.INTERACTIVE, 
-                  scaleMode: telerikReportViewer.ScaleModes.SPECIFIC, 
-                  scale: 1.0,
-                  enableAccessibility: false,
-                  sendEmail: { enabled: true }
-              }); 
-      }); 
-  </script> 
-</body> 
-</html>
-              ````
+  <link href="https://kendo.cdn.telerik.com/
+````
 
 
 

@@ -23,12 +23,14 @@ Each [command]({%slug telerikreporting/using-reports-in-applications/display-rep
               prior to executing a command or to find in what state the UI for the command should be.
           
 
-````
+	
+````js
         $('#printButton').click(function () {
             var rv = $("#reportViewer1").data("telerik_ReportViewer");
             rv.commands.print.exec();
         });
-        ````
+        
+````
 
 
 

@@ -28,7 +28,11 @@ In this article we will show you how to create a Range chart using the Graph ite
 
 1. Set the query to the following one:
 
-
+	
+                  SELECT ST.Name, SOH.TotalDue, SOH.OrderDate
+                  FROM Sales.SalesOrderHeader AS SOH
+                  INNER JOIN Sales.SalesTerritory AS ST ON SOH.TerritoryID = ST.TerritoryID
+                
 
 
 

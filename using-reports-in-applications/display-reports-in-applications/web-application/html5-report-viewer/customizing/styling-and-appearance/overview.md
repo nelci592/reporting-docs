@@ -29,7 +29,8 @@ All viewer related classes are supplied by a single CSS stylesheet referenced in
           located in __ %programfiles(x86)%\Progress\Reporting [VERSION]\Html5\ReportViewer\templates__:
         
 
-````
+	
+````js
 <script type="text/javascript">
         $("#reportViewer1")
             .telerik_ReportViewer({
@@ -38,25 +39,30 @@ All viewer related classes are supplied by a single CSS stylesheet referenced in
                 ......
             });
 </script>
-				````
+				
+````
 
 
 
 In addition the Kendo UI CSS needs to be supplied in order for the Kendo UI widgets to be operational:
-        
+        #_HTML_
 
-````
+	
+````html
           <link href="/kendo/styles/kendo.common.min.css" rel="stylesheet" />
-				````
+				
+````
 
 
 
 While these classes provide layout settings the HTML5 Report Viewer depends on the Kendo UI themes for its colors (theme):
-        
+        #_HTML_
 
-````
+	
+````html
           <link href="/kendo/styles/kendo.blueopal.min.css" rel="stylesheet" />
-				````
+				
+````
 
 
 
@@ -75,24 +81,28 @@ In order to use Font Awesome you have to specify the font awesome template. The 
           (%programfiles(x86)%\Progress\Reporting [VERSION]\Html5\ReportViewer\templates):
         
 
-````
+	
+````js
 <script type="text/javascript">
         $("#reportViewer1")
             .telerik_ReportViewer({
                 templateUrl: /ReportViewer/templates/telerikReportViewerTemplate-FA-x.x.x.x.html
                 ....
 </script>
-				````
+				
+````
 
 
 
 The default viewer template and stylesheet depend on CSS media queries to adapt its layout according to the device and display.
           In order the media queries to be activated properly the browser’s viewport needs to be initialized like this:
-        
+        #_HTML_
 
-````
+	
+````html
           <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-				````
+				
+````
 
 
 

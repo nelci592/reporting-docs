@@ -31,7 +31,8 @@ __<appData> element__
 
 XML-based configuration file:
 
-````
+	
+````xml
 							<configuration>
 								…
 								<Telerik.Reporting>
@@ -39,18 +40,21 @@ XML-based configuration file:
 								</Telerik.Reporting>
 								…
 							</configuration> 
-							````
+							
+````
 
 
 
 JSON-based configuration file:
 
-````
+	
+````js
   "telerikReporting": {
     "appData": {
       "path": "c:\\temp"
     }
   }
-    ````
+    
+````
 
 

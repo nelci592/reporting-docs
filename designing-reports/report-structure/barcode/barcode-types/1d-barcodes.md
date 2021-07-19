@@ -73,15 +73,19 @@ This section describes the common settings for one-dimensional barcodes.
 
 For example, the following code inserts the FNC4 control character in the middle of a barcode:
 
-````
+	
+````C#
 				this.barcode1.Value = "ABCD" + "\u00FA" + "1234";
-				````
-
-
-
+				
 ````
+
+
+
+	
+````VB.NET
 				me.barcode1.Value = "ABCD" & ChrW(&HFA) & "1234"
-				````
+				
+````
 
 
 
@@ -94,15 +98,19 @@ GS1-128 is a special case of Code128. The only difference between GS1-128 and
           the different parts, you should insert it manually:
         
 
-````
+	
+````C#
 			this.barcode1.Value = "1234" + "\u00F7" + "5678";
-			````
-
-
-
+			
 ````
+
+
+
+	
+````VB.NET
 			me.barcode1.Value = "1234" & ChrW(&HF7) & "5678"
-			````
+			
+````
 
 
 

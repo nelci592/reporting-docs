@@ -25,7 +25,8 @@ Parameters:
 
 
 
-````
+	
+````js
   // $(handler) is jQuery's shorthand for $(document).ready(handler)
   $(function () {
     $("#reportViewer1").telerik_ReportViewer({
@@ -39,7 +40,8 @@ Parameters:
         console.log("The error message is: " + args); 
       }
   });
-          ````
+          
+````
 
 
 

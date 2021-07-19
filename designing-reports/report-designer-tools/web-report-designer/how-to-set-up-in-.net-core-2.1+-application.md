@@ -65,7 +65,8 @@ If you don't use NuGet packages, along with the above assemblies, you need to ad
            in the constructor of the Startup class. We will need them later to get the configuration settings and the relative paths:
             
 
-````
+	
+````c#
               public Startup(IConfiguration configuration, IHostingEnvironment hostingEnvironment)
               {
                   Configuration = configuration;
@@ -75,7 +76,8 @@ If you don't use NuGet packages, along with the above assemblies, you need to ad
               public IConfiguration Configuration { get; }
 
               public IHostingEnvironment HostingEnvironment { get; }
-          ````
+          
+````
 
 
 
@@ -84,7 +86,9 @@ If you don't use NuGet packages, along with the above assemblies, you need to ad
               calls the following methods that add MVC functionality and prevent from potentially breaking behavior changes between ASP.NET Core versions:
             
 
-````services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);````
+	
+````c#services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
+````
 
 
 
@@ -92,14 +96,18 @@ If you don't use NuGet packages, along with the above assemblies, you need to ad
               __Startup.cs__ is set up for MVC by adding the following line:
             
 
-````app.UseMvc();````
+	
+````c#app.UseMvc();
+````
 
 
 
 1. Assure also that the application configuration inside the __Configure__ method can serve static files:
             
 
-````app.UseStaticFiles();````
+	
+````c#app.UseStaticFiles();
+````
 
 
 
@@ -116,8 +124,10 @@ The .NET Core 2.1 applications use a
           file named by default __appSettings.json__. The default ReportingEngineConfiguration:
         
 
-````ReportingEngineConfiguration = sp.GetService<IConfiguration>()
-          ````
+	
+````C#ReportingEngineConfiguration = sp.GetService<IConfiguration>()
+          
+````
 
 
 
@@ -135,9 +145,10 @@ To activate JSON file configuration with a different name, for example, __report
 
 1. Add a new __ResolveSpecificReportingConfiguration__ class as a separate file or in the
               Startup.cs file (optional)
-            
+            #_C#_
 
-````          
+	
+````c#          
         static IConfiguration ResolveSpecificReportingConfiguration(IHostingEnvironment environment)
         {
             // If a specific configuration needs to be passed to the reporting engine, add it through a new IConfiguration instance.
@@ -146,14 +157,16 @@ To activate JSON file configuration with a different name, for example, __report
                 .AddJsonFile(reportingConfigFileName, true)
                 .Build();
         }
-              ````
+              
+````
 
 
 
 1. Add the required services in the __ConfigureServices__ method. Here is how it may look finally:
             
 
-````
+	
+````c#
          public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
@@ -184,7 +197,8 @@ To activate JSON file configuration with a different name, for example, __report
                     Path.Combine(reportsPath, "Resources")),
             });
         }
-		````
+		
+````
 
 
 
@@ -217,7 +231,8 @@ The REST service works as a backend and is responsible for storage operations li
               how a basic implementation of the controller should look like:
             
 
-````
+	
+````c#
 namespace CSharp.AspNetCoreDemo.Controllers
 {
     using Microsoft.AspNetCore.Mvc;
@@ -234,7 +249,8 @@ namespace CSharp.AspNetCoreDemo.Controllers
         }
     }
 }
-              		        ````
+              		        
+````
 
 
 
@@ -243,9 +259,11 @@ namespace CSharp.AspNetCoreDemo.Controllers
               It should return a JSON representing the separators determined by the current culture, for example:
             
 
-````
+	
+````js
               {"decimalSeparator":".","listSeparator":","}
-              ````
+              
+````
 
 
 
@@ -256,9 +274,10 @@ namespace CSharp.AspNetCoreDemo.Controllers
               Add the required references to load the font, jQuery, Telerik Kendo UI libraries,
               telerikReportViewer and webReportDesigner scripts listed in the example below. Finally,
               add the initialization of the telerik_WebReportDesigner widget. Note that the Web Report Designer container has a minimum width of 1200px.
-            The complete report viewer page should look like this:
+            The complete report viewer page should look like this:#_HTML_
 
-````
+	
+````html
 <!DOCTYPE html> 
 <html xmlns="http://www.w3.org/1999/xhtml"> 
 <head> 
@@ -275,25 +294,8 @@ namespace CSharp.AspNetCoreDemo.Controllers
     </div> 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
-    <script src="https://kendo.cdn.telerik.com/````````/js/kendo.all.min.js"></script> 
-    <script src="api/reportdesigner/resources/js/telerikReportViewer"></script> 
-    <script src="api/reportdesigner/designerresources/js/webReportDesigner"></script> 
-    
-    <script type="text/javascript"> 
-        $(document).ready(function () { 
-            $("#webReportDesigner").telerik_WebReportDesigner({ 
-                persistSession: false, 
-                toolboxArea: { 
-                    layout: "list" 
-                }, 
-                serviceUrl: "api/reportdesigner/", 
-                report: "Product Catalog.trdp" 
-            }).data("telerik_WebDesigner"); 
-        }); 
-    </script> 
-  </body> 
-</html> 
-                       ````
+    <script src="https://kendo.cdn.telerik.com/
+````
 
 
 

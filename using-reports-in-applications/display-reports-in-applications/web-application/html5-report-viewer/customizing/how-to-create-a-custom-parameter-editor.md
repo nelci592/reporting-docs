@@ -38,7 +38,8 @@ The following example illustrates how to use the Kendo DropDownList widget for a
           single parameter value parameter editor which also has available values:
         
 
-````
+	
+````js
 {
       match: function (parameter) {
             // Here you can use all of the parameter properties in order to
@@ -76,14 +77,16 @@ The following example illustrates how to use the Kendo DropDownList widget for a
             };
       }
 }
-        ````
+        
+````
 
 
 
 Passing the parameter editor to the viewer:
         
 
-````
+	
+````js
 <script type="text/javascript">
       $("#reportViewer1")
         	.telerik_ReportViewer({           
@@ -124,7 +127,8 @@ Passing the parameter editor to the viewer:
                   }]
         	});   	 
 </script>
-        ````
+        
+````
 
 
 

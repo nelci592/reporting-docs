@@ -28,14 +28,18 @@ Lets start with the model now. In case all you need is a report viewer that is u
           you can have a simple model to create a strongly typed view - you need to use a [client-side report source]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/how-to-set-reportsource-for-report-viewers%}), like this (TypeReportSource or UriReportSource):
         
 
-````
+	
+````c#
         @model Telerik.Reporting.UriReportSource
-````
-
-
 
 ````
+
+
+
+	
+````vb.net
         @ModelType Telerik.Reporting.UriReportSource
+
 ````
 
 

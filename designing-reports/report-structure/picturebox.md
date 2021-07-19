@@ -67,7 +67,8 @@ While the methods above are quickest to get an image onto your report, one doesn
               to the Value property of a PictureBox:
             
 
-````
+	
+````c#
 			
         using System.Drawing;
  
@@ -76,11 +77,13 @@ While the methods above are quickest to get an image onto your report, one doesn
  
         Image image2 = Image.FromStream(imageStream);
         this.pictureBox2.Value = image2;
-			        ````
-
-
-
+			        
 ````
+
+
+
+	
+````vb.net
 			
         Imports System.Drawing
  
@@ -89,7 +92,8 @@ While the methods above are quickest to get an image onto your report, one doesn
  
         Dim image2 As Image = Image.FromStream(imageStream)
         Me.PictureBox2.Value = image2 
-			        ````
+			        
+````
 
 While in design-time, if you click the ellipsis of the Value property of a selected PictureBox, you will be presented
               with a dialog to choose the desired image. After you have selected the image, the Designer will automatically store it in
@@ -97,30 +101,36 @@ While in design-time, if you click the ellipsis of the Value property of a sele
               to the image stored in the resources and assigns it to the Value property of the PictureBox:
             
 
-````
+	
+````c#
 			    this.pictureBox1.Value = ((object)(resources.GetObject("pictureBox1.Value")));
-			    ````
+			    
+````
 
 When the database field contains relative path (be it file path or URI) you can use [User Functions]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/extending-expressions/user-functions%})
               to specify the correct path to the image:
             
 
-````
+	
+````c#
 public static Image LoadImage(string imageLocation)
 {
      string absoluteLocation = "C:\\" + imageLocation;
      return Image.FromFile(absoluteLocation);
 }
-			````
-
-
-
+			
 ````
+
+
+
+	
+````vb.net
 Public Shared Function LoadImage(imageLocation As String) As Image
 	Dim absoluteLocation As String = "C:\" + imageLocation
 	Return Image.FromFile(absoluteLocation)
 End Function
-            ````
+            
+````
 
 and set the Value of the PictureBox item to the correct expression: =LoadImage(Fields.YourImagePathColumn).
             
@@ -140,7 +150,8 @@ and set the Value of the PictureBox item to the correct expression: =LoadImage(F
               __URI__ pointing to the image:
             
 
-````
+	
+````c#
       this.pictureBox1.Value = "=Fields.MyImageBinary";//a binary data column 
       this.pictureBox2.Value = "=Fields.MyImageURI";//a data column containing an URI
       this.pictureBox3.Value = @"C:\MyPictures\MyPicture.png";//absolute file path to a PNG file
@@ -148,18 +159,21 @@ and set the Value of the PictureBox item to the correct expression: =LoadImage(F
       this.pictureBox5.Value = @".\images\MyPicture.png";//relative path
       this.pictureBox6.Value = "http://www.mysite.com/images/img1.gif";//absolute URL
       
-			      ````
-
-
-
+			      
 ````
+
+
+
+	
+````vb.net
       Me.PictureBox1.Value = "=Fields.MyImageBinary" 'a binary data column
       Me.PictureBox2.Value = "=Fields.MyImageURI" 'a data column containing an URI
       Me.PictureBox3.Value = "C:\MyPictures\MyPicture.png" 'absolute file path to a PNG image
       Me.PictureBox4.Value = "C:\MyPictures\MySVGImage.svg" 'absolute file path to an SVG file
       Me.PictureBox5.Value = ".\images\MyPicture.png" 'relative path
       Me.PictureBox6.Value = "http://www.mysite.com/images/img1.gif" 'absolute URL
-			      ````
+			      
+````
 
 
 

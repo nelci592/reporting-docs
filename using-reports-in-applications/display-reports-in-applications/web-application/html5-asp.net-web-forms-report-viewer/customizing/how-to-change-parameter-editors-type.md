@@ -24,7 +24,8 @@ The parameters editors types are defined through the Parameters element when cre
 The following example illustrates how to set the Parameters method to the Telerik Report Viewer widget.
         
 
-````
+	
+````xml
           <telerik:ReportViewer Width="" Height="" EnableAccessibility="false"
             ID="reportViewer1"
             runat="server">
@@ -33,7 +34,8 @@ The following example illustrates how to set the Parameters method to the Teleri
                 <Editors SingleSelect="ComboBox" MultiSelect="ComboBox"></Editors>
             </Parameters>
         </telerik:ReportViewer>
-          ````
+          
+````
 
 
 

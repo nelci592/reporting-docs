@@ -62,7 +62,8 @@ The following example shows how to connect to the __SQL Server AdventureWorks__ 
           __MyAdventureWorksDB__:
         
 
-````
+	
+````xml
 <configuration>
   <connectionStrings>
     <add name="MyAdventureWorksDB"
@@ -70,7 +71,8 @@ The following example shows how to connect to the __SQL Server AdventureWorks__ 
          providerName="System.Data.SqlClient" />
   </connectionStrings>
 </configuration>
-          ````
+          
+````
 
 
 
@@ -112,7 +114,9 @@ The __SqlDataSource__ component retrieves data using a SQL statement defined thr
           following example shows a typical parameterized SQL select command:
         
 
-
+	
+          SELECT CustomerID, CompanyName FROM Customers WHERE City = @City
+        
 
 
 

@@ -14,9 +14,9 @@ position: 0
 
 Public interface for retrieving available document formats.
 
-## Request
+## Request#_URI Template_
 
-
+	GET /api/reports/formats
 
 
 
@@ -35,12 +35,27 @@ __Response Body__
 An array containing [FormatInfo]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/json-entities/formatinfo%}) objects, which represent the available document formats for reports
         
 
-## Sample
+## Sample#_Request Message_
 
+	GET /api/reports/formats HTTP/1.1
 
+#_Response Message_
 
+	
+          Response Message
+          HTTP/1.1 200 OK
 
-
-
+          [
+            {"name":"PDF","localizedName":"Acrobat (PDF) file"},
+            {"name":"CSV","localizedName":"CSV (comma delimited)"},
+            {"name":"XLS","localizedName":"Excel 97-2003"},
+            {"name":"XLSX","localizedName":"Excel Worksheet"},
+            {"name":"PPTX","localizedName":"PowerPoint Presentation"},
+            {"name":"RTF","localizedName":"Rich Text Format"},
+            {"name":"IMAGE","localizedName":"TIFF file"},
+            {"name":"DOCX","localizedName":"Word Document"},
+            {"name":"XPS","localizedName":"XPS Document"}
+          ]
+        
 
 

@@ -88,7 +88,8 @@ Parameter XML element specifies a parameter for the extension defined in the anc
 
 XML-based configuration file:
 
-````
+	
+````xml
 							<configuration>
 								…
 								<Telerik.Reporting>
@@ -104,13 +105,15 @@ XML-based configuration file:
 								</Telerik.Reporting>
 								…
 							</configuration> 
-							````
+							
+````
 
 
 
 JSON-based configuration file:
 
-````
+	
+````js
   "telerikReporting": {
     "extensions": [
       {
@@ -125,7 +128,8 @@ JSON-based configuration file:
       }
     ]
   }
-          ````
+          
+````
 
 
 
@@ -148,7 +152,8 @@ The following example illustrates how to use the default Image rendering extensi
 
 XML-based configuration file:
 
-````
+	
+````xml
 				<Telerik.Reporting>
 					<extensions>
 						<render>
@@ -162,13 +167,15 @@ XML-based configuration file:
 						</render>
 					</extensions>	 
 				</Telerik.Reporting>
-				````
+				
+````
 
 
 
 JSON-based configuration file:
 
-````
+	
+````js
   "telerikReporting": {
     "extensions": [
       {
@@ -184,7 +191,8 @@ JSON-based configuration file:
       }
     ]
   }
-          ````
+          
+````
 
 
 

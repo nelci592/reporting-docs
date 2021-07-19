@@ -95,8 +95,10 @@ The report generation engine can retrieve Sql Connection Strings and specific Re
           file named by default __appSettings.json__. The default ReportingEngineConfiguration:
         
 
-````ReportingEngineConfiguration = sp.GetService<IConfiguration>()
-          ````
+	
+````C#ReportingEngineConfiguration = sp.GetService<IConfiguration>()
+          
+````
 
 
 
@@ -114,7 +116,8 @@ To activate JSON file configuration with a different name, for example, __report
 In this guide we will create a helper class loading the json-formatted setting:
         
 
-````          
+	
+````C#          
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 
@@ -129,31 +132,35 @@ static class ConfigurationHelper
             .Build();
     }
 }    
-              ````
+              
+````
 
 
 
 Finally, all configurations should be placed in the JSON configuration file (add one in the project root if such 
           does not exist). For example, __ConnectionStrings__ setting should be configured in 
           JSON-based format like this:
-        
+        #_JSON_
 
-````
+	
+````html
 {
   ...
   "ConnectionStrings": {
     "Telerik.Reporting.Examples.CSharp.Properties.Settings.TelerikConnectionString": "Data Source=.\\SQLEXPRESS;Initial Catalog=AdventureWorks;Integrated Security=true"
   }
 }
-              ````
+              
+````
 
 
 
 The above type of connection string lacks information about the data provider and will use *System.Data.SqlClient* as provider invariant name.
           When it's necessary to specify a different data provider, the following notation is also supported:
-        
+        #_JSON_
 
-````
+	
+````html
 {
   ...
   "ConnectionStrings": {
@@ -163,7 +170,8 @@ The above type of connection string lacks information about the data provider an
     }
   }
 }
-              ````
+              
+````
 
 
 
@@ -171,9 +179,10 @@ The two types of connection string notations specified above can coexist in a si
         
 
 The last supported type of __ConnectionStrings__ configuration uses an array to provide information about each connection string:
-        
+        #_JSON_
 
-````
+	
+````html
 {
   ...
   "ConnectionStrings": [
@@ -184,7 +193,8 @@ The last supported type of __ConnectionStrings__ configuration uses an array to 
     }
   ]
 }
-              ````
+              
+````
 
 
 
@@ -196,9 +206,10 @@ The __ConfigureServices__ method inside the __Startup.cs__ in the project should
 
 Add the dedicated configuration object needed from the Reports Service in the dependency container.
           Note how the report source resolver will target the Reports folder we created earlier.
-        
+        #_C#_
 
-```` 
+	
+````c# 
 // Configure dependencies for ReportsController.
 services.TryAddSingleton<IReportServiceConfiguration>(sp =>
     new ReportServiceConfiguration
@@ -209,7 +220,8 @@ services.TryAddSingleton<IReportServiceConfiguration>(sp =>
         ReportSourceResolver = new UriReportSourceResolver(
             System.IO.Path.Combine(sp.GetService<IHostingEnvironment>().ContentRootPath, "Reports"))
     });
-          ````
+          
+````
 
 
 
@@ -225,7 +237,8 @@ services.TryAddSingleton<IReportServiceConfiguration>(sp =>
               This is how a basic implementation of the controller should look like:
             
 
-````
+	
+````c#
 namespace AspNetCoreDemo.Controllers
 {
     using Microsoft.AspNetCore.Mvc;
@@ -242,7 +255,8 @@ namespace AspNetCoreDemo.Controllers
     }
 }
 
-		````
+		
+````
 
 
 

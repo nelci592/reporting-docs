@@ -15,9 +15,14 @@ position: 7
 Represents a report document identifier, consisting of a report and values for its parameters.
       
 
-## 
+## #_Example_
 
-
+	
+          {
+            ‘report’: ‘Report1.trdp’,
+            ‘parameterValues’: { ‘City’: ‘Sofia’ }
+          }
+        
 
 
 

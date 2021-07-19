@@ -26,13 +26,17 @@ In an expression, literal
 
 Example:
 
-
+	
+          ="Product name: " + Fields.ProductName
+        
 
 
 
 or
 
-
+	
+          ='Product name: ' + Fields.ProductName
+        
 
 
 
@@ -70,7 +74,7 @@ They are resolved to:
 
 Example:
 
-
+	= Fields.LineTotal  < 100
 
 
 
@@ -82,6 +86,6 @@ Date values should
 
 Example:
 
-
+	=Fields.Birthdate < #1/31/82#
 
 

@@ -27,7 +27,8 @@ Parameters:
 
 
 
-````
+	
+````js
   // $(handler) is jQuery's shorthand for $(document).ready(handler)
   $(function () {
     $("#reportViewer1").telerik_ReportViewer({
@@ -41,7 +42,8 @@ Parameters:
         console.log("The content of the page is: " + args.pageContent); 
       }
   });
-          ````
+          
+````
 
 
 

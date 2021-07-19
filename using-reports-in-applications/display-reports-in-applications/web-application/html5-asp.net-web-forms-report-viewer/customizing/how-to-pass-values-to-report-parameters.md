@@ -45,13 +45,15 @@ Add a connectiongStrings entry with name __Telerik.Reporting.Examples.CSharp.Pro
                   in the project's web.config file. For example:
                 
 
-````
+	
+````xml
 <connectionStrings>
 	 <add name="Telerik.Reporting.Examples.CSharp.Properties.Settings.TelerikConnectionString"
 	            connectionString="Data Source=(local);Initial Catalog=AdventureWorks;Integrated Security=SSPI"
 	            providerName="System.Data.SqlClient" />
 </connectionStrings>
-								````
+								
+````
 
 
 
@@ -62,7 +64,8 @@ At this point you have a running Web Forms application that displays a report in
 Add code for updating ReportSource Parameters collection in the code behind:
                 
 
-````
+	
+````C#
 protected void Page_Load(object sender, EventArgs e)
 {
     if (!IsPostBack)
@@ -70,23 +73,27 @@ protected void Page_Load(object sender, EventArgs e)
         this.reportViewer1.ReportSource.Parameters.Add("OrderNumber", this.invoiceId.Value);
     }
 }
-								````
-
-
-
+								
 ````
+
+
+
+	
+````vb.net
 Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
     If Not Page.IsPostBack Then
         Me.reportViewer1.ReportSource.Parameters.Add("OrderNumber", Me.invoiceId.Value)
     End If
 End Sub
-        ````
-
-
-
-Add the report viewer stylesheet:
-
+        
 ````
+
+
+
+Add the report viewer stylesheet:#_HTML_
+
+	
+````html
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
@@ -106,13 +113,15 @@ Add the report viewer stylesheet:
     </style>
 
 </head>
-        ````
-
-
-
-Add the custom parameter UI - a dropdown selector with a few values:
-
+        
 ````
+
+
+
+Add the custom parameter UI - a dropdown selector with a few values:#_HTML_
+
+	
+````html
     <div id="invoiceIdSelector" runat="server">
             <label for="invoiceId">Invoices</label>
             <select id="invoiceId" title="Select the Invoice ID" runat="server">
@@ -121,7 +130,8 @@ Add the custom parameter UI - a dropdown selector with a few values:
                 <option value="SO51083">SO51083</option>
             </select>
         </div>
-        ````
+        
+````
 
 
 
@@ -129,7 +139,8 @@ Now initialize the report viewer. We will use the minimal set of all
                   [possible options]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/report-viewer-initialization%}).
                 
 
-````
+	
+````js
         <telerik:ReportViewer
             ID="reportViewer1"
             Width="1300px"
@@ -139,7 +150,8 @@ Now initialize the report viewer. We will use the minimal set of all
             <ReportSource IdentifierType="TypeReportSource" Identifier="Telerik.Reporting.Examples.CSharp.Invoice, Charp.ReportLibrary, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
             </ReportSource>
         </telerik:ReportViewer>
-        ````
+        
+````
 
 
 
@@ -147,7 +159,8 @@ Add code that updates the ReportSource parameters collection with the selected _
                   the dropdown box:
                 
 
-````
+	
+````js
             $('#invoiceId').change(function () {
                 var viewer = $("#reportViewer1").data("telerik_ReportViewer");
                 viewer.reportSource({
@@ -158,13 +171,15 @@ Add code that updates the ReportSource parameters collection with the selected _
                 //if you need to force a refresh for other case, use:
                 //viewer.refreshReport();
             });
-        ````
-
-
-
-The HTML page that we have just created should looks like this:
-
+        
 ````
+
+
+
+The HTML page that we have just created should looks like this:#_HTML_
+
+	
+````html
 <%@ Page Language="C#" AutoEventWireup="true" CodeBehind="InvoiceParameters.aspx.cs" Inherits="WebFormsDocumentation.InvoiceParameters" %>
 //for VB <%@ Page Language="vb" AutoEventWireup="false" CodeBehind="InvoiceParameters.aspx.vb" Inherits="WebFormsDocVB._InvoiceParameters" %>
 
@@ -222,7 +237,8 @@ The HTML page that we have just created should looks like this:
             });
     </script>
 </body>
-</html>				````
+</html>				
+````
 
 
 

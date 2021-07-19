@@ -12,9 +12,11 @@ position: 2
 
 
 
-## Request
+## Request#_URI Template_
 
-
+	
+          GET /api/reports/clients/{clientId}/instances/{instanceId}/documents/{documentId}
+        
 
 
 
@@ -47,12 +49,20 @@ __Response Body__
 The document content bytes as attachment.
         
 
-## Sample
+## Sample#_Request Message_
 
+	
+          GET /api/reports/clients/2c3d/instances/4d3c/documents/5x3a HTTP/1.1
+        
 
+#_Response Message_
 
+	
+          HTTP/1.1 200 OK
 
+          Content-Disposition: attachment; filename=ProductCatalog.pdf
 
-
+          bytes
+        
 
 

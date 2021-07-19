@@ -37,7 +37,17 @@ This guide uses the __AdventureWorks__ database that is provided by Telerik Repo
               the employee with id=1 will be the first one, the employee with id=2 will come second, and so on.
             
 
-
+	
+              SELECT
+              [HumanResources].[vEmployee].[EmployeeID] ,
+              [HumanResources].[vEmployee].[FirstName],
+              [HumanResources].[vEmployee].[LastName],
+              [HumanResources].[vEmployee].[JobTitle],
+              [HumanResources].[vEmployee].[Phone]
+              FROM [HumanResources].[vEmployee]
+              WHERE [HumanResources].[vEmployee].[EmployeeID] <= 14
+              ORDER BY 1 ASC
+            
 
 
 

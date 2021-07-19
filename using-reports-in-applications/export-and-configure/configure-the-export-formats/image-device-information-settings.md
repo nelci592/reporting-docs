@@ -41,7 +41,8 @@ The following example demonstrates how to configure the settings for __IMAGE__, 
 
 XML-based configuration file:
 
-````
+	
+````xml
 							<configuration>
 								…
 								<Telerik.Reporting>
@@ -71,13 +72,15 @@ XML-based configuration file:
 								</Telerik.Reporting>
 								…
 							</configuration> 
-							````
+							
+````
 
 
 
 JSON-based configuration file:
 
-````
+	
+````js
                 "telerikReporting": {
                   "extensions": [
                     {
@@ -125,7 +128,8 @@ JSON-based configuration file:
                     }
                   ]
                 }
-							````
+							
+````
 
 
 

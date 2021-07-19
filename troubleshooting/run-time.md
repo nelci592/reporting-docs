@@ -35,7 +35,8 @@ This exception might surface if you try to use objects which
           Another approach is to use a DataSet/DataTable:
         
 
-````
+	
+````C#
 			DataTable dt = new DataTable();
 			DataColumn col = new DataColumn("ColumnName", typeof(string));
 			//....
@@ -47,7 +48,8 @@ This exception might surface if you try to use objects which
 				//.....
 				dt.Rows.Add(row);
 			}
-			````
+			
+````
 
 
          
@@ -84,14 +86,16 @@ There are three cases in which this error message occurs:
               make sure preCondition attribute is present at the end of Telerik.ReportViewer handler:
             
 
-````
+	
+````XML
 							<add 
 								name="Telerik.ReportViewer.axd_*" 
 								type="Telerik.ReportViewer.WebForms.HttpHandler, Telerik.ReportViewer.WebForms, Version=x.x.x.x, Culture=neutral, PublicKeyToken=a9d7983dfcc261be" 
 								path="Telerik.ReportViewer.axd" verb="*" 
 								preCondition="integratedMode"
 							/>
-						````
+						
+````
 
 
 

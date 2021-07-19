@@ -33,11 +33,13 @@ As with most types of software, font files are licensed, rather than sold,
         for any font you use as private font, or otherwise redistribute.
       
 
-````
+	
+````xml
     	<privateFonts>
         	<add />
 		</privateFonts>
-		````
+		
+````
 
 
 
@@ -89,7 +91,8 @@ The following example demonstrates how to configure the reporting engine to use 
 
 XML-based configuration file:
 
-````
+	
+````xml
 <?xml version="1.0"?>
 <configuration>
    ...
@@ -102,13 +105,15 @@ XML-based configuration file:
  	</Telerik.Reporting>
    ...
 </configuration>
-  			````
+  			
+````
 
 
 
 JSON-based configuration file:
 
-````
+	
+````js
   "telerikReporting": {
     "privateFonts": [
       {
@@ -127,7 +132,8 @@ JSON-based configuration file:
       }
     ]
   }
-  			````
+  			
+````
 
 
 

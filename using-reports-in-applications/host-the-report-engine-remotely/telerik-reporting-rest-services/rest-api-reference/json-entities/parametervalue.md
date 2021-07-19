@@ -15,9 +15,14 @@ position: 6
 Represents a single value of the parameter available values.
       
 
-## 
+## #_Example_
 
-
+	
+          {
+            ‘name’: ‘Sofia’,
+            ‘value’: 1
+          }
+        
 
 
 

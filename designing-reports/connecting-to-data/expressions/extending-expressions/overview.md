@@ -22,7 +22,8 @@ In order to expose your custom functions, so they can be utilized by the Reporti
       The reference is added under the AssemblyReferences configuration section in the application's configuration file.
       
 
-````
+	
+````XML
       <configuration>
 			<configSections>
 				<section
@@ -38,7 +39,8 @@ In order to expose your custom functions, so they can be utilized by the Reporti
 				</AssemblyReferences>
 			 </Telerik.Reporting>
       </configuration>
-      ````
+      
+````
 
 
 

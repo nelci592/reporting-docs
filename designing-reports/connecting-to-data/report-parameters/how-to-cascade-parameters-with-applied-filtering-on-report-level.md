@@ -20,7 +20,8 @@ To create cascading report parameters with applied filtering on report level fol
 1. Using the [DataSource Wizard]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/datasource-wizard%}) bind the report to SqlDataSource with query:
 		        
 
-````
+	
+````SQL
 				SELECT
 					Production.Product.ProductNumber,
 					Production.Product.Name AS ProductName,
@@ -30,7 +31,8 @@ To create cascading report parameters with applied filtering on report level fol
 					Production.Product
 					INNER JOIN Production.ProductSubcategory
 						ON Production.Product.ProductSubcategoryID = Production.ProductSubcategory.ProductSubcategoryID
-				````
+				
+````
 
 
 
@@ -47,13 +49,15 @@ To create cascading report parameters with applied filtering on report level fol
 1. Set the __DataSource__ using the __Data Source Wizard__ to SqlDataSource with query: 
 		        
 
-````
+	
+````SQL
 				SELECT
 					ProductCategoryID,
 					Name AS CategoryName
 				FROM
 					Production.ProductCategory
-				````
+				
+````
 
 
 
@@ -78,14 +82,16 @@ To create cascading report parameters with applied filtering on report level fol
 1. Set the __DataSource__ using the __Data Source Wizard__ to SqlDataSource with query:
 		        
 
-````
+	
+````SQL
 				SELECT
 					ProductCategoryID,
 					ProductSubcategoryID,
 					Name AS SubcategoryName
 				FROM
 					Production.ProductSubcategory
-				````
+				
+````
 
 
 

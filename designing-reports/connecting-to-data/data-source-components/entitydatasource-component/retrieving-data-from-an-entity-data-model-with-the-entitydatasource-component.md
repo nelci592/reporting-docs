@@ -147,10 +147,14 @@ The above expression relies upon the built-in lazy loading mechanism to obtain t
       	
 
 
+	
+this.Products.Include("ProductSubcategory").Include("ProductSubcategory.ProductCategory").ToList()
 
 
 
 
+	
+Me.Products.Include("ProductSubcategory").Include("ProductSubcategory.ProductCategory").ToList()
 
 
 

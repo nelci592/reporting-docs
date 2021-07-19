@@ -12,9 +12,11 @@ position: 8
 
 
 
-## Request
+## Request#_URI Template_
 
-
+	
+          DELETE /api/reports/clients/{clientId}/instances/{instanceId}/documents/{documentId}
+        
 
 
 
@@ -42,12 +44,16 @@ __Path parameters__
 
 
 
-## Sample
+## Sample#_Request Message_
 
+	
+          DELETE /api/reports/clients/2c3d/instances/4d3c/documents/5x3a HTTP/1.1
+        
 
+#_Response Message_
 
-
-
-
+	
+          HTTP/1.1 200 OK
+        
 
 

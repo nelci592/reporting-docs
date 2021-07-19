@@ -22,13 +22,15 @@ The __restReportService__ element specifies the configuration settings for the R
         T:Telerik.Reporting.Services.WebApi.ReportsControllerBase instance would look like this:
       
 
-````
+	
+````c#
         configurationInstance = new ConfigSectionReportServiceConfiguration
         {
           HostAppId = "Html5DemoApp",
           ReportSourceResolver = resolver,
         };
-        ````
+        
+````
 
 
 
@@ -76,7 +78,8 @@ __<storage> element__
 
 XML-based configuration file:
 
-````
+	
+````xml
 <configuration>
 …
   <Telerik.Reporting>
@@ -108,13 +111,15 @@ XML-based configuration file:
   </Telerik.Reporting>
 …
 </configuration>
+
 ````
 
 
 
 JSON-based configuration file:
 
-````
+	
+````js
   "telerikReporting": {          
     "restReportService": {
       "hostAppId": "Application1",
@@ -136,6 +141,7 @@ JSON-based configuration file:
       }
     },
   }
+
 ````
 
 

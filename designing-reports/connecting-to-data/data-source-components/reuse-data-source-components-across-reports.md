@@ -27,11 +27,16 @@ The new file is added to the project and automatically opened in Visual Studio.
 Change the base class from __Component__ to the appropriate Telerik Reporting Data Source component (Telerik.Reporting.SqlDataSource, Telerik.Reporting.ObjectDataSource, Telerik.Reporting.EntityDataSource, Telerik.Reporting.OpenAccessDataSource) as shown in the following code snippet:
               
 
+	
+                public partial class Component1 : Telerik.Reporting.SqlDataSource
+              
 
 
 
-
-
+	
+                Partial Class Component1
+                Inherits Telerik.Reporting.SqlDataSource
+              
 
 
 

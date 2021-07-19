@@ -126,7 +126,8 @@ The EntityDataSource component wraps EF data models, where in design-time the Re
               configuration - [Extending Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/configuration/extending-report-designer%}). For example:
             
 
-````
+	
+````XML
 <Telerik.Reporting>
    <AssemblyReferences>
        <add name="MyEFModelCustomAssembly" version="1.0.0.0" culture="neutral" publicKeyToken="null" />
@@ -134,7 +135,8 @@ The EntityDataSource component wraps EF data models, where in design-time the Re
        <add name="EntityFramework.SqlServer" version="6.0.0.0" culture="neutral" publicKeyToken="..." />
    </AssemblyReferences>
 </Telerik.Reporting>
-            ````
+            
+````
 
 
 

@@ -50,7 +50,9 @@ The __System.Data.SqlClient__ provider supports named parameters as placeholders
                 as shown in the following example:
               
 
-
+	
+                SELECT * FROM Person.Contact WHERE FirstName = @FirstName AND LastName = @LastName
+              
 
 
 
@@ -90,7 +92,9 @@ The __System.Data.OleDb__ and __System.Data.Odbc__ providers
                 shown in the following example:
               
 
-
+	
+                SELECT * FROM Person.Contact WHERE FirstName = ? AND LastName = ?
+              
 
 
 

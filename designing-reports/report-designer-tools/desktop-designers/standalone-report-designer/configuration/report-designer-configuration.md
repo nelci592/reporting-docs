@@ -14,9 +14,10 @@ position: 1
 
 The settings of the Telerik Reporting engine are defined in a custom configuration section called Telerik.Reporting. This section should be added
         to the Report Designer configuration file (Telerik.ReportDesigner.exe.config):
-      
+      #_XML_
 
-````
+	
+````xml
     <configuration>
     <configSections>
       <section
@@ -27,7 +28,8 @@ The settings of the Telerik Reporting engine are defined in a custom configurati
       </configSections>
       …
     </configuration>
-      ````
+      
+````
 
 
 
@@ -35,9 +37,10 @@ Using this section, you can control concrete aspects of the engine such as the a
         utilized by the viewers. For more information, see [Telerik Reporting Configuration Section]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/overview%}).
       
 
-The Telerik Report Designer offers additional configuration through its own custom configuration section, called Telerik.ReportDesigner:
+The Telerik Report Designer offers additional configuration through its own custom configuration section, called Telerik.ReportDesigner:#_XML_
 
-````
+	
+````xml
     <configuration>
     <configSections>
       <section
@@ -48,16 +51,19 @@ The Telerik Report Designer offers additional configuration through its own cust
       </configSections>
       …
     </configuration>
-      ````
-
-
-
-This section lets you specify the working directory of the Report Designer via a single attribute:
-
+      
 ````
+
+
+
+This section lets you specify the working directory of the Report Designer via a single attribute:#_XML_
+
+	
+````xml
     <Telerik.ReportDesigner DefaultWorkingDir="Examples">
     </Telerik.ReportDesigner>
-      ````
+      
+````
 
 
 

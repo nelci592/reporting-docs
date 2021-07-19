@@ -39,7 +39,8 @@ position: 2
                             to enable the required NewtonsoftJson serialization:
                         
 
-````
+	
+````c#
 public void ConfigureServices(IServiceCollection services)
 {
     services.AddControllers();
@@ -48,6 +49,7 @@ public void ConfigureServices(IServiceCollection services)
         .AddNewtonsoftJson();
     services.AddServerSideBlazor();
     ...
+
 ````
 
 
@@ -58,7 +60,8 @@ public void ConfigureServices(IServiceCollection services)
                             and optionally add some report definitions inside.
                         
 
-````
+	
+````c#
 ...
 services.TryAddSingleton<IReportServiceConfiguration>(sp => new ReportServiceConfiguration
 {
@@ -75,6 +78,7 @@ services.TryAddSingleton<IReportDesignerServiceConfiguration>(sp => new ReportDe
     ResourceStorage = new ResourceStorage(Path.Combine(sp.GetService<IWebHostEnvironment>().WebRootPath, "Resources"))
 });
 ...
+
 ````
 
 
@@ -84,12 +88,14 @@ services.TryAddSingleton<IReportDesignerServiceConfiguration>(sp => new ReportDe
                             lambda expression argument:
                         
 
-````
+	
+````c#
 app.UseEndpoints(endpoints =>
 {
     endpoints.MapControllers();
     ...
 });
+
 ````
 
 
@@ -98,8 +104,10 @@ app.UseEndpoints(endpoints =>
                             to assure that the application can serve static files:
                         
 
-````
+	
+````c#
 app.UseStaticFiles();
+
 ````
 
 
@@ -110,7 +118,8 @@ app.UseStaticFiles();
                             project.
                         
 
-````
+	
+````c#
 using Microsoft.AspNetCore.Mvc;
 using Telerik.Reporting.Services;
 using Telerik.WebReportDesigner.Services;
@@ -125,6 +134,7 @@ public class ReportDesignerController : ReportDesignerControllerBase
     {
     }
 }
+
 ````
 
 
@@ -138,14 +148,15 @@ public class ReportDesignerController : ReportDesignerControllerBase
 
 1. Add JavaScript dependencies to the __head__ element of the
                             __Pages/_Host.cshtml__ (Blazor Server) or __wwwroot/index.html__ (Blazor WebAssembly):
-                        
+                        #_CSHTML_
 
-````
+	
+````html
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://kendo.cdn.telerik.com/2020.3.1118/js/kendo.all.min.js"></script>
 
 <script src="/api/reportdesigner/resources/js/telerikReportViewer"></script>
-<script src="/api/reportdesigner/designerresources/js/webReportDesigner-````````.min.js/"></script>
+<script src="/api/reportdesigner/designerresources/js/webReportDesigner-
 ````
 
 
@@ -155,31 +166,36 @@ public class ReportDesignerController : ReportDesignerControllerBase
                             to the __head__ element of the
                             __Pages/_Host.cshtml__ (Blazor Server) or __wwwroot/index.html__ (Blazor WebAssembly).
                             The Razor syntax for a server application differs and you need to escape the __@__ symbol as __@@__:
-                        
+                        #_CSHTML_
 
-````
+	
+````html
 <link rel="stylesheet" href="https://unpkg.com/@progress/kendo-theme-default@latest/dist/all.css" />
+
 ````
 
 
 
 1. Add the dedicated __telerikWebReportDesignerInterop.js__ dependency at the end of the __body__ element of the
                             __Pages/_Host.cshtml__ (Blazor Server) or __wwwroot/index.html__ (Blazor WebAssembly):
-                        
+                        #_CSHTML_
 
-````
+	
+````none
     <script src="_content/telerik.webreportdesigner.blazor/telerikWebReportDesignerInterop.js" defer></script>
 
     @* Or this one if using the Telerik.WebReportDesigner.Blazor.Trial package *@
     @*<script src="_content/Telerik.WebReportDesigner.Blazor.Trial/telerikWebReportDesignerInterop.js" defer></script>*@
-              ````
+              
+````
 
 
 
 1. Use the following snippet to place the designer component in a razor page like __Pages/Index.razor__.
-                        
+                        #_razor_
 
-````
+	
+````none
 @page "/"
 @using Telerik.WebReportDesigner.Blazor
 
@@ -199,7 +215,8 @@ public class ReportDesignerController : ReportDesignerControllerBase
                    Report="SampleReport.trdp"
                    ToolboxArea="new ToolboxAreaOptions() { Layout = ToolboxAreaLayout.List }"
                    PropertiesArea="new PropertiesAreaOptions() { Layout = PropertiesAreaLayout.Categorized }" />
-              ````
+              
+````
 
 
 

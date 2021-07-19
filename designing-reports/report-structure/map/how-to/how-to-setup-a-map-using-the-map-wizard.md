@@ -40,7 +40,27 @@ On the __Choose Data Source__ page, add new
 * Paste the following query in the *Select Statement* box:
                 
 
+	
+                  SELECT
+                  PS.Name AS ProductSubCategory,
+                  SP.Name + ', ' + CR.Name AS State,
+                  SOD.LineTotal as LineTotal
+                  FROM
 
+                  Production.Product AS P
+                  INNER JOIN Production.ProductSubcategory AS PS ON P.ProductSubcategoryID = PS.ProductSubcategoryID
+                  INNER JOIN Production.ProductCategory AS PC ON PS.ProductCategoryID = PC.ProductCategoryID
+                  INNER JOIN Sales.SalesOrderDetail AS SOD ON P.ProductID = SOD.ProductID
+                  INNER JOIN Sales.SalesOrderHeader AS SOH ON SOD.SalesOrderID = SOH.SalesOrderID
+                  INNER JOIN Person.Address AS ADDR ON ADDR.AddressID = SOH.ShipToAddressID
+                  INNER JOIN Person.StateProvince AS SP ON SP.StateProvinceID = ADDR.StateProvinceID
+                  INNER JOIN Person.CountryRegion AS CR ON CR.CountryRegionCode = SP.CountryRegionCode
+
+                  WHERE
+                  CR.Name IN ('Australia')
+                  AND DATEPART(YEAR, SOH.OrderDate) IN (2003, 2004)
+                  AND PC.Name = 'Bikes'
+                
 
 
 

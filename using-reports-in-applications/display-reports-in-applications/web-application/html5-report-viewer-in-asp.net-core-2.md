@@ -92,13 +92,15 @@ Telerik Reporting relies on the ConfigurationManager to resolve named connection
                 
 
 1. Change the PropertyGroup section to look like:
-                
+                #_XML_
 
-````
+	
+````html
 <PropertyGroup>
   <TargetFramework>net461</TargetFramework>
 </PropertyGroup>
-                ````
+                
+````
 
 For another *.NET Framework* (for example *4.7.1*) the value should be changed accordingly (for the example - *net471*), etc.
                   Save the .csproj file.
@@ -159,7 +161,8 @@ For Office OpenXML document formats (XLSX, DOCX and PPTX) install the
               This is how a basic implementation of the controller should look like:
             
 
-````
+	
+````c#
 namespace WebApplication1.Controllers
 {
     using System.IO;
@@ -199,7 +202,8 @@ namespace WebApplication1.Controllers
         }
     }
 }
-			````
+			
+````
 
 
         Adding the HTML5 Report Viewer
@@ -221,9 +225,10 @@ namespace WebApplication1.Controllers
               [Manual Setup]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/manual-setup%}) help article.
               The required references to jQuery and Telerik Kendo UI CSS and JS files are listed in the example below.
               Copy the Kendo subset from {Telerik Reporting installation path}\Html5\ReportViewer folder to wwwroot.
-            The complete report viewer page should look like this:
+            The complete report viewer page should look like this:#_HTML_
 
-````
+	
+````html
 <!DOCTYPE html> 
 <html> 
 <head> 
@@ -231,49 +236,8 @@ namespace WebApplication1.Controllers
     <title></title> 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script> 
   
-    <link href="http://cdn.kendostatic.com/````````/styles/kendo.common.min.css" rel="stylesheet" /> 
-    <link href="http://cdn.kendostatic.com/````````/styles/kendo.blueopal.min.css" rel="stylesheet" /> 
-  
-    <script src="telerikReportViewer.kendo-<token>buildversion</token>"></script> 
-    <script src="/api/reports/resources/js/telerikReportViewer-<token>buildversion</token>"></script> 
-  
-    <style> 
-        #reportViewer1 { 
-            position: absolute; 
-            left: 5px; 
-            right: 5px; 
-            top: 50px; 
-            bottom: 5px; 
-            overflow: hidden; 
-            font-family: Verdana, Arial; 
-        } 
-    </style> 
-  
-</head> 
-<body> 
-    <div id="reportViewer1"> 
-        loading... 
-    </div> 
-  
-    <script> 
-        $(document).ready(function () { 
-            $("#reportViewer1") 
-                .telerik_ReportViewer({ 
-                    serviceUrl: "api/reports/", 
-                    reportSource: { 
-                        //report: "Telerik.Reporting.Examples.CSharp.ReportCatalog, CSharp.ReportLibrary", 
-                        report: "Barcodes Report.trdp", 
-                        parameters: {} 
-                    }, 
-                    viewMode: telerikReportViewer.ViewModes.INTERACTIVE, 
-                    scaleMode: telerikReportViewer.ScaleModes.SPECIFIC, 
-                    scale: 1.0
-                }); 
-        }); 
-    </script> 
-</body> 
-</html>
-                ````
+    <link href="http://cdn.kendostatic.com/
+````
 
 
 

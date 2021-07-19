@@ -46,37 +46,45 @@ Add buttons elements in your local template. There are two different elements th
 * For desktop screens.
             Copy the following element in the __ul__ element with id attribute __trv-main-menu-ul__
 
-* For default template
+* For default template#_HTML_
 
-````
+	
+````html
                       <li aria-label="ariaLabelMenuContinuousScroll"><a data-command="telerik_ReportViewer_pageMode" title="menuContinuousScrollTitle" href="#"><i class="t-font-icon t-i-scroll"></i></a></li>
-				            ````
-
-
-
-* For Font Awesome template
-
+				            
 ````
+
+
+
+* For Font Awesome template#_HTML_
+
+	
+````html
                       <li aria-label="ariaLabelMenuContinuousScroll"><a data-command="telerik_ReportViewer_pageMode" title="menuContinuousScrollTitle" href="#"><i class="fa fa-angle-double-down icon-angle-double-down"></i></a></li>
-				            ````
+				            
+````
 
 
 
 * For mobile screensCopy the following element in __ul__ element with id attribute __trv-side-menu-ul__
 
-* For default template
+* For default template#_HTML_
 
-````
+	
+````html
                     <li aria-label="ariaLabelMenuContinuousScroll"><a data-command="telerik_ReportViewer_pageMode" title="menuContinuousScrollTitle" href="#"><i class="t-font-icon t-i-scroll"></i><span>menuContinuousScrollText</span></a></li>
-				          ````
-
-
-
-* For Font Awesome template
-
+				          
 ````
+
+
+
+* For Font Awesome template#_HTML_
+
+	
+````html
                     <li aria-label="ariaLabelMenuContinuousScroll"><a data-command="telerik_ReportViewer_pageMode" title="menuContinuousScrollTitle" href="#"><i class="fa fa-angle-double-down icon-angle-double-down"></i><span>menuContinuousScrollText</span></a></li>
-				          ````
+				          
+````
 
 
 

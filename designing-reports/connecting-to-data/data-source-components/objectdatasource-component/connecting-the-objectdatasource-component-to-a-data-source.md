@@ -112,7 +112,8 @@ For security reasons the ObjectDataSource can resolve only types that are declar
                   in __Telerik.Reporting__ section of application configuration file:
                 
 
-````
+	
+````xml
 <?xml version="1.0"?>
 <configuration>
     <configSections>
@@ -126,7 +127,8 @@ For security reasons the ObjectDataSource can resolve only types that are declar
  	  </Telerik.Reporting>
    ...
 </configuration>
-  			````
+  			
+````
 
 The additional attributes like __version__, __culture__ and __publicKeyToken__ are not mandatory,
               because the .NET runtime can resolve the assembly only by its name.

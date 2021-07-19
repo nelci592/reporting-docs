@@ -159,7 +159,8 @@ Find the __ReportSourceResolver property__ in the P:Telerik.Reporting.Services.W
 
 Request the report from the HTML5 Report Viewer on the client:
 
-````
+	
+````JavaScript
 <script type="text/javascript">
 	$(document).ready(function () {
             $("#reportViewer1").telerik_ReportViewer({
@@ -168,7 +169,8 @@ Request the report from the HTML5 Report Viewer on the client:
         });
     });
 </script>
-				````
+				
+````
 
 
 
@@ -176,7 +178,28 @@ where x.x.x.x is the version of the HTML5 ReportViewer/Telerik Reporting (e.g. 8
 
 To create the database use the following script:
 
+	
+              USE [master]
+              GO
+              CREATE DATABASE [Reports]
+              CONTAINMENT = NONE
+              ON  PRIMARY
+              ( NAME = N'Reports', FILENAME = N'C:\Program Files\Microsoft SQL Server\MSSQL11.SQLEXPRESS\MSSQL\DATA\Reports.mdf' , SIZE = 4096KB ,
 
+              MAXSIZE = UNLIMITED, FILEGROWTH = 1024KB )
+              LOG ON
+              ( NAME = N'Reports_log', FILENAME = N'C:\Program Files\Microsoft SQL Server\MSSQL11.SQLEXPRESS\MSSQL\DATA\Reports_log.ldf' , SIZE = 1024KB
+
+              , MAXSIZE = 2048GB , FILEGROWTH = 10%)
+              GO
+              USE [Reports]
+              GO
+              CREATE TABLE [dbo].[Reports](
+              [ID] [int] NOT NULL,
+              [Definition] [nvarchar](max) NOT NULL
+              ) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
+              GO
+            
 
 
 
@@ -196,7 +219,8 @@ Add to your IReportSourceResolver implementation a constructor with parameter IR
               Then use the parentResolver if the custom report source resolving mechanism fails.
             
 
-````
+	
+````C#
 class ReportSourceResolverWithFallBack : IReportSourceResolver
 {
     readonly IReportSourceResolver parentResolver;
@@ -225,11 +249,13 @@ class ReportSourceResolverWithFallBack : IReportSourceResolver
         return null;
     }
 }
-				````
-
-
-
+				
 ````
+
+
+
+	
+````VB
 Class ReportSourceResolverWithFallBack
     Implements IReportSourceResolver
     ReadOnly parentResolver As IReportSourceResolver
@@ -254,7 +280,8 @@ Class ReportSourceResolverWithFallBack
         Return Nothing
     End Function
 End Class
-				````
+				
+````
 
 
 
@@ -262,7 +289,8 @@ Add to the ReportServiceConfiguration the IReportSourceResolver implementations 
               first, if it fails the second one and so on.
             
 
-````
+	
+````C#
 public class CustomResolverWithFallbackReportsController : ReportsControllerBase
 {
     static ReportServiceConfiguration configurationInstance;
@@ -286,11 +314,13 @@ public class CustomResolverWithFallbackReportsController : ReportsControllerBase
         this.ReportServiceConfiguration = configurationInstance;
     }
 }
-				````
-
-
-
+				
 ````
+
+
+
+	
+````VB
 Public Class CustomResolverWithFallbackReportsController
     Inherits Telerik.Reporting.Services.WebApi.ReportsControllerBase
 
@@ -312,7 +342,8 @@ Public Class CustomResolverWithFallbackReportsController
         Me.ReportServiceConfiguration = configurationInstance
     End Sub
 End Class
-				````
+				
+````
 
 
 

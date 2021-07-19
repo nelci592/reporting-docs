@@ -15,15 +15,17 @@ position: 2
 ## 
 
 Each method can be called using a reference to the report viewer component.
-        
+        #_TypeScript_
 
+	
 ````
 <tr-viewer #viewer1
 
 ...
 
 <button (click)="viewer1.refreshReport()">Refresh</button>
-        ````
+        
+````
 
 
 

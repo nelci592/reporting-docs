@@ -43,7 +43,8 @@ The purpose of the report definition storage is to describe how to browse, open,
           the Web Report Designer. The storage is configured as a setting of the __ReportDesignerController__.
         
 
-````
+	
+````c#
 public ReportDesignerController()
 {
     ...
@@ -54,7 +55,8 @@ public ReportDesignerController()
         SettingsStorage = new FileSettingsStorage(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "Telerik Reporting"))
     };
 }
-          ````
+          
+````
 
 
 
@@ -63,7 +65,8 @@ The default implementation of the storage demonstrated above is the __FileDefini
           To load the reports from a database, for example, change the implementation of the definition storage like this:
         
 
-````
+	
+````c#
 public class DbDefinitionStorage : IDefinitionStorage
 {
     /// <summary>
@@ -104,14 +107,16 @@ public class DbDefinitionStorage : IDefinitionStorage
         // Delete the report definition from the database.
     }
 }
-          ````
+          
+````
 
 
 
 Then you can set the new definition storage implementation in the __ReportDesignerController__.
         
 
-````
+	
+````c#
 public ReportDesignerController()
 {
     ...
@@ -122,6 +127,7 @@ public ReportDesignerController()
         SettingsStorage = new FileSettingsStorage(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "Telerik Reporting"))
     };
 }
-          ````
+          
+````
 
 

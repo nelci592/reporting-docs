@@ -19,9 +19,11 @@ Gets the current page mode. For more information please see jQuery.fn.telerik_Re
 
 Returns: string.
 
-````
+	
+````js
 var reportViewer = $("#reportViewer1").data("telerik_ReportViewer");
 var psm = reportViewer.pageMode();
-          ````
+          
+````
 
 

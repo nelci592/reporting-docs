@@ -17,10 +17,12 @@ position: 1
 Gets the current key shortcuts map, used when the report viewer is in accessible mode.
         
 
-````
+	
+````js
             var reportViewer = $("#reportViewer1").data("telerik_ReportViewer");            
             var map = reportViewer.accessibilityKeyMap();
-          ````
+          
+````
 
 
 

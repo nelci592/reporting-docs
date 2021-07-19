@@ -26,9 +26,10 @@ To give an example we will use the Invoice report from our examples and will upd
 
 Add a new html page CustomParameters.html to the CSharp.Html5Demo or VB.Html5Demo project.
 
-Add the references to all required JavaScript libraries and stylesheets:
+Add the references to all required JavaScript libraries and stylesheets:#_HTML_
 
-````
+	
+````html
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -40,30 +41,15 @@ Add the references to all required JavaScript libraries and stylesheets:
     <link href="/kendo/styles/kendo.common.min.css" rel="stylesheet" />
     <link href="/kendo/styles/kendo.blueopal.min.css" rel="stylesheet" />
 
-    <script src="/ReportViewer/js/telerikReportViewer.kendo-````````.min.js"></script>
-    <script src="/ReportViewer/js/telerikReportViewer-````````.min.js"></script>
-    
-    <style>
-        #reportViewer1 {
-            position: absolute;
-            left: 5px;
-            right: 5px;
-            top: 40px;
-            bottom: 5px;
-
-            font-family: 'segoe ui', 'ms sans serif';
-
-            overflow: hidden;
-        }
-    </style>
-</head>
-        ````
-
-
-
-Add the custom parameter UI - a dropdown selector with a few values:
-
+    <script src="/ReportViewer/js/telerikReportViewer.kendo-
 ````
+
+
+
+Add the custom parameter UI - a dropdown selector with a few values:#_HTML_
+
+	
+````html
     <div id="invoiceIdSelector">
         <label for="invoiceId">Invoices</label>
         <select id="invoiceId" title="Select the Invoice ID">
@@ -72,17 +58,20 @@ Add the custom parameter UI - a dropdown selector with a few values:
             <option value="SO51083">SO51083</option>
         </select>
     </div>
-        ````
-
-
-
-Add the ReportViewer placeholder
-
+        
 ````
+
+
+
+Add the ReportViewer placeholder#_HTML_
+
+	
+````html
     <div id="reportViewer1">
         loading...
     </div>
-        ````
+        
+````
 
 
 
@@ -91,7 +80,8 @@ Now initialize the report viewer. We will use the minimal set of all
                   Please note how the value from the custom UI is used to set the __OrderNumber__ report parameter initially:
                 
 
-````
+	
+````js
         $(document).ready(function () {
             $("#reportViewer1").telerik_ReportViewer({
                 serviceUrl: "api/reports/",
@@ -104,7 +94,8 @@ Now initialize the report viewer. We will use the minimal set of all
                 }
             });
         });
-        ````
+        
+````
 
 
 
@@ -112,7 +103,8 @@ Add code that updates the ReportSource parameters collection with the selected _
                   the dropdown box:
                 
 
-````
+	
+````js
             $('#invoiceId').change(function () {
                 var viewer = $("#reportViewer1").data("telerik_ReportViewer");
                 viewer.reportSource({
@@ -123,13 +115,15 @@ Add code that updates the ReportSource parameters collection with the selected _
                 //if you need to force a refresh for other case, use:
                 //viewer.refreshReport();
             });
-        ````
-
-
-
-The HTML page that we have just created should looks like this:
-
+        
 ````
+
+
+
+The HTML page that we have just created should looks like this:#_HTML_
+
+	
+````html
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -139,63 +133,8 @@ The HTML page that we have just created should looks like this:
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     
-    <link href="https://kendo.cdn.telerik.com/````````/styles/kendo.common.min.css" rel="stylesheet" />
-    <link href="https://kendo.cdn.telerik.com/token>kendosubsetversion</token>/styles/kendo.blueopal.min.css" rel="stylesheet" />
-
-    <script src="/ReportViewer/js/telerikReportViewer.kendo.<token>buildversion</token>.min.js"></script>
-    <script src="ReportViewer/js/telerikReportViewer-````````.min.js"></script>
-
-    <style>
-        #reportViewer1 {
-            position: absolute;
-            left: 5px;
-            right: 5px;
-            top: 40px;
-            bottom: 5px;
-            overflow: hidden;
-            font-family: Verdana, Arial;
-        }
-    </style>
-</head>
-<body>
-    <div id="invoiceIdSelector">
-        <label for="invoiceId">Invoices</label>
-        <select id="invoiceId" title="Select the Invoice ID">
-            <option value="SO51081">SO51081</option>
-            <option value="SO51082" selected="selected">SO51082</option>
-            <option value="SO51083">SO51083</option>
-        </select>
-    </div>
-        
-    <div id="reportViewer1">
-        loading...
-    </div>
-    
-    <script type="text/javascript">
-        $(document).ready(function () {
-            $("#reportViewer1").telerik_ReportViewer({
-                    serviceUrl: "api/reports/",
-                    reportSource: {
-                        report: "Telerik.Reporting.Examples.CSharp.Invoice, CSharp.ReportLibrary",
-                        parameters: { OrderNumber: $('#invoiceId option:selected').val() }
-                    },                    
-              });
-          });
-
-            $('#invoiceId').change(function () {
-                var viewer = $("#reportViewer1").data("telerik_ReportViewer");
-                viewer.reportSource({
-                    report: viewer.reportSource().report,
-                    parameters: { OrderNumber: $(this).val() } 
-                });
-                //setting the HTML5 Viewer's reportSource, causes a refresh automatically
-                //if you need to force a refresh for other case, use:
-                //viewer.refreshReport();
-            });
-    </script>
-
-</body>
-</html>				````
+    <link href="https://kendo.cdn.telerik.com/
+````
 
 
 

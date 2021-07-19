@@ -15,9 +15,17 @@ position: 8
 Mail message 
       
 
-## 
+## #_Example_
 
-
+	
+          {
+          'from': 'john.doe@mycompany.com',
+          'to': 'jane.doe@mycompany.com',
+          'cc': 'john.doe.jr@mycompany.com',
+          'subject': 'my mail subject',
+          'body': 'my mail body',
+          }
+        
 
 
 

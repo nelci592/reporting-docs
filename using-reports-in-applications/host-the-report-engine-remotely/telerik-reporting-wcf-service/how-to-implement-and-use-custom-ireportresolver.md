@@ -223,9 +223,11 @@ You can use for fallback the default IReportResolver implementations:
 Add .svc file (e.g. ReportService.svc) to reference your Telerik.Reporting.Service.ReportService subclass. The file would contain the following line only:
                     
 
-````
+	
+````XML
 							<%@ServiceHost Service="CSharp.SilverlightDemo.Web.CustomReportService , CSharp.SilverlightDemo.Web" %>
-							````
+							
+````
 
 
 

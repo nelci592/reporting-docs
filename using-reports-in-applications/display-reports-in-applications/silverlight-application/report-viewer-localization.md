@@ -90,7 +90,11 @@ to translate the __*Report Viewer*__ to the desired language.
 1. Locate the __SupportedCultures__ tag and add the supported cultures (there is no need to specify the neutral culture): 
         		
 
-
+	
+					<SupportedCultures>
+						fr;fr-BE
+					</SupportedCultures>
+				
 
 
 
@@ -115,11 +119,64 @@ The other way to localize the Silverlight __*Report Viewer*__ in a more flexible
   			simple, the property just has to return the correct translation for each resource key, as it is shown below:
   			
 
-
-
-
-
+	{{source=CodeSnippets\SilverlightCS\API\Telerik\ReportViewer\Silverlight\Localization\InterfaceLocalizationSnippets.cs region=InterfaceLocalizationSnippetStart}}
+````
+	        public class CustomResources : Telerik.ReportViewer.Silverlight.ITextResources
+	        {
+	            public string AllFiles
+	            {
+	                get
+	                {
+	                    return "Todos Archivos";
+	                }
+	            }
 	
+	            public string BackToolTip
+	            {
+	                get
+	                {
+	                    return "Navega hacia atrás";
+	                }
+	            }
+	            public string CurrentPageToolTip
+	            {
+	                get
+	                {
+	                    return "Página corriente";
+	                }
+	            }
+	
+	
+	            //...... Implement the rest of the properties ...... 
+````
+
+
+
+	{{source=CodeSnippets\SilverlightVB\API\Telerik\ReportViewer\Silverlight\Localization\InterfaceLocalizationSnippets.vb region=InterfaceLocalizationSnippetStart}}
+````
+	    Public Class CustomResources
+	        Implements Telerik.ReportViewer.Silverlight.ITextResources
+	
+	        Public ReadOnly Property AllFiles() As String Implements ReportViewer.Silverlight.ITextResources.AllFiles
+	            Get
+	                Return "Todos Archivos"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property BackToolTip() As String Implements ReportViewer.Silverlight.ITextResources.BackToolTip
+	            Get
+	                Return "Navega hacia atrás"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property CurrentPageToolTip() As String Implements ReportViewer.Silverlight.ITextResources.CurrentPageToolTip
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        '...... Implement the rest of the properties ......
+````
 
 
 
@@ -127,11 +184,64 @@ Instead of a hard-coded string the property can be set in a method/contructor or
   			for example retreives the resource key from a database.
   			
 
+	{{source=CodeSnippets\SilverlightCS\API\Telerik\ReportViewer\Silverlight\Localization\InterfaceLocalizationSnippets.cs region=InterfaceLocalizationUsingMethodsSnippetStart}}
+````
+	        public class CustomTextResources : Telerik.ReportViewer.Silverlight.ITextResources
+	        {
+	            public string AllFiles
+	            {
+	                get
+	                {
+	                    return SqlHelper.GetViewerKeyFromDb(TextResourcesEnum.AllFiles);
+	                }
+	            }
 	
-
-
-
+	            public string BackToolTip
+	            {
+	                get
+	                {
+	                    return SqlHelper.GetViewerKeyFromDb(TextResourcesEnum.BackToolTip);
+	                }
+	            }
 	
+	            public string CurrentPageToolTip
+	            {
+	                get
+	                {
+	                    return SqlHelper.GetViewerKeyFromDb(TextResourcesEnum.CurrentPageToolTip);
+	                }
+	            }
+	
+	            //...... Implement the rest of the properties ......
+````
+
+
+
+	{{source=CodeSnippets\SilverlightVB\API\Telerik\ReportViewer\Silverlight\Localization\InterfaceLocalizationSnippets.vb region=InterfaceLocalizationUsingMethodsSnippetStart}}
+````
+	    Public Class CustomTextResources
+	        Implements Telerik.ReportViewer.Silverlight.ITextResources
+	
+	        Public ReadOnly Property AllFiles() As String Implements ReportViewer.Silverlight.ITextResources.AllFiles
+	            Get
+	                Return SqlHelper.GetViewerKeyFromDb(TextResourcesEnum.AllFiles)
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property BackToolTip() As String Implements ReportViewer.Silverlight.ITextResources.BackToolTip
+	            Get
+	                Return SqlHelper.GetViewerKeyFromDb(TextResourcesEnum.BackToolTip)
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property CurrentPageToolTip() As String Implements ReportViewer.Silverlight.ITextResources.CurrentPageToolTip
+	            Get
+	                Return SqlHelper.GetViewerKeyFromDb(TextResourcesEnum.CurrentPageToolTip)
+	            End Get
+	        End Property
+	
+	        '...... Implement the rest of the properties ......
+````
 
 
 

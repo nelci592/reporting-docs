@@ -37,7 +37,13 @@ When creating a parameterized query, you identify the parameter name by prefixin
           the cube as shown below:
         
 
-
+	
+          select non empty { [Measures].[Sales Amount] } on columns,
+          non empty { [Product].[Category].[Category] *
+          [Product].[Subcategory].[Subcategory] } on rows
+          from [Adventure Works]
+          where StrToMember(@Year)
+        
 
 
 
@@ -83,7 +89,13 @@ When you need to pass multiple values as a single parameter to the query, use th
           modify the previous query as shown below:
         
 
-
+	
+          select non empty { [Measures].[Sales Amount] } on columns,
+          non empty { [Product].[Category].[Category] *
+          [Product].[Subcategory].[Subcategory] } on rows
+          from [Adventure Works]
+          where StrToSet(@Year)
+        
 
 
 

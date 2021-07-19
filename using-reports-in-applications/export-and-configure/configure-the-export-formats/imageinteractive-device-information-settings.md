@@ -32,7 +32,8 @@ For a detailed example of how to set up the settings for a rendering extension, 
 
 XML-based configuration file:
 
-````
+	
+````xml
 							<configuration>
 								…
 								<Telerik.Reporting>
@@ -49,13 +50,15 @@ XML-based configuration file:
 								</Telerik.Reporting>
 								…
 							</configuration> 
-							````
+							
+````
 
 
 
 JSON-based configuration file:
 
-````
+	
+````js
                 "telerikReporting": {
                   "extensions": [
                     {
@@ -73,7 +76,8 @@ JSON-based configuration file:
                     }
                   ]
                 }
-							````
+							
+````
 
 
 

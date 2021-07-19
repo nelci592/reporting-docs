@@ -91,7 +91,8 @@ The following code demonstrates the four steps required to create a __TypeSelec
 
 1. Add the __StyleRule__ to the __Style Sheet__.
 
-````
+	
+````C#
 		//Create a StyleRule
 		Telerik.Reporting.Drawing.StyleRule myStyleRule = new Telerik.Reporting.Drawing.StyleRule();
 		//Add a TypeSelector
@@ -103,11 +104,13 @@ The following code demonstrates the four steps required to create a __TypeSelec
 		myStyleRule.Style.Font.Name = "Courier New";
 		//Add rule to Style Sheet
 		this.StyleSheet.AddRange(new Telerik.Reporting.Drawing.StyleRule[] {myStyleRule});
-			````
-
-
-
+			
 ````
+
+
+
+	
+````VB.NET
 		'Create a StyleRule
 		Dim MyStyleRule As Telerik.Reporting.Drawing.StyleRule = New Telerik.Reporting.Drawing.StyleRule
 		'Add a TypeSelector
@@ -118,7 +121,8 @@ The following code demonstrates the four steps required to create a __TypeSelec
 		MyStyleRule.Style.Font.Name = "Courier New"
 		'Add rule to Style Sheet
 		Me.StyleSheet.AddRange(New Telerik.Reporting.Drawing.StyleRule() {MyStyleRule})
-			````
+			
+````
 
 
 
@@ -165,7 +169,8 @@ The following code demonstrates the four steps required to create a __StyleSele
 
 1. Add the __StyleRule__ to the __Style Sheet__. 
 
-````
+	
+````C#
 		//Create a StyleRule
 		Telerik.Reporting.Drawing.StyleRule myStyleRule = new Telerik.Reporting.Drawing.StyleRule();     
 		//Add a StyleSelector
@@ -176,11 +181,13 @@ The following code demonstrates the four steps required to create a __StyleSele
 		myStyleRule.Style.Font.Name = "Courier New";
 		//Add rule to Style Sheet
 		this.StyleSheet.AddRange(new Telerik.Reporting.Drawing.StyleRule[] {myStyleRule});
-			````
-
-
-
+			
 ````
+
+
+
+	
+````VB.NET
 		'Create a StyleRule
 		Dim MyStyleRule As Telerik.Reporting.Drawing.StyleRule = New Telerik.Reporting.Drawing.StyleRule 
 		'Add a StyleSelector
@@ -193,7 +200,8 @@ The following code demonstrates the four steps required to create a __StyleSele
 		                    
 		'Add rule to Style Sheet
 		Me.StyleSheet.AddRange(New Telerik.Reporting.Drawing.StyleRule() {MyStyleRule}) 
-			````
+			
+````
 
 
 
@@ -273,7 +281,8 @@ The following code demonstrates the four steps required to create a __Descendan
 
 1. Add the __StyleRule__ to the __Style Sheet__. 
 
-````
+	
+````C#
 		//Create StyleRule and DescendantSelector
 		Telerik.Reporting.Drawing.StyleRule myStyleRule = new Telerik.Reporting.Drawing.StyleRule();    
 		Telerik.Reporting.Drawing.DescendantSelector myDescendantSelector = new Telerik.Reporting.Drawing.DescendantSelector();
@@ -295,11 +304,13 @@ The following code demonstrates the four steps required to create a __Descendan
 		myStyleRule.Style.Font.Name = "Arial";
 		//Add rule to Style Sheet
 		this.StyleSheet.AddRange(new Telerik.Reporting.Drawing.StyleRule[] {myStyleRule});
-			````
-
-
-
+			
 ````
+
+
+
+	
+````VB.NET
 		'Create StyleRule and DescendantSelector
 		Dim MyStyleRule As Telerik.Reporting.Drawing.StyleRule = New Telerik.Reporting.Drawing.StyleRule
 		Dim MyDescendantSelector As Telerik.Reporting.Drawing.DescendantSelector = _ 
@@ -316,6 +327,7 @@ The following code demonstrates the four steps required to create a __Descendan
 		MyStyleRule.Style.Font.Name = "Arial"
 		'Add the StyleRule to the Style Sheet
 		Me.StyleSheet.AddRange(New Telerik.Reporting.Drawing.StyleRule() {MyStyleRule})
-			````
+			
+````
 
 

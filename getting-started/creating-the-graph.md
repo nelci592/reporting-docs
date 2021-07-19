@@ -29,7 +29,22 @@ The controls which the __Report Header__ and the __Report Footer__ contain are d
 1. Add a new SQL Datasource component for the graph with the following query:
             
 
-
+	
+              SELECT
+              P.Name AS ProductName, SOD.LineTotal / 1000 AS LineTotal,
+              SOH.OrderDate,
+              SS.Name AS StoreName,
+              C.FirstName + ' ' + COALESCE (C.MiddleName, '') + ' ' + C.LastName AS SalesPersonFullName
+              FROM
+              Production. Product AS P
+              INNER JOIN Sales.SalesOrderDetail AS SOD ON P.ProductID = SOD.ProductID
+              INNER JOIN Sales.SalesOrderHeader AS SOH ON SOD.SalesOrderID = SOH.SalesOrderID
+              INNER JOIN Sales.Store AS SS             ON SS.CustomerID = SOH.CustomerID
+              INNER JOIN Sales.SalesPerson AS SP       ON SP.SalesPersonID = SOH.SalesPersonID
+              INNER JOIN HumanResources.Employee AS E  ON E.EmployeeID = SP.SalesPersonID
+              INNER JOIN Person.Contact AS C           ON C.ContactID = E.ContactID
+              WHERE     (YEAR(SOH.OrderDate) = 2002)
+            
 
 
 
@@ -82,7 +97,13 @@ Preview the result by clicking __Preview__ > __PrintPreview__.
 In the generated report, the __Color Palette__ is set in the following way:
         
 
-
+	
+          Color [A=255, R=0, G=105, B=104],
+          Color [A=255, R=88, G=168, B=35],
+          Color [A=255, R=137, G=203, B=42],
+          Color [A=255, R=34, G=181, B=115],
+          Color [A=255, R=32, G=176, B=212]
+        
 
   
   ![Report With Graph](images/ReportWithGraph.PNG)

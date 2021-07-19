@@ -23,14 +23,14 @@ The __AvailableValues.ValueMember__ and
 		columns as values/labels of the parameters. Expressions are also valid
 		ValueMember/DisplayMembers, for example:
 
-
+	='Mr. ' + Fields.LastName + ', ' + Fields.FirstName
 
 
 
 You may also use
 		[embedded expressions]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/embedded-expressions%}):
 
-
+	Mr. {Fields.LastName}, {Fields.FirstName}
 
 
 

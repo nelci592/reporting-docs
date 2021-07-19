@@ -27,7 +27,8 @@ When Visual Studio crashes while working with Telerik Reporting,
               Below is the XML you need to add to the __devenv.exe.config__ file to enable tracing:
             
 
-````
+	
+````xml
 <?xml version ="1.0"?>
 <configuration>
     ...
@@ -40,6 +41,7 @@ When Visual Studio crashes while working with Telerik Reporting,
         </trace>
     </system.diagnostics>
 </configuration>
+
 ````
 
 __devenv.exe.config__ resides in C:\Program Files (x86)\Microsoft Visual Studio X.0\Common7\IDE by default (it is recommended to create a backup copy before modifying it).

@@ -23,15 +23,17 @@ Each [command]({%slug telerikreporting/using-reports-in-applications/display-rep
           __exec()__ method being the one that actually triggers the command. The other two methods,
           __enabled()__ and __checked()__ return a bool value and can be used
           prior to executing a command or to find in what state the UI for the command should be.
-        
+        #_TypeScript_
 
+	
 ````
 <tr-viewer #viewer1
 
 ...
 
 <button (click)="viewer1.commands.print.exec()">Print</button>
-        ````
+        
+````
 
 
 

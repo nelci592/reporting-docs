@@ -21,7 +21,8 @@ The report viewer currently exposes two ways for binding event handlers to event
           You may attach event handlers when you instantiate the report viewer, or after that, using the bind method.
         
 
-````
+	
+````js
             // $(handler) is jQuery's shorthand for $(document).ready(handler)
             $(function () {
               $("#reportViewer1").telerik_ReportViewer({
@@ -39,7 +40,8 @@ The report viewer currently exposes two ways for binding event handlers to event
                 console.log("this event handler was attached using the bind method");
               });
             });
-          ````
+          
+````
 
 
 
@@ -60,7 +62,8 @@ In order to unbind from a given event you should keep reference to the event han
           call the unbind method with this reference as an argument.
         
 
-````
+	
+````js
             function onPageReady(e) { 
               console.log("page ready"); 
             }
@@ -79,7 +82,8 @@ In order to unbind from a given event you should keep reference to the event han
               var reportViewer = $("#reportViewer1").data("telerik_ReportViewer");
               reportViewer.unbind(telerikReportViewer.Events.PAGE_READY, onPageReady);
             });
-          ````
+          
+````
 
 
 

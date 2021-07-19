@@ -47,15 +47,19 @@ You can use the P:Telerik.Reporting.TextItemBase.Angle
           if desired by adding some empty lines at the beginning of the text/expression:
         
 
-````
+	
+````cs
              this.textBox1.Value = "= \"\r\n\r\n\" + Fields.MyDataColumn";
-            ````
-
-
-
+            
 ````
+
+
+
+	
+````vb
             Me.textBox1.Value = "= """ & vbCr & vbLf & vbCr & vbLf & """ + Fields.MyDataColumn"
-            ````
+            
+````
 
 
 

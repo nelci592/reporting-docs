@@ -35,11 +35,22 @@ The __EntityDataSource__ component enables data items to connect to an [ADO.NET 
 >note     When using  __DbContext__  by default the context class generated (Database First or Model First) provides only a default (parameterless) constructor.      However for design time purposes a constructor with connection string (string argument) is needed so that while processing the report the correct      connection string can be passed.      If Code First is used there is no need for a constructor with string parameter.      That is because this approach uses connection strings without metadata (which is  needed for the mapping). This means that the connection string of the context can be directly set to this connection string, without the need to be resolved first.      Adding the needed constructor is as simple as it is adding the snippet below:    
 
 
+	
+      partial class AdventureWorksContext
+      {
+        public AdventureWorksContext(string connectionString) : base(connectionString) {}
+      }
+    
 
 
 
-
-
+	
+      Partial Class AdventureWorksContext
+        Public Sub New(connectionString As String)
+          MyBase.New(connectionString)
+        End Sub
+      End Class
+    
 
 
 

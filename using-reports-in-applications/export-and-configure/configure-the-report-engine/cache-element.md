@@ -59,7 +59,8 @@ The Provider element specifies a cache provider to register for use in the appli
 
 XML-based configuration file:
 
-````
+	
+````xml
 							<configuration>
 								…
 								<Telerik.Reporting>
@@ -75,13 +76,15 @@ XML-based configuration file:
 								</Telerik.Reporting>
 								…
 							</configuration> 
-							````
+							
+````
 
 
 
 JSON-based configuration file:
 
-````
+	
+````js
   "telerikReporting": {
     "cache": {
       "provider": "File",
@@ -98,7 +101,8 @@ JSON-based configuration file:
       ]
     }
   }
-							````
+							
+````
 
 
 

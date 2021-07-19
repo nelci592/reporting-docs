@@ -60,7 +60,8 @@ The following example demonstrates how to configure the reporting engine to skip
 
 XML-based configuration file:
 
-````
+	
+````xml
 <?xml version="1.0"?>
 <configuration>
    ...
@@ -73,13 +74,15 @@ XML-based configuration file:
   </Telerik.Reporting>
    ...
 </configuration>
-  			````
+  			
+````
 
 
 
 JSON-based configuration file:
 
-````
+	
+````js
   "telerikReporting": {
     "fontLibrary": {
       "useDefaultLocations": "false",
@@ -91,7 +94,8 @@ JSON-based configuration file:
       ]
     }
   }
-  			````
+  			
+````
 
 
 

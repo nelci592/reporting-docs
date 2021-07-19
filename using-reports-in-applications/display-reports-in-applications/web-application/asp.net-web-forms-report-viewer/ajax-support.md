@@ -30,9 +30,10 @@ So when might you need to use ajax in conjunction with the web report viewer? A 
 
 Add the instance of the ReportViewer to a __RadAjaxManager__ control. 
 				You can optionally provide it with a loading panel, as shown below:
-			
+			#_ASP.NET_
 
-````
+	
+````XML
 	<asp:Button ID="Button1" runat="server" Text="Button" onclick="Button1_Click" />
 	<telerik:ReportViewer ID="ReportViewer1" runat="server"></telerik:ReportViewer>
 	<telerik:RadAjaxManager ID="RadAjaxManager1" runat="server">
@@ -44,7 +45,8 @@ Add the instance of the ReportViewer to a __RadAjaxManager__ control.
 					</telerik:AjaxSetting>
 				</AjaxSettings>
 	</telerik:RadAjaxManager>
-				````
+				
+````
 
 
 
@@ -73,9 +75,10 @@ Add the instance of the ReportViewer to a __RadAjaxManager__ control.
 
 ## Issue Ajax Request through ASP.NET AJAX UpdatePanel
 
-Wrap the instance of the ReportViewer into UpdatePanel ContentTemplate:
+Wrap the instance of the ReportViewer into UpdatePanel ContentTemplate:#_ASP.NET_
 
-````
+	
+````XML
 		<asp:ScriptManager ID="ScriptManager1" runat="server" />
         <asp:Button ID="Button1" runat="server" Text="Button" onclick="Button1_Click" />
         <asp:UpdatePanel ID="UpdatePanel1" runat="server">
@@ -87,7 +90,8 @@ Wrap the instance of the ReportViewer into UpdatePanel ContentTemplate:
                 </telerik:ReportViewer>
             </ContentTemplate>
         </asp:UpdatePanel>
-			````
+			
+````
 
 
 

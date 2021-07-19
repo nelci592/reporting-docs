@@ -34,7 +34,21 @@ Cancel the Telerik Report Wizard, because it would not be needed for the current
 
 Start the CrossTab Wizard and create a new DataSource with the following select statement:
 
-
+	
+              SELECT
+              C.FirstName + ' ' + COALESCE (C.MiddleName, '') + ' ' + C.LastName AS SalesPersonName
+              , YEAR(SOH.OrderDate) as OrderYear
+              , PC.Name as CategoryName
+              FROM
+              Sales.SalesPerson AS SP
+              INNER JOIN Sales.SalesOrderHeader AS SOH ON SOH.SalesPersonID = SP.SalesPersonID
+              INNER JOIN Sales.SalesOrderDetail AS SOD ON SOD.SalesOrderID = SOH.SalesOrderID
+              INNER JOIN Production.Product AS P ON P.ProductID = SOD.ProductID
+              INNER JOIN Production.ProductSubcategory AS PSC ON PSC.ProductSubcategoryID = P.ProductSubcategoryID
+              INNER JOIN Production.ProductCategory AS PC ON PC.ProductCategoryID = PSC.ProductCategoryID
+              INNER JOIN HumanResources.Employee AS E ON E.EmployeeID = SP.SalesPersonID
+              INNER JOIN Person.Contact AS C ON C.ContactID = E.ContactID
+            
 
 
 

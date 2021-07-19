@@ -188,23 +188,27 @@ __Setting the Client-Side ReportSource:__
               The __reportSource.report__ part is a string - the *report description string*
               that can be a path to a TRDP or TRDX file, an assembly qualified name
               of a report class, or other custom information set via string. For example:
-            
+            #_HTML_
 
-````
+	
+````html
 reportSource: { 
 			report: "Dashboard.trdp",
 			parameters: { CultureID: "en" }
               }
-                  	````
-
-or
-
+                  	
 ````
+
+or#_HTML_
+
+	
+````html
 reportSource: { 
 			report: "Telerik.Reporting.Examples.CSharp.ProductCatalog, CSharp.ReportLibrary",
 			parameters: { CultureID: "en" }
               }
-                  	````
+                  	
+````
 
 The *report description string* is sent to the [Telerik Reporting REST service]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview%})
               which internally resolves it to a __TypeReportSource__ or a __UriReportSource__
@@ -246,11 +250,43 @@ The *report description string* is sent to the [Telerik Reporting REST service](
                   method's IDictionary __parameters__ argument.
                 __Example:__
 
-
-
-
-
+	{{source=CodeSnippets\MvcCS\Views\Home\InvoiceParameters.cshtml region=ParametersExample}}
+````
+	@{
+	    var typeReportSource = new TypeReportSource() { TypeName = typeof(Invoice).AssemblyQualifiedName };
+	    typeReportSource.Parameters.Add("OrderNumber", Model.SelectedInvoice);
+	}
 	
+	@(
+	    Html.TelerikReporting().ReportViewer()
+	        .Id("reportViewer1")
+	        .ServiceUrl("/api/reports/")
+	        .TemplateUrl("/ReportViewer/templates/telerikReportViewerTemplate.html")
+	        .ReportSource(typeReportSource)
+	        .ViewMode(ViewMode.Interactive)
+	        .ScaleMode(ScaleMode.Specific)
+	        .Scale(1.0)
+	)
+````
+
+
+
+	{{source=CodeSnippets\MvcVB\Views\Home\InvoiceParameters.vbhtml region=ParametersExample}}
+````
+	@Code
+	    Dim typeReportSource = New TypeReportSource() With {.TypeName = GetType(Invoice).AssemblyQualifiedName}
+	    typeReportSource.Parameters.Add("OrderNumber", Model.SelectedInvoice)
+	
+	    Html.TelerikReporting().ReportViewer() _
+	        .Id("reportViewer1") _
+	        .ServiceUrl("/api/reports/") _
+	        .TemplateUrl("/ReportViewer/templates/telerikReportViewerTemplate.html") _
+	        .ReportSource(typeReportSource) _
+	        .ViewMode(ViewMode.Interactive) _
+	        .ScaleMode(ScaleMode.Specific) _
+	        .Scale(1.0)
+	End Code
+````
 
 To display another report or to update the *client parameters*' values of the current HTML5 Viewer object,
               you can update the HTML5 Viewer's reportSource by using the viewer object's [reportSource(rs)]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/methods/reportsource(rs)%})
@@ -282,22 +318,26 @@ To display another report or to update the *client parameters*' values of the cu
                 __Example of setting the client-side ReportSource in code-behind:__
 
 	
+````c#
                 var clientReportSource = new Telerik.ReportViewer.Html5.WebForms.ReportSource();
                 clientReportSource.IdentifierType = IdentifierType.TypeReportSource;
                 clientReportSource.Identifier = typeof(ReportCatalog).AssemblyQualifiedName;//or <namespace>.<class>, <assembly> e.g. "MyReports.Report1, MyReportsLibrary"
                 clientReportSource.Parameters.Add("Parameter1", 123);
                 reportViewer1.ReportSource = clientReportSource;
         
+````
 
 
 
 	
+````vb.net
               Dim clientReportSource As New Telerik.ReportViewer.Html5.WebForms.ReportSource
               clientReportSource.IdentifierType = Telerik.ReportViewer.Html5.WebForms.IdentifierType.TypeReportSource
               clientReportSource.Identifier = GetType(ReportCatalog).AssemblyQualifiedName 'or <namespace>.<class>, <assembly> e.g. "MyReports.Report1, MyReportsLibrary"
               clientReportSource.Parameters.Add("Parameter1", 123)
               reportViewer1.ReportSource = clientReportSource
                 
+````
 
 __Example of setting the client-side ReportSource via mark-up:__
 
@@ -319,6 +359,7 @@ __Example of setting the client-side ReportSource via mark-up:__
                 #_HTML_
 
 	
+````html
     <form runat="server">
         <telerik:ReportViewer Width="" Height=""
             ID="reportViewer1"
@@ -334,6 +375,7 @@ __Example of setting the client-side ReportSource via mark-up:__
     </form>
 
             
+````
 
 To display another report or to update the *client parameters*' values of the current HTML5 Viewer object,
               you can update the HTML5 Viewer's reportSource by using the viewer object's [reportSource(rs)]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/methods/reportsource(rs)%})

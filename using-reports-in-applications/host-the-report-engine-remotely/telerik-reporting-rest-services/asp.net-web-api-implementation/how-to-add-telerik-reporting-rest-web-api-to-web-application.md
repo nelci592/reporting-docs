@@ -35,7 +35,8 @@ In Visual Studio, create the hosting project.
                   Besides the required assemblies this will add the necessary handlers for version 4.0.30506 to the Web.config:
                 
 
-````
+	
+````xml
 <handlers>
       <remove name="ExtensionlessUrlHandler-ISAPI-4.0_32bit" />
       <remove name="ExtensionlessUrlHandler-ISAPI-4.0_64bit" />
@@ -45,11 +46,18 @@ In Visual Studio, create the hosting project.
       <add name="ExtensionlessUrlHandler-Integrated-4.0" path="*." verb="GET,HEAD,POST,DEBUG,PUT,DELETE,PATCH,OPTIONS" type="System.Web.Handlers.TransferRequestHandler" preCondition="integratedMode,runtimeVersionv4.0" />
     </handlers>
 
-				````
+				
+````
 
 
 
->important The Reporting REST WebAPI Service is built against WebAPI 1. In case you have to use  __newer version of Microsoft.AspNet.WebApi.WebHost (e.g. WebAPI 2)__                     you have to redirect the System.Web.Http and System.Net.Http.Formatting to their newer version.                    To do this, add the following binding redirects to your web.config and replace 5.1.0.0 with the exact version:                  ````<?xml version="1.0" encoding="utf-8" ?><configuration>  <runtime>    <assemblyBinding xmlns="urn:schemas-microsoft-com:asm.v1">      <dependentAssembly>        <assemblyIdentity name="System.Web.Http" culture="neutral" publicKeyToken="31bf3856ad364e35"/>        <bindingRedirect oldVersion="0.0.0.0-65535.65535.65535.65535" newVersion="5.1.0.0"/>      </dependentAssembly>      <dependentAssembly>        <assemblyIdentity name="System.Net.Http.Formatting" culture="neutral" publicKeyToken="31bf3856ad364e35"/>        <bindingRedirect oldVersion="0.0.0.0-65535.65535.65535.65535" newVersion="5.1.0.0"/>      </dependentAssembly>    </assemblyBinding>  </runtime></configuration>				              ````[Visual Studio NuGet Package Manager](https://docs.nuget.org/consume/installing-nuget) will add the required binding redirects automatically, if you use it to update the NuGet packages.                  
+>important The Reporting REST WebAPI Service is built against WebAPI 1. In case you have to use  __newer version of Microsoft.AspNet.WebApi.WebHost (e.g. WebAPI 2)__                     you have to redirect the System.Web.Http and System.Net.Http.Formatting to their newer version.                    To do this, add the following binding redirects to your web.config and replace 5.1.0.0 with the exact version:                  
+
+	
+````xml<?xml version="1.0" encoding="utf-8" ?><configuration>  <runtime>    <assemblyBinding xmlns="urn:schemas-microsoft-com:asm.v1">      <dependentAssembly>        <assemblyIdentity name="System.Web.Http" culture="neutral" publicKeyToken="31bf3856ad364e35"/>        <bindingRedirect oldVersion="0.0.0.0-65535.65535.65535.65535" newVersion="5.1.0.0"/>      </dependentAssembly>      <dependentAssembly>        <assemblyIdentity name="System.Net.Http.Formatting" culture="neutral" publicKeyToken="31bf3856ad364e35"/>        <bindingRedirect oldVersion="0.0.0.0-65535.65535.65535.65535" newVersion="5.1.0.0"/>      </dependentAssembly>    </assemblyBinding>  </runtime></configuration>				              
+````
+
+[Visual Studio NuGet Package Manager](https://docs.nuget.org/consume/installing-nuget) will add the required binding redirects automatically, if you use it to update the NuGet packages.                  
 
 
 Make sure that the project has the following assembly references:
@@ -124,26 +132,34 @@ Enable [Cross-Origin Resource Sharing (CORS).](https://developer.mozilla.org/en-
 1. Add the following code at the beginning of the __Global.Application_Start__ (Global.asax) method:
                     
 
+	
+                      GlobalConfiguration.Configuration.EnableCors();
+                    
 
 
 
-
-
+	
+                      GlobalConfiguration.Configuration.EnableCors();
+                    
 
 
 
 1. Add the following attribute to the __ReportsController__ class (requires reference to __System.Web.Http.Cors__):
                     
 
-````
+	
+````c#
                       [EnableCors(origins:"*", headers:"*", methods:"*")]
-                      ````
-
-
-
+                      
 ````
+
+
+
+	
+````vb
                       <EnableCors(origins:"*", headers:"*", methods:"*")>
-                      ````
+                      
+````
 
 
 

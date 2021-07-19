@@ -20,26 +20,30 @@ Behavior can be added to HTML DOM elements either with *data-* attributes or thr
 The *data-* attributes give a lot of flexibility to the application since commands can be attached to HTML elements 
           only by adding a *data-command* attribute along with a *data-target-report-viewer* to target the specific report viewer 
           (since there can exist multiple report viewers on a single page):
-        
+        #_HTML_
 
-````
+	
+````html
           <button id="printButton" data-command="telerik_ReportViewer_print" data-target-report-viewer="#reportViewer1">Print report</button>
-          ````
+          
+````
 
 
 
 When initializing the report viewer the selector used in *data-target-report-viewer* has to be explicitly provided as an
           option:
-        
+        #_HTML_
 
-````
+	
+````html
           $("#reportViewer1").telerik_ReportViewer({
             serviceUrl: "../api/reports/",
             templateUrl: 'src/templates/telerikReportViewerTemplate-x.x.x.x.html',
             reportSource: { report: "product catalog.trdx" },
             selector: '#reportViewer1'
           });
-          ````
+          
+````
 
 
 

@@ -29,12 +29,14 @@ Parameters:
 Returns: the current *ReportViewer* object.
         
 
-````
+	
+````js
 var reportViewer = $("#reportViewer1").data("telerik_ReportViewer");
 reportViewer.scale({
 scaleMode: “SPECIFIC”,
 scale: 0.75
 });
-          ````
+          
+````
 
 

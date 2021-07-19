@@ -20,6 +20,27 @@ For TITLES use normalize-space in XSLT
 
 [CDATA] code handling in custom code like with CODE-with source
 
+
+
+
+
 Remaining:
 
 how to pass the real tokes to _config.yml
+
+
+API Ref:
+template:
+/p:LatestBinariesPath=${LatestBinariesPath};DocsRepoName=${DocsRepoName};DocumentationBaseUrl=${DocumentationBaseUrl};DocsRepoApiAssetsFolder=${DocsRepoApiAssetsFolder}
+
+Final - run in D:\Work
+msbuild /p:LatestBinariesPath="\\telerik.com\distributions\DailyBuilds\REPORTING\2021-07-19\Reporting\R2 2021 SP1\03-48\DEV\bin";DocsRepoName=reporting-docs;DocumentationBaseUrl=https://docs.telerik.com/reporting/;DocsRepoApiAssetsFolder=_assetsApi docs-seed/_buildApi/BuildApiReference.proj
+
+Петър Милчев - Ajax support
+
+
+Once the converter generates the mapping between SandCastle article ID and the new MD article address, the tool should update the corresponding IDs in the API Reference of our code files
+OR
+replace them manually - 40 in 28 files. Search by "<conceptualLink target"
+
+Merge TOC of documentation and API reference

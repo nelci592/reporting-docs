@@ -27,7 +27,7 @@ Parameters:
 
 
 
-	
+````
   // $(handler) is jQuery's shorthand for $(document).ready(handler)
   $(function () {
     $("#reportViewer1").telerik_ReportViewer({
@@ -40,7 +40,7 @@ Parameters:
           $(args.element).css('font-weight', 'bolder');        
       }
   });
-          
+          ````
 
 
 

@@ -15,9 +15,9 @@ position: 0
 The Telerik Report Designer application can be configured through its configuration file. Application configuration files contain settings specific
         to the application. This file contains configuration settings such as assembly binding policy, connectionStrings and so on. For example this file can hold
         binding redirect to the latest version of the Reporting engine:
-      #_XML_
+      
 
-	
+````
     <runtime>
     <assemblyBinding xmlns="urn:schemas-microsoft-com:asm.v1">
       <!--
@@ -30,19 +30,19 @@ The Telerik Report Designer application can be configured through its configurat
       </dependentAssembly>
     </assemblyBinding>
    </runtime>
-    
+    ````
 
 
 
-or it can specify a global connection string that can be used by all reports created with the Report Designer:#_XML_
+or it can specify a global connection string that can be used by all reports created with the Report Designer:
 
-	
+````
     <connectionStrings>
       <add name="Telerik.Reporting.Examples.CSharp.Properties.Settings.TelerikConnectionString"
           connectionString="Data Source=(local)\SQLEXPRESS;Initial Catalog=AdventureWorks;Integrated Security=SSPI"
           providerName="System.Data.SqlClient" />
     </connectionStrings>
-   
+   ````
 
 
 
@@ -53,9 +53,9 @@ For more information, see
 
 ## Default Configuration
 
-The following code example shows the default Telerik.ReportDesigner.exe.config file that is distributed with the Report Designer.#_XML_
+The following code example shows the default Telerik.ReportDesigner.exe.config file that is distributed with the Report Designer.
 
-	
+````
     <?xml version ="1.0"?>
     <configuration>
       <configSections>
@@ -117,7 +117,7 @@ The following code example shows the default Telerik.ReportDesigner.exe.config f
       </system.diagnostics>
       -->
     </configuration>
-    
+    ````
 
 
 

@@ -28,14 +28,7 @@ In this article we will show you how to create a Polar chart using the Graph ite
 
 1. Set the query to the following one:
 
-	
-                  SELECT SOD.LineTotal, SOH.OrderDate, PC.Name AS Category
-                  FROM Sales.SalesOrderHeader AS SOH
-                  INNER JOIN Sales.SalesOrderDetail AS SOD ON SOH.SalesOrderID = SOD.SalesOrderID
-                  INNER JOIN Production.Product AS P ON SOD.ProductID = P.ProductID
-                  INNER JOIN Production.ProductSubcategory AS PS ON P.ProductSubcategoryID = PS.ProductSubcategoryID
-                  INNER JOIN Production.ProductCategory AS PC ON PS.ProductCategoryID = PC.ProductCategoryID
-                
+
 
 
 

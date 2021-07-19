@@ -47,9 +47,9 @@ The following steps produce an HTML page with settings similar to these of the l
 >note You must adapt all path references in the steps below             to your project setup. For more information, refer to the             [ASP.NET Web Project Paths](http://msdn.microsoft.com/en-us/library/ms178116.aspx)            MSDN article.          
 
 
-Create an HTML5 page:#_HTML_
+Create an HTML5 page:
 
-	
+````
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>    
@@ -58,18 +58,18 @@ Create an HTML5 page:#_HTML_
 <body>    
 </body>
 </html>
-				
+				````
 
 
 
 >note The above DOCTYPE directive must reflect your custom requirements.                    You can find more details about the page settings used in this tutorial in the                    [Defining document compatibility](http://msdn.microsoft.com/en-us/library/cc288325(v=vs.85).aspx) MSDN article.                  
 
 
-Initialize the browser’s viewport in the <head> element:#_HTML_
+Initialize the browser’s viewport in the <head> element:
 
-	
+````
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-				
+				````
 
 
 
@@ -77,30 +77,32 @@ The viewport META tag is used to control the layout on mobile browsers.
 
 
 
-Add a reference to jQuery in the <head> element:#_HTML_
+Add a reference to jQuery in the <head> element:
 
-	
+````
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-				
+				````
 
 
 
 >note jQuery must be loaded before creating the viewer object.jQuery must be loaded only once on the page.
 
 
-Add references to the Telerik Kendo UI styles in the <head> element:#_HTML_
+Add references to the Telerik Kendo UI styles in the <head> element:
 
-	
+````
 <!-- the required Kendo styles -->                  
-<link href="https://kendo.cdn.telerik.com/
+<link href="https://kendo.cdn.telerik.com/````````/styles/kendo.common.min.css" rel="stylesheet" />
+<link href="https://kendo.cdn.telerik.com/````````/styles/kendo.blueopal.min.css" rel="stylesheet" />
+				````
 
 
 
-Add references to the HTML5 Report Viewer JavaScript file in the <head> element:#_HTML_
+Add references to the HTML5 Report Viewer JavaScript file in the <head> element:
 
-	
+````
 <script src="/api/reports/resources/js/telerikReportViewer"></script>
-				
+				````
 
 
 
@@ -112,31 +114,68 @@ If no Kendo widgets are utilized in the page, the report viewer will register a 
                 
 
 If Kendo is used on the page or the CDN is preferred, make sure the following widgets are referenced:
-                #_HTML_
+                
 
-	
+````
                   <!--
-<script src="https://kendo.cdn.telerik.com/
+<script src="https://kendo.cdn.telerik.com/````````/js/kendo.core.min.js"></script>
+<script src="https://kendo.cdn.telerik.com/````````/js/kendo.data.odata.min.js"></script>
+<script src="https://kendo.cdn.telerik.com/````````/js/kendo.data.min.js"></script>
+<script src="https://kendo.cdn.telerik.com/````````/js/kendo.userevents.min.js"></script>
+<script src="https://kendo.cdn.telerik.com/````````/js/kendo.selectable.min.js"></script>
+<script src="https://kendo.cdn.telerik.com/````````/js/kendo.calendar.min.js"></script>
+<script src="https://kendo.cdn.telerik.com/````````/js/kendo.fx.min.js"></script>
+<script src="https://kendo.cdn.telerik.com/````````/js/kendo.draganddrop.min.js"></script>
+<script src="https://kendo.cdn.telerik.com/````````/js/kendo.mobile.scroller.min.js"></script>
+<script src="https://kendo.cdn.telerik.com/````````/js/kendo.virtuallist.min.js"></script>
+<script src="https://kendo.cdn.telerik.com/````````/js/kendo.popup.min.js"></script>
+<script src="https://kendo.cdn.telerik.com/````````/js/kendo.list.min.js"></script>
+<script src="https://kendo.cdn.telerik.com/````````/js/kendo.combobox.min.js"></script>
+<script src="https://kendo.cdn.telerik.com/````````/js/kendo.datepicker.min.js"></script>
+<script src="https://kendo.cdn.telerik.com/````````/js/kendo.resizable.min.js"></script>
+<script src="https://kendo.cdn.telerik.com/````````/js/kendo.dropdownlist.min.js"></script>
+<script src="https://kendo.cdn.telerik.com/````````/js/kendo.multiselect.min.js"></script>
+<script src="https://kendo.cdn.telerik.com/````````/js/kendo.splitter.min.js"></script>
+<script src="https://kendo.cdn.telerik.com/````````/js/kendo.window.min.js"></script>
+<script src="https://kendo.cdn.telerik.com/````````/js/kendo.color.min.js"></script>
+<script src="https://kendo.cdn.telerik.com/````````/js/kendo.slider.min.js"></script>
+<script src="https://kendo.cdn.telerik.com/````````/js/kendo.button.min.js"></script>
+<script src="https://kendo.cdn.telerik.com/````````/js/kendo.colorpicker.min.js"></script>
+<script src="https://kendo.cdn.telerik.com/````````/js/kendo.editor.min.js"></script>
+<script src="https://kendo.cdn.telerik.com/````````/js/kendo.listview.min.js"></script>
+<script src="https://kendo.cdn.telerik.com/````````/js/kendo.menu.min.js"></script>
+<script src="https://kendo.cdn.telerik.com/````````/js/kendo.panelbar.min.js"></script>
+<script src="https://kendo.cdn.telerik.com/````````/js/kendo.tooltip.min.js"></script>
+<script src="https://kendo.cdn.telerik.com/````````/js/kendo.treeview.min.js"></script>
+<script src="https://kendo.cdn.telerik.com/````````/js/kendo.touch.min.js"></script>
+
+kendo.mobile.min.js - optional, if gestures/touch support is required
+<script src="https://kendo.cdn.telerik.com/````````/js/kendo.mobile.min.js"></script>
+
+kendo.all.min.js or kendo.web.min.js can be used as well if Kendo is used outside the report viewer
+<script src="https://kendo.cdn.telerik.com/````````/js/kendo.web.min.js"></script>
+-->
+                  ````
 
 
 
 Add a <div> element to the <body> element that will serve as a placeholder for the viewer’s widget.
                   The <div> element's ID attribute serves as a key(Id) for the viewer object.
                   Its content (*loading...*) will be displayed while the viewer’s content is being loaded (from the template). :
-                #_HTML_
+                
 
-	
+````
 <div id="reportViewer1" class="k-widget">
     loading...
 </div>
-				
+				````
 
 
 
 Add the following script element at the bottom of the <body> element and create the HTML5 Report Viewer widget for the reportViewer1 <div> 
                 element that we just added:
 
-	
+````
 <script type="text/javascript">
         $("#reportViewer1")
             .telerik_ReportViewer({
@@ -150,7 +189,7 @@ Add the following script element at the bottom of the <body> element and create 
 				}
             });
 </script>
-				
+				````
 
 
 
@@ -165,9 +204,9 @@ The default template is using TelerikWebUI icons. If you prefer a template with 
 >tip The viewer's  __reportSource__  consists of report and parameters attributes,                    where  __report__  is the string description of the report that will be displayed, and                     __parameters__  is a collection of parameter keys and values that will be sent to the report.                    The report's string description is handled on the server by the                    [report source resolver used in the Reporting REST service]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-service-report-source-resolver/overview%}).                    The above example uses the [assembly qualified name](http://msdn.microsoft.com/en-us/library/30wyt9tk) of a report's type (report created in Visual Studio Report Designer).                    This string description will be handled automatically by the  T:Telerik.Reporting.Services.WebApi.ReportTypeResolver.                  
 
 
-Make the viewer fill the entire browser window. Add the following style to the <head> element:#_HTML_
+Make the viewer fill the entire browser window. Add the following style to the <head> element:
 
-	
+````
 <style>
         #reportViewer1 {
             position: absolute;
@@ -181,16 +220,16 @@ Make the viewer fill the entire browser window. Add the following style to the <
             overflow: hidden;
         }
 </style>
-				
+				````
 
 
 
 >tip The above CSS rule will be applied on the <div> element holding the viewer object.                    The HTML elements building the viewer object will be sized based on the size of this container <div> element.                    To make the viewer fit in other container, use  *position:relative*  and provide width and height values.                  
 
 
-The HTML page that we have just created should look like this:#_HTML_
+The HTML page that we have just created should look like this:
 
-	
+````
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -199,7 +238,46 @@ The HTML page that we have just created should look like this:#_HTML_
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     
-    <link href="https://kendo.cdn.telerik.com/
+    <link href="https://kendo.cdn.telerik.com/````````/styles/kendo.common.min.css" rel="stylesheet" />
+    <link href="https://kendo.cdn.telerik.com/````````/styles/kendo.blueopal.min.css" rel="stylesheet" />
+    <script src="/api/reports/resources/js/telerikReportViewer"></script>
+    
+    <style>
+        #reportViewer1 {
+            position: absolute;
+            left: 5px;
+            right: 5px;
+            top: 5px;
+            bottom: 5px;
+
+            font-family: 'segoe ui', 'ms sans serif';
+
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+    
+    <div id="reportViewer1" class="k-widget">
+        loading...
+    </div>
+    
+    <script type="text/javascript">
+        $("#reportViewer1")
+            .telerik_ReportViewer({
+                serviceUrl: "/api/reports/",
+                reportSource: { 
+					report: "Telerik.Reporting.Examples.CSharp.ProductCatalog, CSharp.ReportLibrary",
+					parameters: {
+						CultureID: "en"
+					}
+				}
+            });
+    </script>
+
+</body>
+</html>
+				````
 
 
 

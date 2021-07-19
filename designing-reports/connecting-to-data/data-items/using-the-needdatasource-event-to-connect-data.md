@@ -36,7 +36,7 @@ Below is an example that illustrates how to provide data source to the __Report_
 
 ## 
 
-	
+````
 private void Report1_NeedDataSource(object  sender, System.EventArgs e)
 {
 	string sql =
@@ -47,11 +47,11 @@ private void Report1_NeedDataSource(object  sender, System.EventArgs e)
 	DataSet dataSet = new DataSet();
 	adapter.Fill(dataSet);
 	(sender as Telerik.Reporting.Processing.Report).DataSource = dataSet;
-} 
+} ````
 
 
 
-	
+````
 Private Sub Report1_NeedDataSource(ByVal  sender As Object, ByVal e As System.EventArgs)
 	Dim sql As String = "SELECT Production.Product.Name, Production.Product.ProductNumber FROM Production.Product"
 	Dim connectionString As String = "Data Source=(local)\SQLEXPRESS;Initial Catalog=AdventureWorks;Integrated Security=True"
@@ -59,7 +59,7 @@ Private Sub Report1_NeedDataSource(ByVal  sender As Object, ByVal e As System.Ev
 	Dim dataSet As New DataSet()
 	adapter.Fill(dataSet)
 	TryCast(sender, Telerik.Reporting.Processing.Report).DataSource = dataSet
-End Sub 
+End Sub ````
 
 
 

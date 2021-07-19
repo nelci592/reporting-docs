@@ -12,11 +12,9 @@ position: 0
 
 
 
-## Request#_URI Template_
+## Request
 
-	
-          POST /api/reports/clients/{clientId}/parameters
-        
+
 
 
 
@@ -53,9 +51,9 @@ __Response Body__
 Array containing [Parameter]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/json-entities/parameter%}) objects representing the report parameters that should be used to prompt the user.
         
 
-## Sample#_Request Message_
+## Sample
 
-	
+````
           POST /api/reports/clients/2c3d/parameters HTTP/1.1
 
           {
@@ -65,11 +63,11 @@ Array containing [Parameter]({%slug telerikreporting/using-reports-in-applicatio
 	          ‘p2’: 20
             },
           }
-          
+          ````
 
-#_Response Message_
 
-	
+
+````
           HTTP/1.1 200 OK
 
           [
@@ -108,7 +106,7 @@ Array containing [Parameter]({%slug telerikreporting/using-reports-in-applicatio
                 ‘label’: ‘Sofia’,
               }
           ]
-          
+          ````
 
 
 

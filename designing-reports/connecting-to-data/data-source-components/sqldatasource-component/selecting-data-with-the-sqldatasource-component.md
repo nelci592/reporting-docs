@@ -26,9 +26,7 @@ The following example demonstrates a SQL query that retrieves
           __AdventureWorks__ sample database:
         
 
-	
-          SELECT FirstName, LastName FROM Person.Contact
-        
+
 
 
 
@@ -68,11 +66,7 @@ If the database you are working with supports stored procedures, you can set the
           stored procedure that you can create in SQL Server:
         
 
-	
-          CREATE PROCEDURE GetAllContacts AS
-          SELECT FirstName, LastName FROM Person.Contact;
-          GO
-        
+
 
 
 

@@ -77,9 +77,7 @@ position: 1
               of choice into your application. For example you can load locally the same polyfill we use:
             
 
-	
-              <script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=Promise"></script>
-            
+
 
 If you want to make sure that there are no Internet connection problems and the CDN service cannot be
               reached for some reason, download the content of the JavaScript file

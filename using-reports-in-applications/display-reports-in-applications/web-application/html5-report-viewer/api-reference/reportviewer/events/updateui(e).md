@@ -24,7 +24,7 @@ Parameters:
 
 
 
-	
+````
   // $(handler) is jQuery's shorthand for $(document).ready(handler)
   $(function () {
     $("#reportViewer1").telerik_ReportViewer({
@@ -35,7 +35,7 @@ Parameters:
       
       updateUi: function(e) { console.log("This event handler will be called when the state of the viewer changes."); }
   });
-          
+          ````
 
 
 

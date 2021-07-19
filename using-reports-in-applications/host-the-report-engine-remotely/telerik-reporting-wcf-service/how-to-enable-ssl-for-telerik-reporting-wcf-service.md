@@ -23,7 +23,7 @@ The solution is to configure corresponding bindings to use [Transport security m
 The entire HTTPS-enabled system.serviceModel section of web.config is below:
       
 
-	
+````
 		<system.serviceModel>
 		    <serviceHostingEnvironment aspNetCompatibilityEnabled="true" />
 			 <!--security settings -->
@@ -84,7 +84,7 @@ The entire HTTPS-enabled system.serviceModel section of web.config is below:
 			 
 				</behaviors>
 			</system.serviceModel>
-			
+			````
 
 
 

@@ -12,11 +12,9 @@ position: 3
 
 
 
-## Request#_URI Template_
+## Request
 
-	
-          POST /api/reports/clients/{clientId}/instances/{instanceId}/documents/{documentId}/send
-        
+
 
 
 
@@ -49,24 +47,12 @@ __Request Body__
 
 
 
-## Sample#_Request Message_
+## Sample
 
-	
-          POST /api/reports/clients/2c3d/instances/4d3c/documents/5x3a/send HTTP/1.1
 
-          {
-          'from': 'john.doe@mycompany.com',
-          'to': 'jane.doe@mycompany.com',
-          'cc': 'john.doe.jr@mycompany.com',
-          'subject': 'my mail subject',
-          'body': 'my mail body',
-          }
-        
 
-#_Response Message_
 
-	
-          HTTP/1.1 200 OK
-        
+
+
 
 

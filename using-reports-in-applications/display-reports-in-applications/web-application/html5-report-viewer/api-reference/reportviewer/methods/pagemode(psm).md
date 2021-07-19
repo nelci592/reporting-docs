@@ -29,9 +29,9 @@ Parameters:
 Returns: the current *ReportViewer* object.
         
 
-	
+````
 var reportViewer = $("#reportViewer1").data("telerik_ReportViewer");
 reportViewer.pageMode(telerikReportViewer.PageModes.SINGLE_PAGE);
-          
+          ````
 
 

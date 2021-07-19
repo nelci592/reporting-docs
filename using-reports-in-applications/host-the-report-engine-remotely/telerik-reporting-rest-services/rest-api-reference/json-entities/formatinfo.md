@@ -15,14 +15,9 @@ position: 2
 Format info object representing a document format that can be used for document creation.
       
 
-## #_Example_
+## 
 
-	
-          {
-            "name":"PDF",
-            "localizedName":"Acrobat (PDF) file"
-          }
-        
+
 
 
 

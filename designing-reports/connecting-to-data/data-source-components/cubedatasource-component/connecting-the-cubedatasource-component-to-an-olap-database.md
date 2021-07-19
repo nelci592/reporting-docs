@@ -58,15 +58,7 @@ Instead of setting connection strings as property settings in the __CubeDataSour
 					__ configuration element named __MyAdventureWorksDW__:
 				
 
-	
-					<configuration>
-						<connectionStrings>
-							<add name="MyAdventureWorksDW"
-								 connectionString="Data Source=localhost;Initial Catalog=Adventure Works DW 2008R2"
-								 providerName="Microsoft.AnalysisServices.AdomdClient" />
-						</connectionStrings>
-					</configuration>
-				
+
 
 
 

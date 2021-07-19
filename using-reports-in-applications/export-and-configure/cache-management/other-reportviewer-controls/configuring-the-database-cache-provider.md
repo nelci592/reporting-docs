@@ -44,7 +44,7 @@ Two cache providers are available:
             The following XML snippet demonstrates how to configure this provider:
           
 
-	
+````
 <Telerik.Reporting>
   <Cache provider="ADO.NET">
     <Providers>
@@ -57,7 +57,7 @@ Two cache providers are available:
     </Providers>
   </Cache>
 </Telerik.Reporting>
-
+````
 
 Here the "ProviderName" parameter specifies the __ADO.NET__ provider, and the "ConnectionString" specifies the connection string to the database.
           
@@ -71,7 +71,7 @@ Here the "ProviderName" parameter specifies the __ADO.NET__ provider, and the "C
             configure this provider in application’s configuration file:
           
 
-	
+````
 <Telerik.Reporting>
   <Cache provider="Database">
     <Providers>
@@ -84,7 +84,7 @@ Here the "ProviderName" parameter specifies the __ADO.NET__ provider, and the "C
     </Providers>
   </Cache>
 </Telerik.Reporting>
-
+````
 
 Here the "BackendName" parameter specifies the name of the chosen backend. Complete list of the backends is available in the
             [Backend Strings and Provider Names List](http://docs.telerik.com/data-access/developers-guide/database-specifics/database-specifics-backend-strings-provider-names-list) article. The "ConnectionString" specifies the connection string to the database.
@@ -94,7 +94,7 @@ Here the "BackendName" parameter specifies the name of the chosen backend. Compl
             latest versions. To do this, add the following bindingRedirects to your configuration file and replace the x.x.x.x with the exact version of __Telerik Data Access__ assemblies:
           
 
-	
+````
 <?xml version="1.0" encoding="utf-8" ?>
 <configuration>
   <runtime>
@@ -114,7 +114,7 @@ Here the "BackendName" parameter specifies the name of the chosen backend. Compl
     </assemblyBinding>
   </runtime>
 </configuration>
-
+````
 
 
 

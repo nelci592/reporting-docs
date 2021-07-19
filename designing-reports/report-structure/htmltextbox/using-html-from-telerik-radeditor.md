@@ -34,7 +34,7 @@ Here are the exact steps taken:
 
 1. Use the markup below for your ToolsFile.xml file
 
-	
+````
 <?xml version="1.0" encoding="utf-8" ?>
 <root>
   <modules>
@@ -84,7 +84,7 @@ Here are the exact steps taken:
     <tool name="SelectAll" shortcut="CTRL+A"/>
   </tools>
 </root>
- 
+ ````
 
 
 
@@ -92,11 +92,11 @@ Here are the exact steps taken:
                             __FixUlBoldItalic__ filter:
                         
 
-	RadEditor1.DisableFilter(Telerik.Web.UI.EditorFilters.FixUlBoldItalic);
 
 
 
-	RadEditor1.DisableFilter(Telerik.Web.UI.EditorFilters.FixUlBoldItalic)
+
+
 
 
 
@@ -104,11 +104,11 @@ Here are the exact steps taken:
                             which converts the non __XHTML__ compliant Font tags with Span tags
                         
 
-	RadEditor1.DisableFilter(Telerik.Web.UI.EditorFilters.ConvertFontToSpan);
 
 
 
-	RadEditor1.DisableFilter(Telerik.Web.UI.EditorFilters.ConvertFontToSpan)
+
+
 
 
 
@@ -119,16 +119,16 @@ Here are the exact steps taken:
 
 1. Use the following custom content filter, which will remove unsupported __HTML__ tags. Supported
                             tags are: FONT, STRONG, B, EM, I, U, A, OL, UL, SUB, SUP, LI, DIV, SPAN, P, BR, CENTER.
-                        #_ASP.NET_
+                        
 
-	
+````
     <telerik:RadEditor ID="RadEditor1" StripFormattingOptions="AllExceptNewLines" ToolsFile="~/HtmlTextBoxToolsFile.xml" OnClientLoad="editorLoaded" runat="server">
     </telerik:RadEditor>
+````
 
 
 
-
-	
+````
 <script type="text/javascript">
   	ReportingFilter = function()
 {
@@ -168,7 +168,7 @@ ReportingFilter.registerClass('ReportingFilter', Telerik.Web.UI.Editor.Filter);
            editor.get_filtersManager().add(new ReportingFilter());
         }
 </script>
- 
+ ````
 
 
 

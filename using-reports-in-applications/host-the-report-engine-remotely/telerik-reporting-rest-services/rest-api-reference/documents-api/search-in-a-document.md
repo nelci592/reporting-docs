@@ -12,11 +12,9 @@ position: 7
 
 
 
-## Request#_URI Template_
+## Request
 
-	
-          POST /api/reports/clients/{clientId}/instances/{instanceId}/documents/{documentId}/search
-        
+
 
 
 
@@ -56,28 +54,12 @@ When the return status is `OK` the response body contains a JSON array of [Searc
           objects representing the search results.
         
 
-## Sample#_Request Message_
+## Sample
 
-	
-          POST /api/reports/clients/f3c380da635/instances/c71aeb824cf/documents/495ff8766803332209ef12/search HTTP/1.1
 
-          {
-            "searchToken": "foo",
-            "matchCase": false,
-            "matchWholeWord": false,
-            "useRegularExpressions": true
-          }
-        
 
-#_Response Message_
 
-	
-          HTTP/1.1 200 Ok
-          {
-            "description":"Quarterly Sales Dashboard for 2003",
-            "id":"a082030a03fa4e349abe183d161a35ea",
-            "page":1
-          }
-        
+
+
 
 

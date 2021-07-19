@@ -29,13 +29,13 @@ This tutorial shows how to use HTML5 ASP.NET Web Forms Report Viewer in ASP.NET 
               of the project hosting the Reporting REST service:
             
 
-	
+````
 <connectionStrings>
 	 <add name="Telerik.Reporting.Examples.CSharp.Properties.Settings.TelerikConnectionString"
 	            connectionString="Data Source=(local);Initial Catalog=AdventureWorks;Integrated Security=SSPI"
 	            providerName="System.Data.SqlClient" />
 </connectionStrings>
-								
+								````
 
 
 
@@ -58,22 +58,22 @@ Create new ASP.NET Web Forms Application.
 Add new WebForm that does not use a Master page.
 
 To ensure that the browser will start in the latest rendering mode verify the page is using the following DOCTYPE directive:
-                #_HTML_
+                
 
-	
+````
 							<!DOCTYPE html>
-							
+							````
 
 
 
 >tip The above DOCTYPE directive should be considered with your custom requirements. More details about the used in the tutorial settings for the page can be found in the                    [Defining document compatibility](http://msdn.microsoft.com/en-us/library/cc288325(v=vs.85).aspx) MSDN article.                  
 
 
-Initialize the browser’s viewport in the <head> element:#_HTML_
+Initialize the browser’s viewport in the <head> element:
 
-	
+````
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-				
+				````
 
 
 
@@ -83,11 +83,11 @@ The viewport META tag is used to control layout on mobile browsers.
 
 (Optional) The default viewer implementation depends externally on __jQuery__.
                   Add link to jQuery in the <head> element:
-                #_HTML_
+                
 
-	
+````
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-									
+									````
 
 
 
@@ -97,11 +97,53 @@ The viewport META tag is used to control layout on mobile browsers.
 If jQuery is not provided HTTPHandler will provide automatically the required script.
               
 
-(Optional) Add references to Telerik Kendo UI scripts and styles in the <head> element:#_HTML_
+(Optional) Add references to Telerik Kendo UI scripts and styles in the <head> element:
 
-	
+````
 <!-- the required Kendo styles -->                  
-<link href="https://kendo.cdn.telerik.com/
+<link href="https://kendo.cdn.telerik.com/````````/styles/kendo.common.min.css" rel="stylesheet" />
+<link href="https://kendo.cdn.telerik.com/````````/styles/kendo.blueopal.min.css" rel="stylesheet" />
+
+<!--If Kendo CDN is prefered here are the required Kendo widgets and bundles
+The minimum required widgets:
+<script src="https://kendo.cdn.telerik.com/````````/js/kendo.core.min.js"></script>
+<script src="https://kendo.cdn.telerik.com/````````/js/kendo.data.odata.min.js"></script>
+<script src="https://kendo.cdn.telerik.com/````````/js/kendo.data.min.js"></script>
+<script src="https://kendo.cdn.telerik.com/````````/js/kendo.userevents.min.js"></script>
+<script src="https://kendo.cdn.telerik.com/````````/js/kendo.selectable.min.js"></script>
+<script src="https://kendo.cdn.telerik.com/````````/js/kendo.calendar.min.js"></script>
+<script src="https://kendo.cdn.telerik.com/````````/js/kendo.fx.min.js"></script>
+<script src="https://kendo.cdn.telerik.com/````````/js/kendo.draganddrop.min.js"></script>
+<script src="https://kendo.cdn.telerik.com/````````/js/kendo.mobile.scroller.min.js"></script>
+<script src="https://kendo.cdn.telerik.com/````````/js/kendo.virtuallist.min.js"></script>
+<script src="https://kendo.cdn.telerik.com/````````/js/kendo.popup.min.js"></script>
+<script src="https://kendo.cdn.telerik.com/````````/js/kendo.list.min.js"></script>
+<script src="https://kendo.cdn.telerik.com/````````/js/kendo.combobox.min.js"></script>
+<script src="https://kendo.cdn.telerik.com/````````/js/kendo.datepicker.min.js"></script>
+<script src="https://kendo.cdn.telerik.com/````````/js/kendo.resizable.min.js"></script>
+<script src="https://kendo.cdn.telerik.com/````````/js/kendo.dropdownlist.min.js"></script>
+<script src="https://kendo.cdn.telerik.com/````````/js/kendo.multiselect.min.js"></script>
+<script src="https://kendo.cdn.telerik.com/````````/js/kendo.splitter.min.js"></script>
+<script src="https://kendo.cdn.telerik.com/````````/js/kendo.window.min.js"></script>
+<script src="https://kendo.cdn.telerik.com/````````/js/kendo.color.min.js"></script>
+<script src="https://kendo.cdn.telerik.com/````````/js/kendo.slider.min.js"></script>
+<script src="https://kendo.cdn.telerik.com/````````/js/kendo.button.min.js"></script>
+<script src="https://kendo.cdn.telerik.com/````````/js/kendo.colorpicker.min.js"></script>
+<script src="https://kendo.cdn.telerik.com/````````/js/kendo.editor.min.js"></script>
+<script src="https://kendo.cdn.telerik.com/````````/js/kendo.listview.min.js"></script>
+<script src="https://kendo.cdn.telerik.com/````````/js/kendo.menu.min.js"></script>
+<script src="https://kendo.cdn.telerik.com/````````/js/kendo.panelbar.min.js"></script>
+<script src="https://kendo.cdn.telerik.com/````````/js/kendo.tooltip.min.js"></script>
+<script src="https://kendo.cdn.telerik.com/````````/js/kendo.treeview.min.js"></script>
+<script src="https://kendo.cdn.telerik.com/````````/js/kendo.touch.min.js"></script>
+
+Widgets bundles:
+kendo.all.min.js can be used as well instead of kendo.web.min.js and kendo.mobile.min.js
+<script src="https://kendo.cdn.telerik.com/````````/js/kendo.web.min.js"></script>
+kendo.mobile.min.js - optional, if gestures/touch support is required
+<script src="https://kendo.cdn.telerik.com/````````/js/kendo.mobile.min.js"></script>
+-->
+				````
 
 
 
@@ -126,15 +168,15 @@ Set the viewer width and height.
                   statement for the Report Viewer (remember that they must be rendered after jQuery):
                 
 
-	
+````
 <telerik:DeferredScripts runat="server"></telerik:DeferredScripts>
-								
+								````
 
 
 
-Finally the WebForm should look like this (note that the Report Parameter 'CultureID' value will be modified as passed from the viewer) :#_HTML_
+Finally the WebForm should look like this (note that the Report Parameter 'CultureID' value will be modified as passed from the viewer) :
 
-	
+````
 <%@ Register TagPrefix="telerik" Assembly="Telerik.ReportViewer.Html5.WebForms" Namespace="Telerik.ReportViewer.Html5.WebForms" %>
 
 <!DOCTYPE html>
@@ -143,6 +185,41 @@ Finally the WebForm should look like this (note that the Report Parameter 'Cultu
     <title>Telerik HTML5 Web Forms Report Viewer Demo</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-    <link href="https://kendo.cdn.telerik.com/
+    <link href="https://kendo.cdn.telerik.com/````````/styles/kendo.common.min.css" rel="stylesheet" />
+    <link href="https://kendo.cdn.telerik.com/````````/styles/kendo.blueopal.min.css" rel="stylesheet" />
+    <style>
+        #reportViewer1
+        {
+            position: absolute;
+            left: 5px;
+            right: 5px;
+            top: 5px;
+            bottom: 5px;
+            overflow: hidden;
+            font-family: Verdana, Arial;
+        }
+    </style>
+
+
+</head>
+<body>
+    <form runat="server">
+        <telerik:ReportViewer
+            ID="reportViewer1"
+            ServiceUrl="/api/reports/"
+            Deferred="true"
+            runat="server">
+          <ReportSource Identifier="Product Catalog.trdp" IdentifierType="UriReportSource">
+                <Parameters>
+                    <telerik:Parameter Name="CultureID" Value="fr" />
+                </Parameters>
+          </ReportSource>
+        </telerik:ReportViewer>
+
+        <telerik:DeferredScripts runat="server"></telerik:DeferredScripts>
+    </form>
+</body>
+</html>
+								````
 
 

@@ -15,16 +15,9 @@ position: 9
 The info object passed to the report engine to perform a search.
       
 
-## #_Example_
+## 
 
-	
-          {
-            "searchToken": "foo",
-            "matchCase": false,
-            "matchWholeWord": false,
-            "useRegularExpressions": true
-          }
-        
+
 
 
 

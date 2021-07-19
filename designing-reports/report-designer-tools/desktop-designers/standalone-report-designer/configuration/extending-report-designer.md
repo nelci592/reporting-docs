@@ -21,9 +21,9 @@ It is a common requirement to add your own [User Functions]({%slug telerikreport
 In order to expose your data, so it can be utilized by the Object/OpenAccess/Entity [data source components]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/overview%}), or
           extend the default behavior of the Telerik Reporting engine with custom User Functions, you have to use the [assemblyReferences Element]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/assemblyreferences-element%}) of the
           Telerik.Reporting configuration section to reference your custom assembly:
-        #_XML_
+        
 
-	
+````
 <configuration>
 	<configSections>
 		<section
@@ -39,7 +39,7 @@ In order to expose your data, so it can be utilized by the Object/OpenAccess/Ent
 		</AssemblyReferences>
 	</Telerik.Reporting>
 </configuration>
-      
+      ````
 
 
 
@@ -52,9 +52,9 @@ The section should be added to the designer configuration file, __Telerik.Report
 To instruct the Report Designer to look for assemblies in other locations as well, use the
           [<probing> Element](http://msdn.microsoft.com/en-US/library/823z9h8w%28v=vs.80%29). For more information, see
           [Locating the Assembly through Codebases or Probing](http://msdn.microsoft.com/en-US/library/15hyw9x3%28v=vs.100%29):
-        #_XML_
+        
 
-	
+````
 <configuration>
 	...
 	<runtime>
@@ -69,7 +69,7 @@ To instruct the Report Designer to look for assemblies in other locations as wel
 	</Telerik.Reporting>
 	...
 </configuration>
- 
+ ````
 
 
 

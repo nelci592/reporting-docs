@@ -37,19 +37,19 @@ All these elements of the HTML5 Report Viewer are provided through the __trv-rep
 
 While loading the template content, the widget looks for elements marked with the data-role attribute and maps its
           value to a jQuery plugin function that provides the element behavior. For example:
-        #_HTML_
+        
 
-	
+````
           <div class="trv-parameters-area k-widget hidden" data-role="telerik_ReportViewer_ParametersArea"> … </div>
-          
+          ````
 
 
 
 is mapped to:
 
-	
+````
           jQuery.fn.telerik_ReportViewer_ParametersArea(options)
-          
+          ````
 
 
 

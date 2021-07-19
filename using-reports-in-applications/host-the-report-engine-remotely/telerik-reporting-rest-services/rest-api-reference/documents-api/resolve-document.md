@@ -12,11 +12,9 @@ position: 0
 
 
 
-## Request#_URI Template_
+## Request
 
-	
-          POST /api/reports/clients/{clientId}/instances/{instanceId}/documents
-        
+
 
 
 
@@ -54,26 +52,12 @@ __Response Body__
 When the return status is `Accepted/Created` the body contains a document identifier string which is used to get pages/document.
         
 
-## Sample#_Request Message_
+## Sample
 
-	
-          POST /api/reports/clients/2c3d/instances/4d3c/documents HTTP/1.1
 
-          {
-          ‘format’: ‘HTML5’,
-          ‘deviceInfo’: { ‘xxx’: ‘zzz’ },
-          ‘useCache’: true,
-          ‘baseDocumentId’: ‘xxxx’,
-          ‘actionId’: ‘xxxx’
-          }
-        
 
-#_Response Message_
 
-	
-          HTTP/1.1 202 Accepted
 
-          “5x3a”
-        
+
 
 

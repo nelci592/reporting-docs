@@ -21,20 +21,20 @@ The article elaborates how to use a customized HTML template for the HTML5 Repor
 
 If you have custom HTML template you should provide it to the telerik_ReportViewer plugin’s options:
 
-	
+````
         $("#reportViewer1").telerik_ReportViewer({
             serviceUrl: "../api/reports/",
             templateUrl: '/ReportViewer/templates/telerikReportViewerTemplate.html',
             reportSource: { report: "product catalog.trdp" }
         });
-          
+          ````
 
 
 
 The HTML template file is an HTML page while the templates are HTML document fragments inside HTML5 __template__ elements:
-        #_HTML_
+        
 
-	
+````
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -50,7 +50,7 @@ The HTML template file is an HTML page while the templates are HTML document fra
 
     </body>
 </html>
-          
+          ````
 
 
 
@@ -59,7 +59,7 @@ The templates are loaded during the initialization of the __telerik_ReportViewer
           to find when the viewer is completely loaded provide a callback function to the __telerik_ReportViewer__ widget:
         
 
-	
+````
 $("#reportViewer1").telerik_ReportViewer({
 	serviceUrl: "../api/reports/",
 	templateUrl: '/ReportViewer/templates/telerikReportViewerTemplate',
@@ -68,7 +68,7 @@ $("#reportViewer1").telerik_ReportViewer({
 		// report viewer is now ready for action
 	}
 });
-          
+          ````
 
 
 

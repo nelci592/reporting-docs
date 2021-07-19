@@ -29,12 +29,12 @@ Parameters:
 Returns: the current *ReportViewer* object.
         
 
-	
+````
 var reportViewer = $("#reportViewer1").data("telerik_ReportViewer");
 reportViewer.reportSource({
             report: "product catalog.trdx",
             parameters: { "CultureID": "fr" },
         });
-          
+          ````
 
 

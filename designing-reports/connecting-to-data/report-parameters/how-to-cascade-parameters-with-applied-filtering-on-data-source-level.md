@@ -20,14 +20,14 @@ To create cascading report parameters with applied filtering on data source leve
 1. Using the [Data Source Wizard]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/datasource-wizard%}) bind the report to __SqlDataSource__ with query:
 		        
 
-	
+````
 SELECT        Production.Product.ProductNumber, Production.Product.Name AS ProductName, 
               Production.ProductSubcategory.Name AS SubcategoryName
 FROM          Production.Product 
               INNER JOIN Production.ProductSubcategory 
                    ON Production.Product.ProductSubcategoryID = Production.ProductSubcategory.ProductSubcategoryID
 WHERE        (Production.Product.ProductSubcategoryID = @ProductSubcategoryID)
-				
+				````
 
 
 				Note that there is a __WHERE__ clause that filters the datasource based on the ProductSubcategoryID parameter.
@@ -54,12 +54,12 @@ WHERE        (Production.Product.ProductSubcategoryID = @ProductSubcategoryID)
 1. Start the Data Source Wizard and set the DataSource for the parameter to the following query: 
 		        
 
-	
+````
 SELECT        ProductSubcategoryID, 
               Name AS SubcategoryName
 FROM          Production.ProductSubcategory
 WHERE        (ProductCategoryID = @ProductCategoryID)
-				
+				````
 
 
 			Note that there is a __WHERE__ clause that filters the data source based on the ProductCategoryID parameter.
@@ -88,13 +88,13 @@ WHERE        (ProductCategoryID = @ProductCategoryID)
 			the parameter to the following query:
 		        
 
-	
+````
 SELECT
               ProductCategoryID,
               Name AS CategoryName
 FROM
               Production.ProductCategory
-				
+				````
 
 
 

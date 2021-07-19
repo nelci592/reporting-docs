@@ -99,19 +99,7 @@ Follow the steps described in [HTML5 Viewer Manual Setup]({%slug telerikreportin
                   Examine the produced HTML page and especially the section that configures the viewer:
                 
 
-	
-                  $("#reportViewer1")
-                      .telerik_ReportViewer({
-                          serviceUrl: "/api/reports/",
-                          templateUrl: '/ReportViewer/templates/telerikReportViewerTemplate-x.x.xx.xxx.html',
-                          reportSource: {
-                              report: "Telerik.Reporting.Examples.CSharp.ProductCatalog, CSharp.ReportLibrary",
-                              parameters: {
-                                  CultureID: "en"
-                              }
-                          }
-                      });
-                
+
 
 
 
@@ -119,13 +107,7 @@ Locate the line that sets the service URL: `serviceUrl: "/api/reports/",`.
                   Comment it out or replace it with the following code:
                 
 
-	
-                  reportServer: {
-                      url: "http://yourReportServerUrl:port",
-                      username: null,
-                      password: null
-                  },
-                
+
 
 
 
@@ -151,25 +133,7 @@ Setup the report parameters if needed.
 The initialization should look like the following:
                 
 
-	
-                  $("#reportViewer1")
-                    .telerik_ReportViewer({
-                      reportServer: {
-                        url: "http://yourReportServerUrl:port",
-                        username: null,
-                        password: null
-                      },
-                      //templateUrl: '/ReportViewer/templates/telerikReportViewerTemplate-x.x.xx.xxx.html',
-                      reportSource: {
-                        // The report value should contain the Category and ReportName in the following format
-                        // {Category/ReportName}
-                        report: "Samples/Dashboard"
-                          parameters: {
-                            ReportYear: 2004
-                          }
-                        }
-                    });
-                
+
 
 
 

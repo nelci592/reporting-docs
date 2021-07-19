@@ -16,7 +16,7 @@ position: 3
 
 To create a report item in code, instantiate a report item object, set its properties, and add it to the Items collection of the section where you wish the control to appear. For example, this code will add two __TextBox__ report items to a report:
 
-	
+````
 Telerik.Reporting.Panel panel1 = new Telerik.Reporting.Panel();
 Telerik.Reporting.TextBox textBox1 = new Telerik.Reporting.TextBox();
 
@@ -37,11 +37,11 @@ textBox1.Value = "=Fields.CustomerID";
 
 panel1.Items.AddRange(new Telerik.Reporting.ReportItemBase[] {textBox1});
 detail.Items.AddRange(new Telerik.Reporting.ReportItemBase[] {panel1});
-			
+			````
 
 
 
-	
+````
 Dim panel1 As New Telerik.Reporting.Panel()
 Dim textBox1 As New Telerik.Reporting.TextBox()
 
@@ -62,7 +62,7 @@ textBox1.Value = "=Fields.CustomerID"
 
 panel1.Items.AddRange(New Telerik.Reporting.ReportItemBase() {textBox1})
 detail.Items.AddRange(New Telerik.Reporting.ReportItemBase() {panel1})
-		
+		````
 
 
 

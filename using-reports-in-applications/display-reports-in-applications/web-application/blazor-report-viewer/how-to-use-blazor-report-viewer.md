@@ -39,17 +39,17 @@ position: 1
               can serve static files:
             
 
-	
+````
 app.UseStaticFiles();
-            
+            ````
 
 
 
 1. Add JavaScript dependencies to the __head__ element of the
               __Pages/_Host.cshtml__ (Blazor Server) or __wwwroot/index.html__ (Blazor WebAssembly):
-            #_CSHTML_
+            
 
-	
+````
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
     @* For Reports service hosted in the same project: *@
@@ -57,7 +57,7 @@ app.UseStaticFiles();
 
     @* For Reports service hosted in another application / Report Server use absolute URI: *@
     @*<script src="https://demos.telerik.com/report-server/api/reports/resources/js/telerikReportViewer"></script>*@
-              
+              ````
 
 
 
@@ -66,41 +66,43 @@ app.UseStaticFiles();
               to the __head__ element of the
               __Pages/_Host.cshtml__ (Blazor Server) or __wwwroot/index.html__ (Blazor WebAssembly).
               The Razor syntax for a server application differs and you need to escape the __@__ symbol as __@@__:
-            #_CSHTML_
+            
 
-	
+````
     <link rel="stylesheet" href="https://unpkg.com/@progress/kendo-theme-default@latest/dist/all.css" />
-              
+              ````
 
 Alternatively you can use the
               [Kendo UI Less-Based Themes](https://docs.telerik.com/kendo-ui/styles-and-layout/appearance-styling)
               (Kendo UI Less-Based Themes are not compatible with Telerik UI for Blazor and should not be used together):
-            #_CSHTML_
+            
 
-	
-    <link href="https://kendo.cdn.telerik.com/
+````
+    <link href="https://kendo.cdn.telerik.com/````````/styles/kendo.common.min.css" rel="stylesheet" />
+    <link href="https://kendo.cdn.telerik.com/````````/styles/kendo.blueopal.min.css" rel="stylesheet" />
+              ````
 
 
 
 1. Add the dedicated __interop.js__ dependency at the end of the __body__ element of the
               __Pages/_Host.cshtml__ (Blazor Server) or __wwwroot/index.html__ (Blazor WebAssembly):
-            #_CSHTML_
+            
 
-	
+````
     <script src="_content/Telerik.ReportViewer.Blazor/interop.js" defer></script>
 
     @* Or this one if using the Telerik.ReportViewer.Blazor.Trial package *@
     @*<script src="_content/Telerik.ReportViewer.Blazor.Trial/interop.js" defer></script>*@
-              
+              ````
 
 
 
 1. If using Reports web service (either locally hosted or in another application) use the following snippet to place the viewer component in
               a razor page like __Pages/Index.razor__. Note that when referencing the Reports service from another application
               the ServiceUrl setting should be the absolute URI to the service. Remember to set the actual __ReportSource__ along with eventual parameters:
-            #_razor_
+            
 
-	
+````
 @page "/"
 @using Telerik.ReportViewer.Blazor
 
@@ -122,16 +124,16 @@ Alternatively you can use the
               Parameters="@(new ParametersOptions { Editors = new EditorsOptions { MultiSelect = EditorType.ComboBox, SingleSelect = EditorType.ComboBox } })"
               ScaleMode="@(ScaleMode.Specific)"
               Scale="1.0" />
-              
+              ````
 
 
 
 1. If displaying reports from a Report Server instance use the following snippet to place the viewer component in
               a razor page like __Pages/Index.razor__. Remember to set the actual __ReportServer__
               and __ReportSource__ settings:
-            #_razor_
+            
 
-	
+````
 @page "/"
 @using Telerik.ReportViewer.Blazor
 
@@ -152,7 +154,7 @@ Alternatively you can use the
                               })"
               ScaleMode="@(ScaleMode.Specific)"
               Scale="1.0" />
-              
+              ````
 
 
 

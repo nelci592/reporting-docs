@@ -19,7 +19,7 @@ The article elaborates on how to localize the messages displayed by the HTML5 Re
 
 1. To localize the report viewer messages, create a new JavaScript file using the following code snippet:
 
-	
+````
 (function (trv, $) {
     "use strict";
 
@@ -191,7 +191,7 @@ The article elaborates on how to localize the messages displayed by the HTML5 Re
     trv.sr = $.extend(trv.sr, sr);
 
 }(window.telerikReportViewer = window.telerikReportViewer || {}, jQuery));
-              
+              ````
 
 
 
@@ -201,11 +201,11 @@ The article elaborates on how to localize the messages displayed by the HTML5 Re
             *__resources.fr-BE.js__*
 
 1. Add the newly created JavaScript file to the <head> element of the page between jQuery and telerikReportViewer.js files:
-            #_HTML_
+            
 
-	
+````
               <script src="resources.fr-BE.js"></script>
-              
+              ````
 
 
 

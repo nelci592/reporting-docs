@@ -39,19 +39,19 @@ To make styles conditional, use an expression instead of a static value
 1. Enter the conditional 
 							expression: 
 
-	=Fields.Profit
+
 
 
 
 1. Enter the operator: 
 
-	<
+
 
 
 
 1. Enter the value expression: 
 
-	=0
+
 
 
 
@@ -62,7 +62,7 @@ To make styles conditional, use an expression instead of a static value
 
 1. To use Bindings, we need to implement a helper User Function:
 
-	
+````
                             public static Color ColorFromName(string colorName)
                             {
                                 if (!string.IsNullOrEmpty(colorName))
@@ -71,18 +71,18 @@ To make styles conditional, use an expression instead of a static value
                                 }
                                 return Color.Transparent;
                             }
-                            
+                            ````
 
 
 
-	
+````
                             Public Shared Function ColorFromName(ByVal colorName As String) As Color
                                 If Not String.IsNullOrEmpty(colorName) Then
                                     Return Color.FromName(colorName)
                                 End If
                                 Return Color.Transparent
                             End Function
-                            
+                            ````
 
 
 
@@ -92,8 +92,7 @@ To make styles conditional, use an expression instead of a static value
 1. Enter the next expression:
 						
 
-	=Iif(Fields.Profit < 0, ColorFromName("Red"), ColorFromName("White"))
-						
+
 
 
 

@@ -39,7 +39,7 @@ The following walk through demonstrates how to create a Master-Detail report usi
               the master report and click Next. Enter the following SQL statement and Finish the DataSource wizard.
             
 
-	
+````
 				SELECT 
 					P.Name,ProductID,ProductNumber,PC.ProductCategoryID
 				FROM 
@@ -49,7 +49,7 @@ The following walk through demonstrates how to create a Master-Detail report usi
 				WHERE 
 					P.ProductSubcategoryID=PS.ProductSubcategoryID
 					AND PS.ProductCategoryID=PC.ProductCategoryID
-					
+					````
 
 
 
@@ -109,9 +109,9 @@ The master report will contain only a simple listing of product categories.
 1. Enter the SQL statement below and click the __Next__ button.
             
 
-	
+````
 			SELECT ProductCategoryID,Name FROM Production.ProductCategory
-			
+			````
 
 
 

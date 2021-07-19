@@ -17,17 +17,17 @@ This topic explains how to update the report parameters with values passed from 
         To update the report source, the [setReportSource(rs)]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/api-reference/methods%}) method is used.
       Pass values to report parameters from the application UI
 
-Add the custom UI in your application. For example:#_HTML_
+Add the custom UI in your application. For example:
 
-	
+````
 <button (click)="onButtonClick(value)">Update parameter value</button>
-              
+              ````
 
 
 
 Declare the variable for the viewer and update the viewer's report source with a new parameter value:
 
-	
+````
 import { Component, ViewChild } from '@angular/core';
 import { TelerikReportViewerComponent } from '@progress/telerik-angular-report-viewer';
 ...
@@ -46,7 +46,7 @@ export class AppComponent {
     }
 ...
 }
-              
+              ````
 
 
 

@@ -25,24 +25,24 @@ To attach an event handler to the viewer, specify the name of the event handler 
           *Pages/_Host.cshtml* (Blazor Server).
           For example, we can attach handlers to the __ExportBegin__ and
           __ExportEnd__ events of the viewer:
-        #_Razor_
+        
 
-	
+````
 <ReportViewer
     ...
     ClientEvents="@(new ClientEventsOptions() {
         ExportBegin = "trvEventHandlers.exportBegin",
         ExportEnd = "trvEventHandlers.exportEnd"
     })" />
-          
+          ````
 
 
 
 Then we create the event handler functions in the *wwwroot/index.html* (Blazor WebAssembly) or
           *Pages/_Host.cshtml* (Blazor Server):
-        #_HTML_
+        
 
-	
+````
 ...
 <body>
     
@@ -59,6 +59,6 @@ Then we create the event handler functions in the *wwwroot/index.html* (Blazor W
     </script>
 </body>
 </html>
-          
+          ````
 
 

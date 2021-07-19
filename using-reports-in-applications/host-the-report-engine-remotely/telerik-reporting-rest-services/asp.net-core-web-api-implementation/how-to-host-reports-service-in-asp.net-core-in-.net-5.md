@@ -91,15 +91,15 @@ The __ConfigureServices__ method inside the __Startup.cs__ in the project should
                       the IMvcBuilder object to place the NewtonsoftJson serialization:
                     
 
-	services.AddControllers().AddNewtonsoftJson();
+````services.AddControllers().AddNewtonsoftJson();````
 
 
 
 1. Add the dedicated configuration object needed from the Reports Service in the dependency container.
                             Note how the report source resolver will target the Reports folder we created earlier.
-                        #_C#_
+                        
 
-	 
+```` 
 // Configure dependencies for ReportsController.
 services.TryAddSingleton<IReportServiceConfiguration>(sp =>
     new ReportServiceConfiguration
@@ -110,7 +110,7 @@ services.TryAddSingleton<IReportServiceConfiguration>(sp =>
         ReportSourceResolver = new UriReportSourceResolver(
             System.IO.Path.Combine(sp.GetService<IWebHostEnvironment>().ContentRootPath, "Reports"))
     });
-          
+          ````
 
 
 
@@ -118,13 +118,13 @@ services.TryAddSingleton<IReportServiceConfiguration>(sp =>
                     are configured for API controllers by adding the following line in the lambda expression argument:
                 
 
-	
+````
 app.UseEndpoints(endpoints =>
 {
     endpoints.MapControllers();
     // ... 
 });
-            
+            ````
 
 
 
@@ -141,8 +141,8 @@ The report generation engine can retrieve Sql Connection Strings and specific Re
             file named by default __appSettings.json__. The default ReportingEngineConfiguration:
           
 
-	ReportingEngineConfiguration = sp.GetService<IConfiguration>()
-          
+````ReportingEngineConfiguration = sp.GetService<IConfiguration>()
+          ````
 
 
 
@@ -160,7 +160,7 @@ To activate JSON file configuration with a different name, for example, __report
 In this guide we will create a helper class loading the json-formatted setting:
           
 
-	          
+````          
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 
@@ -174,31 +174,31 @@ static class ConfigurationHelper
             .Build();
     }
 }    
-              
+              ````
 
 
 
 Finally, all configurations should be placed in the JSON configuraion file (add one in the project root if such
             does not exist). For example, __ConnectionStrings__ setting should be configured in
             JSON-based format like this:
-          #_JSON_
+          
 
-	
+````
 {
   ...
   "ConnectionStrings": {
     "Telerik.Reporting.Examples.CSharp.Properties.Settings.TelerikConnectionString": "Data Source=.\\SQLEXPRESS;Initial Catalog=AdventureWorks;Integrated Security=true"
   }
 }
-              
+              ````
 
 
 
 The above type of connection string lacks information about the data provider and will use *System.Data.SqlClient*
             as provider invariant name. When it's necessary to specify a different data provider, the following notation is also supported:
-          #_JSON_
+          
 
-	
+````
 {
   ...
   "ConnectionStrings": {
@@ -208,7 +208,7 @@ The above type of connection string lacks information about the data provider an
     }
   }
 }
-              
+              ````
 
 
 
@@ -216,9 +216,9 @@ The two types of connection string notations specified above can coexist in a si
           
 
 The last supported type of __ConnectionStrings__ configuration uses an array to provide information about each connection string:
-          #_JSON_
+          
 
-	
+````
 {
   ...
   "ConnectionStrings": [
@@ -229,7 +229,7 @@ The last supported type of __ConnectionStrings__ configuration uses an array to 
     }
   ]
 }
-              
+              ````
 
 
 
@@ -250,7 +250,7 @@ The last supported type of __ConnectionStrings__ configuration uses an array to 
                             This is how a basic implementation of the controller should look like:
                         
 
-	
+````
 namespace CSharp.Net5.ReportingRestServiceCorsDemo.Controllers
 {
     using Microsoft.AspNetCore.Mvc;
@@ -282,7 +282,7 @@ namespace CSharp.Net5.ReportingRestServiceCorsDemo.Controllers
         }
     }
 }
-		
+		````
 
 
 
@@ -307,7 +307,7 @@ Add the following code to the *ConfigureServices* method of the
             *Startup.cs* file to add a new CORS policy for the REST Service:
           
 
-	
+````
           services.AddCors(corsOption => corsOption.AddPolicy(
             "ReportingRestPolicy",
             corsBuilder =>
@@ -316,7 +316,7 @@ Add the following code to the *ConfigureServices* method of the
             .AllowAnyMethod()
             .AllowAnyHeader();
             }));
-            
+            ````
 
 
 
@@ -324,9 +324,9 @@ Activate the above policy for the application by adding the next code in the *Co
             method of the *Startup.cs* file:
           
 
-	
+````
               app.UseCors("ReportingRestPolicy");
-              
+              ````
 
 
 

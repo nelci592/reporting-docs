@@ -123,9 +123,9 @@ We will apply implicit styles for the Vista theme in our example project. Having
 
 * 
             The next step is to merge these ResourceDictionaries in the App.xaml file:
-            #_XAML_
+            
 
-	
+````
      <Application x:Class="WpfApplication1.App"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
@@ -142,6 +142,6 @@ We will apply implicit styles for the Vista theme in our example project. Having
         </ResourceDictionary>
       </Application.Resources>
     </Application>
-                
+                ````
 
 

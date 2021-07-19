@@ -18,9 +18,9 @@ Reloads/refreshes the current report.
 
 Returns: the current *ReportViewer* object.
 
-	
+````
           var reportViewer = $("#reportViewer1").data("telerik_ReportViewer");
           reportViewer.refreshReport();
-          
+          ````
 
 

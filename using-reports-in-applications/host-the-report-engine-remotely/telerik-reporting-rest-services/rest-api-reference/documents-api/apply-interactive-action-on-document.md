@@ -12,11 +12,9 @@ position: 6
 
 
 
-## Request#_URI Template_
+## Request
 
-	
-          PUT /api/reports/clients/{clientId}/instances/{instanceId}/documents/{documentId}/actions/{actionId}
-        
+
 
 
 
@@ -45,16 +43,12 @@ __Path parameters__
 
 
 
-## Sample#_Request Message_
+## Sample
 
-	
-          PUT /api/reports/clients/2c3d/instances/4d3c/documents/5x3a/actions/4ah1 HTTP/1.1
-        
 
-#_Response Message_
 
-	
-          HTTP/1.1 200 OK
-        
+
+
+
 
 

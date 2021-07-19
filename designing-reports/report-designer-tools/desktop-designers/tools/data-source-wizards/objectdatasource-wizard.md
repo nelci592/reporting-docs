@@ -30,25 +30,25 @@ After the __ObjectDataSource__ wizard appears you have to perform the following 
 
 
 >note When the  __"Show data components only"__  check box is checked, only the types marked with the DataObjectAttribute                    are listed. This is useful for distinguishing the types appropriate for data binding from the regular ones.                  
-#_C#_
 
-	
+
+````
         [System.ComponentModel.DataObject()]
         public class Cars : List<Car>;
         {
         ....
         }
+````
 
 
-#_VB.NET_
 
-	
+````
         <System.ComponentModel.DataObject> _
         Public Class Cars
         Inherits List(Of Car)
         ....
         End Class
-
+````
 
 
 

@@ -54,7 +54,7 @@ The Telerik HTML5 Report Viewer is a jQuery plugin - __jQuery.fn.telerik_ReportV
 
 *  *“LIST_VIEW”* - uses[Kendo UI ListView](https://docs.telerik.com/kendo-ui/api/javascript/ui/listview)widget as an editor;Default value is: *'LIST_VIEW'* 
 
-	
+````
                       $("#reportViewer1").telerik_ReportViewer({
                         ...
                         parameters: {
@@ -63,7 +63,7 @@ The Telerik HTML5 Report Viewer is a jQuery plugin - __jQuery.fn.telerik_ReportV
                           }
                         }
                       });
-                      
+                      ````
 
 
 
@@ -104,13 +104,13 @@ The Telerik HTML5 Report Viewer is a jQuery plugin - __jQuery.fn.telerik_ReportV
 
 To create a ReportViewer:
 
-	
+````
           $("#reportViewer1").telerik_ReportViewer({
             serviceUrl: "../api/reports/",
             templateUrl: 'src/templates/telerikReportViewerTemplate-x.x.x.x.html',
             reportSource: { report: "product catalog.trdp" }
           });
-          
+          ````
 
 
 
@@ -119,9 +119,9 @@ where x.x.x.x is the version of the HTML5 ReportViewer/Telerik Reporting (e.g. 8
 To get the __ReportViewer__ object from the HTML element:
         
 
-	
+````
           var reportViewer = $("#reportViewer1").data("telerik_ReportViewer");
-          
+          ````
 
 
 

@@ -146,7 +146,7 @@ To register this new provider set the __provider__ attribute of the "Cache" elem
           should be the [assembly qualified name](http://msdn.microsoft.com/en-us/library/system.type.assemblyqualifiedname.aspx) of MyCacheProvider type. The following code snippet demonstrates how to configure such custom provider:
         
 
-	
+````
 <Telerik.Reporting>
   <Cache provider="MyCacheProvider">
     <Providers>
@@ -158,7 +158,7 @@ To register this new provider set the __provider__ attribute of the "Cache" elem
     </Providers>
   </Cache>
 </Telerik.Reporting>
-
+````
 
 
 

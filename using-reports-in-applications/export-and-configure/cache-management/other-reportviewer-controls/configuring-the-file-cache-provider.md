@@ -21,11 +21,11 @@ The file cache provider is used to cache rendered pages and resources as tempora
         configures the viewers in the application to use the file cache provider:
       
 
-	
+````
 <Telerik.Reporting>
   <Cache provider="File" />
 </Telerik.Reporting>
-
+````
 
 
 
@@ -33,7 +33,7 @@ By default, this provider stores the files in the temporary folder of the curren
         the files in another location by specifying the "BasePath" parameter, as illustrated below:
       
 
-	
+````
 <Telerik.Reporting>
   <Cache provider="File">
     <Providers>
@@ -45,7 +45,7 @@ By default, this provider stores the files in the temporary folder of the curren
     </Providers>
   </Cache>
 </Telerik.Reporting>
-
+````
 
 
 

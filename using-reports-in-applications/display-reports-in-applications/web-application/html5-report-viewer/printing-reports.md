@@ -69,7 +69,7 @@ You can manually control the printing behavior through the
 
 You can also implement a custom logic for dynamically specifying the print mode. For example:
 
-	
+````
           // Force the viewer to always use the PDF plug-in for printing in Chrome browser.
           // In the other browsers the report document will be downloaded as a PDF file:
            var printMode = /(chrome)/.test(navigator.userAgent.toLowerCase()) 
@@ -83,7 +83,7 @@ You can also implement a custom logic for dynamically specifying the print mode.
                    reportSource: { report: "product catalog.trdp" },
                    printMode: printMode
             });
-          
+          ````
 
 
 

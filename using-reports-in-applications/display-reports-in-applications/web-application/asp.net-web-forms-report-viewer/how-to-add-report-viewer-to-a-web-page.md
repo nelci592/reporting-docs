@@ -31,26 +31,26 @@ To use Telerik Reports in web application, you need the Web report viewer:
 In the __<system.web>\<httpHandlers>__ section:
             
 
-	
+````
 <system.web>
 ....
 	<httpHandlers>
 	      <add path="Telerik.ReportViewer.axd" verb="*" type="Telerik.ReportViewer.WebForms.HttpHandler, Telerik.ReportViewer.WebForms, Version=x.x.x.x, Culture=neutral, PublicKeyToken=a9d7983dfcc261be"/>
 	</httpHandlers>
 ....
-</system.web> 
+</system.web> ````
 
 In the __<system.webServer>\<handlers>__ section:
               
 
-	
+````
 <system.webServer>
 		<handlers>
 			<add name="Telerik.ReportViewer.axd_*" path="Telerik.ReportViewer.axd" verb="*" type="Telerik.ReportViewer.WebForms.HttpHandler, Telerik.ReportViewer.WebForms, Version=x.x.x.x, Culture=neutral, PublicKeyToken=a9d7983dfcc261be" preCondition="integratedMode"/>
 		</handlers>
 		<validation validateIntegratedModeConfiguration="false"/>
 </system.webServer>
-                
+                ````
 
 
 

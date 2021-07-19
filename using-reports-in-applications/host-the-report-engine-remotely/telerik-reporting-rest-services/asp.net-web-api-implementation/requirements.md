@@ -64,7 +64,7 @@ Requirements for using __Telerik Reporting REST WebAPI service__ in an applicati
               and applying the following bindingRedirects to your application configuration file. Just replace 5.1.0.0 with the exact version:
             
 
-	
+````
 <?xml version="1.0" encoding="utf-8" ?>
 <configuration>
   <runtime>
@@ -80,7 +80,7 @@ Requirements for using __Telerik Reporting REST WebAPI service__ in an applicati
     </assemblyBinding>
   </runtime>
 </configuration>
-				              
+				              ````
 
 
 

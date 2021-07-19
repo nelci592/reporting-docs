@@ -42,13 +42,13 @@ The following list describes the prerequisites for this tutorial:
               of the project hosting the Reporting REST service:
             
 
-	
+````
 <connectionStrings>
 	 <add name="Telerik.Reporting.Examples.CSharp.Properties.Settings.TelerikConnectionString"
 	            connectionString="Data Source=(local);Initial Catalog=AdventureWorks;Integrated Security=SSPI"
 	            providerName="System.Data.SqlClient" />
 </connectionStrings>
-								
+								````
 
 
 
@@ -58,11 +58,11 @@ If you don't have an Angular 4 SystemJS application,
           clone the Angular Quickstart project into a local folder with the following command:
         
 
-	
+````
                     git clone https://github.com/angular/quickstart.git
                     cd quickstart
                     npm install
-                            
+                            ````
 
 
 
@@ -73,9 +73,9 @@ Steps:
 
 The Angular Report Viewer requires jQuery peer dependencies. To install it use the following command:
 
-	
+````
               npm install --save jquery
-				              
+				              ````
 
 
 
@@ -83,9 +83,9 @@ The Telerik Angular Report Viewer package is published in the public NPM registr
                   To install the package, run:
                 
 
-	
+````
                       npm install --save @progress/telerik-angular-report-viewer
-                     
+                     ````
 
 
 
@@ -95,9 +95,9 @@ The configuration file, which SystemJS uses, is in the project template under sr
                 
 
 To add the Angular Report Viewer and jQuery configuration to the map and packages section, use the following example:
-                #_json_
+                
 
-	
+````
 map: {
   // ...
 
@@ -116,24 +116,24 @@ packages: {
     defaultExtension: 'js'
   }
 }
-				
+				````
 
 
 
 Import the TelerikReportingModule in [your application root module](https://angular.io/docs/ts/latest/guide/ngmodule.html#!#angular-modularity):
-                #_TypeScript_
+                
 
-	
+````
 import { TelerikReportingModule } from '@progress/telerik-angular-report-viewer';
 @NgModule({
   imports: [TelerikReportingModule]
-				
+				````
 
 
 
-Add the desired report viewer container style using a property of the AppComponent class:#_TypeScript_
+Add the desired report viewer container style using a property of the AppComponent class:
 
-	
+````
 export class AppComponent {
   viewerContainerStyle = {
     position: 'relative',
@@ -142,13 +142,13 @@ export class AppComponent {
     ['font-family']: 'ms sans serif'
   };
 }
-				
+				````
 
 
 
-Use the report viewer selector in the AppComponent template:#_HTML_
+Use the report viewer selector in the AppComponent template:
 
-	
+````
 <tr-viewer 
     [containerStyle]="viewerContainerStyle"
     [serviceUrl]="'http://myrestserviceurl/api/reports'"
@@ -160,7 +160,7 @@ Use the report viewer selector in the AppComponent template:#_HTML_
     [scaleMode]="'SPECIFIC'"
     [scale]="1.0">
 </tr-viewer>
-				
+				````
 
 
 
@@ -170,11 +170,13 @@ For all available report viewer options, refer to [Options]({%slug telerikreport
 Style the viewer using the desired Kendo UI theme (еither using [Less-Based Themes](http://docs.telerik.com/kendo-ui/styles-and-layout/appearance-styling) or [Sass-Based Themes](http://docs.telerik.com/kendo-ui/styles-and-layout/sass-themes)):
                 
 
-Add references to the Less-based CSS files in the <head> element of index.html:#_HTML_
+Add references to the Less-based CSS files in the <head> element of index.html:
 
-	
+````
 <!-- The required Less-based styles -->                  
-<link href="https://kendo.cdn.telerik.com/
+<link href="https://kendo.cdn.telerik.com/````````/styles/kendo.common.min.css" rel="stylesheet" />
+<link href="https://kendo.cdn.telerik.com/````````/styles/kendo.blueopal.min.css" rel="stylesheet" />
+				````
 
 
 
@@ -183,22 +185,22 @@ Add references to the Less-based CSS files in the <head> element of index.html:#
 
 If you use the __styleUrls__ attribute to reference the CSS, it is required to set
                   the view encapsulation to __None__:
-                #_TypeScript_
+                
 
-	
+````
 import { Component, ViewEncapsulation } from '@angular/core';
  
 @Component({
   encapsulation: ViewEncapsulation.None
-				
+				````
 
 
 
 Run the application:
 
-	
+````
 npm run start
-				
+				````
 
 
 

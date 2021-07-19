@@ -22,14 +22,14 @@ The parameters editors types are defined through the Parameters method when crea
         
 
 The following example illustrates how to set the Parameters method to the Telerik Report Viewer widget.
-        #_C#_
+        
 
-	
+````
           @(Html.TelerikReporting().ReportViewer()
           ...
           .Parameters(new Parameters { Editors = new Editors { SingleSelect = EditorTypes.ComboBox, MultiSelect = EditorTypes.ComboBox} })
           )
-        
+        ````
 
 
 

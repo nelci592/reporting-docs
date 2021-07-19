@@ -12,11 +12,11 @@ position: 3
 
 
 
-## Request#_URI Template_
+## Request
 
-	 
+```` 
             GET /api/reports/clients/sessionTimeout
-          
+          ````
 
 
 
@@ -35,19 +35,19 @@ __Response Body__
 The body contains the clients session timeout in seconds
         
 
-## Sample#_Request Message_
+## Sample
 
-	 
+```` 
                 GET /api/reports/clients/sessionTimeout HTTP/1.1
-              
+              ````
 
-#_Response Message_
 
-	 
+
+```` 
                 HTTP/1.1 200 OK
 
                 {"clientSessionTimeout":900}
-              
+              ````
 
 
 

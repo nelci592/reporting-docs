@@ -30,17 +30,17 @@ Changing the the value of the cacheDefinitionProperties can be done in the appli
 
 XML-based configuration file:
 
-	
+````
 	      <Telerik.Reporting>
             <processing cacheDefinitionProperties="false" />
         </Telerik.Reporting>
-							
+							````
 
 
 
 JSON-based configuration file:
 
-	
+````
   "telerikReporting": {
       "processing": [
         {
@@ -49,6 +49,6 @@ JSON-based configuration file:
       ]
     }
   }
-							
+							````
 
 

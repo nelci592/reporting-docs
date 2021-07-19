@@ -12,11 +12,11 @@ position: 2
 
 
 
-## Request#_URI Template_
+## Request
 
-	 
+```` 
             POST /api/reports/clients/keepAlive/{clientID}
-          
+          ````
 
 
 
@@ -41,17 +41,15 @@ __Path parameters__
 
 
 
-## Sample#_Request Message_
+## Sample
 
-	 
+```` 
                 POST /api/reports/clients/2c3d HTTP/1.1
-              
+              ````
 
-#_Response Message_
 
-	
-          HTTP/1.1 204 NoContent
-        
+
+
 
 
 

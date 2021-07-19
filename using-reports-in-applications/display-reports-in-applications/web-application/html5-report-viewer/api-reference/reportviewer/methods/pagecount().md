@@ -20,9 +20,9 @@ Gets the total page count of viewer’s currently displayed report.
 Returns: integer:
         
 
-	
+````
             var reportViewer = $("#reportViewer1").data("telerik_ReportViewer");
             var pageCount = reportViewer.pageCount();
-          
+          ````
 
 

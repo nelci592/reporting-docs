@@ -25,7 +25,7 @@ When the Standalone Report Designer crashes while working with Telerik Reporting
               Below is the XML you need to add to the __Telerik.ReportDesigner(.x86).exe.config__ file to enable tracing:
             
 
-	
+````
 <?xml version ="1.0"?>
 <configuration>
     ...
@@ -38,7 +38,7 @@ When the Standalone Report Designer crashes while working with Telerik Reporting
         </trace>
     </system.diagnostics>
 </configuration>
-
+````
 
 More details about the Standalone Report Designer's configuration file are available in the [Configuration]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/configuration/overview%}) article."__Telerik.ReportDesigner(.x86).exe.config__ resides in the __[InstallDir]/Report Designer__ directory by default
               (it is recommended to create a backup copy before modifying it).

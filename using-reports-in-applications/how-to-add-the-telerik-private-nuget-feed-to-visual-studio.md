@@ -76,10 +76,7 @@ The command from the example below stores a token in the
                   obtained from this token.
                 
 
-	
-                  NuGet Sources Add -Name "telerik.com" -Source "https://nuget.telerik.com/nuget" ^
-                  -UserName "your login email" -Password "your password"
-                
+
 
 
 
@@ -87,11 +84,7 @@ If you are unable to connect to the feed by using encrypted credentials,
                   try the alternative approach of storing credentials in clear text.
                 
 
-	
-                  NuGet Sources Add -Name "telerik.com" -Source "https://nuget.telerik.com/nuget" ^
-                  -UserName "your login email" -Password "your password" ^
-                  -StorePasswordInClearText
-                
+
 
 
 
@@ -100,11 +93,7 @@ If you have already stored a token instead of storing the credentials as clear t
                   the following command:
                 
 
-	
-                  NuGet Sources Update -Name "telerik.com" -Source "https://nuget.telerik.com/nuget" ^
-                  -UserName "your login email" -Password "your password" ^
-                  -StorePasswordInClearText
-                
+
 
 
 
@@ -117,9 +106,7 @@ After changing your Telerik password,
               To do this, open a Command Prompt and run the command:
             
 
-	
-              NuGet Sources Update -Name "telerik.com" -Source "https://nuget.telerik.com/nuget" -UserName "your login email" -Password "your new password"
-            
+
 
 
 

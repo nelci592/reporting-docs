@@ -17,26 +17,15 @@ Page info representing the state of a single document page and its content.
 
 ## 
 
-When the page is not available:#_Example_
-
-	
-          {
-          ‘pageReady’: false,
-          ‘pageNumber’: 1,
-          }
-        
+When the page is not available:
 
 
 
-When the page is  available:#_Example_
 
-	
-          {
-            ‘pageReady’: true,
-            ‘pageNumber’: 1,
-            ‘pageContent’: ‘<html>My page content</html>’,
-          }
-        
+
+When the page is  available:
+
+
 
 
 

@@ -18,21 +18,21 @@ Defines a collection of assembly references that are used from Reporting Engine 
 
 XML-based configuration file:
 
-	
+````
     	<assemblyReferences>
         	<add />
         	<clear />
         	<remove />
 		</assemblyReferences>
-		
+		````
 
 
 
 JSON-based configuration file:
 
-	
+````
     "assemblyReferences": [
-    ],
+    ],````
 
 
 
@@ -60,7 +60,7 @@ The following code example demonstrates how to configure the reporting engine to
 
 XML-based configuration file:
 
-	
+````
 <?xml version="1.0"?>
 <configuration>
     <configSections>
@@ -78,13 +78,13 @@ XML-based configuration file:
  	  </Telerik.Reporting>
    ...
 </configuration>
-  			
+  			````
 
 
 
 JSON-based configuration file:
 
-	
+````
           "telerikReporting": {
             "assemblyReferences": [
                 {
@@ -95,7 +95,7 @@ JSON-based configuration file:
                 }
               ]
           }
-    
+    ````
 
 
 

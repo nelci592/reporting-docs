@@ -90,9 +90,9 @@ We will apply implicit styles for the Vista theme in our example project.
 
 * 
             The next step is to merge these ResourceDictionaries in the App.xaml file:
-            #_XAML_
+            
 
-	
+````
      <Application x:Class="SilverlightApplication1.App"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
@@ -109,6 +109,6 @@ We will apply implicit styles for the Vista theme in our example project.
         </ResourceDictionary>
       </Application.Resources>
     </Application>
-                
+                ````
 
 

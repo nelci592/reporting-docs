@@ -53,24 +53,24 @@ The following snippet shows how to set the current application's DPI awareness t
 
 XML-based configuration file:
 
-	
+````
 <Telerik.Reporting>
 ...
   <dpiAware dpiAwareness="PROCESS_SYSTEM_DPI_AWARE"></dpiAware>
 </Telerik.Reporting>
-
+````
 
 
 
 JSON-based configuration file:
 
-	
+````
           "telerikReporting": {
             "dpiAware": {
               "dpiAwareness": "PROCESS_SYSTEM_DPI_AWARE"
             }
           }
-          
+          ````
 
 
 

@@ -18,13 +18,13 @@ The *ReportViewer* object is created through the [jQuery.fn.telerik_ReportViewer
           
         
 
-	
+````
             $("#reportViewer1").telerik_ReportViewer({
               serviceUrl: "../api/reports/",
               templateUrl: 'src/templates/telerikReportViewerTemplate-x.x.x.x.html',
               reportSource: { report: "product catalog.trdp", parameters: {CultureID: "en"} }
             });
-          
+          ````
 
 
 
@@ -33,9 +33,9 @@ where x.x.x.x is the version of the HTML5 ReportViewer/Telerik Reporting (e.g. 8
 To get the *ReportViewer* object from the target HTML element:
         
 
-	
+````
             var reportViewer = $("#reportViewer1").data("telerik_ReportViewer");
-          
+          ````
 
 
 
@@ -79,7 +79,7 @@ Additionally you can change the state of the report viewer in your event handler
           Consider the following snippet:
         
 
-	
+````
             // $(handler) is jQuery's shorthand for $(document).ready(handler)
             $(function () {
               var reportViewer = $("#reportViewer1").data("telerik_ReportViewer");
@@ -87,6 +87,6 @@ Additionally you can change the state of the report viewer in your event handler
               reportViewer.commands.goToPage.exec(2);
               reportViewer.scale(1.5);
             });
-          
+          ````
 
 

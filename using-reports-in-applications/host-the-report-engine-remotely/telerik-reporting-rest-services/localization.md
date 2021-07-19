@@ -18,9 +18,9 @@ The service renders the report with the request thread culture.
         the following globalization element:
       
 
-	
+````
         <globalization culture="auto" uiCulture=”auto” />
-        
+        ````
 
 
 

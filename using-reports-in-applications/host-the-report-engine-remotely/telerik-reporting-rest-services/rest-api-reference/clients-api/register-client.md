@@ -12,11 +12,11 @@ position: 0
 
 
 
-## Request#_URI Template_
+## Request
 
-	 
+```` 
             POST /api/reports/clients
-          
+          ````
 
 
 
@@ -35,19 +35,19 @@ __Response Body__
 The body contains the newly registered client’s identifier.
         
 
-## Sample#_Request Message_
+## Sample
 
-	 
+```` 
                 POST /api/reports/clients HTTP/1.1
-              
+              ````
 
-#_Response Message_
 
-	 
+
+```` 
                 HTTP/1.1 200 OK
 
                 {"clientId":"a5f3"}
-              
+              ````
 
 
 

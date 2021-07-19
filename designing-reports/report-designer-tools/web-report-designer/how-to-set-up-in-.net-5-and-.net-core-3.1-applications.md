@@ -72,7 +72,7 @@ If you don't use NuGet packages, along with the above assemblies, you need to ad
               to place the NewtonsoftJson serialization:
             
 
-	services.AddControllers().AddNewtonsoftJson();
+````services.AddControllers().AddNewtonsoftJson();````
 
 
 
@@ -81,13 +81,13 @@ If you don't use NuGet packages, along with the above assemblies, you need to ad
               lambda expression argument:
             
 
-	
+````
 app.UseEndpoints(endpoints =>
 {
     endpoints.MapControllers();
     // ... 
 });
-            
+            ````
 
 
 
@@ -95,9 +95,9 @@ app.UseEndpoints(endpoints =>
               can serve static files:
             
 
-	
+````
 app.UseStaticFiles();
-            
+            ````
 
 
 
@@ -114,8 +114,8 @@ The .NET Core 3.1 and .NET 5 applications use a
           file named by default __appSettings.json__. The default ReportingEngineConfiguration:
         
 
-	ReportingEngineConfiguration = sp.GetService<IConfiguration>()
-          
+````ReportingEngineConfiguration = sp.GetService<IConfiguration>()
+          ````
 
 
 
@@ -133,9 +133,9 @@ To activate JSON file configuration with a different name, for example, __report
 
 1. Add a new __ResolveSpecificReportingConfiguration__ class as a separate file or in the
               Startup.cs file
-            #_C#_
+            
 
-	          
+````          
         static IConfiguration ResolveSpecificReportingConfiguration(IWebHostEnvironment environment)
         {
             var reportingConfigFileName = System.IO.Path.Combine(environment.ContentRootPath, "reportingAppSettings.json");
@@ -143,14 +143,14 @@ To activate JSON file configuration with a different name, for example, __report
                 .AddJsonFile(reportingConfigFileName, true)
                 .Build();
         }
-              
+              ````
 
 
 
 1. Add the required services in the __ConfigureServices__ method
             
 
-	
+````
          public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers().AddNewtonsoftJson();
@@ -171,7 +171,7 @@ To activate JSON file configuration with a different name, for example, __report
                 SettingsStorage = new FileSettingsStorage(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "Telerik Reporting")),
             });
         }
-		
+		````
 
 
 
@@ -199,7 +199,7 @@ The REST service works as a backend and is responsible for storage operations li
               how a basic implementation of the controller should look like:
             
 
-	
+````
 namespace CSharp.AspNetCoreDemo.Controllers
 {
     using Microsoft.AspNetCore.Mvc;
@@ -216,7 +216,7 @@ namespace CSharp.AspNetCoreDemo.Controllers
         }
     }
 }
-              		        
+              		        ````
 
 
 
@@ -225,9 +225,9 @@ namespace CSharp.AspNetCoreDemo.Controllers
               It should return a JSON representing the separators determined by the current culture, for example:
             
 
-	
+````
               {"decimalSeparator":".","listSeparator":","}
-              
+              ````
 
 
 
@@ -237,9 +237,9 @@ namespace CSharp.AspNetCoreDemo.Controllers
               services configurations. In the sample code this is
               
 
-	
+````
               Path.Combine(sp.GetService<IWebHostEnvironment>().WebRootPath,  "Reports")
-              
+              ````
 
 and corresponds to the folder *Reports* in the 
               *wwwroot* folder. Add the latter to the main application folder if it doesn't exist.
@@ -252,9 +252,9 @@ and corresponds to the folder *Reports* in the
               Add the required references to load the font, jQuery, Telerik Kendo UI libraries,
               telerikReportViewer and webReportDesigner scripts listed in the example below. Finally,
               add the initialization of the telerik_WebReportDesigner widget. Note that the Web Report Designer container has a minimum width of 1200px.
-            The complete report viewer page should look like this:#_HTML_
+            The complete report viewer page should look like this:
 
-	
+````
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -291,7 +291,7 @@ and corresponds to the folder *Reports* in the
 
 </body>
 </html>
-                       
+                       ````
 
 
 

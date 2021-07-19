@@ -20,11 +20,11 @@ The cache management system can be configured by specifying one or more cache pr
         store the rendered pages and resources in the file system:
       
 
-	
+````
 <Telerik.Reporting>
   <Cache provider="File" />
 </Telerik.Reporting>
-
+````
 
 
 
@@ -62,7 +62,7 @@ The individual providers are registered by adding one or more "Provider" element
         of that parameter.
       
 
-	
+````
 <Telerik.Reporting>
   <Cache provider="File">
     <Providers>
@@ -74,7 +74,7 @@ The individual providers are registered by adding one or more "Provider" element
     </Providers>
   </Cache>
 </Telerik.Reporting>
-
+````
 
 
 

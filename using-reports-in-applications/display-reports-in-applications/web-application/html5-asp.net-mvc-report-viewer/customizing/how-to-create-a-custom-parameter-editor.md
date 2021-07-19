@@ -25,7 +25,7 @@ The following example illustrates how to use the Kendo DropDownList widget for a
           single parameter value parameter editor which also has available values:
         
 
-	
+````
     function createSingleSelectEditor(placeholder, options) {
                 var dropDownElement = $(placeholder).html('<div></div>');
                 var parameter,
@@ -54,11 +54,11 @@ The following example illustrates how to use the Kendo DropDownList widget for a
                     }
                 };
             }
-        
+        ````
 
 
 
-	
+````
 @(Html.TelerikReporting().ReportViewer()
         .Id("reportViewer1")
         .ParameterEditors(
@@ -66,7 +66,7 @@ The following example illustrates how to use the Kendo DropDownList widget for a
                         .SingleSelectEditor("createSingleSelectEditor")
             )
 )
-          
+          ````
 
 
 
@@ -88,7 +88,7 @@ The following example illustrates how to use the Kendo DropDownList widget for a
           boolean single parameter value parameter editor which also has available values:
         
 
-	
+````
             function customMatch(parameter) {
                 return Boolean(parameter.availableValues)
                     && !parameter.multivalue
@@ -123,14 +123,14 @@ The following example illustrates how to use the Kendo DropDownList widget for a
                     }
                 };
             }
-        
+        ````
 
 
 
 Passing the parameter editor to the viewer:
         
 
-	
+````
 @(Html.TelerikReporting().ReportViewer()
         .Id("reportViewer1")
         .ParameterEditors(
@@ -142,7 +142,7 @@ Passing the parameter editor to the viewer:
                         })
             )
 )
-          
+          ````
 
 
 

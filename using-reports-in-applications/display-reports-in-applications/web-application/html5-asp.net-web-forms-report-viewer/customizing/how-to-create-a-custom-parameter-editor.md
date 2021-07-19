@@ -25,7 +25,7 @@ The following example illustrates how to use the Kendo DropDownList widget for a
           single parameter value parameter editor which also has available values:
         
 
-	
+````
     function createSingleSelectEditor(placeholder, options) {
                 var dropDownElement = $(placeholder).html('<div></div>');
                 var parameter,
@@ -54,16 +54,16 @@ The following example illustrates how to use the Kendo DropDownList widget for a
                     }
                 };
             }
-        
+        ````
 
 
 
-	
+````
           </telerik:ReportViewer>
           ....
               <ParameterEditors SingleSelectEditor="createSingleSelectEditor"/>
         </telerik:ReportViewer>
-          
+          ````
 
 
 
@@ -73,9 +73,12 @@ The viewer is using a special Kendo subset that contains only the required widge
           following code snippet:
         
 
-	
+````
                 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-                <script src="https://kendo.cdn.telerik.com/
+                <script src="https://kendo.cdn.telerik.com/````````/js/kendo.all.min.js"></script>
+                <link href="https://kendo.cdn.telerik.com/````````/styles/kendo.common.min.css" rel="stylesheet" id="commonCss" />
+                <link href="https://kendo.cdn.telerik.com/````````/styles/kendo.blueopal.min.css" rel="stylesheet" id="skinCss" />
+          ````
 
 
 
@@ -97,7 +100,7 @@ The following example illustrates how to use the Kendo DropDownList widget for a
           boolean single parameter value parameter editor which also has available values:
         
 
-	
+````
             function customMatch(parameter) {
                 return Boolean(parameter.availableValues)
                     && !parameter.multivalue
@@ -132,14 +135,14 @@ The following example illustrates how to use the Kendo DropDownList widget for a
                     }
                 };
             }
-        
+        ````
 
 
 
 Passing the parameter editor to the viewer:
         
 
-	
+````
           </telerik:ReportViewer>
           ....
               <ParameterEditors>
@@ -148,7 +151,7 @@ Passing the parameter editor to the viewer:
                 </CustomEditors>
             </ParameterEditors>
         </telerik:ReportViewer>
-          
+          ````
 
 
 

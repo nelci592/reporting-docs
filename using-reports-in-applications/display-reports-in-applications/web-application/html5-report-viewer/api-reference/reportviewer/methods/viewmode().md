@@ -18,9 +18,9 @@ Gets the current view mode. For more information please see jQuery.fn.telerik_Re
 
 Returns: string.
 
-	
+````
 var reportViewer = $("#reportViewer1").data("telerik_ReportViewer");
 var vm = reportViewer.viewMode();
-          
+          ````
 
 

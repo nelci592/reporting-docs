@@ -12,11 +12,9 @@ position: 0
 
 
 
-## Request#_URI Template_
+## Request
 
-	
-          POST /api/reports/clients/{clientId}/instances
-        
+
 
 
 
@@ -53,9 +51,9 @@ __Response Body__
 When the return status is Created the body contains report instance identifier string.
         
 
-## Sample#_Request Message_
+## Sample
 
-	
+````
           POST /api/reports/clients/2c3d/instances HTTP/1.1
 
           {
@@ -65,15 +63,15 @@ When the return status is Created the body contains report instance identifier s
 	          ‘p2’: 20
             },
           }
-          
+          ````
 
-#_Response Message_
 
-	
+
+````
           HTTP/1.1 201 Created
 
           “a5f3”
-          
+          ````
 
 
 

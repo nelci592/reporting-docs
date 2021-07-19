@@ -22,11 +22,7 @@ The WPF ReportViewer displays content rendered through the Reporting WPF XAML Re
 When connecting the WPF Report Viewer to Telerik Report Server or Telerik Reporting REST API Service, the following exception may occur:
         
 
-	
-          Attempt by method 'Telerik.Reporting.Services.HttpClient.HttpRequestHelper.GetResponseFromPost(System.Net.Http.HttpResponseMessage)'
-          to access method 'Telerik.Reporting.Services.HttpClient.HttpRequestHelper.GetResponseFromPost<T>
-          (System.Net.Http.HttpResponseMessage, System.Collections.Generic.IEnumerable`1<System.Net.Http.Formatting.MediaTypeFormatter>)' failed.
-        
+
 
 
 
@@ -57,9 +53,7 @@ Other possible causes for the issue are described in the following article:
 In some cases the application build process fails with the following or a similar message, related to XAML resources:
         
 
-	                  
-        The name "XYZControl" does not exist in the namespace "clr-namespace:Telerik.XXXX;assembly=Telerik.XXXX". [path]\Themes\[theme_name]\Telerik.XXXX.xaml.
-        
+
 
 
 

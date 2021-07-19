@@ -21,22 +21,22 @@ The Angular Report Viewer exposes these [Events]({%slug telerikreporting/using-r
 To attach an event handler to the viewer, specify the name of your function when binding the corresponding input property
           of the viewer component. For example, we can attach to the __ready__ and
           __viewerToolTipOpening__ events of the viewer:
-        #_HTML_
+        
 
-	
+````
 <tr-viewer 
     ...
     [ready]="myReadyHandler"
     [viewerToolTipOpening]="myViewerToolTipOpeningHandler">
 </tr-viewer>
-          
+          ````
 
 
 
 Then we create the event handler functions in the component where the viewer is used:
-        #_TypeScript_
+        
 
-	
+````
 export class AppComponent {
 
   myReadyHandler() { 
@@ -48,7 +48,7 @@ export class AppComponent {
   }
   
 }
-          
+          ````
 
 
 

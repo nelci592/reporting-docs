@@ -211,9 +211,7 @@ Select the __medalsData__ data source, add a calculated field named __Medal__
               of type `String` to it and set its expression to:
             
 
-	
-              =IIF(Fields.Place = 1, 'Gold', IIF(Fields.Place = 2, 'Silver', IIF(Fields.Place = 3, 'Bronze', 'none')))
-            
+
 
 
 
@@ -235,14 +233,7 @@ In order to display the meaningful names of the olympic associations, we will ad
 * Add a new CSV Data Source, select the tab *Enter CSV as text* and paste the following text in the box:
                 
 
-	
-                  Id,Name
-                  1,Pan-American Sports Organization
-                  2,European Olympic Committees
-                  3,Olympic Council of Asia
-                  4,Oceania National Olympic Committees
-                  5,Association of National Olympic Committees of Africa
-                
+
 
 
 

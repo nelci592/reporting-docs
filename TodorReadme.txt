@@ -18,6 +18,7 @@ TOKENS for the version - make <token> tag to {{site.tokenName}} and set it value
 
 For TITLES use normalize-space in XSLT
 
+[CDATA] code handling in custom code like with CODE-with source
 
 Remaining:
 

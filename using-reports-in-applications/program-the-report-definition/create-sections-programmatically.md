@@ -62,4 +62,5 @@ report.Items.Add(DirectCast(detail, ReportItemBase)
 
 
 
-# See AlsoT:Telerik.Reporting.ReportHeaderSectionT:Telerik.Reporting.ReportFooterSectionT:Telerik.Reporting.DetailSectionT:Telerik.Reporting.GroupHeaderSectionT:Telerik.Reporting.GroupFooterSectionT:Telerik.Reporting.PageHeaderSectionT:Telerik.Reporting.PageFooterSection
+# See Also
+[T:Telerik.Reporting.ReportHeaderSection]()[T:Telerik.Reporting.ReportFooterSection]()[T:Telerik.Reporting.DetailSection]()[T:Telerik.Reporting.GroupHeaderSection]()[T:Telerik.Reporting.GroupFooterSection]()[T:Telerik.Reporting.PageHeaderSection]()[T:Telerik.Reporting.PageFooterSection]()

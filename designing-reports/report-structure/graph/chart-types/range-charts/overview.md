@@ -47,4 +47,5 @@ The following image displays a plain range chart with one range area series:
 
 # See Also
 
- * [Chart Types]({%slug telerikreporting/designing-reports/report-structure/graph/chart-types/overview%})T:Telerik.Reporting.RangeAreaSeriesT:Telerik.Reporting.RangeBarSeries
+
+ * [Chart Types]({%slug telerikreporting/designing-reports/report-structure/graph/chart-types/overview%})[T:Telerik.Reporting.RangeAreaSeries]()[T:Telerik.Reporting.RangeBarSeries]()

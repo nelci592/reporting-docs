@@ -20,7 +20,7 @@ You can specify device information settings in a variety of ways.
       
 
 Alternatively, you can specify device information settings per particular report as part of its definition, configuring the
-        P:Telerik.Reporting.Report.RuntimeSettings
+        [P:Telerik.Reporting.Report.RuntimeSettings]()
         report property. Besides setting the export parameters for particular extension it allows hiding it and changing its description
         when listed to the end-user. The property in question can be set up from the report designer tools as well.
         In case of a report book document the settings of the first report in the book get respected.
@@ -29,5 +29,5 @@ Alternatively, you can specify device information settings per particular report
 When exporting a report programmatically, the respective method takes a
         [HashTable](http://msdn.microsoft.com/en-us/library/system.collections.hashtable.aspx)
         argument representing the desired export parameters for this particular rendering operation:
-        M:Telerik.Reporting.Processing.ReportProcessor.RenderReport(System.String,Telerik.Reporting.ReportSource,System.Collections.Hashtable).
+        [M:Telerik.Reporting.Processing.ReportProcessor.RenderReport(System.String,Telerik.Reporting.ReportSource,System.Collections.Hashtable)]().
       

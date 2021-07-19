@@ -95,4 +95,5 @@ After processing is over, the processed report is ready for rendering in one of 
 
 # See Also
 
+
  * [Understanding the Report Lifecycle]({%slug telerikreporting/designing-reports/understanding-the-report-lifecycle%})

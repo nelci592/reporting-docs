@@ -167,7 +167,7 @@ __How this works:__
 
 __Setting the Client-Side ReportSource:__
 
-* __[Silverlight ReportViewer control]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/silverlight-application/overview%})__The Silverlight ReportViewer control has a __P:Telerik.ReportViewer.Silverlight.ReportViewer.Report
+* __[Silverlight ReportViewer control]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/silverlight-application/overview%})__The Silverlight ReportViewer control has a __[P:Telerik.ReportViewer.Silverlight.ReportViewer.Report]()
                 property
               __ that accepts a string. This is the *report description string*.
             The string can be a path to a TRDP or TRDX file or an assembly qualified name of a report class. For example:(__Report="./DashboardReport.trdp")__
@@ -176,7 +176,7 @@ __Setting the Client-Side ReportSource:__
               __TypeReportSource__ or a __UriReportSource__
               on the machine where the service and Telerik Reporting Engine are running.
             Report parameters' values sent by the Silverlight ReportViewer are *client parameters*. Report parameters' values can be sent through the viewer's Parameters Area,
-              in code by overriding the Silverlight ReportViewer control's M:Telerik.ReportViewer.Silverlight.ReportViewer.OnApplyParameters
+              in code by overriding the Silverlight ReportViewer control's [M:Telerik.ReportViewer.Silverlight.ReportViewer.OnApplyParameters]()
               method or by subscribing to the __ApplyParameters__ event.
             
 
@@ -226,7 +226,7 @@ The *report description string* is sent to the [Telerik Reporting REST service](
 
 * __[HTML5 ASP.NET MVC ReportViewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-mvc-report-viewer/overview%})__The HTML5 ASP.NET MVC Viewer is an MVC wrapper of the __HTML5 Viewer__ that renders a string on the page.
               The string contains the HTML elements and the JavaScript methods required for initializing the HTML5 Viewer JavaScript widget.
-            The HTML5 ASP.NET MVC Viewer has a M:Telerik.ReportViewer.Mvc.IReportViewerBuilder.ReportSource
+            The HTML5 ASP.NET MVC Viewer has a [M:Telerik.ReportViewer.Mvc.IReportViewerBuilder.ReportSource]()
               method, creating a client-side report source via server-side code (C# or VB.NET):
             
 
@@ -299,21 +299,21 @@ To display another report or to update the *client parameters*' values of the cu
 * __[HTML5 ASP.NET WebForms ReportViewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-web-forms-report-viewer/overview%})__The HTML5 ASP.NET WebForms ReportViewer control is a server-side wrapper of the __HTML5 Viewer__,
               suitable for ASP.NET WebForms applications. The control renders the HTML elements and the JavaScript methods required for initializing the HTML5 Viewer JavaScript widget.
             The ReportSource property of the HTML5 ASP.NET WebForms ReportViewer control is of type
-              Telerik.ReportViewer.Html5.WebForms.T:Telerik.ReportViewer.Html5.WebForms.ReportSource:
+              Telerik.ReportViewer.Html5.WebForms.[T:Telerik.ReportViewer.Html5.WebForms.ReportSource]():
             
 
 * The *report description string* is obtained from the
-                  P:Telerik.ReportViewer.Html5.WebForms.ReportSource.Identifier property,
+                  [P:Telerik.ReportViewer.Html5.WebForms.ReportSource.Identifier]() property,
                   which accepts a string.
                   The string can be a path to a TRDP or TRDX file, an assembly qualified name of a report class or custom information provided in a string. For example:(__Identifier="./DashboardReport.trdp")__
                   or (__Identifier="Telerik.Reporting.Examples.CSharp.BarcodesReport, CSharp.ReportLibrary, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null__").
                 
 
-* Report parameters' values are obtained from the ReportSource.P:Telerik.ReportViewer.Html5.WebForms.ReportSource.Parameters
+* Report parameters' values are obtained from the ReportSource.[P:Telerik.ReportViewer.Html5.WebForms.ReportSource.Parameters]()
                   property - the *client parameters*.
                 
 
-* The P:Telerik.ReportViewer.Html5.WebForms.ReportSource.IdentifierType property
+* The [P:Telerik.ReportViewer.Html5.WebForms.ReportSource.IdentifierType]() property
                   hints which resolver can be used for resolving the report description string on the server.
                 __Example of setting the client-side ReportSource in code-behind:__
 
@@ -469,6 +469,7 @@ These Report Viewers do not have direct access to Telerik Reporting Engine. Repo
         
 
 # See Also
+
 
  * [How to: Implement and use custom IReportResolver (Reporting WCF Service's Report Resolver)]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-wcf-service/how-to-implement-and-use-custom-ireportresolver%})
 

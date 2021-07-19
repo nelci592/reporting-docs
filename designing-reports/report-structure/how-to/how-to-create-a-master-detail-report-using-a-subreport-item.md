@@ -137,7 +137,7 @@ This next set of steps ties both reports together using a SubReport to display t
               section of the report.
             
 
-1. In the Properties Window for the SubReport, open the [ReportSource]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/load-report-dialog%}) dialog, select __Type name__ (T:Telerik.Reporting.TypeReportSource) and set it to the DetailReport.
+1. In the Properties Window for the SubReport, open the [ReportSource]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/load-report-dialog%}) dialog, select __Type name__ ([T:Telerik.Reporting.TypeReportSource]()) and set it to the DetailReport.
               Note that you should build the project first in order the type(s) to appear in the wizard. 
             
 

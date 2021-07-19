@@ -159,6 +159,7 @@ Useful item names will help you when browsing the report object tree in [Report 
 
 # See Also
 
+
  * [Automatic Layout (Dock and Anchor)]({%slug telerikreporting/designing-reports/report-structure/automatic-layout-(dock-and-anchor)%})
 
  * [Performance Considerations]({%slug telerikreporting/designing-reports/performance-considerations%})

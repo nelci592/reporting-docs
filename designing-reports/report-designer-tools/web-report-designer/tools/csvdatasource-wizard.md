@@ -26,10 +26,10 @@ The CSV Data Source Wizard allows you to create a new or edit an existing CsvDat
                 
 
 * __Use existing CSV file__ that previously has been uploaded and/or exists in the 
-                  T:Telerik.WebReportDesigner.Services.IResourceStorage 
-                  The default implementation of the T:Telerik.WebReportDesigner.Services.IResourceStorage interface -
-                  T:Telerik.WebReportDesigner.Services.ResourceStorage stores resources like CSV files to the location provided
-                  as a string parameter in the constructor M:Telerik.WebReportDesigner.Services.ResourceStorage.#ctor(System.String).
+                  [T:Telerik.WebReportDesigner.Services.IResourceStorage]() 
+                  The default implementation of the [T:Telerik.WebReportDesigner.Services.IResourceStorage]() interface -
+                  [T:Telerik.WebReportDesigner.Services.ResourceStorage]() stores resources like CSV files to the location provided
+                  as a string parameter in the constructor [M:Telerik.WebReportDesigner.Services.ResourceStorage.#ctor(System.String)]().
                   When choosing the option __"Use existing CSV file"__, any existing CSV files found in this directory will populate the dropdown list.
                 
 
@@ -39,7 +39,7 @@ The CSV Data Source Wizard allows you to create a new or edit an existing CsvDat
 1. __Modify your CSV file__If you have chosen to __"Upload CSV file"__ or __"Use existing CSV file"__
               you have the option to store this inside the report definition by checking __"Embed CSV file in report definition"__ option.
               By checking this option the CSV data can be directly edited in the text area, and will no longer be dependent on having the CSV file available 
-              in T:Telerik.WebReportDesigner.Services.ResourceStorage.
+              in [T:Telerik.WebReportDesigner.Services.ResourceStorage]().
             
 
 1. __Configure CSV Data Source - Separators__Select at least one separator for both __"Field (column) separator"__ and __"Record (row) separator"__. 
@@ -63,3 +63,4 @@ The CSV Data Source Wizard allows you to create a new or edit an existing CsvDat
             
 
 # See Also
+

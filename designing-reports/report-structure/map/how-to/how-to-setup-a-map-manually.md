@@ -24,8 +24,8 @@ Click on the design surface where you want the upper-left corner of the map.
                 
 
 The map item is initialized on the selected design surface with default values for
-                  T:Telerik.Reporting.IProjection
-                  and T:Telerik.Reporting.ITileProvider.
+                  [T:Telerik.Reporting.IProjection]()
+                  and [T:Telerik.Reporting.ITileProvider]().
                 
 
 Set your Data Source to one of the available [Data Source Components]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/overview%}).
@@ -39,7 +39,7 @@ Setup the geographical coordinates of your data points.
 
 In case you would like to use a geocoding service to obtain geographical coordinates by addresses from your data source,
                       you need to configure the [Location Providers]({%slug telerikreporting/designing-reports/report-structure/map/structure/location-providers%}) and the
-                      T:Telerik.Reporting.GeoLocationMapGroup:
+                      [T:Telerik.Reporting.GeoLocationMapGroup]():
                     
 
 Open the Property Grid.
@@ -51,12 +51,13 @@ Select a [Location Provider]({%slug telerikreporting/designing-reports/report-st
                           
 
 In case your data source can provide geographical coordinates to be used for the data points,
-                      you need to set the Series' P:Telerik.Reporting.PointMapSeries.Latitude and
-                      P:Telerik.Reporting.PointMapSeries.Longitude to the appropriate data source fields.
+                      you need to set the Series' [P:Telerik.Reporting.PointMapSeries.Latitude]() and
+                      [P:Telerik.Reporting.PointMapSeries.Longitude]() to the appropriate data source fields.
 
                     
 
 # See Also
+
 
  * [How to Add Map to Report]({%slug telerikreporting/designing-reports/report-structure/map/how-to/how-to-add-map-to-report%})
 

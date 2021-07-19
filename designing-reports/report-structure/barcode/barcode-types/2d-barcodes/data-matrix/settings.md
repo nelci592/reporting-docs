@@ -91,6 +91,7 @@ Determines character encoding used to encode the barcode contents. By default it
 
 
 
-# See AlsoT:Telerik.Reporting.BarcodeT:Telerik.Reporting.Barcodes.DataMatrixEncoderP:Telerik.Reporting.Barcodes.DataMatrix.EncodationP:Telerik.Reporting.Barcodes.DataMatrix.SymbolSize
+# See Also
+[T:Telerik.Reporting.Barcode]()[T:Telerik.Reporting.Barcodes.DataMatrixEncoder]()[P:Telerik.Reporting.Barcodes.DataMatrix.Encodation]()[P:Telerik.Reporting.Barcodes.DataMatrix.SymbolSize]()
 
  * [TextEncoding](https://docs.microsoft.com/en-us/dotnet/api/system.text.encoding)

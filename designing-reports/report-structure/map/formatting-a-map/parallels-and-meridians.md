@@ -53,7 +53,8 @@ The Edit style dialog opens.
 When you are done, click OK.
                 
 
-# See AlsoT:Telerik.Reporting.GraticuleLineT:Telerik.Reporting.Drawing.Style
+# See Also
+[T:Telerik.Reporting.GraticuleLine]()[T:Telerik.Reporting.Drawing.Style]()
 
  * [Map Overview]({%slug telerikreporting/designing-reports/report-structure/map/structure/overview%})
 

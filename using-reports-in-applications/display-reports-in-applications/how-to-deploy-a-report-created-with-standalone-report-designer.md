@@ -22,7 +22,7 @@ To show a report created with the [Overview]({%slug telerikreporting/designing-r
         
 
 * __
-                Use T:Telerik.Reporting.UriReportSource__ and a path to the TRDX|TRDP file:
+                Use [T:Telerik.Reporting.UriReportSource]()__ and a path to the TRDX|TRDP file:
             
 
 {{source=CodeSnippets\CS\API\Telerik\Reporting\ReportSourceSnippets.cs region=CreateUriReportSourceSnippet}}
@@ -52,7 +52,7 @@ To show a report created with the [Overview]({%slug telerikreporting/designing-r
 
 
 * __
-                Use T:Telerik.Reporting.XmlReportSource__ and read the plain XML of a TRDX file:
+                Use [T:Telerik.Reporting.XmlReportSource]()__ and read the plain XML of a TRDX file:
             
 
 {{source=CodeSnippets\CS\API\Telerik\Reporting\ReportSourceSnippets.cs region=CreateXmlReportSourceSnippet}}
@@ -137,6 +137,7 @@ To show a report created with the [Overview]({%slug telerikreporting/designing-r
 The only thing left to do is assign the resulting report sources to the report viewer's ReportSource property.
 
 # See Also
+
 
  * [Report Sources]({%slug telerikreporting/designing-reports/report-sources/overview%})
 

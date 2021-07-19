@@ -21,7 +21,7 @@ A legend always contains one or more legend items, where each legend item consis
         and a text string that describes the series.
       
 
->important When using a T:Telerik.Reporting.ShapeMapSeries, the legend items depend on its          P:Telerik.Reporting.ShapeMapSeries.ColorsCount property.        
+>important When using a [T:Telerik.Reporting.ShapeMapSeries](), the legend items depend on its          [P:Telerik.Reporting.ShapeMapSeries.ColorsCount]() property.        
 
 
 You can format a legend with the Legends properties.
@@ -42,7 +42,7 @@ Items are ordered in the legend according to the order that they are processed b
 You can change the legend items text by changing the Map.MapSeries Legend [Expression]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/overview%}).
         
 
->important When using a T:Telerik.Reporting.ShapeMapSeries, the LegendItem.Value expression allows the usage            of two specific references: `RangeMin` and `RangeMax`, that determine the minimum and maximum values            of the respective data range.          
+>important When using a [T:Telerik.Reporting.ShapeMapSeries](), the LegendItem.Value expression allows the usage            of two specific references: `RangeMin` and `RangeMax`, that determine the minimum and maximum values            of the respective data range.          
 
 
 ## Changing the Color of a Legend Item
@@ -139,7 +139,8 @@ The legend can be absolutely or automatically sized.
             The ordering of the items is "across then down", forming rows.
             
 
-# See AlsoT:Telerik.Reporting.MapLegendP:Telerik.Reporting.Map.Legends
+# See Also
+[T:Telerik.Reporting.MapLegend]()[P:Telerik.Reporting.Map.Legends]()
 
  * [Map Overview]({%slug telerikreporting/designing-reports/report-structure/map/structure/overview%})
 

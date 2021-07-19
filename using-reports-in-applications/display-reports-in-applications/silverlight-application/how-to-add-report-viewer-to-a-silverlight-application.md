@@ -109,10 +109,10 @@ This article explains the steps needed to create an application which uses the S
 
 1. Next we need to set the __ReportServiceUri__
               and __Report__ properties of the viewer.
-              The P:Telerik.ReportViewer.Silverlight.ReportViewer.ReportServiceUri
+              The [P:Telerik.ReportViewer.Silverlight.ReportViewer.ReportServiceUri]()
               should point to the [Telerik Reporting WCF service]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-wcf-service/overview%}):(__ReportServiceUri="../ReportService.svc__")
               and the
-              P:Telerik.ReportViewer.Silverlight.ReportViewer.Report
+              [P:Telerik.ReportViewer.Silverlight.ReportViewer.Report]()
               should be set to the assembly qualified name of the report you want to show i.e.:(__Report="Telerik.Reporting.Examples.CSharp.BarcodesReport, CSharp.ReportLibrary, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null__").
               Review [How to use the Report Wizard to create a Band Report]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/report-wizards/band-report-wizard/how-to-use-the-report-wizard-to-create-a-band-report%}) topic for information on creating a __Telerik Report__.
               The MainPage.xaml should look similar:
@@ -124,6 +124,7 @@ This article explains the steps needed to create an application which uses the S
 
 
 # See Also
+
 
  * [Silverlight Application]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/silverlight-application/overview%})
 

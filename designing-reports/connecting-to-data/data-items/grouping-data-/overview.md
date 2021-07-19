@@ -134,6 +134,7 @@ __Chart__ – use the __DataGroupColumn
 
 # See Also
 
+
  * [Filtering Data]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/filtering-data/overview%})
 
  * [Ordering Data]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/ordering-data/overview%})

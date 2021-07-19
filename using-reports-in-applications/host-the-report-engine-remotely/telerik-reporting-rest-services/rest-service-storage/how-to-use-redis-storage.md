@@ -67,7 +67,7 @@ For projects using StackExchange.Redis version 2.0.601 or greater:
                     Using the Redis storage
 
 Where needed in your application create an instance of the
-          T:Telerik.Reporting.Cache.StackExchangeRedis.RedisStorage
+          [T:Telerik.Reporting.Cache.StackExchangeRedis.RedisStorage]()
           class. It takes as a parameter an __StackExchange.Redis.ConnectionMultiplexer__
           object which should be reused for the application lifetime. See
           [(StackExchange.Redis) Basic Usage](https://github.com/StackExchange/StackExchange.Redis/blob/master/docs/Basics.md) for more information.

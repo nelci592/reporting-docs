@@ -129,7 +129,7 @@ In the vertical direction, by default sections are not split across different pa
         
 
 Table/Crosstab items also support page breaks before and/or after each TableGroup instance. This is supported in both horizontal and vertical direction
-          and is controlled using the P:Telerik.Reporting.TableGroup.PageBreak property.
+          and is controlled using the [P:Telerik.Reporting.TableGroup.PageBreak]() property.
         
 
 In older Telerik Reporting versions, simple report items (i.e. non-container items) are always kept together on a page if possible. If not, they are rendered at
@@ -179,6 +179,7 @@ Report sections automatically grow and can shrink (controlled by property) to ac
         
 
 # See Also
+
 
  * [Rendering and Paging]({%slug telerikreporting/designing-reports/rendering-and-paging/overview%})
 

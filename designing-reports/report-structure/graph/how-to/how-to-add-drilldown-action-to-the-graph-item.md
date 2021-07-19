@@ -14,7 +14,7 @@ position: 1
 
 In this article we will show you how to create a [Column chart]({%slug telerikreporting/designing-reports/report-structure/graph/chart-types/column-charts/overview%})
         and add [drill-down capabilities]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/actions/drilldown-report-action%})
-        on its category groups using the T:Telerik.Reporting.Graph item and the
+        on its category groups using the [T:Telerik.Reporting.Graph]() item and the
         [AdventureWorks](http://msftdbprodsamples.codeplex.com/releases/view/55330)
         sample database.
 
@@ -131,11 +131,11 @@ Your chart is done. When you click __Finish__, you will see the graph displaying
   ![How To Add Drill Down Action 5 Drill Down Graph](images/Graph/HowToAddDrillDownAction/HowToAddDrillDownAction_5_DrillDownGraph.png)
 
 To see what the __Graph Wizard__ has done, you can examine the Graph’s
-              P:Telerik.Reporting.Graph.CategoryGroups.
+              [P:Telerik.Reporting.Graph.CategoryGroups]().
               You will notice that the Graph wizard created one __CategoryGroup__ instance for the product categories and has added
               a child group to it for the product subcategories - __CategoryGroups -> ChildGroups__. The wizard has also created a
-              T:Telerik.Reporting.ToggleVisibilityAction
-              and set its P:Telerik.Reporting.ToggleVisibilityAction.Targets
+              [T:Telerik.Reporting.ToggleVisibilityAction]()
+              and set its [P:Telerik.Reporting.ToggleVisibilityAction.Targets]()
               to the __ProductSubCategoryGroup__, providing the ability to show or hide this group by clicking its parent’s toggle mark.
               Initially the __ProductSubCategoryGroup.Visible property__ is set to false to provide more compact view.
               The expanded view of the Graph’s __CategoryGroups__ should look like this:
@@ -144,7 +144,7 @@ To see what the __Graph Wizard__ has done, you can examine the Graph’s
 
 __In conclusion:__
 
-In this how-to article we demonstrated how to add a drill-down capabilities to the T:Telerik.Reporting.Graph item,
+In this how-to article we demonstrated how to add a drill-down capabilities to the [T:Telerik.Reporting.Graph]() item,
             having the __Graph Wizard__ to create the groups hierarchy and the toggle visibility actions for us.
           
 

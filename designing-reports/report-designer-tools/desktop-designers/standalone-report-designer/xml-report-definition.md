@@ -29,7 +29,7 @@ The Standalone Report Designer can open report container files created for a pre
           If the report is changed and saved the upgraded report definition is converted and saved with the newer schema.
           This is the only way to upgrade an XML report definition but it's not required because
           the report viewers, the report server and the 
-          T:Telerik.Reporting.Processing.ReportProcessor 
+          [T:Telerik.Reporting.Processing.ReportProcessor]() 
           can handle all previous XML report versions.
           The report definition itself is not upgraded when uploaded on the Report Server.
         
@@ -129,4 +129,5 @@ For example, the version introduced in 2017 R3 will look as following: http://sc
 
 # See Also
 
- * [Package Report Definition]({%slug telerikreporting/using-reports-in-applications/program-the-report-definition/package-report-definition%})T:Telerik.Reporting.ReportPackager
+
+ * [Package Report Definition]({%slug telerikreporting/using-reports-in-applications/program-the-report-definition/package-report-definition%})[T:Telerik.Reporting.ReportPackager]()

@@ -67,7 +67,8 @@ If the current application has to be declared as DPI-aware, an additional elemen
           [here](F25EB909-7941-4B78-B24C-4025257A26C4#dpiAware).
         
 
-# See Also[](66CD7D60-7708-42D5-8BB4-506676E8679E)
+# See Also
+[](66CD7D60-7708-42D5-8BB4-506676E8679E)
 
  * [Windows Forms Application]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/windows-forms-application/overview%})
 

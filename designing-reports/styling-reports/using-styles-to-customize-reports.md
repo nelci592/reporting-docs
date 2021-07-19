@@ -58,6 +58,7 @@ To apply a style that uses a __StyleSelector __to a report item, select the repo
 
 # See Also
 
+
  * [Understanding Style Selectors]({%slug telerikreporting/designing-reports/styling-reports/understanding-style-selectors%})
 
  * [Creating Style Rules]({%slug telerikreporting/designing-reports/styling-reports/creating-style-rules%})

@@ -27,6 +27,7 @@ The following table lists the device information settings for rendering in XPS f
 
 # See Also
 
+
  * [Device Information Settings]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-export-formats/overview%})
 
  * [Export Formats]({%slug telerikreporting/using-reports-in-applications/export-and-configure/export-formats%})

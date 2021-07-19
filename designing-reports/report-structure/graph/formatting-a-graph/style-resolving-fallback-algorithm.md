@@ -26,8 +26,9 @@ The boxes on the top row represent the report items contained in a Graph series.
 
 # See Also
 
+
  * [Graph Structure]({%slug telerikreporting/designing-reports/report-structure/graph/structure%})
 
  * [Conditional Formatting]({%slug telerikreporting/designing-reports/styling-reports/conditional-formatting%})
 
- * [Style Inheritance and Overriding]({%slug telerikreporting/designing-reports/styling-reports/style-inheritance-and-overriding%})T:Telerik.Reporting.GraphSeries
+ * [Style Inheritance and Overriding]({%slug telerikreporting/designing-reports/styling-reports/style-inheritance-and-overriding%})[T:Telerik.Reporting.GraphSeries]()

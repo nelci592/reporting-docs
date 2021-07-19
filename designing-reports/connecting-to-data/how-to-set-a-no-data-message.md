@@ -50,4 +50,4 @@ If a report's DataSource is reset or set to NULL, the report preview will show t
           which includes Detail section and dynamic groups' Group Header and Footer sections.
         
 
- * [How to show 'No Data Message' or hide an item in case of No data (KB)](http://www.telerik.com/support/kb/reporting/creating-reports/details/how-to-show-no-data-message-or-hide-an-item-in-case-of-no-data)P:Telerik.Reporting.DataItem.NoDataMessageP:Telerik.Reporting.DataItem.NoDataStyle
+ * [How to show 'No Data Message' or hide an item in case of No data (KB)](http://www.telerik.com/support/kb/reporting/creating-reports/details/how-to-show-no-data-message-or-hide-an-item-in-case-of-no-data)[P:Telerik.Reporting.DataItem.NoDataMessage]()[P:Telerik.Reporting.DataItem.NoDataStyle]()

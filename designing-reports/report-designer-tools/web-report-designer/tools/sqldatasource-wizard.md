@@ -24,14 +24,14 @@ The SQL Data Source Wizard allows you to create a new or edit an existing SqlDat
             
 
 * Local connection strings from the application configuration file and the
-                  T:Telerik.WebReportDesigner.Services.ISettingsStorage.
+                  [T:Telerik.WebReportDesigner.Services.ISettingsStorage]().
                 
 
 * All report server data connections that the current user has permissions to read (listed only if you use Telerik Report Server)
-                The default implementation of the T:Telerik.WebReportDesigner.Services.ISettingsStorage interface
-              - T:Telerik.WebReportDesigner.Services.FileSettingsStorage
+                The default implementation of the [T:Telerik.WebReportDesigner.Services.ISettingsStorage]() interface
+              - [T:Telerik.WebReportDesigner.Services.FileSettingsStorage]()
               enables the designer users to save and use connection strings from the local Web Report Designer settings file.
-              The location of the designer settings file is specified with the required constructor argument M:Telerik.WebReportDesigner.Services.FileSettingsStorage#ctor(System.String).
+              The location of the designer settings file is specified with the required constructor argument [M:Telerik.WebReportDesigner.Services.FileSettingsStorage#ctor(System.String)]().
             If using the designer from a Report Server, this drop-down lists the server data connections.
               Server reports support only saved server data connections.
             For Report Server report, user create/read permissions for data connections are required.
@@ -44,9 +44,9 @@ The SQL Data Source Wizard allows you to create a new or edit an existing SqlDat
               report definition. Thus it will be available only for this report and will be available no matter the report definition location.
             If you use Telerik Report Server, the Embedded connection string in the report's functionality is forbidden.
               Otherwise, you can control the embedded connection string by overriding the
-              M:Telerik.WebReportDesigner.Services.Controllers.ReportDesignerControllerBase.GetConnectionsPermissions
+              [M:Telerik.WebReportDesigner.Services.Controllers.ReportDesignerControllerBase.GetConnectionsPermissions]()
               that returns serialized
-              T:Telerik.WebReportDesigner.Services.ConnectionsPermissions
+              [T:Telerik.WebReportDesigner.Services.ConnectionsPermissions]()
               in camelCase JSON.
             For new Report Server reports, the embedded connections option is not allowed.
             
@@ -103,3 +103,4 @@ The SQL Data Source Wizard allows you to create a new or edit an existing SqlDat
             
 
 # See Also
+

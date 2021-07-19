@@ -50,7 +50,7 @@ The following image shows a typical bar chart. The bar chart is well suited for 
 
 * When data point labels are shown on a bar chart, the labels are placed on the outside end of each bar (OutsideEnd).
         		This can cause a label to be overlapped by its corresponding bar when the bar takes up all of the allotted space within the chart area. You can change the position 
-        		of the data point labels displayed for each bar by setting the P:Telerik.Reporting.BarSeries.DataPointLabelAlignment property in the Properties tool window.
+        		of the data point labels displayed for each bar by setting the [P:Telerik.Reporting.BarSeries.DataPointLabelAlignment]() property in the Properties tool window.
 
 * If there are a lot of data points in your dataset relative to the size of your chart, the size of the bars
         		and the spacing between them are reduced. To modify the width of the bars in a chart consider changing the
@@ -60,4 +60,5 @@ The following image shows a typical bar chart. The bar chart is well suited for 
 
 # See Also
 
- * [Chart Types]({%slug telerikreporting/designing-reports/report-structure/graph/chart-types/overview%})T:Telerik.Reporting.BarSeriesP:Telerik.Reporting.GraphSeries2D.ArrangeModeP:Telerik.Reporting.BarSeries.DataPointLabelAlignmentP:Telerik.Reporting.Scale.SpacingSlotCount
+
+ * [Chart Types]({%slug telerikreporting/designing-reports/report-structure/graph/chart-types/overview%})[T:Telerik.Reporting.BarSeries]()[P:Telerik.Reporting.GraphSeries2D.ArrangeMode]()[P:Telerik.Reporting.BarSeries.DataPointLabelAlignment]()[P:Telerik.Reporting.Scale.SpacingSlotCount]()

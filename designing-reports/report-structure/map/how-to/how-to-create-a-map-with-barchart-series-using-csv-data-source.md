@@ -99,11 +99,11 @@ Once the mandatory fields are set up, the __Next__ button will get enabled and y
 On the __Choose a location provider__ page you have to select the location provider that will be used to geocode
               the __State__ field that was dragged in the *Categories (location)* box on the previous page.
               Currently the supported providers are
-              T:Telerik.Reporting.MapQuestOpenAPILocationProvider
+              [T:Telerik.Reporting.MapQuestOpenAPILocationProvider]()
               ,
-              T:Telerik.Reporting.MapQuestLocationProvider
+              [T:Telerik.Reporting.MapQuestLocationProvider]()
               and
-              T:Telerik.Reporting.BingLocationProvider.
+              [T:Telerik.Reporting.BingLocationProvider]().
               They both require a valid client token (key) to authenticate the geocoding requests that will be sent from the Map item.
               Once you have obtained the key, you should paste it in the *Client token* box, as shown below:
               
@@ -118,7 +118,7 @@ When you click __Finish__, the Wizard will create the definition of the Map item
   ![Map Column Chart Done](images/Map/MapColumnChart_Done.png)
 
 Now we will add a
-              T:Telerik.Reporting.PointMapSeries
+              [T:Telerik.Reporting.PointMapSeries]()
               that will display a circle around each column chart. The circle size will be relevant to the
               whole number of medals each team has won.
             
@@ -161,29 +161,29 @@ The map needs some more setup and styling in order to make it look good. Select 
                 
 
 * As you have the __pointMapSeries1__ selected, set its
-                  P:Telerik.Reporting.GraphSeriesBase.DataPointStyle
+                  [P:Telerik.Reporting.GraphSeriesBase.DataPointStyle]()
                   .
-                  P:Telerik.Reporting.Drawing.Style.BackgroundColor
+                  [P:Telerik.Reporting.Drawing.Style.BackgroundColor]()
                   to __White__ and the
-                  P:Telerik.Reporting.Drawing.Style.LineColor
+                  [P:Telerik.Reporting.Drawing.Style.LineColor]()
                   to a color of your choice. In the example report is used the __DarkSlateBlue__
                   color from the __Web__ palette.
                 
 
 * Set the
-                  P:Telerik.Reporting.GraphSeriesBase.DataPointLabel
+                  [P:Telerik.Reporting.GraphSeriesBase.DataPointLabel]()
                   expression to `=Fields.Team` to display the name of the national team above the point.
                 
 
 * Set the
-                  P:Telerik.Reporting.GraphSeriesBase.DataPointLabelStyle.
-                  P:Telerik.Reporting.Drawing.Style.Visible
+                  [P:Telerik.Reporting.GraphSeriesBase.DataPointLabelStyle]().
+                  [P:Telerik.Reporting.Drawing.Style.Visible]()
                   property to __True__.
                 
 
 * Select the __columnMapSeries1__ item from the __Members:__ pane and set its
-                  P:Telerik.Reporting.PointMapSeries.MarkerMinSize to __6mm__ and
-                  P:Telerik.Reporting.PointMapSeries.MarkerMaxSize to __10mm__.
+                  [P:Telerik.Reporting.PointMapSeries.MarkerMinSize]() to __6mm__ and
+                  [P:Telerik.Reporting.PointMapSeries.MarkerMaxSize]() to __10mm__.
                 
 
 * In order to match the column series colors with the real world medal colors, you need to define a custom ColorPalette.
@@ -200,8 +200,8 @@ As you may have noticed, the information about the occupied places is present in
               legend displays it this way. But the report will look better if the information about the places is displayed with medal names - 
               __Gold__, __Silver__ and __Bronze__. 
               This can be achieved using an expression for the
-              T:Telerik.Reporting.LegendItem.
-              P:Telerik.Reporting.LegendItem.Value, but we will use a
+              [T:Telerik.Reporting.LegendItem]().
+              [P:Telerik.Reporting.LegendItem.Value](), but we will use a
               [Calculated Field]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/calculated-fields%})
               , added to the CSV Data Source. The benefit of this approach is that we can use the calculated field as any other field, without having to
               use an expression every time we need to address it.
@@ -217,7 +217,7 @@ Select the __medalsData__ data source, add a calculated field named __Medal__
 
 
 
-Now you can set the __columnMapSeries' __T:Telerik.Reporting.LegendItem.P:Telerik.Reporting.LegendItem.Value expression to
+Now you can set the __columnMapSeries' __[T:Telerik.Reporting.LegendItem]().[P:Telerik.Reporting.LegendItem.Value]() expression to
               `=Fields.Medal` and style the legend by your choice.
             
 
@@ -359,7 +359,7 @@ In this step we will add some interactivity to our report, allowing the user to 
 
 * We can apply conditional formatting to the map series as well, outlining the currently selected national team so it would be easier to
                   find it among the data points on the map. Select the __PointMapSeries__ and set a new
-                  P:Telerik.Reporting.GraphSeriesBase.DataPointConditionalFormatting
+                  [P:Telerik.Reporting.GraphSeriesBase.DataPointConditionalFormatting]()
                   rule, as shown here:
                   
   ![Point Map Data Point Conditional Formatting](images/Map/PointMapDataPointConditionalFormatting.png)

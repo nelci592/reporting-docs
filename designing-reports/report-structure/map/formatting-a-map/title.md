@@ -16,7 +16,8 @@ The Map item can have one or more titles.
         By default the map item have one title with __TopCenter Position__.
       
 
-# See AlsoT:Telerik.Reporting.MapTitleP:Telerik.Reporting.Map.Titles
+# See Also
+[T:Telerik.Reporting.MapTitle]()[P:Telerik.Reporting.Map.Titles]()
 
  * [Map Overview]({%slug telerikreporting/designing-reports/report-structure/map/structure/overview%})
 

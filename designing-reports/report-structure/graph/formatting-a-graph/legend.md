@@ -122,4 +122,4 @@ The legend can be absolutely or automatically sized.
             The width is taken into account, only if all items can fit in the provided space.
               Otherwise the legend grows horizontally, stretching to the limits of the graph at maximum.
             The ordering of the items is "across then down", forming rows.
-            T:Telerik.Reporting.GraphLegendP:Telerik.Reporting.Graph.Legend
+            [T:Telerik.Reporting.GraphLegend]()[P:Telerik.Reporting.Graph.Legend]()

@@ -194,6 +194,7 @@ If your case is not listed above, or you have tried all suggestions, but still e
 
 # See Also
 
+
  * [Understanding the Report Lifecycle]({%slug telerikreporting/designing-reports/understanding-the-report-lifecycle%})
 
  * [Telerik Reporting Whitepaper](http://www.telerik.com/documents/whitepapers/reporting_101.pdf)

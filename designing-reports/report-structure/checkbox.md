@@ -20,9 +20,9 @@ The CheckBox report item is used to display both text and a check mark on a repo
 ## Growing and Shrinking
 
 By default, CheckBox items are a set size. If you want to allow a CheckBox to expand vertically based on its contents,
-          set the P:Telerik.Reporting.TextItemBase.CanGrow property to True (default value).
+          set the [P:Telerik.Reporting.TextItemBase.CanGrow]() property to True (default value).
           If you want to allow a CheckBox to shrink based on its contents set the
-          P:Telerik.Reporting.TextItemBase.CanShrink property to
+          [P:Telerik.Reporting.TextItemBase.CanShrink]() property to
           True (default value is False). The CheckBox would always grow to accomodate the first line of text even when CanGrow is False.
         
 
@@ -72,4 +72,5 @@ And here is the final result:
 
 
 
-# See AlsoT:Telerik.Reporting.CheckBoxP:Telerik.Reporting.CheckBox.CheckAlignP:Telerik.Reporting.CheckBox.CheckedImageP:Telerik.Reporting.CheckBox.UncheckedImageP:Telerik.Reporting.CheckBox.FalseValueP:Telerik.Reporting.CheckBox.IndeterminateImageP:Telerik.Reporting.CheckBox.IndeterminateValueP:Telerik.Reporting.CheckBox.TextP:Telerik.Reporting.CheckBox.TrueValue
+# See Also
+[T:Telerik.Reporting.CheckBox]()[P:Telerik.Reporting.CheckBox.CheckAlign]()[P:Telerik.Reporting.CheckBox.CheckedImage]()[P:Telerik.Reporting.CheckBox.UncheckedImage]()[P:Telerik.Reporting.CheckBox.FalseValue]()[P:Telerik.Reporting.CheckBox.IndeterminateImage]()[P:Telerik.Reporting.CheckBox.IndeterminateValue]()[P:Telerik.Reporting.CheckBox.Text]()[P:Telerik.Reporting.CheckBox.TrueValue]()

@@ -12,9 +12,9 @@ position: 4
 
 
 
-The Telerik Reporting REST Web API service is represented by the abstract T:Telerik.Reporting.Services.WebApi.ReportsControllerBase
-        class. This abstract class requires T:Telerik.Reporting.Services.IReportSourceResolver
-        and T:Telerik.Reporting.Cache.Interfaces.IStorage implementations.
+The Telerik Reporting REST Web API service is represented by the abstract [T:Telerik.Reporting.Services.WebApi.ReportsControllerBase]()
+        class. This abstract class requires [T:Telerik.Reporting.Services.IReportSourceResolver]()
+        and [T:Telerik.Reporting.Cache.Interfaces.IStorage]() implementations.
         In order to add the reports controller to your application follow the steps:
       
 
@@ -35,7 +35,7 @@ Add references to the following Telerik Reporting assemblies (optional)
               and set their __Copy Local__ properties to true in Visual Studio:
             
 
-* Telerik.Reporting.Cache.Database.dll - only if T:Telerik.Reporting.Cache.Database.DatabaseStorage caching mechanism is intended.
+* Telerik.Reporting.Cache.Database.dll - only if [T:Telerik.Reporting.Cache.Database.DatabaseStorage]() caching mechanism is intended.
                   For more details check [Reporting REST Service Storage]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-service-storage/overview%}).
                   The assembly has dependencies on Telerik Data Access which can be checked in the version
                   corresponding [Upgrade article]({%slug telerikreporting/upgrade/overview%});
@@ -59,9 +59,9 @@ Inherit this base class in your hosting application (usually in the Controllers 
 
 __ReportsControllerBase configuration in code:__
 
-* Set the P:Telerik.Reporting.Services.WebApi.ReportsControllerBase.ReportServiceConfiguration
+* Set the [P:Telerik.Reporting.Services.WebApi.ReportsControllerBase.ReportServiceConfiguration]()
                   property. The __ReportSourceResolver__ and __Storage__ configuration settings are required.
-                  See the T:Telerik.Reporting.Services.IReportServiceConfiguration interface
+                  See the [T:Telerik.Reporting.Services.IReportServiceConfiguration]() interface
                   for more details.
                 
 
@@ -149,7 +149,7 @@ __ReportsControllerBase configuration in code:__
 	    End Function
 ````
 
-T:Telerik.Reporting.Services.WebApi.ReportsControllerBase inherits
+[T:Telerik.Reporting.Services.WebApi.ReportsControllerBase]() inherits
                   [System.Web.Http.ApiController](http://msdn.microsoft.com/en-us/library/system.web.http.apicontroller.aspx)
                   and implements all necessary API actions.
                 The provided sample implementation will resolve .trdx|.trdp report definitions from the Reports subfolder of the hosting ASP.NET application root.
@@ -161,7 +161,7 @@ T:Telerik.Reporting.Services.WebApi.ReportsControllerBase inherits
 >note Do not forget to add all necessary (i.e., referred from the report definitions) connection strings to the application configuration file.                  
 
 
->tip The above implementation uses the T:Telerik.Reporting.Cache.File.FileStorage                    method in order to create a storage object instance. All Visual Studio item templates for adding the Reporting REST service use the default                     __FileStorage__  constructor. The second overload of the FileStorage constructor allows you to                    specify a folder, and it is recommended for usage in production environment.                  
+>tip The above implementation uses the [T:Telerik.Reporting.Cache.File.FileStorage]()                    method in order to create a storage object instance. All Visual Studio item templates for adding the Reporting REST service use the default                     __FileStorage__  constructor. The second overload of the FileStorage constructor allows you to                    specify a folder, and it is recommended for usage in production environment.                  
 
 
 
@@ -169,8 +169,8 @@ T:Telerik.Reporting.Services.WebApi.ReportsControllerBase inherits
 __ReportsControllerBase configuration in configuration file:__
 
 * To configure the Telerik Reporting REST service from the application configuration file, set the value of the
-                  P:Telerik.Reporting.Services.WebApi.ReportsControllerBase.ReportServiceConfiguration property to an instance of the
-                  T:Telerik.Reporting.Services.ConfigSectionReportServiceConfiguration class.
+                  [P:Telerik.Reporting.Services.WebApi.ReportsControllerBase.ReportServiceConfiguration]() property to an instance of the
+                  [T:Telerik.Reporting.Services.ConfigSectionReportServiceConfiguration]() class.
                 
 
 {{source=CodeSnippets\MvcCS\Controllers\ReportsControllerConfigSection.cs region=ReportsControllerConfigSectionImplementation}}

@@ -129,6 +129,7 @@ The following rules apply to page headers and footers when rendered on the page:
 
 # See Also
 
+
  * [Rendering and Paging]({%slug telerikreporting/designing-reports/rendering-and-paging/overview%})
 
  * [Understanding Pagination]({%slug telerikreporting/designing-reports/rendering-and-paging/understanding-pagination%})

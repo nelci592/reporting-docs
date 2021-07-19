@@ -38,11 +38,11 @@ The report sources are utilized by:
               corresponding methods:
             
 
-* M:Telerik.Reporting.Processing.ReportProcessor.RenderReport(System.String,Telerik.Reporting.ReportSource,System.Collections.Hashtable)
+* [M:Telerik.Reporting.Processing.ReportProcessor.RenderReport(System.String,Telerik.Reporting.ReportSource,System.Collections.Hashtable)]()
                   - for exporting reports programmatically on the server-machine;
                 
 
-* M:Telerik.Reporting.Processing.ReportProcessor.PrintReport(Telerik.Reporting.ReportSource,System.Drawing.Printing.PrinterSettings)
+* [M:Telerik.Reporting.Processing.ReportProcessor.PrintReport(Telerik.Reporting.ReportSource,System.Drawing.Printing.PrinterSettings)]()
                   - for printing reports from the server machine.
                 For more details, check [How to: Set ReportSource for ReportProcessor]({%slug telerikreporting/using-reports-in-applications/reference-report-definitions-in-applications%}).
             
@@ -53,20 +53,20 @@ The available report sources are:
 
 * __UriReportSource__The URI report source allows you to load a report document (.TRDP/.TRDX,
               usually produced by the [Standalone Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview%})) either from a file path or from an Url.
-            An example is illustrated in the API Reference: T:Telerik.Reporting.UriReportSource.
+            An example is illustrated in the API Reference: [T:Telerik.Reporting.UriReportSource]().
             
 
 * __TypeReportSource__The reports created with [Visual Studio Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/overview%}) are usually stored as .NET classes inheriting
               *Telerik.Reporting.Report|ReportBook*.
               To access a .NET class declaratively you can use the [assembly qualified name](http://msdn.microsoft.com/en-us/library/30wyt9tk) of the report's type. The Reporting engine will use [Reflection](https://msdn.microsoft.com/en-us/library/ms173183(v=vs.110).aspx) to create an instance of the report class by using its default parameterless constructor.
-            An example is illustrated in the API Reference: T:Telerik.Reporting.TypeReportSource.
+            An example is illustrated in the API Reference: [T:Telerik.Reporting.TypeReportSource]().
             
 
 * __InstanceReportSource__This report source is used when you have a reference to an already instantiated report (*Telerik.Reporting.Report* instance),
               and you want to pass it to the reporting engine. Typical scenarios include reports created or modified in code, dynamically generated ReportBook objects
               or report instances result of [deserializing]({%slug telerikreporting/using-reports-in-applications/program-the-report-definition/serialize-report-definition-in-xml%})
               or [unpackaging]({%slug telerikreporting/using-reports-in-applications/program-the-report-definition/package-report-definition%}) content produced by the Standalone Report Designer.
-            An example is illustrated in the API Reference: T:Telerik.Reporting.InstanceReportSource.
+            An example is illustrated in the API Reference: [T:Telerik.Reporting.InstanceReportSource]().
             
 
 >tip For reports created in Visual Studio Report Designer without further modifications in code, we recommend the usage of the TypeReportSource.
@@ -75,7 +75,7 @@ The available report sources are:
 * __XmlReportSource__The XML report source can be used if the report is serialized in XML and stored in a string.The primary intent for this report source is to be used with database fields where the report is stored as
               pure XML. In order to access it set the Xml property of the report source to the field that contains the
               report xml. For example: xmlReportSource.Xml = "=Fields.ReportXml".
-            An example is illustrated in the API Reference: T:Telerik.Reporting.XmlReportSource.
+            An example is illustrated in the API Reference: [T:Telerik.Reporting.XmlReportSource]().
             
 
 >note The created report source inherits  __Telerik.Reporting.ReportSource__ .          
@@ -96,6 +96,7 @@ Report parameters values can be passed from the report source object. Each repor
 
 # See Also
 
+
  * [How to: Set ReportSource for Report Viewers]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/how-to-set-reportsource-for-report-viewers%})
 
- * [How to: Set ReportSource for ReportProcessor]({%slug telerikreporting/using-reports-in-applications/reference-report-definitions-in-applications%})T:Telerik.Reporting.ReportSourceT:Telerik.Reporting.Processing.ReportProcessor
+ * [How to: Set ReportSource for ReportProcessor]({%slug telerikreporting/using-reports-in-applications/reference-report-definitions-in-applications%})[T:Telerik.Reporting.ReportSource]()[T:Telerik.Reporting.Processing.ReportProcessor]()

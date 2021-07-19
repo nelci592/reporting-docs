@@ -93,4 +93,5 @@ Essentially, both the FNC1 property and the ApplicationIndicator data is applied
 
 
 
-# See AlsoT:Telerik.Reporting.BarcodeT:Telerik.Reporting.Barcodes.QRCodeEncoderP:Telerik.Reporting.Barcodes.QRCodeEncoder.ApplicationIndicatorP:Telerik.Reporting.Barcodes.QRCodeEncoder.ECIP:Telerik.Reporting.Barcodes.QRCodeEncoder.ErrorCorrectionLevelP:Telerik.Reporting.Barcodes.QRCodeEncoder.FNC1P:Telerik.Reporting.Barcodes.QRCodeEncoder.ModeP:Telerik.Reporting.Barcodes.QRCodeEncoder.Version
+# See Also
+[T:Telerik.Reporting.Barcode]()[T:Telerik.Reporting.Barcodes.QRCodeEncoder]()[P:Telerik.Reporting.Barcodes.QRCodeEncoder.ApplicationIndicator]()[P:Telerik.Reporting.Barcodes.QRCodeEncoder.ECI]()[P:Telerik.Reporting.Barcodes.QRCodeEncoder.ErrorCorrectionLevel]()[P:Telerik.Reporting.Barcodes.QRCodeEncoder.FNC1]()[P:Telerik.Reporting.Barcodes.QRCodeEncoder.Mode]()[P:Telerik.Reporting.Barcodes.QRCodeEncoder.Version]()

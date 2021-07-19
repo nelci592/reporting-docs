@@ -20,14 +20,14 @@ A user can click items in the document map to jump
 1. In __Design view__, right click outside the report sections, select View and open up the 
 		[Group Explorer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/group-explorer%}).
 
-1. Select a T:Telerik.Reporting.Table, 
-  	T:Telerik.Reporting.Crosstab
-  	 or T:Telerik.Reporting.List report item, so the __Group Explorer__ shows the respective groups.
+1. Select a [T:Telerik.Reporting.Table](), 
+  	[T:Telerik.Reporting.Crosstab]()
+  	 or [T:Telerik.Reporting.List]() report item, so the __Group Explorer__ shows the respective groups.
 
 1. Select a group to which you want to add a document map, right click on it and select 
   	__Group Properties__. The properties for the selected group appear in the __Edit Table Group__ dialog.
 
-1. In the P:Telerik.Reporting.TableGroup.DocumentMapText property, 
+1. In the [P:Telerik.Reporting.TableGroup.DocumentMapText]() property, 
 	type the text that you want to appear in the document map. Alternatively, click the ellipsis to open the __Expression__ 
 	dialog box to specify an expression that evaluates to a text.
 	Typically for a group, the expression you type should match the group expression. 
@@ -39,6 +39,7 @@ A user can click items in the document map to jump
 1. Run the report - the document map displays the group values. Click any document map node to jump to the report page with that item.
 
 # See Also
+
 
  * [Document Map]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/document-map/overview%})
 

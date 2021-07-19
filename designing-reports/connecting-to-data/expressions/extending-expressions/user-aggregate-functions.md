@@ -20,7 +20,7 @@ User aggregate functions allow you to apply custom logic
 
 User aggregates are __public__ or __internal__
         (__Public__ or __Friend__ in VB.NET)
-        classes that implement the T:Telerik.Reporting.Expressions.IAggregateFunction interface.
+        classes that implement the [T:Telerik.Reporting.Expressions.IAggregateFunction]() interface.
 
 Aggregate function implementation accumulates values from each row 
         using the __Accumulate__ method. The aggregate 
@@ -36,7 +36,7 @@ The function merges its value with other instances of the aggregate
 
 The function returns value using the __GetValue__ method.
 
-Apply T:Telerik.Reporting.Expressions.AggregateFunctionAttribute
+Apply [T:Telerik.Reporting.Expressions.AggregateFunctionAttribute]()
         to the custom aggregate class implementation to define an interface 
         for the users of the aggregate function. The __Name__ 
         parameter of the attribute defines how to refer to the function in expressions.

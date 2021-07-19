@@ -57,4 +57,5 @@ You can make data bar versions of these full charts:
 
 # See Also
 
- * [Chart Types]({%slug telerikreporting/designing-reports/report-structure/graph/chart-types/overview%})T:Telerik.Reporting.AreaSeriesT:Telerik.Reporting.BarSeriesT:Telerik.Reporting.LineSeriesT:Telerik.Reporting.RangeAreaSeriesT:Telerik.Reporting.RangeBarSeries
+
+ * [Chart Types]({%slug telerikreporting/designing-reports/report-structure/graph/chart-types/overview%})[T:Telerik.Reporting.AreaSeries]()[T:Telerik.Reporting.BarSeries]()[T:Telerik.Reporting.LineSeries]()[T:Telerik.Reporting.RangeAreaSeries]()[T:Telerik.Reporting.RangeBarSeries]()

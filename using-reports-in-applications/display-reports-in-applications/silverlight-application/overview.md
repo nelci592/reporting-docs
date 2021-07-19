@@ -43,7 +43,7 @@ The toolbar on the Silverlight Report Viewer provides basic functionality for i
 * Print Preview: switches between __Logical__ and __Physical__ page renderer. See [Rendering and Paging]({%slug telerikreporting/designing-reports/rendering-and-paging/overview%}) for more info.
             
 
-* Print: use P:Telerik.ReportViewer.Silverlight.ReportViewer.UseNativePrinting
+* Print: use [P:Telerik.ReportViewer.Silverlight.ReportViewer.UseNativePrinting]()
               to switch between Silverlight native print and [True Print]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/asp.net-web-forms-report-viewer/true-print%}).
             
 
@@ -58,17 +58,17 @@ The toolbar on the Silverlight Report Viewer provides basic functionality for i
 
 ## Silverlight report viewer specific properties
 
-* P:Telerik.ReportViewer.Silverlight.ReportViewer.ReportServiceUri
+* [P:Telerik.ReportViewer.Silverlight.ReportViewer.ReportServiceUri]()
               - the location of the report service - absolute or relative [Uri](http://msdn.microsoft.com/en-us/library/system.uri%28VS.95%29.aspx).
               If the uri is absolute, the same instance is returned. If the uri is relative,
               a new absolute Uri based on the combination of Source of the current application and the given relative uri is created. The Source usually points to the application package (XAP).
             
 
-* P:Telerik.ReportViewer.Silverlight.ReportViewer.Report
+* [P:Telerik.ReportViewer.Silverlight.ReportViewer.Report]()
               - the [assembly qualified name](http://msdn.microsoft.com/en-us/library/system.type.assemblyqualifiedname.aspx) of the Report type for the viewer to display;
             
 
-* P:Telerik.ReportViewer.Silverlight.ReportViewer.UseNativePrinting
+* [P:Telerik.ReportViewer.Silverlight.ReportViewer.UseNativePrinting]()
               - Specifies whether to use native Silverlight printing or [True Print]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/asp.net-web-forms-report-viewer/true-print%}). Default value is true.
             
 
@@ -96,7 +96,7 @@ The Silverlight ReportViewer control is a composite of Telerik UI for Silverligh
           The viewer's functionality resides in Telerik.ReportViewer.Silverlight.dll and the viewer's UI in Telerik.ReportViewer.Silverlight.xaml.
         
 
->note The Silverlight ReportViewer control's template can be modified trough the corresponding theme's [ Telerik.ReportViewer.Silverlight.xaml]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/silverlight-application/setting-a-theme-(using-implicit-styles)%}) file            and the Silverlight T:Telerik.ReportViewer.Silverlight.ReportViewer.          
+>note The Silverlight ReportViewer control's template can be modified trough the corresponding theme's [ Telerik.ReportViewer.Silverlight.xaml]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/silverlight-application/setting-a-theme-(using-implicit-styles)%}) file            and the Silverlight [T:Telerik.ReportViewer.Silverlight.ReportViewer]().          
 
 
 The purpose of the Silverlight ReportViewer control is to display Telerik Reports and allow the user to interact with them. 
@@ -110,6 +110,7 @@ The purpose of the Silverlight ReportViewer control is to display Telerik Report
 
 
 # See Also
+
 
  * [How to Add report viewer to a Silverlight application]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/silverlight-application/how-to-add-report-viewer-to-a-silverlight-application%})
 

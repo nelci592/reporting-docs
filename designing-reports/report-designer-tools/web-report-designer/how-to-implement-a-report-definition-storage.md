@@ -31,7 +31,7 @@ The *byte[]* returned by the *GetDefinition* method of the
           *definitionId* contains the extension '.trdp', the report will be treated as a TRDP package.
           Otherwise, the *byte[]* is regarded as an XML report definition, i.e. a TRDX report. For that
           reason, by default, if the *GetDefinition* method returns a report definition packed with the
-          T:Telerik.Reporting.ReportPackager, the corresponding
+          [T:Telerik.Reporting.ReportPackager](), the corresponding
           *definitionId* must finish with the '.trdp' extension. If a different behavior is required,
           it will be necessary to overload the *GetReport* method of the
           *ReportDesignerController*.

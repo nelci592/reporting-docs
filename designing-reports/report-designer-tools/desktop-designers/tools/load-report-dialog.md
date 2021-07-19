@@ -46,7 +46,7 @@ When the __Report server__ option is selected, the dialog will try to connect to
 If a connection to the report server instance is not available, the user can just enter the category and report name in the drop-down fields and they will be used in the resulting report source.
         
 
->note The  __Report server__  option provides just a UI for choosing the category and report name from an active Telerik Report Server instance.            It does not provide a new report source type - it uses a T:Telerik.Reporting.UriReportSource instance            for initialization and returned result.          
+>note The  __Report server__  option provides just a UI for choosing the category and report name from an active Telerik Report Server instance.            It does not provide a new report source type - it uses a [T:Telerik.Reporting.UriReportSource]() instance            for initialization and returned result.          
 
 
 For examples that demonstrate how to programmatically create a report source, check the API reference examples below.
@@ -61,4 +61,5 @@ Reports can be stored in different locations and in different formats so use the
 
 # See Also
 
- * [Report Sources]({%slug telerikreporting/designing-reports/report-sources/overview%})T:Telerik.Reporting.UriReportSourceT:Telerik.Reporting.TypeReportSourceT:Telerik.Reporting.InstanceReportSourceT:Telerik.Reporting.XmlReportSource
+
+ * [Report Sources]({%slug telerikreporting/designing-reports/report-sources/overview%})[T:Telerik.Reporting.UriReportSource]()[T:Telerik.Reporting.TypeReportSource]()[T:Telerik.Reporting.InstanceReportSource]()[T:Telerik.Reporting.XmlReportSource]()

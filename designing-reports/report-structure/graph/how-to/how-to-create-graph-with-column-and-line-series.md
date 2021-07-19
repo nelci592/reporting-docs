@@ -75,9 +75,9 @@ The graph will display the column series and it should look like this:
 
 The graph is displaying the date-time values on its X-axis, and the 'Auto' scale option divides each column into one column per month.
               To make the label for the X-axis easier to read, first select the X-axis, and in the *Property Browser* set a proper
-              P:Telerik.Reporting.GraphAxis.LabelFormat
+              [P:Telerik.Reporting.GraphAxis.LabelFormat]()
               (i.e. `{0:Y}`) and
-              P:Telerik.Reporting.GraphAxis.LabelAngle
+              [P:Telerik.Reporting.GraphAxis.LabelAngle]()
                to 90º.
             
 
@@ -92,9 +92,9 @@ To add another series to the graph, you can right-click on the graph and select 
 >note When adding a new Series, a new Category group is also created. In this guide we are using a field of type  __DateTime__  for category. This will                 set the scale of the X-axis to  __DateTime Scale__  which will correctly display the two series on top of each other. With any other type, like                  __Numerical Scale, Logarithmic Scale or Category Scale __ , the two Series will be displayed next to each other and not overlapping correctly.              To fix this, select the newly created series and change the  __CategoryGroup__  to the group used by the first series.              
 
 
-Name the series’ legend items accordingly using the property LegendItem.P:Telerik.Reporting.LegendItem.Value of both of your series.
+Name the series’ legend items accordingly using the property LegendItem.[P:Telerik.Reporting.LegendItem.Value]() of both of your series.
               Finally your graph should look like the one shown below:
               
   ![Graph Layout 3](images/Graph/HowToBarLineSeries/GraphLayout3.png)
 
- * [Graph Structure]({%slug telerikreporting/designing-reports/report-structure/graph/structure%})T:Telerik.Reporting.GraphAxisP:Telerik.Reporting.GraphAxis.LabelFormatP:Telerik.Reporting.GraphAxis.LabelPlacementP:Telerik.Reporting.GraphAxis.Scale
+ * [Graph Structure]({%slug telerikreporting/designing-reports/report-structure/graph/structure%})[T:Telerik.Reporting.GraphAxis]()[P:Telerik.Reporting.GraphAxis.LabelFormat]()[P:Telerik.Reporting.GraphAxis.LabelPlacement]()[P:Telerik.Reporting.GraphAxis.Scale]()

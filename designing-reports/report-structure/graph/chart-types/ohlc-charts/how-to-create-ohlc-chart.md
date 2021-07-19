@@ -66,16 +66,16 @@ Format the axis labels, set their angle and add additional styling if necessary.
   ![graph-howto-create-ohlc-chart](images/Graph/graph-howto-create-ohlc-chart.png)
 
 The marker width is automatically calculated based on two properties. The first property is the X scale's
-              P:Telerik.Reporting.Scale.SpacingSlotCount.
-              The second property is series' P:Telerik.Reporting.OhlcSeries.MinMarkerWidth, which determines the minimum width of the marker, measured in
-              T:Telerik.Reporting.Drawing.Unit, i.e. 10px, 1cm, etc.
+              [P:Telerik.Reporting.Scale.SpacingSlotCount]().
+              The second property is series' [P:Telerik.Reporting.OhlcSeries.MinMarkerWidth](), which determines the minimum width of the marker, measured in
+              [T:Telerik.Reporting.Drawing.Unit](), i.e. 10px, 1cm, etc.
               By default the wizard sets the __MinMarkerWidth__ to 6px.
             
 
 Note the gaps between 07.07.2017 and 10.07.2017 where there are no data points. Since you are using a DateTime field to create the categories, the wizard
-              will automatically create a T:Telerik.Reporting.DateTimeScale scale for your X axis. The DateTime scale represents the values in a continuous domain -
+              will automatically create a [T:Telerik.Reporting.DateTimeScale]() scale for your X axis. The DateTime scale represents the values in a continuous domain -
               that's why you see axis labels for 08.07.2017 and 09.07.2017 even if there are no data for these dates.
-              In case you do not want to have such gaps, you should use a T:Telerik.Reporting.CategoryScale for your X axis.
+              In case you do not want to have such gaps, you should use a [T:Telerik.Reporting.CategoryScale]() for your X axis.
             
 
 In this article we explained how to use the Graph Wizard to create a candlestick series, presenting stock prices over a period of time.

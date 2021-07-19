@@ -53,51 +53,51 @@ For example, you might
 Report parameters can have the following properties:
         
 
-* P:Telerik.Reporting.ReportParameter.TypeDetermines the type of the values that are acceptable.
+* [P:Telerik.Reporting.ReportParameter.Type]()Determines the type of the values that are acceptable.
               The allowed types are __Boolean__,
               __DateTime__, __Integer__,
               __Float__, __String__. Acceptable values for each type are listed here:
-              T:Telerik.Reporting.ReportParameterType
+              [T:Telerik.Reporting.ReportParameterType]()
               The default parameter type is __String__.
             
 
-* P:Telerik.Reporting.ReportParameter.NameSpecifies the parameter name. Use it to access the parameter. The name must be a valid identifier
+* [P:Telerik.Reporting.ReportParameter.Name]()Specifies the parameter name. Use it to access the parameter. The name must be a valid identifier
               - may contain only digits (0-9), letters (a-z, A-Z), and underscore sign (_).
               Must begin with a letter or underscore.
             
 
-* P:Telerik.Reporting.ReportParameter.ValueUsed to specify value for the parameter. It can be blank, value of the allowed types, an Expression that evaluates to a value of the allowed types, or IEnumerable containing values of the allowed types.
+* [P:Telerik.Reporting.ReportParameter.Value]()Used to specify value for the parameter. It can be blank, value of the allowed types, an Expression that evaluates to a value of the allowed types, or IEnumerable containing values of the allowed types.
 
 >note When a parameter accepts multiple values (MultiValue=True), you can set the value by programmatically assigning an IEnumerable of the allowed types.
 
 
-* P:Telerik.Reporting.ReportParameter.TextSpecifies the text for the parameter to be displayed in the report viewer as a prompt to the end user.
+* [P:Telerik.Reporting.ReportParameter.Text]()Specifies the text for the parameter to be displayed in the report viewer as a prompt to the end user.
               It can be blank, string or Expression. If not set, the __Name__ of the parameter will be used instead.
             
 
 >note When you use an Expression to set the property, data fields should not be used and respectively they are not listed in the [Edit Expression Dialog]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/edit-expression-dialog%}).              
 
 
-* P:Telerik.Reporting.ReportParameter.VisibleSpecifies whether the editor will have UI in the parameters area.
+* [P:Telerik.Reporting.ReportParameter.Visible]()Specifies whether the editor will have UI in the parameters area.
               If you turn on the __Visible__ property for at least one report parameter, the
               parameter area is shown when previewing the report in the report designer or in the report viewer.
             
 
-* P:Telerik.Reporting.ReportParameter.AllowNullDetermines if __null__
+* [P:Telerik.Reporting.ReportParameter.AllowNull]()Determines if __null__
               (__Nothing__ in VB.NET) value is acceptable.
             
 
-* P:Telerik.Reporting.ReportParameter.AllowBlankApplied only when the parameter is of type __String__.
+* [P:Telerik.Reporting.ReportParameter.AllowBlank]()Applied only when the parameter is of type __String__.
               Determines if an empty string is acceptable.
             
 
-* P:Telerik.Reporting.ReportParameter.MultiValueDetermines if a collection of values (of the specified
+* [P:Telerik.Reporting.ReportParameter.MultiValue]()Determines if a collection of values (of the specified
               __Type__) is acceptable as value of the parameter.
               Parameters with __MultiValue__ turned on
               are mainly used with the __IN__ logical operator.
             
 
-* P:Telerik.Reporting.ReportParameter.AvailableValuesThe available values, or valid values, are a set of predefined values
+* [P:Telerik.Reporting.ReportParameter.AvailableValues]()The available values, or valid values, are a set of predefined values
               which are acceptable as value of the parameter. Each available value
               may have label that will be displayed if the parameter is visible. To define available values for a parameter
               you need to setup the following nested properties:
@@ -119,12 +119,12 @@ Report parameters can have the following properties:
               to select an existing or to create a new data source.
             
 
-* P:Telerik.Reporting.IReportParameter.MergeableControls parameter merging in ReportBook. The default value of the Mergeable property is true.
+* [P:Telerik.Reporting.IReportParameter.Mergeable]()Controls parameter merging in ReportBook. The default value of the Mergeable property is true.
               Set the Mergeable property to false if you want to prevent a parameter from
               being merged with its equivalent ones.
             
 
-* P:Telerik.Reporting.ReportParameter.AutoRefreshDetermines whether to trigger the report preview after changing the value for a parameter. Applies only for visible
+* [P:Telerik.Reporting.ReportParameter.AutoRefresh]()Determines whether to trigger the report preview after changing the value for a parameter. Applies only for visible
               parameters. Default value is __False__.
             
 
@@ -204,7 +204,7 @@ When at least one report parameter has its
           as part of the report viewer. This helps the report developer to easily provide an input method for the end users.
           Based on the settings of the parameters, a suitable editor UI is created.
           The parameter's layout on the parameter area is formatted automatically. The order is determined by the order in which the parameters appear in
-          the P:Telerik.Reporting.Report.ReportParameters collection.
+          the [P:Telerik.Reporting.Report.ReportParameters]() collection.
 
           The end user can enter or select values in the editors. When at least one visible report parameter has the
           __AutoRefresh__ property turned off, a __Preview__ button is available.
@@ -214,6 +214,7 @@ When at least one report parameter has its
         
 
 # See Also
+
 
  * [How to Add Report Parameters]({%slug telerikreporting/designing-reports/connecting-to-data/report-parameters/how-to-add-report-parameters%})
 

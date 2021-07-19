@@ -22,16 +22,16 @@ You can add a table of contents to the report and click on entries in the table 
               [Group Explorer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/group-explorer%}).
             
 
-1. Select a T:Telerik.Reporting.Table,
-              T:Telerik.Reporting.Crosstab
-              or T:Telerik.Reporting.List report item, so the __Group Explorer__ shows the respective groups.
+1. Select a [T:Telerik.Reporting.Table](),
+              [T:Telerik.Reporting.Crosstab]()
+              or [T:Telerik.Reporting.List]() report item, so the __Group Explorer__ shows the respective groups.
             
 
 1. Select a group to which you want to add to the table of contents, right click on it and select
               __Group Properties__. The properties for the selected group appear in the __Edit Table Group__ dialog.
             
 
-1. In the P:Telerik.Reporting.TableGroup.TocText property,
+1. In the [P:Telerik.Reporting.TableGroup.TocText]() property,
               type the text that you want to appear in the table of contents. Alternatively, click the ellipsis to open the __Expression__
               dialog box to specify an expression that evaluates to a text.
               Typically for a group, the expression you type should match the group expression.
@@ -47,5 +47,6 @@ You can add a table of contents to the report and click on entries in the table 
 1. Run the report - the table of contents displays the group values. Click any TOC entry to jump to the report page with that group instance.
 
 # See Also
+
 
  * [Overview]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/table-of-contents/overview%})

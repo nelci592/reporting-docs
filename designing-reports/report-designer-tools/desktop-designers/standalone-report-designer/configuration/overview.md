@@ -129,6 +129,7 @@ The following code example shows the default Telerik.ReportDesigner.exe.config f
 
 # See Also
 
+
  * [Report Designer Configuration]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/configuration/report-designer-configuration%})
 
  * [Extending Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/configuration/extending-report-designer%})

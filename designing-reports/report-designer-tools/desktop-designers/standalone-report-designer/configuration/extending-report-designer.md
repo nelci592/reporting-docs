@@ -79,6 +79,7 @@ To instruct the Report Designer to look for assemblies in other locations as wel
 
 # See Also
 
+
  * [How to use external assemblies with custom CLR objects in the Report Designer](http://www.telerik.com/support/kb/reporting/customization-tip/how-to-use-external-assemblies-with-custom-clr-objects-in-the-report-designer.aspx)
 
  * [How to use external assemblies with custom user functions in the Report Designer](http://www.telerik.com/support/kb/reporting/customization-tip/how-to-use-external-assemblies-with-custom-user-functions-in-the-report-designer.aspx)

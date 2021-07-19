@@ -18,7 +18,7 @@ __Watermarks__ are text or pictures that appear commingled with the report conte
         and whether it is displayed on first (__PrintOnFirstPage__) and last page (__PrintOnLastPage__).
       
 
-Watermarks are T:Telerik.Reporting.Drawing.PageSettings member, processed during the paging of the report. At this moment the report data source is not available anymore, and thus data fields used in expressions would not be evaluated.
+Watermarks are [T:Telerik.Reporting.Drawing.PageSettings]() member, processed during the paging of the report. At this moment the report data source is not available anymore, and thus data fields used in expressions would not be evaluated.
       
 
 ## Add Text Watermark using Report Designer
@@ -296,3 +296,4 @@ The value of the picture watermark is evaluated against the designer context and
 
 
 # See Also
+

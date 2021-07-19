@@ -36,4 +36,5 @@ To set the following group properties you have to select a group from the [Group
   ![](images/groupProperties.png) 
       
 
-# See AlsoT:Telerik.Reporting.GroupHeaderSectionT:Telerik.Reporting.GroupFooterSectionT:Telerik.Reporting.Group
+# See Also
+[T:Telerik.Reporting.GroupHeaderSection]()[T:Telerik.Reporting.GroupFooterSection]()[T:Telerik.Reporting.Group]()

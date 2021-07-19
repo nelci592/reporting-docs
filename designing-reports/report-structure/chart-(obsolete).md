@@ -92,4 +92,5 @@ The Chart item offers numerous features including:
 
 # See Also
 
- * [Telerik Charting Documentation](http://www.telerik.com/help/aspnet/chart)T:Telerik.Reporting.Chart
+
+ * [Telerik Charting Documentation](http://www.telerik.com/help/aspnet/chart)[T:Telerik.Reporting.Chart]()

@@ -70,4 +70,5 @@ detail.Items.AddRange(New Telerik.Reporting.ReportItemBase() {panel1})
 
 
 
-# See AlsoT:Telerik.Reporting.TextBoxT:Telerik.Reporting.PictureBoxT:Telerik.Reporting.PanelT:Telerik.Reporting.SubReportT:Telerik.Reporting.ShapeT:Telerik.Reporting.TableT:Telerik.Reporting.CheckBox
+# See Also
+[T:Telerik.Reporting.TextBox]()[T:Telerik.Reporting.PictureBox]()[T:Telerik.Reporting.Panel]()[T:Telerik.Reporting.SubReport]()[T:Telerik.Reporting.Shape]()[T:Telerik.Reporting.Table]()[T:Telerik.Reporting.CheckBox]()

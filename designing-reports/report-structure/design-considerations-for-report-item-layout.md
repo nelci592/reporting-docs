@@ -68,7 +68,7 @@ The following visibility rules apply when rendering report items (red lines defi
 ## Keeping Report Items Together
 
 Report items in a report can be kept together on a single page by setting
-          the KeepTogether property. For keeping items in a report group or table group together, set P:Telerik.Reporting.Group.GroupKeepTogether property.
+          the KeepTogether property. For keeping items in a report group or table group together, set [P:Telerik.Reporting.Group.GroupKeepTogether]() property.
           Report items are always rendered on the same page if the report
           item is smaller in size than the usable page area. If a report item does
           not completely fit on the page on which it starts, a page break is inserted before the report item,
@@ -116,6 +116,7 @@ This rendering behavior will affect how report item borders are rendered accordi
 
 
 # See Also
+
 
  * [How to Layout Report Items]({%slug telerikreporting/designing-reports/report-structure/how-to/how-to-layout-report-items%})
 

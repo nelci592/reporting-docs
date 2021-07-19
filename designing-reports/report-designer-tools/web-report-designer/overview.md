@@ -113,6 +113,7 @@ The Web Report Designer uses a dedicated ASP.NET WebAPI REST service as a backen
 
 # See Also
 
+
  * [How to set up in .NET Core 2.1+ application]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/how-to-set-up-in-.net-core-2.1+-application%})
 
  * [How to set up in .NET Framework application]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/how-to-set-up-in-.net-framework-application%})

@@ -12,7 +12,7 @@ position: 2
 
 
 
-The T:Telerik.Reporting.JsonDataSource component enables data items to display JSON data located in a local file,
+The [T:Telerik.Reporting.JsonDataSource]() component enables data items to display JSON data located in a local file,
         or saved directly into the report while using no code.
         At design time the component can be configured using the [JsonDataSource Wizard]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/jsondatasource-wizard%}).
         At run time the JsonDataSource automatically parses the JSON data.

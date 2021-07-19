@@ -20,9 +20,9 @@ HTML5-based report viewers provides the capability to send the current report
 
 By default the send mail message button is hidden.
           This is because the 
-          
+          [
             M:Telerik.Reporting.Services.WebApi.ReportsControllerBase.SendMailMessage
-          
+          ]()
           (or the respective method for ServiceStack, ASP.NET Core, etc.) should be implemented
           first, so that the e-mail messages can be send server-side. Web browser (JS client) cannot
           initiate sending of e-mail messages containing attachments as a security measure.
@@ -61,5 +61,6 @@ The dialog consists of the following components:
             
 
 # See Also
+
 
  * [Implement Send Mail Message]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/implement-send-mail-message%})[](c578f366-93da-4dd1-8972-6efbc5a1790b#sendEmailOption)

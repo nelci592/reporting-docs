@@ -12,17 +12,17 @@ position: 1
 
 
 
-To export a Telerik report from a Silverlight application without a Silverligh Report Viewer you have to instantiate the T:Telerik.Reporting.Service.SilverlightClient.ReportServiceClient class, which plays the role of proxy to the [Telerik Reporting WCF Service]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-wcf-service/overview%}).
+To export a Telerik report from a Silverlight application without a Silverligh Report Viewer you have to instantiate the [T:Telerik.Reporting.Service.SilverlightClient.ReportServiceClient]() class, which plays the role of proxy to the [Telerik Reporting WCF Service]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-wcf-service/overview%}).
 	  
 
 To specify that you want to render the report we use the
-		M:Telerik.Reporting.Service.SilverlightClient.ReportServiceClient.RenderAsync(System.String,System.String,Telerik.Reporting.Service.NameValueDictionary,Telerik.Reporting.Service.NameValueDictionary)
+		[M:Telerik.Reporting.Service.SilverlightClient.ReportServiceClient.RenderAsync(System.String,System.String,Telerik.Reporting.Service.NameValueDictionary,Telerik.Reporting.Service.NameValueDictionary)]()
 		  method of the ReportServiceClient, which invokes the respective method on the server (remember that it serves as proxy)
 		  that would return the rendered report.
 	  
 
 Since we’ve used an asynchronous method and we do not know when the render would finish, we need to handle the
-		E:Telerik.Reporting.Service.SilverlightClient.ReportServiceClient.RenderCompleted
+		[E:Telerik.Reporting.Service.SilverlightClient.ReportServiceClient.RenderCompleted]()
 		  event. In the RenderCompleted event we get the result from the rendering and decide what to do with it -  in this case write down the report.
 	  
 
@@ -121,4 +121,5 @@ End Class
 
 
 
-# See AlsoT:Telerik.Reporting.Service.SilverlightClient.ReportServiceClient
+# See Also
+[T:Telerik.Reporting.Service.SilverlightClient.ReportServiceClient]()

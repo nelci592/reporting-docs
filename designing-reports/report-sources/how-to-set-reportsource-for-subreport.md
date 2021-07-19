@@ -76,6 +76,7 @@ The [Standalone Report Designer]({%slug telerikreporting/designing-reports/repor
 
 # See Also
 
+
  * [How to: Create a Master-Detail Report Using a SubReport Item]({%slug telerikreporting/designing-reports/report-structure/how-to/how-to-create-a-master-detail-report-using-a-subreport-item%})
 
  * [How to: Create a Master-Detail Report Using a Table]({%slug telerikreporting/designing-reports/report-structure/how-to/how-to-create-a-master-detail-report-using-a-table%})

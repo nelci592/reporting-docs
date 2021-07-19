@@ -21,7 +21,7 @@ DataObject is an object instance that represents the data that an item is bound 
 When used in the context of data item (table, subreport, grapth and etc.) expression ReportItem.DataObject references the parent's data item data.
       Work with raw data type's methods and properties
 
-The DataObject implements T:Telerik.Reporting.Processing.IDataObject interface which defines the RawData property.
+The DataObject implements [T:Telerik.Reporting.Processing.IDataObject]() interface which defines the RawData property.
           This property is the actual data object that is being wrapped by the IDataObject and referring to DataObject, we actually refer to its RawData values.
           Thus to get the actual data object you can work with __ReportItem.DataObject.RawData__.
           The __RawData__ object exposes all properties and methods of the data object's type.

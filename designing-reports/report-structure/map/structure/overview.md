@@ -55,13 +55,13 @@ Series represent a number of data points that show individual measurements. The 
           depending on the groups they use and the data points they display.
         
 
-The first category uses T:Telerik.Reporting.GeoLocationMapGroup
+The first category uses [T:Telerik.Reporting.GeoLocationMapGroup]()
           to obtain a set of latitude/longitude coordinates or to query the define a [Location provider]({%slug telerikreporting/designing-reports/report-structure/map/structure/location-providers%})
           in order to determine its data points position on the map. The PointMap, PieMap and ColumnMap series fall in that category, since they present similar
-          data points, each one on a single location on the map. These series are called T:Telerik.Reporting.LocationMapSeries.
+          data points, each one on a single location on the map. These series are called [T:Telerik.Reporting.LocationMapSeries]().
         
 
-However, the T:Telerik.Reporting.ShapeMapSeries belongs to a second category that uses a set of coordinates
+However, the [T:Telerik.Reporting.ShapeMapSeries]() belongs to a second category that uses a set of coordinates
           to determine the shape of the data point itself. In this case the engine does not use a LocationProvider or a GeoLocationMapGroup, because the data points
           are not determined by a single location on the map surface.
         
@@ -85,7 +85,7 @@ The Map Legend is a collection of legend items that are used to distinguish the 
 
 ## Scale
 
-The T:Telerik.Reporting.MapScaleLegend shows the scale of the current map extent,
+The [T:Telerik.Reporting.MapScaleLegend]() shows the scale of the current map extent,
           measured at the middle between its minimum and maximum latitude.
           The scale is calculated using the
           [Haversine formula](http://en.wikipedia.org/wiki/Haversine_formula)
@@ -93,30 +93,30 @@ The T:Telerik.Reporting.MapScaleLegend shows the scale of the current map extent
         
 
 * __Formatting the Scale Legend__The __ScaleLegend__ allows the user to see the map scale in metric, imperial or both units, depending how the
-              P:Telerik.Reporting.MapScaleLegend.ScaleUnits property is set.
-              The value of the shown scale depends on the P:Telerik.Reporting.MapScaleLegend.Size property -
+              [P:Telerik.Reporting.MapScaleLegend.ScaleUnits]() property is set.
+              The value of the shown scale depends on the [P:Telerik.Reporting.MapScaleLegend.Size]() property -
               the processing engine calculates the nearest round value that can be
-              shown on the scale, using all the available width. The P:Telerik.Reporting.Drawing.SizeU.Height
-              property in conjunction with T:Telerik.Reporting.Drawing.VerticalAlign property
+              shown on the scale, using all the available width. The [P:Telerik.Reporting.Drawing.SizeU.Height]()
+              property in conjunction with [T:Telerik.Reporting.Drawing.VerticalAlign]() property
               determines how the scale will be positioned vertically. If the __Size.Height__ is set to a very small value (e.g. 0.1),
               the __ScaleLegend__ will grow vertically to display its content.
             
 
-* __Styling the Scale Legend__Similar to the GraphSeries' T:Telerik.Reporting.LegendItem, the __MapScaleLegend__
+* __Styling the Scale Legend__Similar to the GraphSeries' [T:Telerik.Reporting.LegendItem](), the __MapScaleLegend__
               provides two styles for more precise styling, named
-              P:Telerik.Reporting.MapScaleLegend.Style and
-              P:Telerik.Reporting.MapScaleLegend.ItemStyle.
+              [P:Telerik.Reporting.MapScaleLegend.Style]() and
+              [P:Telerik.Reporting.MapScaleLegend.ItemStyle]().
               The __ItemStyle__ is used to set the styling of the mark line and the label. The
-              P:Telerik.Reporting.Drawing.Style.LineStyle,
-              P:Telerik.Reporting.Drawing.Style.LineWidth and the
-              P:Telerik.Reporting.Drawing.Style.LineColor
+              [P:Telerik.Reporting.Drawing.Style.LineStyle](),
+              [P:Telerik.Reporting.Drawing.Style.LineWidth]() and the
+              [P:Telerik.Reporting.Drawing.Style.LineColor]()
               properties define how the scale line would look like. The borders around the line are defined by the
-              P:Telerik.Reporting.Drawing.Style.BorderColor,
-              P:Telerik.Reporting.Drawing.Style.BorderStyle and
-              P:Telerik.Reporting.Drawing.Style.BorderWidth properties.
+              [P:Telerik.Reporting.Drawing.Style.BorderColor](),
+              [P:Telerik.Reporting.Drawing.Style.BorderStyle]() and
+              [P:Telerik.Reporting.Drawing.Style.BorderWidth]() properties.
               The label styling is determined by the
-              P:Telerik.Reporting.Drawing.Style.Color and
-              P:Telerik.Reporting.Drawing.Style.Font properties
+              [P:Telerik.Reporting.Drawing.Style.Color]() and
+              [P:Telerik.Reporting.Drawing.Style.Font]() properties
               The __Style__ property sets the styling of the container item, including the background color, borders
               and the vertical alignment of its content.
             
@@ -181,5 +181,6 @@ The Map item is not designed for scenarios where great precision is needed. The 
         
 
 # See Also
+
 
  * [Map Overview]({%slug telerikreporting/designing-reports/report-structure/map/structure/overview%})

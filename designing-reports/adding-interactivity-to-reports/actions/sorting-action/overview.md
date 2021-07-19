@@ -59,6 +59,7 @@ The items can hold only one action.
 
 # See Also
 
+
  * [How to sort the data rows in a column]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/actions/sorting-action/sorting-table-details%})
 
  * [How to sort the data rows in a Crosstab column]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/actions/sorting-action/sorting-crosstab-total%})

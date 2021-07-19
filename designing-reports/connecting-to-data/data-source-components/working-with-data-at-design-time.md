@@ -31,7 +31,7 @@ The [Visual Studio Report Designer]({%slug telerikreporting/designing-reports/re
 
 The __Data Source Components__ designed and developed specifically for __Telerik Reports__,
       	overcome most of the design time issues while providing the freedom to connect [Data Items]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/overview%}) to a wide variety of data sources incl. databases, 
-      	OR/mappers, Analysis Services' Cubes, etc. without requiring code. Data source components can only read the data and cannot modify it. Every data source component is an instance of the T:Telerik.Reporting.DataSource class.
+      	OR/mappers, Analysis Services' Cubes, etc. without requiring code. Data source components can only read the data and cannot modify it. Every data source component is an instance of the [T:Telerik.Reporting.DataSource]() class.
         Having valid data source attached to [Data Source Components]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/overview%}) at design time allows you to take advantage
         of all design time goodness and work with the [Data Explorer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-explorer%}). 
         For more information please see [Data Source Components]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/overview%}) and [DataSource Wizard]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/datasource-wizard%}).
@@ -45,6 +45,7 @@ This approach is useful when you cannot get the report's data source at design t
               	
 
 # See Also
+
 
  * [DataSource Wizard]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/datasource-wizard%})
 

@@ -14,4 +14,5 @@ position: 5
 
 Adding gridlines makes it easier to view and evaluate data within your graph.
 
-# See AlsoP:Telerik.Reporting.GraphAxis.MajorGridLineStyleP:Telerik.Reporting.GraphAxis.MinorGridLineStyle
+# See Also
+[P:Telerik.Reporting.GraphAxis.MajorGridLineStyle]()[P:Telerik.Reporting.GraphAxis.MinorGridLineStyle]()

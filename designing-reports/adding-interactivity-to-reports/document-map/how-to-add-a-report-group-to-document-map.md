@@ -23,7 +23,7 @@ A user can click items in the document map to jump
 1. Select a report group to which you want to add a document map. The properties for the selected group appear in the __Properties__ pane.
 
 
-1. In the P:Telerik.Reporting.Group.DocumentMapText property, type the text 
+1. In the [P:Telerik.Reporting.Group.DocumentMapText]() property, type the text 
 	that you want to appear in the document map. Alternatively, click the ellipsis to open the __Expression__ dialog box to specify an 
 	expression that evaluates to a text.
 	Typically for a group, the expression you type should match the group expression.
@@ -35,6 +35,7 @@ A user can click items in the document map to jump
 1. Run the report - the document map displays the group values. Click any document map node to jump to the report page with that item.
 
 # See Also
+
 
  * [Document Map]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/document-map/overview%})
 

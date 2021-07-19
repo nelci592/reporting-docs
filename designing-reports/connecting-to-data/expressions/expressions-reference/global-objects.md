@@ -71,7 +71,7 @@ The total number of pages in the report that can be used
           only in page header and footer.
         
 
->note The page numbering behavior in a report contained in a            report book may be controlled through the P:Telerik.Reporting.Report.PageNumberingStyle            property.          
+>note The page numbering behavior in a report contained in a            report book may be controlled through the [P:Telerik.Reporting.Report.PageNumberingStyle]()            property.          
 
 
 ## RenderingFormat
@@ -79,7 +79,7 @@ The total number of pages in the report that can be used
 Represents the runtime rendering extension currently used to render the report.
 
 For information regarding the available child properties, check out the
-          T:Telerik.Reporting.Processing.RenderingFormat API reference
+          [T:Telerik.Reporting.Processing.RenderingFormat]() API reference
           or use the Expression Builder dialog.
         
 
@@ -103,7 +103,7 @@ For information regarding the available processing ReportItem properties, check 
 
 The current report definition.
 
-For information regarding the available Report definition properties, check out the T:Telerik.Reporting.Report API reference.
+For information regarding the available Report definition properties, check out the [T:Telerik.Reporting.Report]() API reference.
         
 
 ## UserIdentity
@@ -111,7 +111,7 @@ For information regarding the available Report definition properties, check out 
 Represents the current user identity in which context the expression is evaluated.
 
 For information regarding the available child properties, check out the
-          T:Telerik.Reporting.Processing.UserIdentity API reference
+          [T:Telerik.Reporting.Processing.UserIdentity]() API reference
           or use the Expression Builder dialog.
         
 
@@ -121,5 +121,5 @@ This global object will be populated for all web report previews based on the HT
         
 
 When exporting a report programmatically the global object can be populated by setting the static property
-          P:Telerik.Reporting.Processing.UserIdentity.Current.
+          [P:Telerik.Reporting.Processing.UserIdentity.Current]().
         

@@ -32,15 +32,15 @@ The most important characteristics of the Swiss QR barcode are listed below:
 
 * The measurements of the Swiss QR Code for printing must always be __46 x 46 mm__ without the surrounding quiet space.
               To satisfy this requirement, the barcode item will calculate the minimum size of the Barcode item on the design surface and will display an error message if the item size is not large enough.
-            Forcing a constant barcode size also makes the P:Telerik.Reporting.Barcode.Stretch
+            Forcing a constant barcode size also makes the [P:Telerik.Reporting.Barcode.Stretch]()
               property redundant, so it is not respected.
             
 
 * The quiet zone (also called *quiet area*) is the space surrounding the barcode modules.
               The QR barcode specification mandates that the quiet zone at least 4 modules wide, which equals to __1.6 mm__ given the minimum module size.
               The Swiss QR Code design specifications suggests the quiet zone to be set to __5 mm__.
-            To satisfy this requirement the T:Telerik.Reporting.Barcodes.SwissQREncoder provides a dedicated property named
-              P:Telerik.Reporting.Barcodes.SwissQREncoder.QuietZone
+            To satisfy this requirement the [T:Telerik.Reporting.Barcodes.SwissQREncoder]() provides a dedicated property named
+              [P:Telerik.Reporting.Barcodes.SwissQREncoder.QuietZone]()
               that allows to set the width of the quiet zone in string format - i.e. *5mm*, *0.5cm* or *0.2in*.
             
 
@@ -49,6 +49,7 @@ The most important characteristics of the Swiss QR barcode are listed below:
             
 
 # See Also
+
 
  * [
           Swiss Implementation Guidelines QR-bill (PDF)

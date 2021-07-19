@@ -42,4 +42,5 @@ The look of the OHLC series markers can be changed in order to cover the two mos
 
 # See Also
 
- * [Chart Types]({%slug telerikreporting/designing-reports/report-structure/graph/chart-types/overview%})T:Telerik.Reporting.OhlcSeries
+
+ * [Chart Types]({%slug telerikreporting/designing-reports/report-structure/graph/chart-types/overview%})[T:Telerik.Reporting.OhlcSeries]()

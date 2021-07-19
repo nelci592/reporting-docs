@@ -32,9 +32,9 @@ The following list describes each area:
             area is automatically created when you add a column group. Cells in this area represent members of the column groups hierarchy, and
             display the column group instance values. In the figure, the cell that displays OrderDate.Year is column group. The columns Total
             and Grant Total displays the aggregated totals across each row. It can be repeated on every page that the table spans vertically on by
-            setting the P:Telerik.Reporting.Table.ColumnHeadersPrintOnEveryPage to true.
+            setting the [P:Telerik.Reporting.Table.ColumnHeadersPrintOnEveryPage]() to true.
             Column headers can also remain visible while scrolling vertically in Interactive mode of the HTML5-based viewers by setting
-            P:Telerik.Reporting.Table.FreezeColumnHeaders to true.
+            [P:Telerik.Reporting.Table.FreezeColumnHeaders]() to true.
           
 
 * __Row groups area__. (Optional) CrossTab row groups are located on the lower-left corner. This area is
@@ -42,9 +42,9 @@ The following list describes each area:
             group instance values. In the figure, the cells that display ProductCategory and ProductSubCategory are nested row groups. The Total
             row below ProductSubCategory repeats with each category group to show the aggregated subtotals for each column. The grand total row
             shows the totals for all categories. It can be repeated on every page that the table spans horizontally on by setting
-            P:Telerik.Reporting.Table.RowHeadersPrintOnEveryPage to true.
+            [P:Telerik.Reporting.Table.RowHeadersPrintOnEveryPage]() to true.
             Row headers can also remain visible while scrolling horizontally in Interactive mode of the HTML5-based viewers by setting
-            P:Telerik.Reporting.Table.FreezeRowHeaders to true.
+            [P:Telerik.Reporting.Table.FreezeRowHeaders]() to true.
           
 
 * __Body  area__. The CrossTab body is located in the lower right corner and it displays detail and grouped

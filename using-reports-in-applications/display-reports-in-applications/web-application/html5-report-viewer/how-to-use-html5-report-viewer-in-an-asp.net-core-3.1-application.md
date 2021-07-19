@@ -84,4 +84,5 @@ app.UseStaticFiles();
 
 # See Also
 
+
  * [.NET Core Support]({%slug telerikreporting/using-reports-in-applications/.net-core-support%})

@@ -29,8 +29,8 @@ When the
           [RadWindow](https://docs.telerik.com/devtools/wpf/controls/radwindow/overview)
           is closed, the report viewer disposes its resources. The RadWindow is optimized to be shown again without being instantiated,
           which would put the Report Viewer in an invalid state, because the report viewer model is already disposed, but not yet created.
-          In this scenario it is necessary to set the property P:Telerik.ReportViewer.Wpf.ReportViewer.AutoDisposeModel to __false__ to prevent disposing it when the RadWindow is closed.
-          The model can be explicitly disposed when necessary with calling the M:Telerik.ReportViewer.Wpf.ReportViewer.DisposeModel method.
+          In this scenario it is necessary to set the property [P:Telerik.ReportViewer.Wpf.ReportViewer.AutoDisposeModel]() to __false__ to prevent disposing it when the RadWindow is closed.
+          The model can be explicitly disposed when necessary with calling the [M:Telerik.ReportViewer.Wpf.ReportViewer.DisposeModel]() method.
         
 
 ## Hosting WPF Report Viewer in a RadTabItem which is not being removed from its RadTabControl
@@ -51,8 +51,8 @@ In this scenario the WPF Report Viewer is hosted in a
           [RadTabControl](https://docs.telerik.com/devtools/wpf/controls/radtabcontrol/overview2)
           host.
           Since the owner window is not closed, the disposal routine is not called and the report viewer doesn't release the occupied memory, because it holds a reference to its owner window.
-          In this scenario it is necessary to call the method M:Telerik.ReportViewer.Wpf.ReportViewer.DisposeViewerResources and make sure
-          the property P:Telerik.ReportViewer.Wpf.ReportViewer.AutoDisposeModel is set to its default value __true__.
+          In this scenario it is necessary to call the method [M:Telerik.ReportViewer.Wpf.ReportViewer.DisposeViewerResources]() and make sure
+          the property [P:Telerik.ReportViewer.Wpf.ReportViewer.AutoDisposeModel]() is set to its default value __true__.
           The disposal method can be called on
           [Unloaded](https://docs.microsoft.com/en-us/dotnet/api/system.windows.frameworkelement.unloaded)
 
@@ -65,4 +65,5 @@ The scenarios above are a few of the available variations of embedding the WPF R
           It is always advised to examine the memory consumption of the application and use the explicit methods of disposing the viewer resources if necessary.
         
 
-# See AlsoP:Telerik.ReportViewer.Wpf.ReportViewer.AutoDisposeModelM:Telerik.ReportViewer.Wpf.ReportViewer.DisposeViewerResourcesM:Telerik.ReportViewer.Wpf.ReportViewer.DisposeModel
+# See Also
+[P:Telerik.ReportViewer.Wpf.ReportViewer.AutoDisposeModel]()[M:Telerik.ReportViewer.Wpf.ReportViewer.DisposeViewerResources]()[M:Telerik.ReportViewer.Wpf.ReportViewer.DisposeModel]()

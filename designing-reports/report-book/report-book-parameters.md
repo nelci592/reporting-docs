@@ -19,8 +19,8 @@ Often one or more reports that are part of a report book will contain report par
         
 
 Telerik Reporting provides a mechanism known as parameter merging.
-          If the P:Telerik.Reporting.IReportParameter.Name
-          and P:Telerik.Reporting.IReportParameter.Type
+          If the [P:Telerik.Reporting.IReportParameter.Name]()
+          and [P:Telerik.Reporting.IReportParameter.Type]()
           of two (or more) parameters from different reports are the same,
           then they are considered equivalent and are displayed as a single parameter in the viewer's Parameters Area.
         
@@ -30,7 +30,7 @@ Telerik Reporting provides a mechanism known as parameter merging.
   ![](images/ReportBook3_MergedParameters.png)
 
 You can control parameter merging via the
-          P:Telerik.Reporting.IReportParameter.Mergeable boolean
+          [P:Telerik.Reporting.IReportParameter.Mergeable]() boolean
           property of the ReportParameter class. The default value of the Mergeable property is true. Set
           the Mergeable property to false if you want to prevent a parameter from being merged with its equivalent ones.
           
@@ -108,3 +108,4 @@ You can control parameter merging via the
 
 
 # See Also
+

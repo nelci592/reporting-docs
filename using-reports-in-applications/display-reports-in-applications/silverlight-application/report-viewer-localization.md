@@ -80,7 +80,7 @@ The above diagram illustrates a simple view of the resource fallback for a UI c
 1. __*Copy to Output Directory:*__ "*Copy if newer*" or "*Copy always*"
 
 1. Open the __RESX__ resource file in the __*Visual Studio Resource Editor*__. Enter the required 
-resource strings (T:Telerik.ReportViewer.Silverlight.TextResources) 
+resource strings ([T:Telerik.ReportViewer.Silverlight.TextResources]()) 
 to translate the __*Report Viewer*__ to the desired language.
 
 1. Unload the project by right clicking on it and selecting "Unload Project"
@@ -247,13 +247,14 @@ Instead of a hard-coded string the property can be set in a method/contructor or
 
 ## Related articles
 
-T:Telerik.ReportViewer.Silverlight.TextResources
+[T:Telerik.ReportViewer.Silverlight.TextResources]()
 
 [Silverlight Application]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/silverlight-application/overview%})
 
 [How to Add report viewer to a Silverlight application]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/silverlight-application/how-to-add-report-viewer-to-a-silverlight-application%})
 
 # See Also
+
 
  * [Hierarchical Organization of Resources for Localization](http://msdn2.microsoft.com/en-us/library/756hydy4(VS.71).aspx)
 

@@ -193,13 +193,13 @@ Below are listed the most important characteristics of a PDF document generated 
             
 
 * *Document Title* - the title should be provided from the device information settings object. In case it is unavailable, the
-              P:Telerik.Reporting.Report.DocumentName property
+              [P:Telerik.Reporting.Report.DocumentName]() property
               of the report will be used instead.
             
 
 * *Document Natural Language* - the document language should be provided from the device information settings object.
               In case it is unavailable, the __Name__ of the
-              P:Telerik.Reporting.Report.Culture property
+              [P:Telerik.Reporting.Report.Culture]() property
               of the report will be used instead.
             
 
@@ -219,6 +219,7 @@ The SVG rendering mode is controlled by a key in the device information settings
         
 
 # See Also
+
 
  * [Export Formats]({%slug telerikreporting/using-reports-in-applications/export-and-configure/export-formats%})
 

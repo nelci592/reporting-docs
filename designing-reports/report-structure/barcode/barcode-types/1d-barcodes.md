@@ -22,11 +22,11 @@ One-dimensional (1D) barcodes consists of lines and spaces of various widths tha
 This section describes the common settings for one-dimensional barcodes.
         
 
-* P:Telerik.Reporting.Barcodes.Encoder1D.ShowText - when true shows the text together with the bars.
+* [P:Telerik.Reporting.Barcodes.Encoder1D.ShowText]() - when true shows the text together with the bars.
             When the text is shown it can also be aligned horizontally by using the __TextAlign__ property of the
-              P:Telerik.Reporting.ReportItemBase.Style object and/or
+              [P:Telerik.Reporting.ReportItemBase.Style]() object and/or
               vertically through the __VerticalAlign__ property of the
-              P:Telerik.Reporting.ReportItemBase.Style object.
+              [P:Telerik.Reporting.ReportItemBase.Style]() object.
               
   ![barcode-textalign-property](images/Barcodes/barcode-textalign-property.png)  
   ![barcode-verticalalign-property](images/Barcodes/barcode-verticalalign-property.png)
@@ -114,4 +114,5 @@ GS1-128 is a special case of Code128. The only difference between GS1-128 and
 
 
 
-# See AlsoT:Telerik.Reporting.BarcodeP:Telerik.Reporting.Barcode.EncoderP:Telerik.Reporting.Barcode.BarAlignP:Telerik.Reporting.Barcode.ChecksumP:Telerik.Reporting.Barcode.ModuleP:Telerik.Reporting.Barcode.StretchP:Telerik.Reporting.Barcode.AngleT:Telerik.Reporting.Barcodes.Encoder1DP:Telerik.Reporting.Barcodes.Encoder1D.ShowText
+# See Also
+[T:Telerik.Reporting.Barcode]()[P:Telerik.Reporting.Barcode.Encoder]()[P:Telerik.Reporting.Barcode.BarAlign]()[P:Telerik.Reporting.Barcode.Checksum]()[P:Telerik.Reporting.Barcode.Module]()[P:Telerik.Reporting.Barcode.Stretch]()[P:Telerik.Reporting.Barcode.Angle]()[T:Telerik.Reporting.Barcodes.Encoder1D]()[P:Telerik.Reporting.Barcodes.Encoder1D.ShowText]()

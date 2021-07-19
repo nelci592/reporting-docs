@@ -14,12 +14,12 @@ position: 5
 
 The __restReportService__ element specifies the configuration settings for the REST report service.
         In order for this element to be respected the corresponding Reports service implementation should pass a
-        T:Telerik.Reporting.Services.ConfigSectionReportServiceConfiguration
+        [T:Telerik.Reporting.Services.ConfigSectionReportServiceConfiguration]()
         instance instead of a
-        T:Telerik.Reporting.Services.ReportServiceConfiguration
+        [T:Telerik.Reporting.Services.ReportServiceConfiguration]()
         instance. For example, initializing the 
-        P:Telerik.Reporting.Services.WebApi.ReportsControllerBase.ReportServiceConfiguration for the 
-        T:Telerik.Reporting.Services.WebApi.ReportsControllerBase instance would look like this:
+        [P:Telerik.Reporting.Services.WebApi.ReportsControllerBase.ReportServiceConfiguration]() for the 
+        [T:Telerik.Reporting.Services.WebApi.ReportsControllerBase]() instance would look like this:
       
 
 	
@@ -35,7 +35,7 @@ The __restReportService__ element specifies the configuration settings for the R
 
 
 Note that the initialization block does not have the 
-        P:Telerik.Reporting.Services.IReportServiceConfiguration.Storage property set, because it would 
+        [P:Telerik.Reporting.Services.IReportServiceConfiguration.Storage]() property set, because it would 
         override the values obtained from the configuration file.
       
 
@@ -147,6 +147,7 @@ JSON-based configuration file:
 
 
 # See Also
+
 
  * [How to implement the ReportsController in an application]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-web-api-implementation/how-to-implement-the-reportscontroller-in-an-application%})
 

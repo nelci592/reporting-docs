@@ -27,6 +27,7 @@ SqlDataSource, ObjectDataSource, EntityDataSource, OpenAccessDataSource, CubeDat
 
 # See Also
 
+
  * [Filtering Data]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/filtering-data/overview%})
 
  * [Using Parameters with the SqlDataSource component]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/sqldatasource-component/using-parameters-with-the-sqldatasource-component%})

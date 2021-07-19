@@ -28,7 +28,7 @@ This topic describes how to host the Telerik Reporting WCF Service in IIS. For t
 
 1. Add .svc file (e.g. __ReportService.svc__)
             to reference the
-            T:Telerik.Reporting.Service.ReportService.
+            [T:Telerik.Reporting.Service.ReportService]().
             The file would contain the following line only:
           #_ASP.NET_
 

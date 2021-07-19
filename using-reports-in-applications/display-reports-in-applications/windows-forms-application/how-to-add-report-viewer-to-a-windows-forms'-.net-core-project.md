@@ -25,6 +25,7 @@ This article explains the steps needed to integrate the WinForms report viewer t
 
 # See Also
 
+
  * [Report Viewer Localization]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/windows-forms-application/report-viewer-localization%})
 
  * [.NET Core Support]({%slug telerikreporting/using-reports-in-applications/.net-core-support%})

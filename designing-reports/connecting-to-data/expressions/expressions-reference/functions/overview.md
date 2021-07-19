@@ -27,6 +27,7 @@ Telerik Reporting provides many built-in functions and also lets you create user
 
 # See Also
 
+
  * [Aggregate Functions]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/functions/aggregate-functions%})
 
  * [Conversion Functions]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/functions/conversion-functions%})

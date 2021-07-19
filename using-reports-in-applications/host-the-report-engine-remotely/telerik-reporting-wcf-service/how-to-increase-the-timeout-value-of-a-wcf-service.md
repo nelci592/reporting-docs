@@ -64,7 +64,7 @@ For more information, see [Using Custom Bindings]({%slug telerikreporting/using-
 ## Timeouts when hosted in ASP.NET
 
 When a WCF service is hosted in IIS/ASP.NET, another setting would also control the lifetime of the request: 
-			P:System.Web.Configuration.HttpRuntimeSection.ExecutionTimeout.
+			[P:System.Web.Configuration.HttpRuntimeSection.ExecutionTimeout]().
 			
 
 	
@@ -80,3 +80,4 @@ When a WCF service is hosted in IIS/ASP.NET, another setting would also control 
 
 
 # See Also
+

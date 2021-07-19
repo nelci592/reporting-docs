@@ -37,6 +37,7 @@ For an example of how to set up the settings for a rendering extension, see [ext
 
 # See Also
 
+
  * [Device Information Settings]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-export-formats/overview%})
 
  * [Export Formats]({%slug telerikreporting/using-reports-in-applications/export-and-configure/export-formats%})

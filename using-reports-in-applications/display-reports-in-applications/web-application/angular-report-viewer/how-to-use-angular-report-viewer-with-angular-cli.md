@@ -33,7 +33,7 @@ The following list describes the prerequisites for this tutorial:
             
 
 * Copy of the "Product Catalog.trdp" report file from __[TelerikReporting_InstallDir]\Report Designer\Examples__
-              placed in the folder used by the T:Telerik.Reporting.Services.WebApi.ReportFileResolver
+              placed in the folder used by the [T:Telerik.Reporting.Services.WebApi.ReportFileResolver]()
               in the Reporting REST service implementation.
             
 
@@ -197,5 +197,6 @@ ng serve
 
 
 # See Also
+
 
  * [Make sure the service address is correct and enable CORS](https://docs.telerik.com/reporting/knowledge-base/cannot-access-the-reporting-rest-service)

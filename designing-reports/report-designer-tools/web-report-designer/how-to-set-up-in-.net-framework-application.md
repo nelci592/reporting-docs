@@ -49,7 +49,7 @@ The REST service works as a backend and is responsible for storage operations li
               project.
             
 
-1. Inherit the T:Telerik.Reporting.Services.WebApi.ReportDesignerControllerBase type
+1. Inherit the [T:Telerik.Reporting.Services.WebApi.ReportDesignerControllerBase]() type
               and setup the `ReportServiceConfiguration` instance. Notice that there is another configuration
               instance named `ReportDesignerServiceConfiguration`, which will initialize the definition storage.
               This is the class, responsible for opening, saving etc. the report definitions. This is how a basic
@@ -189,3 +189,4 @@ The *ReportDesignerController* we added above is configured to search for its re
             
 
 # See Also
+

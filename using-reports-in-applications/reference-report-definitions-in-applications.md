@@ -34,15 +34,15 @@ The report viewer is a UI component which is used to specify a report definition
         
 
 When working with an embedded report engine, the report source property accepts objects of the
-          T:Telerik.Reporting.ReportSource type.
+          [T:Telerik.Reporting.ReportSource]() type.
         
 
 When working with a remote report engine via a service, the
-          T:Telerik.Reporting.ReportSource
+          [T:Telerik.Reporting.ReportSource]()
           type might not be available, especially in client-server scenarios where the report engine is hosted in a different application.
           In such scenarios an intermediate report source has to be described (JSON object, custom C# type, etc.).
           The service which is responsible for accessing the report engine will try to translate this intermediate report source to an actual
-          T:Telerik.Reporting.ReportSource object.
+          [T:Telerik.Reporting.ReportSource]() object.
         
 
 For more details and examples on the different report sources, please refer to
@@ -53,9 +53,9 @@ For more details and examples on the different report sources, please refer to
 
 When the report engine is embedded in the current application (i.e. the *Telerik.Reporting* assembly is referenced)
           it is possible to use the Report Processor to manually render
-          (M:Telerik.Reporting.Processing.ReportProcessor.RenderReport(System.String,Telerik.Reporting.ReportSource,System.Collections.Hashtable))
+          ([M:Telerik.Reporting.Processing.ReportProcessor.RenderReport(System.String,Telerik.Reporting.ReportSource,System.Collections.Hashtable)]())
           or print
-          (M:Telerik.Reporting.Processing.ReportProcessor.PrintReport(Telerik.Reporting.ReportSource,System.Drawing.Printing.PrinterSettings))
+          ([M:Telerik.Reporting.Processing.ReportProcessor.PrintReport(Telerik.Reporting.ReportSource,System.Drawing.Printing.PrinterSettings)]())
           a report. For this purpose it is required to pass an argument of ReportSource type which uniquely identifies the report.
         
 
@@ -164,5 +164,6 @@ For this example we will use a TypeReportSource. The TypeReportSource specifies 
 
 
 # See Also
+
 
  * [Report Sources]({%slug telerikreporting/designing-reports/report-sources/overview%})

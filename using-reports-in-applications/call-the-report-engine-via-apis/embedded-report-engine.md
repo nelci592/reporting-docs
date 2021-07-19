@@ -14,7 +14,7 @@ position: 0
 
 ## Requirements
 
-To export a report, you can use the __M:Telerik.Reporting.Processing.ReportProcessor.RenderReport(System.String,Telerik.Reporting.ReportSource,System.Collections.Hashtable)__ method of the T:Telerik.Reporting.Processing.ReportProcessor class.
+To export a report, you can use the __[M:Telerik.Reporting.Processing.ReportProcessor.RenderReport(System.String,Telerik.Reporting.ReportSource,System.Collections.Hashtable)]()__ method of the [T:Telerik.Reporting.Processing.ReportProcessor]() class.
           This method converts the contents of the report to a byte array in the specified format, which you can then use
           with other classes such as
           [MemoryStream](http://msdn.microsoft.com/en-us/library/system.io.memorystream.aspx)
@@ -22,9 +22,9 @@ To export a report, you can use the __M:Telerik.Reporting.Processing.ReportProce
           .
         
 
-The M:Telerik.Reporting.Processing.ReportProcessor.RenderReport(System.String,Telerik.Reporting.ReportSource,System.Collections.Hashtable)
+The [M:Telerik.Reporting.Processing.ReportProcessor.RenderReport(System.String,Telerik.Reporting.ReportSource,System.Collections.Hashtable)]()
           method has two overloads, the first is used when rendering a single stream, the second when rendering multiple streams. The
-          available extensions used as first argument of the M:Telerik.Reporting.Processing.ReportProcessor.RenderReport(System.String,Telerik.Reporting.ReportSource,System.Collections.Hashtable)
+          available extensions used as first argument of the [M:Telerik.Reporting.Processing.ReportProcessor.RenderReport(System.String,Telerik.Reporting.ReportSource,System.Collections.Hashtable)]()
           method are listed in the [Export Formats]({%slug telerikreporting/using-reports-in-applications/export-and-configure/export-formats%}) article.
 
         
@@ -32,7 +32,7 @@ The M:Telerik.Reporting.Processing.ReportProcessor.RenderReport(System.String,Te
 ## Exporting a report to a single document format
 
 Some formats (MHTML, PDF, XLS(X), RTF, DOCX, PPTX, CSV) produce a single document which is handled by the first overload of the
-          M:Telerik.Reporting.Processing.ReportProcessor.RenderReport(System.String,Telerik.Reporting.ReportSource,System.Collections.Hashtable):
+          [M:Telerik.Reporting.Processing.ReportProcessor.RenderReport(System.String,Telerik.Reporting.ReportSource,System.Collections.Hashtable)]():
         
 
 {{source=CodeSnippets\CS\API\Telerik\Reporting\Processing\ReportProcessorSnippets.cs region=Export_Single_Stream_Snippet}}
@@ -143,8 +143,8 @@ Some formats (MHTML, PDF, XLS(X), RTF, DOCX, PPTX, CSV) produce a single documen
 
 Some formats produce multiple files, for example HTML outputs all pages and related resources (images)
           in separate streams. In order to render a report in a non-single document format (HTML and IMAGE except TIFF) one should use
-          the second M:Telerik.Reporting.Processing.ReportProcessor.RenderReport(System.String,Telerik.Reporting.ReportSource,System.Collections.Hashtable,Telerik.Reporting.Processing.CreateStream,System.String@)
-          overload that accepts a T:Telerik.Reporting.Processing.CreateStream callback. For this example we're going to render to JPEG, but you can
+          the second [M:Telerik.Reporting.Processing.ReportProcessor.RenderReport(System.String,Telerik.Reporting.ReportSource,System.Collections.Hashtable,Telerik.Reporting.Processing.CreateStream,System.String@)]()
+          overload that accepts a [T:Telerik.Reporting.Processing.CreateStream]() callback. For this example we're going to render to JPEG, but you can
           render a report in all graphic formats that GDI+ supports natively - this includes BMP, GIF, JPEG,
           PNG, TIFF and metafile (EMF). The [Windows Forms Application]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/windows-forms-application/overview%}) uses internally
           metafile for rendering the reports for viewing, and
@@ -270,5 +270,4 @@ Some formats produce multiple files, for example HTML outputs all pages and rela
 
 
 # See Also
-
-M:Telerik.Reporting.Processing.ReportProcessor.RenderReport(System.String,Telerik.Reporting.ReportSource,System.Collections.Hashtable)
+[M:Telerik.Reporting.Processing.ReportProcessor.RenderReport(System.String,Telerik.Reporting.ReportSource,System.Collections.Hashtable)]()

@@ -21,7 +21,7 @@ The Report Book TOC works in a similar manner to the TOC in a single report. The
         to be created and its TocSection to be configured. For more details on how to configure the TocSection, please see [Overview]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/table-of-contents/overview%}).
         The TocSection of this report, together with its Title, Levels, and Styles, will be used by the Report Book when the TOC for all reports is created.
         To tell the Report Book which report will be used for the Table of Contents, you need to configure the
-        P:Telerik.Reporting.ReportBook.TocReportSource property.
+        [P:Telerik.Reporting.ReportBook.TocReportSource]() property.
         For more information on the topic, please see [How to Add a Table of Contents to Report Book]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/table-of-contents/how-to-add-a-table-of-contents-to-report-book%}).
       
 
@@ -29,6 +29,7 @@ The Report Book TOC works in a similar manner to the TOC in a single report. The
 
 
 # See Also
+
 
  * [Overview]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/table-of-contents/overview%})
 

@@ -105,7 +105,7 @@ The above diagram illustrates a simple view of the resource fallback for a UI c
 
 1. 
             Open the __RESX__ resource file in the __*Visual Studio Resource Editor*__. Enter the required
-            resource strings (T:Telerik.ReportViewer.Wpf.TextResources)
+            resource strings ([T:Telerik.ReportViewer.Wpf.TextResources]())
             to translate the __*Report Viewer*__ to the desired language.
           
 
@@ -261,7 +261,7 @@ Instead of a hard-coded string the property can be set in a method/contructor or
 
 ## Related articles
 
-T:Telerik.ReportViewer.Wpf.TextResources
+[T:Telerik.ReportViewer.Wpf.TextResources]()
 
 [WPF Application]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/wpf-application/overview%})
 
@@ -270,6 +270,7 @@ T:Telerik.ReportViewer.Wpf.TextResources
 [Setting a Theme (Using Implicit Styles)]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/wpf-application/setting-a-theme-(using-implicit-styles)%})
 
 # See Also
+
 
  * [Hierarchical Organization of Resources for Localization](http://msdn2.microsoft.com/en-us/library/756hydy4(VS.71).aspx)
 

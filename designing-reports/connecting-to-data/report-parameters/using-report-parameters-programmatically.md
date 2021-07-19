@@ -38,8 +38,8 @@ In the report viewing application you can populate the values of
 
 
 At runtime you can access the report parameters through the 
-        P:Telerik.Reporting.Processing.Report.Parameters
-        dictionary. Each T:Telerik.Reporting.Processing.Parameter
+        [P:Telerik.Reporting.Processing.Report.Parameters]()
+        dictionary. Each [T:Telerik.Reporting.Processing.Parameter]()
         object contains resolved available values, current value and label. 
         The label returns the currently selected DisplayMember
         from the available values (if available values are defined).
@@ -138,3 +138,4 @@ Example:
   ![](images/DesignParameters009.png)
 
 # See Also
+

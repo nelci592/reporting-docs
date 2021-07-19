@@ -19,13 +19,13 @@ WinForms Report Viewer provides the capability to search in report contents. Sin
 
 ## Controlling Search Behavior
 
-The behavior of the search dialog depends on the P:Telerik.ReportViewer.WinForms.SearchMetadataOnDemand property.
+The behavior of the search dialog depends on the [P:Telerik.ReportViewer.WinForms.SearchMetadataOnDemand]() property.
           Its default value is __false__, which means that by default the processing engine will include search metadata in the rendering result of every
           report processing. As a result, the search dialog will be able to perform a search in report contents immediately. 
           This metadata is stored in the memory, so for a very huge reports it could cause a performance drawback.
         
 
-If the P:Telerik.ReportViewer.WinForms.SearchMetadataOnDemand property is set to
+If the [P:Telerik.ReportViewer.WinForms.SearchMetadataOnDemand]() property is set to
           __true__, the processing engine will not include the search metadata in the rendering result set. This metadata will be fetched "on demand",
           which will occur when the search dialog is shown. In this case the currently loaded in the viewer report will be processed once again to obtain the metadata and pass it
           to the search dialog.
@@ -76,3 +76,4 @@ The complex data items like Graph and Map provide metadata for each data point l
         as a consistent image, they will be entirely highlighted even when the search token matches any of their composite parts.
 
 # See Also
+

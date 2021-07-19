@@ -27,20 +27,20 @@ You can use shapes to create visual effects within a report. You can set display
 The properties that define the behavior of the Cross-section item are listed below:
 
 * __BeginSection__ - this property defines the report section from which the cross-section item will start. It can be any instance of
-              T:Telerik.Reporting.ReportSectionBase class: PageHeader, ReportHeader or GroupHeader.
+              [T:Telerik.Reporting.ReportSectionBase]() class: PageHeader, ReportHeader or GroupHeader.
             
 
 * __BeginMargin__ - this property defines the offset from the top of the __BeginSection__ measured in
-              T:Telerik.Reporting.Drawing.Units.
+              [T:Telerik.Reporting.Drawing.Unit]()s.
               The offset will be preserved if the __BeginSection__ changes its size at runtime.
             
 
 * __EndSection__ - this property defines the report section at which the cross-section item will end. It also can be any instance of
-              T:Telerik.Reporting.ReportSectionBase class: PageFooter, ReportFooter or GroupFooter.
+              [T:Telerik.Reporting.ReportSectionBase]() class: PageFooter, ReportFooter or GroupFooter.
             
 
 * __EndMargin__ - this property defines the offset from the bottom of the __EndSection__ measured in
-              T:Telerik.Reporting.Drawing.Units.
+              [T:Telerik.Reporting.Drawing.Unit]()s.
               The offset will be preserved if the __EndSection__ changes its size at runtime.
             
 
@@ -55,15 +55,15 @@ The properties that define the appearance of the Cross-section item are listed b
               It can be set to *Behind* or *Front*. The default value is *Behind*.
             
 
-The P:Telerik.Reporting.ReportItem.Location and
-          P:Telerik.Reporting.ReportItem.Size properties are calculated based on the
+The [P:Telerik.Reporting.ReportItem.Location]() and
+          [P:Telerik.Reporting.ReportItem.Size]() properties are calculated based on the
           *BeginSection*, *BeginMargin*, *EndSection* and *EndMargin* properties.
-          Changing the values of the P:Telerik.Reporting.ReportItem.Location- or
-          P:Telerik.Reporting.ReportItem.Size-related property like
-          P:Telerik.Reporting.ReportItem.Top,
-          P:Telerik.Reporting.ReportItem.Left,
-          P:Telerik.Reporting.ReportItem.Width or
-          P:Telerik.Reporting.ReportItem.Height will recalculate the values of
+          Changing the values of the [P:Telerik.Reporting.ReportItem.Location]()- or
+          [P:Telerik.Reporting.ReportItem.Size]()-related property like
+          [P:Telerik.Reporting.ReportItem.Top](),
+          [P:Telerik.Reporting.ReportItem.Left](),
+          [P:Telerik.Reporting.ReportItem.Width]() or
+          [P:Telerik.Reporting.ReportItem.Height]() will recalculate the values of
           *BeginSection*, *BeginMargin*, *EndSection* and *EndMargin* properties.
         
 
@@ -73,7 +73,7 @@ In most scenarios the *Begin-* and *End* sections would have matching types and 
 
 ## Instantiation and Design-Time Support
 
-Since the Cross-section item can refer to more than one report sections, its parent is the T:Telerik.Reporting.Report item.
+Since the Cross-section item can refer to more than one report sections, its parent is the [T:Telerik.Reporting.Report]() item.
           Hence the Cross-section item can be dragged from the designer's toolbox onto the designer surface without selecting any report section first.
           When the Cross-section item is moved or resized on the report designer surface, its Begin- and End-related properties are automatically calculated based on its current location and size and displayed in the Properties window.
         
@@ -155,5 +155,6 @@ The Cross-section item is not supported in all rendering extensions. Please chec
         
 
 # See Also
+
 
  * [Understanding Pagination]({%slug telerikreporting/designing-reports/rendering-and-paging/understanding-pagination%})

@@ -77,7 +77,7 @@ Our HTML5-based report viewers support the following important accessibility fea
 
 ## Supported accessibility features in HTML5-rendered report contents
 
-All the report items have a property called P:Telerik.Reporting.ReportItemBase.AccessibleDescription.
+All the report items have a property called [P:Telerik.Reporting.ReportItemBase.AccessibleDescription]().
           The property value is an expression and it determines what will be the accessibility label when the report is rendered.
           Its value is set as an
           [

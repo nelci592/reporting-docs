@@ -103,6 +103,7 @@ In order to distribute an application that uses __*Telerik Reporting*__
 
 # See Also
 
+
  * [Hierarchical Organization of Resources for Localization](http://msdn2.microsoft.com/en-us/library/756hydy4(VS.71).aspx)
 
  * [Setting the Culture and UI Culture for Web Forms Globalization](http://msdn2.microsoft.com/en-us/library/bz9tc508(VS.71).aspx)

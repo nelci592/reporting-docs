@@ -103,7 +103,8 @@ The HTML5-based report viewers use Telerik Reporting REST Service, which is an a
               application's __web.config__ and set the __dpiAwareness__ attribute to PROCESS_SYSTEM_DPI_AWARE.
             
 
-# See Also[](F25EB909-7941-4B78-B24C-4025257A26C4#dpiAware)
+# See Also
+[](F25EB909-7941-4B78-B24C-4025257A26C4#dpiAware)
 
  * [Creating a DPI-Aware Application](https://msdn.microsoft.com/en-us/library/ms701681(v=vs.85).aspx)
 

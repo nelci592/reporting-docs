@@ -112,7 +112,7 @@ On the following page you will set the fields that are specific to the choroplet
                 
 
 1. Set appropriate colors for the *Start color* and *End color* properties.
-                  They will be used to create a T:Telerik.Reporting.Drawing.GradientPalette, which
+                  They will be used to create a [T:Telerik.Reporting.Drawing.GradientPalette](), which
                   will distribute graded colors among the data points. The data points that have lower color values will receive colors from the palette
                   start, and vice versa - the data points with the higher color values will receive colors from the palette end.
                 
@@ -130,7 +130,7 @@ When you click the __Finish__ button, the map will display the choropleth map. A
 
 You will notice that some  areas (countries) on the map are transparent. These areas represent shapes that have no match with the analytical data set fields.
                   The choropleth displays all the shapes that are available in the spatial data set, but the data points are created only when the field from the
-                  analytical data set is matched with a field from the spatial data, using the T:Telerik.Reporting.MapRelationPairCollection.
+                  analytical data set is matched with a field from the spatial data, using the [T:Telerik.Reporting.MapRelationPairCollection]().
                 
 
 In our example we use a Shapefile for all the countries in the world, but we have analytical data for the 100 most populated countries. This means

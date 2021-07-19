@@ -21,8 +21,8 @@ A report can be divided into columns (imagine columns in a newspaper), that are 
     	there is enough space on the current physical page, the section is moved to a new logical page (column) and not to a new physical page.
     	
 
-Columns are specified using the P:Telerik.Reporting.DetailSection.ColumnCount property. 
-    	Column width is determined by the width of the report in design view. The P:Telerik.Reporting.DetailSection.ColumnSpacing 
+Columns are specified using the [P:Telerik.Reporting.DetailSection.ColumnCount]() property. 
+    	Column width is determined by the width of the report in design view. The [P:Telerik.Reporting.DetailSection.ColumnSpacing]() 
     	property is used to set the spacing in between the columns. The column width can be calculated as:
 
 Page width minus sum of left and right margins minus ColumnSpacing * (ColumnCount - 1). The result should be divided to the ColumnCount.
@@ -75,5 +75,6 @@ The following specifics are visible from the preview:
 * Page header and page footer sections span the actual width of the page, not the width of the column.
 
 # See Also
+
 
  * [How to: Create Multi-Column Report - Across the Page and Then Down](http://www.telerik.com/support/kb/reporting/details/how-to-create-multi-column-report---across-the-page-and-then-down)

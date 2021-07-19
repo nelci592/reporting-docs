@@ -91,6 +91,6 @@ For each sort expression, follow these steps:
 	        table1.Sortings.Add(sorting1)
 ````
 
-T:Telerik.Reporting.TableT:Telerik.Reporting.SortingT:Telerik.Reporting.SortingCollection
+[T:Telerik.Reporting.Table]()[T:Telerik.Reporting.Sorting]()[T:Telerik.Reporting.SortingCollection]()
 
  * [How to Add groups to Table item and Crosstab item]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/grouping-data-/how-to-add-groups-to-table-item-and-crosstab-item%})

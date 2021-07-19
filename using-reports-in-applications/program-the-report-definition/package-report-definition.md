@@ -12,7 +12,7 @@ position: 6
 
 
 
-The T:Telerik.Reporting.ReportPackager
+The [T:Telerik.Reporting.ReportPackager]()
         serializes the report definition in XML and with a zip compression packages the definition and its resources.
         The resources are in their native format and archived for better performance.
         This way the definition is faster to handle and more compact.
@@ -99,5 +99,6 @@ The following sample code snipped demonstrates how to unpackage a predefined .TR
 
 
 # See Also
+
 
  * [Overview]({%slug telerikreporting/designing-reports/report-designer-tools/overview%})

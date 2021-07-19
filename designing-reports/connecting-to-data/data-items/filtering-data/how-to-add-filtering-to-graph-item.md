@@ -79,6 +79,7 @@ If you need to filter data on retrieval, see [Using Parameters with Data Source 
 >tip The Graph item has a complex [structure]({%slug telerikreporting/designing-reports/report-structure/graph/structure%}) built by CategoryGroups and SeriesGroups collections, where each collection has its own Filters.            If you need to limit slots, filter the CategoryGroups collection. If you need to filter dynamically created series, filter the SeriesGroups collection.          The [Group Explorer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/group-explorer%}) can be used for checking the           Graph item's Series and Categories groups.          
 
 
-# See AlsoT:Telerik.Reporting.ChartT:Telerik.Reporting.FilterT:Telerik.Reporting.FilterCollection
+# See Also
+[T:Telerik.Reporting.Chart]()[T:Telerik.Reporting.Filter]()[T:Telerik.Reporting.FilterCollection]()
 
  * [Using Expressions]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/overview%})

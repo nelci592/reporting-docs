@@ -224,7 +224,7 @@ The REST service works as a backend and is responsible for storage operations li
               project.
             
 
-1. Inherit the T:Telerik.Reporting.Services.WebApi.ReportDesignerControllerBase
+1. Inherit the [T:Telerik.Reporting.Services.WebApi.ReportDesignerControllerBase]()
               type and inject the required configuration settings in the constructor. Along with the ReportServiceConfiguration
               there is another configuration instance named ReportDesignerServiceConfiguration, which will initialize the
               definition storage. This is the class responsible for opening, saving, etc. the report definitions. This is
@@ -318,3 +318,4 @@ Find the complete example setup of the Web Report Designer in the __AspNetCoreDe
         
 
 # See Also
+

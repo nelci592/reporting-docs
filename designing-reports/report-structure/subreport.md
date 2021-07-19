@@ -23,7 +23,7 @@ The SubReport report item lets you display one report within another report. It 
 
 
 
->caution Page sections are not related to the report itself, but are relative to the paper or 			screen. Thus page sections of nested/detail reports are ignored and only the page sections of the main report			are visible.In order to have sections that repeat on every page similar to page sections, consider using an unbound group 			(no grouping criteria specified) and set the P:Telerik.Reporting.GroupSection.PrintOnEveryPage 			property of its sections to True. Be aware that you cannot use  __PageCount__  and 			 __PageNumber__  global objects in group sections.
+>caution Page sections are not related to the report itself, but are relative to the paper or 			screen. Thus page sections of nested/detail reports are ignored and only the page sections of the main report			are visible.In order to have sections that repeat on every page similar to page sections, consider using an unbound group 			(no grouping criteria specified) and set the [P:Telerik.Reporting.GroupSection.PrintOnEveryPage]() 			property of its sections to True. Be aware that you cannot use  __PageCount__  and 			 __PageNumber__  global objects in group sections.
 
 
 
@@ -38,8 +38,9 @@ To remove blank vertical space in the detail section of a __SubReport__, set the
 
 # See Also
 
+
  * [How to configure a ReportSource for a SubReport]({%slug telerikreporting/designing-reports/report-sources/how-to-set-reportsource-for-subreport%})
 
  * [How to create a Master-Detail report using a SubReport]({%slug telerikreporting/designing-reports/report-structure/how-to/how-to-create-a-master-detail-report-using-a-subreport-item%})
 
- * [How to bind a SubReport to the parent report's data](https://www.telerik.com/support/kb/reporting/details/how-to-bind-sub-report-to-main-report-s-data)T:Telerik.Reporting.SubReportP:Telerik.Reporting.SubReport.ReportSource
+ * [How to bind a SubReport to the parent report's data](https://www.telerik.com/support/kb/reporting/details/how-to-bind-sub-report-to-main-report-s-data)[T:Telerik.Reporting.SubReport]()[P:Telerik.Reporting.SubReport.ReportSource]()

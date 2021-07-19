@@ -12,41 +12,41 @@ position: 6
 
 
 
-The T:Telerik.Reporting.ShapeMapSeries uses its own source to obtain a set of coordinates which will
+The [T:Telerik.Reporting.ShapeMapSeries]() uses its own source to obtain a set of coordinates which will
         determine the shape of the data points. These series does not use a LocationProvider or a GeoLocationMapGroup, because the data points
-        are not determined by a single location on the map surface, as with the T:Telerik.Reporting.LocationMapSeriesAdding a ShapeMapSeries instance to the map
+        are not determined by a single location on the map surface, as with the [T:Telerik.Reporting.LocationMapSeries]()Adding a ShapeMapSeries instance to the map
 
 To add new ShapeMap series to the map follow these steps:
         
 
 1. Open __Series__ collection editor and __Add__ new
-              T:Telerik.Reporting.ShapeMapSeries item, as shown below:
+              [T:Telerik.Reporting.ShapeMapSeries]() item, as shown below:
               
   ![Choropleth Add Shape Map Series](images/Map/Choropleth/Choropleth_AddShapeMapSeries.png)
 
-1. Set the P:Telerik.Reporting.ShapeMapSeries.ShapeMapGroup to an existing
-              T:Telerik.Reporting.ShapeMapGroup instance or create a new one from scratch.
+1. Set the [P:Telerik.Reporting.ShapeMapSeries.ShapeMapGroup]() to an existing
+              [T:Telerik.Reporting.ShapeMapGroup]() instance or create a new one from scratch.
             
 
-1. Set the P:Telerik.Reporting.MapSeriesBase.SeriesGroup to an existing
-              T:Telerik.Reporting.MapGroup instance or create a new one from scratch.
+1. Set the [P:Telerik.Reporting.MapSeriesBase.SeriesGroup]() to an existing
+              [T:Telerik.Reporting.MapGroup]() instance or create a new one from scratch.
             
 
-1. Set an expression for the P:Telerik.Reporting.ShapeMapSeries.ColorData field to define the value
+1. Set an expression for the [P:Telerik.Reporting.ShapeMapSeries.ColorData]() field to define the value
               that will be used to calculate the data point color.
             
 
-1. Set the P:Telerik.Reporting.ShapeMapSeries.RangeGrouping property to one of the available options:
+1. Set the [P:Telerik.Reporting.ShapeMapSeries.RangeGrouping]() property to one of the available options:
               None, EqualInterval or EqualDistribution.
               __None__ means that no grouping will be used and every data point will be colored according to its respective color data value.
               __EqualInterval__ will split the interval between the minimum and maximum values by the colors count, assigning a separate color to each interval.
               __EqualDistribution__ will try to distribute the data evenly among the groups defined by the ColorsCount property, assigning a separate color to each group.
             
 
->note When the  __RangeGrouping__  property is set to  __None__ ,                the P:Telerik.Reporting.ShapeMapSeries.ColorsCount value is not respected.              
+>note When the  __RangeGrouping__  property is set to  __None__ ,                the [P:Telerik.Reporting.ShapeMapSeries.ColorsCount]() value is not respected.              
 
 
-1. Set the P:Telerik.Reporting.ShapeMapSeries.ColorsCount property depending on on how many groups
+1. Set the [P:Telerik.Reporting.ShapeMapSeries.ColorsCount]() property depending on on how many groups
               you would want to split the data values. When the __RangeGrouping__ is set to __None__, the legend
               will contain only two items, showing the minimum and maximum data values. However, if the data set contains less records than the desired
               colors count, the legend will display items only for the available data records.              
@@ -56,9 +56,9 @@ To add new ShapeMap series to the map follow these steps:
               `RangeMax` that determine the minimum and maximum values of the respective data range.
             
 
-1. Setup the P:Telerik.Reporting.GraphSeriesBase.ColorPalette property in order to define a range of
+1. Setup the [P:Telerik.Reporting.GraphSeriesBase.ColorPalette]() property in order to define a range of
               colors that will be used when displaying the data points. In the most cases the
-              T:Telerik.Reporting.Drawing.GradientPalette will be the best choice.
+              [T:Telerik.Reporting.Drawing.GradientPalette]() will be the best choice.
             
 
 1. 

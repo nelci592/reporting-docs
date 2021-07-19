@@ -46,7 +46,7 @@ If you want to use the True print, the following requirements must be satisfied:
           
 
 * 
-            (Silverlight viewer only) P:Telerik.ReportViewer.Silverlight.ReportViewer.UseNativePrinting
+            (Silverlight viewer only) [P:Telerik.ReportViewer.Silverlight.ReportViewer.UseNativePrinting]()
             property should be false. Telerik Reporting WCF Service should be properly configured e.g. resource endpoint should be present.
             See [How to Add Telerik Reporting WCF Service to Web Application]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-wcf-service/how-to-add-telerik-reporting-wcf-service-to-web-application%}).
           
@@ -59,7 +59,7 @@ If you want to use the True print, the following requirements must be satisfied:
 * (Internet Explorer only) ActiveX Filtering should be disabled.
 
 The [Silverlight report viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/silverlight-application/overview%}) additionally supports Silverlight Native print so you can
-          avoid the True print requirements. In order to enable the Silverlight native print set the P:Telerik.ReportViewer.Silverlight.ReportViewer.UseNativePrinting
+          avoid the True print requirements. In order to enable the Silverlight native print set the [P:Telerik.ReportViewer.Silverlight.ReportViewer.UseNativePrinting]()
           property to True.
         
 
@@ -67,3 +67,4 @@ The [Silverlight report viewer]({%slug telerikreporting/using-reports-in-applica
 
 
 # See Also
+

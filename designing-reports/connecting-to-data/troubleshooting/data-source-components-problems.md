@@ -58,7 +58,7 @@ The SqlDataSource component uses the installed on the machine .NET data provider
                 error on preview
               __The expired timeout can be caused by data retrieval operation taking too much time on the server. Test extending the connection
               timeout through the connection string. If the SQL command requires more time to be executed, increase the value of the
-              P:Telerik.Reporting.SqlDataSource.CommandTimeout property.
+              [P:Telerik.Reporting.SqlDataSource.CommandTimeout]() property.
             
 
 * __

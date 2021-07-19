@@ -91,4 +91,5 @@ One thing to keep in mind is that these properties are related to the data, whic
 
 
 
-# See AlsoT:Telerik.Reporting.BarcodeT:Telerik.Reporting.Barcodes.PDF417EncoderP:Telerik.Reporting.Barcodes.PDF417Encoder.ColumnsP:Telerik.Reporting.Barcodes.PDF417Encoder.EncodingP:Telerik.Reporting.Barcodes.PDF417Encoder.ErrorCorrectionLevelP:Telerik.Reporting.Barcodes.PDF417Encoder.Rows
+# See Also
+[T:Telerik.Reporting.Barcode]()[T:Telerik.Reporting.Barcodes.PDF417Encoder]()[P:Telerik.Reporting.Barcodes.PDF417Encoder.Columns]()[P:Telerik.Reporting.Barcodes.PDF417Encoder.Encoding]()[P:Telerik.Reporting.Barcodes.PDF417Encoder.ErrorCorrectionLevel]()[P:Telerik.Reporting.Barcodes.PDF417Encoder.Rows]()

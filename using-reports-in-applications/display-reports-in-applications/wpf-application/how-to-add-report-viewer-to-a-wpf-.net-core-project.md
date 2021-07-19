@@ -25,6 +25,7 @@ This article explains the steps needed to integrate the WPF report viewer to a .
 
 # See Also
 
+
  * [.NET Core Support]({%slug telerikreporting/using-reports-in-applications/.net-core-support%})
 
  * [Report Viewer Localization]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/wpf-application/report-viewer-localization%})

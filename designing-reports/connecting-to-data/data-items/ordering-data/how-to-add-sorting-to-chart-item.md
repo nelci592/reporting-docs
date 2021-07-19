@@ -60,4 +60,4 @@ For each sort expression, follow these steps:
 	        chart1.Sortings.Add(sorting1)
 ````
 
-T:Telerik.Reporting.ChartT:Telerik.Reporting.SortingT:Telerik.Reporting.SortingCollection
+[T:Telerik.Reporting.Chart]()[T:Telerik.Reporting.Sorting]()[T:Telerik.Reporting.SortingCollection]()

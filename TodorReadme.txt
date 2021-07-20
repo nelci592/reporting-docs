@@ -69,4 +69,13 @@ Implement this change for all occurrencies above
 
 
 
+Change links from conceptual articles to api-ref articles like:
+<codeEntityReference qualifyHint="false" autoUpgrade="true">M:Telerik.Reporting.Processing.ReportProcessor.RenderReport(System.String,Telerik.Reporting.ReportSource,System.Collections.Hashtable)</codeEntityReference>
+		  
+[RenderReport](/reporting/api/Telerik.Reporting.Processing.ReportProcessor.html#collapsible-Telerik_Reporting_Processing_ReportProcessor_RenderReport_System_String_Telerik_Reporting_ReportSource_System_Collections_Hashtable_)
+
+
+
+
+
 Merge TOC of documentation and API reference - D:\Work\reporting-docs\_assetsApi\api\index.md - change this file accordingly

@@ -36,11 +36,37 @@ template:
 Final - run in D:\Work
 msbuild /p:LatestBinariesPath="\\telerik.com\distributions\DailyBuilds\REPORTING\2021-07-19\Reporting\R2 2021 SP1\03-48\DEV\bin";DocsRepoName=reporting-docs;DocumentationBaseUrl=https://docs.telerik.com/reporting/;DocsRepoApiAssetsFolder=_assetsApi docs-seed/_buildApi/BuildApiReference.proj
 
+Test - run in D:\Work
+msbuild /p:LatestBinariesPath="D:\Work\MdDocs\Examples\CSharp\.NET Framework\Html5IntegrationDemo\bin";DocsRepoName=reporting-docs;DocumentationBaseUrl=https://docs.telerik.com/reporting/;DocsRepoApiAssetsFolder=_assetsApi docs-seed/_buildApi/BuildApiReference.proj
+
 Петър Милчев - Ajax support
 
 
+Branch Development\MdDocs
 Once the converter generates the mapping between SandCastle article ID and the new MD article address, the tool should update the corresponding IDs in the API Reference of our code files
 OR
 replace them manually - 40 in 28 files. Search by "<conceptualLink target"
+Example that worked locally, from Telerik.Reporting.xml after build:
+"
+<member name="P:Telerik.Reporting.CheckBox.Text">
+    <summary>
+    Gets or sets the current text (aka label) in the check box.
+    </summary>
+    <value>
+    A <see cref="T:System.String"/> started with "=" is interpreted as
+    an expression to calculate the real data,
+    otherwise - literal string. 
+    
+	Supports <conceptualLink target="e7d7b24c-decd-45c2-91b4-0f2b9e28271c">embedded expressions</conceptualLink> also.  -------------- OLD
+	
+	Supports <a href="../designing-reports/connecting-to-data/expressions/using-expressions/embedded-expressions">embedded expressions</a> also. ----------- NEW - WORKS
+	
+    </value>
+</member>
+"
+Implement this change for all occurrencies above
 
-Merge TOC of documentation and API reference
+
+
+
+Merge TOC of documentation and API reference - D:\Work\reporting-docs\_assetsApi\api\index.md - change this file accordingly

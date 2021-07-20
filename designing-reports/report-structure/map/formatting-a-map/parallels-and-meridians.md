@@ -54,7 +54,7 @@ When you are done, click OK.
                 
 
 # See Also
-[T:Telerik.Reporting.GraticuleLine]()[T:Telerik.Reporting.Drawing.Style]()
+[GraticuleLine](/reporting/api/Telerik.Reporting.GraticuleLine)[Style](/reporting/api/Telerik.Reporting.Drawing.Style)
 
  * [Map Overview]({%slug telerikreporting/designing-reports/report-structure/map/structure/overview%})
 

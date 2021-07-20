@@ -20,9 +20,9 @@ The CheckBox report item is used to display both text and a check mark on a repo
 ## Growing and Shrinking
 
 By default, CheckBox items are a set size. If you want to allow a CheckBox to expand vertically based on its contents,
-          set the [P:Telerik.Reporting.TextItemBase.CanGrow]() property to True (default value).
+          set the [CanGrow](/reporting/api/Telerik.Reporting.TextItemBase#collapsible-Telerik_Reporting_TextItemBase_CanGrow) property to True (default value).
           If you want to allow a CheckBox to shrink based on its contents set the
-          [P:Telerik.Reporting.TextItemBase.CanShrink]() property to
+          [CanShrink](/reporting/api/Telerik.Reporting.TextItemBase#collapsible-Telerik_Reporting_TextItemBase_CanShrink) property to
           True (default value is False). The CheckBox would always grow to accomodate the first line of text even when CanGrow is False.
         
 
@@ -73,4 +73,4 @@ And here is the final result:
 
 
 # See Also
-[T:Telerik.Reporting.CheckBox]()[P:Telerik.Reporting.CheckBox.CheckAlign]()[P:Telerik.Reporting.CheckBox.CheckedImage]()[P:Telerik.Reporting.CheckBox.UncheckedImage]()[P:Telerik.Reporting.CheckBox.FalseValue]()[P:Telerik.Reporting.CheckBox.IndeterminateImage]()[P:Telerik.Reporting.CheckBox.IndeterminateValue]()[P:Telerik.Reporting.CheckBox.Text]()[P:Telerik.Reporting.CheckBox.TrueValue]()
+[Telerik.Reporting.CheckBox](/reporting/api/Telerik.Reporting.CheckBox)[CheckAlign](/reporting/api/Telerik.Reporting.CheckBox#collapsible-Telerik_Reporting_CheckBox_CheckAlign)[CheckedImage](/reporting/api/Telerik.Reporting.CheckBox#collapsible-Telerik_Reporting_CheckBox_CheckedImage)[UncheckedImage](/reporting/api/Telerik.Reporting.CheckBox#collapsible-Telerik_Reporting_CheckBox_UncheckedImage)[FalseValue](/reporting/api/Telerik.Reporting.CheckBox#collapsible-Telerik_Reporting_CheckBox_FalseValue)[IndeterminateImage](/reporting/api/Telerik.Reporting.CheckBox#collapsible-Telerik_Reporting_CheckBox_IndeterminateImage)[IndeterminateValue](/reporting/api/Telerik.Reporting.CheckBox#collapsible-Telerik_Reporting_CheckBox_IndeterminateValue)[Text](/reporting/api/Telerik.Reporting.CheckBox#collapsible-Telerik_Reporting_CheckBox_Text)[TrueValue](/reporting/api/Telerik.Reporting.CheckBox#collapsible-Telerik_Reporting_CheckBox_TrueValue)

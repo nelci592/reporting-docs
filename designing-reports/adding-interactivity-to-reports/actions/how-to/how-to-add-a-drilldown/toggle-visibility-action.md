@@ -109,4 +109,4 @@ A report item can initially display or be hidden when a user views a report. The
 
  * [Drillthrough Report Action]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/actions/drillthrough-report-action%})
 
- * [How to Add a Drillthrough/Navigate To Report Action]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/actions/how-to/how-to-add-a-drillthrough/navigate-to-report-action%})[T:Telerik.Reporting.ToggleVisibilityAction]()
+ * [How to Add a Drillthrough/Navigate To Report Action]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/actions/how-to/how-to-add-a-drillthrough/navigate-to-report-action%})[ToggleVisibilityAction](/reporting/api/Telerik.Reporting.ToggleVisibilityAction)

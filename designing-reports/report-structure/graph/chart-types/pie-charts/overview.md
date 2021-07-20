@@ -85,20 +85,20 @@ By default, the layout engine will try to arrange the data labels so they do not
 * Change pie labels position through the __DataPointLabelAlignment__ property of the series.
             
 
-* Set the [P:Telerik.Reporting.BarSeries.DataPointLabelOffset]() to a greater value
+* Set the [DataPointLabelOffset](/reporting/api/Telerik.Reporting.BarSeries#collapsible-Telerik_Reporting_BarSeries_DataPointLabelOffset) to a greater value
               so the labels will be arranged around a circle with a bigger radius.
             
 
 For Pie Charts with lots of data points the best approach might be to use a combination of the above-mentioned approaches.
           The following image shows a chart series that has its
-          [P:Telerik.Reporting.BarSeries.DataPointLabelAlignment]() set to __OutsideColumn__,
-          [P:Telerik.Reporting.BarSeries.DataPointLabelOffset]() set to __0.5cm__
-          and [P:Telerik.Reporting.BarSeries.DataPointLabelConnectorStyle]()__.Visible__
+          [DataPointLabelAlignment](/reporting/api/Telerik.Reporting.BarSeries#collapsible-Telerik_Reporting_BarSeries_DataPointLabelAlignment) set to __OutsideColumn__,
+          [DataPointLabelOffset](/reporting/api/Telerik.Reporting.BarSeries#collapsible-Telerik_Reporting_BarSeries_DataPointLabelOffset) set to __0.5cm__
+          and [DataPointLabelConnectorStyle](/reporting/api/Telerik.Reporting.BarSeries#collapsible-Telerik_Reporting_BarSeries_DataPointLabelConnectorStyle)__.Visible__
           set to __true__.
           
   ![Outside Column Pie Chart](images/Graph/OutsideColumnPieChart.png)
 
->note The algorithm that moves the data point labels, preventing them from overlapping, is activated only when the labels have their            [P:Telerik.Reporting.GraphSeriesBase.DataPointLabelAngle]() set to a multiple of  __2*π__  radians in degrees (i.e. 0, 360, etc.).          
+>note The algorithm that moves the data point labels, preventing them from overlapping, is activated only when the labels have their            [DataPointLabelAngle](/reporting/api/Telerik.Reporting.GraphSeriesBase#collapsible-Telerik_Reporting_GraphSeriesBase_DataPointLabelAngle) set to a multiple of  __2*π__  radians in degrees (i.e. 0, 360, etc.).          
 
 
 ## Merging Small Slices on a Pie Chart
@@ -107,23 +107,23 @@ Based on the data, a pie chart may produce too many slices, resulting in unreada
           To overcome this, slices that are determined insignificant based on particular criteria can be merged into a single dedicated slice on the pie chart.
         
 
-The merging setup is controlled by the [P:Telerik.Reporting.BarSeries.MergedDataPoints]() property 
+The merging setup is controlled by the [Telerik.Reporting.BarSeries.MergedDataPoints](/reporting/api/Telerik.Reporting.BarSeries#collapsible-Telerik_Reporting_BarSeries_MergedDataPoints) property 
           found under the Layout properties category of the bar series.
         
 
-To turn on the merge logic, change the [P:Telerik.Reporting.MergedDataPoints.MergeMode]() property 
+To turn on the merge logic, change the [Telerik.Reporting.MergedDataPoints.MergeMode](/reporting/api/Telerik.Reporting.MergedDataPoints#collapsible-Telerik_Reporting_MergedDataPoints_MergeMode) property 
           from __None__ to __SingleSlice__. Next thing is to choose between four different modes (algorithms) 
           for splitting the slices (or data points) to significant ones and small ones. This is controlled from the 
-          [P:Telerik.Reporting.MergedDataPoints.ThresholdMode]() property values, 
-          which can be found in the [T:Telerik.Reporting.ThresholdMode]() enumeration.
-          Based on the chosen mode, an appropriate [P:Telerik.Reporting.MergedDataPoints.ThresholdValue]() should be set.
-          The value of each slice being considered for merging is evaluated over the [P:Telerik.Reporting.BarSeries.X]() property.
-          [P:Telerik.Reporting.MergedDataPoints.ThresholdMode]() supports expressions. 
+          [Telerik.Reporting.MergedDataPoints.ThresholdMode](/reporting/api/Telerik.Reporting.MergedDataPoints#collapsible-Telerik_Reporting_MergedDataPoints_ThresholdMode) property values, 
+          which can be found in the [Telerik.Reporting.ThresholdMode](/reporting/api/Telerik.Reporting.ThresholdMode) enumeration.
+          Based on the chosen mode, an appropriate [Telerik.Reporting.MergedDataPoints.ThresholdValue](/reporting/api/Telerik.Reporting.MergedDataPoints#collapsible-Telerik_Reporting_MergedDataPoints_ThresholdValue) should be set.
+          The value of each slice being considered for merging is evaluated over the [Telerik.Reporting.BarSeries.X](/reporting/api/Telerik.Reporting.BarSeries#collapsible-Telerik_Reporting_BarSeries_X) property.
+          [Telerik.Reporting.MergedDataPoints.ThresholdMode](/reporting/api/Telerik.Reporting.MergedDataPoints#collapsible-Telerik_Reporting_MergedDataPoints_ThresholdMode) supports expressions. 
           The expression must evaluate to the needed number type.
         
 
 By default, the merged slice is labeled in the chart’s legend as __Others__. You can change this by setting the 
-          [P:Telerik.Reporting.MergedDataPoints.LegendItemLabel](). It supports expressions.
+          [Telerik.Reporting.MergedDataPoints.LegendItemLabel](/reporting/api/Telerik.Reporting.MergedDataPoints#collapsible-Telerik_Reporting_MergedDataPoints_LegendItemLabel). It supports expressions.
         
 
 The styling of the merged data point, its label or the corresponding legend item can be customized using the corresponding Conditional Formatting property using the Filter:
@@ -134,4 +134,4 @@ The styling of the merged data point, its label or the corresponding legend item
 # See Also
 
 
- * [Chart Types]({%slug telerikreporting/designing-reports/report-structure/graph/chart-types/overview%})[T:Telerik.Reporting.BarSeries]()[P:Telerik.Reporting.GraphSeriesBase.DataPointLabelStyle]()[P:Telerik.Reporting.GraphSeriesBase.DataPointLabel]()[P:Telerik.Reporting.BarSeries.DataPointLabelAlignment]()
+ * [Chart Types]({%slug telerikreporting/designing-reports/report-structure/graph/chart-types/overview%})[BarSeries](/reporting/api/Telerik.Reporting.BarSeries)[DataPointLabelStyle](/reporting/api/Telerik.Reporting.GraphSeriesBase#collapsible-Telerik_Reporting_GraphSeriesBase_DataPointLabelStyle)[DataPointLabel](/reporting/api/Telerik.Reporting.GraphSeriesBase#collapsible-Telerik_Reporting_GraphSeriesBase_DataPointLabel)[DataPointLabelAlignment](/reporting/api/Telerik.Reporting.BarSeries#collapsible-Telerik_Reporting_BarSeries_DataPointLabelAlignment)

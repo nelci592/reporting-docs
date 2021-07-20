@@ -92,4 +92,4 @@ One thing to keep in mind is that these properties are related to the data, whic
 
 
 # See Also
-[T:Telerik.Reporting.Barcode]()[T:Telerik.Reporting.Barcodes.PDF417Encoder]()[P:Telerik.Reporting.Barcodes.PDF417Encoder.Columns]()[P:Telerik.Reporting.Barcodes.PDF417Encoder.Encoding]()[P:Telerik.Reporting.Barcodes.PDF417Encoder.ErrorCorrectionLevel]()[P:Telerik.Reporting.Barcodes.PDF417Encoder.Rows]()
+[Telerik.Reporting.Barcode](/reporting/api/Telerik.Reporting.Barcode)[Telerik.Reporting.Barcodes.PDF417Encoder](/reporting/api/Telerik.Reporting.Barcodes.PDF417Encoder)[Columns](/reporting/api/Telerik.Reporting.Barcodes.PDF417Encoder#collapsible-Telerik_Reporting_Barcodes_PDF417Encoder_Columns)[Encoding](/reporting/api/Telerik.Reporting.Barcodes.PDF417Encoder#collapsible-Telerik_Reporting_Barcodes_PDF417Encoder_Encoding)[ErrorCorrectionLevel](/reporting/api/Telerik.Reporting.Barcodes.PDF417Encoder#collapsible-Telerik_Reporting_Barcodes_PDF417Encoder_ErrorCorrectionLevel)[Rows](/reporting/api/Telerik.Reporting.Barcodes.PDF417Encoder#collapsible-Telerik_Reporting_Barcodes_PDF417Encoder_Rows)

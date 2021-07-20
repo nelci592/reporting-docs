@@ -19,7 +19,7 @@ The Graph item supports actions on the axis labels defined by the Graph's catego
 The labels for an axis with __CategoryScale__ are produced by the graph's category groups.
         They are layout in levels based on the corresponding category group from the group hierarchy.
         Graph groups that are part of the
-        [P:Telerik.Reporting.Graph.CategoryGroups]()
+        [CategoryGroups](/reporting/api/Telerik.Reporting.Graph#collapsible-Telerik_Reporting_Graph_CategoryGroups)
         hierarchy support interactive actions.
         The added actions will make the graph axis labels interactive (clickable).
       
@@ -72,4 +72,4 @@ Adding an action to a series group is identical to the approach shown above.
 # See Also
 
 
- * [Actions]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/actions/overview%})[P:Telerik.Reporting.GraphGroup.Action]()
+ * [Actions]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/actions/overview%})[Action](/reporting/api/Telerik.Reporting.GraphGroup#collapsible-Telerik_Reporting_GraphGroup_Action)

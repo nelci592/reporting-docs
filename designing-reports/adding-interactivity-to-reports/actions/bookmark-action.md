@@ -16,7 +16,7 @@ A bookmark action is a link that a user clicks to move to another area or report
     	set a bookmark on the destination report item and add bookmark action on report items that users should click to jump 
        	to the bookmarked report item. You can set bookmarks on any report item, including text boxes,
     	images, charts, and gauges. You can add multiple bookmark actions to the same bookmark. To define a bookmark action add a 
-       	[T:Telerik.Reporting.NavigateToBookmarkAction]() on another report item/section.
+       	[NavigateToBookmarkAction](/reporting/api/Telerik.Reporting.NavigateToBookmarkAction) on another report item/section.
     	
 
 # See Also

@@ -36,4 +36,4 @@ Anchor and Dock both require parent item to have KeepTogether turned on (KeepTog
 
 
 # See Also
-[P:Telerik.Reporting.ReportItem.Anchoring]()[P:Telerik.Reporting.ReportItem.Docking]()
+[Anchoring](/reporting/api/Telerik.Reporting.ReportItem#collapsible-Telerik_Reporting_ReportItem_Anchoring)[Docking](/reporting/api/Telerik.Reporting.ReportItem#collapsible-Telerik_Reporting_ReportItem_Docking)

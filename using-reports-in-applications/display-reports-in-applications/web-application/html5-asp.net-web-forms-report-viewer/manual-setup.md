@@ -21,7 +21,7 @@ This tutorial shows how to use HTML5 ASP.NET Web Forms Report Viewer in ASP.NET 
             
 
 * Copy of the "Product Catalog.trdx" report file from __[TelerikReporting_InstallDir]\ReportDesigner\Examples__
-              in the folder used by the [T:Telerik.Reporting.Services.WebApi.ReportFileResolver]()
+              in the folder used by the [ReportFileResolver](/reporting/api/Telerik.Reporting.Services.WebApi.ReportFileResolver)
               in the Reporting REST service implementation.
             
 
@@ -123,7 +123,7 @@ Switch to the Design view of the Web Form and drag the viewer from Visual Studio
 Configure the HTML5 ASP.NET Web Forms Report Viewer ReportSource using Visual Studio Property Grid. 
                 For this you can use the  "Product Catalog.trdp" report file (Prerequisites).
 
->tip If you use a UriReportSource, the Identifier must point to a TRDP/TRDX file's path that will be mapped to the                        folder used by the [T:Telerik.Reporting.Services.WebApi.ReportFileResolver]()                        in the Reporting REST service implementation.                      
+>tip If you use a UriReportSource, the Identifier must point to a TRDP/TRDX file's path that will be mapped to the                        folder used by the [ReportFileResolver](/reporting/api/Telerik.Reporting.Services.WebApi.ReportFileResolver)                        in the Reporting REST service implementation.                      
 
 
 >tip Verify the modified settings are written in the markup. If not, the viewer will use the default settings visible in Visual Studio                    Property Grid                  

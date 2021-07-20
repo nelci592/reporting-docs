@@ -12,7 +12,7 @@ position: 0
 
 
 
-The [T:Telerik.Reporting.WebServiceDataSource]() component enables data items to display data located on a service in JSON format,
+The [WebServiceDataSource](/reporting/api/Telerik.Reporting.WebServiceDataSource) component enables data items to display data located on a service in JSON format,
         while using no code. Using WebServiceDataSource allows you to access and display data in a report without
         connecting and authenticating manually to the service and parsing the JSON.
         At design time the component can be configured using the [WebServiceDataSource Wizard]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/webservicedatasource-wizard%}).

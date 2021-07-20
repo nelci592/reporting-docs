@@ -15,14 +15,14 @@ position: 11
 Telerik Reporting offers the possibility to control the way numbers, dates and currencies are displayed and to layout text in different directions.
 
 A report is globalized with the help of a [System.Globalization.CultureInfo](http://msdn2.microsoft.com/en-us/library/system.globalization.cultureinfo.aspx) object. You can specify a Culture for the entire
-[T:Telerik.Reporting.Report]()
+[Telerik.Reporting.Report](/reporting/api/Telerik.Reporting.Report)
 by setting its 
-[P:Telerik.Reporting.Report.Culture]()
+[Telerik.Reporting.Report.Culture](/reporting/api/Telerik.Reporting.Report#collapsible-Telerik_Reporting_Report_Culture)
 property. This will force all 
-[T:Telerik.Reporting.TextBox]() items to respect the assigned Culture. But you are not limited by one culture per report. You can mix an unlimited number of cultures, by setting the 
-[P:Telerik.Reporting.TextItemBase.Culture]()
+[Telerik.Reporting.TextBox](/reporting/api/Telerik.Reporting.TextBox) items to respect the assigned Culture. But you are not limited by one culture per report. You can mix an unlimited number of cultures, by setting the 
+[Telerik.Reporting.TextItemBase.Culture](/reporting/api/Telerik.Reporting.TextItemBase#collapsible-Telerik_Reporting_TextItemBase_Culture)
  property of a specific 
-[T:Telerik.Reporting.TextBox](). This will override the Report's Culture.
+[Telerik.Reporting.TextBox](/reporting/api/Telerik.Reporting.TextBox). This will override the Report's Culture.
 
 ## Culture Inheritance
 
@@ -42,7 +42,7 @@ When determining what Culture to use for formatting strings and text direction, 
 * __String Formatting__
 
 Culture affects the way strings are formatted in Telerik Reporting. For example, if you set the British Culture (en-GB) for a TextBox and set its 
-     [P:Telerik.Reporting.Processing.TextItemBase.Format]()
+     [Telerik.Reporting.Processing.TextItemBase.Format](/reporting/api/Telerik.Reporting.Processing.TextItemBase#collapsible-Telerik_Reporting_Processing_TextItemBase_Format)
 to Currency ({0:C2}) you will see values like: £43.21. Same applies for dates, times and numbers.
 
 * __Text Direction (LTR/RTL)__

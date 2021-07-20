@@ -21,8 +21,8 @@ A report can be divided into columns (imagine columns in a newspaper), that are 
     	there is enough space on the current physical page, the section is moved to a new logical page (column) and not to a new physical page.
     	
 
-Columns are specified using the [P:Telerik.Reporting.DetailSection.ColumnCount]() property. 
-    	Column width is determined by the width of the report in design view. The [P:Telerik.Reporting.DetailSection.ColumnSpacing]() 
+Columns are specified using the [ColumnCount](/reporting/api/Telerik.Reporting.DetailSection#collapsible-Telerik_Reporting_DetailSection_ColumnCount) property. 
+    	Column width is determined by the width of the report in design view. The [ColumnSpacing](/reporting/api/Telerik.Reporting.DetailSection#collapsible-Telerik_Reporting_DetailSection_ColumnSpacing) 
     	property is used to set the spacing in between the columns. The column width can be calculated as:
 
 Page width minus sum of left and right margins minus ColumnSpacing * (ColumnCount - 1). The result should be divided to the ColumnCount.

@@ -37,4 +37,4 @@ To set the following group properties you have to select a group from the [Group
       
 
 # See Also
-[T:Telerik.Reporting.GroupHeaderSection]()[T:Telerik.Reporting.GroupFooterSection]()[T:Telerik.Reporting.Group]()
+[GroupHeaderSection](/reporting/api/Telerik.Reporting.GroupHeaderSection)[GroupFooterSection](/reporting/api/Telerik.Reporting.GroupFooterSection)[Group](/reporting/api/Telerik.Reporting.Group)

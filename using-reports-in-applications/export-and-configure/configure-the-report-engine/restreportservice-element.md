@@ -14,12 +14,12 @@ position: 5
 
 The __restReportService__ element specifies the configuration settings for the REST report service.
         In order for this element to be respected the corresponding Reports service implementation should pass a
-        [T:Telerik.Reporting.Services.ConfigSectionReportServiceConfiguration]()
+        [ConfigSectionReportServiceConfiguration](/reporting/api/Telerik.Reporting.Services.ConfigSectionReportServiceConfiguration)
         instance instead of a
-        [T:Telerik.Reporting.Services.ReportServiceConfiguration]()
+        [ReportServiceConfiguration](/reporting/api/Telerik.Reporting.Services.ReportServiceConfiguration)
         instance. For example, initializing the 
-        [P:Telerik.Reporting.Services.WebApi.ReportsControllerBase.ReportServiceConfiguration]() for the 
-        [T:Telerik.Reporting.Services.WebApi.ReportsControllerBase]() instance would look like this:
+        [ReportServiceConfiguration](/reporting/api/Telerik.Reporting.Services.WebApi.ReportsControllerBase#collapsible-Telerik_Reporting_Services_WebApi_ReportsControllerBase_ReportServiceConfiguration) for the 
+        [ReportsControllerBase](/reporting/api/Telerik.Reporting.Services.WebApi.ReportsControllerBase) instance would look like this:
       
 
 	
@@ -35,7 +35,7 @@ The __restReportService__ element specifies the configuration settings for the R
 
 
 Note that the initialization block does not have the 
-        [P:Telerik.Reporting.Services.IReportServiceConfiguration.Storage]() property set, because it would 
+        [Storage](/reporting/api/Telerik.Reporting.Services.IReportServiceConfiguration#collapsible-Telerik_Reporting_Services_IReportServiceConfiguration_Storage) property set, because it would 
         override the values obtained from the configuration file.
       
 

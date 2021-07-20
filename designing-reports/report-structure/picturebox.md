@@ -220,4 +220,4 @@ The SVG images are rendered in vector format where the rendering extension suppo
 
  * [Images, Bitmaps, and Metafiles](http://msdn.microsoft.com/en-us/library/3ke1f63h.aspx)
 
- * [Scalable Vector Graphics (SVG)](https://www.w3.org/TR/SVG/)[T:Telerik.Reporting.PictureBox]()[P:Telerik.Reporting.PictureBox.Sizing]()
+ * [Scalable Vector Graphics (SVG)](https://www.w3.org/TR/SVG/)[PictureBox](/reporting/api/Telerik.Reporting.PictureBox)[Sizing](/reporting/api/Telerik.Reporting.PictureBox#collapsible-Telerik_Reporting_PictureBox_Sizing)

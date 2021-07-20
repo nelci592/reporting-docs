@@ -67,7 +67,7 @@ For more information, please refer to the PageExec description in the [Functions
         
 
 # See Also
-[T:Telerik.Reporting.PageHeaderSection]()[T:Telerik.Reporting.PageFooterSection]()
+[PageHeaderSection](/reporting/api/Telerik.Reporting.PageHeaderSection)[PageFooterSection](/reporting/api/Telerik.Reporting.PageFooterSection)
 
  * [Functions]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/functions/overview%})
 

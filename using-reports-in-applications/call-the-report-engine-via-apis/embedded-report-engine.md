@@ -14,7 +14,7 @@ position: 0
 
 ## Requirements
 
-To export a report, you can use the __[RenderReport](/reporting/api/Telerik.Reporting.Processing.ReportProcessor#collapsible-Telerik_Reporting_Processing_ReportProcessor_RenderReport_System_String_Telerik_Reporting_ReportSource_System_Collections_Hashtable_)__ method of the [ReportProcessor](/reporting/api/Telerik.Reporting.Processing#collapsible-Telerik_Reporting_Processing_ReportProcessor_) class.
+To export a report, you can use the __[RenderReport](/reporting/api/Telerik.Reporting.Processing.ReportProcessor#collapsible-Telerik_Reporting_Processing_ReportProcessor_RenderReport_System_String_Telerik_Reporting_ReportSource_System_Collections_Hashtable_)__ method of the [ReportProcessor](/reporting/api/Telerik.Reporting.Processing.ReportProcessor) class.
           This method converts the contents of the report to a byte array in the specified format, which you can then use
           with other classes such as
           [MemoryStream](http://msdn.microsoft.com/en-us/library/system.io.memorystream.aspx)
@@ -143,8 +143,8 @@ Some formats (MHTML, PDF, XLS(X), RTF, DOCX, PPTX, CSV) produce a single documen
 
 Some formats produce multiple files, for example HTML outputs all pages and related resources (images)
           in separate streams. In order to render a report in a non-single document format (HTML and IMAGE except TIFF) one should use
-          the second [RenderReport](/reporting/api/Telerik.Reporting.Processing.ReportProcessor#collapsible-Telerik_Reporting_Processing_ReportProcessor_RenderReport_System_String_Telerik_Reporting_ReportSource_System_Collections_Hashtable_Telerik_Reporting_Processing_CreateStream_System_String@_)
-          overload that accepts a [CreateStream](/reporting/api/Telerik.Reporting.Processing#collapsible-Telerik_Reporting_Processing_CreateStream_) callback. For this example we're going to render to JPEG, but you can
+          the second [RenderReport](/reporting/api/Telerik.Reporting.Processing.ReportProcessor#collapsible-Telerik_Reporting_Processing_ReportProcessor_RenderReport_System_String_Telerik_Reporting_ReportSource_System_Collections_Hashtable_Telerik_Reporting_Processing_CreateStream_System_String__)
+          overload that accepts a [CreateStream](/reporting/api/Telerik.Reporting.Processing.CreateStream) callback. For this example we're going to render to JPEG, but you can
           render a report in all graphic formats that GDI+ supports natively - this includes BMP, GIF, JPEG,
           PNG, TIFF and metafile (EMF). The [Windows Forms Application]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/windows-forms-application/overview%}) uses internally
           metafile for rendering the reports for viewing, and

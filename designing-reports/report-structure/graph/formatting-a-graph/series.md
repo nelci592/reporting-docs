@@ -35,7 +35,7 @@ The Area and the Line series have an additional pair of properties named respect
 Each data point has graphical representation in accordance with the selected chart type. Its styling can be set through the 
           __DataPointStyle__ property and changed in runtime using the __DataPointConditionalFormatting__ property.
           In most cases, depending on the chart type, the shape of the data point can be changed as well using the
-          [P:Telerik.Reporting.LineSeries.MarkerType]() enumeration.
+          [MarkerType](/reporting/api/Telerik.Reporting.LineSeries#collapsible-Telerik_Reporting_LineSeries_MarkerType) enumeration.
         To change the data point shape in a series where it's applicable: 
 
 On the design surface, click on the series.
@@ -188,4 +188,4 @@ Set appropriately __BaseColor, MaxLightness and MinLightness properties__.
 
  * [Conditional Formatting]({%slug telerikreporting/designing-reports/styling-reports/conditional-formatting%})
 
- * [Style Inheritance and Overriding]({%slug telerikreporting/designing-reports/styling-reports/style-inheritance-and-overriding%})[T:Telerik.Reporting.GraphSeries]()
+ * [Style Inheritance and Overriding]({%slug telerikreporting/designing-reports/styling-reports/style-inheritance-and-overriding%})[GraphSeries](/reporting/api/Telerik.Reporting.GraphSeries)

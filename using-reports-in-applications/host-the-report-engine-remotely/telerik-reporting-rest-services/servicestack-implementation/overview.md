@@ -19,9 +19,9 @@ The ServiceStack implementation of the Telerik Reporting REST Service is a __RES
 ## 
 
 In order to utilize the service, you have to create a new class which inherits from the abstract
-          [T:Telerik.Reporting.Services.ServiceStack.ReportsHostBase]()
+          [ReportsHostBase](/reporting/api/Telerik.Reporting.Services.ServiceStack.ReportsHostBase)
           class. The *ReportsHostBase* class contains one important property needed by the reporting
-          engine: [P:Telerik.Reporting.Services.ServiceStack.ReportsHostBase.ReportServiceConfiguration]().
+          engine: [ReportServiceConfiguration](/reporting/api/Telerik.Reporting.Services.ServiceStack.ReportsHostBase#collapsible-Telerik_Reporting_Services_ServiceStack_ReportsHostBase_ReportServiceConfiguration).
         
 
 The service can be hosted on [IIS]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/servicestack-implementation/how-to-add-telerik-reporting-rest-servicestack-to-web-application%}) or self-hosted.

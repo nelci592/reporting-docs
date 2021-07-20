@@ -26,13 +26,13 @@ As with the Graph item, it is important to carefully prepare and understand your
 
 The GeoLocationGroup hierarchy defines the data points location in the Map series and acts the same way as the Graph's Category Group hierarchy.
           In case the report uses a Location provider to obtain the data point geographical coordinates from a web service, the
-          [T:Telerik.Reporting.GeoLocationMapGroup]()'s
+          [GeoLocationMapGroup](/reporting/api/Telerik.Reporting.GeoLocationMapGroup)'s
           grouping expression is used as a request parameter when calling the geocoding service. To achieve better geocoding results, the grouping
           expression should provide as more detailed request as possible, for example, concatenating a city name with a state/region name and a country name.
         ShapeMapGroup hierarchy
 
-The ShapeMapGroup hierarchy is used only in [T:Telerik.Reporting.ShapeMapSeries](), which provide their
-          own spatial data source, depending on the selected [P:Telerik.Reporting.ShapeMapSeries.SourceType]() property.
+The ShapeMapGroup hierarchy is used only in [ShapeMapSeries](/reporting/api/Telerik.Reporting.ShapeMapSeries), which provide their
+          own spatial data source, depending on the selected [SourceType](/reporting/api/Telerik.Reporting.ShapeMapSeries#collapsible-Telerik_Reporting_ShapeMapSeries_SourceType) property.
           The geographical coordinates of the data points do not depend on this hierarchy, that's why it does not provide any geolocation properties.
         Series group hierarchy
 
@@ -50,19 +50,19 @@ The Map item series displays aggregated data to visualize one or more measures. 
 The ShapeMapSeries, used in the Choropleth map, does not use the series group hierarchy the way it is used in the LocationMapSeries.
           The series grouping is not intended to be used in other way than having a
           [static group]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/grouping-data-/overview%}), since the ShapeMapSeries defines
-          its own grouping using properties, specific only to this series type ([P:Telerik.Reporting.ShapeMapSeries.ColorData]() and
-          [P:Telerik.Reporting.ShapeMapSeries.ColorsCount]()).
+          its own grouping using properties, specific only to this series type ([ColorData](/reporting/api/Telerik.Reporting.ShapeMapSeries#collapsible-Telerik_Reporting_ShapeMapSeries_ColorData) and
+          [ColorsCount](/reporting/api/Telerik.Reporting.ShapeMapSeries#collapsible-Telerik_Reporting_ShapeMapSeries_ColorsCount)).
           Therefore the ShapeMapSeries data points are created for each category group member and their coordinates are obtained via external source, depending on
-          the series' [P:Telerik.Reporting.ShapeMapSeries.SourceType]() property. The values of the data points
+          the series' [SourceType](/reporting/api/Telerik.Reporting.ShapeMapSeries#collapsible-Telerik_Reporting_ShapeMapSeries_SourceType) property. The values of the data points
           determine their presentation colors and are a result of grouping the values into these ShapeMapSeries-specific groups, mentioned above.
         Additional information
 
 When working with map series,
           it is often useful to have a way to determine the current data point coordinates and display them on a label or use them in conditional formatting rule.
           The evaluation engine provides a way to do so using the special expression `"= Location"`.
-          The evaluation result is an instance of type [T:Telerik.Reporting.Location]()
+          The evaluation result is an instance of type [Location](/reporting/api/Telerik.Reporting.Location)
           and its `Longitude` and `Latitude` properties can be accessed directly.
-          Also, when the selected component in the report designer is [T:Telerik.Reporting.MapSeriesBase](),
+          Also, when the selected component in the report designer is [MapSeriesBase](/reporting/api/Telerik.Reporting.MapSeriesBase),
           the __Edit Expression dialog__ will include three *Location*
           entries in its *Fields* collection: *Location*,
           *Location.Latitude* and *Location.Longitude*.

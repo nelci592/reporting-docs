@@ -100,11 +100,11 @@ Once the mandatory fields are set up, the __Next__ button will get enabled and y
 On the __Choose a location provider__ page you have to select the location provider that will be used to geocode
               the __State__ field that was dragged in the *Categories (location)* box on the previous page.
               Currently the supported providers are
-              [T:Telerik.Reporting.MapQuestOpenAPILocationProvider]()
+              [MapQuestOpenAPILocationProvider](/reporting/api/Telerik.Reporting.MapQuestOpenAPILocationProvider)
               ,
-              [T:Telerik.Reporting.MapQuestLocationProvider]()
+              [MapQuestLocationProvider](/reporting/api/Telerik.Reporting.MapQuestLocationProvider)
               and
-              [T:Telerik.Reporting.BingLocationProvider]().
+              [BingLocationProvider](/reporting/api/Telerik.Reporting.BingLocationProvider).
               They both require a valid client token (key) to authenticate the geocoding requests that will be sent from the Map item.
               Once you have obtained the key, you should paste it in the *Client token* box, as shown below:
               

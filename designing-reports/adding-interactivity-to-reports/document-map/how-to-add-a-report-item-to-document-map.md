@@ -18,9 +18,9 @@ You can add a document map, which acts like a table of contents. A user can clic
 ## Adding a report item to document map
 
 1. In __Design view__, make sure the Properties pane is visible. Select the report item that you want to add to the document map. In the Properties
-	pane, type the text that you want to appear in the document map in the [P:Telerik.Reporting.ReportItemBase.DocumentMapText]() property, or enter 
-	an expression that evaluates to a text. For example, type __Product Catalog__. If the [P:Telerik.Reporting.ReportItemBase.DocumentMapText]() does not evaluate to
-    unique value, then a unique value should be set to the [P:Telerik.Reporting.ReportItemBase.BookmarkId]() property.
+	pane, type the text that you want to appear in the document map in the [DocumentMapText](/reporting/api/Telerik.Reporting.ReportItemBase#collapsible-Telerik_Reporting_ReportItemBase_DocumentMapText) property, or enter 
+	an expression that evaluates to a text. For example, type __Product Catalog__. If the [DocumentMapText](/reporting/api/Telerik.Reporting.ReportItemBase#collapsible-Telerik_Reporting_ReportItemBase_DocumentMapText) does not evaluate to
+    unique value, then a unique value should be set to the [BookmarkId](/reporting/api/Telerik.Reporting.ReportItemBase#collapsible-Telerik_Reporting_ReportItemBase_BookmarkId) property.
 
 1. Repeat step 1 for every report item that you want to appear in the document map.
 
@@ -28,7 +28,7 @@ You can add a document map, which acts like a table of contents. A user can clic
 	jump to the report page and the exact location of that item.
 		
 
->note Report items positioned in the Page Header/Page Footer section of the report cannot be used to create nodes in the document map.            Setting the [P:Telerik.Reporting.ReportItemBase.DocumentMapText]() property of such item will have no effect.          
+>note Report items positioned in the Page Header/Page Footer section of the report cannot be used to create nodes in the document map.            Setting the [DocumentMapText](/reporting/api/Telerik.Reporting.ReportItemBase#collapsible-Telerik_Reporting_ReportItemBase_DocumentMapText) property of such item will have no effect.          
 
 
 ## Hiding the document map when you view a report

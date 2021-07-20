@@ -31,7 +31,7 @@ The required stylesheets are provided automatically through a HTTPHandler via re
 
 
 The HTML5 Web Forms Report Viewer is using the default viewer template. In order to use your own viewer template you have to provide
-        path to your customized one to the [P:Telerik.ReportViewer.Html5.WebForms.ReportViewer.TemplateUrl]()
+        path to your customized one to the [TemplateUrl](/reporting/api/Telerik.ReportViewer.Html5.WebForms.ReportViewer#collapsible-Telerik_ReportViewer_Html5_WebForms_ReportViewer_TemplateUrl)
 
 For more information on the used stylesheets and report viewer templates check out the following HTML5 Report Viewer articles:
       

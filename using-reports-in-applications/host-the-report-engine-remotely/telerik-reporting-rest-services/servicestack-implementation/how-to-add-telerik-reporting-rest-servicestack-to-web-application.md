@@ -41,7 +41,7 @@ Add references to the following Telerik Reporting assemblies (required):
 Add references to the following Telerik Reporting assemblies (optional):
             
 
-* Telerik.Reporting.Cache.Database.dll - only if [T:Telerik.Reporting.Cache.Database.DatabaseStorage]() caching mechanism is intended.
+* Telerik.Reporting.Cache.Database.dll - only if [DatabaseStorage](/reporting/api/Telerik.Reporting.Cache.Database.DatabaseStorage) caching mechanism is intended.
                   For more details check [Reporting REST Service Storage]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-service-storage/overview%}).
                   The assembly has dependencies on Telerik Data Access which can be checked in the version
                   corresponding [Upgrade article]({%slug telerikreporting/upgrade/overview%});
@@ -58,13 +58,13 @@ Add references to the following Telerik Reporting assemblies (optional):
                 
 
 Create a new class which derives from
-              [T:Telerik.Reporting.Services.ServiceStack.ReportsHostBase]().
+              [ReportsHostBase](/reporting/api/Telerik.Reporting.Services.ServiceStack.ReportsHostBase).
               It could be called *ReportsHost* for example:
             
 
-* Set the [P:Telerik.Reporting.Services.ServiceStack.ReportsHostBase.ReportServiceConfiguration]()
+* Set the [ReportServiceConfiguration](/reporting/api/Telerik.Reporting.Services.ServiceStack.ReportsHostBase#collapsible-Telerik_Reporting_Services_ServiceStack_ReportsHostBase_ReportServiceConfiguration)
                   property. The __ReportSourceResolver__ and __Storage__ configuration settings are required.
-                  See the [T:Telerik.Reporting.Services.IReportServiceConfiguration]() interface
+                  See the [IReportServiceConfiguration](/reporting/api/Telerik.Reporting.Services.IReportServiceConfiguration) interface
                   for more details.
                 
 
@@ -126,14 +126,14 @@ The provided sample implementation will resolve .trdp|.trdx report definitions f
 >note Do not forget to add all necessary (i.e., referred from the report definitions) connection strings to the application configuration file.              
 
 
->tip The above implementation uses the [T:Telerik.Reporting.Cache.File.FileStorage]()                method in order to create a cache object instance. All Visual Studio item templates for adding the Reporting REST service use the default                 __FileStorage__  constructor. The second overload of the FileStorage constructor allows you to                specify a folder, and it is recommended for usage in production environment.              
+>tip The above implementation uses the [FileStorage](/reporting/api/Telerik.Reporting.Cache.File.FileStorage)                method in order to create a cache object instance. All Visual Studio item templates for adding the Reporting REST service use the default                 __FileStorage__  constructor. The second overload of the FileStorage constructor allows you to                specify a folder, and it is recommended for usage in production environment.              
 
 
 
 
 __To configure the Telerik Reporting REST service from the application configuration file__, set the value of the
-              [P:Telerik.Reporting.Services.ServiceStack.ReportsHostBase.ReportServiceConfiguration]() property to an instance of the
-              [T:Telerik.Reporting.Services.ConfigSectionReportServiceConfiguration]() class.
+              [ReportServiceConfiguration](/reporting/api/Telerik.Reporting.Services.ServiceStack.ReportsHostBase#collapsible-Telerik_Reporting_Services_ServiceStack_ReportsHostBase_ReportServiceConfiguration) property to an instance of the
+              [ConfigSectionReportServiceConfiguration](/reporting/api/Telerik.Reporting.Services.ConfigSectionReportServiceConfiguration) class.
             
 
 {{source=CodeSnippets\MvcCS\ServiceStack\ReportsHostConfigSection.cs region=ReportsHostConfigSectionImplementation}}
@@ -241,7 +241,7 @@ To verify whether the service works correctly you can make a sample request
 
 
 If the request is successful you should receive the document formats encoded in JSON. For more information see: [Get Available Document Formats]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/general-api/get-available-document-formats%}).
-            [T:Telerik.Reporting.Services.UriReportSourceResolver]()[T:Telerik.Reporting.Services.TypeReportSourceResolver]()
+            [UriReportSourceResolver](/reporting/api/Telerik.Reporting.Services.UriReportSourceResolver)[TypeReportSourceResolver](/reporting/api/Telerik.Reporting.Services.TypeReportSourceResolver)
 
  * [HTML5 Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview%})
 

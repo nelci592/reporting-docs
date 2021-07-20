@@ -84,6 +84,6 @@ To add filters to the Report use the following steps:
 
 
 # See Also
-[T:Telerik.Reporting.Report]()[T:Telerik.Reporting.Filter]()[T:Telerik.Reporting.FilterCollection]()
+[Report](/reporting/api/Telerik.Reporting.Report)[Filter](/reporting/api/Telerik.Reporting.Filter)[FilterCollection](/reporting/api/Telerik.Reporting.FilterCollection)
 
  * [Using Expressions]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/overview%})

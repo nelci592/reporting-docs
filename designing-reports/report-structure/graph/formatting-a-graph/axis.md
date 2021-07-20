@@ -126,7 +126,7 @@ In the __Misc__ section select __logarithmic  Scale__ for the __Scale__ property
 
 In some cases, especially when using a __Logarithmic  Scale__, it is useful to have the axis ticks and labels
           exactly where your datapoints are. This behavior is controlled by the
-          [P:Telerik.Reporting.NumericalScaleBase.DataPointTicks]() property. When set to
+          [DataPointTicks](/reporting/api/Telerik.Reporting.NumericalScaleBase#collapsible-Telerik_Reporting_NumericalScaleBase_DataPointTicks) property. When set to
           __true__, the axis will display the ticks and labels for every data point in the data set.
         
 
@@ -137,4 +137,4 @@ Please note that using this feature means that some of the scale properties like
 # See Also
 
 
- * [Graph Structure]({%slug telerikreporting/designing-reports/report-structure/graph/structure%})[T:Telerik.Reporting.GraphAxis]()[P:Telerik.Reporting.GraphAxis.LabelFormat]()[P:Telerik.Reporting.GraphAxis.LabelPlacement]()[P:Telerik.Reporting.GraphAxis.Scale]()[T:Telerik.Reporting.Scale]()[P:Telerik.Reporting.NumericalScale.MajorStep]()[P:Telerik.Reporting.NumericalScale.MinorStep]()
+ * [Graph Structure]({%slug telerikreporting/designing-reports/report-structure/graph/structure%})[GraphAxis](/reporting/api/Telerik.Reporting.GraphAxis)[LabelFormat](/reporting/api/Telerik.Reporting.GraphAxis#collapsible-Telerik_Reporting_GraphAxis_LabelFormat)[LabelPlacement](/reporting/api/Telerik.Reporting.GraphAxis#collapsible-Telerik_Reporting_GraphAxis_LabelPlacement)[Scale](/reporting/api/Telerik.Reporting.GraphAxis#collapsible-Telerik_Reporting_GraphAxis_Scale)[Scale](/reporting/api/Telerik.Reporting.Scale)[MajorStep](/reporting/api/Telerik.Reporting.NumericalScale#collapsible-Telerik_Reporting_NumericalScale_MajorStep)[MinorStep](/reporting/api/Telerik.Reporting.NumericalScale#collapsible-Telerik_Reporting_NumericalScale_MinorStep)

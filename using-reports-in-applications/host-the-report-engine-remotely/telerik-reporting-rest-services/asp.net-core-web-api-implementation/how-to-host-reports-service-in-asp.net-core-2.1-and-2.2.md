@@ -232,7 +232,7 @@ services.TryAddSingleton<IReportServiceConfiguration>(sp =>
               Name it ReportsController. This will be our Telerik Reporting REST service in the project.
             
 
-1. Inherit the [T:Telerik.Reporting.Services.WebApi.ReportsControllerBase]() type
+1. Inherit the [ReportsControllerBase](/reporting/api/Telerik.Reporting.Services.WebApi.ReportsControllerBase) type
               and inject the configuration settings in the constructor.
               This is how a basic implementation of the controller should look like:
             

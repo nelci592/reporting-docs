@@ -37,4 +37,4 @@ When constructing a Binding instance with Binding constructor, you must specify:
   ![](images/UI/Bindings.png)
 
 # See Also
-[T:Telerik.Reporting.Binding]()[T:Telerik.Reporting.BindingCollection]()
+[Telerik.Reporting.Binding](/reporting/api/Telerik.Reporting.Binding)[Telerik.Reporting.BindingCollection](/reporting/api/Telerik.Reporting.BindingCollection)

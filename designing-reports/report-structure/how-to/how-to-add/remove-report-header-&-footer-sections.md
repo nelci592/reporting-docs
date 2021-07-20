@@ -30,4 +30,4 @@ Reports can contain report headers and footers. By default, new reports are crea
   ![](images/ReportDesign006.png)
 
 # See Also
-[T:Telerik.Reporting.ReportHeaderSection]()[T:Telerik.Reporting.ReportFooterSection]()
+[ReportHeaderSection](/reporting/api/Telerik.Reporting.ReportHeaderSection)[ReportFooterSection](/reporting/api/Telerik.Reporting.ReportFooterSection)

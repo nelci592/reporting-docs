@@ -56,8 +56,8 @@ The supported map types are:
             
   ![Choropleth Chart Type](images/Map/Choropleth/Choropleth_ChartType.png)The Choropleth item is basically a [Map item ]({%slug telerikreporting/designing-reports/report-structure/map/structure/overview%}) with a special kind of series and groups.
               To create a choropleth map, there is no need to configure a [Location provider]({%slug telerikreporting/designing-reports/report-structure/map/structure/location-providers%})
-              or use a [T:Telerik.Reporting.GeoLocationMapGroup]() to obtain the coordinates of the data points.
-              Instead, it uses a [T:Telerik.Reporting.ShapeMapSeries]() instance, whose major distinction from the
+              or use a [GeoLocationMapGroup](/reporting/api/Telerik.Reporting.GeoLocationMapGroup) to obtain the coordinates of the data points.
+              Instead, it uses a [ShapeMapSeries](/reporting/api/Telerik.Reporting.ShapeMapSeries) instance, whose major distinction from the
               other Map series is that they define the source which will be used to provide the spatial data. This source can be either a string, formatted
               in compliance with the
               [Well-known text/Well-known binary](http://en.wikipedia.org/wiki/Well-known_text)

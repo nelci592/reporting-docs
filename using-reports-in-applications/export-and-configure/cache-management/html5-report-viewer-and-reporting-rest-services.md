@@ -79,7 +79,7 @@ On each interaction with the report in the HTML5 Viewer, the service accesses th
         
 
 The created cache records expiration period as well as other service settings may be setup
-          using an implementation of the [T:Telerik.Reporting.Services.IReportServiceConfiguration]()
+          using an implementation of the [IReportServiceConfiguration](/reporting/api/Telerik.Reporting.Services.IReportServiceConfiguration)
           interface as service configuration.
           See the [How to implement the ReportsController in an application]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-web-api-implementation/how-to-implement-the-reportscontroller-in-an-application%})
           and the [How to Add Telerik Reporting REST ServiceStack to Web Application]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/servicestack-implementation/how-to-add-telerik-reporting-rest-servicestack-to-web-application%})
@@ -88,13 +88,13 @@ The created cache records expiration period as well as other service settings ma
 
 Important cache management related properties of the IReportServiceConfiguration:
 
-* __[P:Telerik.Reporting.Services.IReportServiceConfiguration.ClientSessionTimeout]() property
+* __[ClientSessionTimeout](/reporting/api/Telerik.Reporting.Services.IReportServiceConfiguration#collapsible-Telerik_Reporting_Services_IReportServiceConfiguration_ClientSessionTimeout) property
               __Gets or sets a value in minutes indicating how long a client(viewer) session will be preserved in the service storage after the
               last interaction initiated by this client. When this timeout expires, operations with the viewer will not be possible
               - there must be registered a new client(viewer).
             The entries of expired clients are removed automatically when a new HTML5 Viewer(client) is registered in the cache storage.
 
-* __[P:Telerik.Reporting.Services.IReportServiceConfiguration.ReportSharingTimeout]() property
+* __[ReportSharingTimeout](/reporting/api/Telerik.Reporting.Services.IReportServiceConfiguration#collapsible-Telerik_Reporting_Services_IReportServiceConfiguration_ReportSharingTimeout) property
               __Gets or sets a value in minutes indicating how long a rendered report document from a client will be available to be reused,
               by the current and other clients which request the same report, with the same report parameter values, and in the same rendering format.
               When a report is rendered once for a given set of report parameter values, it can be reused for the

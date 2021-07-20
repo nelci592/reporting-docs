@@ -24,8 +24,8 @@ Add bookmarks to a report when you want to provide customized internal navigatio
         report item.
       
 
-To define a bookmark on item/group use the [P:Telerik.Reporting.ReportItemBase.BookmarkId]() property. To define a bookmark action add a
-        [T:Telerik.Reporting.NavigateToBookmarkAction]() on another item.
+To define a bookmark on item/group use the [BookmarkId](/reporting/api/Telerik.Reporting.ReportItemBase#collapsible-Telerik_Reporting_ReportItemBase_BookmarkId) property. To define a bookmark action add a
+        [NavigateToBookmarkAction](/reporting/api/Telerik.Reporting.NavigateToBookmarkAction) on another item.
       
 
 >important It is recommended that the BookmarkId property value is unique and conforms to the [C# Language Specification for Identifiers](https://msdn.microsoft.com/en-us/library/aa664670). If the BookmarkId contains characters which are not allowed by this specification, they will be escaped by the reporting engine.        

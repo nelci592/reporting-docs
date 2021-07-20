@@ -193,13 +193,13 @@ Below are listed the most important characteristics of a PDF document generated 
             
 
 * *Document Title* - the title should be provided from the device information settings object. In case it is unavailable, the
-              [P:Telerik.Reporting.Report.DocumentName]() property
+              [DocumentName](/reporting/api/Telerik.Reporting.Report#collapsible-Telerik_Reporting_Report_DocumentName) property
               of the report will be used instead.
             
 
 * *Document Natural Language* - the document language should be provided from the device information settings object.
               In case it is unavailable, the __Name__ of the
-              [P:Telerik.Reporting.Report.Culture]() property
+              [Culture](/reporting/api/Telerik.Reporting.Report#collapsible-Telerik_Reporting_Report_Culture) property
               of the report will be used instead.
             
 

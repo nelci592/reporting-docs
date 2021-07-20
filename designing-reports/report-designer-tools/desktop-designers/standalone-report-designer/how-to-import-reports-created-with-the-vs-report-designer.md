@@ -50,11 +50,11 @@ Should you need to import your existing reports created with the Visual Studio R
 
 ## Package the CLR report object manually
 
-The report packaging is achieved with dedicated [T:Telerik.Reporting.ReportPackager]().
+The report packaging is achieved with dedicated [ReportPackager](/reporting/api/Telerik.Reporting.ReportPackager).
           For detailed instructions, see [Report Packaging]({%slug telerikreporting/using-reports-in-applications/program-the-report-definition/package-report-definition%})
 
 ## Serialize the CLR report object manually (legacy)
 
-The XML serialization is achieved through the dedicated [T:Telerik.Reporting.XmlSerialization.ReportXmlSerializer]().
+The XML serialization is achieved through the dedicated [ReportXmlSerializer](/reporting/api/Telerik.Reporting.XmlSerialization.ReportXmlSerializer).
           For detailed instructions, see [Serializing Report Definition in XML]({%slug telerikreporting/using-reports-in-applications/program-the-report-definition/serialize-report-definition-in-xml%}).
         

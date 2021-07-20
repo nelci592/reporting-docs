@@ -21,8 +21,8 @@ For example, you can initially hide(Visible=false) all the row groups except the
     	group (including the details group), add a drilldown action to the grouping cell of the containing group. When the report is rendered, 
     	the user can click the text box to expand and collapse the detail data.
 
-To define a drilldown action add a [T:Telerik.Reporting.ToggleVisibilityAction]() on an item. 
-    	To define if the item exposing the action will be rendered initially with expanded or with collapsed mark, use the [P:Telerik.Reporting.ToggleVisibilityAction.DisplayExpandedMark]()
+To define a drilldown action add a [ToggleVisibilityAction](/reporting/api/Telerik.Reporting.ToggleVisibilityAction) on an item. 
+    	To define if the item exposing the action will be rendered initially with expanded or with collapsed mark, use the [DisplayExpandedMark](/reporting/api/Telerik.Reporting.ToggleVisibilityAction#collapsible-Telerik_Reporting_ToggleVisibilityAction_DisplayExpandedMark)
     	property.
 
 

@@ -34,7 +34,7 @@ The following list describes the prerequisites for this tutorial:
             
 
 * Copy of the "Product Catalog.trdp" report file from __[TelerikReporting_InstallDir]\ReportDesigner\Examples__
-              in the folder used by the [T:Telerik.Reporting.Services.WebApi.ReportFileResolver]()
+              in the folder used by the [ReportFileResolver](/reporting/api/Telerik.Reporting.Services.WebApi.ReportFileResolver)
               in the Reporting REST service implementation.
             
 

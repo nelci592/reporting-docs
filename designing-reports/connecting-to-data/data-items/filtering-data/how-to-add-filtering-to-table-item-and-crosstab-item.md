@@ -80,6 +80,6 @@ If you need to filter data on retrieval, see [Using Parameters with Data Source 
 
 
 # See Also
-[T:Telerik.Reporting.Table]()[T:Telerik.Reporting.Filter]()[T:Telerik.Reporting.FilterCollection]()
+[Table](/reporting/api/Telerik.Reporting.Table)[Filter](/reporting/api/Telerik.Reporting.Filter)[FilterCollection](/reporting/api/Telerik.Reporting.FilterCollection)
 
  * [Using Expressions]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/overview%})

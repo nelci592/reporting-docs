@@ -40,7 +40,7 @@ The styling of the report items may be reused in stylesheets. If a report uses s
 
 The __Telerik Report__ consists of several different sections that may contain report items.
               Each report section represents specific area on the report page, and defines how to render the report items that belong to it. Every section is
-              an instance of the [T:Telerik.Reporting.ReportSectionBase]() class.
+              an instance of the [ReportSectionBase](/reporting/api/Telerik.Reporting.ReportSectionBase) class.
               The __Height__ property defines the space that a section occupies on the page. Other specific properties such as __PrintOnFirstPage__
               and __PrintOnLastPage__ define the particular section's behavior.
             
@@ -90,7 +90,7 @@ The data within the report can be grouped by fields and expressions. Report grou
 Report items are used in the report depending on the data that should be displayed e.g. [TextBox]({%slug telerikreporting/designing-reports/report-structure/textbox%})
               item for static or data bound text, [PictureBox]({%slug telerikreporting/designing-reports/report-structure/picturebox%}) for displaying images,
               [Barcode]({%slug telerikreporting/designing-reports/report-structure/barcode/overview%}) for showing barcode in a label report etc. Every report
-              item is an instance of the [T:Telerik.Reporting.ReportItemBase]() class.
+              item is an instance of the [ReportItemBase](/reporting/api/Telerik.Reporting.ReportItemBase) class.
               Report items can reside inside report sections or containers (e.g. [Panel]({%slug telerikreporting/designing-reports/report-structure/panel%}) or
               [Table/Crosstab/List]({%slug telerikreporting/designing-reports/report-structure/table/crosstab/list/overview%}) items).
             

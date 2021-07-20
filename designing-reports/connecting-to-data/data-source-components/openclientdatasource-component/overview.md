@@ -33,4 +33,4 @@ In order to be suitable for reporting purpose the ABL procedure has to have the 
             
 
 # See Also
-[T:Telerik.Reporting.OpenClientDataSource]()
+[Telerik.Reporting.OpenClientDataSource](/reporting/api/Telerik.Reporting.OpenClientDataSource)

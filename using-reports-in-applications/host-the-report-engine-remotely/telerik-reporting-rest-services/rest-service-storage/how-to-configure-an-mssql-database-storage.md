@@ -35,7 +35,7 @@ In *Specify connection string* text box enter the connection string that referen
 Click on the *Create schema* button to start the database schema creation.
             
 
-A message box should be displayed, confirming that the storage tables are successfully created. Use the connection string specified above when initializing an instance of [T:Telerik.Reporting.Cache.MsSqlServerStorage]() in your application.
+A message box should be displayed, confirming that the storage tables are successfully created. Use the connection string specified above when initializing an instance of [MsSqlServerStorage](/reporting/api/Telerik.Reporting.Cache.MsSqlServerStorage) in your application.
             
 
 In case you want to cleanup the storage tables in an existing database, use the button *Clear cache data*.

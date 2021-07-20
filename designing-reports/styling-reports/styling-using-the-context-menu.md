@@ -29,7 +29,7 @@ The __Style...__ option will open the Edit style dialog so that you can make cha
 ## Copy Style
 
 __Copy Style__ will get all the properties of the report item's inline style and make them available into the clipboard. Inline style
-      	includes all properties of the [T:Telerik.Reporting.Drawing.Style]() class.
+      	includes all properties of the [Style](/reporting/api/Telerik.Reporting.Drawing.Style) class.
       	Any style inherited from parent report item, any global styling that was applied with __StyleSelectors__ or from external style sheets would not be copied.
       	
 

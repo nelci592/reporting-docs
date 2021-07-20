@@ -38,7 +38,7 @@ The accessibility features are enabled or disabled using a Boolean dependency pr
 The accessibility routines capture the keyboard events to provide shortcut key access to the viewer areas.
           It is possible some of these shortcuts to interfere with the designed application behavior.
           In this case the keys mapping can be changed through the property
-          [P:Telerik.ReportViewer.Wpf.AccessibilityKeyMap](),
+          [AccessibilityKeyMap](/reporting/api/Telerik.ReportViewer.Wpf#collapsible-Telerik_ReportViewer_Wpf_AccessibilityKeyMap),
           which provides access to the internal dictionary of keycodes and shortcut definitions.
           The code snippets below demonstrate how to change the default shortcut for navigating to the menu area:
         
@@ -92,7 +92,7 @@ The WPF report viewer supports the following important accessibility features:
 
 
 
-| __Comprehensive keyboard support__ |Includes navigation between and into report viewer areas (menu/toolbar, parameters, document map, contents) using<br/>                shortcut keys, TAB or arrow keys where possible. The toolbar commands and expandable items are toggled on ENTER.<br/>                The same key mapping is applied to document map and parameters areas.The default shortcut keys for navigation between the viewer areas are:<br/>*  __Ctrl+Alt+M__ - menu/toolbar area<br/>*  __Ctrl+Alt+P__ - parameters area (if visible)<br/>*  __Ctrl+Alt+D__ - document map area (if visible)<br/>*  __Ctrl+Alt+C__ - report viewer contents area (the report currently rendered in the viewer)If needed, the default key mapping can be changed, using the report viewer's API method[P:Telerik.ReportViewer.Wpf.AccessibilityKeyMap]().<br/>                The key, assigned for navigation between the areas, is always used together with CTRL and ALT key modifiers.|
+| __Comprehensive keyboard support__ |Includes navigation between and into report viewer areas (menu/toolbar, parameters, document map, contents) using<br/>                shortcut keys, TAB or arrow keys where possible. The toolbar commands and expandable items are toggled on ENTER.<br/>                The same key mapping is applied to document map and parameters areas.The default shortcut keys for navigation between the viewer areas are:<br/>*  __Ctrl+Alt+M__ - menu/toolbar area<br/>*  __Ctrl+Alt+P__ - parameters area (if visible)<br/>*  __Ctrl+Alt+D__ - document map area (if visible)<br/>*  __Ctrl+Alt+C__ - report viewer contents area (the report currently rendered in the viewer)If needed, the default key mapping can be changed, using the report viewer's API method<br/>                [AccessibilityKeyMap](/reporting/api/Telerik.ReportViewer.Wpf#collapsible-Telerik_ReportViewer_Wpf_AccessibilityKeyMap).<br/>                The key, assigned for navigation between the areas, is always used together with CTRL and ALT key modifiers.|
 | __Dynamically generated descriptions for report viewer areas__ |The report viewer areas provide additional textual details that reflect the currently presented information.<br/>                This applies to the state of the menu buttons (enabled, disabled, expandable, etc.),<br/>                the parameters state and their selected values, the currently selected node from document map and the rendered report.<br/>                This information refreshes dynamically with every change that occurs in the viewer<br/>                - for example when a new page is loaded or when an exception is thrown while processing the report.|
 | __Textual description to a non-textual items__ |In a rendered report all graphic items like images, maps and charts provide additional information about their contents.<br/>                Tables and crosstabs provide such information about the currently focused cell, marking the current row, column and value.<br/>                These details are visible and recognizable by the most popular screen readers to help users with visual disabilities better understand the presented report.<br/>                A comprehensive list with the supported report items features can be found in the next section|
 
@@ -101,7 +101,7 @@ The WPF report viewer supports the following important accessibility features:
 
 ## Supported accessibility features in rendered report contents
 
-All the report items have a property called [P:Telerik.Reporting.ReportItemBase.AccessibleDescription]().
+All the report items have a property called [AccessibleDescription](/reporting/api/Telerik.Reporting.ReportItemBase#collapsible-Telerik_Reporting_ReportItemBase_AccessibleDescription).
           The property value is an expression and it determines what will be the accessibility label when the report is rendered.
           Its value is set as a meta-information label that is output to the screen readers through the standard
           [

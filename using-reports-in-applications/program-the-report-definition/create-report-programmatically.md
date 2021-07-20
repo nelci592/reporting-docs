@@ -51,4 +51,4 @@ You can also [programmatically export the report]({%slug telerikreporting/using-
         
 
 # See Also
-[T:Telerik.Reporting.Report]()
+[Report](/reporting/api/Telerik.Reporting.Report)

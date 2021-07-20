@@ -164,4 +164,4 @@ If your custom user functions are linked from an external assembly, in order the
           
 
 # See Also
-[T:Telerik.Reporting.Expressions.FunctionAttribute]()
+[FunctionAttribute](/reporting/api/Telerik.Reporting.Expressions.FunctionAttribute)

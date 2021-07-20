@@ -23,7 +23,7 @@ You can add a table of contents to the report book and click on entries in the t
             
 
 1. Tell the Report Book that it needs to use the specially created TOC report in step 1. to display its Table of Contents.
-              This is achieved by setting the [P:Telerik.Reporting.ReportBook.TocReportSource]() property
+              This is achieved by setting the [TocReportSource](/reporting/api/Telerik.Reporting.ReportBook#collapsible-Telerik_Reporting_ReportBook_TocReportSource) property
               of the Report Book.
               In Visual Studio you can set the property using the Report Book designer (double-click on your Report Book class) or programmatically.
               In Standalone Report Designer you can set the TOC report source by clicking the corresponding button from the top menu.
@@ -31,7 +31,7 @@ You can add a table of contents to the report book and click on entries in the t
             
 
 1. Configure where the TOC will appear in the Report Book. You can choose to position it before all of the reports or after them
-              by setting the [P:Telerik.Reporting.ReportBook.TocPosition]() property.
+              by setting the [TocPosition](/reporting/api/Telerik.Reporting.ReportBook#collapsible-Telerik_Reporting_ReportBook_TocPosition) property.
             
 
 # See Also

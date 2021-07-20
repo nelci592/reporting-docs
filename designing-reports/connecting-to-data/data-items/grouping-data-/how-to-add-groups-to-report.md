@@ -234,4 +234,4 @@ Report groups are defined by adding __Group__ objects to the report’s __Groups
 
 
 # See Also
-[T:Telerik.Reporting.Report]()[P:Telerik.Reporting.Report.Groups]()
+[Report](/reporting/api/Telerik.Reporting.Report)[Groups](/reporting/api/Telerik.Reporting.Report#collapsible-Telerik_Reporting_Report_Groups)

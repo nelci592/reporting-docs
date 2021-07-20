@@ -13,7 +13,7 @@ position: 8
 
 
 This topic explains how to create a map that shows custom-defined shapes. The Map item processes and renders polygon primitives
-        using [T:Telerik.Reporting.ShapeMapSeries](),
+        using [ShapeMapSeries](/reporting/api/Telerik.Reporting.ShapeMapSeries),
         which accept
         [Well-known text/Well-known binary](http://en.wikipedia.org/wiki/Well-known_text)
         or
@@ -79,12 +79,12 @@ The __Choropleth setup__ expects to setup the fields required to create a chorop
 
 When the wizard closes, the Map item should display the three polygons that roughly represent the state borders of North Dakota, Wyoming and New Mexico.
               Depending on your scenario, you can setup a
-              [T:Telerik.Reporting.TileProvider]() and add some additional styling to the data points and map:
+              [TileProvider](/reporting/api/Telerik.Reporting.TileProvider) and add some additional styling to the data points and map:
               
   ![Map CustomWKT](images/Map/MapCustomWKT.png)
 
 In this article we demonstrated how to display custom-shaped polygons using
-            [T:Telerik.Reporting.ShapeMapSeries]() and Choropleth wizard. This approach is useful when is needed to
+            [ShapeMapSeries](/reporting/api/Telerik.Reporting.ShapeMapSeries) and Choropleth wizard. This approach is useful when is needed to
             show an additional layer or layers of geospatial data in a report.
           
 

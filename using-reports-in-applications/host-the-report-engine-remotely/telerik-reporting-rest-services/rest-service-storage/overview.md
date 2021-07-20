@@ -13,13 +13,13 @@ position: 0
 
 
 When implementing the REST Report service you need to provide an
-        [T:Telerik.Reporting.Cache.Interfaces.IStorage]()
+        [IStorage](/reporting/api/Telerik.Reporting.Cache.Interfaces.IStorage)
         interface implementation. An instance of the provided implementation will be used from the service to
         store its internal state (like active clients, interactivity state, rendered reports).
       
 
 The interface also exposes a method called
-        [M:Telerik.Reporting.Cache.Interfaces.IStorage.AcquireLock(System.String)]()
+        [AcquireLock](/reporting/api/Telerik.Reporting.Cache.Interfaces.IStorage#collapsible-Telerik_Reporting_Cache_Interfaces_IStorage_AcquireLock_System_String_)
         which is used from the service to enforce serialized access to all stored resources from each thread of
         the application and between the instances of the application in case of multi-instance environment (i.e., Web Farm).
         This requires that a suitable interface implementation should be selected when implementing the Reporting REST Service
@@ -32,12 +32,12 @@ The following implementations of the IStorage interface allow service multiple i
           They also have better overall performance.
         
 
-* [T:Telerik.Reporting.Cache.MsSqlServerStorage]()
+* [MsSqlServerStorage](/reporting/api/Telerik.Reporting.Cache.MsSqlServerStorage)
               object - See [How to Configure an MSSQL Database Storage]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-service-storage/how-to-configure-an-mssql-database-storage%}). It supports storage server side locks to achieve
               inter-machine resources serialized access by its Sql Server transactions feature.
             
 
-* [T:Telerik.Reporting.Cache.StackExchangeRedis.RedisStorage]()
+* [RedisStorage](/reporting/api/Telerik.Reporting.Cache.StackExchangeRedis.RedisStorage)
               object - See [How to Use Redis storage]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-service-storage/how-to-use-redis-storage%}). It supports storage server side locks to achieve
               inter-machine resources serialized access by its distributed locks feature.
             
@@ -49,15 +49,15 @@ The following implementations of the IStorage interface support the service to b
           in the boundaries of a single machine.
         
 
-* [T:Telerik.Reporting.Cache.File.FileStorage]() - Use the
-              [M:Telerik.Reporting.Cache.File.FileStorage.#ctor]()
+* [FileStorage](/reporting/api/Telerik.Reporting.Cache.File.FileStorage) - Use the
+              [#ctor](/reporting/api/Telerik.Reporting.Cache.File.FileStorage#collapsible-Telerik_Reporting_Cache_File_FileStorage_#ctor)
               method in order to create a storage instance. All Visual Studio item templates for adding the Reporting REST service use the default
               __FileStorage__ constructor. The second overload of the FileStorage constructor allows you to
               specify a folder, and it is recommended for usage in production environment.
             
 
-* [T:Telerik.Reporting.Cache.Database.DatabaseStorage]() - Use the
-              [M:Telerik.Reporting.Cache.Database.DatabaseStorage.#ctor]()
+* [DatabaseStorage](/reporting/api/Telerik.Reporting.Cache.Database.DatabaseStorage) - Use the
+              [#ctor](/reporting/api/Telerik.Reporting.Cache.Database.DatabaseStorage#collapsible-Telerik_Reporting_Cache_Database_DatabaseStorage_#ctor)
               method in order to create a storage instance. This storage option requires reference to __Telerik.Reporting.Cache.Database.dll__
               that has dependencies on Telerik Data Access which can be checked in the version
               corresponding [Upgrade article]({%slug telerikreporting/upgrade/overview%});

@@ -26,7 +26,7 @@ This tutorial shows how to use HTML5 Report Viewer's ASP.NET MVC wrapper in ASP.
             
 
 * Copy of the "Product Catalog.trdp" report file from __[TelerikReporting_InstallDir]\ReportDesigner\Examples__
-              in the folder used by the [T:Telerik.Reporting.Services.WebApi.ReportFileResolver]()
+              in the folder used by the [ReportFileResolver](/reporting/api/Telerik.Reporting.Services.WebApi.ReportFileResolver)
               in the Reporting REST service implementation.
             
 
@@ -235,7 +235,7 @@ Add the HTML5 ASP.NET MVC Report Viewer to the same view:
 >tip The above example uses deferred loading of the viewer to allow scripts to be handled properly,                    in case jQuery is not yet loaded on the page at the time the view is created.                    The used relative paths must be considered with the project's structure.                  
 
 
->note The viewer's  __ReportSource__  has 4 overloads allowing to specify report declaratively in code.                    The generated report's string description is sent and handled on the server by the                    [report source resolver used in the Reporting REST service]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-service-report-source-resolver/overview%}).                    The above example uses UriReportSource and a path to TRDP file (report created in the Standalone Report Designer).                    This string description will be handled automatically by the [T:Telerik.Reporting.Services.WebApi.ReportFileResolver]().                  
+>note The viewer's  __ReportSource__  has 4 overloads allowing to specify report declaratively in code.                    The generated report's string description is sent and handled on the server by the                    [report source resolver used in the Reporting REST service]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-service-report-source-resolver/overview%}).                    The above example uses UriReportSource and a path to TRDP file (report created in the Standalone Report Designer).                    This string description will be handled automatically by the [ReportFileResolver](/reporting/api/Telerik.Reporting.Services.WebApi.ReportFileResolver).                  
 
 
 Render the deferred initialization statement for the Report Viewer scripts (remember that they must be rendered after jQuery):

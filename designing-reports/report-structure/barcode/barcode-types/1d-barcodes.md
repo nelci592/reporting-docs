@@ -22,11 +22,11 @@ One-dimensional (1D) barcodes consists of lines and spaces of various widths tha
 This section describes the common settings for one-dimensional barcodes.
         
 
-* [P:Telerik.Reporting.Barcodes.Encoder1D.ShowText]() - when true shows the text together with the bars.
+* [ShowText](/reporting/api/Telerik.Reporting.Barcodes.Encoder1D#collapsible-Telerik_Reporting_Barcodes_Encoder1D_ShowText) - when true shows the text together with the bars.
             When the text is shown it can also be aligned horizontally by using the __TextAlign__ property of the
-              [P:Telerik.Reporting.ReportItemBase.Style]() object and/or
+              [Style](/reporting/api/Telerik.Reporting.ReportItemBase#collapsible-Telerik_Reporting_ReportItemBase_Style) object and/or
               vertically through the __VerticalAlign__ property of the
-              [P:Telerik.Reporting.ReportItemBase.Style]() object.
+              [Style](/reporting/api/Telerik.Reporting.ReportItemBase#collapsible-Telerik_Reporting_ReportItemBase_Style) object.
               
   ![barcode-textalign-property](images/Barcodes/barcode-textalign-property.png)  
   ![barcode-verticalalign-property](images/Barcodes/barcode-verticalalign-property.png)
@@ -115,4 +115,4 @@ GS1-128 is a special case of Code128. The only difference between GS1-128 and
 
 
 # See Also
-[T:Telerik.Reporting.Barcode]()[P:Telerik.Reporting.Barcode.Encoder]()[P:Telerik.Reporting.Barcode.BarAlign]()[P:Telerik.Reporting.Barcode.Checksum]()[P:Telerik.Reporting.Barcode.Module]()[P:Telerik.Reporting.Barcode.Stretch]()[P:Telerik.Reporting.Barcode.Angle]()[T:Telerik.Reporting.Barcodes.Encoder1D]()[P:Telerik.Reporting.Barcodes.Encoder1D.ShowText]()
+[Telerik.Reporting.Barcode](/reporting/api/Telerik.Reporting.Barcode)[Encoder](/reporting/api/Telerik.Reporting.Barcode#collapsible-Telerik_Reporting_Barcode_Encoder)[BarAlign](/reporting/api/Telerik.Reporting.Barcode#collapsible-Telerik_Reporting_Barcode_BarAlign)[Checksum](/reporting/api/Telerik.Reporting.Barcode#collapsible-Telerik_Reporting_Barcode_Checksum)[Module](/reporting/api/Telerik.Reporting.Barcode#collapsible-Telerik_Reporting_Barcode_Module)[Stretch](/reporting/api/Telerik.Reporting.Barcode#collapsible-Telerik_Reporting_Barcode_Stretch)[Angle](/reporting/api/Telerik.Reporting.Barcode#collapsible-Telerik_Reporting_Barcode_Angle)[Telerik.Reporting.Barcodes.Encoder1D](/reporting/api/Telerik.Reporting.Barcodes.Encoder1D)[ShowText](/reporting/api/Telerik.Reporting.Barcodes.Encoder1D#collapsible-Telerik_Reporting_Barcodes_Encoder1D_ShowText)

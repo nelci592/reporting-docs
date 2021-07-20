@@ -287,4 +287,4 @@ A new details group is added as a child group in the Grouping pane in the
 	        table1.RowGroups.Add(group1)
 ````
 
-[T:Telerik.Reporting.Table]()[P:Telerik.Reporting.Table.ColumnGroups]()[P:Telerik.Reporting.Table.RowGroups]()
+[Table](/reporting/api/Telerik.Reporting.Table)[ColumnGroups](/reporting/api/Telerik.Reporting.Table#collapsible-Telerik_Reporting_Table_ColumnGroups)[RowGroups](/reporting/api/Telerik.Reporting.Table#collapsible-Telerik_Reporting_Table_RowGroups)

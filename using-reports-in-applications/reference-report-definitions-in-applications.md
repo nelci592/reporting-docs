@@ -34,15 +34,15 @@ The report viewer is a UI component which is used to specify a report definition
         
 
 When working with an embedded report engine, the report source property accepts objects of the
-          [T:Telerik.Reporting.ReportSource]() type.
+          [ReportSource](/reporting/api/Telerik.Reporting.ReportSource) type.
         
 
 When working with a remote report engine via a service, the
-          [T:Telerik.Reporting.ReportSource]()
+          [ReportSource](/reporting/api/Telerik.Reporting.ReportSource)
           type might not be available, especially in client-server scenarios where the report engine is hosted in a different application.
           In such scenarios an intermediate report source has to be described (JSON object, custom C# type, etc.).
           The service which is responsible for accessing the report engine will try to translate this intermediate report source to an actual
-          [T:Telerik.Reporting.ReportSource]() object.
+          [ReportSource](/reporting/api/Telerik.Reporting.ReportSource) object.
         
 
 For more details and examples on the different report sources, please refer to
@@ -53,9 +53,9 @@ For more details and examples on the different report sources, please refer to
 
 When the report engine is embedded in the current application (i.e. the *Telerik.Reporting* assembly is referenced)
           it is possible to use the Report Processor to manually render
-          ([M:Telerik.Reporting.Processing.ReportProcessor.RenderReport(System.String,Telerik.Reporting.ReportSource,System.Collections.Hashtable)]())
+          ([RenderReport](/reporting/api/Telerik.Reporting.Processing.ReportProcessor#collapsible-Telerik_Reporting_Processing_ReportProcessor_RenderReport_System_String_Telerik_Reporting_ReportSource_System_Collections_Hashtable_))
           or print
-          ([M:Telerik.Reporting.Processing.ReportProcessor.PrintReport(Telerik.Reporting.ReportSource,System.Drawing.Printing.PrinterSettings)]())
+          ([PrintReport](/reporting/api/Telerik.Reporting.Processing.ReportProcessor#collapsible-Telerik_Reporting_Processing_ReportProcessor_PrintReport_Telerik_Reporting_ReportSource_System_Drawing_Printing_PrinterSettings_))
           a report. For this purpose it is required to pass an argument of ReportSource type which uniquely identifies the report.
         
 

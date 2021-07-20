@@ -98,6 +98,6 @@ For each sort expression, follow these steps:
 	        report1.Sortings.Add(sorting1)
 ````
 
-[T:Telerik.Reporting.Report]()[T:Telerik.Reporting.Sorting]()[T:Telerik.Reporting.SortingCollection]()
+[Report](/reporting/api/Telerik.Reporting.Report)[Sorting](/reporting/api/Telerik.Reporting.Sorting)[SortingCollection](/reporting/api/Telerik.Reporting.SortingCollection)
 
  * [How to Add groups to Report]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/grouping-data-/how-to-add-groups-to-report%})

@@ -27,7 +27,7 @@ __InteractiveActionLeave__ event is raised when the mouse cursor leaves the area
       
 
 All the events provide arguments that contain a reference to the underlying
-        [T:Telerik.Reporting.Processing.IAction]() instance
+        [IAction](/reporting/api/Telerik.Reporting.Processing.IAction) instance
         and its properties, evaluated during report processing.
       
 
@@ -59,9 +59,9 @@ For more information please refer to the related articles about each report view
 
 | Event Handler | Event Arguments |
 | ------ | ------ |
-|[E:Telerik.ReportViewer.WinForms.ReportViewerBase.InteractiveActionExecuting]()|[T:Telerik.ReportViewer.Common.InteractiveActionCancelEventArgs]()|
-|[E:Telerik.ReportViewer.WinForms.ReportViewerBase.InteractiveActionEnter]()|[T:Telerik.ReportViewer.Common.InteractiveActionEventArgs]()|
-|[E:Telerik.ReportViewer.WinForms.ReportViewerBase.InteractiveActionLeave]()|[T:Telerik.ReportViewer.Common.InteractiveActionEventArgs](|
+|[InteractiveActionExecuting](/reporting/api/Telerik.ReportViewer.WinForms.ReportViewerBase#collapsible-Telerik_ReportViewer_WinForms_ReportViewerBase_InteractiveActionExecuting)|[InteractiveActionCancelEventArgs](/reporting/api/Telerik.ReportViewer.Common.InteractiveActionCancelEventArgs)|
+|[InteractiveActionEnter](/reporting/api/Telerik.ReportViewer.WinForms.ReportViewerBase#collapsible-Telerik_ReportViewer_WinForms_ReportViewerBase_InteractiveActionEnter)|[InteractiveActionEventArgs](/reporting/api/Telerik.ReportViewer.Common.InteractiveActionEventArgs)|
+|[InteractiveActionLeave](/reporting/api/Telerik.ReportViewer.WinForms.ReportViewerBase#collapsible-Telerik_ReportViewer_WinForms_ReportViewerBase_InteractiveActionLeave)|[InteractiveActionEventArgs](/reporting/api/Telerik.ReportViewer.Common.InteractiveActionEventArgs|
 
 
 
@@ -73,9 +73,9 @@ For more information please refer to the related articles about each report view
 
 | Event Handler | Event Arguments |
 | ------ | ------ |
-|[E:Telerik.ReportViewer.Wpf.ReportViewer.InteractiveActionExecuting]()|[T:Telerik.ReportViewer.Wpf.InteractiveActionCancelEventArgs]()|
-|[E:Telerik.ReportViewer.Wpf.ReportViewer.InteractiveActionEnter]()|[T:Telerik.ReportViewer.Wpf.InteractiveActionEventArgs]()|
-|[E:Telerik.ReportViewer.Wpf.ReportViewer.InteractiveActionLeave]()|[T:Telerik.ReportViewer.Wpf.InteractiveActionEventArgs](|
+|[InteractiveActionExecuting](/reporting/api/Telerik.ReportViewer.Wpf.ReportViewer#collapsible-Telerik_ReportViewer_Wpf_ReportViewer_InteractiveActionExecuting)|[InteractiveActionCancelEventArgs](/reporting/api/Telerik.ReportViewer.Wpf.InteractiveActionCancelEventArgs)|
+|[InteractiveActionEnter](/reporting/api/Telerik.ReportViewer.Wpf.ReportViewer#collapsible-Telerik_ReportViewer_Wpf_ReportViewer_InteractiveActionEnter)|[InteractiveActionEventArgs](/reporting/api/Telerik.ReportViewer.Wpf.InteractiveActionEventArgs)|
+|[InteractiveActionLeave](/reporting/api/Telerik.ReportViewer.Wpf.ReportViewer#collapsible-Telerik_ReportViewer_Wpf_ReportViewer_InteractiveActionLeave)|[InteractiveActionEventArgs](/reporting/api/Telerik.ReportViewer.Wpf.InteractiveActionEventArgs|
 
 
 
@@ -87,9 +87,9 @@ For more information please refer to the related articles about each report view
 
 | Event Handler | Event Arguments |
 | ------ | ------ |
-|[E:Telerik.ReportViewer.Silverlight.ReportViewer.InteractiveActionExecuting]()|[T:Telerik.ReportViewer.Silverlight.InteractiveActionCancelEventArgs]()|
-|[E:Telerik.ReportViewer.Silverlight.ReportViewer.InteractiveActionEnter]()|[T:Telerik.ReportViewer.Silverlight.InteractiveActionEventArgs]()|
-|[E:Telerik.ReportViewer.Silverlight.ReportViewer.InteractiveActionLeave]()|[T:Telerik.ReportViewer.Silverlight.InteractiveActionEventArgs](|
+|[InteractiveActionExecuting](/reporting/api/Telerik.ReportViewer.Silverlight.ReportViewer#collapsible-Telerik_ReportViewer_Silverlight_ReportViewer_InteractiveActionExecuting)|[InteractiveActionCancelEventArgs](/reporting/api/Telerik.ReportViewer.Silverlight.InteractiveActionCancelEventArgs)|
+|[InteractiveActionEnter](/reporting/api/Telerik.ReportViewer.Silverlight.ReportViewer#collapsible-Telerik_ReportViewer_Silverlight_ReportViewer_InteractiveActionEnter)|[InteractiveActionEventArgs](/reporting/api/Telerik.ReportViewer.Silverlight.InteractiveActionEventArgs)|
+|[InteractiveActionLeave](/reporting/api/Telerik.ReportViewer.Silverlight.ReportViewer#collapsible-Telerik_ReportViewer_Silverlight_ReportViewer_InteractiveActionLeave)|[InteractiveActionEventArgs](/reporting/api/Telerik.ReportViewer.Silverlight.InteractiveActionEventArgs|
 
 
 

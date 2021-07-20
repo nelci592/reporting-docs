@@ -17,4 +17,4 @@ The Graph item can have one or more titles.
       
 
 # See Also
-[T:Telerik.Reporting.GraphTitle]()[P:Telerik.Reporting.Graph.Titles]()
+[GraphTitle](/reporting/api/Telerik.Reporting.GraphTitle)[Titles](/reporting/api/Telerik.Reporting.Graph#collapsible-Telerik_Reporting_Graph_Titles)

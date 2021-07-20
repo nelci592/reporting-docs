@@ -124,11 +124,11 @@ According to our scenario, the group header will contain all the items used to d
   ![Change Scale Type](images/Graph/HowToBarLineSeries/ChangeScaleType.png)
 
 * For better layout set the X-axis
-                      [P:Telerik.Reporting.GraphAxis.LabelFormat]()
+                      [LabelFormat](/reporting/api/Telerik.Reporting.GraphAxis#collapsible-Telerik_Reporting_GraphAxis_LabelFormat)
                       property to `={0:MMM-yy}`. You can add some additional styling to its datapoints as well -
                       for example, you can hide the graph legend, edit its title and
-                      set the [P:Telerik.Reporting.LineSeries.MarkerType]()
-                      to __Circle__ and increase its [P:Telerik.Reporting.LineSeries.MarkerSize]()
+                      set the [MarkerType](/reporting/api/Telerik.Reporting.LineSeries#collapsible-Telerik_Reporting_LineSeries_MarkerType)
+                      to __Circle__ and increase its [MarkerSize](/reporting/api/Telerik.Reporting.LineSeries#collapsible-Telerik_Reporting_LineSeries_MarkerSize)
                       to 10px.
                     
 
@@ -151,13 +151,13 @@ If you now preview your report, it should display a label and a graph for each v
                 
 
 * The labels on the X axis scale are too close to each other and that makes the chart unreadable. Usually for such cases
-                  the [P:Telerik.Reporting.DateTimeScale.LabelStep]()
+                  the [LabelStep](/reporting/api/Telerik.Reporting.DateTimeScale#collapsible-Telerik_Reporting_DateTimeScale_LabelStep)
                   property can be used, but it should be set dynamically for a particular set of data - otherwise it could be
                   applied unnecessarily.
                 
 
 The above problems can be resolved using coordinate system's
-              [P:Telerik.Reporting.GraphCoordinateSystem.Bindings]().
+              [Bindings](/reporting/api/Telerik.Reporting.GraphCoordinateSystem#collapsible-Telerik_Reporting_GraphCoordinateSystem_Bindings).
               Expand the coordinate system properties in the __PropertyGrid__ and bring the Bindings dialog up
               by clicking on the button on the right side of the __Bindings__ property, as shown below:
               
@@ -167,15 +167,15 @@ The above problems can be resolved using coordinate system's
                   Since we want to bind the scale maximum with the current graph data, it is a good idea to raise the maximum by 10%.
                   To do so, set the following expression on the right: `=CDbl(Max(Fields.SalesAmount) + Max(Fields.SalesAmount) * 0.1)`
 
->important Note that the expression result should be of the same type as the property which is applies to.                    In this case, the [P:Telerik.Reporting.NumericalScaleBase.Maximum]()                    is of type  __double__ , so you need to cast the expression result  to double - otherwise it won't be applied.                  
+>important Note that the expression result should be of the same type as the property which is applies to.                    In this case, the [Maximum](/reporting/api/Telerik.Reporting.NumericalScaleBase#collapsible-Telerik_Reporting_NumericalScaleBase_Maximum)                    is of type  __double__ , so you need to cast the expression result  to double - otherwise it won't be applied.                  
 
 
 * Add another binding and select `XAxis.Scale.LabelStep` as a __Property path__.
-                  Our expression will set the [P:Telerik.Reporting.DateTimeScale.LabelStep]() to 
+                  Our expression will set the [LabelStep](/reporting/api/Telerik.Reporting.DateTimeScale#collapsible-Telerik_Reporting_DateTimeScale_LabelStep) to 
                   __3__ if there are more than 10 data points to be displayed:
                   `=IIF(CountDistinct(Fields.MonthYear) > 10, 3, 1)`.
                 However, the __LabelStep__ property would not be applied if the 
-                  [P:Telerik.Reporting.DateTimeScale.LabelUnit]() is set to __Auto__, 
+                  [LabelUnit](/reporting/api/Telerik.Reporting.DateTimeScale#collapsible-Telerik_Reporting_DateTimeScale_LabelUnit) is set to __Auto__, 
                   so we need to change it dynamically to __Months__ with the following expression:
                   `=IIF(CountDistinct(Fields.MonthYear) > 10, 'Months', 'Auto')`.
                 When you preview your report with the bindings applied, the graph that shows the *Cadillac ELR* data 
@@ -195,4 +195,4 @@ You can download this example report as a __.trdx__ report definition from the f
 
  * [Bindings]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/bindings%})
 
- * [Graph Structure]({%slug telerikreporting/designing-reports/report-structure/graph/structure%})[T:Telerik.Reporting.GraphAxis]()[P:Telerik.Reporting.GraphAxis.LabelFormat]()[P:Telerik.Reporting.GraphAxis.LabelPlacement]()[P:Telerik.Reporting.GraphAxis.Scale]()
+ * [Graph Structure]({%slug telerikreporting/designing-reports/report-structure/graph/structure%})[GraphAxis](/reporting/api/Telerik.Reporting.GraphAxis)[LabelFormat](/reporting/api/Telerik.Reporting.GraphAxis#collapsible-Telerik_Reporting_GraphAxis_LabelFormat)[LabelPlacement](/reporting/api/Telerik.Reporting.GraphAxis#collapsible-Telerik_Reporting_GraphAxis_LabelPlacement)[Scale](/reporting/api/Telerik.Reporting.GraphAxis#collapsible-Telerik_Reporting_GraphAxis_Scale)

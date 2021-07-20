@@ -16,8 +16,8 @@ Normally the gap is automatically calculated based on the data and chart area.
         If the chart area is fixed and there are many series the space between two data points may be very narrow,
         or very wide when fewer series. Therefore, we may need to change the gap width manually.
         The property that defines the amount of blank space between two adjacent data slots is the
-        [P:Telerik.Reporting.Scale.SpacingSlotCount]()
-        property of the [T:Telerik.Reporting.Scale]() class.
+        [SpacingSlotCount](/reporting/api/Telerik.Reporting.Scale#collapsible-Telerik_Reporting_Scale_SpacingSlotCount)
+        property of the [Scale](/reporting/api/Telerik.Reporting.Scale) class.
       
 
 This property defines the ratio between the empty space per single data slot and the space that the datapoints will occupy when placed in it.
@@ -31,7 +31,7 @@ This property defines the ratio between the empty space per single data slot and
 ## 
 
 The following pictures show how the column chart would look like with different values for the
-          [P:Telerik.Reporting.Scale.SpacingSlotCount]() property:
+          [SpacingSlotCount](/reporting/api/Telerik.Reporting.Scale#collapsible-Telerik_Reporting_Scale_SpacingSlotCount) property:
         
 
 
@@ -86,4 +86,4 @@ To change the __Scale.SpacingSlotCount__ property, follow these steps:
 # See Also
 
 
- * [How to: change the space between chart's series](http://www.telerik.com/support/kb/reporting/details/how-to-change-the-space-between-charts-series)[P:Telerik.Reporting.Scale.SpacingSlotCount]()[T:Telerik.Reporting.Scale]()
+ * [How to: change the space between chart's series](http://www.telerik.com/support/kb/reporting/details/how-to-change-the-space-between-charts-series)[SpacingSlotCount](/reporting/api/Telerik.Reporting.Scale#collapsible-Telerik_Reporting_Scale_SpacingSlotCount)[Scale](/reporting/api/Telerik.Reporting.Scale)

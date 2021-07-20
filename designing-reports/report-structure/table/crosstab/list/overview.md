@@ -13,7 +13,7 @@ position: 0
 
 
 The Table report item is a separate data region and does not make use of the report's data source. It has its own
-        [P:Telerik.Reporting.DataItem.DataSource]() property which you have to set in order to populate the item with data.
+        [Telerik.Reporting.DataItem.DataSource](/reporting/api/Telerik.Reporting.DataItem#collapsible-Telerik_Reporting_DataItem_DataSource) property which you have to set in order to populate the item with data.
       
 
 Use the table to display fields from a dataset either as detail data or as grouped data in a grid or free-form layout. Telerik Reporting provides three items that can be used as templates and you can add them directly from the Toolbox: table, crosstab, and list.

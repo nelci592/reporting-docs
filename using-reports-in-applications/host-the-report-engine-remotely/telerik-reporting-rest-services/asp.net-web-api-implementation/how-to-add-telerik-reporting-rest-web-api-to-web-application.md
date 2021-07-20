@@ -83,7 +83,7 @@ Make sure that the project has the following assembly references:
 (Only for Empty Web Application) Add new item "Global Application Class";
 
 Invoke
-                  [M:Telerik.Reporting.Services.WebApi.ReportsControllerConfiguration.RegisterRoutes(System.Web.Http.HttpConfiguration)]()
+                  [RegisterRoutes](/reporting/api/Telerik.Reporting.Services.WebApi.ReportsControllerConfiguration#collapsible-Telerik_Reporting_Services_WebApi_ReportsControllerConfiguration_RegisterRoutes_System_Web_Http_HttpConfiguration_)
                   at the beginning of the `Global.Application_Start (Global.asax)` method:
                 
 

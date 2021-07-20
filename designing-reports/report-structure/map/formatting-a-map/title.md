@@ -17,7 +17,7 @@ The Map item can have one or more titles.
       
 
 # See Also
-[T:Telerik.Reporting.MapTitle]()[P:Telerik.Reporting.Map.Titles]()
+[MapTitle](/reporting/api/Telerik.Reporting.MapTitle)[Titles](/reporting/api/Telerik.Reporting.Map#collapsible-Telerik_Reporting_Map_Titles)
 
  * [Map Overview]({%slug telerikreporting/designing-reports/report-structure/map/structure/overview%})
 

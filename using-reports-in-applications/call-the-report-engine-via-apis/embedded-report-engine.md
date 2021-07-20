@@ -32,9 +32,14 @@ The [M:Telerik.Reporting.Processing.ReportProcessor.RenderReport(System.String,T
 ## Exporting a report to a single document format
 
 Some formats (MHTML, PDF, XLS(X), RTF, DOCX, PPTX, CSV) produce a single document which is handled by the first overload of the
-          [M:Telerik.Reporting.Processing.ReportProcessor.RenderReport(System.String,Telerik.Reporting.ReportSource,System.Collections.Hashtable)]():
+          M:Telerik.Reporting.Processing.ReportProcessor.RenderReport(System.String,Telerik.Reporting.ReportSource,System.Collections.Hashtable):  
 		  
-		  [RenderReport](/reporting/api/Telerik.Reporting.Processing.ReportProcessor.html#collapsible-Telerik_Reporting_Processing_ReportProcessor_RenderReport_System_String_Telerik_Reporting_ReportSource_System_Collections_Hashtable_)
+		  
+		  [RenderReport](http://localhost/reporting/using-reports-in-applications/call-the-report-engine-via-apis/embedded-report-engine)  
+		  
+		  
+		  [RenderReport](/reporting/api/Telerik.Reporting.Processing.ReportProcessor.html#collapsible-Telerik_Reporting_Processing_ReportProcessor_RenderReport_System_String_Telerik_Reporting_ReportSource_System_Collections_Hashtable_)  
+		  
         
 
 {{source=CodeSnippets\CS\API\Telerik\Reporting\Processing\ReportProcessorSnippets.cs region=Export_Single_Stream_Snippet}}

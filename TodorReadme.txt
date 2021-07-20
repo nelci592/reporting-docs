@@ -1,3 +1,7 @@
+Петър Милчев - Ajax support
+
+
+
 Fixed:
 
 Change _config.yml file for TOC, etc.
@@ -21,6 +25,12 @@ For TITLES use normalize-space in XSLT
 [CDATA] code handling in custom code like with CODE-with source
 
 
+Change links from conceptual articles to api-ref articles like:
+<codeEntityReference qualifyHint="false" autoUpgrade="true">M:Telerik.Reporting.Processing.ReportProcessor.RenderReport(System.String,Telerik.Reporting.ReportSource,System.Collections.Hashtable)</codeEntityReference>
+		  
+[RenderReport](/reporting/api/Telerik.Reporting.Processing.ReportProcessor.html#collapsible-Telerik_Reporting_Processing_ReportProcessor_RenderReport_System_String_Telerik_Reporting_ReportSource_System_Collections_Hashtable_)
+
+
 
 
 
@@ -39,7 +49,7 @@ msbuild /p:LatestBinariesPath="\\telerik.com\distributions\DailyBuilds\REPORTING
 Test - run in D:\Work
 msbuild /p:LatestBinariesPath="D:\Work\MdDocs\Examples\CSharp\.NET Framework\Html5IntegrationDemo\bin";DocsRepoName=reporting-docs;DocumentationBaseUrl=https://docs.telerik.com/reporting/;DocsRepoApiAssetsFolder=_assetsApi docs-seed/_buildApi/BuildApiReference.proj
 
-Петър Милчев - Ajax support
+
 
 
 Branch Development\MdDocs
@@ -65,14 +75,6 @@ Example that worked locally, from Telerik.Reporting.xml after build:
 </member>
 "
 Implement this change for all occurrencies above
-
-
-
-
-Change links from conceptual articles to api-ref articles like:
-<codeEntityReference qualifyHint="false" autoUpgrade="true">M:Telerik.Reporting.Processing.ReportProcessor.RenderReport(System.String,Telerik.Reporting.ReportSource,System.Collections.Hashtable)</codeEntityReference>
-		  
-[RenderReport](/reporting/api/Telerik.Reporting.Processing.ReportProcessor.html#collapsible-Telerik_Reporting_Processing_ReportProcessor_RenderReport_System_String_Telerik_Reporting_ReportSource_System_Collections_Hashtable_)
 
 
 

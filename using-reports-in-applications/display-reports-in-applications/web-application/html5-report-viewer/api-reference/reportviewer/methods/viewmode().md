@@ -14,9 +14,12 @@ position: 17
 
 ## 
 
-Gets the current view mode. For more information please see jQuery.fn.telerik_ReportViewer’s viewMode option in [](c578f366-93da-4dd1-8972-6efbc5a1790b#Options).
+Gets the current view mode. For more information please see jQuery.fn.telerik_ReportViewer’s viewMode option in 
+[](c578f366-93da-4dd1-8972-6efbc5a1790b#Options).
+
 
 Returns: string.
+
 
 	
 ````js
@@ -24,5 +27,6 @@ var reportViewer = $("#reportViewer1").data("telerik_ReportViewer");
 var vm = reportViewer.viewMode();
           
 ````
+
 
 

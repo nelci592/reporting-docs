@@ -15,20 +15,34 @@ position: 4
 At any point when designing the report, you can change the chart type to something more suitable to the report. 
       	It is important to select the correct chart type for your data so that it can be interpreted correctly. 
       	You should understand each chart type's characteristics to determine what chart type is best suited for your data. 
-      	For more information, see [Chart Types]({%slug telerikreporting/designing-reports/report-structure/graph/chart-types/overview%}).
+      	For more information, see 
+[Chart Types]({%slug telerikreporting/designing-reports/report-structure/graph/chart-types/overview%})
+.
       
+
 
 When multiple series are displayed on a graph, you may want to change the chart type of an individual series. 
       	You can only change the chart type of an individual series if the chart type is Area, Column, Line, or Scatter. 
       	For all other chart types, all series in your chart will be changed to the selected chart type.
-      To change the chart type
+      
+To change the chart type
+
 
 In Design view, right click on the graph or graph series.
 
+
 The Graph context menu opens.
 
-Click the __Change Chart Type__ option.
 
-In the __Change Chart Type__ dialog box, select a chart type from the list.
+Click the 
+__Change Chart Type
+__ option.
+
+
+In the 
+__Change Chart Type
+__ dialog box, select a chart type from the list.
+
 
 When you are done, click OK.
+

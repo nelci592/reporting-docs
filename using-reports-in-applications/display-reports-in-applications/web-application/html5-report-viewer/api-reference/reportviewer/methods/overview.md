@@ -29,7 +29,9 @@ position: 0
 |DOCUMENT_MAP_AREA_KEY|68 *('d')* |Key for moving the focus to the document map area, if visible.
 
 
-||
+|   |   |
+| ------ | ------ |
+|
 |[accessibilityKeyMap(keyMap)]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/methods/accessibilitykeymap(keymap)%})|Sets the shortcut keys used when the report viewer is in accessible mode. It is recommended to set the new key map when the report rendering is complete, because the accessibility routines require the report viewer template to be loaded.|
 |[authenticationToken(token)]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/methods/authenticationtoken(token)%})|Sets the viewer’s authentication token.|
 |[bind(eventName, eventHandler)]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/methods/bind(eventname,-eventhandler)%})|Binds event handlers to the specified event. For more information please see jQuery.fn.telerik_ReportViewer’s scale and scaleMode options in[](c578f366-93da-4dd1-8972-6efbc5a1790b#Options).|

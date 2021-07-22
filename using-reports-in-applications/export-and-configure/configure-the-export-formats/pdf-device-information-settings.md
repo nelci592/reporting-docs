@@ -14,13 +14,14 @@ position: 3
 
 The following table lists the device information settings for rendering in PDF format.
 
+
 ## PDF Device Information Settings
 
 
 |  __Name__  |  __Type__  |  __Description__  |
 | ------ | ------ | ------ |
 |ComplianceLevel|String|The PDF/A compliance level. The supported values are __None__ , __PDF/A-1b__ , __PDF/A-2b__ and __PDF/A-3b__ .<br/>                Default value: None. If EnableAccessibility is set to True, due to incompatibility the ComplianceLevel metadata is ignored.|
-|EnableAccessibility|Boolean|Determines if the PDF will be generated in accordance to[<br/>                    PDF/UA (ISO standard 14289-1)<br/>                  ](https://en.wikipedia.org/wiki/PDF/UA)specification.|
+|EnableAccessibility|Boolean|Determines if the PDF will be generated in accordance to[                    PDF/UA (ISO standard 14289-1)<br/>                  <br/>](https://en.wikipedia.org/wiki/PDF/UA<br/>)specification.|
 |SignCertFilename|String|The name of a certificate file. Absolute and relative paths are supported.|
 |SignCertPassword|String|The password required to access the X.509 certificate data.|
 |SignLocation|String|(Optional) The CPU host name or physical location of the signing.|
@@ -38,7 +39,7 @@ The following table lists the device information settings for rendering in PDF f
 |DocumentCreator|String|The document creator. The default value is Telerik Reporting product name and version.|
 |DocumentSubject|String|The subject of the document.|
 |DocumentKeywords|String|Keywords associated with the document.|
-|DocumentNaturalLanguage|String|A language identifier in accordance to[RFC 1766 ](https://www.ietf.org/rfc/rfc1766.txt)that specifies the natural language for all text in the document. If absent, the language will be retrieved from report's culture. Example value: __en-US__ .|
+|DocumentNaturalLanguage|String|A language identifier in accordance to[RFC 1766 <br/>](https://www.ietf.org/rfc/rfc1766.txt<br/>)that specifies the natural language for all text in the document. If absent, the language will be retrieved from report's culture. Example value: __en-US__ .|
 |UseSvgVectorRendering|Boolean|Determines if the SVG images will be rendered using vector-based or raster-based graphic primitives.<br/>                The vector-based rendering preserves the image quality regardless the current zoom, but does not support all SVG elements.<br/>                The raster-based rendering can be used with every SVG image but produces a bitmap which does not preserve its quality when zooming in/out in the PDF document.<br/>                Default value: __true__ .|
 |ViewerHideToolbar|Boolean|A flag specifying whether to hide the viewer application’s tool bars when the document is active. Default value: __false__ .|
 |ViewerHideMenubar|Boolean|A flag specifying whether to hide the viewer application’s menu bar when the document is active. Default value: __false__ .|
@@ -53,15 +54,23 @@ The following table lists the device information settings for rendering in PDF f
 
 
 
-For an example of how to set up the settings for a rendering extension, see [extensions Element]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/extensions-element%}).           
+For an example of how to set up the settings for a rendering extension, see 
+[extensions Element]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/extensions-element%})
+.           
         
 
-For more detailed explanation about the device information settings and their effect on the produced PDF document, see [Design Considerations for PDF Rendering]({%slug telerikreporting/designing-reports/rendering-and-paging/design-considerations-for-report-rendering/pdf-rendering-design-considerations%}).
+
+For more detailed explanation about the device information settings and their effect on the produced PDF document, see 
+[Design Considerations for PDF Rendering]({%slug telerikreporting/designing-reports/rendering-and-paging/design-considerations-for-report-rendering/pdf-rendering-design-considerations%})
+.
         
+
 
 # See Also
 
 
  * [Device Information Settings]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-export-formats/overview%})
 
+
  * [Export Formats]({%slug telerikreporting/using-reports-in-applications/export-and-configure/export-formats%})
+

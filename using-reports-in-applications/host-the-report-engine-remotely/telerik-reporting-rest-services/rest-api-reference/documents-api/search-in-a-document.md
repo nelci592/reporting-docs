@@ -14,13 +14,14 @@ position: 7
 
 ## Request#_URI Template_
 
-	
-          POST /api/reports/clients/{clientId}/instances/{instanceId}/documents/{documentId}/search
+	          POST /api/reports/clients/{clientId}/instances/{instanceId}/documents/{documentId}/search
         
 
 
 
-__Path parameters__
+
+__Path parameters
+__
 
 
 | Name | Type | Description |
@@ -32,10 +33,13 @@ __Path parameters__
 
 
 
-__Request Body__
+__Request Body
+__
 
-[SearchInfo]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/json-entities/searchinfo%}) describing the search arguments.
+[SearchInfo]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/json-entities/searchinfo%})
+ describing the search arguments.
         
+
 
 ## Response
 
@@ -50,17 +54,21 @@ __Request Body__
 
 
 
-__Response Body__
+__Response Body
+__
 
-When the return status is `OK` the response body contains a JSON array of [SearchResultsInfo]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/json-entities/searchresultsinfo%}) 
+When the return status is 
+`OK
+` the response body contains a JSON array of 
+[SearchResultsInfo]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/json-entities/searchresultsinfo%})
+ 
           objects representing the search results.
         
 
+
 ## Sample#_Request Message_
 
-	
-          POST /api/reports/clients/f3c380da635/instances/c71aeb824cf/documents/495ff8766803332209ef12/search HTTP/1.1
-
+	          POST /api/reports/clients/f3c380da635/instances/c71aeb824cf/documents/495ff8766803332209ef12/search HTTP/1.1
           {
             "searchToken": "foo",
             "matchCase": false,
@@ -69,15 +77,16 @@ When the return status is `OK` the response body contains a JSON array of [Searc
           }
         
 
+
 #_Response Message_
 
-	
-          HTTP/1.1 200 Ok
+	          HTTP/1.1 200 Ok
           {
             "description":"Quarterly Sales Dashboard for 2003",
             "id":"a082030a03fa4e349abe183d161a35ea",
             "page":1
           }
         
+
 
 

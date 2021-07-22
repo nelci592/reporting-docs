@@ -19,6 +19,7 @@ Expressions are evaluated against the data scopes. Data scopes are
 		one expression is evaluated against the data set defined by its scope. 
 		
 
+
 Data scopes are defined by the data items and groups. Data items
 		contain all data from their data source and define the outermost scope.
 		For example the report item Report1 defines the scope named Report1 and
@@ -29,20 +30,24 @@ Data scopes are defined by the data items and groups. Data items
 		define the innermost scope.
 		
 
+
 The report processor evaluates the expressions in a named scope or
 		the default scope. The default scope depends on the report item property
 		that the report processor is evaluating.
 		
+
 
 The rule used for resolving the default data scope is the following:
 		Each expression is used in some property of a report item. The processor
 		finds the nearest ancestor item defining a data scope. This scope is used
 		for the expression evaluation.
 
+
 A named scope can be the name of a data item, or a group. You must
 		specify the current scope or a containing scope; you cannot specify a
 		scope that is lower or at the same level in containment order than the
 		current scope.
+
 
 By default all non-aggregating functions are usually evaluated in
 		the default scope and operate over a single/detail item of the data 
@@ -50,14 +55,19 @@ By default all non-aggregating functions are usually evaluated in
 		will be evaluated against the first item in the current set of data.
 		
 
+
 Aggregate functions always operate over the entire set of data
 		defined by their scope. If the current scope is a detail section or a
 		detail group the calculations are performed over a single item of the
 		data source.
 		
 
+
 You can set the scope of the expression evaluation by using the
-		built-in __Exec__ function.
+		built-in 
+__Exec
+__ function.
+
 
 # See Also
 

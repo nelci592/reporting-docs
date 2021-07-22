@@ -20,14 +20,18 @@ Expressions are widely used while designing reports, for example to
 		definition. When the report runs, the report processor evaluates the
 		expressions and substitutes the expression results for the property values.
 
+
 To see evaluated expression values in a report, preview the report.
+
 
 Parameters can be used with expressions to provide additional
 		flexibility for changing the content and appearance of a report.
 
+
 Expressions begin with an equal (=) and can include a combination
 		of constants, operators, and references to built-in values (fields, parameters,
 		and functions), and to external or custom code.
+
 
 >important Expressions are case-insensitive. Thus, it is strongly recommended that the data fields, functions,          and other objects used in expressions throughout the report are case-insensitive unique. Otherwise,           the expression engine will not be able to distinguish between the objects which may lead to unexpected results.        
 
@@ -38,8 +42,11 @@ During the evaluation, all defined operations and functions are
 		result depends on the expression and should always conform to the property
 		it is applied to.
 
-For example, if you create an expression for the __Style.BackgroundColor__
-		property, the value must evaluate to a System.Drawing.Color object.
+
+For example, if you create an expression for the 
+__Style.BackgroundColor
+__		property, the value must evaluate to a System.Drawing.Color object.
+
 
 # See Also
 

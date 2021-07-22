@@ -14,6 +14,7 @@ position: 11
 
 The following table lists the device information settings for rendering in HTML5Interactive format.
 
+
 ## HTML5Interactive Device Information Settings
 
 
@@ -25,12 +26,17 @@ The following table lists the device information settings for rendering in HTML5
 
 
 
-For an example of how to set up the settings for a rendering extension, see [extensions Element]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/extensions-element%}).
+For an example of how to set up the settings for a rendering extension, see 
+[extensions Element]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/extensions-element%})
+.
         
+
 
 # See Also
 
 
  * [Device Information Settings]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-export-formats/overview%})
 
+
  * [Export Formats]({%slug telerikreporting/using-reports-in-applications/export-and-configure/export-formats%})
+

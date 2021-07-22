@@ -17,12 +17,17 @@ You can control whether a report item initially displays or is hidden when a use
     	dynamic (associated with groups), static and detail row and column groups. The main reason for hiding items is usually for clarity - 
     	a report that initially shows summary but enables users to drilldown into detail data.
 
+
 For example, you can initially hide(Visible=false) all the row groups except the outer parent group for a table. For each inner 
     	group (including the details group), add a drilldown action to the grouping cell of the containing group. When the report is rendered, 
     	the user can click the text box to expand and collapse the detail data.
 
-To define a drilldown action add a [ToggleVisibilityAction](/reporting/api/Telerik.Reporting.ToggleVisibilityAction) on an item. 
-    	To define if the item exposing the action will be rendered initially with expanded or with collapsed mark, use the [DisplayExpandedMark](/reporting/api/Telerik.Reporting.ToggleVisibilityAction#collapsible-Telerik_Reporting_ToggleVisibilityAction_DisplayExpandedMark)
+
+To define a drilldown action add a 
+[ToggleVisibilityAction](/reporting/api/Telerik.Reporting.ToggleVisibilityAction)
+ on an item. 
+    	To define if the item exposing the action will be rendered initially with expanded or with collapsed mark, use the 
+[DisplayExpandedMark](/reporting/api/Telerik.Reporting.ToggleVisibilityAction#Telerik_Reporting_ToggleVisibilityAction_DisplayExpandedMark)
     	property.
 
 
@@ -34,6 +39,9 @@ To define a drilldown action add a [ToggleVisibilityAction](/reporting/api/Teler
 
  * [How to Add a Drilldown/Toggle Visibility Action]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/actions/how-to/how-to-add-a-drilldown/toggle-visibility-action%})
 
+
  * [Drillthrough Report Action]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/actions/drillthrough-report-action%})
 
+
  * [How to Add a Drillthrough/Navigate To Report Action]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/actions/how-to/how-to-add-a-drillthrough/navigate-to-report-action%})
+

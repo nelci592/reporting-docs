@@ -15,17 +15,23 @@ position: 0
 The four main HTTP methods (GET, PUT, POST, and DELETE) are mapped to CRUD operations as follows:
       
 
+
 * GET retrieves the representation of the resource at a specified URI. GET have no side effects on the server.
+
 
 * PUT updates a resource at a specified URI.
 
+
 * POST creates a new resource. The server assigns the ID for the new object and returns this ID as part of the response message.
+
 
 * DELETE deletes a resource at a specified URI.
 
 
 
+
 The API represent resources as hierarchical URIs in order to force the clients to use certain request sequence.
+
 
 ## The reports API exposes following methods:
 

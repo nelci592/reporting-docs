@@ -13,24 +13,45 @@ position: 4
 
 
 This article is part of the Demo report guide on getting started with Telerik Reporting and demonstrates
-        how to create a [Overview]({%slug telerikreporting/designing-reports/report-structure/graph/overview%}) item in the __Report Header__.
+        how to create a 
+[Overview]({%slug telerikreporting/designing-reports/report-structure/graph/overview%})
+ item in the 
+__Report Header
+__.
       
 
-The controls which the __Report Header__ and the __Report Footer__ contain are displayed only once at the top and bottom
-        of the entire report respectively. The controls which the __pageHeaderSection__ and the __pageFooterSection__ are displayed on all pages.
-        The __Report Header__ and __Report Foote__r are hidden by default.
+
+The controls which the 
+__Report Header
+__ and the 
+__Report Footer
+__ contain are displayed only once at the top and bottom
+        of the entire report respectively. The controls which the 
+__pageHeaderSection
+__ and the 
+__pageFooterSection
+__ are displayed on all pages.
+        The 
+__Report Header
+__ and 
+__Report Foote
+__r are hidden by default.
       
+
 
 ## 
 
-1. To reveal the report header, right-click outside the report and select __Report Header__.
+1. To reveal the report header, right-click outside the report and select 
+__Report Header
+__.
             
+
 
 1. Add a new SQL Datasource component for the graph with the following query:
             
 
-	
-              SELECT
+
+	              SELECT
               P.Name AS ProductName, SOD.LineTotal / 1000 AS LineTotal,
               SOH.OrderDate,
               SS.Name AS StoreName,
@@ -48,62 +69,126 @@ The controls which the __Report Header__ and the __Report Footer__ contain are d
 
 
 
-1. Rename the datasource to __graphDataSource__.
+
+1. Rename the datasource to 
+__graphDataSource
+__.
             
 
-1. Click __reportHeaderSection__.
+
+1. Click 
+__reportHeaderSection
+__.
             
 
-1. Select __Insert__ > __Pie__ > __graphDataSource__.
+
+1. Select 
+__Insert
+__ > 
+__Pie
+__ > 
+__graphDataSource
+__.
             
 
-1. Drag __StoreName__ to __Series__.
+
+1. Drag 
+__StoreName
+__ to 
+__Series
+__.
             
 
-1. Drag __LineTotal__ to __Values__.
-              
+
+1. Drag 
+__LineTotal
+__ to 
+__Values
+__.
+            
+  
   ![Pie](images/Pie.PNG)
 
 1. Mark the graph to add the filtering and sorting functionalities. As a result, the top five stores from the database will be rendered.
             
 
-1. From the  [Group Explorer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/group-explorer%}), click __Filter__ and set the following parameters:
+
+1. From the  
+[Group Explorer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/group-explorer%})
+, click 
+__Filter
+__ and set the following parameters:
             
 
-* __Expression__: =Sum(Fields.LineTotal)
 
-* __Operator__: Top N
+* __Expression
+__: 
+=Sum(Fields.LineTotal)
 
-* __Value__: =5
 
-1. From the __Group Explorer__, click __Sorting__ and set the following parameters:
+* __Operator
+__: 
+Top N
+
+
+* __Value
+__: 
+=5
+
+
+1. From the 
+__Group Explorer
+__, click 
+__Sorting
+__ and set the following parameters:
             
 
-* __Expression__: =Sum(Fields.LineTotal)
 
-* __Direction__:  DESC
+* __Expression
+__: 
+=Sum(Fields.LineTotal)
 
-1. From the __Properties__ grid, select the __Color Palette__ option to set specific colors for each bar series.
+
+* __Direction
+__: 
+ DESC
+
+
+1. From the 
+__Properties
+__ grid, select the 
+__Color Palette
+__ option to set specific colors for each bar series.
             
+
 
 1. Add the title of the graph.
             
 
+
 ## Previewing the Result
 
-Preview the result by clicking __Preview__ > __PrintPreview__.
+Preview the result by clicking 
+__Preview
+__ > 
+__PrintPreview
+__.
         
 
-In the generated report, the __Color Palette__ is set in the following way:
+
+In the generated report, the 
+__Color Palette
+__ is set in the following way:
         
 
-	
-          Color [A=255, R=0, G=105, B=104],
+
+	          Color [A=255, R=0, G=105, B=104],
           Color [A=255, R=88, G=168, B=35],
           Color [A=255, R=137, G=203, B=42],
           Color [A=255, R=34, G=181, B=115],
           Color [A=255, R=32, G=176, B=212]
         
+
 
   
   ![Report With Graph](images/ReportWithGraph.PNG)
@@ -112,18 +197,26 @@ In the generated report, the __Color Palette__ is set in the following way:
 
 * [Setting the Page Footer]({%slug telerikreporting/getting-started/setting-the-page-footer%})
 
+
 * [Integrating the Report in VS App]({%slug telerikreporting/getting-started/integrating-the-report-in-vs-app%})
+
 
 * [Parameterizing the Graph]({%slug telerikreporting/getting-started/parameterizing-the-graph%})
 
+
 * [How to Add Column Graph]({%slug telerikreporting/getting-started/how-to-add-column-graph%})
+
 
 ## Previous Steps
 
 * [First Steps]({%slug telerikreporting/getting-started/first-steps%})
 
+
 * [Creating the Demo Report]({%slug telerikreporting/getting-started/creating-the-demo-report%})
+
 
 * [Setting the Page Header]({%slug telerikreporting/getting-started/setting-the-page-header%})
 
+
 * [Creating the Table and Populating it with Data]({%slug telerikreporting/getting-started/creating-the-table-and-populating-it-with-data%})
+

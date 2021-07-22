@@ -14,13 +14,14 @@ position: 9
 
 Use Text functions to manipulate the text in your report. Text functions can use the following data types: String and Integer.
 
+
 ## String manipulation:
 
 
 | Function | Description |
 | ------ | ------ |
-| __Format(format, value)__ |Formats the value using the specified format string. Example:`=Format(' LineTotal: {0} ', Fields.LineTotal)`. Detailed information about<br/>              date and time format specifiers can be found in[Standard Date and Time Format Strings](https://docs.microsoft.com/en-us/dotnet/standard/base-types/standard-date-and-time-format-strings)and[Custom Date and Time Format Strings](https://docs.microsoft.com/en-us/dotnet/standard/base-types/custom-date-and-time-format-strings)articles.|
-| __FormatWithCulture(cultureName, format, args)__ |Formats the value using the specified format string and culture name. Example:`=FormatWithCulture("en-GB", "Price: {0:C}", Fields.Price)`.<br/>              To use[<br/>                  invariant culture<br/>                ](<br/>                  https://docs.microsoft.com/en-us/dotnet/api/system.globalization.cultureinfo.invariantculture?view=netframework-4.7.2#System_Globalization_CultureInfo_InvariantCulture<br/>                ), the first argument must be an empty string. Detailed information about culture names can be found in[Windows Language Code Identifier (LCID) Reference](https://msdn.microsoft.com/en-us/library/cc233982.aspx)article.|
+| __Format(format, value)__ |Formats the value using the specified format string. Example:`=Format(' LineTotal: {0} ', Fields.LineTotal)`. Detailed information about<br/>              date and time format specifiers can be found in[Standard Date and Time Format Strings<br/>](https://docs.microsoft.com/en-us/dotnet/standard/base-types/standard-date-and-time-format-strings<br/>)and[Custom Date and Time Format Strings<br/>](https://docs.microsoft.com/en-us/dotnet/standard/base-types/custom-date-and-time-format-strings<br/>)articles.|
+| __FormatWithCulture(cultureName, format, args)__ |Formats the value using the specified format string and culture name. Example:`=FormatWithCulture("en-GB", "Price: {0:C}", Fields.Price)`.<br/>              To use[                  invariant culture<br/>                <br/>](                  https://docs.microsoft.com/en-us/dotnet/api/system.globalization.cultureinfo.invariantculture?view=netframework-4.7.2#System_Globalization_CultureInfo_InvariantCulture<br/>                <br/>), the first argument must be an empty string. Detailed information about culture names can be found in[Windows Language Code Identifier (LCID) Reference<br/>](https://msdn.microsoft.com/en-us/library/cc233982.aspx<br/>)article.|
 | __IndexOfSubstr(string, substring)__ |Returns the index of the first occurrence of a string, within the specified text.|
 | __IsValidXhtml(markup)__ |Determines if the provided markup is valid XHTML that HtmlTextBox can parse.|
 | __Join(separator, strings)__ |Returns a string created by joining a number of substrings contained in an array.|

@@ -14,13 +14,14 @@ position: 0
 
 ## Request#_URI Template_
 
-	
-          POST /api/reports/clients/{clientId}/instances
+	          POST /api/reports/clients/{clientId}/instances
         
 
 
 
-__Path parameters__
+
+__Path parameters
+__
 
 
 | Name | Type | Description |
@@ -30,10 +31,13 @@ __Path parameters__
 
 
 
-__Request Body__
+__Request Body
+__
 
-[ReportSource]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/json-entities/reportsource%}) object identifying the report instance that is created.
+[ReportSource]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/json-entities/reportsource%})
+ object identifying the report instance that is created.
         
+
 
 ## Response
 
@@ -48,17 +52,18 @@ __Request Body__
 
 
 
-__Response Body__
+__Response Body
+__
 
 When the return status is Created the body contains report instance identifier string.
         
+
 
 ## Sample#_Request Message_
 
 	
 ````none
           POST /api/reports/clients/2c3d/instances HTTP/1.1
-
           {
             report: “MyReport1”,
             parameterValues: {
@@ -69,15 +74,16 @@ When the return status is Created the body contains report instance identifier s
           
 ````
 
+
 #_Response Message_
 
 	
 ````none
           HTTP/1.1 201 Created
-
           “a5f3”
           
 ````
+
 
 
 

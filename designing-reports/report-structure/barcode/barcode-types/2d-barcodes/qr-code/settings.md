@@ -14,12 +14,18 @@ position: 1
 
 This article explains the specific QR code settings.
 
+
 ## Version
 
-This is an integer value, in the range from __1__ to __40__, representing 
+This is an integer value, in the range from 
+__1
+__ to 
+__40
+__, representing 
 	        the desired barcode version. Usually, higher versions are used do accommodate larger amounts of data.
 	        If this property is not set, the encoder internally calculates the lowest possible version and uses it instead.
         
+
 
 ## Error Correction Level
 
@@ -30,11 +36,13 @@ There are four possible values to choose from - L(Low), M(Medium), Q(Quartile), 
 	        able to accommodate more data.
         
 
+
 ## Mode
 
 There are four values available for this property - Alphanumeric, Numeric, Byte and Kanji. Essentially, this determines the 
         	sets of acceptable symbols - numbers, characters, etc.
         
+
 
 ## Extended Channel Interpretation (ECI)
 
@@ -43,11 +51,13 @@ The Extended Channel Interpretation, in short (ECI) allows for encoding of chara
         	setting is only respected when the Mode property of the control is set to Byte.
         
 
+
 ## FNC1
 
 This mode is used for messages containing data formatted either in accordance with the UCC/EAN Application Identifiers standard 
         	or in accordance with a specific industry standard previously agreed with AIM International.
         
+
 
 ## Application Indicator
 
@@ -55,9 +65,11 @@ This setting allows for additional data to be applied to the FNC1 data. Please, 
          	FNC1Mode.FNC1SecondPosition. Additionally, the acceptable data for this property is in the range {a-z}],{[A-Z} and {00-99}.
         
 
+
 Essentially, both the FNC1 property and the ApplicationIndicator data is applied to the raw data encoded in the control, 
 			allowing for special formatting.
         
+
 
 ## Examples
 
@@ -77,6 +89,7 @@ Essentially, both the FNC1 property and the ApplicationIndicator data is applied
 
 
 
+
 {{source=CodeSnippets\VB\API\Telerik\Reporting\BarcodeSnippets.vb region=Barcode_QRCodeEncoder_Settings}}
 ````vbnet
 	        Dim encoder = New Telerik.Reporting.Barcodes.QRCodeEncoder()
@@ -93,5 +106,14 @@ Essentially, both the FNC1 property and the ApplicationIndicator data is applied
 
 
 
+
 # See Also
-[Telerik.Reporting.Barcode](/reporting/api/Telerik.Reporting.Barcode)[Telerik.Reporting.Barcodes.QRCodeEncoder](/reporting/api/Telerik.Reporting.Barcodes.QRCodeEncoder)[ApplicationIndicator](/reporting/api/Telerik.Reporting.Barcodes.QRCodeEncoder#collapsible-Telerik_Reporting_Barcodes_QRCodeEncoder_ApplicationIndicator)[ECI](/reporting/api/Telerik.Reporting.Barcodes.QRCodeEncoder#collapsible-Telerik_Reporting_Barcodes_QRCodeEncoder_ECI)[ErrorCorrectionLevel](/reporting/api/Telerik.Reporting.Barcodes.QRCodeEncoder#collapsible-Telerik_Reporting_Barcodes_QRCodeEncoder_ErrorCorrectionLevel)[FNC1](/reporting/api/Telerik.Reporting.Barcodes.QRCodeEncoder#collapsible-Telerik_Reporting_Barcodes_QRCodeEncoder_FNC1)[Mode](/reporting/api/Telerik.Reporting.Barcodes.QRCodeEncoder#collapsible-Telerik_Reporting_Barcodes_QRCodeEncoder_Mode)[Version](/reporting/api/Telerik.Reporting.Barcodes.QRCodeEncoder#collapsible-Telerik_Reporting_Barcodes_QRCodeEncoder_Version)
+[Telerik.Reporting.Barcode](/reporting/api/Telerik.Reporting.Barcode)
+[Telerik.Reporting.Barcodes.QRCodeEncoder](/reporting/api/Telerik.Reporting.Barcodes.QRCodeEncoder)
+[ApplicationIndicator](/reporting/api/Telerik.Reporting.Barcodes.QRCodeEncoder#Telerik_Reporting_Barcodes_QRCodeEncoder_ApplicationIndicator)
+[ECI](/reporting/api/Telerik.Reporting.Barcodes.QRCodeEncoder#Telerik_Reporting_Barcodes_QRCodeEncoder_ECI)
+[ErrorCorrectionLevel](/reporting/api/Telerik.Reporting.Barcodes.QRCodeEncoder#Telerik_Reporting_Barcodes_QRCodeEncoder_ErrorCorrectionLevel)
+[FNC1](/reporting/api/Telerik.Reporting.Barcodes.QRCodeEncoder#Telerik_Reporting_Barcodes_QRCodeEncoder_FNC1)
+[Mode](/reporting/api/Telerik.Reporting.Barcodes.QRCodeEncoder#Telerik_Reporting_Barcodes_QRCodeEncoder_Mode)
+[Version](/reporting/api/Telerik.Reporting.Barcodes.QRCodeEncoder#Telerik_Reporting_Barcodes_QRCodeEncoder_Version)
+

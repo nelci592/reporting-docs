@@ -17,6 +17,7 @@ In Telerik Reporting, data items can aggregate and summarize data, display
         decision maker understand and analyze data in a more efficient manner.
       
 
+
 ## 
 
 In Telerik Reporting, groups are named sets of data that are bound to
@@ -24,45 +25,72 @@ In Telerik Reporting, groups are named sets of data that are bound to
           criteria (expression).
         
 
+
 To create a grouping expression you add Grouping objects to the
-          __Grouping__ collection. The set of group
+          
+__Grouping
+__ collection. The set of group
           expressions can be a single data field reference or a combination of
           multiple expressions. At runtime, group expressions are combined and
           applied together to the data.
         
 
+
 Depending on the grouping expressions, groups may be static,
           dynamic or detail:
         
 
-* __Static groups__ are defined by empty (no)
+
+* __Static groups
+__ are defined by empty (no)
               expression or expression that evaluates to the same value,
               disregarding the data (ex.: =1 + 2). Static groups always produce
               a single member that contains all the data.
             
 
-* __Dynamic groups__ are defined by expressions
+
+* __Dynamic groups
+__ are defined by expressions
               that produce different results according to the current data
               (ex.: =Fields.County). This way the items of the data source are
               partitioned into groups according to the values of the grouping
               expressions.
             
 
-* __Details groups__ are defined by a single
-              __Grouping__ object that has no expression
-              (empty __Grouping__) and produce one member
+
+* __Details groups
+__ are defined by a single
+              
+__Grouping
+__ object that has no expression
+              (empty 
+__Grouping
+__) and produce one member
               for each item of the data source. Detail groups can be applied to
-              __Table__, __Crosstab__
-              or __List__ items; *for backwards
+              
+__Table
+__, 
+__Crosstab
+__              or 
+__List
+__ items; 
+*for backwards
               compatibility reasons, the Report item treats the detail groups as
-              static groups*.
+              static groups
+*.
             
+
 
 Groups support filtering and sorting that allows you to limit and order
           the members of the group according to your needs. For more information see
-          [Filtering Data]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/filtering-data/overview%}) and
-          [Ordering Data]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/ordering-data/overview%}).
+          
+[Filtering Data]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/filtering-data/overview%})
+ and
+          
+[Ordering Data]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/ordering-data/overview%})
+.
         
+
 
 Groups are internally organized as members of one or more hierarchies
           for each data item. A group hierarchy has parent/child groups that are
@@ -71,70 +99,110 @@ Groups are internally organized as members of one or more hierarchies
           expressions.
         
 
+
 Data items support groups in different manner according to their
           structure and application. The following list summarizes how the data
           items work with groups:
         
 
-* __Report__ – Report groups are defined by
-              adding __Group__ objects to the report’s
-              __Groups__ collection. Report groups are
-              always nested according to the order in the __Groups
-              __ collection. To display group data one should use the
-              __GroupHeaderSection__ and __
-              GroupFooterSection__ that appear once for each group
-              member, respectively at start and end. The __DetailSection
-              __ displays detail data in a report and always appears
+
+* __Report
+__ – Report groups are defined by
+              adding 
+__Group
+__ objects to the report’s
+              
+__Groups
+__ collection. Report groups are
+              always nested according to the order in the 
+__Groups
+              
+__ collection. To display group data one should use the
+              
+__GroupHeaderSection
+__ and 
+__              GroupFooterSection
+__ that appear once for each group
+              member, respectively at start and end. The 
+__DetailSection
+              
+__ displays detail data in a report and always appears
               inside the innermost group (if any).
             
 
-* __Table item__ – If you think of the parent/
+
+* __Table item
+__ – If you think of the parent/
               child groups as a tree structure, each group hierarchy is a forest
-              of tree structures. The __Table__ data item
+              of tree structures. The 
+__Table
+__ data item
               includes row and column group hierarchies. Data associated with
               row group members expand horizontally across the page and data
               associated with column group members expand vertically down the
-              page. __The Group Explorer__ tool window
+              page. 
+__The Group Explorer
+__ tool window
               displays row group and column group members for the currently
-              selected __Table__ data item on the design
-              surface. To create a group one should create a __
-              TableGroup__ object and add it to the corresponding
+              selected 
+__Table
+__ data item on the design
+              surface. To create a group one should create a 
+__              TableGroup
+__ object and add it to the corresponding
               group hierarchy. According to their different specialization the
-              three derivatives of the __Table__ item works
+              three derivatives of the 
+__Table
+__ item works
               with groups in different manner:
               
 
+
 * 
 
-__Table__ – define nested row groups
+__Table
+__ – define nested row groups
                     and adjacent row groups. By default, a table includes a
                     details group.
                   
 
+
 * 
 
-__Crosstab__ – define nested row and
+__Crosstab
+__ – define nested row and
                     column groups, and adjacent row and column groups.
                   
 
+
 * 
 
-__List__ – by default, supports the
+__List
+__ – by default, supports the
                     details group. Typical use is to support one level of grouping.
                   
 
+
 * 
 
-__Chart__ – use the __DataGroupColumn
-              __ to define the name of the field to group the data by.
-              At runtime the __Chart__ item will create new
+__Chart
+__ – use the 
+__DataGroupColumn
+              
+__ to define the name of the field to group the data by.
+              At runtime the 
+__Chart
+__ item will create new
               series for each member of the group. Currently this property does
               not support expressions.
             
+
 
 # See Also
 
 
  * [Filtering Data]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/filtering-data/overview%})
 
+
  * [Ordering Data]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/ordering-data/overview%})
+

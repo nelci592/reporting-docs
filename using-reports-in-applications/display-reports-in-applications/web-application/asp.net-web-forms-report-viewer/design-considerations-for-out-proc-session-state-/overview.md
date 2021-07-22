@@ -17,25 +17,34 @@ position: 0
 
 ## 
 
-The ReportViewer control uses the __ASP.NET session state__ to preserve the report instance that is displayed,
+The ReportViewer control uses the 
+__ASP.NET session state
+__ to preserve the report instance that is displayed,
           between page postbacks and different viewer operations. The session state, however, can be configured to run in different modes.
           By default it uses the memory of the worker process (InProc mode) and the report instance stays intact. However, in some cases
-          it is more appropriate to use a __StateServer, SqlServer or Custom__ session state mode. All of these modes are referred to as out-proc
+          it is more appropriate to use a 
+__StateServer, SqlServer or Custom
+__ session state mode. All of these modes are referred to as out-proc
           session state modes. The biggest difference between the two modes is that the session variables have to be serialized and deserialized
           when the session state is preserved and restored. In this case the serialization process imposes the following limitations which have to
           be considered when designing Telerik reports:
         
 
+
 * The report should have a public default constructor as it is used to instantiate the report class during the deserialization process.
+
 
 * Data sources for the data items should be binary serializable.
 
+
 * Report events should be attached in the report’s default constructor.
 
-* 
-            The fields representing the report items in the Report class should not be used in the report events.
+
+*             The fields representing the report items in the Report class should not be used in the report events.
             Instead the report item should be taken from the Items collection of the report. Consider the following examples:
-                __Wrong__
+                
+__Wrong
+__
 
 {{source=CodeSnippets\CS\API\Telerik\Reporting\Processing\OutProcSnippets.cs region=WrongItemDataBinding}}
 ````C#
@@ -47,6 +56,7 @@ The ReportViewer control uses the __ASP.NET session state__ to preserve the repo
 
 
 
+
 {{source=CodeSnippets\VB\API\Telerik\Reporting\Processing\OutProcSnippets.vb region=WrongItemDataBinding}}
 ````VB
 	    Private Sub Report1_WrongItemDataBinding(sender As System.Object, e As System.EventArgs) Handles MyBase.NeedDataSource
@@ -54,7 +64,9 @@ The ReportViewer control uses the __ASP.NET session state__ to preserve the repo
 	    End Sub
 ````
 
-__Correct__
+
+__Correct
+__
 
 {{source=CodeSnippets\CS\API\Telerik\Reporting\Processing\OutProcSnippets.cs region=CorrectItemDataBinding}}
 ````C#
@@ -66,6 +78,7 @@ __Correct__
 	            textBox.Value = "New Value";
 	        }
 ````
+
 
 
 
@@ -81,10 +94,11 @@ __Correct__
 
 
 
-* 
-            To utilize the events of the report items (NeedDataSource, ItemDataBinding, ItemDataBound) you have to attach
+
+*             To utilize the events of the report items (NeedDataSource, ItemDataBinding, ItemDataBound) you have to attach
             them in the ItemDataBinding event of the Report. For example:
               
+
 
 {{source=CodeSnippets\CS\API\Telerik\Reporting\Processing\OutProcSnippets.cs region=AttachItemsEvents}}
 ````C#
@@ -106,6 +120,7 @@ __Correct__
 
 
 
+
 {{source=CodeSnippets\VB\API\Telerik\Reporting\Processing\OutProcSnippets.vb region=AttachItemsEvents}}
 ````VB
 	    Private Sub Report1_ItemDataBinding(sender As System.Object, e As System.EventArgs) Handles MyBase.ItemDataBinding
@@ -124,32 +139,52 @@ __Correct__
 
 
 
-As the data sources are kept in the session state, it is highly recommended to use the built-in [Data Source Components]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/overview%}).
+
+As the data sources are kept in the session state, it is highly recommended to use the built-in 
+[Data Source Components]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/overview%})
+.
           As a last resort you can use the NeedDataSource event to populate the report with data. Otherwise the session state will either
           become very large, especially when using large datasets or the data for the report will not be serialized at all if it cannot be
           binary serialized/deserialized (e.g. business objects, anonymous types, data adapters, etc.). You should restrain from setting an
           instance of your business object directly as a data source, as it would be serialized multiple times into the session.
         
 
+
 It is highly recommended not to use events when designing reports. The reporting engine provides another powerful means to achieve the
           same functionality. For example instead of using events to accomplish your goals you can take advantage of 
-          [Expressions]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/overview%}), [User Functions]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/extending-expressions/user-functions%}) and 
-          [Bindings]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/bindings%}).
+          
+[Expressions]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/overview%})
+, 
+[User Functions]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/extending-expressions/user-functions%})
+ and 
+          
+[Bindings]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/bindings%})
+.
         
 
+
 More info about the differences between different state modes you can find in the
-          [ASP.NET Session State](http://msdn.microsoft.com/en-us/library/ms972429.aspx) documentation article.
+          
+[ASP.NET Session State
+](http://msdn.microsoft.com/en-us/library/ms972429.aspx
+) documentation article.
         
+
 
 # See Also
 
 
  * [ASP.NET Web Forms Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/asp.net-web-forms-report-viewer/overview%})
 
+
  * [How to Add report viewer to a web page]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/asp.net-web-forms-report-viewer/how-to-add-report-viewer-to-a-web-page%})
+
 
  * [Report Viewer Localization]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/asp.net-web-forms-report-viewer/report-viewer-localization%})
 
+
  * [Medium Trust Support]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/medium-trust-support%})
 
+
  * [AJAX support]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/asp.net-web-forms-report-viewer/ajax-support%})
+

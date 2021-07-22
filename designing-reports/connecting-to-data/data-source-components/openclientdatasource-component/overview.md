@@ -17,20 +17,27 @@ OpenClient data source is a component dedicated to feed report data items from O
         is generated using the OpenEdge .NET Proxy Generator tool.
       
 
+
 ## Supported ABL Procedures
 
 In order to be suitable for reporting purpose the ABL procedure has to have the following properties:
 
+
 * The procedure should not be nested
+
 
 * The data should be returned as OUTPUT or INPUT-OUTPUT parameter of type DATASET or DATATABLE
 
+
 * In order to have data schema while designing reports it is recommended to specify schema for the DATASET/DATATABLE
+
 
 ## Supported developer platforms
 
 * .NET Framework 4.0 and above
             
 
+
 # See Also
 [Telerik.Reporting.OpenClientDataSource](/reporting/api/Telerik.Reporting.OpenClientDataSource)
+

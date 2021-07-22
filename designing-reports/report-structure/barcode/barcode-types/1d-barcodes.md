@@ -17,17 +17,30 @@ position: 1
 One-dimensional (1D) barcodes consists of lines and spaces of various widths that create specific patterns.
         
 
+
 ## Settings
 
 This section describes the common settings for one-dimensional barcodes.
         
 
-* [ShowText](/reporting/api/Telerik.Reporting.Barcodes.Encoder1D#collapsible-Telerik_Reporting_Barcodes_Encoder1D_ShowText) - when true shows the text together with the bars.
-            When the text is shown it can also be aligned horizontally by using the __TextAlign__ property of the
-              [Style](/reporting/api/Telerik.Reporting.ReportItemBase#collapsible-Telerik_Reporting_ReportItemBase_Style) object and/or
-              vertically through the __VerticalAlign__ property of the
-              [Style](/reporting/api/Telerik.Reporting.ReportItemBase#collapsible-Telerik_Reporting_ReportItemBase_Style) object.
+
+* [ShowText](/reporting/api/Telerik.Reporting.Barcodes.Encoder1D#Telerik_Reporting_Barcodes_Encoder1D_ShowText)
+ - when true shows the text together with the bars.
+            
+When the text is shown it can also be aligned horizontally by using the 
+__TextAlign
+__ property of the
               
+[Style](/reporting/api/Telerik.Reporting.ReportItemBase#Telerik_Reporting_ReportItemBase_Style)
+ object and/or
+              vertically through the 
+__VerticalAlign
+__ property of the
+              
+[Style](/reporting/api/Telerik.Reporting.ReportItemBase#Telerik_Reporting_ReportItemBase_Style)
+ object.
+            
+  
   ![barcode-textalign-property](images/Barcodes/barcode-textalign-property.png)  
   ![barcode-verticalalign-property](images/Barcodes/barcode-verticalalign-property.png)
 
@@ -41,6 +54,7 @@ This section describes the common settings for one-dimensional barcodes.
               the subsets: Code128A, Code128B or Code128C to the Symbology property of the barcode report item.
             
 
+
 1. Code128 can represent both ASCII characters and non-ASCII control characters. Normally the barcode report item inserts automatically
               the appropriate control characters in order to conform to the Code128 specification. However certain applications might require manual
               insertion of certain control characters, such as the functional characters: FNC1-FNC4. For this purpose the barcode report item assigns
@@ -49,7 +63,9 @@ This section describes the common settings for one-dimensional barcodes.
             
 
 
+
 >caption Code 128 Control Characters
+
 
 | Control Character | Hexadecimal | Decimal |
 | ------ | ------ | ------ |
@@ -64,7 +80,7 @@ This section describes the common settings for one-dimensional barcodes.
 |Start A|FC|252|
 |Start B|FD|253|
 |Start C|FE|254|
-|Stop|FF|255|
+|Stop|FF|25|
 
 
 
@@ -72,6 +88,7 @@ This section describes the common settings for one-dimensional barcodes.
 
 
 For example, the following code inserts the FNC4 control character in the middle of a barcode:
+
 
 	
 ````C#
@@ -81,11 +98,13 @@ For example, the following code inserts the FNC4 control character in the middle
 
 
 
+
 	
 ````VB.NET
 				me.barcode1.Value = "ABCD" & ChrW(&HFA) & "1234"
 				
 ````
+
 
 
 
@@ -98,11 +117,13 @@ GS1-128 is a special case of Code128. The only difference between GS1-128 and
           the different parts, you should insert it manually:
         
 
+
 	
 ````C#
 			this.barcode1.Value = "1234" + "\u00F7" + "5678";
 			
 ````
+
 
 
 
@@ -114,5 +135,15 @@ GS1-128 is a special case of Code128. The only difference between GS1-128 and
 
 
 
+
 # See Also
-[Telerik.Reporting.Barcode](/reporting/api/Telerik.Reporting.Barcode)[Encoder](/reporting/api/Telerik.Reporting.Barcode#collapsible-Telerik_Reporting_Barcode_Encoder)[BarAlign](/reporting/api/Telerik.Reporting.Barcode#collapsible-Telerik_Reporting_Barcode_BarAlign)[Checksum](/reporting/api/Telerik.Reporting.Barcode#collapsible-Telerik_Reporting_Barcode_Checksum)[Module](/reporting/api/Telerik.Reporting.Barcode#collapsible-Telerik_Reporting_Barcode_Module)[Stretch](/reporting/api/Telerik.Reporting.Barcode#collapsible-Telerik_Reporting_Barcode_Stretch)[Angle](/reporting/api/Telerik.Reporting.Barcode#collapsible-Telerik_Reporting_Barcode_Angle)[Telerik.Reporting.Barcodes.Encoder1D](/reporting/api/Telerik.Reporting.Barcodes.Encoder1D)[ShowText](/reporting/api/Telerik.Reporting.Barcodes.Encoder1D#collapsible-Telerik_Reporting_Barcodes_Encoder1D_ShowText)
+[Telerik.Reporting.Barcode](/reporting/api/Telerik.Reporting.Barcode)
+[Encoder](/reporting/api/Telerik.Reporting.Barcode#Telerik_Reporting_Barcode_Encoder)
+[BarAlign](/reporting/api/Telerik.Reporting.Barcode#Telerik_Reporting_Barcode_BarAlign)
+[Checksum](/reporting/api/Telerik.Reporting.Barcode#Telerik_Reporting_Barcode_Checksum)
+[Module](/reporting/api/Telerik.Reporting.Barcode#Telerik_Reporting_Barcode_Module)
+[Stretch](/reporting/api/Telerik.Reporting.Barcode#Telerik_Reporting_Barcode_Stretch)
+[Angle](/reporting/api/Telerik.Reporting.Barcode#Telerik_Reporting_Barcode_Angle)
+[Telerik.Reporting.Barcodes.Encoder1D](/reporting/api/Telerik.Reporting.Barcodes.Encoder1D)
+[ShowText](/reporting/api/Telerik.Reporting.Barcodes.Encoder1D#Telerik_Reporting_Barcodes_Encoder1D_ShowText)
+

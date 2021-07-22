@@ -15,17 +15,23 @@ position: 2
 This article explains the steps needed to integrate the WinForms report viewer to a .NET Core project.
       
 
+
 ## Prerequisites:
 
 * Visual Studio 2019 or newer
 
+
 * .NET Core SDK 3 Preview 4 or newer
 
+
 * Windows Forms App (.NET Core) project
+
 
 # See Also
 
 
  * [Report Viewer Localization]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/windows-forms-application/report-viewer-localization%})
 
+
  * [.NET Core Support]({%slug telerikreporting/using-reports-in-applications/.net-core-support%})
+

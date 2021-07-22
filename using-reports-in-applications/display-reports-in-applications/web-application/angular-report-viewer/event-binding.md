@@ -12,16 +12,23 @@ position: 3
 
 
 
-The Angular Report Viewer exposes these [Events]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/api-reference/events%})
+The Angular Report Viewer exposes these 
+[Events]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/api-reference/events%})
         as input properties of the viewer component.
       
+
 
 ## Bind to a report viewer event
 
 To attach an event handler to the viewer, specify the name of your function when binding the corresponding input property
-          of the viewer component. For example, we can attach to the __ready__ and
-          __viewerToolTipOpening__ events of the viewer:
-        #_HTML_
+          of the viewer component. For example, we can attach to the 
+__ready
+__ and
+          
+__viewerToolTipOpening
+__ events of the viewer:
+        
+#_HTML_
 
 	
 ````
@@ -35,13 +42,14 @@ To attach an event handler to the viewer, specify the name of your function when
 
 
 
+
 Then we create the event handler functions in the component where the viewer is used:
-        #_TypeScript_
+        
+#_TypeScript_
 
 	
 ````js
 export class AppComponent {
-
   myReadyHandler() { 
     console.log('The viewer is ready!'); 
   }
@@ -56,5 +64,9 @@ export class AppComponent {
 
 
 
-For a complete list of event handler options please check [Events]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/api-reference/events%}).
+
+For a complete list of event handler options please check 
+[Events]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/api-reference/events%})
+.
         
+

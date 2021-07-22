@@ -16,6 +16,7 @@ This article explains the steps needed to manually create an application which u
         Another way to add a WPF Report Viewer to your application
       
 
+
 ## Setting DataContext
 
 Setting a DataContext to a parent element of ReportViewer leads to BindingExpression path errors, which can be safely ignored. 
@@ -26,17 +27,34 @@ Setting a DataContext to a parent element of ReportViewer leads to BindingExpres
         in the Loaded event handler of ReportViewer.
         
 
+
 ## Binding Redirects
 
-In case you use *Telerik UI for WPF* version greater
-          than the __latest official release__(service pack or internal build) you have to redirect all assemblies required
-          by the *Telerik WPF ReportViewer* to their latest versions.
-          To do this, add the following __bindingRedirects__ to your
-          __app.config__ and replace the "__2010.1.421.35__"
-          with the exact version of *Telerik UI for WPF* assemblies:
+In case you use 
+*Telerik UI for WPF
+* version greater
+          than the 
+__latest official release
+__(service pack or internal build) you have to redirect all assemblies required
+          by the 
+*Telerik WPF ReportViewer
+* to their latest versions.
+          To do this, add the following 
+__bindingRedirects
+__ to your
+          
+__app.config
+__ and replace the "
+__2010.1.421.35
+__"
+          with the exact version of 
+*Telerik UI for WPF
+* assemblies:
         
 
+
 {{source=CodeSnippets\CS\API\Telerik\ReportViewer\Wpf\WpfViewerBindings.xml}}
+
 
 
 
@@ -49,20 +67,37 @@ In case you use *Telerik UI for WPF* version greater
 Select a WPF window file (e.g. Window1.xaml).
                 
 
+
 Open the toolbox and add your own tab or click on the General tab.
                 
 
-Right click in the selected tab area and select *Choose Items…* from the context menu.
+
+Right click in the selected tab area and select 
+*Choose Items…
+* from the context menu.
                 
 
-The previous step will open *Choose Toolbox Items* dialog. Select the
-                  *WPF Components* tab and find the *ReportViewer* component
-                  from the *Telerik.ReportViewer.Wpf* assembly.
+
+The previous step will open 
+*Choose Toolbox Items
+* dialog. Select the
+                  
+*WPF Components
+* tab and find the 
+*ReportViewer
+* component
+                  from the 
+*Telerik.ReportViewer.Wpf
+* assembly.
                 
 
-Click *OK*
+
+Click 
+*OK
+*
 
 # See Also
 
 
  * [How to Add report viewer to a WPF .NET Framework project]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/wpf-application/how-to-add-report-viewer-to-a-wpf-.net-framework-project%})
+

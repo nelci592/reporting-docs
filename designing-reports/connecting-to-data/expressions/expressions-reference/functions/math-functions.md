@@ -14,6 +14,7 @@ position: 6
 
 Use Math functions to manipulate the numeric values of your data. Math functions can use the following data types: Decimal, Float, and Integer.
 
+
 ## 
 
 

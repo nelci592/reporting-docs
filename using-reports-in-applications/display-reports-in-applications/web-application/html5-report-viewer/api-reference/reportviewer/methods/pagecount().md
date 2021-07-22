@@ -17,8 +17,10 @@ position: 7
 Gets the total page count of viewer’s currently displayed report.
         
 
+
 Returns: integer:
         
+
 
 	
 ````js
@@ -26,5 +28,6 @@ Returns: integer:
             var pageCount = reportViewer.pageCount();
           
 ````
+
 
 

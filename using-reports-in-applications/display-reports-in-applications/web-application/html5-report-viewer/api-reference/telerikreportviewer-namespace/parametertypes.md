@@ -15,7 +15,9 @@ position: 4
 ## telerikReportViewer.ParameterTypes
 
 
-| Member name |
+|   |   |
+| ------ | ------ |
+ Member name |
 | ------ |
 |INTEGER|
 |FLOAT|

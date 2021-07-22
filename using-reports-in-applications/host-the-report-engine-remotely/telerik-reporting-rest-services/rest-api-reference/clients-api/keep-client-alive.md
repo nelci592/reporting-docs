@@ -22,7 +22,9 @@ position: 2
 
 
 
-__Path parameters__
+
+__Path parameters
+__
 
 
 | Name | Type | Description |
@@ -51,11 +53,12 @@ __Path parameters__
               
 ````
 
+
 #_Response Message_
 
-	
-          HTTP/1.1 204 NoContent
+	          HTTP/1.1 204 NoContent
         
+
 
 
 

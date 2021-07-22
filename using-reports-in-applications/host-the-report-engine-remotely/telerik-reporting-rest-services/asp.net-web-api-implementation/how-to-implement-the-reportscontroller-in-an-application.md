@@ -12,44 +12,75 @@ position: 4
 
 
 
-The Telerik Reporting REST Web API service is represented by the abstract [ReportsControllerBase](/reporting/api/Telerik.Reporting.Services.WebApi.ReportsControllerBase)
-        class. This abstract class requires [IReportSourceResolver](/reporting/api/Telerik.Reporting.Services.IReportSourceResolver)
-        and [IStorage](/reporting/api/Telerik.Reporting.Cache.Interfaces.IStorage) implementations.
+The Telerik Reporting REST Web API service is represented by the abstract 
+[ReportsControllerBase](/reporting/api/Telerik.Reporting.Services.WebApi.ReportsControllerBase)
+        class. This abstract class requires 
+[IReportSourceResolver](/reporting/api/Telerik.Reporting.Services.IReportSourceResolver)
+        and 
+[IStorage](/reporting/api/Telerik.Reporting.Cache.Interfaces.IStorage)
+ implementations.
         In order to add the reports controller to your application follow the steps:
       
 
+
 Add references to the following Telerik Reporting assemblies (required)
-              and set their __Copy Local__ properties to true in Visual Studio:
+              and set their 
+__Copy Local
+__ properties to true in Visual Studio:
             
+
 
 * Telerik.Reporting
                 
 
+
 * Telerik.Reporting.Services.WebApi (located in the installation Bin folder)
                 
+
 
 >note Without setting Telerik Reporting references' Copy Local to true the assemblies may not be loaded correctly on running the application.
 
 
 Add references to the following Telerik Reporting assemblies (optional)
-              and set their __Copy Local__ properties to true in Visual Studio:
+              and set their 
+__Copy Local
+__ properties to true in Visual Studio:
             
 
-* Telerik.Reporting.Cache.Database.dll - only if [DatabaseStorage](/reporting/api/Telerik.Reporting.Cache.Database.DatabaseStorage) caching mechanism is intended.
-                  For more details check [Reporting REST Service Storage]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-service-storage/overview%}).
+
+* Telerik.Reporting.Cache.Database.dll - only if 
+[DatabaseStorage](/reporting/api/Telerik.Reporting.Cache.Database.DatabaseStorage)
+ caching mechanism is intended.
+                  For more details check 
+[Reporting REST Service Storage]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-service-storage/overview%})
+.
                   The assembly has dependencies on Telerik Data Access which can be checked in the version
-                  corresponding [Upgrade article]({%slug telerikreporting/upgrade/overview%});
+                  corresponding 
+[Upgrade article]({%slug telerikreporting/upgrade/overview%})
+;
                 
 
-* Telerik.Reporting.OpenXmlRendering - depends on [Third-Party Dependencies]({%slug telerikreporting/using-reports-in-applications/third-party-dependencies%}). Required if you need to export in OpenXML formats (DOCX, PPTX, XLSX);
+
+* Telerik.Reporting.OpenXmlRendering - depends on 
+[Third-Party Dependencies]({%slug telerikreporting/using-reports-in-applications/third-party-dependencies%})
+. Required if you need to export in OpenXML formats (DOCX, PPTX, XLSX);
                 
+
 
 * Telerik.Reporting.XpsRendering  - required if you need to export in XPS format;
                 
 
-* Telerik.Reporting.Adomd.dll - required if you use [CubeDataSource]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/cubedatasource-component/overview%}) components in reports.
-                  The assembly has dependencies on *Microsoft.AnalysisServices.AdomdClient.dll* v.10.0.0.0 or [above with proper binding redirects]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/cubedatasource-component/configuring-your-project-for-using-microsoft-analysis-services%});
+
+* Telerik.Reporting.Adomd.dll - required if you use 
+[CubeDataSource]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/cubedatasource-component/overview%})
+ components in reports.
+                  The assembly has dependencies on 
+*Microsoft.AnalysisServices.AdomdClient.dll
+* v.10.0.0.0 or 
+[above with proper binding redirects]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/cubedatasource-component/configuring-your-project-for-using-microsoft-analysis-services%})
+;
                 
+
 
 >note Without setting Telerik Reporting references' Copy Local to true the assemblies may not be loaded correctly on running the application.
 
@@ -57,13 +88,23 @@ Add references to the following Telerik Reporting assemblies (optional)
 Inherit this base class in your hosting application (usually in the Controllers folder of a MVC application).
             
 
-__ReportsControllerBase configuration in code:__
 
-* Set the [ReportServiceConfiguration](/reporting/api/Telerik.Reporting.Services.WebApi.ReportsControllerBase#collapsible-Telerik_Reporting_Services_WebApi_ReportsControllerBase_ReportServiceConfiguration)
-                  property. The __ReportSourceResolver__ and __Storage__ configuration settings are required.
-                  See the [IReportServiceConfiguration](/reporting/api/Telerik.Reporting.Services.IReportServiceConfiguration) interface
+__ReportsControllerBase configuration in code:
+__
+
+* Set the 
+[ReportServiceConfiguration](/reporting/api/Telerik.Reporting.Services.WebApi.ReportsControllerBase#Telerik_Reporting_Services_WebApi_ReportsControllerBase_ReportServiceConfiguration)
+                  property. The 
+__ReportSourceResolver
+__ and 
+__Storage
+__ configuration settings are required.
+                  See the 
+[IReportServiceConfiguration](/reporting/api/Telerik.Reporting.Services.IReportServiceConfiguration)
+ interface
                   for more details.
                 
+
 
 {{source=CodeSnippets\MvcCS\Controllers\ReportsController.cs region=ReportsControllerImplementation}}
 ````C#
@@ -100,6 +141,7 @@ __ReportsControllerBase configuration in code:__
 	            return HttpStatusCode.OK;
 	        }
 ````
+
 
 
 
@@ -149,14 +191,22 @@ __ReportsControllerBase configuration in code:__
 	    End Function
 ````
 
-[ReportsControllerBase](/reporting/api/Telerik.Reporting.Services.WebApi.ReportsControllerBase) inherits
-                  [System.Web.Http.ApiController](http://msdn.microsoft.com/en-us/library/system.web.http.apicontroller.aspx)
-                  and implements all necessary API actions.
-                The provided sample implementation will resolve .trdx|.trdp report definitions from the Reports subfolder of the hosting ASP.NET application root.
-                  Other option is to reference a reports library and provide report
-                  [type assembly qualified name](http://msdn.microsoft.com/en-us/library/system.type.assemblyqualifiedname.aspx)
-                  from the service clients.
+
+[ReportsControllerBase](/reporting/api/Telerik.Reporting.Services.WebApi.ReportsControllerBase)
+ inherits
+                  
+[System.Web.Http.ApiController
+](http://msdn.microsoft.com/en-us/library/system.web.http.apicontroller.aspx
+)                  and implements all necessary API actions.
                 
+The provided sample implementation will resolve .trdx|.trdp report definitions from the Reports subfolder of the hosting ASP.NET application root.
+                  Other option is to reference a reports library and provide report
+                  
+[type assembly qualified name
+](http://msdn.microsoft.com/en-us/library/system.type.assemblyqualifiedname.aspx
+)                  from the service clients.
+                
+
 
 >note Do not forget to add all necessary (i.e., referred from the report definitions) connection strings to the application configuration file.                  
 
@@ -166,12 +216,18 @@ __ReportsControllerBase configuration in code:__
 
 
 
-__ReportsControllerBase configuration in configuration file:__
+__ReportsControllerBase configuration in configuration file:
+__
 
 * To configure the Telerik Reporting REST service from the application configuration file, set the value of the
-                  [ReportServiceConfiguration](/reporting/api/Telerik.Reporting.Services.WebApi.ReportsControllerBase#collapsible-Telerik_Reporting_Services_WebApi_ReportsControllerBase_ReportServiceConfiguration) property to an instance of the
-                  [ConfigSectionReportServiceConfiguration](/reporting/api/Telerik.Reporting.Services.ConfigSectionReportServiceConfiguration) class.
+                  
+[ReportServiceConfiguration](/reporting/api/Telerik.Reporting.Services.WebApi.ReportsControllerBase#Telerik_Reporting_Services_WebApi_ReportsControllerBase_ReportServiceConfiguration)
+ property to an instance of the
+                  
+[ConfigSectionReportServiceConfiguration](/reporting/api/Telerik.Reporting.Services.ConfigSectionReportServiceConfiguration)
+ class.
                 
+
 
 {{source=CodeSnippets\MvcCS\Controllers\ReportsControllerConfigSection.cs region=ReportsControllerConfigSectionImplementation}}
 ````C#
@@ -186,6 +242,7 @@ __ReportsControllerBase configuration in configuration file:__
 	        }
 	    }
 ````
+
 
 
 
@@ -204,12 +261,22 @@ __ReportsControllerBase configuration in configuration file:__
 
 
 
-* Then add the __restReportService__ configuration element containing the service settings to the
-                  [Telerik Reporting Configuration Section]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/overview%}).
+
+* Then add the 
+__restReportService
+__ configuration element containing the service settings to the
+                  
+[Telerik Reporting Configuration Section]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/overview%})
+.
                 
+
 
 {{source=CodeSnippets\MvcCS\ReportServiceConfigurationSnippets\ConfigSectionConfiguration.xml}}
 
 
-For more information see [restReportService Element]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/restreportservice-element%}).
+
+For more information see 
+[restReportService Element]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/restreportservice-element%})
+.
                 
+

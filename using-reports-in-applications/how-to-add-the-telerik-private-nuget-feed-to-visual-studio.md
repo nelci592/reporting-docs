@@ -16,22 +16,47 @@ Telerik provides NuGet packages from private NuGet feed.
         The article elaborates on how to add the Telerik NuGet feed to the Visual Studio NuGet package manager. 
       
 
+
 ## Prerequisites:
 
 * Visual Studio 2010 or newer.
 
+
 * Valid Telerik Reporting trial or paid license.
 
+
 ## Setup
+
 
 Open Visual Studio.
             
 
-Go to __Tools__ > __NuGet Package Manager__ > __Package Manager Settings__, select __Package Manager Sources__ and then click the __+__ button.
+
+Go to 
+__Tools
+__ > 
+__NuGet Package Manager
+__ > 
+__Package Manager Settings
+__, select 
+__Package Manager Sources
+__ and then click the 
+__+
+__ button.
             
 
-Choose feed __Name__, set the feed __URL__ to: __https://nuget.telerik.com/nuget__ and click __OK__.
+
+Choose feed 
+__Name
+__, set the feed 
+__URL
+__ to: 
+__https://nuget.telerik.com/nuget
+__ and click 
+__OK
+__.
             
+
 >caption Figure 1: Visual Studio NuGet Package Manager and Telerik NuGet Feed:
 
   
@@ -40,20 +65,40 @@ Choose feed __Name__, set the feed __URL__ to: __https://nuget.telerik.com/nuget
 Create or load your project.
             
 
-Go to __Tools__ > __NuGet Package Manager__ > __Manage NuGet Packages for solution__.
+
+Go to 
+__Tools
+__ > 
+__NuGet Package Manager
+__ > 
+__Manage NuGet Packages for solution
+__.
             
 
-In the upper right-hand corner of the __Manage Packages for Solution__ window, select the Telerik __Package source__ that you just added.
+
+In the upper right-hand corner of the 
+__Manage Packages for Solution
+__ window, select the Telerik 
+__Package source
+__ that you just added.
             
 
-Choose the __Online / Browse__ list of packages (depending on your VS version).
+
+Choose the 
+__Online / Browse
+__ list of packages (depending on your VS version).
             
+
 
 Enter your Telerik credentials in the Windows Authentication dialog (e.g., user: my.name@my.company.com and password: myPassPhraseForTelerikDotCom).
             
 
-Enter your credentials only once by selecting the __Remember my password__ checkbox.
+
+Enter your credentials only once by selecting the 
+__Remember my password
+__ checkbox.
             
+
 >caption Figure 2: Enter your Telerik.com credentials to access the Telerik NuGet feed:
 
   
@@ -64,22 +109,29 @@ Now all the packages that are licensed (paid or trial) to the above users are av
             Setup with NuGet CLI
           
 
+
 Download the latest
-                  [NuGet executable](https://dist.nuget.org/win-x86-commandline/latest/nuget.exe).
+                  
+[NuGet executable
+](https://dist.nuget.org/win-x86-commandline/latest/nuget.exe
+).
                 
+
 
 Open a Command Prompt and change the path to the nuget.exe location.
                 
+
 
 The command from the example below stores a token in the
                   %AppData%\NuGet\NuGet.config file. Your original credentials cannot be 
                   obtained from this token.
                 
 
-	
-                  NuGet Sources Add -Name "telerik.com" -Source "https://nuget.telerik.com/nuget" ^
+
+	                  NuGet Sources Add -Name "telerik.com" -Source "https://nuget.telerik.com/nuget" ^
                   -UserName "your login email" -Password "your password"
                 
+
 
 
 
@@ -87,11 +139,12 @@ If you are unable to connect to the feed by using encrypted credentials,
                   try the alternative approach of storing credentials in clear text.
                 
 
-	
-                  NuGet Sources Add -Name "telerik.com" -Source "https://nuget.telerik.com/nuget" ^
+
+	                  NuGet Sources Add -Name "telerik.com" -Source "https://nuget.telerik.com/nuget" ^
                   -UserName "your login email" -Password "your password" ^
                   -StorePasswordInClearText
                 
+
 
 
 
@@ -100,11 +153,12 @@ If you have already stored a token instead of storing the credentials as clear t
                   the following command:
                 
 
-	
-                  NuGet Sources Update -Name "telerik.com" -Source "https://nuget.telerik.com/nuget" ^
+
+	                  NuGet Sources Update -Name "telerik.com" -Source "https://nuget.telerik.com/nuget" ^
                   -UserName "your login email" -Password "your password" ^
                   -StorePasswordInClearText
                 
+
 
 
 
@@ -117,9 +171,10 @@ After changing your Telerik password,
               To do this, open a Command Prompt and run the command:
             
 
-	
-              NuGet Sources Update -Name "telerik.com" -Source "https://nuget.telerik.com/nuget" -UserName "your login email" -Password "your new password"
+
+	              NuGet Sources Update -Name "telerik.com" -Source "https://nuget.telerik.com/nuget" -UserName "your login email" -Password "your new password"
             
+
 
 
 

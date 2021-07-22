@@ -15,7 +15,9 @@ position: 1
 ## telerikReportViewer.ViewModes
 
 
-| Member name |
+|   |   |
+| ------ | ------ |
+ Member name |
 | ------ |
 |INTERACTIVE|
 |PRINT_PREVIE|

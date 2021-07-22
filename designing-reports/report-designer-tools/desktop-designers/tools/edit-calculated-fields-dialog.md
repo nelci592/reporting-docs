@@ -18,6 +18,7 @@ Calculated fields can be used to create new values
       function or even a report parameter, or an existing field that is converted 
       to a different datatype.
 
+
 ## Add a Calculated Field
 
 You specify a calculated field manually by creating an
@@ -25,28 +26,45 @@ You specify a calculated field manually by creating an
             grid of our DataSource components:
           
 
+
 * [SqlDataSource]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/sqldatasource-component/overview%})
+
 
 * [ObjectDataSource]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/objectdatasource-component/overview%})
 
+
 * [EntityDataSource]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/entitydatasource-wizard%})
+
 
 * [OpenAccessDataSource]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/openaccessdatasource-wizard%})
 
-by clicking on the ellipsis of the __CalculatedFields__ property.
-            
+
+by clicking on the ellipsis of the 
+__CalculatedFields
+__ property.
+          
+  
   ![](images/CalculatedFields.png)
 
-The dialog accepts __Name__, __DataType__ and __Expression__.
+The dialog accepts 
+__Name
+__, 
+__DataType
+__ and 
+__Expression
+__.
           
+
 
 ## Edit a Calculated Field
 
 To edit a Calculated Field, click in the inline editors directly
 
+
 ## Delete a Calculated Field
 
 To delete a Calculated Field, use the Delete Button
+
 
 >note Names must be unique in the datasource and the expression for a calculated                  field cannot contain aggregates, RowNumber or ColumnNumber global functions.                
 

@@ -15,5 +15,8 @@ position: 2
 ## 
 
 The Telerik Reporting product blogs, 
-        [http://blogs.telerik.com/telerikreportingteam/posts.aspx](http://blogs.telerik.com/telerikreportingteam/posts.aspx)
-        contain tips and tricks straight out from the guys developing the product.
+        
+[http://blogs.telerik.com/telerikreportingteam/posts.aspx
+](http://blogs.telerik.com/telerikreportingteam/posts.aspx
+)        contain tips and tricks straight out from the guys developing the product.
+

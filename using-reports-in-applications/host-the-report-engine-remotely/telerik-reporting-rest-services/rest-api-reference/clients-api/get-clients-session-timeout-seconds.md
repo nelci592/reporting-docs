@@ -22,6 +22,7 @@ position: 3
 
 
 
+
 ## Response
 
 
@@ -32,10 +33,12 @@ position: 3
 
 
 
-__Response Body__
+__Response Body
+__
 
 The body contains the clients session timeout in seconds
         
+
 
 ## Sample#_Request Message_
 
@@ -45,15 +48,16 @@ The body contains the clients session timeout in seconds
               
 ````
 
+
 #_Response Message_
 
 	
 ````none 
                 HTTP/1.1 200 OK
-
                 {"clientSessionTimeout":900}
               
 ````
+
 
 
 

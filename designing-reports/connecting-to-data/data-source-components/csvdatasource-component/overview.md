@@ -18,9 +18,11 @@ The CsvDataSource component enables data items to display data located in a CSV 
         returns the selected data with the provided mapping and then closes the stream.
       
 
+
 ## Configuring the CsvDataSource component
 
 Multiple formats are supported through configuring the CsvDataSource settings.
+
 
 
 | CsvDataSource configuration setting | Description |
@@ -41,12 +43,13 @@ Below are listed the available settings for formatting the data retrieved from t
         
 
 
+
 | CsvDataSource option | Description |
 | ------ | ------ |
 |Consecutive field/record separators as one|Configures if consecutive field/record separators are treated as one.|
 |Decimal separator|Configures the decimal separator when parsing numbers.|
 |Thousand separator|Configures the thousand separator when parsing numbers.|
-|DateTime format|A[Custom Date and Time Format String](https://msdn.microsoft.com/en-us/library/8kb3ddd4.aspx)which configures the format of the date and time when parsing date and time strings to DateTime data field values.<br/>                A custom format string consists of one or more custom date and time format specifiers. For more information on date and time format specifiers<br/>                please refer to the[Custom Date and Time Format Strings](https://msdn.microsoft.com/en-us/library/8kb3ddd4.aspx)MSDN article.For example, to correctly parse the string "12-30-11" to a valid DateTime you need to use the following DateTime format: "MM-dd-yy". <br/>                If the date string does not conform to the specified DateTime format, the DateTime field will appear empty in the Data Preview window.|
+|DateTime format|A[Custom Date and Time Format String<br/>](https://msdn.microsoft.com/en-us/library/8kb3ddd4.aspx<br/>)which configures the format of the date and time when parsing date and time strings to DateTime data field values.<br/>                A custom format string consists of one or more custom date and time format specifiers. For more information on date and time format specifiers<br/>                please refer to the[Custom Date and Time Format Strings<br/>](https://msdn.microsoft.com/en-us/library/8kb3ddd4.aspx<br/>)MSDN article.For example, to correctly parse the string "12-30-11" to a valid DateTime you need to use the following DateTime format: "MM-dd-yy". <br/>                If the date string does not conform to the specified DateTime format, the DateTime field will appear empty in the Data Preview window.|
 |Columns|Configures the column - data type mapping|
 
 
@@ -57,11 +60,14 @@ Below are listed the available settings for formatting the data retrieved from t
 * .NET Framework 4.0 and above
             
 
+
 * .NET Core 2.0 and above
             
 
+
 * .NET Standard 2.0 and above
             
+
 
 # See Also
 

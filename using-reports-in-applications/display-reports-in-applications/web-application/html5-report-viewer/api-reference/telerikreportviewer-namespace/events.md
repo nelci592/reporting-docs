@@ -15,7 +15,9 @@ position: 0
 ## telerikReportViewer.Events
 
 
-| Member name |
+|   |   |
+| ------ | ------ |
+ Member name |
 | ------ |
 |EXPORT_BEGIN|
 |EXPORT_END|

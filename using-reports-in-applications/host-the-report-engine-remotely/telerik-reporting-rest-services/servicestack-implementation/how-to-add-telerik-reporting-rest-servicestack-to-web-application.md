@@ -10,66 +10,86 @@ position: 2
 
 # How to Add Telerik Reporting REST ServiceStack to Web Application
 
-
-
-This article describes the steps required to host the __Telerik Reporting ServiceStack REST Service__
-        implementation on top of the classic __ASP.NET__ hosting infrastructure supported by the
-        __IIS__ (Internet Information Services) server.
-      
-
->note Telerik Reporting ServiceStack assembly requires  __V3__  of the ServiceStack framework.        
-How to host the ServiceStack implementation of Telerik Reporting REST service in IIS:
-
-Create a new __ASP.NET Empty Web Application__.
+/www.nuget.org/packages/ServiceStack/3.9.70
+                
+)              NuGet package.
             
 
-Install the
-              [
-                  ServiceStack 3.9.70.0
-                ](
-                  https://www.nuget.org/packages/ServiceStack/3.9.70
-                )
-              NuGet package.
-            
 
 Add references to the following Telerik Reporting assemblies (required):
 
+
 * Telerik.Reporting.dll
 
+
 * Telerik.Reporting.Services.ServiceStack.dll
+
 
 Add references to the following Telerik Reporting assemblies (optional):
             
 
-* Telerik.Reporting.Cache.Database.dll - only if [DatabaseStorage](/reporting/api/Telerik.Reporting.Cache.Database.DatabaseStorage) caching mechanism is intended.
-                  For more details check [Reporting REST Service Storage]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-service-storage/overview%}).
+
+* Telerik.Reporting.Cache.Database.dll - only if 
+[DatabaseStorage](/reporting/api/Telerik.Reporting.Cache.Database.DatabaseStorage)
+ caching mechanism is intended.
+                  For more details check 
+[Reporting REST Service Storage]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-service-storage/overview%})
+.
                   The assembly has dependencies on Telerik Data Access which can be checked in the version
-                  corresponding [Upgrade article]({%slug telerikreporting/upgrade/overview%});
+                  corresponding 
+[Upgrade article]({%slug telerikreporting/upgrade/overview%})
+;
                 
 
-* Telerik.Reporting.OpenXmlRendering.dll - depends on [Third-Party Dependencies]({%slug telerikreporting/using-reports-in-applications/third-party-dependencies%}). Required if you need to export in OpenXML formats (DOCX, PPTX, XLSX);
+
+* Telerik.Reporting.OpenXmlRendering.dll - depends on 
+[Third-Party Dependencies]({%slug telerikreporting/using-reports-in-applications/third-party-dependencies%})
+. Required if you need to export in OpenXML formats (DOCX, PPTX, XLSX);
                 
+
 
 * Telerik.Reporting.XpsRendering.dll - required if you need to export in XPS format;
                 
 
-* Telerik.Reporting.Adomd.dll - required if you use [CubeDataSource]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/cubedatasource-component/overview%}) components in reports.
-                  The assembly has dependencies on *Microsoft.AnalysisServices.AdomdClient.dll* v.10.0.0.0 or [above with proper binding redirects]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/cubedatasource-component/configuring-your-project-for-using-microsoft-analysis-services%});
+
+* Telerik.Reporting.Adomd.dll - required if you use 
+[CubeDataSource]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/cubedatasource-component/overview%})
+ components in reports.
+                  The assembly has dependencies on 
+*Microsoft.AnalysisServices.AdomdClient.dll
+* v.10.0.0.0 or 
+[above with proper binding redirects]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/cubedatasource-component/configuring-your-project-for-using-microsoft-analysis-services%})
+;
                 
 
+
 Create a new class which derives from
-              [ReportsHostBase](/reporting/api/Telerik.Reporting.Services.ServiceStack.ReportsHostBase).
-              It could be called *ReportsHost* for example:
+              
+[ReportsHostBase](/reporting/api/Telerik.Reporting.Services.ServiceStack.ReportsHostBase)
+.
+              It could be called 
+*ReportsHost
+* for example:
             
 
-* Set the [ReportServiceConfiguration](/reporting/api/Telerik.Reporting.Services.ServiceStack.ReportsHostBase#collapsible-Telerik_Reporting_Services_ServiceStack_ReportsHostBase_ReportServiceConfiguration)
-                  property. The __ReportSourceResolver__ and __Storage__ configuration settings are required.
-                  See the [IReportServiceConfiguration](/reporting/api/Telerik.Reporting.Services.IReportServiceConfiguration) interface
+
+* Set the 
+[ReportServiceConfiguration](/reporting/api/Telerik.Reporting.Services.ServiceStack.ReportsHostBase#Telerik_Reporting_Services_ServiceStack_ReportsHostBase_ReportServiceConfiguration)
+                  property. The 
+__ReportSourceResolver
+__ and 
+__Storage
+__ configuration settings are required.
+                  See the 
+[IReportServiceConfiguration](/reporting/api/Telerik.Reporting.Services.IReportServiceConfiguration)
+ interface
                   for more details.
                 
 
+
 Here is a sample implementation with the setup:
             
+
 
 {{source=CodeSnippets\MvcCS\ServiceStack\ReportsHost.cs region=ReportsHost_Implementation}}
 ````C#
@@ -90,6 +110,7 @@ Here is a sample implementation with the setup:
 	        }
 	    }
 ````
+
 
 
 
@@ -116,12 +137,18 @@ Here is a sample implementation with the setup:
 
 
 
+
 The provided sample implementation will resolve .trdp|.trdx report definitions from the
-              /*Reports* subfolder of the hosting ASP.NET application root. Another option is to reference
+              /
+*Reports
+* subfolder of the hosting ASP.NET application root. Another option is to reference
               a reports library and provide report
-              [type assembly qualified name](http://msdn.microsoft.com/en-us/library/system.type.assemblyqualifiedname.aspx)
-              from the service clients.
+              
+[type assembly qualified name
+](http://msdn.microsoft.com/en-us/library/system.type.assemblyqualifiedname.aspx
+)              from the service clients.
             
+
 
 >note Do not forget to add all necessary (i.e., referred from the report definitions) connection strings to the application configuration file.              
 
@@ -131,10 +158,16 @@ The provided sample implementation will resolve .trdp|.trdx report definitions f
 
 
 
-__To configure the Telerik Reporting REST service from the application configuration file__, set the value of the
-              [ReportServiceConfiguration](/reporting/api/Telerik.Reporting.Services.ServiceStack.ReportsHostBase#collapsible-Telerik_Reporting_Services_ServiceStack_ReportsHostBase_ReportServiceConfiguration) property to an instance of the
-              [ConfigSectionReportServiceConfiguration](/reporting/api/Telerik.Reporting.Services.ConfigSectionReportServiceConfiguration) class.
+__To configure the Telerik Reporting REST service from the application configuration file
+__, set the value of the
+              
+[ReportServiceConfiguration](/reporting/api/Telerik.Reporting.Services.ServiceStack.ReportsHostBase#Telerik_Reporting_Services_ServiceStack_ReportsHostBase_ReportServiceConfiguration)
+ property to an instance of the
+              
+[ConfigSectionReportServiceConfiguration](/reporting/api/Telerik.Reporting.Services.ConfigSectionReportServiceConfiguration)
+ class.
             
+
 
 {{source=CodeSnippets\MvcCS\ServiceStack\ReportsHostConfigSection.cs region=ReportsHostConfigSectionImplementation}}
 ````C#
@@ -148,6 +181,7 @@ __To configure the Telerik Reporting REST service from the application configura
 	        }
 	    }
 ````
+
 
 
 
@@ -165,21 +199,36 @@ __To configure the Telerik Reporting REST service from the application configura
 
 
 
-Then add the __restReportService__ configuration element containing the service settings to the
-              [Telerik Reporting Configuration Section]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/overview%}).
+
+Then add the 
+__restReportService
+__ configuration element containing the service settings to the
+              
+[Telerik Reporting Configuration Section]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/overview%})
+.
             
+
 
 {{source=CodeSnippets\MvcCS\ReportServiceConfigurationSnippets\ConfigSectionConfiguration.xml}}
 
 
 
 
-For more information see [restReportService Element]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/restreportservice-element%}).
+
+For more information see 
+[restReportService Element]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/restreportservice-element%})
+.
             
 
-Add a new or use the existing __Global Application Class__ (global.asax) to create and initialize
-              the ServiceStack reports service in the __Application_Start__ method:
+
+Add a new or use the existing 
+__Global Application Class
+__ (global.asax) to create and initialize
+              the ServiceStack reports service in the 
+__Application_Start
+__ method:
             
+
 
 {{source=CodeSnippets\MvcCS\ServiceStack\Application.cs region=ServiceStack_Application_Start}}
 ````C#
@@ -188,6 +237,7 @@ Add a new or use the existing __Global Application Class__ (global.asax) to crea
 	            new ReportsHost().Init();
 	        }
 ````
+
 
 
 
@@ -201,9 +251,15 @@ Add a new or use the existing __Global Application Class__ (global.asax) to crea
 
 
 
-Update the configuration file (*web.config*) to include the
-              following *location* element:
+
+Update the configuration file (
+*web.config
+*) to include the
+              following 
+*location
+* element:
             
+
 
 	
 ````XML
@@ -229,22 +285,31 @@ Update the configuration file (*web.config*) to include the
 
 
 
+
 To verify whether the service works correctly you can make a sample request
               for the available document formats using the following url:
             
 
 
 
-| __http://localhost:[portnumber]/api/reports/formats__|
+
+| __http://localhost:[portnumber]/api/reports/formats__ |
 
 
 
 
-If the request is successful you should receive the document formats encoded in JSON. For more information see: [Get Available Document Formats]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/general-api/get-available-document-formats%}).
-            [UriReportSourceResolver](/reporting/api/Telerik.Reporting.Services.UriReportSourceResolver)[TypeReportSourceResolver](/reporting/api/Telerik.Reporting.Services.TypeReportSourceResolver)
+If the request is successful you should receive the document formats encoded in JSON. For more information see: 
+[Get Available Document Formats]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/general-api/get-available-document-formats%})
+.
+            
+[UriReportSourceResolver](/reporting/api/Telerik.Reporting.Services.UriReportSourceResolver)
+[TypeReportSourceResolver](/reporting/api/Telerik.Reporting.Services.TypeReportSourceResolver)
+
 
  * [HTML5 Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview%})
 
+
  * [Overview]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-service-report-source-resolver/overview%})
+
 
  * [Manual Setup]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/manual-setup%})

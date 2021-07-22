@@ -15,10 +15,10 @@ position: 2
 Format info object representing a document format that can be used for document creation.
       
 
+
 ## #_Example_
 
-	
-          {
+	          {
             "name":"PDF",
             "localizedName":"Acrobat (PDF) file"
           }
@@ -27,12 +27,14 @@ Format info object representing a document format that can be used for document 
 
 
 
+
 >caption Fields
+
 
 | Field | Type | Required | Description |
 | ------ | ------ | ------ | ------ |
 |`name`|`String`|`true`|ID of the document format|
-|`localizedName`|`String`|`true`|Display name for the document format|
+|`localizedName`|`String`|`true`|Display name for the document forma|
 
 
 

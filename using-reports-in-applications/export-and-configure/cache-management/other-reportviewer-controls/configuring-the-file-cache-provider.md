@@ -17,9 +17,12 @@ position: 2
 
 The file cache provider is used to cache rendered pages and resources as temporary files on disk. This can help
         reducing the memory footprint of the application without sacrificing the performance significantly. It is necessary to configure
-        the [Telerik Reporting Configuration Section]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/overview%}) first and then use the following XML snippet that
+        the 
+[Telerik Reporting Configuration Section]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/overview%})
+ first and then use the following XML snippet that
         configures the viewers in the application to use the file cache provider:
       
+
 
 	
 ````xml
@@ -31,9 +34,11 @@ The file cache provider is used to cache rendered pages and resources as tempora
 
 
 
+
 By default, this provider stores the files in the temporary folder of the current user. However it can be configured to store
         the files in another location by specifying the "BasePath" parameter, as illustrated below:
       
+
 
 	
 ````xml
@@ -53,9 +58,13 @@ By default, this provider stores the files in the temporary folder of the curren
 
 
 
-The __BasePath__ can represent either an absolute path on disk or a relative path. In the latter case the path is mapped to the
+
+The 
+__BasePath
+__ can represent either an absolute path on disk or a relative path. In the latter case the path is mapped to the
         application’s working directory.
       
+
 
 >note In web applications deployed on a web farm, the  __BasePath__  parameter should          specify a shared folder with the necessary permissions which should be accessible from all servers.        
 
@@ -65,6 +74,9 @@ The __BasePath__ can represent either an absolute path on disk or a relative pat
 
  * [Configuring Cache]({%slug telerikreporting/using-reports-in-applications/export-and-configure/cache-management/other-reportviewer-controls/configuring-cache%})
 
+
  * [Configuring the Database Cache Provider]({%slug telerikreporting/using-reports-in-applications/export-and-configure/cache-management/other-reportviewer-controls/configuring-the-database-cache-provider%})
 
+
  * [Telerik Reporting Configuration Section]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/overview%})
+

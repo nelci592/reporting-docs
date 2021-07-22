@@ -14,19 +14,39 @@ position: 1
 
 ## 
 
-When you configure the __SqlDataSource__ component, you set the __
-            ProviderName
-          __ property to the type of database (the default is __System.Data.SqlClient__)
-          and the __ConnectionString__ property to a connection string that includes information
+When you configure the 
+__SqlDataSource
+__ component, you set the 
+__            ProviderName
+          
+__ property to the type of database (the default is 
+__System.Data.SqlClient
+__)
+          and the 
+__ConnectionString
+__ property to a connection string that includes information
           required to connect to the database. The contents of a connection string differ depending on what type of
-          database the data source component is accessing. For example, the __System.Data.SqlClient__
-          provider requires a server name, database (catalog) name, and information about how to authenticate the user
-          when connecting to __SQL Server__. For information on valid connection strings, see the
-          __ConnectionString__ property topics for the __SqlConnection__,
-          __OracleConnection__, __OleDbConnection__, and __
-            OdbcConnection
-          __ classes.
+          database the data source component is accessing. For example, the 
+__System.Data.SqlClient
+__          provider requires a server name, database (catalog) name, and information about how to authenticate the user
+          when connecting to 
+__SQL Server
+__. For information on valid connection strings, see the
+          
+__ConnectionString
+__ property topics for the 
+__SqlConnection
+__,
+          
+__OracleConnection
+__, 
+__OleDbConnection
+__, and 
+__            OdbcConnection
+          
+__ classes.
         
+
 
 
 
@@ -40,6 +60,7 @@ When you configure the __SqlDataSource__ component, you set the __
 
 
 
+
 {{source=CodeSnippets\VB\API\Telerik\Reporting\SqlDataSourceSnippets.vb region=ConnectionStringSnippet}}
 ````VB
 	        Dim sqlDataSource As Telerik.Reporting.SqlDataSource = New Telerik.Reporting.SqlDataSource()
@@ -50,17 +71,30 @@ When you configure the __SqlDataSource__ component, you set the __
 
 
 
-Instead of setting connection strings at design time as property settings in the __SqlDataSource__
-          component, you can store them centrally as part of your application's configuration settings using the __
-            connectionStrings
-          __ configuration element. This enables you to manage connection strings independently
-          of your reports, including encrypting them using __Protected Configuration__.
+
+Instead of setting connection strings at design time as property settings in the 
+__SqlDataSource
+__          component, you can store them centrally as part of your application's configuration settings using the 
+__            connectionStrings
+          
+__ configuration element. This enables you to manage connection strings independently
+          of your reports, including encrypting them using 
+__Protected Configuration
+__.
         
 
-The following example shows how to connect to the __SQL Server AdventureWorks__ sample database
-          using a connection string which stored in the __connectionStrings__ configuration element named
-          __MyAdventureWorksDB__:
+
+The following example shows how to connect to the 
+__SQL Server AdventureWorks
+__ sample database
+          using a connection string which stored in the 
+__connectionStrings
+__ configuration element named
+          
+__MyAdventureWorksDB
+__:
         
+
 
 	
 ````xml
@@ -76,16 +110,29 @@ The following example shows how to connect to the __SQL Server AdventureWorks__ 
 
 
 
+
 Configuration files in XML format are used in .NET Framework applications. In .NET Core applications the configuration file usually is in JSON-format
-          and is called __appsettings.json__. The configuration of connection strings section is explained in the following documentation article:
-          [Manual Setup of HTML5 Report Viewer in an ASP.NET Core 2+ application](9bf9f23f-2aa2-47d4-8d21-feeae104ed69#ConnectionStringsAndConfiguration).
+          and is called 
+__appsettings.json
+__. The configuration of connection strings section is explained in the following documentation article:
+          
+[Manual Setup of HTML5 Report Viewer in an ASP.NET Core 2+ application
+](9bf9f23f-2aa2-47d4-8d21-feeae104ed69#ConnectionStringsAndConfiguration).
         
 
+
 When the connection string is stored in the configuration file, you need to specify the name of the configuration
-          element as a value for the __ConnectionString__ property of __SqlDataSource__.
-          Specifying a value for the __ProviderName__ property is no longer necessary, since that information
+          element as a value for the 
+__ConnectionString
+__ property of 
+__SqlDataSource
+__.
+          Specifying a value for the 
+__ProviderName
+__ property is no longer necessary, since that information
           is already present in the configuration element itself.
         
+
 
 
 
@@ -98,6 +145,7 @@ When the connection string is stored in the configuration file, you need to spec
 
 
 
+
 {{source=CodeSnippets\VB\API\Telerik\Reporting\SqlDataSourceSnippets.vb region=ConnectionNameSnippet}}
 ````VB
 	        Dim sqlDataSource As Telerik.Reporting.SqlDataSource = New Telerik.Reporting.SqlDataSource()
@@ -107,16 +155,22 @@ When the connection string is stored in the configuration file, you need to spec
 
 
 
-The __SqlDataSource__ component retrieves data using a SQL statement defined through the
-          __SelectCommand__ property. If the data source component connects to a database that
+
+The 
+__SqlDataSource
+__ component retrieves data using a SQL statement defined through the
+          
+__SelectCommand
+__ property. If the data source component connects to a database that
           supports stored procedures, you can specify the name of a stored procedure in place of the SQL statement.
           You can create parameterized commands that include placeholders for values to be supplied at run time. The
           following example shows a typical parameterized SQL select command:
         
 
-	
-          SELECT CustomerID, CompanyName FROM Customers WHERE City = @City
+
+	          SELECT CustomerID, CompanyName FROM Customers WHERE City = @City
         
+
 
 
 
@@ -124,3 +178,4 @@ You can create parameter objects that specify where the command should get param
           You can also use expressions which values will be evaluated when processing the report or pass specific values
           programmatically.
         
+

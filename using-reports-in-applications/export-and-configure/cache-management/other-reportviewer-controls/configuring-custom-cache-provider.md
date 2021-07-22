@@ -15,10 +15,15 @@ position: 4
 >important The cache settings mentioned in this article are not obligatory, and they do not apply to the           __HTML5 Viewer__  or its Angular, WebForms and MVC wrappers. Details about the Cache Storage of the Reporting REST          Service that works with the HTML5 Viewer are available in          [Cache Management: HTML5 Report Viewer and Reporting REST services]({%slug telerikreporting/using-reports-in-applications/export-and-configure/cache-management/html5-report-viewer-and-reporting-rest-services%})          and [REST Service Storage Settings]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-service-storage/overview%}).        
 
 
-Except the preconfigured cache providers, additional providers can be used. To do that create a __MyCache__ class that implements
+Except the preconfigured cache providers, additional providers can be used. To do that create a 
+__MyCache
+__ class that implements
         the Telerik.Reporting.Cache.Interfaces.ICache interface. Then implement the Telerik.Reporting.Cache.Interfaces.ICacheProvider
-        interface and its only method should return a new instance of the __MyCache__ class.
+        interface and its only method should return a new instance of the 
+__MyCache
+__ class.
       
+
 
 >important The cache provider should have a parameterless constructor in order to be instantiated by the Reporting engine.        
 
@@ -40,6 +45,7 @@ Except the preconfigured cache providers, additional providers can be used. To d
 
 
 
+
 {{source=CodeSnippets\VB\API\Telerik\Reporting\CustomCacheProviderSnippets.vb region=CustomCacheProviderImplementation}}
 ````VB
 	
@@ -56,18 +62,19 @@ Except the preconfigured cache providers, additional providers can be used. To d
 
 
 
+
 {{source=CodeSnippets\CS\API\Telerik\Reporting\CustomCacheProviderSnippets.cs region=CustomCacheImplementation}}
 ````C#
 	    
 	    public class MyCache : Telerik.Reporting.Cache.Interfaces.ICache
 	    {
-	        readonly System.Collections.Generic.IDictionary<string, byte[]> cache;
+	        readonly System.Collections.Generic.IDictionary```<string, byte[]>``` cache;
 	
 	        public MyCache(System.Collections.IDictionary parameters)
 	        {
 	            // The 'parameters' dictionary is initialized from the Telerik.Reporting/Cache configuration section.
 	
-	            this.cache = new System.Collections.Generic.Dictionary<string, byte[]>();
+	            this.cache = new System.Collections.Generic.Dictionary```<string, byte[]>```();
 	        }
 	
 	        public bool HasValue(string key)
@@ -97,6 +104,7 @@ Except the preconfigured cache providers, additional providers can be used. To d
 	    }
 	
 ````
+
 
 
 
@@ -140,11 +148,23 @@ Except the preconfigured cache providers, additional providers can be used. To d
 
 
 
-To register this new provider set the __provider__ attribute of the "Cache" element to the class name which implements ICacheProvider.
-          Under "Providers" child element of the "Cache" element, create a "Provider" element with the same __name__
-          attribute as the __provider__ attribute of the "Cache" element. The __type__ attribute
-          should be the [assembly qualified name](http://msdn.microsoft.com/en-us/library/system.type.assemblyqualifiedname.aspx) of MyCacheProvider type. The following code snippet demonstrates how to configure such custom provider:
+
+To register this new provider set the 
+__provider
+__ attribute of the "Cache" element to the class name which implements ICacheProvider.
+          Under "Providers" child element of the "Cache" element, create a "Provider" element with the same 
+__name
+__          attribute as the 
+__provider
+__ attribute of the "Cache" element. The 
+__type
+__ attribute
+          should be the 
+[assembly qualified name
+](http://msdn.microsoft.com/en-us/library/system.type.assemblyqualifiedname.aspx
+) of MyCacheProvider type. The following code snippet demonstrates how to configure such custom provider:
         
+
 
 	
 ````xml
@@ -164,11 +184,15 @@ To register this new provider set the __provider__ attribute of the "Cache" elem
 
 
 
+
 # See Also
 
 
  * [Configuring Cache]({%slug telerikreporting/using-reports-in-applications/export-and-configure/cache-management/other-reportviewer-controls/configuring-cache%})
 
+
  * [Configuring the File Cache Provider]({%slug telerikreporting/using-reports-in-applications/export-and-configure/cache-management/other-reportviewer-controls/configuring-the-file-cache-provider%})
 
+
  * [Configuring the Database Cache Provider]({%slug telerikreporting/using-reports-in-applications/export-and-configure/cache-management/other-reportviewer-controls/configuring-the-database-cache-provider%})
+

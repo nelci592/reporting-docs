@@ -16,7 +16,9 @@ position: 12
 
 Sets the report source.
 
+
 Parameters:
+
 
 
 | Parameter | Description |
@@ -26,8 +28,11 @@ Parameters:
 
 
 
-Returns: the current *ReportViewer* object.
+Returns: the current 
+*ReportViewer
+* object.
         
+
 
 	
 ````js
@@ -38,5 +43,6 @@ reportViewer.reportSource({
         });
           
 ````
+
 
 

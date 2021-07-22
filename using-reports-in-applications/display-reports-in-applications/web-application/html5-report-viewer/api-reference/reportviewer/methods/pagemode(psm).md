@@ -16,7 +16,9 @@ position: 9
 
 Sets the page mode and automatically reloads the current report (if any) into the new view.
 
+
 Parameters:
+
 
 
 | Parameter | Description |
@@ -26,8 +28,11 @@ Parameters:
 
 
 
-Returns: the current *ReportViewer* object.
+Returns: the current 
+*ReportViewer
+* object.
         
+
 
 	
 ````js
@@ -35,5 +40,6 @@ var reportViewer = $("#reportViewer1").data("telerik_ReportViewer");
 reportViewer.pageMode(telerikReportViewer.PageModes.SINGLE_PAGE);
           
 ````
+
 
 

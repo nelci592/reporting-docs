@@ -14,48 +14,57 @@ position: 4
 
 This topic explains how to use custom parameters UI to update the report parameters instead of using the report viewer's default
         implementation of the parameters area. The report and all required parameters for it are packed in a ReportSource object.
-        To update the report source the [ReportViewer.reportSource(rs)]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/methods/reportsource(rs)%}) method is used.
+        To update the report source the 
+[ReportViewer.reportSource(rs)]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/methods/reportsource(rs)%})
+ method is used.
       
 
-To give an example we will use the Invoice report from our examples and will update its __OrderNumber__ parameter
+
+To give an example we will use the Invoice report from our examples and will update its 
+__OrderNumber
+__ parameter
         from a custom parameter UI.
-      Pass values to report parameters
+      
+Pass values to report parameters
+
 
 >tip All path references in the described steps should be adapted according            to your project setup. For more information please refer to the MSDN article            [ASP.NET Web Project Paths](http://msdn.microsoft.com/en-us/library/ms178116.aspx)
 
 
 Add a new html page CustomParameters.html to the CSharp.Html5Demo or VB.Html5Demo project.
 
-Add the references to all required JavaScript libraries and stylesheets:#_HTML_
+
+Add the references to all required JavaScript libraries and stylesheets:
+#_HTML_
 
 	
 ````html
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <title>Telerik HTML5 Report Viewer</title>
+    ```<title>```Telerik HTML5 Report Viewer</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    ```<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">```</script>
     
     <link href="/kendo/styles/kendo.common.min.css" rel="stylesheet" />
     <link href="/kendo/styles/kendo.blueopal.min.css" rel="stylesheet" />
-
     <script src="/ReportViewer/js/telerikReportViewer.kendo-
 ````
 
 
 
-Add the custom parameter UI - a dropdown selector with a few values:#_HTML_
+
+Add the custom parameter UI - a dropdown selector with a few values:
+#_HTML_
 
 	
 ````html
     <div id="invoiceIdSelector">
-        <label for="invoiceId">Invoices</label>
+        ```<label for="invoiceId">```Invoices</label>
         <select id="invoiceId" title="Select the Invoice ID">
-            <option value="SO51081">SO51081</option>
-            <option value="SO51082" selected="selected">SO51082</option>
-            <option value="SO51083">SO51083</option>
+            ```<option value="SO51081">```SO51081</option>
+            ```<option value="SO51082" selected="selected">```SO51082</option>
+            ```<option value="SO51083">```SO51083</option>
         </select>
     </div>
         
@@ -63,7 +72,9 @@ Add the custom parameter UI - a dropdown selector with a few values:#_HTML_
 
 
 
-Add the ReportViewer placeholder#_HTML_
+
+Add the ReportViewer placeholder
+#_HTML_
 
 	
 ````html
@@ -75,10 +86,16 @@ Add the ReportViewer placeholder#_HTML_
 
 
 
+
 Now initialize the report viewer. We will use the minimal set of all
-                  [possible options]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/report-viewer-initialization%}).
-                  Please note how the value from the custom UI is used to set the __OrderNumber__ report parameter initially:
+                  
+[possible options]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/report-viewer-initialization%})
+.
+                  Please note how the value from the custom UI is used to set the 
+__OrderNumber
+__ report parameter initially:
                 
+
 
 	
 ````js
@@ -99,9 +116,13 @@ Now initialize the report viewer. We will use the minimal set of all
 
 
 
-Add code that updates the ReportSource parameters collection with the selected __Invoice Id__ from
+
+Add code that updates the ReportSource parameters collection with the selected 
+__Invoice Id
+__ from
                   the dropdown box:
                 
+
 
 	
 ````js
@@ -120,25 +141,31 @@ Add code that updates the ReportSource parameters collection with the selected _
 
 
 
-The HTML page that we have just created should looks like this:#_HTML_
+
+The HTML page that we have just created should looks like this:
+#_HTML_
 
 	
 ````html
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <title>Telerik HTML5 Report Viewer Demo With Custom Parameter</title>
+    ```<title>```Telerik HTML5 Report Viewer Demo With Custom Parameter</title>
     
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    ```<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">```</script>
     
     <link href="https://kendo.cdn.telerik.com/
 ````
 
 
 
-Run the project and verify that the __Invoice Id__ selection really updates the report.
+
+Run the project and verify that the 
+__Invoice Id
+__ selection really updates the report.
                 
 
+
  * [How To: Create a Custom Parameter Editor]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/customizing/how-to-create-a-custom-parameter-editor%})
+

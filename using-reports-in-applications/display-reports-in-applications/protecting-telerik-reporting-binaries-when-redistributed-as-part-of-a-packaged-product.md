@@ -17,3 +17,4 @@ position: 9
 Currently merging the Telerik Reporting assemblies is not possible. 
            Thus you can distribute the Telerik Reporting assemblies without merging them.
           
+

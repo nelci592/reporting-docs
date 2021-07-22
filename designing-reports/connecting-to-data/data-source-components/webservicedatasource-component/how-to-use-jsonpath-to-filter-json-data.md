@@ -14,8 +14,12 @@ position: 1
 
 In this article we are going to discuss how to use JSONPath expressions in the Data Selector in order to query and filter JSON data returned from the web service.
         For a complete overview of the JSONPath syntax please refer to 
-        [JSONPath - XPath for JSON](http://goessner.net/articles/JsonPath/).
+        
+[JSONPath - XPath for JSON
+](http://goessner.net/articles/JsonPath/
+).
       
+
 
 ## Bind to Inner Objects
 
@@ -24,8 +28,10 @@ Very often the JSON data returned from a web service contains a single parent ob
           or a particular nested array using a JSONPath expression.
         
 
+
 Example:
-        #_JSON_
+        
+#_JSON_
 
 	
 ````js
@@ -48,15 +54,18 @@ Example:
   }
 }
 
-
 ````
 
 
 
-JSONPath: __$.store.book__
+
+JSONPath: 
+__$.store.book
+__
 
 Result:
-        #_JSON_
+        
+#_JSON_
 
 	
 ````js
@@ -79,13 +88,16 @@ Result:
 
 
 
+
 ## Filter Arrays
 
 In other scenarios it might be useful to filter the JSON data in order to display only objects matching specific criteria.
         
 
+
 Example:
-        #_JSON_
+        
+#_JSON_
 
 	
 ````js
@@ -108,15 +120,18 @@ Example:
   }
 }
 
-
 ````
 
 
 
-JSONPath: __$.store.book[?(@.price<10)]__
+
+JSONPath: 
+__$.store.book[?(@.price<10)]
+__
 
 Result:
-        #_JSON_
+        
+#_JSON_
 
 	
 ````js
@@ -130,5 +145,6 @@ Result:
 ]
 
 ````
+
 
 

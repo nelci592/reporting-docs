@@ -17,9 +17,10 @@ position: 11
 Parameters:
 
 
+
 | Parameter | Description |
 | ------ | ------ |
-| __e__ |This is the[jQuery.Event object](https://api.jquery.com/category/events/event-object/)and e.data is respectively[jQuery's event.data](https://api.jquery.com/event.data/). e.data.sender is the report viewer that raised the event|
+| __e__ |This is the[jQuery.Event object<br/>](https://api.jquery.com/category/events/event-object/<br/>)and e.data is respectively[jQuery's event.data<br/>](https://api.jquery.com/event.data/<br/>). e.data.sender is the report viewer that raised the event|
 
 
 
@@ -38,6 +39,7 @@ Parameters:
   });
           
 ````
+
 
 
 

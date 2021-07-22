@@ -15,25 +15,27 @@ position: 2
 ## 
 
 Each method can be called using a reference to the report viewer component.
-        #_TypeScript_
+        
+#_TypeScript_
 
 	
 ````
 <tr-viewer #viewer1
-
 ...
-
-<button (click)="viewer1.refreshReport()">Refresh</button>
+```<button (click)="viewer1.refreshReport()">```Refresh</button>
         
 ````
+
 
 
 
 The example above refreshes the report viewer.
         
 
+
 The following table lists the available methods:
         
+
 
 
 |  __Method__  |  __Description__  |
@@ -63,7 +65,9 @@ The following table lists the available methods:
 |DOCUMENT_MAP_AREA_KEY|68 *('d')* |Key for moving the focus to the document map area, if visible.
 
 
-||
+|   |   |
+| ------ | ------ |
+|
 | __setAccessibilityKeyMap(keyMap: JSON)__ |Sets the shortcut keys used when the report viewer is in accessible mode.<br/>                It is recommended to set the new key map when the report rendering is complete,<br/>                because the accessibility routines require the report viewer template to be loaded. __Parameters__ : keyMap: JSO|
 
 

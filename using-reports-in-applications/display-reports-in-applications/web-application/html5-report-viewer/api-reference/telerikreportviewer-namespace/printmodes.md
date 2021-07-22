@@ -15,7 +15,9 @@ position: 3
 ## telerikReportViewer.PrintModes
 
 
-| Member name |
+|   |   |
+| ------ | ------ |
+ Member name |
 | ------ |
 |AUTO_SELECT|
 |FORCE_PDF_PLUGIN|

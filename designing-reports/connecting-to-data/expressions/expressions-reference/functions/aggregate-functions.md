@@ -18,12 +18,20 @@ Aggregate functions perform a calculation on a set of multiple values and return
           functions ignore null values.
         
 
-To include aggregated values in your report, use the __Aggregates__ node in the __Edit Expression__ editor, 
+
+To include aggregated values in your report, use the 
+__Aggregates
+__ node in the 
+__Edit Expression
+__ editor, 
           which you can access in the Report Designer. 
           You can specify a scope to identify which set of data to use for the calculation by 
-          using [data 
-          scope functions](3c53d216-23db-4749-8671-c7027d4daf1c#datascopefunctions).
+          using 
+[data 
+          scope functions
+](3c53d216-23db-4749-8671-c7027d4daf1c#datascopefunctions).
         
+
 
 
 | Function | Description | Return Type |
@@ -49,6 +57,9 @@ To include aggregated values in your report, use the __Aggregates__ node in the 
 # See Also
 
 
- * [How to create custom aggregate functions](https://www.telerik.com/support/kb/reporting/styling-and-formatting-reports/details/implementing-custom-aggregate-functions-)
+ * [How to create custom aggregate functions
+](https://www.telerik.com/support/kb/reporting/styling-and-formatting-reports/details/implementing-custom-aggregate-functions-
+)
 
  * [Apply custom logic with user aggregate functions ]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/extending-expressions/user-aggregate-functions%})
+

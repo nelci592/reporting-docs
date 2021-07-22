@@ -14,13 +14,14 @@ position: 0
 
 ## Request#_URI Template_
 
-	
-          POST /api/reports/clients/{clientId}/parameters
+	          POST /api/reports/clients/{clientId}/parameters
         
 
 
 
-__Path parameters__
+
+__Path parameters
+__
 
 
 | Name | Type | Description |
@@ -30,10 +31,13 @@ __Path parameters__
 
 
 
-__Request Body__
+__Request Body
+__
 
-[ReportSource]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/json-entities/reportsource%}) object. Represent a report and its current parameter values.
+[ReportSource]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/json-entities/reportsource%})
+ object. Represent a report and its current parameter values.
         
+
 
 ## Response
 
@@ -48,17 +52,20 @@ __Request Body__
 
 
 
-__Response Body__
+__Response Body
+__
 
-Array containing [Parameter]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/json-entities/parameter%}) objects representing the report parameters that should be used to prompt the user.
+Array containing 
+[Parameter]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/json-entities/parameter%})
+ objects representing the report parameters that should be used to prompt the user.
         
+
 
 ## Sample#_Request Message_
 
 	
 ````none
           POST /api/reports/clients/2c3d/parameters HTTP/1.1
-
           {
             report: “MyReport1”,
             parameterValues: {
@@ -69,12 +76,12 @@ Array containing [Parameter]({%slug telerikreporting/using-reports-in-applicatio
           
 ````
 
+
 #_Response Message_
 
 	
 ````none
           HTTP/1.1 200 OK
-
           [
               { 
                 ‘name’: ‘p1’,
@@ -90,7 +97,6 @@ Array containing [Parameter]({%slug telerikreporting/using-reports-in-applicatio
                 ‘childParameters’: [‘p2’],
                 ‘value’:1
                 ‘label’: ‘1’,
-
               },
               { 
                 ‘name’: ‘p2’,
@@ -113,6 +119,7 @@ Array containing [Parameter]({%slug telerikreporting/using-reports-in-applicatio
           ]
           
 ````
+
 
 
 

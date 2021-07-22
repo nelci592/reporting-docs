@@ -14,7 +14,9 @@ position: 4
 
 The following example illustrates how to use a DataSet as the source for an ObjectDataSource component.
 
+
 In the code snippet below a DataSet object is filled with three tables and then used for the DataSource property of the ObjectDataSource component. The DataMemeber property of the ObjectDataSource component is set to indicate to which one of the three tables to bind to. Additionally a sample calculated field is added which can be used in the report definition in the same way as a regular field.
+
 
 
 
@@ -73,6 +75,7 @@ In the code snippet below a DataSet object is filled with three tables and then 
 
 
 
+
 {{source=CodeSnippets\VB\API\Telerik\Reporting\ObjectDataSourceSnippets.vb region=HowToBindToDataSetSnippet}}
 ````VB
 	
@@ -128,5 +131,6 @@ In the code snippet below a DataSet object is filled with three tables and then 
 	    End Function
 	
 ````
+
 
 

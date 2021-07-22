@@ -16,21 +16,33 @@ This topic describes how to host the Telerik Reporting WCF Service in IIS. For t
         the steps below to configure your web application:
       
 
+
 1. Required assembly references:
 
-* __System.ServiceModel.dll__ assembly
+
+* __System.ServiceModel.dll
+__ assembly
               
 
-* __Telerik.Reporting.Service.dll__ assembly
+
+* __Telerik.Reporting.Service.dll
+__ assembly
               
+
 
 * Assemblies with Telerik Reports to be exposed through the Reporting Service
 
-1. Add .svc file (e.g. __ReportService.svc__)
+
+1. Add .svc file (e.g. 
+__ReportService.svc
+__)
             to reference the
-            [Telerik.Reporting.Service.ReportService](/reporting/api/Telerik.Reporting.Service.ReportService).
+            
+[Telerik.Reporting.Service.ReportService](/reporting/api/Telerik.Reporting.Service.ReportService)
+.
             The file would contain the following line only:
-          #_ASP.NET_
+          
+#_ASP.NET_
 
 	
 ````XML
@@ -40,10 +52,12 @@ This topic describes how to host the Telerik Reporting WCF Service in IIS. For t
 
 
 
+
 >caution The code sample have the version listed as Version=x.x.x.x,              and you should change that with the exact assembly version              you use before proceeding.            
 
 
 1. Register the Reporting Service endpoints in the web.config:
+
 
 	
 ````XML
@@ -99,11 +113,16 @@ This topic describes how to host the Telerik Reporting WCF Service in IIS. For t
 
 
 
+
 >caution For troubleshooting and configuring IIS hosted WCF services, please refer to [IIS Hosted Service Fails](http://msdn.microsoft.com/en-us/library/ms752252.aspx) article in MSDN.        
 
 
 ## Related Articles:
 
-* [Hosting Windows Communication Foundation Services](http://msdn.microsoft.com/en-us/library/ms730158.aspx)
+* [Hosting Windows Communication Foundation Services
+](http://msdn.microsoft.com/en-us/library/ms730158.aspx
+)
 
-* [How to: Host a WCF Service in IIS](http://msdn.microsoft.com/en-us/library/ms733766.aspx)
+* [How to: Host a WCF Service in IIS
+](http://msdn.microsoft.com/en-us/library/ms733766.aspx
+)

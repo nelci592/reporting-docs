@@ -12,13 +12,23 @@ position: 4
 
 
 
-The __CubeDataSource__ component supports parameterized __MDX__
-        queries by associating the parameters you add to the __Parameters__ collection with
+The 
+__CubeDataSource
+__ component supports parameterized 
+__MDX
+__        queries by associating the parameters you add to the 
+__Parameters
+__ collection with
         placeholders in the query. Parameter values can be evaluated with any expression which conforms to the
         common expression syntax supported by the reporting engine. This grants you a great deal of flexibility
-        on how you can supply your __MDX__ queries with parameters. For example, you can
-        bind an __MDX__ query parameter directly to a report parameter.
+        on how you can supply your 
+__MDX
+__ queries with parameters. For example, you can
+        bind an 
+__MDX
+__ query parameter directly to a report parameter.
       
+
 
 >note The [CubeDataSource Wizard]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/cubedatasource-wizard%}) can detect parameters listed          in the MDX query, and it will ask you to provide values for them at  __Configure Data Source Parameters__  step.        
 
@@ -26,19 +36,35 @@ The __CubeDataSource__ component supports parameterized __MDX__
 ## 
 
 When creating a parameterized query, you identify the parameter name by prefixing the name with the
-          *"@"* character. For example, *"@Year"* would
-          be a valid parameter name. __MDX__ supports only parameters for literal or scalar
+          
+*"@"
+* character. For example, 
+*"@Year"
+* would
+          be a valid parameter name. 
+__MDX
+__ supports only parameters for literal or scalar
           values. To create a parameter that references a member, set, or tuple, you would have to use a function
-          such as __StrToMember__ or __StrToSet__. To illustrate this,
-          let us define a simple __MDX__ query that selects product sales grouped by category
+          such as 
+__StrToMember
+__ or 
+__StrToSet
+__. To illustrate this,
+          let us define a simple 
+__MDX
+__ query that selects product sales grouped by category
           and subcategory, and define a slicing axis by year, where the chosen year is specified as a parameter.
-          Since the *"@Year"* parameter is passed as a string literal value, we need
-          to use the __StrToMember__ function to convert that value to a valid member of
+          Since the 
+*"@Year"
+* parameter is passed as a string literal value, we need
+          to use the 
+__StrToMember
+__ function to convert that value to a valid member of
           the cube as shown below:
         
 
-	
-          select non empty { [Measures].[Sales Amount] } on columns,
+
+	          select non empty { [Measures].[Sales Amount] } on columns,
           non empty { [Product].[Category].[Category] *
           [Product].[Subcategory].[Subcategory] } on rows
           from [Adventure Works]
@@ -47,11 +73,17 @@ When creating a parameterized query, you identify the parameter name by prefixin
 
 
 
-The following code sample illustrates how to pass a value to the *"@Year"*
-          parameter of the query using the __Parameters__ collection of the __
-            CubeDataSource
-          __ component:
+
+The following code sample illustrates how to pass a value to the 
+*"@Year"
+*          parameter of the query using the 
+__Parameters
+__ collection of the 
+__            CubeDataSource
+          
+__ component:
         
+
 
 {{source=CodeSnippets\CS\API\Telerik\Reporting\CubeDataSourceSnippets.cs region=SingleValueParameterSnippet}}
 ````c#
@@ -65,6 +97,7 @@ The following code sample illustrates how to pass a value to the *"@Year"*
 	                                           "where StrToMember(@Year)";
 	            cubeDataSource.Parameters.Add("Year", "[CY 2001]");
 ````
+
 
 
 
@@ -83,14 +116,16 @@ The following code sample illustrates how to pass a value to the *"@Year"*
 
 
 
-When you need to pass multiple values as a single parameter to the query, use the __
-            StrToSet
-          __ function instead. For example, to pass several years for the slicing axis at once, we can
+
+When you need to pass multiple values as a single parameter to the query, use the 
+__            StrToSet
+          
+__ function instead. For example, to pass several years for the slicing axis at once, we can
           modify the previous query as shown below:
         
 
-	
-          select non empty { [Measures].[Sales Amount] } on columns,
+
+	          select non empty { [Measures].[Sales Amount] } on columns,
           non empty { [Product].[Category].[Category] *
           [Product].[Subcategory].[Subcategory] } on rows
           from [Adventure Works]
@@ -99,8 +134,10 @@ When you need to pass multiple values as a single parameter to the query, use th
 
 
 
+
 Now it is possible to assign an array of years to the data source parameter:
         
+
 
 {{source=CodeSnippets\CS\API\Telerik\Reporting\CubeDataSourceSnippets.cs region=MultiValueParameterSnippet}}
 ````c#
@@ -114,6 +151,7 @@ Now it is possible to assign an array of years to the data source parameter:
 	                                           "where StrToSet(@Year)";
 	            cubeDataSource.Parameters.Add("Year", new string[] { "[CY 2001]", "[CY 2002]" });
 ````
+
 
 
 
@@ -132,11 +170,19 @@ Now it is possible to assign an array of years to the data source parameter:
 
 
 
+
 Instead of specifying the parameter values directly, you can use expressions to evaluate them at runtime.
-          For instance, you can bind the __CubeDataSourceParameter__ from the previous example
-          to a __ReportParameter__ with an expression, so that the default parameter user
-          interface of __Report Viewer__ can be used for choosing the slicing year:
+          For instance, you can bind the 
+__CubeDataSourceParameter
+__ from the previous example
+          to a 
+__ReportParameter
+__ with an expression, so that the default parameter user
+          interface of 
+__Report Viewer
+__ can be used for choosing the slicing year:
         
+
 
 {{source=CodeSnippets\CS\API\Telerik\Reporting\CubeDataSourceSnippets.cs region=ReportParameterSnippet}}
 ````c#
@@ -158,6 +204,7 @@ Instead of specifying the parameter values directly, you can use expressions to 
 
 
 
+
 {{source=CodeSnippets\VB\API\Telerik\Reporting\CubeDataSourceSnippets.vb region=ReportParameterSnippet}}
 ````vb
 	        Dim cubeDataSource As Telerik.Reporting.CubeDataSource = New Telerik.Reporting.CubeDataSource()
@@ -175,5 +222,6 @@ Instead of specifying the parameter values directly, you can use expressions to 
 	        report.DataSource = cubeDataSource
 	        report.ReportParameters.Add("Year", ReportParameterType.String, "[CY 2001]")
 ````
+
 
 

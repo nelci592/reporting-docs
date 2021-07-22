@@ -22,46 +22,77 @@ Users often request data based on parameters that can be resolved or evaluated o
         data is downloaded on the middle tier or client machine.
       
 
-The __SqlDataSource__ component supports parameterized SQL queries by associating the parameters
-        you add to the __Parameters__ collection with placeholders in the __
-          SelectCommand
-        __ query. Parameter values can be evaluated with any expression which conforms to the common expression
+
+The 
+__SqlDataSource
+__ component supports parameterized SQL queries by associating the parameters
+        you add to the 
+__Parameters
+__ collection with placeholders in the 
+__          SelectCommand
+        
+__ query. Parameter values can be evaluated with any expression which conforms to the common expression
         syntax supported by the reporting engine. This grants you a great deal of flexibility on how you can supply your
         SQL queries with parameters. For example, you can bind a SQL query parameter directly to a report parameter without
         any extra coding at all.
       
 
+
 The syntax used for the placeholders varies, depending on the type of the database. If you are working with
-        __SQL Server__, the parameter name begins with the *'@'* character,
-        and its name corresponds to the name of the parameter object in the Parameters collection. For __
-          Oracle
-        __ databases the parameters are prefixed with the *':'* character instead,
-        and are referenced by name in the __Parameters__ collection as well. If you are working with
-        an __ODBC__ or __OLE DB__ database, parameters in a parameterized statement
-        are not named and instead are specified with the placeholder character *'?'*.
+        
+__SQL Server
+__, the parameter name begins with the 
+*'@'
+* character,
+        and its name corresponds to the name of the parameter object in the Parameters collection. For 
+__          Oracle
+        
+__ databases the parameters are prefixed with the 
+*':'
+* character instead,
+        and are referenced by name in the 
+__Parameters
+__ collection as well. If you are working with
+        an 
+__ODBC
+__ or 
+__OLE DB
+__ database, parameters in a parameterized statement
+        are not named and instead are specified with the placeholder character 
+*'?'
+*.
       
+
 
 >note The [SqlDataSource Wizard]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/sqldatasource-wizard/overview%}) can detect SQL parameters listed          in the SQL query, and it will ask you to provide values for them at  __Configure Data Source Parameters__  step.          The information is provided by the selected .NET data provider,          which implementation is important for determining what SQL syntax can be used for the SQL query.        
 
 
 ## Using Parameters with the SqlClient Provider
 
-The __System.Data.SqlClient__ provider supports named parameters as placeholders,
+
+The 
+__System.Data.SqlClient
+__ provider supports named parameters as placeholders,
                 as shown in the following example:
               
 
-	
-                SELECT * FROM Person.Contact WHERE FirstName = @FirstName AND LastName = @LastName
+
+	                SELECT * FROM Person.Contact WHERE FirstName = @FirstName AND LastName = @LastName
               
+
 
 
 
 With named parameters, the order in which the parameters are specified in the command's parameters
                 collection is not important. However, you must ensure that the parameter names that you use in your SQL
                 command correspond to the names of the parameters in the associated collection. The following example
-                shows how to use named parameters in an SQL command for a __SqlDataSource__
-                component that uses the __System.Data.SqlClient__ provider:
+                shows how to use named parameters in an SQL command for a 
+__SqlDataSource
+__                component that uses the 
+__System.Data.SqlClient
+__ provider:
               
+
 
 
 
@@ -76,6 +107,7 @@ With named parameters, the order in which the parameters are specified in the co
 
 
 
+
 {{source=CodeSnippets\VB\API\Telerik\Reporting\SqlDataSourceSnippets.vb region=NamedParametersSnippet}}
 ````VB
 	        Dim sqlDataSource As Telerik.Reporting.SqlDataSource = New Telerik.Reporting.SqlDataSource()
@@ -85,30 +117,52 @@ With named parameters, the order in which the parameters are specified in the co
 	        sqlDataSource.Parameters.Add("@LastName", System.Data.DbType.String, "Smith")
 ````
 
+
 Using Parameters with the OLE DB and ODBC Providers
 
-The __System.Data.OleDb__ and __System.Data.Odbc__ providers
-                support only positional parameters identified by the *'?'* character, as
+
+The 
+__System.Data.OleDb
+__ and 
+__System.Data.Odbc
+__ providers
+                support only positional parameters identified by the 
+*'?'
+* character, as
                 shown in the following example:
               
 
-	
-                SELECT * FROM Person.Contact WHERE FirstName = ? AND LastName = ?
+
+	                SELECT * FROM Person.Contact WHERE FirstName = ? AND LastName = ?
               
 
 
 
-When you use the __System.Data.OleDb__ and __System.Data.Odbc__
-                providers with parameterized SQL query statements, the order in which you specify the parameter placeholders
-                must match exactly the order of the parameter objects in the __Parameters__ collection
-                of the __SqlDataSource__ component. Specifying names for the parameters in this case
+
+When you use the 
+__System.Data.OleDb
+__ and 
+__System.Data.Odbc
+__                providers with parameterized SQL query statements, the order in which you specify the parameter placeholders
+                must match exactly the order of the parameter objects in the 
+__Parameters
+__ collection
+                of the 
+__SqlDataSource
+__ component. Specifying names for the parameters in this case
                 is only for informative purposes, these names are not used when binding the parameter values to the SQL
                 query statement.
               
 
-The following example shows how to specify parameters for a __SqlDataSource__ component
-                that uses the __System.Data.OleDb__ provider:
+
+The following example shows how to specify parameters for a 
+__SqlDataSource
+__ component
+                that uses the 
+__System.Data.OleDb
+__ provider:
               
+
 
 
 
@@ -124,6 +178,7 @@ The following example shows how to specify parameters for a __SqlDataSource__ co
 
 
 
+
 {{source=CodeSnippets\VB\API\Telerik\Reporting\SqlDataSourceSnippets.vb region=PositionalParametersSnippet}}
 ````VB
 	        Dim sqlDataSource As Telerik.Reporting.SqlDataSource = New Telerik.Reporting.SqlDataSource()
@@ -134,11 +189,14 @@ The following example shows how to specify parameters for a __SqlDataSource__ co
 	        sqlDataSource.Parameters.Add("LastName", System.Data.DbType.String, "Smith")
 ````
 
+
 Binding SQL Query Parameters to Report Parameters
+
 
 The following code example shows how to bind the parameters of an SQL query to the corresponding
                 parameters of the report using expressions:
               
+
 
 
 
@@ -157,6 +215,7 @@ The following code example shows how to bind the parameters of an SQL query to t
 
 
 
+
 {{source=CodeSnippets\VB\API\Telerik\Reporting\SqlDataSourceSnippets.vb region=BindingExpressionSnippet}}
 ````VB
 	        Dim report As Telerik.Reporting.Report = New Telerik.Reporting.Report()
@@ -169,5 +228,6 @@ The following code example shows how to bind the parameters of an SQL query to t
 	        sqlDataSource.Parameters.Add("@LastName", System.Data.DbType.String, "=Parameters.LastName")
 	        report.DataSource = sqlDataSource
 ````
+
 
 

@@ -14,37 +14,41 @@ position: 0
 
 This topic explains how to update the report parameters with values passed from a custom UI instead of using the report viewer's default 
         parameters area. The report identifier and all required parameters values for it are packed in a ReportSource object.
-        To update the report source, the [setReportSource(rs)]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/api-reference/methods%}) method is used.
-      Pass values to report parameters from the application UI
+        To update the report source, the 
+[setReportSource(rs)]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/api-reference/methods%})
+ method is used.
+      
+Pass values to report parameters from the application UI
 
-Add the custom UI in your application. For example:#_HTML_
+
+Add the custom UI in your application. For example:
+#_HTML_
 
 	
 ````html
-<button (click)="onButtonClick(value)">Update parameter value</button>
+```<button (click)="onButtonClick(value)">```Update parameter value</button>
               
 ````
 
 
 
+
 Declare the variable for the viewer and update the viewer's report source with a new parameter value:
+
 
 	
 ````js
 import { Component, ViewChild } from '@angular/core';
 import { TelerikReportViewerComponent } from '@progress/telerik-angular-report-viewer';
 ...
-
 export class AppComponent {
     @ViewChild('viewer1') viewer: TelerikReportViewerComponent;
     ...
-
     onButtonClick(param: string) {
         var rs = {
             report: 'Telerik.Reporting.Examples.CSharp.Invoice, CSharp.ReportLibrary, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null',
             parameters: { OrderNumber: param }
         };
-
         this.viewer.setReportSource(rs);
     }
 ...
@@ -54,8 +58,12 @@ export class AppComponent {
 
 
 
+
 The setReportSource(rs) method will automatically refresh the report with the new parameter values.
+
 
  * [How To: Use Angular Report Viewer with Angular CLI]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/how-to-use-angular-report-viewer-with-angular-cli%})
 
+
  * [How To: Use Angular Report Viewer with SystemJS]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/how-to-use-angular-report-viewer-with-systemjs%})
+

@@ -22,6 +22,7 @@ position: 0
 
 
 
+
 ## Response
 
 
@@ -32,10 +33,12 @@ position: 0
 
 
 
-__Response Body__
+__Response Body
+__
 
 The body contains the newly registered client’s identifier.
         
+
 
 ## Sample#_Request Message_
 
@@ -45,15 +48,16 @@ The body contains the newly registered client’s identifier.
               
 ````
 
+
 #_Response Message_
 
 	
 ````none 
                 HTTP/1.1 200 OK
-
                 {"clientId":"a5f3"}
               
 ````
+
 
 
 

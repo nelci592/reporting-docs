@@ -12,38 +12,26 @@ position: 2
 
 
 
-The 
-__HtmlTextBox
-__ works with text formatting options only
+The __HtmlTextBox__ works with text formatting options only
                 (a subset of HTML tags and CSS attributes), which are available for the sole purpose of styling
                 labels and headers. The unsupported tags/css attributes have to be filtered in order to avoid exceptions.
-                The purpose of this article is to outline how to accomplish this when the 
-__HTML
-__                data entry tool is 
-[RadEditor for ASP.NET AJAX.
-](http://www.telerik.com/products/aspnet-ajax/editor.aspx
-)
+                The purpose of this article is to outline how to accomplish this when the __HTML__                data entry tool is [RadEditor for ASP.NET AJAX.](http://www.telerik.com/products/aspnet-ajax/editor.aspx)
 
 ## 
 
 Two things should be considered:
                 
 
-
 * limit the options in the RadEditor's toolbar
-
 
 * Allowing plain text only. RadEditor can automatically do this for you by
                             stripping all HTML tags), because even if you limit the toolbar to certain actions only,
                             pasting rich-text will still be available by default.
                         
 
-
 Here are the exact steps taken:
 
-
 1. Use the markup below for your ToolsFile.xml file
-
 
 	
 ````xml
@@ -72,6 +60,7 @@ Here are the exact steps taken:
     <tool name="LinkManager" shortcut="CTRL+K"/>
     <tool name="Unlink" shortcut="CTRL+SHIFT+K"/>
   </tools>
+
   <tools>
     <tool name="ForeColor"/>
     <tool name="BackColor"/>
@@ -100,16 +89,11 @@ Here are the exact steps taken:
 
 
 
-
 1. Since the inline text-decoration css property is not supported, disable the
-                            
-__FixUlBoldItalic
-__ filter:
+                            __FixUlBoldItalic__ filter:
                         
 
-
 	RadEditor1.DisableFilter(Telerik.Web.UI.EditorFilters.FixUlBoldItalic);
-
 
 
 
@@ -117,20 +101,11 @@ __ filter:
 
 
 
-
-1. Since 
-__HtmlTextBox
-__ works with font tags, disable the 
-__ConvertFontToSpan
-__ filter,
-                            which converts the non 
-__XHTML
-__ compliant Font tags with Span tags
+1. Since __HtmlTextBox__ works with font tags, disable the __ConvertFontToSpan__ filter,
+                            which converts the non __XHTML__ compliant Font tags with Span tags
                         
 
-
 	RadEditor1.DisableFilter(Telerik.Web.UI.EditorFilters.ConvertFontToSpan);
-
 
 
 
@@ -138,34 +113,20 @@ __ compliant Font tags with Span tags
 
 
 
-
 1. Strip the HTML formatting from pasted content, because the user could paste non well formed content
-                            which could break the 
-__HtmlTextBox
-__ and the export to PDF feature. To do that set the 
-__StripFormattingOptions
-__                            property to 
-__"All"
-__ or 
-__"AllExceptNewLines"
-__.
+                            which could break the __HtmlTextBox__ and the export to PDF feature. To do that set the __StripFormattingOptions__                            property to __"All"__ or __"AllExceptNewLines"__.
                         
 
-
-1. Use the following custom content filter, which will remove unsupported 
-__HTML
-__ tags. Supported
+1. Use the following custom content filter, which will remove unsupported __HTML__ tags. Supported
                             tags are: FONT, STRONG, B, EM, I, U, A, OL, UL, SUB, SUP, LI, DIV, SPAN, P, BR, CENTER.
                         
-#_ASP.NET_
 
 	
-````XML
+````ASP.NET
     <telerik:RadEditor ID="RadEditor1" StripFormattingOptions="AllExceptNewLines" ToolsFile="~/HtmlTextBoxToolsFile.xml" OnClientLoad="editorLoaded" runat="server">
     </telerik:RadEditor>
 
 ````
-
 
 
 
@@ -185,20 +146,26 @@ ReportingFilter.prototype =
     getHtmlContent: function (content) {
         return this._removeHtmlTags(content);
     },
+
     getDesignContent: function (content) {
         return this._removeHtmlTags(content);
     },
+
     _removeHtmlTags: function (initContent) {
         var cleanContent;
+
         //Perform necessary REGEX replacement to remove unsupported HTML tags
         //Supported Reporting HTML tags: FONT, STRONG, B, EM, I, U, A, OL, UL, LI, DIV, SPAN, P, BR, CENTER
         //HTML must be XHTML valid, too, but Editor already provides that filter
+
         //Following REGEX will remove all HTML tags EXCEPT those expliclitly listed
-        cleanContent = initContent.replace(new RegExp("```<(?!\/?(font|strong|b|em|(i(?!mg))|u|a|ol|ul|li|div|span|p|br|center)(?=>```|\s?.*>))\/?.*?>", "ig"), "");
+        cleanContent = initContent.replace(new RegExp("<(?!\/?(font|strong|b|em|(i(?!mg))|u|a|ol|ul|li|div|span|p|br|center)(?=>|\s?.*>))\/?.*?>", "ig"), "");
+
         return cleanContent;
     }
 }
 ReportingFilter.registerClass('ReportingFilter', Telerik.Web.UI.Editor.Filter);
+
  function editorLoaded(editor, args)
         {
            editor.get_filtersManager().add(new ReportingFilter());
@@ -209,12 +176,8 @@ ReportingFilter.registerClass('ReportingFilter', Telerik.Web.UI.Editor.Filter);
 
 
 
-
-1. The 
-__ConvertToXhtml
-__ filter should be enabled (default state).
+1. The __ConvertToXhtml__ filter should be enabled (default state).
                         
-
 
 # See Also
 

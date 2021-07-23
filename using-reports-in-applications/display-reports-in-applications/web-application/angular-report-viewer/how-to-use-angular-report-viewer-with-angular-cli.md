@@ -56,8 +56,12 @@ The following list describes the prerequisites for this tutorial:
 >tip All paths and url links in the described steps must be adapted according            to your project setup.          
 Steps:
 
+1. 
+
 Create new Angular application using the [Angular CLI](https://cli.angular.io/) tutorial.
                 
+
+1. 
 
 Install [jQuery](https://www.npmjs.com/package/jquery) by using the following command:
                 
@@ -70,15 +74,19 @@ npm install jquery
 
 
 
+1. 
+
 Add a reference to jQuery in the scripts array of the .angular-cli.json (as of Angular 6 the file is renamed to angular.json):
 
 	
-````js
+````JSON
 "scripts": [ "../node_modules/jquery/dist/jquery.js" ]
 				
 ````
 
 
+
+1. 
 
 Install the Telerik Angular Report Viewer NPM package by running:
                 
@@ -100,11 +108,13 @@ npm install @progress/telerik-angular-report-viewer
 
 
 
+1. 
+
 Once installed, import the TelerikReportingModule in [your application root module](https://angular.io/docs/ts/latest/guide/ngmodule.html#!#angular-modularity):
                 
 
 	
-````js
+````TypeScript
 import { TelerikReportingModule } from '@progress/telerik-angular-report-viewer';
 ...
 imports: [TelerikReportingModule]
@@ -113,10 +123,12 @@ imports: [TelerikReportingModule]
 
 
 
+1. 
+
 Add the desired report viewer container style using a property of the AppComponent class:
 
 	
-````js
+````TypeScript
 export class AppComponent {
   viewerContainerStyle = {
     position: 'relative',
@@ -129,6 +141,8 @@ export class AppComponent {
 ````
 
 
+
+1. 
 
 Use the report viewer selector in the AppComponent template:
 
@@ -153,13 +167,15 @@ Use the report viewer selector in the AppComponent template:
 For all available report viewer options refer to [Options]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/api-reference/options%}).
                 
 
+1. 
+
 Style the viewer using the desired Kendo UI theme (еither using [Less-Based Themes](http://docs.telerik.com/kendo-ui/styles-and-layout/appearance-styling) or [Sass-Based Themes](http://docs.telerik.com/kendo-ui/styles-and-layout/sass-themes)):
                 
 
 Add references to the Less-based CSS files in the ```<head>``` element of index.html:
 
 	
-````html
+````HTML
 <!-- The required Less-based styles -->                  
 <link href="https://kendo.cdn.telerik.com/
 ````
@@ -174,7 +190,7 @@ If you use the __styleUrls__ attribute to reference the CSS, it is required to s
                 
 
 	
-````js
+````TypeScript
 import { Component, ViewEncapsulation } from '@angular/core';
  
 @Component({
@@ -183,6 +199,8 @@ import { Component, ViewEncapsulation } from '@angular/core';
 ````
 
 
+
+1. 
 
 Run the application:
 

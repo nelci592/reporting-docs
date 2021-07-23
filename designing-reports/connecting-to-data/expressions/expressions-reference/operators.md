@@ -75,11 +75,7 @@ position: 2
 
 ## Using wildcards for operators
 
-Both the 
-__*
-__ and 
-__%
-__ can be used interchangeably for wildcard characters
+Both the __*__ and __%__ can be used interchangeably for wildcard characters
 			in a LIKE comparison. If the string in a LIKE clause contains a *
 			or %, those characters should be escaped in brackets ([]). If a
 			bracket is in the clause, the bracket characters should be escaped
@@ -87,16 +83,11 @@ __ can be used interchangeably for wildcard characters
 			at the start and end of a pattern, or at the end of a pattern, or
 			at the start of a pattern. For example:
 
-
 * "ItemName LIKE '*product*'"
-
 
 * "ItemName LIKE '*product'"
 
-
 * "ItemName LIKE 'product*'" 
-
 
 Wildcard characters are not allowed in the middle of a string.
 				For example, 'te*xt' is not allowed.
-

@@ -14,25 +14,18 @@ position: 0
 
 Content on reports is displayed in report items. To use report items, you select them from the Toolbox and place them on your report.
 
-
 ## To Place a Report Item on a Report
 
 In Visual Studio:
 
-
 1. Open the report in design view.
             
 
-
-1. Expand the Telerik
-__ Reporting 
-__tab of the Toolbox.
+1. Expand the Telerik__ Reporting __tab of the Toolbox.
             
-
 
 1. Select the report item that you want to place.
             
-
 
 1. Drag the report item from the Toolbox to the report's design surface. Alternatively,
               you may select the section of the report where you want the report item to appear by clicking
@@ -42,37 +35,27 @@ __tab of the Toolbox.
 
 
 
-
 In the Standalone Designer:
-
 
 1. Open the report in design view.
             
 
-
-1. Click the 
-__Insert
-__ tab of the ribbon.
+1. Click the __Insert__ tab of the ribbon.
             
-
 
 1. Select the report item that you want to place and click on it.
             
-
 
 ## To Move a Report Item  
   ![](images/ReportDesign002.png)
 
 Move the mouse over the report item until you see the cross hair cursor (see image above), then click and drag the report item.
 
-
 ## To Change the Size of a Report Item
 
 1. Click on the report item to select it.
 
-
-1. Click and drag one of the size handles on the edge of the report item to the desired size.
-  
+1. Click and drag one of the size handles on the edge of the report item to the desired size.  
   ![](images/ReportDesign003.png)
 
 ## Controlling Height
@@ -83,12 +66,9 @@ To remove blank vertical space in a container (report section or panel item), wh
           Place the Height property assignment code just after the IntializeComponent() method call.
         
 
-
 # See Also
 
 
  * [Report Structure]({%slug telerikreporting/designing-reports/report-structure/overview%})
 
-
  * [Design Considerations for Report Item Layout]({%slug telerikreporting/designing-reports/report-structure/design-considerations-for-report-item-layout%})
-

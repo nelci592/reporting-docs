@@ -12,16 +12,14 @@ position: 2
 
 
 
-## Request#_URI Template_
+## Request
 
 	          GET /api/reports/clients/{clientId}/instances/{instanceId}/documents/{documentId}
         
 
 
 
-
-__Path parameters
-__
+__Path parameters__
 
 
 | Name | Type | Description |
@@ -45,25 +43,21 @@ __
 
 
 
-__Response Body
-__
+__Response Body__
 
 The document content bytes as attachment.
         
 
-
-## Sample#_Request Message_
+## Sample
 
 	          GET /api/reports/clients/2c3d/instances/4d3c/documents/5x3a HTTP/1.1
         
 
 
-#_Response Message_
 
 	          HTTP/1.1 200 OK
           Content-Disposition: attachment; filename=ProductCatalog.pdf
           bytes
         
-
 
 

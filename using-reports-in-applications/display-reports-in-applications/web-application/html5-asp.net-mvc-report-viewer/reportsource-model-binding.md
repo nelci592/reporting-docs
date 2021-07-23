@@ -16,11 +16,8 @@ position: 4
 
 The HTML5 Report Viewer comes with an MVC wrapper that does the JavaScript configuration of the report viewer,
           where you can type the initial settings of the viewer in C# or VB.NET. The settings include Id, ServiceUrl, templateUrl, client-side ReportSource,
-          and more - 
-[HTML5 Report Viewer Initialization]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/report-viewer-initialization%})
-.
+          and more - [HTML5 Report Viewer Initialization]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/report-viewer-initialization%}).
         
-
 
 >important It is important to know that the MVC project appears as a client for the Reporting RESt Service serving the HTML5 Viewer,            even if the service is in the same project.            The HTML5 Viewer and Reporting REST Service operate in a client-server model that is not related to the MVC architecture of the project.            Modifications in reports and run-time data-bindings can be performed only bythe Reporting REST Service,            on the server where the Reporting REST Service is running. For more details,             check [REST Service Report Source Resolver]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-service-report-source-resolver/overview%}).          
 
@@ -28,18 +25,14 @@ The HTML5 Report Viewer comes with an MVC wrapper that does the JavaScript confi
 ## Getting started
 
 Lets start with the model now. In case all you need is a report viewer that is used to display various reports
-          you can have a simple model to create a strongly typed view - you need to use a 
-[client-side report source]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/how-to-set-reportsource-for-report-viewers%})
-, like this (TypeReportSource or UriReportSource):
+          you can have a simple model to create a strongly typed view - you need to use a [client-side report source]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/how-to-set-reportsource-for-report-viewers%}), like this (TypeReportSource or UriReportSource):
         
-
 
 	
 ````c#
         @model Telerik.Reporting.UriReportSource
 
 ````
-
 
 
 
@@ -51,10 +44,8 @@ Lets start with the model now. In case all you need is a report viewer that is u
 
 
 
-
 Then you can use it directly when you are initializing the report viewer:
         
-
 
 {{source=CodeSnippets\MvcCS\Views\Home\SimpleModelBinding.cshtml region=Example}}
 ````c#
@@ -69,7 +60,6 @@ Then you can use it directly when you are initializing the report viewer:
 	       .PersistSession(false)
 	)
 ````
-
 
 
 
@@ -90,7 +80,6 @@ Then you can use it directly when you are initializing the report viewer:
 
 
 
-
 ## Change report viewer according to the report type
 
 Now in case you have a more complex scenario where the report viewer depends on the displayed report
@@ -102,7 +91,6 @@ Now in case you have a more complex scenario where the report viewer depends on 
           Check this snippet:
         
 
-
 {{source=CodeSnippets\MvcCS\Models\TemplatedReportViewerViewModel.cs region=AdvancedModelBindingViewModel}}
 ````c#
 	    public class TemplatedReportViewerViewModel
@@ -111,7 +99,6 @@ Now in case you have a more complex scenario where the report viewer depends on 
 	        public UriReportSource ReportSource { get; set; }
 	    }
 ````
-
 
 
 
@@ -125,11 +112,9 @@ Now in case you have a more complex scenario where the report viewer depends on 
 
 
 
-
 Once you have the model you should create your own logic to populate it (note that the MVC View is not a suitable place for that logic).
           Then use the model for your view to make it strongly typed:
         
-
 
 {{source=CodeSnippets\MvcCS\Views\Home\AdvancedModelBinding.cshtml region=Example}}
 ````c#
@@ -144,7 +129,6 @@ Once you have the model you should create your own logic to populate it (note th
 	       .PersistSession(false)
 	)
 ````
-
 
 
 
@@ -165,7 +149,6 @@ Once you have the model you should create your own logic to populate it (note th
 
 
 
-
 ## Using custom report source resolver
 
 There are cases when the supported report sources (Type and Uri) will not be enough.
@@ -176,7 +159,6 @@ There are cases when the supported report sources (Type and Uri) will not be eno
           This gives you the option to implement any custom logic that you need based on that string.
           For example you could pass the id of the report in the database:
         
-
 
 {{source=CodeSnippets\MvcCS\Views\Home\CustomModelBinding.cshtml region=Example1}}
 ````c#
@@ -191,7 +173,6 @@ There are cases when the supported report sources (Type and Uri) will not be eno
 	       .PersistSession(false)
 	)
 ````
-
 
 
 
@@ -212,10 +193,8 @@ There are cases when the supported report sources (Type and Uri) will not be eno
 
 
 
-
 You can also add parameters, like this:
         
-
 
 {{source=CodeSnippets\MvcCS\Views\Home\CustomModelBinding.cshtml region=Example2}}
 ````c#
@@ -223,14 +202,13 @@ You can also add parameters, like this:
 	       .Id("reportViewer1")
 	       .ServiceUrl("/api/reports/")
 	       .TemplateUrl("/ReportViewer/templates/telerikReportViewerTemplate.html")
-	       .ReportSource("73", new Dictionary```<string, object>```() { { "parameter1", "value1" }, { "parameter2", "value2" } })
+	       .ReportSource("73", new Dictionary<string, object>() { { "parameter1", "value1" }, { "parameter2", "value2" } })
 	       .ViewMode(ViewMode.Interactive)
 	       .ScaleMode(ScaleMode.Specific)
 	       .Scale(1.0)
 	       .PersistSession(false)
 	)
 ````
-
 
 
 
@@ -251,10 +229,8 @@ You can also add parameters, like this:
 
 
 
-
 The view can also be strongly typed:
         
-
 
 {{source=CodeSnippets\MvcCS\Views\Home\AdvancedCustomModelBinding.cshtml region=Example}}
 ````c#
@@ -269,7 +245,6 @@ The view can also be strongly typed:
 	       .PersistSession(false)
 	)
 ````
-
 
 
 
@@ -290,17 +265,15 @@ The view can also be strongly typed:
 
 
 
-
 Finally on the server side your custom report source resolver can implement the custom logic that will take in consideration
           the id and create a report source as per your needs:
         
-
 
 {{source=CodeSnippets\MvcCS\Controllers\CustomResolverReportsController.cs region=ModelBindingReportResolver_Implementation}}
 ````c#
 	    class ModelBindingReportSourceResolver : IReportSourceResolver
 	    {
-	        public Telerik.Reporting.ReportSource Resolve(string reportId, OperationOrigin operationOrigin, IDictionary```<string, object>``` currentParameterValues)
+	        public Telerik.Reporting.ReportSource Resolve(string reportId, OperationOrigin operationOrigin, IDictionary<string, object> currentParameterValues)
 	        {
 	            var report = new Invoice();
 	            if (true) // condition here
@@ -316,7 +289,6 @@ Finally on the server side your custom report source resolver can implement the 
 	        }
 	    }
 ````
-
 
 
 
@@ -337,6 +309,5 @@ Finally on the server side your custom report source resolver can implement the 
 	    End Function
 	End Class
 ````
-
 
 

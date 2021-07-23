@@ -16,7 +16,6 @@ To avoid timeouts when using the Telerik Reporting WCF Service, one should set s
     	on the client and server side. 
       
 
-
 ## Timeouts on server binding
 
 	
@@ -31,7 +30,6 @@ To avoid timeouts when using the Telerik Reporting WCF Service, one should set s
 </bindings>
 
 ````
-
 
 
 
@@ -51,7 +49,9 @@ ReportServiceClient IReportServiceClientFactory.Create(System.Uri remoteAddress)
             ReceiveTimeout = new TimeSpan(0, 10, 0),
             SendTimeout = new TimeSpan(0, 10, 0)
         };
+
         var endpointAddress = new EndpointAddress(remoteAddress);
+
         return new ReportServiceClient(binding, endpointAddress);
     }
 
@@ -59,20 +59,13 @@ ReportServiceClient IReportServiceClientFactory.Create(System.Uri remoteAddress)
 
 
 
-
-For more information, see 
-[Using Custom Bindings]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/silverlight-application/using-custom-bindings%})
-.
-
+For more information, see [Using Custom Bindings]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/silverlight-application/using-custom-bindings%}).
 
 ## Timeouts when hosted in ASP.NET
 
 When a WCF service is hosted in IIS/ASP.NET, another setting would also control the lifetime of the request: 
+			[ExecutionTimeout](/reporting/api/System.Web.Configuration.HttpRuntimeSection#System_Web_Configuration_HttpRuntimeSection_ExecutionTimeout).
 			
-[ExecutionTimeout](/reporting/api/System.Web.Configuration.HttpRuntimeSection#System_Web_Configuration_HttpRuntimeSection_ExecutionTimeout)
-.
-			
-
 
 	
 ````XML
@@ -83,7 +76,6 @@ When a WCF service is hosted in IIS/ASP.NET, another setting would also control 
 </configuration>
 			
 ````
-
 
 
 

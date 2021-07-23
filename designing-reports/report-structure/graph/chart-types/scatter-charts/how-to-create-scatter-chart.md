@@ -12,35 +12,20 @@ position: 1
 
 
 
-In this article we will show you how to create a Scatter chart using the 
-__Graph item
-__ in the 
-[Visual Studio Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/overview%})
-.
+In this article we will show you how to create a Scatter chart using the __Graph item__ in the [Visual Studio Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/overview%}).
       
-
 
 ## 
 
 1. Add a new graph item to the report.
 
-
-1. Set the 
-__DataSource
-__ property to a new 
-                  
-__[SqlDataSource]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/sqldatasource-wizard/overview%})
-__.
+1. Set the __DataSource__ property to a new 
+                  __[SqlDataSource]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/sqldatasource-wizard/overview%})__.
                 
-
 
 1. Set the connection string to the demo AdventureWorks database.
 
-
-1. Set the 
-__query
-__ to the following one:
-
+1. Set the __query__ to the following one:
 
 	                  SELECT Sales.SalesOrderHeader.SubTotal, Person.Contact.FirstName+ ' '+ Person.Contact.LastName as [Name],
                   Sales.SalesOrderHeader.OrderDate 
@@ -52,184 +37,68 @@ __ to the following one:
 
 
 
-
-1. You can click on 
-__Execute Query...
-__ just to check if everything is OK with the database connection.
-                  Click 
-__Finish
-__ when you are ready.
+1. You can click on __Execute Query...__ just to check if everything is OK with the database connection.
+                  Click __Finish__ when you are ready.
                 
 
-
-1. Go to the 
-__Properties
-__ pane -> 
-__Data
-__ and open 
-              
-__[                  SeriesGroups
-                
-](dc4689b1-891a-4f6a-93c7-de089b0ffa5e#SeriesGroupHierarchy)__ collection editor and click 
-__Add
-__:
+1. Go to the __Properties__ pane -> __Data__ and open 
+              __[                  SeriesGroups
+                ](dc4689b1-891a-4f6a-93c7-de089b0ffa5e#SeriesGroupHierarchy)__ collection editor and click __Add__:
             
 
+1. Set the new group __Groupings__ to: *=Fields.Name*
 
-1. Set the new group 
-__Groupings
-__ to: 
-*=Fields.Name
-*
-
-1. Set the 
-__Sortings
-__ to: 
-*=Sum(Fields.SubTotal)
-* with Desc order.
+1. Set the __Sortings__ to: *=Sum(Fields.SubTotal)* with Desc order.
                 
 
+1. Set the __Name__ to *seriesGroup1*
 
-1. Set the 
-__Name
-__ to 
-*seriesGroup1
-*
+1. Go to the __Properties__ pane -> __Data__ and open
+              __[                  CategoryGroups
+                ](dc4689b1-891a-4f6a-93c7-de089b0ffa5e#CategoryGroupHierarchy)__ collection editor and click __Add__:
+            By default this will add a new static group (group without grouping).
 
-1. Go to the 
-__Properties
-__ pane -> 
-__Data
-__ and open
-              
-__[                  CategoryGroups
-                
-](dc4689b1-891a-4f6a-93c7-de089b0ffa5e#CategoryGroupHierarchy)__ collection editor and click 
-__Add
-__:
-            
-By default this will add a new static group (group without grouping).
+1. Set the __Name__ to *categoryGroup1*
 
-
-1. Set the 
-__Name
-__ to 
-*categoryGroup1
-*
-
-1. Go to the  
-__Properties
-__ pane -> 
-__Presentation
-__ and open 
-__[                  CoordinateSystems
-                
-](585fe887-1319-49a5-a848-869286f7c432#CoordinateSystems)__ collection editor and 
-__Add
-__ a new 
-__CartesianCoordinateSystem
-__.
+1. Go to the  __Properties__ pane -> __Presentation__ and open __[                  CoordinateSystems
+                ](585fe887-1319-49a5-a848-869286f7c432#CoordinateSystems)__ collection editor and __Add__ a new __CartesianCoordinateSystem__.
             
 
-
-1. Leave the 
-__Name
-__ to 
-*cartesianCoordinateSystem1
-*.
+1. Leave the __Name__ to *cartesianCoordinateSystem1*.
                 
 
-
-1. Set the 
-__XAxis
-__ to 
-__New Axis with Numerical Scale
-__.
+1. Set the __XAxis__ to __New Axis with Numerical Scale__.
                 
 
-
-1. Set the 
-__YAxis
-__ to 
-__New Axis with Numerical Scale
-__.
+1. Set the __YAxis__ to __New Axis with Numerical Scale__.
                 
 
-
-1. Go to the  
-__Properties
-__ pane -> 
-__Presentation
-__ and open the 
-__[                  Series
-                
-](585fe887-1319-49a5-a848-869286f7c432#Series)__ collection editor and 
-__Add
-__ new 
-__LineSeries
-__.
+1. Go to the  __Properties__ pane -> __Presentation__ and open the __[                  Series
+                ](585fe887-1319-49a5-a848-869286f7c432#Series)__ collection editor and __Add__ new __LineSeries__.
             
 
-
-1. Set the 
-__CategoryGroup
-__ to 
-__categoryGroup1
-__.
+1. Set the __CategoryGroup__ to __categoryGroup1__.
                 
 
-
-1. Set the 
-__SeriesGroup
-__ to 
-__seriesGroup1
-__.
+1. Set the __SeriesGroup__ to __seriesGroup1__.
                 
 
-
-1. Set the 
-__CoordinateSystem
-__ to 
-__cartesianCoordinateSystem1
-__.
+1. Set the __CoordinateSystem__ to __cartesianCoordinateSystem1__.
                 
 
+1. Set the __X__ value to *=Sum(IIf(Fields.OrderDate.Year=2003, Fields.SubTotal, 0))*
 
-1. Set the 
-__X
-__ value to 
-*=Sum(IIf(Fields.OrderDate.Year=2003, Fields.SubTotal, 0))
-*
+1. Set the __Y__ value to *=Sum(IIf(Fields.OrderDate.Year=2004, Fields.SubTotal, 0))*
 
-1. Set the 
-__Y
-__ value to 
-*=Sum(IIf(Fields.OrderDate.Year=2004, Fields.SubTotal, 0))
-*
-
-1. Set the 
-__LineStyle.Visible
-__ to 
-__False
-__.
+1. Set the __LineStyle.Visible__ to __False__.
                 
 
-
-1. Set the 
-__DataPointStyle.Visible
-__ to 
-__True
-__.
+1. Set the __DataPointStyle.Visible__ to __True__.
                 
-
 
 1. Set the color palette, the formatting of the labels, the values of the legend and any other improvements as needed.
+            For more information, see [Formatting a Graph]({%slug telerikreporting/designing-reports/report-structure/graph/formatting-a-graph/overview%}).
             
-For more information, see 
-[Formatting a Graph]({%slug telerikreporting/designing-reports/report-structure/graph/formatting-a-graph/overview%})
-.
-            
-
 
 # See Also
 

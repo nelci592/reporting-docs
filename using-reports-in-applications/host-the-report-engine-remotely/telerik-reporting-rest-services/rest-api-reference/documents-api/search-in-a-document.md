@@ -12,16 +12,14 @@ position: 7
 
 
 
-## Request#_URI Template_
+## Request
 
 	          POST /api/reports/clients/{clientId}/instances/{instanceId}/documents/{documentId}/search
         
 
 
 
-
-__Path parameters
-__
+__Path parameters__
 
 
 | Name | Type | Description |
@@ -33,13 +31,10 @@ __
 
 
 
-__Request Body
-__
+__Request Body__
 
-[SearchInfo]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/json-entities/searchinfo%})
- describing the search arguments.
+[SearchInfo]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/json-entities/searchinfo%}) describing the search arguments.
         
-
 
 ## Response
 
@@ -54,19 +49,13 @@ __
 
 
 
-__Response Body
-__
+__Response Body__
 
-When the return status is 
-`OK
-` the response body contains a JSON array of 
-[SearchResultsInfo]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/json-entities/searchresultsinfo%})
- 
+When the return status is `OK` the response body contains a JSON array of [SearchResultsInfo]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/json-entities/searchresultsinfo%}) 
           objects representing the search results.
         
 
-
-## Sample#_Request Message_
+## Sample
 
 	          POST /api/reports/clients/f3c380da635/instances/c71aeb824cf/documents/495ff8766803332209ef12/search HTTP/1.1
           {
@@ -78,7 +67,6 @@ When the return status is
         
 
 
-#_Response Message_
 
 	          HTTP/1.1 200 Ok
           {
@@ -87,6 +75,5 @@ When the return status is
             "page":1
           }
         
-
 
 

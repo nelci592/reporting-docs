@@ -16,11 +16,9 @@ The Cache element specifies the configuration settings for the cache management 
         the viewers to store and cache rendered pages and resources.
       
 
-
 ## Attributes and Elements
 
-__```<cache>``` element
-__
+__```<cache>``` element__
 
 
 
@@ -33,11 +31,9 @@ Attributes| __provider__ – required string attribute. Specifies the name of th
 
 
 
-__```<Providers>``` element
-__
+__```<Providers>``` element__
 
 The Providers element specifies a collection of cache providers to register for use in the application.
-
 
 
 
@@ -50,11 +46,9 @@ Attributes|No attributes are defined for this element.|
 
 
 
-__```<provider>``` element
-__
+__```<provider>``` element__
 
 The Provider element specifies a cache provider to register for use in the application.
-
 
 
 
@@ -70,7 +64,6 @@ Attributes| __name__ – required string attribute. Specifies a unique name to i
 ## Example
 
 XML-based configuration file:
-
 
 	
 ````xml
@@ -88,15 +81,13 @@ XML-based configuration file:
 									</cache>
 								</Telerik.Reporting>
 								…
-							```</configuration>``` 
+							</configuration> 
 							
 ````
 
 
 
-
 JSON-based configuration file:
-
 
 	
 ````js
@@ -118,7 +109,6 @@ JSON-based configuration file:
   }
 							
 ````
-
 
 
 

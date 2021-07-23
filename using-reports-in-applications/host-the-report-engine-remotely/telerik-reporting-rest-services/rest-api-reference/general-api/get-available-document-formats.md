@@ -14,11 +14,9 @@ position: 0
 
 Public interface for retrieving available document formats.
 
-
-## Request#_URI Template_
+## Request
 
 	GET /api/reports/formats
-
 
 
 
@@ -32,21 +30,16 @@ Public interface for retrieving available document formats.
 
 
 
-__Response Body
-__
+__Response Body__
 
-An array containing 
-[FormatInfo]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/json-entities/formatinfo%})
- objects, which represent the available document formats for reports
+An array containing [FormatInfo]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/json-entities/formatinfo%}) objects, which represent the available document formats for reports
         
 
-
-## Sample#_Request Message_
+## Sample
 
 	GET /api/reports/formats HTTP/1.1
 
 
-#_Response Message_
 
 	          Response Message
           HTTP/1.1 200 OK
@@ -62,6 +55,5 @@ An array containing
             {"name":"XPS","localizedName":"XPS Document"}
           ]
         
-
 
 

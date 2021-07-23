@@ -15,8 +15,7 @@ position: 8
 Mail message 
       
 
-
-## #_Example_
+## 
 
 	          {
           'from': 'john.doe@mycompany.com',
@@ -30,9 +29,7 @@ Mail message
 
 
 
-
 >caption Fields
-
 
 | Field | Type | Required | Description |
 | ------ | ------ | ------ | ------ |
@@ -40,7 +37,7 @@ Mail message
 |`to`|`string`|`true`||
 |`cc`|`string`|`false`||
 |`subject`|`string`|`false`||
-|`body`|`string`|`false`|
+|`body`|`string`|`false`||
 
 
 

@@ -10,18 +10,15 @@ position: 7
 
 # fontLibrary Element
 
-on Windows machine or when other than PDF rendering extension is used.
+ws machine or when other than PDF rendering extension is used.
       
-
 
 ## Attributes and Elements
 
 The following sections describe attributes, child elements, and parent elements.
 
 
-
 >caption ```<fontLibrary>``` element
-
 
 
 |Attributes| __useDefaultLocations__ - determines if the system's default font locations to be included in the search.
@@ -45,7 +42,6 @@ The following sections describe attributes, child elements, and parent elements.
 >caption ```<add>``` element
 
 
-
 |Attribute|
 
 
@@ -66,9 +62,7 @@ The following sections describe attributes, child elements, and parent elements.
 The following example demonstrates how to configure the reporting engine to skip searching the default font folders and declares a folder to be for used for font resolving.
         
 
-
 XML-based configuration file:
-
 
 	
 ````xml
@@ -78,9 +72,9 @@ XML-based configuration file:
 	<Telerik.Reporting>
     <fontLibrary useDefaultLocations ="false">
       <fontLocations>
-        ```<add path="/usr/customFonts/trueType" searchSubfolders="true">```</add>
+        <add path="/usr/customFonts/trueType" searchSubfolders="true"></add>
       </fontLocations>
-    ```</fontLibrary>``` 	
+    </fontLibrary> 	
   </Telerik.Reporting>
    ...
 </configuration>
@@ -89,9 +83,7 @@ XML-based configuration file:
 
 
 
-
 JSON-based configuration file:
-
 
 	
 ````js
@@ -108,7 +100,6 @@ JSON-based configuration file:
   }
   			
 ````
-
 
 
 

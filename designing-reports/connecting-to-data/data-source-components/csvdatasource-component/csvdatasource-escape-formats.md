@@ -18,7 +18,6 @@ The available Escape formats for the CsvDataSource component are None, Backslash
         The text qualifier usually is single quote or double quotes, but can be other symbol as well (according to RFC 4180 only double quotes have to be used). 
       
 
-
 ## 
 
 

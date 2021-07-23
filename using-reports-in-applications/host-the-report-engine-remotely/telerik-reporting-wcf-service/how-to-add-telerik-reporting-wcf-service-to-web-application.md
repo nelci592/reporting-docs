@@ -16,40 +16,27 @@ This topic describes how to host the Telerik Reporting WCF Service in IIS. For t
         the steps below to configure your web application:
       
 
-
 1. Required assembly references:
 
-
-* __System.ServiceModel.dll
-__ assembly
+* __System.ServiceModel.dll__ assembly
               
 
-
-* __Telerik.Reporting.Service.dll
-__ assembly
+* __Telerik.Reporting.Service.dll__ assembly
               
-
 
 * Assemblies with Telerik Reports to be exposed through the Reporting Service
 
-
-1. Add .svc file (e.g. 
-__ReportService.svc
-__)
+1. Add .svc file (e.g. __ReportService.svc__)
             to reference the
-            
-[Telerik.Reporting.Service.ReportService](/reporting/api/Telerik.Reporting.Service.ReportService)
-.
+            [Telerik.Reporting.Service.ReportService](/reporting/api/Telerik.Reporting.Service.ReportService).
             The file would contain the following line only:
           
-#_ASP.NET_
 
 	
-````XML
+````ASP.NET
 				<%@ServiceHost Service="Telerik.Reporting.Service.ReportService, Telerik.Reporting.Service, Version=x.x.x.x, Culture=neutral, PublicKeyToken=A9D7983DFCC261BE" %>
 				
 ````
-
 
 
 
@@ -57,7 +44,6 @@ __)
 
 
 1. Register the Reporting Service endpoints in the web.config:
-
 
 	
 ````XML
@@ -113,16 +99,11 @@ __)
 
 
 
-
 >caution For troubleshooting and configuring IIS hosted WCF services, please refer to [IIS Hosted Service Fails](http://msdn.microsoft.com/en-us/library/ms752252.aspx) article in MSDN.        
 
 
 ## Related Articles:
 
-* [Hosting Windows Communication Foundation Services
-](http://msdn.microsoft.com/en-us/library/ms730158.aspx
-)
+* [Hosting Windows Communication Foundation Services](http://msdn.microsoft.com/en-us/library/ms730158.aspx)
 
-* [How to: Host a WCF Service in IIS
-](http://msdn.microsoft.com/en-us/library/ms733766.aspx
-)
+* [How to: Host a WCF Service in IIS](http://msdn.microsoft.com/en-us/library/ms733766.aspx)

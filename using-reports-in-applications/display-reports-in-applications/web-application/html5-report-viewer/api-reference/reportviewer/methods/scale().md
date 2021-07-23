@@ -14,19 +14,14 @@ position: 13
 
 ## 
 
-Gets the viewer’s scale factor and scale mode. For more information please see jQuery.fn.telerik_ReportViewer’s scale and scaleMode options in 
-[](c578f366-93da-4dd1-8972-6efbc5a1790b#Options).
-
+Gets the viewer’s scale factor and scale mode. For more information please see jQuery.fn.telerik_ReportViewer’s scale and scaleMode options in [](c578f366-93da-4dd1-8972-6efbc5a1790b#Options).
 
 Returns: object, with properties:
         
 
+* *scale*
 
-* *scale
-*
-
-* *scaleMode
-*
+* *scaleMode*
 
 	
 ````js
@@ -34,6 +29,5 @@ var reportViewer = $("#reportViewer1").data("telerik_ReportViewer");
 var scale = reportViewer.scale();
           
 ````
-
 
 

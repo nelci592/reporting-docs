@@ -10,8 +10,7 @@ position: 3
 
 # How to Self Host Telerik Reporting REST Web API
 
-            
-
+           
 
 
 
@@ -20,16 +19,15 @@ position: 3
 
 
 
+1. 
+
 On Visual Studio, create a “Console Application” project;
 
+1. 
 
 Install the
-              
-[Microsoft.AspNet.WebApi.SelfHost 4.0.30506
-](http://www.nuget.org/packages/Microsoft.AspNet.WebApi.SelfHost/4.0.30506
-)              NuGet package;
+              [Microsoft.AspNet.WebApi.SelfHost 4.0.30506](http://www.nuget.org/packages/Microsoft.AspNet.WebApi.SelfHost/4.0.30506)              NuGet package;
             
-
 
 >important The Reporting REST WebAPI Service is built against WebAPI 1. In case you have to use  __newer version of Microsoft.AspNet.WebApi.SelfHost (e.g. WebAPI 2) __                 you have to redirect the System.Web.Http and System.Net.Http.Formatting to their newer version.                To do this, add the following bindingRedirects to your app.config and replace 5.1.0.0 with the exact version:              
 
@@ -40,37 +38,34 @@ Install the
 [Visual Studio NuGet Package Manager](https://docs.nuget.org/consume/installing-nuget) can add the required binding redirects automatically, if you update NuGet packages through it.              
 
 
-Make sure that the project have the following assembly references:
+1. 
 
+Make sure that the project have the following assembly references:
 
 * System.Web
                 
 
-
 * Newtonsoft.Json.dll
                 
-
 
 * System.Web.Http.dll
                 
 
-
 * System.Web.Http.SelfHost.dll
                 
-
 
 * System.Net.Http.dll
                 
 
-
 * System.Net.Http.Formatting.dll
                 
 
+1. 
 
-[How to implement the ReportsController in an application]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-web-api-implementation/how-to-implement-the-reportscontroller-in-an-application%})
-;
+[How to implement the ReportsController in an application]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-web-api-implementation/how-to-implement-the-reportscontroller-in-an-application%});
             
 
+1. 
 
 {{source=CodeSnippets\MvcCS\SelfHostedSnippets\Program.cs region=SelfHostedRestService}}
 ````C#
@@ -95,7 +90,6 @@ Make sure that the project have the following assembly references:
 	        }
 	    }
 ````
-
 
 
 
@@ -125,15 +119,16 @@ Make sure that the project have the following assembly references:
 
 
 
+1. 
 
 Run the console app;
             
 
+1. 
 
 To verify whether the service works correctly you can make a sample request
               for the available document formats using the following URL:
             
-
 
 
 
@@ -142,15 +137,13 @@ To verify whether the service works correctly you can make a sample request
 
 
 
-If the request is successful you should receive the document formats encoded in JSON. For more information see: 
-[Get Available Document Formats]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/general-api/get-available-document-formats%})
-.
+If the request is successful you should receive the document formats encoded in JSON. For more information see: [Get Available Document Formats]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/general-api/get-available-document-formats%}).
             
 
+1. 
 
 When you are finished self-hosting, be sure to delete the reservation:
             
-
 
 
 
@@ -161,7 +154,4 @@ When you are finished self-hosting, be sure to delete the reservation:
 
  * [Localization]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/localization%})
 
-
- * [Hosting ASP.NET Web API
-](http://www.asp.net/web-api/overview/hosting-aspnet-web-api
-)
+ * [Hosting ASP.NET Web API](http://www.asp.net/web-api/overview/hosting-aspnet-web-api)

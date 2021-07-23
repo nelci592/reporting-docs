@@ -14,12 +14,9 @@ position: 14
 
 ## 
 
-Sets the scale factor and scale mode. For more information please see jQuery.fn.telerik_ReportViewer’s scale and scaleMode options in 
-[](c578f366-93da-4dd1-8972-6efbc5a1790b#Options).
-
+Sets the scale factor and scale mode. For more information please see jQuery.fn.telerik_ReportViewer’s scale and scaleMode options in [](c578f366-93da-4dd1-8972-6efbc5a1790b#Options).
 
 Parameters:
-
 
 
 | Parameter | Description |
@@ -29,11 +26,8 @@ Parameters:
 
 
 
-Returns: the current 
-*ReportViewer
-* object.
+Returns: the current *ReportViewer* object.
         
-
 
 	
 ````js
@@ -44,6 +38,5 @@ scale: 0.75
 });
           
 ````
-
 
 

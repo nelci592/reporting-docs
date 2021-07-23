@@ -12,59 +12,24 @@ position: 1
 
 
 
-This section discusses how to connect the 
-__OpenAccessDataSource
-__ component to a 
-__Telerik Data Access Model
-__.
-    	The provided examples and code snippets assume an existing 
-__Telerik Data Access Model
-__ of the 
-__Adventure Works
-__ 
-    	sample database with the following structure:
-  
+This section discusses how to connect the __OpenAccessDataSource__ component to a __Telerik Data Access Model__.
+    	The provided examples and code snippets assume an existing __Telerik Data Access Model__ of the __Adventure Works__ 
+    	sample database with the following structure:  
   ![](images/DataSources/OpenAccessDataSourceAdventureWorksEntityModel.png)
 
 ## 
 
-The simplest way to configure 
-__OpenAccessDataSource
-__ in 
-__Report Designer
-__ is to use 
-      	the 
-[OpenAccessDataSource Wizard]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/openaccessdatasource-wizard%})
-. That wizard is started automatically when you create a new 
-__OpenAccessDataSource
-__, but you can invoke 
-      	it manually at any time from the context menu associated with the data source by choosing 
-__"Configure"
-__:
-
+The simplest way to configure __OpenAccessDataSource__ in __Report Designer__ is to use 
+      	the [OpenAccessDataSource Wizard]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/openaccessdatasource-wizard%}). That wizard is started automatically when you create a new __OpenAccessDataSource__, but you can invoke 
+      	it manually at any time from the context menu associated with the data source by choosing __"Configure"__:
 
   
   ![](images/DataSources/OpenAccessDataSourceConfigure.png)
 
-To configure the 
-__OpenAccessDataSource
-__ component programmatically you need to specify at least an 
-__ObjectContext
-__      	and a property or a method from that 
-__ObjectContext
-__ which is responsible for data retrieval. Assign the type of 
-      	the 
-__OpenAccessContext
-__ to the 
-__ObjectContext
-__ property of 
-__OpenAccessDataSource
-__ and the name of the desired member to the 
+To configure the __OpenAccessDataSource__ component programmatically you need to specify at least an __ObjectContext__      	and a property or a method from that __ObjectContext__ which is responsible for data retrieval. Assign the type of 
+      	the __OpenAccessContext__ to the __ObjectContext__ property of __OpenAccessDataSource__ and the name of the desired member to the 
+      	__ObjectContextMember__ property, as shown in the following example:
       	
-__ObjectContextMember
-__ property, as shown in the following example:
-      	
-
 
 {{source=CodeSnippets\CS\API\Telerik\Reporting\OpenAccessDataSourceSnippets.cs region=PropertyBindingSnippet}}
 ````C#
@@ -79,7 +44,6 @@ __ property, as shown in the following example:
 	            report.DataSource = openAccessDataSource;
 	
 ````
-
 
 
 
@@ -99,23 +63,11 @@ __ property, as shown in the following example:
 
 
 
-
-The above code snippet connects the 
-__OpenAccessDataSource
-__ component to the 
-__AdventureWorksEntities
-__ 
-      	context and retrieves the information for all products from the 
-__Products
-__ auto-generated property.
-Instead of specifying a type you can assign a live instance of the 
-__OpenAccessContext
-__. In this case however it is 
-      	your responsibility to destroy that 
-__OpenAccessContext
-__ instance when done with the report:
+The above code snippet connects the __OpenAccessDataSource__ component to the __AdventureWorksEntities__ 
+      	context and retrieves the information for all products from the __Products__ auto-generated property.
+Instead of specifying a type you can assign a live instance of the __OpenAccessContext__. In this case however it is 
+      	your responsibility to destroy that __OpenAccessContext__ instance when done with the report:
       	
-
 
 {{source=CodeSnippets\CS\API\Telerik\Reporting\OpenAccessDataSourceSnippets.cs region=InstanceBindingSnippet}}
 ````C#
@@ -134,7 +86,6 @@ __ instance when done with the report:
 	            openAccessContext.Dispose();
 	
 ````
-
 
 
 
@@ -158,34 +109,25 @@ __ instance when done with the report:
 
 
 
-
 Binding to a method is more flexible than binding to a property, because it is possible to execute some 
       	custom business logic when retrieving data for the report. If the specified method has arguments, the 
-      	
-__OpenAccessDataSource
-__ component allows you to pass parameters to those arguments via the 
-__Parameters
-__ collection. 
-      	For example, let us extend the 
-__AdventureWorksEntities
-__ context using a partial class that defines the following
+      	__OpenAccessDataSource__ component allows you to pass parameters to those arguments via the __Parameters__ collection. 
+      	For example, let us extend the __AdventureWorksEntities__ context using a partial class that defines the following
       	method:
       	
-
 
 {{source=CodeSnippets\CS\API\Telerik\Reporting\OpenAccessDataSourceSnippets.cs region=SampleMethodSnippet}}
 ````C#
 	
 	        partial class AdventureWorksEntities
 	        {
-	            public System.Collections.Generic.List```<Product>``` GetProducts(string color, decimal price)
+	            public System.Collections.Generic.List<Product> GetProducts(string color, decimal price)
 	            {
 	                return this.Products.Where(product => product.Color == color && product.ListPrice <= price).ToList();
 	            }
 	        }
 	
 ````
-
 
 
 
@@ -202,12 +144,8 @@ __ context using a partial class that defines the following
 
 
 
-
-You can bind the 
-__OpenAccessDataSource
-__ component to that method with the following code snippet:
+You can bind the __OpenAccessDataSource__ component to that method with the following code snippet:
       	
-
 
 {{source=CodeSnippets\CS\API\Telerik\Reporting\OpenAccessDataSourceSnippets.cs region=MethodBindingSnippet}}
 ````C#
@@ -227,7 +165,6 @@ __ component to that method with the following code snippet:
 
 
 
-
 {{source=CodeSnippets\VB\API\Telerik\Reporting\OpenAccessDataSourceSnippets.vb region=MethodBindingSnippet}}
 ````VB
 	
@@ -243,7 +180,6 @@ __ component to that method with the following code snippet:
 	        report.DataSource = openAccessDataSource
 	
 ````
-
 
 
 

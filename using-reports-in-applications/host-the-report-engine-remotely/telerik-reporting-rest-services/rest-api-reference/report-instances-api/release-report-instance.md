@@ -12,16 +12,14 @@ position: 1
 
 
 
-## Request#_URI Template_
+## Request
 
 	          DELETE /api/reports/clients/{clientId}/instances/{instanceId}
         
 
 
 
-
-__Path parameters
-__
+__Path parameters__
 
 
 | Name | Type | Description |
@@ -44,23 +42,21 @@ __
 
 
 
-## Sample#_Request Message_
+## Sample
 
 	
-````none
+````Request Message
           DELETE /api/reports/clients/2c3d/instances/4d3c HTTP/1.1
           
 ````
 
 
-#_Response Message_
 
 	
-````none
+````Response Message
           HTTP/1.1 204 NoContent
           
 ````
-
 
 
 

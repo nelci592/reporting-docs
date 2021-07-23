@@ -12,16 +12,14 @@ position: 1
 
 
 
-## Request#_URI Template_
+## Request
 
 	          GET /api/reports/clients/{clientId}/instances/{instanceId}/documents/{documentId}/info
         
 
 
 
-
-__Path parameters
-__
+__Path parameters__
 
 
 | Name | Type | Description |
@@ -46,19 +44,16 @@ __
 
 
 
-__Response Body
-__
+__Response Body__
 
 [DocumentInfo]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/json-entities/documentinfo%})
 
-
-## Sample#_Request Message_
+## Sample
 
 	          GET /api/reports/clients/2c3d/instances/4d3c/documents/5x3a/info HTTP/1.1
         
 
 
-#_Response Message_
 
 	          HTTP/1.1 202 Accepted
           {
@@ -67,6 +62,5 @@ __
             ‘DocumentMapAvailable’: false,
           }
         
-
 
 

@@ -12,22 +12,18 @@ position: 2
 
 
 
-The article elaborates on how to localize the messages displayed by the HTML5 Report Viewer. This feature is available since version 
-[R2 2018 SP1 (12.1.18.620)
-](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-r2-2018-sp1-12-1-18-620
-).
+The article elaborates on how to localize the messages displayed by the HTML5 Report Viewer. This feature is available since version [R2 2018 SP1 (12.1.18.620)](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-r2-2018-sp1-12-1-18-620).
       
-
 
 ## 
 
 1. To localize the report viewer messages, create a new JavaScript file using the following code snippet:
 
-
 	
 ````js
 (function (trv, $) {
     "use strict";
+
     var sr = {
         //warning and error string resources
         controllerNotInitialized: 'Controller is not initialized.',
@@ -60,10 +56,12 @@ The article elaborates on how to localize the messages displayed by the HTML5 Re
         clientExpired: "Click 'Refresh' to restore client session.",
         promisesChainStopError: "Error shown. Throwing promises chain stop error.",
         renderingCanceled: "Report processing was canceled.",
+
         //viewer template string resources
         parameterEditorSelectNone: 'clear selection',
         parameterEditorSelectAll: 'select all',
         parametersAreaPreviewButton: 'Preview',
+
         menuNavigateBackwardText: 'Navigate Backward',
         menuNavigateBackwardTitle: 'Navigate Backward',
         menuNavigateForwardText: 'Navigate Forward',
@@ -97,6 +95,7 @@ The article elaborates on how to localize the messages displayed by the HTML5 Re
         menuSearchText: 'Search',
         menuSearchTitle: 'Toggle Search',
         menuSideMenuTitle: 'Toggle Side Menu',
+
         sendEmailFromLabel: "From:",
         sendEmailToLabel: "To:",
         sendEmailCCLabel: "CC:",
@@ -104,6 +103,7 @@ The article elaborates on how to localize the messages displayed by the HTML5 Re
         sendEmailFormatLabel: "Format:",
         sendEmailSendLabel: "Send",
         sendEmailCancelLabel: "Cancel",
+
         //accessibility string resources
         ariaLabelPageNumberSelector: "Page number selector. Showing page {0} of {1}.",
         ariaLabelPageNumberEditor: "Page number editor",
@@ -164,6 +164,7 @@ The article elaborates on how to localize the messages displayed by the HTML5 Re
         ariaLabelSendEmailFormat: "Report format:",
         ariaLabelSendEmailSend: "Send email",
         ariaLabelSendEmailCancel: "Cancel sending email",
+
         //search dialog resources
         searchDialogTitle: 'Search in report contents',
         searchDialogSearchInProgress: "searching...",
@@ -177,7 +178,9 @@ The article elaborates on how to localize the messages displayed by the HTML5 Re
         searchDialogUseRegexTitle: 'Use Regex',
         searchDialogCaptionText: 'Find',
         searchDialogPageText: 'page',
+
         // Send Email dialog resources
+
         sendEmailDialogTitle: "Send Email",
         sendEmailValidationEmailRequired: "Email field is required",
         sendEmailValidationEmailFormat: "Email format is not valid",
@@ -185,37 +188,28 @@ The article elaborates on how to localize the messages displayed by the HTML5 Re
         sendEmailValidationFormatRequired: "Format field is required",
         errorSendingDocument: "Error sending report document (Report = '{0}')."
     };
+
     trv.sr = $.extend(trv.sr, sr);
+
 }(window.telerikReportViewer = window.telerikReportViewer || {}, jQuery));
               
 ````
 
 
 
-
-1. Specify the name of the file using the following convention:
-resources.
-__[culture]
-__.js
-            
-where 
-*__[culture]
-__* is the name of the culture for the specified localization resource.
+1. Specify the name of the file using the following convention:resources.__[culture]__.js
+            where *__[culture]__* is the name of the culture for the specified localization resource.
               For example, to provide a localization resource for the French Belgian culture, the corresponding resource file could be named as follows:
-            
-*__resources.fr-BE.js
-__*
+            *__resources.fr-BE.js__*
 
 1. Add the newly created JavaScript file to the ```<head>``` element of the page between jQuery and telerikReportViewer.js files:
             
-#_HTML_
 
 	
-````html
-              ```<script src="resources.fr-BE.js">```</script>
+````HTML
+              <script src="resources.fr-BE.js"></script>
               
 ````
-
 
 
 
@@ -223,7 +217,6 @@ __*
 
 
 1. Translate the texts for the specified culture
-
 
 >tip To modify the HTML5 Viewer's HTML template that contains the toolbar, Preview, Parameters and DocumentMap areas, you will have to set the viewer's templateUrl.           For more details, check [Providing Templates]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/customizing/styling-and-appearance/providing-custom-templates%}).        
 
@@ -233,6 +226,4 @@ __*
 
  * [Localizing Reports]({%slug telerikreporting/designing-reports/localizing-reports%})
 
-
  * [Localizing the Angular Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/customizing/localization%})
-

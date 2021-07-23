@@ -14,7 +14,6 @@ position: 7
 
 The steps below show how to create a minimal chart definition with the Graph item programmatically
 
-
 >important The example below is an alternative to using the Report Designer for creating a chart.           If applicable for your scenario our recommendation is to create your chart in the designer           with Graph Wizard or manually as elaborated in the [How to Create Chart Step by Step]({%slug telerikreporting/designing-reports/report-structure/graph/how-to/how-to-create-chart-step-by-step%}) help article.        
 
 
@@ -113,7 +112,6 @@ The steps below show how to create a minimal chart definition with the Graph ite
 
 
 
-
 {{source=CodeSnippets\VB\API\Telerik\Reporting\GraphSnippets.vb region=AddNewGraphColumnChartType}}
 ````VB
 	       'Instantiate a new Graph
@@ -201,7 +199,6 @@ The steps below show how to create a minimal chart definition with the Graph ite
 	        barSeries1.Y = "=IsNull(Sum(Fields.LineTotal), 0) / 1000.0"
 	        graph1.Series.Add(barSeries1)
 ````
-
 
 
 

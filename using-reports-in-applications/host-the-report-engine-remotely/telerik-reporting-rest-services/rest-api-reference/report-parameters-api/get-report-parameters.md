@@ -12,16 +12,14 @@ position: 0
 
 
 
-## Request#_URI Template_
+## Request
 
 	          POST /api/reports/clients/{clientId}/parameters
         
 
 
 
-
-__Path parameters
-__
+__Path parameters__
 
 
 | Name | Type | Description |
@@ -31,13 +29,10 @@ __
 
 
 
-__Request Body
-__
+__Request Body__
 
-[ReportSource]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/json-entities/reportsource%})
- object. Represent a report and its current parameter values.
+[ReportSource]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/json-entities/reportsource%}) object. Represent a report and its current parameter values.
         
-
 
 ## Response
 
@@ -52,20 +47,17 @@ __
 
 
 
-__Response Body
-__
+__Response Body__
 
-Array containing 
-[Parameter]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/json-entities/parameter%})
- objects representing the report parameters that should be used to prompt the user.
+Array containing [Parameter]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/json-entities/parameter%}) objects representing the report parameters that should be used to prompt the user.
         
 
-
-## Sample#_Request Message_
+## Sample
 
 	
-````none
+````Request Message
           POST /api/reports/clients/2c3d/parameters HTTP/1.1
+
           {
             report: “MyReport1”,
             parameterValues: {
@@ -77,11 +69,11 @@ Array containing
 ````
 
 
-#_Response Message_
 
 	
-````none
+````Response Message
           HTTP/1.1 200 OK
+
           [
               { 
                 ‘name’: ‘p1’,
@@ -97,6 +89,7 @@ Array containing
                 ‘childParameters’: [‘p2’],
                 ‘value’:1
                 ‘label’: ‘1’,
+
               },
               { 
                 ‘name’: ‘p2’,
@@ -119,7 +112,6 @@ Array containing
           ]
           
 ````
-
 
 
 

@@ -14,11 +14,9 @@ position: 1
 
 Extensions XML element specifies a collection of extension types, for which configuration is applied.
 
-
 ## Attributes and Elements
 
-__```<extensions>``` element
-__
+__```<extensions>``` element__
 
 
 
@@ -31,11 +29,9 @@ Attributes|No attributes are defined for this element|
 
 
 
-__```<render>``` element
-__
+__```<render>``` element__
 
 Render XML element specifies a collection of extensions, for which configuration is applied.
-
 
 
 
@@ -48,11 +44,9 @@ Attributes|No attributes are defined for this element|
 
 
 
-__```<extension>``` element
-__
+__```<extension>``` element__
 
 Extension XML element specifies an extension, for which the configuration settings are applied.
-
 
 
 
@@ -65,11 +59,9 @@ Attributes| __name__ – required string attribute. Name is the key attribute th
 
 
 
-__```<parameters>``` element
-__
+__```<parameters>``` element__
 
 Parameters XML element specifies a collection of parameters for the extension defined in the parent extension element.
-
 
 
 
@@ -82,16 +74,12 @@ Attributes|No attributes are defined for this element|
 
 
 
-__```<parameter>``` element
-__
+__```<parameter>``` element__
 
 Parameter XML element specifies a parameter for the extension defined in the ancestor Extension element. The parameter is supplied
           as name/value pairs. The list of all parameters available for each extension can be found in 
-          
-[Device Information Settings]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-export-formats/overview%})
- section.
+          [Device Information Settings]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-export-formats/overview%}) section.
         
-
 
 
 
@@ -110,7 +98,6 @@ Attributes|*  __name__ – the name of the parameter that is supplied. Required 
 
 XML-based configuration file:
 
-
 	
 ````xml
 							<configuration>
@@ -127,15 +114,13 @@ XML-based configuration file:
 									</extensions>
 								</Telerik.Reporting>
 								…
-							```</configuration>``` 
+							</configuration> 
 							
 ````
 
 
 
-
 JSON-based configuration file:
-
 
 	
 ````js
@@ -158,37 +143,24 @@ JSON-based configuration file:
 
 
 
-
 ## Configuring Multiple Entries for a Rendering Extension
 
 You can specify multiple instances of a single rendering extension to vary rendering behavior. If you configure multiple instances,
-					make sure that each extension 
-__name
-__ is unique. Then you can use the rendering extension programmatically by
+					make sure that each extension __name__ is unique. Then you can use the rendering extension programmatically by
 					using the extension name to identify which particular instance to use for a particular rendering operation.
 				
 
-
-You should also specify the 
-__description
-__ attribute of the Extension element. The string you specify for
-					
-__description
-__ will be visible to users in the list of export options for the report. If you are configuring
-					multiple versions of the same extension, be sure to provide a value for the 
-__description
-__. Otherwise, all
+You should also specify the __description__ attribute of the Extension element. The string you specify for
+					__description__ will be visible to users in the list of export options for the report. If you are configuring
+					multiple versions of the same extension, be sure to provide a value for the __description__. Otherwise, all
 					versions of the extension will have the same export option name.
 				
-
 
 The following example illustrates how to use the default Image rendering extension (which produces TIFF output) alongside a second
 					instance that outputs reports in EMF. Notice that the extension name distinguishes one instance from the other:
 				
 
-
 XML-based configuration file:
-
 
 	
 ````xml
@@ -201,18 +173,16 @@ XML-based configuration file:
 								<parameters>
 									<parameter name="TiffCompression" value="ccitt4" />
 								</parameters>
-							```</extension>``` 
+							</extension> 
 						</render>
-					```</extensions>```	 
+					</extensions>	 
 				</Telerik.Reporting>
 				
 ````
 
 
 
-
 JSON-based configuration file:
-
 
 	
 ````js
@@ -236,20 +206,15 @@ JSON-based configuration file:
 
 
 
-
 >caution The code samples have the version listed as Version=x.x.x.x, and you should change that with the exact assembly version you						use before proceeding.					
 
 
 ## Set rendering parameters programmatically
 
 To define device rendering parameters programmatically, we need a key/value pair, and what better than a
-					
-[HashTable
-](http://msdn.microsoft.com/en-us/library/system.collections.hashtable.aspx
-)					which represents collection of key/value pairs. If the collection contains rendering parameters that are not supported by
+					[HashTable](http://msdn.microsoft.com/en-us/library/system.collections.hashtable.aspx)					which represents collection of key/value pairs. If the collection contains rendering parameters that are not supported by
 					the specified rendering extension, they would be ignored.
 				
-
 
 {{source=CodeSnippets\CS\API\Telerik\Reporting\Processing\ReportProcessorSnippets.cs region=Add_Device_Settings_Snippet}}
 ````C#
@@ -276,7 +241,6 @@ To define device rendering parameters programmatically, we need a key/value pair
 
 
 
-
 {{source=CodeSnippets\VB\API\Telerik\Reporting\Processing\ReportProcessorSnippets.vb region=Add_Device_Settings_Snippet}}
 ````VB
 	
@@ -293,7 +257,6 @@ To define device rendering parameters programmatically, we need a key/value pair
 	        Dim result As Telerik.Reporting.Processing.RenderingResult = reportProcessor.RenderReport("PDF", typeReportSource, deviceInfo)
 	
 ````
-
 
 
 

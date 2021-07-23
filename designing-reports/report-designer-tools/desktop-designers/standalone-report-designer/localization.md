@@ -13,11 +13,8 @@ position: 3
 
 
 This article elaborates on localizing the Standalone Report Designer application.
-        For more information on localizing reports see 
-[Localizing Reports]({%slug telerikreporting/designing-reports/localizing-reports%})
-.
+        For more information on localizing reports see [Localizing Reports]({%slug telerikreporting/designing-reports/localizing-reports%}).
       
-
 
 Application internationalization involves improving the experience, 
         and decreasing the learning curve, for all non-English speakers. 
@@ -25,7 +22,6 @@ Application internationalization involves improving the experience,
         The string resources include keys for all UI areas. 
         This includes all backstage items, ribbon items, wizards, editors, enum descriptions, and properties.
       
-
 
 ## 
 
@@ -38,40 +34,27 @@ The Report Designer UI language depends on the OS language,
           OS UI language is set to the desired language.
         
 
-
 The resource files should be in a folder with the name of the target culture.
           This folder should be in a Resources directory sibling to the Report Designer executable.
           For example for Spanish (Mexico) UI the resources should be available in: 
-          
-*Report Designer folder\Resources\es-MX
-*
+          *Report Designer folder\Resources\es-MX*
 
 The default localization resources are provided within the Telerik Reporting installation directory
-          (%PROGRAMFILES(x86)%\Progress\Telerik Reporting 
-{{site.suiteversion
-}}\Bin\Resources)
+          (%PROGRAMFILES(x86)%\Progress\Telerik Reporting {{site.suiteversion}}\Bin\Resources)
         
 
-
 We provide reference translations for some popular languages in this GitHub repository:
-          
-[telerik/reporting-docs/report-designer-translations
-](https://github.com/telerik/reporting-docs/tree/master/report-designer-translations
-)          For the reference translations we have partially used Azure Cognitive Services. 
+          [telerik/reporting-docs/report-designer-translations](https://github.com/telerik/reporting-docs/tree/master/report-designer-translations)          For the reference translations we have partially used Azure Cognitive Services. 
           To edit the provided resx reference files, use Visual Studio or a resx editing tool of your choice. 
           In order to merge the changes with our next release resources create a pull request with the changes.
           Any pull requests will be carefully reviewed and included in the next release.
         
 
-
 If the resources are modified or the Report Designer language 
           is changed restart of the Report Designer is required. 
         
 
-
 # See Also
 
 
- * [Windows Language Packs
-](https://support.microsoft.com/en-us/help/14236/language-packs
-)
+ * [Windows Language Packs](https://support.microsoft.com/en-us/help/14236/language-packs)

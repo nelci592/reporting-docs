@@ -10,32 +10,25 @@ position: 2
 
 # How to Add Telerik Reporting REST Web API to Web Application
 
- the necessary files and packages to host the Telerik Reporting REST service instance.
+iles and packages to host the Telerik Reporting REST service instance.
         
 
-
-The project has a preconfigured implementation of reports controller that uses the 
-*"~\Reports"
-* path for
+The project has a preconfigured implementation of reports controller that uses the *"~\Reports"* path for
           its report source resolver. This directory is not automatically created and needs to be created, or the path to be modified accordingly prior to running the project.
-        
-Manually configuring Telerik.Reporting REST Service on IIS
-To host and configure the Telerik.Reporting REST Service on IIS follow the steps below:
+        Manually configuring Telerik.Reporting REST Service on IISTo host and configure the Telerik.Reporting REST Service on IIS follow the steps below:
 
+1. 
 
 In Visual Studio, create the hosting project.
                   That might be one of the following project templates: ASP.NET Empty Web Application, ASP.NET Web Forms Application, ASP.NET MVC Web Application;
                 
 
+1. 
 
 (Only for Empty Web Application / Web Forms Application) Install the
-                  
-[Microsoft.AspNet.WebApi.WebHost 4.0.30506
-](https://www.nuget.org/packages/Microsoft.AspNet.WebApi.WebHost/4.0.30506
-)                  NuGet package.
+                  [Microsoft.AspNet.WebApi.WebHost 4.0.30506](https://www.nuget.org/packages/Microsoft.AspNet.WebApi.WebHost/4.0.30506)                  NuGet package.
                   Besides the required assemblies this will add the necessary handlers for version 4.0.30506 to the Web.config:
                 
-
 
 	
 ````xml
@@ -47,9 +40,9 @@ In Visual Studio, create the hosting project.
       <add name="ExtensionlessUrlHandler-ISAPI-4.0_64bit" path="*." verb="GET,HEAD,POST,DEBUG,PUT,DELETE,PATCH,OPTIONS" modules="IsapiModule" scriptProcessor="%windir%\Microsoft.NET\Framework64\v4.0.30319\aspnet_isapi.dll" preCondition="classicMode,runtimeVersionv4.0,bitness64" responseBufferLimit="0" />
       <add name="ExtensionlessUrlHandler-Integrated-4.0" path="*." verb="GET,HEAD,POST,DEBUG,PUT,DELETE,PATCH,OPTIONS" type="System.Web.Handlers.TransferRequestHandler" preCondition="integratedMode,runtimeVersionv4.0" />
     </handlers>
+
 				
 ````
-
 
 
 
@@ -62,45 +55,39 @@ In Visual Studio, create the hosting project.
 [Visual Studio NuGet Package Manager](https://docs.nuget.org/consume/installing-nuget) will add the required binding redirects automatically, if you use it to update the NuGet packages.                  
 
 
-Make sure that the project has the following assembly references:
+1. 
 
+Make sure that the project has the following assembly references:
 
 * Newtonsoft.Json.dll
                     
 
-
 * System.Web.Http.dll
                     
-
 
 * System.Web.Http.WebHost.dll
                     
 
-
 * System.Net.Http.dll
                     
-
 
 * System.Net.Http.Formatting.dll
                     
 
+1. 
 
-[Implement the reports controller]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-web-api-implementation/how-to-implement-the-reportscontroller-in-an-application%})
-;
+[Implement the reports controller]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-web-api-implementation/how-to-implement-the-reportscontroller-in-an-application%});
                 
 
+1. 
 
 (Only for Empty Web Application) Add new item "Global Application Class";
 
+1. 
 
 Invoke
-                  
-[RegisterRoutes](/reporting/api/Telerik.Reporting.Services.WebApi.ReportsControllerConfiguration#Telerik_Reporting_Services_WebApi_ReportsControllerConfiguration_RegisterRoutes_System_Web_Http_HttpConfiguration_)
-                  at the beginning of the 
-`Global.Application_Start (Global.asax)
-` method:
+                  [RegisterRoutes](/reporting/api/Telerik.Reporting.Services.WebApi.ReportsControllerConfiguration#Telerik_Reporting_Services_WebApi_ReportsControllerConfiguration_RegisterRoutes_System_Web_Http_HttpConfiguration_)                  at the beginning of the `Global.Application_Start (Global.asax)` method:
                 
-
 
 {{source=CodeSnippets\MvcCS\Global.asax.cs region=ReportsControllerConfiguration_RegisterRoutes}}
 ````c#
@@ -108,7 +95,6 @@ Invoke
 	        {
 	            ReportsControllerConfiguration.RegisterRoutes(GlobalConfiguration.Configuration);
 ````
-
 
 
 
@@ -120,14 +106,15 @@ Invoke
 
 
 
+1. 
 
 Run the application.
 
+1. 
 
 To verify whether the service works correctly you can make a request
                   for the available document formats using the following URL:
                 
-
 
 
 
@@ -136,39 +123,25 @@ To verify whether the service works correctly you can make a request
 
 
 
-If the request is successful you should receive the document formats encoded in JSON. For more information see: 
-[Get Available Document Formats]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/general-api/get-available-document-formats%})
-.
+If the request is successful you should receive the document formats encoded in JSON. For more information see: [Get Available Document Formats]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/general-api/get-available-document-formats%}).
                 
-
 
 >note The call to  __http://localhost:[portnumber]/api/reports/formats__  does not require authorization by design, as this request is for test purposes, i.e. to check whether the REST Service is running.                  
 
 
-Enable 
-[Cross-Origin Resource Sharing (CORS).
-](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS
-) (
-*optional
-*)
+1. 
+
+Enable [Cross-Origin Resource Sharing (CORS).](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS) (*optional*)
                 
 
-
-1. Add 
-__Microsoft.AspNet.WebApi.Cors
-__ NuGet package to the project. It may add other required references. It may be necessary to upgrade some of the already installed packages.
+1. Add __Microsoft.AspNet.WebApi.Cors__ NuGet package to the project. It may add other required references. It may be necessary to upgrade some of the already installed packages.
                     
 
-
-1. Add the following code at the beginning of the 
-__Global.Application_Start
-__ (Global.asax) method:
+1. Add the following code at the beginning of the __Global.Application_Start__ (Global.asax) method:
                     
-
 
 	                      GlobalConfiguration.Configuration.EnableCors();
                     
-
 
 
 
@@ -177,14 +150,8 @@ __ (Global.asax) method:
 
 
 
-
-1. Add the following attribute to the 
-__ReportsController
-__ class (requires reference to 
-__System.Web.Http.Cors
-__):
+1. Add the following attribute to the __ReportsController__ class (requires reference to __System.Web.Http.Cors__):
                     
-
 
 	
 ````c#
@@ -194,13 +161,11 @@ __):
 
 
 
-
 	
 ````vb
                       <EnableCors(origins:"*", headers:"*", methods:"*")>
                       
 ````
-
 
 
 

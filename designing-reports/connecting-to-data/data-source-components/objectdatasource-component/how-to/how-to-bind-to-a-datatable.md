@@ -12,15 +12,10 @@ position: 1
 
 
 
-The following example illustrates how to use a 
-__DataTable
-__ as the 
-      source for an 
-__ObjectDataSource
-__ component. The code below additionally 
+The following example illustrates how to use a __DataTable__ as the 
+      source for an __ObjectDataSource__ component. The code below additionally 
       creates a calculated field that can be used in the report definition in 
       the same way as a regular field.
-
 
 ## 
 
@@ -71,7 +66,6 @@ __ component. The code below additionally
 
 
 
-
 {{source=CodeSnippets\VB\API\Telerik\Reporting\ObjectDataSourceSnippets.vb region=HowToBindToDataTableSnippet}}
 ````VB
 	
@@ -116,7 +110,6 @@ __ component. The code below additionally
 	    End Function
 	
 ````
-
 
 
 

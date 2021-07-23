@@ -15,29 +15,19 @@ position: 5
 In the examples below we show how to access a report item from within the report and from the invoking application.
     	In the first example let's access a TextBox item from the detail section ItemDataBinding eventhandler.
 
-
 ## Access Report Items from within events
 
 1. Select the detail section in the designer, and in the Properties Window, Events tab, find the ItemDataBinding entry and double-click.
 
-
 1. The event handler passes in "sender" which is a Telerik.Reporting.Processing.DetailSection that 
         	represents the section during processing. Thus you can derive:
 
-
 * A DataObject that represents the underlying data for a record being processed.
-
 
 * All processing report items.
 
-
-1. Use the ElementTreeHelper.
-__GetChildByName
-__ method to locate an item on the 
-        	report. In the code example below 
-__GetChildByName
-__ is used to retrieve "textBox1" TextBox.
-
+1. Use the ElementTreeHelper.__GetChildByName__ method to locate an item on the 
+        	report. In the code example below __GetChildByName__ is used to retrieve "textBox1" TextBox.
 
 >note In the code example below we are referring to a  * __Processing.TextBox__ * , not Report1.TextBox.  The Processing.TextBox represents the TextBox during processing and has a different set of properties than the Report1.TextBox used when defining the report.
 
@@ -58,7 +48,6 @@ __ is used to retrieve "textBox1" TextBox.
 
 
 
-
 {{source=CodeSnippets\VB\API\Telerik\Reporting\Processing\EventsSnippets.vb region=AddSectionDataBindingSnippet}}
 ````VB
 	    Private Sub detail_ItemDataBinding(sender As Object, e As EventArgs)
@@ -73,11 +62,9 @@ __ is used to retrieve "textBox1" TextBox.
 
 
 
-
 ##  Access items from calling application
 
 If we are in the context of a web/win form and we need to access an item from the Report that is shown in a ReportViewer control, we can proceed directly following the report hierarchy. We use a report source object of the same type as the report source assigned to the ReportViewer control. Consider the following code:
-
 
 	
 ````C#
@@ -89,7 +76,6 @@ If we are in the context of a web/win form and we need to access an item from t
 		}
 		
 ````
-
 
 
 
@@ -105,11 +91,9 @@ If we are in the context of a web/win form and we need to access an item from t
 
 
 
-
 ##  Access report fields from a Table item
 
 You can reference the report fields from a table item easily using the Report API hierarchy. Consider the following code:
-
 
 	
 ````C#
@@ -129,7 +113,6 @@ You can reference the report fields from a table item easily using the Report AP
 
 
 
-
 	
 ````VB.NET
 		Private Sub tableTextBox_ItemDataBinding(sender As Object, eventArgs As EventArgs)
@@ -144,6 +127,5 @@ You can reference the report fields from a table item easily using the Report AP
 		End Sub
 		
 ````
-
 
 

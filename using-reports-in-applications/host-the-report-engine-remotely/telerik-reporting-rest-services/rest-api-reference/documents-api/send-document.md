@@ -12,16 +12,14 @@ position: 3
 
 
 
-## Request#_URI Template_
+## Request
 
 	          POST /api/reports/clients/{clientId}/instances/{instanceId}/documents/{documentId}/send
         
 
 
 
-
-__Path parameters
-__
+__Path parameters__
 
 
 | Name | Type | Description |
@@ -33,11 +31,9 @@ __
 
 
 
-__Request Body
-__
+__Request Body__
 
 [MailMessage]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/json-entities/mailmessage%})
-
 
 ## Response
 
@@ -52,7 +48,7 @@ __
 
 
 
-## Sample#_Request Message_
+## Sample
 
 	          POST /api/reports/clients/2c3d/instances/4d3c/documents/5x3a/send HTTP/1.1
           {
@@ -65,10 +61,8 @@ __
         
 
 
-#_Response Message_
 
 	          HTTP/1.1 200 OK
         
-
 
 

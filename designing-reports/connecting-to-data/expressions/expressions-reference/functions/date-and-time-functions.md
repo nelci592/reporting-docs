@@ -15,18 +15,13 @@ position: 4
 This document lists the built-in date and time functions that are available in Telerik Reporting.
       
 
-
 Use these functions to calculate date and time values. Their default format is determined by your local computer locale settings. To change the format, you can
-      use the 
-[Format Builder]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/format-builder-dialog%})
- in the Report Designer of your choice.
-
+      use the [Format Builder]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/format-builder-dialog%}) in the Report Designer of your choice.
 
 ## Other functions
 
 The following table lists the available date and time functions with sample output.
         
-
 
 
 | Function | Description | Example | Sample Output |

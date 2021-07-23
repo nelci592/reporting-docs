@@ -19,7 +19,5 @@ With Telerik Reporting R2 2018 SP1 we have introduces implicit XAML styles embed
         automatically update the Telerik.ReportViewer.Wpf.Themes assembly.
       
 
-
 Migration to embedded XAML styles is only possible for the default implicit XAML styles, that haven't been previously modified.
       
-

@@ -12,16 +12,14 @@ position: 0
 
 
 
-## Request#_URI Template_
+## Request
 
 	          POST /api/reports/clients/{clientId}/instances/{instanceId}/documents
         
 
 
 
-
-__Path parameters
-__
+__Path parameters__
 
 
 | Name | Type | Description |
@@ -32,13 +30,10 @@ __
 
 
 
-__Request Body
-__
+__Request Body__
 
-[FormatKey]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/json-entities/formatkey%})
- describing the document to be requested.
+[FormatKey]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/json-entities/formatkey%}) describing the document to be requested.
         
-
 
 ## Response
 
@@ -53,16 +48,12 @@ __
 
 
 
-__Response Body
-__
+__Response Body__
 
-When the return status is 
-`Accepted/Created
-` the body contains a document identifier string which is used to get pages/document.
+When the return status is `Accepted/Created` the body contains a document identifier string which is used to get pages/document.
         
 
-
-## Sample#_Request Message_
+## Sample
 
 	          POST /api/reports/clients/2c3d/instances/4d3c/documents HTTP/1.1
           {
@@ -75,11 +66,9 @@ When the return status is
         
 
 
-#_Response Message_
 
 	          HTTP/1.1 202 Accepted
           “5x3a”
         
-
 
 

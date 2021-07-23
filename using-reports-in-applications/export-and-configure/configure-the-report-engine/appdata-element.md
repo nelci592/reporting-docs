@@ -15,11 +15,9 @@ position: 8
 The appData element specifies the configuration settings for the temporary application data stored on the machine.
       
 
-
 ## Attributes and Elements
 
-__```<appData>``` element
-__
+__```<appData>``` element__
 
 
 
@@ -35,7 +33,6 @@ Attributes| __path__ – string attribute. Specifies the absolute path to the fo
 
 XML-based configuration file:
 
-
 	
 ````xml
 							<configuration>
@@ -44,15 +41,13 @@ XML-based configuration file:
 									<appData path="c:\temp" />
 								</Telerik.Reporting>
 								…
-							```</configuration>``` 
+							</configuration> 
 							
 ````
 
 
 
-
 JSON-based configuration file:
-
 
 	
 ````js
@@ -63,6 +58,5 @@ JSON-based configuration file:
   }
     
 ````
-
 
 

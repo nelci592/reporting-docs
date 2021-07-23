@@ -14,39 +14,23 @@ position: 3
 
 This tutorial shows how to use HTML5 Report Viewer's ASP.NET MVC wrapper in ASP.NET MVC 4|5 applications.
         To add the HTML5 Report Viewer via Visual Studio item template check
-        
-[Quick Start]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-web-forms-report-viewer/how-to-use-html5-asp.net-web-forms-report-viewer-with-rest-service%})
-
+        [Quick Start]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-web-forms-report-viewer/how-to-use-html5-asp.net-web-forms-report-viewer-with-rest-service%})
 
 ## Prerequisites
 
-* Review the HTML5 Report Viewer 
-[System Requirements]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/requirements-and-browser-support%})
-.
+* Review the HTML5 Report Viewer [System Requirements]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/requirements-and-browser-support%}).
             
-
 
 * A running application that hosts a Reporting REST service at address /api/reports. For more information, see
-              
-[Telerik Reporting REST Services]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview%})
-.
+              [Telerik Reporting REST Services]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview%}).
             
 
-
-* Copy of the "Product Catalog.trdp" report file from 
-__[TelerikReporting_InstallDir]\ReportDesigner\Examples
-__              in the folder used by the 
-[ReportFileResolver](/reporting/api/Telerik.Reporting.Services.WebApi.ReportFileResolver)
-              in the Reporting REST service implementation.
+* Copy of the "Product Catalog.trdp" report file from __[TelerikReporting_InstallDir]\ReportDesigner\Examples__              in the folder used by the [ReportFileResolver](/reporting/api/Telerik.Reporting.Services.WebApi.ReportFileResolver)              in the Reporting REST service implementation.
             
 
-
-* Entry with the default connection string used by Telerik Reporting sample reports in the 
-__web.config
-__ file
+* Entry with the default connection string used by Telerik Reporting sample reports in the __web.config__ file
               of the project hosting the Reporting REST service:
             
-
 
 	
 ````xml
@@ -60,74 +44,60 @@ __ file
 
 
 
-
-* Telerik Kendo UI custom distribution for Telerik Reporting (located in {Telerik Reporting installation path}\Html5\ReportViewer\js) or Kendo UI mainstream distribution downloaded locally or via 
-[Kendo UI CDN service
-](http://docs.telerik.com/kendo-ui/install/cdn
-). You must load only one version of Telerik Kendo UI styles and scripts on the page.
-              For more information see 
-[](143e5c03-e69d-416f-9ac0-85c397b22b8e#KendoWidgetsRequirements)
+* Telerik Kendo UI custom distribution for Telerik Reporting (located in {Telerik Reporting installation path}\Html5\ReportViewer\js) or Kendo UI mainstream distribution downloaded locally or via [Kendo UI CDN service](http://docs.telerik.com/kendo-ui/install/cdn). You must load only one version of Telerik Kendo UI styles and scripts on the page.
+              For more information see [](143e5c03-e69d-416f-9ac0-85c397b22b8e#KendoWidgetsRequirements)
 
 Depending on the used Visual Studio project template CSS and JS files can be linked in:
         
 
-
 * The HEAD element of the HTML document in the view, if the view is used as a standalone page.
             
-
 
 * The HEAD element of the layout page, if the view uses a layout page.
             
 
-
-* In a named section in the view, if the view uses a layout page, where sections are rendered by calling 
-[WebViewPage.RenderSection Method
-](https://msdn.microsoft.com/en-us/library/system.web.mvc.webviewpage.rendersection(v=vs.118).aspx
-) in the layout page.
+* In a named section in the view, if the view uses a layout page, where sections are rendered by calling [WebViewPage.RenderSection Method](https://msdn.microsoft.com/en-us/library/system.web.mvc.webviewpage.rendersection(v=vs.118).aspx) in the layout page.
             
-
 
 ## Using HTML5 ASP.NET MVC Report Viewer in a web application
 
 The following steps produce a view with settings similar to these of the local MvcDemo project,
-          installed by default under 
-__[TelerikReporting_InstallDir]\Examples
-__.
+          installed by default under __[TelerikReporting_InstallDir]\Examples__.
           The structure used in this tutorial is view that uses a layout page.
         
-
 
 >tip All path references in the described steps should be adapted according            to your project setup. For more information please refer to the MSDN article            [ASP.NET Web Project Paths](http://msdn.microsoft.com/en-us/library/ms178116.aspx)
 
 
+1. 
+
 Create new ASP.NET MVC 4|5 Web Application.
 
+1. 
 
 To ensure that the browser will start in the latest rendering mode verify the view's layout page is using the following DOCTYPE directive:
                 
-#_HTML_
 
 	
-````html
+````HTML
 							<!DOCTYPE html>
 							
 ````
 
 
 
-
 >tip The above DOCTYPE directive should be considered with your custom requirements. More details about the used in the tutorial settings for the page can be found in the                    [Defining document compatibility](http://msdn.microsoft.com/en-us/library/cc288325(v=vs.85).aspx) MSDN article.                  
 
 
+1. 
+
 Initialize the browser’s viewport in the ```<head>``` element:
-#_HTML_
 
 	
-````html
+````HTML
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 				
 ````
-
 
 
 
@@ -135,83 +105,67 @@ The viewport META tag is used to control layout on mobile browsers.
 
 
 
+1. 
 
-The default viewer implementation depends externally on 
-__jQuery
-__.
-                  Create a section named 
-__scripts
-__ and add link to jQuery in the view:
+The default viewer implementation depends externally on __jQuery__.
+                  Create a section named __scripts__ and add link to jQuery in the view:
                 
-#_HTML_
 
 	
-````html
+````HTML
 @section scripts
 {
-	```<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">```</script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 }
 									
 ````
 
 
 
-
 >note jQuery must be loaded only once on the page. Before adding jQuery, verify that it is not already loaded from elsewhere in the application                    (layout page, section or bundle).                  
 
 
+1. 
+
 Add references to Telerik Kendo UI scripts and styles in the ```<head>``` element:
-#_HTML_
 
 	
-````html
-```<!-- the required Kendo styles -->```                  
+````HTML
+<!-- the required Kendo styles -->                  
 <link href="https://kendo.cdn.telerik.com/
 ````
 
 
 
+1. 
 
 Add references to
 
+* __Telerik.Reporting__
 
-* __Telerik.Reporting
-__
+* __Telerik.ReportViewer.Mvc__
 
-* __Telerik.ReportViewer.Mvc
-__
-
-assemblies and set their 
-__Copy Local
-__ properties to true in Visual Studio.
+assemblies and set their __Copy Local__ properties to true in Visual Studio.
                 
-
 
 >note Without setting Telerik Reporting references' Copy Local to true the assemblies may not be loaded correctly on running the application.
 
 
-Update the 
-__web.config
-__ file in the 
-__Views
-__ folder to
-                  include the 
-__Telerik.Reporting
-__ and 
-__Telerik.ReportViewer.Mvc
-__                  namespaces:
+1. 
+
+Update the __web.config__ file in the __Views__ folder to
+                  include the __Telerik.Reporting__ and __Telerik.ReportViewer.Mvc__                  namespaces:
                 
-#_HTML_
 
 	
-````html
+````HTML
 								<system.web.webPages.razor>
     								...
     								<pages pageBaseType="System.Web.Mvc.WebViewPage">
       									<namespaces>
         									...
         									<add namespace="Telerik.Reporting" />
-        									```<add namespace="Telerik.ReportViewer.Mvc" />```        
+        									<add namespace="Telerik.ReportViewer.Mvc" />        
       									</namespaces>
     								</pages>
   								</system.web.webPages.razor>
@@ -220,20 +174,19 @@ __                  namespaces:
 
 
 
-
 >note Without registering the  __Telerik.Reporting__  and  __Telerik.ReportViewer.Mvc__                     namespaces you will need to use [using Directive](https://msdn.microsoft.com/en-us/library/sf0df423.aspx) in the view.                  
 
 
+1. 
+
 Add references to the HTML5 Report Viewer’s JavaScript file in the view:
                 
-#_HTML_
 
 	
-````html
-```<script src="~/api/reports/resources/js/telerikReportViewer">```</script>
+````HTML
+<script src="~/api/reports/resources/js/telerikReportViewer"></script>
 				
 ````
-
 
 
 
@@ -242,22 +195,20 @@ The report viewer JavaScript should be referenced after any other Kendo widgets 
                   subset to enable the required Kendo widgets. The subset is served from the report service.
                 
 
-
 If Kendo is used on the page or the CDN is prefered make sure the following widgets are referenced:
                 
-#_HTML_
 
 	
-````html
+````HTML
                   <!--
 <script src="https://kendo.cdn.telerik.com/
 ````
 
 
 
+1. 
 
 Add the HTML5 ASP.NET MVC Report Viewer to the same view:
-
 
 {{source=CodeSnippets\MvcCS\Views\Home\Index.cshtml region=RazorExample}}
 ````c#
@@ -274,7 +225,6 @@ Add the HTML5 ASP.NET MVC Report Viewer to the same view:
 	       .Deferred()
 	       )
 ````
-
 
 
 
@@ -297,23 +247,22 @@ Add the HTML5 ASP.NET MVC Report Viewer to the same view:
 
 
 
-
 >tip The above example uses deferred loading of the viewer to allow scripts to be handled properly,                    in case jQuery is not yet loaded on the page at the time the view is created.                    The used relative paths must be considered with the project's structure.                  
 
 
 >note The viewer's  __ReportSource__  has 4 overloads allowing to specify report declaratively in code.                    The generated report's string description is sent and handled on the server by the                    [report source resolver used in the Reporting REST service]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-service-report-source-resolver/overview%}).                    The above example uses UriReportSource and a path to TRDP file (report created in the Standalone Report Designer).                    This string description will be handled automatically by the [ReportFileResolver](/reporting/api/Telerik.Reporting.Services.WebApi.ReportFileResolver).                  
 
 
+1. 
+
 Render the deferred initialization statement for the Report Viewer scripts (remember that they must be rendered after jQuery):
                   In case that you do not need the script tag to be rendered just set to false the default argument.
                 
-
 
 {{source=CodeSnippets\MvcCS\Views\Home\Index.cshtml region=DeferredScriptsExample}}
 ````c#
 	@(Html.TelerikReporting().DeferredScripts())
 ````
-
 
 
 
@@ -326,13 +275,13 @@ Render the deferred initialization statement for the Report Viewer scripts (reme
 
 
 
+1. 
 
 Make the viewer fill the entire browser window. Add the following style in the correspondingly named section in the view:
                 
-#_HTML_
 
 	
-````html								         						
+````HTML								         						
 									<style>
 								       #reportViewer1 {
 								            position: absolute;
@@ -348,26 +297,18 @@ Make the viewer fill the entire browser window. Add the following style in the c
 
 
 
-
 >tip                   The above CSS rule will be applied on the ```<div>``` element holding the viewer object.                  The HTML elements building the viewer object will be sized based on the size of this container ```<div>``` element.                  To make the viewer fit in other container use relative position, and provide witdh and height values.                
 
 
-Open the layout page and call the 
-*RenderSection
-* helper method in the
-                  
-*<head>
-* element. The method must be called for each named section in the view with the viewer -
-                  
-*scripts section
-* and 
-*styles section
-*.
+1. 
+
+Open the layout page and call the *RenderSection* helper method in the
+                  *<head>* element. The method must be called for each named section in the view with the viewer -
+                  *scripts section* and *styles section*.
                 
-#_HTML_
 
 	
-````html
+````HTML
 @RenderSection("styles", required: false)
 @RenderSection("scripts", required: false)
 							
@@ -375,17 +316,18 @@ Open the layout page and call the
 
 
 
+1. 
 
 Finally the layout page should look like this:
-#_HTML_
 
 	
-````html
+````HTML
 <!DOCTYPE html>
 <html>
 <head>
-    ```<title>```Demo</title>
+    <title>Demo</title>
     <meta charset="utf-8" />
+
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
  
     @RenderSection("styles", required: false)
@@ -400,12 +342,10 @@ Finally the layout page should look like this:
 
 
 
-
 The page with the HTML5 ASP.NET MVC Report Viewer should look like this:
-#_HTML_
 
 	
-````html
+````HTML
 			
 @section styles
 {           
@@ -414,9 +354,9 @@ The page with the HTML5 ASP.NET MVC Report Viewer should look like this:
 
 
 
+1. 
 
 Run the project and navigate to the view with the HTML5 ASP.NET MVC Report Viewer that we have just created.
-
 
 # See Also
 

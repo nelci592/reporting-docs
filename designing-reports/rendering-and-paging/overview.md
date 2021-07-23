@@ -18,19 +18,16 @@ Telerik Reporting includes a set of rendering extensions (also referred to as re
 				for the specific rendering extension are applied.
 			
 
-
 Getting satisfactory results for exported reports is often a continuous and repetative process; you create and preview the report in
 				Report Designer, export the report to the preferred format, review the exported report, and then make changes to the report back in the
 				Report Designer.
 			
-
 
 ## Rendering extensions
 
 Telerik Reporting includes a set of renderers that you can use to export reports to different formats. By default Telerik Reporting outputs
 					reports in the following formats: Image, PDF, HTML5, MHTML, Excel 97-2003, XLSX, PPTX, DOCX, RTF, XAML and CSV.
 				
-
 
 
 | Extension Name | Description |
@@ -46,28 +43,23 @@ Telerik Reporting includes a set of renderers that you can use to export reports
 |MHTML|Renders a report in MHTML. The report opens in Internet Explorer. The format is shown as Web Archive in the Export drop-down of<br/>								the Report Viewers toolbar.|
 |IMAGE|Renders a report in image format with[physical page layout]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/interactive-vs.-print-layout%}).<br/>								The format is shown as TIFF in the Export drop-down of the Report Viewers toolbar.|
 |IMAGEInteractive|Renders a report in image format with[interactive page layout]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/interactive-vs.-print-layout%}).|
-|HTML5|Renders a report in XHTML 1.1 compliant HTML with[physical page layout]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/interactive-vs.-print-layout%}).<br/>								(This is a multi-stream rendering extension and should be only used with<br/>								<br/>[RenderReport](/reporting/api/Telerik.Reporting.Processing.ReportProcessor#Telerik_Reporting_Processing_ReportProcessor_RenderReport_System_String_Telerik_Reporting_ReportSource_System_Collections_Hashtable_Telerik_Reporting_Processing_CreateStream_System_String__)<br/>).|
-|HTML5Interactive|Renders a report in XHTML 1.1 compliant HTML with[interactive page layout]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/interactive-vs.-print-layout%}).<br/>								(This is a multi-stream rendering extension and should be only used with<br/>								<br/>[RenderReport](/reporting/api/Telerik.Reporting.Processing.ReportProcessor#Telerik_Reporting_Processing_ReportProcessor_RenderReport_System_String_Telerik_Reporting_ReportSource_System_Collections_Hashtable_Telerik_Reporting_Processing_CreateStream_System_String__)<br/>).|
-|XAML|Renders a report in XAML for Silverlight with[physical page layout]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/interactive-vs.-print-layout%}).<br/>								(This is a multi-stream rendering extension and should be only used with<br/>								<br/>[RenderReport](/reporting/api/Telerik.Reporting.Processing.ReportProcessor#Telerik_Reporting_Processing_ReportProcessor_RenderReport_System_String_Telerik_Reporting_ReportSource_System_Collections_Hashtable_Telerik_Reporting_Processing_CreateStream_System_String__)<br/>)|
-|XAMLInteractive|Renders a report in XAML for Silverlight with[interactive page layout]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/interactive-vs.-print-layout%}).<br/>								(This is a multi-stream rendering extension and should be only used with<br/>								<br/>[RenderReport](/reporting/api/Telerik.Reporting.Processing.ReportProcessor#Telerik_Reporting_Processing_ReportProcessor_RenderReport_System_String_Telerik_Reporting_ReportSource_System_Collections_Hashtable_Telerik_Reporting_Processing_CreateStream_System_String__)<br/>)|
-|WPFXAML|Renders a report in XAML for WPF with[physical page layout]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/interactive-vs.-print-layout%}).<br/>								(This is a multi-stream rendering extension and should be only used with<br/>								<br/>[RenderReport](/reporting/api/Telerik.Reporting.Processing.ReportProcessor#Telerik_Reporting_Processing_ReportProcessor_RenderReport_System_String_Telerik_Reporting_ReportSource_System_Collections_Hashtable_Telerik_Reporting_Processing_CreateStream_System_String__)<br/>)|
-|WPFXAMLInteractive|Renders a report in XAML for WPF with[interactive page layout]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/interactive-vs.-print-layout%}).<br/>								(This is a multi-stream rendering extension and should be only used with<br/>								<br/>[RenderReport](/reporting/api/Telerik.Reporting.Processing.ReportProcessor#Telerik_Reporting_Processing_ReportProcessor_RenderReport_System_String_Telerik_Reporting_ReportSource_System_Collections_Hashtable_Telerik_Reporting_Processing_CreateStream_System_String__)<br/>|
+|HTML5|Renders a report in XHTML 1.1 compliant HTML with[physical page layout]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/interactive-vs.-print-layout%}).<br/>								(This is a multi-stream rendering extension and should be only used with<br/>								[RenderReport](/reporting/api/Telerik.Reporting.Processing.ReportProcessor#Telerik_Reporting_Processing_ReportProcessor_RenderReport_System_String_Telerik_Reporting_ReportSource_System_Collections_Hashtable_Telerik_Reporting_Processing_CreateStream_System_String__)).|
+|HTML5Interactive|Renders a report in XHTML 1.1 compliant HTML with[interactive page layout]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/interactive-vs.-print-layout%}).<br/>								(This is a multi-stream rendering extension and should be only used with<br/>								[RenderReport](/reporting/api/Telerik.Reporting.Processing.ReportProcessor#Telerik_Reporting_Processing_ReportProcessor_RenderReport_System_String_Telerik_Reporting_ReportSource_System_Collections_Hashtable_Telerik_Reporting_Processing_CreateStream_System_String__)).|
+|XAML|Renders a report in XAML for Silverlight with[physical page layout]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/interactive-vs.-print-layout%}).<br/>								(This is a multi-stream rendering extension and should be only used with<br/>								[RenderReport](/reporting/api/Telerik.Reporting.Processing.ReportProcessor#Telerik_Reporting_Processing_ReportProcessor_RenderReport_System_String_Telerik_Reporting_ReportSource_System_Collections_Hashtable_Telerik_Reporting_Processing_CreateStream_System_String__))|
+|XAMLInteractive|Renders a report in XAML for Silverlight with[interactive page layout]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/interactive-vs.-print-layout%}).<br/>								(This is a multi-stream rendering extension and should be only used with<br/>								[RenderReport](/reporting/api/Telerik.Reporting.Processing.ReportProcessor#Telerik_Reporting_Processing_ReportProcessor_RenderReport_System_String_Telerik_Reporting_ReportSource_System_Collections_Hashtable_Telerik_Reporting_Processing_CreateStream_System_String__))|
+|WPFXAML|Renders a report in XAML for WPF with[physical page layout]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/interactive-vs.-print-layout%}).<br/>								(This is a multi-stream rendering extension and should be only used with<br/>								[RenderReport](/reporting/api/Telerik.Reporting.Processing.ReportProcessor#Telerik_Reporting_Processing_ReportProcessor_RenderReport_System_String_Telerik_Reporting_ReportSource_System_Collections_Hashtable_Telerik_Reporting_Processing_CreateStream_System_String__))|
+|WPFXAMLInteractive|Renders a report in XAML for WPF with[interactive page layout]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/interactive-vs.-print-layout%}).<br/>								(This is a multi-stream rendering extension and should be only used with<br/>								[RenderReport](/reporting/api/Telerik.Reporting.Processing.ReportProcessor#Telerik_Reporting_Processing_ReportProcessor_RenderReport_System_String_Telerik_Reporting_ReportSource_System_Collections_Hashtable_Telerik_Reporting_Processing_CreateStream_System_String__)|
 
 
 
 
-All 
-__Telerik Reporting
-__ output formats have specific characteristics that determine their usage and impose ceratin limitations,
+All __Telerik Reporting__ output formats have specific characteristics that determine their usage and impose ceratin limitations,
           which need to be taken into consideration when designing reports. For example, the CSV rendering extension is useful for creating reports
           that can be used as a data source by another application or process, layout rendering extensions produce reports in a format suitable for
           viewing by users, while physical rendering extensions are intended for precise printing.
         
 
-
-For more information on the rendering extensions, refer to 
-[Design Considerations for Report Rendering]({%slug telerikreporting/designing-reports/rendering-and-paging/design-considerations-for-report-rendering/overview%})
-
+For more information on the rendering extensions, refer to [Design Considerations for Report Rendering]({%slug telerikreporting/designing-reports/rendering-and-paging/design-considerations-for-report-rendering/overview%})
 
 ## Rendering Behaviors
 
@@ -75,57 +67,40 @@ There are three types of
 					renderers:
 				
 
-
-* __Data
-__ renderers: CSV renderer.
+* __Data__ renderers: CSV renderer.
 						
 
-
-* __Logical
-__ page layout renderers: Excel (XLS and XLSX) and MHTML renderers. Rendering extensions IMAGEInteractive,
+* __Logical__ page layout renderers: Excel (XLS and XLSX) and MHTML renderers. Rendering extensions IMAGEInteractive,
 							HTML5Interactive, XAMLInteractive and WPFXAMLInteractive are for internal use by the Report Viewers in Interactive View.
 						
 
-
-* __Physical
-__ page layout renderers: IMAGE, HTML5, XAML, WPFXAML, PDF, RTF, XPS, PPTX, DOCX renderers. Rendering extensions
+* __Physical__ page layout renderers: IMAGE, HTML5, XAML, WPFXAML, PDF, RTF, XPS, PPTX, DOCX renderers. Rendering extensions
 							IMAGE, HTML5, XAML, WPFXAML are used by corresponding Report Viewers in Print Preview.
 						
-
 
 Depending on the renderer you select, certain rules are applied when rendering the report. How report items fit together
 					on a page is determined by the combination of these factors:
 				
 
-
 * Rendering rules.
-
 
 * The width and height of report items.
 
-
 * The size of the report.
-
 
 * The width and height of the page.
 
-
 * Renderer-specific support for paging.
 
-
 For example, reports rendered with IMAGEInteractive and HTML5Interactive formats are optimized for a computer screen-based experience where pages can be various
-					lengths. For more information, see 
-[Understanding Rendering Behaviors]({%slug telerikreporting/designing-reports/rendering-and-paging/understanding-rendering-behaviors%})
-.
+					lengths. For more information, see [Understanding Rendering Behaviors]({%slug telerikreporting/designing-reports/rendering-and-paging/understanding-rendering-behaviors%}).
 				
-
 
 ## Pagination
 
 Pagination refers to the number of pages within a report and how report items are arranged on these pages. Pagination varies
 					depending on the used renderer, page break and keep-together options you configure the report to use.
 				
-
 
 A successfully designed report that
 					is optimized for the renderer that you plan to use to deliver your report, requires understanding of the rules used to control pagination.
@@ -135,19 +110,13 @@ A successfully designed report that
 					an idea how the report looks in the different layouts.
 				
 
-
 The physical page renderers impact the report layout and physical page size most. To learn more, see
-					
-[Understanding Pagination]({%slug telerikreporting/designing-reports/rendering-and-paging/understanding-pagination%})
-.
+					[Understanding Pagination]({%slug telerikreporting/designing-reports/rendering-and-paging/understanding-pagination%}).
 				
-
 
 # See Also
 
 
  * [Understanding Rendering Behaviors]({%slug telerikreporting/designing-reports/rendering-and-paging/understanding-rendering-behaviors%})
 
-
  * [Understanding Pagination]({%slug telerikreporting/designing-reports/rendering-and-paging/understanding-pagination%})
-

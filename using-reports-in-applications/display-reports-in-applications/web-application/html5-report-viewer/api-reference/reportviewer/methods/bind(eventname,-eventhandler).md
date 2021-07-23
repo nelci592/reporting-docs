@@ -17,7 +17,6 @@ position: 4
 Binds event handlers to the specified event.
         
 
-
 	
 ````js
             function onPageReady(e) {
@@ -28,6 +27,5 @@ Binds event handlers to the specified event.
             reportViewer.bind(telerikReportViewer.Events.PAGE_READY, onPageReady);
           
 ````
-
 
 

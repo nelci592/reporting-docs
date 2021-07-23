@@ -17,12 +17,10 @@ Expressions can easily be extended by providing user functions written in any .N
       or for uniform calculations because it speeds up the processing and boosts the performance.
       Furthermore, you can add custom aggregate functions to apply domain-specific logic while accumulating values.
 
-
 In order to expose your custom functions, so they can be utilized by the Reporting engine,
       you have to add a reference to the assembly they are defined in. 
       The reference is added under the AssemblyReferences configuration section in the application's configuration file.
       
-
 
 	
 ````XML
@@ -46,14 +44,11 @@ In order to expose your custom functions, so they can be utilized by the Reporti
 
 
 
-
 ## In This Section
 
 * [User functions]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/extending-expressions/user-functions%})
 
-
 * [User Aggregate functions]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/extending-expressions/user-aggregate-functions%})
-
 
 # See Also
 

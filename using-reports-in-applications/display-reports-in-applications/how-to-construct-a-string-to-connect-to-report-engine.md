@@ -16,10 +16,8 @@ When using WinForms or WPF Report Viewer, its connection to a Report Server or R
         This topic lists the supported keywords for each report engine type and explains how to construct a connection string with or without using helper classes.
       
 
-
 All the keywords and their values are case insensitive where applicable.
       
-
 
 ## Embedded Report Engine
 
@@ -31,16 +29,11 @@ All the keywords and their values are case insensitive where applicable.
 
 
 
-__Example: 
-__`engine=embedded
-`
+__Example: __`engine=embedded`
 
-You can use a 
-[EmbeddedConnectionInfo](/reporting/api/Telerik.ReportViewer.Common.EmbeddedConnectionInfo)
- instance to help you create the connection string or
+You can use a [EmbeddedConnectionInfo](/reporting/api/Telerik.ReportViewer.Common.EmbeddedConnectionInfo) instance to help you create the connection string or
           leave it empty - the viewer will use the embedded report engine by default.
         
-
 
 {{source=CodeSnippets\CS\API\Telerik\ReportViewer\WinForms\Form1.cs region=WinFormsEmbeddedReportEngineConnectionSnippet}}
 ````C#
@@ -53,7 +46,6 @@ You can use a
 
 
 
-
 {{source=CodeSnippets\VB\API\Telerik\ReportViewer\WinForms\Form1.vb region=WinFormsEmbeddedReportEngineConnectionSnippet}}
 ````VB
 	    Private Sub SetEmbeddedReportEngineConnection(sender As Object, e As System.EventArgs)
@@ -61,7 +53,6 @@ You can use a
 	        'if the ReportEngineConnection property is set to null or empty string, it will use the EmbeddedReportEngineConnectionInfo by default.
 	    End Sub
 ````
-
 
 
 
@@ -80,15 +71,10 @@ You can use a
 
 
 
-__Example: 
-__`engine=ReportServer;uri=http://localhost:83;username=admin;password=pass;timeout=30;keepClientAlive=true
-`
+__Example: __`engine=ReportServer;uri=http://localhost:83;username=admin;password=pass;timeout=30;keepClientAlive=true`
 
-You can use a 
-[ReportServerConnectionInfo](/reporting/api/Telerik.ReportViewer.Common.ReportServerConnectionInfo)
- instance to help you create the connection string.
+You can use a [ReportServerConnectionInfo](/reporting/api/Telerik.ReportViewer.Common.ReportServerConnectionInfo) instance to help you create the connection string.
         
-
 
 {{source=CodeSnippets\CS\API\Telerik\ReportViewer\WinForms\Form1.cs region=WinFormsReportServerReportEngineConnectionSnippet}}
 ````C#
@@ -100,14 +86,12 @@ You can use a
 
 
 
-
 {{source=CodeSnippets\VB\API\Telerik\ReportViewer\WinForms\Form1.vb region=WinFormsReportServerReportEngineConnectionSnippet}}
 ````VB
 	    Private Sub SetReportServerReportEngineConnection(sender As Object, e As System.EventArgs)
 	        Me.ReportViewer1.ReportEngineConnection = New Telerik.ReportViewer.Common.ReportServerConnectionInfo("http://reportserver:83", "user", "pass", 20).ConnectionString
 	    End Sub
 ````
-
 
 
 
@@ -126,15 +110,10 @@ You can use a
 
 
 
-__Example: 
-__`engine=RestService;uri=http://localhost:18103/api/reports;token=authToken;useDefaultCredentials=true;timeout=30;keepClientAlive=true
-`
+__Example: __`engine=RestService;uri=http://localhost:18103/api/reports;token=authToken;useDefaultCredentials=true;timeout=30;keepClientAlive=true`
 
-You can use a 
-[RestServiceConnectionInfo](/reporting/api/Telerik.ReportViewer.Common.RestServiceConnectionInfo)
- instance to help you create the connection string.
+You can use a [RestServiceConnectionInfo](/reporting/api/Telerik.ReportViewer.Common.RestServiceConnectionInfo) instance to help you create the connection string.
         
-
 
 {{source=CodeSnippets\CS\API\Telerik\ReportViewer\WinForms\Form1.cs region=WinFormsRestServiceReportEngineConnectionSnippet}}
 ````C#
@@ -143,7 +122,6 @@ You can use a
 	            this.reportViewer1.ReportEngineConnection = new Telerik.ReportViewer.Common.RestServiceConnectionInfo("http://servicehost:83/api/reports", "authToken", 20).ConnectionString;
 	        }
 ````
-
 
 
 
@@ -156,9 +134,5 @@ You can use a
 
 
 
-
 # See Also
-[EmbeddedConnectionInfo](/reporting/api/Telerik.ReportViewer.Common.EmbeddedConnectionInfo)
-[ReportServerConnectionInfo](/reporting/api/Telerik.ReportViewer.Common.ReportServerConnectionInfo)
-[RestServiceConnectionInfo](/reporting/api/Telerik.ReportViewer.Common.RestServiceConnectionInfo)
-
+[EmbeddedConnectionInfo](/reporting/api/Telerik.ReportViewer.Common.EmbeddedConnectionInfo)[ReportServerConnectionInfo](/reporting/api/Telerik.ReportViewer.Common.ReportServerConnectionInfo)[RestServiceConnectionInfo](/reporting/api/Telerik.ReportViewer.Common.RestServiceConnectionInfo)

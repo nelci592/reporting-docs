@@ -14,7 +14,6 @@ position: 1
 
 Below is a list of all available report viewer events.
 
-
 ## Events
 
 
@@ -41,8 +40,5 @@ Below is a list of all available report viewer events.
 
 
 For more details on each event and its arguments/return value, please refer to the
-          
-[HTML5 Report Viewer Events]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/events/error(e,-args)%})
-.
+          [HTML5 Report Viewer Events]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/events/error(e,-args)%}).
         
-

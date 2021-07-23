@@ -18,7 +18,6 @@ The following table presents a summary of the section types and their usage:
 		
 
 
-
 | Section Type | Description |
 | ------ | ------ |
 | __Page Header__ |This section is printed at the top of every page. For example, use the page header to repeat <br/>	the report title on every page. Since the paging of a report strongly depends on the format it is rendered to, this section and<br/>	its items are processed by the corresponding rendering extension after the report data has been processed. At this moment the <br/>	report data source is not available anymore and due to this you can use the built-in PageNumber and PageCount objects <br/>	(which contain the current page number and the total report pages count) only in this section. It is possible to suppress the <br/>	printing of the Page Header section on the first and last page of a report, but the space taken up would always be reserved no <br/>	matter whether it is visible.|
@@ -37,9 +36,6 @@ The following table presents a summary of the section types and their usage:
 
  * [How to Add/Remove Report Header & Footer Sections]({%slug telerikreporting/designing-reports/report-structure/how-to/how-to-add/remove-report-header-&-footer-sections%})
 
-
  * [How to Add/Remove Page Header & Footer Sections]({%slug telerikreporting/designing-reports/report-structure/how-to/how-to-add/remove-page-header-&-footer-sections%})
 
-
  * [How to Create Group Headers and Footers (obsolete)]({%slug telerikreporting/designing-reports/report-structure/how-to-create-group-headers-and-footers-(obsolete)%})
-

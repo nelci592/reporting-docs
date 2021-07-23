@@ -12,16 +12,14 @@ position: 4
 
 
 
-## Request#_URI Template_
+## Request
 
 	          GET /api/reports/clients/{clientId}/instances/{instanceId}/documents/{documentId}/pages/{pageNumber}
         
 
 
 
-
-__Path parameters
-__
+__Path parameters__
 
 
 | Name | Type | Description |
@@ -47,21 +45,17 @@ __
 
 
 
-__Response Body
-__
+__Response Body__
 
-[PageInfo]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/json-entities/pageinfo%})
- - a single page content.
+[PageInfo]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/json-entities/pageinfo%}) - a single page content.
         
 
-
-## Sample#_Request Message_
+## Sample
 
 	          GET /api/reports/clients/2c3d/instances/4d3c/documents/5x3a/pages/1 HTTP/1.1
         
 
 
-#_Response Message_
 
 	          HTTP/1.1 202 Accepted
           {
@@ -69,6 +63,5 @@ __
             ‘pageNumber’: 1
           }
         
-
 
 

@@ -20,46 +20,28 @@ The database cache provider stores the rendered pages and resources in database.
         the shared resources.
       
 
-
-Before using the database cache provider it is necessary to install the shared database. Start the 
-__          Database Cache
+Before using the database cache provider it is necessary to install the shared database. Start the __          Database Cache
           Configuration Tool
-        
-__ that can be found in the following location:
+        __ that can be found in the following location:
       
-
 
 -InstallDir-\Tools\DatabaseCacheConfigurator.exe
 
-
-where 
-__InstallDir
-__ is the installation directory of 
-__Telerik Reporting
-__.
-      
-  
+where __InstallDir__ is the installation directory of __Telerik Reporting__.
+        
   ![](images/SessionState/sessionmanagement3.png)
 
 Choose the desired target backend from the drop-down list and specify the connection string to the database being created in the text
         block below. It is recommended that the database specified in the connection string is different from your production database. Click the
-        "Create schema" button to configure the database. The 
-__Database Cache Configuration Tool
-__ can be used to create a new database
-        or reconfigure an existing one, if the database schema has changed from the previous release of 
-__Telerik Reporting
-__.
+        "Create schema" button to configure the database. The __Database Cache Configuration Tool__ can be used to create a new database
+        or reconfigure an existing one, if the database schema has changed from the previous release of __Telerik Reporting__.
       
-
 
 Two cache providers are available:
 
-
-* __ADO.NET
-__ cache provider.
+* __ADO.NET__ cache provider.
             The following XML snippet demonstrates how to configure this provider:
           
-
 
 	
 ````xml
@@ -78,31 +60,17 @@ __ cache provider.
 
 ````
 
-
-Here the "ProviderName" parameter specifies the 
-__ADO.NET
-__ provider, and the "ConnectionString" specifies the connection string to the database.
+Here the "ProviderName" parameter specifies the __ADO.NET__ provider, and the "ConnectionString" specifies the connection string to the database.
           
 
-
-* __Telerik Data Access
-__ cache provider.
+* __Telerik Data Access__ cache provider.
             Add the requires reference to
-            
-*Telerik.OpenAccess.dll
-*,
-            
-*Telerik.OpenAccess.35.Extensions.dll
-* and
-            
-*Telerik.OpenAccess.Runtime.dll
-*.
-            It is necessary to configure the 
-[Telerik Reporting Configuration Section]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/overview%})
- first and then use the following XML snippet to
+            *Telerik.OpenAccess.dll*,
+            *Telerik.OpenAccess.35.Extensions.dll* and
+            *Telerik.OpenAccess.Runtime.dll*.
+            It is necessary to configure the [Telerik Reporting Configuration Section]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/overview%}) first and then use the following XML snippet to
             configure this provider in application’s configuration file:
           
-
 
 	
 ````xml
@@ -121,24 +89,13 @@ __ cache provider.
 
 ````
 
-
 Here the "BackendName" parameter specifies the name of the chosen backend. Complete list of the backends is available in the
-            
-[Backend Strings and Provider Names List
-](http://docs.telerik.com/data-access/developers-guide/database-specifics/database-specifics-backend-strings-provider-names-list
-) article. The "ConnectionString" specifies the connection string to the database.
+            [Backend Strings and Provider Names List](http://docs.telerik.com/data-access/developers-guide/database-specifics/database-specifics-backend-strings-provider-names-list) article. The "ConnectionString" specifies the connection string to the database.
             The connection string can be specified either as a named connection, configured in the "connectionStrings" section of the configuration file, or directly
             as an inline connection string.
+          __Binding Redirects__In case you use __Telerik Data Access__ version greater than 2015.1.225.1, you have to redirect all assemblies required by the Database Cache Provider to their
+            latest versions. To do this, add the following bindingRedirects to your configuration file and replace the x.x.x.x with the exact version of __Telerik Data Access__ assemblies:
           
-__Binding Redirects
-__In case you use 
-__Telerik Data Access
-__ version greater than 2015.1.225.1, you have to redirect all assemblies required by the Database Cache Provider to their
-            latest versions. To do this, add the following bindingRedirects to your configuration file and replace the x.x.x.x with the exact version of 
-__Telerik Data Access
-__ assemblies:
-          
-
 
 	
 ````xml
@@ -166,15 +123,11 @@ __ assemblies:
 
 
 
-
 # See Also
 
 
  * [Configuring Cache]({%slug telerikreporting/using-reports-in-applications/export-and-configure/cache-management/other-reportviewer-controls/configuring-cache%})
 
-
  * [Configuring the File Cache Provider]({%slug telerikreporting/using-reports-in-applications/export-and-configure/cache-management/other-reportviewer-controls/configuring-the-file-cache-provider%})
 
-
  * [Telerik Reporting Configuration Section]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/overview%})
-

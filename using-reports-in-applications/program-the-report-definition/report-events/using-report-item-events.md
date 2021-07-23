@@ -14,11 +14,8 @@ position: 4
 
 ## 
 
-Each 
-[report item]({%slug telerikreporting/designing-reports/report-structure/overview%})
- on a report exposes these events:
+Each [report item]({%slug telerikreporting/designing-reports/report-structure/overview%}) on a report exposes these events:
         
-
 
 
 
@@ -39,25 +36,16 @@ Let us demonstrate this with a simple example. Suppose that we have a TextBox co
           "Team Leader", "Senior Developer", "Junior Developer", "Quality Assurance", etc. For the sake of our example, suppose that we would 
           like to color all developers in Blue.
 
-
 First we need to attach to the TextBox's ItemDataBinding event. Double-click the event in the property grid
           and an event handler method will be automatically generated for you.
         
 
-
-As explained in 
-[Understanding Events]({%slug telerikreporting/using-reports-in-applications/program-the-report-definition/report-events/understanding-events%})
- topic, the
-          
-__sender
-__ argument is in fact the 
-__processing
-__ TextBox that
+As explained in [Understanding Events]({%slug telerikreporting/using-reports-in-applications/program-the-report-definition/report-events/understanding-events%}) topic, the
+          __sender__ argument is in fact the __processing__ TextBox that
           has already been data bound. The method will be called for each data row, i.e. for each employee we have in the
           data source. So the only thing we have left to do is cast the sender, check the position, and do the coloring if
           needed:
         
-
 
 {{source=CodeSnippets\CS\API\Telerik\Reporting\Processing\EventsSnippets.cs region=AddTextBoxItemDataBindingSnippet}}
 ````C#
@@ -74,7 +62,6 @@ __ TextBox that
 
 
 
-
 {{source=CodeSnippets\VB\API\Telerik\Reporting\Processing\EventsSnippets.vb region=AddTextBoxItemDataBindingSnippet}}
 ````VB
 	    Private Sub textBox1_ItemDataBinding(sender As Object, e As EventArgs) Handles textBox1.ItemDataBinding
@@ -88,7 +75,6 @@ __ TextBox that
 
 
 
-
 >note The provided example can be easily implemented using ConditionalFormatting, see            [Change row color based on a value in the row](https://docs.telerik.com/reporting/knowledge-base/change-row-color-based-on-value)            or Bindings, see [Bindings]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/bindings%}).          
 
 
@@ -96,4 +82,3 @@ __ TextBox that
 
 
  * [Access Report Items Programmatically]({%slug telerikreporting/using-reports-in-applications/program-the-report-definition/access-report-items-programmatically%})
-

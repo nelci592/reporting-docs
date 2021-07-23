@@ -13,48 +13,27 @@ position: 0
 
 
 You can add interactive actions that allow users to open Web pages or other reports, jump to another location
-        within the same report or drilldown to detail data. To add an interactive action, you define an Action on a report item. Use the 
-[Edit Action dialog]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/edit-action-dialog%})
-        to set the type of interactive action. When the user clicks that report item, the action that you define takes place. The report engine
+        within the same report or drilldown to detail data. To add an interactive action, you define an Action on a report item. Use the [Edit Action dialog]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/edit-action-dialog%})        to set the type of interactive action. When the user clicks that report item, the action that you define takes place. The report engine
         supports the following action types:
       
 
-
-* __Navigate to Report
-__: Jump to other reports from the main report (Drillthrough report).
+* __Navigate to Report__: Jump to other reports from the main report (Drillthrough report).
           
 
-
-* __Navigate to Bookmark
-__: Jump to areas within a report.
+* __Navigate to Bookmark__: Jump to areas within a report.
           
 
-
-* __Navigate to Url
-__: Jump to external web URLs that specify the address of web pages.
+* __Navigate to Url__: Jump to external web URLs that specify the address of web pages.
           
 
-
-* __Toggle Visibility
-__: Show or hide report items within the same report.
+* __Toggle Visibility__: Show or hide report items within the same report.
           
 
-
-* __Sorting
-__: Apply sorting on report items like 
-__Table
-__, 
-__Crosstab
-__ or 
-__Graph
-__.
+* __Sorting__: Apply sorting on report items like __Table__, __Crosstab__ or __Graph__.
           
 
-
-* __Custom
-__: An action that contains collection of parameters that are evaluated during report processing.
+* __Custom__: An action that contains collection of parameters that are evaluated during report processing.
           
-
 
 ## 
 
@@ -65,4 +44,3 @@ __: An action that contains collection of parameters that are evaluated during r
 
 
  * [Interactive Action Events]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/actions/interactive-action-events%})
-

@@ -16,11 +16,7 @@ position: 10
 
 Reloads/refreshes the current report.
 
-
-Returns: the current 
-*ReportViewer
-* object.
-
+Returns: the current *ReportViewer* object.
 
 	
 ````js
@@ -28,6 +24,5 @@ Returns: the current
           reportViewer.refreshReport();
           
 ````
-
 
 

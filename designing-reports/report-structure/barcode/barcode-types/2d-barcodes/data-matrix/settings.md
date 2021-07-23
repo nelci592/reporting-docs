@@ -14,77 +14,48 @@ position: 1
 
 This article explains the specific Data Matrix code settings.
 
-
 ## Encodation
 
 The encodation determines the type of contents encoded by the Data Matrix barcode. Choosing a proper encodation imposes validation rules, but reduces the barcode size and improves its readability.
 
-
 The following table shows the supported encodations and provides information about their restrictions and data storing requirements:
 
-
-* __ASCII
-__ - allowed characters include double digit numerics and all values from the ASCII table.
+* __ASCII__ - allowed characters include double digit numerics and all values from the ASCII table.
               The double digit numerics use 4 bits. The ASCII values in the 0-127 range use 8 bits. The ASCII values in 128-255 range use 16 bits.
             
 
-
-* __C40
-__ - Used primarily for upper-case alphanumerics.
+* __C40__ - Used primarily for upper-case alphanumerics.
               The upper-case alphanumeric characters use 5.33 bits.
               The lower-case and special characters use 10.66 bits.
             
 
-
-* __Text
-__ - Used primarily for lower-case alphanumerics.
+* __Text__ - Used primarily for lower-case alphanumerics.
               The lower-case alphanumeric characters use 5.33 bits.
               The upper-case and special characters use 10.66 bits.
             
 
-
-* __X12
-__ - Uses the characters from
-              
-[ANSI X12 EDI data set
-](https://edi3.dicentral.com/ansi-x12
-).
+* __X12__ - Uses the characters from
+              [ANSI X12 EDI data set](https://edi3.dicentral.com/ansi-x12).
               Each character takes 5.33 bits.
             
 
-
-* __EDIFACT
-__ - Used to encode ASCII values in the 32-94 range.
+* __EDIFACT__ - Used to encode ASCII values in the 32-94 range.
               Each character takes 6 bits.
             
 
-
-* __Base256
-__ - Used to encode characters in the whole ASCII range.
+* __Base256__ - Used to encode characters in the whole ASCII range.
               Each character takes 8 bits.
             
 
-
-* __AsciiGS1
-__ - Used to encode FNC1 characters in the ASCII range
+* __AsciiGS1__ - Used to encode FNC1 characters in the ASCII range
             
-
 
 ## SymbolSize
 
 Sets the symbol size and shape of the generated barcode. It can be automatically determined using
-          
-__SquareAuto
-__ or 
-__RectangleAuto
-__,
-          or specific like 
-__Square32x32
-__ or 
-__Rectangle16x48
-__.
+          __SquareAuto__ or __RectangleAuto__,
+          or specific like __Square32x32__ or __Rectangle16x48__.
         
-
 
 ## TextEncoding
 
@@ -92,11 +63,10 @@ Determines character encoding used to encode the barcode contents. By default it
         which uses more bits per character and may increase the size of the barcode image.
         
 
-
 ## Examples
 
 {{source=CodeSnippets\CS\API\Telerik\Reporting\BarcodeSnippets.cs region=Barcode_DataMatrixEncoder_Settings}}
-````cs
+````C#
 	            var encoder = new Telerik.Reporting.Barcodes.DataMatrixEncoder();
 	
 	            encoder.Encodation = Telerik.Reporting.Barcodes.DataMatrix.Encodation.Ascii;
@@ -108,9 +78,8 @@ Determines character encoding used to encode the barcode contents. By default it
 
 
 
-
 {{source=CodeSnippets\VB\API\Telerik\Reporting\BarcodeSnippets.vb region=Barcode_DataMatrixEncoder_Settings}}
-````vbnet
+````VB.NET
 	        Dim encoder = New Telerik.Reporting.Barcodes.DataMatrixEncoder()
 	
 	        encoder.Encodation = Telerik.Reporting.Barcodes.DataMatrix.Encodation.Ascii
@@ -122,14 +91,7 @@ Determines character encoding used to encode the barcode contents. By default it
 
 
 
-
 # See Also
-[Telerik.Reporting.Barcode](/reporting/api/Telerik.Reporting.Barcode)
-[Telerik.Reporting.Barcodes.DataMatrixEncoder](/reporting/api/Telerik.Reporting.Barcodes.DataMatrixEncoder)
-[Encodation](/reporting/api/Telerik.Reporting.Barcodes.DataMatrix#Telerik_Reporting_Barcodes_DataMatrix_Encodation)
-[SymbolSize](/reporting/api/Telerik.Reporting.Barcodes.DataMatrix#Telerik_Reporting_Barcodes_DataMatrix_SymbolSize)
+[Telerik.Reporting.Barcode](/reporting/api/Telerik.Reporting.Barcode)[Telerik.Reporting.Barcodes.DataMatrixEncoder](/reporting/api/Telerik.Reporting.Barcodes.DataMatrixEncoder)[Encodation](/reporting/api/Telerik.Reporting.Barcodes.DataMatrix#Telerik_Reporting_Barcodes_DataMatrix_Encodation)[SymbolSize](/reporting/api/Telerik.Reporting.Barcodes.DataMatrix#Telerik_Reporting_Barcodes_DataMatrix_SymbolSize)
 
-
- * [TextEncoding
-](https://docs.microsoft.com/en-us/dotnet/api/system.text.encoding
-)
+ * [TextEncoding](https://docs.microsoft.com/en-us/dotnet/api/system.text.encoding)

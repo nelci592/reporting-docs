@@ -18,48 +18,35 @@ A line chart displays a series as a set of points connected by a single line. Li
       can be tailored to emphasize the data using unique colors, line thickness, pen style, and point marks.
       
 
-
 The following image displays a line chart that contains three series.
       
-
 
 ## Line Chart Variations  
   ![Line Types](images/Graph/LineTypes.png)
 
-* __Straight Line Chart
-__.
+* __Straight Line Chart__.
               A line chart that uses straight lines to connect the data points.
             
 
-
-* __Smooth Line Chart
-__.
+* __Smooth Line Chart__.
               A line chart that uses curved lines instead of regular ones.
             
 
-
-* __Stepped Line Chart
-__.
+* __Stepped Line Chart__.
               A line chart that uses horizontal and vertical lines to connect the data points, creating a step-like strcuture.
             
-
 
 ## Design Considerations for Line Charts
 
 * To improve the visual impact of the default line chart, consider increasing the thickness 
   				of the series line. This will create a bolder line chart.
 
-
 * A line chart requires at least two points to draw a line.
-
 
 * A series that is drawn as a line will not take up much space within a chart area. 
   				For this reason, line charts are frequently combined with other chart types such as column charts.
 
-
 # See Also
 
 
- * [Chart Types]({%slug telerikreporting/designing-reports/report-structure/graph/chart-types/overview%})
-[LineSeries](/reporting/api/Telerik.Reporting.LineSeries)
-
+ * [Chart Types]({%slug telerikreporting/designing-reports/report-structure/graph/chart-types/overview%})[LineSeries](/reporting/api/Telerik.Reporting.LineSeries)

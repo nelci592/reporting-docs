@@ -15,12 +15,9 @@ position: 1
 >important The cache settings mentioned in this article are not obligatory, and they do not apply to the           __HTML5 Viewer__  or its Angular, WebForms and MVC wrappers. Details about the Cache Storage of the Reporting REST          Service that works with the HTML5 Viewer are available in          [Cache Management: HTML5 Report Viewer and Reporting REST services]({%slug telerikreporting/using-reports-in-applications/export-and-configure/cache-management/html5-report-viewer-and-reporting-rest-services%})          and [REST Service Storage Settings]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-service-storage/overview%}).        
 
 
-The cache management system can be configured by specifying one or more cache providers in the 
-[Telerik Reporting Configuration Section]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/overview%})
-        of the application’s configuration file. For example, the following XML snippet configures the cache to
+The cache management system can be configured by specifying one or more cache providers in the [Telerik Reporting Configuration Section]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/overview%})        of the application’s configuration file. For example, the following XML snippet configures the cache to
         store the rendered pages and resources in the file system:
       
-
 
 	
 ````xml
@@ -32,11 +29,9 @@ The cache management system can be configured by specifying one or more cache pr
 
 
 
-
 The "provider" attribute of the "Cache" element specifies the name of the current cache provider used by the viewers. There
         are several preconfigured providers that can be used by applications without any additional setup:
       
-
 
 
 | Provider | Description | Parameters |
@@ -68,7 +63,6 @@ The individual providers are registered by adding one or more "Provider" element
         of that parameter.
       
 
-
 	
 ````xml
 <Telerik.Reporting>
@@ -87,15 +81,11 @@ The individual providers are registered by adding one or more "Provider" element
 
 
 
-
 # See Also
 
 
  * [Configuring the File Cache Provider]({%slug telerikreporting/using-reports-in-applications/export-and-configure/cache-management/other-reportviewer-controls/configuring-the-file-cache-provider%})
 
-
  * [Configuring the Database Cache Provider]({%slug telerikreporting/using-reports-in-applications/export-and-configure/cache-management/other-reportviewer-controls/configuring-the-database-cache-provider%})
 
-
  * [Telerik Reporting Configuration Section]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/overview%})
-

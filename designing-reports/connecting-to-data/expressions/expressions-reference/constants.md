@@ -14,15 +14,9 @@ position: 1
 
 ## Built-in constants
 
-__False
-__,
-          
-__True
-__, 
-__null
-__.
+__False__,
+          __True__, __null__.
         
-
 
 ## Literal text
 
@@ -30,22 +24,17 @@ In an expression, literal
           text is text that is enclosed in single or double quotation marks.
         
 
-
 Example:
-
 
 	          ="Product name: " + Fields.ProductName
         
 
 
 
-
 or
-
 
 	          ='Product name: ' + Fields.ProductName
         
-
 
 
 
@@ -64,36 +53,26 @@ or
 
 
 Some report item properties allow the usage of
-          
-[
+          [
             Embedded
             Expressions
-          ]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/embedded-expressions%})
-, which provide easy concatenation of string literals
+          ]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/embedded-expressions%}), which provide easy concatenation of string literals
           with expression terms.
         
-
 
 ## Numeric constants
 
 They are resolved to:
 
-
-* __Integer
-__ if decimal point is not used - for example 1, 256, 65000
+* __Integer__ if decimal point is not used - for example 1, 256, 65000
           
 
-
-* __Decimal
-__ if decimal point is used - for example 1.0, 25.6
+* __Decimal__ if decimal point is used - for example 1.0, 25.6
           
-
 
 Example:
 
-
 	= Fields.LineTotal  < 100
-
 
 
 
@@ -103,11 +82,8 @@ Date values should
           be enclosed within pound signs (#).
         
 
-
 Example:
 
-
 	=Fields.Birthdate < #1/31/82#
-
 
 

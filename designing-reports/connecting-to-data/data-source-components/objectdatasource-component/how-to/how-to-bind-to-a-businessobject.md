@@ -13,53 +13,27 @@ position: 0
 
 
 The following code sample illustrates a custom middle-tier business object that can
-        be used with an 
-__ObjectDataSource
-__ component that specifies
+        be used with an __ObjectDataSource__ component that specifies
         a strongly typed source object.
-      
-Remarks
-
+      Remarks
 
 The business object exposes several methods which return different data types. They
-          represent only part of the data types which are supported by 
-__Telerik Reporting
-__          and can be used to feed an item with data. Additionally, methods with arguments are implemented
-          which can be also invoked from the 
-__ObjectDataSource
-__ component.
-          When the data method contains parameters the 
-__Parameters
-__ collection of
-          the 
-__ObjectDataSource
-__ should be used to pass values to them at runtime.
+          represent only part of the data types which are supported by __Telerik Reporting__          and can be used to feed an item with data. Additionally, methods with arguments are implemented
+          which can be also invoked from the __ObjectDataSource__ component.
+          When the data method contains parameters the __Parameters__ collection of
+          the __ObjectDataSource__ should be used to pass values to them at runtime.
           To successfully invoke the data method, the parameters number, their names and
-          types should match. The order of the parameters in the 
-__Parameters
-__ collection is not
-          important. If there is a discrepancy between 
-__ObjectDataSource
-__ parameters and
+          types should match. The order of the parameters in the __Parameters__ collection is not
+          important. If there is a discrepancy between __ObjectDataSource__ parameters and
           the method parameters you will receive a runtime exception that the method cannot be resolved.
         
 
-
-The business object is marked with the 
-__DataObjectAttribute
-__ which indicates
+The business object is marked with the __DataObjectAttribute__ which indicates
           that the object is suitable for data binding. Objects marked with this attribute will be shown
-          in the 
-__ObjectDataSource
-__ wizard when "
-*Show only data components
-*"
+          in the __ObjectDataSource__ wizard when "*Show only data components*"
           checkbox is checked. Respectively the methods used for data retrieval are marked with the
-          
-__DataObjectMethod
-__ attribute.
+          __DataObjectMethod__ attribute.
         
-
 
 {{source=CodeSnippets\CS\API\Telerik\Reporting\ObjectDataSourceSnippets.cs region=HowToBindToBusinessObjectSnippet}}
 ````C#
@@ -134,12 +108,12 @@ __ attribute.
 	            }
 	
 	            [DataObjectMethod(DataObjectMethodType.Select)]
-	            public List```<Product>``` GetAllProducts()
+	            public List<Product> GetAllProducts()
 	            {
 	                SqlConnection connection = new SqlConnection(ConnectionString);
 	                SqlCommand command = new SqlCommand(SelectCommandText, connection);
 	                SqlDataReader reader = null;
-	                List```<Product>``` products = new List```<Product>```();
+	                List<Product> products = new List<Product>();
 	
 	                try
 	                {
@@ -176,14 +150,14 @@ __ attribute.
 	
 	            // Gets products bellow a specified max price.
 	            [DataObjectMethod(DataObjectMethodType.Select)]
-	            public IList```<Product>``` GetProducts(decimal maxPrice)
+	            public IList<Product> GetProducts(decimal maxPrice)
 	            {
 	                return this.GetAllProducts().FindAll(product => product.ListPrice <= maxPrice);
 	            }
 	
 	            // Gets products of specific model and a color.
 	            [DataObjectMethod(DataObjectMethodType.Select)]
-	            public IList```<Product>``` GetProducts(int productModelID, string color)
+	            public IList<Product> GetProducts(int productModelID, string color)
 	            {
 	                return this.GetAllProducts().FindAll(product => (product.ProductModelID == productModelID && product.Color == color));
 	            }
@@ -219,7 +193,6 @@ __ attribute.
 	        }
 	
 ````
-
 
 
 
@@ -275,13 +248,13 @@ __ attribute.
 	        End Property
 	    End Class
 	
-	    ```<DataObject()>```
+	    <DataObject()>
 	    Class Products
 	        Const SelectCommandText As String = "SELECT Name, ProductNumber, ListPrice, ProductModelID, Color" + "  FROM Production.Product" + "  WHERE ProductModelID is not NULL" + "    AND Color is not NULL"
 	
 	        Const ConnectionString As String = "Data Source=(local)\SQLEXPRESS;Initial Catalog=AdventureWorks;Integrated Security=True"
 	
-	        ```<DataObjectMethod(DataObjectMethodType.Select)>```
+	        <DataObjectMethod(DataObjectMethodType.Select)>
 	        Public Function GetDataTableSource() As DataTable
 	            Dim dataTable = New DataTable()
 	            Using dataAdapter = New SqlDataAdapter(SelectCommandText, ConnectionString)
@@ -290,12 +263,12 @@ __ attribute.
 	            Return dataTable
 	        End Function
 	
-	        ```<DataObjectMethod(DataObjectMethodType.Select)>```
+	        <DataObjectMethod(DataObjectMethodType.Select)>
 	        Public Function GetDataAdapterSource() As IDataAdapter
 	            Return New SqlDataAdapter(SelectCommandText, ConnectionString)
 	        End Function
 	
-	        ```<DataObjectMethod(DataObjectMethodType.[Select])>```
+	        <DataObjectMethod(DataObjectMethodType.[Select])>
 	        Public Function GetDataViewSource(ByVal name As String) As DataView
 	            Dim dataAdapter = New SqlDataAdapter(SelectCommandText, ConnectionString)
 	            Dim dataTable = New DataTable()
@@ -308,12 +281,12 @@ __ attribute.
 	            Return dataView
 	        End Function
 	
-	        ```<DataObjectMethod(DataObjectMethodType.[Select])>```
+	        <DataObjectMethod(DataObjectMethodType.[Select])>
 	        Public Function GetArraySource() As Product()
 	            Return Me.GetAllProducts().ToArray()
 	        End Function
 	
-	        ```<DataObjectMethod(DataObjectMethodType.[Select])>```
+	        <DataObjectMethod(DataObjectMethodType.[Select])>
 	        Public Function GetArrayListSource() As ArrayList
 	            Dim arrayList As New ArrayList()
 	            For Each product In Me.GetAllProducts()
@@ -322,7 +295,7 @@ __ attribute.
 	            Return arrayList
 	        End Function
 	
-	        ```<DataObjectMethod(DataObjectMethodType.[Select])>```
+	        <DataObjectMethod(DataObjectMethodType.[Select])>
 	        Public Function GetAllProducts() As List(Of Product)
 	            Dim connection As New SqlConnection(ConnectionString)
 	            Dim command As New SqlCommand(SelectCommandText, connection)
@@ -352,13 +325,13 @@ __ attribute.
 	        End Function
 	
 	        ' Gets products bellow a specified max price.
-	        ```<DataObjectMethod(DataObjectMethodType.Select)>```
+	        <DataObjectMethod(DataObjectMethodType.Select)>
 	        Public Function GetProducts(ByVal maxPrice As Decimal) As IList(Of Product)
 	            Return Me.GetAllProducts().FindAll(Function(product) product.ListPrice <= maxPrice)
 	        End Function
 	
 	        ' Gets products of specific model and a color.
-	        ```<DataObjectMethod(DataObjectMethodType.Select)>```
+	        <DataObjectMethod(DataObjectMethodType.Select)>
 	        Public Function GetProducts(ByVal productModelID As Integer, ByVal color As String) As IList(Of Product)
 	            Return Me.GetAllProducts().FindAll(Function(product) (product.ProductModelID = productModelID AndAlso product.Color = color))
 	        End Function
@@ -395,6 +368,5 @@ __ attribute.
 	
 	    End Sub
 ````
-
 
 

@@ -16,40 +16,32 @@ Reporting performance is generally understood to be the speed and efficiency wit
         Performance depends on a variety of factors, including system bandwidth, number of concurrent users, volume of data to be presented, etc.
       
 
-
 Naturally, some of these performance factors are “environmental,” that is, pretty much outside of the report developer’s control. Others, however, are not, 
         and the smart report developer should be aware of these factors and use them to her or his advantage to create reports that perform efficiently 
         and that don’t place undue burden on the system.
       
 
-
 Prior further elaborating on the major performance factors our recommendation is to go through some main points regarding the reporting inner workings 
         and principles.
       
 
-
-__Report Processing stages
-__
+__Report Processing stages__
 
 1. When the first report rendering is started, the application will load the assemblies it depends on in the memory. This may cause an additional delay. 
           You may consider a delay of ~2s as normal for this initial loading.
         
-
 
 1. Processing data: Once the raw data is fetched from the data source, the reporting engine uses it to create an OLAP cube. Its dimensions are build 
             according to Group Definitions for the report and contained Data Items. Measures are calculated from all expressions. This is repeated for every 
             DataSource in the report definition.
           
 
-
 1. Processing the report items: Using the report definition and the already calculated OLAP cubes hierarchies, the Report Processing Object Tree is built. 
             Report Processing Tree contains all required layout information regardless of the PageSettings information.
           
 
-
 1. Render the report to the desired media, perform paging and calculate page aggregates.
           
-
 
 ## Environmental reporting performance factors and suggestions:
 
@@ -59,12 +51,10 @@ Report processing and rendering are memory intensive operations. The OLAP cube, 
           we would suggest a minimum of a dual core processor with at least 2 GB of RAM. Network traffic bandwidth also impacts performance.
         
 
-
 ## Handling a Large Workload
 
 To get the highest performance when handling large workloads that include user requests for large reports, implement the following recommendations.
         
-
 
 ### Control the Size of Your Reports
 
@@ -74,19 +64,15 @@ You will first want to determine the purpose of these reports and whether a larg
                 so it is necessary to evaluate each report on a case-by-case basis.
               
 
-
 Some common problems with these large reports are that they contain data fields that are not used in the report or they contain duplicate datasets. 
                 Often users retrieve more data than they really need. To significantly reduce the load placed on your reporting environment, create summary reports 
                 that use aggregates, and include only the necessary columns.
               
 
-
 ### Use Telerik Reporting REST Service Cache
 
 If you have reports that do not need to have live execution, set the service ReportSharingTimeout to an appropriate value.
-                For more information see: 
-[HTML5 Report Viewer and Reporting REST services]({%slug telerikreporting/using-reports-in-applications/export-and-configure/cache-management/html5-report-viewer-and-reporting-rest-services%})
-
+                For more information see: [HTML5 Report Viewer and Reporting REST services]({%slug telerikreporting/using-reports-in-applications/export-and-configure/cache-management/html5-report-viewer-and-reporting-rest-services%})
 
 ### Deliver Rendered Reports for Non-browser Formats
 
@@ -94,38 +80,25 @@ To reduce the load on your reporting environment, you can use our Report Server 
                 when ready, thus avoid the waiting and this comes out of the box.
               
 
-
 ## Performance factors in the developer’s control:
 
-* __PageCount
-__[PageCount]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/global-objects%})
- triggers an extra paging pass that depending on the report volume and 
+* __PageCount__[PageCount]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/global-objects%}) triggers an extra paging pass that depending on the report volume and 
               complexity may significantly slow down the rendering. If performance is important consider avoiding the PageCount object;
             
 
-
 * __                Number of report items
-              
-__The number of report items will affect loading time, just like the more information a web page requests, the longer it will take to load.
-              Consider changing your large and slow report layout and create a report with 
-[Actions]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/actions/overview%})
- 
-              (drill down, drill-through) and 
-[Report Parameters]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/report-parameters%})
- (on-demand data). Besides being beneficial to the end-user, 
+              __The number of report items will affect loading time, just like the more information a web page requests, the longer it will take to load.
+              Consider changing your large and slow report layout and create a report with [Actions]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/actions/overview%}) 
+              (drill down, drill-through) and [Report Parameters]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/report-parameters%}) (on-demand data). Besides being beneficial to the end-user, 
               these features make the report faster and more efficient, lightening the reporting load by giving only the current state of requested data;
             
 
-
-* __Rendering media
-__After the report is processed a respective rendering extension is used to render the report in the desired media. Every rendering extension has its 
+* __Rendering media__After the report is processed a respective rendering extension is used to render the report in the desired media. Every rendering extension has its 
               specifics and if all reports process slowly only in a particular format try adding more memory, or choosing a different format;
             
 
-
 * __                Excel Rendering
-              
-__The Excel rendering engines create a complex matrix taking into account every item's coordinates and size, and then create a table with many table cells 
+              __The Excel rendering engines create a complex matrix taking into account every item's coordinates and size, and then create a table with many table cells 
               and rows, some of which are used merely as "spacers". This way an item's exact location and size are preserved, but at the cost of many calculations. 
               When a report has tons of items that are not vertically and horizontally aligned, the resulting table is gigantic. Align your items horizontally and 
               vertically relative to each other and make sure that you have NO warning signs in design-time. While in other formats the rendering locations and sizes 
@@ -133,137 +106,85 @@ __The Excel rendering engines create a complex matrix taking into account every 
               The more items are aligned horizontally and vertically, the less dummy spacer rows and cells will be created by the Excel rendering engine;
             
 
-
 * __                Volume of the data retrieved from the data source
-              
-__If your report(s) display large amounts of data, it may take a long time for the data to be retrieved from the datasource. With large amounts of 
+              __If your report(s) display large amounts of data, it may take a long time for the data to be retrieved from the datasource. With large amounts of 
               datasource data you need to retrieve the smallest usable set of data to reduce network traffic, use resources effectively and to render reports quickly. 
               This can be achieved by using selections applied to data at the report level vs. user selections applied at the datasource - review the 
-              
-[Overview]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/filtering-data/overview%})
-. Selections applied at 
+              [Overview]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/filtering-data/overview%}). Selections applied at 
               the datasource level are effective when the data does not need to be re-queried. This can be effective when only a narrow range of data is required. 
               Additional trips to the datasource for different views of the same data increase the network traffic cost and the time needed to render the report. 
               When user selections are applied at the report level the data is cached in-memory. This can be effective when different views of the same data are 
               required and the data is not too large. A combination of these techniques may be the most appropriate solution.
-              To filter data on database level and fetch only a subset of the data, review the 
-[Using Parameters with Data Source objects]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/using-parameters-with-data-source-objects%})
-;
+              To filter data on database level and fetch only a subset of the data, review the [Using Parameters with Data Source objects]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/using-parameters-with-data-source-objects%});
             
 
-
-* __Expressions
-__Complicated expressions (especially with many report items) require some time to be evaluated and they can also lead to slowness.
-              It is a good idea to replace these expressions with 
-[User Functions]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/extending-expressions/user-functions%})
- because user functions are an already
+* __Expressions__Complicated expressions (especially with many report items) require some time to be evaluated and they can also lead to slowness.
+              It is a good idea to replace these expressions with [User Functions]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/extending-expressions/user-functions%}) because user functions are an already
               compiled code;
             
 
-
 * __                Number of Subreport items
-              
-__The subreport item references a report definition that should be processed separately. 
+              __The subreport item references a report definition that should be processed separately. 
               This is expensive process and can be avoided with Table or List item that is bound to the same datasource and has the same layout as the subreport 
               report definition. If you need some data from the master data item (report) datasource for the child data item datasource parameter you can take 
-              advantage of the 
-[Data Source Components]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/overview%})
- relations capability as elaborated in the 
-              
-[How to use the ReportItem.DataObject property in expressions]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/how-to-use-the-reportitem.dataobject-property-in-expressions%})
- article;
+              advantage of the [Data Source Components]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/overview%}) relations capability as elaborated in the 
+              [How to use the ReportItem.DataObject property in expressions]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/how-to-use-the-reportitem.dataobject-property-in-expressions%}) article;
             
 
-
 * __                Number of HtmlTextBox items
-              
-__The HtmlTextBox content is parsed with a HTML parser and this is resource consuming process.
+              __The HtmlTextBox content is parsed with a HTML parser and this is resource consuming process.
               When performance is important our recommendation is to avoid the extensive use of this item.
               Instead of the complex text styling in a single HtmlTextBox you can try to achieve the desired layout with multiple textboxes;
             
 
-
 * __                Events
-              
-__Interrupting the report processing with events comes at a price. Instead consider 
-[
-                Using Expressions]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/overview%})
- and 
-[User Functions]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/extending-expressions/user-functions%})
-.
+              __Interrupting the report processing with events comes at a price. Instead consider [
+                Using Expressions]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/overview%}) and [User Functions]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/extending-expressions/user-functions%}).
               If you have to keep the events make sure that no time and resource consuming actions in the event handlers are slowing down the report processing.
               
 
-
 * __                Number of Chart items
-              
-__The old 
-__Chart item
-__ does not use the reporting data engine, but its own.
+              __The old __Chart item__ does not use the reporting data engine, but its own.
               As a result showing many charts involves extra data processing.
-              In Q1 2013 we have introduced the 
-[Graph item]({%slug telerikreporting/designing-reports/report-structure/graph/overview%})
- The new item utilizes the optimized reporting
+              In Q1 2013 we have introduced the [Graph item]({%slug telerikreporting/designing-reports/report-structure/graph/overview%}) The new item utilizes the optimized reporting
               data engine. Thus we highly recommend it over the obsolete Chart item. Still if you have to use the obsolete Chart item, avoid using the 
               IntelligentLabels function;
             
 
-
 * __                Hidden Report Items
-              
-__Hiding report items (setting their visibility to false) will not prevent the reporting engine from processing those items.
+              __Hiding report items (setting their visibility to false) will not prevent the reporting engine from processing those items.
               It is required to process hidden items in order for other features of the report, such as 
-              
-[Actions]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/actions/overview%})
-, to be working correctly.
-              If such report item is a 
-[Data Item]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/overview%})
-              it will still retrieve data from its data source and reduce the overall performance. Therefore, it is recommended
-              to add 
-[server side filtering]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/filtering-data/overview%})
-              based on the same condition which controls the visibility of the data item.
+              [Actions]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/actions/overview%}), to be working correctly.
+              If such report item is a [Data Item]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/overview%})              it will still retrieve data from its data source and reduce the overall performance. Therefore, it is recommended
+              to add [server side filtering]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/filtering-data/overview%})              based on the same condition which controls the visibility of the data item.
             
-
 
 ## For additional assistance
 
 If your case is not listed above, or you have tried all suggestions, but still experience slow rendering, please open a 
-		
-[new support ticket
-](http://www.telerik.com/account/support-tickets.aspx
-) and send us the following so that we can investigate your case and check what is causing your troubles:
-
+		[new support ticket](http://www.telerik.com/account/support-tickets.aspx) and send us the following so that we can investigate your case and check what is causing your troubles:
 
 1. Why do you think the report is slow (benchmarks, comparisons, etc);
         
 
-
 1. Amount of data/pages you are trying to show;
         
-
 
 1. Report layout complexity (type and number of items used);
         
 
-
 1. Machine’s hardware and software configuration where the reports are rendered;
         
-
 
 1. Your archived report files;
         
 
-
 1. The data source you're binding to.
         
-
 
 # See Also
 
 
  * [Understanding the Report Lifecycle]({%slug telerikreporting/designing-reports/understanding-the-report-lifecycle%})
 
-
- * [Telerik Reporting Whitepaper
-](http://www.telerik.com/documents/whitepapers/reporting_101.pdf
-)
+ * [Telerik Reporting Whitepaper](http://www.telerik.com/documents/whitepapers/reporting_101.pdf)

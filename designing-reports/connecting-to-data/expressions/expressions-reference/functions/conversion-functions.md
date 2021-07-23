@@ -14,7 +14,6 @@ position: 3
 
 Use the Conversion functions to convert a value from one data type to another. Conversion functions can use the following data types: Numeric and String.
 
-
 ## 
 
 

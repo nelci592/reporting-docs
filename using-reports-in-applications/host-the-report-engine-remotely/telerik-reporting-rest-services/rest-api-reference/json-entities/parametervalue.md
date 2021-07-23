@@ -15,8 +15,7 @@ position: 6
 Represents a single value of the parameter available values.
       
 
-
-## #_Example_
+## 
 
 	          {
             ‘name’: ‘Sofia’,
@@ -27,14 +26,12 @@ Represents a single value of the parameter available values.
 
 
 
-
 >caption Fields
-
 
 | Field | Type | Required | Description |
 | ------ | ------ | ------ | ------ |
 |`name`|`String`|`true`|The name of the parameter name-value pair|
-|`value`|`Array / Boolean / Date / Number / String`|`true`|The value of the parameter name-value pai|
+|`value`|`Array / Boolean / Date / Number / String`|`true`|The value of the parameter name-value pair|
 
 
 

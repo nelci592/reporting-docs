@@ -20,30 +20,14 @@ position: 4
 This topic outlines the required steps that need to be taken to deploy the web ReportViewer prior 
       	to implementing it within an existing MOSS web site.
 
-
-1. First you need to install 
-__Telerik.Reporting.dll
-__ and 
-__Telerik.ReportViewer.WebForms.dll
-__ in the 
-				
-__GAC (Global Assembly Cache
-__) of your SharePoint server. For more information please refer to 
-				
-[How to: Install an Assembly into the Global Assembly Cache
-](http://msdn.microsoft.com/en-us/library/dkkx7f79.aspx
-) article.
+1. First you need to install __Telerik.Reporting.dll__ and __Telerik.ReportViewer.WebForms.dll__ in the 
+				__GAC (Global Assembly Cache__) of your SharePoint server. For more information please refer to 
+				[How to: Install an Assembly into the Global Assembly Cache](http://msdn.microsoft.com/en-us/library/dkkx7f79.aspx) article.
 			
 
-
 1. Next you should tell SharePoint that the Reporting assemblies are safe to use. To do so you should
-				add a few 
-__<SafeControl>
-__ entries within the 
-__<SafeControls>
-__ section of your web.config:
+				add a few __<SafeControl>__ entries within the __<SafeControls>__ section of your web.config:
 				
-
 
 	
 ````xml
@@ -54,12 +38,8 @@ __ section of your web.config:
 
 
 
-
-1. In order for the report viewer to function properly, you need to register its handler in the 
-__```<system.web>```\<httpHandlers>
-__ section in the web.config:
+1. In order for the report viewer to function properly, you need to register its handler in the __```<system.web>```\<httpHandlers>__ section in the web.config:
 				
-
 
 	
 ````XML
@@ -67,13 +47,9 @@ __ section in the web.config:
 				
 ````
 
-
 When the application is hosted on IIS 7+, the handler of the report viewer should be registered in the
+				__```<system.webServer>```\<handlers>__ section as well:
 				
-__```<system.webServer>```\<handlers>
-__ section as well:
-				
-
 
 	
 ````XML
@@ -83,18 +59,15 @@ __ section as well:
 
 
 
-
 1. Open the page where you want to add the ReportViewer control (e.g. e.g. default.master) and if prompted to check out the file select “Yes”. Now you need to register the Telerik.ReportViewer.WebForms assembly in the master page. Do so by adding the following directive:
 				
-#_ASP.NET_
 
 	
-````XML
+````ASP.NET
 				<%@ Register TagPrefix="telerik" Namespace="Telerik.ReportViewer.WebForms"
 						Assembly="Telerik.ReportViewer.WebForms, Version=x.x.x.xxxx, Culture=neutral, PublicKeyToken=a9d7983dfcc261be" %>
 				
 ````
-
 
 
 
@@ -109,12 +82,8 @@ __ section as well:
 
  * [ASP.NET Web Forms Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/asp.net-web-forms-report-viewer/overview%})
 
-
  * [How to Add report viewer to a web page]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/asp.net-web-forms-report-viewer/how-to-add-report-viewer-to-a-web-page%})
-
 
  * [Medium Trust Support]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/medium-trust-support%})
 
-
  * [AJAX support]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/asp.net-web-forms-report-viewer/ajax-support%})
-

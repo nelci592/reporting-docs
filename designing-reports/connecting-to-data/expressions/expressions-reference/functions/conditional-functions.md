@@ -17,9 +17,7 @@ Use conditional functions to determine if expressions meet specified condition. 
     	You could use the IIF function to make the check, and if the condition is valid, display relevant data, otherwise do not 
     	display anything.
 
-
 Conditional functions can use the following data types: Boolean, DateTime, Integer, Decimal, Float, EntityKey, and String.
-
 
 ## Expression evaluation flow functions:
 

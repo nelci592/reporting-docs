@@ -12,30 +12,21 @@ position: 7
 
 
 
-__Telerik Reporting
-__ supports serialization/deserialization of the report definition as plain
-        
-__XML
-__. This is useful in various
+__Telerik Reporting__ supports serialization/deserialization of the report definition as plain
+        __XML__. This is useful in various
         different scenarios and opens many possibilities that are not easily accomplished otherwise. For example, this allows
         adding or modifying reports in your application without recompiling or redeploying it. Another typical scenario is
         saving/loading of dynamically generated report definitions or transferring them over the network.
       
-
 
 >note In order to better handle report definition resources we also provide a          [ReportPackager](/reporting/api/Telerik.Reporting.ReportPackager)          that serializes the report definition in XML and packages it together with its resources in a file with zip compression.          For more information see: [Package Report Definition]({%slug telerikreporting/using-reports-in-applications/program-the-report-definition/package-report-definition%}).        
 
 
 ## Class Report Definition
 
-The 
-__XML
-__ serialization/deserialization of report definitions is achieved through the dedicated
-          
-[ReportXmlSerializer](/reporting/api/Telerik.Reporting.XmlSerialization.ReportXmlSerializer)
-          class. To illustrate how a report is serialized and deserialized, let us start with a simple dynamically generated class report definition:
+The __XML__ serialization/deserialization of report definitions is achieved through the dedicated
+          [ReportXmlSerializer](/reporting/api/Telerik.Reporting.XmlSerialization.ReportXmlSerializer)          class. To illustrate how a report is serialized and deserialized, let us start with a simple dynamically generated class report definition:
         
-
 
 {{source=CodeSnippets\CS\API\Telerik\Reporting\XmlSerializationSnippets.cs region=ReportDefinitionSnippet}}
 ````C#
@@ -72,7 +63,6 @@ __ serialization/deserialization of report definitions is achieved through the d
 	            dataSource.SelectCommand = "select ProductNumber, Name from Production.Product";
 	            report.DataSource = dataSource;
 ````
-
 
 
 
@@ -114,11 +104,9 @@ __ serialization/deserialization of report definitions is achieved through the d
 
 
 
-
 ## Serialize to XML
 
 The following sample code snipped demonstrates how to serialize the above report definition to an XML file:
-
 
 {{source=CodeSnippets\CS\API\Telerik\Reporting\XmlSerializationSnippets.cs region=XmlWriterSerializationSnippet}}
 ````C#
@@ -133,7 +121,6 @@ The following sample code snipped demonstrates how to serialize the above report
 
 
 
-
 {{source=CodeSnippets\VB\API\Telerik\Reporting\XmlSerializationSnippets.vb region=XmlWriterSerializationSnippet}}
 ````VB
 	        Using xmlWriter As System.Xml.XmlWriter = System.Xml.XmlWriter.Create("SerializedReport.xml")
@@ -145,11 +132,9 @@ The following sample code snipped demonstrates how to serialize the above report
 
 
 
-
 ## Deserialize from XML
 
 The corresponding code that can be used to deserialize the report definition from the file is shown below:
-
 
 {{source=CodeSnippets\CS\API\Telerik\Reporting\XmlSerializationSnippets.cs region=XmlReaderDeserializationSnippet}}
 ````C#
@@ -168,7 +153,6 @@ The corresponding code that can be used to deserialize the report definition fro
 
 
 
-
 {{source=CodeSnippets\VB\API\Telerik\Reporting\XmlSerializationSnippets.vb region=XmlReaderDeserializationSnippet}}
 ````VB
 	        Dim settings As New XmlReaderSettings()
@@ -183,14 +167,11 @@ The corresponding code that can be used to deserialize the report definition fro
 
 
 
-
 ## XML Report Definition
 
 and the resulting XML file would look like this:
 
-
 {{source=CodeSnippets\CS\Report1.xml}}
-
 
 
 

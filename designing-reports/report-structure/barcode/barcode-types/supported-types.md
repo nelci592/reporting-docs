@@ -14,12 +14,10 @@ position: 0
 
 There are two types of barcodes according to their dimensions:
 
-
 ## Linear (1D) barcodes
 
 The linear (one-dimensional) barcodes are made up of lines and spaces of various widths that create specific patterns. The Barcode item currently supports the following one-dimensional barcode types:
         
-
 
 
 
@@ -58,7 +56,6 @@ The linear (one-dimensional) barcodes are made up of lines and spaces of various
 The matrix code is a two-dimensional way for representing information. It can also be referred to as a 2D barcode or simply a 2D code.
           It is similar to the linear (one-dimensional) barcode, but can represent more data per unit area. The Barcode item currently supports the following 2D barcodes:
         
-
 
 
 | Barcode | Description |

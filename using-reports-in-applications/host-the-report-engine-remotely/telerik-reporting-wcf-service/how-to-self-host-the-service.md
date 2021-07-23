@@ -14,23 +14,17 @@ position: 2
 
 The advantages of a Self-Hosted service:
 
-
 * Easy to use: With only a few lines of code you have your service running.
-
 
 * Easy to debug: Debugging WCF services that are hosted in a self-hosted 
 			environment provides a familiar way of debugging, without having to attach to 
 			separate applications that activate your service.
 
-
 * Easy to deploy.
-
 
 * Flexible: You can easily control the lifetime of your services.
 
-
 * Supports all bindings and transport.
-
 
 # See Also
 

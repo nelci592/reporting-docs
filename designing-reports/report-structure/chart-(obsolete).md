@@ -20,23 +20,18 @@ position: 16
 The Chart report item is used to display a chart on a report. It is business-oriented item with a
           focus on development productivity and ease-of-use. It allows you to rapidly build appealing charts
           that represent data in a people-friendly manner.
-        
-  
+          
   ![](images/Chart.png)
 
 
 
 You can bind the Chart item:
 
-
 * From the Report Designer by setting its DataSource property
-
 
 * By using its NeedDataSource event
 
-
 When you are in the event, you should work with the processing chart item i.e.:
-
 
 	
 ````C#
@@ -47,7 +42,6 @@ When you are in the event, you should work with the processing chart item i.e.:
 			}
 			
 ````
-
 
 
 
@@ -62,65 +56,41 @@ When you are in the event, you should work with the processing chart item i.e.:
 
 
 
-
 The formatting of the Chart report item is managed by a large number of properties.
           To customize the Chart report item, right-click the chart and select Properties from
           the context menu to use the Chart Wizard.
         
 
-
 The Chart item offers numerous features including:
 
-
-* [17 customizable chart types
-](7377B896-2B2A-4EB6-BF58-E82E4D5BCF39),
+* [17 customizable chart types](7377B896-2B2A-4EB6-BF58-E82E4D5BCF39),
             available in both horizontal and vertical direction .
           
 
-
 * Automatic Text-wrapping- text elements in the chart can be wrapped automatically.
 
-
-* [Databinding
-](48673F68-F7A8-4742-B480-ED7F8352E83D) - Chart can be databound to various datasources
+* [Databinding](48673F68-F7A8-4742-B480-ED7F8352E83D) - Chart can be databound to various datasources
           
 
-
-* [Chart wizard
-](486151D3-3162-4815-ACFA-1AF441A9C520) for quick and easy configuration.
+* [Chart wizard](486151D3-3162-4815-ACFA-1AF441A9C520) for quick and easy configuration.
           
 
-
-* [Second Y axis
-](86F9874F-2930-4E1D-A6C6-06ABB26FB4DA) - Chart provides a second scale of measurements.
+* [Second Y axis](86F9874F-2930-4E1D-A6C6-06ABB26FB4DA) - Chart provides a second scale of measurements.
           
 
-
-* [Empty Values
-](82EC620B-D42B-46FB-805B-AC2C85232652) - allow approximating missing values between data points.
+* [Empty Values](82EC620B-D42B-46FB-805B-AC2C85232652) - allow approximating missing values between data points.
           
 
-
-* [Scale Breaks
-](EB54443C-0410-45F5-80CA-71DF8039CD80) make graphs with large amplitude easier to read.
+* [Scale Breaks](EB54443C-0410-45F5-80CA-71DF8039CD80) make graphs with large amplitude easier to read.
           
 
-
-* [Marked zones
-](B4ED9BAA-EEB3-4142-B9BA-70CA375441FC) - Chart allows adding ranges to highlight certain areas of the chart.
+* [Marked zones](B4ED9BAA-EEB3-4142-B9BA-70CA375441FC) - Chart allows adding ranges to highlight certain areas of the chart.
           
 
-
-* [Styling
-](2CFC6F7D-0B66-4C30-B744-65B05C2A78C7) - Chart provides fine-grained control over its elements appearance.
-          
-[](http://www.telerik.com/help/aspnet/chart/introduction.html
-)
+* [Styling](2CFC6F7D-0B66-4C30-B744-65B05C2A78C7) - Chart provides fine-grained control over its elements appearance.
+          [](http://www.telerik.com/help/aspnet/chart/introduction.html)
 
 # See Also
 
 
- * [Telerik Charting Documentation
-](http://www.telerik.com/help/aspnet/chart
-)[Chart](/reporting/api/Telerik.Reporting.Chart)
-
+ * [Telerik Charting Documentation](http://www.telerik.com/help/aspnet/chart)[Chart](/reporting/api/Telerik.Reporting.Chart)

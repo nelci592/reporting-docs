@@ -14,69 +14,40 @@ position: 5
 
 This topic explains how to use custom parameters UI to update the report parameters instead of using the HTML5 Web Forms report viewer's default
         implementation of the parameters area. The report and all required parameters for it are packed in a ReportSource object.
-        To update the report source the 
-[ReportViewer.reportSource(rs)]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/methods/reportsource(rs)%})
- method is used.
+        To update the report source the [ReportViewer.reportSource(rs)]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/methods/reportsource(rs)%}) method is used.
       
 
-
-To give an example we will use the Invoice report from our examples and will update its 
-__OrderNumber
-__ parameter
+To give an example we will use the Invoice report from our examples and will update its __OrderNumber__ parameter
         from a custom parameter UI.
-      
-Pass values to report parameters
-
+      Pass values to report parameters
 
 >tip All path references in the described steps should be adapted according            to your project setup. For more information please refer to the MSDN article            [ASP.NET Web Project Paths](http://msdn.microsoft.com/en-us/library/ms178116.aspx)
 
 
+1. 
+
 Create a new ASP.NET Web Forms Empty Project.
-                  We are going to use one of our demo Visual Studio reports. For this purpose add a new Telrik Report Library project to the solution from the VS item templates, name it 
-*Charp|VB.ReportLibrary
-*, add the existing 
-__Invoice.cs
-__ report and its subreport 
-__SalesOrderDetails.cs
-__ from 
-*                    [TelerikReporting_InstallDir]\Examples\CSharp|VB\ReportLibrary\Invoice
-* folder and built the 
-*Charp|VB.ReportLibrary
-* project. Add reference to the ReportLibrary project in the Web Forms project.
+                  We are going to use one of our demo Visual Studio reports. For this purpose add a new Telrik Report Library project to the solution from the VS item templates, name it *Charp|VB.ReportLibrary*, add the existing __Invoice.cs__ report and its subreport __SalesOrderDetails.cs__ from *                    [TelerikReporting_InstallDir]\Examples\CSharp|VB\ReportLibrary\Invoice* folder and built the *Charp|VB.ReportLibrary* project. Add reference to the ReportLibrary project in the Web Forms project.
                 
 
+1. 
 
 Then use the 
-                  
-[HTML5 Web Forms Report Viewer Item Template]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-web-forms-report-viewer/how-to-use-html5-asp.net-web-forms-report-viewer-with-rest-service%})
-
+                  [HTML5 Web Forms Report Viewer Item Template]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-web-forms-report-viewer/how-to-use-html5-asp.net-web-forms-report-viewer-with-rest-service%})
 
 Name the web page with the viewer
-                  
-__InvoiceParameters.aspx
-__. On 
-__'Configure report source'
-__ step 
-                  select 
-__'Existing report definition'
-__, then select 
-                  
-__'Select type report definition created in Visual Studio'
-__ and browse 
-                  
-*Invoice
-* report class.
+                  __InvoiceParameters.aspx__. On __'Configure report source'__ step 
+                  select __'Existing report definition'__, then select 
+                  __'Select type report definition created in Visual Studio'__ and browse 
+                  *Invoice* report class.
                 
-
 
 Finish the wizard.
 
+1. 
 
-Add a connectiongStrings entry with name 
-__Telerik.Reporting.Examples.CSharp.Properties.Settings.TelerikConnectionString
-__                  in the project's web.config file. For example:
+Add a connectiongStrings entry with name __Telerik.Reporting.Examples.CSharp.Properties.Settings.TelerikConnectionString__                  in the project's web.config file. For example:
                 
-
 
 	
 ````xml
@@ -90,16 +61,13 @@ __                  in the project's web.config file. For example:
 
 
 
-
-At this point you have a running Web Forms application that displays a report in the HTML5 Web Forms Viewer at 
-__[host]/InvoiceParameters.aspx
-__                  without any modifications.
+At this point you have a running Web Forms application that displays a report in the HTML5 Web Forms Viewer at __[host]/InvoiceParameters.aspx__                  without any modifications.
                 
 
+1. 
 
 Add code for updating ReportSource Parameters collection in the code behind:
                 
-
 
 	
 ````C#
@@ -115,7 +83,6 @@ protected void Page_Load(object sender, EventArgs e)
 
 
 
-
 	
 ````vb.net
 Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
@@ -128,17 +95,18 @@ End Sub
 
 
 
+1. 
 
 Add the report viewer stylesheet:
-#_HTML_
 
 	
-````html
+````HTML
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    ```<title>```Telerik HTML5 Web Forms Report Viewer Form</title>
-    ```<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">```</script>
+    <title>Telerik HTML5 Web Forms Report Viewer Form</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
     <style>
         #reportViewer1 {
             position: absolute;
@@ -150,24 +118,25 @@ Add the report viewer stylesheet:
             font-family: Verdana, Arial;
         }
     </style>
+
 </head>
         
 ````
 
 
 
+1. 
 
 Add the custom parameter UI - a dropdown selector with a few values:
-#_HTML_
 
 	
-````html
+````HTML
     <div id="invoiceIdSelector" runat="server">
-            ```<label for="invoiceId">```Invoices</label>
+            <label for="invoiceId">Invoices</label>
             <select id="invoiceId" title="Select the Invoice ID" runat="server">
-                ```<option value="SO51081">```SO51081</option>
-                ```<option value="SO51082" selected="selected">```SO51082</option>
-                ```<option value="SO51083">```SO51083</option>
+                <option value="SO51081">SO51081</option>
+                <option value="SO51082" selected="selected">SO51082</option>
+                <option value="SO51083">SO51083</option>
             </select>
         </div>
         
@@ -175,13 +144,11 @@ Add the custom parameter UI - a dropdown selector with a few values:
 
 
 
+1. 
 
 Now initialize the report viewer. We will use the minimal set of all
-                  
-[possible options]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/report-viewer-initialization%})
-.
+                  [possible options]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/report-viewer-initialization%}).
                 
-
 
 	
 ````js
@@ -199,13 +166,11 @@ Now initialize the report viewer. We will use the minimal set of all
 
 
 
+1. 
 
-Add code that updates the ReportSource parameters collection with the selected 
-__Invoice Id
-__ from
+Add code that updates the ReportSource parameters collection with the selected __Invoice Id__ from
                   the dropdown box:
                 
-
 
 	
 ````js
@@ -224,20 +189,23 @@ __ from
 
 
 
+1. 
 
 The HTML page that we have just created should looks like this:
-#_HTML_
 
 	
-````html
+````HTML
 <%@ Page Language="C#" AutoEventWireup="true" CodeBehind="InvoiceParameters.aspx.cs" Inherits="WebFormsDocumentation.InvoiceParameters" %>
 //for VB <%@ Page Language="vb" AutoEventWireup="false" CodeBehind="InvoiceParameters.aspx.vb" Inherits="WebFormsDocVB._InvoiceParameters" %>
+
 <%@ Register TagPrefix="telerik" Assembly="Telerik.ReportViewer.Html5.WebForms" Namespace="Telerik.ReportViewer.Html5.WebForms" %>
+
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    ```<title>```Telerik HTML5 Web Forms Report Viewer Form</title>
-    ```<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">```</script>
+    <title>Telerik HTML5 Web Forms Report Viewer Form</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
     <style>
         #reportViewer1 {
             position: absolute;
@@ -249,15 +217,16 @@ The HTML page that we have just created should looks like this:
             font-family: Verdana, Arial;
         }
     </style>
+
 </head>
 <body>
     <form runat="server">
         <div id="invoiceIdSelector" runat="server">
-            ```<label for="invoiceId">```Invoices</label>
+            <label for="invoiceId">Invoices</label>
             <select id="invoiceId" title="Select the Invoice ID" runat="server">
-                ```<option value="SO51081">```SO51081</option>
-                ```<option value="SO51082" selected="selected">```SO51082</option>
-                ```<option value="SO51083">```SO51083</option>
+                <option value="SO51081">SO51081</option>
+                <option value="SO51082" selected="selected">SO51082</option>
+                <option value="SO51083">SO51083</option>
             </select>
         </div>
         <telerik:ReportViewer
@@ -283,17 +252,14 @@ The HTML page that we have just created should looks like this:
             });
     </script>
 </body>
-```</html>```				
+</html>				
 ````
 
 
 
+1. 
 
-Run the project and verify that the 
-__Invoice Id
-__ selection really updates the report.
+Run the project and verify that the __Invoice Id__ selection really updates the report.
                 
 
-
  * [How To: Create a Custom Parameter Editor]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-web-forms-report-viewer/customizing/how-to-create-a-custom-parameter-editor%})
-

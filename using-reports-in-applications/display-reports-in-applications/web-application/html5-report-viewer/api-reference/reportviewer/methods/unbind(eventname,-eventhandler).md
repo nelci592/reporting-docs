@@ -17,7 +17,6 @@ position: 16
 Unbinds event handlers from the specified event.
         
 
-
 	
 ````js
             function onPageReady(e) {
@@ -31,6 +30,5 @@ Unbinds event handlers from the specified event.
             reportViewer.unbind(telerikReportViewer.Events.PAGE_READY, onPageReady);
           
 ````
-
 
 

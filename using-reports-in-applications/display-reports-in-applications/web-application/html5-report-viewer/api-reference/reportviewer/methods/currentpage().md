@@ -17,10 +17,8 @@ position: 6
 Gets the viewer’s current page that is displayed.
         
 
-
 Returns: integer:
         
-
 
 	
 ````js
@@ -28,6 +26,5 @@ Returns: integer:
             var currentPage = reportViewer.currentPage();
           
 ````
-
 
 

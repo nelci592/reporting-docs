@@ -16,9 +16,7 @@ position: 11
 
 Gets the current report source - report and parameters.
 
-
 Returns: an object with properties:
-
 
 
 | Property | Description |
@@ -35,6 +33,5 @@ Returns: an object with properties:
           var rs = reportViewer.reportSource();
           
 ````
-
 
 

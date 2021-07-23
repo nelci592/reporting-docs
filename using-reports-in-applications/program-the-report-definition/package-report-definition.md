@@ -12,21 +12,15 @@ position: 6
 
 
 
-The 
-[ReportPackager](/reporting/api/Telerik.Reporting.ReportPackager)
-        serializes the report definition in XML and with a zip compression packages the definition and its resources.
+The [ReportPackager](/reporting/api/Telerik.Reporting.ReportPackager)        serializes the report definition in XML and with a zip compression packages the definition and its resources.
         The resources are in their native format and archived for better performance.
         This way the definition is faster to handle and more compact.
-        This is the default report document format for the 
-[Overview]({%slug telerikreporting/designing-reports/report-designer-tools/overview%})
-.
+        This is the default report document format for the [Overview]({%slug telerikreporting/designing-reports/report-designer-tools/overview%}).
       
-
 
 ## Packaging .TRDX report definition
 
 The following sample code snipped demonstrates how to package a predefined .TRDX (XML) report definition:
-
 
 {{source=CodeSnippets\CS\API\Telerik\Reporting\ReportPackagerSnippets.cs region=CreatePackageFromXmlReportSnippet}}
 ````C#
@@ -37,7 +31,6 @@ The following sample code snipped demonstrates how to package a predefined .TRDX
 	                reportPackager.Package(xmlString, targetStream);
 	            }
 ````
-
 
 
 
@@ -52,11 +45,9 @@ The following sample code snipped demonstrates how to package a predefined .TRDX
 
 
 
-
 ## Packaging CLR report definition
 
 The following sample code snipped demonstrates how to package a predefined CLR report definition:
-
 
 {{source=CodeSnippets\CS\API\Telerik\Reporting\ReportPackagerSnippets.cs region=CreatePackageFromClrReportSnippet}}
 ````C#
@@ -67,7 +58,6 @@ The following sample code snipped demonstrates how to package a predefined CLR r
 	                reportPackager.Package(report, targetStream);
 	            }
 ````
-
 
 
 
@@ -82,11 +72,9 @@ The following sample code snipped demonstrates how to package a predefined CLR r
 
 
 
-
 ## Unpackaging
 
 The following sample code snipped demonstrates how to unpackage a predefined .TRDP report definition:
-
 
 {{source=CodeSnippets\CS\API\Telerik\Reporting\ReportPackagerSnippets.cs region=UnpackageTrdpSnippet}}
 ````C#
@@ -96,7 +84,6 @@ The following sample code snipped demonstrates how to unpackage a predefined .TR
 	                var report = (Report)reportPackager.UnpackageDocument(sourceStream);
 	            }
 ````
-
 
 
 
@@ -110,9 +97,7 @@ The following sample code snipped demonstrates how to unpackage a predefined .TR
 
 
 
-
 # See Also
 
 
  * [Overview]({%slug telerikreporting/designing-reports/report-designer-tools/overview%})
-

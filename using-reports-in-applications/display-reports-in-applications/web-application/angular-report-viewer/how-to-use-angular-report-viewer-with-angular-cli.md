@@ -70,7 +70,7 @@ npm install jquery
 
 
 
-Add a reference to jQuery in the scripts array of the .angular-cli.json (as of Angular 6 the file is renamed to angular.json):#_JSON_
+Add a reference to jQuery in the scripts array of the .angular-cli.json (as of Angular 6 the file is renamed to angular.json):
 
 	
 ````js
@@ -101,7 +101,7 @@ npm install @progress/telerik-angular-report-viewer
 
 
 Once installed, import the TelerikReportingModule in [your application root module](https://angular.io/docs/ts/latest/guide/ngmodule.html#!#angular-modularity):
-                #_TypeScript_
+                
 
 	
 ````js
@@ -113,7 +113,7 @@ imports: [TelerikReportingModule]
 
 
 
-Add the desired report viewer container style using a property of the AppComponent class:#_TypeScript_
+Add the desired report viewer container style using a property of the AppComponent class:
 
 	
 ````js
@@ -130,10 +130,10 @@ export class AppComponent {
 
 
 
-Use the report viewer selector in the AppComponent template:#_HTML_
+Use the report viewer selector in the AppComponent template:
 
 	
-````
+````HTML
 <tr-viewer 
     [containerStyle]="viewerContainerStyle"
     [serviceUrl]="'http://myrestserviceurl/api/reports'"
@@ -156,7 +156,7 @@ For all available report viewer options refer to [Options]({%slug telerikreporti
 Style the viewer using the desired Kendo UI theme (еither using [Less-Based Themes](http://docs.telerik.com/kendo-ui/styles-and-layout/appearance-styling) or [Sass-Based Themes](http://docs.telerik.com/kendo-ui/styles-and-layout/sass-themes)):
                 
 
-Add references to the Less-based CSS files in the ```<head>``` element of index.html:#_HTML_
+Add references to the Less-based CSS files in the ```<head>``` element of index.html:
 
 	
 ````html
@@ -171,7 +171,7 @@ Add references to the Less-based CSS files in the ```<head>``` element of index.
 
 If you use the __styleUrls__ attribute to reference the CSS, it is required to set
                   the view encapsulation to __None__:
-                #_TypeScript_
+                
 
 	
 ````js

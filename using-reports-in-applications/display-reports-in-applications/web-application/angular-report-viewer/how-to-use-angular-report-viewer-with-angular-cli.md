@@ -12,53 +12,53 @@ position: 1
 
 
 
+
 This tutorial demonstrates how to add the Angular Report Viewer component to a
         new Angular application. The app's settings are similar to the settings of the local Angular demo project
-        installed by default under 
-__[TelerikReporting_InstallDir]\Examples\Angular\CLI
-__.
+        installed by default under __
+[TelerikReporting_InstallDir]\Examples\Angular\CLI__
+.
       
 
-
 ## Prerequisites
+
 
 The following list describes the prerequisites for this tutorial:
         
 
-
-* Review the Angular Report Viewer 
-[Requirements
-](e05255e3-dbe4-41b1-8d08-6de0fed3868c#Requirements).
+* 
+Review the Angular Report Viewer [
+Requirements](e05255e3-dbe4-41b1-8d08-6de0fed3868c#Requirements)
+.
             
 
-
-* [Angular CLI
-](https://cli.angular.io/
-).
+* [
+Angular CLI](
+https://cli.angular.io/)
+.
             
 
-
-* A running application that hosts a Reporting REST service at address /api/reports. For more information, see
+* 
+A running application that hosts a Reporting REST service at address /api/reports. For more information, see
               
 [Telerik Reporting REST Services]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview%})
 .
             
 
-
-* Copy of the "Product Catalog.trdp" report file from 
-__[TelerikReporting_InstallDir]\Report Designer\Examples
-__              placed in the folder used by the 
+* 
+Copy of the "Product Catalog.trdp" report file from __
+[TelerikReporting_InstallDir]\Report Designer\Examples__
+              placed in the folder used by the 
 [ReportFileResolver](/reporting/api/Telerik.Reporting.Services.WebApi.ReportFileResolver)
               in the Reporting REST service implementation.
             
 
-
-* Entry with the default connection string used by Telerik Reporting sample reports in the 
-__web.config
-__ file
+* 
+Entry with the default connection string used by Telerik Reporting sample reports in the __
+web.config__
+ file
               of the project hosting the Reporting REST service:
             
-
 
 	
 ````xml
@@ -72,26 +72,25 @@ __ file
 
 
 
-
 ## Using Angular Report Viewer in Angular application
 
 >tip All paths and url links in the described steps must be adapted according            to your project setup.          
+
 Steps:
 
 
-Create new Angular application using the 
-[Angular CLI
-](https://cli.angular.io/
-) tutorial.
+Create new Angular application using the [
+Angular CLI](
+https://cli.angular.io/)
+ tutorial.
                 
 
 
-Install 
-[jQuery
-](https://www.npmjs.com/package/jquery
-) by using the following command:
+Install [
+jQuery](
+https://www.npmjs.com/package/jquery)
+ by using the following command:
                 
-
 
 	
 ````powershell
@@ -102,8 +101,7 @@ npm install jquery
 
 
 
-Add a reference to jQuery in the scripts array of the .angular-cli.json (as of Angular 6 the file is renamed to angular.json):
-#_JSON_
+Add a reference to jQuery in the scripts array of the .angular-cli.json (as of Angular 6 the file is renamed to angular.json):#_JSON_
 
 	
 ````js
@@ -117,13 +115,11 @@ Add a reference to jQuery in the scripts array of the .angular-cli.json (as of A
 Install the Telerik Angular Report Viewer NPM package by running:
                 
 
-
 	
 ````powershell
 npm install @progress/telerik-angular-report-viewer
 				
 ````
-
 
 
 
@@ -136,12 +132,12 @@ npm install @progress/telerik-angular-report-viewer
 
 
 
-Once installed, import the TelerikReportingModule in 
-[your application root module
-](https://angular.io/docs/ts/latest/guide/ngmodule.html#!#angular-modularity
-):
-                
-#_TypeScript_
+
+Once installed, import the TelerikReportingModule in [
+your application root module](
+https://angular.io/docs/ts/latest/guide/ngmodule.html#!#angular-modularity)
+:
+                #_TypeScript_
 
 	
 ````js
@@ -154,8 +150,7 @@ imports: [TelerikReportingModule]
 
 
 
-Add the desired report viewer container style using a property of the AppComponent class:
-#_TypeScript_
+Add the desired report viewer container style using a property of the AppComponent class:#_TypeScript_
 
 	
 ````js
@@ -173,8 +168,7 @@ export class AppComponent {
 
 
 
-Use the report viewer selector in the AppComponent template:
-#_HTML_
+Use the report viewer selector in the AppComponent template:#_HTML_
 
 	
 ````
@@ -201,39 +195,37 @@ For all available report viewer options refer to
                 
 
 
-Style the viewer using the desired Kendo UI theme (еither using 
-[Less-Based Themes
-](http://docs.telerik.com/kendo-ui/styles-and-layout/appearance-styling
-) or 
-[Sass-Based Themes
-](http://docs.telerik.com/kendo-ui/styles-and-layout/sass-themes
-)):
+Style the viewer using the desired Kendo UI theme (еither using [
+Less-Based Themes](
+http://docs.telerik.com/kendo-ui/styles-and-layout/appearance-styling)
+ or [
+Sass-Based Themes](
+http://docs.telerik.com/kendo-ui/styles-and-layout/sass-themes)
+):
                 
 
 
-Add references to the Less-based CSS files in the ```<head>``` element of index.html:
-#_HTML_
+Add references to the Less-based CSS files in the ```<head>``` element of index.html:#_HTML_
 
 	
 ````html
-```<!-- The required Less-based styles -->```                  
+<!-- The required Less-based styles -->                  
 <link href="https://kendo.cdn.telerik.com/
 ````
-
 
 
 
 >tip To get the Sass-based Kendo UI themes, you can use either the pre-build CSS files or the NPM packages ([Getting the Sass-Based Themes](http://docs.telerik.com/kendo-ui/styles-and-layout/sass-themes#getting-the-themes)).                  
 
 
-If you use the 
-__styleUrls
-__ attribute to reference the CSS, it is required to set
-                  the view encapsulation to 
-__None
-__:
-                
-#_TypeScript_
+
+If you use the __
+styleUrls__
+ attribute to reference the CSS, it is required to set
+                  the view encapsulation to __
+None__
+:
+                #_TypeScript_
 
 	
 ````js
@@ -249,7 +241,6 @@ import { Component, ViewEncapsulation } from '@angular/core';
 
 Run the application:
 
-
 	
 ````powershell
 ng serve
@@ -258,10 +249,9 @@ ng serve
 
 
 
-
 # See Also
 
 
- * [Make sure the service address is correct and enable CORS
-](https://docs.telerik.com/reporting/knowledge-base/cannot-access-the-reporting-rest-service
-)
+ * [
+Make sure the service address is correct and enable CORS](
+https://docs.telerik.com/reporting/knowledge-base/cannot-access-the-reporting-rest-service)

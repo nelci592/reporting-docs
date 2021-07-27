@@ -41,6 +41,7 @@ The following list describes the prerequisites for this tutorial:
 
 	
 ````xml
+
 <connectionStrings>
 	 <add name="Telerik.Reporting.Examples.CSharp.Properties.Settings.TelerikConnectionString"
 	            connectionString="Data Source=(local);Initial Catalog=AdventureWorks;Integrated Security=SSPI"
@@ -68,6 +69,7 @@ Install [jQuery](https://www.npmjs.com/package/jquery) by using the following co
 
 	
 ````powershell
+
 npm install jquery
 				
 ````
@@ -80,6 +82,7 @@ Add a reference to jQuery in the scripts array of the .angular-cli.json (as of A
 
 	
 ````JSON
+
 "scripts": [ "../node_modules/jquery/dist/jquery.js" ]
 				
 ````
@@ -93,6 +96,7 @@ Install the Telerik Angular Report Viewer NPM package by running:
 
 	
 ````powershell
+
 npm install @progress/telerik-angular-report-viewer
 				
 ````
@@ -102,7 +106,8 @@ npm install @progress/telerik-angular-report-viewer
 >tip If you receive a  *403 Forbidden Error* , you need to register and login at                    [npmjs.com](https://www.npmjs.com/)before performing this step.                  
 
 	
-````powershellnpm login --registry=https://registry.npmjs.org --scope=@progress 				
+````powershell
+npm login --registry=https://registry.npmjs.org --scope=@progress 				
 ````
 
 
@@ -115,6 +120,7 @@ Once installed, import the TelerikReportingModule in [your application root modu
 
 	
 ````TypeScript
+
 import { TelerikReportingModule } from '@progress/telerik-angular-report-viewer';
 ...
 imports: [TelerikReportingModule]
@@ -129,6 +135,7 @@ Add the desired report viewer container style using a property of the AppCompone
 
 	
 ````TypeScript
+
 export class AppComponent {
   viewerContainerStyle = {
     position: 'relative',
@@ -148,6 +155,7 @@ Use the report viewer selector in the AppComponent template:
 
 	
 ````HTML
+
 <tr-viewer 
     [containerStyle]="viewerContainerStyle"
     [serviceUrl]="'http://myrestserviceurl/api/reports'"
@@ -176,6 +184,7 @@ Add references to the Less-based CSS files in the ```<head>``` element of index.
 
 	
 ````HTML
+
 <!-- The required Less-based styles -->                  
 <link href="https://kendo.cdn.telerik.com/
 ````
@@ -191,6 +200,7 @@ If you use the __styleUrls__ attribute to reference the CSS, it is required to s
 
 	
 ````TypeScript
+
 import { Component, ViewEncapsulation } from '@angular/core';
  
 @Component({
@@ -206,6 +216,7 @@ Run the application:
 
 	
 ````powershell
+
 ng serve
 				
 ````

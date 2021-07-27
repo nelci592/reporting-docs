@@ -41,6 +41,7 @@ The following walk through demonstrates how to create a Master-Detail report usi
 
 	
 ````SQL
+
 				SELECT 
 					P.Name,ProductID,ProductNumber,PC.ProductCategoryID
 				FROM 
@@ -111,6 +112,7 @@ The master report will contain only a simple listing of product categories.
 
 	
 ````SQL
+
 			SELECT ProductCategoryID,Name FROM Production.ProductCategory
 			
 ````

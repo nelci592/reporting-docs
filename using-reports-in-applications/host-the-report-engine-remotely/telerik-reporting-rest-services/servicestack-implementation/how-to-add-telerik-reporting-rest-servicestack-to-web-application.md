@@ -10,10 +10,9 @@ position: 2
 
 # How to Add Telerik Reporting REST ServiceStack to Web Application
 
-rg/packages/ServiceStack/3.9.70
+ackages/ServiceStack/3.9.70
                 )              NuGet package.
             
-
 1. 
 
 Add references to the following Telerik Reporting assemblies (required):
@@ -21,7 +20,6 @@ Add references to the following Telerik Reporting assemblies (required):
 * Telerik.Reporting.dll
 
 * Telerik.Reporting.Services.ServiceStack.dll
-
 1. 
 
 Add references to the following Telerik Reporting assemblies (optional):
@@ -42,7 +40,6 @@ Add references to the following Telerik Reporting assemblies (optional):
 * Telerik.Reporting.Adomd.dll - required if you use [CubeDataSource]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/cubedatasource-component/overview%}) components in reports.
                   The assembly has dependencies on *Microsoft.AnalysisServices.AdomdClient.dll* v.10.0.0.0 or [above with proper binding redirects]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/cubedatasource-component/configuring-your-project-for-using-microsoft-analysis-services%});
                 
-
 1. 
 
 Create a new class which derives from
@@ -162,7 +159,6 @@ Then add the __restReportService__ configuration element containing the service 
 
 For more information see [restReportService Element]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/restreportservice-element%}).
             
-
 1. 
 
 Add a new or use the existing __Global Application Class__ (global.asax) to create and initialize
@@ -188,7 +184,6 @@ Add a new or use the existing __Global Application Class__ (global.asax) to crea
 ````
 
 
-
 1. 
 
 Update the configuration file (*web.config*) to include the
@@ -197,6 +192,7 @@ Update the configuration file (*web.config*) to include the
 
 	
 ````XML
+
 <configuration>
  <location path="api">
     <system.web>
@@ -216,7 +212,6 @@ Update the configuration file (*web.config*) to include the
 </configuration>
 
 ````
-
 
 
 1. 

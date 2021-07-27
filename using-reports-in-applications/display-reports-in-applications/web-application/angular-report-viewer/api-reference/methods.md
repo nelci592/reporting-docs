@@ -19,6 +19,7 @@ Each method can be called using a reference to the report viewer component.
 
 	
 ````TypeScript
+
 <tr-viewer #viewer1
 
 ...

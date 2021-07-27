@@ -21,6 +21,7 @@ To attach a client event handler you have to set the appropriate __ClientEvents_
 
 	
 ````js
+
           <script>
             function onRenderingBegin() {
                 console.log("rendering begin!");
@@ -36,6 +37,7 @@ To attach a client event handler you have to set the appropriate __ClientEvents_
 
 	
 ````xml
+
 @(Html.TelerikReporting().ReportViewer()
         // each deferred script will be rendered at the place of TelerikReporting().DeferredScripts().
         //.Deferred()

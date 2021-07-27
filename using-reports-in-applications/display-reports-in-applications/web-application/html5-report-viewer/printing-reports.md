@@ -66,6 +66,7 @@ You can also implement a custom logic for dynamically specifying the print mode.
 
 	
 ````js
+
           // Force the viewer to always use the PDF plug-in for printing in Chrome browser.
           // In the other browsers the report document will be downloaded as a PDF file:
            var printMode = /(chrome)/.test(navigator.userAgent.toLowerCase()) 

@@ -40,6 +40,7 @@ position: 1
 
 	
 ````c#
+
 app.UseStaticFiles();
             
 ````
@@ -52,6 +53,7 @@ app.UseStaticFiles();
 
 	
 ````CSHTML
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
     @* For Reports service hosted in the same project: *@
@@ -72,6 +74,7 @@ app.UseStaticFiles();
 
 	
 ````CSHTML
+
     <link rel="stylesheet" href="https://unpkg.com/@progress/kendo-theme-default@latest/dist/all.css" />
               
 ````
@@ -82,6 +85,7 @@ Alternatively you can use the
 
 	
 ````CSHTML
+
     <link href="https://kendo.cdn.telerik.com/
 ````
 
@@ -93,6 +97,7 @@ Alternatively you can use the
 
 	
 ````CSHTML
+
     <script src="_content/Telerik.ReportViewer.Blazor/interop.js" defer></script>
 
     @* Or this one if using the Telerik.ReportViewer.Blazor.Trial package *@
@@ -109,6 +114,7 @@ Alternatively you can use the
 
 	
 ````razor
+
 @page "/"
 @using Telerik.ReportViewer.Blazor
 
@@ -141,6 +147,7 @@ Alternatively you can use the
 
 	
 ````razor
+
 @page "/"
 @using Telerik.ReportViewer.Blazor
 

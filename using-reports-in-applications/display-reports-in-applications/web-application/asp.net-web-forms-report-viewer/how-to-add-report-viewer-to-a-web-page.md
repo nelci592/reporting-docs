@@ -31,6 +31,7 @@ In the __```<system.web>```\<httpHandlers>__ section:
 
 	
 ````XML
+
 <system.web>
 ....
 	<httpHandlers>
@@ -45,6 +46,7 @@ In the __```<system.webServer>```\<handlers>__ section:
 
 	
 ````XML
+
 <system.webServer>
 		<handlers>
 			<add name="Telerik.ReportViewer.axd_*" path="Telerik.ReportViewer.axd" verb="*" type="Telerik.ReportViewer.WebForms.HttpHandler, Telerik.ReportViewer.WebForms, Version=x.x.x.x, Culture=neutral, PublicKeyToken=a9d7983dfcc261be" preCondition="integratedMode"/>

@@ -70,7 +70,8 @@ If you don't use NuGet packages, along with the above assemblies, you need to ad
             
 
 	
-````c#services.AddControllers().AddNewtonsoftJson();
+````c#
+services.AddControllers().AddNewtonsoftJson();
 ````
 
 
@@ -82,6 +83,7 @@ If you don't use NuGet packages, along with the above assemblies, you need to ad
 
 	
 ````c#
+
 app.UseEndpoints(endpoints =>
 {
     endpoints.MapControllers();
@@ -97,6 +99,7 @@ app.UseEndpoints(endpoints =>
 
 	
 ````c#
+
 app.UseStaticFiles();
             
 ````
@@ -115,7 +118,8 @@ The .NET Core 3.1 and .NET 5 applications use a
         
 
 	
-````C#ReportingEngineConfiguration = sp.GetService<IConfiguration>()
+````C#
+ReportingEngineConfiguration = sp.GetService<IConfiguration>()
           
 ````
 
@@ -137,7 +141,8 @@ To activate JSON file configuration with a different name, for example, __report
             
 
 	
-````C#          
+````C#
+          
         static IConfiguration ResolveSpecificReportingConfiguration(IWebHostEnvironment environment)
         {
             var reportingConfigFileName = System.IO.Path.Combine(environment.ContentRootPath, "reportingAppSettings.json");
@@ -155,6 +160,7 @@ To activate JSON file configuration with a different name, for example, __report
 
 	
 ````c#
+
          public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers().AddNewtonsoftJson();
@@ -204,6 +210,7 @@ The REST service works as a backend and is responsible for storage operations li
 
 	
 ````c#
+
 namespace CSharp.AspNetCoreDemo.Controllers
 {
     using Microsoft.AspNetCore.Mvc;
@@ -232,6 +239,7 @@ namespace CSharp.AspNetCoreDemo.Controllers
 
 	
 ````js
+
               {"decimalSeparator":".","listSeparator":","}
               
 ````
@@ -246,6 +254,7 @@ namespace CSharp.AspNetCoreDemo.Controllers
 
 	
 ````c#
+
               Path.Combine(sp.GetService<IWebHostEnvironment>().WebRootPath,  "Reports")
               
 ````
@@ -264,6 +273,7 @@ and corresponds to the folder *Reports* in the
 
 	
 ````HTML
+
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>

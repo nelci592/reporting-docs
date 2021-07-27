@@ -29,6 +29,7 @@ To attach an event handler to the viewer, specify the name of the event handler 
 
 	
 ````Razor
+
 <ReportViewer
     ...
     ClientEvents="@(new ClientEventsOptions() {
@@ -46,6 +47,7 @@ Then we create the event handler functions in the *wwwroot/index.html* (Blazor W
 
 	
 ````HTML
+
 ...
 <body>
     

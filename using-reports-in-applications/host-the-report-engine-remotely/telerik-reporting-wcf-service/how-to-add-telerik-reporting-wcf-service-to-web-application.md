@@ -34,6 +34,7 @@ This topic describes how to host the Telerik Reporting WCF Service in IIS. For t
 
 	
 ````ASP.NET
+
 				<%@ServiceHost Service="Telerik.Reporting.Service.ReportService, Telerik.Reporting.Service, Version=x.x.x.x, Culture=neutral, PublicKeyToken=A9D7983DFCC261BE" %>
 				
 ````
@@ -47,6 +48,7 @@ This topic describes how to host the Telerik Reporting WCF Service in IIS. For t
 
 	
 ````XML
+
 				<configuration>
 					...
 					<system.serviceModel>

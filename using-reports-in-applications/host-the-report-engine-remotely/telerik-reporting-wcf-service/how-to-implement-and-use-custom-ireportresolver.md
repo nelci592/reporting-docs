@@ -27,7 +27,6 @@ The report resolvers implement the IReportResolver interface. This interface has
 If you use the Silverlight report viewer the report description is provided by the __ReportViewer.Report property__.
               Extending Telerik Reporting WCF service with custom IReportResolver implementation:
       
-
 1.                 Prerequisites:
               
 
@@ -50,10 +49,8 @@ Reference to Telerik.Reporting.Service.dll assembly
 
 Telerik Reports definitions to be exposed through the Reporting Service
                     
-
 1.                 Steps to implement and use custom IReportResolver:
               
-
 1. 
 
 Implement the Telerik.Reporting.Service.IReportResolver
@@ -83,7 +80,6 @@ Implement the Telerik.Reporting.Service.IReportResolver
 	        End Function
 	    End Class
 ````
-
 
 
 1. 
@@ -119,13 +115,11 @@ In order to utilize your IReportResolver implementation, create a Telerik.Report
 ````
 
 
-
 1. 
 
 Even if you use your own IReportResolver implementation you can still fallback to the default IReportResolver implementations as shown in the following walkthrough.
                             Steps to implement and use custom IReportResolver with fallback mechanism:
               
-
 1. 
 
 Add to your IReportResolver implementation a constructor with parameter IReportDocument parentResolver. Then use the parentResolver if the custom report resolving mechanism fails.
@@ -194,7 +188,6 @@ Add to your IReportResolver implementation a constructor with parameter IReportD
 ````
 
 
-
 1. 
 
 Add to Telerik.Reporting.Service subclass the IReportResolver implementations in a chain. Thus the custom one will be executed first, if it fails the second one and so on.
@@ -237,9 +230,7 @@ You can use for fallback the default IReportResolver implementations:
 * ReportFileResolver - Resolves IReportDocument from physical path to trdp or trdx file
 
 * ReportFileResolverWeb - Resolves IReportDocument from a relative path to trdp or trdx file
-
 1. Hosting Telerik.Reporting.Service.ReportService subclass in IIS.
-
 1. 
 
 Add .svc file (e.g. ReportService.svc) to reference your Telerik.Reporting.Service.ReportService subclass. The file would contain the following line only:
@@ -247,10 +238,10 @@ Add .svc file (e.g. ReportService.svc) to reference your Telerik.Reporting.Servi
 
 	
 ````XML
+
 							<%@ServiceHost Service="CSharp.SilverlightDemo.Web.CustomReportService , CSharp.SilverlightDemo.Web" %>
 							
 ````
-
 
 
 1. 

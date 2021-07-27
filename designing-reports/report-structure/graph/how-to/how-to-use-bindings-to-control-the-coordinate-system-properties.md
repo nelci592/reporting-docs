@@ -24,7 +24,6 @@ The nested graph's data will show the sales of some of the most popular electric
         [here](http://jpwhitenissanleaf.com/)        and you can read the whole article
         [here](http://jpwhitenissanleaf.com/2013/04/06/march-2013-sets-several-records-for-ev-sales/).
       How to: Use Bindings to Control the Graph's Coordinate System Properties.
-
 1. 
 
 This scenario is simple enough to start from a blank report, so, depending on the designer you are using
@@ -34,7 +33,6 @@ This scenario is simple enough to start from a blank report, so, depending on th
 
 Since we won't be using the page header and footer, you can remove them as explained here:
               [How to Add/Remove Page Header & Footer Sections]({%slug telerikreporting/designing-reports/report-structure/how-to/how-to-add/remove-page-header-&-footer-sections%})
-
 1. 
 
 Expand the report's __DataSource__ property and click on the __Add new DataSource...__ link at the bottom.
@@ -66,7 +64,6 @@ Expand the report's __DataSource__ property and click on the __Add new DataSourc
                   
   ![Graph BindingsCSVPreview Results](images/Graph/HowToUseBindingsToControlCoordSystemProperties/GraphBindingsCSVPreviewResults.png)Click __Finish__ when you are ready.
                 
-
 1. 
 
 The easiest way to define the groupings for a data item is to use the [GroupExplorer tool window]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/group-explorer%}).
@@ -81,7 +78,6 @@ The easiest way to define the groupings for a data item is to use the [GroupExpl
 
 * Add ascending sort by the same field using the button at the end of the *Grouping* column in __Group Explorer__.
                 
-
 1. 
 
 According to our scenario, the group header will contain all the items used to display all the information,
@@ -137,7 +133,6 @@ According to our scenario, the group header will contain all the items used to d
                   `DataSource` as a __PropertyPath__                  and `=ReportItem.DataObject` as an __Expression__.
                   You can delete its current data source if you wish.
                 
-
 1. 
 
 If you now preview your report, it should display a label and a graph for each vehicle in the data source.
@@ -155,7 +150,6 @@ If you now preview your report, it should display a label and a graph for each v
                   the [LabelStep](/reporting/api/Telerik.Reporting.DateTimeScale#Telerik_Reporting_DateTimeScale_LabelStep)                  property can be used, but it should be set dynamically for a particular set of data - otherwise it could be
                   applied unnecessarily.
                 
-
 1. 
 
 The above problems can be resolved using coordinate system's

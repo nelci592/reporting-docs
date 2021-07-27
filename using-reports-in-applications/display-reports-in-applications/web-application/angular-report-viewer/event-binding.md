@@ -24,6 +24,7 @@ To attach an event handler to the viewer, specify the name of your function when
 
 	
 ````HTML
+
 <tr-viewer 
     ...
     [ready]="myReadyHandler"
@@ -39,6 +40,7 @@ Then we create the event handler functions in the component where the viewer is 
 
 	
 ````TypeScript
+
 export class AppComponent {
 
   myReadyHandler() { 

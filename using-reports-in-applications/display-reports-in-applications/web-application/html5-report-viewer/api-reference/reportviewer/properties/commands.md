@@ -25,6 +25,7 @@ Each [command]({%slug telerikreporting/using-reports-in-applications/display-rep
 
 	
 ````js
+
         $('#printButton').click(function () {
             var rv = $("#reportViewer1").data("telerik_ReportViewer");
             rv.commands.print.exec();

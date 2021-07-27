@@ -100,6 +100,7 @@ XML-based configuration file:
 
 	
 ````xml
+
 							<configuration>
 								…
 								<Telerik.Reporting>
@@ -124,6 +125,7 @@ JSON-based configuration file:
 
 	
 ````js
+
   "telerikReporting": {
     "extensions": [
       {
@@ -164,6 +166,7 @@ XML-based configuration file:
 
 	
 ````xml
+
 				<Telerik.Reporting>
 					<extensions>
 						<render>
@@ -186,6 +189,7 @@ JSON-based configuration file:
 
 	
 ````js
+
   "telerikReporting": {
     "extensions": [
       {

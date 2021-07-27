@@ -19,6 +19,7 @@ Unbinds event handlers from the specified event.
 
 	
 ````js
+
             function onPageReady(e) {
               console.log('page ready!');
             }

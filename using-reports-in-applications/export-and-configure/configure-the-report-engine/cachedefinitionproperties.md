@@ -32,6 +32,7 @@ XML-based configuration file:
 
 	
 ````xml
+
 	      <Telerik.Reporting>
             <processing cacheDefinitionProperties="false" />
         </Telerik.Reporting>
@@ -44,6 +45,7 @@ JSON-based configuration file:
 
 	
 ````js
+
   "telerikReporting": {
       "processing": [
         {

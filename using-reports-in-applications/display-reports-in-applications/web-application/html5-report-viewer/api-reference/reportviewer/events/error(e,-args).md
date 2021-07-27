@@ -27,6 +27,7 @@ Parameters:
 
 	
 ````js
+
   // $(handler) is jQuery's shorthand for $(document).ready(handler)
   $(function () {
     $("#reportViewer1").telerik_ReportViewer({

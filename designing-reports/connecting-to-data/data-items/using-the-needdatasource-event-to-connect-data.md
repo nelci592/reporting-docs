@@ -37,6 +37,7 @@ Below is an example that illustrates how to provide data source to the __Report_
 
 	
 ````cs
+
 private void Report1_NeedDataSource(object  sender, System.EventArgs e)
 {
 	string sql =
@@ -54,6 +55,7 @@ private void Report1_NeedDataSource(object  sender, System.EventArgs e)
 
 	
 ````vb.net
+
 Private Sub Report1_NeedDataSource(ByVal  sender As Object, ByVal e As System.EventArgs)
 	Dim sql As String = "SELECT Production.Product.Name, Production.Product.ProductNumber FROM Production.Product"
 	Dim connectionString As String = "Data Source=(local)\SQLEXPRESS;Initial Catalog=AdventureWorks;Integrated Security=True"

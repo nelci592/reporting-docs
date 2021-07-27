@@ -90,6 +90,7 @@ Telerik Reporting relies on the ConfigurationManager to resolve named connection
 
 	
 ````XML
+
 <PropertyGroup>
   <TargetFramework>net461</TargetFramework>
 </PropertyGroup>
@@ -148,6 +149,7 @@ For Office OpenXML document formats (XLSX, DOCX and PPTX) install the
 
 	
 ````c#
+
 namespace WebApplication1.Controllers
 {
     using System.IO;
@@ -211,6 +213,7 @@ namespace WebApplication1.Controllers
 
 	
 ````HTML
+
 <!DOCTYPE html> 
 <html> 
 <head> 

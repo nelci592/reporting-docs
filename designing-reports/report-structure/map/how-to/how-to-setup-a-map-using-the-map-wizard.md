@@ -18,7 +18,6 @@ In this how-to article we will show you how to create a Map which will present t
 
 >important This article assumes that you have obtained a valid  __Location Provider key__  to authenticate your geocoding requests.          If you don't want to use a location provider, you need to provide the geographical coordinates of your points yourself and setup the MapSeries accordingly.          For more information please take a look at the [Location Providers]({%slug telerikreporting/designing-reports/report-structure/map/structure/location-providers%}) article.        
 
-
 1. 
 
 Start the Map Wizard:
@@ -32,7 +31,6 @@ Start the Map Wizard:
                   This will bring up the __Map Wizard__ which will guide you through the creation process.
                   
   ![Insert Menu Select Map](images/Map/InsertMenu_SelectMap.png)
-
 1. 
 
 On the __Choose Data Source__ page, add new
@@ -68,13 +66,11 @@ On the __Choose Data Source__ page, add new
 * You can click on __Execute Query...__ just to check if everything is OK with the database connection.
                   Click __Finish__ when you are ready.
                 
-
 1. 
 
 In the *Available data sources* list you should see the datasource you've already created.
               Select it and click __Next__.
             
-
 1. 
 
 In the next page you have to select the fields which will be used to build the map charts.
@@ -101,7 +97,6 @@ Your __Arrange map fields__ page should look like the one shown below:
 
 Once the mandatory fields are set up, the __Next__ button will get enabled and you can go to the next page.
             
-
 1. 
 
 On the __Choose a location provider__ page you have to select the location provider that will be used to geocode
@@ -114,7 +109,6 @@ On the __Choose a location provider__ page you have to select the location provi
               Once you have obtained the key, you should paste it in the *Client token* box, as shown below:
               
   ![ChooseALocation Provider](images/Map/ChooseALocationProvider.png)
-
 1. 
 
 When you click __Finish__, the Wizard will create the definition of the Map item, show it in the designer

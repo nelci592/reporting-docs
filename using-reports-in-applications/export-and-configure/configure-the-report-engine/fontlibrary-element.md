@@ -66,6 +66,7 @@ XML-based configuration file:
 
 	
 ````xml
+
 <?xml version="1.0"?>
 <configuration>
    ...
@@ -87,6 +88,7 @@ JSON-based configuration file:
 
 	
 ````js
+
   "telerikReporting": {
     "fontLibrary": {
       "useDefaultLocations": "false",

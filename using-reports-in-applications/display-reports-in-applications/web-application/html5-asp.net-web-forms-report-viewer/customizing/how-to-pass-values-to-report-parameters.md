@@ -23,13 +23,11 @@ To give an example we will use the Invoice report from our examples and will upd
 
 >tip All path references in the described steps should be adapted according            to your project setup. For more information please refer to the MSDN article            [ASP.NET Web Project Paths](http://msdn.microsoft.com/en-us/library/ms178116.aspx)
 
-
 1. 
 
 Create a new ASP.NET Web Forms Empty Project.
                   We are going to use one of our demo Visual Studio reports. For this purpose add a new Telrik Report Library project to the solution from the VS item templates, name it *Charp|VB.ReportLibrary*, add the existing __Invoice.cs__ report and its subreport __SalesOrderDetails.cs__ from *                    [TelerikReporting_InstallDir]\Examples\CSharp|VB\ReportLibrary\Invoice* folder and built the *Charp|VB.ReportLibrary* project. Add reference to the ReportLibrary project in the Web Forms project.
                 
-
 1. 
 
 Then use the 
@@ -43,7 +41,6 @@ Name the web page with the viewer
                 
 
 Finish the wizard.
-
 1. 
 
 Add a connectiongStrings entry with name __Telerik.Reporting.Examples.CSharp.Properties.Settings.TelerikConnectionString__                  in the project's web.config file. For example:
@@ -51,6 +48,7 @@ Add a connectiongStrings entry with name __Telerik.Reporting.Examples.CSharp.Pro
 
 	
 ````xml
+
 <connectionStrings>
 	 <add name="Telerik.Reporting.Examples.CSharp.Properties.Settings.TelerikConnectionString"
 	            connectionString="Data Source=(local);Initial Catalog=AdventureWorks;Integrated Security=SSPI"
@@ -63,7 +61,6 @@ Add a connectiongStrings entry with name __Telerik.Reporting.Examples.CSharp.Pro
 
 At this point you have a running Web Forms application that displays a report in the HTML5 Web Forms Viewer at __[host]/InvoiceParameters.aspx__                  without any modifications.
                 
-
 1. 
 
 Add code for updating ReportSource Parameters collection in the code behind:
@@ -71,6 +68,7 @@ Add code for updating ReportSource Parameters collection in the code behind:
 
 	
 ````C#
+
 protected void Page_Load(object sender, EventArgs e)
 {
     if (!IsPostBack)
@@ -85,6 +83,7 @@ protected void Page_Load(object sender, EventArgs e)
 
 	
 ````vb.net
+
 Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
     If Not Page.IsPostBack Then
         Me.reportViewer1.ReportSource.Parameters.Add("OrderNumber", Me.invoiceId.Value)
@@ -94,13 +93,13 @@ End Sub
 ````
 
 
-
 1. 
 
 Add the report viewer stylesheet:
 
 	
 ````HTML
+
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
@@ -124,13 +123,13 @@ Add the report viewer stylesheet:
 ````
 
 
-
 1. 
 
 Add the custom parameter UI - a dropdown selector with a few values:
 
 	
 ````HTML
+
     <div id="invoiceIdSelector" runat="server">
             <label for="invoiceId">Invoices</label>
             <select id="invoiceId" title="Select the Invoice ID" runat="server">
@@ -143,7 +142,6 @@ Add the custom parameter UI - a dropdown selector with a few values:
 ````
 
 
-
 1. 
 
 Now initialize the report viewer. We will use the minimal set of all
@@ -152,6 +150,7 @@ Now initialize the report viewer. We will use the minimal set of all
 
 	
 ````js
+
         <telerik:ReportViewer
             ID="reportViewer1"
             Width="1300px"
@@ -165,7 +164,6 @@ Now initialize the report viewer. We will use the minimal set of all
 ````
 
 
-
 1. 
 
 Add code that updates the ReportSource parameters collection with the selected __Invoice Id__ from
@@ -174,6 +172,7 @@ Add code that updates the ReportSource parameters collection with the selected _
 
 	
 ````js
+
             $('#invoiceId').change(function () {
                 var viewer = $("#reportViewer1").data("telerik_ReportViewer");
                 viewer.reportSource({
@@ -188,13 +187,13 @@ Add code that updates the ReportSource parameters collection with the selected _
 ````
 
 
-
 1. 
 
 The HTML page that we have just created should looks like this:
 
 	
 ````HTML
+
 <%@ Page Language="C#" AutoEventWireup="true" CodeBehind="InvoiceParameters.aspx.cs" Inherits="WebFormsDocumentation.InvoiceParameters" %>
 //for VB <%@ Page Language="vb" AutoEventWireup="false" CodeBehind="InvoiceParameters.aspx.vb" Inherits="WebFormsDocVB._InvoiceParameters" %>
 
@@ -254,7 +253,6 @@ The HTML page that we have just created should looks like this:
 </body>
 </html>				
 ````
-
 
 
 1. 

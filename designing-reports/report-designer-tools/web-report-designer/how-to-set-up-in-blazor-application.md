@@ -40,6 +40,7 @@ position: 2
 
 	
 ````c#
+
 public void ConfigureServices(IServiceCollection services)
 {
     services.AddControllers();
@@ -60,6 +61,7 @@ public void ConfigureServices(IServiceCollection services)
 
 	
 ````c#
+
 ...
 services.TryAddSingleton<IReportServiceConfiguration>(sp => new ReportServiceConfiguration
 {
@@ -88,6 +90,7 @@ services.TryAddSingleton<IReportDesignerServiceConfiguration>(sp => new ReportDe
 
 	
 ````c#
+
 app.UseEndpoints(endpoints =>
 {
     endpoints.MapControllers();
@@ -103,6 +106,7 @@ app.UseEndpoints(endpoints =>
 
 	
 ````c#
+
 app.UseStaticFiles();
 
 ````
@@ -117,6 +121,7 @@ app.UseStaticFiles();
 
 	
 ````c#
+
 using Microsoft.AspNetCore.Mvc;
 using Telerik.Reporting.Services;
 using Telerik.WebReportDesigner.Services;
@@ -148,6 +153,7 @@ public class ReportDesignerController : ReportDesignerControllerBase
 
 	
 ````CSHTML
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://kendo.cdn.telerik.com/2020.3.1118/js/kendo.all.min.js"></script>
 
@@ -165,6 +171,7 @@ public class ReportDesignerController : ReportDesignerControllerBase
 
 	
 ````CSHTML
+
 <link rel="stylesheet" href="https://unpkg.com/@progress/kendo-theme-default@latest/dist/all.css" />
 
 ````
@@ -177,6 +184,7 @@ public class ReportDesignerController : ReportDesignerControllerBase
 
 	
 ````CSHTML
+
     <script src="_content/telerik.webreportdesigner.blazor/telerikWebReportDesignerInterop.js" defer></script>
 
     @* Or this one if using the Telerik.WebReportDesigner.Blazor.Trial package *@
@@ -191,6 +199,7 @@ public class ReportDesignerController : ReportDesignerControllerBase
 
 	
 ````razor
+
 @page "/"
 @using Telerik.WebReportDesigner.Blazor
 

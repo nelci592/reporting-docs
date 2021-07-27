@@ -26,6 +26,7 @@ The following example illustrates how to set the Parameters method to the Teleri
 
 	
 ````C#
+
           @(Html.TelerikReporting().ReportViewer()
           ...
           .Parameters(new Parameters { Editors = new Editors { SingleSelect = EditorTypes.ComboBox, MultiSelect = EditorTypes.ComboBox} })

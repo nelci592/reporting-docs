@@ -24,6 +24,7 @@ The *data-* attributes give a lot of flexibility to the application since comman
 
 	
 ````HTML
+
           <button id="printButton" data-command="telerik_ReportViewer_print" data-target-report-viewer="#reportViewer1">Print report</button>
           
 ````
@@ -36,6 +37,7 @@ When initializing the report viewer the selector used in *data-target-report-vie
 
 	
 ````HTML
+
           $("#reportViewer1").telerik_ReportViewer({
             serviceUrl: "../api/reports/",
             templateUrl: 'src/templates/telerikReportViewerTemplate-x.x.x.x.html',

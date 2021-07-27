@@ -24,6 +24,7 @@ In order to expose your custom functions, so they can be utilized by the Reporti
 
 	
 ````XML
+
       <configuration>
 			<configSections>
 				<section

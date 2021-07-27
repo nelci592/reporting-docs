@@ -147,6 +147,7 @@ To register this new provider set the __provider__ attribute of the "Cache" elem
 
 	
 ````xml
+
 <Telerik.Reporting>
   <Cache provider="MyCacheProvider">
     <Providers>

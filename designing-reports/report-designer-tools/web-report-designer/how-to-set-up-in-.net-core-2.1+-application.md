@@ -64,6 +64,7 @@ If you don't use NuGet packages, along with the above assemblies, you need to ad
 
 	
 ````c#
+
               public Startup(IConfiguration configuration, IHostingEnvironment hostingEnvironment)
               {
                   Configuration = configuration;
@@ -84,7 +85,8 @@ If you don't use NuGet packages, along with the above assemblies, you need to ad
             
 
 	
-````c#services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
+````c#
+services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
 ````
 
 
@@ -94,7 +96,8 @@ If you don't use NuGet packages, along with the above assemblies, you need to ad
             
 
 	
-````c#app.UseMvc();
+````c#
+app.UseMvc();
 ````
 
 
@@ -103,7 +106,8 @@ If you don't use NuGet packages, along with the above assemblies, you need to ad
             
 
 	
-````c#app.UseStaticFiles();
+````c#
+app.UseStaticFiles();
 ````
 
 
@@ -120,7 +124,8 @@ The .NET Core 2.1 applications use a
         
 
 	
-````C#ReportingEngineConfiguration = sp.GetService<IConfiguration>()
+````C#
+ReportingEngineConfiguration = sp.GetService<IConfiguration>()
           
 ````
 
@@ -142,7 +147,8 @@ To activate JSON file configuration with a different name, for example, __report
             
 
 	
-````C#          
+````C#
+          
         static IConfiguration ResolveSpecificReportingConfiguration(IHostingEnvironment environment)
         {
             // If a specific configuration needs to be passed to the reporting engine, add it through a new IConfiguration instance.
@@ -161,6 +167,7 @@ To activate JSON file configuration with a different name, for example, __report
 
 	
 ````c#
+
          public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
@@ -226,6 +233,7 @@ The REST service works as a backend and is responsible for storage operations li
 
 	
 ````c#
+
 namespace CSharp.AspNetCoreDemo.Controllers
 {
     using Microsoft.AspNetCore.Mvc;
@@ -254,6 +262,7 @@ namespace CSharp.AspNetCoreDemo.Controllers
 
 	
 ````js
+
               {"decimalSeparator":".","listSeparator":","}
               
 ````
@@ -270,6 +279,7 @@ namespace CSharp.AspNetCoreDemo.Controllers
 
 	
 ````HTML
+
 <!DOCTYPE html> 
 <html xmlns="http://www.w3.org/1999/xhtml"> 
 <head> 

@@ -56,6 +56,7 @@ The REST service works as a backend and is responsible for storage operations li
 
 	
 ````c#
+
 namespace CSharp.MvcDemo.Controllers
 {
     using System;
@@ -128,6 +129,7 @@ namespace CSharp.MvcDemo.Controllers
 
 	
 ````HTML
+
 @using Telerik.Reporting
 @{
     Layout = null;
@@ -164,6 +166,7 @@ The *ReportDesignerController* we added above is configured to search for its re
 
 	
 ````c#
+
         protected void Application_Start()
         {
             AreaRegistration.RegisterAllAreas();

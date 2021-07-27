@@ -36,6 +36,7 @@ This exception might surface if you try to use objects which
 
 	
 ````C#
+
 			DataTable dt = new DataTable();
 			DataColumn col = new DataColumn("ColumnName", typeof(string));
 			//....
@@ -84,6 +85,7 @@ There are three cases in which this error message occurs:
 
 	
 ````XML
+
 							<add 
 								name="Telerik.ReportViewer.axd_*" 
 								type="Telerik.ReportViewer.WebForms.HttpHandler, Telerik.ReportViewer.WebForms, Version=x.x.x.x, Culture=neutral, PublicKeyToken=a9d7983dfcc261be" 

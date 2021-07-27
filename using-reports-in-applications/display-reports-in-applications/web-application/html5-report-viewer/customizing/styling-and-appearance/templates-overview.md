@@ -40,6 +40,7 @@ While loading the template content, the widget looks for elements marked with th
 
 	
 ````HTML
+
           <div class="trv-parameters-area k-widget hidden" data-role="telerik_ReportViewer_ParametersArea"> … </div>
           
 ````
@@ -50,6 +51,7 @@ is mapped to:
 
 	
 ````js
+
           jQuery.fn.telerik_ReportViewer_ParametersArea(options)
           
 ````

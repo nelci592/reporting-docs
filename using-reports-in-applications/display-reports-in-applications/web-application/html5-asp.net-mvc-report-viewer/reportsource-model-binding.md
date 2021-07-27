@@ -30,6 +30,7 @@ Lets start with the model now. In case all you need is a report viewer that is u
 
 	
 ````c#
+
         @model Telerik.Reporting.UriReportSource
 
 ````
@@ -38,6 +39,7 @@ Lets start with the model now. In case all you need is a report viewer that is u
 
 	
 ````vb.net
+
         @ModelType Telerik.Reporting.UriReportSource
 
 ````

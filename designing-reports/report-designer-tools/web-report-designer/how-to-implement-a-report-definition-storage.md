@@ -44,6 +44,7 @@ The purpose of the report definition storage is to describe how to browse, open,
 
 	
 ````c#
+
 public ReportDesignerController()
 {
     ...
@@ -66,6 +67,7 @@ The default implementation of the storage demonstrated above is the __FileDefini
 
 	
 ````c#
+
 public class DbDefinitionStorage : IDefinitionStorage
 {
     /// <summary>
@@ -116,6 +118,7 @@ Then you can set the new definition storage implementation in the __ReportDesign
 
 	
 ````c#
+
 public ReportDesignerController()
 {
     ...

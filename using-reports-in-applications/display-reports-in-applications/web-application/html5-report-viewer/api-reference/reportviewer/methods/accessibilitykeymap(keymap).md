@@ -19,6 +19,7 @@ Sets the current key shortcuts map, used when the report viewer is in accessible
 
 	
 ````js
+
             var reportViewer = $("#reportViewer1").data("telerik_ReportViewer");
             
             reportViewer.accessibilityKeyMap(

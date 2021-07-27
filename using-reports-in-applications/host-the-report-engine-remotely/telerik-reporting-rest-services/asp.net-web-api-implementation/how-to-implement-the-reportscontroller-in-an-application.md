@@ -15,7 +15,6 @@ position: 4
 The Telerik Reporting REST Web API service is represented by the abstract [ReportsControllerBase](/reporting/api/Telerik.Reporting.Services.WebApi.ReportsControllerBase)        class. This abstract class requires [IReportSourceResolver](/reporting/api/Telerik.Reporting.Services.IReportSourceResolver)        and [IStorage](/reporting/api/Telerik.Reporting.Cache.Interfaces.IStorage) implementations.
         In order to add the reports controller to your application follow the steps:
       
-
 1. 
 
 Add references to the following Telerik Reporting assemblies (required)
@@ -29,7 +28,6 @@ Add references to the following Telerik Reporting assemblies (required)
                 
 
 >note Without setting Telerik Reporting references' Copy Local to true the assemblies may not be loaded correctly on running the application.
-
 
 1. 
 
@@ -54,7 +52,6 @@ Add references to the following Telerik Reporting assemblies (optional)
                 
 
 >note Without setting Telerik Reporting references' Copy Local to true the assemblies may not be loaded correctly on running the application.
-
 
 1. 
 

@@ -21,6 +21,7 @@ To attach a client event handler you have to set the appropriate ClientEvents ta
 
 	
 ````xml
+
         <telerik:ReportViewer
             ID="reportViewer1"
             runat="server">
@@ -32,6 +33,7 @@ To attach a client event handler you have to set the appropriate ClientEvents ta
 
 	
 ````js
+
           <script>
             function onRenderingBegin() {
                 console.log("rendering begin!");

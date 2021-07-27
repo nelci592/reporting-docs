@@ -56,6 +56,7 @@ The Telerik HTML5 Report Viewer is a jQuery plugin - __jQuery.fn.telerik_ReportV
 
 	
 ````js
+
                       $("#reportViewer1").telerik_ReportViewer({
                         ...
                         parameters: {
@@ -110,6 +111,7 @@ To create a ReportViewer:
 
 	
 ````js
+
           $("#reportViewer1").telerik_ReportViewer({
             serviceUrl: "../api/reports/",
             templateUrl: 'src/templates/telerikReportViewerTemplate-x.x.x.x.html',
@@ -127,6 +129,7 @@ To get the __ReportViewer__ object from the HTML element:
 
 	
 ````js
+
           var reportViewer = $("#reportViewer1").data("telerik_ReportViewer");
           
 ````

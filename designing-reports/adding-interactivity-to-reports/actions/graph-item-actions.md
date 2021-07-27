@@ -35,20 +35,17 @@ The easiest way to setup drill-down graph categories is to use the Graph Wizard.
         
 
 ## Add action to a category group using the Property Browser
-
 1. 
 
 Select the Graph item.
 
 The selected graph properties are listed in the __Property Browser__.
                 
-
 1. 
 
 In the __CategoryGroups__ property, click the
                   __Edit Collection (…) button__. The GraphGroup Collection Editor opens.
                 
-
 1. 
 
 Select the category group you want to add an action to. It should contain child group(s)
@@ -57,13 +54,11 @@ Select the category group you want to add an action to. It should contain child 
 
 The selected graph group properties are listed in the __Property Browser__                  on the left.
                 
-
 1. 
 
 In the __Action__ property, click the
                   __Edit Collection (…) button__. The Edit Action dialog opens.
                 
-
 1. 
 
 Setup the desired action.

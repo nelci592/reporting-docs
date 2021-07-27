@@ -24,6 +24,7 @@ To call report viewer methods and execute commands it is required to first get a
 
 	
 ````Razor
+
 <button type="button" class="btn btn-light btn-sm" @onclick="RefreshReport">Refresh Report</button>
 <button type="button" class="btn btn-light btn-sm" @onclick="Print">Print Report</button>
 

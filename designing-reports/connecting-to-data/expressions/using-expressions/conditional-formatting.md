@@ -63,6 +63,7 @@ To make styles conditional, use an expression instead of a static value
 
 	
 ````C#
+
                             public static Color ColorFromName(string colorName)
                             {
                                 if (!string.IsNullOrEmpty(colorName))
@@ -78,6 +79,7 @@ To make styles conditional, use an expression instead of a static value
 
 	
 ````VB.NET
+
                             Public Shared Function ColorFromName(ByVal colorName As String) As Color
                                 If Not String.IsNullOrEmpty(colorName) Then
                                     Return Color.FromName(colorName)

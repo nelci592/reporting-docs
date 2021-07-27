@@ -21,7 +21,6 @@ You can connect to data from OpenEdge AppServer ABL procedures using the
 
 * Generated .NET 4.0 proxy assembly for the target procedure along with its dependencies.
             Configuring the OpenClientDataSource Component
-
 1. 
 
 Add OpenClientDataSource component
@@ -31,7 +30,6 @@ Add OpenClientDataSource component
 
 * For Stand-alone Report Designer use the OpenEdge OpenClient Data Source tool located in the Data tab of the Ribbon bar
                 
-
 1. 
 
 A wizard form is started guiding you through the process which helps you to setup all needed settings

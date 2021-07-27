@@ -15,7 +15,6 @@ position: 1
 In this article we will show you how to create an OHLC chart using the Graph item.
         
   ![ohlc](images/Graph/OhlcChart.png)Create an OHLC chart using the Graph Wizard
-
 1. 
 
 The Graph Wizard provides a fast and efficient way to create complex charts. The wizard starts every time you start creating a new graph in
@@ -28,7 +27,6 @@ Start the designer and open or create a new report. Select the report section in
               Its *Financial* group has two items - __Candlestick__ and __Bar__, which provide
               the same functionality, but produce different series markers. In this how-to article we'll create a series with candlestick markers.
             
-
 1. 
 
 In a real-world application the data would be retrieved from a database, but here we'll use some sample data as a CSV data source.
@@ -52,7 +50,6 @@ In a real-world application the data would be retrieved from a database, but her
 Set the field separator to comma and check the *The CSV has headers* checkbox.
               Define the column types and preview the data using the __Parse CSV...__ button to make sure the data source is set up correctly.
             
-
 1. 
 
 In the *Arrange graph fields* page drag the __date__ column to *Categories* box.
@@ -65,7 +62,6 @@ If you click the *Set default datapoint styling* checkbox, the wizard will add c
 You can click the __Finish__ button or setup additional properties of the DateTime scale and the finish the wizard.
               When you close the wizard, the newly created chart will appear.
             
-
 1. 
 
 Format the axis labels, set their angle and add additional styling if necessary. Your chart should look like the one below:

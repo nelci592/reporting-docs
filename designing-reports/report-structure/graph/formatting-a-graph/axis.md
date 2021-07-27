@@ -59,19 +59,16 @@ When a numeric value is added to the y-axis, by default, the chart does not form
 In order to format time intervals correctly, the values displayed on the x-axis must evaluate to a System.DateTime data type.
           If your field has a data type of System.String, the chart will not calculate intervals as dates or times.
         To format the axis labels with the Standalone Report Designer
-
 1. 
 
 Click on the Graph axis you want to format.
 
 Ribbon __Graph Tools - Format__ tab is activated.
                 
-
 1. 
 
 Click the Ribbon __Graph Tools - Format__ context tab.
                 
-
 1. 
 
 Apply the desired format with the tools in the Format ribbon group.
@@ -83,18 +80,15 @@ The Graph layout is automatically updated and you will right away review your ch
 Because each chart type has a different shape, axis labels are placed in an optimal location so as not to interfere on the chart.
           The default position of the labels is next to the axis.
         To change the position of axis labels
-
 1. 
 
 Create a graph with bar series.
-
 1. 
 
 On the design surface, click on the axis
 
 The selected axis properties are listed in the __Property Browser__.
                 
-
 1. 
 
 In the __Misc__ section. Select a value for the LabelPlacement property.
@@ -106,14 +100,12 @@ The axis step defines the number of labels and accompanying tick marks on an axi
           On axis with NumericScale, axis steps provide a consistent measure of the data points on the chart.
           You can specify the number of steps you want in the axis with Scale.MajorStep and Scale.MinorStep properties.
         To change the axis step
-
 1. 
 
 Click the chart axis that you want to change.
 
 The selected axis properties are listed in the __Property Browser__.
                 
-
 1. 
 
 In the __Misc__ section. Select a value for the Scale.MajorStep property.
@@ -125,14 +117,12 @@ If you have data that is logarithmically proportional, you may want to consider 
           This helps improve the appearance of the chart by making your data more manageable.
           Most logarithmic scales use a base of 10. Still you can change it with Scale.Base property.
         To specify a logarithmic scale
-
 1. 
 
 Click the chart axis that you want to change.
 
 The selected axis properties are listed in the __Property Browser__.
                 
-
 1. 
 
 In the __Misc__ section select __logarithmic  Scale__ for the __Scale__ property.

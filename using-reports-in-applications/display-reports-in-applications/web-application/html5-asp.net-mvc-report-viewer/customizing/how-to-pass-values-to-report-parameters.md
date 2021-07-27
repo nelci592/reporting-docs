@@ -23,7 +23,6 @@ To give an example we will use the Invoice report from our local examples and wi
 
 >tip All path references in the described steps should be adapted according            to your project setup. For more information please refer to the MSDN article            [ASP.NET Web Project Paths](http://msdn.microsoft.com/en-us/library/ms178116.aspx)
 
-
 1. 
 
 We are going to use one of our demo Visual Studio reports. For this purpose the demo ReportLibrary project should be built beforehand (see below).
@@ -32,7 +31,6 @@ We are going to use one of our demo Visual Studio reports. For this purpose the 
                   *.
                   The exact [configuration directory] name depends on the project 'Build' configuration. It could be 'Debug', 'Release', etc.
                 
-
 1. 
 
 Then use the 
@@ -46,7 +44,6 @@ Name the view with the viewer
                 
 
 Finish the wizard.
-
 1. 
 
 Add MVC Controller item under the project's __Controller__ folder and name it
@@ -59,6 +56,7 @@ Add a connectiongStrings entry with name __Telerik.Reporting.Examples.CSharp.Pro
 
 	
 ````xml
+
 <connectionStrings>
 	 <add name="Telerik.Reporting.Examples.CSharp.Properties.Settings.TelerikConnectionString"
 	            connectionString="Data Source=(local);Initial Catalog=AdventureWorks;Integrated Security=SSPI"
@@ -71,7 +69,6 @@ Add a connectiongStrings entry with name __Telerik.Reporting.Examples.CSharp.Pro
 
 At this point you have a running MVC application that displays a report in the HTML5 MVC Viewer at __[host]/Home/InvoiceParameters__                  without any modifications.
                 
-
 1. 
 
 These are the model and the view model that we will use for our view:
@@ -171,7 +168,6 @@ These are the model and the view model that we will use for our view:
 Create new Invoice.cs|vb and InvoiceViewModel.cs|vb files under __Models__ folder
                   and copy the above code snippets.
                 
-
 1. 
 
 And this is how we will fill with data our view model before displaying the view with the viewer. For the purpose open the
@@ -224,7 +220,6 @@ And this is how we will fill with data our view model before displaying the view
 ````
 
 
-
 1. 
 
 Add a custom parameter UI - a dropdown selector with a few values. For the purpose,
@@ -233,6 +228,7 @@ Add a custom parameter UI - a dropdown selector with a few values. For the purpo
 
 	
 ````c#
+
               @model MyMVCProject.Models.InvoiceViewModel
               <div id="invoiceIdSelector">
                 @Html.LabelFor(m => m.SelectedInvoiceId)
@@ -245,6 +241,7 @@ Add a custom parameter UI - a dropdown selector with a few values. For the purpo
 
 	
 ````vb.net
+
               @ModelType MyMVCProject.InvoiceViewModel
               <div id="invoiceIdSelector">
                 @Html.LabelFor(Function(m) m.SelectedInvoiceId)
@@ -252,7 +249,6 @@ Add a custom parameter UI - a dropdown selector with a few values. For the purpo
               </div>
         
 ````
-
 
 
 1. 
@@ -301,7 +297,6 @@ Now initialize the report viewer. We will use the minimal set of all
 ````
 
 
-
 1. 
 
 Add code that updates the ReportSource parameters collection with the selected __Invoice Id__ from
@@ -310,6 +305,7 @@ Add code that updates the ReportSource parameters collection with the selected _
 
 	
 ````js
+
             $('#invoiceId').change(function () {
                 var viewer = $("#reportViewer1").data("telerik_ReportViewer");
                 viewer.reportSource({
@@ -322,7 +318,6 @@ Add code that updates the ReportSource parameters collection with the selected _
             });
         
 ````
-
 
 
 1. 

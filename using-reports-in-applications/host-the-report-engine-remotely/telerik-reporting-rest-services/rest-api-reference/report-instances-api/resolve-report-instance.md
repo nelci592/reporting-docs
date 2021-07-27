@@ -56,6 +56,7 @@ When the return status is Created the body contains report instance identifier s
 
 	
 ````Request Message
+
           POST /api/reports/clients/2c3d/instances HTTP/1.1
 
           {
@@ -72,6 +73,7 @@ When the return status is Created the body contains report instance identifier s
 
 	
 ````Response Message
+
           HTTP/1.1 201 Created
 
           “a5f3”

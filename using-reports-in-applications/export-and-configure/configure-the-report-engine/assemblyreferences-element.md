@@ -20,6 +20,7 @@ XML-based configuration file:
 
 	
 ````xml
+
     	<assemblyReferences>
         	<add />
         	<clear />
@@ -34,6 +35,7 @@ JSON-based configuration file:
 
 	
 ````js
+
     "assemblyReferences": [
     ],
 ````
@@ -68,6 +70,7 @@ XML-based configuration file:
 
 	
 ````xml
+
 <?xml version="1.0"?>
 <configuration>
     <configSections>
@@ -94,6 +97,7 @@ JSON-based configuration file:
 
 	
 ````js
+
           "telerikReporting": {
             "assemblyReferences": [
                 {

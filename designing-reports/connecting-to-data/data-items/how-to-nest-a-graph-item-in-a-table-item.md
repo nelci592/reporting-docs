@@ -27,15 +27,12 @@ As a real life scenario, in the current example we will list the top 5 performin
 
 We will use the __AdventureWorks__ sample database and the [Telerik Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview%}).
       How to nest a Graph item in a Table item
-
 1. 
 
 Open the Telerik Report Designer and create a new report.
-
 1. 
 
 Cancel the Telerik Report Wizard, because it would not be needed for the current example.
-
 1. 
 
 Start the CrossTab Wizard and create a new DataSource with the following select statement:
@@ -56,7 +53,6 @@ Start the CrossTab Wizard and create a new DataSource with the following select 
             
 
 
-
 1. 
 
 On the following page add the __SalesPersonName__ field to the __RowGroups__ box,
@@ -65,14 +61,12 @@ On the following page add the __SalesPersonName__ field to the __RowGroups__ box
               where it will be automatically changed to __Count(CategoryName)__.
               After the wizard ends, you can make some design adjustments to the generated crosstab to make it look better.
             
-
 1. 
 
 Set the row group's __Filters__ to `"Count(Fields.CategoryName) Top N =5"`.
               Your group properties should now be set like this:
               
   ![di Nest Graph In Table Row Group Properties](images/DataItems/di_NestGraphInTable_RowGroupProperties.png)
-
 1. 
 
 Set the crosstab headers to `"Person Name"` and `"Total Sales"`              and the row group textbox expressions to `"Fields.SalesPersonName"` and `"Count(CategoryName)"`:
@@ -85,14 +79,12 @@ If you preview the report now, you will see that the crosstab shows the top 5 sa
 
 Now we have to set up the pie chart which will display their sales divided by product categories.
             
-
 1. 
 
 Select the cell that displays the count and choose the __Pie Chart__ item from the __Insert__ menu.
               The __Graph Wizard__ will appear. Since we will bind our graph to the current __ReportItem.DataObject__,
               actually there is no need to connect it to a data source, but on the other hand, the design-time support might come in handy.
             
-
 1. 
 
 Select the data source and on the next page add the __CategoryName__ field
@@ -108,7 +100,6 @@ If you preview the report, you will notice that the chart data stays the same on
               defined by the expression `"Fields.SalesPersonName"`, we have to bind the graph data source
               to the current report item's data object.
             
-
 1. 
 
 Open the Graph's [Bindings]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/bindings%}) editor and create a new binding for the DataSource property as shown below:

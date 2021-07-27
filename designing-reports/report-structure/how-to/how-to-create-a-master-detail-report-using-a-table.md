@@ -40,6 +40,7 @@ The master report will contain only a simple listing of product categories.
 
 	
 ````SQL
+
 			SELECT ProductCategoryID, Name FROM Production.ProductCategory
 			
 ````
@@ -66,6 +67,7 @@ The master report will contain only a simple listing of product categories.
 
 	
 ````SQL
+
 				SELECT 
 					P.Name,ProductID,ProductNumber,PC.ProductCategoryID
 				FROM 

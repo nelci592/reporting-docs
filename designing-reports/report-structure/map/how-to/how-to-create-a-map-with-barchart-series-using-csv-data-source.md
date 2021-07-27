@@ -22,7 +22,6 @@ In this how-to article we will show you how to create a Map which will present t
 
 >important This article assumes that you have obtained a valid  __Location Provider key__  to authenticate your geocoding requests.          If you don't want to use a location provider, you need to provide the geographical coordinates of your points yourself and setup the MapSeries accordingly.          For more information please take a look at the [Location Providers]({%slug telerikreporting/designing-reports/report-structure/map/structure/location-providers%}) article.        
 
-
 1. 
 
 Start the Map Wizard:
@@ -36,7 +35,6 @@ Start the Map Wizard:
                   This will bring up the __Map Wizard__ which will guide you through the creation process.
                   
   ![Insert Menu Select Map](images/Map/InsertMenu_SelectMap.png)
-
 1. 
 
 Add new
@@ -64,13 +62,11 @@ Add new
                   
   ![CSV Preview Results](images/Map/CSV_PreviewResults.png)Click __Finish__ when you are ready.
                 
-
 1. 
 
 In the *Available data sources* list you should see the datasource you've already created.
               Select it and click __Next__.
             
-
 1. 
 
 In the next page you have to select the fields which will be used to build the map charts.
@@ -98,7 +94,6 @@ Your __Arrange map fields__ page should look like the one shown below:
 
 Once the mandatory fields are set up, the __Next__ button will get enabled and you can go to the next page.
             
-
 1. 
 
 On the __Choose a location provider__ page you have to select the location provider that will be used to geocode
@@ -111,7 +106,6 @@ On the __Choose a location provider__ page you have to select the location provi
               Once you have obtained the key, you should paste it in the *Client token* box, as shown below:
               
   ![ChooseALocation Provider](images/Map/ChooseALocationProvider.png)
-
 1. 
 
 When you click __Finish__, the Wizard will create the definition of the Map item, show it in the designer
@@ -121,7 +115,6 @@ When you click __Finish__, the Wizard will create the definition of the Map item
               When finished, your map should look like this:
               
   ![Map Column Chart Done](images/Map/MapColumnChart_Done.png)
-
 1. 
 
 Now we will add a
@@ -151,7 +144,6 @@ Your __Arrange map fields__ page should look like the one shown below:
 When you click the __Finish__ button, the map will display the two series together, rendered in the
               order they have been created. That's why you will see the column charts being overlapped by the circles.
             
-
 1. 
 
 The map needs some more setup and styling in order to make it look good. Select the Map item, click on the
@@ -196,7 +188,6 @@ The map needs some more setup and styling in order to make it look good. Select 
 * If you wish, you can change the map size, adjust the fonts properties and try various styling, but finally your map should look like this:
                   
   ![Map Point And Column Chart Done](images/Map/MapPointAndColumnChart_Done.png)
-
 1. 
 
 As you may have noticed, the information about the occupied places is present in the CSV file as integer numbers, that's why the
@@ -221,7 +212,6 @@ Select the __medalsData__ data source, add a calculated field named __Medal__
 Now you can set the __columnMapSeries' __[LegendItem](/reporting/api/Telerik.Reporting.LegendItem).[Value](/reporting/api/Telerik.Reporting.LegendItem#Telerik_Reporting_LegendItem_Value) expression to
               `=Fields.Medal` and style the legend by your choice.
             
-
 1. 
 
 In case we want to reduce the amount of displayed information on the map, one of the best options is to use
@@ -273,7 +263,6 @@ In order to display the meaningful names of the olympic associations, we will ad
                   from the Pan-American Sports Organization. If you preview the report, you will be able to change the map extent
                   only by selecting different combinations of parameter values.
                 
-
 1. 
 
 Since the column charts on the map are not suitable to display any labels on them, we will add an additional CrossTab,
@@ -316,7 +305,6 @@ Since the column charts on the map are not suitable to display any labels on the
 * You can change the table styling by your choice, but finally when you preview the report, the crosstab should look like the one below:
                   
   ![Crosstab Done](images/Map/Crosstab_Done.png)
-
 1. 
 
 In this step we will add some interactivity to our report, allowing the user to select a national team from the crosstab and changing
@@ -362,7 +350,6 @@ In this step we will add some interactivity to our report, allowing the user to 
                   [DataPointConditionalFormatting](/reporting/api/Telerik.Reporting.GraphSeriesBase#Telerik_Reporting_GraphSeriesBase_DataPointConditionalFormatting)                  rule, as shown here:
                   
   ![Point Map Data Point Conditional Formatting](images/Map/PointMapDataPointConditionalFormatting.png)
-
 1. 
 
 Finally we will add a small Graph showing a
@@ -389,7 +376,6 @@ Finally we will add a small Graph showing a
                   `=Fields.Place ASC` and apply the same ColorPalette you have defined in step 8 to the Graph item.
                 Additionally you can make the graph axes invisible, set the Y axis __Minumum__ to 0 and change the styling properties of its data points and data point labels.
                 
-
 1. 
 
 When you are finished, you can preview your report and it should look similar to this one:

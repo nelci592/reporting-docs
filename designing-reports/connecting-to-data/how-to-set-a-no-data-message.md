@@ -23,24 +23,20 @@ When you want to specify text to show in the rendered report in place of a neste
 
 >note The "No Data Message" feature is available for nested Data items: Table, List, Crosstab, Graph, Map.The condition to use the feature is to have a nested Data item with DataSource property set to a valid data object, different than NULL.            If the data object is filtered to zero returned records, the feature is triggered.          
 How To Set NoDataMessage:
-
 1. 
 
 Click the data item on the design surface to select it.
               The __Properties Browser__ displays the properties for the selected item.
             
-
 1. 
 
 In the __Properties Browser__, expand the __No Data__ node.
             
-
 1. 
 
 Set the __NoDataMessage__ property to the text you want to display.
               Alternatively, click the Edit(…) button to open the [Edit Expression Dialog]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/edit-expression-dialog%})              and create an expression.
             
-
 1. 
 
 Optionally to style the no data message, click the __NoDataStyle__ Edit(…) button

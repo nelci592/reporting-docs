@@ -34,6 +34,7 @@ Add the instance of the ReportViewer to a __RadAjaxManager__ control.
 
 	
 ````ASP.NET
+
 	<asp:Button ID="Button1" runat="server" Text="Button" onclick="Button1_Click" />
 	<telerik:ReportViewer ID="ReportViewer1" runat="server"></telerik:ReportViewer>
 	<telerik:RadAjaxManager ID="RadAjaxManager1" runat="server">
@@ -79,6 +80,7 @@ Wrap the instance of the ReportViewer into UpdatePanel ContentTemplate:
 
 	
 ````ASP.NET
+
 		<asp:ScriptManager ID="ScriptManager1" runat="server" />
         <asp:Button ID="Button1" runat="server" Text="Button" onclick="Button1_Click" />
         <asp:UpdatePanel ID="UpdatePanel1" runat="server">

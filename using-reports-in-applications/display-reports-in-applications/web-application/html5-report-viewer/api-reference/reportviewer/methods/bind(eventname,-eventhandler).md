@@ -19,6 +19,7 @@ Binds event handlers to the specified event.
 
 	
 ````js
+
             function onPageReady(e) {
               console.log('page ready!');
             }

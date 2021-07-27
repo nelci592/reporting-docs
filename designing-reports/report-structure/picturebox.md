@@ -67,6 +67,7 @@ While the methods above are quickest to get an image onto your report, one doesn
 
 	
 ````c#
+
 			
         using System.Drawing;
  
@@ -82,6 +83,7 @@ While the methods above are quickest to get an image onto your report, one doesn
 
 	
 ````vb.net
+
 			
         Imports System.Drawing
  
@@ -101,6 +103,7 @@ While in design-time, if you click the ellipsis of the Value property of a sele
 
 	
 ````c#
+
 			    this.pictureBox1.Value = ((object)(resources.GetObject("pictureBox1.Value")));
 			    
 ````
@@ -110,6 +113,7 @@ When the database field contains relative path (be it file path or URI) you can 
 
 	
 ````c#
+
 public static Image LoadImage(string imageLocation)
 {
      string absoluteLocation = "C:\\" + imageLocation;
@@ -122,6 +126,7 @@ public static Image LoadImage(string imageLocation)
 
 	
 ````vb.net
+
 Public Shared Function LoadImage(imageLocation As String) As Image
 	Dim absoluteLocation As String = "C:\" + imageLocation
 	Return Image.FromFile(absoluteLocation)
@@ -148,6 +153,7 @@ and set the Value of the PictureBox item to the correct expression: =LoadImage(F
 
 	
 ````c#
+
       this.pictureBox1.Value = "=Fields.MyImageBinary";//a binary data column 
       this.pictureBox2.Value = "=Fields.MyImageURI";//a data column containing an URI
       this.pictureBox3.Value = @"C:\MyPictures\MyPicture.png";//absolute file path to a PNG file
@@ -162,6 +168,7 @@ and set the Value of the PictureBox item to the correct expression: =LoadImage(F
 
 	
 ````vb.net
+
       Me.PictureBox1.Value = "=Fields.MyImageBinary" 'a binary data column
       Me.PictureBox2.Value = "=Fields.MyImageURI" 'a data column containing an URI
       Me.PictureBox3.Value = "C:\MyPictures\MyPicture.png" 'absolute file path to a PNG image

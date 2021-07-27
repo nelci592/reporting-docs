@@ -22,6 +22,7 @@ Returns: integer:
 
 	
 ````js
+
             var reportViewer = $("#reportViewer1").data("telerik_ReportViewer");
             var currentPage = reportViewer.currentPage();
           

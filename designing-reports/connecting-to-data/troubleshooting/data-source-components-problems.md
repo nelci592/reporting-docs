@@ -121,6 +121,7 @@ The EntityDataSource component wraps EF data models, where in design-time the Re
 
 	
 ````XML
+
 <Telerik.Reporting>
    <AssemblyReferences>
        <add name="MyEFModelCustomAssembly" version="1.0.0.0" culture="neutral" publicKeyToken="null" />

@@ -23,17 +23,16 @@ To give an example we will use the Invoice report from our examples and will upd
 
 >tip All path references in the described steps should be adapted according            to your project setup. For more information please refer to the MSDN article            [ASP.NET Web Project Paths](http://msdn.microsoft.com/en-us/library/ms178116.aspx)
 
-
 1. 
 
 Add a new html page CustomParameters.html to the CSharp.Html5Demo or VB.Html5Demo project.
-
 1. 
 
 Add the references to all required JavaScript libraries and stylesheets:
 
 	
 ````HTML
+
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -49,13 +48,13 @@ Add the references to all required JavaScript libraries and stylesheets:
 ````
 
 
-
 1. 
 
 Add the custom parameter UI - a dropdown selector with a few values:
 
 	
 ````HTML
+
     <div id="invoiceIdSelector">
         <label for="invoiceId">Invoices</label>
         <select id="invoiceId" title="Select the Invoice ID">
@@ -68,19 +67,18 @@ Add the custom parameter UI - a dropdown selector with a few values:
 ````
 
 
-
 1. 
 
 Add the ReportViewer placeholder
 
 	
 ````HTML
+
     <div id="reportViewer1">
         loading...
     </div>
         
 ````
-
 
 
 1. 
@@ -92,6 +90,7 @@ Now initialize the report viewer. We will use the minimal set of all
 
 	
 ````js
+
         $(document).ready(function () {
             $("#reportViewer1").telerik_ReportViewer({
                 serviceUrl: "api/reports/",
@@ -108,7 +107,6 @@ Now initialize the report viewer. We will use the minimal set of all
 ````
 
 
-
 1. 
 
 Add code that updates the ReportSource parameters collection with the selected __Invoice Id__ from
@@ -117,6 +115,7 @@ Add code that updates the ReportSource parameters collection with the selected _
 
 	
 ````js
+
             $('#invoiceId').change(function () {
                 var viewer = $("#reportViewer1").data("telerik_ReportViewer");
                 viewer.reportSource({
@@ -131,13 +130,13 @@ Add code that updates the ReportSource parameters collection with the selected _
 ````
 
 
-
 1. 
 
 The HTML page that we have just created should looks like this:
 
 	
 ````HTML
+
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -149,7 +148,6 @@ The HTML page that we have just created should looks like this:
     
     <link href="https://kendo.cdn.telerik.com/
 ````
-
 
 
 1. 

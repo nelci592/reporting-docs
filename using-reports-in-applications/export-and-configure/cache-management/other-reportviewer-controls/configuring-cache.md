@@ -21,6 +21,7 @@ The cache management system can be configured by specifying one or more cache pr
 
 	
 ````xml
+
 <Telerik.Reporting>
   <Cache provider="File" />
 </Telerik.Reporting>
@@ -65,6 +66,7 @@ The individual providers are registered by adding one or more "Provider" element
 
 	
 ````xml
+
 <Telerik.Reporting>
   <Cache provider="File">
     <Providers>

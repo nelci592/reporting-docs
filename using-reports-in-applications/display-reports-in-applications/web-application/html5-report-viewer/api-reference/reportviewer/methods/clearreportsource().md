@@ -21,6 +21,7 @@ Returns: a reference for the reportViewer object.
 
 	
 ````html
+
 <input id="buttonChangeReportSource" type="submit" value="Change Report Source" />
           
 ````
@@ -29,6 +30,7 @@ Returns: a reference for the reportViewer object.
 
 	
 ````js
+
 $(document).ready(function () {
     $("#buttonChangeReportSource").on("click", function () {
         var viewer = $("#reportViewer1").data("telerik_ReportViewer");

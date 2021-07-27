@@ -27,12 +27,10 @@ Telerik Reporting uses __StackExchange.Redis__ client library to access a Redis 
 * Telerik.Reporting.Cache.StackExchangeRedis.2 depends on StackExchange.Redis version 2.0.601 or greater.
               It is built against .NET Standard 2.0 and it can be used in projects targeting .NET Framework 4.6.1+ or .NET Core 2.0+
             Using the Telerik NuGet repository:
-
 1. 
 
 Add NuGet package reference to Telerik.Reporting.Cache.StackExchangeRedis or Telerik.Reporting.Cache.StackExchangeRedis.2 package from the https://nuget.telerik.com/nuget package source (Telerik credentials needed).
                 Using the Telerik Reporting installation bin folder:
-
 1. 
 
 For projects using StackExchange.Redis.StrongName version 1.0.320 up to version 1.2.7:
@@ -49,7 +47,6 @@ For projects using StackExchange.Redis.StrongName version 1.0.320 up to version 
 * Add reference to the
                       __Telerik.Reporting.Cache.StackExchangeRedis__                      library located in the {Telerik Reportng installation folder}/Bin folder.
                     
-
 1. 
 
 For projects using StackExchange.Redis version 2.0.601 or greater:

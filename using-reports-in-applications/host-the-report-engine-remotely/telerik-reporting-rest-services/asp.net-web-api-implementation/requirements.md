@@ -59,6 +59,7 @@ Requirements for using __Telerik Reporting REST WebAPI service__ in an applicati
 
 	
 ````xml
+
 <?xml version="1.0" encoding="utf-8" ?>
 <configuration>
   <runtime>

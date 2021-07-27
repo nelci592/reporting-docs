@@ -79,6 +79,7 @@ Open the __project.json__ file.
 
 	
 ````HTML
+
 "frameworks": {
     "net461": { }
 },
@@ -125,6 +126,7 @@ For Office OpenXML document formats (XLSX, DOCX and PPTX) install the
 
 	
 ````c#
+
   
 namespace WebApplication1.Controllers
 {
@@ -164,6 +166,7 @@ namespace WebApplication1.Controllers
 
 	
 ````c#
+
 public IActionResult Report()
 {
     ViewBag.Message = "Your reports page.";
@@ -199,7 +202,8 @@ public IActionResult Report()
 >important Whenever you need to route a relative path you will have to use  *Url.Content*  helper, like this:              
 
 	
-````HTML@Url.Content("~/api/reports/")                
+````HTML
+@Url.Content("~/api/reports/")                
 ````
 
 instead of simply pasting the path.
@@ -207,6 +211,7 @@ The complete Report view (Report.cshtml) should look like this:
 
 	
 ````HTML
+
 @{
     Layout = null;
 }
@@ -234,7 +239,8 @@ The complete Report view (Report.cshtml) should look like this:
             
 
 	
-````HTML       
+````HTML
+       
 	<li><a asp-area="" asp-controller="Home" asp-action="Report">Report</a></li>
 
 ````
@@ -243,7 +249,8 @@ list item to the navigation. It should become like this:
             
 
 	
-````HTML       
+````HTML
+       
     <li><a asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>
     <li><a asp-area="" asp-controller="Home" asp-action="About">About</a></li>
     <li><a asp-area="" asp-controller="Home" asp-action="Contact">Contact</a></li>

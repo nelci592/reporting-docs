@@ -16,6 +16,7 @@ To create a Telerik report in code, you need to instantiate a __Telerik.Reportin
 
 	
 ````C#
+
 MyReport report = new MyReport();
 string selectCommand = @"SELECT * FROM Sales.Store";
 string connectionString = "Data Source=(local)\\SQLEXPRESS;Initial Catalog=AdventureWorks;Integrated Security=True";
@@ -28,6 +29,7 @@ report.DataSource = sqlDataSource;
 
 	
 ````VB.NET
+
 Dim report As New MyReport()
 Dim selectCommand As String = "SELECT * FROM Sales.Store"
 Dim connectionString As String = "Data Source=(local)\SQLEXPRESS;Initial Catalog=AdventureWorks;Integrated Security=True"

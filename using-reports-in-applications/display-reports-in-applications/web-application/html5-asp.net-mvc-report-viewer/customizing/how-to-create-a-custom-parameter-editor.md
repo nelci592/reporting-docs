@@ -27,6 +27,7 @@ The following example illustrates how to use the Kendo DropDownList widget for a
 
 	
 ````js
+
     function createSingleSelectEditor(placeholder, options) {
                 var dropDownElement = $(placeholder).html('<div></div>');
                 var parameter,
@@ -62,6 +63,7 @@ The following example illustrates how to use the Kendo DropDownList widget for a
 
 	
 ````xml
+
 @(Html.TelerikReporting().ReportViewer()
         .Id("reportViewer1")
         .ParameterEditors(
@@ -94,6 +96,7 @@ The following example illustrates how to use the Kendo DropDownList widget for a
 
 	
 ````js
+
             function customMatch(parameter) {
                 return Boolean(parameter.availableValues)
                     && !parameter.multivalue
@@ -138,6 +141,7 @@ Passing the parameter editor to the viewer:
 
 	
 ````xml
+
 @(Html.TelerikReporting().ReportViewer()
         .Id("reportViewer1")
         .ParameterEditors(

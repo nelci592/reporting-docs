@@ -40,14 +40,12 @@ You can change the legend items text style by selecting the legend and with __Pr
 
 >note If you are using the standalone report designer you can take advantage of the graph tools in the ribbon's Design and Format tabs.          
 
-
 1. 
 
 Click the graph legend that you want to change.
 
 The selected legend properties are listed in the __Property Browser__.
                 
-
 1. 
 
 In the __Style property__, click the __Edit Collection (…) button__.
@@ -55,7 +53,6 @@ In the __Style property__, click the __Edit Collection (…) button__.
 
 The Edit style dialog opens.
                 
-
 1. 
 
 When you are done, click OK.
@@ -81,26 +78,22 @@ To visually hide a Legened Item, you can use the __Graph.Series.LegendItem.Style
 You can move the legend to one of twelve different positions when the legend is placed outside the chart area.
           By default, the legend is shown outside the plot area.
         Reposition the Legend:
-
 1. 
 
 Click the legend area.
 
 The legend properties are listed in the __Property Browser__;
                 
-
 1. 
 
 In the __Misc__ section select a value for the Position property.
                 Move the Legend Inside the Plot area:
-
 1. 
 
 Click the legend area.
 
 The legend properties are listed in the __Property Browser__;
                 
-
 1. 
 
 In the __Misc__ section set the __IsInsideThePlotArea property__ to __True__.

@@ -30,6 +30,7 @@ All viewer related classes are supplied by a single CSS stylesheet referenced in
 
 	
 ````js
+
 <script type="text/javascript">
         $("#reportViewer1")
             .telerik_ReportViewer({
@@ -48,6 +49,7 @@ In addition the Kendo UI CSS needs to be supplied in order for the Kendo UI widg
 
 	
 ````HTML
+
           <link href="/kendo/styles/kendo.common.min.css" rel="stylesheet" />
 				
 ````
@@ -59,6 +61,7 @@ While these classes provide layout settings the HTML5 Report Viewer depends on t
 
 	
 ````HTML
+
           <link href="/kendo/styles/kendo.blueopal.min.css" rel="stylesheet" />
 				
 ````
@@ -82,6 +85,7 @@ In order to use Font Awesome you have to specify the font awesome template. The 
 
 	
 ````js
+
 <script type="text/javascript">
         $("#reportViewer1")
             .telerik_ReportViewer({
@@ -99,6 +103,7 @@ The default viewer template and stylesheet depend on CSS media queries to adapt 
 
 	
 ````HTML
+
           <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 				
 ````

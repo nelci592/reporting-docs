@@ -23,6 +23,7 @@ If you have custom HTML template you should provide it to the telerik_ReportView
 
 	
 ````js
+
         $("#reportViewer1").telerik_ReportViewer({
             serviceUrl: "../api/reports/",
             templateUrl: '/ReportViewer/templates/telerikReportViewerTemplate.html',
@@ -38,6 +39,7 @@ The HTML template file is an HTML page while the templates are HTML document fra
 
 	
 ````HTML
+
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -65,6 +67,7 @@ The templates are loaded during the initialization of the __telerik_ReportViewer
 
 	
 ````js
+
 $("#reportViewer1").telerik_ReportViewer({
 	serviceUrl: "../api/reports/",
 	templateUrl: '/ReportViewer/templates/telerikReportViewerTemplate',

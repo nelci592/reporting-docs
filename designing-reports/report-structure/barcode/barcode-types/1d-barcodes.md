@@ -75,6 +75,7 @@ For example, the following code inserts the FNC4 control character in the middle
 
 	
 ````C#
+
 				this.barcode1.Value = "ABCD" + "\u00FA" + "1234";
 				
 ````
@@ -83,6 +84,7 @@ For example, the following code inserts the FNC4 control character in the middle
 
 	
 ````VB.NET
+
 				me.barcode1.Value = "ABCD" & ChrW(&HFA) & "1234"
 				
 ````
@@ -100,6 +102,7 @@ GS1-128 is a special case of Code128. The only difference between GS1-128 and
 
 	
 ````C#
+
 			this.barcode1.Value = "1234" + "\u00F7" + "5678";
 			
 ````
@@ -108,6 +111,7 @@ GS1-128 is a special case of Code128. The only difference between GS1-128 and
 
 	
 ````VB.NET
+
 			me.barcode1.Value = "1234" & ChrW(&HF7) & "5678"
 			
 ````

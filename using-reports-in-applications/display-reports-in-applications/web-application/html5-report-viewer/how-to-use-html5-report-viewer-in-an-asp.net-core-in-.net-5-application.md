@@ -42,6 +42,7 @@ In case you need to host it locally, follow the article [How to Host Reports Ser
 
 	
 ````c#
+
 app.UseStaticFiles();
             
 ````
@@ -57,6 +58,7 @@ app.UseStaticFiles();
 
 	
 ````HTML
+
 <!DOCTYPE html> 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head> 

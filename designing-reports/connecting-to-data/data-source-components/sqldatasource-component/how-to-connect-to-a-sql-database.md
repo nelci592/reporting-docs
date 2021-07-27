@@ -17,7 +17,6 @@ You can connect to a SQL database using the Telerik
         rights to the SQL database. Then, you can use the SqlDataSource component
         to provide data to [data items (Report, Table, Graph, Map)]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/overview%})        and [report parameters]({%slug telerikreporting/designing-reports/connecting-to-data/report-parameters/overview%}).
       To connect to a SQL database using the SqlDataSource component
-
 1. 
 
 Open a Telerik Reporting in a [Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/overview%})
@@ -32,12 +31,10 @@ Open a Telerik Reporting in a [Report Designer]({%slug telerikreporting/designin
 The __SqlDataSource Wizard__ should be started automatically. For already existing SqlDataSource components in the report, select
               __'Configure...'__ from the component's Context Menu.
             
-
 1. 
 
 __Choose Data Connection__ dialog box appears.
             
-
 1. 
 
 Click __Build New Data Connection__ to add the connection string to the SQL database:
@@ -106,7 +103,6 @@ For our tutorial we will connect to AdventureWorks database installed on MSSQL s
 
 1. Click the __OK__ button, and in the __Connection string__ text-box you should see a string like
                   *Data Source=(local)\sqlexpress;Initial Catalog=AdventureWorks;Integrated Security=True*                  or *Data Source=(local)\sqlexpress;Initial Catalog=AdventureWorks;User ID=admin;Password=admin123*
-
 1. 
 
 Click __Next__              to continue to the __Data Connection Options__ dialog. Where you can:
@@ -127,7 +123,6 @@ For the purpose of this tutorial, we will use the __Use a shared connection__ op
 
 Click __Next__.
             
-
 1. 
 
 Follows the __Configure data source command__ dialog.
@@ -149,7 +144,6 @@ In this tutorial we will use the __Select Statement__ option. Type the following
 SELECT * FROM [HumanResources].[Department] WHERE [HumanResources].[Department].[DepartmentID]=@ID
 
 >tip If the SQL query returns more than one set of data, only the first result will be used.Test running the SQL query on the SQL server database to verify the syntax.
-
 
 1. 
 
@@ -181,13 +175,11 @@ Click __Next__ to navigate to the __Configure design time parameters__ step.
 
 Click __Next__.
             
-
 1. 
 
 To test your query, click __Next__, and then
               click __Execute Query__ in the __Preview data source results__ step of the wizard.
             
-
 1. 
 
 Click __Finish__. The SqlDataSource Wizard would close

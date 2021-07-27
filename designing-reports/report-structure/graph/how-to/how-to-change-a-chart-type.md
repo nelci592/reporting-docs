@@ -22,21 +22,17 @@ When multiple series are displayed on a graph, you may want to change the chart 
       	You can only change the chart type of an individual series if the chart type is Area, Column, Line, or Scatter. 
       	For all other chart types, all series in your chart will be changed to the selected chart type.
       To change the chart type
-
 1. 
 
 In Design view, right click on the graph or graph series.
 
 The Graph context menu opens.
-
 1. 
 
 Click the __Change Chart Type__ option.
-
 1. 
 
 In the __Change Chart Type__ dialog box, select a chart type from the list.
-
 1. 
 
 When you are done, click OK.

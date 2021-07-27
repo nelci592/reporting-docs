@@ -17,11 +17,9 @@ Each series data-representation is formed by both the Category and Series groups
       
 
 ## To switch the SeriesGroups and CategoryGroups of a Graph
-
 1. 
 
 Select the graph in the designer.
-
 1. 
 
 Right-click and select Switch Row/Column from the context menu.

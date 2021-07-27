@@ -20,6 +20,7 @@ The *ReportViewer* object is created through the [jQuery.fn.telerik_ReportViewer
 
 	
 ````js
+
             $("#reportViewer1").telerik_ReportViewer({
               serviceUrl: "../api/reports/",
               templateUrl: 'src/templates/telerikReportViewerTemplate-x.x.x.x.html',
@@ -37,6 +38,7 @@ To get the *ReportViewer* object from the target HTML element:
 
 	
 ````js
+
             var reportViewer = $("#reportViewer1").data("telerik_ReportViewer");
           
 ````
@@ -85,6 +87,7 @@ Additionally you can change the state of the report viewer in your event handler
 
 	
 ````js
+
             // $(handler) is jQuery's shorthand for $(document).ready(handler)
             $(function () {
               var reportViewer = $("#reportViewer1").data("telerik_ReportViewer");

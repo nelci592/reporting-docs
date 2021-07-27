@@ -20,6 +20,7 @@ Returns: string.
 
 	
 ````js
+
 var reportViewer = $("#reportViewer1").data("telerik_ReportViewer");
 var vm = reportViewer.viewMode();
           

@@ -19,7 +19,6 @@ In this how-to article we will show you how to use the [Standalone Report Design
         [List of sovereign states and dependent territories by population density](http://en.wikipedia.org/wiki/List_of_sovereign_states_and_dependent_territories_by_population_density).
               Creating a simple choropleth map using CSV data source and a Shapefile
       
-
 1. 
 
 Start the Map Wizard:
@@ -32,7 +31,6 @@ Start the Map Wizard:
                   from the __Insert__ menu.
                   This will bring up the __Choropleth Wizard__ which will guide you through the creation process.
                 
-
 1. 
 
 Add new
@@ -64,13 +62,11 @@ Add new
 * When you click __Parse CSV...__ on the next page, you should see the result of the parsed file.
                 Click __Finish__ when you are ready.
                 
-
 1. 
 
 In the *Available data sources* list you should see the datasource you've already created.
               Select it and click __Next__.
             
-
 1. 
 
 In the next page you have to select the source that will provide the spatial data to your choropleth. In this example we will use a
@@ -96,7 +92,6 @@ Your __Choose a spatial data source__ page should look like the one shown below:
 
 Once the mandatory fields are set up, the __Next__ button will get enabled and you can go to the next page.
             
-
 1. 
 
 On the following page you will set the fields that are specific to the choropleth map. Please note that in the *Available fields*              you will see the fields from both analytical and spatial data sets.
@@ -123,7 +118,6 @@ On the following page you will set the fields that are specific to the choroplet
 1. When you are done, your __Choropleth setup__ page should look like this:
                   
   ![Choropleth How To Simple Choropleth Setup](images/Map/Choropleth/HowTo_SimpleChoropleth/Choropleth_HowToSimple_ChoroplethSetup.png)
-
 1. 
 
 When you click the __Finish__ button, the map will display the choropleth map. After adding some formatting to the

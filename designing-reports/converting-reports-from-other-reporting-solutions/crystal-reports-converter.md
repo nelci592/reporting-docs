@@ -93,6 +93,7 @@ The Crystal Reports assemblies are stored in machine’s GAC (Global Assembly Ca
 
 	
 ````none
+
             C:\WINDOWS\system32>gacutil -l CrystalDecisions.Shared
             Microsoft (R) .NET Global Assembly Cache Utility.  Version 4.0.30319.0
             Copyright (c) Microsoft Corporation.  All rights reserved.
@@ -110,6 +111,7 @@ The output from the *gacutil.exe* above shows that the current version of the in
 
 	
 ````xml
+
             <runtime>
                 <assemblyBinding xmlns="urn:schemas-microsoft-com:asm.v1">
                 ...

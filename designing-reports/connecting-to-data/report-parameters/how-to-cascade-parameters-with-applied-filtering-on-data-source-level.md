@@ -22,6 +22,7 @@ To create cascading report parameters with applied filtering on data source leve
 
 	
 ````SQL
+
 SELECT        Production.Product.ProductNumber, Production.Product.Name AS ProductName, 
               Production.ProductSubcategory.Name AS SubcategoryName
 FROM          Production.Product 
@@ -56,6 +57,7 @@ WHERE        (Production.Product.ProductSubcategoryID = @ProductSubcategoryID)
 
 	
 ````SQL
+
 SELECT        ProductSubcategoryID, 
               Name AS SubcategoryName
 FROM          Production.ProductSubcategory
@@ -91,6 +93,7 @@ WHERE        (ProductCategoryID = @ProductCategoryID)
 
 	
 ````SQL
+
 SELECT
               ProductCategoryID,
               Name AS CategoryName

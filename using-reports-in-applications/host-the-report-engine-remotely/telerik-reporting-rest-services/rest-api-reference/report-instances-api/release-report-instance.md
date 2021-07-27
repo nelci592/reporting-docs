@@ -46,6 +46,7 @@ __Path parameters__
 
 	
 ````Request Message
+
           DELETE /api/reports/clients/2c3d/instances/4d3c HTTP/1.1
           
 ````
@@ -54,6 +55,7 @@ __Path parameters__
 
 	
 ````Response Message
+
           HTTP/1.1 204 NoContent
           
 ````

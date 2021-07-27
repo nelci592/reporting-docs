@@ -40,6 +40,7 @@ The following example illustrates how to use the Kendo DropDownList widget for a
 
 	
 ````js
+
 {
       match: function (parameter) {
             // Here you can use all of the parameter properties in order to
@@ -87,6 +88,7 @@ Passing the parameter editor to the viewer:
 
 	
 ````js
+
 <script type="text/javascript">
       $("#reportViewer1")
         	.telerik_ReportViewer({           

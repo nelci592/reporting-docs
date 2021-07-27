@@ -93,7 +93,8 @@ The report generation engine can retrieve Sql Connection Strings and specific Re
         
 
 	
-````C#ReportingEngineConfiguration = sp.GetService<IConfiguration>()
+````C#
+ReportingEngineConfiguration = sp.GetService<IConfiguration>()
           
 ````
 
@@ -113,7 +114,8 @@ In this guide we will create a helper class loading the json-formatted setting:
         
 
 	
-````C#          
+````C#
+          
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 
@@ -140,6 +142,7 @@ Finally, all configurations should be placed in the JSON configuration file (add
 
 	
 ````JSON
+
 {
   ...
   "ConnectionStrings": {
@@ -157,6 +160,7 @@ The above type of connection string lacks information about the data provider an
 
 	
 ````JSON
+
 {
   ...
   "ConnectionStrings": {
@@ -179,6 +183,7 @@ The last supported type of __ConnectionStrings__ configuration uses an array to 
 
 	
 ````JSON
+
 {
   ...
   "ConnectionStrings": [
@@ -205,7 +210,8 @@ Add the dedicated configuration object needed from the Reports Service in the de
         
 
 	
-````C# 
+````C#
+ 
 // Configure dependencies for ReportsController.
 services.TryAddSingleton<IReportServiceConfiguration>(sp =>
     new ReportServiceConfiguration
@@ -234,6 +240,7 @@ services.TryAddSingleton<IReportServiceConfiguration>(sp =>
 
 	
 ````c#
+
 namespace AspNetCoreDemo.Controllers
 {
     using Microsoft.AspNetCore.Mvc;

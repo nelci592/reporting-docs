@@ -45,6 +45,7 @@ Two cache providers are available:
 
 	
 ````xml
+
 <Telerik.Reporting>
   <Cache provider="ADO.NET">
     <Providers>
@@ -74,6 +75,7 @@ Here the "ProviderName" parameter specifies the __ADO.NET__ provider, and the "C
 
 	
 ````xml
+
 <Telerik.Reporting>
   <Cache provider="Database">
     <Providers>
@@ -99,6 +101,7 @@ Here the "BackendName" parameter specifies the name of the chosen backend. Compl
 
 	
 ````xml
+
 <?xml version="1.0" encoding="utf-8" ?>
 <configuration>
   <runtime>

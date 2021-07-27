@@ -79,6 +79,7 @@ The following code demonstrates the four steps required to create a __TypeSelec
 
 	
 ````C#
+
 		//Create a StyleRule
 		Telerik.Reporting.Drawing.StyleRule myStyleRule = new Telerik.Reporting.Drawing.StyleRule();
 		//Add a TypeSelector
@@ -97,6 +98,7 @@ The following code demonstrates the four steps required to create a __TypeSelec
 
 	
 ````VB.NET
+
 		'Create a StyleRule
 		Dim MyStyleRule As Telerik.Reporting.Drawing.StyleRule = New Telerik.Reporting.Drawing.StyleRule
 		'Add a TypeSelector
@@ -148,6 +150,7 @@ The following code demonstrates the four steps required to create a __StyleSele
 
 	
 ````C#
+
 		//Create a StyleRule
 		Telerik.Reporting.Drawing.StyleRule myStyleRule = new Telerik.Reporting.Drawing.StyleRule();     
 		//Add a StyleSelector
@@ -165,6 +168,7 @@ The following code demonstrates the four steps required to create a __StyleSele
 
 	
 ````VB.NET
+
 		'Create a StyleRule
 		Dim MyStyleRule As Telerik.Reporting.Drawing.StyleRule = New Telerik.Reporting.Drawing.StyleRule 
 		'Add a StyleSelector
@@ -247,6 +251,7 @@ The following code demonstrates the four steps required to create a __Descendan
 
 	
 ````C#
+
 		//Create StyleRule and DescendantSelector
 		Telerik.Reporting.Drawing.StyleRule myStyleRule = new Telerik.Reporting.Drawing.StyleRule();    
 		Telerik.Reporting.Drawing.DescendantSelector myDescendantSelector = new Telerik.Reporting.Drawing.DescendantSelector();
@@ -275,6 +280,7 @@ The following code demonstrates the four steps required to create a __Descendan
 
 	
 ````VB.NET
+
 		'Create StyleRule and DescendantSelector
 		Dim MyStyleRule As Telerik.Reporting.Drawing.StyleRule = New Telerik.Reporting.Drawing.StyleRule
 		Dim MyDescendantSelector As Telerik.Reporting.Drawing.DescendantSelector = _ 

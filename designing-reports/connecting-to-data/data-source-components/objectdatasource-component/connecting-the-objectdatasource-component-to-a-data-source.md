@@ -111,6 +111,7 @@ For security reasons the ObjectDataSource can resolve only types that are declar
 
 	
 ````xml
+
 <?xml version="1.0"?>
 <configuration>
     <configSections>

@@ -16,7 +16,6 @@ This article explains how to create a custom report source resolver for the __Te
         In this example, the resolver purpose will be to return a [XmlReportSource](/reporting/api/Telerik.Reporting.XmlReportSource) with an XML
         report definition obtained from an SQL Server database.
       How to implement a custom report source resolver:
-
 1. 
 
 Create a class which implements the [IReportSourceResolver](/reporting/api/Telerik.Reporting.Services.IReportSourceResolver)              interface. Its [Resolve](/reporting/api/Telerik.Reporting.Services.IReportSourceResolver#Telerik_Reporting_Services_IReportSourceResolver_Resolve_System_String_Telerik_Reporting_Services_OperationOrigin_System_Collections_Generic_IDictionary{System_String_System_Object}_) 
@@ -96,7 +95,6 @@ Create a class which implements the [IReportSourceResolver](/reporting/api/Teler
 ````
 
 
-
 1. 
 
 Find the __ReportSourceResolver property__ in the [ReportServiceConfiguration](/reporting/api/Telerik.Reporting.Services.WebApi.ReportsControllerBase#Telerik_Reporting_Services_WebApi_ReportsControllerBase_ReportServiceConfiguration) settings of the
@@ -158,13 +156,13 @@ Find the __ReportSourceResolver property__ in the [ReportServiceConfiguration](/
 ````
 
 
-
 1. 
 
 Request the report from the HTML5 Report Viewer on the client:
 
 	
 ````JavaScript
+
 <script type="text/javascript">
 	$(document).ready(function () {
             $("#reportViewer1").telerik_ReportViewer({
@@ -179,7 +177,6 @@ Request the report from the HTML5 Report Viewer on the client:
 
 
 where x.x.x.x is the version of the HTML5 ReportViewer/Telerik Reporting (e.g. 8.1.14.618).
-
 1. 
 
 To create the database use the following script:
@@ -205,7 +202,6 @@ To create the database use the following script:
             
 
 
-
 1. 
 
 To enter some data into the database you can manually edit the __Reports__ table.
@@ -218,7 +214,6 @@ In newer versions, all sample reports of the Standalone Report Designer are in T
               *Standalone Report Designer - File - Save As* option to convert them to TRDX files.
                     How to implement and use custom IReportSourceResolver with fallback mechanism:
       
-
 1. 
 
 Add to your IReportSourceResolver implementation a constructor with parameter IReportSourceResolver parentResolver.
@@ -227,6 +222,7 @@ Add to your IReportSourceResolver implementation a constructor with parameter IR
 
 	
 ````C#
+
 class ReportSourceResolverWithFallBack : IReportSourceResolver
 {
     readonly IReportSourceResolver parentResolver;
@@ -262,6 +258,7 @@ class ReportSourceResolverWithFallBack : IReportSourceResolver
 
 	
 ````VB
+
 Class ReportSourceResolverWithFallBack
     Implements IReportSourceResolver
     ReadOnly parentResolver As IReportSourceResolver
@@ -290,7 +287,6 @@ End Class
 ````
 
 
-
 1. 
 
 Add to the ReportServiceConfiguration the IReportSourceResolver implementations in a chain. Thus the custom one will be executed
@@ -299,6 +295,7 @@ Add to the ReportServiceConfiguration the IReportSourceResolver implementations 
 
 	
 ````C#
+
 public class CustomResolverWithFallbackReportsController : ReportsControllerBase
 {
     static ReportServiceConfiguration configurationInstance;
@@ -329,6 +326,7 @@ public class CustomResolverWithFallbackReportsController : ReportsControllerBase
 
 	
 ````VB
+
 Public Class CustomResolverWithFallbackReportsController
     Inherits Telerik.Reporting.Services.WebApi.ReportsControllerBase
 

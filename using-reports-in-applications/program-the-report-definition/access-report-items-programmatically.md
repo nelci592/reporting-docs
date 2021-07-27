@@ -68,6 +68,7 @@ If we are in the context of a web/win form and we need to access an item from t
 
 	
 ````C#
+
 		protected void Button1_Click(object sender, EventArgs e)
 		{
 			Telerik.Reporting.InstanceReportSource instanceReportSource = (Telerik.Reporting.InstanceReportSource)this.reportViewer1.ReportSource;
@@ -81,6 +82,7 @@ If we are in the context of a web/win form and we need to access an item from t
 
 	
 ````VB.NET
+
 		Protected Sub Button1_Click(sender As Object, e As EventArgs)
 			Dim instanceReportSource As Telerik.Reporting.InstanceReportSource = DirectCast(Me.reportViewer1.ReportSource, Telerik.Reporting.InstanceReportSource)
 			Dim report As Telerik.Reporting.Report = DirectCast(instanceReportSource.ReportDocument, Telerik.Reporting.Report)
@@ -97,6 +99,7 @@ You can reference the report fields from a table item easily using the Report AP
 
 	
 ````C#
+
         private void tableTextBox_ItemDataBinding(object sender, EventArgs eventArgs)
         {
             //get the textbox from the sender object            
@@ -115,6 +118,7 @@ You can reference the report fields from a table item easily using the Report AP
 
 	
 ````VB.NET
+
 		Private Sub tableTextBox_ItemDataBinding(sender As Object, eventArgs As EventArgs)
             'get the textbox from the sender object            
             Dim textBox As Telerik.Reporting.Processing.TextBox = DirectCast(sender, Telerik.Reporting.Processing.TextBox)

@@ -19,7 +19,6 @@ Product catalogs are among the most useful business presentation documents and T
 The proposed product catalog template allows the items to be grouped in two-level group hierarchy, having each group displaying aggregate information
         in its footer. The user can also make some adjustments to the design of the selected template layout, which will be applied when the wizard finishes.
       Create a Product Catalog using the Product Catalog Template
-
 1. 
 
 Similar to the [Invoice template]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/report-wizards/invoice-report-wizard%}) and the most report templates, the Product Catalog Template uses a wizard to guide you step-by-step through the generation process.
@@ -28,7 +27,6 @@ Similar to the [Invoice template]({%slug telerikreporting/designing-reports/repo
               [Visual Studio Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/overview%}),
               you can add a __New Report Wizard item__ to your project and select the __Product Catalog Wizard__ from the __Wizard Selector__ that should appear.
             
-
 1. 
 
 The first page of the wizard presents four different product catalog layouts to choose from.
@@ -38,7 +36,6 @@ The first page of the wizard presents four different product catalog layouts to 
               it will apply the changes onto the selected one and load it into the designer.
               
   ![Product Catalog Wizard 1 Select Template](images/Templates/ProductCatalog/ProductCatalogWizard_1_SelectTemplate.png)
-
 1. 
 
 Once you select the appropriate layout and go to the next page, you need to define the data scenario you will be using when creating the product catalog.
@@ -55,7 +52,6 @@ Once you select the appropriate layout and go to the next page, you need to defi
                   The second data source contains the data for the products, listed in the catalog – ProductNumber, ProductName, Color, Size, Weight, Price, etc.
                   
   ![Product Catalog Wizard 2 Select Data Scenario](images/Templates/ProductCatalog/ProductCatalogWizard_2_SelectDataScenario.png)
-
 1. 
 
 The next couple of pages guide the user through the data source setup. If the __Plain Data scenario__              is selected, the Wizard will start a “create-and-setup” sequence for a single data source.
@@ -67,7 +63,6 @@ These wizard pages are common for the most of the report wizards, so we won’t 
               template fields and the fields from the data sources which were set in the previous step.
               
   ![Product Catalog Wizard 3 Field Mapping](images/Templates/ProductCatalog/ProductCatalogWizard_3_FieldMapping.png)
-
 1. 
 
 The FieldMappings form consists of a treeview that contains the data source fields (on the left) and a grid with two columns for template and mapped fields (on the right).
@@ -88,7 +83,6 @@ You can map the data source fields to the template fields by dragging them from 
 In case you need to delete a mapping, you can do this by using the DEL key or selecting __<```< none >```>__ from the combobox. For convenience, the data source fields that are already mapped are displayed in a gray color in the treeview.
               
   ![Product Catalog Wizard 4 Field Mapping Done](images/Templates/ProductCatalog/ProductCatalogWizard_4_FieldMapping_Done.png)
-
 1. 
 
 Once you are done mapping the fields, click Next to go to the __Preview page__. It shows a live preview of your report
@@ -96,14 +90,12 @@ Once you are done mapping the fields, click Next to go to the __Preview page__. 
               layout and the changes will be shown on the right.
               
   ![Product Catalog Wizard 5 Preview](images/Templates/ProductCatalog/ProductCatalogWizard_5_Preview.png)
-
 1. 
 
 Once you are done styling the report, click Next to go to the __Summary page__. It displays a brief information about
               the selected layout, data scenario and the defined mappings. It will also display a message if you are missing some mandatory mapping so you could go back and fix it if it is not intentional.
               
   ![Product Catalog Wizard 6 Summary](images/Templates/ProductCatalog/ProductCatalogWizard_6_Summary.png)
-
 1. 
 
 When you are all set, you can click Finish and the designer will load the produced product catalog report, ready to be used.

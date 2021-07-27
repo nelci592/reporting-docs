@@ -27,6 +27,7 @@ Each [command]({%slug telerikreporting/using-reports-in-applications/display-rep
 
 	
 ````TypeScript
+
 <tr-viewer #viewer1
 
 ...

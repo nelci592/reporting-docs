@@ -22,7 +22,6 @@ You can use a report designer of your choice - the described approach is valid f
         [Standalone Telerik Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview%})        and
         [Integrated Visual Studio Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/overview%}).
       How to: Add a drill-down action to the Graph Item
-
 1. 
 
 Start the report designer and create a new report:
@@ -32,7 +31,6 @@ Start the report designer and create a new report:
 
 * In Visual Studio Report Designer: *File - New Project - Telerik Report Library [VERSION] - Blank Report*.
                 
-
 1. 
 
 Add a new [SqlDataSource component]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/sqldatasource-component/overview%}) by:
@@ -40,7 +38,6 @@ Add a new [SqlDataSource component]({%slug telerikreporting/designing-reports/co
               or on the SqlDataSource in the __Data tab__ of the Stabndalone Report Designer.
               This should start the [SqlDataSource Wizard]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/sqldatasource-wizard/overview%}).
             
-
 1. 
 
 On the “*Choose Data Connection*” page, you need to either select an existing connection to the
@@ -77,7 +74,6 @@ On the "*Configure Data Source Command*" page, paste the following SQL query in 
 Click Next, and then on __Execute Query...__ button to make sure that everything is fine with your data connection and data is fetched from
               the database. Click __Finish__ when you are ready. This will close the __SqlDataSource Wizard__.
             
-
 1. 
 
 Select the report in the Report Designer and increase its Width to 11in. Open the report's
@@ -89,7 +85,6 @@ Select the report in the Report Designer and increase its Width to 11in. Open th
 * Margins (Top, Right, Bottom, Left) to 0(zero) units.
 
 The purpose is to provide more space for content in the desined report.
-
 1. 
 
 Now that the data source is configured, you should set up the __Graph__ item:
@@ -107,7 +102,6 @@ Now that the data source is configured, you should set up the __Graph__ item:
 
 This will bring up the __Graph Wizard__ which will do the rest of the work for you.
             
-
 1. 
 
 Select the data source you’ve created in __step 3__ and click __Next__.
@@ -128,7 +122,6 @@ At last, drag the __LineTotal__ field to the *Values*              box, where it
 Now the “*Arrange graph fields*” page should look like the one shown below:
               
   ![How To Add Drill Down Action 4 Arrange Graph Fields](images/Graph/HowToAddDrillDownAction/HowToAddDrillDownAction_4_ArrangeGraphFields.png)
-
 1. 
 
 Your chart is done. When you click __Finish__, you will see the graph displaying the product categories grouped by year.
@@ -136,7 +129,6 @@ Your chart is done. When you click __Finish__, you will see the graph displaying
               has a small toggle mark that shows its subcategories when clicked, as shown below:
               
   ![How To Add Drill Down Action 5 Drill Down Graph](images/Graph/HowToAddDrillDownAction/HowToAddDrillDownAction_5_DrillDownGraph.png)
-
 1. 
 
 To see what the __Graph Wizard__ has done, you can examine the Graph’s

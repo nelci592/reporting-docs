@@ -92,7 +92,6 @@ After finishing, the item template automatically do the following:
 Although the fastest and most convenient way to get a working HTML5 viewer in your application is to use the Visual Studio item templates,
           the same result can be achieved using manual configuration.
         
-
 1. 
 
 Follow the steps described in [HTML5 Viewer Manual Setup]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/manual-setup%}) article to get your HTML5 viewer working.
@@ -111,7 +110,6 @@ Follow the steps described in [HTML5 Viewer Manual Setup]({%slug telerikreportin
                           }
                       });
                 
-
 
 
 1. 
@@ -133,14 +131,12 @@ Substitute the `yourReportServerUrl:port` with the actual url of your Report Ser
                   Specifying the username and password can be omitted (in this case the Report Server's Guest account will be used) or can be set to an
                   actual account, defined in Report Server.
                 
-
 1. 
 
 If you have modified the Telerik Report Viewer Template HTML file, you can leave the `templateUrl` option intact.
                   Otherwise it is recommended to delete the line `templateUrl: '/ReportViewer/templates/telerikReportViewerTemplate-x.x.xx.xxx.html'`,
                   so the template will be downloaded automatically from the server.
                 
-
 1. 
 
 Locate the lines that sets the report source's report definition (it should start with `report: "...`).
@@ -151,7 +147,6 @@ Locate the lines that sets the report source's report definition (it should star
 
 Setup the report parameters if needed.
                 
-
 1. 
 
 The initialization should look like the following:
@@ -175,7 +170,6 @@ The initialization should look like the following:
                         }
                     });
                 
-
 
 
 1. 

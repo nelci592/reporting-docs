@@ -15,7 +15,6 @@ position: 9
 In this how-to article we will show you how to create a graph with both column and line series, showing the maximum
         and the average amount of sales on a monthly basis using the __AdventureWorks__ sample database.
       How to create a Graph with Column and Line Series
-
 1. 
 
 Start the Graph Wizard:
@@ -29,7 +28,6 @@ Start the Graph Wizard:
                   __OK__. 
                   This will bring up the __Graph Wizard__ which will help you create the first series.
                 
-
 1. 
 
 Click __'Add New Data Source...'__ button and select 
@@ -54,13 +52,11 @@ Click __'Add New Data Source...'__ button and select
 1. You can click on __Execute Query...__ just to check if everything is OK with the database connection.
                   Click __Finish__ when you are ready.
                 
-
 1. 
 
 In the *Available data sources* list you should see the datasource you've already created.
               Select it and click __Next__.
             
-
 1. 
 
 In the next page you should select the fields which will be used to build the chart. Since the report will display aggregated sums              
@@ -71,19 +67,16 @@ In the next page you should select the fields which will be used to build the ch
               but in this example we will display the maximum amount of sales in the column series and the average amount of sales in the
               line series, so you should choose the __Max__ function from the drop-down menu. Click __Next__ once you are ready.
             
-
 1. 
 
 The Wizard has detected that the field used as Category is of type DateTime, and this page will let you configure the scale for the graph. In most cases the
               'Auto' option will work fine, so we will leave it like this. Complete the Wizard by clicking __Finish__.
             
-
 1. 
 
 The graph will display the column series and it should look like this:
               
   ![Graph Layout 1](images/Graph/HowToBarLineSeries/GraphLayout1.png)
-
 1. 
 
 The graph is displaying the date-time values on its X-axis, and the 'Auto' scale option divides each column into one column per month.
@@ -91,7 +84,6 @@ The graph is displaying the date-time values on its X-axis, and the 'Auto' scale
               [LabelFormat](/reporting/api/Telerik.Reporting.GraphAxis#Telerik_Reporting_GraphAxis_LabelFormat)              (i.e. `{0:Y}`) and
               [LabelAngle](/reporting/api/Telerik.Reporting.GraphAxis#Telerik_Reporting_GraphAxis_LabelAngle)               to 90º.
             
-
 1. 
 
 To add another series to the graph, you can right-click on the graph and select *Add Graph Series…* 
@@ -103,7 +95,6 @@ To add another series to the graph, you can right-click on the graph and select 
             
 
 >note When adding a new Series, a new Category group is also created. In this guide we are using a field of type  __DateTime__  for category. This will                 set the scale of the X-axis to  __DateTime Scale__  which will correctly display the two series on top of each other. With any other type, like                  __Numerical Scale, Logarithmic Scale or Category Scale __ , the two Series will be displayed next to each other and not overlapping correctly.              To fix this, select the newly created series and change the  __CategoryGroup__  to the group used by the first series.              
-
 
 1. 
 

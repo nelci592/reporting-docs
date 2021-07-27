@@ -19,6 +19,7 @@ The Telerik Report Designer application can be configured through its configurat
 
 	
 ````XML
+
     <runtime>
     <assemblyBinding xmlns="urn:schemas-microsoft-com:asm.v1">
       <!--
@@ -40,6 +41,7 @@ or it can specify a global connection string that can be used by all reports cre
 
 	
 ````XML
+
     <connectionStrings>
       <add name="Telerik.Reporting.Examples.CSharp.Properties.Settings.TelerikConnectionString"
           connectionString="Data Source=(local)\SQLEXPRESS;Initial Catalog=AdventureWorks;Integrated Security=SSPI"
@@ -60,6 +62,7 @@ The following code example shows the default Telerik.ReportDesigner.exe.config f
 
 	
 ````XML
+
     <?xml version ="1.0"?>
     <configuration>
       <configSections>

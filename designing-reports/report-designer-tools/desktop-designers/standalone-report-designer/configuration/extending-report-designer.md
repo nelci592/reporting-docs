@@ -25,6 +25,7 @@ In order to expose your data, so it can be utilized by the Object/OpenAccess/Ent
 
 	
 ````XML
+
 <configuration>
 	<configSections>
 		<section
@@ -58,6 +59,7 @@ To instruct the Report Designer to look for assemblies in other locations as wel
 
 	
 ````XML
+
 <configuration>
 	...
 	<runtime>

@@ -59,6 +59,7 @@ The following example shows how to connect to the __SQL Server AdventureWorks__ 
 
 	
 ````xml
+
 <configuration>
   <connectionStrings>
     <add name="MyAdventureWorksDB"

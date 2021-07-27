@@ -23,6 +23,7 @@ The report viewer currently exposes two ways for binding event handlers to event
 
 	
 ````js
+
             // $(handler) is jQuery's shorthand for $(document).ready(handler)
             $(function () {
               $("#reportViewer1").telerik_ReportViewer({
@@ -63,6 +64,7 @@ In order to unbind from a given event you should keep reference to the event han
 
 	
 ````js
+
             function onPageReady(e) { 
               console.log("page ready"); 
             }

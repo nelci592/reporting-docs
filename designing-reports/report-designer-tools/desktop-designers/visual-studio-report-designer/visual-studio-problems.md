@@ -29,6 +29,7 @@ When Visual Studio crashes while working with Telerik Reporting,
 
 	
 ````xml
+
 <?xml version ="1.0"?>
 <configuration>
     ...

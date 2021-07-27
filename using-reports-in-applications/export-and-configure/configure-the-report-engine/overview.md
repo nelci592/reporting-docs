@@ -60,6 +60,7 @@ The settings for the Telerik Reporting engine are stored in a custom configurati
 
 	
 ````xml
+
 <configuration> 
 	<configSections>
 		<section
@@ -80,6 +81,7 @@ The custom configuration section's content:
 
 	
 ````xml
+
 <Telerik.Reporting>
   <extensions>
     <render>
@@ -134,6 +136,7 @@ The JSON-based configuration structure used in __appSettings.json__ or other key
 
 	
 ````js
+
 "telerikReporting": {
     "extensions": [
       {

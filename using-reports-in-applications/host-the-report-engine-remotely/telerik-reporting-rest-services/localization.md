@@ -20,6 +20,7 @@ The service renders the report with the request thread culture.
 
 	
 ````xml
+
         <globalization culture="auto" uiCulture=”auto” />
         
 ````

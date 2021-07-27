@@ -62,6 +62,7 @@ This article explains the steps needed to create an application which uses the S
 
 	
 ````XAML
+
      <Application x:Class="SilverlightApplication1.App"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
@@ -100,6 +101,7 @@ This article explains the steps needed to create an application which uses the S
 
 	
 ````XAML
+
 				<telerik:ReportViewer></telerik:ReportViewer>
 				
 ````

@@ -29,6 +29,7 @@ This tutorial shows how to use HTML5 ASP.NET Web Forms Report Viewer in ASP.NET 
 
 	
 ````xml
+
 <connectionStrings>
 	 <add name="Telerik.Reporting.Examples.CSharp.Properties.Settings.TelerikConnectionString"
 	            connectionString="Data Source=(local);Initial Catalog=AdventureWorks;Integrated Security=SSPI"
@@ -52,15 +53,12 @@ The following steps produce a view with settings similar to these of the local W
 
 >tip All path references in the described steps should be adapted according            to your project setup. For more information please refer to the MSDN article            [ASP.NET Web Project Paths](http://msdn.microsoft.com/en-us/library/ms178116.aspx)
 
-
 1. 
 
 Create new ASP.NET Web Forms Application.
-
 1. 
 
 Add new WebForm that does not use a Master page.
-
 1. 
 
 To ensure that the browser will start in the latest rendering mode verify the page is using the following DOCTYPE directive:
@@ -68,6 +66,7 @@ To ensure that the browser will start in the latest rendering mode verify the pa
 
 	
 ````HTML
+
 							<!DOCTYPE html>
 							
 ````
@@ -76,13 +75,13 @@ To ensure that the browser will start in the latest rendering mode verify the pa
 
 >tip The above DOCTYPE directive should be considered with your custom requirements. More details about the used in the tutorial settings for the page can be found in the                    [Defining document compatibility](http://msdn.microsoft.com/en-us/library/cc288325(v=vs.85).aspx) MSDN article.                  
 
-
 1. 
 
 Initialize the browser’s viewport in the ```<head>``` element:
 
 	
 ````HTML
+
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 				
 ````
@@ -90,7 +89,6 @@ Initialize the browser’s viewport in the ```<head>``` element:
 
 
 The viewport META tag is used to control layout on mobile browsers.
-
 
 
 1. 
@@ -101,6 +99,7 @@ The viewport META tag is used to control layout on mobile browsers.
 
 	
 ````HTML
+
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 									
 ````
@@ -110,17 +109,16 @@ The viewport META tag is used to control layout on mobile browsers.
 >note jQuery must be loaded only once on the page. Before adding jQuery, verify that it is not already loaded.                  
 If jQuery is not provided HTTPHandler will provide automatically the required script.
               
-
 1. 
 
 (Optional) Add references to Telerik Kendo UI scripts and styles in the ```<head>``` element:
 
 	
 ````HTML
+
 <!-- the required Kendo styles -->                  
 <link href="https://kendo.cdn.telerik.com/
 ````
-
 
 
 1. 
@@ -129,7 +127,6 @@ Switch to the Design view of the Web Form and drag the viewer from Visual Studio
                   The ReportsController will be automatically added to your project,
                   along with references to the required Telerik Reporting assemblies.
                 
-
 1. 
 
 Configure the HTML5 ASP.NET Web Forms Report Viewer ReportSource using Visual Studio Property Grid. 
@@ -140,12 +137,10 @@ Configure the HTML5 ASP.NET Web Forms Report Viewer ReportSource using Visual St
 
 >tip Verify the modified settings are written in the markup. If not, the viewer will use the default settings visible in Visual Studio                    Property Grid                  
 
-
 1. 
 
 Set the viewer width and height.
                 
-
 1. 
 
 (Optional) If you set the viewer's __ Deferred__ to __true__, render the deferred initialization
@@ -154,10 +149,10 @@ Set the viewer width and height.
 
 	
 ````xml
+
 <telerik:DeferredScripts runat="server"></telerik:DeferredScripts>
 								
 ````
-
 
 
 1. 
@@ -166,6 +161,7 @@ Finally the WebForm should look like this (note that the Report Parameter 'Cultu
 
 	
 ````HTML
+
 <%@ Register TagPrefix="telerik" Assembly="Telerik.ReportViewer.Html5.WebForms" Namespace="Telerik.ReportViewer.Html5.WebForms" %>
 
 <!DOCTYPE html>

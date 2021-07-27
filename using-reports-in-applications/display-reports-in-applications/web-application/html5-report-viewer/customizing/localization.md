@@ -21,6 +21,7 @@ The article elaborates on how to localize the messages displayed by the HTML5 Re
 
 	
 ````js
+
 (function (trv, $) {
     "use strict";
 
@@ -207,6 +208,7 @@ The article elaborates on how to localize the messages displayed by the HTML5 Re
 
 	
 ````HTML
+
               <script src="resources.fr-BE.js"></script>
               
 ````

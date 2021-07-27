@@ -23,6 +23,7 @@ The file cache provider is used to cache rendered pages and resources as tempora
 
 	
 ````xml
+
 <Telerik.Reporting>
   <Cache provider="File" />
 </Telerik.Reporting>
@@ -37,6 +38,7 @@ By default, this provider stores the files in the temporary folder of the curren
 
 	
 ````xml
+
 <Telerik.Reporting>
   <Cache provider="File">
     <Providers>

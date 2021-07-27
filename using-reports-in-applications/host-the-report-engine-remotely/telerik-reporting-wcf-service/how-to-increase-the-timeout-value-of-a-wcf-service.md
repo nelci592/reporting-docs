@@ -20,6 +20,7 @@ To avoid timeouts when using the Telerik Reporting WCF Service, one should set s
 
 	
 ````xml
+
 <bindings>
    <basicHttpBinding>
         <binding name="BasicHttpsBindingConfig" maxReceivedMessageSize="2147483647" maxBufferSize="2147483647"
@@ -40,6 +41,7 @@ To avoid timeouts when using the Telerik Reporting WCF Service, one should set s
 
 	
 ````c#
+
 ReportServiceClient IReportServiceClientFactory.Create(System.Uri remoteAddress)
     {
         var binding = new BasicHttpBinding() // or BasicHttpBinding(BasicHttpSecurityMode.Transport) overload if SSL is used
@@ -69,6 +71,7 @@ When a WCF service is hosted in IIS/ASP.NET, another setting would also control 
 
 	
 ````XML
+
 <configuration>
   <system.web>
   <httpRuntime executionTimeout="600"/>

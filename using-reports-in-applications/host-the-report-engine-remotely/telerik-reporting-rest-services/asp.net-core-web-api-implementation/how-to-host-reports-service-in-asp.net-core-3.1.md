@@ -91,7 +91,8 @@ The __ConfigureServices__ method inside the __Startup.cs__ in the project should
               the IMvcBuilder object to place the NewtonsoftJson serialization:
 
 	
-````c#services.AddControllers().AddNewtonsoftJson();
+````c#
+services.AddControllers().AddNewtonsoftJson();
 ````
 
 
@@ -101,7 +102,8 @@ The __ConfigureServices__ method inside the __Startup.cs__ in the project should
             
 
 	
-````C# 
+````C#
+ 
 // Configure dependencies for ReportsController.
 services.TryAddSingleton<IReportServiceConfiguration>(sp =>
     new ReportServiceConfiguration
@@ -122,6 +124,7 @@ services.TryAddSingleton<IReportServiceConfiguration>(sp =>
 
 	
 ````c#
+
 app.UseEndpoints(endpoints =>
 {
     endpoints.MapControllers();
@@ -144,7 +147,8 @@ The report generation engine can retrieve Sql Connection Strings and specific Re
         
 
 	
-````C#ReportingEngineConfiguration = sp.GetService<IConfiguration>()
+````C#
+ReportingEngineConfiguration = sp.GetService<IConfiguration>()
           
 ````
 
@@ -164,7 +168,8 @@ In this guide we will create a helper class loading the json-formatted setting:
         
 
 	
-````C#          
+````C#
+          
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 
@@ -190,6 +195,7 @@ Finally, all configurations should be placed in the JSON configuraion file (add 
 
 	
 ````JSON
+
 {
   ...
   "ConnectionStrings": {
@@ -206,6 +212,7 @@ The above type of connection string lacks information about the data provider an
 
 	
 ````JSON
+
 {
   ...
   "ConnectionStrings": {
@@ -228,6 +235,7 @@ The last supported type of __ConnectionStrings__ configuration uses an array to 
 
 	
 ````JSON
+
 {
   ...
   "ConnectionStrings": [
@@ -261,6 +269,7 @@ The last supported type of __ConnectionStrings__ configuration uses an array to 
 
 	
 ````c#
+
 namespace AspNetCoreDemo.Controllers
 {
     using Microsoft.AspNetCore.Mvc;
@@ -315,6 +324,7 @@ Add the following code to the *ConfigureServices* method of the
 
 	
 ````c#
+
           services.AddCors(corsOption => corsOption.AddPolicy(
             "ReportingRestPolicy",
             corsBuilder =>
@@ -334,6 +344,7 @@ Activate the above policy for the application by adding the next code in the *Co
 
 	
 ````c#
+
               app.UseCors("ReportingRestPolicy");
               
 ````

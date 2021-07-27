@@ -36,7 +36,6 @@ Each data point has graphical representation in accordance with the selected cha
           In most cases, depending on the chart type, the shape of the data point can be changed as well using the
           [MarkerType](/reporting/api/Telerik.Reporting.LineSeries#Telerik_Reporting_LineSeries_MarkerType) enumeration.
         To change the data point shape in a series where it's applicable: 
-
 1. 
 
 On the design surface, click on the series.
@@ -44,14 +43,12 @@ On the design surface, click on the series.
 
 The selected bar series properties are listed in the __Property Browser__.
                 
-
 1. 
 
 Locate the __MarkerType__  property in the __Data Point Marker__ section.
                 
 
 If the property doesn't exist for the selected series (e.g. Bar/Column), the data point shape cannot be changed.
-
 1. 
 
 Set the type of the marker from the drop-down menu. Set the __MarkerSize__ properties if necessary.
@@ -71,23 +68,19 @@ Series labels default locations are:
 * On bar series, labels are placed outside of the bars that represent data points.
 
 * On line series, labels are placed above the line that represent data points.To change the position of data point labels in a Bar series:
-
 1. 
 
 Create a graph with bar series.
-
 1. 
 
 On the design surface, click on the bar series
 
 The selected bar series properties are listed in the __Property Browser__.
                 
-
 1. 
 
 In the __Data Point Label__ section select a value for the DataPointLabelAlignment property
                 
-
 1. 
 
 In the __Data Point Label__ section set a value for the DataPointLabelOffset property.
@@ -95,18 +88,15 @@ In the __Data Point Label__ section set a value for the DataPointLabelOffset pro
 
 The label offset direction depends on the DataPointLabelAlignment value.
                 To change the rotation angle of data point labels:
-
 1. 
 
 Create / select a graph.
-
 1. 
 
 On the design surface, click on the desired series
 
 The selected series properties are listed in the __Property Browser__.
                 
-
 1. 
 
 In the __Data Point Label__ section set a value for the DataPointLabelAngle property.
@@ -115,34 +105,28 @@ In the __Data Point Label__ section set a value for the DataPointLabelAngle prop
 The value must be an integer in the 0 - 360 range and represents the rotation angle in degrees.
                   Default value is 0.
                 To change the style of data point labels:
-
 1. 
 
 Create / select a graph.
-
 1. 
 
 On the design surface, click on the desired series
 
 The selected series properties are listed in the __Property Browser__.
                 
-
 1. 
 
 In the __Data Point Label__ section select and edit the DataPointLabelStyle property.
                 To add conditional formatting to the data point labels:
-
 1. 
 
 Create / select a graph.
-
 1. 
 
 On the design surface, click on the desired series
 
 The selected series properties are listed in the __Property Browser__.
                 
-
 1. 
 
 In the __Data Point Label__ section select and edit the DataPointLabelConditionalFormatting collection.
@@ -166,68 +150,57 @@ You can select a palette or define a custom palette. Custom palettes are report-
 
 >note             The built-in series are only available in the standalone report designer.          
 
-
 1. 
 
 Click the chart series that you want to change.
 
 The ribbon context tab __Graph Tools.Design__ is activated.
                 
-
 1. 
 
 In the __Chart Style__ group. Select a color palette from the
                   __Change Colors__ dropdown.
                 To define custom color palette:
-
 1. 
 
 Click the chart series that you want to change.
 
 The selected axis properties are listed in the __Property Browser__.
                 
-
 1. 
 
 In the __Appearance__ group. Set the __ColorPalette property__ to -
                   __Color Palette__.
                 
-
 1. 
 
 In the __Colors property__, click the __Edit Collection (…) button__.
                   The Color Collection Editor opens.
                 
-
 1. 
 
 Click __Add__ to add a color and select a color from the drop-down.
                 
-
 1. 
 
 Click __Add__ to add more colors to the palette.
                 
-
 1. 
 
 When you are done, click __OK__.
                 If you are using a custom color palette, you can change the order of the colors to change the color of different series.            To define custom __monochromatic palette__:
           
-
 1. 
 
 Click the chart series that you want to change.
 
 The selected axis properties are listed in the __Property Browser__.
                 
-
 1. 
 
 In the __Appearance__ group. Set the ColorPalette property to -
                   __Monochromatic Palette__.
                 
-
 1. 
 
 Set appropriately __BaseColor, MaxLightness and MinLightness properties__.

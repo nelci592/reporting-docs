@@ -26,6 +26,7 @@ The following example illustrates how to set the Parameters method to the Teleri
 
 	
 ````xml
+
           <telerik:ReportViewer Width="" Height="" EnableAccessibility="false"
             ID="reportViewer1"
             runat="server">

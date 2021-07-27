@@ -18,6 +18,7 @@ The settings of the Telerik Reporting engine are defined in a custom configurati
 
 	
 ````XML
+
     <configuration>
     <configSections>
       <section
@@ -41,6 +42,7 @@ The Telerik Report Designer offers additional configuration through its own cust
 
 	
 ````XML
+
     <configuration>
     <configSections>
       <section
@@ -60,6 +62,7 @@ This section lets you specify the working directory of the Report Designer via a
 
 	
 ````XML
+
     <Telerik.ReportDesigner DefaultWorkingDir="Examples">
     </Telerik.ReportDesigner>
       

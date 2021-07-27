@@ -22,6 +22,7 @@ The required stylesheets are provided automatically through a HTTPHandler via re
 
 	
 ````xml
+
             <head>
             ....
               <!--kendo.all.min.js can be used as well instead of kendo.web.min.js, kendo.mobile.min.js or telerikReportViewer-kendo-->

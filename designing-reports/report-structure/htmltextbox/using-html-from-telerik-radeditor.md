@@ -35,6 +35,7 @@ Here are the exact steps taken:
 
 	
 ````xml
+
 <?xml version="1.0" encoding="utf-8" ?>
 <root>
   <modules>
@@ -123,6 +124,7 @@ Here are the exact steps taken:
 
 	
 ````ASP.NET
+
     <telerik:RadEditor ID="RadEditor1" StripFormattingOptions="AllExceptNewLines" ToolsFile="~/HtmlTextBoxToolsFile.xml" OnClientLoad="editorLoaded" runat="server">
     </telerik:RadEditor>
 
@@ -132,6 +134,7 @@ Here are the exact steps taken:
 
 	
 ````JavaScript
+
 <script type="text/javascript">
   	ReportingFilter = function()
 {

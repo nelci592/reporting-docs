@@ -22,6 +22,7 @@ The __restReportService__ element specifies the configuration settings for the R
 
 	
 ````c#
+
         configurationInstance = new ConfigSectionReportServiceConfiguration
         {
           HostAppId = "Html5DemoApp",
@@ -84,6 +85,7 @@ XML-based configuration file:
 
 	
 ````xml
+
 <configuration>
 …
   <Telerik.Reporting>
@@ -124,6 +126,7 @@ JSON-based configuration file:
 
 	
 ````js
+
   "telerikReporting": {          
     "restReportService": {
       "hostAppId": "Application1",

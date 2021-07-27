@@ -54,6 +54,7 @@ XML-based configuration file:
 
 	
 ````xml
+
 <Telerik.Reporting>
 ...
   <dpiAware dpiAwareness="PROCESS_SYSTEM_DPI_AWARE"></dpiAware>
@@ -67,6 +68,7 @@ JSON-based configuration file:
 
 	
 ````js
+
           "telerikReporting": {
             "dpiAware": {
               "dpiAwareness": "PROCESS_SYSTEM_DPI_AWARE"

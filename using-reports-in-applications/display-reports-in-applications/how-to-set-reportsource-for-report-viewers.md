@@ -185,6 +185,7 @@ __Setting the Client-Side ReportSource:__
 
 	
 ````HTML
+
 reportSource: { 
 			report: "Dashboard.trdp",
 			parameters: { CultureID: "en" }
@@ -196,6 +197,7 @@ or
 
 	
 ````HTML
+
 reportSource: { 
 			report: "Telerik.Reporting.Examples.CSharp.ProductCatalog, CSharp.ReportLibrary",
 			parameters: { CultureID: "en" }
@@ -304,6 +306,7 @@ To display another report or to update the *client parameters*' values of the cu
 
 	
 ````c#
+
                 var clientReportSource = new Telerik.ReportViewer.Html5.WebForms.ReportSource();
                 clientReportSource.IdentifierType = IdentifierType.TypeReportSource;
                 clientReportSource.Identifier = typeof(ReportCatalog).AssemblyQualifiedName;//or <namespace>.<class>, <assembly> e.g. "MyReports.Report1, MyReportsLibrary"
@@ -316,6 +319,7 @@ To display another report or to update the *client parameters*' values of the cu
 
 	
 ````vb.net
+
               Dim clientReportSource As New Telerik.ReportViewer.Html5.WebForms.ReportSource
               clientReportSource.IdentifierType = Telerik.ReportViewer.Html5.WebForms.IdentifierType.TypeReportSource
               clientReportSource.Identifier = GetType(ReportCatalog).AssemblyQualifiedName 'or <namespace>.<class>, <assembly> e.g. "MyReports.Report1, MyReportsLibrary"
@@ -345,6 +349,7 @@ __Example of setting the client-side ReportSource via mark-up:__
 
 	
 ````HTML
+
     <form runat="server">
         <telerik:ReportViewer Width="" Height=""
             ID="reportViewer1"

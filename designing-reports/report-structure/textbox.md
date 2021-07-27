@@ -48,6 +48,7 @@ You can use the [Angle](/reporting/api/Telerik.Reporting.TextItemBase#Telerik_Re
 
 	
 ````cs
+
              this.textBox1.Value = "= \"\r\n\r\n\" + Fields.MyDataColumn";
             
 ````
@@ -56,6 +57,7 @@ You can use the [Angle](/reporting/api/Telerik.Reporting.TextItemBase#Telerik_Re
 
 	
 ````vb
+
             Me.textBox1.Value = "= """ & vbCr & vbLf & vbCr & vbLf & """ + Fields.MyDataColumn"
             
 ````

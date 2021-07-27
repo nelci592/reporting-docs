@@ -27,24 +27,20 @@ The __Pie chart__ uses [BarSeries](/reporting/api/Telerik.Reporting.BarSeries) t
         adjusted so they do not overlap, their position might not be aligned against the corresponding data point. In this case the data point connectors
         can be setup to provide visual aid to determine the relation between the label and a data point.
       Setup a Pie Chart with no overlapping labels
-
 1. 
 
 In Design view click on the chart series. The __Properties Window__ will load the selected series properties.
             
-
 1. 
 
 Change the [DataPointLabelAlignment](/reporting/api/Telerik.Reporting.BarSeries#Telerik_Reporting_BarSeries_DataPointLabelAlignment) property to
               *OutsideColumn*.
             
-
 1. 
 
 Set the value of the [DataPointLabelOffset](/reporting/api/Telerik.Reporting.BarSeries#Telerik_Reporting_BarSeries_DataPointLabelOffset) property to a value,
               providing enough offset from the pie, depending on the chart size (i.e. 30px).
             
-
 1. 
 
 Make sure the [DataPointLabelConnectorStyle](/reporting/api/Telerik.Reporting.BarSeries#Telerik_Reporting_BarSeries_DataPointLabelConnectorStyle) has its 

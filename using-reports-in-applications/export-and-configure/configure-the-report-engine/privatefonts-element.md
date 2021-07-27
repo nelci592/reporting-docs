@@ -28,6 +28,7 @@ As with most types of software, font files are licensed, rather than sold,
 
 	
 ````xml
+
     	<privateFonts>
         	<add />
 		</privateFonts>
@@ -93,6 +94,7 @@ XML-based configuration file:
 
 	
 ````xml
+
 <?xml version="1.0"?>
 <configuration>
    ...
@@ -114,6 +116,7 @@ JSON-based configuration file:
 
 	
 ````js
+
   "telerikReporting": {
     "privateFonts": [
       {

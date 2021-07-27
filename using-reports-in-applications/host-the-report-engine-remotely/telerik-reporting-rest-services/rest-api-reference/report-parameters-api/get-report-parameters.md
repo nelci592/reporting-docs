@@ -56,6 +56,7 @@ Array containing [Parameter]({%slug telerikreporting/using-reports-in-applicatio
 
 	
 ````Request Message
+
           POST /api/reports/clients/2c3d/parameters HTTP/1.1
 
           {
@@ -72,6 +73,7 @@ Array containing [Parameter]({%slug telerikreporting/using-reports-in-applicatio
 
 	
 ````Response Message
+
           HTTP/1.1 200 OK
 
           [

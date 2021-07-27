@@ -18,6 +18,7 @@ To create a report item in code, instantiate a report item object, set its prope
 
 	
 ````C#
+
 Telerik.Reporting.Panel panel1 = new Telerik.Reporting.Panel();
 Telerik.Reporting.TextBox textBox1 = new Telerik.Reporting.TextBox();
 
@@ -45,6 +46,7 @@ detail.Items.AddRange(new Telerik.Reporting.ReportItemBase[] {panel1});
 
 	
 ````VB.NET
+
 Dim panel1 As New Telerik.Reporting.Panel()
 Dim textBox1 As New Telerik.Reporting.TextBox()
 

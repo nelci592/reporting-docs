@@ -21,6 +21,7 @@ For example:
 
 	
 ````C#
+
 public class Phone
  {
      public string Number { get; set; }
@@ -37,6 +38,7 @@ public class Phone
 
 	
 ````VB.NET
+
 Public Class Phone
 	Public Property Number() As String
 		Get

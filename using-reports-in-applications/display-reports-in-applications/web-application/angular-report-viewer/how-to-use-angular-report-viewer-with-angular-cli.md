@@ -98,9 +98,10 @@ npm install @progress/telerik-angular-report-viewer
 >tip If you receive a  *403 Forbidden Error* , you need to register and login at                    [npmjs.com](https://www.npmjs.com/)before performing this step.                  
 
 	
-````powershell
-npm login --registry=https://registry.npmjs.org --scope=@progress 				
-````
+        ````powershell
+
+        npm login --registry=https://registry.npmjs.org --scope=@progress 				
+        ````
 
 
 

@@ -117,8 +117,6 @@ npm login --registry=https://registry.npmjs.org --scope=@progress
 
 Once installed, import the TelerikReportingModule in [your application root module](https://angular.io/docs/ts/latest/guide/ngmodule.html#!#angular-modularity):
                 
-
-	
 ````TypeScript
 
 import { TelerikReportingModule } from '@progress/telerik-angular-report-viewer';
@@ -127,13 +125,9 @@ imports: [TelerikReportingModule]
 				
 ````
 
-
-
 1. 
 
 Add the desired report viewer container style using a property of the AppComponent class:
-
-	
 ````TypeScript
 
 export class AppComponent {

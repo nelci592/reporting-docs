@@ -41,7 +41,6 @@ The following list describes the prerequisites for this tutorial:
 
 	
 ````xml
-
 <connectionStrings>
 	 <add name="Telerik.Reporting.Examples.CSharp.Properties.Settings.TelerikConnectionString"
 	            connectionString="Data Source=(local);Initial Catalog=AdventureWorks;Integrated Security=SSPI"
@@ -64,22 +63,20 @@ Steps:
                 
 
 	
-````powershell
-
-npm install jquery
+        ````powershell
+        npm install jquery
 				
-````
+        ````
 
 
 
 1. Add a reference to jQuery in the scripts array of the .angular-cli.json (as of Angular 6 the file is renamed to angular.json):
 
 	
-````JSON
-
-"scripts": [ "../node_modules/jquery/dist/jquery.js" ]
+        ````JSON
+        "scripts": [ "../node_modules/jquery/dist/jquery.js" ]
 				
-````
+        ````
 
 
 
@@ -87,21 +84,19 @@ npm install jquery
                 
 
 	
-````powershell
-
-npm install @progress/telerik-angular-report-viewer
+        ````powershell
+        npm install @progress/telerik-angular-report-viewer
 				
-````
+        ````
 
 
 
 >tip If you receive a  *403 Forbidden Error* , you need to register and login at                    [npmjs.com](https://www.npmjs.com/)before performing this step.                  
 
 	
-        ````powershell
-
-        npm login --registry=https://registry.npmjs.org --scope=@progress 				
-        ````
+````powershell
+npm login --registry=https://registry.npmjs.org --scope=@progress 				
+````
 
 
 
@@ -110,22 +105,20 @@ npm install @progress/telerik-angular-report-viewer
                 
 
 	
-````TypeScript
-
-import { TelerikReportingModule } from '@progress/telerik-angular-report-viewer';
+        ````TypeScript
+        import { TelerikReportingModule } from '@progress/telerik-angular-report-viewer';
 ...
 imports: [TelerikReportingModule]
 				
-````
+        ````
 
 
 
 1. Add the desired report viewer container style using a property of the AppComponent class:
 
 	
-````TypeScript
-
-export class AppComponent {
+        ````TypeScript
+        export class AppComponent {
   viewerContainerStyle = {
     position: 'relative',
     width: '1000px',
@@ -134,16 +127,15 @@ export class AppComponent {
   };
 }
 				
-````
+        ````
 
 
 
 1. Use the report viewer selector in the AppComponent template:
 
 	
-````HTML
-
-<tr-viewer 
+        ````HTML
+        <tr-viewer 
     [containerStyle]="viewerContainerStyle"
     [serviceUrl]="'http://myrestserviceurl/api/reports'"
     [reportSource]="{
@@ -155,7 +147,7 @@ export class AppComponent {
     [scale]="1.0">
 </tr-viewer>
 				
-````
+        ````
 
 For all available report viewer options refer to [Options]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/api-reference/options%}).
                 
@@ -164,11 +156,10 @@ For all available report viewer options refer to [Options]({%slug telerikreporti
                 Add references to the Less-based CSS files in the ```<head>``` element of index.html:
 
 	
-````HTML
-
-<!-- The required Less-based styles -->                  
+        ````HTML
+        <!-- The required Less-based styles -->                  
 <link href="https://kendo.cdn.telerik.com/
-````
+        ````
 
 
 
@@ -178,25 +169,23 @@ If you use the __styleUrls__ attribute to reference the CSS, it is required to s
                 
 
 	
-````TypeScript
-
-import { Component, ViewEncapsulation } from '@angular/core';
+        ````TypeScript
+        import { Component, ViewEncapsulation } from '@angular/core';
  
 @Component({
   encapsulation: ViewEncapsulation.None
 				
-````
+        ````
 
 
 
 1. Run the application:
 
 	
-````powershell
-
-ng serve
+        ````powershell
+        ng serve
 				
-````
+        ````
 
 
 

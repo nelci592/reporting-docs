@@ -161,7 +161,6 @@ For all available report viewer options refer to [Options]({%slug telerikreporti
 	
     ````TypeScript
 import { Component, ViewEncapsulation } from '@angular/core';
- 
 @Component({
   encapsulation: ViewEncapsulation.None
 ````

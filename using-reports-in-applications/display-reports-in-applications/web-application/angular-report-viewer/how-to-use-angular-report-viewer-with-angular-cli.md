@@ -63,10 +63,10 @@ Steps:
                 
 
 	
-            ````powershell
-            npm install jquery
+    ````powershell
+    npm install jquery
 				
-            ````
+    ````
 
 
 
@@ -110,7 +110,7 @@ npm login --registry=https://registry.npmjs.org --scope=@progress
 ...
 imports: [TelerikReportingModule]
 				
-        ````
+````
 
 
 
@@ -126,8 +126,7 @@ imports: [TelerikReportingModule]
     ['font-family']: 'ms sans serif'
   };
 }
-				
-        ````
+````
 
 
 

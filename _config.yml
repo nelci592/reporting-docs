@@ -57,14 +57,71 @@ navigation:
     designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/sqldatasource-wizard:
         position: 1100
         title: "SqlDataSource Wizards"    
-        
-        
     designing-reports/converting-reports-from-other-reporting-solutions:
         position: 1100
         title: "Converting Reports from Other Reporting Solutions"
     designing-reports/report-structure:
         position: 1200
         title: "Report Structure"
+    designing-reports/report-structure/table:
+        position: 1000
+        title: "Table/Crosstab/List"    
+    designing-reports/report-structure/graph:
+        position: 1100
+        title: "Graph"
+    designing-reports/report-structure/graph/chart-types:
+        position: 1000
+        title: "Chart Types"
+    designing-reports/report-structure/graph/chart-types/area-charts:
+        position: 1000
+        title: "Area Charts"
+    designing-reports/report-structure/graph/chart-types/bar-charts:
+        position: 1100
+        title: "Bar Charts"
+    designing-reports/report-structure/graph/chart-types/column-charts:
+        position: 1200
+        title: "Column Charts"
+    designing-reports/report-structure/graph/chart-types/line-charts:
+        position: 1300
+        title: "Line Charts"
+    designing-reports/report-structure/graph/chart-types/pie-charts:
+        position: 1400
+        title: "Pie Charts"
+    designing-reports/report-structure/graph/chart-types/polar-charts:
+        position: 1500
+        title: "Polar Charts"
+    designing-reports/report-structure/graph/chart-types/range-charts:
+        position: 1600
+        title: "Range Charts"
+    designing-reports/report-structure/graph/chart-types/scatter-charts:
+        position: 1700
+        title: "Scatter Charts"    
+    designing-reports/report-structure/graph/chart-types/ohlc-charts:
+        position: 1800
+        title: "OHLC Charts"
+    designing-reports/report-structure/graph/formatting-a-graph:
+        position: 1100
+        title: "Formatting a Graph"
+    designing-reports/report-structure/graph/how-to:
+        position: 1200
+        title: "How To"
+
+
+
+
+    designing-reports/report-structure/map:
+        position: 1200
+        title: "Map"
+    designing-reports/report-structure/htmltextbox:
+        position: 1300
+        title: "HtmlTextBox"
+    designing-reports/report-structure/barcode:
+        position: 1400
+        title: "Barcode"
+    designing-reports/report-structure/how-to:
+        position: 1500
+        title: "How To"
+        
     designing-reports/connecting-to-data:
         position: 1300
         title: "Connecting to Data"

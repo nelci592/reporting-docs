@@ -46,7 +46,6 @@ The following list describes the prerequisites for this tutorial:
 	            connectionString="Data Source=(local);Initial Catalog=AdventureWorks;Integrated Security=SSPI"
 	            providerName="System.Data.SqlClient" />
 </connectionStrings>
-								
 ````
 
 
@@ -84,7 +83,7 @@ npm install jquery
 	
     ````powershell
 npm install @progress/telerik-angular-report-viewer
-````		
+````
 
 
 
@@ -92,7 +91,7 @@ npm install @progress/telerik-angular-report-viewer
 
 	
 ````powershell
-npm login --registry=https://registry.npmjs.org --scope=@progress 				
+npm login --registry=https://registry.npmjs.org --scope=@progress
 ````
 
 
@@ -114,7 +113,7 @@ imports: [TelerikReportingModule]
 
 	
     ````TypeScript
-    export class AppComponent {
+export class AppComponent {
   viewerContainerStyle = {
     position: 'relative',
     width: '1000px',
@@ -168,7 +167,6 @@ import { Component, ViewEncapsulation } from '@angular/core';
  
 @Component({
   encapsulation: ViewEncapsulation.None
-				
 ````
 
 

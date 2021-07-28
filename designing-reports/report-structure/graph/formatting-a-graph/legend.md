@@ -18,11 +18,15 @@ A legend always contains one or more legend items, where each legend item consis
 
 You can format a legend with the Graph item's __Legend properties__.         Click the legend to change the legend placement(Location and IsInsidePloatArea), Size, Title and items Style. The Title property can be an expression       
 
-You cannot add images, extra columns or other supplementary items to the legend.       Changing the Color of a Legend Item
+You cannot add images, extra columns or other supplementary items to the legend.       
+
+##Changing the Color of a Legend Item
 
 The colored box displayed for each legend item is inherited from the fill color of its corresponding series.           If you want to change the color displayed in a legend item, you will have to change the color of the corresponding series.           For more information, see [Series]({%slug telerikreporting/designing-reports/report-structure/graph/formatting-a-graph/series%}).         
 
-You can also use the LegendItem's ConditionalFormatting and MarkConditionalFormatting collections to style items based on data displayed by the Graph item.Changing the Text Style of a Legend Item
+You can also use the LegendItem's ConditionalFormatting and MarkConditionalFormatting collections to style items based on data displayed by the Graph item.
+
+##Changing the Text Style of a Legend Item
 
 You can change the legend items text style by selecting the legend and with __Property Browser__ change __Style__ properties.         
 
@@ -33,15 +37,23 @@ You can change the legend items text style by selecting the legend and with __Pr
 
 1. In the __Style property__, click the __Edit Collection (…) button__.                     The Edit style dialog opens.                 
 
-1. When you are done, click OK.                 Ordering Legend Items
+1. When you are done, click OK.                 
 
-Items are ordered in the legend according to the order that their corresponding series are processed by the processing engine.           You can change the order by changing the Graph.SeriesGroups [Sortings]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/ordering-data/overview%})[Expression]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/overview%}).         Changing the Text of a Legend Item
+##Ordering Legend Items
 
-You can change the legend items text by changing each Graph.Series LegendItem properties. The __LegendItem.Value property__ can be set via [Expression]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/overview%}).         Removing Extra Legend Items
+Items are ordered in the legend according to the order that their corresponding series are processed by the processing engine.           You can change the order by changing the Graph.SeriesGroups [Sortings]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/ordering-data/overview%})[Expression]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/overview%}).         
+
+##Changing the Text of a Legend Item
+
+You can change the legend items text by changing each Graph.Series LegendItem properties. The __LegendItem.Value property__ can be set via [Expression]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/overview%}).         
+
+##Removing Extra Legend Items
 
 The legend is always connected to a series.           If a legend item appears in the legend but the corresponding series is not displayed in the chart,           the most likely cause is that the series does not contain any values.           You can remove this series in order to remove the legend item from the legend.           To remove a series from your chart, you have to setup a [Filter]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/filtering-data/overview%}) for the corrensponding SeriesGroup.         
 
-To visually hide a Legened Item, you can use the __Graph.Series.LegendItem.Style.Visible property__.         Positioning the Legend
+To visually hide a Legened Item, you can use the __Graph.Series.LegendItem.Style.Visible property__.         
+
+##Positioning the Legend
 
 You can move the legend to one of twelve different positions when the legend is placed outside the chart area.           By default, the legend is shown outside the plot area.         
 
@@ -55,9 +67,13 @@ You can move the legend to one of twelve different positions when the legend is 
 
 1. Click the legend area.    The legend properties are listed in the __Property Browser__;                 
 
-1. In the __Misc__ section set the __IsInsideThePlotArea property__ to __True__.                 Displaying Legend Items Horizontally
+1. In the __Misc__ section set the __IsInsideThePlotArea property__ to __True__.                 
 
-To display the legend horizontally, move the legend to the top or bottom of the chart. This causes the legend to expand horizontally.                 Sizing the Legend
+##Displaying Legend Items Horizontally
+
+To display the legend horizontally, move the legend to the top or bottom of the chart. This causes the legend to expand horizontally.         
+
+##        Sizing the Legend
       
 
 The legend can be absolutely or automatically sized.           If the Height or Width fields are left empty, the engine will decide their run-time values according to the data.           The automatic sizing partially depends on the positioning of the legend as follows:         

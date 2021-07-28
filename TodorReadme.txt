@@ -30,6 +30,11 @@ Change links from conceptual articles to api-ref articles like:
 		  
 [RenderReport](/reporting/api/Telerik.Reporting.Processing.ReportProcessor.html#collapsible-Telerik_Reporting_Processing_ReportProcessor_RenderReport_System_String_Telerik_Reporting_ReportSource_System_Collections_Hashtable_)
 
+Code and other nodes in steps - 4 spaces indent 
+
+procedure/titles
+
+section/titles
 
 
 
@@ -82,4 +87,3 @@ Implement this change for all occurrencies above
 
 Merge TOC of documentation and API reference - D:\Work\reporting-docs\_assetsApi\api\index.md - change this file accordingly
 
-Code in list - 8 spaces indent doesn't work -  https://meta.stackexchange.com/questions/3792/how-to-nest-code-within-a-list-using-markdown

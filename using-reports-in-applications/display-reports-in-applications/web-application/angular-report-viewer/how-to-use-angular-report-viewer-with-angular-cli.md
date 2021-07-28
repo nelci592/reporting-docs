@@ -63,10 +63,10 @@ Steps:
                 
 
 	
-        ````powershell
-        npm install jquery
+            ````powershell
+            npm install jquery
 				
-        ````
+            ````
 
 
 
@@ -156,10 +156,10 @@ For all available report viewer options refer to [Options]({%slug telerikreporti
                 Add references to the Less-based CSS files in the ```<head>``` element of index.html:
 
 	
-        ````HTML
-        <!-- The required Less-based styles -->                  
+````HTML
+<!-- The required Less-based styles -->                  
 <link href="https://kendo.cdn.telerik.com/
-        ````
+````
 
 
 

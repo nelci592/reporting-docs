@@ -82,4 +82,4 @@ Implement this change for all occurrencies above
 
 Merge TOC of documentation and API reference - D:\Work\reporting-docs\_assetsApi\api\index.md - change this file accordingly
 
-Code in list - 8 spaces indent, https://meta.stackexchange.com/questions/3792/how-to-nest-code-within-a-list-using-markdown
+Code in list - 8 spaces indent doesn't work -  https://meta.stackexchange.com/questions/3792/how-to-nest-code-within-a-list-using-markdown

@@ -64,7 +64,7 @@ Steps:
 
 	
     ````powershell
-npm install jquery```
+npm install jquery````
 
 
 
@@ -72,7 +72,8 @@ npm install jquery```
 
 	
     ````JSON
-"scripts": [ "../node_modules/jquery/dist/jquery.js" ]````
+"scripts": [ "../node_modules/jquery/dist/jquery.js" ]
+````
 
 
 
@@ -89,8 +90,8 @@ npm install @progress/telerik-angular-report-viewer
 >tip If you receive a  *403 Forbidden Error* , you need to register and login at                    [npmjs.com](https://www.npmjs.com/)before performing this step.                  
 
 	
-````powershell
-npm login --registry=https://registry.npmjs.org --scope=@progress 				
+    ````powershell
+    npm login --registry=https://registry.npmjs.org --scope=@progress 				
 ````
 
 
@@ -127,8 +128,8 @@ imports: [TelerikReportingModule]
 1. Use the report viewer selector in the AppComponent template:
 
 	
-        ````HTML
-        <tr-viewer 
+    ````HTML
+<tr-viewer 
     [containerStyle]="viewerContainerStyle"
     [serviceUrl]="'http://myrestserviceurl/api/reports'"
     [reportSource]="{
@@ -138,7 +139,7 @@ imports: [TelerikReportingModule]
     [viewMode]="'INTERACTIVE'"
     [scaleMode]="'SPECIFIC'"
     [scale]="1.0">
-</tr-viewer>```
+</tr-viewer>````
 
 For all available report viewer options refer to [Options]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/api-reference/options%}).
                 
@@ -147,7 +148,7 @@ For all available report viewer options refer to [Options]({%slug telerikreporti
                 Add references to the Less-based CSS files in the ```<head>``` element of index.html:
 
 	
-````HTML
+    ````HTML
 <!-- The required Less-based styles -->                  
 <link href="https://kendo.cdn.telerik.com/
 ````
@@ -160,23 +161,23 @@ If you use the __styleUrls__ attribute to reference the CSS, it is required to s
                 
 
 	
-        ````TypeScript
-        import { Component, ViewEncapsulation } from '@angular/core';
+    ````TypeScript
+import { Component, ViewEncapsulation } from '@angular/core';
  
 @Component({
   encapsulation: ViewEncapsulation.None
 				
-        ````
+````
 
 
 
 1. Run the application:
 
 	
-        ````powershell
-        ng serve
+    ````powershell
+ng serve
 				
-        ````
+````
 
 
 

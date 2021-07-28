@@ -18,9 +18,74 @@ navigation:
     designing-reports:
         position: 3100
         title: "Designing Reports"  
+    designing-reports/report-designer-tools:
+        position: 1000
+        title: "Report Designer Tools"
+    designing-reports/report-designer-tools/web-report-designer:
+        position: 1000
+        title: "Web Report Designer"
+    designing-reports/report-designer-tools/web-report-designer/tools:
+        position: 1000
+        title: "Tools"
+    designing-reports/report-designer-tools/web-report-designer/tools/table:
+        position: 1000
+        title: "Table"    
+    designing-reports/report-designer-tools/desktop-designers:
+        position: 1100
+        title: "Desktop Designers"    
+    designing-reports/report-designer-tools/desktop-designers/standalone-report-designer:
+        position: 1000
+        title: "Standalone Report Designer"  
+    designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/configuration:
+        position: 1000
+        title: "Configuration"  
+    designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer:
+        position: 1100
+        title: "Visual Studio Report Designer"
+    designing-reports/report-designer-tools/desktop-designers/tools:
+        position: 1200
+        title: "Tools" 
+    designing-reports/report-designer-tools/desktop-designers/tools/report-wizards:
+        position: 1000
+        title: "Report Wizards"
+    designing-reports/report-designer-tools/desktop-designers/tools/report-wizards/band-report-wizard:
+        position: 1000
+        title: "Band Report Wizard"
+    designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards:
+        position: 1100
+        title: "Data Source Wizards"
+    designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/sqldatasource-wizard:
+        position: 1100
+        title: "SqlDataSource Wizards"    
+        
+        
     designing-reports/converting-reports-from-other-reporting-solutions:
         position: 1100
-        title: "Converting reports from other reporting solutions"
+        title: "Converting Reports from Other Reporting Solutions"
+    designing-reports/report-structure:
+        position: 1200
+        title: "Report Structure"
+    designing-reports/connecting-to-data:
+        position: 1300
+        title: "Connecting to Data"
+    designing-reports/adding-interactivity-to-reports:
+        position: 1400
+        title: "Adding Interactivity to Reports"    
+    designing-reports/styling-reports:
+        position: 1500
+        title: "Styling Reports"  
+    designing-reports/rendering-and-paging:
+        position: 1600
+        title: "Rendering and Paging" 
+    designing-reports/report-structure:
+        position: 1700
+        title: "Report Sources" 
+    designing-reports/report-book:
+        position: 1800
+        title: "Report Book" 
+
+        
+        
     using-reports-in-applications:
         position: 4100
         title: "Using reports in applications"   

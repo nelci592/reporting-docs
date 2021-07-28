@@ -12,7 +12,9 @@ position: 1
 
 
 
-To define a sorting for the __Report__ item use the following steps:     	Adding sorting to Report using Report Designer
+To define a sorting for the __Report__ item use the following steps:     	
+
+##Adding sorting to Report using Report Designer
 
 
 
@@ -30,7 +32,9 @@ For each sort expression, follow these steps:
 
 1. From the Direction column drop-down list, choose the sort direction                 for each expression. ASC sorts the expression in ascending order. DESC sorts                 the expression in descending order.
 
-1. Click OK.Adding sorting to Report Group using Report Designer
+1. Click OK.
+
+##Adding sorting to Report Group using Report Designer
 
 
 
@@ -58,7 +62,9 @@ For each sort expression, follow these steps:
                     the expression in descending order.
                   
 
-1. Click OK.Adding sorting to Report programatically
+1. Click OK.
+
+##Adding sorting to Report programatically
 
 
 

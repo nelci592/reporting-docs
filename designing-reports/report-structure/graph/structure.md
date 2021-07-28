@@ -10,7 +10,9 @@ position: 1
 
 # Structure
 
-Graph elements
+
+
+##Graph elements
 
 The images below show the basic elements of a chart:  
   ![Bar Line Chart Structure](images/DataItems/Graph/BarLineChartStructure.png)

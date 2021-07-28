@@ -10,9 +10,13 @@ position: 3
 
 # Common Report Designers Problems
 
-Font is missing in report designers
 
-Please refer to the information from the following KB article: [Font is missing in report designers.](http://www.telerik.com/support/kb/reporting/details/font-is-missing-in-report-designers)Report designers don't work on Windows Server platforms
+
+##Font is missing in report designers
+
+Please refer to the information from the following KB article: [Font is missing in report designers.](http://www.telerik.com/support/kb/reporting/details/font-is-missing-in-report-designers)
+
+##Report designers don't work on Windows Server platforms
 
 The desktop Report Designers need the assembly *Microsoft.mshtml* for the HtmlTextBox designer.            The assembly can be found by default in the Global Assembly Cache of most Windows OS. The Windows Server Operating Systems            lack the specified assembly and for that reason the designers crash on these systems, with an error message indicating that            the assembly is missing.         
 

@@ -12,13 +12,17 @@ position: 7
 
 
 
-This topic explains how to setup the Windows Forms Report Viewer to work with Telerik Report ServerPrerequisites
+This topic explains how to setup the Windows Forms Report Viewer to work with Telerik Report Server
+
+##Prerequisites
 
 * Installed and running               [Telerik Report Server](http://docs.telerik.com/report-server/introduction) R2 2016 (2.1.16.x) or higher version.             
 
 * A valid (enabled) user account - the built-in __Guest__ user account can be used as well.             
 
-* In case you are not using [Item Templates ]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/windows-forms-application/how-to-add-report-viewer-to-a-windows-forms'-.net-framework-project%}),               add references to all the assemblies listed               [here]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/requirements-for-desktop-viewers-using-remote-report-sources%}).             Configuring the Windows Forms Report Viewer to work with Report Server
+* In case you are not using [Item Templates ]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/windows-forms-application/how-to-add-report-viewer-to-a-windows-forms'-.net-framework-project%}),               add references to all the assemblies listed               [here]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/requirements-for-desktop-viewers-using-remote-report-sources%}).             
+
+##Configuring the Windows Forms Report Viewer to work with Report Server
 
 ###
 
@@ -54,7 +58,9 @@ This topic explains how to setup the Windows Forms Report Viewer to work with Te
 
 1. Click __OK__ when ready. The dialog will close and the resulting report source will be populated as a value of the __ReportSource__ property.                 
 
-1. Build and run your application. If your settings are configured correctly, you should see the report, hosted on your Report Server instance, displayed in the report viewer of your WinForms application.                   If not, check the                   [Troubleshooting](#Troubleshooting) section below.                 Troubleshooting
+1. Build and run your application. If your settings are configured correctly, you should see the report, hosted on your Report Server instance, displayed in the report viewer of your WinForms application.                   If not, check the                   [Troubleshooting](#Troubleshooting) section below.                 
+
+##Troubleshooting
 
 The most common reasons for failure are related with the authentication against Report Server. It is strongly recommended to use a tool like           Fiddler or any other web debugger when investigating such a problem.         
 

@@ -10,7 +10,9 @@ position: 8
 
 # Standalone Report Designer Problems
 
-Standalone Report Designer Crashes
+
+
+##Standalone Report Designer Crashes
 
 When the Standalone Report Designer crashes while working with Telerik Reporting,           the way to determine what has caused the problem is described in the following steps:         
 
@@ -42,6 +44,8 @@ More details about the Standalone Report Designer's configuration file are avail
 
 * Use Visual Studio Debugger to attach to the __Telerik.ReportDesigner(.x86).exe__ running process before it crashes,               in order to pinpoint where the error occurs.             
 
-After you generate the log files from the above steps, archive them and attach them to a support ticket.           Include the steps which have to be followed in order to reproduce the issue.         The report cannot be opened in the Standalone Report Designer
+After you generate the log files from the above steps, archive them and attach them to a support ticket.           Include the steps which have to be followed in order to reproduce the issue.         
+
+##The report cannot be opened in the Standalone Report Designer
 
 Please refer to the information from the following KB article: [The report cannot be opened in the Standalone Report Designer](./knowledge-base/report-cannot-be-opened-in-standalone-report-designer)

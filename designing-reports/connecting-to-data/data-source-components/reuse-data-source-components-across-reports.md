@@ -12,7 +12,9 @@ position: 13
 
 
 
-The article elaborates how to reuse a [Data Source component]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/overview%}) across multiple reports.       Reuse data source components across reports in Visual Studio
+The article elaborates how to reuse a [Data Source component]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/overview%}) across multiple reports.       
+
+##Reuse data source components across reports in Visual Studio
 
 You can create a custom component, inheriting a Telerik Reporting Data Source component, that is configured with the desired settings.
 
@@ -43,7 +45,9 @@ You can create a custom component, inheriting a Telerik Reporting Data Source co
 
 1. __Save__ and __rebuild__
 
-1. The Project Data Source is now listed under the __Project Data Sources__ node,                 if you run Project -> Add New Item -> Telerik Report [VERSION] Wizard.                 And the Prject Data Source is available in the Visual Studio Toolbox, if you open a report in the Visual Studio Report Designer.               Reuse data source components across reports in the Standalone Report Designer
+1. The Project Data Source is now listed under the __Project Data Sources__ node,                 if you run Project -> Add New Item -> Telerik Report [VERSION] Wizard.                 And the Prject Data Source is available in the Visual Studio Toolbox, if you open a report in the Visual Studio Report Designer.               
+
+##Reuse data source components across reports in the Standalone Report Designer
 
 The Standalone Report Designer can load data from external assemblies, which excludes custom data source components.           For more details, check [Extending Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/configuration/extending-report-designer%}).         
 

@@ -12,11 +12,15 @@ position: 8
 
 
 
-This topic explains how to setup the Windows Forms Report Viewer to work with Telerik Reporting REST ServicePrerequisites
+This topic explains how to setup the Windows Forms Report Viewer to work with Telerik Reporting REST Service
+
+##Prerequisites
 
 * Running               [ Telerik Reporting REST Service ]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview%}) instance.             
 
-* In case you are not using [Item Templates ]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/windows-forms-application/how-to-add-report-viewer-to-a-windows-forms'-.net-framework-project%}),               add references to all the assemblies listed                [here]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/requirements-for-desktop-viewers-using-remote-report-sources%}).             Configuring the Windows Forms Report Viewer to work with REST Service
+* In case you are not using [Item Templates ]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/windows-forms-application/how-to-add-report-viewer-to-a-windows-forms'-.net-framework-project%}),               add references to all the assemblies listed                [here]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/requirements-for-desktop-viewers-using-remote-report-sources%}).             
+
+##Configuring the Windows Forms Report Viewer to work with REST Service
 
 ###
 
@@ -54,7 +58,9 @@ This topic explains how to setup the Windows Forms Report Viewer to work with Te
 
 1. Click __OK__ when ready. The dialog will close and the resulting report source will be populated as a value of the __ReportSource__ property.                 
 
-1. Build and run your application. If your settings are configured correctly, you should see the report displayed in the report viewer of your WinForms application.                   If not, check the                   [Troubleshooting](#Troubleshooting) section below.                 Troubleshooting
+1. Build and run your application. If your settings are configured correctly, you should see the report displayed in the report viewer of your WinForms application.                   If not, check the                   [Troubleshooting](#Troubleshooting) section below.                 
+
+##Troubleshooting
 
 The following table shows the most common reasons for failure when using the Telerik Reporting REST Service. It is strongly recommended to use a tool like           Fiddler or any other web debugger when investigating such a problem.         
 

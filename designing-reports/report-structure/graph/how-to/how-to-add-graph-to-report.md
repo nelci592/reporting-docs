@@ -33,7 +33,9 @@ The simplest way to add a __Graph__ item to your report is to run the Graph Wiza
 1. When you finish the wizard a new Graph item will be created on the design surface. 
 
 >note Please note that the datapoint labels in the produced chart can be invisible because their default visibility depends on the selected chart type.           All charts that have visible axes, which can give you information about the measured value, have their labels visibility set to            __False__  by default. However, on some chart types like the [Pie Charts]({%slug telerikreporting/designing-reports/report-structure/graph/chart-types/pie-charts/overview%})           the labels are visible by default, while the axes are invisible.
-To insert a graph to a report
+
+
+##To insert a graph to a report
 
 >note Graph item for direct insertion is only available in the Visual Studio report designer.For the     		standalone report designer, please use a Graph wizard for the specific chart type.
 

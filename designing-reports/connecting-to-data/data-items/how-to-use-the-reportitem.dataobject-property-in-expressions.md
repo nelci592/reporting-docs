@@ -10,7 +10,7 @@ position: 6
 
 # How to use the ReportItem.DataObject property in expressions
 
-Object](/reporting/api/Telerik.Reporting.Processing.IDataObject) interface which defines the RawData property.           This property is the actual data object that is being wrapped by the IDataObject and referring to DataObject, we actually refer to its RawData values.           Thus to get the actual data object you can work with __ReportItem.DataObject.RawData__.           The __RawData__ object exposes all properties and methods of the data object's type.         
+[IDataObject](/reporting/api/Telerik.Reporting.Processing.IDataObject) interface which defines the RawData property.           This property is the actual data object that is being wrapped by the IDataObject and referring to DataObject, we actually refer to its RawData values.           Thus to get the actual data object you can work with __ReportItem.DataObject.RawData__.           The __RawData__ object exposes all properties and methods of the data object's type.         
 
 For example:       
 
@@ -48,7 +48,9 @@ End Class
 
 
 
-If the data object above is bound to a [data item]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/overview%}), __=ReportItem.DataObject.RawData__ will return the exact data object of type __Phone__.           This allows you to use the GetFormattedNumber method in an expression by calling __=ReportItem.DataObject.RawData.GetFormattedNumber()__,           or use a property of the type e.g., __=ReportItem.DataObject.RawData.Number__.         Use parent data item data for child data item datasource parameter
+If the data object above is bound to a [data item]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/overview%}), __=ReportItem.DataObject.RawData__ will return the exact data object of type __Phone__.           This allows you to use the GetFormattedNumber method in an expression by calling __=ReportItem.DataObject.RawData.GetFormattedNumber()__,           or use a property of the type e.g., __=ReportItem.DataObject.RawData.Number__.         
+
+##Use parent data item data for child data item datasource parameter
 
 In the context of data item ReportItem.DataObject references the parent's data item data.           Thus the ReportItem.DataObject.MyField retrieves the MyField data from the parent data item datasource.           This way you can make use of of the datasource relations capability.           For example when SqlDataSourceReport is set to the report and SqlDataSourceTable is set to a table.           You can bind the SqlDataSourceTable datasource parameter to a SqlDataSourceReport data field as shown in the following datasource parameter example:         
 
@@ -58,9 +60,13 @@ In the context of data item ReportItem.DataObject references the parent's data i
 |@MyParameter|string|= ReportItem.DataObject.MyField|
 
 
-Use DataObject in an expression and user-defined function
 
-When complicated logic should be applied or .NET framework routines need to be utilized it is more appropriate to create a user defined function instead of an expression. In this case it is useful to pass the current data item to the user function which will do the processing logic instead of writing a complicated expression. In the following example we will show how to display properly the __AdditionalContactsInfo__ field, which is stored in XML format in the __AdventureWorks Person.Contact__ table.         Steps:
+
+##Use DataObject in an expression and user-defined function
+
+When complicated logic should be applied or .NET framework routines need to be utilized it is more appropriate to create a user defined function instead of an expression. In this case it is useful to pass the current data item to the user function which will do the processing logic instead of writing a complicated expression. In the following example we will show how to display properly the __AdditionalContactsInfo__ field, which is stored in XML format in the __AdventureWorks Person.Contact__ table.         
+
+##Steps:
 
 1.             Create or open an existing report.
           
@@ -139,11 +145,15 @@ In this step we process the passed data argument as IDataObject, retrieving the 
 
 
 1.             Preview or run your report. The second textbox now should show the concatenated person names and telephone numbers.
-          Use DataObject as a datasource for nested data items (Table, List, Crosstab, Graph)
+          
+
+##Use DataObject as a datasource for nested data items (Table, List, Crosstab, Graph)
 
 This scenario takes place when the currently bound data object have to be used as a datasource for a nested report item           - table, graph or a subreport - for example, when it is needed to process some grouped data and show summary           in the group header. The following example uses the __AdventureWorks’ Product__           table, groups products by their __SafetyStockLevel__ field and shows summary info about the           products color in a crosstab placed in the group header.         
 
-The following screenshot shows the expected report output that should be created as a result of this example:![dataobject-report-output](images/DataItems/dataobject-report-output.png)Steps:
+The following screenshot shows the expected report output that should be created as a result of this example:![dataobject-report-output](images/DataItems/dataobject-report-output.png)
+
+##Steps:
 
 1.             Create or open an existing report.
           

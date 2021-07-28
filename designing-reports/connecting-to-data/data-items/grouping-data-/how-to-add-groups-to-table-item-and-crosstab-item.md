@@ -16,7 +16,9 @@ Add groups to a data item when you want to display your data in a        visual 
 
 You can create both nested groups and adjacent groups. Within a data        item, you can create multiple row groups and column groups.
 
-Typically, you define groups automatically as you work with data regions.       However, you can add your own groups. The process of adding groups varies        based on the type of data region.       In a Table, Crosstab or List items, drag data source fields to the Row/Column        Fields area. Right-click an existing group to add       parent, child or adjacent groups. By definition, the details group is the innermost group and       can only be added as a child group. Right-click an existing group to delete       it. Rows and columns on which to display group values are automatically added        for you. For more information, see [Working with Table]({%slug telerikreporting/designing-reports/report-structure/table/crosstab/list/overview%}) article.       Add a parent or child row/column group to a Table data item using Report Designer
+Typically, you define groups automatically as you work with data regions.       However, you can add your own groups. The process of adding groups varies        based on the type of data region.       In a Table, Crosstab or List items, drag data source fields to the Row/Column        Fields area. Right-click an existing group to add       parent, child or adjacent groups. By definition, the details group is the innermost group and       can only be added as a child group. Right-click an existing group to delete       it. Rows and columns on which to display group values are automatically added        for you. For more information, see [Working with Table]({%slug telerikreporting/designing-reports/report-structure/table/crosstab/list/overview%}) article.       
+
+##Add a parent or child row/column group to a Table data item using Report Designer
 
 1. Drag a data source field from the [Data Explorer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-explorer%}) 
             to the Row/Column Fields area of the Table or CrossTab items.
@@ -25,7 +27,9 @@ Typically, you define groups automatically as you work with data regions.       
             bar to place the group as a parent group or a child group to an existing group.
 
 The group is added with a default name, group expression, and sort 
-            expression that is based on the field name.Add an adjacent row/column group to a Table data item
+            expression that is based on the field name.
+
+##Add an adjacent row/column group to a Table data item
 
 1. 
 
@@ -94,7 +98,9 @@ In the group expression, type an expression,
 
 A new group is added to the grouping pane in the [Group Explorer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/group-explorer%}) 
       and a row or column on which to display group values is added to the Table data item on the 
-      design surface.Add a details group to a Table data item using Report Designer
+      design surface.
+
+##Add a details group to a Table data item using Report Designer
 
 1. 
 
@@ -160,7 +166,9 @@ Select __Show detail data__.
 
 A new details group is added as a child group in the Grouping pane in the 
       [Group Explorer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/group-explorer%}), 
-      and the new group displays the details group icon.Edit a row or column group in a Table data item using Report Designer
+      and the new group displays the details group icon.
+
+##Edit a row or column group in a Table data item using Report Designer
 
 1. In the __Report Designer__, select the Table data item. The Grouping pane in the 
       [Group Explorer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/group-explorer%}) 
@@ -211,7 +219,9 @@ A new details group is added as a child group in the Grouping pane in the
 1. Click __BookMarkID__ to set a BookMark for this group.
   
 
-1. Click __OK__.Delete a group from a Table data item using Report Designer
+1. Click __OK__.
+
+##Delete a group from a Table data item using Report Designer
 
 1. In the [Group Explorer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/group-explorer%}) group pane, 
             right-click the group, and then click __Delete Group__.
@@ -227,7 +237,9 @@ A new details group is added as a child group in the Grouping pane in the
 * __Delete group only__   Choose this option to keep
   the structure of the Table data item the same and delete only the group definition.
 
-1. Click __OK__.Adding a group to Table data item programatically
+1. Click __OK__.
+
+##Adding a group to Table data item programatically
 
 {{source=CodeSnippets\CS\API\Telerik\Reporting\TableSnippets.cs region=AddNewGroupSnippet}}
 ````C#

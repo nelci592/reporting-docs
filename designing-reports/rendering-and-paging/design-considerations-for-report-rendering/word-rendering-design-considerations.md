@@ -28,16 +28,22 @@ Report exported to Word appears as a nested table that represents both the repor
 
 ## Pagination
 
-Microsoft Word does not support the concept of hard pages. Instead, when the exported document is opened           in Word, Word repaginates it again based on the page size. The rendering extension tries to preserve closely the           original pages of the report, inserting additional page breaks when necessary. However in some rare cases the           repagination performed by Word might interfere with this behavior, resulting in a document with page breaks on           unexpected places or blank pages. To correct this, you can try changing the Word’s pagination by adjusting the           page margins.         Page Sizing
+Microsoft Word does not support the concept of hard pages. Instead, when the exported document is opened           in Word, Word repaginates it again based on the page size. The rendering extension tries to preserve closely the           original pages of the report, inserting additional page breaks when necessary. However in some rare cases the           repagination performed by Word might interfere with this behavior, resulting in a document with page breaks on           unexpected places or blank pages. To correct this, you can try changing the Word’s pagination by adjusting the           page margins.         
+
+##Page Sizing
 
 When the report is rendered, the page size, orientation and margins are configured in the document                 according to the corresponding properties in the report definition. For ReportBook the page settings of each                 individual report in the book are respected. This can produce a document with varying page sizes and                 orientation per report.               
 
 >note Word supports a maximum page size of 22 inches wide and 22 inches high. If your page is wider than 22 inches,                   some data may not be displayed in Print Layout view.                 
-Page Headers and Footers
+
+
+##Page Headers and Footers
 
 Report’s PageHeaderSection and PageFooterSection are rendered as header and footer regions in the document.                 For ReportBook the page sections of each individual report in the book are respected. This can produce a document                 with varying page headers and footers per report.               
 
-Word does not support configuring explicitly the height of headers and footers. Instead they are sized automatically                 according to their content.               Page Columns
+Word does not support configuring explicitly the height of headers and footers. Instead they are sized automatically                 according to their content.               
+
+##Page Columns
 
 Newsletter-style multi-column reports are rendered as multiple columns in Word.               
 

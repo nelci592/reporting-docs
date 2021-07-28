@@ -24,21 +24,31 @@ In case you are not familiar with ASP.NET Core, check it out on the [official pa
 
 Telerik Reporting ASP.NET Core packages are available as of Telerik Reporting R3 2016 SP1 release.         They are built against the __full .NET Framework__.       
 
-Telerik NuGet Packages include the Reporting Engine and implementation of the [Reporting REST WebAPI based service](d3912553-a26d-43ca-80c4-136e51d56263).         The packages do not include design-time support.       Designing the Reports
+Telerik NuGet Packages include the Reporting Engine and implementation of the [Reporting REST WebAPI based service](d3912553-a26d-43ca-80c4-136e51d56263).         The packages do not include design-time support.       
 
-.NET Core don't have design time support.           Our recommendation is to design reports in a separate Telerik Report Library           (Class Library created for .NET Framework 4.0+) or to use the [Overview]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview%}).         Supported Environment
+##Designing the Reports
+
+.NET Core don't have design time support.           Our recommendation is to design reports in a separate Telerik Report Library           (Class Library created for .NET Framework 4.0+) or to use the [Overview]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview%}).         
+
+##Supported Environment
 
 Telerik Reporting ASP.NET Core package is built against the full .NET Framework           because the Reporting engine relies on the GDI+ API, that is available only on Windows OS.           The GDI+ API is required for measuring, layouting and preparing the text glyphs.         
 
-For targeting non-Windows platforms with ASP.NET Core Application,           add the HTML5 Viewer as a JavaScript widget, which does not require any Telerik NuGet packages.           The Reporting REST service can be hosted separately on a Windows OS machine,           where the HTML5 Viewer will need the address of the service to display content produced on the remote machine.           More details about hosting the Reporting REST Service are available in           [How to Add Telerik Reporting REST Web API to Web Application]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-web-api-implementation/how-to-add-telerik-reporting-rest-web-api-to-web-application%})           and [How to Self Host Telerik Reporting REST Web API]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-web-api-implementation/how-to-self-host-telerik-reporting-rest-web-api%}).                 Connection Strings and Engine Configuration
+For targeting non-Windows platforms with ASP.NET Core Application,           add the HTML5 Viewer as a JavaScript widget, which does not require any Telerik NuGet packages.           The Reporting REST service can be hosted separately on a Windows OS machine,           where the HTML5 Viewer will need the address of the service to display content produced on the remote machine.           More details about hosting the Reporting REST Service are available in           [How to Add Telerik Reporting REST Web API to Web Application]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-web-api-implementation/how-to-add-telerik-reporting-rest-web-api-to-web-application%})           and [How to Self Host Telerik Reporting REST Web API]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-web-api-implementation/how-to-self-host-telerik-reporting-rest-web-api%}).         
+
+##        Connection Strings and Engine Configuration
       
 
-Telerik Reporting relies on the ConfigurationManager to resolve named connection strings and to configure the reporting engine.           Thus add any named connectionstrings or Telerik Reporting configuration to the project's root           __app.config__ configuration file.           For more information see: [Overview]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/overview%}).                 Prerequisites
+Telerik Reporting relies on the ConfigurationManager to resolve named connection strings and to configure the reporting engine.           Thus add any named connectionstrings or Telerik Reporting configuration to the project's root           __app.config__ configuration file.           For more information see: [Overview]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/overview%}).         
+
+##        Prerequisites
       
 
 * [Visual Studio 2017 Update 3](https://www.visualstudio.com/vs/)
 
-* [NET Core 2 SDK](https://www.microsoft.com/net/download/core)        Creating a Sample ASP.NET Core Project
+* [NET Core 2 SDK](https://www.microsoft.com/net/download/core)
+
+##        Creating a Sample ASP.NET Core Project
       
 
 1. Open __Visual Studio 2017 Update 3__.             
@@ -64,7 +74,9 @@ Telerik Reporting relies on the ConfigurationManager to resolve named connection
 
 For another *.NET Framework* (for example *4.7.1*) the value should be changed accordingly (for the example - *net471*), etc.                   Save the .csproj file.                 
 
-1. Reload project - right click on the unloaded project and select 'Reload Project'.                         Adding the required NuGet Packages
+1. Reload project - right click on the unloaded project and select 'Reload Project'.                 
+
+##        Adding the required NuGet Packages
       
 
 ASP.NET Core does not support references to assemblies, but instead works with NuGet packages.         
@@ -80,7 +92,9 @@ To setup the Reporting REST service download __Telerik.Reporting__           and
 
 For static files support add Microsoft.AspNetCore.StaticFiles           [Microsoft.AspNetCore.StaticFiles](https://www.nuget.org/packages/Microsoft.AspNetCore.StaticFiles/)           NuGet package.         
 
-For Office OpenXML document formats (XLSX, DOCX and PPTX) install the           [DocumentFormat.OpenXML](https://www.nuget.org/packages/DocumentFormat.OpenXml/)           NuGet package.           The package support out of the box version 2.7.2.0. For newer versions           [binding redirect](http://msdn.microsoft.com/en-us/library/eftw1fys(v=vs.110).aspx)           in the app.config is required.                 Setting up the REST service
+For Office OpenXML document formats (XLSX, DOCX and PPTX) install the           [DocumentFormat.OpenXML](https://www.nuget.org/packages/DocumentFormat.OpenXml/)           NuGet package.           The package support out of the box version 2.7.2.0. For newer versions           [binding redirect](http://msdn.microsoft.com/en-us/library/eftw1fys(v=vs.110).aspx)           in the app.config is required.         
+
+##        Setting up the REST service
       
 
 1. In the project, right-click __Dependencies__, choose __Manage NuGet Packages__               and from the drop down menu, select Telerik private feed.             
@@ -128,7 +142,9 @@ namespace WebApplication1.Controllers
 }
 ````
 
-        Adding the HTML5 Report Viewer
+
+
+##        Adding the HTML5 Report Viewer
       
 
 1. To set up a folder for the reports, right-click on *wwwroot* and select __Add > New Folder__.               Name the folder __Reports__ and add sample reports in TRDP format. Find the sample reports in               *                 {Telerik Reporting installation path}\Report Designer\Examples               *               Note that the name of the folder is considered with the folder path used by the UriReportSourceResolver in the ReportsController.             This tutorial will use __Barcodes Report.trdp__ in all examples.             

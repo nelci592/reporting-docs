@@ -39,7 +39,9 @@ In the report viewing application you can populate the values of          __Repo
 At runtime you can access the report parameters through the          [Telerik.Reporting.Processing.Report.Parameters](/reporting/api/Telerik.Reporting.Processing.Report#Telerik_Reporting_Processing_Report_Parameters)         dictionary. Each [Parameter](/reporting/api/Telerik.Reporting.Processing.Parameter)         object contains resolved available values, current value and label.          The label returns the currently selected DisplayMember         from the available values (if available values are defined).
 
 >note Prior to version 2010 Q1 the processing report exposes a dictionary            containing only the current values of the report parameters.
-Example:
+
+
+##Example:
 
 1. Create a __Telerik Report__
 

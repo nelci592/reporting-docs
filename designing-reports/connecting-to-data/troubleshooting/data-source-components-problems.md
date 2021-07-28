@@ -12,7 +12,9 @@ position: 0
 
 
 
-This help article lists common issues on configuring Telerik Reporting DataSource components.         Before proceeding with the troubleshooting, test if the problem is reproducible with the latest         available Telerik Reporting version.       SqlDataSource Component
+This help article lists common issues on configuring Telerik Reporting DataSource components.         Before proceeding with the troubleshooting, test if the problem is reproducible with the latest         available Telerik Reporting version.       
+
+##SqlDataSource Component
 
 The SqlDataSource component uses the installed on the machine .NET data providers,           the corresponding ADO.NET classes and the information from the provided connection string           to establish a connection and retrieve data. Errors can occurs due to a connection string           misconfuguration or inavalid SQL queries.         
 
@@ -28,7 +30,9 @@ The SqlDataSource component uses the installed on the machine .NET data provider
 
 * __                 SQL parameters are not listed at the 'Configure data source parameters' step of the SqlDataSource Wizard               __The [SqlDataSource wizard]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/sqldatasource-wizard/overview%}) relies on the selected .NET data provider               to evaluate the SQL query and to provide information about any detected SQL parameters. The syntax of the SQL query must be               considered with the selected .NET data provider in order SQL parameters to be listed at the 'Configure data source parameters'               step of the SqlDataSource Wizard. In case the .NET data provider does not return information about SQL parameters, you can configure               manually the SqlDataSource component's Parameters collection.             
 
-ObjectDataSource Component
+
+
+##ObjectDataSource Component
 
 The ObjectDataSource component can wrap any business object, where most issues are due to the custom           logic of the used data retrieval method.         
 
@@ -38,7 +42,9 @@ The ObjectDataSource component can wrap any business object, where most issues a
 
 * __Report Designer Preview is not working when using ObjectDataSource.__Such issues can occur due to errors on retrieving data through the wrapped data access method,               or missing configuration required by the wrapped data access method. For more details and solutions check [Report Designer Preview is not working when using ObjectDataSource](http://www.telerik.com/support/kb/reporting/details/visual-studio-preview-is-not-working-when-using-objectdatasource)
 
-EntityDataSource Component
+
+
+##EntityDataSource Component
 
 The EntityDataSource component wraps EF data models, where in design-time the Report Designer needs to create a data context to load the data schema.           Most common issues are caused by improperly configured EF data model or by locked assemblies.         
 
@@ -61,7 +67,9 @@ The EntityDataSource component wraps EF data models, where in design-time the Re
 
 
 
-OpenAccessDataSource Component
+
+
+##OpenAccessDataSource Component
 
 The OpenAccessDataSource component wraps data models created by the means of Telerik Data Access,           where in design-time the Report Designer needs to create a data context to load the data schema.           Most common issues are caused by improperly configured data model or by locked assemblies.         
 

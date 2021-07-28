@@ -10,7 +10,9 @@ position: 4
 
 # How to Add a Custom Action
 
-Adding a custom action using the Report Designer
+
+
+##Adding a custom action using the Report Designer
 
 1. In Design view, right-click the report item to which you want to add a link and then click __Properties__.             
 
@@ -22,7 +24,9 @@ Adding a custom action using the Report Designer
 
 1. Click __OK__ when ready.             
 
-1. To test the action, preview the report and click the report item with the applied custom action.                A message will appear, displaying information for the action's properties.             Adding a custom action programatically
+1. To test the action, preview the report and click the report item with the applied custom action.                A message will appear, displaying information for the action's properties.             
+
+##Adding a custom action programatically
 
 {{source=CodeSnippets\CS\API\Telerik\Reporting\ActionSnippets.cs region=AddNewCustomActionSnippet}}
 ````C#

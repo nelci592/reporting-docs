@@ -62,7 +62,9 @@ In this how-to article we will show you how to use the [Standalone Report Design
   ![Choropleth How To Simple Choropleth Setup](images/Map/Choropleth/HowTo_SimpleChoropleth/Choropleth_HowToSimple_ChoroplethSetup.png)
 
 1. When you click the __Finish__ button, the map will display the choropleth map. After adding some formatting to the               title and the legend, it should look like the one shown here:               
-  ![Choropleth How To Simple Layout 1](images/Map/Choropleth/HowTo_SimpleChoropleth/Choropleth_HowToSimple_Layout1.png)        Additional information
+  ![Choropleth How To Simple Layout 1](images/Map/Choropleth/HowTo_SimpleChoropleth/Choropleth_HowToSimple_Layout1.png)
+
+##        Additional information
       
 
 ###

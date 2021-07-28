@@ -90,7 +90,9 @@ By default, groups are not kept together on a single page. You can instruct the 
 By default, Table item is kept together. To force nested table to break set KeepTogether=False for parent table's row/column           that contains nested table.         
 
 >note If the content that should be kept together is too large to fit on a single page, it is not moved and is left on the current             page, forcing the rest of the content to move to next page, as if KeepTogether is false.           Example: Report group has GroupKeepTogether=FirstDetail, this means that the summary height of the group header,             height of all child group headers (if any) and height of the first detail should be able to fit on a single page in order for the             KeepTogether algorithm to work and move the whole Group on a new page.           
-Horizontal Paging
+
+
+##Horizontal Paging
 
 If the report spans over several pages in width then its sections are stretched from the left edge of the left-most page’s               printable area to the right edge of the right-most page’s printable area, as displayed in the following diagram:             
 

@@ -14,7 +14,9 @@ position: 5
 
 This topic explains how to use custom parameters UI to update the report parameters instead of using the MVC report viewer's default         implementation of the parameters area. The report and all required parameters for it are packed in a ReportSource object.         To update the report source the [ReportViewer.reportSource(rs)]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/methods/reportsource(rs)%}) method is used.       
 
-To give an example we will use the Invoice report from our local examples and will update its __OrderNumber__ parameter         from a custom parameter UI.       Pass values to report parameters
+To give an example we will use the Invoice report from our local examples and will update its __OrderNumber__ parameter         from a custom parameter UI.       
+
+##Pass values to report parameters
 
 >tip All path references in the described steps should be adapted according             to your project setup. For more information please refer to the MSDN article             [ASP.NET Web Project Paths](http://msdn.microsoft.com/en-us/library/ms178116.aspx)
 

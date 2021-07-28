@@ -12,7 +12,9 @@ position: 5
 
 
 
-The [LocationMapSeries](/reporting/api/Telerik.Reporting.LocationMapSeries) are used when the data points have a single coordinate pair,         obtained directly from the data set or by using a [Location provider]({%slug telerikreporting/designing-reports/report-structure/map/structure/location-providers%}).       Adding a LocationMapSeries instance to the map
+The [LocationMapSeries](/reporting/api/Telerik.Reporting.LocationMapSeries) are used when the data points have a single coordinate pair,         obtained directly from the data set or by using a [Location provider]({%slug telerikreporting/designing-reports/report-structure/map/structure/location-providers%}).       
+
+##Adding a LocationMapSeries instance to the map
 
 To add new PointMap, PieMap or a ColumnMap series to the map follow these steps:         
 

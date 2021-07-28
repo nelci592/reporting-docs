@@ -174,7 +174,9 @@ If any other paper size is specified, the default printer settings will be used.
 Formatting Strings used in reports are applied on rendering the document in the selected format.           To preserve the result from previewing the document, formats are saved as custom formatting strings in the Excel file.           Otherwise, culture specififc setting can change the data meaning in the Excel file.         
 
 >tip If an item's Value property is evaluated as a string, the Numeric/DateTime formatting string will not be applied.
-Standard Numeric Format Strings
+
+
+##Standard Numeric Format Strings
 
 A subset of the .NET string formats (set through the TextBox.Format property) is supported by the rendering extension. Those include:
 
@@ -188,7 +190,9 @@ A subset of the .NET string formats (set through the TextBox.Format property) is
 
 * and others ..
 
-To preserve the result from previewing the rendered document, formats are saved as custom formatting strings in the Excel file.                 This behavior can be modified by setting __UseExtendedFormatting = False__ in the Excel device information settings.               Standard DateTime Format Strings
+To preserve the result from previewing the rendered document, formats are saved as custom formatting strings in the Excel file.                 This behavior can be modified by setting __UseExtendedFormatting = False__ in the Excel device information settings.               
+
+##Standard DateTime Format Strings
 
 * d (Short date pattern)
 
@@ -216,10 +220,14 @@ To preserve the result from previewing the rendered document, formats are saved 
 
 * U (Universal sortable date/time pattern)
 
-* Y or y (Year month pattern)                                 Currency Format Strings
+* Y or y (Year month pattern)                   
+
+##              Currency Format Strings
             
 
 Currency format strings are always hard-coded with "Custom Format".                 This way the currency formatting from the report definition is preserved and does not depend on the client machine locale.                 This behavior can be modified by setting __UseExtendedFormatting = False__ in the Excel device information settings.               
+
+##
 
 If a valid format string is detected by the rendering extension, the raw value will be stored in the cell as a Number                 and an Excel Number Format will be applied. Otherwise, the value will be stored in the cell, again as a Number, but without formatting. Even unformatted, it would be possible to use the resulting cell in Excel functions.               
 

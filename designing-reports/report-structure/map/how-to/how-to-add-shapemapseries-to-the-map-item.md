@@ -12,7 +12,9 @@ position: 6
 
 
 
-The [ShapeMapSeries](/reporting/api/Telerik.Reporting.ShapeMapSeries) uses its own source to obtain a set of coordinates which will         determine the shape of the data points. These series does not use a LocationProvider or a GeoLocationMapGroup, because the data points         are not determined by a single location on the map surface, as with the [LocationMapSeries](/reporting/api/Telerik.Reporting.LocationMapSeries)Adding a ShapeMapSeries instance to the map
+The [ShapeMapSeries](/reporting/api/Telerik.Reporting.ShapeMapSeries) uses its own source to obtain a set of coordinates which will         determine the shape of the data points. These series does not use a LocationProvider or a GeoLocationMapGroup, because the data points         are not determined by a single location on the map surface, as with the [LocationMapSeries](/reporting/api/Telerik.Reporting.LocationMapSeries)
+
+##Adding a ShapeMapSeries instance to the map
 
 To add new ShapeMap series to the map follow these steps:         
 

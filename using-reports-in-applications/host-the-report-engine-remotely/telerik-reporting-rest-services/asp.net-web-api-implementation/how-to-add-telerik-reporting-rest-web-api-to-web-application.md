@@ -10,9 +10,11 @@ position: 2
 
 # How to Add Telerik Reporting REST Web API to Web Application
 
-es and packages to host the Telerik Reporting REST service instance.         
+ry files and packages to host the Telerik Reporting REST service instance.         
 
-The project has a preconfigured implementation of reports controller that uses the *"~\Reports"* path for           its report source resolver. This directory is not automatically created and needs to be created, or the path to be modified accordingly prior to running the project.         Manually configuring Telerik.Reporting REST Service on IIS
+The project has a preconfigured implementation of reports controller that uses the *"~\Reports"* path for           its report source resolver. This directory is not automatically created and needs to be created, or the path to be modified accordingly prior to running the project.         
+
+##Manually configuring Telerik.Reporting REST Service on IIS
 
 ###To host and configure the Telerik.Reporting REST Service on IIS follow the steps below:
 

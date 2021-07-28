@@ -24,7 +24,9 @@ In case you are not familiar with ASP.NET Core, check it out on the [official pa
 
 Telerik Reporting ASP.NET Core packages are available as of Telerik Reporting R3 2016 SP1 release.         They are built against the __full .NET Framework__.       
 
-Telerik NuGet Packages include the Reporting Engine and implementation of the [Reporting REST WebAPI based service](d3912553-a26d-43ca-80c4-136e51d56263).         The packages do not include design-time support.       Before you start
+Telerik NuGet Packages include the Reporting Engine and implementation of the [Reporting REST WebAPI based service](d3912553-a26d-43ca-80c4-136e51d56263).         The packages do not include design-time support.       
+
+##Before you start
 
 The Reporting engine relies on the GDI+ API available only on WindowsOS machines. Without the GDI+ API reports cannot be rendered.
 
@@ -33,13 +35,17 @@ If you need to have your ASP.NET Core Application targeting more platforms,     
 More details about hosting the Reporting REST Service are available in           [How to Add Telerik Reporting REST Web API to Web Application]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-web-api-implementation/how-to-add-telerik-reporting-rest-web-api-to-web-application%})           and [How to Self Host Telerik Reporting REST Web API]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-web-api-implementation/how-to-self-host-telerik-reporting-rest-web-api%}).         
 
 >warning You might exprience issues with displaying images in the report if using ASP.NET Core  __1.1.0__  due to the way the requests are handled.             It is recommended to upgrade to a newer version of ASP.NET Core - [.NET Core releases](https://github.com/dotnet/core/releases)
-Prerequisites
+
+
+##Prerequisites
 
 To be able to create the sample application on Windows, make sure you provide the requirements listed below.         
 
 * [Visual Studio 2015 Update 3](https://www.visualstudio.com/en-us/news/releasenotes/vs2015-update3-vs)
 
-* [NET Core 1.1.7 SDK](https://www.microsoft.com/net/core#windows)        Creating a Sample ASP.NET Core Project
+* [NET Core 1.1.7 SDK](https://www.microsoft.com/net/core#windows)
+
+##        Creating a Sample ASP.NET Core Project
       
 
 1. Open __Visual Studio 2015 Update 3__.             
@@ -48,7 +54,9 @@ To be able to create the sample application on Windows, make sure you provide th
 
 1. In the __New Project__ dialog, expand __Installed > Templates > Visual C# > Web__,               and select __                 ASP.NET Core Web Application (.NET Framework)__ project template.               Choose a name for the project and click __OK__.             
 
-1. From the __ASP.NET Core Templates__ select __Web Application__.                     Getting Ready to Add Telerik Reporting
+1. From the __ASP.NET Core Templates__ select __Web Application__.             
+
+##        Getting Ready to Add Telerik Reporting
       
 
 You will have to prepare the project for Telerik Reporting.         
@@ -64,14 +72,18 @@ Open the __project.json__ file.           The "frameworks" property should look 
 
 
 
-The above setting is required since Telerik Reporting supports only the full .NET framework. Note, that using multiple           target frameworks will force Visual Studio to build your project as if it will run on all frameworks, and ultimately you           will not be able to start it.                 Adding the NuGet Packages
+The above setting is required since Telerik Reporting supports only the full .NET framework. Note, that using multiple           target frameworks will force Visual Studio to build your project as if it will run on all frameworks, and ultimately you           will not be able to start it.         
+
+##        Adding the NuGet Packages
       
 
 ASP.NET Core does not support references to assemblies, but instead works with references to NuGet packages.           To setup the Reporting REST service you have to download __Telerik.Reporting__           and __Telerik.Reporting.Services.AspNetCore__           NuGet packages from the private Telerik NuGet feed at           [https://nuget.telerik.com/nuget](https://nuget.telerik.com/nuget). How to add a NuGet feed is explained in           [https://www.visualstudio.com/en-us/docs/package/nuget/consume](https://www.visualstudio.com/en-us/docs/package/nuget/consume)
 
 You will need to [your Telerik account](https://www.telerik.com/account) credentials for this operation.         
 
-For Office OpenXML document formats (XLSX, DOCX and PPTX) install the           [DocumentFormat.OpenXML](https://www.nuget.org/packages/DocumentFormat.OpenXml/)           NuGet package.           The package support out of the box version 2.7.2.0. For newer versions           [binding redirect](http://msdn.microsoft.com/en-us/library/eftw1fys(v=vs.110).aspx)            in the app.config is required.                 Setting up the REST service
+For Office OpenXML document formats (XLSX, DOCX and PPTX) install the           [DocumentFormat.OpenXML](https://www.nuget.org/packages/DocumentFormat.OpenXml/)           NuGet package.           The package support out of the box version 2.7.2.0. For newer versions           [binding redirect](http://msdn.microsoft.com/en-us/library/eftw1fys(v=vs.110).aspx)            in the app.config is required.         
+
+##        Setting up the REST service
       
 
 1. In your project, right-click __References__, choose __Manage NuGet Packages__               and from the drop down menu, select Telerik private feed.             
@@ -122,7 +134,9 @@ public IActionResult Report()
 }
 ````
 
-        Adding the HTML5 Report Viewer
+
+
+##        Adding the HTML5 Report Viewer
       
 
 1. To set up a folder for the reports, right-click on *wwwroot* and select __Add > New Folder__.               Name the folder __Reports__ and add sample reports in TRDP format for easiness. You can find sample reports in               *                 {Telerik Reporting installation path}\Report Designer\Examples               * if you have an existing installation of the Telerik Reporting product.               Note that the name of the folder is considered with the folder path used by the ReportFileResolver in the ReportsController.             This tutorial will use __Barcodes Report.trdp__ in all examples.             
@@ -179,7 +193,9 @@ list item to the navigation. It should become like this:
     <li><a asp-area="" asp-controller="Home" asp-action="Report">Report</a></li>
 ````
 
-        Connection Strings and Engine Configuration
+
+
+##        Connection Strings and Engine Configuration
       
 
 Telerik Reporting relies on the ConfigurationManager to resolve named connection strings and to configure the reporting engine.           Thus if you have any named connectionstrings or Telerik Reporting configuration you have to add __app.config__ configuration file           to the project's root.           For more information see: [Overview]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/overview%}).         

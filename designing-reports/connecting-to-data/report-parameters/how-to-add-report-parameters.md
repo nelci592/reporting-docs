@@ -24,7 +24,9 @@ There are several ways to add a Report Parameter:
 
 * Right click on the Parameters node of the [Report Explorer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/report-explorer%}) dialog.
 
-* From the __Configure Data Source Parameters__ step of the [DataSource Components]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/overview%})Add a Report Parameter using Report Designer
+* From the __Configure Data Source Parameters__ step of the [DataSource Components]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/overview%})
+
+##Add a Report Parameter using Report Designer
 
 1. Click the ellipses on the __Report.ReportParameters__ 
 				  property. This invokes the __ReportParameter Collection editor__.
@@ -50,7 +52,9 @@ There are several ways to add a Report Parameter:
 
 1. To allow a user to select more than one value for the parameter, set __MultiValue__ accordingly.
 
-1. To allow a user to select or change a parameter value, set __Visible__ to __True__.Add a Report Parameter programmatically
+1. To allow a user to select or change a parameter value, set __Visible__ to __True__.
+
+##Add a Report Parameter programmatically
 
 {{source=CodeSnippets\CS\API\Telerik\Reporting\ReportSnippets.cs region=AddNewReportParameterSnippet}}
 ````C#
@@ -84,7 +88,9 @@ There are several ways to add a Report Parameter:
 	
 ````
 
-Defining AvailableValues for ReportParameter’s UI using Report Designer
+
+
+##Defining AvailableValues for ReportParameter’s UI using Report Designer
 
 1. Expand the __AvailableValues__ property
 			of the report parameter and fill the following settings to determine 
@@ -104,7 +110,9 @@ If no DataSource is specified, available values are not loaded.
 * Sorting can be performed on the available values through the
 			__Sorting__ property. Sorting controls the order
 			of the items provided to the user to choose from. Sorting is defined 
-			using the [Edit Sorting Dialog.]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/edit-sorting-dialog%})Defining AvailableValues for ReportParameter’s UI programmatically
+			using the [Edit Sorting Dialog.]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/edit-sorting-dialog%})
+
+##Defining AvailableValues for ReportParameter’s UI programmatically
 
 {{source=CodeSnippets\CS\API\Telerik\Reporting\ReportSnippets.cs region=Define_AvailableValues_for_ReportParameter_Snippet}}
 ````C#

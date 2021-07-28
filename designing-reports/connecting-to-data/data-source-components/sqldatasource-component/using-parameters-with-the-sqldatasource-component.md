@@ -21,7 +21,9 @@ The syntax used for the placeholders varies, depending on the type of the databa
 >note The [SqlDataSource Wizard]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/sqldatasource-wizard/overview%}) can detect SQL parameters listed           in the SQL query, and it will ask you to provide values for them at  __Configure Data Source Parameters__  step.           The information is provided by the selected .NET data provider,           which implementation is important for determining what SQL syntax can be used for the SQL query.         
 
 
-## Using Parameters with the SqlClient Provider
+## 
+
+##Using Parameters with the SqlClient Provider
 
 The __System.Data.SqlClient__ provider supports named parameters as placeholders,                 as shown in the following example:               
 
@@ -54,7 +56,9 @@ With named parameters, the order in which the parameters are specified in the co
 	        sqlDataSource.Parameters.Add("@LastName", System.Data.DbType.String, "Smith")
 ````
 
-Using Parameters with the OLE DB and ODBC Providers
+
+
+##Using Parameters with the OLE DB and ODBC Providers
 
 The __System.Data.OleDb__ and __System.Data.Odbc__ providers                 support only positional parameters identified by the *'?'* character, as                 shown in the following example:               
 
@@ -91,7 +95,9 @@ The following example shows how to specify parameters for a __SqlDataSource__ co
 	        sqlDataSource.Parameters.Add("LastName", System.Data.DbType.String, "Smith")
 ````
 
-Binding SQL Query Parameters to Report Parameters
+
+
+##Binding SQL Query Parameters to Report Parameters
 
 The following code example shows how to bind the parameters of an SQL query to the corresponding                 parameters of the report using expressions:               
 

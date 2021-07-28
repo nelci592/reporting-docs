@@ -12,7 +12,9 @@ position: 1
 
 
 
-The parallels and meridians represent the coordinate system grid, called *graticule*.         You can format the graticule using the __Property Browser__.       Graticule Step
+The parallels and meridians represent the coordinate system grid, called *graticule*.         You can format the graticule using the __Property Browser__.       
+
+##Graticule Step
 
 Both parallels and meridians define a step that determines the density of their lines. By default the step value is __NaN__, which           causes the graticule lines to be automatically adjusted depending on the current map extent.           The smaller the extent is, the smaller the graticule step becomes.         
 
@@ -24,7 +26,9 @@ Both parallels and meridians define a step that determines the density of their 
 
 1. Select the __Step__ property and set it to the desired value.               
 
-1. When you are done, press __Enter__.               Graticule Style
+1. When you are done, press __Enter__.               
+
+##Graticule Style
 
 You can change the parallels and meridians style by selecting the property and using the __Property Browser__ change Style properties.         
 

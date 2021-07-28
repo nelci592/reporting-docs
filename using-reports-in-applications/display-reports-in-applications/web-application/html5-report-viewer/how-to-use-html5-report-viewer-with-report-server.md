@@ -12,7 +12,9 @@ position: 3
 
 
 
-The quickest way to add a HTML5 Report Viewer to your web project is with the         __Telerik HTML5 Report Viewer__ item template in Visual Studio.         This topic explains how to setup the HTML5 Report Viewer to work with Telerik Report Server using the built-in Guest account.       Prerequisites
+The quickest way to add a HTML5 Report Viewer to your web project is with the         __Telerik HTML5 Report Viewer__ item template in Visual Studio.         This topic explains how to setup the HTML5 Report Viewer to work with Telerik Report Server using the built-in Guest account.       
+
+##Prerequisites
 
 1. Review the HTML5 Report Viewer [Requirements]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/requirements-and-browser-support%}).             
 
@@ -20,7 +22,9 @@ The quickest way to add a HTML5 Report Viewer to your web project is with the   
 
 1. Report Server's built-in __Guest__ user should be enabled.             
 
-1. Report Server should contain at least one report that can be accessed by the Guest user account.             Configuring the HTML5 Report Viewer to work with Report Server using Item Templates
+1. Report Server should contain at least one report that can be accessed by the Guest user account.             
+
+##Configuring the HTML5 Report Viewer to work with Report Server using Item Templates
 
 The VS item template will integrate HTML5 Report Viewer in a .html page           and will connect to the           [Telerik Report Server](https://docs.telerik.com/report-server/introduction)           to process and render reports.           The following describes what steps you should perform in order to add it in your application:         
 
@@ -53,7 +57,9 @@ After finishing, the item template automatically do the following:
 
 * Adds a __HTML page with the configured HTML5 Report Viewer__.             
 
-* Displays a __summary log__ that list all of the made changes.             Manually configuring the HTML5 Report Viewer to work with Report Server
+* Displays a __summary log__ that list all of the made changes.             
+
+##Manually configuring the HTML5 Report Viewer to work with Report Server
 
 Although the fastest and most convenient way to get a working HTML5 viewer in your application is to use the Visual Studio item templates,           the same result can be achieved using manual configuration.         
 
@@ -114,7 +120,9 @@ Although the fastest and most convenient way to get a working HTML5 viewer in yo
 
 
 
-1. Run the project and you should see the configured in the previous step report appearing in the Report Viewer. If not, check the                   [Troubleshooting](#Troubleshooting) section below.                 Troubleshooting
+1. Run the project and you should see the configured in the previous step report appearing in the Report Viewer. If not, check the                   [Troubleshooting](#Troubleshooting) section below.                 
+
+##Troubleshooting
 
 The most common reasons for failure are related with the authentication against Report Server. It is strongly recommended to use a tool like           Fiddler or any other web debugger when investigating such a problem.         
 

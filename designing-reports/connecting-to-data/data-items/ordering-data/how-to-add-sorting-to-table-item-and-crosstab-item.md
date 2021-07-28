@@ -12,7 +12,9 @@ position: 2
 
 
 
-To define a sorting for the __Table__ or __Crosstab__ items use the following steps: Adding sorting to Table/Crosstab data item using Report Designer
+To define a sorting for the __Table__ or __Crosstab__ items use the following steps: 
+
+##Adding sorting to Table/Crosstab data item using Report Designer
 
 
 
@@ -30,7 +32,9 @@ For each sort expression, follow these steps:
 
 1. From the Direction column drop-down list, choose the sort direction                 for each expression. ASC sorts the expression in ascending order. DESC sorts                 the expression in descending order.
 
-1. Click OK.Adding sorting to Table/Crosstab Group (Row/Column Group) using Report Designer
+1. Click OK.
+
+##Adding sorting to Table/Crosstab Group (Row/Column Group) using Report Designer
 
 
 
@@ -58,7 +62,9 @@ For each sort expression, follow these steps:
                     the expression in descending order.
                   
 
-1. Click OK.Adding sorting to Table/Crosstab data item programatically
+1. Click OK.
+
+##Adding sorting to Table/Crosstab data item programatically
 
 {{source=CodeSnippets\CS\API\Telerik\Reporting\TableSnippets.cs region=AddNewSortSnippet}}
 ````C#

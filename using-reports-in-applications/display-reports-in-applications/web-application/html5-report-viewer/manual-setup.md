@@ -12,7 +12,9 @@ position: 4
 
 
 
-In this topic, we demonstrate how to manually add the HTML5 Report Viewer to an HTML page and to display a report. The approach that we use here allows for full control over         the configuration. If you are looking for a less complicated approach,          consider using the [Visual Studio item templates]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/how-to-use-html5-report-viewer-with-rest-service%}).       Prerequisites
+In this topic, we demonstrate how to manually add the HTML5 Report Viewer to an HTML page and to display a report. The approach that we use here allows for full control over         the configuration. If you are looking for a less complicated approach,          consider using the [Visual Studio item templates]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/how-to-use-html5-report-viewer-with-rest-service%}).       
+
+##Prerequisites
 
 Before you continue, make sure that the following prerequisites are met:         
 
@@ -25,7 +27,9 @@ Before you continue, make sure that the following prerequisites are met:
 1. A script with the custom Telerik Kendo UI distribution for Telerik Reporting               (located in the __[TelerikReporting_InstallDir]\Html5\ReportViewer\js__ folder)               or with the mainstream Kendo UI distribution downloaded locally or via the               [Kendo UI CDN service](http://docs.telerik.com/kendo-ui/install/cdn).             
 
 >note You must load only one version of Telerik Kendo UI styles and scripts on the page.                 For more information see [](143e5c03-e69d-416f-9ac0-85c397b22b8e#KendoWidgetsRequirements).               
-Utilizing the HTML5 Report Viewer in an HTML page
+
+
+##Utilizing the HTML5 Report Viewer in an HTML page
 
 The following steps produce an HTML page with settings similar to these of the local Html5Demo project           installed by default under __[TelerikReporting_InstallDir]\Examples__:         
 

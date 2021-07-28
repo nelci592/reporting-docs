@@ -12,32 +12,21 @@ position: 1
 
 
 
-This tutorial demonstrates how to add the Angular Report Viewer component to a
-        new Angular application. The app's settings are similar to the settings of the local Angular demo project
-        installed by default under __[TelerikReporting_InstallDir]\Examples\Angular\CLI__.
-      
+This tutorial demonstrates how to add the Angular Report Viewer component to a         new Angular application. The app's settings are similar to the settings of the local Angular demo project         installed by default under __[TelerikReporting_InstallDir]\Examples\Angular\CLI__.       
 
 ## Prerequisites
 
-The following list describes the prerequisites for this tutorial:
-        
+The following list describes the prerequisites for this tutorial:         
 
-* Review the Angular Report Viewer [Requirements](e05255e3-dbe4-41b1-8d08-6de0fed3868c#Requirements).
-            
+* Review the Angular Report Viewer [Requirements](e05255e3-dbe4-41b1-8d08-6de0fed3868c#Requirements).             
 
-* [Angular CLI](https://cli.angular.io/).
-            
+* [Angular CLI](https://cli.angular.io/).             
 
-* A running application that hosts a Reporting REST service at address /api/reports. For more information, see
-              [Telerik Reporting REST Services]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview%}).
-            
+* A running application that hosts a Reporting REST service at address /api/reports. For more information, see               [Telerik Reporting REST Services]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview%}).             
 
-* Copy of the "Product Catalog.trdp" report file from __[TelerikReporting_InstallDir]\Report Designer\Examples__              placed in the folder used by the [ReportFileResolver](/reporting/api/Telerik.Reporting.Services.WebApi.ReportFileResolver)              in the Reporting REST service implementation.
-            
+* Copy of the "Product Catalog.trdp" report file from __[TelerikReporting_InstallDir]\Report Designer\Examples__               placed in the folder used by the [ReportFileResolver](/reporting/api/Telerik.Reporting.Services.WebApi.ReportFileResolver)               in the Reporting REST service implementation.             
 
-* Entry with the default connection string used by Telerik Reporting sample reports in the __web.config__ file
-              of the project hosting the Reporting REST service:
-            
+* Entry with the default connection string used by Telerik Reporting sample reports in the __web.config__ file               of the project hosting the Reporting REST service:             
 
 	
 ````xml
@@ -52,14 +41,12 @@ The following list describes the prerequisites for this tutorial:
 
 ## Using Angular Report Viewer in Angular application
 
->tip All paths and url links in the described steps must be adapted according            to your project setup.          
+>tip All paths and url links in the described steps must be adapted according             to your project setup.           
 Steps:
 
-1. Create new Angular application using the [Angular CLI](https://cli.angular.io/) tutorial.
-                
+1. Create new Angular application using the [Angular CLI](https://cli.angular.io/) tutorial.                 
 
-1. Install [jQuery](https://www.npmjs.com/package/jquery) by using the following command:
-                
+1. Install [jQuery](https://www.npmjs.com/package/jquery) by using the following command:                 
 
 	
     ````powershell
@@ -77,8 +64,7 @@ npm install jquery
 
 
 
-1. Install the Telerik Angular Report Viewer NPM package by running:
-                
+1. Install the Telerik Angular Report Viewer NPM package by running:                 
 
 	
     ````powershell
@@ -87,7 +73,7 @@ npm install @progress/telerik-angular-report-viewer
 
 
 
-    >tip If you receive a  *403 Forbidden Error* , you need to register and login at                    [npmjs.com](https://www.npmjs.com/)before performing this step.                  
+    >tip If you receive a  *403 Forbidden Error* , you need to register and login at                     [npmjs.com](https://www.npmjs.com/)before performing this step.                   
 
 	
     ````powershell
@@ -97,8 +83,7 @@ npm login --registry=https://registry.npmjs.org --scope=@progress
 
 
 
-1. Once installed, import the TelerikReportingModule in [your application root module](https://angular.io/docs/ts/latest/guide/ngmodule.html#!#angular-modularity):
-                
+1. Once installed, import the TelerikReportingModule in [your application root module](https://angular.io/docs/ts/latest/guide/ngmodule.html#!#angular-modularity):                 
 
 	
     ````TypeScript
@@ -142,11 +127,9 @@ export class AppComponent {
 </tr-viewer>
 ````
 
-For all available report viewer options refer to [Options]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/api-reference/options%}).
-                
+For all available report viewer options refer to [Options]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/api-reference/options%}).                 
 
-1. Style the viewer using the desired Kendo UI theme (еither using [Less-Based Themes](http://docs.telerik.com/kendo-ui/styles-and-layout/appearance-styling) or [Sass-Based Themes](http://docs.telerik.com/kendo-ui/styles-and-layout/sass-themes)):
-                Add references to the Less-based CSS files in the ```<head>``` element of index.html:
+1. Style the viewer using the desired Kendo UI theme (еither using [Less-Based Themes](http://docs.telerik.com/kendo-ui/styles-and-layout/appearance-styling) or [Sass-Based Themes](http://docs.telerik.com/kendo-ui/styles-and-layout/sass-themes)):                 Add references to the Less-based CSS files in the ```<head>``` element of index.html:
 
 	
     ````HTML
@@ -156,10 +139,8 @@ For all available report viewer options refer to [Options]({%slug telerikreporti
 
 
 
-    >tip To get the Sass-based Kendo UI themes, you can use either the pre-build CSS files or the NPM packages ([Getting the Sass-Based Themes](http://docs.telerik.com/kendo-ui/styles-and-layout/sass-themes#getting-the-themes)).                  
-If you use the __styleUrls__ attribute to reference the CSS, it is required to set
-                  the view encapsulation to __None__:
-                
+    >tip To get the Sass-based Kendo UI themes, you can use either the pre-build CSS files or the NPM packages ([Getting the Sass-Based Themes](http://docs.telerik.com/kendo-ui/styles-and-layout/sass-themes#getting-the-themes)).                   
+If you use the __styleUrls__ attribute to reference the CSS, it is required to set                   the view encapsulation to __None__:                 
 
 	
     ````TypeScript

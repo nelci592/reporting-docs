@@ -14,16 +14,9 @@ position: 5
 
 ## 
 
-The Comma-Separated Value (CSV) rendering output reports as a flattened representation of a report data in a 
-	        plain-text format.
-      	
+The Comma-Separated Value (CSV) rendering output reports as a flattened representation of a report data in a  	        plain-text format.       	
 
-The rendering extension uses a string character delimiter (, - comma) and rows (the environment new line character) 
-          to separate fields.
-          The string character delimiter is configurable to be a character other than a comma.
-          The exported report becomes a .csv file with a MIME type of text/plain.
-	        The resulting file can be opened in a spreadsheet program or used as an import format for other programs.
-        
+The rendering extension uses a string character delimiter (, - comma) and rows (the environment new line character)            to separate fields.           The string character delimiter is configurable to be a character other than a comma.           The exported report becomes a .csv file with a MIME type of text/plain. 	        The resulting file can be opened in a spreadsheet program or used as an import format for other programs.         
 
 When rendered using the default settings, a CSV report has the following characteristics:
 
@@ -66,9 +59,7 @@ The following items are ignored during processing:
 
 * Chart
 
-The remaining report items appear as ordered in the parent’s item collection. Each item is then rendered to a column.
-			If the report has nested report, the parent items are repeated in each record.
-		
+The remaining report items appear as ordered in the parent’s item collection. Each item is then rendered to a column. 			If the report has nested report, the parent items are repeated in each record. 		
 
 The following table lists the considerations applied to items when rendering to CSV:
 
@@ -76,41 +67,32 @@ The following table lists the considerations applied to items when rendering to 
 |  __Report Item__  |  __Rendering Behavior__  |
 | ------ | ------ |
 |TextBox|Renders the contents of the text box. The data is formatted according to the item's Format property|
-|Crosstab|Renders by expanding the table and creating a row and column for each row and column at the lowest level of detail.<br/>			Due to this data denormalization (flattening) some Crosstab configurations will not be exported correctly.|
+|Crosstab|Renders by expanding the table and creating a row and column for each row and column at the lowest level of detail. 			Due to this data denormalization (flattening) some Crosstab configurations will not be exported correctly.|
 |Graph|Renders the chart series data.|
-|Table|Renders by expanding the table and creating a row and column for each row and column at the lowest level of detail.<br/>			Due to this data denormalization (flattening) some Crosstab configurations will not be exported correctly.|
+|Table|Renders by expanding the table and creating a row and column for each row and column at the lowest level of detail. 			Due to this data denormalization (flattening) some Crosstab configurations will not be exported correctly.|
 |CheckBox|Renders the contents of the CheckBox. The Text is formatted according to the item's Format property. The first character of resulting string represents the CheckMark state: 0 is Unchecked, 1 is Checked and 2 is Indeterminate.|
 |Detail section|Renders a record for each detail row.|
 |Report Header Section|Renders its content at the beginning of each detail row.|
 |Report Footer Section|Renders its content at the beginning of each detail row after the Report Header content if any.|
 |Group Header Section|Renders its content at the beginning of each detail row after the Report Header and Report Footer content if any.|
-|Group Footer Section|Renders its content at the beginning of each detail row after the Report Header, Report Footer and Group Footer content if <br/>any|
+|Group Footer Section|Renders its content at the beginning of each detail row after the Report Header, Report Footer and Group Footer content if  any|
 
 
 
 
 ## Flattening the Hierarchical and Grouped Data
 
-Hierarchical and grouped data must be flattened in order to be represented in the CSV format.
-    		
+Hierarchical and grouped data must be flattened in order to be represented in the CSV format.     		
 
-The rendering extension flattens the report into a tree structure that represents the nested groups within the data item. 
-    			To flatten the report:
-    		
+The rendering extension flattens the report into a tree structure that represents the nested groups within the data item.      			To flatten the report:     		
 
 * A row hierarchy is flattened before a column hierarchy.
 
-* Columns are ordered as follows: text boxes in body order left-to-right, top-to-bottom followed 
-				  		by data items ordered left-to-right, top-to-bottom.
-				  	
+* Columns are ordered as follows: text boxes in body order left-to-right, top-to-bottom followed  				  		by data items ordered left-to-right, top-to-bottom. 				  	
 
-* In a data item, the columns are ordered as follows: corner members, row hierarchy members, 
-				  		column hierarchy members, and then cells.
-				  	
+* In a data item, the columns are ordered as follows: corner members, row hierarchy members,  				  		column hierarchy members, and then cells. 				  	
 
-* Peer data items are data items or dynamic groups that share a common data item or dynamic ancestor. 
-				  		Peer data is identified by branching of the flattened tree.
-				  						The CSV rendering is best suited for reports with one flat databound data item.
+* Peer data items are data items or dynamic groups that share a common data item or dynamic ancestor.  				  		Peer data is identified by branching of the flattened tree. 				  						The CSV rendering is best suited for reports with one flat databound data item.
 				
 
 ## Interactivity

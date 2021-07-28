@@ -12,47 +12,34 @@ position: 1
 
 
 
-The quickest way to add a Windows Form Report Viewer to your Windows Form project is with the __Telerik Report Viewer Form__ item template.
-      
+The quickest way to add a Windows Form Report Viewer to your Windows Form project is with the __Telerik Report Viewer Form__ item template.       
 
 ## Telerik Report Viewer Form Item Template
 
-The item template is available in the
-          [Add New Item](https://msdn.microsoft.com/en-us/library/w0572c5b%28v=vs.100%29.aspx)          dialog box under the __Windows Form category__.
-        
+The item template is available in the           [Add New Item](https://msdn.microsoft.com/en-us/library/w0572c5b%28v=vs.100%29.aspx)           dialog box under the __Windows Form category__.         
 
-This item template will do the following:
-        
+This item template will do the following:         
 
-If the selected engine is of remote type (__REST Service__ or __Report Server__), the item template will:
-        
+If the selected engine is of remote type (__REST Service__ or __Report Server__), the item template will:         
 
-* Add a reference to *Telerik.Reporting.Services.HttpClient* to the current project.
-            
+* Add a reference to *Telerik.Reporting.Services.HttpClient* to the current project.             
 
-* Add a reference to *System.Net.Http* and *System.Net.Http.Formatting* via NuGet package to the current project.
-            
+* Add a reference to *System.Net.Http* and *System.Net.Http.Formatting* via NuGet package to the current project.             
 
-If the selected engine is __REST Service__ additionally it will do the following:
-        
+If the selected engine is __REST Service__ additionally it will do the following:         
 
-* Create a new web project that will host the REST service.
-            
+* Create a new web project that will host the REST service.             
 
-* Register the provided REST service URL into IIS Express virtual directories list.
-            
+* Register the provided REST service URL into IIS Express virtual directories list.             
 
-* Register all the needed NuGet packages for the REST service.
-            
+* Register all the needed NuGet packages for the REST service.             
 
 * 
 
->note In some cases the solution must be rebuilt in order to invalidate the NuGet packages and start the REST service project correctly.              
+>note In some cases the solution must be rebuilt in order to invalidate the NuGet packages and start the REST service project correctly.               
 
 
-If the current application has to be declared as DPI-aware, an additional element needs to be added to the application manifest file, as explained
-          [here](F25EB909-7941-4B78-B24C-4025257A26C4#dpiAware).
-        
+If the current application has to be declared as DPI-aware, an additional element needs to be added to the application manifest file, as explained           [here](F25EB909-7941-4B78-B24C-4025257A26C4#dpiAware).         
 
 # See Also
 

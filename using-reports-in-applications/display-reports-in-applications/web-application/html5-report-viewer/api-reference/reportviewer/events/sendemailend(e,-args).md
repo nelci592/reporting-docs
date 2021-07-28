@@ -29,7 +29,6 @@ Parameters:
 
 	
 ````js
-
   // $(handler) is jQuery's shorthand for $(document).ready(handler)
   $(function () {
     $("#reportViewer1").telerik_ReportViewer({
@@ -37,14 +36,12 @@ Parameters:
       reportSource: {
           report: "Telerik.Reporting.Examples.CSharp.Invoice, CSharp.ReportLibrary"
       },
-      
       sendEmailEnd: function(e, args) {
         args.format = "XLS";
         console.log("This event handler will be called after exporting the report.");
         console.log("The exported report can be found at " + args.url); 
       }
   });
-          
 ````
 
 

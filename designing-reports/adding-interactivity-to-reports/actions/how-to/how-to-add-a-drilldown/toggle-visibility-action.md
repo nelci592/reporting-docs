@@ -12,8 +12,7 @@ position: 3
 
 
 
-A report item can initially display or be hidden when a user views a report. The toggle action applied on the report item
-    	that allows you to hide and display items interactively is known as drilldown action.
+A report item can initially display or be hidden when a user views a report. The toggle action applied on the report item     	that allows you to hide and display items interactively is known as drilldown action.
 
 ## Adding a drilldown action to a report item using the Report Designer
 

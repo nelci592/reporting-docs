@@ -12,8 +12,7 @@ position: 6
 
 
 
-Represents a single value of the parameter available values.
-      
+Represents a single value of the parameter available values.       
 
 ## 
 

@@ -29,7 +29,6 @@ Parameters:
 
 	
 ````js
-
   // $(handler) is jQuery's shorthand for $(document).ready(handler)
   $(function () {
     $("#reportViewer1").telerik_ReportViewer({
@@ -37,12 +36,10 @@ Parameters:
       reportSource: {
           report: "Telerik.Reporting.Examples.CSharp.ProductSales, CSharp.ReportLibrary"
       },
-      
       interactiveActionEnter: function(e, args) {         
           $(args.element).css('font-weight', 'bolder');        
       }
   });
-          
 ````
 
 

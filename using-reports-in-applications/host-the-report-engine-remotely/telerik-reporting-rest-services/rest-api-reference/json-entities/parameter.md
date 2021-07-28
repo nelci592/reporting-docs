@@ -12,8 +12,7 @@ position: 5
 
 
 
-Represents a report parameter with its value and settings.
-          
+Represents a report parameter with its value and settings.           
 
 ## 
 

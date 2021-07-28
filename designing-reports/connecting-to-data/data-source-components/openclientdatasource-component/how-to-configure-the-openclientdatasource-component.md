@@ -12,45 +12,33 @@ position: 1
 
 
 
-You can connect to data from OpenEdge AppServer ABL procedures using the
-        Telerik __OpenClientDataSource__ component. To do this, you need the following prerequisites and configuration settings.
-      
+You can connect to data from OpenEdge AppServer ABL procedures using the         Telerik __OpenClientDataSource__ component. To do this, you need the following prerequisites and configuration settings.       
 
-* Running instance of OpenEdge AppServer with deployed
-              [supported ABL procedure]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/openclientdatasource-component/overview%})
+* Running instance of OpenEdge AppServer with deployed               [supported ABL procedure]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/openclientdatasource-component/overview%})
 
-* Generated .NET 4.0 proxy assembly for the target procedure along with its dependencies.
-            Configuring the OpenClientDataSource Component
-1. 
+* Generated .NET 4.0 proxy assembly for the target procedure along with its dependencies.             
 
-Add OpenClientDataSource component
+###Configuring the OpenClientDataSource Component
 
-* For VisualStudio use the OpenClientDataSource Toolbox item
-                
+1. Add OpenClientDataSource component
 
-* For Stand-alone Report Designer use the OpenEdge OpenClient Data Source tool located in the Data tab of the Ribbon bar
-                
-1. 
+* For VisualStudio use the OpenClientDataSource Toolbox item                 
 
-A wizard form is started guiding you through the process which helps you to setup all needed settings
+* For Stand-alone Report Designer use the OpenEdge OpenClient Data Source tool located in the Data tab of the Ribbon bar                 
 
-* Proxy .NET assembly file along with its dependencies
-                
+1. A wizard form is started guiding you through the process which helps you to setup all needed settings
 
-* The AppObject proxy type name used to communicate with the AppServer
-                
+* Proxy .NET assembly file along with its dependencies                 
 
-* The name of the method in the selected type which corresponds to the ABL procedure
-                
+* The AppObject proxy type name used to communicate with the AppServer                 
 
-* (Optional) The name of the Table which data should be retrieved. Applicable only if the data is returned as DATASET
-                
+* The name of the method in the selected type which corresponds to the ABL procedure                 
 
-* Input parameters that the procedure expects along with values and design-time parameter values.
-                
+* (Optional) The name of the Table which data should be retrieved. Applicable only if the data is returned as DATASET                 
 
-* AppServer connection settings
-                
+* Input parameters that the procedure expects along with values and design-time parameter values.                 
+
+* AppServer connection settings                 
 
 1. Connection URL
 

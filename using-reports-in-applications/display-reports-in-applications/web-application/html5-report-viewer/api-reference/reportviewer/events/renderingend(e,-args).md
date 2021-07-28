@@ -29,7 +29,6 @@ Parameters:
 
 	
 ````js
-
   // $(handler) is jQuery's shorthand for $(document).ready(handler)
   $(function () {
     $("#reportViewer1").telerik_ReportViewer({
@@ -37,7 +36,6 @@ Parameters:
       reportSource: {
           report: "Telerik.Reporting.Examples.CSharp.Invoice, CSharp.ReportLibrary"
       },
-      
       renderingEnd: function(e, args) { 
         console.log("This event handler will be called after rendering the report."); 
         console.log("The rendered report is " + (args.documentReady ? "" : "not") + " ready."); 
@@ -46,7 +44,6 @@ Parameters:
         console.log("The rendered report has " + args.bookmarkNodes.length + " nodes");
       }
   });
-          
 ````
 
 

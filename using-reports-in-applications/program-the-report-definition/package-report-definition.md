@@ -12,11 +12,7 @@ position: 6
 
 
 
-The [ReportPackager](/reporting/api/Telerik.Reporting.ReportPackager)        serializes the report definition in XML and with a zip compression packages the definition and its resources.
-        The resources are in their native format and archived for better performance.
-        This way the definition is faster to handle and more compact.
-        This is the default report document format for the [Overview]({%slug telerikreporting/designing-reports/report-designer-tools/overview%}).
-      
+The [ReportPackager](/reporting/api/Telerik.Reporting.ReportPackager)         serializes the report definition in XML and with a zip compression packages the definition and its resources.         The resources are in their native format and archived for better performance.         This way the definition is faster to handle and more compact.         This is the default report document format for the [Overview]({%slug telerikreporting/designing-reports/report-designer-tools/overview%}).       
 
 ## Packaging .TRDX report definition
 

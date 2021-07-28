@@ -12,14 +12,10 @@ position: 0
 
 
 
-The Telerik Report Designer application can be configured through its configuration file. Application configuration files contain settings specific
-        to the application. This file contains configuration settings such as assembly binding policy, connectionStrings and so on. For example this file can hold
-        binding redirect to the latest version of the Reporting engine:
-      
+The Telerik Report Designer application can be configured through its configuration file. Application configuration files contain settings specific         to the application. This file contains configuration settings such as assembly binding policy, connectionStrings and so on. For example this file can hold         binding redirect to the latest version of the Reporting engine:       
 
 	
 ````XML
-
     <runtime>
     <assemblyBinding xmlns="urn:schemas-microsoft-com:asm.v1">
       <!--
@@ -32,7 +28,6 @@ The Telerik Report Designer application can be configured through its configurat
       </dependentAssembly>
     </assemblyBinding>
    </runtime>
-    
 ````
 
 
@@ -41,20 +36,16 @@ or it can specify a global connection string that can be used by all reports cre
 
 	
 ````XML
-
     <connectionStrings>
       <add name="Telerik.Reporting.Examples.CSharp.Properties.Settings.TelerikConnectionString"
           connectionString="Data Source=(local)\SQLEXPRESS;Initial Catalog=AdventureWorks;Integrated Security=SSPI"
           providerName="System.Data.SqlClient" />
     </connectionStrings>
-   
 ````
 
 
 
-For more information, see
-        [Application Configuration Files](http://msdn.microsoft.com/en-us/library/ms229689%28v=vs.90%29.aspx).
-      
+For more information, see         [Application Configuration Files](http://msdn.microsoft.com/en-us/library/ms229689%28v=vs.90%29.aspx).        
 
 ## Default Configuration
 
@@ -62,7 +53,6 @@ The following code example shows the default Telerik.ReportDesigner.exe.config f
 
 	
 ````XML
-
     <?xml version ="1.0"?>
     <configuration>
       <configSections>
@@ -71,18 +61,15 @@ The following code example shows the default Telerik.ReportDesigner.exe.config f
             type="Telerik.Reporting.Configuration.ReportingConfigurationSection, Telerik.Reporting"
             allowLocation="true"
             allowDefinition="Everywhere"/>
-    
         <section
             name="Telerik.ReportDesigner"
             type="Telerik.ReportDesigner.Configuration.ReportDesignerConfigurationSection, Telerik.ReportDesigner.Configuration"
             allowLocation="true"
             allowDefinition="Everywhere"/>    
       </configSections>
-    
       <startup>
         <supportedRuntime version="v4.0" sku=".NETFramework,Version=v4.0"/>
       </startup>
-    
       <runtime>
         <assemblyBinding xmlns="urn:schemas-microsoft-com:asm.v1">
           <!--
@@ -95,16 +82,13 @@ The following code example shows the default Telerik.ReportDesigner.exe.config f
           </dependentAssembly>
         </assemblyBinding>
       </runtime>
-    
       <connectionStrings>
         <add name="Telerik.Reporting.Examples.CSharp.Properties.Settings.TelerikConnectionString"
             connectionString="Data Source=(local)\SQLEXPRESS;Initial Catalog=AdventureWorks;Integrated Security=SSPI"
             providerName="System.Data.SqlClient" />
       </connectionStrings>
-      
       <Telerik.ReportDesigner DefaultWorkingDir="Examples">
       </Telerik.ReportDesigner>
-    
       <!-- Add assembly references -->
       <!-- 
       <Telerik.Reporting>
@@ -124,7 +108,6 @@ The following code example shows the default Telerik.ReportDesigner.exe.config f
       </system.diagnostics>
       -->
     </configuration>
-    
 ````
 
 

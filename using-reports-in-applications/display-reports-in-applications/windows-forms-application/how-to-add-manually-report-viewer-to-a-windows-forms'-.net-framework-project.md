@@ -30,8 +30,7 @@ To use Telerik Reports in Windows Forms application, you need the Windows Forms 
 
 ## Assign report to the viewer programmatically
 
-In the __Form_Load__ event handler you create an instance report source and set its __ReportDocument__          property to a report instance. Next assign the instance report source to the __ReportSource__ property of the viewer.
-          Finally call __ReportViewer.RefreshReport().__
+In the __Form_Load__ event handler you create an instance report source and set its __ReportDocument__           property to a report instance. Next assign the instance report source to the __ReportSource__ property of the viewer.           Finally call __ReportViewer.RefreshReport().__
 
 {{source=CodeSnippets\CS\API\Telerik\ReportViewer\WinForms\Form1.cs region=Winviewer_SetReportSource}}
 ````C#
@@ -58,9 +57,7 @@ In the __Form_Load__ event handler you create an instance report source and set 
 
 
 
-If the current application has to be declared as DPI-aware, an additional element needs to be added to the application manifest file, as explained
-          [here](F25EB909-7941-4B78-B24C-4025257A26C4#dpiAware).
-        
+If the current application has to be declared as DPI-aware, an additional element needs to be added to the application manifest file, as explained           [here](F25EB909-7941-4B78-B24C-4025257A26C4#dpiAware).         
 
 # See Also
 [](66CD7D60-7708-42D5-8BB4-506676E8679E)

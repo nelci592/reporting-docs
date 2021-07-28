@@ -12,8 +12,7 @@ position: 10
 
 
 
-The info object that contains the search results returned from the engine.
-      
+The info object that contains the search results returned from the engine.       
 
 ## 
 

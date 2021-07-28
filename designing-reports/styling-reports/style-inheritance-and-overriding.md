@@ -28,12 +28,9 @@ __Highest Priority - Inline:__ If  the child control's __Style__ properties hav
 
 ## Global Styles and Precedence
 
-Styles defined with __Style Rules__ will be applied globally in a report based on the definition of
-      		the Style Rule. A __Style Rule__ can be defined by using one of the [Style Selectors]({%slug telerikreporting/designing-reports/styling-reports/understanding-style-selectors%}).
-      	
+Styles defined with __Style Rules__ will be applied globally in a report based on the definition of       		the Style Rule. A __Style Rule__ can be defined by using one of the [Style Selectors]({%slug telerikreporting/designing-reports/styling-reports/understanding-style-selectors%}).       	
 
-The __Style Sectors__ have the following precedence:
-      	
+The __Style Sectors__ have the following precedence:       	 
 
 * DescendantSelector
 
@@ -41,15 +38,9 @@ The __Style Sectors__ have the following precedence:
 
 * AttributeSelector
 
-* StyleSelectorwhere the order is from bottom to top. This means that a 
-    		__StyleSelector__ has precedence over the other Selectors.
+* StyleSelector where the order is from bottom to top. This means that a      		__StyleSelector__ has precedence over the other Selectors.
 
-By default the order of the __Style Rules__ in the collection determines 
-      		how styles are applied and the order is from bottom (last) to top (first). Exception from this rule is the
-      		__TypeSelector__ where the more specific the rule is, the higher precedence it has. For example 
-      	a Style Rule for a __TextBox__ will have precedence over a style rule for 
-	__ReportItemBase__ despite their order in the style sheet.
-      	
+By default the order of the __Style Rules__ in the collection determines        		how styles are applied and the order is from bottom (last) to top (first). Exception from this rule is the       		__TypeSelector__ where the more specific the rule is, the higher precedence it has. For example        	a Style Rule for a __TextBox__ will have precedence over a style rule for  	__ReportItemBase__ despite their order in the style sheet.       	
 
 If several rules match the same Selectors, the last Style Rule has precedence.
 

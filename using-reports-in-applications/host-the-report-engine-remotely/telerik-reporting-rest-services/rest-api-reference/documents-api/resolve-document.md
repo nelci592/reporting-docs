@@ -32,8 +32,7 @@ __Path parameters__
 
 __Request Body__
 
-[FormatKey]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/json-entities/formatkey%}) describing the document to be requested.
-        
+[FormatKey]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/json-entities/formatkey%}) describing the document to be requested.         
 
 ## Response
 
@@ -50,8 +49,7 @@ __Request Body__
 
 __Response Body__
 
-When the return status is `Accepted/Created` the body contains a document identifier string which is used to get pages/document.
-        
+When the return status is `Accepted/Created` the body contains a document identifier string which is used to get pages/document.         
 
 ## Sample
 

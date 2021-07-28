@@ -12,25 +12,19 @@ position: 1
 
 
 
-Report parameters typically filter report data that is retrieved from a data 
-   source. Filtering data at the data source can improve performance for processing
-   and viewing a report. For the times when you cannot filter data at the source, 
-   you can use parameters to filter report data after it is retrieved. You can also
-   sort and group data in a report based on report parameters.
-   
+Report parameters typically filter report data that is retrieved from a data     source. Filtering data at the data source can improve performance for processing    and viewing a report. For the times when you cannot filter data at the source,     you can use parameters to filter report data after it is retrieved. You can also    sort and group data in a report based on report parameters.    
 
 ## 
 
-There are several ways to add a Report Parameter:
-			
+There are several ways to add a Report Parameter: 			
 
 * Using the __Report.ReportParameters__   property in the property grid.
 
-* Select the __Report Parameters ..__ option from the [Context Menu]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/context-menu%})of the Report Designer.
+* Select the __Report Parameters ..__ option from the [Context Menu]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/context-menu%}) of the Report Designer.
 
 * Right click on the Parameters node of the [Report Explorer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/report-explorer%}) dialog.
 
-* From the __Configure Data Source Parameters__step of the [DataSource Components]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/overview%})Add a Report Parameter using Report Designer
+* From the __Configure Data Source Parameters__ step of the [DataSource Components]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/overview%})Add a Report Parameter using Report Designer
 
 1. Click the ellipses on the __Report.ReportParameters__ 
 				  property. This invokes the __ReportParameter Collection editor__.
@@ -48,9 +42,7 @@ There are several ways to add a Report Parameter:
 1. In __Type__, select the data type for the parameter 
 				  value. By default __String__ type is selected.
 
-1. You can leave the __Value__ property
-				  blank, enter a literal value or click the ellipses to invoke the 
-				  [Expression Edit Dialog]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/edit-expression-dialog%}).
+1. You can leave the __Value__ property 				  blank, enter a literal value or click the ellipses to invoke the  				  [Expression Edit Dialog]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/edit-expression-dialog%}).
 
 1. If the parameter can contain a blank value, set __AllowBlank__ accordingly.
 

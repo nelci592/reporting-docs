@@ -12,8 +12,7 @@ position: 1
 
 
 
-Document info indicating the status of the document resource.
-      
+Document info indicating the status of the document resource.       
 
 ## 
 

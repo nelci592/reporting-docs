@@ -18,33 +18,23 @@ Content on reports is displayed in report items. To use report items, you select
 
 In Visual Studio:
 
-1. Open the report in design view.
-            
+1. Open the report in design view.             
 
-1. Expand the Telerik__ Reporting __tab of the Toolbox.
-            
+1. Expand the Telerik__ Reporting __tab of the Toolbox.             
 
-1. Select the report item that you want to place.
-            
+1. Select the report item that you want to place.             
 
-1. Drag the report item from the Toolbox to the report's design surface. Alternatively,
-              you may select the section of the report where you want the report item to appear by clicking
-              the section header, and then double-click the report item in the Toolbox. Or you can select the
-              report item in the toolbox and draw a bounding rectangle to indicate the area that the report item should occupy.
-            
+1. Drag the report item from the Toolbox to the report's design surface. Alternatively,               you may select the section of the report where you want the report item to appear by clicking               the section header, and then double-click the report item in the Toolbox. Or you can select the               report item in the toolbox and draw a bounding rectangle to indicate the area that the report item should occupy.             
 
 
 
 In the Standalone Designer:
 
-1. Open the report in design view.
-            
+1. Open the report in design view.             
 
-1. Click the __Insert__ tab of the ribbon.
-            
+1. Click the __Insert__ tab of the ribbon.             
 
-1. Select the report item that you want to place and click on it.
-            
+1. Select the report item that you want to place and click on it.             
 
 ## To Move a Report Item  
   ![](images/ReportDesign002.png)
@@ -60,11 +50,7 @@ Move the mouse over the report item until you see the cross hair cursor (see ima
 
 ## Controlling Height
 
-To remove blank vertical space in a container (report section or panel item), whenever you control the visibility of report items in runtime,
-          set its respective height to a very small value (e.g. 1mm). Section/Panel item can grow to accommodate their children but cannot shrink/take space that is
-          no longer occupied. If you want a section/panel to shrink only at runtime you can set its Height property in the report constructor.
-          Place the Height property assignment code just after the IntializeComponent() method call.
-        
+To remove blank vertical space in a container (report section or panel item), whenever you control the visibility of report items in runtime,           set its respective height to a very small value (e.g. 1mm). Section/Panel item can grow to accommodate their children but cannot shrink/take space that is           no longer occupied. If you want a section/panel to shrink only at runtime you can set its Height property in the report constructor.           Place the Height property assignment code just after the IntializeComponent() method call.         
 
 # See Also
 

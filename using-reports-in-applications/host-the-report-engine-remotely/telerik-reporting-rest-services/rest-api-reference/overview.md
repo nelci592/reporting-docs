@@ -12,8 +12,7 @@ position: 0
 
 
 
-The four main HTTP methods (GET, PUT, POST, and DELETE) are mapped to CRUD operations as follows:
-      
+The four main HTTP methods (GET, PUT, POST, and DELETE) are mapped to CRUD operations as follows:       
 
 * GET retrieves the representation of the resource at a specified URI. GET have no side effects on the server.
 

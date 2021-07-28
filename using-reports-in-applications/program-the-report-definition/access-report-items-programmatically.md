@@ -12,15 +12,13 @@ position: 5
 
 
 
-In the examples below we show how to access a report item from within the report and from the invoking application.
-    	In the first example let's access a TextBox item from the detail section ItemDataBinding eventhandler.
+In the examples below we show how to access a report item from within the report and from the invoking application.     	In the first example let's access a TextBox item from the detail section ItemDataBinding eventhandler.
 
 ## Access Report Items from within events
 
 1. Select the detail section in the designer, and in the Properties Window, Events tab, find the ItemDataBinding entry and double-click.
 
-1. The event handler passes in "sender" which is a Telerik.Reporting.Processing.DetailSection that 
-        	represents the section during processing. Thus you can derive:
+1. The event handler passes in "sender" which is a Telerik.Reporting.Processing.DetailSection that          	represents the section during processing. Thus you can derive:
 
 * A DataObject that represents the underlying data for a record being processed.
 
@@ -68,27 +66,23 @@ If we are in the context of a web/win form and we need to access an item from t
 
 	
 ````C#
-
 		protected void Button1_Click(object sender, EventArgs e)
 		{
 			Telerik.Reporting.InstanceReportSource instanceReportSource = (Telerik.Reporting.InstanceReportSource)this.reportViewer1.ReportSource;
 			Telerik.Reporting.Report report = (Telerik.Reporting.Report)instanceReportSource.ReportDocument;
 			Telerik.Reporting.TextBox txt = report.Items.Find("productNameDataTextBox", true)[0] as Telerik.Reporting.TextBox;
 		}
-		
 ````
 
 
 
 	
 ````VB.NET
-
 		Protected Sub Button1_Click(sender As Object, e As EventArgs)
 			Dim instanceReportSource As Telerik.Reporting.InstanceReportSource = DirectCast(Me.reportViewer1.ReportSource, Telerik.Reporting.InstanceReportSource)
 			Dim report As Telerik.Reporting.Report = DirectCast(instanceReportSource.ReportDocument, Telerik.Reporting.Report)
 			Dim txt As Telerik.Reporting.TextBox = TryCast(report.Items.Find("productNameDataTextBox", True)(0), Telerik.Reporting.TextBox)
 		End Sub
-		
 ````
 
 
@@ -99,7 +93,6 @@ You can reference the report fields from a table item easily using the Report AP
 
 	
 ````C#
-
         private void tableTextBox_ItemDataBinding(object sender, EventArgs eventArgs)
         {
             //get the textbox from the sender object            
@@ -111,14 +104,12 @@ You can reference the report fields from a table item easily using the Report AP
             //get the raw value from the Report datasource directly
             textBox.Value = detail.DataObject["Data"];
         }
-		
 ````
 
 
 
 	
 ````VB.NET
-
 		Private Sub tableTextBox_ItemDataBinding(sender As Object, eventArgs As EventArgs)
             'get the textbox from the sender object            
             Dim textBox As Telerik.Reporting.Processing.TextBox = DirectCast(sender, Telerik.Reporting.Processing.TextBox)
@@ -129,7 +120,6 @@ You can reference the report fields from a table item easily using the Report AP
             'get the raw value from the Report datasource directly
             textBox.Value = detail.DataObject("Data")
 		End Sub
-		
 ````
 
 

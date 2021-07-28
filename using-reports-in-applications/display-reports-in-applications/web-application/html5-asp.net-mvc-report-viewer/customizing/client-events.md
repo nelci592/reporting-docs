@@ -16,12 +16,10 @@ This article explains how to attach client event handlers to an MVC ReportViewer
 
 ## 
 
-To attach a client event handler you have to set the appropriate __ClientEvents__ widget method as shown below:
-        
+To attach a client event handler you have to set the appropriate __ClientEvents__ widget method as shown below:         
 
 	
 ````js
-
           <script>
             function onRenderingBegin() {
                 console.log("rendering begin!");
@@ -30,14 +28,12 @@ To attach a client event handler you have to set the appropriate __ClientEvents_
                 console.log("rendering end!");
             }
           </script>
-          
 ````
 
 
 
 	
 ````xml
-
 @(Html.TelerikReporting().ReportViewer()
         // each deferred script will be rendered at the place of TelerikReporting().DeferredScripts().
         //.Deferred()
@@ -47,13 +43,11 @@ To attach a client event handler you have to set the appropriate __ClientEvents_
                     .RenderingEnd("onRenderingEnd")
                     )
 )
-          
 ````
 
 
 
-The following table list the available client events:
-        
+The following table list the available client events:         
 
 
 |  __Event__  |  __Description__  |

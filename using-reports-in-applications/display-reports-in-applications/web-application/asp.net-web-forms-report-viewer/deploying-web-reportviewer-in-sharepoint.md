@@ -12,13 +12,12 @@ position: 4
 
 
 
->note This is a legacy report viewer and for new projects our recommendation is to use the latest web forms report viewer -          [HTML5 Web Forms Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-web-forms-report-viewer/overview%})
+>note This is a legacy report viewer and for new projects our recommendation is to use the latest web forms report viewer -           [HTML5 Web Forms Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-web-forms-report-viewer/overview%})
 
 
 ## 
 
-This topic outlines the required steps that need to be taken to deploy the web ReportViewer prior 
-      	to implementing it within an existing MOSS web site.
+This topic outlines the required steps that need to be taken to deploy the web ReportViewer prior        	to implementing it within an existing MOSS web site.
 
 1. First you need to install __Telerik.Reporting.dll__ and __Telerik.ReportViewer.WebForms.dll__ in the 
 				__GAC (Global Assembly Cache__) of your SharePoint server. For more information please refer to 
@@ -31,10 +30,8 @@ This topic outlines the required steps that need to be taken to deploy the web 
 
 	
 ````xml
-
 					<SafeControl Assembly="Telerik.Reporting, Version=x.x.x.xxxx, Culture=neutral, PublicKeyToken=a9d7983dfcc261be" Namespace="Telerik.Reporting" TypeName="*" Safe="True" />
 					<SafeControl Assembly="Telerik.ReportViewer.WebForms, Version=x.x.x.xxxx, Culture=neutral, PublicKeyToken=a9d7983dfcc261be" Namespace="Telerik.ReportViewer" TypeName="*" Safe="True" />
-				
 ````
 
 
@@ -44,20 +41,14 @@ This topic outlines the required steps that need to be taken to deploy the web 
 
 	
 ````XML
-
 					<add path="Telerik.ReportViewer.axd" type="Telerik.ReportViewer.WebForms.HttpHandler, Telerik.ReportViewer.WebForms, Version=x.x.x.x, Culture=neutral, PublicKeyToken=a9d7983dfcc261be" verb="*" validate="true" />
-				
 ````
 
-When the application is hosted on IIS 7+, the handler of the report viewer should be registered in the
-				__```<system.webServer>```\<handlers>__ section as well:
-				
+When the application is hosted on IIS 7+, the handler of the report viewer should be registered in the 				__```<system.webServer>```\<handlers>__ section as well: 				
 
 	
 ````XML
-
-                <add name="Telerik.ReportViewer.axd_*" path="Telerik.ReportViewer.axd" verb="*" type="Telerik.ReportViewer.WebForms.HttpHandler, Telerik.ReportViewer.WebForms, Version=x.x.x.x, Culture=neutral, PublicKeyToken=a9d7983dfcc261be" preCondition="integratedMode" />
-                
+                 <add name="Telerik.ReportViewer.axd_*" path="Telerik.ReportViewer.axd" verb="*" type="Telerik.ReportViewer.WebForms.HttpHandler, Telerik.ReportViewer.WebForms, Version=x.x.x.x, Culture=neutral, PublicKeyToken=a9d7983dfcc261be" preCondition="integratedMode" />
 ````
 
 
@@ -67,10 +58,8 @@ When the application is hosted on IIS 7+, the handler of the report viewer shoul
 
 	
 ````ASP.NET
-
 				<%@ Register TagPrefix="telerik" Namespace="Telerik.ReportViewer.WebForms"
 						Assembly="Telerik.ReportViewer.WebForms, Version=x.x.x.xxxx, Culture=neutral, PublicKeyToken=a9d7983dfcc261be" %>
-				
 ````
 
 

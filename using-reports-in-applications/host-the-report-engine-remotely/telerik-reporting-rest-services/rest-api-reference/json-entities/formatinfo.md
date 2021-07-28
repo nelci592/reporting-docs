@@ -12,8 +12,7 @@ position: 2
 
 
 
-Format info object representing a document format that can be used for document creation.
-      
+Format info object representing a document format that can be used for document creation.       
 
 ## 
 

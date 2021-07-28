@@ -40,7 +40,7 @@ In the figure below the menu is invoked in the area next to the report design su
   
   ![](images/UI012.png)
 
-In the example below, a [TextBox]({%slug telerikreporting/designing-reports/report-structure/textbox%})          was right-clicked to display its context menu. It includes the following menu items:
+In the example below, a [TextBox]({%slug telerikreporting/designing-reports/report-structure/textbox%})           was right-clicked to display its context menu. It includes the following menu items:
 
 * __Bring To Front/Send To Back:__Allow you to change the order of the items in the items collection of a section.
           

@@ -12,8 +12,7 @@ position: 6
 
 
 
-To create cascading report parameters with applied filtering on data source level follow the steps below:
-   	
+To create cascading report parameters with applied filtering on data source level follow the steps below:    	
 
 ## Cascading Parameters with applied filtering on Datasource level
 
@@ -22,14 +21,12 @@ To create cascading report parameters with applied filtering on data source leve
 
 	
 ````SQL
-
 SELECT        Production.Product.ProductNumber, Production.Product.Name AS ProductName, 
               Production.ProductSubcategory.Name AS SubcategoryName
 FROM          Production.Product 
               INNER JOIN Production.ProductSubcategory 
                    ON Production.Product.ProductSubcategoryID = Production.ProductSubcategory.ProductSubcategoryID
 WHERE        (Production.Product.ProductSubcategoryID = @ProductSubcategoryID)
-				
 ````
 
 				Note that there is a __WHERE__ clause that filters the datasource based on the ProductSubcategoryID parameter.
@@ -57,12 +54,10 @@ WHERE        (Production.Product.ProductSubcategoryID = @ProductSubcategoryID)
 
 	
 ````SQL
-
 SELECT        ProductSubcategoryID, 
               Name AS SubcategoryName
 FROM          Production.ProductSubcategory
 WHERE        (ProductCategoryID = @ProductCategoryID)
-				
 ````
 
 			Note that there is a __WHERE__ clause that filters the data source based on the ProductCategoryID parameter.
@@ -93,13 +88,11 @@ WHERE        (ProductCategoryID = @ProductCategoryID)
 
 	
 ````SQL
-
 SELECT
               ProductCategoryID,
               Name AS CategoryName
 FROM
               Production.ProductCategory
-				
 ````
 
 

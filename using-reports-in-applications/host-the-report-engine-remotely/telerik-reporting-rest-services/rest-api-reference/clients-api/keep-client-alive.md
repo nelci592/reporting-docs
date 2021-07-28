@@ -16,9 +16,7 @@ position: 2
 
 	
 ````URI Template
- 
             POST /api/reports/clients/keepAlive/{clientID}
-          
 ````
 
 
@@ -48,9 +46,7 @@ __Path parameters__
 
 	
 ````Request Message
- 
                 POST /api/reports/clients/2c3d HTTP/1.1
-              
 ````
 
 

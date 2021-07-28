@@ -12,8 +12,7 @@ position: 9
 
 
 
-The info object passed to the report engine to perform a search.
-      
+The info object passed to the report engine to perform a search.       
 
 ## 
 

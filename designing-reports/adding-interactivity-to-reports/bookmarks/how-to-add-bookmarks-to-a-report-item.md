@@ -12,12 +12,7 @@ position: 1
 
 
 
-Add bookmarks to a report when you want to provide a customized table of contents or 
-    	to provide customized internal navigation in the report. Typically, you add bookmarks to locations in 
-    	the report to which you want to direct users. You can create your own strings to use as bookmarks, 
-    	or, for groups, you can set the bookmark to the group expression. After you create bookmarks, 
-    	you can add report items that the user
-    	can click to go to each bookmark. These items are typically text boxes or images.
+Add bookmarks to a report when you want to provide a customized table of contents or      	to provide customized internal navigation in the report. Typically, you add bookmarks to locations in      	the report to which you want to direct users. You can create your own strings to use as bookmarks,      	or, for groups, you can set the bookmark to the group expression. After you create bookmarks,      	you can add report items that the user     	can click to go to each bookmark. These items are typically text boxes or images. 
 
 ## Adding a bookmark to a report item
 
@@ -28,7 +23,7 @@ Add bookmarks to a report when you want to provide a customized table of content
 	type a string that is the label for this bookmark. Alternatively, click
 	the ellipsis to open the Expression dialog box to specify an expression that evaluates to a label.
 
->note The [BookmarkId](/reporting/api/Telerik.Reporting.ReportItemBase#Telerik_Reporting_ReportItemBase_BookmarkId) can be any 	string, but it must be unique in the report. If the  __BookmarkID__  is not unique,	an action to the bookmark finds the first matching bookmark.
+>note The [BookmarkId](/reporting/api/Telerik.Reporting.ReportItemBase#Telerik_Reporting_ReportItemBase_BookmarkId) can be any  	string, but it must be unique in the report. If the  __BookmarkID__  is not unique, 	an action to the bookmark finds the first matching bookmark.
 
 
 # See Also

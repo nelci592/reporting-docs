@@ -14,8 +14,7 @@ position: 1
 
 ## 
 
-The following table presents a summary of the section types and their usage:
-		
+The following table presents a summary of the section types and their usage: 		
 
 
 | Section Type | Description |

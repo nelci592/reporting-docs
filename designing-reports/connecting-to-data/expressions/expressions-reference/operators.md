@@ -51,12 +51,12 @@ position: 2
 | __Between__ |selects a range of data between two values|
 | __In__ |Compare to a list of items. The list can be a any collection of objects|
 | __Like__ |pattern matching|
-| __IS [NOT] NULL__ |If the value of expression is __NULL__ , __IS NULL__ returns __TRUE__ ;<br/>						otherwise, it returns __FALSE__ .If the value of expression is __NULL__ , __IS NOT NULL__ returns __FALSE__ ;<br/>			    	otherwise, it returns __TRUE__ |
+| __IS [NOT] NULL__ |If the value of expression is __NULL__ , __IS NULL__ returns __TRUE__ ; 						otherwise, it returns __FALSE__ .If the value of expression is __NULL__ , __IS NOT NULL__ returns __FALSE__ ; 			    	otherwise, it returns __TRUE__ |
 
 
 
 
->note  __Null__  values represent missing unknown data and are usually used as placeholders for unknown or inapplicable values.           It is not possible to test for  __null__  values with comparison operators such as  __=__  or  __<>__ .          The  __IS [NOT] NULL__  operator should be used instead.        
+>note  __Null__  values represent missing unknown data and are usually used as placeholders for unknown or inapplicable values.            It is not possible to test for  __null__  values with comparison operators such as  __=__  or  __<>__ .           The  __IS [NOT] NULL__  operator should be used instead.         
 
 
 ## Logical/Bitwise operators
@@ -75,13 +75,7 @@ position: 2
 
 ## Using wildcards for operators
 
-Both the __*__ and __%__ can be used interchangeably for wildcard characters
-			in a LIKE comparison. If the string in a LIKE clause contains a *
-			or %, those characters should be escaped in brackets ([]). If a
-			bracket is in the clause, the bracket characters should be escaped
-			in brackets (for example [[] or [&cd;). A wildcard is allowed
-			at the start and end of a pattern, or at the end of a pattern, or
-			at the start of a pattern. For example:
+Both the __*__ and __%__ can be used interchangeably for wildcard characters 			in a LIKE comparison. If the string in a LIKE clause contains a * 			or %, those characters should be escaped in brackets ([]). If a 			bracket is in the clause, the bracket characters should be escaped 			in brackets (for example [[] or [&cd;). A wildcard is allowed 			at the start and end of a pattern, or at the end of a pattern, or 			at the start of a pattern. For example:
 
 * "ItemName LIKE '*product*'"
 
@@ -89,5 +83,4 @@ Both the __*__ and __%__ can be used interchangeably for wildcard characters
 
 * "ItemName LIKE 'product*'" 
 
-Wildcard characters are not allowed in the middle of a string.
-				For example, 'te*xt' is not allowed.
+Wildcard characters are not allowed in the middle of a string. 				For example, 'te*xt' is not allowed.

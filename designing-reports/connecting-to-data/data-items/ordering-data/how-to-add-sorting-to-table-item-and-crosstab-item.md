@@ -16,23 +16,19 @@ To define a sorting for the __Table__ or __Crosstab__ items use the following st
 
 
 
-1. In the [Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/overview%}),
-            right click on a Table/Crosstab and then select Properties.
+1. In the [Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/overview%}),             right click on a Table/Crosstab and then select Properties.
 
 1. Click the Sorting ellipsis.
 
 1. 
 
-For each sort expression, follow these steps:       
-              
+For each sort expression, follow these steps:                      
 
 1. Click New.
 
 1. Type or select an expression by which to sort the data.
 
-1. From the Direction column drop-down list, choose the sort direction 
-               for each expression. ASC sorts the expression in ascending order. DESC sorts 
-               the expression in descending order.
+1. From the Direction column drop-down list, choose the sort direction                 for each expression. ASC sorts the expression in ascending order. DESC sorts                 the expression in descending order.
 
 1. Click OK.Adding sorting to Table/Crosstab Group (Row/Column Group) using Report Designer
 

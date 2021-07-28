@@ -10,29 +10,21 @@ position: 6
 
 # privateFonts Element
 
-ollection first regular then bold          the GDI+ measure string size for bold font style is incorrect.           This is observed in Windows 8.1 and newer and may lead to unexpected rendering and aligning issues.          For more information see          [              Wrong Measurements from MeasureString            ](              https://github.com/Microsoft/DirectXTK/issues/34            ).         __Known issue with Azure:__ The required .NET API for handling private fonts is making GDI calls that are blocked in Azure App Services.          If private fonts are required our recommendation is to use Cloud Service plan. More details can be found in           [              PrivateFontCollection is not working            ](              https://feedback.azure.com/forums/34192--general-feedback/suggestions/31381390-privatefontcollection-is-not-working            ).        
+ection first regular then bold           the GDI+ measure string size for bold font style is incorrect.            This is observed in Windows 8.1 and newer and may lead to unexpected rendering and aligning issues.           For more information see           [               Wrong Measurements from MeasureString             ](               https://github.com/Microsoft/DirectXTK/issues/34             ).          __Known issue with Azure:__ The required .NET API for handling private fonts is making GDI calls that are blocked in Azure App Services.           If private fonts are required our recommendation is to use Cloud Service plan. More details can be found in            [               PrivateFontCollection is not working             ](               https://feedback.azure.com/forums/34192--general-feedback/suggestions/31381390-privatefontcollection-is-not-working             ).         
 
 
->warning  __Known issue with PDF rendering in .NET Core application on Linux:__ The PDF rendering engine needs to obtain the bytes for fonts used in the report. The font resolving mechanism currently relies on the  __privateFonts__           element to provide path to each font along with a style description. This includes the substitute fonts that are picked by the runtime when the font,           used in the report, is not available.        
+>warning  __Known issue with PDF rendering in .NET Core application on Linux:__ The PDF rendering engine needs to obtain the bytes for fonts used in the report. The font resolving mechanism currently relies on the  __privateFonts__            element to provide path to each font along with a style description. This includes the substitute fonts that are picked by the runtime when the font,            used in the report, is not available.         
 
 
-The private fonts are used for all rendering extensions. Still the font rendering on the client
-        computer depends on the viewer configuration and document format specifications:
-      
+The private fonts are used for all rendering extensions. Still the font rendering on the client         computer depends on the viewer configuration and document format specifications:       
 
-As with most types of software, font files are licensed, rather than sold,
-        and licenses that govern the use of fonts vary from vendor to vendor.
-        As a developer it is your responsibility to ensure that you have the required license rights
-        for any font you use as private font, or otherwise redistribute.
-      
+As with most types of software, font files are licensed, rather than sold,         and licenses that govern the use of fonts vary from vendor to vendor.         As a developer it is your responsibility to ensure that you have the required license rights         for any font you use as private font, or otherwise redistribute.       
 
 	
 ````xml
-
     	<privateFonts>
         	<add />
 		</privateFonts>
-		
 ````
 
 
@@ -86,15 +78,12 @@ The following sections describe attributes, child elements, and parent elements.
 
 ## Example
 
-The following example demonstrates how to configure the reporting engine to use Ubuntu and Courier New fonts.
-          The fonts are part of the project with the following properties:
-        
+The following example demonstrates how to configure the reporting engine to use Ubuntu and Courier New fonts.           The fonts are part of the project with the following properties:         
 
 XML-based configuration file:
 
 	
 ````xml
-
 <?xml version="1.0"?>
 <configuration>
    ...
@@ -107,7 +96,6 @@ XML-based configuration file:
  	</Telerik.Reporting>
    ...
 </configuration>
-  			
 ````
 
 
@@ -116,7 +104,6 @@ JSON-based configuration file:
 
 	
 ````js
-
   "telerikReporting": {
     "privateFonts": [
       {
@@ -135,7 +122,6 @@ JSON-based configuration file:
       }
     ]
   }
-  			
 ````
 
 

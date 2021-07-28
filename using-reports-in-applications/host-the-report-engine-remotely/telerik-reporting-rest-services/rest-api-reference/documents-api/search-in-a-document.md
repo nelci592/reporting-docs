@@ -33,8 +33,7 @@ __Path parameters__
 
 __Request Body__
 
-[SearchInfo]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/json-entities/searchinfo%}) describing the search arguments.
-        
+[SearchInfo]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/json-entities/searchinfo%}) describing the search arguments.         
 
 ## Response
 
@@ -51,9 +50,7 @@ __Request Body__
 
 __Response Body__
 
-When the return status is `OK` the response body contains a JSON array of [SearchResultsInfo]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/json-entities/searchresultsinfo%}) 
-          objects representing the search results.
-        
+When the return status is `OK` the response body contains a JSON array of [SearchResultsInfo]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/json-entities/searchresultsinfo%})            objects representing the search results.         
 
 ## Sample
 

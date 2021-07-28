@@ -20,11 +20,9 @@ The Image rendering extension processes the report by assembling all elements of
 
 ## Rendering
 
-Rendering takes into consideration the rules defined in [General Behaviors for PDF, Image, HTML and Print](2c66114a-c8a0-423b-8576-2b41ed981a56#RenderingBehaviors2) topic.
-        
+Rendering takes into consideration the rules defined in [General Behaviors for PDF, Image, HTML and Print](2c66114a-c8a0-423b-8576-2b41ed981a56#RenderingBehaviors2) topic.         
 
-Report item's solid type borders will use miter joints when two adjacent border segments have different color, or their color is transparent.
-        
+Report item's solid type borders will use miter joints when two adjacent border segments have different color, or their color is transparent.         
 
 ## Limitations
 
@@ -38,8 +36,7 @@ Rendering reports with many items with justified text may be slower.
 
 ## Pagination
 
-Paging takes into consideration the rules defined in [Understanding Pagination]({%slug telerikreporting/designing-reports/rendering-and-paging/understanding-pagination%}) topic.
-        
+Paging takes into consideration the rules defined in [Understanding Pagination]({%slug telerikreporting/designing-reports/rendering-and-paging/understanding-pagination%}) topic.         
 
 ## Interactivity
 

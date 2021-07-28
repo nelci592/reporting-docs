@@ -12,24 +12,9 @@ position: 0
 
 
 
-The data items display and manipulate data in Telerik Reports.
-        With a data item, you can group, sort, filter, and aggregate data
-        from a single data source. Telerik Reporting provides several types of
-        data items: __Report (SubReport)__, __Table__,
-        __Crosstab__, __List__,
-        __Graph__, and __Map__. The __Table__,
-        __Crosstab__ and __List__ data
-        items are templates based on the Table data item,
-        and they can be combined in unique ways to customize the data presentation.
-        Charts provide a graphical view of data and aggregates.
-        The type of data item you choose depends on your data: the amount of
-        data, the range in data values, and what you want to convey in your report.
-      
+The data items display and manipulate data in Telerik Reports.         With a data item, you can group, sort, filter, and aggregate data         from a single data source. Telerik Reporting provides several types of         data items: __Report (SubReport)__, __Table__,         __Crosstab__, __List__,         __Graph__, and __Map__. The __Table__,         __Crosstab__ and __List__ data         items are templates based on the Table data item,         and they can be combined in unique ways to customize the data presentation.         Charts provide a graphical view of data and aggregates.         The type of data item you choose depends on your data: the amount of         data, the range in data values, and what you want to convey in your report.       
 
-To make the best choice of data item to use for displaying report data,
-        it helps to understand the characteristics of your data and the purpose of
-        the report. The following list describes the features of each data region:
-      
+To make the best choice of data item to use for displaying report data,         it helps to understand the characteristics of your data and the purpose of         the report. The following list describes the features of each data region:       
 
 * __Report__. The Report item consists of multiple
           horizontal sections (bands), one for each part of the report.

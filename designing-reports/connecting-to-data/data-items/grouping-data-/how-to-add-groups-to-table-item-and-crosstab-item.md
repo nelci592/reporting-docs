@@ -12,24 +12,11 @@ position: 3
 
 
 
-Add groups to a data item when you want to display your data in a 
-      visual hierarchy, align multiple data items to show different views of the
-      same data, or to calculate totals.
-      
+Add groups to a data item when you want to display your data in a        visual hierarchy, align multiple data items to show different views of the       same data, or to calculate totals.       
 
-You can create both nested groups and adjacent groups. Within a data 
-      item, you can create multiple row groups and column groups.
+You can create both nested groups and adjacent groups. Within a data        item, you can create multiple row groups and column groups.
 
-Typically, you define groups automatically as you work with data regions.
-      However, you can add your own groups. The process of adding groups varies 
-      based on the type of data region.
-      In a Table, Crosstab or List items, drag data source fields to the Row/Column 
-      Fields area. Right-click an existing group to add
-      parent, child or adjacent groups. By definition, the details group is the innermost group and
-      can only be added as a child group. Right-click an existing group to delete
-      it. Rows and columns on which to display group values are automatically added 
-      for you. For more information, see [Working with Table]({%slug telerikreporting/designing-reports/report-structure/table/crosstab/list/overview%}) article.
-      Add a parent or child row/column group to a Table data item using Report Designer
+Typically, you define groups automatically as you work with data regions.       However, you can add your own groups. The process of adding groups varies        based on the type of data region.       In a Table, Crosstab or List items, drag data source fields to the Row/Column        Fields area. Right-click an existing group to add       parent, child or adjacent groups. By definition, the details group is the innermost group and       can only be added as a child group. Right-click an existing group to delete       it. Rows and columns on which to display group values are automatically added        for you. For more information, see [Working with Table]({%slug telerikreporting/designing-reports/report-structure/table/crosstab/list/overview%}) article.       Add a parent or child row/column group to a Table data item using Report Designer
 
 1. Drag a data source field from the [Data Explorer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-explorer%}) 
             to the Row/Column Fields area of the Table or CrossTab items.

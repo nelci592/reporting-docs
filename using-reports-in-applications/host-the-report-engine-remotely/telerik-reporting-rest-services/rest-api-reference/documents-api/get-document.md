@@ -45,8 +45,7 @@ __Path parameters__
 
 __Response Body__
 
-The document content bytes as attachment.
-        
+The document content bytes as attachment.         
 
 ## Sample
 

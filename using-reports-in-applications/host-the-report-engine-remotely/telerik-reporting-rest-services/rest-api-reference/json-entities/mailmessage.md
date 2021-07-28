@@ -12,8 +12,7 @@ position: 8
 
 
 
-Mail message 
-      
+Mail message        
 
 ## 
 

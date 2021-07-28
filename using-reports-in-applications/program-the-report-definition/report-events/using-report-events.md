@@ -14,8 +14,7 @@ position: 2
 
 ## 
 
-The __Report__ object exposes these events:
-        
+The __Report__ object exposes these events:         
 
 
 
@@ -31,8 +30,7 @@ The __Report__ object exposes these events:
 
 
 
-The example below shows the NeedDataSource event assigning the report __DataSource__ at runtime. This event only fires when the __DataSource__ is null.
-        
+The example below shows the NeedDataSource event assigning the report __DataSource__ at runtime. This event only fires when the __DataSource__ is null.         
 
 {{source=CodeSnippets\CS\API\Telerik\Reporting\Processing\ReportEvents.cs region=NeedDataSourceEventHandlerSnippet}}
 ````C#

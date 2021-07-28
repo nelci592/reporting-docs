@@ -12,23 +12,15 @@ position: 0
 
 
 
-Welcome to the Demo report guide on getting started with Telerik Reporting!
-      
+Welcome to the Demo report guide on getting started with Telerik Reporting!       
 
-This guide creates a use case scenario which demonstrates how to create, set up, and publish a
-        sample Demo report. Each major step, from installing the product and creating the
-        report to adding the column graph and integrating the report in the Visual Studio application,
-        is explained in a separate article as part of the complete guide.
-      
+This guide creates a use case scenario which demonstrates how to create, set up, and publish a         sample Demo report. Each major step, from installing the product and creating the         report to adding the column graph and integrating the report in the Visual Studio application,         is explained in a separate article as part of the complete guide.       
 
-For more examples on Telerik Reporting, refer to
-        C:\Program Files (x86)\Progress\Telerik Reporting[VERSION]\Report Designer\Examples.
-      
+For more examples on Telerik Reporting, refer to         C:\Program Files (x86)\Progress\Telerik Reporting[VERSION]\Report Designer\Examples.       
 
 ## Contents
 
-The Getting Started guide includes the following articles:
-        
+The Getting Started guide includes the following articles:         
 
 * [Creating the Demo report]({%slug telerikreporting/getting-started/creating-the-demo-report%})
 
@@ -48,35 +40,24 @@ The Getting Started guide includes the following articles:
 
 ## Requirements
 
-* Install Microsoft SQL Server Management Studio.
-            
+* Install Microsoft SQL Server Management Studio.             
 
 ## Installing Telerik Reporting
 
-1. Log in to your
-              [Telerik account](https://www.telerik.com/account) and click on __Downloads__.
-            
+1. Log in to your               [Telerik account](https://www.telerik.com/account) and click on __Downloads__.             
 
-1. Select __Progress Telerik Reporting__.
-            
+1. Select __Progress Telerik Reporting__.             
 
-1. Click __Latest public version__ or __Latest internal build__ to download the MSI installation file.
-            
+1. Click __Latest public version__ or __Latest internal build__ to download the MSI installation file.             
 
-1. Run the MSI installation file.
-            
+1. Run the MSI installation file.             
 
-1. In the __Customization dialog__ of the Wizard, click __Examples Setup__ to set the examples and the used connection string.
-              The examples use the MS SQL Server AdventureWorks database which you will need later for the report.
-            
+1. In the __Customization dialog__ of the Wizard, click __Examples Setup__ to set the examples and the used connection string.               The examples use the MS SQL Server AdventureWorks database which you will need later for the report.             
 
-1. In the __Samples Database Setup__ dialog of the Wizard, select your __Database Server__ and the authentication for the connection.
-              The Wizard detects all running instances and lists them in the input field.
-              
+1. In the __Samples Database Setup__ dialog of the Wizard, select your __Database Server__ and the authentication for the connection.               The Wizard detects all running instances and lists them in the input field.               
   ![Install](images/Install.PNG)
 
-1. On each subsequent dialog that the Wizard will render, click __Install__ and select __Next__ until the installation is completed.
-            
+1. On each subsequent dialog that the Wizard will render, click __Install__ and select __Next__ until the installation is completed.             
 
 ## Next Steps
 

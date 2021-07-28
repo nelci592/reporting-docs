@@ -12,16 +12,11 @@ position: 7
 
 
 
-A custom action is an action that contains a collection of parameters, defined by the user, that will be evaluated during report processing.
-        It does not affect the currently viewed report in any way - its purpose is to be used in a report viewer's interactive action event handlers:
-        __InteractiveActionExecuting()__, __InteractiveActionEnter()__ and __InteractiveActionLeave()__.
-      
+A custom action is an action that contains a collection of parameters, defined by the user, that will be evaluated during report processing.         It does not affect the currently viewed report in any way - its purpose is to be used in a report viewer's interactive action event handlers:         __InteractiveActionExecuting()__, __InteractiveActionEnter()__ and __InteractiveActionLeave()__.       
 
-To define a [CustomAction](/reporting/api/Telerik.Reporting.CustomAction) use the [Edit Action Dialog]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/edit-action-dialog%}) or create it programmatically in the report class body.
-      
+To define a [CustomAction](/reporting/api/Telerik.Reporting.CustomAction) use the [Edit Action Dialog]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/edit-action-dialog%}) or create it programmatically in the report class body.       
 
-Here is an example how to get the custom action's parameters in __InteractiveActionExecuting()__ event of __WinForms Report Viewer__.
-      
+Here is an example how to get the custom action's parameters in __InteractiveActionExecuting()__ event of __WinForms Report Viewer__.       
 
 {{source=CodeSnippets\CS\API\Telerik\ReportViewer\WinForms\Form1.cs region=WinFormsCustomInteractiveActionExecutingEventSnippet}}
 ````C#

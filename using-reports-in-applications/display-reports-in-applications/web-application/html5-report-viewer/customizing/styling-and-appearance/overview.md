@@ -16,21 +16,15 @@ The article elaborates on the styles used by the HTML5 Report Viewer, and how th
 
 ## 
 
-The styling and appearance of the HTML5 Report Viewer is controlled entirely through a set of CSS3 styles organized in classes with predefined names.
-        
+The styling and appearance of the HTML5 Report Viewer is controlled entirely through a set of CSS3 styles organized in classes with predefined names.          
 
->tip All path references in the article should be adapted according            to your project setup. For more information please refer to the MSDN article            [ASP.NET Web Project Paths](http://msdn.microsoft.com/en-us/library/ms178116.aspx)The mentioned Report Viewer Template files are provided with your Telerik Reporting Installation -            [Installation Directories](6E821131-83F3-45A4-BB6E-1530223D1E38#directories-and-asemblies).          
+>tip All path references in the article should be adapted according             to your project setup. For more information please refer to the MSDN article             [ASP.NET Web Project Paths](http://msdn.microsoft.com/en-us/library/ms178116.aspx)The mentioned Report Viewer Template files are provided with your Telerik Reporting Installation -             [Installation Directories](6E821131-83F3-45A4-BB6E-1530223D1E38#directories-and-asemblies).           
 
 
-All viewer related classes are supplied by a single CSS stylesheet referenced in the report viewer HTML template.
-          The template is provided by the Reporting REST service. To force a custom template with  a custom or default CSS specify
-          the __templateUrl__ of the HTML5 Viewer widget option. For reference you can use the templates
-          located in __ %programfiles(x86)%\Progress\Reporting [VERSION]\Html5\ReportViewer\templates__:
-        
+All viewer related classes are supplied by a single CSS stylesheet referenced in the report viewer HTML template.           The template is provided by the Reporting REST service. To force a custom template with  a custom or default CSS specify           the __templateUrl__ of the HTML5 Viewer widget option. For reference you can use the templates           located in __ %programfiles(x86)%\Progress\Reporting [VERSION]\Html5\ReportViewer\templates__:         
 
 	
 ````js
-
 <script type="text/javascript">
         $("#reportViewer1")
             .telerik_ReportViewer({
@@ -39,73 +33,54 @@ All viewer related classes are supplied by a single CSS stylesheet referenced in
                 ......
             });
 </script>
-				
 ````
 
 
 
-In addition the Kendo UI CSS needs to be supplied in order for the Kendo UI widgets to be operational:
-        
+In addition the Kendo UI CSS needs to be supplied in order for the Kendo UI widgets to be operational:         
 
 	
 ````HTML
-
           <link href="/kendo/styles/kendo.common.min.css" rel="stylesheet" />
-				
 ````
 
 
 
-While these classes provide layout settings the HTML5 Report Viewer depends on the Kendo UI themes for its colors (theme):
-        
+While these classes provide layout settings the HTML5 Report Viewer depends on the Kendo UI themes for its colors (theme):         
 
 	
 ````HTML
-
           <link href="/kendo/styles/kendo.blueopal.min.css" rel="stylesheet" />
-				
 ````
 
 
 
-The default template depends on Telerik Web UI font, that is provided by the Reporting REST service.
-        
+The default template depends on Telerik Web UI font, that is provided by the Reporting REST service.         
 
-Additionally we provide a template that depends on [Font Awesome](http://fortawesome.github.io/Font-Awesome/) for the menu icons.
-          Font Awesome is not part of the Telerik HTML5 Report Viewer distribution and could be obtained from
-          [http://fortawesome.github.io/Font-Awesome/](http://fortawesome.github.io/Font-Awesome/).
-        
+Additionally we provide a template that depends on [Font Awesome](http://fortawesome.github.io/Font-Awesome/) for the menu icons.           Font Awesome is not part of the Telerik HTML5 Report Viewer distribution and could be obtained from           [http://fortawesome.github.io/Font-Awesome/](http://fortawesome.github.io/Font-Awesome/).         
 
->note Please note that you are not required nor limited to use our font or Font Awesome.            The distributed templates provide only a base/reference implementation of the report viewer’s content            that can be modified according to your needs.          
+>note Please note that you are not required nor limited to use our font or Font Awesome.             The distributed templates provide only a base/reference implementation of the report viewer’s content             that can be modified according to your needs.           
 
 
-In order to use Font Awesome you have to specify the font awesome template. The template is located in
-          (%programfiles(x86)%\Progress\Reporting [VERSION]\Html5\ReportViewer\templates):
-        
+In order to use Font Awesome you have to specify the font awesome template. The template is located in           (%programfiles(x86)%\Progress\Reporting [VERSION]\Html5\ReportViewer\templates):         
 
 	
 ````js
-
 <script type="text/javascript">
         $("#reportViewer1")
             .telerik_ReportViewer({
                 templateUrl: /ReportViewer/templates/telerikReportViewerTemplate-FA-x.x.x.x.html
                 ....
 </script>
-				
 ````
 
 
 
-The default viewer template and stylesheet depend on CSS media queries to adapt its layout according to the device and display.
-          In order the media queries to be activated properly the browser’s viewport needs to be initialized like this:
-        
+The default viewer template and stylesheet depend on CSS media queries to adapt its layout according to the device and display.           In order the media queries to be activated properly the browser’s viewport needs to be initialized like this:         
 
 	
 ````HTML
-
           <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-				
 ````
 
 

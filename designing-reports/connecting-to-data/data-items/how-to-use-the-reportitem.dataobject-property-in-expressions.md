@@ -10,35 +10,26 @@ position: 6
 
 # How to use the ReportItem.DataObject property in expressions
 
-ataObject](/reporting/api/Telerik.Reporting.Processing.IDataObject) interface which defines the RawData property.
-          This property is the actual data object that is being wrapped by the IDataObject and referring to DataObject, we actually refer to its RawData values.
-          Thus to get the actual data object you can work with __ReportItem.DataObject.RawData__.
-          The __RawData__ object exposes all properties and methods of the data object's type.
-        
+Object](/reporting/api/Telerik.Reporting.Processing.IDataObject) interface which defines the RawData property.           This property is the actual data object that is being wrapped by the IDataObject and referring to DataObject, we actually refer to its RawData values.           Thus to get the actual data object you can work with __ReportItem.DataObject.RawData__.           The __RawData__ object exposes all properties and methods of the data object's type.         
 
-For example:
-      
+For example:       
 
 	
 ````C#
-
 public class Phone
  {
      public string Number { get; set; }
-     
      public string GetFormattedNumber()
      {
         return Number.Replace(' ','-');
      }
  }
-								
 ````
 
 
 
 	
 ````VB.NET
-
 Public Class Phone
 	Public Property Number() As String
 		Get
@@ -49,27 +40,17 @@ Public Class Phone
 		End Set
 	End Property
 	Private _Number As String
-  
 	Public Function GetFormattedNumber() As String
 		Return Number.Replace(" ", "-")
 	End Function
 End Class
-								
 ````
 
 
 
-If the data object above is bound to a [data item]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/overview%}), __=ReportItem.DataObject.RawData__ will return the exact data object of type __Phone__.
-          This allows you to use the GetFormattedNumber method in an expression by calling __=ReportItem.DataObject.RawData.GetFormattedNumber()__,
-          or use a property of the type e.g., __=ReportItem.DataObject.RawData.Number__.
-        Use parent data item data for child data item datasource parameter
+If the data object above is bound to a [data item]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/overview%}), __=ReportItem.DataObject.RawData__ will return the exact data object of type __Phone__.           This allows you to use the GetFormattedNumber method in an expression by calling __=ReportItem.DataObject.RawData.GetFormattedNumber()__,           or use a property of the type e.g., __=ReportItem.DataObject.RawData.Number__.         Use parent data item data for child data item datasource parameter
 
-In the context of data item ReportItem.DataObject references the parent's data item data.
-          Thus the ReportItem.DataObject.MyField retrieves the MyField data from the parent data item datasource.
-          This way you can make use of of the datasource relations capability.
-          For example when SqlDataSourceReport is set to the report and SqlDataSourceTable is set to a table.
-          You can bind the SqlDataSourceTable datasource parameter to a SqlDataSourceReport data field as shown in the following datasource parameter example:
-        
+In the context of data item ReportItem.DataObject references the parent's data item data.           Thus the ReportItem.DataObject.MyField retrieves the MyField data from the parent data item datasource.           This way you can make use of of the datasource relations capability.           For example when SqlDataSourceReport is set to the report and SqlDataSourceTable is set to a table.           You can bind the SqlDataSourceTable datasource parameter to a SqlDataSourceReport data field as shown in the following datasource parameter example:         
 
 
 | Name | Type | Value |
@@ -79,8 +60,7 @@ In the context of data item ReportItem.DataObject references the parent's data i
 
 Use DataObject in an expression and user-defined function
 
-When complicated logic should be applied or .NET framework routines need to be utilized it is more appropriate to create a user defined function instead of an expression. In this case it is useful to pass the current data item to the user function which will do the processing logic instead of writing a complicated expression. In the following example we will show how to display properly the __AdditionalContactsInfo__ field, which is stored in XML format in the __AdventureWorks Person.Contact__ table.
-        Steps:
+When complicated logic should be applied or .NET framework routines need to be utilized it is more appropriate to create a user defined function instead of an expression. In this case it is useful to pass the current data item to the user function which will do the processing logic instead of writing a complicated expression. In the following example we will show how to display properly the __AdditionalContactsInfo__ field, which is stored in XML format in the __AdventureWorks Person.Contact__ table.         Steps:
 
 1.             Create or open an existing report.
           
@@ -161,11 +141,7 @@ In this step we process the passed data argument as IDataObject, retrieving the 
 1.             Preview or run your report. The second textbox now should show the concatenated person names and telephone numbers.
           Use DataObject as a datasource for nested data items (Table, List, Crosstab, Graph)
 
-This scenario takes place when the currently bound data object have to be used as a datasource for a nested report item
-          - table, graph or a subreport - for example, when it is needed to process some grouped data and show summary
-          in the group header. The following example uses the __AdventureWorks’ Product__          table, groups products by their __SafetyStockLevel__ field and shows summary info about the
-          products color in a crosstab placed in the group header.
-        
+This scenario takes place when the currently bound data object have to be used as a datasource for a nested report item           - table, graph or a subreport - for example, when it is needed to process some grouped data and show summary           in the group header. The following example uses the __AdventureWorks’ Product__           table, groups products by their __SafetyStockLevel__ field and shows summary info about the           products color in a crosstab placed in the group header.         
 
 The following screenshot shows the expected report output that should be created as a result of this example:![dataobject-report-output](images/DataItems/dataobject-report-output.png)Steps:
 
@@ -198,8 +174,7 @@ and
 |= Fields.Color|
 
 
-respectively.
-            
+respectively.             
 
 1.             Add a report group using either the report's context menu or the Group Explorer and set its grouping to
             
@@ -229,17 +204,14 @@ respectively.
 |= Fields.Color|
 
 
-as a grouping expression. Set the detail textbox's expression to
-            
+as a grouping expression. Set the detail textbox's expression to             
 
 
 
 |= Count(Fields.Color)|
 
 
-Alternatively you may use the crosstab wizard choosing the SqlDataSource used for the whole report,
-              so that you have design-time support (Data explorer, Expression Builder in the context of the crosstab).
-            
+Alternatively you may use the crosstab wizard choosing the SqlDataSource used for the whole report,               so that you have design-time support (Data explorer, Expression Builder in the context of the crosstab).             
 
 1.             Add a [binding]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/bindings%})  to the crosstab using __DataSource__ as a __PropertyPath__            and __=ReportItem.DataObject__ as an __Expression__, as shown in the following screenshot.
             This means that when the crosstab is processed its data source will be replaced with the result
@@ -249,4 +221,4 @@ Alternatively you may use the crosstab wizard choosing the SqlDataSource used fo
 1.             Preview or start your report. You should now see the products information listed in the details section for every group and a summary info about the products colors summarized in the group headers.
           
 
->note This approach might also be used when you need to have page breaks in a  __Table, Crosstab__  or  __List__ .            Because having page breaks in these data items’ groups is not supported by design, you can create a report group,            add and bind a data item in the report group header and set the report group footer section  __PageBreak__  property as required.          
+>note This approach might also be used when you need to have page breaks in a  __Table, Crosstab__  or  __List__ .             Because having page breaks in these data items’ groups is not supported by design, you can create a report group,             add and bind a data item in the report group header and set the report group footer section  __PageBreak__  property as required.           

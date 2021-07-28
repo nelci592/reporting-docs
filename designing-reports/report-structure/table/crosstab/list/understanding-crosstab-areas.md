@@ -55,19 +55,11 @@ The following list describes each area:
             aggregate totals and grand totals for line totals for all sales order.
           
 
-When the report runs, column groups expand to the right for as many columns as there are unique values for a group expression. Row
-          groups expand down the page. For more information see [
-            Understanding
-            table cells, rows and columns
-          ]({%slug telerikreporting/designing-reports/report-structure/table/crosstab/list/understanding-table-cells,-rows-and-columns%}).
-        
+When the report runs, column groups expand to the right for as many columns as there are unique values for a group expression. Row           groups expand down the page. For more information see [             Understanding             table cells, rows and columns           ]({%slug telerikreporting/designing-reports/report-structure/table/crosstab/list/understanding-table-cells,-rows-and-columns%}).         
 
 The following figure shows the CrossTab in Preview.
 
   
   ![](images/table5.png)
 
-The row group area displays group instances for ProductCategory (Accessories from the screenshot). The column group  displays four
-          year group instances for 2001, 2002, 2003 and 2004. The Total column row displays the row totals; the totals row that repeats with
-          the category group shows productSubCategory totals, and the grand total row displays the category totals once for the crosstab.
-        
+The row group area displays group instances for ProductCategory (Accessories from the screenshot). The column group  displays four           year group instances for 2001, 2002, 2003 and 2004. The Total column row displays the row totals; the totals row that repeats with           the category group shows productSubCategory totals, and the grand total row displays the category totals once for the crosstab.         

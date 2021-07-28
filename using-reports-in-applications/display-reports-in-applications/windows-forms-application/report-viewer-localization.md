@@ -40,18 +40,15 @@ __The Report Viewer__ uses the following naming convention when searching for l
 
 * The names of the __RESX__ localization resource files should have the following format:*
 
-Telerik.ReportViewer.WinForms.Resources.__[culture]__.resx*Here “__[culture]__” is the name of the culture for the specified localization resource. For example, to provide a localization resource 
-        	for the French Belgian culture, the corresponding resource file should be named as follows:*
+Telerik.ReportViewer.WinForms.Resources.__[culture]__.resx*Here “__[culture]__” is the name of the culture for the specified localization resource. For example, to provide a localization resource          	for the French Belgian culture, the corresponding resource file should be named as follows:*
 
 Telerik.ReportViewer.WinForms.Resources.__fr-BE__.resx*
 
-* Respectively, to provide a localization resource for the French neutral culture, the corresponding resource file should 
-	be named as follows:*
+* Respectively, to provide a localization resource for the French neutral culture, the corresponding resource file should  	be named as follows:*
 
 Telerik.ReportViewer.WinForms.Resources.__fr__.resx*
 
-* It is possible to override the default resources for the language neutral culture, which are stored in the assembly of the 
-		__*Report Viewer*__. In that case the resource file should be named as follows:*
+* It is possible to override the default resources for the language neutral culture, which are stored in the assembly of the  		__*Report Viewer*__. In that case the resource file should be named as follows:*
 
 Telerik.ReportViewer.WinForms.Resources.resx*
 
@@ -86,9 +83,7 @@ The above diagram illustrates a simple view of the resource fallback for a UI c
 
 ## Distributing an Application with a Localized Report Viewer
 
-In order to distribute an application that uses __*Telerik Reporting*__        	with a localized __*Report Viewer*__, one should distribute all of the required 
-        	localization __RESX__ resource files, in addition to the main application assemblies. 
-        	For __*Windows Forms Applications*__ the __RESX__        	files should be placed in the same directory, where the application is installed.
+In order to distribute an application that uses __*Telerik Reporting*__         	with a localized __*Report Viewer*__, one should distribute all of the required          	localization __RESX__ resource files, in addition to the main application assemblies.          	For __*Windows Forms Applications*__ the __RESX__         	files should be placed in the same directory, where the application is installed.
 
 ## Related articles
 

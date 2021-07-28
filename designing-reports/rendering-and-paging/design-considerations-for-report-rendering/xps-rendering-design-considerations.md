@@ -22,11 +22,9 @@ For information common to the Image rendering extension and the XPS rendering e
 
 ## Styling
 
-* If a TextBox item with justified text is rendered on two or more pages, the last line of each page (except the last page) will be left-aligned.
-            
+* If a TextBox item with justified text is rendered on two or more pages, the last line of each page (except the last page) will be left-aligned.             
 
-* Cross-section items are not supported.
-            
+* Cross-section items are not supported.             
 
 ## Interactivity
 

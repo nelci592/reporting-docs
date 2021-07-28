@@ -12,16 +12,11 @@ position: 6
 
 
 
-The RTF Rendering Extension of Telerik Reporting produces __RTF v1.6__ files. It
-        is recommended that the exported file is viewed with __Microsoft Word 97__ or later.
-      
+The RTF Rendering Extension of Telerik Reporting produces __RTF v1.6__ files. It         is recommended that the exported file is viewed with __Microsoft Word 97__ or later.       
 
 ## Design Consideration for RTF Rendering (Frames Mode)
 
-Telerik Reporting relies on __Frames__ to a achieve a WYSIWYG layout
-          and preserve the original report outlook as much as possible. Consumer applications that
-          __do not support Frames__ might produce __unexpected results__          and are not recommended.
-        
+Telerik Reporting relies on __Frames__ to a achieve a WYSIWYG layout           and preserve the original report outlook as much as possible. Consumer applications that           __do not support Frames__ might produce __unexpected results__           and are not recommended.         
 
 ### Limitations
 
@@ -54,15 +49,13 @@ Telerik Reporting relies on __Frames__ to a achieve a WYSIWYG layout
 
 ## Design Consideration for RTF Rendering (Tables Mode)
 
-When a report contains a __Table__ or a __CrossTab__ item, the RTF Rendering Extension switches to an alternative rendering mode and uses tables since they are natural for those two items.
-        
+When a report contains a __Table__ or a __CrossTab__ item, the RTF Rendering Extension switches to an alternative rendering mode and uses tables since they are natural for those two items.         
 
 When a report is exported to RTF in the Table mode it is represented by a series of tables nested in one another representing the hierarchical structure of the report. Each container (for example a ReportSection or Panel) is rendered as a table and its child elements are positioned in the respective row and column of this table. The rows and columns of the table are calculated and sized depending on the locations and sizes of the child elements. Non-container items (for example a TextBox or PictureBox) are rendered as the contents of the cell they fall in. If a child element is a container itself, then a new table is nested in the respective cell.
 
 ### HtmlTextBox Limitations
 
-Due to the media limitations, the following CSS style properties set on the HTML tags are NOT respected:
-            
+Due to the media limitations, the following CSS style properties set on the HTML tags are NOT respected:             
 
 * __borders__
 

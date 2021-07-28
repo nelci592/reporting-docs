@@ -12,8 +12,7 @@ position: 2
 
 
 
-A user can click items in the document map to jump 
-    	to areas within a report.
+A user can click items in the document map to jump      	to areas within a report.
 
 ## Adding a Report group to document map
 

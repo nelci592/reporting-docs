@@ -46,8 +46,7 @@ __Path parameters__
 
 __Response Body__
 
-resource file (image, etc.)
-        
+resource file (image, etc.)         
 
 ## Sample
 

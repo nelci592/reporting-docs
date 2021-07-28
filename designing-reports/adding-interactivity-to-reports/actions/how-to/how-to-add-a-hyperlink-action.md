@@ -12,9 +12,7 @@ position: 2
 
 
 
-Add a hyperlink to a URL when you want users to be able to click a link in a report and open a browser
-    	to the URL you specify. You must ensure that the user has access to the URL that you provide i.e. it allows anonymous access or does not require credentials. 
-    	You can add a hyperlink to a URL to any item that has an Action property.
+Add a hyperlink to a URL when you want users to be able to click a link in a report and open a browser     	to the URL you specify. You must ensure that the user has access to the URL that you provide i.e. it allows anonymous access or does not require credentials.      	You can add a hyperlink to a URL to any item that has an Action property. 
 
 ## Adding a Hyperlink action using Report Designer
 

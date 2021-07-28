@@ -12,13 +12,7 @@ position: 0
 
 
 
-In Telerik Reporting, expressions are used throughout the report
-      definition to specify or calculate values for parameters, filters, report
-      item properties, group and sort definitions, text box properties, bookmarks,
-      document maps, dynamic page header and footer content, images,
-      and dynamic data source definitions. In the next topics provides examples
-      of the many places you can use expressions to vary the content or
-      appearance of a report. This list is not comprehensive.
+In Telerik Reporting, expressions are used throughout the report       definition to specify or calculate values for parameters, filters, report       item properties, group and sort definitions, text box properties, bookmarks,       document maps, dynamic page header and footer content, images,       and dynamic data source definitions. In the next topics provides examples       of the many places you can use expressions to vary the content or       appearance of a report. This list is not comprehensive.
 
 ## In This Section
 

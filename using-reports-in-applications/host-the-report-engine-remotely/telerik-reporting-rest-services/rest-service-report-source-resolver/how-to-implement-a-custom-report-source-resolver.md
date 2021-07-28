@@ -12,17 +12,11 @@ position: 1
 
 
 
-This article explains how to create a custom report source resolver for the __Telerik Reporting REST service__.
-        In this example, the resolver purpose will be to return a [XmlReportSource](/reporting/api/Telerik.Reporting.XmlReportSource) with an XML
-        report definition obtained from an SQL Server database.
-      How to implement a custom report source resolver:
-1. 
+This article explains how to create a custom report source resolver for the __Telerik Reporting REST service__.         In this example, the resolver purpose will be to return a [XmlReportSource](/reporting/api/Telerik.Reporting.XmlReportSource) with an XML         report definition obtained from an SQL Server database.       
 
-Create a class which implements the [IReportSourceResolver](/reporting/api/Telerik.Reporting.Services.IReportSourceResolver)              interface. Its [Resolve](/reporting/api/Telerik.Reporting.Services.IReportSourceResolver#Telerik_Reporting_Services_IReportSourceResolver_Resolve_System_String_Telerik_Reporting_Services_OperationOrigin_System_Collections_Generic_IDictionary{System_String_System_Object}_) 
-              method will be called whenever the engine needs to create a
-              [ReportSource](/reporting/api/Telerik.Reporting.ReportSource) instance based on the parameter named *report*.
-              The value of the *report* parameter will be initialized with the value of the __Report__ property of the report viewer's ReportSource object.
-            
+###How to implement a custom report source resolver:
+
+1. Create a class which implements the [IReportSourceResolver](/reporting/api/Telerik.Reporting.Services.IReportSourceResolver)               interface. Its [Resolve](/reporting/api/Telerik.Reporting.Services.IReportSourceResolver#Telerik_Reporting_Services_IReportSourceResolver_Resolve_System_String_Telerik_Reporting_Services_OperationOrigin_System_Collections_Generic_IDictionary{System_String_System_Object}_)                method will be called whenever the engine needs to create a               [ReportSource](/reporting/api/Telerik.Reporting.ReportSource) instance based on the parameter named *report*.               The value of the *report* parameter will be initialized with the value of the __Report__ property of the report viewer's ReportSource object.             
 
 {{source=CodeSnippets\MvcCS\Controllers\CustomResolverReportsController.cs region=CustomReportResolver_Implementation}}
 ````C#
@@ -95,11 +89,8 @@ Create a class which implements the [IReportSourceResolver](/reporting/api/Teler
 ````
 
 
-1. 
 
-Find the __ReportSourceResolver property__ in the [ReportServiceConfiguration](/reporting/api/Telerik.Reporting.Services.WebApi.ReportsControllerBase#Telerik_Reporting_Services_WebApi_ReportsControllerBase_ReportServiceConfiguration) settings of the
-              implementation of the [ReportsControllerBase](/reporting/api/Telerik.Reporting.Services.WebApi.ReportsControllerBase)              class, and set it to an instance of the custom report source resolver or to a chain of resolver instances including the custom one:
-            
+1. Find the __ReportSourceResolver property__ in the [ReportServiceConfiguration](/reporting/api/Telerik.Reporting.Services.WebApi.ReportsControllerBase#Telerik_Reporting_Services_WebApi_ReportsControllerBase_ReportServiceConfiguration) settings of the               implementation of the [ReportsControllerBase](/reporting/api/Telerik.Reporting.Services.WebApi.ReportsControllerBase)               class, and set it to an instance of the custom report source resolver or to a chain of resolver instances including the custom one:             
 
 {{source=CodeSnippets\MvcCS\Controllers\CustomResolverReportsController.cs region=CustomReportResolver_ReportsController_Implementation}}
 ````C#
@@ -156,13 +147,11 @@ Find the __ReportSourceResolver property__ in the [ReportServiceConfiguration](/
 ````
 
 
-1. 
 
-Request the report from the HTML5 Report Viewer on the client:
+1. Request the report from the HTML5 Report Viewer on the client:
 
 	
-````JavaScript
-
+    ````JavaScript
 <script type="text/javascript">
 	$(document).ready(function () {
             $("#reportViewer1").telerik_ReportViewer({
@@ -171,15 +160,11 @@ Request the report from the HTML5 Report Viewer on the client:
         });
     });
 </script>
-				
 ````
 
+    where x.x.x.x is the version of the HTML5 ReportViewer/Telerik Reporting (e.g. 8.1.14.618).
 
-
-where x.x.x.x is the version of the HTML5 ReportViewer/Telerik Reporting (e.g. 8.1.14.618).
-1. 
-
-To create the database use the following script:
+1. To create the database use the following script:
 
 	              USE [master]
               GO
@@ -202,110 +187,80 @@ To create the database use the following script:
             
 
 
-1. 
 
-To enter some data into the database you can manually edit the __Reports__ table.
-              XML report definitions can be obtained from the sample __.trdx__ report files installed
-              together with the product and are located in
-              __[Telerik_Reporting_Install_Dir]\Report Designer\Examples__.
-            
+1. To enter some data into the database you can manually edit the __Reports__ table.               XML report definitions can be obtained from the sample __.trdx__ report files installed               together with the product and are located in               __[Telerik_Reporting_Install_Dir]\Report Designer\Examples__.                 In newer versions, all sample reports of the Standalone Report Designer are in TRDP format. You can use the               *Standalone Report Designer - File - Save As* option to convert them to TRDX files.             
 
-In newer versions, all sample reports of the Standalone Report Designer are in TRDP format. You can use the
-              *Standalone Report Designer - File - Save As* option to convert them to TRDX files.
-                    How to implement and use custom IReportSourceResolver with fallback mechanism:
+###        How to implement and use custom IReportSourceResolver with fallback mechanism:
       
-1. 
 
-Add to your IReportSourceResolver implementation a constructor with parameter IReportSourceResolver parentResolver.
-              Then use the parentResolver if the custom report source resolving mechanism fails.
-            
+1. Add to your IReportSourceResolver implementation a constructor with parameter IReportSourceResolver parentResolver.               Then use the parentResolver if the custom report source resolving mechanism fails.             
 
 	
-````C#
-
+    ````C#
 class ReportSourceResolverWithFallBack : IReportSourceResolver
 {
     readonly IReportSourceResolver parentResolver;
-
     public ReportSourceResolverWithFallBack(IReportSourceResolver parentResolver)
     {
         this.parentResolver = parentResolver;
     }
-
     public ReportSource Resolve(string report)
     {
         ReportSource reportDocument = null;
         reportDocument = this.ResolveCustomReportSource(report);
-
         if (null == reportDocument && null != this.parentResolver)
         {
             reportDocument = this.parentResolver.Resolve(report);
         }
-
         return reportDocument;
     }
-
     public ReportSource ResolveCustomReportSource(string report)
     {
         //TODO implement custom report resolving mechanism
         return null;
     }
 }
-				
 ````
 
 
 
 	
-````VB
-
+    ````VB
 Class ReportSourceResolverWithFallBack
     Implements IReportSourceResolver
     ReadOnly parentResolver As IReportSourceResolver
-
     Public Sub New(parentResolver As IReportSourceResolver)
         Me.parentResolver = parentResolver
     End Sub
-
     Public Function Resolve(report As String) As ReportSource Implements IReportSourceResolver.Resolve
         Dim reportDocument As IReportDocument = Nothing
         reportDocument = Me.ResolveCustomReportSource(report)
-
         If reportDocument Is Nothing AndAlso Me.parentResolver IsNot Nothing Then
             reportDocument = Me.parentResolver.Resolve(report)
         End If
-
         Return reportDocument
     End Function
-
     Public Function ResolveCustomReportSource(report As String) As ReportSource
         'TODO implement custom report resolving mechanism
         Return Nothing
     End Function
 End Class
-				
 ````
 
 
-1. 
 
-Add to the ReportServiceConfiguration the IReportSourceResolver implementations in a chain. Thus the custom one will be executed
-              first, if it fails the second one and so on.
-            
+1. Add to the ReportServiceConfiguration the IReportSourceResolver implementations in a chain. Thus the custom one will be executed               first, if it fails the second one and so on.             
 
 	
-````C#
-
+    ````C#
 public class CustomResolverWithFallbackReportsController : ReportsControllerBase
 {
     static ReportServiceConfiguration configurationInstance;
-
     static CustomResolverWithFallbackReportsController()
     {
         var resolver = new ReportSourceResolverWithFallBack()
             .AddFallbackResolver(new TypeReportSourceResolver()
                 .AddFallbackResolver(new UriReportSourceResolver(HttpContext.Current.Server.MapPath("~/Reports"))));
-
         configurationInstance = new ReportServiceConfiguration
         {
             HostAppId = "Application1",
@@ -313,48 +268,37 @@ public class CustomResolverWithFallbackReportsController : ReportsControllerBase
             Storage = new Telerik.Reporting.Cache.File.FileStorage(),
         };
     }
-
     public CustomResolverWithFallbackReportsController()
     {
         this.ReportServiceConfiguration = configurationInstance;
     }
 }
-				
 ````
 
 
 
 	
-````VB
-
+    ````VB
 Public Class CustomResolverWithFallbackReportsController
     Inherits Telerik.Reporting.Services.WebApi.ReportsControllerBase
-
     Shared configurationInstance As ReportServiceConfiguration
-
     Shared Sub New()
         Dim resolver = New ReportSourceResolverWithFallBack() _
             .AddFallbackResolver(New TypeReportSourceResolver() _
                 .AddFallbackResolver(New UriReportSourceResolver(HttpContext.Current.Server.MapPath("~/Reports"))))
-
         Dim reportServiceConfiguration As New ReportServiceConfiguration()
         reportServiceConfiguration.HostAppId = "Application1"
         reportServiceConfiguration.ReportSourceResolver = resolver
         reportServiceConfiguration.Storage = New Telerik.Reporting.Cache.File.FileStorage()
         configurationInstance = reportServiceConfiguration
     End Sub
-
     Public Sub New()
         Me.ReportServiceConfiguration = configurationInstance
     End Sub
 End Class
-				
 ````
 
-
-
-You can use for fallback the default IReportSourceResolver implementations:
-            
+    You can use for fallback the default IReportSourceResolver implementations:             
 
 * TypeReportSourceResolver - Resolves IReportDocument from assembly qualified name
 

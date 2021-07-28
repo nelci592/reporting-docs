@@ -12,9 +12,7 @@ position: 2
 
 
 
-The HTML5 Web Forms Report Viewer is based on the [Overview]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview%}) and is using the same 
-      [Localization]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/customizing/localization%}) mechanism.
-      
+The HTML5 Web Forms Report Viewer is based on the [Overview]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview%}) and is using the same        [Localization]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/customizing/localization%}) mechanism.       
 
 # See Also
 

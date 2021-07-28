@@ -10,14 +10,9 @@ position: 8
 
 # How to Create Chart Step by Step
 
-products/reporting/report-designer.aspx)        that supports even more options and tools for creating graphs than Visual Studio. 
-        
+ducts/reporting/report-designer.aspx)         that supports even more options and tools for creating graphs than Visual Studio.          
 
-If you choose not to use the graph wizard and you want to create graphs by yourself our
-        recommendation is to review [Structure]({%slug telerikreporting/designing-reports/report-structure/graph/structure%}) 
-        and [Connecting to Data]({%slug telerikreporting/designing-reports/report-structure/graph/connecting-to-data%}) help articles.
-        Then check out the following table that shows the basic configuration for each chart type:
-      
+If you choose not to use the graph wizard and you want to create graphs by yourself our         recommendation is to review [Structure]({%slug telerikreporting/designing-reports/report-structure/graph/structure%})          and [Connecting to Data]({%slug telerikreporting/designing-reports/report-structure/graph/connecting-to-data%}) help articles.         Then check out the following table that shows the basic configuration for each chart type:       
 
 ## 
 

@@ -12,9 +12,7 @@ position: 4
 
 
 
-The Graph item can have one or more titles. 
-      	By default the graph item have one title with __TopCenter Position__.
-      
+The Graph item can have one or more titles.        	By default the graph item have one title with __TopCenter Position__.       
 
 # See Also
 [GraphTitle](/reporting/api/Telerik.Reporting.GraphTitle)[Titles](/reporting/api/Telerik.Reporting.Graph#Telerik_Reporting_Graph_Titles)

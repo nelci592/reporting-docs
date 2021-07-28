@@ -12,20 +12,13 @@ position: 2
 
 
 
-The [JsonDataSource](/reporting/api/Telerik.Reporting.JsonDataSource) component enables data items to display JSON data located in a local file,
-        or saved directly into the report while using no code.
-        At design time the component can be configured using the [JsonDataSource Wizard]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/jsondatasource-wizard%}).
-        At run time the JsonDataSource automatically parses the JSON data.
-      
+The [JsonDataSource](/reporting/api/Telerik.Reporting.JsonDataSource) component enables data items to display JSON data located in a local file,         or saved directly into the report while using no code.         At design time the component can be configured using the [JsonDataSource Wizard]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/jsondatasource-wizard%}).         At run time the JsonDataSource automatically parses the JSON data.       
 
-The provided JSON data may omit properties with empty values. The result is that not all of the objects have the same list of properties.
-        Due to this no errors will be shown in the report if an undefined data field name is used inside an expression.
-      
+The provided JSON data may omit properties with empty values. The result is that not all of the objects have the same list of properties.         Due to this no errors will be shown in the report if an undefined data field name is used inside an expression.       
 
-The data field names for this data source are __case-sensitive__. It is required to use the correct data field names in expressions, otherwise no data will be shown.
-      
+The data field names for this data source are __case-sensitive__. It is required to use the correct data field names in expressions, otherwise no data will be shown.       
 
->important The JSON data source relies and reuses some of the Web Service data source functionalities.           In order to preview JSON data source reports in your application it is required to reference the  __Telerik.Reporting.WebServiceDataSource__            DLL or the corresponding NuGet package in the application.        
+>important The JSON data source relies and reuses some of the Web Service data source functionalities.            In order to preview JSON data source reports in your application it is required to reference the  __Telerik.Reporting.WebServiceDataSource__             DLL or the corresponding NuGet package in the application.         
 
 
 ## Configuring the Component
@@ -54,11 +47,8 @@ __Inline Data String Configuration:__
 
 ## Supported developer platforms
 
-* .NET Framework 4.0 and above
-            
+* .NET Framework 4.0 and above             
 
-* .NET Core 2.0 and above
-            
+* .NET Core 2.0 and above             
 
-* .NET Standard 2.0 and above
-            
+* .NET Standard 2.0 and above             

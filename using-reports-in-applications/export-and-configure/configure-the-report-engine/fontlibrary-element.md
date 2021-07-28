@@ -10,8 +10,7 @@ position: 7
 
 # fontLibrary Element
 
-ws machine or when other than PDF rendering extension is used.
-      
+ machine or when other than PDF rendering extension is used.       
 
 ## Attributes and Elements
 
@@ -21,17 +20,13 @@ The following sections describe attributes, child elements, and parent elements.
 >caption ```<fontLibrary>``` element
 
 
-|Attributes| __useDefaultLocations__ - determines if the system's default font locations to be included in the search.
-                On Linux machines these folders are`/usr/share/fonts/truetype/`and`/usr/local/share/fonts`.
-                On macOS machines the folder is`/Library/Fonts`.
-                Default value: __true__ .|
+|Attributes| __useDefaultLocations__ - determines if the system's default font locations to be included in the search.                 On Linux machines these folders are`/usr/share/fonts/truetype/`and`/usr/local/share/fonts`.                 On macOS machines the folder is`/Library/Fonts`.                 Default value: __true__ .|
 |Child Elements|
 
 *  __add__ - Optional element. Adds a font location to the collection.|
 |Parent Elements|
 
-*  __configuration__ - Specifies the root element in every configuration file that is used by
-                    the common language runtime and the .NET Framework applications.
+*  __configuration__ - Specifies the root element in every configuration file that is used by                     the common language runtime and the .NET Framework applications.
 
 *  __Telerik.Reporting__ - Configures all settings that Telerik Reporting Engine uses.|
 
@@ -59,14 +54,12 @@ The following sections describe attributes, child elements, and parent elements.
 
 ## Example
 
-The following example demonstrates how to configure the reporting engine to skip searching the default font folders and declares a folder to be for used for font resolving.
-        
+The following example demonstrates how to configure the reporting engine to skip searching the default font folders and declares a folder to be for used for font resolving.         
 
 XML-based configuration file:
 
 	
 ````xml
-
 <?xml version="1.0"?>
 <configuration>
    ...
@@ -79,7 +72,6 @@ XML-based configuration file:
   </Telerik.Reporting>
    ...
 </configuration>
-  			
 ````
 
 
@@ -88,7 +80,6 @@ JSON-based configuration file:
 
 	
 ````js
-
   "telerikReporting": {
     "fontLibrary": {
       "useDefaultLocations": "false",
@@ -100,7 +91,6 @@ JSON-based configuration file:
       ]
     }
   }
-  			
 ````
 
 

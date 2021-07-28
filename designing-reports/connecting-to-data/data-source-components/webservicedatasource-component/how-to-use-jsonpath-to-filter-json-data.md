@@ -12,24 +12,16 @@ position: 1
 
 
 
-In this article we are going to discuss how to use JSONPath expressions in the Data Selector in order to query and filter JSON data returned from the web service.
-        For a complete overview of the JSONPath syntax please refer to 
-        [JSONPath - XPath for JSON](http://goessner.net/articles/JsonPath/).
-      
+In this article we are going to discuss how to use JSONPath expressions in the Data Selector in order to query and filter JSON data returned from the web service.         For a complete overview of the JSONPath syntax please refer to          [JSONPath - XPath for JSON](http://goessner.net/articles/JsonPath/).       
 
 ## Bind to Inner Objects
 
-Very often the JSON data returned from a web service contains a single parent object which wraps child objects and/or arrays. If the
-          parent object is used directly the report would not display any detail records. Therefore it is more convenient to return an array of the child objects
-          or a particular nested array using a JSONPath expression.
-        
+Very often the JSON data returned from a web service contains a single parent object which wraps child objects and/or arrays. If the           parent object is used directly the report would not display any detail records. Therefore it is more convenient to return an array of the child objects           or a particular nested array using a JSONPath expression.         
 
-Example:
-        
+Example:         
 
 	
 ````JSON
-
 { 
   "store": {
     "book": [ 
@@ -48,20 +40,16 @@ Example:
     ]
   }
 }
-
-
 ````
 
 
 
 JSONPath: __$.store.book__
 
-Result:
-        
+Result:         
 
 	
 ````JSON
-
 [ 
   { 
     "category": "reference",
@@ -76,22 +64,18 @@ Result:
     "price": 12.99
   }
 ]
-
 ````
 
 
 
 ## Filter Arrays
 
-In other scenarios it might be useful to filter the JSON data in order to display only objects matching specific criteria.
-        
+In other scenarios it might be useful to filter the JSON data in order to display only objects matching specific criteria.         
 
-Example:
-        
+Example:         
 
 	
 ````JSON
-
 { 
   "store": {
     "book": [ 
@@ -110,20 +94,16 @@ Example:
     ]
   }
 }
-
-
 ````
 
 
 
 JSONPath: __$.store.book[?(@.price<10)]__
 
-Result:
-        
+Result:         
 
 	
 ````JSON
-
 [ 
   { 
     "category": "reference",
@@ -132,7 +112,6 @@ Result:
     "price": 8.95
   }
 ]
-
 ````
 
 

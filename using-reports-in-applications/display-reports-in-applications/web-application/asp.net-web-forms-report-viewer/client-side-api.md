@@ -12,7 +12,7 @@ position: 6
 
 
 
->note This is a legacy report viewer and for new projects our recommendation is to use the latest web forms report viewer -          [HTML5 Web Forms Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-web-forms-report-viewer/overview%})
+>note This is a legacy report viewer and for new projects our recommendation is to use the latest web forms report viewer -           [HTML5 Web Forms Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-web-forms-report-viewer/overview%})
 
 
 ## Accessing the client-side report viewer object

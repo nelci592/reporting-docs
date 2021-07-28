@@ -12,8 +12,7 @@ position: 2
 
 
 
-This article explains the steps needed to integrate the WPF report viewer to a .NET Core project.
-      
+This article explains the steps needed to integrate the WPF report viewer to a .NET Core project.       
 
 ## Prerequisites:
 

@@ -12,47 +12,30 @@ position: 8
 
 
 
-To help developers to make their reporting experience more flexible, responsive and customizable, the report viewers
-        provide event handlers for three types of events that are associated with interactive actions – __Executing__,
-        __Enter__ and __Leave__.
-      
+To help developers to make their reporting experience more flexible, responsive and customizable, the report viewers         provide event handlers for three types of events that are associated with interactive actions – __Executing__,         __Enter__ and __Leave__.       
 
-__InteractiveActionExecuting__ event is raised when an interactive action is being triggered, but not yet executed. This provides the ability to cancel the event execution due to some condition.
-      
+__InteractiveActionExecuting__ event is raised when an interactive action is being triggered, but not yet executed. This provides the ability to cancel the event execution due to some condition.       
 
-__InteractiveActionEnter__ event is raised when the mouse cursor enters the area of a report item that has an interactive action defined.
-      
+__InteractiveActionEnter__ event is raised when the mouse cursor enters the area of a report item that has an interactive action defined.       
 
-__InteractiveActionLeave__ event is raised when the mouse cursor leaves the area of a report item that has an interactive action defined.
-      
+__InteractiveActionLeave__ event is raised when the mouse cursor leaves the area of a report item that has an interactive action defined.       
 
-All the events provide arguments that contain a reference to the underlying
-        [IAction](/reporting/api/Telerik.Reporting.Processing.IAction) instance
-        and its properties, evaluated during report processing.
-      
+All the events provide arguments that contain a reference to the underlying         [IAction](/reporting/api/Telerik.Reporting.Processing.IAction) instance         and its properties, evaluated during report processing.       
 
-Based on the used report viewer, the arguments can contain also:
-      
+Based on the used report viewer, the arguments can contain also:       
 
-* A reference to the element, associated with the action ([FrameworkElement](https://msdn.microsoft.com/en-us/library/system.windows.frameworkelement(v=vs.110).aspx)            for WPF and Silverlight,
-            [HTML DOM element](http://www.w3schools.com/js/js_htmldom_elements.asp)            for Html5-based viewers).
-          
+* A reference to the element, associated with the action ([FrameworkElement](https://msdn.microsoft.com/en-us/library/system.windows.frameworkelement(v=vs.110).aspx)             for WPF and Silverlight,             [HTML DOM element](http://www.w3schools.com/js/js_htmldom_elements.asp)             for Html5-based viewers).           
 
-* The coordinates of the mouse cursor in pixels at the time of raising the event (for WinForms, WPF and SilverLight viewers). These coordinates are relative to the report item that triggered the action.
-          
+* The coordinates of the mouse cursor in pixels at the time of raising the event (for WinForms, WPF and SilverLight viewers). These coordinates are relative to the report item that triggered the action.           
 
->note When the  __InteractiveActionLeave()__  event is raised, these coordinates are empty.            
+>note When the  __InteractiveActionLeave()__  event is raised, these coordinates are empty.             
 
 
-* The client bounds of the current report item in pixels (for WinForms, WPF and SilverLight viewers).
-          
+* The client bounds of the current report item in pixels (for WinForms, WPF and SilverLight viewers).           
 
-For more information please refer to the related articles about each report viewer:
-      
+For more information please refer to the related articles about each report viewer:       
 
-* [
-              WinForms Report Viewer
-            ]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/windows-forms-application/overview%})
+* [               WinForms Report Viewer             ]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/windows-forms-application/overview%})
 
 
 | Event Handler | Event Arguments |
@@ -64,9 +47,7 @@ For more information please refer to the related articles about each report view
 
 
 
-* [
-              WPF Report Viewer
-            ]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/wpf-application/overview%})
+* [               WPF Report Viewer             ]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/wpf-application/overview%})
 
 
 | Event Handler | Event Arguments |
@@ -78,9 +59,7 @@ For more information please refer to the related articles about each report view
 
 
 
-* [
-              SilverLight Report Viewer
-            ]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/silverlight-application/overview%})
+* [               SilverLight Report Viewer             ]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/silverlight-application/overview%})
 
 
 | Event Handler | Event Arguments |
@@ -92,10 +71,7 @@ For more information please refer to the related articles about each report view
 
 
 
-* [
-              HTML5 Report Viewer
-            ]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview%})            (applies also to HTML5 ASP.NET Webforms Report Viewer and HTML5 ASP.NET MVC Report Viewer)
-          
+* [               HTML5 Report Viewer             ]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview%})             (applies also to HTML5 ASP.NET Webforms Report Viewer and HTML5 ASP.NET MVC Report Viewer)           
 
 
 |   |   |

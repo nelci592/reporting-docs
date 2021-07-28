@@ -12,8 +12,7 @@ position: 5
 
 
 
-To create cascading report parameters with applied filtering on report level follow the steps below:
-   	
+To create cascading report parameters with applied filtering on report level follow the steps below:    	
 
 ## 
 
@@ -22,7 +21,6 @@ To create cascading report parameters with applied filtering on report level fol
 
 	
 ````SQL
-
 				SELECT
 					Production.Product.ProductNumber,
 					Production.Product.Name AS ProductName,
@@ -32,7 +30,6 @@ To create cascading report parameters with applied filtering on report level fol
 					Production.Product
 					INNER JOIN Production.ProductSubcategory
 						ON Production.Product.ProductSubcategoryID = Production.ProductSubcategory.ProductSubcategoryID
-				
 ````
 
 
@@ -52,13 +49,11 @@ To create cascading report parameters with applied filtering on report level fol
 
 	
 ````SQL
-
 				SELECT
 					ProductCategoryID,
 					Name AS CategoryName
 				FROM
 					Production.ProductCategory
-				
 ````
 
 
@@ -86,14 +81,12 @@ To create cascading report parameters with applied filtering on report level fol
 
 	
 ````SQL
-
 				SELECT
 					ProductCategoryID,
 					ProductSubcategoryID,
 					Name AS SubcategoryName
 				FROM
 					Production.ProductSubcategory
-				
 ````
 
 

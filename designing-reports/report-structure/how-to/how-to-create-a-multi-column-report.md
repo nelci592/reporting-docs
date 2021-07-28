@@ -12,18 +12,9 @@ position: 3
 
 
 
-A report can be divided into columns (imagine columns in a newspaper), that are treated as logical pages rendered on the same physical page. 
-    	The detail section is printed once for every row in the data source similarly to a repeater and this happens vertically. The columns actually 
-    	represent the separate pages of the report, which are treated as logical pages rendered on the same physical page. Columns are 
-    	arranged from left to right, top to bottom, and are separated by white space between each, and data flow in the columns is left to right, top to 
-    	bottom i.e. down the page and then across. A column on a physical page is considered a logical page, whenever there are multiple columns on the physical page. If you apply a page break
-    	on a report section in multi-column layout, the section affected by the page break would move to the next column (logical page). This means that if 
-    	there is enough space on the current physical page, the section is moved to a new logical page (column) and not to a new physical page.
-    	
+A report can be divided into columns (imagine columns in a newspaper), that are treated as logical pages rendered on the same physical page.      	The detail section is printed once for every row in the data source similarly to a repeater and this happens vertically. The columns actually      	represent the separate pages of the report, which are treated as logical pages rendered on the same physical page. Columns are      	arranged from left to right, top to bottom, and are separated by white space between each, and data flow in the columns is left to right, top to      	bottom i.e. down the page and then across. A column on a physical page is considered a logical page, whenever there are multiple columns on the physical page. If you apply a page break     	on a report section in multi-column layout, the section affected by the page break would move to the next column (logical page). This means that if      	there is enough space on the current physical page, the section is moved to a new logical page (column) and not to a new physical page.     	
 
-Columns are specified using the [ColumnCount](/reporting/api/Telerik.Reporting.DetailSection#Telerik_Reporting_DetailSection_ColumnCount) property. 
-    	Column width is determined by the width of the report in design view. The [ColumnSpacing](/reporting/api/Telerik.Reporting.DetailSection#Telerik_Reporting_DetailSection_ColumnSpacing) 
-    	property is used to set the spacing in between the columns. The column width can be calculated as:
+Columns are specified using the [ColumnCount](/reporting/api/Telerik.Reporting.DetailSection#Telerik_Reporting_DetailSection_ColumnCount) property.      	Column width is determined by the width of the report in design view. The [ColumnSpacing](/reporting/api/Telerik.Reporting.DetailSection#Telerik_Reporting_DetailSection_ColumnSpacing)      	property is used to set the spacing in between the columns. The column width can be calculated as:
 
 Page width minus sum of left and right margins minus ColumnSpacing * (ColumnCount - 1). The result should be divided to the ColumnCount.
 
@@ -46,7 +37,7 @@ Page width minus sum of left and right margins minus ColumnSpacing * (ColumnCoun
 1. Resize any report items so that they are not greater than the width of the report.
         	
 
->note If the report does not render the number of columns set in ColumnCount, it is likely the report width is too large.			Check for report items with greater width than the width of the report and the column width itself.        	
+>note If the report does not render the number of columns set in ColumnCount, it is likely the report width is too large. 			Check for report items with greater width than the width of the report and the column width itself.         	
 
 
 ## Multi-column report layout example

@@ -12,8 +12,7 @@ position: 2
 
 
 
-Telerik Reporting supplies __report item__ components that are placed in the report designer to build report 
-      	content: 
+Telerik Reporting supplies __report item__ components that are placed in the report designer to build report        	content: 
 
 ## 
 

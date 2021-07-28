@@ -12,10 +12,7 @@ position: 0
 
 
 
-OpenClient data source is a component dedicated to feed report data items from OpenEdge AppServer ABL procedures.
-        In order to communicate with the AppServer the data source component uses Open Client .NET proxy class library that 
-        is generated using the OpenEdge .NET Proxy Generator tool.
-      
+OpenClient data source is a component dedicated to feed report data items from OpenEdge AppServer ABL procedures.         In order to communicate with the AppServer the data source component uses Open Client .NET proxy class library that          is generated using the OpenEdge .NET Proxy Generator tool.       
 
 ## Supported ABL Procedures
 
@@ -29,8 +26,7 @@ In order to be suitable for reporting purpose the ABL procedure has to have the 
 
 ## Supported developer platforms
 
-* .NET Framework 4.0 and above
-            
+* .NET Framework 4.0 and above             
 
 # See Also
 [Telerik.Reporting.OpenClientDataSource](/reporting/api/Telerik.Reporting.OpenClientDataSource)

@@ -12,10 +12,7 @@ position: 0
 
 
 
-The __EntityDataSource__ component enables data items to connect to an [ADO.NET Entity Data Model](https://docs.microsoft.com/en-us/dotnet/framework/data/adonet/entity-data-model). 
-    	This allows seamless integration of __Telerik Reporting__ with applications or web sites that utilize 
-    	the [ADO.NET Entity Framework](https://docs.microsoft.com/en-us/dotnet/framework/data/adonet/ef/overview). There are several main benefits when using the __EntityDataSource__ 
-    	component for connecting to an __Entity Data Model__:
+The __EntityDataSource__ component enables data items to connect to an [ADO.NET Entity Data Model](https://docs.microsoft.com/en-us/dotnet/framework/data/adonet/entity-data-model).      	This allows seamless integration of __Telerik Reporting__ with applications or web sites that utilize      	the [ADO.NET Entity Framework](https://docs.microsoft.com/en-us/dotnet/framework/data/adonet/ef/overview). There are several main benefits when using the __EntityDataSource__      	component for connecting to an __Entity Data Model__:
 
 * __Dedicated design-time support:__ the __EntityDataSource__ component has its own set of design-time editors,
 	tool windows, and a configuration wizard. In addition to this, __EntityDataSource__ adds support for entity schema
@@ -52,13 +49,12 @@ The __EntityDataSource__ component enables data items to connect to an [ADO.NET 
 
 
 
->note In order to use the [Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/overview%}) and [Report Wizard]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/report-wizards/band-report-wizard/overview%})          the Entity Data Model should be located in a separate class library. The connectionString to the database should be copied to the config file of the report class          library for the [Data Explorer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-explorer%}) and Preview to work.        
+>note In order to use the [Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/overview%}) and [Report Wizard]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/report-wizards/band-report-wizard/overview%})           the Entity Data Model should be located in a separate class library. The connectionString to the database should be copied to the config file of the report class           library for the [Data Explorer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-explorer%}) and Preview to work.         
 
 
 ## Supported developer platforms
 
-* .NET Framework 4.0 and above
-            
+* .NET Framework 4.0 and above             
 
 # See Also
 

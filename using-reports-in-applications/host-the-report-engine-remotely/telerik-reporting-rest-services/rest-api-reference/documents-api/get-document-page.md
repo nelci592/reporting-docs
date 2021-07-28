@@ -47,8 +47,7 @@ __Path parameters__
 
 __Response Body__
 
-[PageInfo]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/json-entities/pageinfo%}) - a single page content.
-        
+[PageInfo]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/json-entities/pageinfo%}) - a single page content.         
 
 ## Sample
 

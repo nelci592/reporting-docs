@@ -44,7 +44,7 @@ The following list describes the prerequisites for this tutorial:
 >tip All paths and url links in the described steps must be adapted according             to your project setup.           
 
 
-#Steps:
+###Steps:
 
 1. Create new Angular application using the [Angular CLI](https://cli.angular.io/) tutorial.                 
 

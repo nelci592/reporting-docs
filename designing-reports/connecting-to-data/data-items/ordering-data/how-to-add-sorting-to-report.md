@@ -12,30 +12,23 @@ position: 1
 
 
 
-To define a sorting for the __Report__ item use the following steps:
-    	Adding sorting to Report using Report Designer
+To define a sorting for the __Report__ item use the following steps:     	Adding sorting to Report using Report Designer
 
 
 
-1. Click the Report selector button located in the upper left hand
-            of the [Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/overview%}).
-            This makes the report active in the Properties window.
-  
+1. Click the Report selector button located in the upper left hand             of the [Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/overview%}).             This makes the report active in the Properties window.   
 
 1. Click the Sorting ellipsis.
 
 1. 
 
-For each sort expression, follow these steps:       
-              
+For each sort expression, follow these steps:                      
 
 1. Click New.
 
 1. Type or select an expression by which to sort the data.
 
-1. From the Direction column drop-down list, choose the sort direction 
-               for each expression. ASC sorts the expression in ascending order. DESC sorts 
-               the expression in descending order.
+1. From the Direction column drop-down list, choose the sort direction                 for each expression. ASC sorts the expression in ascending order. DESC sorts                 the expression in descending order.
 
 1. Click OK.Adding sorting to Report Group using Report Designer
 

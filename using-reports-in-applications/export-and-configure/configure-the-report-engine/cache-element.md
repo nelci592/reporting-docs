@@ -12,9 +12,7 @@ position: 2
 
 
 
-The Cache element specifies the configuration settings for the cache management system which is utilized by
-        the viewers to store and cache rendered pages and resources.
-      
+The Cache element specifies the configuration settings for the cache management system which is utilized by         the viewers to store and cache rendered pages and resources.       
 
 ## Attributes and Elements
 
@@ -67,7 +65,6 @@ XML-based configuration file:
 
 	
 ````xml
-
 							<configuration>
 								…
 								<Telerik.Reporting>
@@ -82,8 +79,7 @@ XML-based configuration file:
 									</cache>
 								</Telerik.Reporting>
 								…
-							</configuration> 
-							
+							</configuration>
 ````
 
 
@@ -92,7 +88,6 @@ JSON-based configuration file:
 
 	
 ````js
-
   "telerikReporting": {
     "cache": {
       "provider": "File",
@@ -109,7 +104,6 @@ JSON-based configuration file:
       ]
     }
   }
-							
 ````
 
 

@@ -12,21 +12,17 @@ position: 4
 
 
 
-Defines a collection of assembly references that are used from Reporting Engine during processing stage to
-        resolve names of user functions and user aggregate functions and also the types used by ObjectDataSource component.
-      
+Defines a collection of assembly references that are used from Reporting Engine during processing stage to         resolve names of user functions and user aggregate functions and also the types used by ObjectDataSource component.       
 
 XML-based configuration file:
 
 	
 ````xml
-
     	<assemblyReferences>
         	<add />
         	<clear />
         	<remove />
 		</assemblyReferences>
-		
 ````
 
 
@@ -35,7 +31,6 @@ JSON-based configuration file:
 
 	
 ````js
-
     "assemblyReferences": [
     ],
 ````
@@ -59,18 +54,12 @@ Attributes|None|
 
 ## Example
 
-The following code example demonstrates how to configure the reporting engine to use MyUserFunctionsAssembly
-          assembly as source for user functions. In this example it would also search for assemblies in MyDir and
-          SubDir application base subdirectories as we have explicitly instructed that via the ```<probing>``` Element.
-          This is not mandatory, and when not specified, it would search in the application base, which is the root
-          location where the application is being executed.
-        
+The following code example demonstrates how to configure the reporting engine to use MyUserFunctionsAssembly           assembly as source for user functions. In this example it would also search for assemblies in MyDir and           SubDir application base subdirectories as we have explicitly instructed that via the ```<probing>``` Element.           This is not mandatory, and when not specified, it would search in the application base, which is the root           location where the application is being executed.         
 
 XML-based configuration file:
 
 	
 ````xml
-
 <?xml version="1.0"?>
 <configuration>
     <configSections>
@@ -88,7 +77,6 @@ XML-based configuration file:
  	  </Telerik.Reporting>
    ...
 </configuration>
-  			
 ````
 
 
@@ -97,7 +85,6 @@ JSON-based configuration file:
 
 	
 ````js
-
           "telerikReporting": {
             "assemblyReferences": [
                 {
@@ -108,12 +95,11 @@ JSON-based configuration file:
                 }
               ]
           }
-    
 ````
 
 
 
->important When adding the `Telerik.Reporting` section manually, do not forget to register it in `configSections`            element of configuration file. Failing to do so will result in a            [ConfigurationErrorsException](https://msdn.microsoft.com/en-us/library/system.configuration.configurationerrorsexception(v=vs.110).aspx)            with following text:  *Configuration system failed to initialize* .          
+>important When adding the `Telerik.Reporting` section manually, do not forget to register it in `configSections`             element of configuration file. Failing to do so will result in a             [ConfigurationErrorsException](https://msdn.microsoft.com/en-us/library/system.configuration.configurationerrorsexception(v=vs.110).aspx)             with following text:  *Configuration system failed to initialize* .           
 
 
 # See Also

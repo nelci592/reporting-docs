@@ -12,8 +12,7 @@ position: 0
 
 
 
-Bookmark node representing a node in a document map.
-      
+Bookmark node representing a node in a document map.       
 
 ## 
 

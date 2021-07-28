@@ -64,19 +64,19 @@ Steps:
 
 	
     ````powershell
-    npm install jquery
-				
-    ````
+npm install jquery
+
+````
 
 
 
 1. Add a reference to jQuery in the scripts array of the .angular-cli.json (as of Angular 6 the file is renamed to angular.json):
 
 	
-        ````JSON
-        "scripts": [ "../node_modules/jquery/dist/jquery.js" ]
-				
-        ````
+    ````JSON
+    "scripts": [ "../node_modules/jquery/dist/jquery.js" ]
+			
+    ````
 
 
 
@@ -84,10 +84,9 @@ Steps:
                 
 
 	
-        ````powershell
-        npm install @progress/telerik-angular-report-viewer
-				
-        ````
+    ````powershell
+    npm install @progress/telerik-angular-report-viewer
+			
 
 
 
@@ -105,8 +104,8 @@ npm login --registry=https://registry.npmjs.org --scope=@progress
                 
 
 	
-        ````TypeScript
-        import { TelerikReportingModule } from '@progress/telerik-angular-report-viewer';
+    ````TypeScript
+    import { TelerikReportingModule } from '@progress/telerik-angular-report-viewer';
 ...
 imports: [TelerikReportingModule]
 				
@@ -117,8 +116,8 @@ imports: [TelerikReportingModule]
 1. Add the desired report viewer container style using a property of the AppComponent class:
 
 	
-        ````TypeScript
-        export class AppComponent {
+    ````TypeScript
+    export class AppComponent {
   viewerContainerStyle = {
     position: 'relative',
     width: '1000px',

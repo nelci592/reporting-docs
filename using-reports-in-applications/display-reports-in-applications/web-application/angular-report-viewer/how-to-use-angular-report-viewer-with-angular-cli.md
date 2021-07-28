@@ -64,7 +64,8 @@ Steps:
 
 	
     ````powershell
-npm install jquery````
+npm install jquery
+````
 
 
 
@@ -90,8 +91,8 @@ npm install @progress/telerik-angular-report-viewer
 >tip If you receive a  *403 Forbidden Error* , you need to register and login at                    [npmjs.com](https://www.npmjs.com/)before performing this step.                  
 
 	
-    ````powershell
-    npm login --registry=https://registry.npmjs.org --scope=@progress 				
+````powershell
+npm login --registry=https://registry.npmjs.org --scope=@progress 				
 ````
 
 
@@ -105,7 +106,6 @@ npm install @progress/telerik-angular-report-viewer
 import { TelerikReportingModule } from '@progress/telerik-angular-report-viewer';
 ...
 imports: [TelerikReportingModule]
-				
 ````
 
 
@@ -121,7 +121,8 @@ imports: [TelerikReportingModule]
     height: '800px',
     ['font-family']: 'ms sans serif'
   };
-}````
+}
+````
 
 
 
@@ -139,7 +140,8 @@ imports: [TelerikReportingModule]
     [viewMode]="'INTERACTIVE'"
     [scaleMode]="'SPECIFIC'"
     [scale]="1.0">
-</tr-viewer>````
+</tr-viewer>
+````
 
 For all available report viewer options refer to [Options]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/api-reference/options%}).
                 
@@ -176,7 +178,6 @@ import { Component, ViewEncapsulation } from '@angular/core';
 	
     ````powershell
 ng serve
-				
 ````
 
 

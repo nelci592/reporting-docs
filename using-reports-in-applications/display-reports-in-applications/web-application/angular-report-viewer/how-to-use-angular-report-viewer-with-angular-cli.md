@@ -88,9 +88,11 @@ npm install @progress/telerik-angular-report-viewer
 
 
     >tip If you receive a  *403 Forbidden Error* , you need to register and login at                    [npmjs.com](https://www.npmjs.com/)before performing this step.                  
-    
-        npm login --registry=https://registry.npmjs.org --scope=@progress
 
+	
+````powershell
+npm login --registry=https://registry.npmjs.org --scope=@progress
+````
 
 
 
@@ -153,8 +155,7 @@ For all available report viewer options refer to [Options]({%slug telerikreporti
 
 
 
-    >tip To get the Sass-based Kendo UI themes, you can use either the pre-build CSS files or the NPM packages ([Getting the Sass-Based Themes](http://docs.telerik.com/kendo-ui/styles-and-layout/sass-themes#getting-the-themes)).                  
-    If you use the __styleUrls__ attribute to reference the CSS, it is required to set
+    >tip To get the Sass-based Kendo UI themes, you can use either the pre-build CSS files or the NPM packages ([Getting the Sass-Based Themes](http://docs.telerik.com/kendo-ui/styles-and-layout/sass-themes#getting-the-themes)).                  If you use the __styleUrls__ attribute to reference the CSS, it is required to set
                   the view encapsulation to __None__:
                 
 

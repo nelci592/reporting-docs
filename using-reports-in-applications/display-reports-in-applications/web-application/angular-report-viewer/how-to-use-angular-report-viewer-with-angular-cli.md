@@ -64,9 +64,7 @@ Steps:
 
 	
     ````powershell
-npm install jquery
-
-````
+npm install jquery````
 
 
 
@@ -86,7 +84,7 @@ npm install jquery
 	
     ````powershell
     npm install @progress/telerik-angular-report-viewer
-			
+````		
 
 
 

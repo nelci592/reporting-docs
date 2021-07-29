@@ -83,6 +83,12 @@ Implement this change for all occurrencies above
 
 
 
+Some article titles contain '/' that is interpreted as new subfolder and their names need to be updated manually:
+	D:\Work\reporting-docs\designing-reports\adding-interactivity-to-reports\actions\sorting-action\sorting-multiple-items\groups.md
+	D:\Work\reporting-docs\designing-reports\adding-interactivity-to-reports\actions\how-to\how-to-add-a-drilldown\toggle-visibility-action.md
+	D:\Work\reporting-docs\designing-reports\adding-interactivity-to-reports\actions\how-to\how-to-add-a-drillthrough\navigate-to-report-action.md
+
+
 
 
 Merge TOC of documentation and API reference - D:\Work\reporting-docs\_assetsApi\api\index.md - change this file accordingly

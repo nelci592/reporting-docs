@@ -105,47 +105,175 @@ navigation:
     designing-reports/report-structure/graph/how-to:
         position: 1200
         title: "How To"
-
-
-
-
     designing-reports/report-structure/map:
         position: 1200
         title: "Map"
+    designing-reports/report-structure/map/structure:
+        position: 1000
+        title: "Structure"    
+    designing-reports/report-structure/map/formatting-a-map:
+        position: 1100
+        title: "Formatting a Map"
+    designing-reports/report-structure/map/how-to:
+        position: 1200
+        title: "How To"
     designing-reports/report-structure/htmltextbox:
         position: 1300
         title: "HtmlTextBox"
     designing-reports/report-structure/barcode:
         position: 1400
         title: "Barcode"
+    designing-reports/report-structure/barcode/barcode-types:
+        position: 1500
+        title: "Barcode Types"    
+    designing-reports/report-structure/barcode/barcode-types/2d-barcodes:
+        position: 1500
+        title: "2D Barcodes"     
+    designing-reports/report-structure/barcode/barcode-types/2d-barcodes/qr-code:
+        position: 1000
+        title: "QR Code"     
+    designing-reports/report-structure/barcode/barcode-types/2d-barcodes/swiss-qr-code:
+        position: 1100
+        title: "Swiss QR Code"
+    designing-reports/report-structure/barcode/barcode-types/2d-barcodes/pdf417:
+        position: 1200
+        title: "PDF417"
+    designing-reports/report-structure/barcode/barcode-types/2d-barcodes/data-matrix:
+        position: 1300
+        title: "Data Matrix"
     designing-reports/report-structure/how-to:
         position: 1500
         title: "How To"
-        
     designing-reports/connecting-to-data:
         position: 1300
         title: "Connecting to Data"
+    designing-reports/connecting-to-data/data-source-components:
+        position: 1000
+        title: "Data Source Components"
+    designing-reports/connecting-to-data/data-source-components/sqldatasource-component:
+        position: 1000
+        title: "SqlDataSource Component"
+    designing-reports/connecting-to-data/data-source-components/csvdatasource-component:
+        position: 1100
+        title: "CsvDataSource Component"
+    designing-reports/connecting-to-data/data-source-components/webservicedatasource-component:
+        position: 1200
+        title: "WebServiceDataSource Component"
+    designing-reports/connecting-to-data/data-source-components/objectdatasource-component:
+        position: 1300
+        title: "ObjectDataSource Component"
+    designing-reports/connecting-to-data/data-source-components/objectdatasource-component/how-to:
+        position: 1500
+        title: "How To"
+    designing-reports/connecting-to-data/data-source-components/entitydatasource-component:
+        position: 1400
+        title: "EntityDataSource Component"
+    designing-reports/connecting-to-data/data-source-components/openaccessdatasource-component:
+        position: 1500
+        title: "OpenAccessDataSource Component"
+    designing-reports/connecting-to-data/data-source-components/cubedatasource-component:
+        position: 1600
+        title: "CubeDataSource Component"
+    designing-reports/connecting-to-data/data-source-components/openclientdatasource-component:
+        position: 1700
+        title: "OpenClientDataSource Component"
+    designing-reports/connecting-to-data/data-items:
+        position: 1100
+        title: "Data Items"
+    designing-reports/connecting-to-data/data-items/filtering-data:
+        position: 1000
+        title: "Filtering Data"    
+    designing-reports/connecting-to-data/data-items/ordering-data:
+        position: 1100
+        title: "Ordering Data" 
+    designing-reports/connecting-to-data/data-items/grouping-data-:
+        position: 1200
+        title: "Grouping Data" 
+    designing-reports/connecting-to-data/expressions:
+        position: 1200
+        title: "Expressions"
+    designing-reports/connecting-to-data/expressions/using-expressions:
+        position: 1000
+        title: "Using Expressions"
+    designing-reports/connecting-to-data/expressions/expressions-reference:
+        position: 1100
+        title: "Expressions Reference"
+    designing-reports/connecting-to-data/expressions/expressions-reference/functions:
+        position: 1500
+        title: "Functions"
+    designing-reports/connecting-to-data/expressions/extending-expressions:
+        position: 1200
+        title: "Extending Expressions"
+    designing-reports/connecting-to-data/report-parameters:
+        position: 1300
+        title: "Report Parameters"
+    designing-reports/connecting-to-data/troubleshooting:
+        position: 1400
+        title: "Troubleshooting"
     designing-reports/adding-interactivity-to-reports:
         position: 1400
-        title: "Adding Interactivity to Reports"    
+        title: "Adding Interactivity to Reports"
+    designing-reports/adding-interactivity-to-reports/bookmarks:
+        position: 1000
+        title: "Bookmarks"
+    designing-reports/adding-interactivity-to-reports/actions:
+        position: 1100
+        title: "Actions"
+    designing-reports/adding-interactivity-to-reports/actions/sorting-action:
+        position: 1100
+        title: "Sorting Action"
+                # There is SLASH \ in the article names
+                # D:\Work\reporting-docs\designing-reports\adding-interactivity-to-reports\actions\sorting-action\sorting-multiple-items\groups.md
+    designing-reports/adding-interactivity-to-reports/actions/how-to:
+        position: 1200
+        title: "How To"
+                # D:\Work\reporting-docs\designing-reports\adding-interactivity-to-reports\actions\how-to\how-to-add-a-drilldown\toggle-visibility-action.md
+                # D:\Work\reporting-docs\designing-reports\adding-interactivity-to-reports\actions\how-to\how-to-add-a-drillthrough\navigate-to-report-action.md
+    designing-reports/adding-interactivity-to-reports/document-map:
+        position: 1200
+        title: "Document Map"
+    designing-reports/adding-interactivity-to-reports/table-of-contents:
+        position: 1300
+        title: "Table of Contents"     
     designing-reports/styling-reports:
         position: 1500
         title: "Styling Reports"  
     designing-reports/rendering-and-paging:
         position: 1600
-        title: "Rendering and Paging" 
+        title: "Rendering and Paging"
+    designing-reports/rendering-and-paging/design-considerations-for-report-rendering:
+        position: 1500
+        title: "Design Considerations for Report Rendering"
     designing-reports/report-structure:
         position: 1700
         title: "Report Sources" 
     designing-reports/report-book:
         position: 1800
         title: "Report Book" 
-
+        
+        
         
         
     using-reports-in-applications:
         position: 4100
-        title: "Using reports in applications"   
+        title: "Using reports in applications"
+    using-reports-in-applications/display-reports-in-applications:
+        position: 1000
+        title: "Display Reports in Applications"
+    using-reports-in-applications/host-the-report-engine-remotely:
+        position: 1100
+        title: "Host the Report Engine Remotely"
+    using-reports-in-applications/call-the-report-engine-via-apis:
+        position: 1200
+        title: "Call the Report Engine via APIs"
+    using-reports-in-applications/export-and-configure:
+        position: 1300
+        title: "Export and Configurate"
+    using-reports-in-applications/program-the-report-definition:
+        position: 1400
+        title: "Program the Report Definition"
+
+        
     troubleshooting:
         position: 5100
         title: "Troubleshooting"

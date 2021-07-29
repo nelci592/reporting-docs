@@ -244,7 +244,7 @@ navigation:
     designing-reports/rendering-and-paging/design-considerations-for-report-rendering:
         position: 1500
         title: "Design Considerations for Report Rendering"
-    designing-reports/report-structure:
+    designing-reports/report-sources:
         position: 1700
         title: "Report Sources" 
     designing-reports/report-book:

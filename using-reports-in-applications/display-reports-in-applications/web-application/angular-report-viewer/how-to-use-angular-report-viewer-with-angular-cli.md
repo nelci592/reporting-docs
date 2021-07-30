@@ -29,7 +29,7 @@ The following list describes the prerequisites for this tutorial:
 * Entry with the default connection string used by Telerik Reporting sample reports in the __web.config__ file               of the project hosting the Reporting REST service:             
 
 	
-````xml
+    ````xml
 <connectionStrings>
 	 <add name="Telerik.Reporting.Examples.CSharp.Properties.Settings.TelerikConnectionString"
 	            connectionString="Data Source=(local);Initial Catalog=AdventureWorks;Integrated Security=SSPI"
@@ -137,7 +137,8 @@ export class AppComponent {
 	
     ````HTML
 <!-- The required Less-based styles -->                  
-<link href="https://kendo.cdn.telerik.com/
+<link href="https://kendo.cdn.telerik.com/ {{site.kendosubsetversion}} /styles/kendo.common.min.css" rel="stylesheet" />
+<link href="https://kendo.cdn.telerik.com/ {{site.kendosubsetversion}} /styles/kendo.blueopal.min.css" rel="stylesheet" />
 ````
 
 

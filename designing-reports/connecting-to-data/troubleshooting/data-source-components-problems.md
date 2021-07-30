@@ -55,7 +55,7 @@ The EntityDataSource component wraps EF data models, where in design-time the Re
 * __"Error Message: GenericArguments[0], 'Context' on '[TContext]' violates the constraint of type 'TContext'." on design preview of report__The error can be seen in Visual Studio only. Changes in the way Visual Studio works causes the same EF data model to be loaded multiple               times on build and on configuring the EntityDatasource component, where the assembly gets locked.               Thus types exist more than once in the VS Report Designer and cause the error.             The common solutions for the problem are to restart Visual Studio to unlock the assemblies or use a project with a Viewer control               to preview the changes in the report.             The recommended approach is to use the [Standalone Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview%}) tool               for desiging reports. To load the assembly with the EF data model in the Standalone Report Designer, you need to extend its               configuration - [Extending Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/configuration/extending-report-designer%}). For example:             
 
 	
-````XML
+    ````XML
 <Telerik.Reporting>
    <AssemblyReferences>
        <add name="MyEFModelCustomAssembly" version="1.0.0.0" culture="neutral" publicKeyToken="null" />

@@ -27,7 +27,7 @@ The master report will contain only a simple listing of product categories.
 1. Enter the SQL statement below and click the __Next__ button.             
 
 	
-````SQL
+    ````SQL
 			SELECT ProductCategoryID, Name FROM Production.ProductCategory
 ````
 
@@ -46,7 +46,7 @@ The master report will contain only a simple listing of product categories.
 1. Enter the following SQL statement and Finish the DataSource wizard.
 
 	
-````SQL
+    ````SQL
 				SELECT 
 					P.Name,ProductID,ProductNumber,PC.ProductCategoryID
 				FROM 

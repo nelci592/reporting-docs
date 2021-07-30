@@ -28,7 +28,7 @@ The following walk through demonstrates how to create a Master-Detail report usi
 1. Setup the data connection to the AdventureWorks database, save it so it can be used later when creating               the master report and click Next. Enter the following SQL statement and Finish the DataSource wizard.             
 
 	
-````SQL
+    ````SQL
 				SELECT 
 					P.Name,ProductID,ProductNumber,PC.ProductCategoryID
 				FROM 
@@ -76,7 +76,7 @@ The master report will contain only a simple listing of product categories.
 1. Enter the SQL statement below and click the __Next__ button.             
 
 	
-````SQL
+    ````SQL
 			SELECT ProductCategoryID,Name FROM Production.ProductCategory
 ````
 

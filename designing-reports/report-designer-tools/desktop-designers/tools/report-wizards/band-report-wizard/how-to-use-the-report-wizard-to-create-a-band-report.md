@@ -46,7 +46,7 @@ To create a new report with this wizard:
 If you are using the [Standalone Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview%}) use the following select query and click Next:                 
 
 	
-````SQL
+    ````SQL
         SELECT Production.Product.Name, Production.Product.ProductNumber, Production.Product.ReorderPoint,
         Production.ProductPhoto.ThumbNailPhoto, Production.ProductInventory.Quantity
         FROM Production.Product

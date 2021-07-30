@@ -23,7 +23,7 @@ This tutorial shows how to use HTML5 ASP.NET Web Forms Report Viewer in ASP.NET 
 * Entry with the default connection string used by Telerik Reporting sample reports in the __web.config__ file               of the project hosting the Reporting REST service:             
 
 	
-````xml
+    ````xml
 <connectionStrings>
 	 <add name="Telerik.Reporting.Examples.CSharp.Properties.Settings.TelerikConnectionString"
 	            connectionString="Data Source=(local);Initial Catalog=AdventureWorks;Integrated Security=SSPI"
@@ -86,7 +86,46 @@ The following steps produce a view with settings similar to these of the local W
 	
     ````HTML
 <!-- the required Kendo styles -->                  
-<link href="https://kendo.cdn.telerik.com/
+<link href="https://kendo.cdn.telerik.com/ {{site.kendosubsetversion}} /styles/kendo.common.min.css" rel="stylesheet" />
+<link href="https://kendo.cdn.telerik.com/ {{site.kendosubsetversion}} /styles/kendo.blueopal.min.css" rel="stylesheet" />
+<!--If Kendo CDN is prefered here are the required Kendo widgets and bundles
+The minimum required widgets:
+<script src="https://kendo.cdn.telerik.com/ {{site.kendosubsetversion}} /js/kendo.core.min.js"></script>
+<script src="https://kendo.cdn.telerik.com/ {{site.kendosubsetversion}} /js/kendo.data.odata.min.js"></script>
+<script src="https://kendo.cdn.telerik.com/ {{site.kendosubsetversion}} /js/kendo.data.min.js"></script>
+<script src="https://kendo.cdn.telerik.com/ {{site.kendosubsetversion}} /js/kendo.userevents.min.js"></script>
+<script src="https://kendo.cdn.telerik.com/ {{site.kendosubsetversion}} /js/kendo.selectable.min.js"></script>
+<script src="https://kendo.cdn.telerik.com/ {{site.kendosubsetversion}} /js/kendo.calendar.min.js"></script>
+<script src="https://kendo.cdn.telerik.com/ {{site.kendosubsetversion}} /js/kendo.fx.min.js"></script>
+<script src="https://kendo.cdn.telerik.com/ {{site.kendosubsetversion}} /js/kendo.draganddrop.min.js"></script>
+<script src="https://kendo.cdn.telerik.com/ {{site.kendosubsetversion}} /js/kendo.mobile.scroller.min.js"></script>
+<script src="https://kendo.cdn.telerik.com/ {{site.kendosubsetversion}} /js/kendo.virtuallist.min.js"></script>
+<script src="https://kendo.cdn.telerik.com/ {{site.kendosubsetversion}} /js/kendo.popup.min.js"></script>
+<script src="https://kendo.cdn.telerik.com/ {{site.kendosubsetversion}} /js/kendo.list.min.js"></script>
+<script src="https://kendo.cdn.telerik.com/ {{site.kendosubsetversion}} /js/kendo.combobox.min.js"></script>
+<script src="https://kendo.cdn.telerik.com/ {{site.kendosubsetversion}} /js/kendo.datepicker.min.js"></script>
+<script src="https://kendo.cdn.telerik.com/ {{site.kendosubsetversion}} /js/kendo.resizable.min.js"></script>
+<script src="https://kendo.cdn.telerik.com/ {{site.kendosubsetversion}} /js/kendo.dropdownlist.min.js"></script>
+<script src="https://kendo.cdn.telerik.com/ {{site.kendosubsetversion}} /js/kendo.multiselect.min.js"></script>
+<script src="https://kendo.cdn.telerik.com/ {{site.kendosubsetversion}} /js/kendo.splitter.min.js"></script>
+<script src="https://kendo.cdn.telerik.com/ {{site.kendosubsetversion}} /js/kendo.window.min.js"></script>
+<script src="https://kendo.cdn.telerik.com/ {{site.kendosubsetversion}} /js/kendo.color.min.js"></script>
+<script src="https://kendo.cdn.telerik.com/ {{site.kendosubsetversion}} /js/kendo.slider.min.js"></script>
+<script src="https://kendo.cdn.telerik.com/ {{site.kendosubsetversion}} /js/kendo.button.min.js"></script>
+<script src="https://kendo.cdn.telerik.com/ {{site.kendosubsetversion}} /js/kendo.colorpicker.min.js"></script>
+<script src="https://kendo.cdn.telerik.com/ {{site.kendosubsetversion}} /js/kendo.editor.min.js"></script>
+<script src="https://kendo.cdn.telerik.com/ {{site.kendosubsetversion}} /js/kendo.listview.min.js"></script>
+<script src="https://kendo.cdn.telerik.com/ {{site.kendosubsetversion}} /js/kendo.menu.min.js"></script>
+<script src="https://kendo.cdn.telerik.com/ {{site.kendosubsetversion}} /js/kendo.panelbar.min.js"></script>
+<script src="https://kendo.cdn.telerik.com/ {{site.kendosubsetversion}} /js/kendo.tooltip.min.js"></script>
+<script src="https://kendo.cdn.telerik.com/ {{site.kendosubsetversion}} /js/kendo.treeview.min.js"></script>
+<script src="https://kendo.cdn.telerik.com/ {{site.kendosubsetversion}} /js/kendo.touch.min.js"></script>
+Widgets bundles:
+kendo.all.min.js can be used as well instead of kendo.web.min.js and kendo.mobile.min.js
+<script src="https://kendo.cdn.telerik.com/ {{site.kendosubsetversion}} /js/kendo.web.min.js"></script>
+kendo.mobile.min.js - optional, if gestures/touch support is required
+<script src="https://kendo.cdn.telerik.com/ {{site.kendosubsetversion}} /js/kendo.mobile.min.js"></script>
+-->
 ````
 
 
@@ -124,7 +163,38 @@ The following steps produce a view with settings similar to these of the local W
 <head runat="server">
     <title>Telerik HTML5 Web Forms Report Viewer Demo</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <link href="https://kendo.cdn.telerik.com/
+    <link href="https://kendo.cdn.telerik.com/ {{site.kendosubsetversion}} /styles/kendo.common.min.css" rel="stylesheet" />
+    <link href="https://kendo.cdn.telerik.com/ {{site.kendosubsetversion}} /styles/kendo.blueopal.min.css" rel="stylesheet" />
+    <style>
+        #reportViewer1
+        {
+            position: absolute;
+            left: 5px;
+            right: 5px;
+            top: 5px;
+            bottom: 5px;
+            overflow: hidden;
+            font-family: Verdana, Arial;
+        }
+    </style>
+</head>
+<body>
+    <form runat="server">
+        <telerik:ReportViewer
+            ID="reportViewer1"
+            ServiceUrl="/api/reports/"
+            Deferred="true"
+            runat="server">
+          <ReportSource Identifier="Product Catalog.trdp" IdentifierType="UriReportSource">
+                <Parameters>
+                    <telerik:Parameter Name="CultureID" Value="fr" />
+                </Parameters>
+          </ReportSource>
+        </telerik:ReportViewer>
+        <telerik:DeferredScripts runat="server"></telerik:DeferredScripts>
+    </form>
+</body>
+</html>
 ````
 
 

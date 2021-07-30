@@ -76,7 +76,7 @@ We will apply implicit styles for the Vista theme in our example project.
             
 
 	
-````XAML
+    ````XAML
      <Application x:Class="SilverlightApplication1.App"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"

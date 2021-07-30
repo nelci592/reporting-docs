@@ -29,7 +29,7 @@ This topic outlines the required steps that need to be taken to deploy the web 
 				
 
 	
-````xml
+    ````xml
 					<SafeControl Assembly="Telerik.Reporting, Version=x.x.x.xxxx, Culture=neutral, PublicKeyToken=a9d7983dfcc261be" Namespace="Telerik.Reporting" TypeName="*" Safe="True" />
 					<SafeControl Assembly="Telerik.ReportViewer.WebForms, Version=x.x.x.xxxx, Culture=neutral, PublicKeyToken=a9d7983dfcc261be" Namespace="Telerik.ReportViewer" TypeName="*" Safe="True" />
 ````
@@ -40,14 +40,14 @@ This topic outlines the required steps that need to be taken to deploy the web 
 				
 
 	
-````XML
+    ````XML
 					<add path="Telerik.ReportViewer.axd" type="Telerik.ReportViewer.WebForms.HttpHandler, Telerik.ReportViewer.WebForms, Version=x.x.x.x, Culture=neutral, PublicKeyToken=a9d7983dfcc261be" verb="*" validate="true" />
 ````
 
 When the application is hosted on IIS 7+, the handler of the report viewer should be registered in the 				__```<system.webServer>```\<handlers>__ section as well: 				
 
 	
-````XML
+    ````XML
                  <add name="Telerik.ReportViewer.axd_*" path="Telerik.ReportViewer.axd" verb="*" type="Telerik.ReportViewer.WebForms.HttpHandler, Telerik.ReportViewer.WebForms, Version=x.x.x.x, Culture=neutral, PublicKeyToken=a9d7983dfcc261be" preCondition="integratedMode" />
 ````
 
@@ -57,7 +57,7 @@ When the application is hosted on IIS 7+, the handler of the report viewer shoul
 				
 
 	
-````ASP.NET
+    ````ASP.NET
 				<%@ Register TagPrefix="telerik" Namespace="Telerik.ReportViewer.WebForms"
 						Assembly="Telerik.ReportViewer.WebForms, Version=x.x.x.xxxx, Culture=neutral, PublicKeyToken=a9d7983dfcc261be" %>
 ````

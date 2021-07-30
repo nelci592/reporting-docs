@@ -39,7 +39,7 @@ Requirements for using __Telerik Reporting REST WebAPI service__ in an applicati
 * [                       Newtonsoft.Json.dll                     ](                       http://json.codeplex.com/                     )                   9.0.0.0 (latest available via NuGet is recommended)                 You can use newer WebAPI version by updating the corresponding (Microsoft.AspNet.WebApi.WebHost and Microsoft.AspNet.WebApi.SelfHost) NuGet packages               and applying the following bindingRedirects to your application configuration file. Just replace 5.1.0.0 with the exact version:             
 
 	
-````xml
+    ````xml
 <?xml version="1.0" encoding="utf-8" ?>
 <configuration>
   <runtime>

@@ -33,7 +33,7 @@ In case you need to host it locally, follow the article [How to Host Reports Ser
 1. Make sure that the app configuration inside the __Configure__ method of the __Startup.cs__               can serve static files:             
 
 	
-````c#
+    ````c#
 app.UseStaticFiles();
 ````
 
@@ -42,7 +42,7 @@ app.UseStaticFiles();
 1. Add an HTML Page for the HTML5 Report Viewer by right-clicking on *wwwroot* and __Add > New Item... > HTML Page__.               Name the file __index.html__ and add the HTML5 Report Viewer's initialization. For a detailed explanation, check the HTML5 Report Viewer               [Manual Setup]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/manual-setup%}) help article.               The required references to jQuery and Telerik Kendo UI CSS and JS files are listed in the example below.               By default, the necessary Report Viewer scripts and styles are served by the REST Service.             The complete report viewer page should look like this:
 
 	
-````HTML
+    ````HTML
 <!DOCTYPE html> 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head> 
@@ -50,7 +50,44 @@ app.UseStaticFiles();
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
-  <link href="https://kendo.cdn.telerik.com/
+  <link href="https://kendo.cdn.telerik.com/ {{site.kendosubsetversion}} /styles/kendo.common.min.css" rel="stylesheet" /> 
+  <link href="https://kendo.cdn.telerik.com/ {{site.kendosubsetversion}} /styles/kendo.blueopal.min.css" rel="stylesheet" /> 
+  <script src="/api/reports/resources/js/telerikReportViewer"></script>
+  <style> 
+      #reportViewer1 { 
+          position: absolute; 
+          left: 5px; 
+          right: 5px; 
+          top: 50px; 
+          bottom: 5px; 
+          overflow: hidden; 
+          font-family: Verdana, Arial; 
+      } 
+  </style> 
+</head> 
+<body> 
+  <div id="reportViewer1"> 
+      loading... 
+  </div> 
+  <script> 
+      $(document).ready(function () { 
+          $("#reportViewer1") 
+              .telerik_ReportViewer({ 
+                  serviceUrl: "api/reports/", 
+                  reportSource: { 
+                      report: "Barcodes Report.trdp", 
+                      parameters: {} 
+                  }, 
+                  viewMode: telerikReportViewer.ViewModes.INTERACTIVE, 
+                  scaleMode: telerikReportViewer.ScaleModes.SPECIFIC, 
+                  scale: 1.0,
+                  enableAccessibility: false,
+                  sendEmail: { enabled: true }
+              }); 
+      }); 
+  </script> 
+</body> 
+</html>
 ````
 
 

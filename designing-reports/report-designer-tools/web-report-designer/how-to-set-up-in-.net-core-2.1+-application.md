@@ -47,7 +47,7 @@ If you don't use NuGet packages, along with the above assemblies, you need to ad
 1. Inject the                [IConfiguration](https://docs.microsoft.com/en-us/dotnet/api/microsoft.extensions.configuration.iconfiguration?view=dotnet-plat-ext-5.0)                 and                  [IHostingEnvironment](https://docs.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.hosting.ihostingenvironment?view=aspnetcore-2.1)            in the constructor of the Startup class. We will need them later to get the configuration settings and the relative paths:             
 
 	
-````c#
+    ````c#
               public Startup(IConfiguration configuration, IHostingEnvironment hostingEnvironment)
               {
                   Configuration = configuration;
@@ -62,7 +62,7 @@ If you don't use NuGet packages, along with the above assemblies, you need to ad
 1. The __ConfigureServices__ method inside the __Startup.cs__ in the project               should be modified in order to enable the Web Report Designer Service functionality. Make sure the application               calls the following methods that add MVC functionality and prevent from potentially breaking behavior changes between ASP.NET Core versions:             
 
 	
-````c#
+    ````c#
 services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
 ````
 
@@ -71,7 +71,7 @@ services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
 1. Make sure the configuration inside the __Configure__ method of the               __Startup.cs__ is set up for MVC by adding the following line:             
 
 	
-````c#
+    ````c#
 app.UseMvc();
 ````
 
@@ -80,7 +80,7 @@ app.UseMvc();
 1. Assure also that the application configuration inside the __Configure__ method can serve static files:             
 
 	
-````c#
+    ````c#
 app.UseStaticFiles();
 ````
 
@@ -106,7 +106,7 @@ To activate JSON file configuration with a different name, for example, __report
 1. Add a new __ResolveSpecificReportingConfiguration__ class as a separate file or in the               Startup.cs file (optional)             
 
 	
-````C#
+    ````C#
         static IConfiguration ResolveSpecificReportingConfiguration(IHostingEnvironment environment)
         {
             // If a specific configuration needs to be passed to the reporting engine, add it through a new IConfiguration instance.
@@ -122,7 +122,7 @@ To activate JSON file configuration with a different name, for example, __report
 1. Add the required services in the __ConfigureServices__ method. Here is how it may look finally:             
 
 	
-````c#
+    ````c#
          public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
@@ -167,7 +167,7 @@ The REST service works as a backend and is responsible for storage operations li
 1. Inherit the [ReportDesignerControllerBase](/reporting/api/Telerik.Reporting.Services.WebApi.ReportDesignerControllerBase)               type and inject the required configuration settings in the constructor. Along with the ReportServiceConfiguration               there is another configuration instance named ReportDesignerServiceConfiguration, which will initialize the               definition storage. This is the class responsible for opening, saving, etc. the report definitions. This is               how a basic implementation of the controller should look like:             
 
 	
-````c#
+    ````c#
 namespace CSharp.AspNetCoreDemo.Controllers
 {
     using Microsoft.AspNetCore.Mvc;
@@ -190,7 +190,7 @@ namespace CSharp.AspNetCoreDemo.Controllers
 1. To ensure that the service operates, run the application and navigate to               URL __{applicationRoot}/api/reportdesigner/cultureContext__.               It should return a JSON representing the separators determined by the current culture, for example:             
 
 	
-````js
+    ````js
               {"decimalSeparator":".","listSeparator":","}
 ````
 
@@ -201,7 +201,7 @@ namespace CSharp.AspNetCoreDemo.Controllers
 1. Add a new HTML Page for the Web Report Designer by right-clicking on *wwwroot*               and __Add > New Item... > HTML Page__. Name the file, for example __webReportDesigner.html__.               Add the required references to load the font, jQuery, Telerik Kendo UI libraries,               telerikReportViewer and webReportDesigner scripts listed in the example below. Finally,               add the initialization of the telerik_WebReportDesigner widget. Note that the Web Report Designer container has a minimum width of 1200px.             The complete report viewer page should look like this:
 
 	
-````HTML
+    ````HTML
 <!DOCTYPE html> 
 <html xmlns="http://www.w3.org/1999/xhtml"> 
 <head> 
@@ -215,7 +215,23 @@ namespace CSharp.AspNetCoreDemo.Controllers
         loading... 
     </div> 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
-    <script src="https://kendo.cdn.telerik.com/
+    <script src="https://kendo.cdn.telerik.com/ {{site.kendosubsetversion}} /js/kendo.all.min.js"></script> 
+    <script src="api/reportdesigner/resources/js/telerikReportViewer"></script> 
+    <script src="api/reportdesigner/designerresources/js/webReportDesigner"></script> 
+    <script type="text/javascript"> 
+        $(document).ready(function () { 
+            $("#webReportDesigner").telerik_WebReportDesigner({ 
+                persistSession: false, 
+                toolboxArea: { 
+                    layout: "list" 
+                }, 
+                serviceUrl: "api/reportdesigner/", 
+                report: "Product Catalog.trdp" 
+            }).data("telerik_WebDesigner"); 
+        }); 
+    </script> 
+  </body> 
+</html>
 ````
 
 

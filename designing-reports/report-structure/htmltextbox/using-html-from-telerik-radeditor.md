@@ -27,7 +27,7 @@ Here are the exact steps taken:
 1. Use the markup below for your ToolsFile.xml file
 
 	
-````xml
+    ````xml
 <?xml version="1.0" encoding="utf-8" ?>
 <root>
   <modules>
@@ -104,7 +104,7 @@ Here are the exact steps taken:
 1. Use the following custom content filter, which will remove unsupported __HTML__ tags. Supported                             tags are: FONT, STRONG, B, EM, I, U, A, OL, UL, SUB, SUP, LI, DIV, SPAN, P, BR, CENTER.                         
 
 	
-````ASP.NET
+    ````ASP.NET
     <telerik:RadEditor ID="RadEditor1" StripFormattingOptions="AllExceptNewLines" ToolsFile="~/HtmlTextBoxToolsFile.xml" OnClientLoad="editorLoaded" runat="server">
     </telerik:RadEditor>
 ````
@@ -112,7 +112,7 @@ Here are the exact steps taken:
 
 
 	
-````JavaScript
+    ````JavaScript
 <script type="text/javascript">
   	ReportingFilter = function()
 {

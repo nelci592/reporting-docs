@@ -20,7 +20,7 @@ To create cascading report parameters with applied filtering on report level fol
 		        
 
 	
-````SQL
+    ````SQL
 				SELECT
 					Production.Product.ProductNumber,
 					Production.Product.Name AS ProductName,
@@ -48,7 +48,7 @@ To create cascading report parameters with applied filtering on report level fol
 		        
 
 	
-````SQL
+    ````SQL
 				SELECT
 					ProductCategoryID,
 					Name AS CategoryName
@@ -80,7 +80,7 @@ To create cascading report parameters with applied filtering on report level fol
 		        
 
 	
-````SQL
+    ````SQL
 				SELECT
 					ProductCategoryID,
 					ProductSubcategoryID,

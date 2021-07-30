@@ -64,7 +64,9 @@ The viewer is using a special Kendo subset that contains only the required widge
 	
 ````xml
                 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-                <script src="https://kendo.cdn.telerik.com/
+                <script src="https://kendo.cdn.telerik.com/ {{site.kendosubsetversion}} /js/kendo.all.min.js"></script>
+                <link href="https://kendo.cdn.telerik.com/ {{site.kendosubsetversion}} /styles/kendo.common.min.css" rel="stylesheet" id="commonCss" />
+                <link href="https://kendo.cdn.telerik.com/ {{site.kendosubsetversion}} /styles/kendo.blueopal.min.css" rel="stylesheet" id="skinCss" />
 ````
 
 

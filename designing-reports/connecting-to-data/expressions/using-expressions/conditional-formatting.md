@@ -54,7 +54,7 @@ To make styles conditional, use an expression instead of a static value 			for t
 1. To use Bindings, we need to implement a helper User Function:
 
 	
-````C#
+    ````C#
                             public static Color ColorFromName(string colorName)
                             {
                                 if (!string.IsNullOrEmpty(colorName))
@@ -68,7 +68,7 @@ To make styles conditional, use an expression instead of a static value 			for t
 
 
 	
-````VB.NET
+    ````VB.NET
                             Public Shared Function ColorFromName(ByVal colorName As String) As Color
                                 If Not String.IsNullOrEmpty(colorName) Then
                                     Return Color.FromName(colorName)

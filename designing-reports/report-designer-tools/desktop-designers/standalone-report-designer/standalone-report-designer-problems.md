@@ -23,7 +23,7 @@ When the Standalone Report Designer crashes while working with Telerik Reporting
 * Provide us with a log file containing detailed information about the Standalone Report Designer crash.               To create the log file, turn on tracing for the Standalone Report Designer and perform the actions which caused the crash.               Below is the XML you need to add to the __Telerik.ReportDesigner(.x86).exe.config__ file to enable tracing:             
 
 	
-````xml
+    ````xml
 <?xml version ="1.0"?>
 <configuration>
     ...

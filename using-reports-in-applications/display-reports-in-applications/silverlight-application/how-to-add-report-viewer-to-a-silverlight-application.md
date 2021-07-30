@@ -46,7 +46,7 @@ This article explains the steps needed to create an application which uses the S
 1. The next step is to merge these ResourceDictionaries in the App.xaml file:
 
 	
-````XAML
+    ````XAML
      <Application x:Class="SilverlightApplication1.App"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
@@ -77,7 +77,7 @@ This article explains the steps needed to create an application which uses the S
 1. Now you would be able to declare the ReportViewer control:             
 
 	
-````XAML
+    ````XAML
 				<telerik:ReportViewer></telerik:ReportViewer>
 ````
 

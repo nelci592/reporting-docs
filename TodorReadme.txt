@@ -36,12 +36,35 @@ procedure/titles
 
 section/titles
 
+Handle The structure
+<![CDATA[...<link href="https://kendo.cdn.telerik.com/]]><token...>kendosubsetversion</token><![CDATA[...
+
+this nested <code> elements were removed in the mamls:
+<code language="c#">
+  <code source="CodeSnippets\MvcCS\Views\Home\InvoiceParameters.cshtml" region="ParametersExample" />
+</code>
+<code language="vb.net">
+  <code source="CodeSnippets\MvcVB\Views\Home\InvoiceParameters.vbhtml" region="ParametersExample" />
+</code>
+file:///D:/Work/2018/Hotfix/Documentation/Help/Content/report-items-html-text-box-validation.aml
+file:///D:/Work/2018/Hotfix/Documentation/Help/Content/report-sources-viewers.aml
+file:///D:/Work/2018/Hotfix/Documentation/Help/Content/report-viewer-localization2.aml
+file:///D:/Work/2018/Hotfix/Documentation/Help/Content/report-viewer-localization3.aml
+file:///D:/Work/2018/Hotfix/Documentation/Help/Content/MVCExtensions/mvc-report-viewer-howto-custom-parameters.aml
+
+
+
+
+
+
 
 
 
 Remaining:
 
 how to pass the real tokes to _config.yml
+
+how to use tokens in code snippets (CDATA)
 
 
 API Ref:
@@ -90,10 +113,12 @@ Some article titles contain '/' that is interpreted as new subfolder and their n
 	D:\Work\reporting-docs\using-reports-in-applications\export-and-configure\configure-the-export-formats\wpfxaml\wpfxamlinteractive-device-information-settings.md
 
 
-The structure
-<![CDATA[...<link href="https://kendo.cdn.telerik.com/]]><token...>kendosubsetversion</token><![CDATA[...
-is recognized as a single CData element, probably due to the unfinished link element just before closing the CData:
-			<link href="	->	]]>
+
+
+
+
+
+
 
 Merge TOC of documentation and API reference - D:\Work\reporting-docs\_assetsApi\api\index.md - change this file accordingly
 

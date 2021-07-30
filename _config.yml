@@ -250,30 +250,163 @@ navigation:
     designing-reports/report-book:
         position: 1800
         title: "Report Book" 
-        
-        
-        
-        
     using-reports-in-applications:
         position: 4100
         title: "Using reports in applications"
     using-reports-in-applications/display-reports-in-applications:
         position: 1000
         title: "Display Reports in Applications"
+    using-reports-in-applications/display-reports-in-applications/web-application:
+        position: 1000
+        title: "Web Application"
+    using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer:
+        position: 1000
+        title: "HTML5 Report Viewer"
+    using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/customizing:
+        position: 1000
+        title: "Customizing"
+    using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/customizing/styling-and-appearance:
+        position: 1500
+        title: "Styling and Appearance"
+    using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference:
+        position: 1200
+        title: "API Reference"
+    using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer:
+        position: 1000
+        title: "ReportViewer"
+    using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/events:
+        position: 1000
+        title: "Events"    
+    using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/methods:
+        position: 1100
+        title: "Methods"    
+    using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/properties:
+        position: 1200
+        title: "Properties"    
+    using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/telerikreportviewer-namespace:
+        position: 1200
+        title: "telerikReportViewer Namespace"
+    using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-mvc-report-viewer:
+        position: 1100
+        title: "HTML5 ASP.NET MVC Report Viewer"   
+    using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-mvc-report-viewer/customizing:
+        position: 1500
+        title: "Customizing"
+    using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-web-forms-report-viewer:
+        position: 1200
+        title: "HTML5 ASP.NET Web Forms Report Viewer" 
+    using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-web-forms-report-viewer/customizing:
+        position: 1500
+        title: "Customizing"    
+    using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer:
+        position: 1300
+        title: "Angular Report Viewer" 
+    using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/customizing:
+        position: 1200
+        title: "Customizing"     
+    using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/api-reference:
+        position: 1400
+        title: "API Reference"    
+    using-reports-in-applications/display-reports-in-applications/web-application/blazor-report-viewer:
+        position: 1400
+        title: "Blazor Report Viewer"     
+    using-reports-in-applications/display-reports-in-applications/web-application/asp.net-web-forms-report-viewer:
+        position: 1500
+        title: "ASP.NET Web Forms Report Viewer"
+    using-reports-in-applications/display-reports-in-applications/web-application/asp.net-web-forms-report-viewer/design-considerations-for-out-proc-session-state-:
+        position: 1500
+        title: "Design Considerations for Out-proc Session State"
+    using-reports-in-applications/display-reports-in-applications/web-application/troubleshooting:
+        position: 1600
+        title: "Troubleshooting" 
+    using-reports-in-applications/display-reports-in-applications/windows-forms-application:
+        position: 1100
+        title: "Windows Forms Application"    
+    using-reports-in-applications/display-reports-in-applications/windows-forms-application/troubleshooting:
+        position: 1500
+        title: "Troubleshooting"     
+    using-reports-in-applications/display-reports-in-applications/wpf-application:
+        position: 1200
+        title: "WPF Application"
+    using-reports-in-applications/display-reports-in-applications/wpf-application/troubleshooting:
+        position: 1500
+        title: "Troubleshooting"    
+    using-reports-in-applications/display-reports-in-applications/silverlight-application:
+        position: 1300
+        title: "Silverlight Application" 
+    using-reports-in-applications/display-reports-in-applications/silverlight-application/troubleshooting:
+        position: 1500
+        title: "Troubleshooting" 
     using-reports-in-applications/host-the-report-engine-remotely:
         position: 1100
         title: "Host the Report Engine Remotely"
+    using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services:
+        position: 1200
+        title: "Telerik Reporting REST Services"    
+    using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-web-api-implementation:
+        position: 1000
+        title: "ASP.NET Web API Implementation"    
+    using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-core-web-api-implementation:
+        position: 1100
+        title: "ASP.NET Core Web API Implementation"      
+    using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/servicestack-implementation:
+        position: 1200
+        title: "ServiceStack Implementation"      
+    using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-service-report-source-resolver:
+        position: 1300
+        title: "REST Service Report Source Resolver"    
+    using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-service-storage:
+        position: 1400
+        title: "REST Service Storage"      
+    using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference:
+        position: 1500
+        title: "REST API Reference"     
+    using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/clients-api:
+        position: 1000
+        title: "Clients API"     
+    using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/report-parameters-api:
+        position: 1100
+        title: "Report Parameters API"    
+    using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/report-instances-api:
+        position: 1200
+        title: "Report Instances API"
+    using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/documents-api:
+        position: 1300
+        title: "Documents API"     
+    using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/general-api:
+        position: 1400
+        title: "General API"    
+    using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/json-entities:
+        position: 1500
+        title: "JSON Entities"
+    using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-wcf-service:
+        position: 1400
+        title: "Telerik Reporting WCF Service"    
     using-reports-in-applications/call-the-report-engine-via-apis:
         position: 1200
         title: "Call the Report Engine via APIs"
     using-reports-in-applications/export-and-configure:
         position: 1300
-        title: "Export and Configurate"
+        title: "Export and Configure"
+    using-reports-in-applications/export-and-configure/configure-the-report-engine:
+        position: 1000
+        title: "Configure the Report Engine"    
+    using-reports-in-applications/export-and-configure/configure-the-export-formats:
+        position: 1100
+        title: "Configure the Export Formats"   
+                #D:\Work\reporting-docs\using-reports-in-applications\export-and-configure\configure-the-export-formats\wpfxaml\wpfxamlinteractive-device-information-settings.md
+    using-reports-in-applications/export-and-configure/cache-management:
+        position: 1200
+        title: "Cache Management"    
+    using-reports-in-applications/export-and-configure/cache-management/other-reportviewer-controls:
+        position: 1400
+        title: "Other ReportViewer Controls"    
     using-reports-in-applications/program-the-report-definition:
         position: 1400
         title: "Program the Report Definition"
-
-        
+    using-reports-in-applications/program-the-report-definition/report-events:
+        position: 1500
+        title: "Report Events"
     troubleshooting:
         position: 5100
         title: "Troubleshooting"

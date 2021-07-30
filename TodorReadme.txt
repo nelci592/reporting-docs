@@ -90,6 +90,10 @@ Some article titles contain '/' that is interpreted as new subfolder and their n
 	D:\Work\reporting-docs\using-reports-in-applications\export-and-configure\configure-the-export-formats\wpfxaml\wpfxamlinteractive-device-information-settings.md
 
 
+The structure
+<![CDATA[...<link href="https://kendo.cdn.telerik.com/]]><token...>kendosubsetversion</token><![CDATA[...
+is recognized as a single CData element, probably due to the unfinished link element just before closing the CData:
+			<link href="	->	]]>
 
 Merge TOC of documentation and API reference - D:\Work\reporting-docs\_assetsApi\api\index.md - change this file accordingly
 

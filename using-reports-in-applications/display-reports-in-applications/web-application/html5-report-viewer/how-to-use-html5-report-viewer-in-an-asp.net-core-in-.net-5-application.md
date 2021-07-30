@@ -50,7 +50,44 @@ app.UseStaticFiles();
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
-  <link href="https://kendo.cdn.telerik.com/
+  <link href="https://kendo.cdn.telerik.com/{{site.kendosubsetversion}}/styles/kendo.common.min.css" rel="stylesheet" /> 
+  <link href="https://kendo.cdn.telerik.com/{{site.kendosubsetversion}}/styles/kendo.blueopal.min.css" rel="stylesheet" /> 
+  <script src="/api/reports/resources/js/telerikReportViewer"></script>
+  <style> 
+      #reportViewer1 { 
+          position: absolute; 
+          left: 5px; 
+          right: 5px; 
+          top: 50px; 
+          bottom: 5px; 
+          overflow: hidden; 
+          font-family: Verdana, Arial; 
+      } 
+  </style> 
+</head> 
+<body> 
+  <div id="reportViewer1"> 
+      loading... 
+  </div> 
+  <script> 
+      $(document).ready(function () { 
+          $("#reportViewer1") 
+              .telerik_ReportViewer({ 
+                  serviceUrl: "api/reports/", 
+                  reportSource: { 
+                      report: "Barcodes Report.trdp", 
+                      parameters: {} 
+                  }, 
+                  viewMode: telerikReportViewer.ViewModes.INTERACTIVE, 
+                  scaleMode: telerikReportViewer.ScaleModes.SPECIFIC, 
+                  scale: 1.0,
+                  enableAccessibility: false,
+                  sendEmail: { enabled: true }
+              }); 
+      }); 
+  </script> 
+</body> 
+</html>
 ````
 
 

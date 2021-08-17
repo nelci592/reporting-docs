@@ -34,18 +34,17 @@ You can connect to a SQL database using the Telerik         __SqlDataSource__ co
 
 1. In the __Connection string__ text-box, type the prepared and tested connection string                   or click the __Build...__ button.                 If you click the __Build...__ button, you should see the __Connection Properties__ dialog:                 
 
-* __Data source:__ shows the type of data source that will be used, based on the selected .NET data provider.                       The value should be filled automatically, if a valid .NET provider is set through the __Data provider__ drop-down.                     
+   + __Data source:__ shows the type of data source that will be used, based on the selected .NET data provider.                       The value should be filled automatically, if a valid .NET provider is set through the __Data provider__ drop-down.                     
 
-* __Data source box:__ Shows the type of data source that will be used, based on the selected .NET data provider.                     
+   + __Data source box:__ Shows the type of data source that will be used, based on the selected .NET data provider.                     
 
-* __Server name box:__ Enter the address or name for your SQL Server instance.                     
+   + __Server name box:__ Enter the address or name for your SQL Server instance.                     
 
-* __Logon to the server/database__: Enter the logon credentials, or if it is supported by the .NET data provider,                       select to 'Use Windows Authentication'. Select the option that is appropriate for accessing and running the SQL Server database.                       The settings are turned into standard connection strings attributes. For more details, check [The Connection Strings Reference](https://www.connectionstrings.com/).                     
+   + __Logon to the server/database__: Enter the logon credentials, or if it is supported by the .NET data provider,                       select to 'Use Windows Authentication'. Select the option that is appropriate for accessing and running the SQL Server database.                       The settings are turned into standard connection strings attributes. For more details, check [The Connection Strings Reference](https://www.connectionstrings.com/).                     
 
-* __Select or enter a database name:__ The option depends on the selected .NET data provider and the required attributes for building the connection string.                       If the option is visible, enter a valid database on the server e.g. __AdventureWorks__ (MSSQL database used by Telerik Reporting local examples).                     At the end, click __Test connection__ to verify that your connection works.                   Click __OK__. You should see the connection string's attributes written in the __Connection string__ text-box.                 
+   + __Select or enter a database name:__ The option depends on the selected .NET data provider and the required attributes for building the connection string.                       If the option is visible, enter a valid database on the server e.g. __AdventureWorks__ (MSSQL database used by Telerik Reporting local examples).                     At the end, click __Test connection__ to verify that your connection works.                   Click __OK__. You should see the connection string's attributes written in the __Connection string__ text-box.                 
 
->important Not all connection strings can be built with the  __Connection Properties__  dialog,                     and in such cases the  __Build...__  button remains disbled. The connection string will have to be typed manually.                   
-    For our tutorial we will connect to AdventureWorks database installed on MSSQL server instance:
+   >note Not all connection strings can be built with the  __Connection Properties__  dialog,                     and in such cases the  __Build...__  button remains disbled. The connection string will have to be typed manually.                       For our tutorial we will connect to AdventureWorks database installed on MSSQL server instance:
 
 1. Select __Build new data connection__.                 
 
@@ -53,13 +52,13 @@ You can connect to a SQL database using the Telerik         __SqlDataSource__ co
 
 1. Click the __Build...__ button.                 
 
-* __Data source__ should state *Microsoft SQL Server (SqlClient)*. Do not change it.                     
+   + __Data source__ should state *Microsoft SQL Server (SqlClient)*. Do not change it.                     
 
-* In the __Server name box__ select the named MSSQL server instance having the AdventureWorks database                       e.g. __(local)\sqlexpress__.                     
+   + In the __Server name box__ select the named MSSQL server instance having the AdventureWorks database                       e.g. __(local)\sqlexpress__.                     
 
-* Select __Use Windows Authentication__ for the __Logon to the server__ setting.                       In case of using specififc user to log on the MSSQL server instance, select *Use SQL Server Authentication*                       and enter your credentials (username/password).                     
+   + Select __Use Windows Authentication__ for the __Logon to the server__ setting.                       In case of using specififc user to log on the MSSQL server instance, select *Use SQL Server Authentication*                       and enter your credentials (username/password).                     
 
-* Type *AdventureWorks* in the __Select or enter a database name__ box.                     Finally, click __Test Connection__ to verify you can connect to the database.                 
+   + Type *AdventureWorks* in the __Select or enter a database name__ box.                     Finally, click __Test Connection__ to verify you can connect to the database.                 
 
 1. Click the __OK__ button, and in the __Connection string__ text-box you should see a string like                   *Data Source=(local)\sqlexpress;Initial Catalog=AdventureWorks;Integrated Security=True*                   or *Data Source=(local)\sqlexpress;Initial Catalog=AdventureWorks;User ID=admin;Password=admin123*
 

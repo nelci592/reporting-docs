@@ -28,6 +28,7 @@ By default, every new report is created with a page header section and a page fo
           
 
   
+
   ![](images/ReportDesign001.png)
 
 ## Page Header/Footer Specifics

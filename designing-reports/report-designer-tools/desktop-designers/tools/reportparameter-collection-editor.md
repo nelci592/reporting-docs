@@ -27,6 +27,7 @@ There are several ways to open the ReportParameter Collection Editor:
 * From the __Configure Data Source Parameters__ step of the [DataSource Components]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/overview%})
 
   
+
   ![](images/ReportParameterEditor.png)More information on adding and working with Report Parameters is available in the[Adding Parameters to Report]({%slug telerikreporting/designing-reports/connecting-to-data/report-parameters/overview%}) article.
     
 

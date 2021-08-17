@@ -26,17 +26,17 @@ This document gives a brief overview of the available Report Designers.
 
 * Works with XML report definitions packaged in a zip archive (.TRDP) or in plain legacy format (.TRDX):             
 
-* No need to recompile your projects when modifying the report definition;                 
+   + No need to recompile your projects when modifying the report definition;                 
 
-* No need to upgrade - you can directly open older report definition with a newer version of the                    [Standalone Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview%}), report viewer or report service;                   The report definition will be automatically upgraded when edited and saved with the [Standalone Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview%});                 
+   + No need to upgrade - you can directly open older report definition with a newer version of the                    [Standalone Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview%}), report viewer or report service;                   The report definition will be automatically upgraded when edited and saved with the [Standalone Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview%});                 
 
-* This format can be stored and managed with the                   [Report Server](http://docs.telerik.com/report-server/introduction) and other kinds of storages such as a database;                 
+   + This format can be stored and managed with the                   [Report Server](http://docs.telerik.com/report-server/introduction) and other kinds of storages such as a database;                 
 
-* The recommended XML report definition format is TRDP due to the following reasons:                 
+   + The recommended XML report definition format is TRDP due to the following reasons:                 
 
-* The report resources are stored in the zip so the report definition is faster to handle and more compact.                     
+   + The report resources are stored in the zip so the report definition is faster to handle and more compact.                     
 
-* Supports report [Localization]({%slug telerikreporting/designing-reports/localizing-reports%}).                     
+   + Supports report [Localization]({%slug telerikreporting/designing-reports/localizing-reports%}).                     
 
 ## Visual Studio Report Designer
 
@@ -44,9 +44,9 @@ This document gives a brief overview of the available Report Designers.
 
 * Works with .NET type report definitions (.CS or .VB files):             
 
-* More difficult to maintain - the project should be built every time a report definition is modified and you should go through the                   [Upgrade Wizard]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/upgrade-wizard%}) when upgrading your Telerik Reporting installation;                 
+   + More difficult to maintain - the project should be built every time a report definition is modified and you should go through the                   [Upgrade Wizard]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/upgrade-wizard%}) when upgrading your Telerik Reporting installation;                 
 
-* Support for report events, still Telerik Reporting provides other declarative means to handle most of the complex tasks.                   For more information see [Report Events]({%slug telerikreporting/using-reports-in-applications/program-the-report-definition/report-events/overview%});                 
+   + Support for report events, still Telerik Reporting provides other declarative means to handle most of the complex tasks.                   For more information see [Report Events]({%slug telerikreporting/using-reports-in-applications/program-the-report-definition/report-events/overview%});                 
 
 * The Visual Studio Report Designer opens automatically upon double-click of a .CS/.VB report definition inheriting from Telerik.Reporting.Report.                You need to have the corresponding version of Telerik Reporting installed on the machine.             
 

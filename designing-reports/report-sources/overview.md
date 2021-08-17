@@ -28,9 +28,9 @@ The report sources are utilized by:
 
 * When you render or print reports programmatically, through the __ReportProcessor__                corresponding methods:             
 
-* [RenderReport](/reporting/api/Telerik.Reporting.Processing.ReportProcessor#Telerik_Reporting_Processing_ReportProcessor_RenderReport_System_String_Telerik_Reporting_ReportSource_System_Collections_Hashtable_)                   - for exporting reports programmatically on the server-machine;                 
+   + [RenderReport](/reporting/api/Telerik.Reporting.Processing.ReportProcessor#Telerik_Reporting_Processing_ReportProcessor_RenderReport_System_String_Telerik_Reporting_ReportSource_System_Collections_Hashtable_)                   - for exporting reports programmatically on the server-machine;                 
 
-* [PrintReport](/reporting/api/Telerik.Reporting.Processing.ReportProcessor#Telerik_Reporting_Processing_ReportProcessor_PrintReport_Telerik_Reporting_ReportSource_System_Drawing_Printing_PrinterSettings_)                   - for printing reports from the server machine.                 For more details, check [How to: Set ReportSource for ReportProcessor]({%slug telerikreporting/using-reports-in-applications/reference-report-definitions-in-applications%}).             
+   + [PrintReport](/reporting/api/Telerik.Reporting.Processing.ReportProcessor#Telerik_Reporting_Processing_ReportProcessor_PrintReport_Telerik_Reporting_ReportSource_System_Drawing_Printing_PrinterSettings_)                   - for printing reports from the server machine.                 For more details, check [How to: Set ReportSource for ReportProcessor]({%slug telerikreporting/using-reports-in-applications/reference-report-definitions-in-applications%}).             
 
 ## Available Report Sources
 
@@ -42,8 +42,7 @@ The available report sources are:
 
 * __InstanceReportSource__This report source is used when you have a reference to an already instantiated report (*Telerik.Reporting.Report* instance),               and you want to pass it to the reporting engine. Typical scenarios include reports created or modified in code, dynamically generated ReportBook objects               or report instances result of [deserializing]({%slug telerikreporting/using-reports-in-applications/program-the-report-definition/serialize-report-definition-in-xml%})               or [unpackaging]({%slug telerikreporting/using-reports-in-applications/program-the-report-definition/package-report-definition%}) content produced by the Standalone Report Designer.             An example is illustrated in the API Reference: [InstanceReportSource](/reporting/api/Telerik.Reporting.InstanceReportSource).             
 
->tip For reports created in Visual Studio Report Designer without further modifications in code, we recommend the usage of the TypeReportSource.
-
+   >note For reports created in Visual Studio Report Designer without further modifications in code, we recommend the usage of the TypeReportSource.
 
 * __XmlReportSource__The XML report source can be used if the report is serialized in XML and stored in a string.The primary intent for this report source is to be used with database fields where the report is stored as               pure XML. In order to access it set the Xml property of the report source to the field that contains the               report xml. For example: xmlReportSource.Xml = "=Fields.ReportXml".             An example is illustrated in the API Reference: [XmlReportSource](/reporting/api/Telerik.Reporting.XmlReportSource).             
 

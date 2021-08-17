@@ -61,8 +61,7 @@ The following is a brief description of how styles are rendered in Word.
             collapsed automatically, following the Word’s own border collapse rules.
             
 
->note Word application applies a margin value to the table cell by default. This will produce a space between the nested table borders and the parent table borders.                 To remove the space, the margin needs to be removed manually after opening the document in MS Word.               
-
+   >note Word application applies a margin value to the table cell by default. This will produce a space between the nested table borders and the parent table borders.                 To remove the space, the margin needs to be removed manually after opening the document in MS Word.               
 
 * __Background__ - Background colors are rendered as background shading of table cells. Background images
             are not supported.
@@ -72,8 +71,7 @@ The following is a brief description of how styles are rendered in Word.
             In order to display correctly a document that uses a specific font, that font must be installed on the client machine. The rendering extension does not provide a fallback mechanism in case of missing fonts.
             
 
->caution Text boxes which do not contain a value (contain a null value, empty string, etc.) will be rendered with font size of 1pt.               
-
+   >note Text boxes which do not contain a value (contain a null value, empty string, etc.) will be rendered with font size of 1pt.               
 
 * __Text__ - Text justification and alignment is preserved when exporting to Word. Note that if a justified text goes from one page to
             another, the last line of the first page will be left-aligned. Text orientation is supported only for the angles of 0, 90 and 270 degrees. Rotated text on other angles is not supported

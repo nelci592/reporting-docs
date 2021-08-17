@@ -20,6 +20,7 @@ A document map provides a set of navigational links to report items in the rende
 The document map is also used to provide a set of navigational links to reports in a [Report Book]({%slug telerikreporting/designing-reports/report-book/overview%}).       
 
   
+
   ![](images/SilverlightViewer1.png)
 
 The Document map is defined by setting the [DocumentMapText](/reporting/api/Telerik.Reporting.ReportItemBase#Telerik_Reporting_ReportItemBase_DocumentMapText) and      		[BookmarkId](/reporting/api/Telerik.Reporting.ReportItemBase#Telerik_Reporting_ReportItemBase_BookmarkId) properties of any report item/group. The __BookmarkID__     	property should be unique for the whole [IReportDocument](/reporting/api/Telerik.Reporting.IReportDocument). If __BookmarkID__ is not set,      	then the Value of __DocumentMapText__ is taken into account. Valid values are static text, expression, or text with embedded expressions.      	The resulting text will be displayed in the document map tree. 		

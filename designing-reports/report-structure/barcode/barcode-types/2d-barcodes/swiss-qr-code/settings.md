@@ -26,15 +26,15 @@ The Creditor property contains information about the *Payable To* data entity.
 
 * __Address__ - Determines the Creditor address fields, shown below in alphabetical order:                 
 
-* __City__ - mandatory field, 35 characters max.                     
+   + __City__ - mandatory field, 35 characters max.                     
 
-* __Country__ - mandatory field, containing the 2-letter country code as defined by ISO 3166-1.                     
+   + __Country__ - mandatory field, containing the 2-letter country code as defined by ISO 3166-1.                     
 
-* __House Number__ - non-mandatory field.                     
+   + __House Number__ - non-mandatory field.                     
 
-* __Postal code__ - mandatory field, 16 characters max.                     
+   + __Postal code__ - mandatory field, 16 characters max.                     
 
-* __Street__ - non-mandatory field.                     
+   + __Street__ - non-mandatory field.                     
 
 * __IBAN__ - mandatory field that must pass the validation check for an IBAN identifier.                 
 

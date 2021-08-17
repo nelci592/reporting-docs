@@ -28,12 +28,11 @@ The following steps describe how to add an interactive __sort__ button to a colu
 
 1. Locate the __Product Catalog__ sample report and open it                with the __Standalone Report Designer__ or with the __Visual Studio Report Designer__.             Depending on the Report Designer of your choice, you will locate the __Product Catalog__ sample report in one of the following folders:             
 
-* Examples for the Standalone Report Designer - %PROGRAMFILES(x86)%\Progress\Telerik Reporting {Version}\Report Designer\Examples                 
+   + Examples for the Standalone Report Designer - %PROGRAMFILES(x86)%\Progress\Telerik Reporting {Version}\Report Designer\Examples                 
 
-* Examples for the Visual Studio Report Designer – %PROGRAMFILES(x86)%\Progress\Telerik Reporting {Version}\Examples\CSharp\                 
+   + Examples for the Visual Studio Report Designer – %PROGRAMFILES(x86)%\Progress\Telerik Reporting {Version}\Examples\CSharp\                 
 
->note Replace  __{Version}__  in the Examples path with your Telerik Reporting version.               
-
+   >note Replace  __{Version}__  in the Examples path with your Telerik Reporting version.               
 
 1. In the Report Designer, make sure you use __Design View__.             
 
@@ -51,8 +50,7 @@ The following steps describe how to add an interactive __sort__ button to a colu
 
 1. In the __Sort expressions__ drop-down menu, select the field that corresponds to the column for which you are defining a sorting action.               In this case, use the __=Fields.ListPrice__ expression and click __OK__.             
 
->note Specifying a sort expression is required.
-
+   >note Specifying a sort expression is required.
 
 To verify the sorting action:         
 

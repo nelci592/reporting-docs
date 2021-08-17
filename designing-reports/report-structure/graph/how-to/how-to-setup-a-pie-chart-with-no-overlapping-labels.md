@@ -30,6 +30,7 @@ The __Pie chart__ uses [BarSeries](/reporting/api/Telerik.Reporting.BarSeries) t
 
 
 The image below shows how a Pie Chart would look when the properties in question are set properly.                           
+
   ![Outside Column Pie Chart 2](images/Graph/OutsideColumnPieChart2.png)[DataPointLabelAlignment](/reporting/api/Telerik.Reporting.BarSeries#Telerik_Reporting_BarSeries_DataPointLabelAlignment)[DataPointLabelOffset](/reporting/api/Telerik.Reporting.BarSeries#Telerik_Reporting_BarSeries_DataPointLabelOffset)[DataPointLabelConnectorStyle](/reporting/api/Telerik.Reporting.BarSeries#Telerik_Reporting_BarSeries_DataPointLabelConnectorStyle)
 
  * [Overview]({%slug telerikreporting/designing-reports/report-structure/graph/chart-types/pie-charts/overview%})

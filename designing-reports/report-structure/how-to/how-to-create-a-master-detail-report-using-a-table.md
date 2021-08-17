@@ -71,11 +71,13 @@ This next set of steps creates a filter that uses the [ReportItem.DataObject]({%
 1. In the __Property Window__ navigate to the __Filters__ property and click the ellipses.             
 
 1. Click the __New__ button to create a new filter. In the __Expression__ drop down               for the filter select =Fields.ProductCategoryID. Leave the operator at the default equals ("=") sign. In the               __Value__ property drop down enter the expression: =ReportItem.DataObject.ProductCategoryID.               
+
   ![Master Detail Table 0001](images/MasterDetailTable0001.png)
 
 1. Click the __OK__ button to close the dialog.             
 
 Click the Preview button to preview the report.           Notice that product numbers and names from the detail table display under each product category from the master report.           
+
   ![Master Detail Table 0002](images/MasterDetailTable0002.png)
 
 >note The same report layout can be created with the [Standalone Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview%}).           

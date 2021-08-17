@@ -13,6 +13,7 @@ position: 15
 
 
 The Cross-section Item is used to display a graphical primitive (vertical line or rectangle) across one or more report sections.         It is often used in scenarios where the parts of the reports - usually group sections - needs to be visually distinguished from each other.         The following screenshot shows how the Cross-section item looks like in the Standalone Report Designer:         
+
   ![report-items-cross-section-item](images/report-items-cross-section-item.png)
 
 You can use shapes to create visual effects within a report. You can set display and other properties to this item by         using the Properties pane.       

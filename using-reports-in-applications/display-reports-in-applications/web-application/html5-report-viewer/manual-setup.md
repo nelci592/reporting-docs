@@ -26,8 +26,7 @@ Before you continue, make sure that the following prerequisites are met:
 
 1. A script with the custom Telerik Kendo UI distribution for Telerik Reporting               (located in the __[TelerikReporting_InstallDir]\Html5\ReportViewer\js__ folder)               or with the mainstream Kendo UI distribution downloaded locally or via the               [Kendo UI CDN service](http://docs.telerik.com/kendo-ui/install/cdn).             
 
->note You must load only one version of Telerik Kendo UI styles and scripts on the page.                 For more information see [](143e5c03-e69d-416f-9ac0-85c397b22b8e#KendoWidgetsRequirements).               
-
+   >note You must load only one version of Telerik Kendo UI styles and scripts on the page.                 For more information see [](143e5c03-e69d-416f-9ac0-85c397b22b8e#KendoWidgetsRequirements).               
 
 ##Utilizing the HTML5 Report Viewer in an HTML page
 

@@ -25,14 +25,17 @@ __The value of the TextBox in the PageHeader is equal to = "Page: " + PageNumber
 >caption PageNumberingStyle.Continue
 
   
+
   ![](images/ReportBook_PageNumberingContinue.png)
 >caption PageNumberingStyle.ResetNumbering
 
   
+
   ![](images/ReportBook_PageNumberingStyleResetNumbering.png)
 >caption PageNumberingStyle.ResetNumberingAndCount
 
   
+
   ![](images/ReportBook_PageNumberingStyleResetNumberingAndCount.png)
 
 # See Also

@@ -48,17 +48,21 @@ We will use the __AdventureWorks__ sample database and the [Telerik Report Desig
 1. On the following page add the __SalesPersonName__ field to the __RowGroups__ box,               __OrderYear__ to the __Column Groups__ box and the               __CategoryName__ field to the __Detail Values__ box,               where it will be automatically changed to __Count(CategoryName)__.               After the wizard ends, you can make some design adjustments to the generated crosstab to make it look better.             
 
 1. Set the row group's __Filters__ to `"Count(Fields.CategoryName) Top N =5"`.               Your group properties should now be set like this:               
+
   ![di Nest Graph In Table Row Group Properties](images/DataItems/di_NestGraphInTable_RowGroupProperties.png)
 
 1. Set the crosstab headers to `"Person Name"` and `"Total Sales"`               and the row group textbox expressions to `"Fields.SalesPersonName"` and `"Count(CategoryName)"`:               
+
   ![di Nest Graph In Table Cross Tab Layout](images/DataItems/di_NestGraphInTable_CrossTabLayout.png)    If you preview the report now, you will see that the crosstab shows the top 5 sales agents               along with their sales count by year.                 Now we have to set up the pie chart which will display their sales divided by product categories.             
 
 1. Select the cell that displays the count and choose the __Pie Chart__ item from the __Insert__ menu.               The __Graph Wizard__ will appear. Since we will bind our graph to the current __ReportItem.DataObject__,               actually there is no need to connect it to a data source, but on the other hand, the design-time support might come in handy.             
 
 1. Select the data source and on the next page add the __CategoryName__ field               to the __Series__ and __Values__ box,               where it will be automatically changed to `Count(CategoryName)`.               You can make some additional adjustments like removing the graph title, aligning the texts               and resizing the crosstab's rows and columns. Finally your crosstab should look like the one below:               
+
   ![di Nest Graph In Table Crosstab With Graph](images/DataItems/di_NestGraphInTable_CrosstabWithGraph.png)    If you preview the report, you will notice that the chart data stays the same on every row and column of the crosstab.               That's why we connected it to the whole dataset. In order to connect it to the current row group data,               defined by the expression `"Fields.SalesPersonName"`, we have to bind the graph data source               to the current report item's data object.             
 
 1. Open the Graph's [Bindings]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/bindings%}) editor and create a new binding for the DataSource property as shown below:               
+
   ![di Nest Graph In Table Bindings Editor](images/DataItems/di_NestGraphInTable_BindingsEditor.png)    Since we are explicitly binding the __DataSource__ property, we don't need to declare it               in the Graph's properties, so you can set it to __No Data Source__. Please note that this will               cancel the design-time support and the data will not be previewed in the graph designer.                 Your report is now ready. When you preview it, you will see that the pie chart is displayed on every               cross-section of a sales person and an year, showing the percentage of the product categories sales.             
 
 ##        Live examples

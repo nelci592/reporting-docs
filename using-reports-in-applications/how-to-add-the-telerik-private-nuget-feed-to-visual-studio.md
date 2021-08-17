@@ -12,6 +12,9 @@ position: 8
 
 
 
+>note The improved Telerik NuGet v3 is now available for beta testing at  __https://nuget.telerik.com/v3/index.json__ .         The new v3 API is faster, lighter, and reduces the number of requests from NuGet clients. You are welcome to try it.         
+
+
 Telerik provides NuGet packages from private NuGet feed.          The article elaborates on how to add the Telerik NuGet feed to the Visual Studio NuGet package manager.        
 
 ## Prerequisites:
@@ -32,6 +35,7 @@ Telerik provides NuGet packages from private NuGet feed.          The article el
 >caption Figure 1: Visual Studio NuGet Package Manager and Telerik NuGet Feed:
 
   
+
   ![nuged feed](images/nuged-feed-in-npm.png)
 
 1. Create or load your project.             
@@ -48,6 +52,7 @@ Telerik provides NuGet packages from private NuGet feed.          The article el
 >caption Figure 2: Enter your Telerik.com credentials to access the Telerik NuGet feed:
 
   
+
   ![nuget Wcredentials](images/nuget-credentials.png)
 
 1. Now all the packages that are licensed (paid or trial) to the above users are available in the Visual Studio NuGet Package manager.             

@@ -65,6 +65,7 @@ You can also review a detailed log of the upgrade once the solution is loaded in
 Once your solution is opened in the IDE, it would notify you with "File Modification Detected" prompt that your project(s) have           been modified outside of the environment and you should press "Reload" in order to reload the updated project:         
 
   
+
   ![](images/upgwiz5.png)
 
 ## In case you receive compilation errors and/or warnings

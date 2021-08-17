@@ -28,4 +28,5 @@ The "[Upgrade Wizard]({%slug telerikreporting/designing-reports/report-designer-
 
 
   
+
   ![TelerikVSMenu](images/TelerikVSMenu.png)

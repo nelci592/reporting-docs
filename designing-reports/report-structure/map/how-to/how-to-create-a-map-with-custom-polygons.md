@@ -49,6 +49,7 @@ This topic explains how to create a map that shows custom-defined shapes. The Ma
 1. The __Choropleth setup__ expects to setup the fields required to create a choropleth.               Since our data source doesn't include any analytical information that could be used, just drag one of the two available fields in the               *Color data field*box. Click __Finish__.             
 
 1. When the wizard closes, the Map item should display the three polygons that roughly represent the state borders of North Dakota, Wyoming and New Mexico.               Depending on your scenario, you can setup a               [TileProvider](/reporting/api/Telerik.Reporting.TileProvider) and add some additional styling to the data points and map:               
+
   ![Map CustomWKT](images/Map/MapCustomWKT.png)
 
 In this article we demonstrated how to display custom-shaped polygons using             [ShapeMapSeries](/reporting/api/Telerik.Reporting.ShapeMapSeries) and Choropleth wizard. This approach is useful when is needed to             show an additional layer or layers of geospatial data in a report.           

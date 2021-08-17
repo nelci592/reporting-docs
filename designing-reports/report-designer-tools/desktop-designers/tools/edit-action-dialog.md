@@ -33,6 +33,7 @@ The __Edit Action__ offers the following choices:
 * Toggle Visibility             
 
 * Custom               
+
   ![Edit Action Dialog](images/UI/EditActionDialog.png)
 
 Depending on the purpose of the interactive actions you can choose the appropriate option which would open an additional pane below.           For more information review the following articles:         

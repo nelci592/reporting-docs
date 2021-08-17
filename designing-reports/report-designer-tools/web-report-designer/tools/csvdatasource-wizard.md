@@ -18,11 +18,11 @@ The CSV Data Source Wizard allows you to create a new or edit an existing CsvDat
 
 1. __Choose a CSV source__Select how the CSV source should be retrieved for the component.             
 
-* __Upload CSV file__ from the local computer                 
+   + __Upload CSV file__ from the local computer                 
 
-* __Use existing CSV file__ that previously has been uploaded and/or exists in the                    [IResourceStorage](/reporting/api/Telerik.WebReportDesigner.Services.IResourceStorage)                    The default implementation of the [IResourceStorage](/reporting/api/Telerik.WebReportDesigner.Services.IResourceStorage) interface -                   [ResourceStorage](/reporting/api/Telerik.WebReportDesigner.Services.ResourceStorage) stores resources like CSV files to the location provided                   as a string parameter in the constructor [#ctor](/reporting/api/Telerik.WebReportDesigner.Services.ResourceStorage#Telerik_WebReportDesigner_Services_ResourceStorage_#ctor_System_String_).                   When choosing the option __"Use existing CSV file"__, any existing CSV files found in this directory will populate the dropdown list.                 
+   + __Use existing CSV file__ that previously has been uploaded and/or exists in the                    [IResourceStorage](/reporting/api/Telerik.WebReportDesigner.Services.IResourceStorage)                    The default implementation of the [IResourceStorage](/reporting/api/Telerik.WebReportDesigner.Services.IResourceStorage) interface -                   [ResourceStorage](/reporting/api/Telerik.WebReportDesigner.Services.ResourceStorage) stores resources like CSV files to the location provided                   as a string parameter in the constructor [#ctor](/reporting/api/Telerik.WebReportDesigner.Services.ResourceStorage#Telerik_WebReportDesigner_Services_ResourceStorage_#ctor_System_String_).                   When choosing the option __"Use existing CSV file"__, any existing CSV files found in this directory will populate the dropdown list.                 
 
-* __Use CSV inline__ to paste in a string in the text area                 
+   + __Use CSV inline__ to paste in a string in the text area                 
 
 1. __Modify your CSV file__If you have chosen to __"Upload CSV file"__ or __"Use existing CSV file"__               you have the option to store this inside the report definition by checking __"Embed CSV file in report definition"__ option.               By checking this option the CSV data can be directly edited in the text area, and will no longer be dependent on having the CSV file available                in [ResourceStorage](/reporting/api/Telerik.WebReportDesigner.Services.ResourceStorage).             
 

@@ -28,8 +28,7 @@ Based on the used report viewer, the arguments can contain also:
 
 * The coordinates of the mouse cursor in pixels at the time of raising the event (for WinForms, WPF and SilverLight viewers). These coordinates are relative to the report item that triggered the action.           
 
->note When the  __InteractiveActionLeave()__  event is raised, these coordinates are empty.             
-
+   >note When the  __InteractiveActionLeave()__  event is raised, these coordinates are empty.             
 
 * The client bounds of the current report item in pixels (for WinForms, WPF and SilverLight viewers).           
 

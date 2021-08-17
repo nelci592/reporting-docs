@@ -19,6 +19,7 @@ This article is part of the Demo report guide on getting started with Telerik Re
 This guide uses the __AdventureWorks__ database that is provided by Telerik Reporting.           The data sources that will be added to the report will generate their data representations.         
 
 1. Select __Data__ > __SQL Data Source__ > __Existing data connections__ > __local:/Telerik.reporting.Examples.CSharp.Properties__.               
+
   ![3](images/3.PNG)
 
 1. Click __Next__ > __Use as a shared connection__ > __Next__.             
@@ -69,6 +70,7 @@ Preview the result by clicking __Preview__ > __PrintPreview__.
 * [Shapes]({%slug telerikreporting/designing-reports/report-structure/shape%}) are used for the lines next to the table title.             
 
 * The __BorderColor__ of the table is __34, 181, 115__.               
+
   ![Employees](images/Employees.PNG)
 
 ## Next Steps

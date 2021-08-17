@@ -20,9 +20,9 @@ In the examples below we show how to access a report item from within the report
 
 1. The event handler passes in "sender" which is a Telerik.Reporting.Processing.DetailSection that          	represents the section during processing. Thus you can derive:
 
-* A DataObject that represents the underlying data for a record being processed.
+   + A DataObject that represents the underlying data for a record being processed.
 
-* All processing report items.
+   + All processing report items.
 
 1. Use the ElementTreeHelper.__GetChildByName__ method to locate an item on the 
         	report. In the code example below __GetChildByName__ is used to retrieve "textBox1" TextBox.

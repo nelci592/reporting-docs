@@ -66,28 +66,28 @@ In the group expression, type an expression,
 1.  To apply sorting to the group, follow these steps:
          
 
-* Click the Sorting ellipsis
+   + Click the Sorting ellipsis
 
-* Click New.
+   + Click New.
 
-* Type or select an expression by which to sort the data.
+   + Type or select an expression by which to sort the data.
 
-* From the Direction column drop-down list, choose the sort direction 
+   + From the Direction column drop-down list, choose the sort direction 
   for each expression. ASC sorts the expression in ascending order. DESC sorts 
   the expression in descending order.
 
 1.  To apply filtering to the group, follow these steps:
          
 
-* Click the Filters ellipsis
+   + Click the Filters ellipsis
 
-* Click New.
+   + Click New.
 
-* In __Expression__, type or select the expression for the field to filter. To open the __Edit Expression__ Dialog, select the ```<Expression>``` option.
+   + In __Expression__, type or select the expression for the field to filter. To open the __Edit Expression__ Dialog, select the ```<Expression>``` option.
 
-* In the __Operator__ box, select the operator that you want the filter to use to compare the values in the Expression box and the Value box.
+   + In the __Operator__ box, select the operator that you want the filter to use to compare the values in the Expression box and the Value box.
 
-* In the __Value__ box, type the expression or value against which you want the filter to evaluate the value in Expression.
+   + In the __Value__ box, type the expression or value against which you want the filter to evaluate the value in Expression.
 
 1. Click __GroupKeepTogether__ to specify the keep together options.
   
@@ -134,28 +134,28 @@ Select __Show detail data__.
 1.  To apply sorting to the group, follow these steps:
          
 
-* Click the Sorting ellipsis
+   + Click the Sorting ellipsis
 
-* Click New.
+   + Click New.
 
-* Type or select an expression by which to sort the data.
+   + Type or select an expression by which to sort the data.
 
-* From the Direction column drop-down list, choose the sort direction 
+   + From the Direction column drop-down list, choose the sort direction 
   for each expression. ASC sorts the expression in ascending order. DESC sorts 
   the expression in descending order.
 
 1.  To apply filtering to the group, follow these steps:
          
 
-* Click the Filters ellipsis
+   + Click the Filters ellipsis
 
-* Click New.
+   + Click New.
 
-* In __Expression__, type or select the expression for the field to filter. To open the __Edit Expression__ Dialog, select the ```<Expression>``` option.
+   + In __Expression__, type or select the expression for the field to filter. To open the __Edit Expression__ Dialog, select the ```<Expression>``` option.
 
-* In the __Operator__ box, select the operator that you want the filter to use to compare the values in the Expression box and the Value box.
+   + In the __Operator__ box, select the operator that you want the filter to use to compare the values in the Expression box and the Value box.
 
-* In the __Value__ box, type the expression or value against which you want the filter to evaluate the value in Expression.
+   + In the __Value__ box, type the expression or value against which you want the filter to evaluate the value in Expression.
 
 1. Click __GroupKeepTogether__ to specify the keep together options.
   
@@ -190,28 +190,28 @@ A new details group is added as a child group in the Grouping pane in the
 1. To apply sorting to the group, follow these steps:
          
 
-* Click the Sorting ellipsis
+   + Click the Sorting ellipsis
 
-* Click New.
+   + Click New.
 
-* Type or select an expression by which to sort the data.
+   + Type or select an expression by which to sort the data.
 
-* From the Direction column drop-down list, choose the sort direction 
+   + From the Direction column drop-down list, choose the sort direction 
   for each expression. ASC sorts the expression in ascending order. DESC sorts 
   the expression in descending order.
 
 1.  To apply filtering to the group, follow these steps:
          
 
-* Click the Filters ellipsis
+   + Click the Filters ellipsis
 
-* Click New.
+   + Click New.
 
-* In __Expression__, type or select the expression for the field to filter. To open the __Edit Expression__ Dialog, select the ```<Expression>``` option.
+   + In __Expression__, type or select the expression for the field to filter. To open the __Edit Expression__ Dialog, select the ```<Expression>``` option.
 
-* In the __Operator__ box, select the operator that you want the filter to use to compare the values in the Expression box and the Value box.
+   + In the __Operator__ box, select the operator that you want the filter to use to compare the values in the Expression box and the Value box.
 
-* In the __Value__ box, type the expression or value against which you want the filter to evaluate the value in Expression.
+   + In the __Value__ box, type the expression or value against which you want the filter to evaluate the value in Expression.
 
 1. Click __GroupKeepTogether__ to specify the keep together options.
   
@@ -229,12 +229,12 @@ A new details group is added as a child group in the Grouping pane in the
 1. In the __Delete Group__ dialog box, select 
             one of the following options:
 
-* __Delete group and related rows and columns__   
+   + __Delete group and related rows and columns__   
   Choose this option to delete the group definition and all related rows that display 
   group data. For the details group, if the same row belongs to both detail and 
   group data, only the detail data rows are deleted.
 
-* __Delete group only__   Choose this option to keep
+   + __Delete group only__   Choose this option to keep
   the structure of the Table data item the same and delete only the group definition.
 
 1. Click __OK__.

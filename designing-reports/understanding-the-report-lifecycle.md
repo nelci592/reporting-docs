@@ -20,33 +20,34 @@ The lifecycle of a report includes the following stages:
 
 1. Defining the report.             Depending on the report designer where you define the report, the produced report definition is of the following types:             
 
-* A report class for [Visual Studio Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/overview%})−The report resources                   are stored in a `.resx` .NET-managed resource file. Depending on the programming language that you used when                   defining the report, the report class consists of either visual C# class files (`.cs` and `.Designer.cs`)                   or visual basic class files (`.vb` and `.Designer.vb`).                 
+   + A report class for [Visual Studio Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/overview%})−The report resources                   are stored in a `.resx` .NET-managed resource file. Depending on the programming language that you used when                   defining the report, the report class consists of either visual C# class files (`.cs` and `.Designer.cs`)                   or visual basic class files (`.vb` and `.Designer.vb`).                 
 
-* A `.trdx`, `.trdp`, or `.trbp` XML file for                   [Standalone Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview%}). The XML can be stored as an XML definition and                   resources that are packaged in a `.zip` file (TRDP), in a plain XML format (TRDX), or as a collection of report definitions                   (report book) that are packaged in a `.zip` format.                 
+   + A `.trdx`, `.trdp`, or `.trbp` XML file for                   [Standalone Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview%}). The XML can be stored as an XML definition and                   resources that are packaged in a `.zip` file (TRDP), in a plain XML format (TRDX), or as a collection of report definitions                   (report book) that are packaged in a `.zip` format.                 
 
 1. Processing the report definition.             
 
-* Performing all grouping, sorting, and filtering calculations.                 
+   + Performing all grouping, sorting, and filtering calculations.                 
 
-* Evaluating all expressions in the report definition except for the ones in the page header and footer sections.                 
+   + Evaluating all expressions in the report definition except for the ones in the page header and footer sections.                 
 
-* Binding the report definition to data from the available data sources.                 
+   + Binding the report definition to data from the available data sources.                 
 
-* Triggering the data-binding and data-bound event as well as the [bindings]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/bindings%}) of the items.                 
+   + Triggering the data-binding and data-bound event as well as the [bindings]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/bindings%}) of the items.                 
 
-* Producing a processing report.                 
+   + Producing a processing report.                 
 
 1. Rendering the processing report to a report document.             
 
-* Passing the processing report to a specific rendering extension such as PDF, HTML, CSV, and other.                 
+   + Passing the processing report to a specific rendering extension such as PDF, HTML, CSV, and other.                 
 
-* If the rendering format supports paging, the processing report is paginated.                 
+   + If the rendering format supports paging, the processing report is paginated.                 
 
-* Evaluating the expressions in the page header and footer sections for every page.                 
+   + Evaluating the expressions in the page header and footer sections for every page.                 
 
-* Rendering the report to a report document.                 
+   + Rendering the report to a report document.                 
 
 The following diagram demonstrates the stages of the report lifecycle−from designing a report definition to producing a report document.           
+
   ![](images/reportlifecycle3.png)
 
 ## Implications

@@ -40,12 +40,12 @@ You can connect to data from OpenEdge AppServer ABL procedures using the        
 
 * AppServer connection settings                 
 
-1. Connection URL
+   1. Connection URL
 
-1. Username (when applicable)
+   1. Username (when applicable)
 
-1. Password (when applicable)
+   1. Password (when applicable)
 
-1. AppServer info (optional)
+   1. AppServer info (optional)
 
-1. Session model (managed/free)
+   1. Session model (managed/free)

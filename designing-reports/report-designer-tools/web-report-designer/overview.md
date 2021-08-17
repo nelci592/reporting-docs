@@ -20,6 +20,7 @@ Telerik Web Report Designer is an HTML5/JavaScript/CSS3 jQuery-based widget that
 ## Web Report Designer elements
 
 The Web Report Designer consists of the following areas:  
+
   ![Web Report Designer With Dashboard Report](images/Designer/web-report-designer-dashboard.png)
 
 * __Design surface__ - shows the design layout of the report. Provides tools for selecting, moving,               resizing and editing the report items.             
@@ -42,9 +43,9 @@ The Web Report Designer uses a dedicated ASP.NET WebAPI REST service as a backen
 
 * The following NuGet packages are required:             
 
-* Telerik.Reporting                 
+   + Telerik.Reporting                 
 
-* Telerik.WebReportDesigner.Services                 
+   + Telerik.WebReportDesigner.Services                 
 
 ## Prerequisites:
 
@@ -60,11 +61,11 @@ The Web Report Designer uses a dedicated ASP.NET WebAPI REST service as a backen
 
 * All other scripts and styles will be provided by the Web Report Designer service               when the designer widget is loaded. The list of loaded resources:             
 
-* [jQuery UI](https://jqueryui.com/)__ 1.12.1__ library.                   We recommend using the version of jQuery UI subset that is                   served by the Web Report Designer service because it includes a fix related to                   the dragging and dropping components.                 The subset includes Draggable, Droppable, Resizable and their dependencies.                 
+   + [jQuery UI](https://jqueryui.com/)__ 1.12.1__ library.                   We recommend using the version of jQuery UI subset that is                   served by the Web Report Designer service because it includes a fix related to                   the dragging and dropping components.                 The subset includes Draggable, Droppable, Resizable and their dependencies.                 
 
-* webReportDesigner.min.css stylesheet.
+   + webReportDesigner.min.css stylesheet.
 
-* webReportDesignerTheme.css stylesheet.
+   + webReportDesignerTheme.css stylesheet.
 
 * The web report designer in our example is stylized using               [Roboto font](https://fonts.google.com/specimen/Roboto). A link to a font of your               preference can be added before creating the Web Designer widget on the page.             
 

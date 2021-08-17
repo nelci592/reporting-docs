@@ -21,6 +21,7 @@ The behavior of the search dialog depends on the __searchMetadataOnDemand__ prop
 If the __searchMetadataOnDemand__ property is set to           __true__, the processing engine will not include the search metadata in the rendering result set. This metadata will be fetched "on demand",           which will occur when the search dialog is shown. In this case the currently loaded in the viewer report will be processed once again to obtain the metadata and pass it           to the search dialog.         
 
 ## Search dialog  
+
   ![html 5-viewer-search-dialog](images/HTML5ReportViewer/html5-viewer-search-dialog.png)
 
 The search dialog is a Kendo Window Widget, that stays on top of the report viewer. Since it's not modal, the viewer remains fully functional even when the search dialog is shown.           The dialog can be closed with the close button in the top right corner or using the __search__ button on the toolbar.         

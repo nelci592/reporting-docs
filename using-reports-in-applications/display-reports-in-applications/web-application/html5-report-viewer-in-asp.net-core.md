@@ -145,15 +145,14 @@ public IActionResult Report()
 
 1. Add the HTML5 Report Viewer. For a detailed explanation, check the HTML5 Report Viewer               [Manual Setup]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/manual-setup%}) help article in the online documentation.               The required references to jQuery and Telerik Kendo UI CSS and JS files are listed in the example below.               Copy the Kendo subset from {Telerik Reporting installation path}\Html5\ReportViewer folder to wwwroot.             
 
->important Whenever you need to route a relative path you will have to use  *Url.Content*  helper, like this:               
+   >note Whenever you need to route a relative path you will have to use  *Url.Content*  helper, like this:               
 
 	
     ````HTML
 @Url.Content("~/api/reports/")
 ````
 
-instead of simply pasting the path.
-The complete Report view (Report.cshtml) should look like this:
+instead of simply pasting the path.The complete Report view (Report.cshtml) should look like this:
 
 	
     ````HTML
@@ -256,8 +255,7 @@ The complete Report view (Report.cshtml) should look like this:
 
 
 
->important The reference to the report viewer's JavaScript file ( *telerikReportViewer-{{site.buildversion}}.min.js* )                 should be updated to the corresponding version of the Reporting NuGet package.               
-
+   >note The reference to the report viewer's JavaScript file ( *telerikReportViewer-{{site.buildversion}}.min.js* )                 should be updated to the corresponding version of the Reporting NuGet package.               
 
 1. To add a link to the __Report__ view in the __Home__ page navigation open               *Views\Shared\_Layout.cshtml* page and add:             
 

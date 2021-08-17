@@ -17,6 +17,7 @@ Scatter (Point) charts are used to show correlations between two sets of values.
 Scatter charts are different from other chart types because, instead of using the category values as x-values,        	they have explicit x-values for the data points. Consequently, the data can be grouped (and aggregated) into a different category        	than the value that is shown on the x-axis. For example, to show last year's sales for individual salespersons along the x-axis,        	you would not want to aggregate y-values if two salespersons have identical x-values.       
 
 The following image illustrates a scatter chart:         
+
   ![scatter-chart](images/Graph/scatter-chart.png)
 
 ## Bubble Charts
@@ -24,6 +25,7 @@ The following image illustrates a scatter chart:
 Bubble charts can be considered a variation of the scatter charts, in which the data points are replaced with bubbles.    					This chart type displays the differences between data points based on the size of   					the bubble. The larger the bubble is, the larger is the difference between the two data points.   				
 
 The following Bubble chart sample report has a category set to sales person so that it aggregates sales    					data per sales person. However, the value of last year's sales is shown on the x-axis.   				  
+
   ![bubble-chart](images/Graph/bubble-chart.png)
 
 ## Design Considerations for Scatter Charts

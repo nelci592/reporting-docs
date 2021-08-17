@@ -29,6 +29,7 @@ This topic explains how to setup the Windows Forms Report Viewer to work with Te
 1. To create a form and host the report viewer in it, you can either use the item template, as explained                   [here]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/windows-forms-application/how-to-add-report-viewer-to-a-windows-forms'-.net-framework-project%}), or place it yourself through drag-and-drop from the toolbox.                 
 
 1. As soon as the report viewer is on your form, select it and locate the __ReportEngineConnection__ property.                   invoke the UI editor by pressing the ellipsis button. The Report Engine Connection Editor dialog should appear:                   
+
   ![Winforms Connection Editor](images/WinformsConnectionEditor.png)
 
 1. The __Reporting engine__ combobox provides the following options:                 
@@ -52,6 +53,7 @@ This topic explains how to setup the Windows Forms Report Viewer to work with Te
 1. Click __OK__ when ready. The dialog will close and the resulting connection string will be populated as a value of the __ReportEngineConnection__ property.                 
 
 1. Locate the __ReportSource__ property. Invoke the UI editor by pressing the ellipsis button. The Report Source Editor dialog should appear:                   
+
   ![Winforms Report Source Editor](images/WinformsReportSourceEditor.png)
 
 1. Select the __Report server__ option. The dialog will try to connect to a report server instance, using the credentials you provided earlier. In case it succeeds, the dialog                   will populate its *Category* and *Report Name* comboboxes, allowing you to select the desired report.                   If the report server is not available at the moment, you can still write down the category and report name in the comboboxes and their values will be used to create the report source for the viewer.                     If needed, you can setup the report source parameters using the dialog, invoked by pressing the __Edit Parameters__ button.                 

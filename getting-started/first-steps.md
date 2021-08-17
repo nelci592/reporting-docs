@@ -55,6 +55,7 @@ The Getting Started guide includes the following articles:
 1. In the __Customization dialog__ of the Wizard, click __Examples Setup__ to set the examples and the used connection string.               The examples use the MS SQL Server AdventureWorks database which you will need later for the report.             
 
 1. In the __Samples Database Setup__ dialog of the Wizard, select your __Database Server__ and the authentication for the connection.               The Wizard detects all running instances and lists them in the input field.               
+
   ![Install](images/Install.PNG)
 
 1. On each subsequent dialog that the Wizard will render, click __Install__ and select __Next__ until the installation is completed.             

@@ -53,8 +53,9 @@ file:///D:/Work/2018/Hotfix/Documentation/Help/Content/report-viewer-localizatio
 file:///D:/Work/2018/Hotfix/Documentation/Help/Content/MVCExtensions/mvc-report-viewer-howto-custom-parameters.aml
 
 
+fixed feedback - The unordered list is not part of the whole list (the one under the second bullet item in the section), thus it is on the same level - https://reportinghost:446/reporting/installation#installing-telerik-reporting
 
-
+fixed feedback, added a new line before the image - Images are not in a “mediaNear” div and thus there is missing top and bottom margins - https://reportinghost:446/reporting/installation#installing-telerik-reporting
 
 
 
@@ -121,4 +122,17 @@ Some article titles contain '/' that is interpreted as new subfolder and their n
 
 
 Merge TOC of documentation and API reference - D:\Work\reporting-docs\_assetsApi\api\index.md - change this file accordingly
+
+
+
+
+
+
+
+Feedback:
+
+seems like the other paragraphs in the generated MD file   -	There are missing paragraphs in page sections consisting only of bullet lists. Thus, the 20px font size style is not applied and the text looks small. For example you can check the Prerequisites section here - https://reportinghost:446/reporting/installation
+
+
+
 

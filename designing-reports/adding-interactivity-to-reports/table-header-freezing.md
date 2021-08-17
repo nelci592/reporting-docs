@@ -27,11 +27,13 @@ To keep the table headers visible while scrolling:
 1. Select a table/crosstab component from the __Explorer tab__, or click the corner handle of a table data region, and then               go to its Properties pane on the right.             
 
 1. Under __Layout__, select which headers (row, column or both) should remain visible while scrolling.               
+
   ![Table Freeze Headers Designer](images/TableFreezeHeadersDesigner.png)
 
 ## Settings in the Report Viewers
 
 The HTML5 Viewer automatically applies the freeze functionality in __[Interactive mode]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/interactive-vs.-print-layout%})__           when it is enabled from the designers.           The picture below shows a report with frozen row and column headers:           
+
   ![Table Freeze Headers Viewer](images/TableFreezeHeadersViewer.png)
 
 ## Behaviour

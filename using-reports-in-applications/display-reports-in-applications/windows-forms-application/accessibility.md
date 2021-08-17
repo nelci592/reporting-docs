@@ -78,13 +78,13 @@ The value of this label is created using the following pattern: `{type} {additio
 
 * __{additional information}__ is intended to give some meaningful information about the context where the current item is in, or about its additional properties.               The cases where it is most useful, are:             
 
-* - if the current item has some interactive action set, this token will contain the type of the action.                 
+   + - if the current item has some interactive action set, this token will contain the type of the action.                 
 
-* - if the current item is __Table__ or __Crosstab__, the token will contain information about the row and column count.                 
+   + - if the current item is __Table__ or __Crosstab__, the token will contain information about the row and column count.                 
 
-* - if the current item is nested in a __Table__ or __Crosstab__, the token will contain information                   about the current cell's row and column __zero-based index__.                   Additionally, if the cell is used as a header, this information will be also included in the label.                 
+   + - if the current item is nested in a __Table__ or __Crosstab__, the token will contain information                   about the current cell's row and column __zero-based index__.                   Additionally, if the cell is used as a header, this information will be also included in the label.                 
 
-* - if the current item is a __CheckBox__, the token will contain information about the current checkbox status (checked/unchecked).                 
+   + - if the current item is a __CheckBox__, the token will contain information about the current checkbox status (checked/unchecked).                 
 
 * __{description}__ provides relevant information about the current item contents. Its value is evaluated using the item's               *AccessibleDescription* property and if it is empty, falls back to the item's               *Value* or *Text* property, whichever is available.             
 

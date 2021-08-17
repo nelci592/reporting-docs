@@ -28,11 +28,13 @@ When the __*Report Viewer*__ tries to load any localized resource and does not f
 The best way to store your resources is to generalize them as much as possible. That means to store localized strings in resource files for neutral cultures rather than specific cultures whenever possible. For instance, if you have resources for the French Belgian ("fr-BE") culture and the resources immediately above are the fallback resources in English, a problem may result when someone uses your application on a system configured for the French Canadian culture. The __*Report Viewer*__ will look for a __RESX__ file named "fr-CA", it will not find it and will load the fallback resource, which is English, instead of loading the French resources. The following picture shows this undesirable scenario.         
 
   
+
   ![](images/localization1.png)
 
 If you follow the recommended practice of placing as many resources as possible in a neutral resource file for the "fr" culture, the French Canadian user would not see resources marked for the "fr-BE" culture, but he or she would still see strings in French. The following situation demonstrates this preferred scenario.
 
   
+
   ![](images/localization2.png)
 
 ## Naming Conventions for the Localization Resources
@@ -64,6 +66,7 @@ As described above, if for example the current UI culture is set to French Belgi
 1. Telerik.ReportViewer.WPF.TextResources.resx
 
   
+
   ![](images/localization3.png)
 
 The above diagram illustrates a simple view of the resource fallback for a UI culture set to "fr-BE". The __*Report Viewer*__ handles the case probing the "fr-BE" __RESX__ resource file for the requested key first, and subsequently falls back to the neutral French culture "fr", ultimately looking in the default assembly resources for a value if a value has still not been found.         
@@ -76,10 +79,10 @@ The above diagram illustrates a simple view of the resource fallback for a UI c
 1.             In the __*Property Inspector*__ specify the following properties for the resource file:
             
 
-1. __*Build Action:*__ "*None*"
+   1. __*Build Action:*__ "*None*"
               
 
-1. __*Copy to Output Directory:*__ "*Copy if newer*" or "*Copy always*"
+   1. __*Copy to Output Directory:*__ "*Copy if newer*" or "*Copy always*"
               
 
 1.             Open the __RESX__ resource file in the __*Visual Studio Resource Editor*__. Enter the required
@@ -101,21 +104,155 @@ In order to distribute an application that uses __*Telerik Reporting*__         
 
 The other way to localize the WPF __*Report Viewer*__ in a more flexible manner is to create a class that implements the           ITextResources interface and to implement all its properties, which represent all tooltips and messages in the Report Viewer. After you implement ITextResources you have to pass an instance of your custom class to the TextResources property ot the report viewer. The logic is pretty           simple, the property just has to return the correct translation for each resource key, as it is shown below:         
 
+{{source=CodeSnippets\CS\API\Telerik\ReportViewer\Wpf\InterfaceLocalizationSnippets.cs region=InterfaceLocalizationSnippetStart}}
+````C#
+	        class CustomResources : Telerik.ReportViewer.Wpf.ITextResources
+	        {
+	            public string AllFiles
+	            {
+	                get
+	                {
+	                    return "Todos Archivos";
+	                }
+	            }
+	            public string BackToolTip
+	            {
+	                get
+	                {
+	                    return "Navega hacia atrás";
+	                }
+	            }
+	            public string CurrentPageToolTip
+	            {
+	                get
+	                {
+	                    return "Página corriente";
+	                }
+	            }
 	
-
-
-
 	
+	            //...... Implement the rest of the properties ...... 
+````
+
+
+
+{{source=CodeSnippets\CS\API\Telerik\ReportViewer\Wpf\InterfaceLocalizationSnippets.cs region=InterfaceLocalizationSnippetEnd}}
+````C#
+	        }
+````
+
+
+
+{{source=CodeSnippets\VB\API\Telerik\ReportViewer\Wpf\InterfaceLocalizationSnippets.vb region=InterfaceLocalizationSnippetStart}}
+````VB.NET
+	    Class CustomResources
+	        Implements Telerik.ReportViewer.Wpf.ITextResources
+	
+	        Public ReadOnly Property AllFiles() As String Implements ReportViewer.Wpf.ITextResources.AllFiles
+	            Get
+	                Return "Todos Archivos"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property BackToolTip() As String Implements ReportViewer.Wpf.ITextResources.BackToolTip
+	            Get
+	                Return "Navega hacia atrás"
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property CurrentPageToolTip() As String Implements ReportViewer.Wpf.ITextResources.CurrentPageToolTip
+	            Get
+	                Return "Página corriente"
+	            End Get
+	        End Property
+	
+	        '...... Implement the rest of the properties ......
+````
+
+
+
+{{source=CodeSnippets\VB\API\Telerik\ReportViewer\Wpf\InterfaceLocalizationSnippets.vb region=InterfaceLocalizationSnippetEnd}}
+````VB.NET
+	    End Class
+````
 
 
 
 Instead of a hard-coded string the property can be set in a method/contructor or to be created a method that returns string and implements a cutsom logic,           for example retreives the resource key from a database.         
 
+{{source=CodeSnippets\CS\API\Telerik\ReportViewer\Wpf\InterfaceLocalizationSnippets.cs region=InterfaceLocalizationUsingMethodsSnippetStart}}
+````C#
+	        class CustomTextResources : Telerik.ReportViewer.Wpf.ITextResources
+	        {
 	
-
-
-
+	            public string AllFiles
+	            {
+	                get
+	                {
+	                    return SqlHelper.GetViewerKeyFromDb(TextResourcesEnum.AllFiles);
+	                }
+	            }
 	
+	            public string BackToolTip
+	            {
+	                get
+	                {
+	                    return SqlHelper.GetViewerKeyFromDb(TextResourcesEnum.BackToolTip);
+	                }
+	            }
+	
+	            public string CurrentPageToolTip
+	            {
+	                get
+	                {
+	                    return SqlHelper.GetViewerKeyFromDb(TextResourcesEnum.CurrentPageToolTip);
+	                }
+	            }
+	
+	            //...... Implement the rest of the properties ......
+````
+
+
+
+{{source=CodeSnippets\CS\API\Telerik\ReportViewer\Wpf\InterfaceLocalizationSnippets.cs region=InterfaceLocalizationUsingMethodsSnippetEnd}}
+````C#
+	        }
+````
+
+
+
+{{source=CodeSnippets\VB\API\Telerik\ReportViewer\Wpf\InterfaceLocalizationSnippets.vb region=InterfaceLocalizationUsingMethodsSnippetStart}}
+````VB.NET
+	    Class CustomTextResources
+	        Implements Telerik.ReportViewer.Wpf.ITextResources
+	
+	        Public ReadOnly Property AllFiles() As String Implements ReportViewer.Wpf.ITextResources.AllFiles
+	            Get
+	                Return SqlHelper.GetViewerKeyFromDb(TextResourcesEnum.AllFiles)
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property BackToolTip() As String Implements ReportViewer.Wpf.ITextResources.BackToolTip
+	            Get
+	                Return SqlHelper.GetViewerKeyFromDb(TextResourcesEnum.BackToolTip)
+	            End Get
+	        End Property
+	
+	        Public ReadOnly Property CurrentPageToolTip() As String Implements ReportViewer.Wpf.ITextResources.CurrentPageToolTip
+	            Get
+	                Return SqlHelper.GetViewerKeyFromDb(TextResourcesEnum.CurrentPageToolTip)
+	            End Get
+	        End Property
+	
+	        '...... Implement the rest of the properties ......
+````
+
+
+
+{{source=CodeSnippets\VB\API\Telerik\ReportViewer\Wpf\InterfaceLocalizationSnippets.vb region=InterfaceLocalizationUsingMethodsSnippetEnd}}
+````VB.NET
+	    End Class
+````
 
 
 

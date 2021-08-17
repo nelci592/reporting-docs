@@ -15,6 +15,7 @@ position: 11
 Generally only some properties of certain report        items can handle expression values. Other properties of a report item can        take advantage of expression values by adding Binding objects to its __Bindings        collection__. Only write-enabled properties can be set through binding expressions,        so read-only properties are not suitable for "data-binding".
 
 The Edit Bindings dialog is available in the property grid by         clicking on the ellipsis of the Bindings property.         
+
   ![](images/UI/Bindings.png)
 
 ## Add a Binding object

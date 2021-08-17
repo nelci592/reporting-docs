@@ -20,9 +20,11 @@ Telerik Reporting provides a mechanism known as parameter merging.           If 
 
 >note When one or more parameters are merged the UI settings of the  __first__  one are used for the generated input control in the parameters area.           
   
+
   ![](images/ReportBook3_MergedParameters.png)
 
 You can control parameter merging via the           [Mergeable](/reporting/api/Telerik.Reporting.IReportParameter#Telerik_Reporting_IReportParameter_Mergeable) boolean           property of the ReportParameter class. The default value of the Mergeable property is true. Set           the Mergeable property to false if you want to prevent a parameter from being merged with its equivalent ones.           
+
   ![](images/ReportBook4_MergedParameters2.png)
 
 ## Passing Values for Report Parameters in a Reportbook thru ReportSource
@@ -87,8 +89,7 @@ You can control parameter merging via the           [Mergeable](/reporting/api/T
 
 
 
->tip If you do not use the specified syntax and you refer to the report parameter directly by Name property's value,                 the value will be set only for the first occurrence of report parameter in the report book.               
-
+   >note If you do not use the specified syntax and you refer to the report parameter directly by Name property's value,                 the value will be set only for the first occurrence of report parameter in the report book.               
 
 # See Also
 

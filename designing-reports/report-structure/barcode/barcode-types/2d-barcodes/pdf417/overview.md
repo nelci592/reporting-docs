@@ -19,6 +19,7 @@ PDF417 is a stacked linear barcode symbol format used in a variety of applicatio
 The code is divided into rows and columns, which accommodate all the encoded data, the error correction code words,           as well as any additional format information, such as start and stop sequences.         
 
 The PDF417 barcode has the following structure:           
+
   ![barcode pdf 417 structure](images/Barcodes/barcode-pdf417-structure.png)
 
 The __Data codewords__ are located in the middle section of the barcode and include the following sections:         

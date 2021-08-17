@@ -30,11 +30,11 @@ For more details see topics in [Data Source Components]({%slug telerikreporting/
 
 * The data can be:             
 
-* [Filtered]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/filtering-data/overview%});                 
+   + [Filtered]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/filtering-data/overview%});                 
 
-* [Ordered]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/ordering-data/overview%});                 
+   + [Ordered]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/ordering-data/overview%});                 
 
-* [Grouped]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/grouping-data-/overview%}).                 
+   + [Grouped]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/grouping-data-/overview%}).                 
 
 * The most straightforward approach for connecting a data item to data is to set data item's __DataSource__ property to a Data Source component.             
 

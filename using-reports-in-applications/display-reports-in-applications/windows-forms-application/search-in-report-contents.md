@@ -21,6 +21,7 @@ The behavior of the search dialog depends on the [SearchMetadataOnDemand](/repor
 If the [SearchMetadataOnDemand](/reporting/api/Telerik.ReportViewer.WinForms#Telerik_ReportViewer_WinForms_SearchMetadataOnDemand) property is set to           __true__, the processing engine will not include the search metadata in the rendering result set. This metadata will be fetched "on demand",           which will occur when the search dialog is shown. In this case the currently loaded in the viewer report will be processed once again to obtain the metadata and pass it           to the search dialog.         
 
 ## Search dialog  
+
   ![winforms-viewer-search-dialog](images/winforms-viewer-search-dialog.png)
 
 The search dialog is a standalone WinForms form, toggled either from the report viewer toolbar or with the __Ctrl+F__ key combination.           The dialog stays on top of the report viewer, but since it's not modal, the viewer remains fully functional even when the search dialog is shown.            Initially the dialog shows in the top-right corner of the report viewer area, but if there is no available space, it will be placed in the top-right corner of the virtual desktop.           The dialog persists its position when closed and opens on the same place next time it is opened until the viewer is active. The dialog can be closed with the red close button in the top-right corner, or with ESC key.         

@@ -22,31 +22,31 @@ To successfully integrate the Angular Report Viewer component, ensure the follow
 
 1. Required Application Version:             
 
-* Angular 4+ application                 
+   + Angular 4+ application                 
 
 1. Required Service:             
 
-* The viewer requires a running instance of [Telerik Reporting REST Services]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview%})                   in order to display reports. Make sure to                   [enable Cross-Origin Requests (CORS)](https://docs.microsoft.com/en-us/aspnet/web-api/overview/security/enabling-cross-origin-requests-in-web-api) in the REST Service project.                 
+   + The viewer requires a running instance of [Telerik Reporting REST Services]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview%})                   in order to display reports. Make sure to                   [enable Cross-Origin Requests (CORS)](https://docs.microsoft.com/en-us/aspnet/web-api/overview/security/enabling-cross-origin-requests-in-web-api) in the REST Service project.                 
 
 1. Required JavaScript libraries:
 
-* [jQuery 3.2.1+](https://jquery.com/download/)
+   + [jQuery 3.2.1+](https://jquery.com/download/)
 
 1. The               [Angular Report Viewer package](https://www.npmjs.com/package/@progress/telerik-angular-report-viewer)               requires the following peer dependencies:             
 
-* @angular/common                 
+   + @angular/common                 
 
-* @angular/core                 
+   + @angular/core                 
 
-* rxjs                 
+   + rxjs                 
 
-* jquery                 
+   + jquery                 
 
 1. Required references to Telerik Kendo UI styles:
 
-* [Less-Based Themes](https://docs.telerik.com/kendo-ui/styles-and-layout/appearance-styling); or                 
+   + [Less-Based Themes](https://docs.telerik.com/kendo-ui/styles-and-layout/appearance-styling); or                 
 
-* [Sass-Based Themes](https://docs.telerik.com/kendo-ui/styles-and-layout/sass-themes)
+   + [Sass-Based Themes](https://docs.telerik.com/kendo-ui/styles-and-layout/sass-themes)
 
 ## Browser Support
 

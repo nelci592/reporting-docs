@@ -24,9 +24,9 @@ To add Text Watermarks to the Report use the following steps:
 
 1. You can open the Watermarks collection editor in two ways:
 
-* Click the Report selector button located in the upper left corner of the [Visual Studio Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/overview%}). This makes the report active in the Properties window.                   Expand __PageSettings__ and click __Watermarks__ ellipsis in the property grid.                 
+   + Click the Report selector button located in the upper left corner of the [Visual Studio Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/overview%}). This makes the report active in the Properties window.                   Expand __PageSettings__ and click __Watermarks__ ellipsis in the property grid.                 
 
-* Select the Watermarks item in the report's context menu, which appears when you right-click on the designer surface.                 Both actions will display the Watermarks collection editor, which is empty by default.             
+   + Select the Watermarks item in the report's context menu, which appears when you right-click on the designer surface.                 Both actions will display the Watermarks collection editor, which is empty by default.             
 
 1. Click __Add__ button and select TextWatermark.             
 
@@ -100,9 +100,9 @@ To add Picture Watermarks to the Report use the following steps:
 
 1. You can open the Watermarks collection editor in two ways:
 
-* Click the Report selector button located in the upper left corner of the [Visual Studio Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/overview%}). This makes the report active in the Properties window.                   Expand __PageSettings__ and click __Watermarks__ ellipsis in the property grid.                 
+   + Click the Report selector button located in the upper left corner of the [Visual Studio Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/overview%}). This makes the report active in the Properties window.                   Expand __PageSettings__ and click __Watermarks__ ellipsis in the property grid.                 
 
-* Select the Watermarks item in the report's context menu, which appears when you right-click on the designer surface.                 Both actions will display the Watermarks collection editor, which is empty by default.             
+   + Select the Watermarks item in the report's context menu, which appears when you right-click on the designer surface.                 Both actions will display the Watermarks collection editor, which is empty by default.             
 
 1. Click the small arrow on the right side of the __Add__ button and select PictureWatermark from the drop-down menu.             
 
@@ -162,9 +162,9 @@ To add Background Overlay to the Report use the following steps:
 
 1. You can open the Watermarks collection editor in two ways:
 
-* Click the Report selector button located in the upper left corner of the [Visual Studio Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/overview%}). This makes the report active in the Properties window.                   Expand __PageSettings__ and click __Watermarks__ ellipsis in the property grid.                 
+   + Click the Report selector button located in the upper left corner of the [Visual Studio Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/overview%}). This makes the report active in the Properties window.                   Expand __PageSettings__ and click __Watermarks__ ellipsis in the property grid.                 
 
-* Select the Watermarks item in the report's context menu, which appears when you right-click on the designer surface.                 Both actions will display the Watermarks collection editor, which is empty by default.             
+   + Select the Watermarks item in the report's context menu, which appears when you right-click on the designer surface.                 Both actions will display the Watermarks collection editor, which is empty by default.             
 
 1. Click the small arrow on the right side of the __Add__ button and select BackgroundOverlay from the drop-down menu.             
 
@@ -231,6 +231,7 @@ Add Watermarks to the Report via defined page range:
 ## Design-time support
 
 For better design experience, the watermarks are shown in the designer by default. They can be switched on/off with the watermarks button, located on the toolstrip at the bottom left corner of the designer window.           
+
   ![report-designer-toolstrip-watermarks-focused](images/Designer/report-designer-toolstrip-watermarks-focused.png)
 
 The value of the text watermarks is not evaluated and it is shown 'as-is' in the designer.           Note that the position of the watermark in design-time is calculated based on the report size in designer and might differ from the watermark you will see in the previewed report.         

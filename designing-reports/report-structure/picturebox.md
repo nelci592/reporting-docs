@@ -23,6 +23,7 @@ As a value for PictureBox, you can set an [expression]({%slug telerikreporting/d
 A path to an image file, a Base64-encoded string or an SVG markup can also be pasted in the Value property editor or in the          Edit Expression dialog.       
 
 This screenshot shows a PictureBox report item on a report at design-time (note the image thumbnail in the upper left corner).  
+
   ![](images/PictureBox.png)
 
 If you want to set an expression as a Value of the PictureBox in the Report Designer, you need to right-click over the item              and choose "Expression...". You may enter the expression in the popped-up              [Edit Expression Dialog]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/edit-expression-dialog%}).           

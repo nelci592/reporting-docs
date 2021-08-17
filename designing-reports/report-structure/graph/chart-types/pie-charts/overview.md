@@ -59,6 +59,7 @@ By default, the layout engine will try to arrange the data labels so they do not
 * Set the [DataPointLabelOffset](/reporting/api/Telerik.Reporting.BarSeries#Telerik_Reporting_BarSeries_DataPointLabelOffset) to a greater value               so the labels will be arranged around a circle with a bigger radius.             
 
 For Pie Charts with lots of data points the best approach might be to use a combination of the above-mentioned approaches.           The following image shows a chart series that has its           [DataPointLabelAlignment](/reporting/api/Telerik.Reporting.BarSeries#Telerik_Reporting_BarSeries_DataPointLabelAlignment) set to __OutsideColumn__,           [DataPointLabelOffset](/reporting/api/Telerik.Reporting.BarSeries#Telerik_Reporting_BarSeries_DataPointLabelOffset) set to __0.5cm__           and [DataPointLabelConnectorStyle](/reporting/api/Telerik.Reporting.BarSeries#Telerik_Reporting_BarSeries_DataPointLabelConnectorStyle)__.Visible__           set to __true__.           
+
   ![Outside Column Pie Chart](images/Graph/OutsideColumnPieChart.png)
 
 >note The algorithm that moves the data point labels, preventing them from overlapping, is activated only when the labels have their             [DataPointLabelAngle](/reporting/api/Telerik.Reporting.GraphSeriesBase#Telerik_Reporting_GraphSeriesBase_DataPointLabelAngle) set to a multiple of  __2*π__  radians in degrees (i.e. 0, 360, etc.).           

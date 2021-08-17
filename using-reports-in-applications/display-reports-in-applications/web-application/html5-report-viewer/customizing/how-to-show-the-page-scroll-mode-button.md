@@ -43,7 +43,7 @@ Add buttons elements in your local template. There are two different elements th
 
 * For desktop screens.             Copy the following element in the __ul__ element with id attribute __trv-main-menu-ul__
 
-* For default template
+   + For default template
 
 	
     ````HTML
@@ -52,7 +52,7 @@ Add buttons elements in your local template. There are two different elements th
 
 
 
-* For Font Awesome template
+   + For Font Awesome template
 
 	
     ````HTML
@@ -63,7 +63,7 @@ Add buttons elements in your local template. There are two different elements th
 
 * For mobile screensCopy the following element in __ul__ element with id attribute __trv-side-menu-ul__
 
-* For default template
+   + For default template
 
 	
     ````HTML
@@ -72,7 +72,7 @@ Add buttons elements in your local template. There are two different elements th
 
 
 
-* For Font Awesome template
+   + For Font Awesome template
 
 	
     ````HTML

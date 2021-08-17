@@ -17,6 +17,7 @@ The following walk through demonstrates how to create a Master-Detail report usi
 ## Create the Detail Report
 
 1. Create a new class library named "MasterDetail" to contain the reports.               
+
   ![](images/MasterDetail0000.png)
 
 1. Add a new Telerik Report item to the project via __Add New item - Reporting - Telerik Reporting [VERSION] Wizard - Blank Report, and name it DetailReport__.             
@@ -45,6 +46,7 @@ The following walk through demonstrates how to create a Master-Detail report usi
 1. Remove the page header and page footer sections. Open the [Data Explorer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-explorer%})               and add the __ProductNumber__ and __Name__ fields to the               detail section of the report.             
 
 The detail report should now look something like this in the designer.           
+
   ![](images/MasterDetail0010.png)
 
 ## Configure the Report Parameter and Filter
@@ -54,11 +56,13 @@ This next set of steps creates a report parameter and a filter that uses the rep
 1. In the __Property Window__ navigate to the __ReportParameters__               property and click the ellipses.             
 
 1. In the ReportParameter Collection Editor click the __Add__ button. In the Name property               for the parameter enter __ProductCategoryID__. Enter zero for the __Value__ property.               
+
   ![](images/MasterDetail0011.png)
 
 1. In the __Property Window__ navigate to the __Filters__ property and click the ellipses.             
 
 1. Click the __New__ button to create a new filter. In the __Expression__ drop down               for the filter select =Fields.ProductCategoryID. Leave the operator at the default equals ("=") sign. In the               __Value__ property drop down select the report parameter we created in earlier step: =Parameters.ProductCategoryID.Value.               
+
   ![](images/MasterDetail0013.png)
 
 1. Click the __OK__ button to close the dialog.             
@@ -101,7 +105,9 @@ This next set of steps ties both reports together using a SubReport to display t
 1. Set the __Parameter Name__ to __ProductCategoryID__ and the parameter value to __=Fields.ProductCategoryID__.             
 
 1. Click the __OK__ button to close the parameters dialog and click __OK__               once again to close the Report Source dialog.               
+
   ![](images/MasterDetail0014.png)Click the Preview button to preview the MasterReport. Notice that product numbers and names from the detail               report display under each product category from the master report.               
+
   ![](images/MasterDetail0016.png)
 
 >note The same report layout can be created with the Standalone Report Designer, where sub reports can be specified             by path to a TRDX file or by directly placing the sub report's XML in the provided SubReport.ReportSource editor.           

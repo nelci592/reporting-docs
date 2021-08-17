@@ -40,6 +40,7 @@ In the example solution below "MyReportSolution" there are three projects.
 >caption Example solution
 
   
+
   ![](images/BestPractices1.png)
 
 ## Create a Report Library with a report definition.

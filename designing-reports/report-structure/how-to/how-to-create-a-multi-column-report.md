@@ -51,11 +51,13 @@ __Report.PageSettings.ColumnCount=4__
 __Report.PageSettings.ColumnSpacing=0in.__
 
   
+
   ![](images/ReportMultiColumnA.png)
 
 Here is how this report looks when previewed in Print Preview:
 
   
+
   ![](images/ReportMultiColumnB.png)
 
 The following specifics are visible from the preview:

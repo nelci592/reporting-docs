@@ -15,6 +15,7 @@ position: 3
 This section discusses how to specify a database connection to the __EntityDataSource__ component      	that can be used both at design-time and when running the report in production. The provided examples      	and code snippets assume an existing __Entity Data Model__ of the __Adventure Works__ sample database with the      	following structure:
 
   
+
   ![](images/DataSources/EntityDataSourceAdventureWorksEntityModel.png)
 
 ## 
@@ -99,6 +100,7 @@ When running the report in production the above code should work just fine. Howe
 The __ConnectionString__ property can accept an inline connection string or the name of an existing        	connection string stored in the configuration file. When running the report __EntityDataSource__ searches        	the configuration file for a connection string with the specified name. If such connection string exists       	__EntityDataSource__ uses that connection string to connect to the database otherwise it is assumed that the       	value of the __ConnectionString__ property represents an inline connection string. 
 
 >note Specifying an inline connection string directly to the  __ConnectionString__  property of the  	 __EntityDataSource__  component is not recommended, because it might be difficult to maintain all your reports  	later, when that connection string changes. The recommended approach is to always specify the name of an  	existing connection string stored in the configuration file. When specifying a connection string form a  	configuration file it is important to understand which configuration file is used at design-time or when  	running the report in production. For example, let us consider the following simplified structure of a  	business application:  
+
   ![](images/DataSources/BusinessApplicationStructure.png)The above schema assumes that the different parts of the business application are represented as  	separate projects in the solution, each with its own configuration file. Initially, when you create the  	 __Entity Data Model__  in the  __Business Logic__  project, the connection string is stored automatically in the  	configuration file of that project. Later, when creating new reports in the  __Report Library__  project, you need  	to add the connection string to the configuration file of that project, because this is where  __Report Designer__  	searches for existing connection strings. Finally, when deploying your application or web site in production, 	you need to add the connection string to the configuration file of your  __Main Application__ .
 
 

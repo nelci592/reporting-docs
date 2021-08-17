@@ -49,23 +49,24 @@ The controls which the __Report Header__ and the __Report Footer__ contain are d
 1. Drag __StoreName__ to __Series__.             
 
 1. Drag __LineTotal__ to __Values__.               
+
   ![Pie](images/Pie.PNG)
 
 1. Mark the graph to add the filtering and sorting functionalities. As a result, the top five stores from the database will be rendered.             
 
 1. From the  [Group Explorer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/group-explorer%}), click __Filter__ and set the following parameters:             
 
-* __Expression__: =Sum(Fields.LineTotal)
+   + __Expression__: =Sum(Fields.LineTotal)
 
-* __Operator__: Top N
+   + __Operator__: Top N
 
-* __Value__: =5
+   + __Value__: =5
 
 1. From the __Group Explorer__, click __Sorting__ and set the following parameters:             
 
-* __Expression__: =Sum(Fields.LineTotal)
+   + __Expression__: =Sum(Fields.LineTotal)
 
-* __Direction__:  DESC
+   + __Direction__:  DESC
 
 1. From the __Properties__ grid, select the __Color Palette__ option to set specific colors for each bar series.             
 
@@ -85,6 +86,7 @@ In the generated report, the __Color Palette__ is set in the following way:
         
 
   
+
   ![Report With Graph](images/ReportWithGraph.PNG)
 
 ## Next Steps

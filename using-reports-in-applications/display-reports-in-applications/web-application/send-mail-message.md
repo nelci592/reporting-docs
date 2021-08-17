@@ -22,6 +22,7 @@ By default the send mail message button is hidden.           This is because the
 
 
 ## Send Mail Message Dialog  
+
   ![send-mail-msg-dialog](images/HTML5ReportViewer/send-mail-msg-dialog.png)
 
 The Send Mail Message dialog is a Kendo Window Widget, that stays on top of the report viewer. Since it's not modal, the viewer remains fully functional even when this dialog is shown.           The dialog can be closed with the close button in the top right corner or using the __Send Mail Message__ button on the toolbar.         

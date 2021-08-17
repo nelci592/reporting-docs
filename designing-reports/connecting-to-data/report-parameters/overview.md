@@ -40,13 +40,11 @@ Report parameters can have the following properties:
 
 * [Value](/reporting/api/Telerik.Reporting.ReportParameter#Telerik_Reporting_ReportParameter_Value)Used to specify value for the parameter. It can be blank, value of the allowed types, an Expression that evaluates to a value of the allowed types, or IEnumerable containing values of the allowed types.
 
->note When a parameter accepts multiple values (MultiValue=True), you can set the value by programmatically assigning an IEnumerable of the allowed types.
-
+   >note When a parameter accepts multiple values (MultiValue=True), you can set the value by programmatically assigning an IEnumerable of the allowed types.
 
 * [Text](/reporting/api/Telerik.Reporting.ReportParameter#Telerik_Reporting_ReportParameter_Text)Specifies the text for the parameter to be displayed in the report viewer as a prompt to the end user.               It can be blank, string or Expression. If not set, the __Name__ of the parameter will be used instead.             
 
->note When you use an Expression to set the property, data fields should not be used and respectively they are not listed in the [Edit Expression Dialog]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/edit-expression-dialog%}).               
-
+   >note When you use an Expression to set the property, data fields should not be used and respectively they are not listed in the [Edit Expression Dialog]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/edit-expression-dialog%}).               
 
 * [Visible](/reporting/api/Telerik.Reporting.ReportParameter#Telerik_Reporting_ReportParameter_Visible)Specifies whether the editor will have UI in the parameters area.               If you turn on the __Visible__ property for at least one report parameter, the               parameter area is shown when previewing the report in the report designer or in the report viewer.             
 

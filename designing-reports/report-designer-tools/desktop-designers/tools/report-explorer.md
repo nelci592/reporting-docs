@@ -21,4 +21,5 @@ In the screenshot below you can see that the report is represented by the root n
 The __Report Explorer__ can be accessed from the [context menu]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/context-menu%})__ View | Report Explorer__ when right-clicking the area next to the report design surface.       
 
   
+
   ![](images/UI003.png)

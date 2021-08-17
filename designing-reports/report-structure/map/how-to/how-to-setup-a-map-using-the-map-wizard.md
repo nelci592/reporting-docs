@@ -22,9 +22,11 @@ In this how-to article we will show you how to create a Map which will present t
 1. Start the Map Wizard:
 
 * If you create a new report, select the __Map Wizard__ icon from the __Available Templates__ page.                   
+
   ![Item Template Map Wizard](images/Map/ItemTemplate_MapWizard.png)
 
 * If you want to add the Map item to an existing report, you have to select the __Map__ item                   from the __Insert__ menu.                   This will bring up the __Map Wizard__ which will guide you through the creation process.                   
+
   ![Insert Menu Select Map](images/Map/InsertMenu_SelectMap.png)
 
 1. On the __Choose Data Source__ page, add new               __[SqlDataSource]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/sqldatasource-wizard/overview%})__:             
@@ -71,12 +73,15 @@ In this how-to article we will show you how to create a Map which will present t
 * Select the __State__ field and drag it to *Categories (location)* box.                 
 
 * Select the __LineTotal__ field and drag it to *Size* box, where it will be transformed to                 __Sum(LineTotal)__    Your __Arrange map fields__ page should look like the one shown below:               
+
   ![Arrange Map Fields](images/Map/ArrangeMapFields.png)    Once the mandatory fields are set up, the __Next__ button will get enabled and you can go to the next page.             
 
 1. On the __Choose a location provider__ page you have to select the location provider that will be used to geocode               the __State__ field that was dragged in the *Categories (location)* box on the previous page.               Currently the supported providers are               [MapQuestOpenAPILocationProvider](/reporting/api/Telerik.Reporting.MapQuestOpenAPILocationProvider)               ,               [MapQuestLocationProvider](/reporting/api/Telerik.Reporting.MapQuestLocationProvider)               and               [BingLocationProvider](/reporting/api/Telerik.Reporting.BingLocationProvider).               They both require a valid client token (key) to authenticate the geocoding requests that will be sent from the Map item.               Once you have obtained the key, you should paste it in the *Client token* box, as shown below:               
+
   ![ChooseALocation Provider](images/Map/ChooseALocationProvider.png)
 
 1. When you click __Finish__, the Wizard will create the definition of the Map item, show it in the designer               and will start to request the geocode and tiles information from the providers asynchronously. Initially it will take a few seconds to fetch               all the data from the geocoding service, but the following requests should be executed faster. The tiles, needed to prepare the map background,               will be displayed as they arrive, but the map will stay responsive and you can examine and change its definition.               When finished, your map should look like this:               
+
   ![Map Pie Chart Done](images/Map/MapPieChart_Done.png)
 
 In this example we demonstrated how to setup a Map item from scratch, how to add PieChart series to it and how to initialize and           use the __Location Provider__. All the described steps are valid for both           [Standalone Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview%})           and [Visual Studio Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/overview%}) and           can be reproduced with code as well.         

@@ -52,23 +52,25 @@ To access internal builds:
 ## Installing Telerik Reporting
 
 1. In the dialog which appears after you execute the MSI file, confirm that you have read and accepted the License Agreement.               
+
   ![](images/installWizard1.png)
 
 1. In the next customization dialog, select the desired features.             
 
-* If Telerik Reporting does not locate a local SQL server instance on your machine or if your SQL browser service is stopped, the examples from the                   __Examples__ dialog option will be installed but the configuration files for the application will not have valid connection strings.                   However, you can still access the working demos on the                   [                       Telerik Reporting Demos page                     ](http://demos.telerik.com/reporting).                 
+   + If Telerik Reporting does not locate a local SQL server instance on your machine or if your SQL browser service is stopped, the examples from the                   __Examples__ dialog option will be installed but the configuration files for the application will not have valid connection strings.                   However, you can still access the working demos on the                   [                       Telerik Reporting Demos page                     ](http://demos.telerik.com/reporting).                 
 
-* To set up the examples and the used connection string, select __Examples Setup__. All local SQL Server 2005+ instances are supported.                 
+   + To set up the examples and the used connection string, select __Examples Setup__. All local SQL Server 2005+ instances are supported.                 
 
-* The examples use the MS SQL Server [AdventureWorks database](http://msdn.microsoft.com/en-us/library/ms124659%28SQL.100%29.aspx).                   Unless already available on your machine, the AdventureWorks database will also be deployed locally.                   To recover it,                   [download AdventureWorks from codeplex](http://msftdbprodsamples.codeplex.com/releases/view/4004).                 
+   + The examples use the MS SQL Server [AdventureWorks database](http://msdn.microsoft.com/en-us/library/ms124659%28SQL.100%29.aspx).                   Unless already available on your machine, the AdventureWorks database will also be deployed locally.                   To recover it,                   [download AdventureWorks from codeplex](http://msftdbprodsamples.codeplex.com/releases/view/4004).                 
 
-* Alternatively, you can install AdventureWorks by manually executing the SQL script from the installer. To use this option, navigate to                   __[InstallDir]/Examples/Data/AdventureWorks OLTP__.                   For the script to run correctly, uncomment the `SET @data_path = 'C:\Program Files\Microsoft SQL Server\90\Tools\Samples\AdventureWorks OLTP\';`                   statement and specify the correct path to the CVS data files which are in the same folder as the SQL script file.                   
+   + Alternatively, you can install AdventureWorks by manually executing the SQL script from the installer. To use this option, navigate to                   __[InstallDir]/Examples/Data/AdventureWorks OLTP__.                   For the script to run correctly, uncomment the `SET @data_path = 'C:\Program Files\Microsoft SQL Server\90\Tools\Samples\AdventureWorks OLTP\';`                   statement and specify the correct path to the CVS data files which are in the same folder as the SQL script file.                   
+
   ![](images/installWizard2.png)
 
 1. (Applicable only if __Examples Setup__ was selected.) In the __Setup Wizard__ dialog, select your               __Database Server__ and the authentication for the connection.               The Wizard detects all running instances and lists them in the input field.             
 
->note To enable the Wizard to detect all running SQL Server instances, run the                 [SQL Server Browser Service](http://technet.microsoft.com/en-us/library/ms181087(v=sql.105).aspx).               
-  
+   >note To enable the Wizard to detect all running SQL Server instances, run the                 [SQL Server Browser Service](http://technet.microsoft.com/en-us/library/ms181087(v=sql.105).aspx).                 
+
   ![](images/installWizard3.png)
 
 ## Directories and Assemblies

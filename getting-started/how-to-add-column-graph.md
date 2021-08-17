@@ -22,23 +22,24 @@ This article is part of the Demo report guide on getting started with Telerik Re
 
 1. Sort and filter the series groups and the category groups. You can also set specific colors through the __Color palette__ option.             Set the series groups in the folowing way:             
 
-* __Grouping__: =Quarter(Fields.OrderDate)
+   + __Grouping__: =Quarter(Fields.OrderDate)
 
-* __Sorting__: =Quarter(Fields.OrderDate) ASCSet the cetagories grpups in the following way:             
+   + __Sorting__: =Quarter(Fields.OrderDate) ASCSet the cetagories grpups in the following way:             
 
-* __Filtering__:                 
+   + __Filtering__:                 
 
-* __Expression__: =Sum(Fields.LineTotal)
+   + __Expression__: =Sum(Fields.LineTotal)
 
-* __Operator__: Top N
+   + __Operator__: Top N
 
-* __Value__: =5
+   + __Value__: =5
 
-* __Sorting__: =Quarter(Fields.OrderDate) ASC
+   + __Sorting__: =Quarter(Fields.OrderDate) ASC
 
 ## Previewing the Result
 
 Preview the result by clicking __Preview__ > __PrintPreview__.           
+
   ![FinalGS](images/FinalGS.PNG)
 
 ## Previous Steps

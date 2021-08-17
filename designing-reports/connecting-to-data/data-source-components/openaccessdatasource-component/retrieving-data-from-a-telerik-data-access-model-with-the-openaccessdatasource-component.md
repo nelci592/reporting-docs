@@ -15,6 +15,7 @@ position: 5
 This section discusses various techniques for retrieving data from a __Telerik Data Access Model__ with the help      	of the __OpenAccessDataSource__ component. The provided examples and code snippets assume an existing __Telerik Data Access Model__      	of the __Adventure Works__ sample database with the following structure:
 
   
+
   ![](images/DataSources/OpenAccessDataSourceAdventureWorksEntityModel.png)
 
 ## 

@@ -18,13 +18,13 @@ To start the report conversion:
 
 * Standalone Report Designer:           
 
-* Select __File | New |__ from the Telerik Report Designer File menu;               __Click__ on the Import Report Wizard template. Create file dialog opens;               Choose a file name and directory. Click __Save__ and the Import Report Wizard opens.               
+   + Select __File | New |__ from the Telerik Report Designer File menu;               __Click__ on the Import Report Wizard template. Create file dialog opens;               Choose a file name and directory. Click __Save__ and the Import Report Wizard opens.               
 
 * Visual Studio:           
 
-* Create a new class library or use an existing one.                 Verify that the targeted .NET framework version is .NET4(+), Full profile as Client profile is not supported.               
+   + Create a new class library or use an existing one.                 Verify that the targeted .NET framework version is .NET4(+), Full profile as Client profile is not supported.               
 
-* __Right-click__ the project context menu and select                 __                   Add | New Item | Telerik Report {{site.suiteversion}} Import Wizard                 __.                 Enter a name for the report class and click the __Add__ button to close the dialog. The Import Report Wizard opens.               
+   + __Right-click__ the project context menu and select                 __                   Add | New Item | Telerik Report {{site.suiteversion}} Import Wizard                 __.                 Enter a name for the report class and click the __Add__ button to close the dialog. The Import Report Wizard opens.               
 
 
 |  __Step__  |  __Description__  |

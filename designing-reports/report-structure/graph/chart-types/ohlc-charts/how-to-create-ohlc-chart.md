@@ -13,6 +13,7 @@ position: 1
 
 
 In this article we will show you how to create an OHLC chart using the Graph item.         
+
   ![ohlc](images/Graph/OhlcChart.png)
 
 ###Create an OHLC chart using the Graph Wizard
@@ -38,6 +39,7 @@ In this article we will show you how to create an OHLC chart using the Graph ite
 1. In the *Arrange graph fields* page drag the __date__ column to *Categories* box.               Drag the __open, high, low__ and __close__ fields to their respective boxes in the bottom right corner.                 If you click the *Set default datapoint styling* checkbox, the wizard will add conditional formatting rules that will change the datapoint color depending on the open-close values.                 You can click the __Finish__ button or setup additional properties of the DateTime scale and the finish the wizard.               When you close the wizard, the newly created chart will appear.             
 
 1. Format the axis labels, set their angle and add additional styling if necessary. Your chart should look like the one below:               
+
   ![graph-howto-create-ohlc-chart](images/Graph/graph-howto-create-ohlc-chart.png)    The marker width is automatically calculated based on two properties. The first property is the X scale's               [SpacingSlotCount](/reporting/api/Telerik.Reporting.Scale#Telerik_Reporting_Scale_SpacingSlotCount).               The second property is series' [MinMarkerWidth](/reporting/api/Telerik.Reporting.OhlcSeries#Telerik_Reporting_OhlcSeries_MinMarkerWidth), which determines the minimum width of the marker, measured in               [Unit](/reporting/api/Telerik.Reporting.Drawing.Unit), i.e. 10px, 1cm, etc.               By default the wizard sets the __MinMarkerWidth__ to 6px.                 Note the gaps between 07.07.2017 and 10.07.2017 where there are no data points. Since you are using a DateTime field to create the categories, the wizard               will automatically create a [DateTimeScale](/reporting/api/Telerik.Reporting.DateTimeScale) scale for your X axis. The DateTime scale represents the values in a continuous domain -               that's why you see axis labels for 08.07.2017 and 09.07.2017 even if there are no data for these dates.               In case you do not want to have such gaps, you should use a [CategoryScale](/reporting/api/Telerik.Reporting.CategoryScale) for your X axis.             
 
 In this article we explained how to use the Graph Wizard to create a candlestick series, presenting stock prices over a period of time.           

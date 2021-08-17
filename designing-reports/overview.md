@@ -48,9 +48,9 @@ This document presents some general report designing tips that you can apply reg
 
 * Use arrow keys to adjust the position and size of selected items on the design surface. For example, the following key combinations are very useful:             
 
-* __Arrow keys__ Move the selected report item.                 
+   + __Arrow keys__ Move the selected report item.                 
 
-* __Shift + Arrow keys__ Increase or decrease the size of the selected report item.                 
+   + __Shift + Arrow keys__ Increase or decrease the size of the selected report item.                 
 
 * To add multiple items to a Table cell, first add a [Panel]({%slug telerikreporting/designing-reports/report-structure/panel%}), and then add the items.             By default, each Table cell contains a [TextBox]({%slug telerikreporting/designing-reports/report-structure/textbox%}).                When you add a [Panel]({%slug telerikreporting/designing-reports/report-structure/panel%}) to a cell,                the [Panel]({%slug telerikreporting/designing-reports/report-structure/panel%}) replaces the [TextBox]({%slug telerikreporting/designing-reports/report-structure/textbox%}).           
 

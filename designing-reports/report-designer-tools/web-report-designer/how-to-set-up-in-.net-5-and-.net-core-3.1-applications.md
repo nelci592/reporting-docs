@@ -24,13 +24,13 @@ For full control, instead of using the item template, you can manually configure
 
 1. Add the required dependencies:             
 
-* Telerik.WebReportDesigner.Services                 
+   + Telerik.WebReportDesigner.Services                 
 
-* Telerik.Reporting.Services.AspNetCore                 
+   + Telerik.Reporting.Services.AspNetCore                 
 
-* Telerik.Reporting.JsonSerialization                 
+   + Telerik.Reporting.JsonSerialization                 
 
-* Telerik.Reporting                 
+   + Telerik.Reporting                 
 
 When you use NuGet packages, you may add only the __Telerik.WebReportDesigner.Services__ package as it depends on           the rest of the required Telerik Reporting assemblies, so they will be added automatically. Their dependencies will also be resolved           automatically. For more information, see            [How to add the Telerik private NuGet feed to Visual Studio]({%slug telerikreporting/using-reports-in-applications/how-to-add-the-telerik-private-nuget-feed-to-visual-studio%}).         
 

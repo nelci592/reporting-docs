@@ -19,6 +19,7 @@ In this how-to article we will show you how to create a graph with both column a
 1. Start the Graph Wizard:
 
 * If you use [Standalone Telerik Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview%})From the __Insert__ menu select __Column__ and then __Clustered Column__.                   This will bring up the __Graph Wizard__ which will help you create the first series.                   
+
   ![select Column](images/Graph/HowToBarLineSeries/selectColumn.png)
 
 * If you use the [Visual Studio Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/overview%}):Initiate the __Graph Wizard__ from the __Visual Studio toolbox__. Then select __Clustered Column__ chart type and click                    __OK__.                    This will bring up the __Graph Wizard__ which will help you create the first series.                 
@@ -49,6 +50,7 @@ In this how-to article we will show you how to create a graph with both column a
 1. The Wizard has detected that the field used as Category is of type DateTime, and this page will let you configure the scale for the graph. In most cases the               'Auto' option will work fine, so we will leave it like this. Complete the Wizard by clicking __Finish__.             
 
 1. The graph will display the column series and it should look like this:               
+
   ![Graph Layout 1](images/Graph/HowToBarLineSeries/GraphLayout1.png)
 
 1. The graph is displaying the date-time values on its X-axis, and the 'Auto' scale option divides each column into one column per month.               To make the label for the X-axis easier to read, first select the X-axis, and in the *Property Browser* set a proper               [LabelFormat](/reporting/api/Telerik.Reporting.GraphAxis#Telerik_Reporting_GraphAxis_LabelFormat)               (i.e. `{0:Y}`) and               [LabelAngle](/reporting/api/Telerik.Reporting.GraphAxis#Telerik_Reporting_GraphAxis_LabelAngle)                to 90º.             
@@ -60,6 +62,7 @@ In this how-to article we will show you how to create a graph with both column a
 
 
 1. Name the series’ legend items accordingly using the property LegendItem.[Value](/reporting/api/Telerik.Reporting.LegendItem#Telerik_Reporting_LegendItem_Value) of both of your series.               Finally your graph should look like the one shown below:               
+
   ![Graph Layout 3](images/Graph/HowToBarLineSeries/GraphLayout3.png)
 
  * [Graph Structure]({%slug telerikreporting/designing-reports/report-structure/graph/structure%})[GraphAxis](/reporting/api/Telerik.Reporting.GraphAxis)[LabelFormat](/reporting/api/Telerik.Reporting.GraphAxis#Telerik_Reporting_GraphAxis_LabelFormat)[LabelPlacement](/reporting/api/Telerik.Reporting.GraphAxis#Telerik_Reporting_GraphAxis_LabelPlacement)[Scale](/reporting/api/Telerik.Reporting.GraphAxis#Telerik_Reporting_GraphAxis_Scale)

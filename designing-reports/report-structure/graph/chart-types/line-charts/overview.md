@@ -17,6 +17,7 @@ A line chart displays a series as a set of points connected by a single line. Li
 The following image displays a line chart that contains three series.       
 
 ## Line Chart Variations  
+
   ![Line Types](images/Graph/LineTypes.png)
 
 * __Straight Line Chart__.               A line chart that uses straight lines to connect the data points.             

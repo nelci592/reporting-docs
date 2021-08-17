@@ -59,11 +59,11 @@ Telerik Reporting relies on the ConfigurationManager to resolve named connection
 
 1. On the __New ASP.NET Core Web Application dialog__               select from the drop downs __.NET Framework__ and __ASP.NET Core 2__.               Next from the list of templates select __API__.             *                 If .NET Framework cannot be selected from the Visual Studio 2017 UI it will be necessary to manually edit the targeted framework in the project file (__.csproj__)                 Here is the step-by-step guide:               *
 
-1. Unload the project - right click on it and select 'Unload Project'.                 
+   1. Unload the project - right click on it and select 'Unload Project'.                 
 
-1. Right click on the unloaded project and select 'Edit *YourProjectName*.csproj'. The .csproj file opens in the VS for editing.                 
+   1. Right click on the unloaded project and select 'Edit *YourProjectName*.csproj'. The .csproj file opens in the VS for editing.                 
 
-1. Change the PropertyGroup section to look like:                 
+   1. Change the PropertyGroup section to look like:                 
 
 	
     ````XML
@@ -74,7 +74,7 @@ Telerik Reporting relies on the ConfigurationManager to resolve named connection
 
 For another *.NET Framework* (for example *4.7.1*) the value should be changed accordingly (for the example - *net471*), etc.                   Save the .csproj file.                 
 
-1. Reload project - right click on the unloaded project and select 'Reload Project'.                 
+   1. Reload project - right click on the unloaded project and select 'Reload Project'.                 
 
 ##        Adding the required NuGet Packages
       
@@ -203,8 +203,7 @@ namespace WebApplication1.Controllers
 
 
 
->important The reference to the report viewer's JavaScript file ( *telerikReportViewer-x.x.x.x.min.js* )                 should be updated to the corresponding version of the Reporting NuGet package.               
-
+   >note The reference to the report viewer's JavaScript file ( *telerikReportViewer-x.x.x.x.min.js* )                 should be updated to the corresponding version of the Reporting NuGet package.               
 
 1. Set the launchSettings.json launchUrl to the new HTML page.             
 

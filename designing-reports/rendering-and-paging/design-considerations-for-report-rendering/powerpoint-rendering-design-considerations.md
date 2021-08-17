@@ -33,8 +33,7 @@ The following rules apply to rendered report items:
 
 * In TextBox item with rotated text, each text line is exported as a separate rotated shape.
 
->note When the text in the TextBox item is rotated consider testing the result with different Font properties (Size and FontFamily).               
-
+   >note When the text in the TextBox item is rotated consider testing the result with different Font properties (Size and FontFamily).               
 
 ## Styling
 

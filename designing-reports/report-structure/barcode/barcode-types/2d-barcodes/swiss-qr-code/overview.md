@@ -17,6 +17,7 @@ The Swiss QR barcode is used mostly in the QR-bill - a document that is designed
 ## Visual Stucture
 
 The structure layout of the Swiss QR barcode is shown below:  
+
   ![barcode-swiss-qr-structure](images/Barcodes/barcode-swiss-qr-structure.png)
 
 The most important characteristics of the Swiss QR barcode are listed below:         

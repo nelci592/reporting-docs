@@ -44,6 +44,7 @@ Standalone Report Designer provides both a graphical query designer and a text-b
 The following figure shows the graphical query designer.
 
   
+
   ![Sql Query Designer Form](images/DataSources/SqlQueryDesignerForm.png)
 
 Use the graphical query designer to explore the database tables and views,           interactively build SQL SELECT statement and view the result for your query.           The select statement specifies the database tables,           views and columns from which to retrieve data for a [SqlDataSource Component]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/sqldatasource-component/overview%}).           If you choose multiple related tables, the query designer describes the relationship between sets of two tables.         

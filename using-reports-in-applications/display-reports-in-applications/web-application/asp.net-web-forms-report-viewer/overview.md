@@ -20,6 +20,7 @@ This document provides a brief overview of the legacy ASP.NET Web Forms Report V
 ## Overview
 
 The ASP.NET ReportViewer is designed to render __Telerik Reports__ within ASP.NET WebForms projects.           
+
   ![](images/AspNetViewer.png)
 
 >caution The ASP.NET Report Viewer uses  __ASP.NET Session__  and  __ASP.NET Cache__  to preserve the report instance assigned to             its  __Report__  property during page postbacks and for some design reasons as well, so              __Session__  must be enabled at all times.           

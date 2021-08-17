@@ -52,6 +52,7 @@ At runtime you can access the report parameters through the          [Telerik.Re
 
 1. Create the following layout for the report
     
+
   ![](images/DesignParameters008.png)
 
 1. [Add a report 
@@ -130,6 +131,7 @@ At runtime you can access the report parameters through the          [Telerik.Re
 1. Select a parameter from the available values in the parameter editor 
    and click __Preview__.
      
+
   ![](images/DesignParameters009.png)
 
 # See Also

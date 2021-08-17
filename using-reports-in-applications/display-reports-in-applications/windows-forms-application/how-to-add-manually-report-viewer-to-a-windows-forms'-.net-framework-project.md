@@ -17,6 +17,7 @@ position: 3
 To use Telerik Reports in Windows Forms application, you need the Windows Forms report viewer:
 
 1.             Drag the __ReportViewer__ control from the __Toolbox__            to the form design surface.   
+
   ![](images/ReportViewer.png)
 
 1. Add reference to the class library that contains your reports in the windows form application.

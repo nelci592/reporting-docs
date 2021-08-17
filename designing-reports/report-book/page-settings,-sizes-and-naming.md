@@ -17,6 +17,7 @@ position: 4
 Physical page formats support combining reports with different page sizes into one report book. When rendering to one of those formats, each page will preserve the size from the page settings of the report it belongs to.
 
   
+
   ![](images/ReportBook6_PageSizes.png)
 
 

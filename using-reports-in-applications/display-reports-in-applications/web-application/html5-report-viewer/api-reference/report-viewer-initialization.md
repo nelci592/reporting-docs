@@ -42,15 +42,15 @@ The Telerik HTML5 Report Viewer is a jQuery plugin - __jQuery.fn.telerik_ReportV
 
 *  __singleSelect__ ( *string* , *optional* ) - defines the editor type for the single select parameters. The available values are:
 
-*  *“COMBO_BOX”* - uses[Kendo UI ComboBox](https://docs.telerik.com/kendo-ui/api/javascript/ui/combobox)widget as an editor;
+   +  *“COMBO_BOX”* - uses[Kendo UI ComboBox](https://docs.telerik.com/kendo-ui/api/javascript/ui/combobox)widget as an editor;
 
-*  *“LIST_VIEW”* - uses[Kendo UI ListView](https://docs.telerik.com/kendo-ui/api/javascript/ui/listview)widget as an editor;Default value is: *'LIST_VIEW'* 
+   +  *“LIST_VIEW”* - uses[Kendo UI ListView](https://docs.telerik.com/kendo-ui/api/javascript/ui/listview)widget as an editor;Default value is: *'LIST_VIEW'* 
 
 *  __multiSelect__ ( *string* , *optional* ) - defines the editor type for the multi select parameters. The available values are:
 
-*  *“COMBO_BOX”* - uses[Kendo UI MultiSelect](https://docs.telerik.com/kendo-ui/api/javascript/ui/multiselect)widget as an editor;
+   +  *“COMBO_BOX”* - uses[Kendo UI MultiSelect](https://docs.telerik.com/kendo-ui/api/javascript/ui/multiselect)widget as an editor;
 
-*  *“LIST_VIEW”* - uses[Kendo UI ListView](https://docs.telerik.com/kendo-ui/api/javascript/ui/listview)widget as an editor;Default value is: *'LIST_VIEW'* 
+   +  *“LIST_VIEW”* - uses[Kendo UI ListView](https://docs.telerik.com/kendo-ui/api/javascript/ui/listview)widget as an editor;Default value is: *'LIST_VIEW'* 
 
 	
 ````js

@@ -17,6 +17,7 @@ The context menu for a report's report item allows you to modify styles easily.
 Right-clicking on a report item opens the following context menu:
 
   
+
   ![](images/ReportContextA.png)
 
 ## Style...
@@ -24,6 +25,7 @@ Right-clicking on a report item opens the following context menu:
 The __Style...__ option will open the Edit style dialog so that you can make changes to the formatting of the report item.
 
   
+
   ![](images/ReportContextB.png)
 
 ## Copy Style

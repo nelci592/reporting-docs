@@ -21,6 +21,7 @@ You specify a calculated field manually by creating an           expression. To 
 * Right click on the target DataSource component and select the Properties option from the context menu.             
 
 * Click on the __CalculatedFields__ property ellipsis.               
+
   ![](images/CalculatedFields.png)
 
 The dialog accepts __Name__, __DataType__ and           __Expression__.         

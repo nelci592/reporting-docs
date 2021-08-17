@@ -71,7 +71,28 @@ Use the __IsValidXhtml__ inside the HtmlTextBox __ItemDataBinding__ handler:
 
 
 
+{{source=CodeSnippets\VB\API\Telerik\Reporting\Processing\HtmlTextBoxSnippets.vb region=Validate_Xhtml_Using_Event_And_IsValidXhtml_Snippet}}
+````VB
+	        Dim txt As New Telerik.Reporting.HtmlTextBox()
+	        AddHandler txt.ItemDataBinding, AddressOf MyEventHandler
+````
+
+
+
+{{source=CodeSnippets\VB\API\Telerik\Reporting\Processing\HtmlTextBoxSnippets.vb region=Validate_Xhtml_Using_Event_And_IsValidXhtml1_Snippet}}
+````VB
+	    Const validXhtml As String = "<b>valid xhtml</b>."
+	    Const systemXhtml As String = "Provided html is not acceptable."
 	
+	    Private Sub MyEventHandler(ByVal sender As Object, ByVal e As EventArgs)
+	        Dim procTxt As Telerik.Reporting.Processing.HtmlTextBox = DirectCast(sender, Telerik.Reporting.Processing.HtmlTextBox)
+	        If Telerik.Reporting.Processing.XhtmlValidator.IsValidXhtml(validXhtml) Then
+	            procTxt.Value = validXhtml
+	        Else
+	            procTxt.Value = systemXhtml
+	        End If
+	    End Sub
+````
 
 
 
@@ -79,11 +100,54 @@ Use the __IsValidXhtml__ inside the HtmlTextBox __ItemDataBinding__ handler:
 
 Use a __try-catch block__ to handle the exception:
 
+{{source=CodeSnippets\CS\API\Telerik\Reporting\Processing\HtmlTextBoxSnippets.cs region=Validate_Xhtml_Using_Event_And_ValueError_Snippet}}
+````C#
 	
-
-
-
+	            const string invalidXhtml = "<b>invalid xhtml.";
+	            const string systemXhtml = "Provided html is not acceptable.";
 	
+	            Telerik.Reporting.HtmlTextBox txt = new Telerik.Reporting.HtmlTextBox();
+	            txt.ItemDataBinding += delegate(object sender, EventArgs args)
+	                {
+	                    Telerik.Reporting.Processing.HtmlTextBox procTxt = (Telerik.Reporting.Processing.HtmlTextBox)sender;
+	                    try
+	                    {
+	                        procTxt.Value = invalidXhtml;
+	                        // html that will not be accepted
+	                    }
+	                    catch (Exception)
+	                    {
+	                        procTxt.Value = systemXhtml;
+	                    }
+	                };
+````
+
+
+
+{{source=CodeSnippets\VB\API\Telerik\Reporting\Processing\HtmlTextBoxSnippets.vb region=Validate_Xhtml_Using_Event_And_ValueError_Snippet}}
+````VB
+	
+	        Dim txt As New Telerik.Reporting.HtmlTextBox()
+	        AddHandler txt.ItemDataBinding, AddressOf ValueErrorHandler
+````
+
+
+
+{{source=CodeSnippets\VB\API\Telerik\Reporting\Processing\HtmlTextBoxSnippets.vb region=Validate_Xhtml_Using_Event_And_ValueError1_Snippet}}
+````VB
+	    Const invalidXhtml As String = "<b>invalid xhtml."
+	    Const defaultXhtml As String = "Provided html is not acceptable."
+	
+	    Private Sub ValueErrorHandler(ByVal sender As Object, ByVal e As EventArgs)
+	        Dim procTxt As Telerik.Reporting.Processing.HtmlTextBox = DirectCast(sender, Telerik.Reporting.Processing.HtmlTextBox)
+	        Try
+	            ' html that will not be accepted
+	            procTxt.Value = invalidXhtml
+	        Catch generatedExceptionName As Exception
+	            procTxt.Value = defaultXhtml
+	        End Try
+	    End Sub
+````
 
 
 

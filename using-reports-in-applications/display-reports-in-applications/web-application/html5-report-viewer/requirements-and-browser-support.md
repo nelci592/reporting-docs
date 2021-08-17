@@ -16,15 +16,15 @@ position: 1
 
 1. Required Service:             
 
-* The viewer requires a running instance of [Telerik Reporting REST Services]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview%})                   in order to display reports. Make sure to                   [enable Cross-Origin Requests (CORS)](https://docs.microsoft.com/en-us/aspnet/web-api/overview/security/enabling-cross-origin-requests-in-web-api) in the REST Service project.                 
+   + The viewer requires a running instance of [Telerik Reporting REST Services]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview%})                   in order to display reports. Make sure to                   [enable Cross-Origin Requests (CORS)](https://docs.microsoft.com/en-us/aspnet/web-api/overview/security/enabling-cross-origin-requests-in-web-api) in the REST Service project.                 
 
 1. Required JavaScript libraries and files:
 
-* [jQuery](http://jquery.com/download/)__ minimum required version 1.9.1__. As the HTML5 Report Viewer uses Kendo UI widgets, conform the jQuery version according to the                   [Kendo UI requirements](https://docs.telerik.com/kendo-ui/intro/supporting/jquery-support).                 
+   + [jQuery](http://jquery.com/download/)__ minimum required version 1.9.1__. As the HTML5 Report Viewer uses Kendo UI widgets, conform the jQuery version according to the                   [Kendo UI requirements](https://docs.telerik.com/kendo-ui/intro/supporting/jquery-support).                 
 
-* Reference to HTML5 Report Viewer JavaScript called __telerikReportViewer-x.x.x.x.min.js__. By default, it is served from the                   Telerik Reporting REST Service.                 
+   + Reference to HTML5 Report Viewer JavaScript called __telerikReportViewer-x.x.x.x.min.js__. By default, it is served from the                   Telerik Reporting REST Service.                 
 
-* [Kendo UI](https://www.telerik.com/kendo-ui) Professional Q3 2015 (2015.3.1111) or higher.                   Kendo UI Professional license is not required if you are only going to use the default widgets by the HTML5 Report Viewer.                   Telerik Reporting provides a JS file containing a subset of the used by default Kendo UI widgets called __                     telerikReportViewer.kendo-x.x.x.x.min.js                   __. For more information refer to [                       Telerik Reporting License Agreement                     ](https://www.telerik.com/purchase/license-agreement/reporting-dlw-s)                   (point 4.2). By default, the subset is served from the Telerik Reporting REST Service.                 
+   + [Kendo UI](https://www.telerik.com/kendo-ui) Professional Q3 2015 (2015.3.1111) or higher.                   Kendo UI Professional license is not required if you are only going to use the default widgets by the HTML5 Report Viewer.                   Telerik Reporting provides a JS file containing a subset of the used by default Kendo UI widgets called __                     telerikReportViewer.kendo-x.x.x.x.min.js                   __. For more information refer to [                       Telerik Reporting License Agreement                     ](https://www.telerik.com/purchase/license-agreement/reporting-dlw-s)                   (point 4.2). By default, the subset is served from the Telerik Reporting REST Service.                 
 
 1. Required HTML5 compliant browser. For more information see: [Browser Support](#browser-support).             
 
@@ -91,28 +91,28 @@ List of Browsers covering the above requirements includes:
 
 * Desktop
 
-* Internet Explorer: 9+
+   + Internet Explorer: 9+
 
-* Edge
+   + Edge
 
-* Google Chrome
+   + Google Chrome
 
-* Mozilla Firefox
+   + Mozilla Firefox
 
-* Opera 15.0+
+   + Opera 15.0+
 
-* Safari 6.0+
+   + Safari 6.0+
 
 * Mobile
 
-* Safari for iOS
+   + Safari for iOS
 
-* Google Chrome for iOS
+   + Google Chrome for iOS
 
-* Google Chrome for Android
+   + Google Chrome for Android
 
-* Android Browser
+   + Android Browser
 
-* Internet Explorer 10+ for Windows Phone
+   + Internet Explorer 10+ for Windows Phone
 
-* BlackBerry 7.0+ touchscreen devices
+   + BlackBerry 7.0+ touchscreen devices

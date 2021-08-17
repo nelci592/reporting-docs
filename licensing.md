@@ -56,18 +56,18 @@ Your purchase of Telerik Reporting includes a run-time royalty-free license to r
 
 * Examples of permitted uses             
 
-* Applications for internal company use.                 
+   + Applications for internal company use.                 
 
-* Commercial applications deployed for end users by Telerik customers.                 
+   + Commercial applications deployed for end users by Telerik customers.                 
 
-* Shrink-wrapped software in which the Telerik reports are integrated.                 
+   + Shrink-wrapped software in which the Telerik reports are integrated.                 
 
 * Examples of uses that require discussion             
 
-* Products that expose the design-time functionality of the Telerik reports.                 
+   + Products that expose the design-time functionality of the Telerik reports.                 
 
-* Products that do not add significant functionality to the Telerik reports.                 
+   + Products that do not add significant functionality to the Telerik reports.                 
 
-* Open source products.                 
+   + Open source products.                 
 
 For more information, refer to the           __[End User License Agreement for Progress Telerik Reporting and Telerik Report Designer](https://www.telerik.com/purchase/license-agreement/reporting-dlw-s)__.           or send an email to           [sales@Telerik.com](mailto:sales@Telerik.com)           to discuss your planned use of the controls.         

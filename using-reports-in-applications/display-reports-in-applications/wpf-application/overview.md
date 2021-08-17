@@ -13,6 +13,7 @@ position: 0
 
 
 The WPF Report Viewer allows developers to deliver reports produced         by Telerik Reporting to any rich application developed with WPF.         
+
   ![](images/SilverlightViewer1.png)
 
 ## 
@@ -59,8 +60,7 @@ In order to use the WPF Report Viewer, you need a WPF application.           In
 
 * .NET Framework 4 or above.             
 
->note .NET Framework 4  __Client Profile__  is not supported               
-
+   >note .NET Framework 4  __Client Profile__  is not supported               
 
 * (optional) Expression Blend             
 

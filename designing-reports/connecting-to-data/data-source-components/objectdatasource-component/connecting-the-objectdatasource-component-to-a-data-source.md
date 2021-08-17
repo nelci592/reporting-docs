@@ -26,8 +26,7 @@ When you configure the ObjectDataSource component the settings below are obligat
 
 1. Open __                 Visual Studio               __ and create a new  [Class Library](https://docs.microsoft.com/en-us/cpp/mfc/class-library-overview?view=vs-2019).             
 
->important The Standalone Report Designer is a WPF application built against .NET Framework 4.0.                 For that reason, it cannot load and resolve classes from assemblies built against .NET Standard 2.1, .NET Core and .NET5.                 You can see the                 [.NET Standard compatibility chart](https://docs.microsoft.com/en-us/dotnet/standard/net-standard) which explains how and when the assemblies can be loaded in different framework versions.               
-
+   >note The Standalone Report Designer is a WPF application built against .NET Framework 4.0.                 For that reason, it cannot load and resolve classes from assemblies built against .NET Standard 2.1, .NET Core and .NET5.                 You can see the                 [.NET Standard compatibility chart](https://docs.microsoft.com/en-us/dotnet/standard/net-standard) which explains how and when the assemblies can be loaded in different framework versions.               
 
 1. Add the following piece of code from [How to Bind to a BusinessObject]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/objectdatasource-component/how-to/how-to-bind-to-a-businessobject%}).             
 
@@ -73,13 +72,13 @@ For security reasons the ObjectDataSource can resolve only types that are declar
 
 * Configuration in the [Overview]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview%}):             
 
-1. Open the project folder of the Class Library                   -> __bin__ -> __Debug__ and copy the dll file.                 
+   1. Open the project folder of the Class Library                   -> __bin__ -> __Debug__ and copy the dll file.                 
 
-1. Paste it at the installation folder of the Report designer (C:\Program Files (x86)\Progress\Telerik Reporting __[Version]__\Report Designer).                 
+   1. Paste it at the installation folder of the Report designer (C:\Program Files (x86)\Progress\Telerik Reporting __[Version]__\Report Designer).                 
 
-1. Open Telerik.ReportDesigner.exe.config file with a text editor.                 
+   1. Open Telerik.ReportDesigner.exe.config file with a text editor.                 
 
-1. Add an                   [AssemblyReferences]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/assemblyreferences-element%})                   in __Telerik.Reporting__ section of application configuration file:                 
+   1. Add an                   [AssemblyReferences]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/assemblyreferences-element%})                   in __Telerik.Reporting__ section of application configuration file:                 
 
 	
     ````xml

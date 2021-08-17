@@ -19,4 +19,5 @@ The __Conditional Formatting Rules __dialog lets you define rules that when fire
 Use the __New Rule__, and __Delete Rule __buttons to add, and delete formatting rules.               Use the arrow buttons to change the order of precedence where rules higher in the list are evaluated before rules occurring later in the list.              Select the __Stop if true__ checkbox to interrupt rule processing if the rule conditions are satisfied.           
 
   
+
   ![Conditional Formatting Rules Dialog](images/ConditionalFormattingRulesDialog.png)

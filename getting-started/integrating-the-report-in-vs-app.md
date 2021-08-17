@@ -25,11 +25,13 @@ This article is part of the Demo report guide on getting started with Telerik Re
 1. Right-click the project. Select __Add__ > __New Item__ > __Telerik HTML5 Report Viewer Page [version]__.             
 
 1. In the __Configure reporting engine__ dialog, the selections will remain the same as set by default, that is,               __REST Service__ > __Create new Rest Service__). Click __Next__.               
+
   ![Rest Srervice](images/RestSrervice.PNG)
 
 1. Click __Existing report definition__               and select __Choose an Existing check TRDP, TRDB or TRDX report definition__ to start embedding the report.             
 
 1. Browse to the report location. Click __Next__ > __Next__ > __Finish__.               
+
   ![Embed Report](images/EmbedReport.PNG)
 
 1. Include the connection string in the web.config file which is nececssary because of the added named connection string to the report.               If the report uses an embedded connection, you do not have to add it again to the Visual Studio project.               The connection string looks similar to the following:             
@@ -46,6 +48,7 @@ This article is part of the Demo report guide on getting started with Telerik Re
 ## Previewing the Result
 
 Preview the result by running the project.           
+
   ![VS](images/VS.PNG)
 
 ## Next Steps

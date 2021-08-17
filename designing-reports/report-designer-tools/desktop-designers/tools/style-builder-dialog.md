@@ -17,6 +17,7 @@ The Style Builder dialog lets you set Text, Background, Edges and Line Style for
 ## 
 
 To use the Style Builder dialog choose a style element from the list on the left of the dialog. Change style characteristics in the area to the right of the list. Click the __OK__ button to apply the style changes or the __Cancel __to leave the previous style untouched.             
+
   ![](images/Style5.png)
 
 >tip The Style Builder dialog loads a standard Color Palette and a list of System Colors. If reports will be displayed in a             Web Application,  please consider using the Color Palette instead of System Colors.           

@@ -13,6 +13,7 @@ position: 14
 
 
 The Shape report item is used to display one of a selection of predefined shapes on a report. The screenshot below         shows a Shape report item with ShapeType="Right Arrow" on the report design surface.         
+
   ![](images/Shape.png)
 
 You can use shapes to create visual effects within a report. You can set display and other properties to this item by         using the Properties pane.       

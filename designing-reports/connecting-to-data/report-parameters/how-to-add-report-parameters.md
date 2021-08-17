@@ -31,6 +31,7 @@ There are several ways to add a Report Parameter:
 1. Click the ellipses on the __Report.ReportParameters__ 
 				  property. This invokes the __ReportParameter Collection editor__.
 					        
+
   ![](images/ReportParameterEditor.png)
 
 1. Click the __Add__ button to create a new parameter.
@@ -97,17 +98,17 @@ There are several ways to add a Report Parameter:
 			the values the end user can choose from.
 			
 
-* Set the __DataSource__ property to specify data source from which the available values of the editor 
+   + Set the __DataSource__ property to specify data source from which the available values of the editor 
 		will be loaded. The same object types used as data source for the report can be used as data source for the report parameters.
 If no DataSource is specified, available values are not loaded.
 
-* In the __ValueMember__ property choose a column from the data source from which the editor to load the values.
+   + In the __ValueMember__ property choose a column from the data source from which the editor to load the values.
 
-* In the __DisplayMember__ property choose a column from the data source from which the editor to draw the value labels.
+   + In the __DisplayMember__ property choose a column from the data source from which the editor to draw the value labels.
 
-* In the __Filters__ you can limit the number of records in the available values based on specified filter rules. If the conditions of the rules are met the record is included. Filters are defined using the [Edit Filter Dialog]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/edit-filter-dialog%}).
+   + In the __Filters__ you can limit the number of records in the available values based on specified filter rules. If the conditions of the rules are met the record is included. Filters are defined using the [Edit Filter Dialog]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/edit-filter-dialog%}).
 
-* Sorting can be performed on the available values through the
+   + Sorting can be performed on the available values through the
 			__Sorting__ property. Sorting controls the order
 			of the items provided to the user to choose from. Sorting is defined 
 			using the [Edit Sorting Dialog.]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/edit-sorting-dialog%})

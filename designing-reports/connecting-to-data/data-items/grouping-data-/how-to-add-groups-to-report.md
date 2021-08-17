@@ -25,55 +25,55 @@ Report groups are defined by adding __Group__ objects to the report’s __Groups
 1.           	Follow these steps for each group:
           		
 
-1. 	          				Click Add button - a new unbound group will be added to the __Groups__ collection. 
+   1. 	          				Click Add button - a new unbound group will be added to the __Groups__ collection. 
 	                    
 
-1. 	                    	Click the Grouping property ellipsis. 
+   1. 	                    	Click the Grouping property ellipsis. 
 	          			
 
-1. 				        	From the Edit [Grouping dialog]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/edit-grouping-dialog%}), type or select an expression by which to group the data. 
+   1. 				        	From the Edit [Grouping dialog]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/edit-grouping-dialog%}), type or select an expression by which to group the data. 
 				        
 
-1. 	          				To apply sorting to the group, follow these steps:
+   1. 	          				To apply sorting to the group, follow these steps:
           				
 
-*           				     	Click the Sorting ellipsis.
+   +           				     	Click the Sorting ellipsis.
           					 
 
-* 					         	Click New
+   + 					         	Click New
 					         
 
-* 					         	Type or select an expression by which to sort the data. 
+   + 					         	Type or select an expression by which to sort the data. 
 					         
 
-* 					         	From the Direction column drop-down list, choose the sort direction for each expression. ASC sorts the expression in ascending order. DESC sorts the expression in descending order.
+   + 					         	From the Direction column drop-down list, choose the sort direction for each expression. ASC sorts the expression in ascending order. DESC sorts the expression in descending order.
 					         
 
-1.           				To apply filtering to the group, follow these steps:
+   1.           				To apply filtering to the group, follow these steps:
           				
 
-*           					   		Click the Filters ellipsis 
+   +           					   		Click the Filters ellipsis 
           					   
 
-*           			           		Click New. 
+   +           			           		Click New. 
          					   
 
-*                     		   		In Expression, type or select the expression for the field to filter. To open the Edit Expression Dialog, select the ```<Expression>``` option.
+   +                     		   		In Expression, type or select the expression for the field to filter. To open the Edit Expression Dialog, select the ```<Expression>``` option.
           					   
 
-*                     		   		In the Operator box, select the operator that you want the filter to use to compare the values in the Expression box and the Value box. 
+   +                     		   		In the Operator box, select the operator that you want the filter to use to compare the values in the Expression box and the Value box. 
           					   
 
-*                                		In the Value box, type the expression or value against which you want the filter to evaluate the value in Expression.
+   +                                		In the Value box, type the expression or value against which you want the filter to evaluate the value in Expression.
           				       
 
-1.           			 		In Name, type the name of the group. 
+   1.           			 		In Name, type the name of the group. 
           			
 
-1.                     		Click GroupKeepTogether to specify the keep together options. 
+   1.                     		Click GroupKeepTogether to specify the keep together options. 
           			
 
-1.                     		Click BookMarkID to set a BookMark for this group.
+   1.                     		Click BookMarkID to set a BookMark for this group.
           			
 
 1.           	  Click Ok twice to close the Edit Grouping and Group Collection dialogs.
@@ -102,34 +102,34 @@ Report groups are defined by adding __Group__ objects to the report’s __Groups
 1.       			To allow sorting for the group, follow these steps:
       			
 
-*       						Click the Sorting ellipsis.
+   +       						Click the Sorting ellipsis.
       				
 
-*       						Click New. 
+   +       						Click New. 
       				
 
-*       						Type or select an expression by which to sort the data. 
+   +       						Type or select an expression by which to sort the data. 
       				
 
-*       						From the Direction column drop-down list, choose the sort direction for each expression. ASC sorts the expression in ascending order. DESC sorts the expression in descending order.
+   +       						From the Direction column drop-down list, choose the sort direction for each expression. ASC sorts the expression in ascending order. DESC sorts the expression in descending order.
       				
 
 1. To allow filtering for the group, follow these steps: 
       			
 
-*       					Click the Filters ellipsis 
+   +       					Click the Filters ellipsis 
       				
 
-*       					Click New.
+   +       					Click New.
       				
 
-*       					In __Expression__, type or select the expression for the field to filter. To open the [Edit Expression Dialog]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/edit-expression-dialog%}), select the ```<Expression>``` option. 
+   +       					In __Expression__, type or select the expression for the field to filter. To open the [Edit Expression Dialog]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/edit-expression-dialog%}), select the ```<Expression>``` option. 
       				
 
-*       					In the __Operator__ box, select the operator that you want the filter to use to compare the values in the Expression box and the Value box. 
+   +       					In the __Operator__ box, select the operator that you want the filter to use to compare the values in the Expression box and the Value box. 
       				
 
-*       					In the __Value__ box, type the expression or value against which you want the filter to evaluate the value in Expression.
+   +       					In the __Value__ box, type the expression or value against which you want the filter to evaluate the value in Expression.
       				
 
 1.       			Click __GroupKeepTogether__ to specify the keep together options.

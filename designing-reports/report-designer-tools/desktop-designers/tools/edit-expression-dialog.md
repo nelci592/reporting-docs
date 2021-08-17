@@ -19,4 +19,5 @@ The __Edit Expression__ dialog allows you to         dynamically produce a value
 To use the Edit Expression dialog either type an expression in directly  or double click the list of elements in the bottom middle list to add them to  the expression. In the figure below an expression with two database Fields  multiplied provide an extended price value. For a list of the supported  expression elements see [Using Item Binding Expressions]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/overview%}).
 
   
+
   ![](images/UI014.png)

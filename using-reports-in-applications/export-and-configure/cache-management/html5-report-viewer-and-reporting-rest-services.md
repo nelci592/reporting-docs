@@ -53,8 +53,7 @@ Important cache management related properties of the IReportServiceConfiguration
 
 * __[ReportSharingTimeout](/reporting/api/Telerik.Reporting.Services.IReportServiceConfiguration#Telerik_Reporting_Services_IReportServiceConfiguration_ReportSharingTimeout) property               __Gets or sets a value in minutes indicating how long a rendered report document from a client will be available to be reused,               by the current and other clients which request the same report, with the same report parameter values, and in the same rendering format.               When a report is rendered once for a given set of report parameter values, it can be reused for the               time set as ReportSharingTimeout. Setting the ReportSharingTimeout to zero (default) will cause each client request for a report to produce a               new report document instead of reusing an already rendered document.             
 
->tip When you navigate to reports via [NavigateToReportAction]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/actions/drillthrough-report-action%})                 the Reporting engine always creates a new instance of the target report.               
-
+   >note When you navigate to reports via [NavigateToReportAction]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/actions/drillthrough-report-action%})                 the Reporting engine always creates a new instance of the target report.               
 
 # See Also
 

@@ -196,8 +196,7 @@ The article elaborates on how to localize the messages displayed by the HTML5 Re
 
 
 
->note The localization file must be loaded on the page before viewer's script (i.e.  *telerikReportViewer.js* ) and after jQuery script.
-
+   >note The localization file must be loaded on the page before viewer's script (i.e.  *telerikReportViewer.js* ) and after jQuery script.
 
 1. Translate the texts for the specified culture
 

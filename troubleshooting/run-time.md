@@ -46,13 +46,11 @@ During the installation of Telerik Reporting on a dev machine,           the Tel
 
 There are three cases in which this error message occurs:
 
-*             The function name is typed in manually in the expression, without building the class library, and it does not exist yet.
-          
+* The function name is typed in manually in the expression, without building the class library, and it does not exist yet.
 
-*             Using the function with incorrect number/type of parameters. The passed fields must match the function signature.
-          
+* Using the function with incorrect number/type of parameters. The passed fields must match the function signature.
 
-* The field specified in the function is null. Make sure such cases are handled in the user function. 
+* The field specified in the function is null. Make sure such cases are handled in the user function.
 
 ## My ASP.NET Web Forms ReportViewer looks messed up - its styles and images are missing
 
@@ -74,6 +72,5 @@ There are three cases in which this error message occurs:
 
 1. Check if the report viewer's styles are registered on the page. This can be accomplished with http debugging proxy like Fiddler.
 
-1.             Check for global styles defined in the application which affect the page with the report viewer and conflict with the report viewer's styles.
+1. Check for global styles defined in the application which affect the page with the report viewer and conflict with the report viewer's styles.
             Remove any style declarations from the page. Make sure the global style rules do not affect HTML elements directly, but are applied through the CssClass property.
-          

@@ -18,32 +18,30 @@ Telerik __Reporting__ uses a built-in styling model that is similar to CSS. The 
 
 To create a style sheet for a report, follow these steps:
 
-1. Open the report in design view. 
+1. Open the report in design view.
 
-1. Select the Report object. 
+1. Select the Report object.
 
-1. Click in the __StyleSheet__ property, click the ellipsis button to open the StyleRule Collection Editor. 
+1. Click in the__StyleSheet__property, click the ellipsis button to open the StyleRule Collection Editor.
 
-1. Click __Add__ to add a new __StyleRule__. 
+1. Click__Add__to add a new__StyleRule__.
 
-1. Expand the __Style__ property and customize your new __StyleRule__. For example, the screenshot below shows a __StyleRule__ that specifies a yellow background, blue text, and bold Times New Roman font.
-          
+1. Expand the__Style__property and customize your new__StyleRule__. For example, the screenshot below shows a__StyleRule__that specifies a yellow background, blue text, and bold Times New Roman font.  
 
   ![](images/Style1.png)
 
-1. Click in the __Selectors__ property, click the ellipsis button to open the TypeSelector Collection Editor. 
+1. Click in the__Selectors__property, click the ellipsis button to open the TypeSelector Collection Editor.
 
-1. Click the drop-down arrow on the __Add__ button and select the type of selector to add. 
-        		See the type of selectors in [Understanding Style Selectors]({%slug telerikreporting/designing-reports/styling-reports/understanding-style-selectors%}).
+1. Click the drop-down arrow on the__Add__button and select the type of selector to add. 
+        		See the type of selectors in[Understanding Style Selectors]({%slug telerikreporting/designing-reports/styling-reports/understanding-style-selectors%})
 
-1. Use the properties area of the TypeSelector Collection Editor to customize the new selector. For example, the screenshot below shows a __StyleSelector__ named __DataField__ which applies to __TextBox__ report items only.
-          
+1. Use the properties area of the TypeSelector Collection Editor to customize the new selector. For example, the screenshot below shows a__StyleSelector__named__DataField__which applies to__TextBox__report items only.  
 
   ![](images/Style2.png)
 
-1. Click __OK__ when you are done adding selectors for the current StyleRule. 
+1. Click__OK__when you are done adding selectors for the current StyleRule.
 
-1. Click __OK__ when you are done adding StyleRules for the report's StyleSheet.
+1. Click__OK__when you are done adding StyleRules for the report's StyleSheet.
 
 ## Assigning Styles to Report Items
 

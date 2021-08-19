@@ -18,7 +18,7 @@ To define a sorting for the __Table__ or __Crosstab__ items use the following st
 
 
 
-1. In the [Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/overview%}),             right click on a Table/Crosstab and then select Properties.
+1. In the[Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/overview%})
 
 1. Click the Sorting ellipsis.
 
@@ -38,13 +38,11 @@ For each sort expression, follow these steps:
 
 
 
-1.               Open the [Group Explorer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/group-explorer%}) window.
-            
+1. Open the[Group Explorer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/group-explorer%})
 
-1.               In the [Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/overview%}),
+1. In the[Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/overview%}),
               select the Table/Crosstab.
-              This makes the selected item active in the [Group Explorer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/group-explorer%}) window.
-            
+              This makes the selected item active in the[Group Explorer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/group-explorer%})
 
 1. Choose a Row/Column Group and click its Sorting ellipsis.
 
@@ -57,10 +55,9 @@ For each sort expression, follow these steps:
 
 1. Type or select an expression by which to sort the data.
 
-1.                     From the Direction column drop-down list, choose the sort direction
+1. From the Direction column drop-down list, choose the sort direction
                     for each expression. ASC sorts the expression in ascending order. DESC sorts
                     the expression in descending order.
-                  
 
 1. Click OK.
 

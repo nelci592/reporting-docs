@@ -16,14 +16,11 @@ Report groups are defined by adding __Group__ objects to the report’s __Groups
 
 ## Adding a group to a Report using Report Designer
 
-1.             Click the Report selector button located in the upper left hand of the [Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/overview%}). This makes the report active in the Properties window.
-          
+1. Click the Report selector button located in the upper left hand of the[Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/overview%})
 
-1.           	Click the __Groups__ ellipsis.
-          
+1. Click the__Groups__ellipsis.
 
-1.           	Follow these steps for each group:
-          		
+1. Follow these steps for each group:
 
    1. 	          				Click Add button - a new unbound group will be added to the __Groups__ collection. 
 	                    
@@ -76,8 +73,7 @@ Report groups are defined by adding __Group__ objects to the report’s __Groups
    1.                     		Click BookMarkID to set a BookMark for this group.
           			
 
-1.           	  Click Ok twice to close the Edit Grouping and Group Collection dialogs.
-          
+1. Click Ok twice to close the Edit Grouping and Group Collection dialogs.
 
 >note You can add a group to the Report item by using the grouping pane in the [Group Explorer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/group-explorer%}) as well. To do so right click on the detail and select  __Add Parent Group__ . If there are existing groups, you can create Parent or Child groups by right clicking on any of the existing groups. 
 

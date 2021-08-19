@@ -16,19 +16,19 @@ Add a hyperlink to a URL when you want users to be able to click a link in a rep
 
 ## Adding a Hyperlink action using Report Designer
 
-1. In Design view, right-click a report item to which you want to add a link and then click __Properties__.
+1. In Design view, right-click a report item to which you want to add a link and then click__Properties__.
 
-1. In the Properties dialog box, click __Action__.
+1. In the Properties dialog box, click__Action__.
 
-1. Select __Navigate to URL__. An additional section appears in the dialog box for this option.
+1. Select__Navigate to URL__. An additional section appears in the dialog box for this option.
 
-1. In __Target URL__ TextBox, type a URL or an expression that evaluates to a URL.
+1. In__Target URL__TextBox, type a URL or an expression that evaluates to a URL.
 
-1. Click __OK__.
+1. Click__OK__.
 
-1. To test the link, run the report and click the report item with the applied __Action__. For TextBoxes, it is
+1. To test the link, run the report and click the report item with the applied__Action__. For TextBoxes, it is
 	helpful to change the color and effect of the text to indicate that the text is a link. For example, change the color to blue and
-	the effect to underline by setting the corresponding __Font__ properties of the TextBox.
+	the effect to underline by setting the corresponding__Font__properties of the TextBox.
 
 ## Adding a Hyperlink action programatically
 

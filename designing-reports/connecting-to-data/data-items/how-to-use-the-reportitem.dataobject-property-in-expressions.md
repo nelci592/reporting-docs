@@ -68,14 +68,11 @@ When complicated logic should be applied or .NET framework routines need to be u
 
 ##Steps:
 
-1.             Create or open an existing report.
-          
+1. Create or open an existing report.
 
-1.             Add an SqlDataSource connected to __AdventureWorks__ sample database and set it as a report's datasource.
-          
+1. Add an SqlDataSource connected to__AdventureWorks__sample database and set it as a report's datasource.
 
-1.             Put the following text in the SqlDataSource's SelectCommand value:
-            
+1. Put the following text in the SqlDataSource's SelectCommand value:
 
 	              select Contact.*
               from Person.Contact
@@ -84,11 +81,9 @@ When complicated logic should be applied or .NET framework routines need to be u
 
 
 
-1.             Place two textboxes on your report’s detail section.
-          
+1. Place two textboxes on your report’s detail section.
 
-1.             Set the first textbox's expression to
-            
+1. Set the first textbox's expression to
 
 
 
@@ -97,8 +92,7 @@ When complicated logic should be applied or .NET framework routines need to be u
 
 
 
-1.             Switch to code window and place the following code snippet:
-            
+1. Switch to code window and place the following code snippet:
 
 {{source=CodeSnippets\CS\API\Telerik\Reporting\Expressions\ReportItemDataObjectSnippets.cs region=ReportItemDataObjectGetContactInfo}}
 ````C#
@@ -130,12 +124,10 @@ When complicated logic should be applied or .NET framework routines need to be u
 
 In this step we process the passed data argument as IDataObject, retrieving the fields by name.
 
-1.             Rebuild your project.
-          
+1. Rebuild your project.
 
-1.             Set the second textbox's expression to the user defined function you created in __step 6__            and pass the __ReportItem.DataObject__ as its argument.
-            The function name is __YourNamespace.GetContactInfo(data)__, so your expression should look like this:
-            
+1. Set the second textbox's expression to the user defined function you created in__step 6__and pass the__ReportItem.DataObject__as its argument.
+            The function name is__YourNamespace.GetContactInfo(data)__, so your expression should look like this:
 
 
 
@@ -144,8 +136,7 @@ In this step we process the passed data argument as IDataObject, retrieving the 
 
 
 
-1.             Preview or run your report. The second textbox now should show the concatenated person names and telephone numbers.
-          
+1. Preview or run your report. The second textbox now should show the concatenated person names and telephone numbers.
 
 ##Use DataObject as a datasource for nested data items (Table, List, Crosstab, Graph)
 
@@ -155,11 +146,9 @@ The following screenshot shows the expected report output that should be created
 
 ##Steps:
 
-1.             Create or open an existing report.
-          
+1. Create or open an existing report.
 
-1.             Add an SqlDataSource as a report's DataSource and set its SelectCommand property to:
-            
+1. Add an SqlDataSource as a report's DataSource and set its SelectCommand property to:
 
 	              select top 100 Product.Name, Product.ProductNumber, Product.Color, Product.SafetyStockLevel
               from Production.Product
@@ -169,8 +158,7 @@ The following screenshot shows the expected report output that should be created
 
 
 
-1.             Place two textboxes on your report's detail section and set their expressions to
-            
+1. Place two textboxes on your report's detail section and set their expressions to
 
 
 
@@ -186,8 +174,7 @@ and
 
 respectively.             
 
-1.             Add a report group using either the report's context menu or the Group Explorer and set its grouping to
-            
+1. Add a report group using either the report's context menu or the Group Explorer and set its grouping to
 
 
 
@@ -196,8 +183,7 @@ respectively.
 
 
 
-1.             Place a textbox on report's group header and set its expression to
-            
+1. Place a textbox on report's group header and set its expression to
 
 
 
@@ -206,8 +192,7 @@ respectively.
 
 
 
-1.             Add a crosstab to your report's group header and create a row or column group with the expression
-            
+1. Add a crosstab to your report's group header and create a row or column group with the expression
 
 
 
@@ -223,12 +208,10 @@ as a grouping expression. Set the detail textbox's expression to
 
 Alternatively you may use the crosstab wizard choosing the SqlDataSource used for the whole report,               so that you have design-time support (Data explorer, Expression Builder in the context of the crosstab).             
 
-1.             Add a [binding]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/bindings%})  to the crosstab using __DataSource__ as a __PropertyPath__            and __=ReportItem.DataObject__ as an __Expression__, as shown in the following screenshot.
+1. Add a[binding]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/bindings%})to the crosstab using__DataSource__as a__PropertyPath__and__=ReportItem.DataObject__as an__Expression__, as shown in the following screenshot.
             This means that when the crosstab is processed its data source will be replaced with the result
-            of the binding expression evaluation. This way it will be populated with the data of the current group insance.
-            ![dataobject-edit-bindings](images/DataItems/dataobject-edit-bindings.png)
+            of the binding expression evaluation. This way it will be populated with the data of the current group insance.![dataobject-edit-bindings](images/DataItems/dataobject-edit-bindings.png)
 
-1.             Preview or start your report. You should now see the products information listed in the details section for every group and a summary info about the products colors summarized in the group headers.
-          
+1. Preview or start your report. You should now see the products information listed in the details section for every group and a summary info about the products colors summarized in the group headers.
 
 >note This approach might also be used when you need to have page breaks in a  __Table, Crosstab__  or  __List__ .             Because having page breaks in these data items’ groups is not supported by design, you can create a report group,             add and bind a data item in the report group header and set the report group footer section  __PageBreak__  property as required.           

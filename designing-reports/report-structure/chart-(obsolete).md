@@ -56,32 +56,23 @@ The formatting of the Chart report item is managed by a large number of properti
 
 The Chart item offers numerous features including:
 
-* [17 customizable chart types](7377B896-2B2A-4EB6-BF58-E82E4D5BCF39),
-            available in both horizontal and vertical direction .
-          
+* [17 customizable chart types](7377B896-2B2A-4EB6-BF58-E82E4D5BCF39)
 
 * Automatic Text-wrapping- text elements in the chart can be wrapped automatically.
 
-* [Databinding](48673F68-F7A8-4742-B480-ED7F8352E83D) - Chart can be databound to various datasources
-          
+* [Databinding](48673F68-F7A8-4742-B480-ED7F8352E83D)
 
-* [Chart wizard](486151D3-3162-4815-ACFA-1AF441A9C520) for quick and easy configuration.
-          
+* [Chart wizard](486151D3-3162-4815-ACFA-1AF441A9C520)
 
-* [Second Y axis](86F9874F-2930-4E1D-A6C6-06ABB26FB4DA) - Chart provides a second scale of measurements.
-          
+* [Second Y axis](86F9874F-2930-4E1D-A6C6-06ABB26FB4DA)
 
-* [Empty Values](82EC620B-D42B-46FB-805B-AC2C85232652) - allow approximating missing values between data points.
-          
+* [Empty Values](82EC620B-D42B-46FB-805B-AC2C85232652)
 
-* [Scale Breaks](EB54443C-0410-45F5-80CA-71DF8039CD80) make graphs with large amplitude easier to read.
-          
+* [Scale Breaks](EB54443C-0410-45F5-80CA-71DF8039CD80)
 
-* [Marked zones](B4ED9BAA-EEB3-4142-B9BA-70CA375441FC) - Chart allows adding ranges to highlight certain areas of the chart.
-          
+* [Marked zones](B4ED9BAA-EEB3-4142-B9BA-70CA375441FC)
 
-* [Styling](2CFC6F7D-0B66-4C30-B744-65B05C2A78C7) - Chart provides fine-grained control over its elements appearance.
-          [](http://www.telerik.com/help/aspnet/chart/introduction.html)
+* [Styling](2CFC6F7D-0B66-4C30-B744-65B05C2A78C7)[](http://www.telerik.com/help/aspnet/chart/introduction.html)
 
 # See Also
 

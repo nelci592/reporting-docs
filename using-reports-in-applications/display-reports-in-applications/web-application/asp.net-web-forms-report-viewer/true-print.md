@@ -23,10 +23,7 @@ The True printing is the only way to support multi-page reports printing in most
 
 If you want to use the True print, the following requirements must be satisfied: 
 
-* [Adobe Reader](http://get.adobe.com/reader/)            browser plug-in or Chrome PDF plug-in (for Chrome) should be installed and enabled.
-            If Adobe Reader or Chrome PDF plug-in is not detected, clicking the print button would export the report to PDF.
-            Depending on the browser the PDF would either open directly for preview or ask you to save it as a file.
-          
+* [Adobe Reader](http://get.adobe.com/reader/)
 
 * Disable any other PDF related plug-ins such as Foxit.
 
@@ -34,15 +31,12 @@ If you want to use the True print, the following requirements must be satisfied:
 
 * JavaScript should be enabled in Adobe Reader.
 
-*             UnmanagedCode permission is required due to the used PDF rendering. See [Medium Trust Support]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/medium-trust-support%}).
-          
+* UnmanagedCode permission is required due to the used PDF rendering. See[Medium Trust Support]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/medium-trust-support%})
 
-*             (Silverlight viewer only) [UseNativePrinting](/reporting/api/Telerik.ReportViewer.Silverlight.ReportViewer#Telerik_ReportViewer_Silverlight_ReportViewer_UseNativePrinting)            property should be false. Telerik Reporting WCF Service should be properly configured e.g. resource endpoint should be present.
-            See [How to Add Telerik Reporting WCF Service to Web Application]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-wcf-service/how-to-add-telerik-reporting-wcf-service-to-web-application%}).
-          
+* (Silverlight viewer only)[UseNativePrinting](/reporting/api/Telerik.ReportViewer.Silverlight.ReportViewer#Telerik_ReportViewer_Silverlight_ReportViewer_UseNativePrinting)property should be false. Telerik Reporting WCF Service should be properly configured e.g. resource endpoint should be present.
+            See[How to Add Telerik Reporting WCF Service to Web Application]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-wcf-service/how-to-add-telerik-reporting-wcf-service-to-web-application%})
 
-*             (Internet Explorer only) [Print menu](http://maximumpcguides.com/windows-7/disable-the-print-menu-in-internet-explorer/)            in IE group policy should be enabled.
-          
+* (Internet Explorer only)[Print menu](http://maximumpcguides.com/windows-7/disable-the-print-menu-in-internet-explorer/)
 
 * (Internet Explorer only) ActiveX Filtering should be disabled.
 

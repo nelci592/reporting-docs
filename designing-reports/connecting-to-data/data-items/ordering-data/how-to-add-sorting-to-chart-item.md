@@ -18,7 +18,7 @@ In the Chart item the sorting is performed at data item level and sets       the
 
 
 
-1. In the [Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/overview%}),             select the Chart item and open its Properties grid.
+1. In the[Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/overview%})
 
 1. Click the Sorting ellipsis.
 

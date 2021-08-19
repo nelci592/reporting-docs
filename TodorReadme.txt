@@ -39,6 +39,7 @@ section/titles
 Handle The structure
 <![CDATA[...<link href="https://kendo.cdn.telerik.com/]]><token...>kendosubsetversion</token><![CDATA[...
 
+
 this nested <code> elements were removed in the mamls:
 <code language="c#">
   <code source="CodeSnippets\MvcCS\Views\Home\InvoiceParameters.cshtml" region="ParametersExample" />
@@ -56,6 +57,12 @@ file:///D:/Work/2018/Hotfix/Documentation/Help/Content/MVCExtensions/mvc-report-
 fixed feedback - The unordered list is not part of the whole list (the one under the second bullet item in the section), thus it is on the same level - https://reportinghost:446/reporting/installation#installing-telerik-reporting
 
 fixed feedback, added a new line before the image - Images are not in a “mediaNear” div and thus there is missing top and bottom margins - https://reportinghost:446/reporting/installation#installing-telerik-reporting
+
+
+Fixed listItems without <para>
+
+
+
 
 
 
@@ -115,16 +122,17 @@ Some article titles contain '/' that is interpreted as new subfolder and their n
 
 
 
-
-
-
+In some articles there are code blocks that have what should appear as a single code snippet by two code blocks - for example:
+VB codes in file:///D:/Work/2018/Hotfix/Documentation/Help/Content/report-items-html-text-box-validation.aml
+all code in file:///D:/Work/2018/Hotfix/Documentation/Help/Content/report-viewer-localization2.aml
+all code in file:///D:/Work/2018/Hotfix/Documentation/Help/Content/report-viewer-localization3.aml
 
 
 
 Merge TOC of documentation and API reference - D:\Work\reporting-docs\_assetsApi\api\index.md - change this file accordingly
 
 
-
+make legacyBold with '_' and legacyItalic with '*' - when they are nested there is a problem.
 
 
 

@@ -25,9 +25,8 @@ The ReportViewer control uses the __ASP.NET session state__ to preserve the repo
 
 * Report events should be attached in the report’s default constructor.
 
-*             The fields representing the report items in the Report class should not be used in the report events.
-            Instead the report item should be taken from the Items collection of the report. Consider the following examples:
-                __Wrong__
+* The fields representing the report items in the Report class should not be used in the report events.
+            Instead the report item should be taken from the Items collection of the report. Consider the following examples:__Wrong__
 
 {{source=CodeSnippets\CS\API\Telerik\Reporting\Processing\OutProcSnippets.cs region=WrongItemDataBinding}}
 ````C#
@@ -73,9 +72,8 @@ __Correct__
 
 
 
-*             To utilize the events of the report items (NeedDataSource, ItemDataBinding, ItemDataBound) you have to attach
+* To utilize the events of the report items (NeedDataSource, ItemDataBinding, ItemDataBound) you have to attach
             them in the ItemDataBinding event of the Report. For example:
-              
 
 {{source=CodeSnippets\CS\API\Telerik\Reporting\Processing\OutProcSnippets.cs region=AttachItemsEvents}}
 ````C#

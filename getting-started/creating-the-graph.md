@@ -52,7 +52,7 @@ The controls which the __Report Header__ and the __Report Footer__ contain are d
 
   ![Pie](images/Pie.PNG)
 
-1. Mark the graph to add the filtering and sorting functionalities. As a result, the top five stores from the database will be rendered.             
+1. Click Finish and select the newly created Graph in order to add Filtering and Sorting.             
 
 1. From the  [Group Explorer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/group-explorer%}), click __Filter__ and set the following parameters:             
 

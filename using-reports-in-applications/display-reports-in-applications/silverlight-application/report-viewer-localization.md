@@ -16,7 +16,7 @@ In the Silverlight Report Viewer, localized resources are stored in separate __
 
 ## Types of Resources in the Hierarchy
 
-* At the top of the hierarchy sit the fallback resources for the default UI culture, which is English ("en") by default. These are the only resources that do not have their own file. They are stored directly in the assembly of the __*Report Viewer*__.
+* At the top of the hierarchy sit the fallback resources for the default UI culture, which is English ("en") by default. These are the only resources that do not have their own file. They are stored directly in the assembly of the__*Report Viewer*__.
 
 * Below the fallback resources are the resources for any neutral cultures. A neutral culture is associated with a language but not a region. For example, French ("fr") is a neutral culture. Note that the fallback resources are also for a neutral culture, but a special one.
 
@@ -70,24 +70,23 @@ The above diagram illustrates a simple view of the resource fallback for a UI c
 
 ## Adding Localization Resources for the Report Viewer
 
-1. Add a new __RESX__ resource file to the main project of the application. Name the newly-created __RESX__ file according to the naming convention described above.
+1. Add a new__RESX__resource file to the main project of the application. Name the newly-created__RESX__file according to the naming convention described above.
 
-1. In the __*Property Inspector*__ specify the following properties for the resource file: 
+1. In the__*Property Inspector*__specify the following properties for the resource file:
 
    1. __*Build Action:*__ "*Embedded Resource*"
 
    1. __*Copy to Output Directory:*__ "*Copy if newer*" or "*Copy always*"
 
-1. Open the __RESX__ resource file in the __*Visual Studio Resource Editor*__. Enter the required 
+1. Open the__RESX__resource file in the__*Visual Studio Resource Editor*__. Enter the required 
 resource strings ([TextResources](/reporting/api/Telerik.ReportViewer.Silverlight.TextResources)) 
-to translate the __*Report Viewer*__ to the desired language.
+to translate the__*Report Viewer*__to the desired language.
 
 1. Unload the project by right clicking on it and selecting "Unload Project"
 
 1. Right click on the project again and select "Edit MyProject.csproj"
 
-1. Locate the __SupportedCultures__ tag and add the supported cultures (there is no need to specify the neutral culture): 
-        		
+1. Locate the__SupportedCultures__tag and add the supported cultures (there is no need to specify the neutral culture):
 
 						<SupportedCultures>
 						fr;fr-BE
@@ -98,9 +97,9 @@ to translate the __*Report Viewer*__ to the desired language.
 
 1. Reload and build the project
 
-1. Repeat steps from 1 to 3 for each desired translation of the __*Report Viewer*__. Steps 4 to 7 can be performed at the end only once.
+1. Repeat steps from 1 to 3 for each desired translation of the__*Report Viewer*__. Steps 4 to 7 can be performed at the end only once.
 
-1. Compile and run the project. When viewing a __*Telerik Report*__, the __*Report Viewer*__ should be translated according to the current UI culture.
+1. Compile and run the project. When viewing a__*Telerik Report*__, the__*Report Viewer*__should be translated according to the current UI culture.
 
 ## Distributing an Application with a Localized Report Viewer
 

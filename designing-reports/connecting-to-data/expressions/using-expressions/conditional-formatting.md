@@ -24,29 +24,28 @@ To make styles conditional, use an expression instead of a static value 			for t
 
 1. In the context menu, select __Conditional Formating__.               
 
-1. The __[Conditional Formatting Rules...]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/conditional-formatting-rules-dialog%})__ dialog appears on the screen.
-						
+1. The__[Conditional Formatting Rules...]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/conditional-formatting-rules-dialog%})__dialog appears on the screen.
 
 1. Enter the conditional 
-							expression: 
+							expression:
 
 	=Fields.Profit
 
 
 
-1. Enter the operator: 
+1. Enter the operator:
 
 	<
 
 
 
-1. Enter the value expression: 
+1. Enter the value expression:
 
 	=0
 
 
 
-1. In the __Edit Style__ dialog select Red color for
+1. In the__Edit Style__dialog select Red color for
 						the Background.
 
 ### Using Bindings
@@ -82,7 +81,6 @@ To make styles conditional, use an expression instead of a static value 			for t
 1. In the __Bindings Editor__ 							select the __Style.BackGroundColor__ property.
 
 1. Enter the next expression:
-						
 
 	=Iif(Fields.Profit < 0, ColorFromName("Red"), ColorFromName("White"))
 						

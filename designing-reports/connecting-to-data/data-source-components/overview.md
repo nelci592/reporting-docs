@@ -18,34 +18,21 @@ Telerik Reporting Data Source Components are intended to specify declaratively h
 
 The Telerik Reporting engine includes the following data source objects:
 
-* [SqlDataSource]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/sqldatasource-component/overview%}) – Enables you to work
-    with Microsoft SQL Server, MySQL, Oracle, OLE DB, ODBC, Postgres, MS Access databases, and any other database with available ADO.NET provider.
-  
+* [SqlDataSource]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/sqldatasource-component/overview%})
 
-* [CsvDataSource]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/csvdatasource-component/overview%}) – Enables you to work
-    with CSV data - embedded or from a local file.
-  
+* [CsvDataSource]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/csvdatasource-component/overview%})
 
-* [WebServiceDataSource]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/webservicedatasource-component/overview%}) – Enables you to work with data located on a service in JSON format.
-  
+* [WebServiceDataSource]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/webservicedatasource-component/overview%})
 
-* [JsonDataSource]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/jsondatasource-component%}) – Enables you to work with data in JSON format - embedded or from a local file.
-  
+* [JsonDataSource]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/jsondatasource-component%})
 
-* [ObjectDataSource]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/objectdatasource-component/overview%}) – Enables you to work
-    with business objects or other classes and allows you to create reports that display data from the middle-tier.
-    For backwards compatibility reasons Telerik Reporting supports binding directly to *IEnumberable*/*IListSource* objects (*incl.* arrays, collections, DataSet, DataTable, DataView, DbDataAdapter).     Our recommendation is to avoid them and use the ObjectDataSource component that can handle these types of data sources.     
+* [ObjectDataSource]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/objectdatasource-component/overview%})– Enables you to work
+    with business objects or other classes and allows you to create reports that display data from the middle-tier.For backwards compatibility reasons Telerik Reporting supports binding directly to *IEnumberable*/*IListSource* objects (*incl.* arrays, collections, DataSet, DataTable, DataView, DbDataAdapter).     Our recommendation is to avoid them and use the ObjectDataSource component that can handle these types of data sources.     
 
-* [EntityDataSource]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/entitydatasource-component/overview%}) – Enables you to connect to the [ADO.NET Entity Framework](http://msdn.microsoft.com/en-us/library/bb399572.aspx).
-  
+* [EntityDataSource]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/entitydatasource-component/overview%})– Enables you to connect to the[ADO.NET Entity Framework](http://msdn.microsoft.com/en-us/library/bb399572.aspx)
 
-* [CubeDataSource]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/cubedatasource-component/overview%}) – Enables
-    you to retrieve data from an OLAP cube using Microsoft Analysis Services.
-  
+* [CubeDataSource]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/cubedatasource-component/overview%})
 
-* [OpenClientDataSource]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/openclientdatasource-component/overview%}) – Enables
-    you to retrieve data from OpenEdge AppServer ABL procedures.
-  
+* [OpenClientDataSource]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/openclientdatasource-component/overview%})
 
-* [OpenAccessDataSource]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/openaccessdatasource-component/overview%}) - Enables you to connect to [Telerik Data Access (DISCONTINUED)](http://www.telerik.com/data-access).
-  
+* [OpenAccessDataSource]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/openaccessdatasource-component/overview%})- Enables you to connect to[Telerik Data Access (DISCONTINUED)](http://www.telerik.com/data-access)

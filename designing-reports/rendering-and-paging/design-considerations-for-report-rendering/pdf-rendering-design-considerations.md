@@ -97,9 +97,8 @@ The PDF Rendering extension has the following limitations:
 
 * Underlining justified text will only underline the words and not the spaces between them.
 
-*                 Hiding the border of report items needs to be done with BorderStyle property, not BorderWidth property.
+* Hiding the border of report items needs to be done with BorderStyle property, not BorderWidth property.
                 To hide the border, apply BorderStyle=None setting for the item
-              
 
 * The PDF graphics subsystem may fail to render graphic primitives with very small size (i.e. thousandths of a millimeter), producing a corrupted PDF document.                   Such graphics primitives are usually graph data points (bars, columns, or pie slices) that represent a tiny portion of the supplied data.                   Since such small graphic primitives are practically invisible, the recommended approach is to set their visibility through the corresponding ConditionalFormatting properties.                 
 

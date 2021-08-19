@@ -63,17 +63,13 @@ We will apply implicit styles for the Vista theme in our example project.
 
 * First add references to the required assemblies (Telerik UI for Silverlight) from Binaries.NoXaml folder.
 
-*             Then add references to the required assemblies for Telerik Reporting - __Telerik.Reporting__ and __Telerik.ReportViewer.Silverlight__.
-          
+* Then add references to the required assemblies for Telerik Reporting -__Telerik.Reporting__and__Telerik.ReportViewer.Silverlight__.
 
-*             Create a Themes folder in your project and copy the corresponding XAML files (Telerik UI for Silverlight) from __Themes.Implicit/../Vista/../Themes/__ folder.
-          
+* Create a Themes folder in your project and copy the corresponding XAML files (Telerik UI for Silverlight) from__Themes.Implicit/../Vista/../Themes/__folder.
 
-*             In the Themes folder of the project add the respective Report Viewer theme (in our case Vista) from __Silverlight/Themes__ folder.
-          
+* In the Themes folder of the project add the respective Report Viewer theme (in our case Vista) from__Silverlight/Themes__folder.
 
-*             The next step is to merge these ResourceDictionaries in the App.xaml file:
-            
+* The next step is to merge these ResourceDictionaries in the App.xaml file:
 
 	
     ````XAML

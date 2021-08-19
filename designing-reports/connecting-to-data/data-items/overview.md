@@ -26,7 +26,6 @@ To make the best choice of data item to use for displaying report data,         
           nested and display data for each value in the group, which is determined
           at runtime. The detail section displays at run-time one row for each
           detail item in the report data source.
-        
 
 * __Table__. The Table item has a fixed number of columns and
           displays detail or grouped data by rows. The Table expands down
@@ -35,7 +34,6 @@ To make the best choice of data item to use for displaying report data,         
           Each row group displays a dynamic row down the page for each value in the group,
           which is determined at run-time. You can also add static rows for labels or totals.
           You can add totals to the table or to a specific group.
-        
 
 * __Crosstab__. The Crosstab item is derived from the Table
           item and displays data grouped by rows and columns. A Crosstab has at least
@@ -46,18 +44,14 @@ To make the best choice of data item to use for displaying report data,         
           depend on the values for each group, determined at run-time.
           You can also add static rows for labels or totals.
           You can add totals to the table or to a specific group.
-        
 
 * __List__. The List item is derived from the Table item and
           contains one row that repeats for each value in the data source and
           displays data in a free-form format. For example, you might use a list to
           design a form or display both a table and a chart. Arrange text boxes anywhere
           in the list to create your layout.
-        
 
 * __Graph__. The Graph item enables you to present large volumes
           of aggregated information at a glance in a visual format.
-        
 
 * __Map__. The Map item enables you to represent geospatial related data on top of the world map.
-        

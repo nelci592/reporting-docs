@@ -81,6 +81,6 @@ Both the __*__ and __%__ can be used interchangeably for wildcard characters 			
 
 * "ItemName LIKE '*product'"
 
-* "ItemName LIKE 'product*'" 
+* "ItemName LIKE 'product*'"
 
 Wildcard characters are not allowed in the middle of a string. 				For example, 'te*xt' is not allowed.

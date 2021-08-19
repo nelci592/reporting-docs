@@ -16,16 +16,11 @@ Add bookmarks to a report when you want to provide a customized table of content
 
 ## Adding a bookmark to a Table group
 
-1. In __Design view__, right click outside the report sections, select View and open up the 
-		[Group Explorer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/group-explorer%}).
-	Select a [Table](/reporting/api/Telerik.Reporting.Table), 
-  	[Crosstab](/reporting/api/Telerik.Reporting.Crosstab)  	 or [List](/reporting/api/Telerik.Reporting.List) report item, so the 
-  	__Group Explorer__ shows the respective groups. Select a group to which you want to add a bookmark, right click on it and select 
-  	__Group Properties__. The properties for the selected group appear in the __Edit Table Group__ dialog.
+1. In__Design view__, right click outside the report sections, select View and open up the[Group Explorer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/group-explorer%})
 
-1. In the [BookmarkId](/reporting/api/Telerik.Reporting.TableGroup#Telerik_Reporting_TableGroup_BookmarkId) property, 
-	type a string that is the label for this bookmark. Alternatively, click the ellipsis to open the __Expression__ dialog box to 
-	specify an expression that evaluates to text. Typically for a group, the expression you type should be the group expression. 
+1. In the[BookmarkId](/reporting/api/Telerik.Reporting.TableGroup#Telerik_Reporting_TableGroup_BookmarkId)property, 
+	type a string that is the label for this bookmark. Alternatively, click the ellipsis to open the__Expression__dialog box to 
+	specify an expression that evaluates to text. Typically for a group, the expression you type should be the group expression.
 
 >note The [BookmarkId](/reporting/api/Telerik.Reporting.TableGroup#Telerik_Reporting_TableGroup_BookmarkId) can be any string,  	but it must be unique in the report. If the  __BookmarkID__  is not unique, an action to the bookmark finds the first matching bookmark.
 

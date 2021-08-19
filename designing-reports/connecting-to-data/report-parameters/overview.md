@@ -80,20 +80,15 @@ A Parameter is populated by setting its __Value__           property. You may se
 
 Report Parameters' value can be populated in one of the following ways:
 
-*             At design time through the [
+* At design time through the[
               ReportParameter Collection editor
-            ]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/reportparameter-collection-editor%}).
-          
+            ]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/reportparameter-collection-editor%})
 
 * Using the automatic user interface that each Report Viewer provides.
 
-*             Programmatically by using the
-            __ReportParameters__ collection.
-          
+* Programmatically by using the__ReportParameters__collection.
 
-*             Using a [SubReports]({%slug telerikreporting/designing-reports/report-structure/subreport%}) 
-            __Parameters__ collection.
-          
+* Using a[SubReports]({%slug telerikreporting/designing-reports/report-structure/subreport%})
 
 ## Cascading (dependent) parameters
 

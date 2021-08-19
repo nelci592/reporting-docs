@@ -20,11 +20,10 @@ To specify that a report parameter would accept multiple values, set the __Multi
 
 If you want to pass multiple parameter values back to a data source by using a query, the following requirements must be satisfied:
 
-*             The data source must be supported. For a list see [SqlDataSource Component]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/sqldatasource-component/overview%})
+* The data source must be supported. For a list see[SqlDataSource Component]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/sqldatasource-component/overview%})
 
-*             The data source cannot be a stored procedure. __Telerik Reporting__ does not support passing a multivalue parameter array to a
+* The data source cannot be a stored procedure.__Telerik Reporting__does not support passing a multivalue parameter array to a
             stored procedure.
-          
 
 * Use an IN clause in the query to specify the parameter.
 

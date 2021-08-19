@@ -16,10 +16,10 @@ Add bookmarks to a report when you want to provide a customized table of content
 
 ## Adding a bookmark to a report item
 
-1. In __Design view__, select a report item to which you want to add a bookmark. The properties for the selected 
+1. In__Design view__, select a report item to which you want to add a bookmark. The properties for the selected 
 	item appear in the Properties pane.
 
-1. In the [BookmarkId](/reporting/api/Telerik.Reporting.ReportItemBase#Telerik_Reporting_ReportItemBase_BookmarkId) property, 
+1. In the[BookmarkId](/reporting/api/Telerik.Reporting.ReportItemBase#Telerik_Reporting_ReportItemBase_BookmarkId)property, 
 	type a string that is the label for this bookmark. Alternatively, click
 	the ellipsis to open the Expression dialog box to specify an expression that evaluates to a label.
 

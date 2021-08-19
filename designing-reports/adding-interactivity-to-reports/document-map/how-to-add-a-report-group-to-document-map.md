@@ -16,17 +16,16 @@ A user can click items in the document map to jump      	to areas within a repor
 
 ## Adding a Report group to document map
 
-1. In __Design view__, right click outside the report sections, select View and open up the 
-		[Group Explorer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/group-explorer%}).
+1. In__Design view__, right click outside the report sections, select View and open up the[Group Explorer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/group-explorer%})
 
-1. Select a report group to which you want to add a document map. The properties for the selected group appear in the __Properties__ pane.
+1. Select a report group to which you want to add a document map. The properties for the selected group appear in the__Properties__pane.
 
-1. In the [DocumentMapText](/reporting/api/Telerik.Reporting.Group#Telerik_Reporting_Group_DocumentMapText) property, type the text 
-	that you want to appear in the document map. Alternatively, click the ellipsis to open the __Expression__ dialog box to specify an 
+1. In the[DocumentMapText](/reporting/api/Telerik.Reporting.Group#Telerik_Reporting_Group_DocumentMapText)property, type the text 
+	that you want to appear in the document map. Alternatively, click the ellipsis to open the__Expression__dialog box to specify an 
 	expression that evaluates to a text.
 	Typically for a group, the expression you type should match the group expression.
 
-1. Click __OK__.
+1. Click__OK__.
 
 1. Repeat steps 1-4 for every group that you want to appear in the document map.
 

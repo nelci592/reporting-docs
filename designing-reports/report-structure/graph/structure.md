@@ -54,18 +54,17 @@ The __coordinate axis__ or simply axis represents a single dimension of the coor
 
 An axis consists of:
 
-* __Scale__ - defines how the data is projected on the axis;
+* __Scale__- defines how the data is projected on the axis;
 
-* __Tick marks__ - major/minor - periodic graduations;
+* __Tick marks__- major/minor - periodic graduations;
 
-* __Labels__ - numerical/categorical indications accompanying the tick marks;
+* __Labels__- numerical/categorical indications accompanying the tick marks;
 
-* __Title__ - the title of the axis, usually a brief description of the dimension;
+* __Title__- the title of the axis, usually a brief description of the dimension;
 
-* __Grid lines__ - within the graph a grid of lines may appear to aid in the visual alignment of data.
+* __Grid lines__- within the graph a grid of lines may appear to aid in the visual alignment of data.
 				  	The grid can be enhanced by visually emphasizing the lines at regular or significant graduations.  The emphasized lines are then 
 				  	called major grid lines and the remainder are minor grid lines.
-				  
 
 ## Scales
 

@@ -64,9 +64,9 @@ You can override a GlobalStyle by modifying the Style properties of an individua
 
 If you have overridden a style using a report item's Style properties, it is possible to reset the report item to its Global Style.
 
-1. Right-click the report item to open its context menu. 
+1. Right-click the report item to open its context menu.
 
-1. Click __Reset Style__.
+1. Click__Reset Style__.
 
   
 

@@ -14,7 +14,7 @@ position: 10
 
 The [Visual Studio Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/overview%}) would show data source related information      	(incl. data source schema) when a valid data source is available at design time. As the __Report Designer__ works        	inside __Visual Studio__, a valid data source means: 		 
 
-* A data source object that is instantiated and initialized in the InitializeComponent() method of  	the designed object class - this is the only part of the class that__Visual Studio__designer respects.
+* A data source object that is instantiated and initialized in the InitializeComponent() method of  	the designed object class - this is the only part of the class that __Visual Studio__ designer respects.
 
 * The data source object should be operational at design time. This means that Visual Studio (through the[Visual Studio Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/overview%})
 

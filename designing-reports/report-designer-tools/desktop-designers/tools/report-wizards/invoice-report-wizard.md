@@ -24,9 +24,9 @@ Invoices are one of the most common business documents, that’s why their prepa
 
 1. Once you select the appropriate layout and go to the next page, you need to define the data scenario you will be using when creating the invoice.             
 
-* The __Plain Data scenario__ is suitable where all the data is contained in one data set and the company details is repeated on every data row along with the items that form the value of the invoice. Although it is not a very common scenario, it might be suitable for invoices with a few items where you want to setup just one data source.                 
+   + The __Plain Data scenario__ is suitable where all the data is contained in one data set and the company details is repeated on every data row along with the items that form the value of the invoice. Although it is not a very common scenario, it might be suitable for invoices with a few items where you want to setup just one data source.                 
 
-* The __Header-Details scenario__ is more common and contains two data sources – the first one is for the static data, related with the company and contains fields that are not to be listed in the invoice details. Such fields are CompanyName, Phone, Fax, ShipTo, BillTo, etc. The second data source contains the data for the items, listed in the invoice – ProductNumber, Description, Price, Taxes, Discounts, etc.                   
+   + The __Header-Details scenario__ is more common and contains two data sources – the first one is for the static data, related with the company and contains fields that are not to be listed in the invoice details. Such fields are CompanyName, Phone, Fax, ShipTo, BillTo, etc. The second data source contains the data for the items, listed in the invoice – ProductNumber, Description, Price, Taxes, Discounts, etc.                   
 
   ![Invoice Wizard 2 Select Data Scenario](images/Templates/Invoice/InvoiceWizard_2_SelectDataScenario.png)
 

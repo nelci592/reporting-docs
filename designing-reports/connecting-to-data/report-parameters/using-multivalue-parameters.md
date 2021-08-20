@@ -12,7 +12,7 @@ position: 4
 
 
 
-A multivalue parameter allows the user to select more than one value for the parameter from a list of available values.         When you define a list of available values for a multivalue parameter, a __<select all>__         option is automatically added to the list of values in the report parameter editor. You can use this option to select and clear all         values in the list. The expression for a multivalue parameter does not differ from the expression for a single value parameter i.e., the         expression begins with the __Parameters__ keyword. For example, a parameter named __VendorSelect__         appears as __Parameters.VendorSelect.Value__ in the expression editor. For more information,         see [Using Report Parameters in Expressions]({%slug telerikreporting/designing-reports/connecting-to-data/report-parameters/using-report-parameters-in-expressions%}).       
+A multivalue parameter allows the user to select more than one value for the parameter from a list of available values.         When you define a list of available values for a multivalue parameter, a __```<select all>```__         option is automatically added to the list of values in the report parameter editor. You can use this option to select and clear all         values in the list. The expression for a multivalue parameter does not differ from the expression for a single value parameter i.e., the         expression begins with the __Parameters__ keyword. For example, a parameter named __VendorSelect__         appears as __Parameters.VendorSelect.Value__ in the expression editor. For more information,         see [Using Report Parameters in Expressions]({%slug telerikreporting/designing-reports/connecting-to-data/report-parameters/using-report-parameters-in-expressions%}).       
 
 To specify that a report parameter would accept multiple values, set the __MultiValue__ property of the parameter to True. You can set any parameter         type to multivalue except Boolean. The primary use of multivalue parameters is to allow for query restriction clauses based on a set of values.       
 
@@ -22,7 +22,7 @@ If you want to pass multiple parameter values back to a data source by using a q
 
 * The data source must be supported. For a list see[SqlDataSource Component]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/sqldatasource-component/overview%})
 
-* The data source cannot be a stored procedure.__Telerik Reporting__does not support passing a multivalue parameter array to a
+* The data source cannot be a stored procedure. __Telerik Reporting__ does not support passing a multivalue parameter array to a
             stored procedure.
 
 * Use an IN clause in the query to specify the parameter.

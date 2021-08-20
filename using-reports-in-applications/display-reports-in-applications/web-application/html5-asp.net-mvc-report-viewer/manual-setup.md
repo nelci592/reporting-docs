@@ -105,9 +105,9 @@ The following steps produce a view with settings similar to these of the local M
 
 1. Add references to
 
-* __Telerik.Reporting__
+   + __Telerik.Reporting__
 
-* __Telerik.ReportViewer.Mvc__    assemblies and set their __Copy Local__ properties to true in Visual Studio.                 
+   + __Telerik.ReportViewer.Mvc__    assemblies and set their __Copy Local__ properties to true in Visual Studio.                 
 
     >tip Without setting Telerik Reporting references' Copy Local to true the assemblies may not be loaded correctly on running the application.
 
@@ -273,7 +273,7 @@ kendo.all.min.js or kendo.web.min.js can be used as well if Kendo is used outsid
 
 
 
-1. Open the layout page and call the *RenderSection* helper method in the                   *<head>* element. The method must be called for each named section in the view with the viewer -                   *scripts section* and *styles section*.                 
+1. Open the layout page and call the *RenderSection* helper method in the                   *```<head>```* element. The method must be called for each named section in the view with the viewer -                   *scripts section* and *styles section*.                 
 
 	
     ````HTML

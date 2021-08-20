@@ -27,7 +27,7 @@ The WinForms ReportViewer control requires its RefreshReport method to be called
 The WinForms ReportViewer control uses Image rendering to display content.            If the machine cannot handle the number of rendered elements you may receive one of the above errors.           Suggestions how to resolve the issue are available in [Performance considerations]({%slug telerikreporting/designing-reports/performance-considerations%}).         
 
 ##        "Attempt by method 'Telerik.Reporting.Services.HttpClient.HttpRequestHelper.GetResponseFromPost(System.Net.Http.HttpResponseMessage)'
-        to access method 'Telerik.Reporting.Services.HttpClient.HttpRequestHelper.GetResponseFromPost<T>
+        to access method 'Telerik.Reporting.Services.HttpClient.HttpRequestHelper.GetResponseFromPost```<T>```
         (System.Net.Http.HttpResponseMessage, System.Collections.Generic.IEnumerable`1```<System.Net.Http.Formatting.MediaTypeFormatter>```)' failed." error
         on connecting the WinForms ReportViewer with Telerik Report Server or Reporting REST service.
       

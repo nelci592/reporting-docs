@@ -36,17 +36,17 @@ position: 3
 
 1. Make sure that the project have the following assembly references:
 
-* System.Web                 
+   + System.Web                 
 
-* Newtonsoft.Json.dll                 
+   + Newtonsoft.Json.dll                 
 
-* System.Web.Http.dll                 
+   + System.Web.Http.dll                 
 
-* System.Web.Http.SelfHost.dll                 
+   + System.Web.Http.SelfHost.dll                 
 
-* System.Net.Http.dll                 
+   + System.Net.Http.dll                 
 
-* System.Net.Http.Formatting.dll                 
+   + System.Net.Http.Formatting.dll                 
 
 1. [How to implement the ReportsController in an application]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-web-api-implementation/how-to-implement-the-reportscontroller-in-an-application%});             
 

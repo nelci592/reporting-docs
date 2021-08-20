@@ -300,6 +300,6 @@ End Class
 
     You can use for fallback the default IReportSourceResolver implementations:             
 
-* TypeReportSourceResolver - Resolves IReportDocument from assembly qualified name
+   + TypeReportSourceResolver - Resolves IReportDocument from assembly qualified name
 
-* UriReportSourceResolver - Resolves IReportDocument from physical path to trdp or trdx file
+   + UriReportSourceResolver - Resolves IReportDocument from physical path to trdp or trdx file

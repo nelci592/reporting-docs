@@ -40,7 +40,7 @@ The SQL Data Source Wizard allows you to create a new or edit an existing SqlDat
 
    + Specify a default value for the parameter in the *"Value"* column or bind it via                   an expression.                 
 
-   >note Bind a data source parameter directly to a report parameter to use the standard                 Report Parameter user interface to provide values for data source parameters. The drop-down list                 of the  *"Value"*  column displays all existing report parameters.                 Alternatively, invoke the  __Edit Expression__  dialog by choosing                  *<Expression>*  from the list, to specify an arbitrary                 expression to evaluate for the parameter value.               
+   >note Bind a data source parameter directly to a report parameter to use the standard                 Report Parameter user interface to provide values for data source parameters. The drop-down list                 of the  *"Value"*  column displays all existing report parameters.                 Alternatively, invoke the  __Edit Expression__  dialog by choosing                  *```<Expression>```*  from the list, to specify an arbitrary                 expression to evaluate for the parameter value.               
 
 1. __Configure Design Time Parameters__This step allows you to specify a value for each data source parameter that can be used at design time to               retrieve the schema and preview the __SqlDataSource__ component data.             
 

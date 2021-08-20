@@ -70,7 +70,7 @@ When complicated logic should be applied or .NET framework routines need to be u
 
 1. Create or open an existing report.
 
-1. Add an SqlDataSource connected to__AdventureWorks__sample database and set it as a report's datasource.
+1. Add an SqlDataSource connected to __AdventureWorks__ sample database and set it as a report's datasource.
 
 1. Put the following text in the SqlDataSource's SelectCommand value:
 
@@ -126,8 +126,8 @@ In this step we process the passed data argument as IDataObject, retrieving the 
 
 1. Rebuild your project.
 
-1. Set the second textbox's expression to the user defined function you created in__step 6__and pass the__ReportItem.DataObject__as its argument.
-            The function name is__YourNamespace.GetContactInfo(data)__, so your expression should look like this:
+1. Set the second textbox's expression to the user defined function you created in __step 6__ and pass the __ReportItem.DataObject__ as its argument.
+            The function name is __YourNamespace.GetContactInfo(data)__ , so your expression should look like this:
 
 
 
@@ -208,7 +208,7 @@ as a grouping expression. Set the detail textbox's expression to
 
 Alternatively you may use the crosstab wizard choosing the SqlDataSource used for the whole report,               so that you have design-time support (Data explorer, Expression Builder in the context of the crosstab).             
 
-1. Add a[binding]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/bindings%})to the crosstab using__DataSource__as a__PropertyPath__and__=ReportItem.DataObject__as an__Expression__, as shown in the following screenshot.
+1. Add a[binding]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/bindings%})to the crosstab using __DataSource__ as a __PropertyPath__ and __=ReportItem.DataObject__ as an __Expression__ , as shown in the following screenshot.
             This means that when the crosstab is processed its data source will be replaced with the result
             of the binding expression evaluation. This way it will be populated with the data of the current group insance.![dataobject-edit-bindings](images/DataItems/dataobject-edit-bindings.png)
 

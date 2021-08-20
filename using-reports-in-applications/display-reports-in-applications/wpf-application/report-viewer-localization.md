@@ -16,7 +16,7 @@ In the WPF Report Viewer, localized resources are stored in separate __RESX__ r
 
 ## Types of Resources in the Hierarchy
 
-* At the top of the hierarchy sit the fallback resources for the default UI culture, which is English ("en") by default. These are the only resources that do not have their own file. They are stored directly in the assembly of the__*Report Viewer*__.
+* At the top of the hierarchy sit the fallback resources for the default UI culture, which is English ("en") by default. These are the only resources that do not have their own file. They are stored directly in the assembly of the __*Report Viewer*__ .
 
 * Below the fallback resources are the resources for any neutral cultures. A neutral culture is associated with a language but not a region. For example, French ("fr") is a neutral culture. Note that the fallback resources are also for a neutral culture, but a special one.
 
@@ -56,9 +56,9 @@ Telerik.ReportViewer.WPF.TextResources.resx*
 
 As described above, if for example the current UI culture is set to French Belgian, the __*Report Viewer*__ will search for localized __RESX__ resource files inside the main application folder in the following order:         
 
-1. Telerik.ReportViewer.WPF.TextResources.__fr-BE__.resx
+1. Telerik.ReportViewer.WPF.TextResources. __fr-BE__ .resx
 
-1. Telerik.ReportViewer.WPF.TextResources.__fr__.resx
+1. Telerik.ReportViewer.WPF.TextResources. __fr__ .resx
 
 1. Telerik.ReportViewer.WPF.TextResources.resx
 
@@ -70,9 +70,9 @@ The above diagram illustrates a simple view of the resource fallback for a UI c
 
 ## Adding Localization Resources for the Report Viewer
 
-1. Add a new__RESX__resource file to the main project of the application. Name the newly-created__RESX__file according to the naming convention described above.
+1. Add a new __RESX__ resource file to the main project of the application. Name the newly-created __RESX__ file according to the naming convention described above.
 
-1. In the__*Property Inspector*__specify the following properties for the resource file:
+1. In the __*Property Inspector*__ specify the following properties for the resource file:
 
    1. __*Build Action:*__ "*None*"
               
@@ -80,13 +80,13 @@ The above diagram illustrates a simple view of the resource fallback for a UI c
    1. __*Copy to Output Directory:*__ "*Copy if newer*" or "*Copy always*"
               
 
-1. Open the__RESX__resource file in the__*Visual Studio Resource Editor*__. Enter the required
+1. Open the __RESX__ resource file in the __*Visual Studio Resource Editor*__ . Enter the required
             resource strings ([TextResources](/reporting/api/Telerik.ReportViewer.Wpf.TextResources))
-            to translate the__*Report Viewer*__to the desired language.
+            to translate the __*Report Viewer*__ to the desired language.
 
-1. Repeat steps from 1 to 3 for each desired translation of the__*Report Viewer*__.
+1. Repeat steps from 1 to 3 for each desired translation of the __*Report Viewer*__ .
 
-1. Compile and run the project. When viewing a__*Telerik Report*__, the__*Report Viewer*__should be translated according to the current UI culture.
+1. Compile and run the project. When viewing a __*Telerik Report*__ , the __*Report Viewer*__ should be translated according to the current UI culture.
 
 ## Distributing an Application with a Localized Report Viewer
 

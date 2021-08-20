@@ -16,9 +16,9 @@ You can add a document map, which acts like a table of contents. A user can clic
 
 ## Adding a report item to document map
 
-1. In__Design view__, make sure the Properties pane is visible. Select the report item that you want to add to the document map. In the Properties
+1. In __Design view__ , make sure the Properties pane is visible. Select the report item that you want to add to the document map. In the Properties
 	pane, type the text that you want to appear in the document map in the[DocumentMapText](/reporting/api/Telerik.Reporting.ReportItemBase#Telerik_Reporting_ReportItemBase_DocumentMapText)property, or enter 
-	an expression that evaluates to a text. For example, type__Product Catalog__. If the[DocumentMapText](/reporting/api/Telerik.Reporting.ReportItemBase#Telerik_Reporting_ReportItemBase_DocumentMapText)does not evaluate to
+	an expression that evaluates to a text. For example, type __Product Catalog__ . If the[DocumentMapText](/reporting/api/Telerik.Reporting.ReportItemBase#Telerik_Reporting_ReportItemBase_DocumentMapText)does not evaluate to
     unique value, then a unique value should be set to the[BookmarkId](/reporting/api/Telerik.Reporting.ReportItemBase#Telerik_Reporting_ReportItemBase_BookmarkId)property.
 
 1. Repeat step 1 for every report item that you want to appear in the document map.

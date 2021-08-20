@@ -18,17 +18,17 @@ In this how-to article we will show you how to create a graph with both column a
 
 1. Start the Graph Wizard:
 
-* If you use [Standalone Telerik Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview%})From the __Insert__ menu select __Column__ and then __Clustered Column__.                   This will bring up the __Graph Wizard__ which will help you create the first series.                   
+   + If you use [Standalone Telerik Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview%})From the __Insert__ menu select __Column__ and then __Clustered Column__.                   This will bring up the __Graph Wizard__ which will help you create the first series.                   
 
   ![select Column](images/Graph/HowToBarLineSeries/selectColumn.png)
 
-* If you use the [Visual Studio Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/overview%}):Initiate the __Graph Wizard__ from the __Visual Studio toolbox__. Then select __Clustered Column__ chart type and click                    __OK__.                    This will bring up the __Graph Wizard__ which will help you create the first series.                 
+   + If you use the [Visual Studio Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/overview%}):Initiate the __Graph Wizard__ from the __Visual Studio toolbox__. Then select __Clustered Column__ chart type and click                    __OK__.                    This will bring up the __Graph Wizard__ which will help you create the first series.                 
 
 1. Click __'Add New Data Source...'__ button and select                __[SQL Data Source]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/sqldatasource-wizard/overview%})__:             
 
-1. Set the connection string to the demo AdventureWorks database.
+   1. Set the connection string to the demo AdventureWorks database.
 
-1. Set the query to the following one:
+   1. Set the query to the following one:
 
 	                  SELECT SOD.LineTotal, SOH.OrderDate
                   FROM
@@ -41,7 +41,7 @@ In this how-to article we will show you how to create a graph with both column a
 
 
 
-1. You can click on __Execute Query...__ just to check if everything is OK with the database connection.                   Click __Finish__ when you are ready.                 
+   1. You can click on __Execute Query...__ just to check if everything is OK with the database connection.                   Click __Finish__ when you are ready.                 
 
 1. In the *Available data sources* list you should see the datasource you've already created.               Select it and click __Next__.             
 

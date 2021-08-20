@@ -23,7 +23,7 @@ __.NET Core applications__ provide another way of storing configuration - a key-
 
 __Telerik Reporting root element__
 
-The root element of the configuration is named __<Telerik.Reporting>__ in XML-based configuration files and __"telerikReporting"__ in JSON-based configuration files.           All the settings of the Reporting engine are nested in this root element.         
+The root element of the configuration is named __```<Telerik.Reporting>```__ in XML-based configuration files and __"telerikReporting"__ in JSON-based configuration files.           All the settings of the Reporting engine are nested in this root element.         
 
 
 
@@ -40,7 +40,7 @@ Attributes|No attributes are defined for this element|
 
 The snippets in this section show the ```<Telerik.Reporting>``` configuration used in XML-based configuration files like __app.config__ and __web.config__.         
 
-The settings for the Telerik Reporting engine are stored in a custom configuration section called *Telerik.Reporting*.           The declaration of this section has to be included in a __<configSections>__ element which should be the __first child element__           of __<configuration>__, like this:         
+The settings for the Telerik Reporting engine are stored in a custom configuration section called *Telerik.Reporting*.           The declaration of this section has to be included in a __```<configSections>```__ element which should be the __first child element__           of __```<configuration>```__, like this:         
 
 	
 ````xml

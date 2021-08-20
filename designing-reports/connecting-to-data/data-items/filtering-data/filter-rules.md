@@ -36,7 +36,7 @@ Each filter rule is made up of an __Expression__, __Operator __and __Value__.
 |>=| __Expression__ is greater than or equal to __Value__ |
 |<=| __Expression__ is less than or equal to __Value__ |
 |=| __Expression__ is equal to __Value__ |
-|<>| __Expression__ is not equal to __Value__ |
+|```<>```| __Expression__ is not equal to __Value__ |
 |In| __Expression__ is in __Value__ . __Value__ should be a collection of objects. The condition is met when __Expression__ evaluates to an object which is present inside the collection of objects in __Value__ .                                 To enter a collection of objects in __Value__ use parentheses: ("Bikes", "Clothing", "Accessories")                                 Example: *Fields.ProductCategory In ("Bikes", "Clothing", "Accessories")* will allow all                                 product records where the "ProductCategory" field is equal to "Bikes", "Clothing", or "Accessories".|
 |Like| __Expression__ is like __Value__ . Use the "%" wildcard to represent                                 any number of other characters. Example: *Fields.ProductName Like "%Bike%"* will allow all                                 records where the "ProductName" field contains "Bike".|
 |Not Like| __Expression__ is Not like __Value__ . Use the "%" wildcard to represent                                 any number of other characters. Example: *Fields.ProductName NotLike "%Bike%"* will allow all                                 records where the "ProductName" field -does not- contain "Bike".|

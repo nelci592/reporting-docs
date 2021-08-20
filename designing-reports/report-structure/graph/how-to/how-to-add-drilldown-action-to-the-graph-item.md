@@ -20,9 +20,9 @@ You can use a report designer of your choice - the described approach is valid f
 
 1. Start the report designer and create a new report:             
 
-* In Standalone Report Designer: *File - New - Blank Report;*
+   + In Standalone Report Designer: *File - New - Blank Report;*
 
-* In Visual Studio Report Designer: *File - New Project - Telerik Report Library [VERSION] - Blank Report*.                 
+   + In Visual Studio Report Designer: *File - New Project - Telerik Report Library [VERSION] - Blank Report*.                 
 
 1. Add a new [SqlDataSource component]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/sqldatasource-component/overview%}) by:               double-clicking on the SqlDataSource item in the VS Toolbox for VS Report Designer,               or on the SqlDataSource in the __Data tab__ of the Stabndalone Report Designer.               This should start the [SqlDataSource Wizard]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/sqldatasource-wizard/overview%}).             
 
@@ -50,15 +50,15 @@ You can use a report designer of your choice - the described approach is valid f
 
 1. Select the report in the Report Designer and increase its Width to 11in. Open the report's               [PageSettings properties]({%slug telerikreporting/designing-reports/rendering-and-paging/understanding-pagination%}) and set:             
 
-* Landscape to True
+   + Landscape to True
 
-* Margins (Top, Right, Bottom, Left) to 0(zero) units.    The purpose is to provide more space for content in the desined report.
+   + Margins (Top, Right, Bottom, Left) to 0(zero) units.    The purpose is to provide more space for content in the desined report.
 
 1. Now that the data source is configured, you should set up the __Graph__ item:             
 
-* If you are using [Visual Studio Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/overview%}), from the VS Toolbox drag and drop                   the __Graph Wizard__ icon to the Detail section of your report,                   and select __Column -> Clustered Column__ from the first page.                 
+   + If you are using [Visual Studio Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/overview%}), from the VS Toolbox drag and drop                   the __Graph Wizard__ icon to the Detail section of your report,                   and select __Column -> Clustered Column__ from the first page.                 
 
-* In case you are using the [Standalone Telerik Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview%}),                   select the report’s Detail section, and click on __Charts - Column - Clustered Column__ from the __Insert__ tab:                   
+   + In case you are using the [Standalone Telerik Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview%}),                   select the report’s Detail section, and click on __Charts - Column - Clustered Column__ from the __Insert__ tab:                   
 
   ![How To Add Drill Down Action 3 Select Clustered Column](images/Graph/HowToAddDrillDownAction/HowToAddDrillDownAction_3_SelectClusteredColumn.png)    This will bring up the __Graph Wizard__ which will do the rest of the work for you.             
 

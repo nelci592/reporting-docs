@@ -20,11 +20,11 @@ A report is globalized with the help of a [System.Globalization.CultureInfo](h
 
 When determining what Culture to use for formatting strings and text direction, the rendering engine will inspect the those objects in the following order:
 
-1. The Culture of the__TextBox__.
+1. The Culture of the __TextBox__ .
 
-1. If the TextBox has no Culture defined, the Culture of the__Report__is used.
+1. If the TextBox has no Culture defined, the Culture of the __Report__ is used.
 
-1. If the Report has no Culture defined, the Culture of the__CurrentThread__is used.
+1. If the Report has no Culture defined, the Culture of the __CurrentThread__ is used.
 
 >tip         	The Culture of the CurrentThread is determined by the Regional Settings of the machine the application is running on. (Control Panel->Regional Settings->Regional Options->Standards And Formats)        
 

@@ -19,7 +19,7 @@ position: 6
 
 The __ReportViewer__ control creates a client-side object with the __ClientID__ of the viewer. You can obtain reference to it by using the following JavaScript code:
 
-*var viewer = <%=ReportViewer1.ClientID%>*
+*var viewer = ```<%=ReportViewer1.ClientID%>```*
 
 ## Client API
 

@@ -12,13 +12,13 @@ position: 9
 
 
 
-Telerik Reporting uses the machine DPI settings to determine the physical sizes of report items, images, calculate text sizes         and draw the graphic primitives. That's why it is vital to obtain the correct DPI settings of the machine which renders and shows the report in any of the viewers.         If the machine's DPI settings are set higher than the default value of 96, it is recommended to make the application DPI-aware, either         through an application manifest or by setting the __<dpiAware>__ configuration element, as shown below.       
+Telerik Reporting uses the machine DPI settings to determine the physical sizes of report items, images, calculate text sizes         and draw the graphic primitives. That's why it is vital to obtain the correct DPI settings of the machine which renders and shows the report in any of the viewers.         If the machine's DPI settings are set higher than the default value of 96, it is recommended to make the application DPI-aware, either         through an application manifest or by setting the __```<dpiAware>```__ configuration element, as shown below.       
 
 ## General Information
 
 Usually the DPI awareness is set on the application level through a           [manifest file](https://msdn.microsoft.com/library/windows/desktop/mt843498(v=vs.85).aspx(d=robot)), but in some cases such manifest cannot be applied. That's why the reporting engine           provides the option to explicitly set the DPI awareness flag prior to rendering the report.         
 
-The __<dpiAware>__ section has only one attribute: __dpiAwareness__.           Its value corresponds with the Windows API           [PROCESS_DPI_AWARENESS enumeration](https://msdn.microsoft.com/en-us/library/windows/desktop/dn280512(v=vs.85).aspx)           and can be one of the following:         
+The __```<dpiAware>```__ section has only one attribute: __dpiAwareness__.           Its value corresponds with the Windows API           [PROCESS_DPI_AWARENESS enumeration](https://msdn.microsoft.com/en-us/library/windows/desktop/dn280512(v=vs.85).aspx)           and can be one of the following:         
 
 * PROCESS_DPI_UNAWARE = 0
 
@@ -74,7 +74,7 @@ The WPF Report Viewer must be used in a WPF application and they are system DPI-
 
 ### HTML5-based Report Viewers
 
-The HTML5-based report viewers use Telerik Reporting REST Service, which is an application executed in a web server (usually IIS) domain. Instead of applying a               [custom manifest](https://docs.microsoft.com/en-us/iis/publish/using-web-deploy/using-custom-manifests), the recommended approach is to add the __<dpiAware>__ section to the               application's __web.config__ and set the __dpiAwareness__ attribute to PROCESS_SYSTEM_DPI_AWARE.             
+The HTML5-based report viewers use Telerik Reporting REST Service, which is an application executed in a web server (usually IIS) domain. Instead of applying a               [custom manifest](https://docs.microsoft.com/en-us/iis/publish/using-web-deploy/using-custom-manifests), the recommended approach is to add the __```<dpiAware>```__ section to the               application's __web.config__ and set the __dpiAwareness__ attribute to PROCESS_SYSTEM_DPI_AWARE.             
 
 # See Also
 [](F25EB909-7941-4B78-B24C-4025257A26C4#dpiAware)

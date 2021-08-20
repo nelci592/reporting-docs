@@ -49,15 +49,15 @@ The project has a preconfigured implementation of reports controller that uses t
 
 1. Make sure that the project has the following assembly references:
 
-* Newtonsoft.Json.dll                     
+   + Newtonsoft.Json.dll                     
 
-* System.Web.Http.dll                     
+   + System.Web.Http.dll                     
 
-* System.Web.Http.WebHost.dll                     
+   + System.Web.Http.WebHost.dll                     
 
-* System.Net.Http.dll                     
+   + System.Net.Http.dll                     
 
-* System.Net.Http.Formatting.dll                     
+   + System.Net.Http.Formatting.dll                     
 
 1. [Implement the reports controller]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-web-api-implementation/how-to-implement-the-reportscontroller-in-an-application%});                 
 
@@ -99,21 +99,21 @@ The project has a preconfigured implementation of reports controller that uses t
 
 1. Enable [Cross-Origin Resource Sharing (CORS).](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS) (*optional*)                 
 
-1. Add __Microsoft.AspNet.WebApi.Cors__ NuGet package to the project. It may add other required references. It may be necessary to upgrade some of the already installed packages.                     
+   1. Add __Microsoft.AspNet.WebApi.Cors__ NuGet package to the project. It may add other required references. It may be necessary to upgrade some of the already installed packages.                     
 
-1. Add the following code at the beginning of the __Global.Application_Start__ (Global.asax) method:                     
-
-	                      GlobalConfiguration.Configuration.EnableCors();
-                    
-
-
+   1. Add the following code at the beginning of the __Global.Application_Start__ (Global.asax) method:                     
 
 	                      GlobalConfiguration.Configuration.EnableCors();
                     
 
 
 
-1. Add the following attribute to the __ReportsController__ class (requires reference to __System.Web.Http.Cors__):                     
+	                      GlobalConfiguration.Configuration.EnableCors();
+                    
+
+
+
+   1. Add the following attribute to the __ReportsController__ class (requires reference to __System.Web.Http.Cors__):                     
 
 	
     ````c#

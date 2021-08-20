@@ -66,7 +66,7 @@ If you have overridden a style using a report item's Style properties, it is pos
 
 1. Right-click the report item to open its context menu.
 
-1. Click__Reset Style__.
+1. Click __Reset Style__ .
 
   
 

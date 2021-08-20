@@ -22,7 +22,7 @@ The WPF ReportViewer displays content rendered through the Reporting WPF XAML Re
 When connecting the WPF Report Viewer to Telerik Report Server or Telerik Reporting REST API Service, the following exception may occur:         
 
 	          Attempt by method 'Telerik.Reporting.Services.HttpClient.HttpRequestHelper.GetResponseFromPost(System.Net.Http.HttpResponseMessage)'
-          to access method 'Telerik.Reporting.Services.HttpClient.HttpRequestHelper.GetResponseFromPost<T>
+          to access method 'Telerik.Reporting.Services.HttpClient.HttpRequestHelper.GetResponseFromPost```<T>```
           (System.Net.Http.HttpResponseMessage, System.Collections.Generic.IEnumerable`1```<System.Net.Http.Formatting.MediaTypeFormatter>```)' failed.
         
 

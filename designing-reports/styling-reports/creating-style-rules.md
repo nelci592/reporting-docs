@@ -16,13 +16,13 @@ Style definitions can be stored in a Style Rule. Style Rules can be created i
 
 Style Rules are defined as one of the following four types:
 
-* A__TypeSelector__applies to all report items of a particular type.
+* A __TypeSelector__ applies to all report items of a particular type.
 
-* An__AttributeSelector__applies to all report items with a particular attribute (such as Color=Red).
+* An __AttributeSelector__ applies to all report items with a particular attribute (such as Color=Red).
 
-* A__StyleSelector__applies to all report items with a particular style name.
+* A __StyleSelector__ applies to all report items with a particular style name.
 
-* A__DescendantSelector__applies to all report items descended from another report item, which in turn can be specified by any type of selector.
+* A __DescendantSelector__ applies to all report items descended from another report item, which in turn can be specified by any type of selector.
 
 See [Understanding Style Selectors]({%slug telerikreporting/designing-reports/styling-reports/understanding-style-selectors%}) for more information about the types of Style Rules.
 
@@ -32,35 +32,35 @@ See [Understanding Style Selectors]({%slug telerikreporting/designing-reports/st
 
 1. Select the Report object.
 
-1. Click in the__StyleSheet__property, and then click the ellipsis button to open the StyleRule Collection Editor.
+1. Click in the __StyleSheet__ property, and then click the ellipsis button to open the StyleRule Collection Editor.
 
 ## Creating a TypeSelector StyleRule
 
 ## Using the StyleRule Collection Editor
 
-1. In the StyleRule Collection Editor, click__Add__. A new rule will be added to the Members list and you will see the Selectors and Style properties for the rule.  
+1. In the StyleRule Collection Editor, click __Add__ . A new rule will be added to the Members list and you will see the Selectors and Style properties for the rule.  
 
   ![](images/ReportStyleRuleA.png)
 
-1. Click the__Selectors__property, then click the ellipsis button that appears to the right of__(Collection)__. This action will open TypeSelector Collection Editor.
+1. Click the __Selectors__ property, then click the ellipsis button that appears to the right of __(Collection)__ . This action will open TypeSelector Collection Editor.
 
-1. Click the drop-down arrow on the__Add__button to choose the type of Selector to create.
+1. Click the drop-down arrow on the __Add__ button to choose the type of Selector to create.
 
-1. Click__TypeSelector__from the list. Note: TypeSelector is the default type created when you click the__Add__button.  
+1. Click __TypeSelector__ from the list. Note: TypeSelector is the default type created when you click the __Add__ button.  
 
   ![](images/ReportStyleRuleB.png)
 
-1. Click the__Type__property of the new TypeSelector, and then click the ellipsis button.  
+1. Click the __Type__ property of the new TypeSelector, and then click the ellipsis button.  
 
   ![](images/ReportStyleRuleC.png)
 
-1. Select the__Telerik.Reporting.TextBox__and click__OK__. The StyleRule will now apply to all__TextBox__report items on the report.
+1. Select the __Telerik.Reporting.TextBox__ and click __OK__ . The StyleRule will now apply to all __TextBox__ report items on the report.
 
-1. Click the plus sign next to__Style__to expand the__Style__properties.
+1. Click the plus sign next to __Style__ to expand the __Style__ properties.
 
-1. Modify any properties you wish to define formatting to be applied to the__TextBox__report item.
+1. Modify any properties you wish to define formatting to be applied to the __TextBox__ report item.
 
-1. Click__OK__to save the rules and close the editor window.
+1. Click __OK__ to save the rules and close the editor window.
 
   
 
@@ -70,13 +70,13 @@ See [Understanding Style Selectors]({%slug telerikreporting/designing-reports/st
 
 The following code demonstrates the four steps required to create a __TypeSelector____StyleRule__ programmatically:
 
-1. Create a new__StyleRule__called__MyStyleRule__.
+1. Create a new __StyleRule__ called __MyStyleRule__ .
 
-1. Add a__TypeSelector__to the__StyleRule__and define the type as__Telerik.Reporting.TextBox__.
+1. Add a __TypeSelector__ to the __StyleRule__ and define the type as __Telerik.Reporting.TextBox__ .
 
-1. Apply some formatting rules to the__StyleRule__.
+1. Apply some formatting rules to the __StyleRule__ .
 
-1. Add the__StyleRule__to the__Style Sheet__.
+1. Add the __StyleRule__ to the __Style Sheet__ .
 
 	
 ````C#
@@ -115,35 +115,35 @@ The following code demonstrates the four steps required to create a __TypeSelec
 
 ## Using the StyleRule Collection Editor
 
-1. In the StyleRule Collection Editor, click__Add__. A new rule will be added to the Members list and you will see the__Selectors__and__Style__properties for the rule.
+1. In the StyleRule Collection Editor, click __Add__ . A new rule will be added to the Members list and you will see the __Selectors__ and __Style__ properties for the rule.
 
-1. Click the__Selectors__property, and then click the ellipsis button to open the TypeSelector Collection Editor window.
+1. Click the __Selectors__ property, and then click the ellipsis button to open the TypeSelector Collection Editor window.
 
-1. Click the drop-down arrow on the__Add__button to choose the type of Selector to create.
+1. Click the drop-down arrow on the __Add__ button to choose the type of Selector to create.
 
-1. Click__StyleSelector__from the list.
+1. Click __StyleSelector__ from the list.
 
-1. Type a name for the Style into the__StyleName__property.  
+1. Type a name for the Style into the __StyleName__ property.  
 
   ![](images/ReportStyleRuleE.png)
 
-1. Click__OK__to return to the StyleRule Collection Editor.
+1. Click __OK__ to return to the StyleRule Collection Editor.
 
-1. Expand the__Style__property and modify the formatting properties as desired.
+1. Expand the __Style__ property and modify the formatting properties as desired.
 
-1. When finished, click__OK__to close the StyleRule Collection Editor.
+1. When finished, click __OK__ to close the StyleRule Collection Editor.
 
 ## Creating a StyleSelector StyleRule in Code
 
 The following code demonstrates the four steps required to create a __StyleSelector____StyleRule__ programmatically:
 
-1. Create a new__StyleRule__called__MyStyleRule__.
+1. Create a new __StyleRule__ called __MyStyleRule__ .
 
-1. Add a__TypeSelector__to the__StyleRule__and give it a__StyleName__, such as CaptionStyle.
+1. Add a __TypeSelector__ to the __StyleRule__ and give it a __StyleName__ , such as CaptionStyle.
 
-1. Apply some formatting rules to the__StyleRule__.
+1. Apply some formatting rules to the __StyleRule__ .
 
-1. Add the__StyleRule__to the__Style Sheet__.
+1. Add the __StyleRule__ to the __Style Sheet__ .
 
 	
 ````C#
@@ -192,55 +192,55 @@ Type the __StyleName__ of the desired __StyleRule__ into the report item's __St
 
 ## Using the StyleRule Collection Editor
 
-1. In the StyleRule Collection Editor, click__Add__. A new rule will be added to the Members list and you will see the__Selectors__and__Style__properties for the rule.
+1. In the StyleRule Collection Editor, click __Add__ . A new rule will be added to the Members list and you will see the __Selectors__ and __Style__ properties for the rule.
 
-1. Click the__Selectors__property, and then click the ellipsis button to open the TypeSelector Collection Editor window.
+1. Click the __Selectors__ property, and then click the ellipsis button to open the TypeSelector Collection Editor window.
 
-1. Click the drop-down arrow on the__Add__button to choose the type of Selector to create.
+1. Click the drop-down arrow on the __Add__ button to choose the type of Selector to create.
 
-1. Click__DescendantSelector__from the list.  
+1. Click __DescendantSelector__ from the list.  
 
   ![](images/ReportStyleRuleH.png)The __DescendantSelector__ is made up of additional __Selectors__.
 
-1. Click the__Selectors__property, and then click the ellipsis button to open up a new TypeSelector Collection Editor window.  
+1. Click the __Selectors__ property, and then click the ellipsis button to open up a new TypeSelector Collection Editor window.  
 
   ![](images/ReportStyleRuleI.png)In this new TypeSelector Collection Editor window, you will define the Selectors that make up the DescendantSelector.
 
-1. Click__Add__to add a new__TypeSelector__.
+1. Click __Add__ to add a new __TypeSelector__ .
 
-1. Click__Type__, and then click the ellipsis button to open up the Select Type dialog.
+1. Click __Type__ , and then click the ellipsis button to open up the Select Type dialog.
 
-1. Select the__Telerik.Reporting.DetailSection__type.
+1. Select the __Telerik.Reporting.DetailSection__ type.
 
-1. Add another new__TypeSelector__and set its type to__Telerik.Reporting.TextBox__.  
+1. Add another new __TypeSelector__ and set its type to __Telerik.Reporting.TextBox__ .  
 
   ![](images/ReportStyleRuleJ.png)
 
-1. Click__OK__to close the window and return to the TypeSelector Collection Editor window for the DescendantSelector.
+1. Click __OK__ to close the window and return to the TypeSelector Collection Editor window for the DescendantSelector.
 
-1. Click__OK__to close this window and return to the StyleRule Collection Editor window.  
+1. Click __OK__ to close this window and return to the StyleRule Collection Editor window.  
 
   ![](images/ReportStyleRuleK.png)
 
-1. Expand the__Style__property to define the formatting for the__DetailSection TextBox StyleRule__.
+1. Expand the __Style__ property to define the formatting for the __DetailSection TextBox StyleRule__ .
 
-1. Click__OK__when complete.
+1. Click __OK__ when complete.
 
 ## Creating a DescendantSelector StyleRule in Code
 
 The following code demonstrates the four steps required to create a __DescendantSelector____StyleRule__ programmatically:
 
-1. Create a new__StyleRule__called__MyStyleRule__.
+1. Create a new __StyleRule__ called __MyStyleRule__ .
 
-1. Create a new__DescendantSelector__.
+1. Create a new __DescendantSelector__ .
 
-1. Add__Selectors__to the__DescendantSelectors__. If you are using__TypeSelectors__, define the types too.
+1. Add __Selectors__ to the __DescendantSelectors__ . If you are using __TypeSelectors__ , define the types too.
 
-1. Add a__TypeSelector__to the__StyleRule__and give it a__StyleName__, such as CaptionStyle.
+1. Add a __TypeSelector__ to the __StyleRule__ and give it a __StyleName__ , such as CaptionStyle.
 
-1. Apply some formatting rules to the__StyleRule__.
+1. Apply some formatting rules to the __StyleRule__ .
 
-1. Add the__StyleRule__to the__Style Sheet__.
+1. Add the __StyleRule__ to the __Style Sheet__ .
 
 	
 ````C#

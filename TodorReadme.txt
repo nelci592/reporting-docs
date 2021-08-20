@@ -62,7 +62,8 @@ fixed feedback, added a new line before the image - Images are not in a “media
 Fixed listItems without <para>
 
 
-
+If <procedure> is not in <section> (should be for correct maml) the entire procedure is not rendered. Fix the maml files in documentation:
+	wpf-report-viewer-add-to-net-core-project.aml
 
 
 
@@ -132,10 +133,8 @@ all code in file:///D:/Work/2018/Hotfix/Documentation/Help/Content/report-viewer
 Merge TOC of documentation and API reference - D:\Work\reporting-docs\_assetsApi\api\index.md - change this file accordingly
 
 
-make legacyBold with '_' and legacyItalic with '*' - when they are nested there is a problem.
 
-
-
+XAML code from source cannot be displayed - wpf-report-viewer-add-to-net-core-project.aml
 
 Feedback:
 

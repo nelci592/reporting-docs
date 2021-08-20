@@ -86,7 +86,7 @@ Report Parameters' value can be populated in one of the following ways:
 
 * Using the automatic user interface that each Report Viewer provides.
 
-* Programmatically by using the__ReportParameters__collection.
+* Programmatically by using the __ReportParameters__ collection.
 
 * Using a[SubReports]({%slug telerikreporting/designing-reports/report-structure/subreport%})
 

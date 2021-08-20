@@ -41,7 +41,7 @@ Page size is calculated based on whether the report is rendered for __Interactiv
 
 All [Actions]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/actions/overview%}) are supported.             
 
-The legacy ASP.NET viewer renders tooltips on SVG elements using the `<title>` attribute and browsers support it in a different manner,                that's why the tooltips on SVG elements are rendered as a single line.             
+The legacy ASP.NET viewer renders tooltips on SVG elements using the ```<title>``` attribute and browsers support it in a different manner,                that's why the tooltips on SVG elements are rendered as a single line.             
 
 ### Browsers and limitations
 

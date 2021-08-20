@@ -44,7 +44,7 @@ position: 2
 | ------ | ------ |
 | __<__ |less than|
 | __<=__ |less than or equal to|
-| __<>__ |not equal to|
+| __```<>```__ |not equal to|
 | __=__ |equal|
 | __>__ |greater than|
 | __>=__ |greater than or equal to|
@@ -56,7 +56,7 @@ position: 2
 
 
 
->note  __Null__  values represent missing unknown data and are usually used as placeholders for unknown or inapplicable values.            It is not possible to test for  __null__  values with comparison operators such as  __=__  or  __<>__ .           The  __IS [NOT] NULL__  operator should be used instead.         
+>note  __Null__  values represent missing unknown data and are usually used as placeholders for unknown or inapplicable values.            It is not possible to test for  __null__  values with comparison operators such as  __=__  or  __```<>```__ .           The  __IS [NOT] NULL__  operator should be used instead.         
 
 
 ## Logical/Bitwise operators

@@ -69,11 +69,11 @@ To automatically upgrade your project to a later Telerik Reporting version, use 
 
 1. Open the `web.config` file and update all version numbers to the new one in the following               instances:             
 
-   + `<configSections>`―The location in which you can alter the atributes of the rendering extensions.                 
+   + ```<configSections>```―The location in which you can alter the atributes of the rendering extensions.                 
 
-   + ````<httpHandlers>```/<handlers>`―The location in which the ASP.NET ReportViewer registers its handler.                 
+   + ```<httpHandlers>```/```<handlers>```―The location in which the ASP.NET ReportViewer registers its handler.                 
 
-   + `<assemblies>`―The Telerik Reporting assemblies that are references in the website.                 
+   + ```<assemblies>```―The Telerik Reporting assemblies that are references in the website.                 
 
 1. Open the `.aspx/.master` pages and change the version of the ReportViewer in the               `Register` directive.             
 
@@ -103,11 +103,11 @@ Apart from website projects, you can also manually upgrade class library project
 
 1. Open the `web.config/app.config` file and update all version numbers to the new one in the following               instances:             
 
-   + `<configSections>`―The location in which you can alter the attributes of the rendering extensions.                 
+   + ```<configSections>```―The location in which you can alter the attributes of the rendering extensions.                 
 
-   + ````<httpHandlers>```/<handlers>`―The location in which the ASP.NET ReportViewer registers its handler.                 
+   + ```<httpHandlers>```/```<handlers>```―The location in which the ASP.NET ReportViewer registers its handler.                 
 
-   + `<assemblies>`―The Reporting assemblies that are references in the web application.                 
+   + ```<assemblies>```―The Reporting assemblies that are references in the web application.                 
 
 1. (Applicable to web applications only.) Open the `.aspx` or `.master` pages and change the version               of the ASP.NET ReportViewer in the `Register` directive.             
 

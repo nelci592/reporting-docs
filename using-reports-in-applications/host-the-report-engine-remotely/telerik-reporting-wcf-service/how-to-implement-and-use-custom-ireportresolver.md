@@ -205,11 +205,11 @@ If you use the Silverlight report viewer the report description is provided by t
 
     You can use for fallback the default IReportResolver implementations:                     
 
-* ReportTypeResolver - Resolves IReportDocument from assembly qualified name
+   + ReportTypeResolver - Resolves IReportDocument from assembly qualified name
 
-* ReportFileResolver - Resolves IReportDocument from physical path to trdp or trdx file
+   + ReportFileResolver - Resolves IReportDocument from physical path to trdp or trdx file
 
-* ReportFileResolverWeb - Resolves IReportDocument from a relative path to trdp or trdx file
+   + ReportFileResolverWeb - Resolves IReportDocument from a relative path to trdp or trdx file
 
 1. 
 

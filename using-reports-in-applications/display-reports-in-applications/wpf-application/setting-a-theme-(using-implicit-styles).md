@@ -78,9 +78,9 @@ We will apply implicit styles for the Vista theme in our example project. Having
 
 * Replace the referenced Telerik UI for WPF assemblies with assemblies from the Binaries.NoXaml folder.               If the Telerik UI for WPF assemblies are only used for the report viewer,               use Telerik UI for WPF assemblies available with the local demos.               They are internally unlocked for the WPF Report Viewer but can only be used with the report viewer.               The Telerik UI for WPF assemblies are located in               %programfiles(x86)%\Progress\Reporting {{site.suiteversion}}\Examples\CSharp\WpfDemo\bin).             
 
-* Create a Themes folder in your project and copy the corresponding XAML files (Telerik UI for WPF) from__Themes.Implicit/../Vista/../Themes/__folder.
+* Create a Themes folder in your project and copy the corresponding XAML files (Telerik UI for WPF) from __Themes.Implicit/../Vista/../Themes/__ folder.
 
-* In the Themes folder of the project add the respective Report Viewer theme (in our case Vista) from__WPF/Themes__folder.
+* In the Themes folder of the project add the respective Report Viewer theme (in our case Vista) from __WPF/Themes__ folder.
 
 * The next step is to merge these ResourceDictionaries in the App.xaml file:
 

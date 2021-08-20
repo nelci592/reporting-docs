@@ -18,7 +18,7 @@ Report groups are defined by adding __Group__ objects to the report’s __Groups
 
 1. Click the Report selector button located in the upper left hand of the[Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/overview%})
 
-1. Click the__Groups__ellipsis.
+1. Click the __Groups__ ellipsis.
 
 1. Follow these steps for each group:
 

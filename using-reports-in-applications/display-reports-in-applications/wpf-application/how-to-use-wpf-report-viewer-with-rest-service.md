@@ -31,12 +31,12 @@ This topic explains how to setup the WPF Report Viewer to work with Telerik Repo
   ![wpf-connection-editor-rest-service](images/wpf-connection-editor-rest-service.png)
 
 1. The __Reporting engine__ combobox provides the following options:                 
-
    + *Embedded* - the reports will be processed and rendered at the local machine that hosts the viewer. This is the default mode in order to preserve backwards compatibility.                     
 
    + *REST Service* - the reports will be processed at the machine that hosts configured and running REST Service instance.                     
 
-   + *Report Server* - the reports will be processed and rendered at the machine that hosts configured and running                       [Telerik Report Server ](http://docs.telerik.com/report-server/introduction) instance.                         Select *REST Service*.                 
+   + *Report Server* - the reports will be processed and rendered at the machine that hosts configured and running                       [Telerik Report Server ](http://docs.telerik.com/report-server/introduction) instance.                     
+    Select *REST Service*.                 
 
 1. In __URL__ textbox enter the address and port (if needed) of the machine that hosts the REST Service instance.                   Note that the */api/reports* part is already added so you need to prefix it with the service address.                 
 

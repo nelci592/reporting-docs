@@ -165,6 +165,27 @@ The corresponding code that can be used to deserialize the report definition fro
 and the resulting XML file would look like this:
 
 {{source=CodeSnippets\CS\Report1.xml}}
-
+````XML
+	<Report DataSourceName="sqlDataSource1" Width="4in" Name="userReport1" xmlns="http://schemas.telerik.com/reporting/2012/2">
+	  <DataSources>
+	    <SqlDataSource ConnectionString="Data Source=.\SqlExpress;Initial Catalog=AdventureWorks;Integrated Security=True" SelectCommand="select ProductNumber, Name from Production.Product" Name="sqlDataSource1" />
+	  </DataSources>
+	  <Items>
+	    <DetailSection Height="0.2in" Name="detailSection1">
+	      <Items>
+	        <TextBox Value="=Fields.ProductNumber" Size="2in, 0.2in" Location="0in, 0cm" Name="textBox1" />
+	        <TextBox Value="=Fields.Name" Size="2in, 0.2in" Location="2in, 0cm" Name="textBox2" />
+	      </Items>
+	    </DetailSection>
+	  </Items>
+	  <PageSettings>
+	    <PageSettings PaperKind="Letter" Landscape="False">
+	      <Margins>
+	        <MarginsU Left="1in" Right="1in" Top="1in" Bottom="1in" />
+	      </Margins>
+	    </PageSettings>
+	  </PageSettings>
+	</Report>
+````
 
 

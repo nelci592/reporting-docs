@@ -20,7 +20,6 @@ In this how-to article we will show you how to create a Map which will present t
 ###
 
 1. Start the Map Wizard:
-
    + If you create a new report, select the __Map Wizard__ icon from the __Available Templates__ page.                   
 
   ![Item Template Map Wizard](images/Map/ItemTemplate_MapWizard.png)
@@ -29,8 +28,8 @@ In this how-to article we will show you how to create a Map which will present t
 
   ![Insert Menu Select Map](images/Map/InsertMenu_SelectMap.png)
 
-1. On the __Choose Data Source__ page, add new               __[SqlDataSource]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/sqldatasource-wizard/overview%})__:             
 
+1. On the __Choose Data Source__ page, add new               __[SqlDataSource]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/sqldatasource-wizard/overview%})__:             
    + Set the connection string to the demo AdventureWorks database.
 
    + Paste the following query in the *Select Statement* box:                 
@@ -58,12 +57,12 @@ In this how-to article we will show you how to create a Map which will present t
 
    + You can click on __Execute Query...__ just to check if everything is OK with the database connection.                   Click __Finish__ when you are ready.                 
 
+
 1. In the *Available data sources* list you should see the datasource you've already created.               Select it and click __Next__.             
 
 1. In the next page you have to select the fields which will be used to build the map charts.             
 
     >tip Since the map will use a Location Provider, there is no need to provide the  __Latitude__  and  __Longitude__  coordinates by yourself, so you can                 left these boxes empty and just define a location group, which will set the geocoding string.               
-
 
 
    + Select the __Pie Chart__ radiobutton from the *Datapoints type* box.                 
@@ -72,7 +71,8 @@ In this how-to article we will show you how to create a Map which will present t
 
    + Select the __State__ field and drag it to *Categories (location)* box.                 
 
-   + Select the __LineTotal__ field and drag it to *Size* box, where it will be transformed to                 __Sum(LineTotal)__    Your __Arrange map fields__ page should look like the one shown below:               
+   + Select the __LineTotal__ field and drag it to *Size* box, where it will be transformed to                 __Sum(LineTotal)__
+    Your __Arrange map fields__ page should look like the one shown below:               
 
   ![Arrange Map Fields](images/Map/ArrangeMapFields.png)    Once the mandatory fields are set up, the __Next__ button will get enabled and you can go to the next page.             
 

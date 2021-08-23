@@ -64,7 +64,13 @@ At runtime you can access the report parameters through the          [Telerik.Re
   the following query:
 
 {{source=CodeSnippets\CS\API\Telerik\Reporting\Processing\ParametersSqlDataSourceQuery.sql}}
-
+````SQL
+	SELECT        M.ManagerID, C.FirstName + ' ' + C.LastName AS Name
+	FROM          (SELECT DISTINCT ManagerID
+	               FROM      HumanResources.Employee) AS M INNER JOIN
+	                         HumanResources.Employee AS E ON M.ManagerID = E.EmployeeID INNER JOIN
+	                         Person.Contact AS C ON E.ContactID = C.ContactID
+````
 
 
 

@@ -21,13 +21,12 @@ You can connect to data from OpenEdge AppServer ABL procedures using the        
 ###Configuring the OpenClientDataSource Component
 
 1. Add OpenClientDataSource component
-
    + For VisualStudio use the OpenClientDataSource Toolbox item                 
 
    + For Stand-alone Report Designer use the OpenEdge OpenClient Data Source tool located in the Data tab of the Ribbon bar                 
 
-1. A wizard form is started guiding you through the process which helps you to setup all needed settings
 
+1. A wizard form is started guiding you through the process which helps you to setup all needed settings
    + Proxy .NET assembly file along with its dependencies                 
 
    + The AppObject proxy type name used to communicate with the AppServer                 
@@ -49,3 +48,4 @@ You can connect to data from OpenEdge AppServer ABL procedures using the        
    1. AppServer info (optional)
 
    1. Session model (managed/free)
+

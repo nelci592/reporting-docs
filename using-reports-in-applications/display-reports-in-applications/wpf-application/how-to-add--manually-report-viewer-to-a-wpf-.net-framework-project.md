@@ -23,7 +23,27 @@ Setting a DataContext to a parent element of ReportViewer leads to BindingExpres
 In case you use *Telerik UI for WPF* version greater           than the __latest official release__(service pack or internal build) you have to redirect all assemblies required           by the *Telerik WPF ReportViewer* to their latest versions.           To do this, add the following __bindingRedirects__ to your           __app.config__ and replace the "__2010.1.421.35__"           with the exact version of *Telerik UI for WPF* assemblies:         
 
 {{source=CodeSnippets\CS\API\Telerik\ReportViewer\Wpf\WpfViewerBindings.xml}}
-
+````XML
+	<?xml version="1.0" encoding="utf-8" ?>
+	<configuration>
+	  <runtime>
+	    <assemblyBinding xmlns="urn:schemas-microsoft-com:asm.v1">
+	      <dependentAssembly>
+	        <assemblyIdentity name="Telerik.Windows.Controls" culture="neutral" publicKeyToken="5803cfa389c90ce7"/>
+	        <bindingRedirect oldVersion="0.0.0.0-65535.65535.65535.65535" newVersion="2010.1.421.35"/>
+	      </dependentAssembly>
+	      <dependentAssembly>
+	        <assemblyIdentity name="Telerik.Windows.Controls.Input" culture="neutral" publicKeyToken="5803cfa389c90ce7"/>
+	        <bindingRedirect oldVersion="0.0.0.0-65535.65535.65535.65535" newVersion="2010.1.421.35"/>
+	      </dependentAssembly>
+	      <dependentAssembly>
+	        <assemblyIdentity name="Telerik.Windows.Controls.Navigation" culture="neutral" publicKeyToken="5803cfa389c90ce7"/>
+	        <bindingRedirect oldVersion="0.0.0.0-65535.65535.65535.65535" newVersion="2010.1.421.35"/>
+	      </dependentAssembly>
+	    </assemblyBinding>
+	  </runtime>
+	</configuration>
+````
 
 
 

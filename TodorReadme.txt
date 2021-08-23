@@ -65,6 +65,10 @@ Fixed listItems without <para>
 If <procedure> is not in <section> (should be for correct maml) the entire procedure is not rendered. Fix the maml files in documentation:
 	wpf-report-viewer-add-to-net-core-project.aml
 
+code from source cannot be displayed if no region specified - wpf-report-viewer-add-to-net-core-project.aml
+
+
+
 
 
 
@@ -134,7 +138,6 @@ Merge TOC of documentation and API reference - D:\Work\reporting-docs\_assetsApi
 
 
 
-XAML code from source cannot be displayed - wpf-report-viewer-add-to-net-core-project.aml
 
 Feedback:
 

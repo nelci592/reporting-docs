@@ -25,10 +25,10 @@ The proposed product catalog template allows the items to be grouped in two-leve
   ![Product Catalog Wizard 1 Select Template](images/Templates/ProductCatalog/ProductCatalogWizard_1_SelectTemplate.png)
 
 1. Once you select the appropriate layout and go to the next page, you need to define the data scenario you will be using when creating the product catalog.             
-
    + The __Plain Data scenario__ is suitable where all the data is contained in one data set and the company details is repeated                    on every data row along with the product items that form the catalog details.                    Although it is not a very common scenario, it might be preferred for catalogs with a few items where you want to setup just one data source.                 
 
-   + The __Header-Details scenario__ is more common and contains two data sources                    – the first one is for the static data, related with the company and contains fields that are not to be listed in the                    catalog details. Such fields are CompanyName, Phone, Fax, etc.                    The second data source contains the data for the products, listed in the catalog – ProductNumber, ProductName, Color, Size, Weight, Price, etc.                   
+   + The __Header-Details scenario__ is more common and contains two data sources                    – the first one is for the static data, related with the company and contains fields that are not to be listed in the                    catalog details. Such fields are CompanyName, Phone, Fax, etc.                    The second data source contains the data for the products, listed in the catalog – ProductNumber, ProductName, Color, Size, Weight, Price, etc.                 
+  
 
   ![Product Catalog Wizard 2 Select Data Scenario](images/Templates/ProductCatalog/ProductCatalogWizard_2_SelectDataScenario.png)
 

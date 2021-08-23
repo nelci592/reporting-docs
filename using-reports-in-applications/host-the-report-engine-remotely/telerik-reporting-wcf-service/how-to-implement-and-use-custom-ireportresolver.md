@@ -204,12 +204,12 @@ If you use the Silverlight report viewer the report description is provided by t
 ````
 
     You can use for fallback the default IReportResolver implementations:                     
-
    + ReportTypeResolver - Resolves IReportDocument from assembly qualified name
 
    + ReportFileResolver - Resolves IReportDocument from physical path to trdp or trdx file
 
    + ReportFileResolverWeb - Resolves IReportDocument from a relative path to trdp or trdx file
+
 
 1. 
 
@@ -227,7 +227,48 @@ If you use the Silverlight report viewer the report description is provided by t
 1. Register the Reporting Service endpoints with service name your Telerik.Reporting.Service.ReportService subclass  in the web.config:                     
 
 {{source=CodeSnippets\CS\API\Telerik\Reporting\Service\HostedSubclassService.xml}}
-
+````C#
+	<?xml version="1.0" encoding="utf-8" ?>
+	<configuration>
+	    <system.serviceModel>
+	        <services>
+	            <service name="CSharp.SilverlightDemo.Web.CustomReportService"
+	                     behaviorConfiguration="ReportServiceBehavior">
+	                <endpoint
+	                       address=""
+	                       binding="basicHttpBinding"
+	                       contract="Telerik.Reporting.Service.IReportService">
+	                    <identity>
+	                        <dns value="localhost" />
+	                    </identity>
+	                </endpoint>
+	                <endpoint
+	                        address="resources"
+	                        binding="webHttpBinding"
+	                        behaviorConfiguration="WebBehavior"
+	                        contract="Telerik.Reporting.Service.IResourceService"/>
+	                <endpoint
+	                        address="mex"
+	                        binding="mexHttpBinding"
+	                        contract="IMetadataExchange" />
+	            </service>
+	        </services>
+	        <behaviors>
+	            <serviceBehaviors>
+	                <behavior name="ReportServiceBehavior">
+	                    <serviceMetadata httpGetEnabled="true" />
+	                    <serviceDebug includeExceptionDetailInFaults="false" />
+	                </behavior>
+	            </serviceBehaviors>
+	            <endpointBehaviors>
+	                <behavior name="WebBehavior">
+	                    <webHttp />
+	                </behavior>
+	            </endpointBehaviors>
+	        </behaviors>
+	    </system.serviceModel>
+	</configuration>
+````
 
 
 

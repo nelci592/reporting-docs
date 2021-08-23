@@ -104,10 +104,10 @@ The following steps produce a view with settings similar to these of the local M
 
 
 1. Add references to
-
    + __Telerik.Reporting__
 
-   + __Telerik.ReportViewer.Mvc__    assemblies and set their __Copy Local__ properties to true in Visual Studio.                 
+   + __Telerik.ReportViewer.Mvc__
+    assemblies and set their __Copy Local__ properties to true in Visual Studio.                 
 
     >tip Without setting Telerik Reporting references' Copy Local to true the assemblies may not be loaded correctly on running the application.
 

@@ -14,8 +14,12 @@ position: 1
 
 ## Request
 
-	          GET /api/reports/clients/{clientId}/instances/{instanceId}/documents/{documentId}/info
-        
+	
+````URI Template
+
+GET /api/reports/clients/{clientId}/instances/{instanceId}/documents/{documentId}/info
+````
+
 
 
 
@@ -50,17 +54,26 @@ __Response Body__
 
 ## Sample
 
-	          GET /api/reports/clients/2c3d/instances/4d3c/documents/5x3a/info HTTP/1.1
-        
+	
+````Request Message
+
+GET /api/reports/clients/2c3d/instances/4d3c/documents/5x3a/info HTTP/1.1
+````
 
 
 
-	          HTTP/1.1 202 Accepted
-          {
-            ‘documentReady’: false,
-            ‘PageCount’: 2,
-            ‘DocumentMapAvailable’: false,
-          }
-        
+
+	
+````Response Message
+
+HTTP/1.1 202 Accepted
+
+{
+‘documentReady’: false,
+‘PageCount’: 2,
+‘DocumentMapAvailable’: false,
+}
+````
+
 
 

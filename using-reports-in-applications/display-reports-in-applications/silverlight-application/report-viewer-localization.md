@@ -88,10 +88,14 @@ to translate the __*Report Viewer*__ to the desired language.
 
 1. Locate the __SupportedCultures__ tag and add the supported cultures (there is no need to specify the neutral culture):
 
-						```<SupportedCultures>```
-						fr;fr-BE
-					```</SupportedCultures>```
-				
+	
+    ````XML
+
+<SupportedCultures>
+fr;fr-BE
+</SupportedCultures>
+````
+
 
 
 

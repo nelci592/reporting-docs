@@ -16,11 +16,15 @@ Format info object representing a document format that can be used for document 
 
 ## 
 
-	          {
-            "name":"PDF",
-            "localizedName":"Acrobat (PDF) file"
-          }
-        
+	
+````Example
+
+{
+"name":"PDF",
+"localizedName":"Acrobat (PDF) file"
+}
+````
+
 
 
 

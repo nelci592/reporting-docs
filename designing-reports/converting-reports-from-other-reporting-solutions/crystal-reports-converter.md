@@ -26,7 +26,7 @@ The converter iterates through all the items in a Crystal Report (CR) instance a
 
 * __Report structure__ - the header, footer and details report sections are converted to their exact equivalents in Telerik Reporting.               The visibility and suppression of the sections is not converted. The group headers and footers are converted into group sections in Telerik Reporting.             
 
-* __Data connections__ – the supported connection types are OLEDB and ODBC. The converter creates a new SQLDataSource instance               for each command created in Database Expert and sets its attributes like connection string, command text and parameters.             
+* __Data connections__ – the supported connection types are OLEDB and ODBC. The converter creates a new SQLDataSource instance               for each command created in Database Expert and sets its attributes like connection string, command text and parameters.                If the data connection used in the source report does not have dedicated command or stored procedure, the converter will generate a                *select * from {tableName}* statement for the SqlDataSource instance's CommandText property.             
 
 * __Report parameters__ – if the data command used in Crystal report has parameters, they will be converted as report parameters,               regarding their type, visibility and default values.             
 
@@ -57,7 +57,7 @@ In order to load the Crystal Reports assemblies needed for the conversion, prope
 The Crystal Reports assemblies are stored in machine’s GAC (Global Assembly Cache). The GAC folder for .NET Framework v.4.0 and later is          *%windir%\Microsoft.NET\assembly*, and for earlier versions is *%windir%\assembly*.          Search the GAC for assemblies named *CrystalDecisions.Shared.dll* or *CrystalDecisions.CrystalReports.Engine.dll*.           The assembly version can be obtained either from the assembly subfolder name, or by using the           [gacutil.exe](https://docs.microsoft.com/en-us/dotnet/framework/tools/gacutil-exe-gac-tool):                   
 
 	
-````none
+````
             C:\WINDOWS\system32>gacutil -l CrystalDecisions.Shared
             Microsoft (R) .NET Global Assembly Cache Utility.  Version 4.0.30319.0
             Copyright (c) Microsoft Corporation.  All rights reserved.

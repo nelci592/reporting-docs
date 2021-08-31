@@ -74,10 +74,14 @@ When complicated logic should be applied or .NET framework routines need to be u
 
 1. Put the following text in the SqlDataSource's SelectCommand value:
 
-	              select Contact.*
-              from Person.Contact
-              where Contact.AdditionalContactInfo is not null
-            
+	
+    ````sql
+
+select Contact.*
+from Person.Contact
+where Contact.AdditionalContactInfo is not null
+````
+
 
 
 
@@ -150,11 +154,15 @@ The following screenshot shows the expected report output that should be created
 
 1. Add an SqlDataSource as a report's DataSource and set its SelectCommand property to:
 
-	              select top 100 Product.Name, Product.ProductNumber, Product.Color, Product.SafetyStockLevel
-              from Production.Product
-              where Product.Color is not null
-              order by Product.Name, Product.Color
-            
+	
+    ````sql
+
+select top 100 Product.Name, Product.ProductNumber, Product.Color, Product.SafetyStockLevel
+from Production.Product
+where Product.Color is not null
+order by Product.Name, Product.Color
+````
+
 
 
 

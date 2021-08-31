@@ -81,21 +81,33 @@ Here are the exact steps taken:
 
 1. Since the inline text-decoration css property is not supported, disable the                             __FixUlBoldItalic__ filter:                         
 
-	RadEditor1.DisableFilter(Telerik.Web.UI.EditorFilters.FixUlBoldItalic);
+	
+    ````C#
+RadEditor1.DisableFilter(Telerik.Web.UI.EditorFilters.FixUlBoldItalic);````
 
 
 
-	RadEditor1.DisableFilter(Telerik.Web.UI.EditorFilters.FixUlBoldItalic)
+
+	
+    ````VB
+RadEditor1.DisableFilter(Telerik.Web.UI.EditorFilters.FixUlBoldItalic)````
+
 
 
 
 1. Since __HtmlTextBox__ works with font tags, disable the __ConvertFontToSpan__ filter,                             which converts the non __XHTML__ compliant Font tags with Span tags                         
 
-	RadEditor1.DisableFilter(Telerik.Web.UI.EditorFilters.ConvertFontToSpan);
+	
+    ````C#
+RadEditor1.DisableFilter(Telerik.Web.UI.EditorFilters.ConvertFontToSpan);````
 
 
 
-	RadEditor1.DisableFilter(Telerik.Web.UI.EditorFilters.ConvertFontToSpan)
+
+	
+    ````VB
+RadEditor1.DisableFilter(Telerik.Web.UI.EditorFilters.ConvertFontToSpan)````
+
 
 
 

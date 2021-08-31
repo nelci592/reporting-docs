@@ -28,23 +28,27 @@ You can use a report designer of your choice - the described approach is valid f
 
 1. On the “*Choose Data Connection*” page, you need to either select an existing connection to the               __AdventureWorks__ database, or create a new one by specifying the SqlClient Data Provider and a valid               connection string to an AdventureWorks database.                 On the "*Data Connection options*" page, the newly created connection string can be saved by name in the current project's CONFIG file               or it can be embedded with all details in the __SqlDataSource.ConnectionString property__    On the "*Configure Data Source Command*" page, paste the following SQL query in the “*Select Statement*” window:             
 
-	              SELECT
-              PC.Name AS ProductCategory
-              , PS.Name AS ProductSubCategory
-              , P.Name AS ProductName
-              , SOD.LineTotal
-              , SOH.OrderDate
-              FROM
-              Production.Product AS P
-              INNER JOIN Production.ProductSubcategory AS PS
-              INNER JOIN Production.ProductCategory AS PC
-              ON PS.ProductCategoryID = PC.ProductCategoryID
-              ON P.ProductSubcategoryID = PS.ProductSubcategoryID
-              INNER JOIN Sales.SalesOrderDetail AS SOD
-              ON P.ProductID = SOD.ProductID
-              INNER JOIN Sales.SalesOrderHeader AS SOH
-              ON SOD.SalesOrderID = SOH.SalesOrderID
-            
+	
+    ````sql
+
+SELECT
+PC.Name AS ProductCategory
+, PS.Name AS ProductSubCategory
+, P.Name AS ProductName
+, SOD.LineTotal
+, SOH.OrderDate
+FROM
+Production.Product AS P
+INNER JOIN Production.ProductSubcategory AS PS
+INNER JOIN Production.ProductCategory AS PC
+ON PS.ProductCategoryID = PC.ProductCategoryID
+ON P.ProductSubcategoryID = PS.ProductSubcategoryID
+INNER JOIN Sales.SalesOrderDetail AS SOD
+ON P.ProductID = SOD.ProductID
+INNER JOIN Sales.SalesOrderHeader AS SOH
+ON SOD.SalesOrderID = SOH.SalesOrderID
+````
+
 
     Click Next, and then on __Execute Query...__ button to make sure that everything is fine with your data connection and data is fetched from               the database. Click __Finish__ when you are ready. This will close the __SqlDataSource Wizard__.             
 

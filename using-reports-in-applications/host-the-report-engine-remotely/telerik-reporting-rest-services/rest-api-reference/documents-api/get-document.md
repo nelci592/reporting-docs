@@ -14,8 +14,12 @@ position: 2
 
 ## Request
 
-	          GET /api/reports/clients/{clientId}/instances/{instanceId}/documents/{documentId}
-        
+	
+````URI Template
+
+GET /api/reports/clients/{clientId}/instances/{instanceId}/documents/{documentId}
+````
+
 
 
 
@@ -49,14 +53,24 @@ The document content bytes as attachment.
 
 ## Sample
 
-	          GET /api/reports/clients/2c3d/instances/4d3c/documents/5x3a HTTP/1.1
-        
+	
+````Request Message
+
+GET /api/reports/clients/2c3d/instances/4d3c/documents/5x3a HTTP/1.1
+````
 
 
 
-	          HTTP/1.1 200 OK
-          Content-Disposition: attachment; filename=ProductCatalog.pdf
-          bytes
-        
+
+	
+````Response Message
+
+HTTP/1.1 200 OK
+
+Content-Disposition: attachment; filename=ProductCatalog.pdf
+
+bytes
+````
+
 
 

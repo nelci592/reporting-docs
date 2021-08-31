@@ -14,8 +14,12 @@ position: 0
 
 ## Request
 
-	          POST /api/reports/clients/{clientId}/parameters
-        
+	
+````URI Template
+
+POST /api/reports/clients/{clientId}/parameters
+````
+
 
 
 

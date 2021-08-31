@@ -101,7 +101,8 @@ In this how-to article we will show you how to create a Map which will present t
 
 1. As you may have noticed, the information about the occupied places is present in the CSV file as integer numbers, that's why the               legend displays it this way. But the report will look better if the information about the places is displayed with medal names -                __Gold__, __Silver__ and __Bronze__.                This can be achieved using an expression for the               [LegendItem](/reporting/api/Telerik.Reporting.LegendItem).               [Value](/reporting/api/Telerik.Reporting.LegendItem#Telerik_Reporting_LegendItem_Value), but we will use a               [Calculated Field]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/calculated-fields%})               , added to the CSV Data Source. The benefit of this approach is that we can use the calculated field as any other field, without having to               use an expression every time we need to address it.                 Select the __medalsData__ data source, add a calculated field named __Medal__                of type `String` to it and set its expression to:             
 
-	              =IIF(Fields.Place = 1, 'Gold', IIF(Fields.Place = 2, 'Silver', IIF(Fields.Place = 3, 'Bronze', 'none')))
+	
+              =IIF(Fields.Place = 1, 'Gold', IIF(Fields.Place = 2, 'Silver', IIF(Fields.Place = 3, 'Bronze', 'none')))
             
 
     Now you can set the __columnMapSeries' __[LegendItem](/reporting/api/Telerik.Reporting.LegendItem).[Value](/reporting/api/Telerik.Reporting.LegendItem#Telerik_Reporting_LegendItem_Value) expression to               `=Fields.Medal` and style the legend by your choice.             
@@ -109,7 +110,8 @@ In this how-to article we will show you how to create a Map which will present t
 1. In case we want to reduce the amount of displayed information on the map, one of the best options is to use               [Report Parameters]({%slug telerikreporting/designing-reports/connecting-to-data/report-parameters/overview%})               and  apply               [Filtering]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/filtering-data/filter-rules%}). In this case the filtering will be based on the                __AssociationId__ field.                 In order to display the meaningful names of the olympic associations, we will add another CSV Data Source, which has a relation with the               current data source's `AssociationId` field and will be used only for displaying the report parameters.             
    + Add a new CSV Data Source, select the tab *Enter CSV as text* and paste the following text in the box:                 
 
-	                  Id,Name
+	
+                  Id,Name
                   1,Pan-American Sports Organization
                   2,European Olympic Committees
                   3,Olympic Council of Asia

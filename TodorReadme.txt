@@ -6,7 +6,6 @@ Fixed:
 
 Change _config.yml file for TOC, etc.
 
-article names should not start with a dot '.'. Rename the article D:\Documentation migration tool-original\Help\telerikreporting\using-reports-in-applications\.net-core-support.md -> D:\Documentation migration tool-original\Help\telerikreporting\using-reports-in-applications\dotnet-core-support.md
 
 clear '\r\n' in ALERTS
 
@@ -75,6 +74,9 @@ code from source cannot be displayed if no region specified - wpf-report-viewer-
 
 Remaining:
 
+cubedatasource-configuring-project - bold/italic problems
+
+
 how to pass the real tokes to _config.yml
 
 how to use tokens in code snippets (CDATA)
@@ -119,6 +121,10 @@ Implement this change for all occurrencies above
 
 
 
+article names should not start with a dot '.'. Rename the article D:\Documentation migration tool-original\Help\telerikreporting\using-reports-in-applications\.net-core-support.md -> D:\Documentation migration tool-original\Help\telerikreporting\using-reports-in-applications\dotnet-core-support.md
+
+
+
 Some article titles contain '/' that is interpreted as new subfolder and their names need to be updated manually - in the original MAML:
 	D:\Work\reporting-docs\designing-reports\adding-interactivity-to-reports\actions\sorting-action\sorting-multiple-items\groups.md
 	D:\Work\reporting-docs\designing-reports\adding-interactivity-to-reports\actions\how-to\how-to-add-a-drilldown\toggle-visibility-action.md
@@ -144,5 +150,10 @@ Feedback:
 seems like the other paragraphs in the generated MD file   -	There are missing paragraphs in page sections consisting only of bullet lists. Thus, the 20px font size style is not applied and the text looks small. For example you can check the Prerequisites section here - https://reportinghost:446/reporting/installation
 
 
+[5:14 PM] Kaloyan Kotorov
+    See Also секцията е празна навсякъде
+	
+​[5:17 PM] Kaloyan Kotorov
+    C#/VB code comment-ите са един под друг, вместо да с табове
 
 

@@ -14,8 +14,12 @@ position: 0
 
 ## Request
 
-	          POST /api/reports/clients/{clientId}/instances/{instanceId}/documents
-        
+	
+````URI Template
+
+POST /api/reports/clients/{clientId}/instances/{instanceId}/documents
+````
+
 
 
 
@@ -53,20 +57,30 @@ When the return status is `Accepted/Created` the body contains a document identi
 
 ## Sample
 
-	          POST /api/reports/clients/2c3d/instances/4d3c/documents HTTP/1.1
-          {
-          ‘format’: ‘HTML5’,
-          ‘deviceInfo’: { ‘xxx’: ‘zzz’ },
-          ‘useCache’: true,
-          ‘baseDocumentId’: ‘xxxx’,
-          ‘actionId’: ‘xxxx’
-          }
-        
+	
+````Request Message
+
+POST /api/reports/clients/2c3d/instances/4d3c/documents HTTP/1.1
+
+{
+‘format’: ‘HTML5’,
+‘deviceInfo’: { ‘xxx’: ‘zzz’ },
+‘useCache’: true,
+‘baseDocumentId’: ‘xxxx’,
+‘actionId’: ‘xxxx’
+}
+````
 
 
 
-	          HTTP/1.1 202 Accepted
-          “5x3a”
-        
+
+	
+````Response Message
+
+HTTP/1.1 202 Accepted
+
+“5x3a”
+````
+
 
 

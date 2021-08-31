@@ -21,8 +21,12 @@ You can specify a SQL query for the __SqlDataSource__ component to execute by se
 
 The following example demonstrates a SQL query that retrieves           a result set consisting of the names of all the persons in the __Contact__ table from the           __AdventureWorks__ sample database:         
 
-	          SELECT FirstName, LastName FROM Person.Contact
-        
+	
+````sql
+
+SELECT FirstName, LastName FROM Person.Contact
+````
+
 
 
 
@@ -50,10 +54,14 @@ The following code example shows how to set the __ConnectionString__ and __     
 
 If the database you are working with supports stored procedures, you can set the __             SelectCommand           __ property to the name of an existing stored procedure and the __             SelectCommandType           __ property to __StoredProcedure__ to indicate that the __             SelectCommand           __ property refers to a stored procedure. The following example demonstrates a simple           stored procedure that you can create in SQL Server:         
 
-	          CREATE PROCEDURE GetAllContacts AS
-          SELECT FirstName, LastName FROM Person.Contact;
-          GO
-        
+	
+````SQL
+
+CREATE PROCEDURE GetAllContacts AS
+SELECT FirstName, LastName FROM Person.Contact;
+GO
+````
+
 
 
 

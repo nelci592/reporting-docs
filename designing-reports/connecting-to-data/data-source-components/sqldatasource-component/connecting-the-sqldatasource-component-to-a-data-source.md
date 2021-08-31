@@ -81,8 +81,12 @@ When the connection string is stored in the configuration file, you need to spec
 
 The __SqlDataSource__ component retrieves data using a SQL statement defined through the           __SelectCommand__ property. If the data source component connects to a database that           supports stored procedures, you can specify the name of a stored procedure in place of the SQL statement.           You can create parameterized commands that include placeholders for values to be supplied at run time. The           following example shows a typical parameterized SQL select command:         
 
-	          SELECT CustomerID, CompanyName FROM Customers WHERE City = @City
-        
+	
+````SQL
+
+SELECT CustomerID, CompanyName FROM Customers WHERE City = @City
+````
+
 
 
 

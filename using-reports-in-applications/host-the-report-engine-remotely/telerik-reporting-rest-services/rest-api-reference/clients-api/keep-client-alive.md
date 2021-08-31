@@ -51,8 +51,12 @@ __Path parameters__
 
 
 
-	          HTTP/1.1 204 NoContent
-        
+	
+````Response Message
+
+HTTP/1.1 204 NoContent
+````
+
 
 
 

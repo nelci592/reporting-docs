@@ -14,8 +14,12 @@ position: 4
 
 ## Request
 
-	          GET /api/reports/clients/{clientId}/instances/{instanceId}/documents/{documentId}/pages/{pageNumber}
-        
+	
+````URI Template
+
+GET /api/reports/clients/{clientId}/instances/{instanceId}/documents/{documentId}/pages/{pageNumber}
+````
+
 
 
 
@@ -51,16 +55,25 @@ __Response Body__
 
 ## Sample
 
-	          GET /api/reports/clients/2c3d/instances/4d3c/documents/5x3a/pages/1 HTTP/1.1
-        
+	
+````Request Message
+
+GET /api/reports/clients/2c3d/instances/4d3c/documents/5x3a/pages/1 HTTP/1.1
+````
 
 
 
-	          HTTP/1.1 202 Accepted
-          {
-            ‘pageReady’: false,
-            ‘pageNumber’: 1
-          }
-        
+
+	
+````Response Message
+
+HTTP/1.1 202 Accepted
+
+{
+‘pageReady’: false,
+‘pageNumber’: 1
+}
+````
+
 
 

@@ -44,14 +44,18 @@ The sample code below illustrates how to connect a __CubeDataSource__ component 
 
 Instead of setting connection strings as property settings in the __CubeDataSource__ 					object, you can store them centrally as part of your application's configuration settings using the 					__connectionStrings__ configuration element. This enables you to manage connection 					strings independently of your reports, including encrypting them using __Protected Configuration 					__. The following example shows how to connect to the __Adventure Works DW 2008R2 					__ sample database using a connection string which stored in the __connectionStrings 					__ configuration element named __MyAdventureWorksDW__: 				
 
-						```<configuration>```
-						```<connectionStrings>```
-							<add name="MyAdventureWorksDW"
-								 connectionString="Data Source=localhost;Initial Catalog=Adventure Works DW 2008R2"
-								 providerName="Microsoft.AnalysisServices.AdomdClient" />
-						```</connectionStrings>```
-					```</configuration>```
-				
+	
+````xml
+
+<configuration>
+<connectionStrings>
+<add name="MyAdventureWorksDW"
+connectionString="Data Source=localhost;Initial Catalog=Adventure Works DW 2008R2"
+providerName="Microsoft.AnalysisServices.AdomdClient" />
+</connectionStrings>
+</configuration>
+````
+
 
 
 

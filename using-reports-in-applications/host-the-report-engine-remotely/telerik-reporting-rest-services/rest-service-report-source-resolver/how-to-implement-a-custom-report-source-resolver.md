@@ -166,25 +166,31 @@ This article explains how to create a custom report source resolver for the __Te
 
 1. To create the database use the following script:
 
-	              USE [master]
-              GO
-              CREATE DATABASE [Reports]
-              CONTAINMENT = NONE
-              ON  PRIMARY
-              ( NAME = N'Reports', FILENAME = N'C:\Program Files\Microsoft SQL Server\MSSQL11.SQLEXPRESS\MSSQL\DATA\Reports.mdf' , SIZE = 4096KB ,
-              MAXSIZE = UNLIMITED, FILEGROWTH = 1024KB )
-              LOG ON
-              ( NAME = N'Reports_log', FILENAME = N'C:\Program Files\Microsoft SQL Server\MSSQL11.SQLEXPRESS\MSSQL\DATA\Reports_log.ldf' , SIZE = 1024KB
-              , MAXSIZE = 2048GB , FILEGROWTH = 10%)
-              GO
-              USE [Reports]
-              GO
-              CREATE TABLE [dbo].[Reports](
-              [ID] [int] NOT NULL,
-              [Definition] [nvarchar](max) NOT NULL
-              ) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
-              GO
-            
+	
+    ````SQL
+
+USE [master]
+GO
+CREATE DATABASE [Reports]
+CONTAINMENT = NONE
+ON  PRIMARY
+( NAME = N'Reports', FILENAME = N'C:\Program Files\Microsoft SQL Server\MSSQL11.SQLEXPRESS\MSSQL\DATA\Reports.mdf' , SIZE = 4096KB ,
+
+MAXSIZE = UNLIMITED, FILEGROWTH = 1024KB )
+LOG ON
+( NAME = N'Reports_log', FILENAME = N'C:\Program Files\Microsoft SQL Server\MSSQL11.SQLEXPRESS\MSSQL\DATA\Reports_log.ldf' , SIZE = 1024KB
+
+, MAXSIZE = 2048GB , FILEGROWTH = 10%)
+GO
+USE [Reports]
+GO
+CREATE TABLE [dbo].[Reports](
+[ID] [int] NOT NULL,
+[Definition] [nvarchar](max) NOT NULL
+) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
+GO
+````
+
 
 
 

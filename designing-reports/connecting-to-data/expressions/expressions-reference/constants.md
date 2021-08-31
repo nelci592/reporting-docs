@@ -22,14 +22,16 @@ In an expression, literal           text is text that is enclosed in single or d
 
 Example:
 
-	          ="Product name: " + Fields.ProductName
+	
+          ="Product name: " + Fields.ProductName
         
 
 
 
 or
 
-	          ='Product name: ' + Fields.ProductName
+	
+          ='Product name: ' + Fields.ProductName
         
 
 

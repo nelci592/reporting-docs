@@ -60,7 +60,7 @@ To run the localized report in a specific language that is different from the th
 
 
 {{source=CodeSnippets\CS\API\Telerik\Reporting\LocalizationSnippets.cs region=SetThreadCulture}}
-````[C#] Setting the language at runtime
+````C#
 	            //Create new CultureInfo
 	            var cultureInfo = new System.Globalization.CultureInfo("es-MX");
 	
@@ -82,7 +82,7 @@ To run the localized report in a specific language that is different from the th
 
 
 {{source=CodeSnippets\VB\API\Telerik\Reporting\LocalizationSnippets.vb region=SetThreadCulture}}
-````[VB] Setting the language at runtime
+````VB
 	
 	        'Create new CultureInfo
 	        Dim cultureInfo = New System.Globalization.CultureInfo("es-MX")

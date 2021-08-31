@@ -29,14 +29,18 @@ In this how-to article we will show you how to create a graph with both column a
 
    1. Set the query to the following one:
 
-	                  SELECT SOD.LineTotal, SOH.OrderDate
-                  FROM
-                  Sales.SalesPerson S
-                  INNER JOIN Sales.SalesOrderHeader SOH ON SOH.SalesPersonID = S.SalesPersonID
-                  INNER JOIN Sales.SalesOrderDetail SOD ON SOH.SalesOrderID = SOD.SalesOrderID
-                  WHERE SOH.OrderDate between cast('2003-01-01' as datetime) and cast('2003-12-31' as datetime)
-                  and S.SalesPersonId = 283
-                
+	
+    ````sql
+
+SELECT SOD.LineTotal, SOH.OrderDate
+FROM
+Sales.SalesPerson S
+INNER JOIN Sales.SalesOrderHeader SOH ON SOH.SalesPersonID = S.SalesPersonID
+INNER JOIN Sales.SalesOrderDetail SOD ON SOH.SalesOrderID = SOD.SalesOrderID
+WHERE SOH.OrderDate between cast('2003-01-01' as datetime) and cast('2003-12-31' as datetime)
+and S.SalesPersonId = 283
+````
+
 
 
 

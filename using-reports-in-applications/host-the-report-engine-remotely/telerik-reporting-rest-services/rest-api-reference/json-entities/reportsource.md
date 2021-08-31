@@ -16,11 +16,15 @@ Represents a report document identifier, consisting of a report and values for i
 
 ## 
 
-	          {
-            ‘report’: ‘Report1.trdp’,
-            ‘parameterValues’: { ‘City’: ‘Sofia’ }
-          }
-        
+	
+````Example
+
+{
+‘report’: ‘Report1.trdp’,
+‘parameterValues’: { ‘City’: ‘Sofia’ }
+}
+````
+
 
 
 

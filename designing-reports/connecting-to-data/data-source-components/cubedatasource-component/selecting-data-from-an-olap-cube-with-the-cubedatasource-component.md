@@ -18,11 +18,15 @@ You can specify an __MDX__ query for the __CubeDataSource__ 				component to exe
 
 The following example demonstrates an __MDX__ query that retrieves a result 					set consisting of product sales grouped by category and subcategory: 				
 
-						select non empty { [Measures].[Sales Amount] } on columns,
-						   non empty { [Product].[Category].[Category] *
-									   [Product].[Subcategory].[Subcategory] } on rows
-					from [Adventure Works]
-				
+	
+````sql
+
+select non empty { [Measures].[Sales Amount] } on columns,
+non empty { [Product].[Category].[Category] *
+[Product].[Subcategory].[Subcategory] } on rows
+from [Adventure Works]
+````
+
 
 
 

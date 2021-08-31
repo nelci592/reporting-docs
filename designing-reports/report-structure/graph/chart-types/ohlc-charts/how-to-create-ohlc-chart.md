@@ -22,7 +22,8 @@ In this article we will show you how to create an OHLC chart using the Graph ite
 
 1. In a real-world application the data would be retrieved from a database, but here we'll use some sample data as a CSV data source.               Create a new CSV data source and paste the following text as content:             
 
-	              date,open,high,low,close
+	
+              date,open,high,low,close
               03.07.2017,18.2,18.6,18.1,18.4
               04.07.2017,18.3,18.6,18.1,18.4
               05.07.2017,18.5,19,18.3,18.7

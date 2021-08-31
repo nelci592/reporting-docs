@@ -24,14 +24,22 @@ You can create a custom component, inheriting a Telerik Reporting Data Source co
 
 1. Change the base class from __Component__ to the appropriate Telerik Reporting Data Source component (Telerik.Reporting.SqlDataSource, Telerik.Reporting.ObjectDataSource, Telerik.Reporting.EntityDataSource, Telerik.Reporting.OpenAccessDataSource) as shown in the following code snippet:               
 
-	                public partial class Component1 : Telerik.Reporting.SqlDataSource
-              
+	
+    ````cs
+
+public partial class Component1 : Telerik.Reporting.SqlDataSource
+````
 
 
 
-	                Partial Class Component1
-                Inherits Telerik.Reporting.SqlDataSource
-              
+
+	
+    ````vb.net
+
+Partial Class Component1
+Inherits Telerik.Reporting.SqlDataSource
+````
+
 
 
 

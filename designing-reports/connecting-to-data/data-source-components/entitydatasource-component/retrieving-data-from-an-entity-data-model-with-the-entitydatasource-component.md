@@ -128,11 +128,17 @@ Another common problem is related to the lazy loading feature of the [ADO.NET En
 
 The above expression relies upon the built-in lazy loading mechanism to obtain the __ProductSubcategory__        	entity for the current __Product__ entity via the corresponding relation property, and then the __ProductCategory__        	entity for the current __ProductSubcategory__ entity. While convenient, lazy loading requires additional round-trips       	to the database for the entities that are not present in memory. If this happens frequently it might significantly        	impact the performance of the report. To overcome this you can try performing eager loading of the entities instead.        	For example, the following statement uses the Include method to preload the __ProductSubcategory__ and the __ProductCategory__        	entities while retrieving the __Product__ entities:       	 
 
-	 this.Products.Include("ProductSubcategory").Include("ProductSubcategory.ProductCategory").ToList() 
+	
+````cs
+this.Products.Include("ProductSubcategory").Include("ProductSubcategory.ProductCategory").ToList()````
 
 
 
-	 Me.Products.Include("ProductSubcategory").Include("ProductSubcategory.ProductCategory").ToList() 
+
+	
+````vb
+Me.Products.Include("ProductSubcategory").Include("ProductSubcategory.ProductCategory").ToList()````
+
 
 
 

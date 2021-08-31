@@ -102,13 +102,21 @@ The project has a preconfigured implementation of reports controller that uses t
 
    1. Add the following code at the beginning of the __Global.Application_Start__ (Global.asax) method:                     
 
-	                      GlobalConfiguration.Configuration.EnableCors();
-                    
+	
+    ````c#
+
+GlobalConfiguration.Configuration.EnableCors();
+````
 
 
 
-	                      GlobalConfiguration.Configuration.EnableCors();
-                    
+
+	
+    ````vb
+
+GlobalConfiguration.Configuration.EnableCors();
+````
+
 
 
 

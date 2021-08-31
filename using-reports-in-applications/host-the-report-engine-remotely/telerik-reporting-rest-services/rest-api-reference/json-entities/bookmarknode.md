@@ -16,13 +16,19 @@ Bookmark node representing a node in a document map.
 
 ## 
 
-	          {
-            ‘id’: ‘Bikes’,
-            ‘text’: ‘Bikes’,
-            ‘page’: 3,
-            ‘items’: [ { ‘id’: ‘Bikes’, ‘text’: ‘Bikes’, ‘page’: 3 } ]
-          }
-        
+	
+````Example
+
+{
+‘id’: ‘Bikes’,
+‘text’: ‘Bikes’,
+‘page’: 3,
+‘items’: [ { ‘id’: ‘Bikes’, ‘text’: ‘Bikes’, ‘page’: 3 } ]
+}
+
+
+````
+
 
 
 

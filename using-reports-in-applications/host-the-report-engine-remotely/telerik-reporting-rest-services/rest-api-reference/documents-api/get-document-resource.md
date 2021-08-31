@@ -14,8 +14,12 @@ position: 5
 
 ## Request
 
-	          GET /api/reports/clients/{clientId}/instances/{instanceId}/documents/{documentId}/resources/{resourceId}
-        
+	
+````URI Template
+
+GET /api/reports/clients/{clientId}/instances/{instanceId}/documents/{documentId}/resources/{resourceId}
+````
+
 
 
 
@@ -50,14 +54,22 @@ resource file (image, etc.)
 
 ## Sample
 
-	          GET /api/reports/clients/2c3d/instances/4d3c/documents/5x3a/resources/4t6d HTTP/1.1
-        
+	
+````Request Message
+
+GET /api/reports/clients/2c3d/instances/4d3c/documents/5x3a/resources/4t6d HTTP/1.1
+````
 
 
 
-	          HTTP/1.1 200 OK
-          
-          file-content
-        
+
+	
+````Response Message
+
+HTTP/1.1 200 OK
+
+file-content
+````
+
 
 

@@ -27,8 +27,12 @@ The syntax used for the placeholders varies, depending on the type of the databa
 
 The __System.Data.SqlClient__ provider supports named parameters as placeholders,                 as shown in the following example:               
 
-	                SELECT * FROM Person.Contact WHERE FirstName = @FirstName AND LastName = @LastName
-              
+	
+````SQL
+
+SELECT * FROM Person.Contact WHERE FirstName = @FirstName AND LastName = @LastName
+````
+
 
 
 
@@ -62,8 +66,12 @@ With named parameters, the order in which the parameters are specified in the co
 
 The __System.Data.OleDb__ and __System.Data.Odbc__ providers                 support only positional parameters identified by the *'?'* character, as                 shown in the following example:               
 
-	                SELECT * FROM Person.Contact WHERE FirstName = ? AND LastName = ?
-              
+	
+````SQL
+
+SELECT * FROM Person.Contact WHERE FirstName = ? AND LastName = ?
+````
+
 
 
 

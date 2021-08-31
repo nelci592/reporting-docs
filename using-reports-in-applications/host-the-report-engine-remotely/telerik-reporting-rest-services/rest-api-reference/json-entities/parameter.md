@@ -16,26 +16,30 @@ Represents a report parameter with its value and settings.
 
 ## 
 
-	          {
-            ‘name’: ‘p2’,
-            ‘id’: ‘p2’,
-            ‘type’: ‘System.String’,
-            ‘text’: ‘Please input p2’,
-            ‘multivalue’: false,
-            ‘allowNull’: false,
-            ‘allowBlank’: false,
-            ‘isVisible’: true,
-            ‘autoRefresh’: false,
-            ‘hasChildParameters’: false,
-            ‘childParameters’: [‘p2’],
-            ‘availableValues’: [
-                    {‘name’: ‘Sofia’, ‘value’: ‘Sofia’}
-                    {‘name’: ‘Berlin’, ‘value’: ‘Berlin’}
-            ],
-            ‘value’: ‘Sofia’
-            ‘label’: ‘Sofia’,
-          }
-        
+	
+````Example
+
+{
+‘name’: ‘p2’,
+‘id’: ‘p2’,
+‘type’: ‘System.String’,
+‘text’: ‘Please input p2’,
+‘multivalue’: false,
+‘allowNull’: false,
+‘allowBlank’: false,
+‘isVisible’: true,
+‘autoRefresh’: false,
+‘hasChildParameters’: false,
+‘childParameters’: [‘p2’],
+‘availableValues’: [
+{‘name’: ‘Sofia’, ‘value’: ‘Sofia’}
+{‘name’: ‘Berlin’, ‘value’: ‘Berlin’}
+],
+‘value’: ‘Sofia’
+‘label’: ‘Sofia’,
+}
+````
+
 
 
 

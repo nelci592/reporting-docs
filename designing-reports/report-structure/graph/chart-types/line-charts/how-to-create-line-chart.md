@@ -24,13 +24,17 @@ In this article we will show you how to create a Line chart using the Graph item
 
    1. Set the query to the following one:
 
-	                  SELECT PC.Name AS ProductCategory, SOD.LineTotal, SOH.OrderDate
-                  FROM Production.Product AS P
-                  INNER JOIN Production.ProductSubcategory AS PS ON P.ProductSubcategoryID = PS.ProductSubcategoryID
-                  INNER JOIN Production.ProductCategory AS PC ON PS.ProductCategoryID = PC.ProductCategoryID
-                  INNER JOIN Sales.SalesOrderDetail AS SOD ON P.ProductID = SOD.ProductID
-                  INNER JOIN Sales.SalesOrderHeader AS SOH ON SOD.SalesOrderID = SOH.SalesOrderID
-                
+	
+    ````sql
+
+SELECT PC.Name AS ProductCategory, SOD.LineTotal, SOH.OrderDate
+FROM Production.Product AS P
+INNER JOIN Production.ProductSubcategory AS PS ON P.ProductSubcategoryID = PS.ProductSubcategoryID
+INNER JOIN Production.ProductCategory AS PC ON PS.ProductCategoryID = PC.ProductCategoryID
+INNER JOIN Sales.SalesOrderDetail AS SOD ON P.ProductID = SOD.ProductID
+INNER JOIN Sales.SalesOrderHeader AS SOH ON SOD.SalesOrderID = SOH.SalesOrderID
+````
+
 
 
 

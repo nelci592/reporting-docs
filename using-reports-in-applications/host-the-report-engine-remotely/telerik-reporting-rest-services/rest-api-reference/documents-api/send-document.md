@@ -14,8 +14,12 @@ position: 3
 
 ## Request
 
-	          POST /api/reports/clients/{clientId}/instances/{instanceId}/documents/{documentId}/send
-        
+	
+````URI Template
+
+POST /api/reports/clients/{clientId}/instances/{instanceId}/documents/{documentId}/send
+````
+
 
 
 
@@ -50,19 +54,28 @@ __Request Body__
 
 ## Sample
 
-	          POST /api/reports/clients/2c3d/instances/4d3c/documents/5x3a/send HTTP/1.1
-          {
-          'from': 'john.doe@mycompany.com',
-          'to': 'jane.doe@mycompany.com',
-          'cc': 'john.doe.jr@mycompany.com',
-          'subject': 'my mail subject',
-          'body': 'my mail body',
-          }
-        
+	
+````Request Message
+
+POST /api/reports/clients/2c3d/instances/4d3c/documents/5x3a/send HTTP/1.1
+
+{
+'from': 'john.doe@mycompany.com',
+'to': 'jane.doe@mycompany.com',
+'cc': 'john.doe.jr@mycompany.com',
+'subject': 'my mail subject',
+'body': 'my mail body',
+}
+````
 
 
 
-	          HTTP/1.1 200 OK
-        
+
+	
+````Response Message
+
+HTTP/1.1 200 OK
+````
+
 
 

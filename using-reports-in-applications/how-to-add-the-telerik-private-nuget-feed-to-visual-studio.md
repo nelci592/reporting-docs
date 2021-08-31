@@ -66,23 +66,35 @@ Telerik provides NuGet packages from private NuGet feed.          The article el
 
 1. The command from the example below stores a token in the                   %AppData%\NuGet\NuGet.config file. Your original credentials cannot be                    obtained from this token.                 
 
-	                  NuGet Sources Add -Name "telerik.com" -Source "https://nuget.telerik.com/nuget" ^
-                  -UserName "your login email" -Password "your password"
-                
+	
+    ````powershell
+
+NuGet Sources Add -Name "telerik.com" -Source "https://nuget.telerik.com/nuget" ^
+-UserName "your login email" -Password "your password"
+````
+
 
     If you are unable to connect to the feed by using encrypted credentials,                    try the alternative approach of storing credentials in clear text.                 
 
-	                  NuGet Sources Add -Name "telerik.com" -Source "https://nuget.telerik.com/nuget" ^
-                  -UserName "your login email" -Password "your password" ^
-                  -StorePasswordInClearText
-                
+	
+    ````powershell
+
+NuGet Sources Add -Name "telerik.com" -Source "https://nuget.telerik.com/nuget" ^
+-UserName "your login email" -Password "your password" ^
+-StorePasswordInClearText
+````
+
 
     If you have already stored a token instead of storing the credentials as clear text,                    you could update the definition in the %AppData%\NuGet\NuGet.config file using                    the following command:                 
 
-	                  NuGet Sources Update -Name "telerik.com" -Source "https://nuget.telerik.com/nuget" ^
-                  -UserName "your login email" -Password "your password" ^
-                  -StorePasswordInClearText
-                
+	
+    ````powershell
+
+NuGet Sources Update -Name "telerik.com" -Source "https://nuget.telerik.com/nuget" ^
+-UserName "your login email" -Password "your password" ^
+-StorePasswordInClearText
+````
+
 
 
 
@@ -92,8 +104,12 @@ Telerik provides NuGet packages from private NuGet feed.          The article el
 
 After changing your Telerik password,               you need to reset your credentials in the NuGet.config file.               To do this, open a Command Prompt and run the command:             
 
-	              NuGet Sources Update -Name "telerik.com" -Source "https://nuget.telerik.com/nuget" -UserName "your login email" -Password "your new password"
-            
+	
+````powershell
+
+NuGet Sources Update -Name "telerik.com" -Source "https://nuget.telerik.com/nuget" -UserName "your login email" -Password "your new password"
+````
+
 
 
 

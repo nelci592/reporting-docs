@@ -24,11 +24,15 @@ In this article we will show you how to create a Pie chart using the Graph item.
 
    1. Set the query to the following one:
 
-	                  SELECT S.Name AS StoreName, SOH.SubTotal
-                  FROM Sales.Customer AS CU 
-                  INNER JOIN Sales.SalesOrderHeader AS SOH ON CU.CustomerID = SOH.CustomerID 
-                  INNER JOIN Sales.Store AS S ON CU.CustomerID = S.CustomerID
-                
+	
+    ````sql
+
+SELECT S.Name AS StoreName, SOH.SubTotal
+FROM Sales.Customer AS CU
+INNER JOIN Sales.SalesOrderHeader AS SOH ON CU.CustomerID = SOH.CustomerID
+INNER JOIN Sales.Store AS S ON CU.CustomerID = S.CustomerID
+````
+
 
 
 

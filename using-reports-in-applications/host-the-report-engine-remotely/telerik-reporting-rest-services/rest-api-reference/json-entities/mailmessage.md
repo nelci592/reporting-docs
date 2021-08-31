@@ -16,14 +16,18 @@ Mail message
 
 ## 
 
-	          {
-          'from': 'john.doe@mycompany.com',
-          'to': 'jane.doe@mycompany.com',
-          'cc': 'john.doe.jr@mycompany.com',
-          'subject': 'my mail subject',
-          'body': 'my mail body',
-          }
-        
+	
+````Example
+
+{
+'from': 'john.doe@mycompany.com',
+'to': 'jane.doe@mycompany.com',
+'cc': 'john.doe.jr@mycompany.com',
+'subject': 'my mail subject',
+'body': 'my mail body',
+}
+````
+
 
 
 

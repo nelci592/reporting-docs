@@ -14,8 +14,12 @@ position: 1
 
 ## Request
 
-	          DELETE /api/reports/clients/{clientId}/instances/{instanceId}
-        
+	
+````URI Template
+
+DELETE /api/reports/clients/{clientId}/instances/{instanceId}
+````
+
 
 
 

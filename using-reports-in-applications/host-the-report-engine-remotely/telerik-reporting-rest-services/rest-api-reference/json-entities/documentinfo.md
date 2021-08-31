@@ -16,31 +16,36 @@ Document info indicating the status of the document resource.
 
 ## 
 
-	          {
-            ‘documentReady’: true,
-            ‘pageCount’: 10,
-            ‘documentMapAvailable’: false,
-            ‘BookmarkNodes’: [
-                {
-                  ‘id’: ‘Bikes’,
-                  ‘text’: ‘Bikes’,
-                  ‘page’: 3,
-                  ‘items’: [
-                    {
-                      ‘id’: ‘Bikes’,
-                      ‘text’: ‘Bikes’,
-                      ‘page’: 3,
-                    }
-                  ]
-                },
-                {
-                  ‘id’: ‘Bikes’,
-                  ‘text’: ‘Bikes’,
-                  ‘page’: 3,
-                },
-              ],
-          }
-        
+	
+````Example
+
+{
+‘documentReady’: true,
+‘pageCount’: 10,
+‘documentMapAvailable’: false,
+‘BookmarkNodes’: [
+{
+‘id’: ‘Bikes’,
+‘text’: ‘Bikes’,
+‘page’: 3,
+‘items’: [
+{
+‘id’: ‘Bikes’,
+‘text’: ‘Bikes’,
+‘page’: 3,
+}
+]
+},
+{
+‘id’: ‘Bikes’,
+‘text’: ‘Bikes’,
+‘page’: 3,
+},
+],
+}
+
+````
+
 
 
 

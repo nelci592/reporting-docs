@@ -16,7 +16,7 @@ position: 1
 
 Aggregate functions perform a calculation on a set of multiple values and return a single value. All aggregate           functions ignore null values.         
 
-To include aggregated values in your report, use the __Aggregates__ node in the __Edit Expression__ editor,            which you can access in the Report Designer.            You can specify a scope to identify which set of data to use for the calculation by            using [data            scope functions](3c53d216-23db-4749-8671-c7027d4daf1c#datascopefunctions).         
+To include aggregated values in your report, use the __Aggregates__  node in the __Edit Expression__  editor,            which you can access in the Report Designer.            You can specify a scope to identify which set of data to use for the calculation by            using [data            scope functions](3c53d216-23db-4749-8671-c7027d4daf1c#datascopefunctions).         
 
 
 | Function | Description | Return Type |

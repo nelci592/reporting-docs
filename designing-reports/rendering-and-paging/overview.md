@@ -44,7 +44,7 @@ Telerik Reporting includes a set of renderers that you can use to export reports
 
 
 
-All __Telerik Reporting__ output formats have specific characteristics that determine their usage and impose ceratin limitations,           which need to be taken into consideration when designing reports. For example, the CSV rendering extension is useful for creating reports           that can be used as a data source by another application or process, layout rendering extensions produce reports in a format suitable for           viewing by users, while physical rendering extensions are intended for precise printing.         
+All __Telerik Reporting__  output formats have specific characteristics that determine their usage and impose ceratin limitations,           which need to be taken into consideration when designing reports. For example, the CSV rendering extension is useful for creating reports           that can be used as a data source by another application or process, layout rendering extensions produce reports in a format suitable for           viewing by users, while physical rendering extensions are intended for precise printing.         
 
 For more information on the rendering extensions, refer to [Design Considerations for Report Rendering]({%slug telerikreporting/designing-reports/rendering-and-paging/design-considerations-for-report-rendering/overview%})
 
@@ -52,11 +52,11 @@ For more information on the rendering extensions, refer to [Design Consideration
 
 There are three types of 					renderers: 				
 
-* __Data__ renderers: CSV renderer. 						
+* __Data__  renderers: CSV renderer. 						
 
-* __Logical__ page layout renderers: Excel (XLS and XLSX) and MHTML renderers. Rendering extensions IMAGEInteractive, 							HTML5Interactive, XAMLInteractive and WPFXAMLInteractive are for internal use by the Report Viewers in Interactive View. 						
+* __Logical__  page layout renderers: Excel (XLS and XLSX) and MHTML renderers. Rendering extensions IMAGEInteractive, 							HTML5Interactive, XAMLInteractive and WPFXAMLInteractive are for internal use by the Report Viewers in Interactive View. 						
 
-* __Physical__ page layout renderers: IMAGE, HTML5, XAML, WPFXAML, PDF, RTF, XPS, PPTX, DOCX renderers. Rendering extensions 							IMAGE, HTML5, XAML, WPFXAML are used by corresponding Report Viewers in Print Preview. 						
+* __Physical__  page layout renderers: IMAGE, HTML5, XAML, WPFXAML, PDF, RTF, XPS, PPTX, DOCX renderers. Rendering extensions 							IMAGE, HTML5, XAML, WPFXAML are used by corresponding Report Viewers in Print Preview. 						
 
 Depending on the renderer you select, certain rules are applied when rendering the report. How report items fit together 					on a page is determined by the combination of these factors: 				
 

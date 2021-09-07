@@ -10,7 +10,7 @@ position: 7
 
 # fontLibrary Element
 
- machine or when other than PDF rendering extension is used.       
+ws machine or when other than PDF rendering extension is used.       
 
 ## Attributes and Elements
 

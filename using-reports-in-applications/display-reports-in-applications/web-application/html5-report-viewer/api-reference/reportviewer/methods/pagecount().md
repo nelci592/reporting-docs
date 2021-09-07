@@ -24,4 +24,3 @@ Returns: integer:
             var pageCount = reportViewer.pageCount();
 ````
 
-

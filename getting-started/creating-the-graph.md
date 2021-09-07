@@ -12,13 +12,13 @@ position: 4
 
 
 
-This article is part of the Demo report guide on getting started with Telerik Reporting and demonstrates         how to create a [Overview]({%slug telerikreporting/designing-reports/report-structure/graph/overview%}) item in the __Report Header__.       
+This article is part of the Demo report guide on getting started with Telerik Reporting and demonstrates         how to create a [Overview]({%slug telerikreporting/designing-reports/report-structure/graph/overview%}) item in the __Report Header__ .       
 
-The controls which the __Report Header__ and the __Report Footer__ contain are displayed only once at the top and bottom         of the entire report respectively. The controls which the __pageHeaderSection__ and the __pageFooterSection__ are displayed on all pages.         The __Report Header__ and __Report Foote__r are hidden by default.       
+The controls which the __Report Header__  and the __Report Footer__  contain are displayed only once at the top and bottom         of the entire report respectively. The controls which the __pageHeaderSection__  and the __pageFooterSection__  are displayed on all pages.         The __Report Header__  and __Report Foote__ r are hidden by default.       
 
 ## 
 
-1. To reveal the report header, right-click outside the report and select __Report Header__.             
+1. To reveal the report header, right-click outside the report and select __Report Header__ .             
 
 1. Add a new SQL Datasource component for the graph with the following query:             
 
@@ -44,43 +44,43 @@ WHERE     (YEAR(SOH.OrderDate) = 2002)
 
 
 
-1. Rename the datasource to __graphDataSource__.             
+1. Rename the datasource to __graphDataSource__ .             
 
-1. Click __reportHeaderSection__.             
+1. Click __reportHeaderSection__ .             
 
-1. Select __Insert__ > __Pie__ > __graphDataSource__.             
+1. Select __Insert__  > __Pie__  > __graphDataSource__ .             
 
-1. Drag __StoreName__ to __Series__.             
+1. Drag __StoreName__  to __Series__ .             
 
-1. Drag __LineTotal__ to __Values__.               
+1. Drag __LineTotal__  to __Values__ .               
 
   ![Pie](images/Pie.PNG)
 
 1. Click Finish and select the newly created Graph in order to add Filtering and Sorting.             
 
-1. From the  [Group Explorer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/group-explorer%}), click __Filter__ and set the following parameters:             
+1. From the  [Group Explorer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/group-explorer%}), click __Filter__  and set the following parameters:             
 
-   + __Expression__: =Sum(Fields.LineTotal)
+   + __Expression__ : =Sum(Fields.LineTotal)
 
-   + __Operator__: Top N
+   + __Operator__ : Top N
 
-   + __Value__: =5
+   + __Value__ : =5
 
-1. From the __Group Explorer__, click __Sorting__ and set the following parameters:             
+1. From the __Group Explorer__ , click __Sorting__  and set the following parameters:             
 
-   + __Expression__: =Sum(Fields.LineTotal)
+   + __Expression__ : =Sum(Fields.LineTotal)
 
-   + __Direction__:  DESC
+   + __Direction__ :  DESC
 
-1. From the __Properties__ grid, select the __Color Palette__ option to set specific colors for each bar series.             
+1. From the __Properties__  grid, select the __Color Palette__  option to set specific colors for each bar series.             
 
 1. Add the title of the graph.             
 
 ## Previewing the Result
 
-Preview the result by clicking __Preview__ > __PrintPreview__.         
+Preview the result by clicking __Preview__  > __PrintPreview__ .         
 
-In the generated report, the __Color Palette__ is set in the following way:         
+In the generated report, the __Color Palette__  is set in the following way:         
 
 	
           Color [A=255, R=0, G=105, B=104],

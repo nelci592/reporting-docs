@@ -12,7 +12,7 @@ position: 1
 
 
 
-To create a Telerik report in code, you need to instantiate a __Telerik.Reporting.Report__ object and set its properties. For example, this code will create a report and set up its data source:
+To create a Telerik report in code, you need to instantiate a __Telerik.Reporting.Report__  object and set its properties. For example, this code will create a report and set up its data source:
 
 	
 ````C#
@@ -22,10 +22,6 @@ string connectionString = "Data Source=(local)\\SQLEXPRESS;Initial Catalog=Adven
 Telerik.Reporting.SqlDataSource sqlDataSource = new Telerik.Reporting.SqlDataSource(connectionString, selectCommand);
 report.DataSource = sqlDataSource;
 ````
-
-
-
-	
 ````VB.NET
 Dim report As New MyReport()
 Dim selectCommand As String = "SELECT * FROM Sales.Store"

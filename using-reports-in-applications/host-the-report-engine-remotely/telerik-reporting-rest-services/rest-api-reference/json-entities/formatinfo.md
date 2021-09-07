@@ -17,14 +17,11 @@ Format info object representing a document format that can be used for document 
 ## 
 
 	
-````Example
-
-{
-"name":"PDF",
-"localizedName":"Acrobat (PDF) file"
-}
-````
-
+          {
+            "name":"PDF",
+            "localizedName":"Acrobat (PDF) file"
+          }
+        
 
 
 

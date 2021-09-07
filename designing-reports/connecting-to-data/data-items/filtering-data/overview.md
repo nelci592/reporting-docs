@@ -22,7 +22,7 @@ The idea behind filtering the retrieved data source records is the same as in th
 
 ### "Server side" filtering
 
-__The most efficient way to save bandwidth__ is to filter data records before they are retrieved by the DataSource               component. This is called filtering on the “server side”. To accomplish this you can use parameterized DataSource               component for each DataSource component that support this. The next step is to map each DataSource parameter to Report               Parameters using expressions. In this approach no Filters are needed. If however the data source does not support               parameters, or you must run stored procedures and cannot modify the query use report filters.             
+__The most efficient way to save bandwidth__  is to filter data records before they are retrieved by the DataSource               component. This is called filtering on the “server side”. To accomplish this you can use parameterized DataSource               component for each DataSource component that support this. The next step is to map each DataSource parameter to Report               Parameters using expressions. In this approach no Filters are needed. If however the data source does not support               parameters, or you must run stored procedures and cannot modify the query use report filters.             
 
 ### "Client side" filtering
 

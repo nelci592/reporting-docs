@@ -18,7 +18,7 @@ This can be achieved with simply nesting data items. In this case the nested dat
 
 As a real life scenario, in the current example we will list the top 5 performing agents and the amount of their sales divided by product categories         on a yearly basis, presented in a pie chart. We will use a [Crosstab item]({%slug telerikreporting/designing-reports/report-structure/table/crosstab/list/understanding-crosstab-areas%}) as a master data item and it will define the dimensions “Sales Person Name” and “Year”.         For a nested data item we will use a [Graph item]({%slug telerikreporting/designing-reports/report-structure/graph/structure%}) which will add the dimension “Product Category”.       
 
-We will use the __AdventureWorks__ sample database and the [Telerik Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview%}).       
+We will use the __AdventureWorks__  sample database and the [Telerik Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview%}).       
 
 ###How to nest a Graph item in a Table item
 
@@ -49,9 +49,9 @@ INNER JOIN Person.Contact AS C ON C.ContactID = E.ContactID
 
 
 
-1. On the following page add the __SalesPersonName__ field to the __RowGroups__ box,               __OrderYear__ to the __Column Groups__ box and the               __CategoryName__ field to the __Detail Values__ box,               where it will be automatically changed to __Count(CategoryName)__.               After the wizard ends, you can make some design adjustments to the generated crosstab to make it look better.             
+1. On the following page add the __SalesPersonName__  field to the __RowGroups__  box,               __OrderYear__  to the __Column Groups__  box and the               __CategoryName__  field to the __Detail Values__  box,               where it will be automatically changed to __Count(CategoryName)__ .               After the wizard ends, you can make some design adjustments to the generated crosstab to make it look better.             
 
-1. Set the row group's __Filters__ to `"Count(Fields.CategoryName) Top N =5"`.               Your group properties should now be set like this:               
+1. Set the row group's __Filters__  to `"Count(Fields.CategoryName) Top N =5"`.               Your group properties should now be set like this:               
 
   ![di Nest Graph In Table Row Group Properties](images/DataItems/di_NestGraphInTable_RowGroupProperties.png)
 
@@ -59,22 +59,22 @@ INNER JOIN Person.Contact AS C ON C.ContactID = E.ContactID
 
   ![di Nest Graph In Table Cross Tab Layout](images/DataItems/di_NestGraphInTable_CrossTabLayout.png)    If you preview the report now, you will see that the crosstab shows the top 5 sales agents               along with their sales count by year.                 Now we have to set up the pie chart which will display their sales divided by product categories.             
 
-1. Select the cell that displays the count and choose the __Pie Chart__ item from the __Insert__ menu.               The __Graph Wizard__ will appear. Since we will bind our graph to the current __ReportItem.DataObject__,               actually there is no need to connect it to a data source, but on the other hand, the design-time support might come in handy.             
+1. Select the cell that displays the count and choose the __Pie Chart__  item from the __Insert__  menu.               The __Graph Wizard__  will appear. Since we will bind our graph to the current __ReportItem.DataObject__ ,               actually there is no need to connect it to a data source, but on the other hand, the design-time support might come in handy.             
 
-1. Select the data source and on the next page add the __CategoryName__ field               to the __Series__ and __Values__ box,               where it will be automatically changed to `Count(CategoryName)`.               You can make some additional adjustments like removing the graph title, aligning the texts               and resizing the crosstab's rows and columns. Finally your crosstab should look like the one below:               
+1. Select the data source and on the next page add the __CategoryName__  field               to the __Series__  and __Values__  box,               where it will be automatically changed to `Count(CategoryName)`.               You can make some additional adjustments like removing the graph title, aligning the texts               and resizing the crosstab's rows and columns. Finally your crosstab should look like the one below:               
 
   ![di Nest Graph In Table Crosstab With Graph](images/DataItems/di_NestGraphInTable_CrosstabWithGraph.png)    If you preview the report, you will notice that the chart data stays the same on every row and column of the crosstab.               That's why we connected it to the whole dataset. In order to connect it to the current row group data,               defined by the expression `"Fields.SalesPersonName"`, we have to bind the graph data source               to the current report item's data object.             
 
 1. Open the Graph's [Bindings]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/bindings%}) editor and create a new binding for the DataSource property as shown below:               
 
-  ![di Nest Graph In Table Bindings Editor](images/DataItems/di_NestGraphInTable_BindingsEditor.png)    Since we are explicitly binding the __DataSource__ property, we don't need to declare it               in the Graph's properties, so you can set it to __No Data Source__. Please note that this will               cancel the design-time support and the data will not be previewed in the graph designer.                 Your report is now ready. When you preview it, you will see that the pie chart is displayed on every               cross-section of a sales person and an year, showing the percentage of the product categories sales.             
+  ![di Nest Graph In Table Bindings Editor](images/DataItems/di_NestGraphInTable_BindingsEditor.png)    Since we are explicitly binding the __DataSource__  property, we don't need to declare it               in the Graph's properties, so you can set it to __No Data Source__ . Please note that this will               cancel the design-time support and the data will not be previewed in the graph designer.                 Your report is now ready. When you preview it, you will see that the pie chart is displayed on every               cross-section of a sales person and an year, showing the percentage of the product categories sales.             
 
 ##        Live examples
       
 
-You can download the described report as a __.trdx__ report definition from the following link:           [Nested Graph Item in a Table Item](http://blogs.telerik.com/docs/default-source/reporting/nestedgraphiteminatableitem583E43B84F9C.zip?sfvrsn=2)
+You can download the described report as a __.trdx__  report definition from the following link:           [Nested Graph Item in a Table Item](http://blogs.telerik.com/docs/default-source/reporting/nestedgraphiteminatableitem583E43B84F9C.zip?sfvrsn=2)
 
-The same approach is used in the __Product Sales__ example report which is shipped with the Telerik Reporting installation.           This report displays the monthly sales trend using a line chart for the product subcategories and a column chart for the total fields.           You can see the report in action if you have a valid connection to the __AdventureWorks__ sample database.         
+The same approach is used in the __Product Sales__  example report which is shipped with the Telerik Reporting installation.           This report displays the monthly sales trend using a line chart for the product subcategories and a column chart for the total fields.           You can see the report in action if you have a valid connection to the __AdventureWorks__  sample database.         
 
  * [Table/Crosstab/List]({%slug telerikreporting/designing-reports/report-structure/table/crosstab/list/overview%})
 

@@ -36,7 +36,7 @@ For more details see topics in [Data Source Components]({%slug telerikreporting/
 
    + [Grouped]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/grouping-data-/overview%}).                 
 
-* The most straightforward approach for connecting a data item to data is to set data item's __DataSource__ property to a Data Source component.             
+* The most straightforward approach for connecting a data item to data is to set data item's __DataSource__  property to a Data Source component.             
 
 * In master-detail scenarios, the data item can be connected to the parent's data as well.             
 
@@ -56,7 +56,7 @@ For more details see topics in [Expressions]({%slug telerikreporting/designing-r
 
 * The most common usage of report parameters is in the data-retrieval method which is one of the ways to improve the report's performance.             
 
-* Referencing report parameters inside expressions can be achieved with __Parameters__ global object which at runtme will be               replaced with the actual value of report parameter.             
+* Referencing report parameters inside expressions can be achieved with __Parameters__  global object which at runtme will be               replaced with the actual value of report parameter.             
 
 * Examples of report parameters usage: in properties of the report or report items(sections), grouping, sorting, filtering operations etc.             
 

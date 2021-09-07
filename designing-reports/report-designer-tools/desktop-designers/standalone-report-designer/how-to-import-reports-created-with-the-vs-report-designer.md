@@ -24,19 +24,19 @@ Should you need to import your existing reports created with the Visual Studio R
 
 1. (Optional) If the target report depends on external assemblies for data source, user function or custom aggregate, first you have to               reference those assemblies in the configuration file. For more information see: [Extending Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/configuration/extending-report-designer%})
 
-1. Open the Report Designer and click on __Open Report...__
+1. Open the Report Designer and click on __Open Report...__ 
 
-1. In the Open dialog window, select __.NET Report Library__ from the file type combobox.             
+1. In the Open dialog window, select __.NET Report Library__  from the file type combobox.             
 
-1. Navigate to your existing .NET report library and click __Open__. The Import Report Wizard is started.             
+1. Navigate to your existing .NET report library and click __Open__ . The Import Report Wizard is started.             
 
-1. In the __Select Reports to Import__ step, you would see the reflected reports from your report library.             
+1. In the __Select Reports to Import__  step, you would see the reflected reports from your report library.             
 
-1. Select the reports you would like to import by checking the corresponding checkboxes right next to the reports and click __Next__.             
+1. Select the reports you would like to import by checking the corresponding checkboxes right next to the reports and click __Next__ .             
 
-1. In the __Output Settings__ step, you can specify the output location for the imported reports, their names or specify different location if you have more than one report.             
+1. In the __Output Settings__  step, you can specify the output location for the imported reports, their names or specify different location if you have more than one report.             
 
-1. Click Import. Once the import is done, you are presented with __Import Summary__ step,               which shows the result of the import and presents an import log. There is an option to open the imported reports               in the standalone report designer once you click on __Finish__.             
+1. Click Import. Once the import is done, you are presented with __Import Summary__  step,               which shows the result of the import and presents an import log. There is an option to open the imported reports               in the standalone report designer once you click on __Finish__ .             
 
 ## Package the CLR report object manually
 

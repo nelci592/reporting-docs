@@ -12,7 +12,7 @@ position: 2
 
 
 
-Telerik Reporting supplies __report item__ components that are placed in the report designer to build report        	content: 
+Telerik Reporting supplies __report item__  components that are placed in the report designer to build report        	content: 
 
 ## 
 
@@ -37,7 +37,7 @@ Telerik Reporting supplies __report item__ components that are placed in the r
 
 ### Report Definition
 
-The Report Definition item is created during the first stage of the [Report Life Cycle]({%slug telerikreporting/designing-reports/understanding-the-report-lifecycle%}). This is the actual .NET class that represents the report. It is always a subclass __*Telerik.Reporting.Report*__ and contains information about report items and their properties. Report items are represented by the private fields of the report class.
+The Report Definition item is created during the first stage of the [Report Life Cycle]({%slug telerikreporting/designing-reports/understanding-the-report-lifecycle%}). This is the actual .NET class that represents the report. It is always a subclass __Telerik.Reporting.Report__  and contains information about report items and their properties. Report items are represented by the private fields of the report class.
 
 Let’s illustrate this with an example. While in design-time, if you add a TextBox to the Detail Section of the report that you are designing, a private field of type TextBox will be added to the code-behind file and some basic initialization code will be generated within the InitalizeComponent method of the report class.
 
@@ -48,6 +48,6 @@ This object will later serve as the definition for creating a concrete instance
 
 ### Report Processing
 
-The second stage of the [Report Life Cycle]({%slug telerikreporting/designing-reports/understanding-the-report-lifecycle%}) involves combining the __report definition__ with the __data source__. The processing engine performs all grouping, sorting and filtering calculations and iterates over all rows from the data source and creates the appropriate __processing items__ based on the item definitions created earlier and the actual data. Based on the original item definition (Telerik.Reporting.TextBox for example) and the actual data in the current data row a new item is created. This item is known as a __processing item__ (Telerik.Reporting.Processing.TextBox for example) and bears all characteristics of its definition item, but it is bound to the respective data field from the current data row. While the definition TextBox’s Value property may contain something like “=Fields.FirstName”, the processing item’s Value property will be equal to “John”.
+The second stage of the [Report Life Cycle]({%slug telerikreporting/designing-reports/understanding-the-report-lifecycle%}) involves combining the __report definition__  with the __data source__ . The processing engine performs all grouping, sorting and filtering calculations and iterates over all rows from the data source and creates the appropriate __processing items__  based on the item definitions created earlier and the actual data. Based on the original item definition (Telerik.Reporting.TextBox for example) and the actual data in the current data row a new item is created. This item is known as a __processing item__  (Telerik.Reporting.Processing.TextBox for example) and bears all characteristics of its definition item, but it is bound to the respective data field from the current data row. While the definition TextBox’s Value property may contain something like “=Fields.FirstName”, the processing item’s Value property will be equal to “John”.
 
-The Processing Engine provides the developer with a way to intervene in this process. Just before the processing item is bound to data, the __ItemDataBinding__ event of its definition item is raised. After the processing item has been data bound the __ItemDataBound__ event is raised. By subscribing a listener for those events, the developer can modify the default behavior at run-time. The *__sender__* parameter of the event handler methods is in fact the __processing report item__.
+The Processing Engine provides the developer with a way to intervene in this process. Just before the processing item is bound to data, the __ItemDataBinding__  event of its definition item is raised. After the processing item has been data bound the __ItemDataBound__  event is raised. By subscribing a listener for those events, the developer can modify the default behavior at run-time. The *sender*  parameter of the event handler methods is in fact the __processing report item__ .

@@ -21,7 +21,7 @@ The styling and appearance of the HTML5 Report Viewer is controlled entirely thr
 >tip All path references in the article should be adapted according             to your project setup. For more information please refer to the MSDN article             [ASP.NET Web Project Paths](http://msdn.microsoft.com/en-us/library/ms178116.aspx)The mentioned Report Viewer Template files are provided with your Telerik Reporting Installation -             [Installation Directories](6E821131-83F3-45A4-BB6E-1530223D1E38#directories-and-asemblies).           
 
 
-All viewer related classes are supplied by a single CSS stylesheet referenced in the report viewer HTML template.           The template is provided by the Reporting REST service. To force a custom template with  a custom or default CSS specify           the __templateUrl__ of the HTML5 Viewer widget option. For reference you can use the templates           located in __ %programfiles(x86)%\Progress\Reporting [VERSION]\Html5\ReportViewer\templates__:         
+All viewer related classes are supplied by a single CSS stylesheet referenced in the report viewer HTML template.           The template is provided by the Reporting REST service. To force a custom template with  a custom or default CSS specify           the __templateUrl__  of the HTML5 Viewer widget option. For reference you can use the templates           located in __%programfiles(x86)%\Progress\Reporting [VERSION]\Html5\ReportViewer\templates__ :         
 
 	
 ````js
@@ -40,7 +40,7 @@ All viewer related classes are supplied by a single CSS stylesheet referenced in
 In addition the Kendo UI CSS needs to be supplied in order for the Kendo UI widgets to be operational:         
 
 	
-````HTML
+````html
           <link href="/kendo/styles/kendo.common.min.css" rel="stylesheet" />
 ````
 
@@ -49,7 +49,7 @@ In addition the Kendo UI CSS needs to be supplied in order for the Kendo UI widg
 While these classes provide layout settings the HTML5 Report Viewer depends on the Kendo UI themes for its colors (theme):         
 
 	
-````HTML
+````html
           <link href="/kendo/styles/kendo.blueopal.min.css" rel="stylesheet" />
 ````
 
@@ -79,7 +79,7 @@ In order to use Font Awesome you have to specify the font awesome template. The 
 The default viewer template and stylesheet depend on CSS media queries to adapt its layout according to the device and display.           In order the media queries to be activated properly the browser’s viewport needs to be initialized like this:         
 
 	
-````HTML
+````html
           <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 ````
 

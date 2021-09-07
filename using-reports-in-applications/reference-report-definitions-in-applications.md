@@ -30,7 +30,7 @@ For more details and examples on the different report sources, please refer to  
 
 ## Reference Reports in Report Processor
 
-When the report engine is embedded in the current application (i.e. the *Telerik.Reporting* assembly is referenced)           it is possible to use the Report Processor to manually render           ([RenderReport](/reporting/api/Telerik.Reporting.Processing.ReportProcessor#Telerik_Reporting_Processing_ReportProcessor_RenderReport_System_String_Telerik_Reporting_ReportSource_System_Collections_Hashtable_))           or print           ([PrintReport](/reporting/api/Telerik.Reporting.Processing.ReportProcessor#Telerik_Reporting_Processing_ReportProcessor_PrintReport_Telerik_Reporting_ReportSource_System_Drawing_Printing_PrinterSettings_))           a report. For this purpose it is required to pass an argument of ReportSource type which uniquely identifies the report.         
+When the report engine is embedded in the current application (i.e. the *Telerik.Reporting*  assembly is referenced)           it is possible to use the Report Processor to manually render           ([RenderReport](/reporting/api/Telerik.Reporting.Processing.ReportProcessor#Telerik_Reporting_Processing_ReportProcessor_RenderReport_System_String_Telerik_Reporting_ReportSource_System_Collections_Hashtable_))           or print           ([PrintReport](/reporting/api/Telerik.Reporting.Processing.ReportProcessor#Telerik_Reporting_Processing_ReportProcessor_PrintReport_Telerik_Reporting_ReportSource_System_Drawing_Printing_PrinterSettings_))           a report. For this purpose it is required to pass an argument of ReportSource type which uniquely identifies the report.         
 
 For this example we will use a TypeReportSource. The TypeReportSource specifies the report by its Assembly Qualified Name. The Reporting Engine uses [Reflection](https://msdn.microsoft.com/en-us/library/ms173183(v=vs.110).aspx) to create an instance of the report class through its default parameterless constructor.         
 
@@ -82,9 +82,6 @@ For this example we will use a TypeReportSource. The TypeReportSource specifies 
 	                fs.Write(result.DocumentBytes, 0, result.DocumentBytes.Length);
 	            }
 ````
-
-
-
 {{source=CodeSnippets\VB\API\Telerik\Reporting\Processing\ReportProcessorSnippets.vb region=Export_Single_Stream_Snippet}}
 ````VB
 	

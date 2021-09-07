@@ -39,10 +39,6 @@ When you are in the event, you should work with the processing chart item i.e.:
 				procChart.DataSource = your_datasource;
 			}
 ````
-
-
-
-	
 ````VB.NET
 			Private Sub chart1_NeedDataSource(sender As Object, e As System.EventArgs)
 				Dim procChart As Telerik.Reporting.Processing.Chart = DirectCast(sender, Telerik.Reporting.Processing.Chart)

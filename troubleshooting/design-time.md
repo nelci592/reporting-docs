@@ -32,9 +32,6 @@ The most reliable way to specify a report for the ReportViewer is to do this pro
 	            }
 	        }
 ````
-
-
-
 {{source=CodeSnippets\VB\API\Telerik\ReportViewer\WebForms\WebForm1.aspx.vb region=Webviewer_SetReportSource}}
 ````VB
 	    Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load

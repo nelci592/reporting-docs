@@ -20,9 +20,9 @@ This tutorial shows how to use HTML5 Report Viewer's ASP.NET MVC wrapper in ASP.
 
 * A running application that hosts a Reporting REST service at address /api/reports. For more information, see               [Telerik Reporting REST Services]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview%}).             
 
-* Copy of the "Product Catalog.trdp" report file from __[TelerikReporting_InstallDir]\ReportDesigner\Examples__               in the folder used by the [ReportFileResolver](/reporting/api/Telerik.Reporting.Services.WebApi.ReportFileResolver)               in the Reporting REST service implementation.             
+* Copy of the "Product Catalog.trdp" report file from __[TelerikReporting_InstallDir]\ReportDesigner\Examples__                in the folder used by the [ReportFileResolver](/reporting/api/Telerik.Reporting.Services.WebApi.ReportFileResolver)               in the Reporting REST service implementation.             
 
-* Entry with the default connection string used by Telerik Reporting sample reports in the __web.config__ file               of the project hosting the Reporting REST service:             
+* Entry with the default connection string used by Telerik Reporting sample reports in the __web.config__  file               of the project hosting the Reporting REST service:             
 
 	
     ````xml
@@ -47,7 +47,7 @@ Depending on the used Visual Studio project template CSS and JS files can be lin
 
 ## Using HTML5 ASP.NET MVC Report Viewer in a web application
 
-The following steps produce a view with settings similar to these of the local MvcDemo project,           installed by default under __[TelerikReporting_InstallDir]\Examples__.           The structure used in this tutorial is view that uses a layout page.         
+The following steps produce a view with settings similar to these of the local MvcDemo project,           installed by default under __[TelerikReporting_InstallDir]\Examples__ .           The structure used in this tutorial is view that uses a layout page.         
 
 >tip All path references in the described steps should be adapted according             to your project setup. For more information please refer to the MSDN article             [ASP.NET Web Project Paths](http://msdn.microsoft.com/en-us/library/ms178116.aspx)
 
@@ -57,7 +57,7 @@ The following steps produce a view with settings similar to these of the local M
 1. To ensure that the browser will start in the latest rendering mode verify the view's layout page is using the following DOCTYPE directive:                 
 
 	
-    ````HTML
+    ````html
 							<!DOCTYPE html>
 ````
 
@@ -70,16 +70,16 @@ The following steps produce a view with settings similar to these of the local M
 1. Initialize the browser’s viewport in the ```<head>``` element:
 
 	
-    ````HTML
+    ````html
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 ````
 
     The viewport META tag is used to control layout on mobile browsers.    
 
-1. The default viewer implementation depends externally on __jQuery__.                   Create a section named __scripts__ and add link to jQuery in the view:                 
+1. The default viewer implementation depends externally on __jQuery__ .                   Create a section named __scripts__  and add link to jQuery in the view:                 
 
 	
-    ````HTML
+    ````html
 @section scripts
 {
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -95,7 +95,7 @@ The following steps produce a view with settings similar to these of the local M
 1. Add references to Telerik Kendo UI scripts and styles in the ```<head>``` element:
 
 	
-    ````HTML
+    ````html
 <!-- the required Kendo styles -->                  
 <link href="https://kendo.cdn.telerik.com/ {{site.kendosubsetversion}} /styles/kendo.common.min.css" rel="stylesheet" />
 <link href="https://kendo.cdn.telerik.com/ {{site.kendosubsetversion}} /styles/kendo.blueopal.min.css" rel="stylesheet" />
@@ -104,19 +104,19 @@ The following steps produce a view with settings similar to these of the local M
 
 
 1. Add references to
-   + __Telerik.Reporting__
+   + __Telerik.Reporting__ 
 
-   + __Telerik.ReportViewer.Mvc__
-    assemblies and set their __Copy Local__ properties to true in Visual Studio.                 
+   + __Telerik.ReportViewer.Mvc__ 
+    assemblies and set their __Copy Local__  properties to true in Visual Studio.                 
 
     >tip Without setting Telerik Reporting references' Copy Local to true the assemblies may not be loaded correctly on running the application.
 
 
 
-1. Update the __web.config__ file in the __Views__ folder to                   include the __Telerik.Reporting__ and __Telerik.ReportViewer.Mvc__                   namespaces:                 
+1. Update the __web.config__  file in the __Views__  folder to                   include the __Telerik.Reporting__  and __Telerik.ReportViewer.Mvc__                    namespaces:                 
 
 	
-    ````HTML
+    ````html
 								<system.web.webPages.razor>
     								...
     								<pages pageBaseType="System.Web.Mvc.WebViewPage">
@@ -138,14 +138,14 @@ The following steps produce a view with settings similar to these of the local M
 1. Add references to the HTML5 Report Viewer’s JavaScript file in the view:                 
 
 	
-    ````HTML
+    ````html
 <script src="~/api/reports/resources/js/telerikReportViewer"></script>
 ````
 
     The report viewer JavaScript should be referenced after any other Kendo widgets or bundles.                   If no Kendo widgets are utilized in the page the report viewer will register a custom Kendo                   subset to enable the required Kendo widgets. The subset is served from the report service.                     If Kendo is used on the page or the CDN is prefered make sure the following widgets are referenced:                 
 
 	
-    ````HTML
+    ````html
                   <!--
 <script src="https://kendo.cdn.telerik.com/ {{site.kendosubsetversion}} /js/kendo.core.min.js"></script>
 <script src="https://kendo.cdn.telerik.com/ {{site.kendosubsetversion}} /js/kendo.data.odata.min.js"></script>
@@ -203,9 +203,6 @@ kendo.all.min.js or kendo.web.min.js can be used as well if Kendo is used outsid
 	       .Deferred()
 	       )
 ````
-
-
-
 {{source=CodeSnippets\MvcVB\Views\Home\Index.vbhtml region=RazorExample}}
 ````vb.net
 	@Code
@@ -239,9 +236,6 @@ kendo.all.min.js or kendo.web.min.js can be used as well if Kendo is used outsid
 ````c#
 	@(Html.TelerikReporting().DeferredScripts())
 ````
-
-
-
 {{source=CodeSnippets\MvcVB\Views\Home\Index.vbhtml region=DeferredScriptsExample}}
 ````vb.net
 	@Code
@@ -254,7 +248,7 @@ kendo.all.min.js or kendo.web.min.js can be used as well if Kendo is used outsid
 1. Make the viewer fill the entire browser window. Add the following style in the correspondingly named section in the view:                 
 
 	
-    ````HTML
+    ````html
 									<style>
 								       #reportViewer1 {
 								            position: absolute;
@@ -273,10 +267,10 @@ kendo.all.min.js or kendo.web.min.js can be used as well if Kendo is used outsid
 
 
 
-1. Open the layout page and call the *RenderSection* helper method in the                   *```<head>```* element. The method must be called for each named section in the view with the viewer -                   *scripts section* and *styles section*.                 
+1. Open the layout page and call the *RenderSection*  helper method in the                   *```<head>```*  element. The method must be called for each named section in the view with the viewer -                   *scripts section*  and *styles section* .                 
 
 	
-    ````HTML
+    ````html
 @RenderSection("styles", required: false)
 @RenderSection("scripts", required: false)
 ````
@@ -286,7 +280,7 @@ kendo.all.min.js or kendo.web.min.js can be used as well if Kendo is used outsid
 1. Finally the layout page should look like this:
 
 	
-    ````HTML
+    ````html
 <!DOCTYPE html>
 <html>
 <head>
@@ -305,7 +299,7 @@ kendo.all.min.js or kendo.web.min.js can be used as well if Kendo is used outsid
     The page with the HTML5 ASP.NET MVC Report Viewer should look like this:
 
 	
-    ````HTML
+    ````html
 @section styles
 {           
     <link href="https://kendo.cdn.telerik.com/ {{site.kendosubsetversion}} /styles/kendo.common.min.css" rel="stylesheet" />

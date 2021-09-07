@@ -25,13 +25,13 @@ There are a few steps that should be done.
 
 Find Telerik Report Viewer template in your installation folder located in:
 
-__%programfiles(x86)%\Progress\Telerik Reporting {{site.suiteversion}}\Html5\ReportViewer\templates__
+__%programfiles(x86)%\Progress\Telerik Reporting__ 
 
 Copy the template in your application folder
 
-* __telerikReportViewerTemplate.html__- if you use the default template
+* __telerikReportViewerTemplate.html__ - if you use the default template
 
-* __telerikReportViewerTemplate-FA.html__- if you use Font Awesome template             
+* __telerikReportViewerTemplate-FA.html__ - if you use Font Awesome template             
 
 ## Step 2:
 
@@ -41,12 +41,12 @@ Specify and resolve the templateUrl path of the HTML5 Viewer widget option to th
 
 Add buttons elements in your local template. There are two different elements that have to be added.
 
-* For desktop screens.             Copy the following element in the __ul__ element with id attribute __trv-main-menu-ul__
+* For desktop screens.             Copy the following element in the __ul__  element with id attribute __trv-main-menu-ul__ 
 
    + For default template
 
 	
-    ````HTML
+    ````html
                       <li aria-label="ariaLabelMenuContinuousScroll"><a data-command="telerik_ReportViewer_pageMode" title="menuContinuousScrollTitle" href="#"><i class="t-font-icon t-i-scroll"></i></a></li>
 ````
 
@@ -55,18 +55,18 @@ Add buttons elements in your local template. There are two different elements th
    + For Font Awesome template
 
 	
-    ````HTML
+    ````html
                       <li aria-label="ariaLabelMenuContinuousScroll"><a data-command="telerik_ReportViewer_pageMode" title="menuContinuousScrollTitle" href="#"><i class="fa fa-angle-double-down icon-angle-double-down"></i></a></li>
 ````
 
 
 
-* For mobile screensCopy the following element in __ul__ element with id attribute __trv-side-menu-ul__
+* For mobile screensCopy the following element in __ul__  element with id attribute __trv-side-menu-ul__ 
 
    + For default template
 
 	
-    ````HTML
+    ````html
                     <li aria-label="ariaLabelMenuContinuousScroll"><a data-command="telerik_ReportViewer_pageMode" title="menuContinuousScrollTitle" href="#"><i class="t-font-icon t-i-scroll"></i><span>menuContinuousScrollText</span></a></li>
 ````
 
@@ -75,7 +75,7 @@ Add buttons elements in your local template. There are two different elements th
    + For Font Awesome template
 
 	
-    ````HTML
+    ````html
                     <li aria-label="ariaLabelMenuContinuousScroll"><a data-command="telerik_ReportViewer_pageMode" title="menuContinuousScrollTitle" href="#"><i class="fa fa-angle-double-down icon-angle-double-down"></i><span>menuContinuousScrollText</span></a></li>
 ````
 

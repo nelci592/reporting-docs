@@ -18,7 +18,7 @@ The Shape report item is used to display one of a selection of predefined shape
 
 You can use shapes to create visual effects within a report. You can set display and other properties to this item by         using the Properties pane.       
 
-__ShapeType Property modes:__
+__ShapeType Property modes:__ 
 
 * Ellipse           
 
@@ -60,7 +60,7 @@ __ShapeType Property modes:__
 
 * Cross           
 
-The Shape report item supports creating a custom shapes programmatically. The following code snippet shows how to inherit the         [ShapeBase](/reporting/api/Telerik.Reporting.Drawing.Shapes.ShapeBase) class and provide a custom set of __PointF__ array         that will form the shape. The points coordinates are relative and do not depend on the item's size or position in the report.       
+The Shape report item supports creating a custom shapes programmatically. The following code snippet shows how to inherit the         [ShapeBase](/reporting/api/Telerik.Reporting.Drawing.Shapes.ShapeBase) class and provide a custom set of __PointF__  array         that will form the shape. The points coordinates are relative and do not depend on the item's size or position in the report.       
 
 {{source=CodeSnippets\CS\API\Telerik\Reporting\ShapeSnippets.cs region=CustomShapeClassDeclarationSnippet}}
 ````c#
@@ -91,9 +91,6 @@ The Shape report item supports creating a custom shapes programmatically. The fo
 	            }
 	        }
 ````
-
-
-
 {{source=CodeSnippets\VB\API\Telerik\Reporting\ShapeSnippets.vb region=CustomShapeClassDeclarationSnippet}}
 ````vb.net
 	    Class CustomShapeType
@@ -112,7 +109,7 @@ The Shape report item supports creating a custom shapes programmatically. The fo
 
 
 
-The Shape item can be created at runtime and added to a report item container (section, panel, etc.).          The snippet below shows how to instantiate a Shape item of __CustomShape__ type:       
+The Shape item can be created at runtime and added to a report item container (section, panel, etc.).          The snippet below shows how to instantiate a Shape item of __CustomShape__  type:       
 
 {{source=CodeSnippets\CS\API\Telerik\Reporting\ShapeSnippets.cs region=CreateCustomShapeSnippet}}
 ````c#
@@ -131,9 +128,6 @@ The Shape item can be created at runtime and added to a report item container (s
 	        }
 	
 ````
-
-
-
 {{source=CodeSnippets\VB\API\Telerik\Reporting\ShapeSnippets.vb region=CreateCustomShapeSnippet}}
 ````vb.net
 	    Private Function CreateShape() As Shape

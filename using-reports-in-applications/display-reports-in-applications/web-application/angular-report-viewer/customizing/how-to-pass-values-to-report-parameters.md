@@ -19,7 +19,7 @@ This topic explains how to update the report parameters with values passed from 
 1. Add the custom UI in your application. For example:
 
 	
-    ````HTML
+    ````html
 <button (click)="onButtonClick(value)">Update parameter value</button>
 ````
 

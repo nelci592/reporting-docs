@@ -47,7 +47,7 @@ The Barcode item is used for automatic barcode generation directly from a numeri
 ## Examples
 
 {{source=CodeSnippets\CS\API\Telerik\Reporting\BarcodeSnippets.cs region=Barcode_Common_Settings}}
-````C#
+````cs
 	            var encoder = new Telerik.Reporting.Barcodes.Code128AEncoder();
 	
 	            // Set any specific encoder settings...
@@ -61,11 +61,8 @@ The Barcode item is used for automatic barcode generation directly from a numeri
 	            this.barcode1.Stretch = false;
 	            this.barcode1.Value = "1234567890";
 ````
-
-
-
 {{source=CodeSnippets\VB\API\Telerik\Reporting\BarcodeSnippets.vb region=Barcode_Common_Settings}}
-````VB.NET
+````vbnet
 	        Dim encoder = New Telerik.Reporting.Barcodes.Code128AEncoder()
 	
 	        ' Set any specific encoder settings...

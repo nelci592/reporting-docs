@@ -14,7 +14,7 @@ position: 0
 
 In Telerik Reporting data items can order the data they are bound to by taking advantage of the sorting capabilities of the Telerik Reporting engine.
 
-Sorting can be performed at the data item and group level through the __Sorting__ collections. Sorting for groups controls the order of grouping data, not the detail data. Group level sorting occurs before the sorting for the report as a whole.
+Sorting can be performed at the data item and group level through the __Sorting__  collections. Sorting for groups controls the order of grouping data, not the detail data. Group level sorting occurs before the sorting for the report as a whole.
 
 You specify the sorting criteria by adding [Telerik.Reporting.Sorting](/reporting/api/Telerik.Reporting.Sorting) objects to the data items’ or groups’ Sorting collections. Each sorting is made up of an Expression and a Direction: 		
 

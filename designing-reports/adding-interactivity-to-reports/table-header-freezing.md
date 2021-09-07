@@ -24,15 +24,15 @@ Each table or crosstab has [FreezeColumnHeaders](/reporting/api/Telerik.Reportin
 
 To keep the table headers visible while scrolling:         
 
-1. Select a table/crosstab component from the __Explorer tab__, or click the corner handle of a table data region, and then               go to its Properties pane on the right.             
+1. Select a table/crosstab component from the __Explorer tab__ , or click the corner handle of a table data region, and then               go to its Properties pane on the right.             
 
-1. Under __Layout__, select which headers (row, column or both) should remain visible while scrolling.               
+1. Under __Layout__ , select which headers (row, column or both) should remain visible while scrolling.               
 
   ![Table Freeze Headers Designer](images/TableFreezeHeadersDesigner.png)
 
 ## Settings in the Report Viewers
 
-The HTML5 Viewer automatically applies the freeze functionality in __[Interactive mode]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/interactive-vs.-print-layout%})__           when it is enabled from the designers.           The picture below shows a report with frozen row and column headers:           
+The HTML5 Viewer automatically applies the freeze functionality in __[Interactive mode]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/interactive-vs.-print-layout%})__            when it is enabled from the designers.           The picture below shows a report with frozen row and column headers:           
 
   ![Table Freeze Headers Viewer](images/TableFreezeHeadersViewer.png)
 
@@ -40,7 +40,7 @@ The HTML5 Viewer automatically applies the freeze functionality in __[Interactiv
 
 If the cells of the table headers have no or transparent background color, in order to preserve readability, their parent's background color           is applied to them while scrolling.         
 
-When *PageBreak* is set to a group, FreezeRowHeaders and FreezeColumnHeaders will work only if           *RowHeadersPrintOnEveryPage* and *ColumnHeadersPrintOnEveryPage*, respectively, are also set to true.           Otherwise, the headers will be frozen only on the first page.         
+When *PageBreak*  is set to a group, FreezeRowHeaders and FreezeColumnHeaders will work only if           *RowHeadersPrintOnEveryPage*  and *ColumnHeadersPrintOnEveryPage* , respectively, are also set to true.           Otherwise, the headers will be frozen only on the first page.         
 
 Even though the List report item has FreezeRowHeaders and FreezeColumnHeaders in the Properties pane, it doesn't have any headers           and therefore, this feature is not applicable to it.         
 

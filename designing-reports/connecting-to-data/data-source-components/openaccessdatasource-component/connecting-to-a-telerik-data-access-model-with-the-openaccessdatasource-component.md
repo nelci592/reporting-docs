@@ -12,19 +12,19 @@ position: 1
 
 
 
-This section discusses how to connect the __OpenAccessDataSource__ component to a __Telerik Data Access Model__.     	The provided examples and code snippets assume an existing __Telerik Data Access Model__ of the __Adventure Works__      	sample database with the following structure:  
+This section discusses how to connect the __OpenAccessDataSource__  component to a __Telerik Data Access Model__ .     	The provided examples and code snippets assume an existing __Telerik Data Access Model__  of the __Adventure Works__       	sample database with the following structure:  
 
   ![](images/DataSources/OpenAccessDataSourceAdventureWorksEntityModel.png)
 
 ## 
 
-The simplest way to configure __OpenAccessDataSource__ in __Report Designer__ is to use        	the [OpenAccessDataSource Wizard]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/openaccessdatasource-wizard%}). That wizard is started automatically when you create a new __OpenAccessDataSource__, but you can invoke        	it manually at any time from the context menu associated with the data source by choosing __"Configure"__:
+The simplest way to configure __OpenAccessDataSource__  in __Report Designer__  is to use        	the [OpenAccessDataSource Wizard]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/openaccessdatasource-wizard%}). That wizard is started automatically when you create a new __OpenAccessDataSource__ , but you can invoke        	it manually at any time from the context menu associated with the data source by choosing __"Configure"__ :
 
   
 
   ![](images/DataSources/OpenAccessDataSourceConfigure.png)
 
-To configure the __OpenAccessDataSource__ component programmatically you need to specify at least an __ObjectContext__       	and a property or a method from that __ObjectContext__ which is responsible for data retrieval. Assign the type of        	the __OpenAccessContext__ to the __ObjectContext__ property of __OpenAccessDataSource__ and the name of the desired member to the        	__ObjectContextMember__ property, as shown in the following example:       	
+To configure the __OpenAccessDataSource__  component programmatically you need to specify at least an __ObjectContext__        	and a property or a method from that __ObjectContext__  which is responsible for data retrieval. Assign the type of        	the __OpenAccessContext__  to the __ObjectContext__  property of __OpenAccessDataSource__  and the name of the desired member to the        	__ObjectContextMember__  property, as shown in the following example:       	
 
 {{source=CodeSnippets\CS\API\Telerik\Reporting\OpenAccessDataSourceSnippets.cs region=PropertyBindingSnippet}}
 ````C#
@@ -39,9 +39,6 @@ To configure the __OpenAccessDataSource__ component programmatically you need to
 	            report.DataSource = openAccessDataSource;
 	
 ````
-
-
-
 {{source=CodeSnippets\VB\API\Telerik\Reporting\OpenAccessDataSourceSnippets.vb region=PropertyBindingSnippet}}
 ````VB
 	
@@ -58,7 +55,7 @@ To configure the __OpenAccessDataSource__ component programmatically you need to
 
 
 
-The above code snippet connects the __OpenAccessDataSource__ component to the __AdventureWorksEntities__        	context and retrieves the information for all products from the __Products__ auto-generated property. Instead of specifying a type you can assign a live instance of the __OpenAccessContext__. In this case however it is        	your responsibility to destroy that __OpenAccessContext__ instance when done with the report:       	
+The above code snippet connects the __OpenAccessDataSource__  component to the __AdventureWorksEntities__         	context and retrieves the information for all products from the __Products__  auto-generated property. Instead of specifying a type you can assign a live instance of the __OpenAccessContext__ . In this case however it is        	your responsibility to destroy that __OpenAccessContext__  instance when done with the report:       	
 
 {{source=CodeSnippets\CS\API\Telerik\Reporting\OpenAccessDataSourceSnippets.cs region=InstanceBindingSnippet}}
 ````C#
@@ -77,9 +74,6 @@ The above code snippet connects the __OpenAccessDataSource__ component to the __
 	            openAccessContext.Dispose();
 	
 ````
-
-
-
 {{source=CodeSnippets\VB\API\Telerik\Reporting\OpenAccessDataSourceSnippets.vb region=InstanceBindingSnippet}}
 ````VB
 	
@@ -100,7 +94,7 @@ The above code snippet connects the __OpenAccessDataSource__ component to the __
 
 
 
-Binding to a method is more flexible than binding to a property, because it is possible to execute some        	custom business logic when retrieving data for the report. If the specified method has arguments, the        	__OpenAccessDataSource__ component allows you to pass parameters to those arguments via the __Parameters__ collection.        	For example, let us extend the __AdventureWorksEntities__ context using a partial class that defines the following       	method:       	
+Binding to a method is more flexible than binding to a property, because it is possible to execute some        	custom business logic when retrieving data for the report. If the specified method has arguments, the        	__OpenAccessDataSource__  component allows you to pass parameters to those arguments via the __Parameters__  collection.        	For example, let us extend the __AdventureWorksEntities__  context using a partial class that defines the following       	method:       	
 
 {{source=CodeSnippets\CS\API\Telerik\Reporting\OpenAccessDataSourceSnippets.cs region=SampleMethodSnippet}}
 ````C#
@@ -114,9 +108,6 @@ Binding to a method is more flexible than binding to a property, because it is p
 	        }
 	
 ````
-
-
-
 {{source=CodeSnippets\VB\API\Telerik\Reporting\OpenAccessDataSourceSnippets.vb region=SampleMethodSnippet}}
 ````VB
 	
@@ -130,7 +121,7 @@ Binding to a method is more flexible than binding to a property, because it is p
 
 
 
-You can bind the __OpenAccessDataSource__ component to that method with the following code snippet:       	
+You can bind the __OpenAccessDataSource__  component to that method with the following code snippet:       	
 
 {{source=CodeSnippets\CS\API\Telerik\Reporting\OpenAccessDataSourceSnippets.cs region=MethodBindingSnippet}}
 ````C#
@@ -147,9 +138,6 @@ You can bind the __OpenAccessDataSource__ component to that method with the foll
 	            report.DataSource = openAccessDataSource;
 	
 ````
-
-
-
 {{source=CodeSnippets\VB\API\Telerik\Reporting\OpenAccessDataSourceSnippets.vb region=MethodBindingSnippet}}
 ````VB
 	

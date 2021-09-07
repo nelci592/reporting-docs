@@ -17,16 +17,13 @@ The info object passed to the report engine to perform a search.
 ## 
 
 	
-````Example
-
-{
-"searchToken": "foo",
-"matchCase": false,
-"matchWholeWord": false,
-"useRegularExpressions": true
-}
-````
-
+          {
+            "searchToken": "foo",
+            "matchCase": false,
+            "matchWholeWord": false,
+            "useRegularExpressions": true
+          }
+        
 
 
 

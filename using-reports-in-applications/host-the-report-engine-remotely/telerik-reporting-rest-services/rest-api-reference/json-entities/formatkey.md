@@ -17,14 +17,11 @@ The document format and settings forming a key:
 ## 
 
 	
-````Example
-
-{
-‘format’: ‘HTML5’,
-‘deviceInfo’: { ‘UseSVG’: true }
-}
-````
-
+          {
+            ‘format’: ‘HTML5’,
+            ‘deviceInfo’: { ‘UseSVG’: true }
+          }
+        
 
 
 

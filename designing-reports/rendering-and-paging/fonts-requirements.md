@@ -16,11 +16,11 @@ Telerik Reporting engine uses GDI+ methods to create reports with native objects
 
 ## Requirements
 
-* .NET supports only __TrueType__ fonts. You can check your available fonts in __%windir%\fonts__;             
+* .NET supports only __TrueType__  fonts. You can check your available fonts in __%windir%\fonts__ ;             
 
 * The selected fonts should be considered with the text that will be visualized. Special glyphs and icons will require you to use a font with Unicode characters support like Arial Unicode MS.             
 
-* The Report Designer will load all TrueType fonts __installed on the machine__.               If in a Report Designer you open a Telerik Report that uses different than the available fonts, the Reporting Engine will replace the missing font with a default one;             
+* The Report Designer will load all TrueType fonts __installed on the machine__ .               If in a Report Designer you open a Telerik Report that uses different than the available fonts, the Reporting Engine will replace the missing font with a default one;             
 
 * Font styling like underline, bold, italic may not appear in all rendering formats, if the used font does not have the corresponding variation e.g. Arial Bold, Arial Bold Italic.               The IMAGE rendering is an exclusion, as the image is created by the Reporting engine that reads the report properties.             
 

@@ -26,9 +26,9 @@ The styling of the report items may be reused in stylesheets. If a report uses s
 
 ### Report Sections
 
-The __Telerik Report__ consists of several different sections that may contain report items.               Each report section represents specific area on the report page, and defines how to render the report items that belong to it. Every section is               an instance of the [ReportSectionBase](/reporting/api/Telerik.Reporting.ReportSectionBase) class.               The __Height__ property defines the space that a section occupies on the page. Other specific properties such as __PrintOnFirstPage__               and __PrintOnLastPage__ define the particular section's behavior.             
+The __Telerik Report__  consists of several different sections that may contain report items.               Each report section represents specific area on the report page, and defines how to render the report items that belong to it. Every section is               an instance of the [ReportSectionBase](/reporting/api/Telerik.Reporting.ReportSectionBase) class.               The __Height__  property defines the space that a section occupies on the page. Other specific properties such as __PrintOnFirstPage__                and __PrintOnLastPage__  define the particular section's behavior.             
 
-When a new Telerik Report is added to a project, it is initially divided into three sections - __PageHeader__, __Detail__               and __PageFooter__. The section type specifies how the items inside will be rendered, their rendering order and               how many times they will be rendered when the report is data bound.             
+When a new Telerik Report is added to a project, it is initially divided into three sections - __PageHeader__ , __Detail__                and __PageFooter__ . The section type specifies how the items inside will be rendered, their rendering order and               how many times they will be rendered when the report is data bound.             
 
 The following table presents a summary of the section types and their usage (in the default order of appearance in the report document):
 
@@ -53,7 +53,7 @@ Report Groups allow you to separate groups of data visually and to display intro
 
 Usually, the data that identifies the group will be displayed in a separate section at the beginning of the group, e.g. a group header.                The group footer is generally used to summarize the group data in a separate section at the end of the group.             
 
-The data within the report can be grouped by fields and expressions. Report groups are defined by adding __Group__               objects to the report’s __Groups__ collection. Report groups are always nested according to the order in the Groups               collection. To display summary group data one should use the __GroupHeaderSection__ and __GroupFooterSection__               that appear once for each group member at the beginning and the end, respectively. The __DetailSection__ displays report detail data and always appears               inside the innermost group.             
+The data within the report can be grouped by fields and expressions. Report groups are defined by adding __Group__                objects to the report’s __Groups__  collection. Report groups are always nested according to the order in the Groups               collection. To display summary group data one should use the __GroupHeaderSection__  and __GroupFooterSection__                that appear once for each group member at the beginning and the end, respectively. The __DetailSection__  displays report detail data and always appears               inside the innermost group.             
 
 ### Report Items
 

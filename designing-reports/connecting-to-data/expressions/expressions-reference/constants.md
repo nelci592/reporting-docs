@@ -14,7 +14,7 @@ position: 1
 
 ## Built-in constants
 
-__False__,           __True__, __null__.         
+__False__ ,           __True__ , __null__ .         
 
 ## Literal text
 
@@ -56,9 +56,9 @@ Some report item properties allow the usage of           [             Embedded 
 
 They are resolved to:
 
-*  __Integer__ if decimal point is not used - for example 1, 256, 65000
+*  __Integer__  if decimal point is not used - for example 1, 256, 65000
 
-*  __Decimal__ if decimal point is used - for example 1.0, 25.6
+*  __Decimal__  if decimal point is used - for example 1.0, 25.6
 
 Example:
 

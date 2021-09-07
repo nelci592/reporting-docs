@@ -29,7 +29,7 @@ With the HtmlTextBox report item, you can:
 For the full list with special entities like "?" and TAB and their expression, refer to this         [w3.org page](http://www.w3.org/TR/xhtml1/DTD/xhtml-special.ent).       
 
 >note  __Known Limitations:__ 
-* The HtmlTextBox works with the - __text formatting options only__ - .
+* The HtmlTextBox works with the -text formatting options only- .
 * The HtmlTextbox is rendered as plain text with no formatting in Excel.
 * RTL (Right to Left) is not supported.
 * The HyperLink (```<A>``` tag) is interactive (acts as an actual hyperlink) only under an HTML rendering extension. To add links in PDF, XLSX, DOCX, PPTX files               and HTML, XAML, IMAGE renderings for the different Report Viewers, you can use a[Hyperlink Action]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/actions/hyperlink-action%}).
@@ -106,13 +106,13 @@ The screenshot below shows an HtmlTextBox with the in-place editor active.
 
 The design time editor supports two modes:
 
-1. Interactive (__Design view__) - you can select a portion of the text and make it bold, change its font, size, color, etc.               using appropriate controls like comboboxes and buttons (WYSIWYG editor). Internally, the designer generates a               valid HTML source and stores it in the Value property of the item. Adding embedded expressions is possible, but               the entire HTML value cannot be an expression. You can switch to __HTML view__ at any time if needed.             
+1. Interactive (__Design view__ ) - you can select a portion of the text and make it bold, change its font, size, color, etc.               using appropriate controls like comboboxes and buttons (WYSIWYG editor). Internally, the designer generates a               valid HTML source and stores it in the Value property of the item. Adding embedded expressions is possible, but               the entire HTML value cannot be an expression. You can switch to __HTML view__  at any time if needed.             
 
    >note Pressing the Enter key inserts a new paragraph or new list item depending on the current context.                 Note that it does NOT insert ```<br />``` (new line). To insert new line, use the button on the toolbar)                 
 
   ![Html Text Box Design View](images/HtmlTextBox_DesignView.png)
 
-1. Expression (__Html view__) - the user enters raw HTML tags and text into the source editor. The value can be an expression or text               containing embedded expressions. The user can switch to __Design view__ unless the value is an expression.               
+1. Expression (__Html view__ ) - the user enters raw HTML tags and text into the source editor. The value can be an expression or text               containing embedded expressions. The user can switch to __Design view__  unless the value is an expression.               
 
   ![Html Text Box Html View](images/HtmlTextBox_HtmlView.png)
 

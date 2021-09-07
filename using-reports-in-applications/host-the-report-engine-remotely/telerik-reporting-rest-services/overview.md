@@ -39,7 +39,7 @@ To access these report generation assets, a client host issues a set of requests
 
 The following steps describe how the Reporting REST service serves a client's request:             
 
-1. The client of the service requests a report by a JSON object called a __client report source__.                 
+1. The client of the service requests a report by a JSON object called a __client report source__ .                 
 
 1. The service resolves the request to a                   [.NET  report source]({%slug telerikreporting/designing-reports/report-sources/overview%}). To do that, it uses a                   [REST Service Report Source Resolver]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-service-report-source-resolver/overview%}).                 
 

@@ -18,7 +18,7 @@ Telerik Reporting supports several approaches for installing the product.
 
 * [                 Using the Telerik NuGet private feed               ](https://nuget.telerik.com/nuget)−The Telerik Reporting NuGet packages contain the libraries for .NET Core projects, the Reporting Engine, and the implementation of the             [Reporting REST WebAPI-based service]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-web-api-implementation/overview%}) where you can use the packages             with the standard .NET 4.6.1 framework. The NuGet packages do not include design-time support. To install the Telerik Reporting NuGet packages, log into your             [Telerik account](http://www.telerik.com/account/default.aspx).           For more information on how to add a NuGet feed, refer to the             [official Microsoft documentation](https://www.visualstudio.com/en-us/docs/package/nuget/consume).           
 
-* Using the MSI installer−MSI files handle the automatic local installation of the product and its storing into a             __Program Files__ > __Progress__ folder. They also create the necessary             virtual folders and projects, and provide all required files for developing with Telerik Reporting.           
+* Using the MSI installer−MSI files handle the automatic local installation of the product and its storing into a             __Program Files__  > __Progress__  folder. They also create the necessary             virtual folders and projects, and provide all required files for developing with Telerik Reporting.           
 
 ## Prerequisites
 
@@ -30,9 +30,9 @@ To install Telerik Reporting through the MSI automatic installer file:
 
 1. Log into your               [Telerik account](https://www.telerik.com/account).             
 
-1. Click the __Downloads__ tab to view the available trial and commercial products.             
+1. Click the __Downloads__  tab to view the available trial and commercial products.             
 
-1. Select the __Telerik Reporting__ product.             
+1. Select the __Telerik Reporting__  product.             
 
 1. From the next page, download the MSI installation and the documentation files. The source code is available for download only for commercial-license holders.             
 
@@ -44,9 +44,9 @@ To access internal builds:
 
 1. Log into your               [Telerik account](https://www.telerik.com/account).             
 
-1. For the latest internal builds, navigate to __Latest Internal Build__ under __Downloads__.               For internal builds from earlier releases, select the respective Telerik Reporting version.             
+1. For the latest internal builds, navigate to __Latest Internal Build__  under __Downloads__ .               For internal builds from earlier releases, select the respective Telerik Reporting version.             
 
->note The  __Downloads__  page lists previously downloaded products. For any missing products or product versions,             contact the Sales team through the support ticketing system by submitting a              __[                   General Feedback                 ](https://www.telerik.com/account/support-tickets/general-feedback)__  thread.           
+>note The  __Downloads__  page lists previously downloaded products. For any missing products or product versions,             contact the Sales team through the support ticketing system by submitting a              __General Feedback General Feedbackhttps://www.telerik.com/account/support-tickets/general-feedback_blank__  thread.           
 
 
 ## Installing Telerik Reporting
@@ -57,17 +57,17 @@ To access internal builds:
 
 1. In the next customization dialog, select the desired features.             
 
-   + If Telerik Reporting does not locate a local SQL server instance on your machine or if your SQL browser service is stopped, the examples from the                   __Examples__ dialog option will be installed but the configuration files for the application will not have valid connection strings.                   However, you can still access the working demos on the                   [                       Telerik Reporting Demos page                     ](http://demos.telerik.com/reporting).                 
+   + If Telerik Reporting does not locate a local SQL server instance on your machine or if your SQL browser service is stopped, the examples from the                   __Examples__  dialog option will be installed but the configuration files for the application will not have valid connection strings.                   However, you can still access the working demos on the                   [                       Telerik Reporting Demos page                     ](http://demos.telerik.com/reporting).                 
 
-   + To set up the examples and the used connection string, select __Examples Setup__. All local SQL Server 2005+ instances are supported.                 
+   + To set up the examples and the used connection string, select __Examples Setup__ . All local SQL Server 2005+ instances are supported.                 
 
    + The examples use the MS SQL Server [AdventureWorks database](http://msdn.microsoft.com/en-us/library/ms124659%28SQL.100%29.aspx).                   Unless already available on your machine, the AdventureWorks database will also be deployed locally.                   To recover it,                   [download AdventureWorks from codeplex](http://msftdbprodsamples.codeplex.com/releases/view/4004).                 
 
-   + Alternatively, you can install AdventureWorks by manually executing the SQL script from the installer. To use this option, navigate to                   __[InstallDir]/Examples/Data/AdventureWorks OLTP__.                   For the script to run correctly, uncomment the `SET @data_path = 'C:\Program Files\Microsoft SQL Server\90\Tools\Samples\AdventureWorks OLTP\';`                   statement and specify the correct path to the CVS data files which are in the same folder as the SQL script file.                   
+   + Alternatively, you can install AdventureWorks by manually executing the SQL script from the installer. To use this option, navigate to                   __[InstallDir]/Examples/Data/AdventureWorks OLTP__ .                   For the script to run correctly, uncomment the `SET @data_path = 'C:\Program Files\Microsoft SQL Server\90\Tools\Samples\AdventureWorks OLTP\';`                   statement and specify the correct path to the CVS data files which are in the same folder as the SQL script file.                   
 
   ![](images/installWizard2.png)
 
-1. (Applicable only if __Examples Setup__ was selected.) In the __Setup Wizard__ dialog, select your               __Database Server__ and the authentication for the connection.               The Wizard detects all running instances and lists them in the input field.             
+1. (Applicable only if __Examples Setup__  was selected.) In the __Setup Wizard__  dialog, select your               __Database Server__  and the authentication for the connection.               The Wizard detects all running instances and lists them in the input field.             
 
    >note To enable the Wizard to detect all running SQL Server instances, run the                 [SQL Server Browser Service](http://technet.microsoft.com/en-us/library/ms181087(v=sql.105).aspx).                 
 
@@ -83,15 +83,15 @@ By default, the Wizard installs Telerik Reporting in the following locations:
 
 The assemblies targeting different versions of .NET are placed in separate folders, as shown in the list below:         
 
-* .NET Framework - *\Bin*
+* .NET Framework - *\Bin* 
 
-* .NET Standard - *\Bin\netstandard2.0*
+* .NET Standard - *\Bin\netstandard2.0* 
 
-* .NET Core - *\Bin\netcoreapp3.1*
+* .NET Core - *\Bin\netcoreapp3.1* 
 
-* .NET 5 - *\Bin\net5.0* and *\Bin\net5.0-windows*
+* .NET 5 - *\Bin\net5.0*  and *\Bin\net5.0-windows* 
 
-* .NET 6 - *\Bin\net6.0* and *\Bin\net6.0-windows*
+* .NET 6 - *\Bin\net6.0*  and *\Bin\net6.0-windows* 
 
 >important Since .NET 6 is currently available as a Preview, compiling a .NET 6 application requires installing the latest             [.NET 6 SDK](https://dotnet.microsoft.com/download/dotnet/6.0) and using              [Visual Studio 2019 Preview](https://visualstudio.microsoft.com/vs/preview/)            , or allowing to use the previews of the .NET SDK in the  __Tools/Environment/Preview Features__  in Visual Studio 2019.           
 

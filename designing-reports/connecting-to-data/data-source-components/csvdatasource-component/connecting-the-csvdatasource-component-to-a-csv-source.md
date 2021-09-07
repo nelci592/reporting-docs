@@ -38,9 +38,6 @@ Optional settings for the proper functioning of the CsvDastaSource you need to c
 	            csvDataSource.EscapeFormat = CsvEscapeFormat.Quotes;
 	            csvDataSource.Quote = '"';
 ````
-
-
-
 {{source=CodeSnippets\VB\API\Telerik\Reporting\CsvDataSourceSnippets.vb region=ConfiguringCsvDataSource_RequiredSetting}}
 ````VB
 	        Dim csvDataSource = New CsvDataSource()
@@ -65,9 +62,6 @@ Optional setting:
 	            csvDataSource.ThousandSeparator = " ";
 	            csvDataSource.DateTimeFormat = "MM/dd/yyyy hh:mm";
 ````
-
-
-
 {{source=CodeSnippets\VB\API\Telerik\Reporting\CsvDataSourceSnippets.vb region=ConfiguringCsvDataSource_OptionalSetting}}
 ````VB
 	        csvDataSource.ConsecutiveFieldSeparatorsAsOne = False

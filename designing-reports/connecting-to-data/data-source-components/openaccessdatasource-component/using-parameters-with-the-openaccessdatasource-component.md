@@ -12,7 +12,7 @@ position: 2
 
 
 
-This section discusses more in-depth how to pass parameters to a method of the __OpenAccessContext__ with         the __OpenAccessDataSource__ component. The provided examples and code snippets assume an existing         __Telerik Data Access Model__ of the __Adventure Works__ sample database with the following structure:         
+This section discusses more in-depth how to pass parameters to a method of the __OpenAccessContext__  with         the __OpenAccessDataSource__  component. The provided examples and code snippets assume an existing         __Telerik Data Access Model__  of the __Adventure Works__  sample database with the following structure:         
 
   ![](images/DataSources/OpenAccessDataSourceAdventureWorksEntityModel.png)
 
@@ -21,7 +21,7 @@ This section discusses more in-depth how to pass parameters to a method of the _
 
 ## 
 
-The __OpenAccessDataSource__ component can call a method of the __OpenAccessContext__ based on the name of the           method, and additionally based on the arguments which make the signature of that method. For example,           let us extend the __AdventureWorksEntities__ context using a partial class that defines the following method:           
+The __OpenAccessDataSource__  component can call a method of the __OpenAccessContext__  based on the name of the           method, and additionally based on the arguments which make the signature of that method. For example,           let us extend the __AdventureWorksEntities__  context using a partial class that defines the following method:           
 
 {{source=CodeSnippets\CS\API\Telerik\Reporting\OpenAccessDataSourceSnippets.cs region=SampleMethodSnippet}}
 ````C#
@@ -35,9 +35,6 @@ The __OpenAccessDataSource__ component can call a method of the __OpenAccessCont
 	        }
 	
 ````
-
-
-
 {{source=CodeSnippets\VB\API\Telerik\Reporting\OpenAccessDataSourceSnippets.vb region=SampleMethodSnippet}}
 ````VB
 	
@@ -51,7 +48,7 @@ The __OpenAccessDataSource__ component can call a method of the __OpenAccessCont
 
 
 
-To call the above method specify its name to the __ObjectContextMember__ property and define a data source parameter           in the __Parameters__ collection for each method argument. The names and types of the data source parameters           must match exactly the names and types of the corresponding method arguments otherwise the __OpenAccessDataSource__           component will raise an exception at runtime. The following code snippet illustrates how to pass parameters           to the previous method programmatically:           
+To call the above method specify its name to the __ObjectContextMember__  property and define a data source parameter           in the __Parameters__  collection for each method argument. The names and types of the data source parameters           must match exactly the names and types of the corresponding method arguments otherwise the __OpenAccessDataSource__            component will raise an exception at runtime. The following code snippet illustrates how to pass parameters           to the previous method programmatically:           
 
 {{source=CodeSnippets\CS\API\Telerik\Reporting\OpenAccessDataSourceSnippets.cs region=MethodBindingSnippet}}
 ````C#
@@ -68,9 +65,6 @@ To call the above method specify its name to the __ObjectContextMember__ propert
 	            report.DataSource = openAccessDataSource;
 	
 ````
-
-
-
 {{source=CodeSnippets\VB\API\Telerik\Reporting\OpenAccessDataSourceSnippets.vb region=MethodBindingSnippet}}
 ````VB
 	
@@ -108,9 +102,6 @@ When declaring a data source parameter you can specify a default value for that 
 	            report.ReportParameters.Add("Price", Telerik.Reporting.ReportParameterType.Float, 100);
 	
 ````
-
-
-
 {{source=CodeSnippets\VB\API\Telerik\Reporting\OpenAccessDataSourceSnippets.vb region=ParameterBindingSnippet}}
 ````VB
 	

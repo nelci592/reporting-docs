@@ -41,9 +41,6 @@ In the sample below we add two reports:
 	            glossaryReportSource.Uri = "Reports\\Glossary.trdp";
 	            reportBook.ReportSources.Add(glossaryReportSource);
 ````
-
-
-
 {{source=CodeSnippets\VB\API\Telerik\Reporting\ReportBookSnippets.vb region=CreateReportBook}}
 ````VB
 	        Dim reportBook = New ReportBook()

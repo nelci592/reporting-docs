@@ -15,15 +15,12 @@ position: 8
 ## Request
 
 	
-````URI Template
-
-DELETE /api/reports/clients/{clientId}/instances/{instanceId}/documents/{documentId}
-````
+          DELETE /api/reports/clients/{clientId}/instances/{instanceId}/documents/{documentId}
+        
 
 
 
-
-__Path parameters__
+__Path parameters__ 
 
 
 | Name | Type | Description |
@@ -50,19 +47,13 @@ __Path parameters__
 ## Sample
 
 	
-````Request Message
-
-DELETE /api/reports/clients/2c3d/instances/4d3c/documents/5x3a HTTP/1.1
-````
-
+          DELETE /api/reports/clients/2c3d/instances/4d3c/documents/5x3a HTTP/1.1
+        
 
 
 
 	
-````Response Message
-
-HTTP/1.1 200 OK
-````
-
+          HTTP/1.1 200 OK
+        
 
 

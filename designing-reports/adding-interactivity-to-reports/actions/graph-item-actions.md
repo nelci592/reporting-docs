@@ -12,9 +12,9 @@ position: 6
 
 
 
-The Graph item supports actions on the axis labels defined by the Graph's category groups (__Graph.CategoryGroups.Action__),         and on series' data points (__Graph.SeriesGroups.Action__).       
+The Graph item supports actions on the axis labels defined by the Graph's category groups (__Graph.CategoryGroups.Action__ ),         and on series' data points (__Graph.SeriesGroups.Action__ ).       
 
-The labels for an axis with __CategoryScale__ are produced by the graph's category groups.         They are layout in levels based on the corresponding category group from the group hierarchy.         Graph groups that are part of the         [CategoryGroups](/reporting/api/Telerik.Reporting.Graph#Telerik_Reporting_Graph_CategoryGroups)         hierarchy support interactive actions.         The added actions will make the graph axis labels interactive (clickable).       
+The labels for an axis with __CategoryScale__  are produced by the graph's category groups.         They are layout in levels based on the corresponding category group from the group hierarchy.         Graph groups that are part of the         [CategoryGroups](/reporting/api/Telerik.Reporting.Graph#Telerik_Reporting_Graph_CategoryGroups)         hierarchy support interactive actions.         The added actions will make the graph axis labels interactive (clickable).       
 
 >note When the axis uses a NumericalScale, LogarithmicScale, DateTimeScale, the labels for an axis are produced           automatically based on the Scale properties. In such case, only data points are clickable           after setting the Graph.CategoryGroups.Action property.         
 
@@ -27,13 +27,13 @@ The easiest way to setup drill-down graph categories is to use the Graph Wizard.
 
 ###
 
-1. Select the Graph item.    The selected graph properties are listed in the __Property Browser__.                 
+1. Select the Graph item.    The selected graph properties are listed in the __Property Browser__ .                 
 
-1. In the __CategoryGroups__ property, click the                   __Edit Collection (…) button__. The GraphGroup Collection Editor opens.                 
+1. In the __CategoryGroups__  property, click the                   __Edit Collection (…) button__ . The GraphGroup Collection Editor opens.                 
 
-1. Select the category group you want to add an action to. It should contain child group(s)                   that will be used as toggle visibility target.                     The selected graph group properties are listed in the __Property Browser__                   on the left.                 
+1. Select the category group you want to add an action to. It should contain child group(s)                   that will be used as toggle visibility target.                     The selected graph group properties are listed in the __Property Browser__                    on the left.                 
 
-1. In the __Action__ property, click the                   __Edit Collection (…) button__. The Edit Action dialog opens.                 
+1. In the __Action__  property, click the                   __Edit Collection (…) button__ . The Edit Action dialog opens.                 
 
 1. Setup the desired action.                 
 

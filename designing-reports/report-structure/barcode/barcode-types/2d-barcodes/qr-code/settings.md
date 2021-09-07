@@ -16,7 +16,7 @@ This article explains the specific QR code settings.
 
 ## Version
 
-This is an integer value, in the range from __1__ to __40__, representing  	        the desired barcode version. Usually, higher versions are used do accommodate larger amounts of data. 	        If this property is not set, the encoder internally calculates the lowest possible version and uses it instead.         
+This is an integer value, in the range from __1__  to __40__ , representing  	        the desired barcode version. Usually, higher versions are used do accommodate larger amounts of data. 	        If this property is not set, the encoder internally calculates the lowest possible version and uses it instead.         
 
 ## Error Correction Level
 
@@ -43,7 +43,7 @@ Essentially, both the FNC1 property and the ApplicationIndicator data is applied
 ## Examples
 
 {{source=CodeSnippets\CS\API\Telerik\Reporting\BarcodeSnippets.cs region=Barcode_QRCodeEncoder_Settings}}
-````C#
+````cs
 	            var encoder = new Telerik.Reporting.Barcodes.QRCodeEncoder();
 	
 	            encoder.Version = 10;
@@ -55,11 +55,8 @@ Essentially, both the FNC1 property and the ApplicationIndicator data is applied
 	
 	            this.barcode1.Encoder = encoder;
 ````
-
-
-
 {{source=CodeSnippets\VB\API\Telerik\Reporting\BarcodeSnippets.vb region=Barcode_QRCodeEncoder_Settings}}
-````VB.NET
+````vbnet
 	        Dim encoder = New Telerik.Reporting.Barcodes.QRCodeEncoder()
 	
 	        encoder.Version = 10

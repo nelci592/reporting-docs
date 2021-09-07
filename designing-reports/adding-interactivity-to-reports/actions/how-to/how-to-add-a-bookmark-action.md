@@ -14,16 +14,16 @@ position: 1
 
 ## Adding a bookmark action using the Report Designer
 
-1. In Design view, right-click the report item to which you want to add a link and then click __Properties__ .
+1. In Design view, right-click the report item to which you want to add a link and then click __Properties__  .
 
-1. In The Properties dialog box for that report item, click __Action__ .
+1. In The Properties dialog box for that report item, click __Action__  .
 
-1. Select __Navigate to bookmark__ . An additional section appears in the dialog box for this option.
+1. Select __Navigate to bookmark__  . An additional section appears in the dialog box for this option.
 
-1. In the __Target bookmark by Value__ textbox, type a bookmark or an expression that 
+1. In the __Target bookmark by Value__  textbox, type a bookmark or an expression that 
 	evaluates to a bookmark.
 
-1. Click __OK__ 
+1. Click __OK__  
 
 1. To test the link, run the report and click the report item with the applied Action. For TextBox items, it is
 	helpful to change the style of the text to indicate to the user that the text is a link. For example, 
@@ -40,9 +40,6 @@ position: 1
 	            textBox1.Action = bookmarkAction1;
 	
 ````
-
-
-
 {{source=CodeSnippets\VB\API\Telerik\Reporting\ActionSnippets.vb region=AddNewNavigateToBookMarkSnippet}}
 ````VB
 	

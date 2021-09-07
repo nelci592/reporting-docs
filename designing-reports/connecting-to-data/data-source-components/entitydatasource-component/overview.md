@@ -12,19 +12,19 @@ position: 0
 
 
 
-The __EntityDataSource__ component enables data items to connect to an [ADO.NET Entity Data Model](https://docs.microsoft.com/en-us/dotnet/framework/data/adonet/entity-data-model).      	This allows seamless integration of __Telerik Reporting__ with applications or web sites that utilize      	the [ADO.NET Entity Framework](https://docs.microsoft.com/en-us/dotnet/framework/data/adonet/ef/overview). There are several main benefits when using the __EntityDataSource__      	component for connecting to an __Entity Data Model__:
+The __EntityDataSource__  component enables data items to connect to an [ADO.NET Entity Data Model](https://docs.microsoft.com/en-us/dotnet/framework/data/adonet/entity-data-model).      	This allows seamless integration of __Telerik Reporting__  with applications or web sites that utilize      	the [ADO.NET Entity Framework](https://docs.microsoft.com/en-us/dotnet/framework/data/adonet/ef/overview). There are several main benefits when using the __EntityDataSource__       	component for connecting to an __Entity Data Model__ :
 
-*  __Dedicated design-time support:__ the __EntityDataSource__ component has its own set of design-time editors,
-	tool windows, and a configuration wizard. In addition to this, __EntityDataSource__ adds support for entity schema
-	in __Data Explorer__ and live data preview of the report in __Report Designer__ .
+*  __Dedicated design-time support:__  the __EntityDataSource__  component has its own set of design-time editors,
+	tool windows, and a configuration wizard. In addition to this, __EntityDataSource__  adds support for entity schema
+	in __Data Explorer__  and live data preview of the report in __Report Designer__  .
 
-*  __Configuring database connectivity:__ the __EntityDataSource__ component offers an additional level of 
+*  __Configuring database connectivity:__  the __EntityDataSource__  component offers an additional level of 
 	control over the database connectivity of the Entity Data Model. You can specify a connection string or a named 
-	connection from the configuration file of the main application or web site. That ensures __EntityDataSource__ can 
+	connection from the configuration file of the main application or web site. That ensures __EntityDataSource__  can 
 	establish a valid database connection both at design-time and when running the report in production.
 
-*  __Maintaining ObjectContext/DbContext lifecycle:__ the __EntityDataSource__ component allows 
-	the option to maintain the entire lifecycle of the __ObjectContext__ or __DbContext__ automatically. It can create its own
+*  __Maintaining ObjectContext/DbContext lifecycle:__  the __EntityDataSource__  component allows 
+	the option to maintain the entire lifecycle of the __ObjectContext__  or __DbContext__  automatically. It can create its own
     instance of one of the two contexts internally, keep it alive for the duration of the report generation process,
     and then destroy it automatically when it is no longer needed by the reporting engine.
 
@@ -38,12 +38,7 @@ partial class AdventureWorksContext
 public AdventureWorksContext(string connectionString) : base(connectionString) {}
 }
 ````
-
-
-
-
-	
-    ````VB
+````VB
 
 Partial Class AdventureWorksContext
 Public Sub New(connectionString As String)

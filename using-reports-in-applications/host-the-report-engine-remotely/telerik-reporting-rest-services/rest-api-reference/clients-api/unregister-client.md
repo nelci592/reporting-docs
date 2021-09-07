@@ -15,15 +15,12 @@ position: 1
 ## Request
 
 	
-````URI Template
-
-DELETE /api/reports/clients/{clientId}
-````
+          DELETE /api/reports/clients/{clientId}
+        
 
 
 
-
-__Path parameters__
+__Path parameters__ 
 
 
 | Name | Type | Description |
@@ -47,20 +44,14 @@ __Path parameters__
 ## Sample
 
 	
-````Request Message
-
-DELETE /api/reports/clients/2c3d HTTP/1.1
-````
-
+          DELETE /api/reports/clients/2c3d HTTP/1.1
+        
 
 
 
 	
-````Response Message
-
-HTTP/1.1 204 NoContent
-````
-
+          HTTP/1.1 204 NoContent
+        
 
 
 

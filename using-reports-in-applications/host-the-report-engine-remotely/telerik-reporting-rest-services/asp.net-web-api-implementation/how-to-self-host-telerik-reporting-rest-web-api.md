@@ -23,7 +23,7 @@ position: 3
 
 1. Install the               [Microsoft.AspNet.WebApi.SelfHost 4.0.30506](http://www.nuget.org/packages/Microsoft.AspNet.WebApi.SelfHost/4.0.30506)               NuGet package;             
 
-    >tip The Reporting REST WebAPI Service is built against WebAPI 1. In case you have to use  __newer version of Microsoft.AspNet.WebApi.SelfHost (e.g. WebAPI 2) __                  you have to redirect the System.Web.Http and System.Net.Http.Formatting to their newer version.                 To do this, add the following bindingRedirects to your app.config and replace 5.1.0.0 with the exact version:               
+    >tip The Reporting REST WebAPI Service is built against WebAPI 1. In case you have to use  __newer version of Microsoft.AspNet.WebApi.SelfHost (e.g. WebAPI 2)__                  you have to redirect the System.Web.Http and System.Net.Http.Formatting to their newer version.                 To do this, add the following bindingRedirects to your app.config and replace 5.1.0.0 with the exact version:               
 
 	
     ````xml

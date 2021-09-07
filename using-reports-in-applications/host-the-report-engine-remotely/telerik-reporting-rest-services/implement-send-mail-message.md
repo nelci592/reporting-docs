@@ -30,9 +30,6 @@ This tutorial elaborates how to implement the SendMailMessage method of the [Rep
 	            return HttpStatusCode.OK;
 	        }
 ````
-
-
-
 {{source=CodeSnippets\MvcVB\Controllers\ReportsController.vb region=SendMailMessage_Implementation}}
 ````VB
 	    Protected Overrides Function SendMailMessage(ByVal mailMessage As MailMessage) As HttpStatusCode

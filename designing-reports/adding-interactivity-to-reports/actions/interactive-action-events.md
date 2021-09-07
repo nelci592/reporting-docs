@@ -12,13 +12,13 @@ position: 8
 
 
 
-To help developers to make their reporting experience more flexible, responsive and customizable, the report viewers         provide event handlers for three types of events that are associated with interactive actions – __Executing__,         __Enter__ and __Leave__.       
+To help developers to make their reporting experience more flexible, responsive and customizable, the report viewers         provide event handlers for three types of events that are associated with interactive actions – __Executing__ ,         __Enter__  and __Leave__ .       
 
-__InteractiveActionExecuting__ event is raised when an interactive action is being triggered, but not yet executed. This provides the ability to cancel the event execution due to some condition.       
+__InteractiveActionExecuting__  event is raised when an interactive action is being triggered, but not yet executed. This provides the ability to cancel the event execution due to some condition.       
 
-__InteractiveActionEnter__ event is raised when the mouse cursor enters the area of a report item that has an interactive action defined.       
+__InteractiveActionEnter__  event is raised when the mouse cursor enters the area of a report item that has an interactive action defined.       
 
-__InteractiveActionLeave__ event is raised when the mouse cursor leaves the area of a report item that has an interactive action defined.       
+__InteractiveActionLeave__  event is raised when the mouse cursor leaves the area of a report item that has an interactive action defined.       
 
 All the events provide arguments that contain a reference to the underlying         [IAction](/reporting/api/Telerik.Reporting.Processing.IAction) instance         and its properties, evaluated during report processing.       
 

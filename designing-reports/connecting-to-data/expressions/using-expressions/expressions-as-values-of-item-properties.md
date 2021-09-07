@@ -16,19 +16,19 @@ By default the report items’ properties are strongly typed. Anyway 		you can u
 
 This expression:
 
-__='Hi Mr.' + Fields.LastName + ', ' + Fields.FirstName + '!'__
+__='Hi Mr.' + Fields.LastName + ', ' + Fields.FirstName + '!'__ 
 
 when evaluated will result in:
 
-__Hi Mr. Smith, John!__
+__Hi Mr. Smith, John!__ 
 
 If you want part of the expression to be put on another line you have to insert a new line character in a string literal. For example here is how the expresion should look       in the [Expression Editor]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/edit-expression-dialog%}):     
 
-__='Hi Mr.' + Fields.LastName + ', ' + Fields.FirstName + '!__
+__='Hi Mr.' + Fields.LastName + ', ' + Fields.FirstName + '!__ 
 
-__           How are you today?'         __
+__How are you today?'__ 
 
-On the design surface expressions are usually displayed surrounded 		by square brackets ([]). For example, the expression __=Fields.PersonID__ 		when used in __TextBox.Value__ property would appear 		as __[=Fields.PersonID]__.
+On the design surface expressions are usually displayed surrounded 		by square brackets ([]). For example, the expression __=Fields.PersonID__  		when used in __TextBox.Value__  property would appear 		as __[=Fields.PersonID]__ .
 
 The following objects and properties support expressions as 		property values:
 

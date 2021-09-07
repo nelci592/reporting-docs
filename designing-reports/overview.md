@@ -12,7 +12,7 @@ position: 0
 
 
 
-To help you in creating effective reports, the __Telerik Reporting__ package provides three different implementations of a         [complete graphical report designer]({%slug telerikreporting/designing-reports/report-designer-tools/overview%}). Depending on your requirements, you can choose between         a [standalone desktop application]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview%}),          a [web report designer]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview%}),          or a [report designer that runs in Visual Studio]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/overview%}).       
+To help you in creating effective reports, the __Telerik Reporting__  package provides three different implementations of a         [complete graphical report designer]({%slug telerikreporting/designing-reports/report-designer-tools/overview%}). Depending on your requirements, you can choose between         a [standalone desktop application]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview%}),          a [web report designer]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview%}),          or a [report designer that runs in Visual Studio]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/overview%}).       
 
 This document presents some general report designing tips that you can apply regardless of which report designer you use.        
 
@@ -48,9 +48,9 @@ This document presents some general report designing tips that you can apply reg
 
 * Use arrow keys to adjust the position and size of selected items on the design surface. For example, the following key combinations are very useful:             
 
-   + __Arrow keys__ Move the selected report item.                 
+   + __Arrow keys__  Move the selected report item.                 
 
-   + __Shift + Arrow keys__ Increase or decrease the size of the selected report item.                 
+   + __Shift + Arrow keys__  Increase or decrease the size of the selected report item.                 
 
 * To add multiple items to a Table cell, first add a [Panel]({%slug telerikreporting/designing-reports/report-structure/panel%}), and then add the items.             By default, each Table cell contains a [TextBox]({%slug telerikreporting/designing-reports/report-structure/textbox%}).                When you add a [Panel]({%slug telerikreporting/designing-reports/report-structure/panel%}) to a cell,                the [Panel]({%slug telerikreporting/designing-reports/report-structure/panel%}) replaces the [TextBox]({%slug telerikreporting/designing-reports/report-structure/textbox%}).           
 

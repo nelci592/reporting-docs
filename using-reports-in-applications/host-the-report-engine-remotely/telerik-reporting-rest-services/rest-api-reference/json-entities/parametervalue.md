@@ -17,14 +17,11 @@ Represents a single value of the parameter available values.
 ## 
 
 	
-````Example
-
-{
-‘name’: ‘Sofia’,
-‘value’: 1
-}
-````
-
+          {
+            ‘name’: ‘Sofia’,
+            ‘value’: 1
+          }
+        
 
 
 

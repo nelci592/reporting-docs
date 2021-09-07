@@ -30,7 +30,7 @@ The dialog offers the available report sources, which are:
 
   ![reportsource-dialog-winforms-viewer](images/reportsource-dialog-winforms-viewer.png)
 
-When the __Report server__ option is selected, the dialog will try to connect to a           [Telerik Report Server](http://docs.telerik.com/report-server/introduction)           instance using the connection details, provided by the report viewer. In case the connection succeeds, the dialog will read the categories and report names that are accessible           to the user and populate the editor fields:           
+When the __Report server__  option is selected, the dialog will try to connect to a           [Telerik Report Server](http://docs.telerik.com/report-server/introduction)           instance using the connection details, provided by the report viewer. In case the connection succeeds, the dialog will read the categories and report names that are accessible           to the user and populate the editor fields:           
 
   ![reportsource-dialog-html 5webforms-viewer](images/reportsource-dialog-html5webforms-viewer.png)
 

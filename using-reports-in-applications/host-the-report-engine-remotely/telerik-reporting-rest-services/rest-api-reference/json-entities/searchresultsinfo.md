@@ -17,15 +17,12 @@ The info object that contains the search results returned from the engine.
 ## 
 
 	
-````Example
-
-{
-"description": "Quarterly Sales Dashboard for 2003",
-"id": "a082030a03fa4e349abe183d161a35ea",
-"page": 1
-}
-````
-
+          {
+          "description": "Quarterly Sales Dashboard for 2003",
+          "id": "a082030a03fa4e349abe183d161a35ea",
+          "page": 1
+          }
+        
 
 
 

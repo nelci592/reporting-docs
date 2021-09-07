@@ -24,4 +24,3 @@ Returns: integer:
             var currentPage = reportViewer.currentPage();
 ````
 
-

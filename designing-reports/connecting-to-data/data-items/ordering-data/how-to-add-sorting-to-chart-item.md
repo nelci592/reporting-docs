@@ -46,9 +46,6 @@ For each sort expression, follow these steps:
 	            chart1.Sortings.Add(sorting1);
 	
 ````
-
-
-
 {{source=CodeSnippets\VB\API\Telerik\Reporting\ChartSnippets.vb region=AddNewSortSnippet}}
 ````VB
 	

@@ -14,7 +14,7 @@ position: 3
 
 ## 
 
-In the report viewing application you can populate the values of          __ReportParameters__ collection members prior to displaying the report.
+In the report viewing application you can populate the values of          __ReportParameters__  collection members prior to displaying the report.
 
 {{source=CodeSnippets\CS\API\Telerik\Reporting\Processing\ParameterSnippets.cs region=Pass_ReportParameter}}
 ````C#
@@ -23,9 +23,6 @@ In the report viewing application you can populate the values of          __Repo
 	            report.ReportParameters["ManagerID"].Value = "123";
 	
 ````
-
-
-
 {{source=CodeSnippets\VB\API\Telerik\Reporting\Processing\ParameterSnippets.vb region=Pass_ReportParameter}}
 ````VB
 	
@@ -43,11 +40,11 @@ At runtime you can access the report parameters through the          [Telerik.Re
 
 ##Example:
 
-1. Create a __Telerik Report__ 
+1. Create a __Telerik Report__  
 
 1. Use the instructions from the[How to: Connect to a SQL Server Database Using Stored Procedure]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/sqldatasource-component/-how-to/how-to-connect-to-a-sql-server-database-using-stored-procedure%})
 
-1. Leave the Value for the __@ManagerID__ data source parameter empty and finish the wizard.
+1. Leave the Value for the __@ManagerID__  data source parameter empty and finish the wizard.
 
 1. Create the following layout for the report  
 
@@ -60,7 +57,7 @@ At runtime you can access the report parameters through the          [Telerik.Re
 
 1. Set its Visible property to True.
 
-1. Expand the __AvailableValues__ and bind it to __SqlDataSource__ component with
+1. Expand the __AvailableValues__  and bind it to __SqlDataSource__  component with
   the following query:
 
 {{source=CodeSnippets\CS\API\Telerik\Reporting\Processing\ParametersSqlDataSourceQuery.sql}}
@@ -74,16 +71,16 @@ At runtime you can access the report parameters through the          [Telerik.Re
 
 
 
-1. Set the __ValueMember__ to __= Fields.ManagerID__ .
+1. Set the __ValueMember__  to __= Fields.ManagerID__  .
 
-1. Set the __DisplayMember__ to __= Fields.Name__ .
+1. Set the __DisplayMember__  to __= Fields.Name__  .
 
-1. Add grouping for the report with __= Fields.ManagerID__ as grouping expression.
+1. Add grouping for the report with __= Fields.ManagerID__  as grouping expression.
 
 1. Wire the[NeedDataSource event]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/using-the-needdatasource-event-to-connect-data%})
 
-1. In the report.cs file set the __DataSource__ property
-   to __null__ ( __Nothing__ in VB.NET) 
+1. In the report.cs file set the __DataSource__  property
+   to __null__  ( __Nothing__  in VB.NET) 
    so that NeedDataSource event is fired.
 
 1. Add the following code to the NeedDataSource event handler:
@@ -105,9 +102,6 @@ At runtime you can access the report parameters through the          [Telerik.Re
 	            }
 	
 ````
-
-
-
 {{source=CodeSnippets\VB\API\Telerik\Reporting\Processing\ParameterSnippets.vb region=Pass_Parameter_In_NeedDataSource}}
 ````VB
 	
@@ -130,7 +124,7 @@ At runtime you can access the report parameters through the          [Telerik.Re
 1. [Display the Report]({%slug telerikreporting/quickstart/displaying-reports-in-winforms-report-viewer%})
 
 1. Select a parameter from the available values in the parameter editor 
-   and click __Preview__ .  
+   and click __Preview__  .  
 
   ![](images/DesignParameters009.png)
 

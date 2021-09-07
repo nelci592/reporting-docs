@@ -15,15 +15,12 @@ position: 1
 ## Request
 
 	
-````URI Template
-
-GET /api/reports/clients/{clientId}/instances/{instanceId}/documents/{documentId}/info
-````
+          GET /api/reports/clients/{clientId}/instances/{instanceId}/documents/{documentId}/info
+        
 
 
 
-
-__Path parameters__
+__Path parameters__ 
 
 
 | Name | Type | Description |
@@ -48,32 +45,26 @@ __Path parameters__
 
 
 
-__Response Body__
+__Response Body__ 
 
 [DocumentInfo]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/json-entities/documentinfo%})
 
 ## Sample
 
 	
-````Request Message
-
-GET /api/reports/clients/2c3d/instances/4d3c/documents/5x3a/info HTTP/1.1
-````
-
+          GET /api/reports/clients/2c3d/instances/4d3c/documents/5x3a/info HTTP/1.1
+        
 
 
 
 	
-````Response Message
+          HTTP/1.1 202 Accepted
 
-HTTP/1.1 202 Accepted
-
-{
-‘documentReady’: false,
-‘PageCount’: 2,
-‘DocumentMapAvailable’: false,
-}
-````
-
+          {
+            ‘documentReady’: false,
+            ‘PageCount’: 2,
+            ‘DocumentMapAvailable’: false,
+          }
+        
 
 

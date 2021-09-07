@@ -70,9 +70,6 @@ In the code snippet below a DataSet object is filled with three tables and then 
 	        }
 	
 ````
-
-
-
 {{source=CodeSnippets\VB\API\Telerik\Reporting\ObjectDataSourceSnippets.vb region=HowToBindToDataSetSnippet}}
 ````VB
 	
@@ -128,5 +125,4 @@ In the code snippet below a DataSet object is filled with three tables and then 
 	    End Function
 	
 ````
-
 

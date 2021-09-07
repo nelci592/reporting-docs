@@ -22,10 +22,6 @@ Returns: a reference for the reportViewer object.
 ````html
 <input id="buttonChangeReportSource" type="submit" value="Change Report Source" />
 ````
-
-
-
-	
 ````js
 $(document).ready(function () {
     $("#buttonChangeReportSource").on("click", function () {

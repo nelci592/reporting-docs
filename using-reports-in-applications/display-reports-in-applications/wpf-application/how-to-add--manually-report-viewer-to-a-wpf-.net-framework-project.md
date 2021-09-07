@@ -20,7 +20,7 @@ Setting a DataContext to a parent element of ReportViewer leads to BindingExpres
 
 ## Binding Redirects
 
-In case you use *Telerik UI for WPF* version greater           than the __latest official release__(service pack or internal build) you have to redirect all assemblies required           by the *Telerik WPF ReportViewer* to their latest versions.           To do this, add the following __bindingRedirects__ to your           __app.config__ and replace the "__2010.1.421.35__"           with the exact version of *Telerik UI for WPF* assemblies:         
+In case you use *Telerik UI for WPF*  version greater           than the __latest official release__ (service pack or internal build) you have to redirect all assemblies required           by the *Telerik WPF ReportViewer*  to their latest versions.           To do this, add the following __bindingRedirects__  to your           __app.config__  and replace the "__2010.1.421.35__ "           with the exact version of *Telerik UI for WPF*  assemblies:         
 
 {{source=CodeSnippets\CS\API\Telerik\ReportViewer\Wpf\WpfViewerBindings.xml}}
 ````XML
@@ -58,11 +58,11 @@ In case you use *Telerik UI for WPF* version greater           than the __latest
 
 1. Open the toolbox and add your own tab or click on the General tab.                 
 
-1. Right click in the selected tab area and select *Choose Items…* from the context menu.                 
+1. Right click in the selected tab area and select *Choose Items…*  from the context menu.                 
 
-1. The previous step will open *Choose Toolbox Items* dialog. Select the                   *WPF Components* tab and find the *ReportViewer* component                   from the *Telerik.ReportViewer.Wpf* assembly.                 
+1. The previous step will open *Choose Toolbox Items*  dialog. Select the                   *WPF Components*  tab and find the *ReportViewer*  component                   from the *Telerik.ReportViewer.Wpf*  assembly.                 
 
-1. Click *OK*
+1. Click *OK* 
 
 # See Also
 

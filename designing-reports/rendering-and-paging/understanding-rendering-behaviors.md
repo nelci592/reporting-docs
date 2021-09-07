@@ -61,13 +61,13 @@ When exporting a report to Image, PDF, RTF, XPS, Powerpoint, and Word, the follo
 
 ## Skip Blank Pages in the Rendered Report
 
-Since R1 2021 SP1, the rendering engine may be forced to skip all pages that do not contain significant content.           The latter are considered blank and this includes all pages that __only__ contain items of the following type: Report, Group, any Section, empty SubReport item,           Cross-section item, i.e., they do not contain items like TextBox, PicturePox, Table, etc.         
+Since R1 2021 SP1, the rendering engine may be forced to skip all pages that do not contain significant content.           The latter are considered blank and this includes all pages that __only__  contain items of the following type: Report, Group, any Section, empty SubReport item,           Cross-section item, i.e., they do not contain items like TextBox, PicturePox, Table, etc.         
 
-You can still control this rendering behavior, so that pages that do not contain significant content get rendered by setting the __SkipBlankPages__ property of           the report to __False__.         
+You can still control this rendering behavior, so that pages that do not contain significant content get rendered by setting the __SkipBlankPages__  property of           the report to __False__ .         
 
 Please, consider the following specifics of this rendering behavior:         
 
-* If a Subreport is missing from the final output, it might be because it contains errors.               In that case, try setting the __SkipBlankPages__ property to __False__ in order to examine the actual error.             
+* If a Subreport is missing from the final output, it might be because it contains errors.               In that case, try setting the __SkipBlankPages__  property to __False__  in order to examine the actual error.             
 
 * The algorithm does not consider the content of the PageHeader, PageFooter and Watermarks as significant.               The report’s body must contain significant content for the page to get rendered.              
 

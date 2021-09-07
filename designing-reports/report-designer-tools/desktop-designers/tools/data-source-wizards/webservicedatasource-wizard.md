@@ -12,11 +12,11 @@ position: 4
 
 
 
-The __Web Service Data Source Wizard__ allows you to create a new or edit an existing         __WebServiceDataSource__ component based on several settings.         After the wizard appears you have to perform the following steps:       
+The __Web Service Data Source Wizard__  allows you to create a new or edit an existing         __WebServiceDataSource__  component based on several settings.         After the wizard appears you have to perform the following steps:       
 
 ## 
 
-1. __Configure data retrieval__Setup the properties of the HTTP request which will retrieve data from the web service:               
+1. __Configure data retrieval__ Setup the properties of the HTTP request which will retrieve data from the web service:               
 
   ![Web Service Data Source Request](images/DataSources/WebServiceDataSourceRequest.png)
 
@@ -55,11 +55,11 @@ And/or reference an external data file:
 
 
 
-1. __Configure request parameters__The parameters of the HTTP request to be applied. The supported types are Query, Header, Cookie, and Inline.               The inline parameters are parameters that are used to replace parameter tokens (@param1) in the URL and the Body fields               with the expression result or static value.               
+1. __Configure request parameters__ The parameters of the HTTP request to be applied. The supported types are Query, Header, Cookie, and Inline.               The inline parameters are parameters that are used to replace parameter tokens (@param1) in the URL and the Body fields               with the expression result or static value.               
 
   ![Google Books Params](images/DataSources/GoogleBooksParams.png)
 
-1. __Basic Authentication__  
+1. __Basic Authentication__   
 
   ![Web Service Data Source Basic Authentication](images/DataSources/WebServiceDataSourceBasicAuthentication.png)
 
@@ -72,7 +72,7 @@ And/or reference an external data file:
 
 
 
-1. __2-Step Authentication__  
+1. __2-Step Authentication__   
 
   ![Web Service Data Source 2 Step Auth](images/DataSources/WebServiceDataSource2StepAuth.png)
 
@@ -92,7 +92,7 @@ And/or reference an external data file:
 
 
 
-1. __2-Step Authentication Parameters__The parameters of the HTTP request to be applied. The supported types are Query, Header, Cookie and Inline.               The inline parameters are parameters that are used to replace parameter tokens (@param1) in the URL and the Body fields               with the expression result or static value.             
+1. __2-Step Authentication Parameters__ The parameters of the HTTP request to be applied. The supported types are Query, Header, Cookie and Inline.               The inline parameters are parameters that are used to replace parameter tokens (@param1) in the URL and the Body fields               with the expression result or static value.             
 
 # See Also
 

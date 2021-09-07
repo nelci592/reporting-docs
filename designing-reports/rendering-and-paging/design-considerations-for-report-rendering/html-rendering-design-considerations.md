@@ -12,7 +12,7 @@ position: 1
 
 
 
-The HTML rendering extension renders a report into __HTML5__ or __MHTML__ format.       
+The HTML rendering extension renders a report into __HTML5__  or __MHTML__  format.       
 
 ## HTML Output
 
@@ -22,7 +22,7 @@ The HTML5 rendering extension is based on the Image rendering extension, with so
 
 * All report items are rendered as separate absolute positioned div elements.
 
-* All output is generated with __UTF8 encoding.__
+* All output is generated with __UTF8 encoding.__ 
 
 * The strings are measured using GDI+. This can lead to differences between Image rendering and the Web Browsers.                    Also justified text may require to be adjusted due to the difference in the measurement algorithms.                 
 
@@ -35,7 +35,7 @@ The HTML5 rendering extension is based on the Image rendering extension, with so
 
 ### Pagination
 
-Page size is calculated based on whether the report is rendered for __Interactive view__               or __Print Preview__.             
+Page size is calculated based on whether the report is rendered for __Interactive view__                or __Print Preview__ .             
 
 ### Interactivity
 

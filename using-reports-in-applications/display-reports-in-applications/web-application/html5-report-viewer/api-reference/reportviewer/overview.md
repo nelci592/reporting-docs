@@ -14,7 +14,7 @@ position: 0
 
 ## 
 
-The *ReportViewer* object is created through the [jQuery.fn.telerik_ReportViewer()]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/report-viewer-initialization%}) function:                    
+The *ReportViewer*  object is created through the [jQuery.fn.telerik_ReportViewer()]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/report-viewer-initialization%}) function:                    
 
 	
 ````js
@@ -29,7 +29,7 @@ The *ReportViewer* object is created through the [jQuery.fn.telerik_ReportViewer
 
 where x.x.x.x is the version of the HTML5 ReportViewer/Telerik Reporting (e.g. 8.1.14.618).
 
-To get the *ReportViewer* object from the target HTML element:         
+To get the *ReportViewer*  object from the target HTML element:         
 
 	
 ````js
@@ -65,5 +65,4 @@ Additionally you can change the state of the report viewer in your event handler
               reportViewer.scale(1.5);
             });
 ````
-
 

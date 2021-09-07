@@ -16,14 +16,14 @@ The [WebServiceDataSource](/reporting/api/Telerik.Reporting.WebServiceDataSource
 
 The web service may omit properties with empty values in the data response to save bandwidth. The result is that not all of the objects have the same list of properties.         Due to this no errors will be shown in the report if an undefined data field name is used inside an expression.       
 
-The data field names for this data source are __case-sensitive__. It is required to use the correct data field names in expressions, otherwise no data will be shown.       
+The data field names for this data source are __case-sensitive__ . It is required to use the correct data field names in expressions, otherwise no data will be shown.       
 
 >important In order to preview reports which use the WebServiceDataSource component it is required to reference the  __Telerik.Reporting.WebServiceDataSource__  DLL or the corresponding NuGet package           in your application.         
 
 
 ## Configuring the Component
 
-__Web Service Request Configuration:__
+__Web Service Request Configuration:__ 
 
 
 | Setting | Description |
@@ -40,7 +40,7 @@ __Web Service Request Configuration:__
 
 
 
-__Inline Data String Configuration:__
+__Inline Data String Configuration:__ 
 
 
 | Setting | Description |
@@ -51,7 +51,7 @@ __Inline Data String Configuration:__
 
 
 
-__External Data File Configuration:__
+__External Data File Configuration:__ 
 
 
 | Setting | Description |

@@ -22,7 +22,7 @@ position: 7
 
 In case you are not familiar with ASP.NET Core, check it out on the [official page](https://www.asp.net/core).       
 
-Telerik Reporting ASP.NET Core packages are available as of Telerik Reporting R3 2016 SP1 release.         They are built against the __full .NET Framework__.       
+Telerik Reporting ASP.NET Core packages are available as of Telerik Reporting R3 2016 SP1 release.         They are built against the __full .NET Framework__ .       
 
 Telerik NuGet Packages include the Reporting Engine and implementation of the [Reporting REST WebAPI based service](d3912553-a26d-43ca-80c4-136e51d56263).         The packages do not include design-time support.       
 
@@ -48,23 +48,23 @@ To be able to create the sample application on Windows, make sure you provide th
 ##        Creating a Sample ASP.NET Core Project
       
 
-1. Open __Visual Studio 2015 Update 3__.             
+1. Open __Visual Studio 2015 Update 3__ .             
 
-1. From the __File__ menu, select __New__ > __Project__.             
+1. From the __File__  menu, select __New__  > __Project__ .             
 
-1. In the __New Project__ dialog, expand __Installed > Templates > Visual C# > Web__,               and select __                 ASP.NET Core Web Application (.NET Framework)__ project template.               Choose a name for the project and click __OK__.             
+1. In the __New Project__  dialog, expand __Installed > Templates > Visual C# > Web__ ,               and select __ASP.NET Core Web Application__  project template.               Choose a name for the project and click __OK__ .             
 
-1. From the __ASP.NET Core Templates__ select __Web Application__.             
+1. From the __ASP.NET Core Templates__  select __Web Application__ .             
 
 ##        Getting Ready to Add Telerik Reporting
       
 
 You will have to prepare the project for Telerik Reporting.         
 
-Open the __project.json__ file.           The "frameworks" property should look like this:         
+Open the __project.json__  file.           The "frameworks" property should look like this:         
 
 	
-````HTML
+````html
 "frameworks": {
     "net461": { }
 },
@@ -77,7 +77,7 @@ The above setting is required since Telerik Reporting supports only the full .NE
 ##        Adding the NuGet Packages
       
 
-ASP.NET Core does not support references to assemblies, but instead works with references to NuGet packages.           To setup the Reporting REST service you have to download __Telerik.Reporting__           and __Telerik.Reporting.Services.AspNetCore__           NuGet packages from the private Telerik NuGet feed at           [https://nuget.telerik.com/nuget](https://nuget.telerik.com/nuget). How to add a NuGet feed is explained in           [https://www.visualstudio.com/en-us/docs/package/nuget/consume](https://www.visualstudio.com/en-us/docs/package/nuget/consume)
+ASP.NET Core does not support references to assemblies, but instead works with references to NuGet packages.           To setup the Reporting REST service you have to download __Telerik.Reporting__            and __Telerik.Reporting.Services.AspNetCore__            NuGet packages from the private Telerik NuGet feed at           [https://nuget.telerik.com/nuget](https://nuget.telerik.com/nuget). How to add a NuGet feed is explained in           [https://www.visualstudio.com/en-us/docs/package/nuget/consume](https://www.visualstudio.com/en-us/docs/package/nuget/consume)
 
 You will need to [your Telerik account](https://www.telerik.com/account) credentials for this operation.         
 
@@ -86,11 +86,11 @@ For Office OpenXML document formats (XLSX, DOCX and PPTX) install the           
 ##        Setting up the REST service
       
 
-1. In your project, right-click __References__, choose __Manage NuGet Packages__               and from the drop down menu, select Telerik private feed.             
+1. In your project, right-click __References__ , choose __Manage NuGet Packages__                and from the drop down menu, select Telerik private feed.             
 
-1. Install __Telerik.Reporting__ and __Telerik.Reporting.Services.AspNetCore__ NuGet packages,               which will give you the functionality for the Telerik Reporting REST Service and the Reporting engine.             
+1. Install __Telerik.Reporting__  and __Telerik.Reporting.Services.AspNetCore__  NuGet packages,               which will give you the functionality for the Telerik Reporting REST Service and the Reporting engine.             
 
-1. Implement a Reports controller. Right-click on the __Controllers__               folder and add a new item: Add - New item - Installed - ASP.NET - __Web API Controller Class__ item.               Name it ReportsController. This will be our Telerik Reporting REST service in the project.             You will have to inherit the __ReportsControllerBase__ type               and provide proper settings for the service's ReportResolver and Storage.               This is how a basic implementation of the controller should look like:             
+1. Implement a Reports controller. Right-click on the __Controllers__                folder and add a new item: Add - New item - Installed - ASP.NET - __Web API Controller Class__  item.               Name it ReportsController. This will be our Telerik Reporting REST service in the project.             You will have to inherit the __ReportsControllerBase__  type               and provide proper settings for the service's ReportResolver and Storage.               This is how a basic implementation of the controller should look like:             
 
 	
     ````c#
@@ -139,23 +139,23 @@ public IActionResult Report()
 ##        Adding the HTML5 Report Viewer
       
 
-1. To set up a folder for the reports, right-click on *wwwroot* and select __Add > New Folder__.               Name the folder __Reports__ and add sample reports in TRDP format for easiness. You can find sample reports in               *                 {Telerik Reporting installation path}\Report Designer\Examples               * if you have an existing installation of the Telerik Reporting product.               Note that the name of the folder is considered with the folder path used by the ReportFileResolver in the ReportsController.             This tutorial will use __Barcodes Report.trdp__ in all examples.             
+1. To set up a folder for the reports, right-click on *wwwroot*  and select __Add > New Folder__ .               Name the folder __Reports__  and add sample reports in TRDP format for easiness. You can find sample reports in               *{Telerik Reporting installation path}\Report Designer\Examples*  if you have an existing installation of the Telerik Reporting product.               Note that the name of the folder is considered with the folder path used by the ReportFileResolver in the ReportsController.             This tutorial will use __Barcodes Report.trdp__  in all examples.             
 
-1. Add a view that contains the HTML5 Report Viewer.             Open the __Views__ folder, right-click on the __Home__ folder and select               __ Add > New Item > Installed > ASP.NET__.               Then add a new __MVC View Page__ named __Report__.               We want the Report action in the HomeController to target this view.             
+1. Add a view that contains the HTML5 Report Viewer.             Open the __Views__  folder, right-click on the __Home__  folder and select               __Add > New Item > Installed > ASP.NET__ .               Then add a new __MVC View Page__  named __Report__ .               We want the Report action in the HomeController to target this view.             
 
 1. Add the HTML5 Report Viewer. For a detailed explanation, check the HTML5 Report Viewer               [Manual Setup]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/manual-setup%}) help article in the online documentation.               The required references to jQuery and Telerik Kendo UI CSS and JS files are listed in the example below.               Copy the Kendo subset from {Telerik Reporting installation path}\Html5\ReportViewer folder to wwwroot.             
 
    >note Whenever you need to route a relative path you will have to use  *Url.Content*  helper, like this:               
 
 	
-    ````HTML
+    ````html
 @Url.Content("~/api/reports/")
 ````
 
 instead of simply pasting the path.The complete Report view (Report.cshtml) should look like this:
 
 	
-    ````HTML
+    ````html
 @{
     Layout = null;
 }
@@ -255,19 +255,19 @@ instead of simply pasting the path.The complete Report view (Report.cshtml) shou
 
 
 
-   >note The reference to the report viewer's JavaScript file ( *telerikReportViewer-{{site.buildversion}}.min.js* )                 should be updated to the corresponding version of the Reporting NuGet package.               
+   >note The reference to the report viewer's JavaScript file ( *telerikReportViewer-* )                 should be updated to the corresponding version of the Reporting NuGet package.               
 
-1. To add a link to the __Report__ view in the __Home__ page navigation open               *Views\Shared\_Layout.cshtml* page and add:             
+1. To add a link to the __Report__  view in the __Home__  page navigation open               *Views\Shared\_Layout.cshtml*  page and add:             
 
 	
-    ````HTML
+    ````html
 	<li><a asp-area="" asp-controller="Home" asp-action="Report">Report</a></li>
 ````
 
 list item to the navigation. It should become like this:             
 
 	
-    ````HTML
+    ````html
     <li><a asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>
     <li><a asp-area="" asp-controller="Home" asp-action="About">About</a></li>
     <li><a asp-area="" asp-controller="Home" asp-action="Contact">Contact</a></li>
@@ -279,6 +279,6 @@ list item to the navigation. It should become like this:
 ##        Connection Strings and Engine Configuration
       
 
-Telerik Reporting relies on the ConfigurationManager to resolve named connection strings and to configure the reporting engine.           Thus if you have any named connectionstrings or Telerik Reporting configuration you have to add __app.config__ configuration file           to the project's root.           For more information see: [Overview]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/overview%}).         
+Telerik Reporting relies on the ConfigurationManager to resolve named connection strings and to configure the reporting engine.           Thus if you have any named connectionstrings or Telerik Reporting configuration you have to add __app.config__  configuration file           to the project's root.           For more information see: [Overview]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/overview%}).         
 
-Finally, run the project and navigate to the __Report__ view to see the report.         
+Finally, run the project and navigate to the __Report__  view to see the report.         

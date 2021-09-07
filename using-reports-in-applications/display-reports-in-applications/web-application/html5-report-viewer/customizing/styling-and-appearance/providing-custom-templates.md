@@ -32,10 +32,10 @@ If you have custom HTML template you should provide it to the telerik_ReportView
 
 
 
-The HTML template file is an HTML page while the templates are HTML document fragments inside HTML5 __template__ elements:         
+The HTML template file is an HTML page while the templates are HTML document fragments inside HTML5 __template__  elements:         
 
 	
-````HTML
+````html
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -53,7 +53,7 @@ The HTML template file is an HTML page while the templates are HTML document fra
 
 
 
-The templates are loaded during the initialization of the __telerik_ReportViewer__ widget. Since this is an asynchronous network operation           (the template HTML is loaded with an HTTP GET request) that takes an unpredictable amount of time, the widget is not operational until it is successful;           to find when the viewer is completely loaded provide a callback function to the __telerik_ReportViewer__ widget:         
+The templates are loaded during the initialization of the __telerik_ReportViewer__  widget. Since this is an asynchronous network operation           (the template HTML is loaded with an HTTP GET request) that takes an unpredictable amount of time, the widget is not operational until it is successful;           to find when the viewer is completely loaded provide a callback function to the __telerik_ReportViewer__  widget:         
 
 	
 ````js

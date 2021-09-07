@@ -16,20 +16,20 @@ A report item can initially display or be hidden when a user views a report. The
 
 ## Adding a drilldown action to a report item using the Report Designer
 
-1. In Design view, right-click a report item to which you want to add a toggle visibility action and then click __Properties__ .
+1. In Design view, right-click a report item to which you want to add a toggle visibility action and then click __Properties__  .
 
-1. In the item's __Properties__ dialog box, click __Action__ .
+1. In the item's __Properties__  dialog box, click __Action__  .
 
-1. Select __Toggle Visibility__ . Additional sections appear in the dialog box for this option.
+1. Select __Toggle Visibility__  . Additional sections appear in the dialog box for this option.
 
-1. Click __Edit toggle targets__ button, which opens __Edit toggle Visibility targets__ dialog.
+1. Click __Edit toggle targets__  button, which opens __Edit toggle Visibility targets__  dialog.
 
-1. Click __New__ button to add a new toggle action. Select a report item from the combobox to set it as toggle target, 
+1. Click __New__  button to add a new toggle action. Select a report item from the combobox to set it as toggle target, 
         	which visibility will be toggled when the action is triggered.
 
 1. To add more toggle targets, repeat steps 4 and 5.
 
-1. The __Toggle mark initially expanded__ checkbox determines if the item exposing the action will be rendered initially 
+1. The __Toggle mark initially expanded__  checkbox determines if the item exposing the action will be rendered initially 
   	with expanded or with collapsed mark.
 
 1. To test the toggle, run the report and click the text box with the toggle mark. The report display refreshes to show 
@@ -42,30 +42,30 @@ A report item can initially display or be hidden when a user views a report. The
 
 1. In Design view, click the Table, CrossTab or ListBox to select it. The[Group Explorer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/group-explorer%})
 
-1. Locate the __Display Mode__ combo in the title bar of the Group Explorer and select Extended Mode. This 
+1. Locate the __Display Mode__  combo in the title bar of the Group Explorer and select Extended Mode. This 
 	toggles to show the underlying display structure for rows and columns.
 
 1. Right-click the name of the row group or column group for which you want to hide the associated rows or columns and 
-		select __Group Properties__ .
+		select __Group Properties__  .
 
-1. Alter the __Visible__ property to indicate whether the group is displayed initially 
-	expanded or collapsed (default is expanded). Click __OK__ .
+1. Alter the __Visible__  property to indicate whether the group is displayed initially 
+	expanded or collapsed (default is expanded). Click __OK__  .
 
 1. In Design view, right-click the report item representing the row group or column group to which you want to add a toggle 
-		visibility action and then click __Properties__ .
+		visibility action and then click __Properties__  .
 
-1. In the item's __Properties__ dialog box, click __Action__ .
+1. In the item's __Properties__  dialog box, click __Action__  .
 
-1. Select __Toggle Visibility__ . Additional sections appear in the dialog box for this option.
+1. Select __Toggle Visibility__  . Additional sections appear in the dialog box for this option.
 
-1. Click __Edit toggle targets__ button, which opens __Edit toggle Visibility targets__ dialog.
+1. Click __Edit toggle targets__  button, which opens __Edit toggle Visibility targets__  dialog.
 
-1. Click __New__ button to add a new toggle action. Select a row group or column group from the combobox to set it as toggle target, 
+1. Click __New__  button to add a new toggle action. Select a row group or column group from the combobox to set it as toggle target, 
         	which visibility will be toggled when the action is triggered.
 
 1. To add more toggle targets, repeat steps 8 and 9.
 
-1. The __Toggle mark initially expanded__ checkbox determines if the item exposing the action will be rendered initially 
+1. The __Toggle mark initially expanded__  checkbox determines if the item exposing the action will be rendered initially 
   	with expanded or with collapsed mark.
 
 1. To test the toggle, run the report and click the text box with the toggle mark. The report display refreshes to show 
@@ -85,9 +85,6 @@ A report item can initially display or be hidden when a user views a report. The
 	            toggleVisibilityAction1.Targets.AddRange(new Telerik.Reporting.IToggleVisibilityTarget[] { textBox2 });
 	
 ````
-
-
-
 {{source=CodeSnippets\VB\API\Telerik\Reporting\ActionSnippets.vb region=AddNewToggleVisibilitySnippet}}
 ````VB
 	

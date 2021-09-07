@@ -16,7 +16,7 @@ When the data appearing in a chart contains multiple variables(series), the char
 
 A legend always contains one or more legend items, where each legend item consists of a colored box that represents the series,         and a text string that describes the series.       
 
-You can format a legend with the Graph item's __Legend properties__.         Click the legend to change the legend placement(Location and IsInsidePloatArea), Size, Title and items Style. The Title property can be an expression       
+You can format a legend with the Graph item's __Legend properties__ .         Click the legend to change the legend placement(Location and IsInsidePloatArea), Size, Title and items Style. The Title property can be an expression       
 
 You cannot add images, extra columns or other supplementary items to the legend.       
 
@@ -28,14 +28,14 @@ You can also use the LegendItem's ConditionalFormatting and MarkConditionalForma
 
 ##Changing the Text Style of a Legend Item
 
-You can change the legend items text style by selecting the legend and with __Property Browser__ change __Style__ properties.         
+You can change the legend items text style by selecting the legend and with __Property Browser__  change __Style__  properties.         
 
 >note If you are using the standalone report designer you can take advantage of the graph tools in the ribbon's Design and Format tabs.           
 
 
-1. Click the graph legend that you want to change.    The selected legend properties are listed in the __Property Browser__.                 
+1. Click the graph legend that you want to change.    The selected legend properties are listed in the __Property Browser__ .                 
 
-1. In the __Style property__, click the __Edit Collection (…) button__.                     The Edit style dialog opens.                 
+1. In the __Style property__ , click the __Edit Collection (…) button__ .                     The Edit style dialog opens.                 
 
 1. When you are done, click OK.                 
 
@@ -45,13 +45,13 @@ Items are ordered in the legend according to the order that their corresponding 
 
 ##Changing the Text of a Legend Item
 
-You can change the legend items text by changing each Graph.Series LegendItem properties. The __LegendItem.Value property__ can be set via [Expression]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/overview%}).         
+You can change the legend items text by changing each Graph.Series LegendItem properties. The __LegendItem.Value property__  can be set via [Expression]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/overview%}).         
 
 ##Removing Extra Legend Items
 
 The legend is always connected to a series.           If a legend item appears in the legend but the corresponding series is not displayed in the chart,           the most likely cause is that the series does not contain any values.           You can remove this series in order to remove the legend item from the legend.           To remove a series from your chart, you have to setup a [Filter]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/filtering-data/overview%}) for the corrensponding SeriesGroup.         
 
-To visually hide a Legened Item, you can use the __Graph.Series.LegendItem.Style.Visible property__.         
+To visually hide a Legened Item, you can use the __Graph.Series.LegendItem.Style.Visible property__ .         
 
 ##Positioning the Legend
 
@@ -59,15 +59,15 @@ You can move the legend to one of twelve different positions when the legend is 
 
 ###Reposition the Legend:
 
-1. Click the legend area.    The legend properties are listed in the __Property Browser__;                 
+1. Click the legend area.    The legend properties are listed in the __Property Browser__ ;                 
 
-1. In the __Misc__ section select a value for the Position property.                 
+1. In the __Misc__  section select a value for the Position property.                 
 
 ###Move the Legend Inside the Plot area:
 
-1. Click the legend area.    The legend properties are listed in the __Property Browser__;                 
+1. Click the legend area.    The legend properties are listed in the __Property Browser__ ;                 
 
-1. In the __Misc__ section set the __IsInsideThePlotArea property__ to __True__.                 
+1. In the __Misc__  section set the __IsInsideThePlotArea property__  to __True__ .                 
 
 ##Displaying Legend Items Horizontally
 

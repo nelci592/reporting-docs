@@ -22,7 +22,7 @@ For example if you have a "Vendor List" report you can define a          "Vendor
 
   ![](images/DesignParameters002.png)
 
-You can show the Label value in the same manner by using similar expression          e.g. __=Parameters.VendorSelect.Label__. This same parameter can be used to filter the vendor listing.         In the example below we set up an expression where the VendorName from          the database is compared, using a Like operator to the VendorSelect          parameter. The expression is appended with the "%" wildcard so that any          VendorName that starts with the characters passed in the parameter will          be included in the report.
+You can show the Label value in the same manner by using similar expression          e.g. __=Parameters.VendorSelect.Label__ . This same parameter can be used to filter the vendor listing.         In the example below we set up an expression where the VendorName from          the database is compared, using a Like operator to the VendorSelect          parameter. The expression is appended with the "%" wildcard so that any          VendorName that starts with the characters passed in the parameter will          be included in the report.
 
   
 

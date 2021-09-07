@@ -34,7 +34,7 @@ A view where each CheckBox is initialized with CheckAlign varying from TopLeft t
 
 
 
-The check mark image depends on the value set in the __Value__ property. By default it would accept  =true or =false. At design time the __Value__ property can be initialized with an expression which later at runtime is evaluated to one of the System.Windows.Forms.CheckState values e.g.:         
+The check mark image depends on the value set in the __Value__  property. By default it would accept  =true or =false. At design time the __Value__  property can be initialized with an expression which later at runtime is evaluated to one of the System.Windows.Forms.CheckState values e.g.:         
 
 =IsNull(Fields.Quantity, 0) > 100 which would return true or false and would check and uncheck the check mark respectively.         
 

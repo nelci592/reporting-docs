@@ -26,7 +26,7 @@ Parameters:
 
 
 
-Returns: the current *ReportViewer* object.         
+Returns: the current *ReportViewer*  object.         
 
 	
 ````js
@@ -36,5 +36,4 @@ reportViewer.reportSource({
             parameters: { "CultureID": "fr" },
         });
 ````
-
 

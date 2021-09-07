@@ -46,15 +46,15 @@ The PageSettings property of the Report object allows you to customize the follo
 
 The physical page size is the paper size. The paper size that you specify for the report controls how the report               is rendered. Reports rendered in physical page formats insert page breaks horizontally and vertically based on the               physical page size to provide an optimized reading experience when printed or viewed in a physical page               format. Reports rendered in logical page formats insert page breaks horizontally based on the physical size to               provide an optimized reading experience when viewed in a Web browser.             
 
-You can change page size by changing the __PaperSize.Height__ and __PaperSize.Width__ properties in the Properties pane. The               page size does not grow or shrink to accommodate the contents of the report. If you want the report to appear on a               single page, the whole report content must fit on the physical page. If it does not fit and you use physical page               format, the report will occupy additional pages. If the report grows past the right edge of the physical page, then               a page break is inserted horizontally. If the report body grows past the bottom edge of the physical page, then a               page break is inserted vertically.             
+You can change page size by changing the __PaperSize.Height__  and __PaperSize.Width__  properties in the Properties pane. The               page size does not grow or shrink to accommodate the contents of the report. If you want the report to appear on a               single page, the whole report content must fit on the physical page. If it does not fit and you use physical page               format, the report will occupy additional pages. If the report grows past the right edge of the physical page, then               a page break is inserted horizontally. If the report body grows past the bottom edge of the physical page, then a               page break is inserted vertically.             
 
-The __PaperSize.Height__ can be set to be undetermined through the __ContinuousPaper__ property.               As a result the page will use all PageSettings properties, excluding __PaperSize.Height__ property.               The height of the page will be determined by the height of the content.             
+The __PaperSize.Height__  can be set to be undetermined through the __ContinuousPaper__  property.               As a result the page will use all PageSettings properties, excluding __PaperSize.Height__  property.               The height of the page will be determined by the height of the content.             
 
 By design, if the remaining part of the document is less than 1% of single-column width, this part will not be displayed.               For example, if you add a textbox whose width is equal the to the report's width and you set                a border to it, the right border will not be displayed in Print Preview mode.             
 
 ### Margins
 
-Margins are specified by changing the __Top__,               __Bottom__, __Left__ and __Right__               properties in the __Properties__ pane. The area of the physical page that remains after space is               allocated for margins, column spacing (multi-column), and the page header and footer, is referred to as usable page area.               Margins are only applied when you render and print reports in physical page formats.             
+Margins are specified by changing the __Top__ ,               __Bottom__ , __Left__  and __Right__                properties in the __Properties__  pane. The area of the physical page that remains after space is               allocated for margins, column spacing (multi-column), and the page header and footer, is referred to as usable page area.               Margins are only applied when you render and print reports in physical page formats.             
 
 ### Multi-columns (Newsletter-Style Columns)
 
@@ -62,7 +62,7 @@ When a report is divided into multiple columns, physical pages are divided verti
 
 ### Print on continuous (roll) paper
 
-When you set the report's PageSettings.__ContinuousPaper__ property to __true__, PageSettings are respected excluding the PaperSize.Height property.               The report's content will be measured and rendered into a page with height enough to gather the content in height, including the page margins.               If the content cannot be gathered in width on the physical page, the report will be paged horizontally where each page will have the same height.             
+When you set the report's PageSettings.__ContinuousPaper__  property to __true__ , PageSettings are respected excluding the PaperSize.Height property.               The report's content will be measured and rendered into a page with height enough to gather the content in height, including the page margins.               If the content cannot be gathered in width on the physical page, the report will be paged horizontally where each page will have the same height.             
 
 Page breaks are not expected when printing on a continuous paper. Setting a report section's PageBreak results in physical pages having the same height, such enough               to gather the whole content in height.             
 
@@ -83,7 +83,7 @@ In the vertical direction, by default sections are not split across different pa
 
 Table/Crosstab items also support page breaks before and/or after each TableGroup instance. This is supported in both horizontal and vertical direction           and is controlled using the [Telerik.Reporting.TableGroup.PageBreak](/reporting/api/Telerik.Reporting.TableGroup#Telerik_Reporting_TableGroup_PageBreak) property.         
 
-In older Telerik Reporting versions, simple report items (i.e. non-container items) are always kept together on a page if possible. If not, they are rendered at           the beginning of the next page. If they still cannot fit, because they are longer than a whole page, they are split.           The PictureBox, Shape and Chart items are always kept together.__             In recent Telerik Reporting versions all items can be split between pages,             if they do not fit in.           __
+In older Telerik Reporting versions, simple report items (i.e. non-container items) are always kept together on a page if possible. If not, they are rendered at           the beginning of the next page. If they still cannot fit, because they are longer than a whole page, they are split.           The PictureBox, Shape and Chart items are always kept together.__In recent Telerik Reporting versions all items can be split between pages, if they do not fit in.__ 
 
 By default, groups are not kept together on a single page. You can instruct the rendering engine to try to keep the entire           group or the group header with the first detail on a single page if possible by setting the GroupKeepTogether property of the           Group component. If group is kept together using GroupKeepTogether property, the engine will ignore the PageBreak property set for           the Detail section.         
 

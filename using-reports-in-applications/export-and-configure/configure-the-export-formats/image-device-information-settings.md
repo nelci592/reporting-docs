@@ -12,7 +12,7 @@ position: 1
 
 
 
-The following table lists the device information settings for rendering in __IMAGE__, __IMAGEPrintPreview__ and __IMAGEPrint__ formats.       
+The following table lists the device information settings for rendering in __IMAGE__ , __IMAGEPrintPreview__  and __IMAGEPrint__  formats.       
 
 ## Image Device Information Settings
 
@@ -34,7 +34,7 @@ For a detailed example of how to set up the settings for a rendering extension, 
 
 ## Example
 
-The following example demonstrates how to configure the settings for __IMAGE__, __IMAGEPrintPreview__ and __IMAGEPrint__ formats.         
+The following example demonstrates how to configure the settings for __IMAGE__ , __IMAGEPrintPreview__  and __IMAGEPrint__  formats.         
 
 XML-based configuration file:
 

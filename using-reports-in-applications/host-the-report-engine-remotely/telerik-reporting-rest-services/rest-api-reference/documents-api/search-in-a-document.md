@@ -15,15 +15,12 @@ position: 7
 ## Request
 
 	
-````URI Template
-
-POST /api/reports/clients/{clientId}/instances/{instanceId}/documents/{documentId}/search
-````
+          POST /api/reports/clients/{clientId}/instances/{instanceId}/documents/{documentId}/search
+        
 
 
 
-
-__Path parameters__
+__Path parameters__ 
 
 
 | Name | Type | Description |
@@ -35,7 +32,7 @@ __Path parameters__
 
 
 
-__Request Body__
+__Request Body__ 
 
 [SearchInfo]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/json-entities/searchinfo%}) describing the search arguments.         
 
@@ -52,38 +49,32 @@ __Request Body__
 
 
 
-__Response Body__
+__Response Body__ 
 
 When the return status is `OK` the response body contains a JSON array of [SearchResultsInfo]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/json-entities/searchresultsinfo%})            objects representing the search results.         
 
 ## Sample
 
 	
-````Request Message
+          POST /api/reports/clients/f3c380da635/instances/c71aeb824cf/documents/495ff8766803332209ef12/search HTTP/1.1
 
-POST /api/reports/clients/f3c380da635/instances/c71aeb824cf/documents/495ff8766803332209ef12/search HTTP/1.1
-
-{
-"searchToken": "foo",
-"matchCase": false,
-"matchWholeWord": false,
-"useRegularExpressions": true
-}
-````
-
+          {
+            "searchToken": "foo",
+            "matchCase": false,
+            "matchWholeWord": false,
+            "useRegularExpressions": true
+          }
+        
 
 
 
 	
-````Response Message
-
-HTTP/1.1 200 Ok
-{
-"description":"Quarterly Sales Dashboard for 2003",
-"id":"a082030a03fa4e349abe183d161a35ea",
-"page":1
-}
-````
-
+          HTTP/1.1 200 Ok
+          {
+            "description":"Quarterly Sales Dashboard for 2003",
+            "id":"a082030a03fa4e349abe183d161a35ea",
+            "page":1
+          }
+        
 
 

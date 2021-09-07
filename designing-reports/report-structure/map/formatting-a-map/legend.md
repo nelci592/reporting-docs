@@ -40,14 +40,14 @@ The colored box displayed for each legend item is inherited from the fill color 
 
 ## Changing the Text Style of a Legend Item
 
-You can change the legend items text style by selecting the legend and with __Property Browser__ change __Style__ properties.         
+You can change the legend items text style by selecting the legend and with __Property Browser__  change __Style__  properties.         
 
 >note If you are using the Standalone Report Designer you can take advantage of the ribbon format and map tools.           
 
 
-1. Click the map legend that you want to change.    The selected legend properties are listed in the __Property Browser__.                 
+1. Click the map legend that you want to change.    The selected legend properties are listed in the __Property Browser__ .                 
 
-1. In the __Style property__, click the __Edit Collection (…) button__. The Edit style dialog opens.                                       Modify the style properties as required.                 
+1. In the __Style property__ , click the __Edit Collection (…) button__ . The Edit style dialog opens.                                       Modify the style properties as required.                 
 
 1. When you are done, click OK.                 
 
@@ -61,15 +61,15 @@ You can move the legend to one of twelve different positions when the legend is 
 
 ###Reposition the Legend:
 
-1. Click the legend area.    The legend properties are listed in the __Property Browser__;                 
+1. Click the legend area.    The legend properties are listed in the __Property Browser__ ;                 
 
-1. In the __Misc__ section select a value for the Position property.                 
+1. In the __Misc__  section select a value for the Position property.                 
 
 ###Move the Legend Inside the Plot area:
 
-1. Click the legend area.    The legend properties are listed in the __Property Browser__;                 
+1. Click the legend area.    The legend properties are listed in the __Property Browser__ ;                 
 
-1. In the __Misc__ section set the __IsInsideThePlotArea property__ to __True__.                 
+1. In the __Misc__  section set the __IsInsideThePlotArea property__  to __True__ .                 
 
 ## Displaying Legend Items Horizontally
 

@@ -15,15 +15,12 @@ position: 3
 ## Request
 
 	
-````URI Template
-
-POST /api/reports/clients/{clientId}/instances/{instanceId}/documents/{documentId}/send
-````
+          POST /api/reports/clients/{clientId}/instances/{instanceId}/documents/{documentId}/send
+        
 
 
 
-
-__Path parameters__
+__Path parameters__ 
 
 
 | Name | Type | Description |
@@ -35,7 +32,7 @@ __Path parameters__
 
 
 
-__Request Body__
+__Request Body__ 
 
 [MailMessage]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/json-entities/mailmessage%})
 
@@ -55,27 +52,21 @@ __Request Body__
 ## Sample
 
 	
-````Request Message
+          POST /api/reports/clients/2c3d/instances/4d3c/documents/5x3a/send HTTP/1.1
 
-POST /api/reports/clients/2c3d/instances/4d3c/documents/5x3a/send HTTP/1.1
-
-{
-'from': 'john.doe@mycompany.com',
-'to': 'jane.doe@mycompany.com',
-'cc': 'john.doe.jr@mycompany.com',
-'subject': 'my mail subject',
-'body': 'my mail body',
-}
-````
-
+          {
+          'from': 'john.doe@mycompany.com',
+          'to': 'jane.doe@mycompany.com',
+          'cc': 'john.doe.jr@mycompany.com',
+          'subject': 'my mail subject',
+          'body': 'my mail body',
+          }
+        
 
 
 
 	
-````Response Message
-
-HTTP/1.1 200 OK
-````
-
+          HTTP/1.1 200 OK
+        
 
 

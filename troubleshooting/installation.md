@@ -16,11 +16,11 @@ This article provides solutions for issues you might encounter while installing 
 
 ## The installer fails and I am not able to install Telerik Reporting
 
-__             Solution.           __           Run the installer as administrator or from an admin account to avoid rights elevation problems.         
+__Solution.__            Run the installer as administrator or from an admin account to avoid rights elevation problems.         
 
 If the Telerik Reporting installer fails,           generate an installer log to identify the reason for the problem which occurred:         
 
-1. Open a command prompt window by clicking __Start__. In the prompt, type               `cmd`. Press `Enter`.             
+1. Open a command prompt window by clicking __Start__ . In the prompt, type               `cmd`. Press `Enter`.             
 
 1. Navigate to the folder in which the Telerik Reporting installer is located.
 
@@ -30,15 +30,15 @@ If the Telerik Reporting installer fails,           generate an installer log to
 
 ## An error that the report is now obsolete occurs
 
-__             Description.           __           The project throws a `The report is now obsolete. Please use the ReportSource property instead.` error.         
+__Description.__            The project throws a `The report is now obsolete. Please use the ReportSource property instead.` error.         
 
-__             Solution.           __           This message may appear in projects which use a Telerik Reporting Q2 2012 or later version.           For more information, refer to the article on           [               migrating your project to utilize the new ReportSource objects             ](http://www.telerik.com/support/kb/reporting/details/how-to-migrate-your-project-to-utilize-the-new-reportsource-objects).         
+__Solution.__            This message may appear in projects which use a Telerik Reporting Q2 2012 or later version.           For more information, refer to the article on           [               migrating your project to utilize the new ReportSource objects             ](http://www.telerik.com/support/kb/reporting/details/how-to-migrate-your-project-to-utilize-the-new-reportsource-objects).         
 
 ## An error message about object of type XXX that cannot be converted to type XXX occurs
 
-__             Description.           __           An `Object of type 'XXX' cannot be converted to type 'XXX'` occurs where `XXX`           is the same Type.         
+__Description.__            An `Object of type 'XXX' cannot be converted to type 'XXX'` occurs where `XXX`           is the same Type.         
 
-__             Solution.           __
+__Solution.__ 
 
 1. Run the [Upgrade Wizard]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/upgrade-wizard%}).             
 
@@ -48,6 +48,6 @@ __             Solution.           __
 
 ## The website project is not upgraded after running the Upgrade Wizard
 
-__             Cause.           __           The [Upgrade Wizard]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/upgrade-wizard%}) as well as all Telerik Reporting Wizards and Designers           are not designed to handle website projects because websites handle assembly references in a diffreent way.         
+__Cause.__            The [Upgrade Wizard]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/upgrade-wizard%}) as well as all Telerik Reporting Wizards and Designers           are not designed to handle website projects because websites handle assembly references in a diffreent way.         
 
-__             Solution.           __           Manually add viewers or upgrade the website. Design reports in an external `ClassLibrary` project           that is referenced by the website project. For more information, refer to the article on           [upgrading Telerik Reporting projects]({%slug telerikreporting/upgrade/overview%}).         
+__Solution.__            Manually add viewers or upgrade the website. Design reports in an external `ClassLibrary` project           that is referenced by the website project. For more information, refer to the article on           [upgrading Telerik Reporting projects]({%slug telerikreporting/upgrade/overview%}).         

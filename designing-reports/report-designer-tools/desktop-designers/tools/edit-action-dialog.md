@@ -18,7 +18,7 @@ Define an action so that a user can click on the report and link to a URL, to a 
 
 ## 
 
-The __Edit Action__ offers the following choices:         
+The __Edit Action__  offers the following choices:         
 
 * None             
 

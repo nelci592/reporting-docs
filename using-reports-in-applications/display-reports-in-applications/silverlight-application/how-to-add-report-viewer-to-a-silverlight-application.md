@@ -32,20 +32,20 @@ This article explains the steps needed to create an application which uses the S
 
 1. Add the following xaml files, required for the implicit styling of the report viewer:             
 
-   + *System.Windows.xaml*
+   + *System.Windows.xaml* 
 
-   + *Telerik.Windows.Controls.xaml*
+   + *Telerik.Windows.Controls.xaml* 
 
-   + *Telerik.Windows.Controls.Input.xaml*
+   + *Telerik.Windows.Controls.Input.xaml* 
 
-   + *Telerik.Windows.Controls.Navigation.xaml*
+   + *Telerik.Windows.Controls.Navigation.xaml* 
 
-   + *Telerik.ReportViewer.Silverlight.xaml*The Telerik UI for Silverlight xaml files are located in               C:\Program Files (x86)\Progress\Reporting {{site.suiteversion}}\Silverlight\Themes).             
+   + *Telerik.ReportViewer.Silverlight.xaml* The Telerik UI for Silverlight xaml files are located in               C:\Program Files (x86)\Progress\Reporting {{site.suiteversion}}\Silverlight\Themes).             
 
 1. The next step is to merge these ResourceDictionaries in the App.xaml file:
 
 	
-    ````XAML
+    ````XML
      <Application x:Class="SilverlightApplication1.App"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
@@ -66,24 +66,24 @@ This article explains the steps needed to create an application which uses the S
 
 
 
-1. Add the ReportViewer to the MainPage.xaml from the __ToolBox__               through __Visual Studio__ or __Expression Blend__.               You should skip points #5, #6 and #7 if you have done that, as they describe how to register the report viewer manually.               
+1. Add the ReportViewer to the MainPage.xaml from the __ToolBox__                through __Visual Studio__  or __Expression Blend__ .               You should skip points #5, #6 and #7 if you have done that, as they describe how to register the report viewer manually.               
 
   ![](images/SilverlightBlend.png)
 
-1. Open __MainPage.xaml__
+1. Open __MainPage.xaml__ 
 
 1. Register the namespace in the following way: xmlns:```<Name of               namespace>```= "```<Name of assembly>```" in our case               xmlns:telerik="clr-namespace:Telerik.ReportViewer.Silverlight;assembly=Telerik.ReportViewer.Silverlight"             
 
 1. Now you would be able to declare the ReportViewer control:             
 
 	
-    ````XAML
+    ````XML
 				<telerik:ReportViewer></telerik:ReportViewer>
 ````
 
 
 
-1. Next we need to set the __ReportServiceUri__               and __Report__ properties of the viewer.               The [Telerik.ReportViewer.Silverlight.ReportViewer.ReportServiceUri](/reporting/api/Telerik.ReportViewer.Silverlight.ReportViewer#Telerik_ReportViewer_Silverlight_ReportViewer_ReportServiceUri)               should point to the [Telerik Reporting WCF service]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-wcf-service/overview%}):(__ReportServiceUri="../ReportService.svc__")               and the               [Telerik.ReportViewer.Silverlight.ReportViewer.Report](/reporting/api/Telerik.ReportViewer.Silverlight.ReportViewer#Telerik_ReportViewer_Silverlight_ReportViewer_Report)               should be set to the assembly qualified name of the report you want to show i.e.:(__Report="Telerik.Reporting.Examples.CSharp.BarcodesReport, CSharp.ReportLibrary, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null__").               Review [How to use the Report Wizard to create a Band Report]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/report-wizards/band-report-wizard/how-to-use-the-report-wizard-to-create-a-band-report%}) topic for information on creating a __Telerik Report__.               The MainPage.xaml should look similar:             
+1. Next we need to set the __ReportServiceUri__                and __Report__  properties of the viewer.               The [Telerik.ReportViewer.Silverlight.ReportViewer.ReportServiceUri](/reporting/api/Telerik.ReportViewer.Silverlight.ReportViewer#Telerik_ReportViewer_Silverlight_ReportViewer_ReportServiceUri)               should point to the [Telerik Reporting WCF service]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-wcf-service/overview%}):(__ReportServiceUri="../ReportService.svc__ ")               and the               [Telerik.ReportViewer.Silverlight.ReportViewer.Report](/reporting/api/Telerik.ReportViewer.Silverlight.ReportViewer#Telerik_ReportViewer_Silverlight_ReportViewer_Report)               should be set to the assembly qualified name of the report you want to show i.e.:(__Report="Telerik.Reporting.Examples.CSharp.BarcodesReport, CSharp.ReportLibrary, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null__ ").               Review [How to use the Report Wizard to create a Band Report]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/report-wizards/band-report-wizard/how-to-use-the-report-wizard-to-create-a-band-report%}) topic for information on creating a __Telerik Report__ .               The MainPage.xaml should look similar:             
 
 {{source=CodeSnippets\SilverlightCS\API\Telerik\ReportViewer\Silverlight\MainPage.xaml}}
 ````XML

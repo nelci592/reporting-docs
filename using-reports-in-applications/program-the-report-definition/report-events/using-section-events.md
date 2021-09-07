@@ -14,7 +14,7 @@ position: 3
 
 ## 
 
-The various report __Section__ objects expose these events:         
+The various report __Section__  objects expose these events:         
 
 
 
@@ -51,9 +51,6 @@ The second example demonstrates getting a reference to the detail section of the
 	            }
 	        }
 ````
-
-
-
 {{source=CodeSnippets\VB\API\Telerik\Reporting\Processing\EventsSnippets.vb region=AddSectionDataBindingSnippet}}
 ````VB
 	    Private Sub detail_ItemDataBinding(sender As Object, e As EventArgs)
@@ -65,9 +62,6 @@ The second example demonstrates getting a reference to the detail section of the
 	        End If
 	    End Sub
 ````
-
-
-
 {{source=CodeSnippets\CS\API\Telerik\Reporting\Processing\Access_Processing_Instances_Children_Snippets.cs region=Using_ILayoutElementContainer_Children_Snippet}}
 ````C#
 			void DetailSection_ItemDataBinding_Using_ILayoutElementContainer_Children(object sender, EventArgs e)
@@ -87,9 +81,6 @@ The second example demonstrates getting a reference to the detail section of the
 				}
 			}
 ````
-
-
-
 {{source=CodeSnippets\VB\API\Telerik\Reporting\Processing\Access_Processing_Instances_Children_Snippets.vb region=Using_ILayoutElementContainer_Children_Snippet}}
 ````VB
 	    Private Sub DetailSection_ItemDataBinding_Using_ILayoutElementContainer_Children(sender As Object, e As EventArgs)
@@ -105,5 +96,4 @@ The second example demonstrates getting a reference to the detail section of the
 	        End If
 	    End Sub
 ````
-
 

@@ -15,15 +15,12 @@ position: 0
 ## Request
 
 	
-````URI Template
-
-POST /api/reports/clients/{clientId}/instances/{instanceId}/documents
-````
+          POST /api/reports/clients/{clientId}/instances/{instanceId}/documents
+        
 
 
 
-
-__Path parameters__
+__Path parameters__ 
 
 
 | Name | Type | Description |
@@ -34,7 +31,7 @@ __Path parameters__
 
 
 
-__Request Body__
+__Request Body__ 
 
 [FormatKey]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/json-entities/formatkey%}) describing the document to be requested.         
 
@@ -51,36 +48,30 @@ __Request Body__
 
 
 
-__Response Body__
+__Response Body__ 
 
 When the return status is `Accepted/Created` the body contains a document identifier string which is used to get pages/document.         
 
 ## Sample
 
 	
-````Request Message
+          POST /api/reports/clients/2c3d/instances/4d3c/documents HTTP/1.1
 
-POST /api/reports/clients/2c3d/instances/4d3c/documents HTTP/1.1
-
-{
-‘format’: ‘HTML5’,
-‘deviceInfo’: { ‘xxx’: ‘zzz’ },
-‘useCache’: true,
-‘baseDocumentId’: ‘xxxx’,
-‘actionId’: ‘xxxx’
-}
-````
-
+          {
+          ‘format’: ‘HTML5’,
+          ‘deviceInfo’: { ‘xxx’: ‘zzz’ },
+          ‘useCache’: true,
+          ‘baseDocumentId’: ‘xxxx’,
+          ‘actionId’: ‘xxxx’
+          }
+        
 
 
 
 	
-````Response Message
+          HTTP/1.1 202 Accepted
 
-HTTP/1.1 202 Accepted
-
-“5x3a”
-````
-
+          “5x3a”
+        
 
 

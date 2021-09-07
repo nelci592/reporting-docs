@@ -30,4 +30,3 @@ Unbinds event handlers from the specified event.
             reportViewer.unbind(telerikReportViewer.Events.PAGE_READY); // this will unbind ALL event handlers, including the anonymous.
 ````
 
-

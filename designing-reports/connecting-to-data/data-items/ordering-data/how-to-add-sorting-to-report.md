@@ -12,7 +12,7 @@ position: 1
 
 
 
-To define a sorting for the __Report__ item use the following steps:     	
+To define a sorting for the __Report__  item use the following steps:     	
 
 ##Adding sorting to Report using Report Designer
 
@@ -75,11 +75,6 @@ For each sort expression, follow these steps:
 	            report1.Sortings.Add(sorting1);
 	
 ````
-
-
-
-
-
 {{source=CodeSnippets\VB\API\Telerik\Reporting\ReportSnippets.vb region=AddNewSortSnippet}}
 ````VB
 	

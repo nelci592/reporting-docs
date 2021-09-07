@@ -16,7 +16,7 @@ The appData element specifies the configuration settings for the temporary appli
 
 ## Attributes and Elements
 
-__```<appData>``` element__
+__```<appData>``` element__ 
 
 
 
@@ -55,5 +55,4 @@ JSON-based configuration file:
     }
   }
 ````
-
 

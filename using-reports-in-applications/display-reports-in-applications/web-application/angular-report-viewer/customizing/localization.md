@@ -16,10 +16,10 @@ The article elaborates on how to localize the messages displayed by the Angular 
 
 ## 
 
-1. To localize the report viewer, create a new TypeScript file *stringResources.ts*:
+1. To localize the report viewer, create a new TypeScript file *stringResources.ts* :
 
 	
-    ````TypeScript
+    ````js
 export class StringResources {
     static english = {
         loadingReport: 'Loading...',
@@ -38,16 +38,16 @@ The file can contain all or only part of the string resources which would be loc
 1. Import the new file in the component where the viewer is used:
 
 	
-    ````TypeScript
+    ````js
 import { StringResources } from './stringResources';
 ````
 
 
 
-1. Implement __AfterViewInit__ and extend the viewer object with the string resources for the desired culture:             
+1. Implement __AfterViewInit__  and extend the viewer object with the string resources for the desired culture:             
 
 	
-    ````TypeScript
+    ````js
 import { AfterViewInit, Component, ViewChild } from '@angular/core';
 import { TelerikReportViewerComponent } from '@progress/telerik-angular-report-viewer';
 import { StringResources } from './stringResources';
@@ -64,5 +64,4 @@ export class AppComponent implements AfterViewInit {
   }
 }
 ````
-
 

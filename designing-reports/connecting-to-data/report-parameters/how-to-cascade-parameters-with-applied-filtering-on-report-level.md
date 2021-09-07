@@ -33,17 +33,17 @@ To create cascading report parameters with applied filtering on report level fol
 
 
 
-1. Click the ellipses on the __Report.ReportParameters__ property. This invokes the __ReportParameter Collection editor__ .
+1. Click the ellipses on the __Report.ReportParameters__  property. This invokes the __ReportParameter Collection editor__  .
 
 1. Add new Report Parameter
 
-1.  __Name __ it __ProductCategoryID__ .
+1.  __Name__  it __ProductCategoryID__  .
 
-1. Set the __Type__ of the parameter to __Integer__ .
+1. Set the __Type__  of the parameter to __Integer__  .
 
-1. Expand the __AvailableValues.__ 
+1. Expand the __AvailableValues.__  
 
-1. Set the __DataSource__ using the __Data Source Wizard__ to SqlDataSource with query:
+1. Set the __DataSource__  using the __Data Source Wizard__  to SqlDataSource with query:
 
 	
     ````SQL
@@ -56,25 +56,25 @@ To create cascading report parameters with applied filtering on report level fol
 
 
 
-1. It is not compulsory to set the __DataMember__ property when the data source contains only one table.
+1. It is not compulsory to set the __DataMember__  property when the data source contains only one table.
 
-1. Set the __DisplayMember__ to __= Fields.CategoryName__ column.
+1. Set the __DisplayMember__  to __= Fields.CategoryName__  column.
 
-1. Set the __ValueMember__ to __= Fields.ProductCategoryID__ .
+1. Set the __ValueMember__  to __= Fields.ProductCategoryID__  .
 
-1. Set the __Text__ to __Product Category__ .
+1. Set the __Text__  to __Product Category__  .
 
-1. Set the __Visible__ property to __True__ if needed.
+1. Set the __Visible__  property to __True__  if needed.
 
 1. Add new Report Parameter
 
-1.  __Name __ it __ProductSubcategoryID__ .
+1.  __Name__  it __ProductSubcategoryID__  .
 
-1. Set the __Type__ of the parameter to __Integer__ .
+1. Set the __Type__  of the parameter to __Integer__  .
 
-1. Expand the __AvailableValues.__ 
+1. Expand the __AvailableValues.__  
 
-1. Set the __DataSource__ using the __Data Source Wizard__ to SqlDataSource with query:
+1. Set the __DataSource__  using the __Data Source Wizard__  to SqlDataSource with query:
 
 	
     ````SQL
@@ -88,43 +88,43 @@ To create cascading report parameters with applied filtering on report level fol
 
 
 
-1. It is not compulsory to set the __DataMember__ property when the data source contains only one table.
+1. It is not compulsory to set the __DataMember__  property when the data source contains only one table.
 
-1. Set the __DisplayMember__ to __= Fields.SubcategoryName__ column.
+1. Set the __DisplayMember__  to __= Fields.SubcategoryName__  column.
 
-1. Set the __ValueMember__ to __= Fields.ProductSubcategoryID__ .
+1. Set the __ValueMember__  to __= Fields.ProductSubcategoryID__  .
 
-1. Click on the ellipsis on the __Filters__ property.
-
-1. Add new filter.
-
-1. As __Expression__ choose __=Fields.ProductCategoryID.__ 
-
-1. As __Operator__ choose __equals(=)__ .
-
-1. As Value choose __=Parameters.ProductCategoryID.Value__ .
-
-1. Click __OK__ .
-
-1. Set the __Multivalue__ to __false__ (or to __true__ if you want to be able to select more than one subcategory at a time).
-
-1. Set the __Text__ to __Product Subcategory__ .
-
-1. Set the __Visible__ property to __True__ if needed.
-
-1. Close the __ReportParameter Collection Editor__ .
-
-1. Click on the ellipsis on the __Filters__ property of the report to open the __Edit Filters__ dialog.
+1. Click on the ellipsis on the __Filters__  property.
 
 1. Add new filter.
 
-1. As __Expression__ choose __=Fields.ProductSubcategoryID__ .
+1. As __Expression__  choose __=Fields.ProductCategoryID.__  
 
-1. As __Operator__ choose __equals(=)__ (or to __IN__ operator if you have set __ProductSubcategoryID__ parameter as multivalue parameter __)__ .
+1. As __Operator__  choose __equals(=)__  .
 
-1. As Value choose __=Parameters.ProductSubcategoryID.Value__ .
+1. As Value choose __=Parameters.ProductCategoryID.Value__  .
 
-1. Click __OK__ .
+1. Click __OK__  .
+
+1. Set the __Multivalue__  to __false__  (or to __true__  if you want to be able to select more than one subcategory at a time).
+
+1. Set the __Text__  to __Product Subcategory__  .
+
+1. Set the __Visible__  property to __True__  if needed.
+
+1. Close the __ReportParameter Collection Editor__  .
+
+1. Click on the ellipsis on the __Filters__  property of the report to open the __Edit Filters__  dialog.
+
+1. Add new filter.
+
+1. As __Expression__  choose __=Fields.ProductSubcategoryID__  .
+
+1. As __Operator__  choose __equals(=)__  (or to __IN__  operator if you have set __ProductSubcategoryID__  parameter as multivalue parameter __)__  .
+
+1. As Value choose __=Parameters.ProductSubcategoryID.Value__  .
+
+1. Click __OK__  .
 
 1. Preview the report. Use the Product Category and Product Subcategory parameters to filter the list of products shown in the report.
 

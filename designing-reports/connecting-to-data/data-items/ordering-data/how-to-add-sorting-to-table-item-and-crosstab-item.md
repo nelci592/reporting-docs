@@ -12,7 +12,7 @@ position: 2
 
 
 
-To define a sorting for the __Table__ or __Crosstab__ items use the following steps: 
+To define a sorting for the __Table__  or __Crosstab__  items use the following steps: 
 
 ##Adding sorting to Table/Crosstab data item using Report Designer
 
@@ -73,9 +73,6 @@ For each sort expression, follow these steps:
 	            table1.Sortings.Add(sorting1);
 	
 ````
-
-
-
 {{source=CodeSnippets\VB\API\Telerik\Reporting\TableSnippets.vb region=AddNewSortSnippet}}
 ````VB
 	

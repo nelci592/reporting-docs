@@ -21,15 +21,15 @@ Our product can connect to virtually any database through an ADO.NET or ODBC dat
 
 The drivers library and installers can be downloaded as a separate ZIP-file from the user's account. The archive contains three files:
 
-* *Telerik.Reporting.DataDirectDriversInstaller.dll* - the resource library file, that contains the __x86__ and               __x64__ versions of the drivers.             
+* *Telerik.Reporting.DataDirectDriversInstaller.dll*  - the resource library file, that contains the __x86__  and               __x64__  versions of the drivers.             
 
-* *Telerik.Reporting.DataDirectDriversInstaller.CLI.exe* - a command-line interface for installing the drivers via batch file or script.             
+* *Telerik.Reporting.DataDirectDriversInstaller.CLI.exe*  - a command-line interface for installing the drivers via batch file or script.             
 
-* *Telerik.Reporting.DataDirectDriversInstaller.UI.exe* - a Windows Forms application that provides a convenient UI and an option to log the installation output.             
+* *Telerik.Reporting.DataDirectDriversInstaller.UI.exe*  - a Windows Forms application that provides a convenient UI and an option to log the installation output.             
 
 ## Telerik Reporting DataDirect ODBC Drivers List
 
-The following tables describe the available drivers that are distributed by the installer. Some of the drivers have only __x86__ (32-bit) versions           The drivers platform should be considered based on the target application platform.         
+The following tables describe the available drivers that are distributed by the installer. Some of the drivers have only __x86__  (32-bit) versions           The drivers platform should be considered based on the target application platform.         
 
 
 >caption Telerik Reporting DataDirect ODBC drivers - (x64) 64-bit
@@ -89,7 +89,7 @@ The CLI tool is useful when the drivers installation or uninstallation is execut
 
 
 
-__Example usage:__
+__Example usage:__ 
 
 `             /mode install /targetpath "C:\Program Files\Progress\Telerik Reporting ODBC Drivers" /platform x86 /drivers "SQLS,ORA" /successToken "OK"           ` - installs the 32-bit  SQL Server and Oracle drivers to the target path and outputs "OK" if installation succeeds.         
 
@@ -99,7 +99,7 @@ __Example usage:__
 
   ![datadirect-drivers-installer-gui](images/DataSources/datadirect-drivers-installer-gui.png)
 
-The drivers can be installed or uninstalled using a Windows Forms application, which makes the installation process more intuitive and convenient.           It provides the same options as the CLI installer and adds the ability to output the installation log to an external file.           It also automatically detects the current application's platform and selects the corresponding __x86__ or __x64__ option.         
+The drivers can be installed or uninstalled using a Windows Forms application, which makes the installation process more intuitive and convenient.           It provides the same options as the CLI installer and adds the ability to output the installation log to an external file.           It also automatically detects the current application's platform and selects the corresponding __x86__  or __x64__  option.         
 
 ## Additional Information
 

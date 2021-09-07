@@ -27,10 +27,6 @@ Lets start with the model now. In case all you need is a report viewer that is u
 ````c#
         @model Telerik.Reporting.UriReportSource
 ````
-
-
-
-	
 ````vb.net
         @ModelType Telerik.Reporting.UriReportSource
 ````
@@ -52,9 +48,6 @@ Then you can use it directly when you are initializing the report viewer:
 	       .PersistSession(false)
 	)
 ````
-
-
-
 {{source=CodeSnippets\MvcVB\Views\Home\SimpleModelBinding.vbhtml region=Example}}
 ````vb.net
 	@Code
@@ -84,9 +77,6 @@ Now in case you have a more complex scenario where the report viewer depends on 
 	        public UriReportSource ReportSource { get; set; }
 	    }
 ````
-
-
-
 {{source=CodeSnippets\MvcVB\Models\TemplatedReportViewerViewModel.vb region=AdvancedModelBindingViewModel}}
 ````vb.net
 	Public Class TemplatedReportViewerViewModel
@@ -112,9 +102,6 @@ Once you have the model you should create your own logic to populate it (note th
 	       .PersistSession(false)
 	)
 ````
-
-
-
 {{source=CodeSnippets\MvcVB\Views\Home\AdvancedModelBinding.vbhtml region=Example}}
 ````vb.net
 	@Code
@@ -149,9 +136,6 @@ There are cases when the supported report sources (Type and Uri) will not be eno
 	       .PersistSession(false)
 	)
 ````
-
-
-
 {{source=CodeSnippets\MvcVB\Views\Home\CustomModelBinding.vbhtml region=Example1}}
 ````vb.net
 	@Code
@@ -184,9 +168,6 @@ You can also add parameters, like this:
 	       .PersistSession(false)
 	)
 ````
-
-
-
 {{source=CodeSnippets\MvcVB\Views\Home\CustomModelBinding.vbhtml region=Example2}}
 ````vb.net
 	@Code
@@ -219,9 +200,6 @@ The view can also be strongly typed:
 	       .PersistSession(false)
 	)
 ````
-
-
-
 {{source=CodeSnippets\MvcVB\Views\Home\AdvancedCustomModelBinding.vbhtml region=Example}}
 ````vb.net
 	@Code
@@ -261,9 +239,6 @@ Finally on the server side your custom report source resolver can implement the 
 	        }
 	    }
 ````
-
-
-
 {{source=CodeSnippets\MvcVB\Controllers\CustomResolverReportsController.vb region=ModelBindingReportResolver_Implementation}}
 ````vb.net
 	Class ModelBindingReportSourceResolver
@@ -281,5 +256,4 @@ Finally on the server side your custom report source resolver can implement the 
 	    End Function
 	End Class
 ````
-
 

@@ -16,7 +16,7 @@ The Cache element specifies the configuration settings for the cache management 
 
 ## Attributes and Elements
 
-__```<cache>``` element__
+__```<cache>``` element__ 
 
 
 
@@ -29,7 +29,7 @@ Attributes| __provider__ – required string attribute. Specifies the name of th
 
 
 
-__```<Providers>``` element__
+__```<Providers>``` element__ 
 
 The Providers element specifies a collection of cache providers to register for use in the application.
 
@@ -44,7 +44,7 @@ Attributes|No attributes are defined for this element.|
 
 
 
-__```<provider>``` element__
+__```<provider>``` element__ 
 
 The Provider element specifies a cache provider to register for use in the application.
 

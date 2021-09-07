@@ -18,7 +18,7 @@ The Silverlight ReportViewer displays content rendered through the Reporting Sil
 
 ##The Silverlight ReportViewer is not visible on running the application.
 
-As of Telerik Reporting Q1 2014, the Silverlight ReportViewer control uses implict styles.           When the viewer's template (__Telerik.ReportViewer.Silverlight.xaml__) file is not loaded correctly,           the viewer is not displayed. Double-check if XAML resources are loaded in the application.         
+As of Telerik Reporting Q1 2014, the Silverlight ReportViewer control uses implict styles.           When the viewer's template (__Telerik.ReportViewer.Silverlight.xaml__ ) file is not loaded correctly,           the viewer is not displayed. Double-check if XAML resources are loaded in the application.         
 
 More details about the settings required by the Silverlight ReportViewer are available in           [How to: Add report viewer to a Silverlight application]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/silverlight-application/how-to-add-report-viewer-to-a-silverlight-application%}).         
 
@@ -26,7 +26,7 @@ More details about the settings required by the Silverlight ReportViewer are ava
         "The name "XYZControl" does not exist in the namespace "clr-namespace:Telerik.XXXX;assembly=Telerik.XXXX".	[path]\Themes\[theme_name]\Telerik.XXXX.xaml	".
       
 
-As of Telerik Reporting Q1 2014, the Silverlight ReportViewer control uses implict styles.           When the viewer's template (__Telerik.ReportViewer.Silverlight.xaml__) file is not loaded correctly,           the viewer is not displayed. Also if the additionally required XAML files           are not loaded or they are not of a version synchronized with Telerik Reporting, you may receive such errors.           Double-check if XAML resources are loaded in the application and if dependencies between Telerik Reporting and Telerik UI for Silverlight           are considered - [Silverlight Dependenices per release]({%slug telerikreporting/upgrade/overview%}).         
+As of Telerik Reporting Q1 2014, the Silverlight ReportViewer control uses implict styles.           When the viewer's template (__Telerik.ReportViewer.Silverlight.xaml__ ) file is not loaded correctly,           the viewer is not displayed. Also if the additionally required XAML files           are not loaded or they are not of a version synchronized with Telerik Reporting, you may receive such errors.           Double-check if XAML resources are loaded in the application and if dependencies between Telerik Reporting and Telerik UI for Silverlight           are considered - [Silverlight Dependenices per release]({%slug telerikreporting/upgrade/overview%}).         
 
 More details about the settings required by the Silverlight ReportViewer are available in           [How to: Add report viewer to a Silverlight application]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/silverlight-application/how-to-add-report-viewer-to-a-silverlight-application%}).         
 
@@ -34,7 +34,7 @@ More details about the settings required by the Silverlight ReportViewer are ava
         "The name "XYZControl" does not exist in the namespace "clr-namespace:Telerik.XXXX;assembly=Telerik.XXXX".	[path]\Themes\[theme_name]\Telerik.XXXX.xaml	".
       
 
-As of Telerik Reporting Q1 2014, the Silverlight ReportViewer control uses implict styles.           When the viewer's template (__Telerik.ReportViewer.Silverlight.xaml__) file is not loaded correctly,           the viewer is not displayed. Also if the additionally required XAML files           are not loaded or they are not of a version synchronized with Telerik Reporting, you may receive such errors.           Double-check if XAML resources are loaded in the application and if dependencies between Telerik Reporting and Telerik UI for Silverlight           are considered - [Silverlight Dependenices per release]({%slug telerikreporting/upgrade/overview%}).         
+As of Telerik Reporting Q1 2014, the Silverlight ReportViewer control uses implict styles.           When the viewer's template (__Telerik.ReportViewer.Silverlight.xaml__ ) file is not loaded correctly,           the viewer is not displayed. Also if the additionally required XAML files           are not loaded or they are not of a version synchronized with Telerik Reporting, you may receive such errors.           Double-check if XAML resources are loaded in the application and if dependencies between Telerik Reporting and Telerik UI for Silverlight           are considered - [Silverlight Dependenices per release]({%slug telerikreporting/upgrade/overview%}).         
 
 More details about the settings required by the Silverlight ReportViewer are available in           [How to: Add report viewer to a Silverlight application]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/silverlight-application/how-to-add-report-viewer-to-a-silverlight-application%}).         
 

@@ -16,7 +16,7 @@ position: 8
 
 This article elaborates on how to setup the viewer for printing reports.         
 
-The printing functionality is based on rendering the report in PDF format with special settings so when           the PDF file opens in a browser, the PDF plug-in's __Print dialog__ is directly invoked.         
+The printing functionality is based on rendering the report in PDF format with special settings so when           the PDF file opens in a browser, the PDF plug-in's __Print dialog__  is directly invoked.         
 
 The print functionality requires:
 
@@ -40,7 +40,7 @@ The print functionality requires:
 
 By default the viewer widget tries to use the PDF plug-in of the browser for printing. When it is not available           or not supported, the widget falls back to exporting to a PDF file containing a special 'print'           script. The purpose of this script is to open the Print dialog of the PDF reader right after the file has been opened.         
 
-You can manually control the printing behavior through the           [printMode]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/report-viewer-initialization%})           option when creating the report viewer widget. When the value is set to           *telerikReportViewer.PrintModes.FORCE_PDF_FILE* the widget           will always export the report document to a PDF file with the special 'print'           script. When the value is set to *telerikReportViewer.PrintModes.FORCE_PDF_PLUGIN*           the widget will always try to use the PDF plug-in. In this case if the browser doesn't have a PDF plug-in or           it does not support the 'print' script nothing will happen. By default when the value is not expicitly set,           the widget will try to automatically determine whether to export the report document or use the browser's           PDF plug-in. This is equivalent to setting the *telerikReportViewer.PrintModes.AUTO_SELECT*           value.         
+You can manually control the printing behavior through the           [printMode]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/report-viewer-initialization%})           option when creating the report viewer widget. When the value is set to           *telerikReportViewer.PrintModes.FORCE_PDF_FILE*  the widget           will always export the report document to a PDF file with the special 'print'           script. When the value is set to *telerikReportViewer.PrintModes.FORCE_PDF_PLUGIN*            the widget will always try to use the PDF plug-in. In this case if the browser doesn't have a PDF plug-in or           it does not support the 'print' script nothing will happen. By default when the value is not expicitly set,           the widget will try to automatically determine whether to export the report document or use the browser's           PDF plug-in. This is equivalent to setting the *telerikReportViewer.PrintModes.AUTO_SELECT*            value.         
 
 You can also implement a custom logic for dynamically specifying the print mode. For example:
 

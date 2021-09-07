@@ -12,7 +12,7 @@ position: 2
 
 
 
-This article demonstrates how to add the Angular Report Viewer component to an Angular application with a SystemJS module loader.         It shows the steps to implement the required configuration when you use the Angular Quickstart project template. As a result, we create a         new Angular application with settings similar to these of the local AngularDemo project, installed by default         under __[TelerikReporting_InstallDir]\Examples\Angular\SystemJS__.       
+This article demonstrates how to add the Angular Report Viewer component to an Angular application with a SystemJS module loader.         It shows the steps to implement the required configuration when you use the Angular Quickstart project template. As a result, we create a         new Angular application with settings similar to these of the local AngularDemo project, installed by default         under __[TelerikReporting_InstallDir]\Examples\Angular\SystemJS__ .       
 
 >tip To use the Angular Report Viewer with SystemJS, you must explicitly list the package entry points.         
 
@@ -25,9 +25,9 @@ The following list describes the prerequisites for this tutorial:
 
 * A running application that hosts a Reporting REST service at address /api/reports. For more information, see               [Telerik Reporting REST Services]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview%}).             
 
-* Copy of the "Product Catalog.trdp" report file from __[TelerikReporting_InstallDir]\ReportDesigner\Examples__               in the folder used by the [ReportFileResolver](/reporting/api/Telerik.Reporting.Services.WebApi.ReportFileResolver)               in the Reporting REST service implementation.             
+* Copy of the "Product Catalog.trdp" report file from __[TelerikReporting_InstallDir]\ReportDesigner\Examples__                in the folder used by the [ReportFileResolver](/reporting/api/Telerik.Reporting.Services.WebApi.ReportFileResolver)               in the Reporting REST service implementation.             
 
-* Entry with the default connection string used by Telerik Reporting sample reports in the __web.config__ file               of the project hosting the Reporting REST service:             
+* Entry with the default connection string used by Telerik Reporting sample reports in the __web.config__  file               of the project hosting the Reporting REST service:             
 
 	
     ````xml
@@ -81,7 +81,7 @@ If you don't have an Angular 4 SystemJS application,           clone the Angular
 1. Configure SystemJS    The configuration file, which SystemJS uses, is in the project template under src/systemjs.config.js.                     To add the Angular Report Viewer and jQuery configuration to the map and packages section, use the following example:                 
 
 	
-    ````json
+    ````js
 map: {
   // ...
   '@progress': 'npm:@progress',
@@ -104,7 +104,7 @@ packages: {
 1. Import the TelerikReportingModule in [your application root module](https://angular.io/docs/ts/latest/guide/ngmodule.html#!#angular-modularity):                 
 
 	
-    ````TypeScript
+    ````js
 import { TelerikReportingModule } from '@progress/telerik-angular-report-viewer';
 @NgModule({
   imports: [TelerikReportingModule]
@@ -115,7 +115,7 @@ import { TelerikReportingModule } from '@progress/telerik-angular-report-viewer'
 1. Add the desired report viewer container style using a property of the AppComponent class:
 
 	
-    ````TypeScript
+    ````js
 export class AppComponent {
   viewerContainerStyle = {
     position: 'relative',
@@ -150,7 +150,7 @@ export class AppComponent {
 1. Style the viewer using the desired Kendo UI theme (еither using [Less-Based Themes](http://docs.telerik.com/kendo-ui/styles-and-layout/appearance-styling) or [Sass-Based Themes](http://docs.telerik.com/kendo-ui/styles-and-layout/sass-themes)):                     Add references to the Less-based CSS files in the ```<head>``` element of index.html:
 
 	
-    ````HTML
+    ````html
 <!-- The required Less-based styles -->                  
 <link href="https://kendo.cdn.telerik.com/ {{site.kendosubsetversion}} /styles/kendo.common.min.css" rel="stylesheet" />
 <link href="https://kendo.cdn.telerik.com/ {{site.kendosubsetversion}} /styles/kendo.blueopal.min.css" rel="stylesheet" />
@@ -160,10 +160,10 @@ export class AppComponent {
 
     >tip To get the Sass-based Kendo UI themes, you can use either the pre-build CSS files or the NPM packages ([Getting the Sass-Based Themes](http://docs.telerik.com/kendo-ui/styles-and-layout/sass-themes#getting-the-themes)).                   
 
-    If you use the __styleUrls__ attribute to reference the CSS, it is required to set                   the view encapsulation to __None__:                 
+    If you use the __styleUrls__  attribute to reference the CSS, it is required to set                   the view encapsulation to __None__ :                 
 
 	
-    ````TypeScript
+    ````js
 import { Component, ViewEncapsulation } from '@angular/core';
 @Component({
   encapsulation: ViewEncapsulation.None

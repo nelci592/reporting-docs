@@ -109,9 +109,6 @@ The steps below show how to create a minimal chart definition with the Graph ite
 	            barSeries1.Y = "=IsNull(Sum(Fields.LineTotal), 0) / 1000.0";
 	            graph1.Series.Add(barSeries1);
 ````
-
-
-
 {{source=CodeSnippets\VB\API\Telerik\Reporting\GraphSnippets.vb region=AddNewGraphColumnChartType}}
 ````VB
 	       'Instantiate a new Graph

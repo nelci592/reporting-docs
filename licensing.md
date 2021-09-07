@@ -14,7 +14,7 @@ position: 10
 
 Telerik Reporting is available under a developer (commercial) or a trial license.       
 
-Reardless of the license version you hold, to use Telerik Reporting, you have to agree to the         __[End User License Agreement for Progress Telerik Reporting and Telerik Report Designer](https://www.telerik.com/purchase/license-agreement/reporting-dlw-s)__.       
+Reardless of the license version you hold, to use Telerik Reporting, you have to agree to the         __End User License Agreement for Progress Telerik Reporting and Telerik Report Designerhttps://www.telerik.com/purchase/license-agreement/reporting-dlw-s__ .       
 
 ## Developer Licenses
 
@@ -26,7 +26,7 @@ For more information on the commercial terms, refer to the pricing list of the  
 
 Trial licenses provide free and fully functional access to all Telerik Reporting products.           While the trial version is unlimited in time, each page displays a copyright message.         
 
-To download the Telerik Reporting trial version, refer to the           __[Telerik Reporting Download](https://www.telerik.com/download)__ page.         
+To download the Telerik Reporting trial version, refer to the           __Telerik Reporting Downloadhttps://www.telerik.com/download__  page.         
 
 To download a developer build with a trial license, log into your           [Telerik account](http://www.telerik.com/clientnet/).         
 
@@ -36,9 +36,9 @@ To upgrade the trial version of your license to a developer license:
 
 1. Back up your old Telerik Reporting files and folders especially               if your project uses the settings that are included in them.             
 
-1. Uninstall the __Trial__ version either by using the               __Start Menu__ shortcut or the __Add/Remove Programs__ dialog.             
+1. Uninstall the __Trial__  version either by using the               __Start Menu__  shortcut or the __Add/Remove Programs__  dialog.             
 
-1. Obtain the new __Dev__ installer and install               Telerik Reporting. For more information, refer to the article on               [Installation]({%slug telerikreporting/installation%}).             
+1. Obtain the new __Dev__  installer and install               Telerik Reporting. For more information, refer to the article on               [Installation]({%slug telerikreporting/installation%}).             
 
 ## Licensing Mechanism
 
@@ -70,4 +70,4 @@ Your purchase of Telerik Reporting includes a run-time royalty-free license to r
 
    + Open source products.                 
 
-For more information, refer to the           __[End User License Agreement for Progress Telerik Reporting and Telerik Report Designer](https://www.telerik.com/purchase/license-agreement/reporting-dlw-s)__.           or send an email to           [sales@Telerik.com](mailto:sales@Telerik.com)           to discuss your planned use of the controls.         
+For more information, refer to the           __End User License Agreement for Progress Telerik Reporting and Telerik Report Designerhttps://www.telerik.com/purchase/license-agreement/reporting-dlw-s__ .           or send an email to           [sales@Telerik.com](mailto:sales@Telerik.com)           to discuss your planned use of the controls.         

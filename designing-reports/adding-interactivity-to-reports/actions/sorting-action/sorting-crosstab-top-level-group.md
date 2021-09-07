@@ -32,20 +32,20 @@ Add an interactive sorting button to crosstab header (top-level static group or 
 
 1. In report design view, select the crosstab corner with (USD IN THOUSANDS) text;         		
 
-1. From __Properties window__ open the __Actions__ editor.         		
+1. From __Properties window__  open the __Actions__  editor.         		
 
-1. Select __Sorting__ option.         		
+1. Select __Sorting__  option.         		
 
-1. Click __Edit sort targets__ button to open Edit Sorting Action targets editor.         		
+1. Click __Edit sort targets__  button to open Edit Sorting Action targets editor.         		
 
-1. Click __New__ to add a new target.         		
+1. Click __New__  to add a new target.         		
 
 1. Select the target dynamic group (ProductCategory) from the drop down.          		
 
-1. Click __OK__.         		
+1. Click __OK__ .         		
 
 1. In the Sort expressions drop-down select the field that corresponds to the column for which you are defining a sorting action.          		In this example this is  =Fields.ProductCategory.         		Specifying a sort expression is required.
 
-1. Click __OK__.         		
+1. Click __OK__ .         		
 
 To verify the sorting action, preview the report, and then click the interactive sorting button.          	

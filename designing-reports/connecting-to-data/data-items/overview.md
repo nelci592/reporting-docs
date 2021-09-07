@@ -12,11 +12,11 @@ position: 0
 
 
 
-The data items display and manipulate data in Telerik Reports.         With a data item, you can group, sort, filter, and aggregate data         from a single data source. Telerik Reporting provides several types of         data items: __Report (SubReport)__, __Table__,         __Crosstab__, __List__,         __Graph__, and __Map__. The __Table__,         __Crosstab__ and __List__ data         items are templates based on the Table data item,         and they can be combined in unique ways to customize the data presentation.         Charts provide a graphical view of data and aggregates.         The type of data item you choose depends on your data: the amount of         data, the range in data values, and what you want to convey in your report.       
+The data items display and manipulate data in Telerik Reports.         With a data item, you can group, sort, filter, and aggregate data         from a single data source. Telerik Reporting provides several types of         data items: __Report (SubReport)__ , __Table__ ,         __Crosstab__ , __List__ ,         __Graph__ , and __Map__ . The __Table__ ,         __Crosstab__  and __List__  data         items are templates based on the Table data item,         and they can be combined in unique ways to customize the data presentation.         Charts provide a graphical view of data and aggregates.         The type of data item you choose depends on your data: the amount of         data, the range in data values, and what you want to convey in your report.       
 
 To make the best choice of data item to use for displaying report data,         it helps to understand the characteristics of your data and the purpose of         the report. The following list describes the features of each data region:       
 
-*  __Report__ . The Report item consists of multiple
+*  __Report__  . The Report item consists of multiple
           horizontal sections (bands), one for each part of the report.
           For example, data and text in the report header section renders at
           the beginning of the report, data and text in the page header section
@@ -27,7 +27,7 @@ To make the best choice of data item to use for displaying report data,         
           at runtime. The detail section displays at run-time one row for each
           detail item in the report data source.
 
-*  __Table__ . The Table item has a fixed number of columns and
+*  __Table__  . The Table item has a fixed number of columns and
           displays detail or grouped data by rows. The Table expands down
           the page as needed. You can display all the detail data, row by row,
           or group the data by creating row groups. Row groups can be nested or adjacent.
@@ -35,7 +35,7 @@ To make the best choice of data item to use for displaying report data,         
           which is determined at run-time. You can also add static rows for labels or totals.
           You can add totals to the table or to a specific group.
 
-*  __Crosstab__ . The Crosstab item is derived from the Table
+*  __Crosstab__  . The Crosstab item is derived from the Table
           item and displays data grouped by rows and columns. A Crosstab has at least
           one row group and one column group. The Crosstab expands across the page for column
           groups and down the page for row groups. The Crosstab cells display summary and aggregate
@@ -45,13 +45,13 @@ To make the best choice of data item to use for displaying report data,         
           You can also add static rows for labels or totals.
           You can add totals to the table or to a specific group.
 
-*  __List__ . The List item is derived from the Table item and
+*  __List__  . The List item is derived from the Table item and
           contains one row that repeats for each value in the data source and
           displays data in a free-form format. For example, you might use a list to
           design a form or display both a table and a chart. Arrange text boxes anywhere
           in the list to create your layout.
 
-*  __Graph__ . The Graph item enables you to present large volumes
+*  __Graph__  . The Graph item enables you to present large volumes
           of aggregated information at a glance in a visual format.
 
-*  __Map__ . The Map item enables you to represent geospatial related data on top of the world map.
+*  __Map__  . The Map item enables you to represent geospatial related data on top of the world map.

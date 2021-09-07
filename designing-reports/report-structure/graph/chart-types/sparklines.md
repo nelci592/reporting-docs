@@ -24,17 +24,17 @@ The image below shows a typical usage of the sparkline chart type in a table:
 
 Almost any chart type can be used for a sparkline chart:
 
-* __Bar Charts__: The clustered, stacked, and 100% stacked bar charts.
+* __Bar Charts__ : The clustered, stacked, and 100% stacked bar charts.
 
-* __Column Charts__: The clustered, stacked, and 100% stacked column charts.
+* __Column Charts__ : The clustered, stacked, and 100% stacked column charts.
 
-* __Line Charts__:  The clustered, stacked, and 100% stacked line charts.
+* __Line Charts__ :  The clustered, stacked, and 100% stacked line charts.
 
-* __Area Charts__: The clustered, stacked, and 100% stacked area charts.
+* __Area Charts__ : The clustered, stacked, and 100% stacked area charts.
 
-* __Pie Charts__: Both pie and doughnut charts.
+* __Pie Charts__ : Both pie and doughnut charts.
 
-* __Range Charts__: Area and Bar range charts.
+* __Range Charts__ : Area and Bar range charts.
 
 ## Data Bars
 
@@ -42,9 +42,9 @@ Data bars typically represent a single data point, though they can represent mul
 
 You can make data bar versions of these full charts:
 
-* __Bar Charts__: Clustered, stacked and 100% stacked bar charts.
+* __Bar Charts__ : Clustered, stacked and 100% stacked bar charts.
 
-* __Column Charts__: Clustered, stacked and 100% stacked column charts. Column charts can be either sparklines or data bars.
+* __Column Charts__ : Clustered, stacked and 100% stacked column charts. Column charts can be either sparklines or data bars.
 
 # See Also
 

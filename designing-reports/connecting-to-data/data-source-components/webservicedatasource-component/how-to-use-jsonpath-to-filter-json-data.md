@@ -21,7 +21,7 @@ Very often the JSON data returned from a web service contains a single parent ob
 Example:         
 
 	
-````JSON
+````js
 { 
   "store": {
     "book": [ 
@@ -44,12 +44,12 @@ Example:
 
 
 
-JSONPath: __$.store.book__
+JSONPath: __$.store.book__ 
 
 Result:         
 
 	
-````JSON
+````js
 [ 
   { 
     "category": "reference",
@@ -75,7 +75,7 @@ In other scenarios it might be useful to filter the JSON data in order to displa
 Example:         
 
 	
-````JSON
+````js
 { 
   "store": {
     "book": [ 
@@ -98,12 +98,12 @@ Example:
 
 
 
-JSONPath: __$.store.book[?(@.price<10)]__
+JSONPath: __$.store.book[?(@.price<10)]__ 
 
 Result:         
 
 	
-````JSON
+````js
 [ 
   { 
     "category": "reference",
@@ -113,5 +113,4 @@ Result:
   }
 ]
 ````
-
 

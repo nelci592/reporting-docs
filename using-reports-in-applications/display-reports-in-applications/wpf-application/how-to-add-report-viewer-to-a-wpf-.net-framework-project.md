@@ -12,11 +12,11 @@ position: 1
 
 
 
-The quickest way to add a WPF Report Viewer to your WPF project is with the __Telerik Report Viewer Window__ item template.       
+The quickest way to add a WPF Report Viewer to your WPF project is with the __Telerik Report Viewer Window__  item template.       
 
 ##Telerik Report Viewer Window Item Template
 
-The item template is available in the            [Add New Item](https://msdn.microsoft.com/en-us/library/w0572c5b%28v=vs.100%29.aspx)            dialog box under the __WPF category__.         
+The item template is available in the            [Add New Item](https://msdn.microsoft.com/en-us/library/w0572c5b%28v=vs.100%29.aspx)            dialog box under the __WPF category__ .         
 
 This item template will do the following:         
 
@@ -32,17 +32,17 @@ This item template will do the following:
 
 * Add a Window with WPF Report Viewer.             
 
-* Setup the viewer's [connection]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/how-to-construct-a-string-to-connect-to-report-engine%}) depending on selected __engine type__.             
+* Setup the viewer's [connection]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/how-to-construct-a-string-to-connect-to-report-engine%}) depending on selected __engine type__ .             
 
 * Show a summary log that list all of the made changes.             
 
-If the selected engine is of remote type (__REST Service__ or __Report Server__), the item template will:         
+If the selected engine is of remote type (__REST Service__  or __Report Server__ ), the item template will:         
 
-* Add a reference to *Telerik.Reporting.Services.HttpClient* to the current project.             
+* Add a reference to *Telerik.Reporting.Services.HttpClient*  to the current project.             
 
-* Add a reference to *System.Net.Http* and *System.Net.Http.Formatting* via NuGet package to the current project.             
+* Add a reference to *System.Net.Http*  and *System.Net.Http.Formatting*  via NuGet package to the current project.             
 
-If the selected engine is __REST Service__ additionally it will do the following:         
+If the selected engine is __REST Service__  additionally it will do the following:         
 
 * Create a new web project that will host the REST service.             
 

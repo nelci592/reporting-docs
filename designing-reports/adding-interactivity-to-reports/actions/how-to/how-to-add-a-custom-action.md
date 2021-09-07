@@ -14,15 +14,15 @@ position: 4
 
 ##Adding a custom action using the Report Designer
 
-1. In Design view, right-click the report item to which you want to add a link and then click __Properties__.             
+1. In Design view, right-click the report item to which you want to add a link and then click __Properties__ .             
 
-1. In The Properties dialog box for that report item, click __Action__.               The [Edit Action dialog]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/edit-action-dialog%}) will open.             
+1. In The Properties dialog box for that report item, click __Action__ .               The [Edit Action dialog]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/edit-action-dialog%}) will open.             
 
-1. Select __Custom__. An additional section appears in the dialog box, containing a button titled __Select parameters__.             
+1. Select __Custom__ . An additional section appears in the dialog box, containing a button titled __Select parameters__ .             
 
-1. Clicking the button will open the __Edit Custom Action Parameters__ dialog box.               Add one or more parameters, defining their *Name* and *Value* properties.             
+1. Clicking the button will open the __Edit Custom Action Parameters__  dialog box.               Add one or more parameters, defining their *Name*  and *Value*  properties.             
 
-1. Click __OK__ when ready.             
+1. Click __OK__  when ready.             
 
 1. To test the action, preview the report and click the report item with the applied custom action.                A message will appear, displaying information for the action's properties.             
 
@@ -37,9 +37,6 @@ position: 4
 	            textBox1.Action = customAction;
 	
 ````
-
-
-
 {{source=CodeSnippets\VB\API\Telerik\Reporting\ActionSnippets.vb region=AddNewCustomActionSnippet}}
 ````VB
 	

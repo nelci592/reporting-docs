@@ -16,14 +16,14 @@ The [JsonDataSource](/reporting/api/Telerik.Reporting.JsonDataSource) component 
 
 The provided JSON data may omit properties with empty values. The result is that not all of the objects have the same list of properties.         Due to this no errors will be shown in the report if an undefined data field name is used inside an expression.       
 
-The data field names for this data source are __case-sensitive__. It is required to use the correct data field names in expressions, otherwise no data will be shown.       
+The data field names for this data source are __case-sensitive__ . It is required to use the correct data field names in expressions, otherwise no data will be shown.       
 
 >important The JSON data source relies and reuses some of the Web Service data source functionalities.            In order to preview JSON data source reports in your application it is required to reference the  __Telerik.Reporting.WebServiceDataSource__             DLL or the corresponding NuGet package in the application.         
 
 
 ## Configuring the Component
 
-__External Data File Configuration:__
+__External Data File Configuration:__ 
 
 
 | Setting | Description |
@@ -34,7 +34,7 @@ __External Data File Configuration:__
 
 
 
-__Inline Data String Configuration:__
+__Inline Data String Configuration:__ 
 
 
 | Setting | Description |

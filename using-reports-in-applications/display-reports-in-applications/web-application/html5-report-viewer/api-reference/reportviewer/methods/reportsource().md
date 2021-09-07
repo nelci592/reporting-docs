@@ -33,4 +33,3 @@ Returns: an object with properties:
           var rs = reportViewer.reportSource();
 ````
 
-

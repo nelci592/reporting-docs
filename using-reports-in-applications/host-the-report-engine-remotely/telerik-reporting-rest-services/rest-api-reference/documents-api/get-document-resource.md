@@ -15,15 +15,12 @@ position: 5
 ## Request
 
 	
-````URI Template
-
-GET /api/reports/clients/{clientId}/instances/{instanceId}/documents/{documentId}/resources/{resourceId}
-````
+          GET /api/reports/clients/{clientId}/instances/{instanceId}/documents/{documentId}/resources/{resourceId}
+        
 
 
 
-
-__Path parameters__
+__Path parameters__ 
 
 
 | Name | Type | Description |
@@ -48,28 +45,22 @@ __Path parameters__
 
 
 
-__Response Body__
+__Response Body__ 
 
 resource file (image, etc.)         
 
 ## Sample
 
 	
-````Request Message
-
-GET /api/reports/clients/2c3d/instances/4d3c/documents/5x3a/resources/4t6d HTTP/1.1
-````
-
+          GET /api/reports/clients/2c3d/instances/4d3c/documents/5x3a/resources/4t6d HTTP/1.1
+        
 
 
 
 	
-````Response Message
-
-HTTP/1.1 200 OK
-
-file-content
-````
-
+          HTTP/1.1 200 OK
+          
+          file-content
+        
 
 

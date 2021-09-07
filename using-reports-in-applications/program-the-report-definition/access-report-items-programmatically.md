@@ -24,10 +24,10 @@ In the examples below we show how to access a report item from within the report
 
    + All processing report items.
 
-1. Use the ElementTreeHelper. __GetChildByName__ method to locate an item on the 
-        	report. In the code example below __GetChildByName__ is used to retrieve "textBox1" TextBox.
+1. Use the ElementTreeHelper. __GetChildByName__  method to locate an item on the 
+        	report. In the code example below __GetChildByName__  is used to retrieve "textBox1" TextBox.
 
->note In the code example below we are referring to a  * __Processing.TextBox__ * , not Report1.TextBox.  The Processing.TextBox represents the TextBox during processing and has a different set of properties than the Report1.TextBox used when defining the report.
+>note In the code example below we are referring to a  *Processing.TextBox* , not Report1.TextBox.  The Processing.TextBox represents the TextBox during processing and has a different set of properties than the Report1.TextBox used when defining the report.
 
 
 {{source=CodeSnippets\CS\API\Telerik\Reporting\Processing\EventsSnippets.cs region=AddSectionDataBindingSnippet}}
@@ -43,9 +43,6 @@ In the examples below we show how to access a report item from within the report
 	            }
 	        }
 ````
-
-
-
 {{source=CodeSnippets\VB\API\Telerik\Reporting\Processing\EventsSnippets.vb region=AddSectionDataBindingSnippet}}
 ````VB
 	    Private Sub detail_ItemDataBinding(sender As Object, e As EventArgs)
@@ -73,10 +70,6 @@ If we are in the context of a web/win form and we need to access an item from t
 			Telerik.Reporting.TextBox txt = report.Items.Find("productNameDataTextBox", true)[0] as Telerik.Reporting.TextBox;
 		}
 ````
-
-
-
-	
 ````VB.NET
 		Protected Sub Button1_Click(sender As Object, e As EventArgs)
 			Dim instanceReportSource As Telerik.Reporting.InstanceReportSource = DirectCast(Me.reportViewer1.ReportSource, Telerik.Reporting.InstanceReportSource)
@@ -105,10 +98,6 @@ You can reference the report fields from a table item easily using the Report AP
             textBox.Value = detail.DataObject["Data"];
         }
 ````
-
-
-
-	
 ````VB.NET
 		Private Sub tableTextBox_ItemDataBinding(sender As Object, eventArgs As EventArgs)
             'get the textbox from the sender object            
@@ -121,5 +110,4 @@ You can reference the report fields from a table item easily using the Report AP
             textBox.Value = detail.DataObject("Data")
 		End Sub
 ````
-
 

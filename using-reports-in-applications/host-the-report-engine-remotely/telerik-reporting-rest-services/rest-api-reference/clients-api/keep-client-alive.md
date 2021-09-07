@@ -15,13 +15,13 @@ position: 2
 ## Request
 
 	
-````URI Template
+````
             POST /api/reports/clients/keepAlive/{clientID}
 ````
 
 
 
-__Path parameters__
+__Path parameters__ 
 
 
 | Name | Type | Description |
@@ -45,18 +45,15 @@ __Path parameters__
 ## Sample
 
 	
-````Request Message
+````
                 POST /api/reports/clients/2c3d HTTP/1.1
 ````
 
 
 
 	
-````Response Message
-
-HTTP/1.1 204 NoContent
-````
-
+          HTTP/1.1 204 NoContent
+        
 
 
 

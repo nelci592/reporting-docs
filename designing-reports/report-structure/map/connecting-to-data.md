@@ -12,7 +12,7 @@ position: 1
 
 
 
-The Map item is a data item that have lots of common with the [Graph]({%slug telerikreporting/designing-reports/report-structure/graph/overview%}) item.         Similar to the Graph item, it allows the developers to present aggregated data by two hierarchical dimensions/groups.         One of the dimensions - the __GeoLocationGroup__ defines the geographical component of your data. The second one -         the __SeriesGroups__ hierarchy allows you to group your data in a hierarchical way and display one or more measures         over the defined geographical reference. Like the other data items the Map item connects to a single data source and provides         additional options for sorting and filtering the input data, binding, conditional formatting, etc.       
+The Map item is a data item that have lots of common with the [Graph]({%slug telerikreporting/designing-reports/report-structure/graph/overview%}) item.         Similar to the Graph item, it allows the developers to present aggregated data by two hierarchical dimensions/groups.         One of the dimensions - the __GeoLocationGroup__  defines the geographical component of your data. The second one -         the __SeriesGroups__  hierarchy allows you to group your data in a hierarchical way and display one or more measures         over the defined geographical reference. Like the other data items the Map item connects to a single data source and provides         additional options for sorting and filtering the input data, binding, conditional formatting, etc.       
 
 As with the Graph item, it is important to carefully prepare and understand your data before you create your Map item, as this will help you design your report quickly and         efficiently.       
 
@@ -30,7 +30,7 @@ The SeriesGroups hierarchy defines the series at runtime. For example, suppose y
 
 ##LocationMapSeries Data
 
-The Map item series displays aggregated data to visualize one or more measures. At runtime the intersection between the series group hierarchy           members and the category group hierarchy members defines the data points in the series.           Each data point's coordinates are obtained either directly from the data set (through the __Latitude__ and __Longitude__           properties, or using the __Location__ property of the series' GeoLocationGroup, as explained above.           The value of the data point is a measure for its size and is calculated by an expression, defined for its __Size__ property.         
+The Map item series displays aggregated data to visualize one or more measures. At runtime the intersection between the series group hierarchy           members and the category group hierarchy members defines the data points in the series.           Each data point's coordinates are obtained either directly from the data set (through the __Latitude__  and __Longitude__            properties, or using the __Location__  property of the series' GeoLocationGroup, as explained above.           The value of the data point is a measure for its size and is calculated by an expression, defined for its __Size__  property.         
 
 ##ShapeMapSeries Data
 
@@ -38,7 +38,7 @@ The ShapeMapSeries, used in the Choropleth map, does not use the series group hi
 
 ##Additional information
 
-When working with map series,           it is often useful to have a way to determine the current data point coordinates and display them on a label or use them in conditional formatting rule.           The evaluation engine provides a way to do so using the special expression `"= Location"`.           The evaluation result is an instance of type [Location](/reporting/api/Telerik.Reporting.Location)           and its `Longitude` and `Latitude` properties can be accessed directly.           Also, when the selected component in the report designer is [MapSeriesBase](/reporting/api/Telerik.Reporting.MapSeriesBase),           the __Edit Expression dialog__ will include three *Location*           entries in its *Fields* collection: *Location*,           *Location.Latitude* and *Location.Longitude*.         
+When working with map series,           it is often useful to have a way to determine the current data point coordinates and display them on a label or use them in conditional formatting rule.           The evaluation engine provides a way to do so using the special expression `"= Location"`.           The evaluation result is an instance of type [Location](/reporting/api/Telerik.Reporting.Location)           and its `Longitude` and `Latitude` properties can be accessed directly.           Also, when the selected component in the report designer is [MapSeriesBase](/reporting/api/Telerik.Reporting.MapSeriesBase),           the __Edit Expression dialog__  will include three *Location*            entries in its *Fields*  collection: *Location* ,           *Location.Latitude*  and *Location.Longitude* .         
 
 >important When using  __ShapeMapSeries__  that obtain their geospatial information from a  __ShapeFile__ ,             the processing engine will automatically generate two virtual fields in the resulting composite data set:             `"Location.Latitude"` and `"Location.Longitude"` that serve the same purpose - to use the             coordinates of the data point centroid in expressions.           
 

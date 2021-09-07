@@ -19,29 +19,23 @@ Page info representing the state of a single document page and its content.
 When the page is not available:
 
 	
-````Example
-
-{
-‘pageReady’: false,
-‘pageNumber’: 1,
-}
-````
-
+          {
+          ‘pageReady’: false,
+          ‘pageNumber’: 1,
+          }
+        
 
 
 
 When the page is  available:
 
 	
-````Example
-
-{
-‘pageReady’: true,
-‘pageNumber’: 1,
-‘pageContent’: ‘<html>My page content</html>’,
-}
-````
-
+          {
+            ‘pageReady’: true,
+            ‘pageNumber’: 1,
+            ‘pageContent’: ‘<html>My page content</html>’,
+          }
+        
 
 
 

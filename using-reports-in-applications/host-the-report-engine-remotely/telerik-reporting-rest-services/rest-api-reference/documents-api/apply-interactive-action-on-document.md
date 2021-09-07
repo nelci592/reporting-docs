@@ -15,15 +15,12 @@ position: 6
 ## Request
 
 	
-````URI Template
-
-PUT /api/reports/clients/{clientId}/instances/{instanceId}/documents/{documentId}/actions/{actionId}
-````
+          PUT /api/reports/clients/{clientId}/instances/{instanceId}/documents/{documentId}/actions/{actionId}
+        
 
 
 
-
-__Path parameters__
+__Path parameters__ 
 
 
 | Name | Type | Description |
@@ -51,19 +48,13 @@ __Path parameters__
 ## Sample
 
 	
-````Request Message
-
-PUT /api/reports/clients/2c3d/instances/4d3c/documents/5x3a/actions/4ah1 HTTP/1.1
-````
-
+          PUT /api/reports/clients/2c3d/instances/4d3c/documents/5x3a/actions/4ah1 HTTP/1.1
+        
 
 
 
 	
-````Response Message
-
-HTTP/1.1 200 OK
-````
-
+          HTTP/1.1 200 OK
+        
 
 

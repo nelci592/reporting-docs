@@ -12,7 +12,7 @@ position: 3
 
 
 
-This section discusses how to specify a database connection to the __OpenAccessDataSource__ component      	that can be used both at design-time and when running the report in production. The provided examples      	and code snippets assume an existing __Telerik Data Access Model__ of the __Adventure Works__ sample database with the      	following structure:
+This section discusses how to specify a database connection to the __OpenAccessDataSource__  component      	that can be used both at design-time and when running the report in production. The provided examples      	and code snippets assume an existing __Telerik Data Access Model__  of the __Adventure Works__  sample database with the      	following structure:
 
   
 
@@ -20,7 +20,7 @@ This section discusses how to specify a database connection to the __OpenAccessD
 
 ## 
 
-Strictly speaking, it is not necessary to specify a database connection when working with the        	__OpenAccessDataSource__ component. Simply specifying an __OpenAccessContext__ and a member is enough to connect to        	the __Telerik Data Access Model__, because the __OpenAccessContext__ is already configured to access the database. The        	following code snippet shows the minimum code necessary to setup the __OpenAccessDataSource__ component:       	
+Strictly speaking, it is not necessary to specify a database connection when working with the        	__OpenAccessDataSource__  component. Simply specifying an __OpenAccessContext__  and a member is enough to connect to        	the __Telerik Data Access Model__ , because the __OpenAccessContext__  is already configured to access the database. The        	following code snippet shows the minimum code necessary to setup the __OpenAccessDataSource__  component:       	
 
 {{source=CodeSnippets\CS\API\Telerik\Reporting\OpenAccessDataSourceSnippets.cs region=PropertyBindingSnippet}}
 ````C#
@@ -35,9 +35,6 @@ Strictly speaking, it is not necessary to specify a database connection when wor
 	            report.DataSource = openAccessDataSource;
 	
 ````
-
-
-
 {{source=CodeSnippets\VB\API\Telerik\Reporting\OpenAccessDataSourceSnippets.vb region=PropertyBindingSnippet}}
 ````VB
 	
@@ -54,7 +51,7 @@ Strictly speaking, it is not necessary to specify a database connection when wor
 
 
 
-When running the report in production the above code should work just fine. However, this is not        	the case when generating a preview of the same report in the designer, for example. The problem is that        	the __OpenAccessContext__ searches its connection string in the configuration file of the current executing        	application or web site. When it is your application that is currently running, all that is necessary        	is to make sure the connection string is present in the right configuration file. On the other side,        	when running the report in the designer, the current executing application is __Microsoft Visual Studio__,        	so the connection string is no longer available. To overcome this, you can specify your connection string to the __OpenAccessDataSource__      	component. Assign the connection string to the __ConnectionString__ property and the __ADO.NET__ provider to the      	__ProviderName__ property, as shown in the following code snippet:       	
+When running the report in production the above code should work just fine. However, this is not        	the case when generating a preview of the same report in the designer, for example. The problem is that        	the __OpenAccessContext__  searches its connection string in the configuration file of the current executing        	application or web site. When it is your application that is currently running, all that is necessary        	is to make sure the connection string is present in the right configuration file. On the other side,        	when running the report in the designer, the current executing application is __Microsoft Visual Studio__ ,        	so the connection string is no longer available. To overcome this, you can specify your connection string to the __OpenAccessDataSource__       	component. Assign the connection string to the __ConnectionString__  property and the __ADO.NET__  provider to the      	__ProviderName__  property, as shown in the following code snippet:       	
 
 {{source=CodeSnippets\CS\API\Telerik\Reporting\OpenAccessDataSourceSnippets.cs region=ConnectionStringSnippet}}
 ````C#
@@ -67,9 +64,6 @@ When running the report in production the above code should work just fine. Howe
 	            openAccessDataSource.ObjectContextMember = "Products";
 	
 ````
-
-
-
 {{source=CodeSnippets\VB\API\Telerik\Reporting\OpenAccessDataSourceSnippets.vb region=ConnectionStringSnippet}}
 ````VB
 	
@@ -84,7 +78,7 @@ When running the report in production the above code should work just fine. Howe
 
 
 
-Instead of specifying an inline connection string you can assign the name of an existing connection string stored in        	the configuration file to the __ConnectionString__ property. In that case specifying an __ADO.NET__        	provider to the __ProviderName__ property is no longer required, because that information is already        	present in the configuration. The following sample code demonstrates how to specify a named connection string from a configuration file:       	
+Instead of specifying an inline connection string you can assign the name of an existing connection string stored in        	the configuration file to the __ConnectionString__  property. In that case specifying an __ADO.NET__         	provider to the __ProviderName__  property is no longer required, because that information is already        	present in the configuration. The following sample code demonstrates how to specify a named connection string from a configuration file:       	
 
 {{source=CodeSnippets\CS\API\Telerik\Reporting\OpenAccessDataSourceSnippets.cs region=ConnectionNameSnippet}}
 ````C#
@@ -96,9 +90,6 @@ Instead of specifying an inline connection string you can assign the name of an 
 	            openAccessDataSource.ObjectContextMember = "Products";
 	
 ````
-
-
-
 {{source=CodeSnippets\VB\API\Telerik\Reporting\OpenAccessDataSourceSnippets.vb region=ConnectionNameSnippet}}
 ````VB
 	

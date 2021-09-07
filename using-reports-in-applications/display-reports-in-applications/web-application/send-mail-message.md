@@ -25,19 +25,19 @@ By default the send mail message button is hidden.           This is because the
 
   ![send-mail-msg-dialog](images/HTML5ReportViewer/send-mail-msg-dialog.png)
 
-The Send Mail Message dialog is a Kendo Window Widget, that stays on top of the report viewer. Since it's not modal, the viewer remains fully functional even when this dialog is shown.           The dialog can be closed with the close button in the top right corner or using the __Send Mail Message__ button on the toolbar.         
+The Send Mail Message dialog is a Kendo Window Widget, that stays on top of the report viewer. Since it's not modal, the viewer remains fully functional even when this dialog is shown.           The dialog can be closed with the close button in the top right corner or using the __Send Mail Message__  button on the toolbar.         
 
 The dialog consists of the following components:         
 
-* __From input__ (Required) - E-mail address used for the MailMessage FROM value.             
+* __From input__  (Required) - E-mail address used for the MailMessage FROM value.             
 
-* __To input__ (Required) - E-mail address used for the MailMessage TO value.             
+* __To input__  (Required) - E-mail address used for the MailMessage TO value.             
 
-* __CC input__ (Optional) - E-mail address used for the MailMessage CC value.             
+* __CC input__  (Optional) - E-mail address used for the MailMessage CC value.             
 
-* __Subject input__ (Optional) - The MailMessage subject             
+* __Subject input__  (Optional) - The MailMessage subject             
 
-* __Body input__ (Optional) - The MailMessage body             
+* __Body input__  (Optional) - The MailMessage body             
 
 # See Also
 

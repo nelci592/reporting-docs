@@ -67,14 +67,30 @@ If <procedure> is not in <section> (should be for correct maml) the entire proce
 code from source cannot be displayed if no region specified - wpf-report-viewer-add-to-net-core-project.aml
 
 
+apply normalize-space to legacyBold/legacyItalic/legacyUnderline to remove whitespace/new lines as the new lines break it - cubedatasource-configuring-project.maml
+
+designing-performance.maml - legacyBold/legacyItalic/legacyUnderline not correct - fixed by adding additional ' ' in the XSLT schema
 
 
+​[5:17 PM] Kaloyan Kotorov
+    C#/VB code comment-ите са един под друг, вместо да с табове
 
+SOLUTION 1 (AJAX) - no line between two codes;Language name next to the apostrophies, no intervals - ````C#. May have also {{source}} between snippets
+
+{{source=CodeSnippets\CS\API\Telerik\Reporting\Processing\ReportProcessorSnippets.cs region=Export_Single_Stream_Snippet}}
+````C#
+\\code should start from the beginning of the line
+var reportProcessor = ...
+````
+{{source=CodeSnippets\VB\API\Telerik\Reporting\Processing\ReportProcessorSnippets.vb region=Export_Single_Stream_Snippet}}
+````VB
+'code should start from the beginning of the line
+Dim ...
+````
 
 
 Remaining:
 
-cubedatasource-configuring-project - bold/italic problems
 
 
 how to pass the real tokes to _config.yml
@@ -143,8 +159,6 @@ all code in file:///D:/Work/2018/Hotfix/Documentation/Help/Content/report-viewer
 Merge TOC of documentation and API reference - D:\Work\reporting-docs\_assetsApi\api\index.md - change this file accordingly
 
 
-
-
 Feedback:
 
 seems like the other paragraphs in the generated MD file   -	There are missing paragraphs in page sections consisting only of bullet lists. Thus, the 20px font size style is not applied and the text looks small. For example you can check the Prerequisites section here - https://reportinghost:446/reporting/installation
@@ -152,8 +166,7 @@ seems like the other paragraphs in the generated MD file   -	There are missing p
 
 [5:14 PM] Kaloyan Kotorov
     See Also секцията е празна навсякъде
-	
-​[5:17 PM] Kaloyan Kotorov
-    C#/VB code comment-ите са един под друг, вместо да с табове
 
+
+	
 

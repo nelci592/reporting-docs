@@ -15,15 +15,12 @@ position: 0
 ## Request
 
 	
-````URI Template
-
-POST /api/reports/clients/{clientId}/parameters
-````
+          POST /api/reports/clients/{clientId}/parameters
+        
 
 
 
-
-__Path parameters__
+__Path parameters__ 
 
 
 | Name | Type | Description |
@@ -33,7 +30,7 @@ __Path parameters__
 
 
 
-__Request Body__
+__Request Body__ 
 
 [ReportSource]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/json-entities/reportsource%}) object. Represent a report and its current parameter values.         
 
@@ -50,14 +47,14 @@ __Request Body__
 
 
 
-__Response Body__
+__Response Body__ 
 
 Array containing [Parameter]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/json-entities/parameter%}) objects representing the report parameters that should be used to prompt the user.         
 
 ## Sample
 
 	
-````Request Message
+````
           POST /api/reports/clients/2c3d/parameters HTTP/1.1
           {
             report: “MyReport1”,
@@ -67,11 +64,7 @@ Array containing [Parameter]({%slug telerikreporting/using-reports-in-applicatio
             },
           }
 ````
-
-
-
-	
-````Response Message
+````
           HTTP/1.1 200 OK
           [
               { 

@@ -34,10 +34,6 @@ You can use the [Angle](/reporting/api/Telerik.Reporting.TextItemBase#Telerik_Re
 ````cs
              this.textBox1.Value = "= \"\r\n\r\n\" + Fields.MyDataColumn";
 ````
-
-
-
-	
 ````vb
             Me.textBox1.Value = "= """ & vbCr & vbLf & vbCr & vbLf & """ + Fields.MyDataColumn"
 ````
@@ -64,7 +60,7 @@ See also [Format Builder Dialog]({%slug telerikreporting/designing-reports/repor
 
 ## Using In-place editing
 
-The in-place editor for [TextBox]({%slug telerikreporting/designing-reports/report-structure/textbox%}) report items           allows you to quickly enter text directly into the designer where the report item is rather than having to go look           for a property in the Property Window. To activate the in-place editor, double-click the __TextBox__           report item or select the report item and press F2. Once the in-place editor is activated:         
+The in-place editor for [TextBox]({%slug telerikreporting/designing-reports/report-structure/textbox%}) report items           allows you to quickly enter text directly into the designer where the report item is rather than having to go look           for a property in the Property Window. To activate the in-place editor, double-click the __TextBox__            report item or select the report item and press F2. Once the in-place editor is activated:         
 
 * CTRL-Enter creates a new line.
 
@@ -72,9 +68,9 @@ The in-place editor for [TextBox]({%slug telerikreporting/designing-reports/repo
 
 * Esc discards all changes.
 
-* Moving focus away from the __TextBox__ also accepts all changes.
+* Moving focus away from the __TextBox__  also accepts all changes.
 
-The screenshot below shows a __TextBox__ with the in-place editor active.         
+The screenshot below shows a __TextBox__  with the in-place editor active.         
 >caption In Place Editor
 
   

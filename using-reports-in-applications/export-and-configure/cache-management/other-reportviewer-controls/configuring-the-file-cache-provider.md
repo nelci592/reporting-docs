@@ -45,7 +45,7 @@ By default, this provider stores the files in the temporary folder of the curren
 
 
 
-The __BasePath__ can represent either an absolute path on disk or a relative path. In the latter case the path is mapped to the         application’s working directory.       
+The __BasePath__  can represent either an absolute path on disk or a relative path. In the latter case the path is mapped to the         application’s working directory.       
 
 >note In web applications deployed on a web farm, the  __BasePath__  parameter should           specify a shared folder with the necessary permissions which should be accessible from all servers.         
 

@@ -25,10 +25,6 @@ To attach a client event handler you have to set the appropriate ClientEvents ta
             runat="server">
             <ClientEvents RenderingBegin="onRenderingBegin" />
 ````
-
-
-
-	
 ````js
           <script>
             function onRenderingBegin() {

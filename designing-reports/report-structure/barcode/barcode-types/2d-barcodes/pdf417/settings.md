@@ -21,15 +21,15 @@ This article explains the specific PDF417 code settings.
 
 This is an enumeration, which determines the types of symbols, which will be accepted by the barcode, as well as     			the algorithm by which they will be encoded internally. The enumeration has the following values: 			
 
-* __Auto__This specifies no particular encoding mode. This means that the barcode control will determine  					internally how to encode each particular symbol, according to the ISO specification. 				  
+* __Auto__ This specifies no particular encoding mode. This means that the barcode control will determine  					internally how to encode each particular symbol, according to the ISO specification. 				  
 
-* __Byte__The Byte Compaction mode enables a sequence of 8-bit bytes to be encoded into a sequence of codewords.    				  	It is accomplished by a Base 256 to Base 900 conversion, which achieves a compaction ratio of six bytes to five codewords.    				  	Characters with ascii codes from 0 to 255 are acceptable. The table below lists all the characters and their values.   				    
+* __Byte__ The Byte Compaction mode enables a sequence of 8-bit bytes to be encoded into a sequence of codewords.    				  	It is accomplished by a Base 256 to Base 900 conversion, which achieves a compaction ratio of six bytes to five codewords.    				  	Characters with ascii codes from 0 to 255 are acceptable. The table below lists all the characters and their values.   				    
 
   ![barcode-pdf 417-table 1-byte](images/Barcodes/barcode-pdf417-table1-byte.png)
 
-* __Numeric__The numeric mode allows encoding of numeric symbols only [0-9]. Any other characters are discarded.    				  
+* __Numeric__ The numeric mode allows encoding of numeric symbols only [0-9]. Any other characters are discarded.    				  
 
-* __Text__The text mode allows encoding of text characters – upper and lowercase letters, as well as digits,    				  	punctuation and some additional characters. The complete character table is listed below:   				    
+* __Text__ The text mode allows encoding of text characters – upper and lowercase letters, as well as digits,    				  	punctuation and some additional characters. The complete character table is listed below:   				    
 
   ![barcode-pdf 417-table 2-text](images/Barcodes/barcode-pdf417-table2-text.png)
 
@@ -48,7 +48,7 @@ One thing to keep in mind is that these properties are related to the data, whic
 ## Examples
 
 {{source=CodeSnippets\CS\API\Telerik\Reporting\BarcodeSnippets.cs region=Barcode_PDF417Encoder_Settings}}
-````C#
+````cs
 	            var encoder = new Telerik.Reporting.Barcodes.PDF417Encoder();
 	
 	            encoder.Columns = 3;
@@ -58,11 +58,8 @@ One thing to keep in mind is that these properties are related to the data, whic
 	
 	            this.barcode1.Encoder = encoder;
 ````
-
-
-
 {{source=CodeSnippets\VB\API\Telerik\Reporting\BarcodeSnippets.vb region=Barcode_PDF417Encoder_Settings}}
-````VB.NET
+````vbnet
 	        Dim encoder = New Telerik.Reporting.Barcodes.PDF417Encoder()
 	
 	        encoder.Columns = 3

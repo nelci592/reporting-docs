@@ -26,29 +26,29 @@ This topic explains how to setup the WPF Report Viewer to work with Telerik Repo
 
 1. To create a form and host the report viewer in it, you can either use the item template, as explained                   [here]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/windows-forms-application/how-to-add-report-viewer-to-a-windows-forms'-.net-framework-project%}), or place it yourself through drag-and-drop from the toolbox.                 
 
-1. As soon as the report viewer is on your form, select it and locate the __ReportEngineConnection__ property.                   invoke the UI editor by pressing the ellipsis button. The Report Engine Connection dialog should appear:                   
+1. As soon as the report viewer is on your form, select it and locate the __ReportEngineConnection__  property.                   invoke the UI editor by pressing the ellipsis button. The Report Engine Connection dialog should appear:                   
 
   ![wpf-connection-editor-rest-service](images/wpf-connection-editor-rest-service.png)
 
-1. The __Reporting engine__ combobox provides the following options:                 
-   + *Embedded* - the reports will be processed and rendered at the local machine that hosts the viewer. This is the default mode in order to preserve backwards compatibility.                     
+1. The __Reporting engine__  combobox provides the following options:                 
+   + *Embedded*  - the reports will be processed and rendered at the local machine that hosts the viewer. This is the default mode in order to preserve backwards compatibility.                     
 
-   + *REST Service* - the reports will be processed at the machine that hosts configured and running REST Service instance.                     
+   + *REST Service*  - the reports will be processed at the machine that hosts configured and running REST Service instance.                     
 
-   + *Report Server* - the reports will be processed and rendered at the machine that hosts configured and running                       [Telerik Report Server ](http://docs.telerik.com/report-server/introduction) instance.                     
-    Select *REST Service*.                 
+   + *Report Server*  - the reports will be processed and rendered at the machine that hosts configured and running                       [Telerik Report Server ](http://docs.telerik.com/report-server/introduction) instance.                     
+    Select *REST Service* .                 
 
-1. In __URL__ textbox enter the address and port (if needed) of the machine that hosts the REST Service instance.                   Note that the */api/reports* part is already added so you need to prefix it with the service address.                 
+1. In __URL__  textbox enter the address and port (if needed) of the machine that hosts the REST Service instance.                   Note that the */api/reports*  part is already added so you need to prefix it with the service address.                 
 
-1. Check the __Use default credentials__ checkbox if you need the default credentials to be sent with the requests by the                   [HTTP client handler ](https://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l&EN-US&k=k(System.Net.Http.HttpClientHandler.UseDefaultCredentials))                   that is used internally to communicate with the REST service.                 
+1. Check the __Use default credentials__  checkbox if you need the default credentials to be sent with the requests by the                   [HTTP client handler ](https://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l&EN-US&k=k(System.Net.Http.HttpClientHandler.UseDefaultCredentials))                   that is used internally to communicate with the REST service.                 
 
-1. In the __Document timeout__ textbox you can change the timeout for rendering a document, the default is 100 seconds.                 
+1. In the __Document timeout__  textbox you can change the timeout for rendering a document, the default is 100 seconds.                 
 
-1. Uncheck the __Keep client alive__ checkbox if you want the client session to expire.                 
+1. Uncheck the __Keep client alive__  checkbox if you want the client session to expire.                 
 
-1. Click __OK__ when ready. The dialog will close and the resulting connection string will be populated as a value of the __ReportEngineConnection__ property.                 
+1. Click __OK__  when ready. The dialog will close and the resulting connection string will be populated as a value of the __ReportEngineConnection__  property.                 
 
-1. Locate the __ReportSource__ property. Invoke the UI editor by pressing the ellipsis button. The Report Source Editor dialog should appear:                   
+1. Locate the __ReportSource__  property. Invoke the UI editor by pressing the ellipsis button. The Report Source Editor dialog should appear:                   
 
   ![Wpf Report Source Editor](images/WpfReportSourceEditor.png)
 
@@ -56,13 +56,13 @@ This topic explains how to setup the WPF Report Viewer to work with Telerik Repo
 
 
 
-1. In this scenario we will use a [UriReportSource](/reporting/api/Telerik.Reporting.UriReportSource).                   Select the __UriReportSource__ entry. Confirm by clicking __OK__.                 
+1. In this scenario we will use a [UriReportSource](/reporting/api/Telerik.Reporting.UriReportSource).                   Select the __UriReportSource__  entry. Confirm by clicking __OK__ .                 
 
-1. Expand the __ReportSource__ node in Properties window. In the provided __Uri__ textbox enter the category and the name of the report you want to display using the following format: `{Category}/{ReportName}`, as shown below:                   
+1. Expand the __ReportSource__  node in Properties window. In the provided __Uri__  textbox enter the category and the name of the report you want to display using the following format: `{Category}/{ReportName}`, as shown below:                   
 
   ![Wpf Set Uri Report Source Property Grid](images/WpfSetUriReportSourcePropertyGrid.png)
 
-1. Click __OK__ when ready. The dialog will close and the resulting report source will be populated as a value of the __ReportSource__ property.                 
+1. Click __OK__  when ready. The dialog will close and the resulting report source will be populated as a value of the __ReportSource__  property.                 
 
 1. Build and run your application. If your settings are configured correctly, you should see the report displayed in the report viewer of your WPF application.                   If not, check the                   [Troubleshooting](#Troubleshooting) section below.                 
 

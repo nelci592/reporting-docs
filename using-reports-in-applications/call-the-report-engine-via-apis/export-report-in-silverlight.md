@@ -62,10 +62,6 @@ Since we’ve used an asynchronous method and we do not know when the render wou
 		        }    
 		    }
 ````
-
-
-
-	
 ````VB.NET
     Public Sub New()
         InitializeComponent()

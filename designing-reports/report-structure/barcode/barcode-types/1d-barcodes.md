@@ -20,7 +20,7 @@ One-dimensional (1D) barcodes consists of lines and spaces of various widths tha
 
 This section describes the common settings for one-dimensional barcodes.         
 
-* [ShowText](/reporting/api/Telerik.Reporting.Barcodes.Encoder1D#Telerik_Reporting_Barcodes_Encoder1D_ShowText) - when true shows the text together with the bars.             When the text is shown it can also be aligned horizontally by using the __TextAlign__ property of the               [Style](/reporting/api/Telerik.Reporting.ReportItemBase#Telerik_Reporting_ReportItemBase_Style) object and/or               vertically through the __VerticalAlign__ property of the               [Style](/reporting/api/Telerik.Reporting.ReportItemBase#Telerik_Reporting_ReportItemBase_Style) object.               
+* [ShowText](/reporting/api/Telerik.Reporting.Barcodes.Encoder1D#Telerik_Reporting_Barcodes_Encoder1D_ShowText) - when true shows the text together with the bars.             When the text is shown it can also be aligned horizontally by using the __TextAlign__  property of the               [Style](/reporting/api/Telerik.Reporting.ReportItemBase#Telerik_Reporting_ReportItemBase_Style) object and/or               vertically through the __VerticalAlign__  property of the               [Style](/reporting/api/Telerik.Reporting.ReportItemBase#Telerik_Reporting_ReportItemBase_Style) object.               
 
   ![barcode-textalign-property](images/Barcodes/barcode-textalign-property.png)  
 
@@ -61,10 +61,6 @@ For example, the following code inserts the FNC4 control character in the middle
 ````C#
 				this.barcode1.Value = "ABCD" + "\u00FA" + "1234";
 ````
-
-
-
-	
 ````VB.NET
 				me.barcode1.Value = "ABCD" & ChrW(&HFA) & "1234"
 ````
@@ -79,10 +75,6 @@ GS1-128 is a special case of Code128. The only difference between GS1-128 and   
 ````C#
 			this.barcode1.Value = "1234" + "\u00F7" + "5678";
 ````
-
-
-
-	
 ````VB.NET
 			me.barcode1.Value = "1234" & ChrW(&HF7) & "5678"
 ````

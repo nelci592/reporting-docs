@@ -26,12 +26,11 @@ Parameters:
 
 
 
-Returns: the current *ReportViewer* object.         
+Returns: the current *ReportViewer*  object.         
 
 	
 ````js
 var reportViewer = $("#reportViewer1").data("telerik_ReportViewer");
 reportViewer.viewMode(telerikReportViewer.PrintModes.PRINT_PREVIEW);
 ````
-
 

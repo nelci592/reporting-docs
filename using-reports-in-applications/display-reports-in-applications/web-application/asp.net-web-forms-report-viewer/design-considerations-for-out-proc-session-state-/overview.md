@@ -17,7 +17,7 @@ position: 0
 
 ## 
 
-The ReportViewer control uses the __ASP.NET session state__ to preserve the report instance that is displayed,           between page postbacks and different viewer operations. The session state, however, can be configured to run in different modes.           By default it uses the memory of the worker process (InProc mode) and the report instance stays intact. However, in some cases           it is more appropriate to use a __StateServer, SqlServer or Custom__ session state mode. All of these modes are referred to as out-proc           session state modes. The biggest difference between the two modes is that the session variables have to be serialized and deserialized           when the session state is preserved and restored. In this case the serialization process imposes the following limitations which have to           be considered when designing Telerik reports:         
+The ReportViewer control uses the __ASP.NET session state__  to preserve the report instance that is displayed,           between page postbacks and different viewer operations. The session state, however, can be configured to run in different modes.           By default it uses the memory of the worker process (InProc mode) and the report instance stays intact. However, in some cases           it is more appropriate to use a __StateServer, SqlServer or Custom__  session state mode. All of these modes are referred to as out-proc           session state modes. The biggest difference between the two modes is that the session variables have to be serialized and deserialized           when the session state is preserved and restored. In this case the serialization process imposes the following limitations which have to           be considered when designing Telerik reports:         
 
 * The report should have a public default constructor as it is used to instantiate the report class during the deserialization process.
 
@@ -26,7 +26,7 @@ The ReportViewer control uses the __ASP.NET session state__ to preserve the repo
 * Report events should be attached in the report’s default constructor.
 
 * The fields representing the report items in the Report class should not be used in the report events.
-            Instead the report item should be taken from the Items collection of the report. Consider the following examples:__Wrong__
+            Instead the report item should be taken from the Items collection of the report. Consider the following examples:__Wrong__ 
 
 {{source=CodeSnippets\CS\API\Telerik\Reporting\Processing\OutProcSnippets.cs region=WrongItemDataBinding}}
 ````C#
@@ -35,9 +35,6 @@ The ReportViewer control uses the __ASP.NET session state__ to preserve the repo
 	            this.textBox1.Value = "New Value";
 	        }
 ````
-
-
-
 {{source=CodeSnippets\VB\API\Telerik\Reporting\Processing\OutProcSnippets.vb region=WrongItemDataBinding}}
 ````VB
 	    Private Sub Report1_WrongItemDataBinding(sender As System.Object, e As System.EventArgs) Handles MyBase.NeedDataSource
@@ -45,7 +42,7 @@ The ReportViewer control uses the __ASP.NET session state__ to preserve the repo
 	    End Sub
 ````
 
-__Correct__
+__Correct__ 
 
 {{source=CodeSnippets\CS\API\Telerik\Reporting\Processing\OutProcSnippets.cs region=CorrectItemDataBinding}}
 ````C#
@@ -57,9 +54,6 @@ __Correct__
 	            textBox.Value = "New Value";
 	        }
 ````
-
-
-
 {{source=CodeSnippets\VB\API\Telerik\Reporting\Processing\OutProcSnippets.vb region=CorrectItemDataBinding}}
 ````VB
 	    Private Sub Report1_CorrectItemDataBinding(sender As System.Object, e As System.EventArgs) Handles MyBase.NeedDataSource
@@ -92,9 +86,6 @@ __Correct__
 	            // . . .
 	        }
 ````
-
-
-
 {{source=CodeSnippets\VB\API\Telerik\Reporting\Processing\OutProcSnippets.vb region=AttachItemsEvents}}
 ````VB
 	    Private Sub Report1_ItemDataBinding(sender As System.Object, e As System.EventArgs) Handles MyBase.ItemDataBinding

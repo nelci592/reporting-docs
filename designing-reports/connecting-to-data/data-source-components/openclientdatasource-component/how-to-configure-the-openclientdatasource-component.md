@@ -12,7 +12,7 @@ position: 1
 
 
 
-You can connect to data from OpenEdge AppServer ABL procedures using the         Telerik __OpenClientDataSource__ component. To do this, you need the following prerequisites and configuration settings.       
+You can connect to data from OpenEdge AppServer ABL procedures using the         Telerik __OpenClientDataSource__  component. To do this, you need the following prerequisites and configuration settings.       
 
 * Running instance of OpenEdge AppServer with deployed               [supported ABL procedure]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/openclientdatasource-component/overview%})
 

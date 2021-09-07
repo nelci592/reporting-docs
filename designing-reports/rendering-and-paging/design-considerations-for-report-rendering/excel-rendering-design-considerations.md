@@ -12,15 +12,15 @@ position: 4
 
 
 
-__Telerik Reporting__ produces Excel files in:       
+__Telerik Reporting__  produces Excel files in:       
 
 * Microsoft Excel 2007 and above (OpenXML 2.0). This rendering extension requires             [Third-Party Dependencies]({%slug telerikreporting/using-reports-in-applications/third-party-dependencies%}).           
 
 * Microsoft Excel 97-2003 (BIFF, v.8)
 
-Telerik Reporting does not rely on Microsoft Office being installed in order to export to both formats.         __Microsoft Excel 97-2003__ files can be opened by Microsoft Excel 97 for Windows and later.       
+Telerik Reporting does not rely on Microsoft Office being installed in order to export to both formats.         __Microsoft Excel 97-2003__  files can be opened by Microsoft Excel 97 for Windows and later.       
 
-__Microsoft Excel 2007__ files can be opened by Microsoft Excel 2007 for Windows and later and has the following         advantages over __Microsoft Excel 97-2003__:       
+__Microsoft Excel 2007__  files can be opened by Microsoft Excel 2007 for Windows and later and has the following         advantages over __Microsoft Excel 97-2003__ :       
 
 * Works in Medium Trust.
 
@@ -49,7 +49,7 @@ The page header and footer render differently depending on the [Excel 2003 Devic
 >note Because of Excel limitations, TextBoxes are the only type of report item that can be rendered in             the native Excel header/footer section.           
 
 
-With default configuration (__UseNativePageHeader__ is False and __UseNativePageFooter__ is True),           the page header is rendered as frozen rows at the top of the worksheet and the page footer is rendered in the native Excel page footer.         
+With default configuration (__UseNativePageHeader__  is False and __UseNativePageFooter__  is True),           the page header is rendered as frozen rows at the top of the worksheet and the page footer is rendered in the native Excel page footer.         
 
 The native Excel page header/footer is not displayed on the Excel worksheet in Normal view - it is displayed only in Page Layout view and on the printed pages.           For more information see           [Headers and footers in a worksheet](https://support.office.com/en-us/article/Headers-and-footers-in-a-worksheet-cae2a88c-64a7-42ab-96a4-28d2fc16ad31).         
 
@@ -190,7 +190,7 @@ A subset of the .NET string formats (set through the TextBox.Format property) is
 
 * and others ..
 
-To preserve the result from previewing the rendered document, formats are saved as custom formatting strings in the Excel file.                 This behavior can be modified by setting __UseExtendedFormatting = False__ in the Excel device information settings.               
+To preserve the result from previewing the rendered document, formats are saved as custom formatting strings in the Excel file.                 This behavior can be modified by setting __UseExtendedFormatting = False__  in the Excel device information settings.               
 
 ##Standard DateTime Format Strings
 
@@ -225,7 +225,7 @@ To preserve the result from previewing the rendered document, formats are saved 
 ##              Currency Format Strings
             
 
-Currency format strings are always hard-coded with "Custom Format".                 This way the currency formatting from the report definition is preserved and does not depend on the client machine locale.                 This behavior can be modified by setting __UseExtendedFormatting = False__ in the Excel device information settings.               
+Currency format strings are always hard-coded with "Custom Format".                 This way the currency formatting from the report definition is preserved and does not depend on the client machine locale.                 This behavior can be modified by setting __UseExtendedFormatting = False__  in the Excel device information settings.               
 
 ##
 
@@ -283,9 +283,9 @@ Excel places limitations on exported reports due to the format capabilities. The
 
 ## Interactivity
 
-__Microsoft Excel 2007 and above__ format supports Navigate to URL actions on report items, which are rendered as Excel           hyperlinks in the cell in which the report item's text is rendered. When you click the hyperlink, the default Web browser opens and           navigates to the specified URL.         
+__Microsoft Excel 2007 and above__  format supports Navigate to URL actions on report items, which are rendered as Excel           hyperlinks in the cell in which the report item's text is rendered. When you click the hyperlink, the default Web browser opens and           navigates to the specified URL.         
 
-__Microsoft Excel 97-2003__ format does not support any interactive features.         
+__Microsoft Excel 97-2003__  format does not support any interactive features.         
 
 # See Also
 

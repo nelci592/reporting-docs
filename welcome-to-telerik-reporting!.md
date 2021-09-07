@@ -46,7 +46,7 @@ For any issues you might encounter while working with Kendo UI for jQuery, use a
 
 [Telerik Reporting online demos](http://demos.telerik.com/reporting/home.aspx)           provide a set of pre-built live demos that are           designed to demonstrate the Telerik Reporting capabilities.           The demos use the Web report viewers and come with short videos which show how the samples are created.         
 
-To see the full design and source code for each of the sample reports,           you can also open the sample projects (C# or Visual Basic) in Visual Studio.           To open up the samples, navigate to the __Start__ menu and select            __Telerik__ > __Reporting__ > __Visual Studio Examples__           > __C#/VB.NET Solution__.           The Visual Studio examples contain applications for all supported platforms.         
+To see the full design and source code for each of the sample reports,           you can also open the sample projects (C# or Visual Basic) in Visual Studio.           To open up the samples, navigate to the __Start__  menu and select            __Telerik__  > __Reporting__  > __Visual Studio Examples__            > __C#/VB.NET Solution__ .           The Visual Studio examples contain applications for all supported platforms.         
 
 ## Getting Started
 

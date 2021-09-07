@@ -17,17 +17,14 @@ Mail message
 ## 
 
 	
-````Example
-
-{
-'from': 'john.doe@mycompany.com',
-'to': 'jane.doe@mycompany.com',
-'cc': 'john.doe.jr@mycompany.com',
-'subject': 'my mail subject',
-'body': 'my mail body',
-}
-````
-
+          {
+          'from': 'john.doe@mycompany.com',
+          'to': 'jane.doe@mycompany.com',
+          'cc': 'john.doe.jr@mycompany.com',
+          'subject': 'my mail subject',
+          'body': 'my mail body',
+          }
+        
 
 
 

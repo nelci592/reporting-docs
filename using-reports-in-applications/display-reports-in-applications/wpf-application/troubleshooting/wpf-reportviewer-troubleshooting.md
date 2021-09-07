@@ -33,7 +33,7 @@ The most common reason for this exception is an incorrect version of the web cli
 
 ##The WPF ReportViewer is not visible on running the application.
 
-As of Telerik Reporting Q1 2014, the WPF ReportViewer control uses implicit styles.           When the viewer's template (__Telerik.ReportViewer.Wpf.xaml__) file is not loaded correctly, the viewer            is not displayed.           Double-check if XAML resources are loaded in the application.         
+As of Telerik Reporting Q1 2014, the WPF ReportViewer control uses implicit styles.           When the viewer's template (__Telerik.ReportViewer.Wpf.xaml__ ) file is not loaded correctly, the viewer            is not displayed.           Double-check if XAML resources are loaded in the application.         
 
 More details about the settings required by the WPF ReportViewer are available in            [WPF ReportViewer: Manual Setup]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/wpf-application/how-to-add--manually-report-viewer-to-a-wpf-.net-framework-project%}).         
 
@@ -50,7 +50,7 @@ In some cases the application build process fails with the following or a simila
 
 
 
-This message can appear after upgrading to a newer version of Telerik Reporting or when the styles applied to the WPF Report Viewer are not implicit.           As of Telerik Reporting Q1 2014, the WPF ReportViewer control uses implicit styles.           When the viewer's template (__Telerik.ReportViewer.Wpf.xaml__) file is not loaded correctly, the viewer is not displayed.           Also if the additionally required XAML files are not loaded or they are not of a version synchronized with Telerik Reporting, you may receive such errors.           Double-check if XAML resources are loaded in the application and if dependencies between Telerik Reporting and Telerik UI for WPF are considered           - [WPF Dependenices per release]({%slug telerikreporting/upgrade/overview%}).         
+This message can appear after upgrading to a newer version of Telerik Reporting or when the styles applied to the WPF Report Viewer are not implicit.           As of Telerik Reporting Q1 2014, the WPF ReportViewer control uses implicit styles.           When the viewer's template (__Telerik.ReportViewer.Wpf.xaml__ ) file is not loaded correctly, the viewer is not displayed.           Also if the additionally required XAML files are not loaded or they are not of a version synchronized with Telerik Reporting, you may receive such errors.           Double-check if XAML resources are loaded in the application and if dependencies between Telerik Reporting and Telerik UI for WPF are considered           - [WPF Dependenices per release]({%slug telerikreporting/upgrade/overview%}).         
 
 More details about the settings required by the WPF ReportViewer are available in [WPF ReportViewer: Manual Setup]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/wpf-application/how-to-add--manually-report-viewer-to-a-wpf-.net-framework-project%}).         
 

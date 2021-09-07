@@ -27,9 +27,6 @@ The following sample code snipped demonstrates how to package a predefined .TRDX
 	                reportPackager.Package(xmlString, targetStream);
 	            }
 ````
-
-
-
 {{source=CodeSnippets\VB\API\Telerik\Reporting\ReportPackagerSnippets.vb region=CreatePackageFromXmlReportSnippet}}
 ````VB
 	        Dim reportPackager = New ReportPackager()
@@ -54,9 +51,6 @@ The following sample code snipped demonstrates how to package a predefined CLR r
 	                reportPackager.Package(report, targetStream);
 	            }
 ````
-
-
-
 {{source=CodeSnippets\VB\API\Telerik\Reporting\ReportPackagerSnippets.vb region=CreatePackageFromClrReportSnippet}}
 ````VB
 	        Dim report = New Report1()
@@ -80,9 +74,6 @@ The following sample code snipped demonstrates how to unpackage a predefined .TR
 	                var report = (Report)reportPackager.UnpackageDocument(sourceStream);
 	            }
 ````
-
-
-
 {{source=CodeSnippets\VB\API\Telerik\Reporting\ReportPackagerSnippets.vb region=UnpackageTrdpSnippet}}
 ````VB
 	        Dim reportPackager = New ReportPackager()

@@ -12,7 +12,7 @@ position: 5
 
 
 
-The __restReportService__ element specifies the configuration settings for the REST report service.         In order for this element to be respected the corresponding Reports service implementation should pass a         [ConfigSectionReportServiceConfiguration](/reporting/api/Telerik.Reporting.Services.ConfigSectionReportServiceConfiguration)         instance instead of a         [ReportServiceConfiguration](/reporting/api/Telerik.Reporting.Services.ReportServiceConfiguration)         instance. For example, initializing the          [ReportServiceConfiguration](/reporting/api/Telerik.Reporting.Services.WebApi.ReportsControllerBase#Telerik_Reporting_Services_WebApi_ReportsControllerBase_ReportServiceConfiguration) for the          [ReportsControllerBase](/reporting/api/Telerik.Reporting.Services.WebApi.ReportsControllerBase) instance would look like this:       
+The __restReportService__  element specifies the configuration settings for the REST report service.         In order for this element to be respected the corresponding Reports service implementation should pass a         [ConfigSectionReportServiceConfiguration](/reporting/api/Telerik.Reporting.Services.ConfigSectionReportServiceConfiguration)         instance instead of a         [ReportServiceConfiguration](/reporting/api/Telerik.Reporting.Services.ReportServiceConfiguration)         instance. For example, initializing the          [ReportServiceConfiguration](/reporting/api/Telerik.Reporting.Services.WebApi.ReportsControllerBase#Telerik_Reporting_Services_WebApi_ReportsControllerBase_ReportServiceConfiguration) for the          [ReportsControllerBase](/reporting/api/Telerik.Reporting.Services.WebApi.ReportsControllerBase) instance would look like this:       
 
 	
 ````c#
@@ -29,7 +29,7 @@ Note that the initialization block does not have the          [Storage](/reporti
 
 ## Attributes and Elements
 
-__```<restReportService>``` element__
+__```<restReportService>``` element__ 
 
 
 
@@ -42,7 +42,7 @@ Attributes|*  __hostAppId__ – optional string attribute. Specifies the unique 
 
 
 
-__```<reportResolver>``` element__
+__```<reportResolver>``` element__ 
 
 
 
@@ -55,7 +55,7 @@ Attributes|*  __provider__ <br/>   +  __file__ <br/>   +  __directory__ - string
 
 
 
-__```<storage>``` element__
+__```<storage>``` element__ 
 
 
 

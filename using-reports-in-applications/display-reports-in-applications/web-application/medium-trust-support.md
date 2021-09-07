@@ -20,15 +20,15 @@ If you plan on deploying web application under Medium Trust level, first get ac
 
 Telerik Reporting works in Medium Trust environment with the following exceptions:
 
-* The [PDF]({%slug telerikreporting/designing-reports/rendering-and-paging/design-considerations-for-report-rendering/pdf-rendering-design-considerations%}) and               [Excel 97- 2003]({%slug telerikreporting/designing-reports/rendering-and-paging/design-considerations-for-report-rendering/excel-rendering-design-considerations%}) rendering extensions require UnmanagedCode permission to               operate at all times. If the permission is not present, PDF and __Excel 97- 2003__ extensions are disabled and removed as options from the export dropdown. The Excel rendering extension (i.e. __Excel 2007__) works correctly under medium trust.             
+* The [PDF]({%slug telerikreporting/designing-reports/rendering-and-paging/design-considerations-for-report-rendering/pdf-rendering-design-considerations%}) and               [Excel 97- 2003]({%slug telerikreporting/designing-reports/rendering-and-paging/design-considerations-for-report-rendering/excel-rendering-design-considerations%}) rendering extensions require UnmanagedCode permission to               operate at all times. If the permission is not present, PDF and __Excel 97- 2003__  extensions are disabled and removed as options from the export dropdown. The Excel rendering extension (i.e. __Excel 2007__ ) works correctly under medium trust.             
 
 * The [XPS]({%slug telerikreporting/designing-reports/rendering-and-paging/design-considerations-for-report-rendering/xps-rendering-design-considerations%}) rendering extension requires Full Trust and is removed as option from the export dropdown.             
 
-* [Creating TIFF images]() with __CCITT Group 3/Group 4__ or __RLE __compressions, require UnmanagedCode permission.             
+* [Creating TIFF images]() with __CCITT Group 3/Group 4__  or __RLE__ compressions, require UnmanagedCode permission.             
 
 * [Picturebox]({%slug telerikreporting/designing-reports/report-structure/picturebox%}) item shows images from Web (Value is an URL) - requires WebPermission.             
 
-* [Localization of Telerik Web ReportViewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/windows-forms-application/report-viewer-localization%}) through __RESX__ resource files, requires Full Trust.             
+* [Localization of Telerik Web ReportViewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/windows-forms-application/report-viewer-localization%}) through __RESX__  resource files, requires Full Trust.             
 
 * Shapes and barcodes with transparent colors are rendered in PNG format, which is not supported by Internet Explorer 6 browser.
 

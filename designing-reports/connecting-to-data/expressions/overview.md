@@ -25,7 +25,7 @@ Expressions begin with an equal (=) and can include a combination 		of constants
 
 During the evaluation, all defined operations and functions are 		executed and all built-in objects are replaced with the real data according 		to the current scope and a single value is returned. The type of the 		result depends on the expression and should always conform to the property 		it is applied to.
 
-For example, if you create an expression for the __Style.BackgroundColor__ 		property, the value must evaluate to a System.Drawing.Color object.
+For example, if you create an expression for the __Style.BackgroundColor__  		property, the value must evaluate to a System.Drawing.Color object.
 
 # See Also
 

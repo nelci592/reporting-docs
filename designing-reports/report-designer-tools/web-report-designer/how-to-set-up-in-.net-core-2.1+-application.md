@@ -32,7 +32,7 @@ The following list describes the prerequisites for this guide:
 
    + Telerik.Reporting                 
 
-When you use NuGet packages, you may add only the __Telerik.WebReportDesigner.Services__ package as it depends on           the rest of the required Telerik Reporting assemblies, so they will be added automatically. Their dependencies will also be resolved           automatically. For more information, see           [How to add the Telerik private NuGet feed to Visual Studio]({%slug telerikreporting/using-reports-in-applications/how-to-add-the-telerik-private-nuget-feed-to-visual-studio%}).         
+When you use NuGet packages, you may add only the __Telerik.WebReportDesigner.Services__  package as it depends on           the rest of the required Telerik Reporting assemblies, so they will be added automatically. Their dependencies will also be resolved           automatically. For more information, see           [How to add the Telerik private NuGet feed to Visual Studio]({%slug telerikreporting/using-reports-in-applications/how-to-add-the-telerik-private-nuget-feed-to-visual-studio%}).         
 
 If you don't use NuGet packages, along with the above assemblies, you need to add also all their dependencies manually to the project.         
 
@@ -59,7 +59,7 @@ If you don't use NuGet packages, along with the above assemblies, you need to ad
 
 
 
-1. The __ConfigureServices__ method inside the __Startup.cs__ in the project               should be modified in order to enable the Web Report Designer Service functionality. Make sure the application               calls the following methods that add MVC functionality and prevent from potentially breaking behavior changes between ASP.NET Core versions:             
+1. The __ConfigureServices__  method inside the __Startup.cs__  in the project               should be modified in order to enable the Web Report Designer Service functionality. Make sure the application               calls the following methods that add MVC functionality and prevent from potentially breaking behavior changes between ASP.NET Core versions:             
 
 	
     ````c#
@@ -68,7 +68,7 @@ services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
 
 
 
-1. Make sure the configuration inside the __Configure__ method of the               __Startup.cs__ is set up for MVC by adding the following line:             
+1. Make sure the configuration inside the __Configure__  method of the               __Startup.cs__  is set up for MVC by adding the following line:             
 
 	
     ````c#
@@ -77,7 +77,7 @@ app.UseMvc();
 
 
 
-1. Assure also that the application configuration inside the __Configure__ method can serve static files:             
+1. Assure also that the application configuration inside the __Configure__  method can serve static files:             
 
 	
     ````c#
@@ -90,7 +90,7 @@ app.UseStaticFiles();
 
 The report generation engine can retrieve Sql Connection Strings and specific Report Generation Engine           Settings that provide flexibility of the deployed application. It utilizes the           [IConfiguration interface](https://docs.microsoft.com/en-us/dotnet/api/microsoft.extensions.configuration.iconfiguration?view=dotnet-plat-ext-5.0)           for this purpose.         
 
-The .NET Core 2.1 applications use a           [key-value JSON-based](https://docs.microsoft.com/en-us/aspnet/core/fundamentals/configuration/?view=aspnetcore-2.1)           file named by default __appSettings.json__. The default ReportingEngineConfiguration:         
+The .NET Core 2.1 applications use a           [key-value JSON-based](https://docs.microsoft.com/en-us/aspnet/core/fundamentals/configuration/?view=aspnetcore-2.1)           file named by default __appSettings.json__ . The default ReportingEngineConfiguration:         
 
 	
 ````C#
@@ -99,14 +99,14 @@ ReportingEngineConfiguration = sp.GetService<IConfiguration>()
 
 
 
-will be initialized from __appSettings.json__ or           __appsettings.{EnvironmentName}.json__.         
+will be initialized from __appSettings.json__  or           __appsettings.{EnvironmentName}.json__ .         
 
-To activate JSON file configuration with a different name, for example, __reportingAppSettings.json__,           call the           [AddJsonFile](https://docs.microsoft.com/dotnet/api/microsoft.extensions.configuration.jsonconfigurationextensions.addjsonfile/)           extension method on an instance of           [ConfigurationBuilder](https://docs.microsoft.com/dotnet/api/microsoft.extensions.configuration.configurationbuilder).           Here are the exact steps you may follow:         
+To activate JSON file configuration with a different name, for example, __reportingAppSettings.json__ ,           call the           [AddJsonFile](https://docs.microsoft.com/dotnet/api/microsoft.extensions.configuration.jsonconfigurationextensions.addjsonfile/)           extension method on an instance of           [ConfigurationBuilder](https://docs.microsoft.com/dotnet/api/microsoft.extensions.configuration.configurationbuilder).           Here are the exact steps you may follow:         
 
-1. Add a new __ResolveSpecificReportingConfiguration__ class as a separate file or in the               Startup.cs file (optional)             
+1. Add a new __ResolveSpecificReportingConfiguration__  class as a separate file or in the               Startup.cs file (optional)             
 
 	
-    ````C#
+    ````c#
         static IConfiguration ResolveSpecificReportingConfiguration(IHostingEnvironment environment)
         {
             // If a specific configuration needs to be passed to the reporting engine, add it through a new IConfiguration instance.
@@ -119,7 +119,7 @@ To activate JSON file configuration with a different name, for example, __report
 
 
 
-1. Add the required services in the __ConfigureServices__ method. Here is how it may look finally:             
+1. Add the required services in the __ConfigureServices__  method. Here is how it may look finally:             
 
 	
     ````c#
@@ -154,15 +154,15 @@ To activate JSON file configuration with a different name, for example, __report
 
 
 
-1. Add a new folder named __Reports__ in the main application folder according to the above settings.                We will use the folder as report definition storage. Add some report definitions inside, for example, our "Product Catalog.trdp"               demo report we are going to reference in the designer web page.             
+1. Add a new folder named __Reports__  in the main application folder according to the above settings.                We will use the folder as report definition storage. Add some report definitions inside, for example, our "Product Catalog.trdp"               demo report we are going to reference in the designer web page.             
 
 ## Setting up the Report Designer REST service:
 
 The REST service works as a backend and is responsible for storage operations like creating, opening, or saving report definitions.           The following steps describe how to configure it:         
 
-1. Make sure that a key-value JSON-based file is available in your project and add the required               [configuration settings in it](7714DF84-CB60-44F2-A890-DEDAD595A3AB#json), for example the               __ConnectionStrings__.             
+1. Make sure that a key-value JSON-based file is available in your project and add the required               [configuration settings in it](7714DF84-CB60-44F2-A890-DEDAD595A3AB#json), for example the               __ConnectionStrings__ .             
 
-1. Implement a Report Designer controller. Create the __Controllers__ folder if it doesn't exist, right-click on it                and add a new item: Add > New item... > __API Controller - Empty__ item.               Name it ReportDesignerController. This will be our Telerik Web Report Designer REST service in the               project.             
+1. Implement a Report Designer controller. Create the __Controllers__  folder if it doesn't exist, right-click on it                and add a new item: Add > New item... > __API Controller - Empty__  item.               Name it ReportDesignerController. This will be our Telerik Web Report Designer REST service in the               project.             
 
 1. Inherit the [ReportDesignerControllerBase](/reporting/api/Telerik.Reporting.Services.WebApi.ReportDesignerControllerBase)               type and inject the required configuration settings in the constructor. Along with the ReportServiceConfiguration               there is another configuration instance named ReportDesignerServiceConfiguration, which will initialize the               definition storage. This is the class responsible for opening, saving, etc. the report definitions. This is               how a basic implementation of the controller should look like:             
 
@@ -187,7 +187,7 @@ namespace CSharp.AspNetCoreDemo.Controllers
 
 
 
-1. To ensure that the service operates, run the application and navigate to               URL __{applicationRoot}/api/reportdesigner/cultureContext__.               It should return a JSON representing the separators determined by the current culture, for example:             
+1. To ensure that the service operates, run the application and navigate to               URL __{applicationRoot}/api/reportdesigner/cultureContext__ .               It should return a JSON representing the separators determined by the current culture, for example:             
 
 	
     ````js
@@ -198,10 +198,10 @@ namespace CSharp.AspNetCoreDemo.Controllers
 
 ## Adding the Web Report Designer:
 
-1. Add a new HTML Page for the Web Report Designer by right-clicking on *wwwroot*               and __Add > New Item... > HTML Page__. Name the file, for example __webReportDesigner.html__.               Add the required references to load the font, jQuery, Telerik Kendo UI libraries,               telerikReportViewer and webReportDesigner scripts listed in the example below. Finally,               add the initialization of the telerik_WebReportDesigner widget. Note that the Web Report Designer container has a minimum width of 1200px.             The complete report viewer page should look like this:
+1. Add a new HTML Page for the Web Report Designer by right-clicking on *wwwroot*                and __Add > New Item... > HTML Page__ . Name the file, for example __webReportDesigner.html__ .               Add the required references to load the font, jQuery, Telerik Kendo UI libraries,               telerikReportViewer and webReportDesigner scripts listed in the example below. Finally,               add the initialization of the telerik_WebReportDesigner widget. Note that the Web Report Designer container has a minimum width of 1200px.             The complete report viewer page should look like this:
 
 	
-    ````HTML
+    ````html
 <!DOCTYPE html> 
 <html xmlns="http://www.w3.org/1999/xhtml"> 
 <head> 
@@ -236,13 +236,13 @@ namespace CSharp.AspNetCoreDemo.Controllers
 
 
 
-1. To setup the new page as startup check               [Make index.html as startup file in ASP.NET Core](https://www.talkingdotnet.com/make-index-html-startup-file-in-aspnet-core/). Then, change the launchUrl to webReportDesigner.html in *launchSettings.json*.             
+1. To setup the new page as startup check               [Make index.html as startup file in ASP.NET Core](https://www.talkingdotnet.com/make-index-html-startup-file-in-aspnet-core/). Then, change the launchUrl to webReportDesigner.html in *launchSettings.json* .             
 
 1. Finally, run the project to preview the web designer.             
 
 ## Examples
 
-Find the complete example setup of the Web Report Designer in the __AspNetCoreDemo__           located in Telerik Reporting installation folder. For example,           *             %PROGRAMFILES(x86)%\Progress\Telerik Reporting __{VERSION}__\Examples\CSharp\AspNetCoreDemo           *.           The Web Report Designer’s page is in __wwwroot__ folder. To setup the page to be a startup           page, change the launchUrl to webReportDesigner.html in *launchSettings.json*.         
+Find the complete example setup of the Web Report Designer in the __AspNetCoreDemo__            located in Telerik Reporting installation folder. For example,           *%PROGRAMFILES(x86)%\Progress\Telerik Reporting* .           The Web Report Designer’s page is in __wwwroot__  folder. To setup the page to be a startup           page, change the launchUrl to webReportDesigner.html in *launchSettings.json* .         
 
 # See Also
 

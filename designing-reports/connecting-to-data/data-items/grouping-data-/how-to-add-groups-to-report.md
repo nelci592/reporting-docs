@@ -12,17 +12,17 @@ position: 2
 
 
 
-Report groups are defined by adding __Group__ objects to the report’s __Groups__ collection. Report groups are always nested according to the order in the Groups collection. To display group data one should use the __GroupHeaderSection__ and __GroupFooterSection__ that appear once for each group member, respectively at start and end. The DetailSection displays detail data in a report and always appears inside the innermost group (if any). To add a group, follow these steps:
+Report groups are defined by adding __Group__  objects to the report’s __Groups__  collection. Report groups are always nested according to the order in the Groups collection. To display group data one should use the __GroupHeaderSection__  and __GroupFooterSection__  that appear once for each group member, respectively at start and end. The DetailSection displays detail data in a report and always appears inside the innermost group (if any). To add a group, follow these steps:
 
 ## Adding a group to a Report using Report Designer
 
 1. Click the Report selector button located in the upper left hand of the[Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/overview%})
 
-1. Click the __Groups__ ellipsis.
+1. Click the __Groups__  ellipsis.
 
 1. Follow these steps for each group:
 
-   1. 	          				Click Add button - a new unbound group will be added to the __Groups__ collection. 
+   1. 	          				Click Add button - a new unbound group will be added to the __Groups__  collection. 
 	                    
 
    1. 	                    	Click the Grouping property ellipsis. 
@@ -80,19 +80,19 @@ Report groups are defined by adding __Group__ objects to the report’s __Groups
 
 ## Edit a group in a Report using Report Designer
 
-1.       			In the __Report Designer__, click the Report selector button located in the upper left hand of the [Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/overview%}) to make the report active in the Properties window. The Grouping pane in the [Group Explorer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/group-explorer%}) displays the available groups (if any).
+1.       			In the __Report Designer__ , click the Report selector button located in the upper left hand of the [Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/overview%}) to make the report active in the Properties window. The Grouping pane in the [Group Explorer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/group-explorer%}) displays the available groups (if any).
       		
 
-1.       			Right-click the group, and then click __Group Properties__. 
+1.       			Right-click the group, and then click __Group Properties__ . 
       		
 
-1.       			In __Name__, type the name of the group. 
+1.       			In __Name__ , type the name of the group. 
       		
 
-1.       			In __Grouping property__, type or select a simple expression, or click the ```<Expression>``` option to create a new group expression. 
+1.       			In __Grouping property__ , type or select a simple expression, or click the ```<Expression>``` option to create a new group expression. 
       		
 
-1.       			Click __New__ to create additional expressions. All expressions you specify are combined using a logical AND to specify data for this group. 
+1.       			Click __New__  to create additional expressions. All expressions you specify are combined using a logical AND to specify data for this group. 
       		
 
 1.       			To allow sorting for the group, follow these steps:
@@ -119,19 +119,19 @@ Report groups are defined by adding __Group__ objects to the report’s __Groups
    +       					Click New.
       				
 
-   +       					In __Expression__, type or select the expression for the field to filter. To open the [Edit Expression Dialog]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/edit-expression-dialog%}), select the ```<Expression>``` option. 
+   +       					In __Expression__ , type or select the expression for the field to filter. To open the [Edit Expression Dialog]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/edit-expression-dialog%}), select the ```<Expression>``` option. 
       				
 
-   +       					In the __Operator__ box, select the operator that you want the filter to use to compare the values in the Expression box and the Value box. 
+   +       					In the __Operator__  box, select the operator that you want the filter to use to compare the values in the Expression box and the Value box. 
       				
 
-   +       					In the __Value__ box, type the expression or value against which you want the filter to evaluate the value in Expression.
+   +       					In the __Value__  box, type the expression or value against which you want the filter to evaluate the value in Expression.
       				
 
-1.       			Click __GroupKeepTogether__ to specify the keep together options.
+1.       			Click __GroupKeepTogether__  to specify the keep together options.
       		
 
-1.       			Click __BookMarkID__ to set a BookMark for this group.
+1.       			Click __BookMarkID__  to set a BookMark for this group.
       		
 
 ## Delete a group from a Report using Report Designer
@@ -139,10 +139,10 @@ Report groups are defined by adding __Group__ objects to the report’s __Groups
 1.       			Click the Report selector button located in the upper left hand of the [Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/overview%}). This makes the report active in the Properties window. The grouping pane in the [Group Explorer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/group-explorer%}) displays the available groups (if any).
       		
 
-1.       			Right click on the group and select __Delete Group__.
+1.       			Right click on the group and select __Delete Group__ .
       		
 
-1.       			When prompted to delete it, __Select Yes__. 
+1.       			When prompted to delete it, __Select Yes__ . 
       		
 
 ## Adding a group to a Report programatically
@@ -165,9 +165,6 @@ Report groups are defined by adding __Group__ objects to the report’s __Groups
 	            report1.Groups.Add(group1);
 	
 ````
-
-
-
 {{source=CodeSnippets\VB\API\Telerik\Reporting\ReportSnippets.vb region=AddNewGroupSnippet}}
 ````VB
 	

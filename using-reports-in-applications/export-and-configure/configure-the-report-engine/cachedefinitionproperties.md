@@ -47,4 +47,3 @@ JSON-based configuration file:
   }
 ````
 
-

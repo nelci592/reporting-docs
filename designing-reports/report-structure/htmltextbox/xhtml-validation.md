@@ -12,11 +12,11 @@ position: 1
 
 
 
-The __HtmlTextBox__ requires valid __XHTML__ and you should make sure you provide such otherwise the HtmlTextBox would throw exception.      	To handle this exception or just check whether the __HtmlTextBox__ would be able to handle the content      	you set as value, you should use the IsValidXhtml expressions function or        	[Telerik.Reporting.Processing.XhtmlValidator.IsValidXhtml](/reporting/api/Telerik.Reporting.Processing.XhtmlValidator#Telerik_Reporting_Processing_XhtmlValidator_IsValidXhtml_System_String_)       	static method. Three possible     	approaches are listed below:
+The __HtmlTextBox__  requires valid __XHTML__  and you should make sure you provide such otherwise the HtmlTextBox would throw exception.      	To handle this exception or just check whether the __HtmlTextBox__  would be able to handle the content      	you set as value, you should use the IsValidXhtml expressions function or        	[Telerik.Reporting.Processing.XhtmlValidator.IsValidXhtml](/reporting/api/Telerik.Reporting.Processing.XhtmlValidator#Telerik_Reporting_Processing_XhtmlValidator_IsValidXhtml_System_String_)       	static method. Three possible     	approaches are listed below:
 
 ## Validate Xhtml Using IsValidXhtml in Expression
 
-Use the __IsValidXhtml__ inside the HtmlTextBox __Expression__:
+Use the __IsValidXhtml__  inside the HtmlTextBox __Expression__ :
 
 {{source=CodeSnippets\CS\API\Telerik\Reporting\Processing\HtmlTextBoxSnippets.cs region=Validate_Xhtml_Using_IsValidXhtml_InExpression_Snippet}}
 ````C#
@@ -28,9 +28,6 @@ Use the __IsValidXhtml__ inside the HtmlTextBox __Expression__:
 	            txt.Value = string.Format("=Iif(IsValidXhtml('{0}'), '{0}', '{1}')", validXhtml, systemXhtml);
 	
 ````
-
-
-
 {{source=CodeSnippets\VB\API\Telerik\Reporting\Processing\HtmlTextBoxSnippets.vb region=Validate_Xhtml_Using_IsValidXhtml_InExpression_Snippet}}
 ````VB
 	
@@ -46,7 +43,7 @@ Use the __IsValidXhtml__ inside the HtmlTextBox __Expression__:
 
 ## Validate Xhtml Using Event And IsValidXhtml
 
-Use the __IsValidXhtml__ inside the HtmlTextBox __ItemDataBinding__ handler:
+Use the __IsValidXhtml__  inside the HtmlTextBox __ItemDataBinding__  handler:
 
 {{source=CodeSnippets\CS\API\Telerik\Reporting\Processing\HtmlTextBoxSnippets.cs region=Validate_Xhtml_Using_Event_And_IsValidXhtml_Snippet}}
 ````C#
@@ -68,17 +65,11 @@ Use the __IsValidXhtml__ inside the HtmlTextBox __ItemDataBinding__ handler:
 	                    }
 	                };
 ````
-
-
-
 {{source=CodeSnippets\VB\API\Telerik\Reporting\Processing\HtmlTextBoxSnippets.vb region=Validate_Xhtml_Using_Event_And_IsValidXhtml_Snippet}}
 ````VB
 	        Dim txt As New Telerik.Reporting.HtmlTextBox()
 	        AddHandler txt.ItemDataBinding, AddressOf MyEventHandler
 ````
-
-
-
 {{source=CodeSnippets\VB\API\Telerik\Reporting\Processing\HtmlTextBoxSnippets.vb region=Validate_Xhtml_Using_Event_And_IsValidXhtml1_Snippet}}
 ````VB
 	    Const validXhtml As String = "<b>valid xhtml</b>."
@@ -98,7 +89,7 @@ Use the __IsValidXhtml__ inside the HtmlTextBox __ItemDataBinding__ handler:
 
 ## Validate Xhtml Using Event And ValueError
 
-Use a __try-catch block__ to handle the exception:
+Use a __try-catch block__  to handle the exception:
 
 {{source=CodeSnippets\CS\API\Telerik\Reporting\Processing\HtmlTextBoxSnippets.cs region=Validate_Xhtml_Using_Event_And_ValueError_Snippet}}
 ````C#
@@ -121,18 +112,12 @@ Use a __try-catch block__ to handle the exception:
 	                    }
 	                };
 ````
-
-
-
 {{source=CodeSnippets\VB\API\Telerik\Reporting\Processing\HtmlTextBoxSnippets.vb region=Validate_Xhtml_Using_Event_And_ValueError_Snippet}}
 ````VB
 	
 	        Dim txt As New Telerik.Reporting.HtmlTextBox()
 	        AddHandler txt.ItemDataBinding, AddressOf ValueErrorHandler
 ````
-
-
-
 {{source=CodeSnippets\VB\API\Telerik\Reporting\Processing\HtmlTextBoxSnippets.vb region=Validate_Xhtml_Using_Event_And_ValueError1_Snippet}}
 ````VB
 	    Const invalidXhtml As String = "<b>invalid xhtml."

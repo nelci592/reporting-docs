@@ -20,7 +20,7 @@ In Visual Studio:
 
 1. Open the report in design view.             
 
-1. Expand the Telerik__ Reporting __tab of the Toolbox.             
+1. Expand the Telerik__Reporting__ tab of the Toolbox.             
 
 1. Select the report item that you want to place.             
 
@@ -32,7 +32,7 @@ In the Standalone Designer:
 
 1. Open the report in design view.             
 
-1. Click the __Insert__ tab of the ribbon.             
+1. Click the __Insert__  tab of the ribbon.             
 
 1. Select the report item that you want to place and click on it.             
 

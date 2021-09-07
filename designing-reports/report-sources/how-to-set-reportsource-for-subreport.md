@@ -12,19 +12,19 @@ position: 2
 
 
 
-This article includes details how to specify a __sub report__ for a [SubReport item]({%slug telerikreporting/designing-reports/report-structure/subreport%}).         You will need a [Report Source]({%slug telerikreporting/designing-reports/report-sources/overview%}) object.       
+This article includes details how to specify a __sub report__  for a [SubReport item]({%slug telerikreporting/designing-reports/report-structure/subreport%}).         You will need a [Report Source]({%slug telerikreporting/designing-reports/report-sources/overview%}) object.       
 
 ## Set the Report Source through the Report Designer
 
-1. In Design view, right-click a SubReport item to which you want to set a report source and click __Properties__.             
+1. In Design view, right-click a SubReport item to which you want to set a report source and click __Properties__ .             
 
-1. In the item's __Properties__, click __ReportSource__.             
+1. In the item's __Properties__ , click __ReportSource__ .             
 
-1. A "Load a Report from" dialog appears which allows you to select a __ReportSource__.             
+1. A "Load a Report from" dialog appears which allows you to select a __ReportSource__ .             
 
-1. Select the type of report source you would use to specify a report. For this example we would use __Instance Report Source__,               click that option and select the report that would serve as detail report.             If you have to specify parameters for the report, follow the next step.
+1. Select the type of report source you would use to specify a report. For this example we would use __Instance Report Source__ ,               click that option and select the report that would serve as detail report.             If you have to specify parameters for the report, follow the next step.
 
-1. Click __Edit Parameters__ button - __Edit Parameters__ dialog appears. Click __New__.               In the __Parameter Name__ column select the name of a report parameter in the detail report.               In the __Parameter Value__, type or select the value to pass to the parameter in the detail report.             
+1. Click __Edit Parameters__  button - __Edit Parameters__  dialog appears. Click __New__ .               In the __Parameter Name__  column select the name of a report parameter in the detail report.               In the __Parameter Value__ , type or select the value to pass to the parameter in the detail report.             
 
 ## Set the Report Source programatically
 
@@ -38,9 +38,6 @@ This article includes details how to specify a __sub report__ for a [SubReport i
 	            // Adding the initial parameter values
 	            instanceReportSource.Parameters.Add(new Telerik.Reporting.Parameter("OrderNumber", "SO43659"));
 ````
-
-
-
 {{source=CodeSnippets\VB\API\Telerik\Reporting\ReportSourceSnippets.vb region=CreateInstanceReportSourceSnippet}}
 ````VB
 	        Dim instanceReportSource As New Telerik.Reporting.InstanceReportSource()

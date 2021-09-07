@@ -18,7 +18,7 @@ The [Overview]({%slug telerikreporting/designing-reports/report-designer-tools/d
 
 To show a report created with the [Overview]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview%}), you have the following options:         
 
-* __                 Use [UriReportSource](/reporting/api/Telerik.Reporting.UriReportSource)__ and a path to the TRDX|TRDP file:             
+* __Use [UriReportSource](/reporting/api/Telerik.Reporting.UriReportSource)__  and a path to the TRDX|TRDP file:             
 
 {{source=CodeSnippets\CS\API\Telerik\Reporting\ReportSourceSnippets.cs region=CreateUriReportSourceSnippet}}
 ````C#
@@ -30,9 +30,6 @@ To show a report created with the [Overview]({%slug telerikreporting/designing-r
 	            // Adding the initial parameter values
 	            uriReportSource.Parameters.Add(new Telerik.Reporting.Parameter("OrderNumber", "SO43659"));
 ````
-
-
-
 {{source=CodeSnippets\VB\API\Telerik\Reporting\ReportSourceSnippets.vb region=CreateUriReportSourceSnippet}}
 ````VB
 	        Dim uriReportSource As New Telerik.Reporting.UriReportSource()
@@ -46,7 +43,7 @@ To show a report created with the [Overview]({%slug telerikreporting/designing-r
 
 
 
-* __                 Use [XmlReportSource](/reporting/api/Telerik.Reporting.XmlReportSource)__ and read the plain XML of a TRDX file:             
+* __Use [XmlReportSource](/reporting/api/Telerik.Reporting.XmlReportSource)__  and read the plain XML of a TRDX file:             
 
 {{source=CodeSnippets\CS\API\Telerik\Reporting\ReportSourceSnippets.cs region=CreateXmlReportSourceSnippet}}
 ````C#
@@ -79,9 +76,6 @@ To show a report created with the [Overview]({%slug telerikreporting/designing-r
 	            // Adding the initial parameter values
 	            xmlReportSource.Parameters.Add(new Telerik.Reporting.Parameter("OrderNumber", "SO43659"));
 ````
-
-
-
 {{source=CodeSnippets\VB\API\Telerik\Reporting\ReportSourceSnippets.vb region=CreateXmlReportSourceSnippet}}
 ````VB
 	        Dim xmlReportSource As New Telerik.Reporting.XmlReportSource()
@@ -116,9 +110,9 @@ To show a report created with the [Overview]({%slug telerikreporting/designing-r
 
 
 
-* __Deserialize the XML report definition from a TRDX file__:             If working with CLR types and objects is your thing, you can deserialize the XML report definition and proceed               following the basic concepts of the programming language and the .NET platform. For example you can create an InstanceReportSource and               and set its ReportDocument property to the deserialized report object. See [Serialize Report Definition in XML]({%slug telerikreporting/using-reports-in-applications/program-the-report-definition/serialize-report-definition-in-xml%}) for more information.             
+* __Deserialize the XML report definition from a TRDX file__ :             If working with CLR types and objects is your thing, you can deserialize the XML report definition and proceed               following the basic concepts of the programming language and the .NET platform. For example you can create an InstanceReportSource and               and set its ReportDocument property to the deserialized report object. See [Serialize Report Definition in XML]({%slug telerikreporting/using-reports-in-applications/program-the-report-definition/serialize-report-definition-in-xml%}) for more information.             
 
-* __Unpackaging the XML report definition from a TRDP file__:             If you need to obtain a Telerik Report instance in code from a TRDP file, you can unpackage the content in code. Then create an InstanceReportSource and               set its ReportDocument property to the unpackaged report object. See [Package Report Definition]({%slug telerikreporting/using-reports-in-applications/program-the-report-definition/package-report-definition%}) for more information.             
+* __Unpackaging the XML report definition from a TRDP file__ :             If you need to obtain a Telerik Report instance in code from a TRDP file, you can unpackage the content in code. Then create an InstanceReportSource and               set its ReportDocument property to the unpackaged report object. See [Package Report Definition]({%slug telerikreporting/using-reports-in-applications/program-the-report-definition/package-report-definition%}) for more information.             
 
 The only thing left to do is assign the resulting report sources to the report viewer's ReportSource property.
 

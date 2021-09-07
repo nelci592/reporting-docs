@@ -10,9 +10,9 @@ position: 2
 
 # How to Add Telerik Reporting REST Web API to Web Application
 
-ry files and packages to host the Telerik Reporting REST service instance.         
+ssary files and packages to host the Telerik Reporting REST service instance.         
 
-The project has a preconfigured implementation of reports controller that uses the *"~\Reports"* path for           its report source resolver. This directory is not automatically created and needs to be created, or the path to be modified accordingly prior to running the project.         
+The project has a preconfigured implementation of reports controller that uses the *"~\Reports"*  path for           its report source resolver. This directory is not automatically created and needs to be created, or the path to be modified accordingly prior to running the project.         
 
 ##Manually configuring Telerik.Reporting REST Service on IIS
 
@@ -97,10 +97,10 @@ The project has a preconfigured implementation of reports controller that uses t
 
 
 
-1. Enable [Cross-Origin Resource Sharing (CORS).](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS) (*optional*)                 
-   1. Add __Microsoft.AspNet.WebApi.Cors__ NuGet package to the project. It may add other required references. It may be necessary to upgrade some of the already installed packages.                     
+1. Enable [Cross-Origin Resource Sharing (CORS).](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS) (*optional* )                 
+   1. Add __Microsoft.AspNet.WebApi.Cors__  NuGet package to the project. It may add other required references. It may be necessary to upgrade some of the already installed packages.                     
 
-   1. Add the following code at the beginning of the __Global.Application_Start__ (Global.asax) method:                     
+   1. Add the following code at the beginning of the __Global.Application_Start__  (Global.asax) method:                     
 
 	
     ````c#
@@ -120,7 +120,7 @@ GlobalConfiguration.Configuration.EnableCors();
 
 
 
-   1. Add the following attribute to the __ReportsController__ class (requires reference to __System.Web.Http.Cors__):                     
+   1. Add the following attribute to the __ReportsController__  class (requires reference to __System.Web.Http.Cors__ ):                     
 
 	
     ````c#

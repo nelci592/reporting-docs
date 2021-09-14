@@ -35,7 +35,7 @@ The most common reason for this exception is an incorrect version of the web cli
 
 As of Telerik Reporting Q1 2014, the WPF ReportViewer control uses implicit styles.           When the viewer's template (__Telerik.ReportViewer.Wpf.xaml__ ) file is not loaded correctly, the viewer            is not displayed.           Double-check if XAML resources are loaded in the application.         
 
-More details about the settings required by the WPF ReportViewer are available in            [WPF ReportViewer: Manual Setup]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/wpf-application/how-to-add--manually-report-viewer-to-a-wpf-.net-framework-project%}).         
+More details about the settings required by the WPF ReportViewer are available in            [WPF ReportViewer: Manual Setup]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/wpf-application/how-to-add--manually-report-viewer-to-a-wpf-dotnet-framework-project%}).         
 
 Other possible causes for the issue are described in the following article:           [Missing Controls in the UI](https://docs.telerik.com/devtools/wpf/common-information/troubleshooting/invisible-controls).         
 
@@ -52,7 +52,7 @@ In some cases the application build process fails with the following or a simila
 
 This message can appear after upgrading to a newer version of Telerik Reporting or when the styles applied to the WPF Report Viewer are not implicit.           As of Telerik Reporting Q1 2014, the WPF ReportViewer control uses implicit styles.           When the viewer's template (__Telerik.ReportViewer.Wpf.xaml__ ) file is not loaded correctly, the viewer is not displayed.           Also if the additionally required XAML files are not loaded or they are not of a version synchronized with Telerik Reporting, you may receive such errors.           Double-check if XAML resources are loaded in the application and if dependencies between Telerik Reporting and Telerik UI for WPF are considered           - [WPF Dependenices per release]({%slug telerikreporting/upgrade/overview%}).         
 
-More details about the settings required by the WPF ReportViewer are available in [WPF ReportViewer: Manual Setup]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/wpf-application/how-to-add--manually-report-viewer-to-a-wpf-.net-framework-project%}).         
+More details about the settings required by the WPF ReportViewer are available in [WPF ReportViewer: Manual Setup]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/wpf-application/how-to-add--manually-report-viewer-to-a-wpf-dotnet-framework-project%}).         
 
 >important [Telerik Reporting Upgrade Wizard]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/upgrade-wizard%}) will update only references to Telerik Reporting assemblies and configuration settings.             You will have to manually update the related  __Telerik.ReportViewer.Wpf.xaml__  files, and Telerik UI             for WPF XAML files distributed by Telerik Reporting. This includes manual update of Telerik UI for WPF assemblies distributed by Telerik Reporting.           If you use Telerik UI for WPF as a separate product, you can run [Telerik UI for WPF Upgrade Wizard](http://docs.telerik.com/devtools/wpf/visual-studio-extensions/for-wpf-vs-extensions-upgrading) which will update Telerik UI for WPF assembly references and XAML resources automatically.           
 
@@ -62,7 +62,7 @@ More details about the settings required by the WPF ReportViewer are available i
 
 The WPf ReportViewer control is built against a specific version of Telerik UI for WPF on each official release. Please check the dependencies           for the used Telerik Reporting version - [WPF Dependenices per release]({%slug telerikreporting/upgrade/overview%}). You can           update assembly references accordingly or add [binding redirect](http://msdn.microsoft.com/en-us/library/eftw1fys(v=vs.110).aspx).         
 
-More details about the settings required by the WPF ReportViewer are available in [WPF ReportViewer: Manual Setup]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/wpf-application/how-to-add--manually-report-viewer-to-a-wpf-.net-framework-project%}).         
+More details about the settings required by the WPF ReportViewer are available in [WPF ReportViewer: Manual Setup]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/wpf-application/how-to-add--manually-report-viewer-to-a-wpf-dotnet-framework-project%}).         
 
 ##The report in the WPF ReportViewer is messed or different than the design-time preview.
 

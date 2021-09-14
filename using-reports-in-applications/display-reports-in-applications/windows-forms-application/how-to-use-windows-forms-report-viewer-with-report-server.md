@@ -20,13 +20,13 @@ This topic explains how to setup the Windows Forms Report Viewer to work with Te
 
 * A valid (enabled) user account - the built-in __Guest__  user account can be used as well.             
 
-* In case you are not using [Item Templates ]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/windows-forms-application/how-to-add-report-viewer-to-a-windows-forms'-.net-framework-project%}),               add references to all the assemblies listed               [here]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/requirements-for-desktop-viewers-using-remote-report-sources%}).             
+* In case you are not using [Item Templates ]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/windows-forms-application/how-to-add-report-viewer-to-a-windows-forms'-dotnet-framework-project%}),               add references to all the assemblies listed               [here]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/requirements-for-desktop-viewers-using-remote-report-sources%}).             
 
 ##Configuring the Windows Forms Report Viewer to work with Report Server
 
 ###
 
-1. To create a form and host the report viewer in it, you can either use the item template, as explained                   [here]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/windows-forms-application/how-to-add-report-viewer-to-a-windows-forms'-.net-framework-project%}), or place it yourself through drag-and-drop from the toolbox.                 
+1. To create a form and host the report viewer in it, you can either use the item template, as explained                   [here]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/windows-forms-application/how-to-add-report-viewer-to-a-windows-forms'-dotnet-framework-project%}), or place it yourself through drag-and-drop from the toolbox.                 
 
 1. As soon as the report viewer is on your form, select it and locate the __ReportEngineConnection__  property.                   invoke the UI editor by pressing the ellipsis button. The Report Engine Connection Editor dialog should appear:                   
 

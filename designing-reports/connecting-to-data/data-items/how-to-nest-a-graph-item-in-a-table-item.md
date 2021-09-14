@@ -16,7 +16,7 @@ The Telerik Reporting data items are used to present data by two dimensions (the
 
 This can be achieved with simply nesting data items. In this case the nested data item will get its data from the “master” data item,         binding its data source to the master item's DataObject.       
 
-As a real life scenario, in the current example we will list the top 5 performing agents and the amount of their sales divided by product categories         on a yearly basis, presented in a pie chart. We will use a [Crosstab item]({%slug telerikreporting/designing-reports/report-structure/table/crosstab/list/understanding-crosstab-areas%}) as a master data item and it will define the dimensions “Sales Person Name” and “Year”.         For a nested data item we will use a [Graph item]({%slug telerikreporting/designing-reports/report-structure/graph/structure%}) which will add the dimension “Product Category”.       
+As a real life scenario, in the current example we will list the top 5 performing agents and the amount of their sales divided by product categories         on a yearly basis, presented in a pie chart. We will use a [Crosstab item]({%slug telerikreporting/designing-reports/report-structure/table-crosstab-list/understanding-crosstab-areas%}) as a master data item and it will define the dimensions “Sales Person Name” and “Year”.         For a nested data item we will use a [Graph item]({%slug telerikreporting/designing-reports/report-structure/graph/structure%}) which will add the dimension “Product Category”.       
 
 We will use the __AdventureWorks__  sample database and the [Telerik Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview%}).       
 
@@ -76,8 +76,8 @@ You can download the described report as a __.trdx__  report definition from the
 
 The same approach is used in the __Product Sales__  example report which is shipped with the Telerik Reporting installation.           This report displays the monthly sales trend using a line chart for the product subcategories and a column chart for the total fields.           You can see the report in action if you have a valid connection to the __AdventureWorks__  sample database.         
 
- * [Table/Crosstab/List]({%slug telerikreporting/designing-reports/report-structure/table/crosstab/list/overview%})
+ * [Table/Crosstab/List]({%slug telerikreporting/designing-reports/report-structure/table-crosstab-list/overview%})
 
  * [Graph Structure]({%slug telerikreporting/designing-reports/report-structure/graph/structure%})
 
- * [How to use the ReportItem.DataObject in expressions]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/how-to-use-the-reportitem.dataobject-property-in-expressions%})
+ * [How to use the ReportItem.DataObject in expressions]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/how-to-use-the-reportitemdotdataobject-property-in-expressions%})

@@ -52,7 +52,7 @@ Various formatting options are available to control the text presentation:
 
 * Organize the text in paragraphs (```<div>```, ```<span>```,```<p>```, ```<br>```, ```<center>```)
 
->important TABLE and IMG tags are not supported. Instead, you must use the native Reporting [Table/List/Crrostab]({%slug telerikreporting/designing-reports/report-structure/table/crosstab/list/overview%})             and [PictureBox]({%slug telerikreporting/designing-reports/report-structure/picturebox%}) items. A custom approach like rendering HTML as an Image with a third-party tool             and using the image via PictureBox item is also supported.           
+>important TABLE and IMG tags are not supported. Instead, you must use the native Reporting [Table/List/Crrostab]({%slug telerikreporting/designing-reports/report-structure/table-crosstab-list/overview%})             and [PictureBox]({%slug telerikreporting/designing-reports/report-structure/picturebox%}) items. A custom approach like rendering HTML as an Image with a third-party tool             and using the image via PictureBox item is also supported.           
 
 
 ## Supported CSS attributes

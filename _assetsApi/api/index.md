@@ -101,7 +101,7 @@ The following tables list the most used members of the different libraries.
         </tr>
         <tr>
             <td><a href="https://docs.telerik.com/reporting/api/Telerik.Reporting.html">Telerik.Reporting</a></td>
-            <td><a href="https://docs.telerik.com/reporting/api/Telerik.Reporting.Report.html">Report Definition Item</a></td>
+            <td><a href="https://docs.telerik.com/reporting/api/Telerik.Reporting.Report.html">Report</a> Definition Item</td>
             <td>The base Report Definition Item class. It contains empty Page Header, Details and Page Footer sections.</td>
         </tr>
         <tr>
@@ -119,7 +119,81 @@ The following tables list the most used members of the different libraries.
 
 ## Report Processing
 
+<table>
+    <tbody>
+        <tr>
+            <th><span style="font-weight: bold;">Namespace</span></th>
+            <th><span style="font-weight: bold;">Class Name</span></th>
+            <th><span style="font-weight: bold;">Description</span></th>
+        </tr>
+        <tr>
+            <td><a href="https://docs.telerik.com/reporting/api/Telerik.Reporting.Processing.html">Telerik.Reporting.Processing</a></td>
+            <td><a href="https://docs.telerik.com/reporting/api/Telerik.Reporting.Processing.Report.html">Report</a> Processing Item</td>
+            <td>The Processing Report Item class.</td>
+        </tr>
+        <tr>
+            <td><a href="https://docs.telerik.com/reporting/api/Telerik.Reporting.Processing.html">Telerik.Reporting.Processing</a></td>
+            <td><a href="https://docs.telerik.com/reporting/api/Telerik.Reporting.Processing.ReportProcessor.html">ReportProcessor</a></td>
+			<td>The Reporting Engine class. Use to export and print reports programmatically</td>
+        </tr>
+    </tbody>
+</table>
+
 ## Reporting Services
+
+<table>
+    <tbody>
+        <tr>
+            <th><span style="font-weight: bold;">Namespace</span></th>
+            <th><span style="font-weight: bold;">Class Name</span></th>
+            <th><span style="font-weight: bold;">Description</span></th>
+        </tr>
+        <tr>
+            <td><a href="https://docs.telerik.com/reporting/api/Telerik.Reporting.Services.html">Telerik.Reporting.Services</a></td>
+            <td><a href="https://docs.telerik.com/reporting/api/Telerik.Reporting.Services.ReportSourceResolverBase.html">ReportSourceResolverBase</a></td>
+            <td>The Telerik Reporting REST Service basic ReportSource Resolver class for ASP.NET Framework.</td>
+        </tr>
+        <tr>
+            <td><a href="https://docs.telerik.com/reporting/api/Telerik.Reporting.Services.html">Telerik.Reporting.Services</a></td>
+            <td><a href="https://docs.telerik.com/reporting/api/Telerik.Reporting.Services.TypeReportSourceResolver.html">TypeReportSourceResolver</a></td>
+            <td>The Telerik Reporting REST Service built-in ReportSource Resolver for CLR (CS/VB) report definitions.</td>
+        </tr>
+		<tr>
+            <td><a href="https://docs.telerik.com/reporting/api/Telerik.Reporting.Services.html">Telerik.Reporting.Services</a></td>
+            <td><a href="https://docs.telerik.com/reporting/api/Telerik.Reporting.Services.UriReportSourceResolver.html">UriReportSourceResolver</a></td>
+            <td>The Telerik Reporting REST Service built-in ReportSource Resolver for descriptive (TRDP/TRDX) report definitions.</td>
+        </tr>
+    </tbody>
+</table>
 
 ## Report Viewers
 
+<table>
+    <tbody>
+        <tr>
+            <th><span style="font-weight: bold;">Namespace</span></th>
+            <th><span style="font-weight: bold;">Class Name</span></th>
+            <th><span style="font-weight: bold;">Description</span></th>
+        </tr>
+        <tr>
+            <td><a href="https://docs.telerik.com/reporting/api/Telerik.ReportViewer.WinForms.html">Telerik.ReportViewer.WinForms</a></td>
+            <td><a href="https://docs.telerik.com/reporting/api/TelerikTelerik.ReportViewer.WinForms.ReportViewer.html">ReportViewer</a> WinForms</td>
+            <td>The Telerik Reporting ReportViewer for .NET Framework Windows Forms applications.</td>
+        </tr>
+		<tr>
+            <td><a href="https://docs.telerik.com/reporting/api/Telerik.ReportViewer.WPF.html">Telerik.ReportViewer.WPF</a></td>
+            <td><a href="https://docs.telerik.com/reporting/api/TelerikTelerik.ReportViewer.WPF.ReportViewer.html">ReportViewer</a> WPF</td>
+            <td>The Telerik Reporting ReportViewer for .NET Framework WPF applications.</td>
+        </tr>
+		<tr>
+            <td><a href="https://docs.telerik.com/reporting/api/Telerik.ReportViewer.Html5.WebForms.html">Telerik.ReportViewer.Html5.WebForms</a></td>
+            <td><a href="https://docs.telerik.com/reporting/api/TelerikTelerik.ReportViewer.Html5.WebForms.ReportViewer.html">ReportViewer</a> ASP.NET WebForms</td>
+            <td>The Telerik Reporting ReportViewer for ASP.NET Web Forms applications. Wrapper of the pure Html5 Report Viewer</td>
+        </tr>
+		<tr>
+            <td><a href="https://docs.telerik.com/reporting/api/Telerik.ReportViewer.Html5.MVC.html">Telerik.ReportViewer.Html5.MVC</a></td>
+            <td><a href="https://docs.telerik.com/reporting/api/TelerikTelerik.ReportViewer.Html5.MVC.ReportViewer.html">ReportViewer</a> ASP.NET MVC</td>
+            <td>The Telerik Reporting ReportViewer for ASP.NET MVC applications. Wrapper of the pure Html5 Report Viewer</td>
+        </tr>
+    </tbody>
+</table>

@@ -54,7 +54,7 @@ Add a hyperlink to a URL when you want users to be able to click a link in a rep
 # See Also
 
 
- * [How to: Add a Drillthrough Report Action]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/actions/how-to/how-to-add-a-drillthrough/navigate-to-report-action%})
+ * [How to: Add a Drillthrough Report Action]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/actions/how-to/how-to-add-a-drillthrough-navigate-to-report-action%})
 
  * [How to: Add a Bookmark Action]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/actions/how-to/how-to-add-a-bookmark-action%})
 

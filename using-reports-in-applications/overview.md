@@ -24,9 +24,9 @@ Telerik Reporting offers numerous ways to [Display Reports in Applications]({%sl
 
 * [HTML5 Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview%}) - an HTML/CSS/JS client-side widget suitable for any web application                 that works with JavaScript.                
 
-* [HTML5 MVC Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-mvc-report-viewer/overview%}) - a server-side wrapper that allows you to configure the HTML5 Viewer in MVC applications.             
+* [HTML5 MVC Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-aspdotnet-mvc-report-viewer/overview%}) - a server-side wrapper that allows you to configure the HTML5 Viewer in MVC applications.             
 
-* [HTML5 WebForms Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-web-forms-report-viewer/overview%}) - a server-side wrapper that allows you to configure the HTML5 Viewer in WebForms applications.                   
+* [HTML5 WebForms Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-aspdotnet-web-forms-report-viewer/overview%}) - a server-side wrapper that allows you to configure the HTML5 Viewer in WebForms applications.                   
 
 * [Angular Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/angular-report-viewer-overview%}) - an Angular component that wraps the HTML5 Report Viewer.                 
 
@@ -60,9 +60,9 @@ Connect the Report Viewer to the Telerik Report Server’s engine:
 
 * [How To: Use HTML5 Report Viewer With Report Server ]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/how-to-use-html5-report-viewer-with-report-server%})
 
-* [How To: Use HTML5 ASP.NET MVC Report Viewer With Report Server  ]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-mvc-report-viewer/how-to-use-html5-asp.net-mvc-report-viewer-with-report-server%})
+* [How To: Use HTML5 ASP.NET MVC Report Viewer With Report Server  ]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-aspdotnet-mvc-report-viewer/how-to-use-html5-aspdotnet-mvc-report-viewer-with-report-server%})
 
-* [How To: Use HTML5 ASP.NET Web Forms Report Viewer With Report Server   ]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-web-forms-report-viewer/how-to-use-html5-asp.net-web-forms-report-viewer-with-report-server%})
+* [How To: Use HTML5 ASP.NET Web Forms Report Viewer With Report Server   ]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-aspdotnet-web-forms-report-viewer/how-to-use-html5-aspdotnet-web-forms-report-viewer-with-report-server%})
 
 * [How To: Use Windows Forms Report Viewer With Report Server ]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/windows-forms-application/how-to-use-windows-forms-report-viewer-with-report-server%})
 
@@ -88,7 +88,7 @@ If you are just starting with Telerik Reporting, look at our [First Steps]({%slu
 
 Wondering about specific report design? You might find helpful suggestions on how to present the data in           [Report Structure]({%slug telerikreporting/designing-reports/report-structure/overview%}) section.         
 
-Are you into ASP.NET Core? See how to display reports in a .NET Core application for Windows, Linux, and macOS platforms here -           [.NET Core Support]({%slug telerikreporting/using-reports-in-applications/.net-core-support%}).         
+Are you into ASP.NET Core? See how to display reports in a .NET Core application for Windows, Linux, and macOS platforms here -           [.NET Core Support]({%slug telerikreporting/using-reports-in-applications/dotnet-core-support%}).         
 
 # See Also
 

@@ -40,7 +40,7 @@ This exception might surface if you try to use objects which           do not im
 
 ## When deploying a project with Telerik Reporting on a server, you  get the following error: Could not load file or assembly 'Telerik.ReportViewer.WebForms, Version=x.x.x.x, Culture=neutral, PublicKeyToken=a9d7983dfcc261be' or one of its dependencies. The system cannot find the file specified.
 
-During the installation of Telerik Reporting on a dev machine,           the Telerik Reporting assemblies are added to GAC. When deploying a project           using Visual Studio's built-in functionality, the assemblies from the GAC           are not copied automatically, so you need to make sure the assemblies physically exist in the bin folder of your application.           Full details are available in the [Deploying Web Applications]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/asp.net-web-forms-report-viewer/deploying-web-applications%}) help article.         
+During the installation of Telerik Reporting on a dev machine,           the Telerik Reporting assemblies are added to GAC. When deploying a project           using Visual Studio's built-in functionality, the assemblies from the GAC           are not copied automatically, so you need to make sure the assemblies physically exist in the bin folder of your application.           Full details are available in the [Deploying Web Applications]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/aspdotnet-web-forms-report-viewer/deploying-web-applications%}) help article.         
 
 ## The expression contains undefined function call MyUserFunction()
 

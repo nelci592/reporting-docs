@@ -21,7 +21,7 @@ position: 1
 
 * Existing ASP.NET Core 3.1 Blazor Server App or ASP.NET Core 3.1-hosted Blazor WebAssembly App             
 
-* The report viewer consumes reports generated and served from a running Reports Web Service.               Such can be referenced from another application or Telerik Report Server instance               or it can be hosted locally in the Blazor application.               In case you need to host it locally follow the article [How to Host Reports Service in ASP.NET Core 3.1]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-core-web-api-implementation/how-to-host-reports-service-in-asp.net-core-3.1%}).             
+* The report viewer consumes reports generated and served from a running Reports Web Service.               Such can be referenced from another application or Telerik Report Server instance               or it can be hosted locally in the Blazor application.               In case you need to host it locally follow the article [How to Host Reports Service in ASP.NET Core 3.1]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/aspdotnet-core-web-api-implementation/how-to-host-reports-service-in-aspdotnet-core-3dot1%}).             
 
 ## Adding the HTML5 Report Viewer component
 

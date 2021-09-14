@@ -32,7 +32,7 @@ To keep the table headers visible while scrolling:
 
 ## Settings in the Report Viewers
 
-The HTML5 Viewer automatically applies the freeze functionality in __[Interactive mode]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/interactive-vs.-print-layout%})__            when it is enabled from the designers.           The picture below shows a report with frozen row and column headers:           
+The HTML5 Viewer automatically applies the freeze functionality in __[Interactive mode]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/interactive-vsdot-print-layout%})__            when it is enabled from the designers.           The picture below shows a report with frozen row and column headers:           
 
   ![Table Freeze Headers Viewer](images/TableFreezeHeadersViewer.png)
 
@@ -47,9 +47,9 @@ Even though the List report item has FreezeRowHeaders and FreezeColumnHeaders in
 # See Also
 
 
- * [Interactive vs. Print Layout]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/interactive-vs.-print-layout%})
+ * [Interactive vs. Print Layout]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/interactive-vsdot-print-layout%})
 
- * [Understanding Crosstab Areas]({%slug telerikreporting/designing-reports/report-structure/table/crosstab/list/understanding-crosstab-areas%})
+ * [Understanding Crosstab Areas]({%slug telerikreporting/designing-reports/report-structure/table-crosstab-list/understanding-crosstab-areas%})
 
  * [Understanding Pagination]({%slug telerikreporting/designing-reports/rendering-and-paging/understanding-pagination%})
 

@@ -31,4 +31,4 @@ To define a drill-through action add a [NavigateToReportAction](/reporting/api/T
 # See Also
 
 
- * [How to: Add a Drillthrough Report Action]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/actions/how-to/how-to-add-a-drillthrough/navigate-to-report-action%})
+ * [How to: Add a Drillthrough Report Action]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/actions/how-to/how-to-add-a-drillthrough-navigate-to-report-action%})

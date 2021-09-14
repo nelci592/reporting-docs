@@ -18,7 +18,7 @@ The Windows Forms ReportViewer displays content rendered through the [          
 
 ##Report is not displayed by the viewer.
 
-The WinForms ReportViewer control requires its RefreshReport method to be called after setting the ReportSource property.           For more details, please check [Assign report to the viewer programatically]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/windows-forms-application/how-to-add-manually-report-viewer-to-a-windows-forms'-.net-framework-project%}).         
+The WinForms ReportViewer control requires its RefreshReport method to be called after setting the ReportSource property.           For more details, please check [Assign report to the viewer programatically]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/windows-forms-application/how-to-add-manually-report-viewer-to-a-windows-forms'-dotnet-framework-project%}).         
 
 ##        "An error has occurred while rendering the report: System.Runtime.InteropServices.ExternalException: A generic error occurred in GDI+." or
         "System.OutOfMemoryException: Exception of type 'System.OutOfMemoryException' was thrown." error on displaying a report.

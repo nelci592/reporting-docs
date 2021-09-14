@@ -36,4 +36,4 @@ The __DataObject__  property is an object instance representing the data that an
 >note To reach the data of an item that is higher in the hierarchy, you can use  __Parent__  keyword:            *= ReportItem.Parent.DataObject* Parent keyword can be used as many times as neccessary in order to reach the required item.           
 
 
-For more information please see [How to use the ReportItem.DataObject property in expressions]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/how-to-use-the-reportitem.dataobject-property-in-expressions%}).         
+For more information please see [How to use the ReportItem.DataObject property in expressions]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/how-to-use-the-reportitemdotdataobject-property-in-expressions%}).         

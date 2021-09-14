@@ -12,7 +12,7 @@ position: 2
 
 
 
-The Graph item is a data item and similar to the [Table]({%slug telerikreporting/designing-reports/report-structure/table/crosstab/list/overview%}) item it allows developers        to summarize data by two dimensions (__CategoryGroups__  hierarchy and __SeriesGroups__  hierarchy) and        display one or more measures (depending on the series type). Like the other data items the Graph item connects to a single data source and provides        additional options for sorting and filtering the input data, binding, conditional formatting, etc.
+The Graph item is a data item and similar to the [Table]({%slug telerikreporting/designing-reports/report-structure/table-crosstab-list/overview%}) item it allows developers        to summarize data by two dimensions (__CategoryGroups__  hierarchy and __SeriesGroups__  hierarchy) and        display one or more measures (depending on the series type). Like the other data items the Graph item connects to a single data source and provides        additional options for sorting and filtering the input data, binding, conditional formatting, etc.
 
 It is important to carefully prepare and understand your data before you create a graph, as this will help you design your charts quickly and        efficiently.
 

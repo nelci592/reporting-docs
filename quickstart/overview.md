@@ -26,7 +26,7 @@ To get started with Telerik Reporting continue with the topics in this section.
 
 ## General Information
 
-When designing a report, always start from an empty Telerik.Reporting.Report object.           Report Designers add sections and items on your command, resulting in a template that can be further processed by the Reporting engine.           Report Designers provide design-time preview in both            [Interactive and Print previews]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/interactive-vs.-print-layout%}),           to verify the designed template and how it will look with data.         
+When designing a report, always start from an empty Telerik.Reporting.Report object.           Report Designers add sections and items on your command, resulting in a template that can be further processed by the Reporting engine.           Report Designers provide design-time preview in both            [Interactive and Print previews]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/interactive-vsdot-print-layout%}),           to verify the designed template and how it will look with data.         
 
 Report Designers to create reports:
 

@@ -119,7 +119,7 @@ Apart from website projects, you can also manually upgrade class library project
 
    + `telerikReportViewerTemplate.html`―The default template HTML page of the HTML5 Report Viewer.                 
 
-1. (Applicable to WPF applications only.) Update the references to Telerik UI for WPF and the corresponding binding redirects, if any.               For more information, refer to the article on               [manually setting up the WPF ReportViewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/wpf-application/how-to-add--manually-report-viewer-to-a-wpf-.net-framework-project%}).             Update the XAML resources which correspond to the updated Telerik UI for WPF assemblies.
+1. (Applicable to WPF applications only.) Update the references to Telerik UI for WPF and the corresponding binding redirects, if any.               For more information, refer to the article on               [manually setting up the WPF ReportViewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/wpf-application/how-to-add--manually-report-viewer-to-a-wpf-dotnet-framework-project%}).             Update the XAML resources which correspond to the updated Telerik UI for WPF assemblies.
 
 1. (Applicable to Silverlight applications only.) Update the references to Telerik UI for Silverlight.               For more information, refer to the article on               [adding the Sliverlight ReportViewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/silverlight-application/how-to-add-report-viewer-to-a-silverlight-application%}).             Update the XAML resources which correspond to the updated Telerik UI for Silverlight assemblies.
 

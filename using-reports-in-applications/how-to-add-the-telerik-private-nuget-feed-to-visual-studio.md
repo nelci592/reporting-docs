@@ -60,7 +60,7 @@ Telerik provides NuGet packages from private NuGet feed.          The article el
 ###            Setup with NuGet CLI
           
 
-1. Download the latest                   [NuGet executable](https://dist.nuget.org/win-x86-commandline/latest/nuget.exe).                 
+1. Download the latest                    [NuGet executable](https://dist.nuget.org/win-x86-commandline/latest/nuget.exe) .                 
 
 1. Open a Command Prompt and change the path to the nuget.exe location.                 
 
@@ -109,9 +109,4 @@ After changing your Telerik password,               you need to reset your crede
 
 NuGet Sources Update -Name "telerik.com" -Source "https://nuget.telerik.com/nuget" -UserName "your login email" -Password "your new password"
 ````
-
-
-
-
-# See Also
 

@@ -49,11 +49,11 @@ The Web Report Designer uses a dedicated ASP.NET WebAPI REST service as a backen
 
 ## Prerequisites:
 
-* Web browser that supports               [JavaScript EcmaScript 6](https://es6.io): Google Chrome 77.0 or higher;               Mozilla Firefox 69.0 or higher, Microsoft Edge 79 or higher.             
+* Web browser that supports                [JavaScript EcmaScript 6](https://es6.io) : Google Chrome 77.0 or higher;               Mozilla Firefox 69.0 or higher, Microsoft Edge 79 or higher.             
 
-* [jQuery](http://jquery.com/download/)__3.3.1__  or later.             
+*  [jQuery](http://jquery.com/download/) __3.3.1__  or later.             
 
-* [Kendo UI](http://www.kendoui.com/) __kendosubsetversion__  or later.             
+*  [Kendo UI](http://www.kendoui.com/)  __kendosubsetversion__  or later.             
 
 * Telerik Report Viewer script. By default, it is requested from the service.             
 
@@ -61,17 +61,17 @@ The Web Report Designer uses a dedicated ASP.NET WebAPI REST service as a backen
 
 * All other scripts and styles will be provided by the Web Report Designer service               when the designer widget is loaded. The list of loaded resources:             
 
-   + [jQuery UI](https://jqueryui.com/)__1.12.1__  library.                   We recommend using the version of jQuery UI subset that is                   served by the Web Report Designer service because it includes a fix related to                   the dragging and dropping components.                 The subset includes Draggable, Droppable, Resizable and their dependencies.                 
+   +  [jQuery UI](https://jqueryui.com/) __1.12.1__  library.                   We recommend using the version of jQuery UI subset that is                   served by the Web Report Designer service because it includes a fix related to                   the dragging and dropping components.                 The subset includes Draggable, Droppable, Resizable and their dependencies.                 
 
    + webReportDesigner.min.css stylesheet.
 
    + webReportDesignerTheme.css stylesheet.
 
-* The web report designer in our example is stylized using               [Roboto font](https://fonts.google.com/specimen/Roboto). A link to a font of your               preference can be added before creating the Web Designer widget on the page.             
+* The web report designer in our example is stylized using                [Roboto font](https://fonts.google.com/specimen/Roboto) . A link to a font of your               preference can be added before creating the Web Designer widget on the page.             
 
 # See Also
 
 
- * [How to set up in .NET Core 2.1+ application]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/how-to-set-up-in-dotnet-core-2dot1+-application%})
+ * [How to set up in .NET Core 2.1+ application]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/how-to-set-up-in-.net-core-2.1+-application%})
 
- * [How to set up in .NET Framework application]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/how-to-set-up-in-dotnet-framework-application%})
+ * [How to set up in .NET Framework application]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/how-to-set-up-in-.net-framework-application%})

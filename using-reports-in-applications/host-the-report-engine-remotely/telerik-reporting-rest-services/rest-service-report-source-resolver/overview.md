@@ -40,7 +40,7 @@ The Reporting REST Service's resolver is used when resolving information for a r
 
 1. [UriReportSourceResolver](/reporting/api/Telerik.Reporting.Services.UriReportSourceResolver)               - resolves absolute path UriReportSource from relative path to report document created in [Overview]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview%})).             
 
-1. [TypeReportSourceResolver](/reporting/api/Telerik.Reporting.Services.TypeReportSourceResolver)               - resolves TypeReportSource from report type's [assembly qualified name](http://msdn.microsoft.com/en-us/library/30wyt9tk) (reports created in Visual Studio Report Designer).             
+1. [TypeReportSourceResolver](/reporting/api/Telerik.Reporting.Services.TypeReportSourceResolver)               - resolves TypeReportSource from report type's  [assembly qualified name](http://msdn.microsoft.com/en-us/library/30wyt9tk)  (reports created in Visual Studio Report Designer).             
 
 >important When working with other types of report sources for which there is no built-in report source resolver implementation, use a              [Custom Report Source Resolver]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-service-report-source-resolver/how-to-implement-a-custom-report-source-resolver%}) implementation.             For example, when using [Drillthrough Report Action]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/actions/drillthrough-report-action%}) with [XmlReportSource](/reporting/api/Telerik.Reporting.XmlReportSource)             the action will not work unless a custom report source resolver which can handle [XmlReportSource](/reporting/api/Telerik.Reporting.XmlReportSource)              has been implemented.           
 
@@ -51,8 +51,3 @@ Implementing the [IReportSourceResolver](/reporting/api/Telerik.Reporting.Servic
 
 >note The             [Telerik.Reporting.Services.IReportSourceResolver.Resolve](/reporting/api/Telerik.Reporting.Services.IReportSourceResolver#Telerik_Reporting_Services_IReportSourceResolver_Resolve_System_String_Telerik_Reporting_Services_OperationOrigin_System_Collections_Generic_IDictionary{System_String_System_Object}_)             method will be called each time when the Reporting engine needs the report source. This can happen serveral times  until the report document is             completely rendered. It is important that when the method is invoked multiple times it returns exactly the same             report source for a given value of the passed string argument.           
 
-
-# See Also
-
-
- * [How to Set ReportSource for Report Viewers]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/how-to-set-reportsource-for-report-viewers%})

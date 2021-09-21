@@ -18,7 +18,7 @@ The quickest way to add a HTML5 Report Viewer to your web project is with the   
 
 1. Review the HTML5 Report Viewer [Requirements]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/requirements-and-browser-support%}).             
 
-1. Installed and running               [Telerik Report Server ](https://docs.telerik.com/report-server/introduction).             
+1. Installed and running                [Telerik Report Server ](https://docs.telerik.com/report-server/introduction) .             
 
 1. Report Server's built-in __Guest__  user should be enabled.             
 
@@ -26,9 +26,9 @@ The quickest way to add a HTML5 Report Viewer to your web project is with the   
 
 ##Configuring the HTML5 Report Viewer to work with Report Server using Item Templates
 
-The VS item template will integrate HTML5 Report Viewer in a .html page           and will connect to the           [Telerik Report Server](https://docs.telerik.com/report-server/introduction)           to process and render reports.           The following describes what steps you should perform in order to add it in your application:         
+The VS item template will integrate HTML5 Report Viewer in a .html page           and will connect to the            [Telerik Report Server](https://docs.telerik.com/report-server/introduction)            to process and render reports.           The following describes what steps you should perform in order to add it in your application:         
 
-* To start the item template wizard, in __Solution Explorer__ , select the target project. On the               __Project menu__ , click __Add -> New Item__ . In the               [Add New Item](https://msdn.microsoft.com/en-us/library/w0572c5b%28v=vs.100%29.aspx)               dialog box, navigate to the __Web__  category. Select __Telerik HTML5 Report Viewer Page__  item.             
+* To start the item template wizard, in __Solution Explorer__ , select the target project. On the               __Project menu__ , click __Add -> New Item__ . In the                [Add New Item](https://msdn.microsoft.com/en-us/library/w0572c5b%28v=vs.100%29.aspx)                dialog box, navigate to the __Web__  category. Select __Telerik HTML5 Report Viewer Page__  item.             
 
 * You will be prompted to accept building the project. Click 'OK'.             
 
@@ -38,7 +38,7 @@ The VS item template will integrate HTML5 Report Viewer in a .html page         
 
    + __Report Server URI__  - enter a valid Report Server URI.                     
 
-   + __Runtime credentials__  - enter Username and Password for Registered user or choose                       [Guest user](https://docs.telerik.com/report-server/implementer-guide/user-management/guest-user) if it suits your needs. Make sure your Report Server instance has its Guest account enabled.                       
+   + __Runtime credentials__  - enter Username and Password for Registered user or choose                        [Guest user](https://docs.telerik.com/report-server/implementer-guide/user-management/guest-user)  if it suits your needs. Make sure your Report Server instance has its Guest account enabled.                       
 
   ![item-template-reporting-engine-rs](images/item-template-reporting-engine-rs.png)
 

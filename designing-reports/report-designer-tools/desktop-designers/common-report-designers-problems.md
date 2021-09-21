@@ -14,7 +14,7 @@ position: 3
 
 ##Font is missing in report designers
 
-Please refer to the information from the following KB article: [Font is missing in report designers.](http://www.telerik.com/support/kb/reporting/details/font-is-missing-in-report-designers)
+Please refer to the information from the following KB article:  [Font is missing in report designers.](http://www.telerik.com/support/kb/reporting/details/font-is-missing-in-report-designers) 
 
 ##Report designers don't work on Windows Server platforms
 

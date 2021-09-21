@@ -12,7 +12,7 @@ position: 0
 
 
 
-The ServiceStack implementation of the Telerik Reporting REST Service is a __REST__ ful web service         built upon the [ServiceStack](https://servicestack.net/) framework.       
+The ServiceStack implementation of the Telerik Reporting REST Service is a __REST__ ful web service         built upon the  [ServiceStack](https://servicestack.net/)  framework.       
 
 ## 
 
@@ -30,14 +30,7 @@ As Telerik Reporting ServiceStack REST service is a pure HTTP web service it can
 
 The service can be used from the [HTML5 Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview%}),           [Windows Forms ReportViewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/windows-forms-application/how-to-use-windows-forms-report-viewer-with-report-server%})           and [WPF ReportViewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/wpf-application/how-to-use-wpf-report-viewer-with-report-server%}) as well.         
 
-The current ServiceStack implementation is based on           [ServiceStack](https://servicestack.net/)           V3 __(3.9.70.0)__ 
+The current ServiceStack implementation is based on            [ServiceStack](https://servicestack.net/)            V3 __(3.9.70.0)__ 
 
->note The  __Telerik Reporting ServiceStack REST Service__  should be the only ServiceStack based Web Service in a project, as all ServiceStack services have [a single AppHost per AppDomain](                 http://mono.servicestack.net/ServiceStack.Hello/#AppHost               ).           
+>note The  __Telerik Reporting ServiceStack REST Service__  should be the only ServiceStack based Web Service in a project, as all ServiceStack services have  [a single AppHost per AppDomain](                 http://mono.servicestack.net/ServiceStack.Hello/#AppHost               ) .           
 
-
-# See Also
-
-
- * [REST API Reference]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/overview%})
-
- * [HTML5 Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview%})

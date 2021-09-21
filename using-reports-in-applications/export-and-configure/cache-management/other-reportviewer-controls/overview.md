@@ -42,14 +42,3 @@ Such cache management implementation offers the following key benefits:
 * __Improved scalability__  – web farms can be configured to cache rendered reports on a dedicated database               server. This allows subsequent requests to the same report to be served by different machines in the web farm leading to better load               balancing. Only the database storage is shared between all machines in the farm, as shown in the following illustration:               
 
   ![](images/SessionState/sessionmanagement2.png)
-
-# See Also
-
-
- * [Configuring Cache]({%slug telerikreporting/using-reports-in-applications/export-and-configure/cache-management/other-reportviewer-controls/configuring-cache%})
-
- * [Configuring the File Cache Provider]({%slug telerikreporting/using-reports-in-applications/export-and-configure/cache-management/other-reportviewer-controls/configuring-the-file-cache-provider%})
-
- * [Configuring the Database Cache Provider]({%slug telerikreporting/using-reports-in-applications/export-and-configure/cache-management/other-reportviewer-controls/configuring-the-database-cache-provider%})
-
- * [Configuring Custom Cache Provider]({%slug telerikreporting/using-reports-in-applications/export-and-configure/cache-management/other-reportviewer-controls/configuring-custom-cache-provider%})

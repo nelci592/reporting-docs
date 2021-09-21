@@ -29,6 +29,3 @@ When constructing a Binding instance with Binding constructor, you must specify:
 * an expression that will return the value for the property when evaluated at runtime.  
 
   ![](images/UI/Bindings.png)
-
-# See Also
-[Telerik.Reporting.Binding](/reporting/api/Telerik.Reporting.Binding)[Telerik.Reporting.BindingCollection](/reporting/api/Telerik.Reporting.BindingCollection)

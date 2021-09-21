@@ -29,7 +29,7 @@ __External Data File Configuration:__
 | Setting | Description |
 | ------ | ------ |
 |Source|The external data file containing the data. The URI to the file might be relative or absolute. Required if inline data string is not set.|
-|Data Selector|The[JSONPath](https://www.newtonsoft.com/json/help/html/QueryJsonSelectTokenJsonPath.htm)string which will be used to query the JSON data. For more information please refer to[How to Use JSONPath to filter JSON data]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/webservicedatasource-component/how-to-use-jsonpath-to-filter-json-data%})|
+|Data Selector|The [JSONPath](https://www.newtonsoft.com/json/help/html/QueryJsonSelectTokenJsonPath.htm) string which will be used to query the JSON data. For more information please refer to[How to Use JSONPath to filter JSON data]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/webservicedatasource-component/how-to-use-jsonpath-to-filter-json-data%})|
 
 
 
@@ -40,7 +40,7 @@ __Inline Data String Configuration:__
 | Setting | Description |
 | ------ | ------ |
 |Source|The inline data string containing the data. Required if external data file is not set.|
-|Data Selector|The[JSONPath](https://www.newtonsoft.com/json/help/html/QueryJsonSelectTokenJsonPath.htm)string which will be used to query the JSON data. For more information please refer to[How to Use JSONPath to filter JSON data]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/webservicedatasource-component/how-to-use-jsonpath-to-filter-json-data%})|
+|Data Selector|The [JSONPath](https://www.newtonsoft.com/json/help/html/QueryJsonSelectTokenJsonPath.htm) string which will be used to query the JSON data. For more information please refer to[How to Use JSONPath to filter JSON data]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/webservicedatasource-component/how-to-use-jsonpath-to-filter-json-data%})|
 
 
 

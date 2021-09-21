@@ -91,7 +91,7 @@ However, let us consider the following expression that is intended to obtain the
 
 =Fields.ProductSubcategory.ProductCategory.Name
 
-The above expression relies upon the lazy loading mechanism of the [ADO.NET Entity Framework](http://msdn.microsoft.com/en-us/library/aa697427%28VS.80%29.aspx) to        	obtain the __ProductSubcategory__  entity for the current __Product__  entity via the corresponding relation property,        	and then the __ProductCategory__  entity for the current __ProductSubcategory__  entity. This is not guaranteed to work        	because the __ObjectContext/DbContext__  is already destroyed when evaluating the expression, so lazy loading is no longer        	possible. One of the greatest advantages of the __EntityDataSource__  component is that it can maintain the        	lifecycle of the __ObjectContext/DbContext__  automatically, so scenarios like the previous one are guaranteed to work as        	expected. When specifying a __Type__  for the __Context__  property, __EntityDataSource__  creates internally a new        	instance of the __ObjectContext/DbContext__  with the given type, keeps it alive for the duration of the report generation        	process, and then destroys it automatically when it is no longer needed by the reporting engine. The following        	code snippet accomplishes the previous task with the help of the __EntityDataSource__  component:       	
+The above expression relies upon the lazy loading mechanism of the  [ADO.NET Entity Framework](http://msdn.microsoft.com/en-us/library/aa697427%28VS.80%29.aspx)  to        	obtain the __ProductSubcategory__  entity for the current __Product__  entity via the corresponding relation property,        	and then the __ProductCategory__  entity for the current __ProductSubcategory__  entity. This is not guaranteed to work        	because the __ObjectContext/DbContext__  is already destroyed when evaluating the expression, so lazy loading is no longer        	possible. One of the greatest advantages of the __EntityDataSource__  component is that it can maintain the        	lifecycle of the __ObjectContext/DbContext__  automatically, so scenarios like the previous one are guaranteed to work as        	expected. When specifying a __Type__  for the __Context__  property, __EntityDataSource__  creates internally a new        	instance of the __ObjectContext/DbContext__  with the given type, keeps it alive for the duration of the report generation        	process, and then destroys it automatically when it is no longer needed by the reporting engine. The following        	code snippet accomplishes the previous task with the help of the __EntityDataSource__  component:       	
 
 {{source=CodeSnippets\CS\API\Telerik\Reporting\EntityDataSourceSnippets.cs region=PropertyBindingSnippet}}
 ````C#
@@ -158,8 +158,4 @@ If you have already implemented your own mechanism for maintaining the lifecycle
 	        context.Dispose()
 	
 ````
-
-
-
-# See Also
 

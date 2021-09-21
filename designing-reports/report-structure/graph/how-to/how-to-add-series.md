@@ -29,6 +29,3 @@ To add new series follow these steps:
 1. Set __X__ , __Y__  or both to an expression, depending on which scale is numerical.             
 
 1. For __range series__  set __X0__  or __Y0__  properties.             
-
-# See Also
-

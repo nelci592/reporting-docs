@@ -12,16 +12,16 @@ position: 12
 
 
 
-In this how-to article we will show you how to setup the coordinate system's axes and scales at runtime using Bindings.         This approach is really useful when your scenario involves nested Graph items and you need to adjust more precisely its properties.         If you are unfamiliar with the nested data items subject, it is recommended to read the following article first:         [How to use the ReportItem.DataObject property in expressions]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/how-to-use-the-reportitemdotdataobject-property-in-expressions%}).       
+In this how-to article we will show you how to setup the coordinate system's axes and scales at runtime using Bindings.         This approach is really useful when your scenario involves nested Graph items and you need to adjust more precisely its properties.         If you are unfamiliar with the nested data items subject, it is recommended to read the following article first:         [How to use the ReportItem.DataObject property in expressions]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/how-to-use-the-reportitem.dataobject-property-in-expressions%}).       
 
-The nested graph's data will show the sales of some of the most popular electric vehicles models over the last years.         The data will be grouped by vehicle model, presenting the amount of sales for each model in a separate chart.         The data sample used to create the charts is taken from         [here](http://jpwhitenissanleaf.com/)         and you can read the whole article         [here](http://jpwhitenissanleaf.com/2013/04/06/march-2013-sets-several-records-for-ev-sales/).       
+The nested graph's data will show the sales of some of the most popular electric vehicles models over the last years.         The data will be grouped by vehicle model, presenting the amount of sales for each model in a separate chart.         The data sample used to create the charts is taken from          [here](http://jpwhitenissanleaf.com/)          and you can read the whole article          [here](http://jpwhitenissanleaf.com/2013/04/06/march-2013-sets-several-records-for-ev-sales/) .       
 
 ###How to: Use Bindings to Control the Graph's Coordinate System Properties.
 
 1. This scenario is simple enough to start from a blank report, so, depending on the designer you are using               ([Standalone Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview%})               or [Visual Studio Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/overview%}))               create a new blank report.                 Since we won't be using the page header and footer, you can remove them as explained here:               [How to Add/Remove Page Header & Footer Sections]({%slug telerikreporting/designing-reports/report-structure/how-to/how-to-add-remove-page-header-&-footer-sections%})
 
 1. Expand the report's __DataSource__  property and click on the __Add new DataSource...__  link at the bottom.               Select the [CSV Data Source]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/csvdatasource-wizard%}) icon to add a new DataSource,               and name it __dsEVSalesData__ . This data source will contain information about the vehicles and the amount of their               sales for a particular month.             
-   + Download the                   [EVSalesData.csv file](http://blogs.telerik.com/docs/default-source/reporting/evsalesinus.csv?sfvrsn=2)                   , save it locally and insert its path into the *Select a file to import*  textbox.                 
+   + Download the                    [EVSalesData.csv file](http://blogs.telerik.com/docs/default-source/reporting/evsalesinus.csv?sfvrsn=2)                    , save it locally and insert its path into the *Select a file to import*  textbox.                 
 
    + Press __Next__  until you get to the __Configure the separators__  page.                   The CSV file uses a semicolon __(;)__  as a field separator so you should check the respective checkbox                   and uncheck the other ones.                 
 
@@ -90,7 +90,7 @@ The nested graph's data will show the sales of some of the most popular electric
 
 In this article we demonstrated how to set dynamically the graph's coordinate system properties using __Bindings__ .             All the described steps are valid for both             [Standalone Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview%})             and [Visual Studio Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/overview%}) and             can be reproduced with code as well.           
 
-You can download this example report as a __.trdx__  report definition from the following link:               [How to: Use Bindings to Control the Graph's Coordinate System Properties.](http://blogs.telerik.com/docs/default-source/reporting/graphbindingsexample.trdx?sfvrsn=2)
+You can download this example report as a __.trdx__  report definition from the following link:                [How to: Use Bindings to Control the Graph's Coordinate System Properties.](http://blogs.telerik.com/docs/default-source/reporting/graphbindingsexample.trdx?sfvrsn=2) 
 
  * [Bindings]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/bindings%})
 

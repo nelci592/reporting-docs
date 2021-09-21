@@ -53,7 +53,3 @@ __Path parameters__
           HTTP/1.1 204 NoContent
 ````
 
-
-
-# See Also
-

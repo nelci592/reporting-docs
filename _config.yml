@@ -324,7 +324,10 @@ navigation:
         title: "Windows Forms Application"    
     using-reports-in-applications/display-reports-in-applications/windows-forms-application/troubleshooting:
         position: 1500
-        title: "Troubleshooting"     
+        title: "Troubleshooting"  
+    using-reports-in-applications/display-reports-in-applications/winui-3-desktop-application:
+        position: 1150
+        title: "WinUI 3 Desktop Application"        
     using-reports-in-applications/display-reports-in-applications/wpf-application:
         position: 1200
         title: "WPF Application"

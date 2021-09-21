@@ -45,8 +45,3 @@ You can make data bar versions of these full charts:
 * __Bar Charts__ : Clustered, stacked and 100% stacked bar charts.
 
 * __Column Charts__ : Clustered, stacked and 100% stacked column charts. Column charts can be either sparklines or data bars.
-
-# See Also
-
-
- * [Chart Types]({%slug telerikreporting/designing-reports/report-structure/graph/chart-types/overview%})[AreaSeries](/reporting/api/Telerik.Reporting.AreaSeries)[BarSeries](/reporting/api/Telerik.Reporting.BarSeries)[LineSeries](/reporting/api/Telerik.Reporting.LineSeries)[RangeAreaSeries](/reporting/api/Telerik.Reporting.RangeAreaSeries)[RangeBarSeries](/reporting/api/Telerik.Reporting.RangeBarSeries)

@@ -128,7 +128,7 @@ Except the preconfigured cache providers, additional providers can be used. To d
 
 
 
-To register this new provider set the __provider__  attribute of the "Cache" element to the class name which implements ICacheProvider.           Under "Providers" child element of the "Cache" element, create a "Provider" element with the same __name__            attribute as the __provider__  attribute of the "Cache" element. The __type__  attribute           should be the [assembly qualified name](http://msdn.microsoft.com/en-us/library/system.type.assemblyqualifiedname.aspx) of MyCacheProvider type. The following code snippet demonstrates how to configure such custom provider:         
+To register this new provider set the __provider__  attribute of the "Cache" element to the class name which implements ICacheProvider.           Under "Providers" child element of the "Cache" element, create a "Provider" element with the same __name__            attribute as the __provider__  attribute of the "Cache" element. The __type__  attribute           should be the  [assembly qualified name](http://msdn.microsoft.com/en-us/library/system.type.assemblyqualifiedname.aspx)  of MyCacheProvider type. The following code snippet demonstrates how to configure such custom provider:         
 
 	
 ````xml
@@ -145,13 +145,3 @@ To register this new provider set the __provider__  attribute of the "Cache" ele
 </Telerik.Reporting>
 ````
 
-
-
-# See Also
-
-
- * [Configuring Cache]({%slug telerikreporting/using-reports-in-applications/export-and-configure/cache-management/other-reportviewer-controls/configuring-cache%})
-
- * [Configuring the File Cache Provider]({%slug telerikreporting/using-reports-in-applications/export-and-configure/cache-management/other-reportviewer-controls/configuring-the-file-cache-provider%})
-
- * [Configuring the Database Cache Provider]({%slug telerikreporting/using-reports-in-applications/export-and-configure/cache-management/other-reportviewer-controls/configuring-the-database-cache-provider%})

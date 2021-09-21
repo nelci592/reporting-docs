@@ -25,7 +25,7 @@ The following table lists the device information settings for rendering in __IMA
 |DpiX|Integer|The resolution of the output image in x-direction. The default value is __96__ .|
 |DpiY|Integer|The resolution of the output image in y-direction. The default value is __96__ .|
 |TiffCompression|String|Specifies the compression scheme of the output TIFF file. Respected only when __OutputFormat>__ is set to __TIFF__ .Supported compression kinds are: __LZW__ , __CCITT3__ , __CCITT4__ , __RLE__ , or __NONE__ . The default value is __LZW__ .|
-|TextRenderingHint|string|Sets the rendering mode for text using a[TextRenderingHint](https://msdn.microsoft.com/en-us/library/ssazt6bs(v=vs.110).aspx)enumeration member. The default value depends on the machine settings - if it has[ClearType](https://www.microsoft.com/en-us/Typography/ClearTypeInfo.aspx)enabled, then __ClearTypeGridFit__ will be used. Otherwise the rendering algorithm will use __AntiAliasGridFit__ hinting.                 If text rendering hinting is not supported, the __SystemDefault__ value will be used|
+|TextRenderingHint|string|Sets the rendering mode for text using a [TextRenderingHint](https://msdn.microsoft.com/en-us/library/ssazt6bs(v=vs.110).aspx) enumeration member. The default value depends on the machine settings - if it has [ClearType](https://www.microsoft.com/en-us/Typography/ClearTypeInfo.aspx) enabled, then __ClearTypeGridFit__ will be used. Otherwise the rendering algorithm will use __AntiAliasGridFit__ hinting.                 If text rendering hinting is not supported, the __SystemDefault__ value will be used|
 
 
 

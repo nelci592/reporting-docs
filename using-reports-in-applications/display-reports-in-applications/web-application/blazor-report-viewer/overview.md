@@ -22,13 +22,13 @@ The Blazor Viewer is a component which can be used in Blazor applications. It is
 
 1. Required Service:             
 
-   + The viewer requires a running instance of [Telerik Reporting REST Services]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview%})                   in order to display reports. It can be hosted either in the same Blazor application or the viewer can reference a service hosted in                   another origin. In the later case make sure to                   [enable Cross-Origin Requests (CORS)](https://docs.microsoft.com/en-us/aspnet/core/security/cors?view=aspnetcore-3.1) in the REST Service project.                 
+   + The viewer requires a running instance of [Telerik Reporting REST Services]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview%})                   in order to display reports. It can be hosted either in the same Blazor application or the viewer can reference a service hosted in                   another origin. In the later case make sure to                    [enable Cross-Origin Requests (CORS)](https://docs.microsoft.com/en-us/aspnet/core/security/cors?view=aspnetcore-3.1)  in the REST Service project.                 
 
 1. Required JavaScript libraries:
 
-   + [jQuery 3.2.1+](https://jquery.com/download/)
+   +  [jQuery 3.2.1+](https://jquery.com/download/) 
 
-1. References to                [Telerik Kendo UI Sass-Based Themes](https://docs.telerik.com/kendo-ui/styles-and-layout/sass-themes).             (Alternatively, the               [Less-Based Themes](https://docs.telerik.com/kendo-ui/styles-and-layout/appearance-styling)               can be used instead, but they are not compatible with Telerik UI for Blazor.)             
+1. References to                 [Telerik Kendo UI Sass-Based Themes](https://docs.telerik.com/kendo-ui/styles-and-layout/sass-themes) .             (Alternatively, the                [Less-Based Themes](https://docs.telerik.com/kendo-ui/styles-and-layout/appearance-styling)                can be used instead, but they are not compatible with Telerik UI for Blazor.)             
 
 ## Browser Support
 
@@ -37,6 +37,3 @@ The Blazor viewer is based on the [HTML5 Report Viewer]({%slug telerikreporting/
 ## Demo
 
 1. The complete example can be found in the installation folder of Telerik Reporting: C:\Program Files (x86)\Progress\Telerik Reporting __Version__ \Examples\CSharp\.             
-
-# See Also
-

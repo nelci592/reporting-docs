@@ -20,7 +20,7 @@ The following list describes the prerequisites for this tutorial:
 
 * Review the Angular Report Viewer [Requirements](e05255e3-dbe4-41b1-8d08-6de0fed3868c#Requirements).             
 
-* [Angular CLI](https://cli.angular.io/).             
+*  [Angular CLI](https://cli.angular.io/) .             
 
 * A running application that hosts a Reporting REST service at address /api/reports. For more information, see               [Telerik Reporting REST Services]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview%}).             
 
@@ -46,9 +46,9 @@ The following list describes the prerequisites for this tutorial:
 
 ###Steps:
 
-1. Create new Angular application using the [Angular CLI](https://cli.angular.io/) tutorial.                 
+1. Create new Angular application using the  [Angular CLI](https://cli.angular.io/)  tutorial.                 
 
-1. Install [jQuery](https://www.npmjs.com/package/jquery) by using the following command:                 
+1. Install  [jQuery](https://www.npmjs.com/package/jquery)  by using the following command:                 
 
 	
     ````powershell
@@ -75,7 +75,7 @@ npm install @progress/telerik-angular-report-viewer
 
 
 
-    >tip If you receive a  *403 Forbidden Error* , you need to register and login at                     [npmjs.com](https://www.npmjs.com/)before performing this step.                   
+    >tip If you receive a  *403 Forbidden Error* , you need to register and login at                      [npmjs.com](https://www.npmjs.com/) before performing this step.                   
 
 	
     ````powershell
@@ -86,7 +86,7 @@ npm login --registry=https://registry.npmjs.org --scope=@progress
 
 
 
-1. Once installed, import the TelerikReportingModule in [your application root module](https://angular.io/docs/ts/latest/guide/ngmodule.html#!#angular-modularity):                 
+1. Once installed, import the TelerikReportingModule in  [your application root module](https://angular.io/docs/ts/latest/guide/ngmodule.html#!#angular-modularity) :                 
 
 	
     ````js
@@ -132,7 +132,7 @@ export class AppComponent {
 
     For all available report viewer options refer to [Options]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/api-reference/options%}).                 
 
-1. Style the viewer using the desired Kendo UI theme (еither using [Less-Based Themes](http://docs.telerik.com/kendo-ui/styles-and-layout/appearance-styling) or [Sass-Based Themes](http://docs.telerik.com/kendo-ui/styles-and-layout/sass-themes)):                     Add references to the Less-based CSS files in the ```<head>``` element of index.html:
+1. Style the viewer using the desired Kendo UI theme (еither using  [Less-Based Themes](http://docs.telerik.com/kendo-ui/styles-and-layout/appearance-styling)  or  [Sass-Based Themes](http://docs.telerik.com/kendo-ui/styles-and-layout/sass-themes) ):                     Add references to the Less-based CSS files in the ```<head>``` element of index.html:
 
 	
     ````html
@@ -143,7 +143,7 @@ export class AppComponent {
 
 
 
-    >tip To get the Sass-based Kendo UI themes, you can use either the pre-build CSS files or the NPM packages ([Getting the Sass-Based Themes](http://docs.telerik.com/kendo-ui/styles-and-layout/sass-themes#getting-the-themes)).                   
+    >tip To get the Sass-based Kendo UI themes, you can use either the pre-build CSS files or the NPM packages ( [Getting the Sass-Based Themes](http://docs.telerik.com/kendo-ui/styles-and-layout/sass-themes#getting-the-themes) ).                   
 
     If you use the __styleUrls__  attribute to reference the CSS, it is required to set                   the view encapsulation to __None__ :                 
 

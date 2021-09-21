@@ -233,6 +233,3 @@ The value of the picture watermark is evaluated against the designer context and
 
 >warning Some formats do not support Watermarks. For more information refer to the articles in the Design Considerations for Report Rendering section           
 
-
-# See Also
-

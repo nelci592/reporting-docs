@@ -23,6 +23,3 @@ Each series data-representation is formed by both the Category and Series groups
 1. Right-click and select Switch Row/Column from the context menu.
 
 Performing this action will interchange the CategoryGroups and SeriesGroups hierarchies of the selected graph.         
-
-# See Also
-

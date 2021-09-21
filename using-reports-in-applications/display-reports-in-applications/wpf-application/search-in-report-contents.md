@@ -45,6 +45,3 @@ The dialog relies on search metadata, which is obtained from every rendering res
 ## Important Notes
 
 The CheckBox and HTMLTextBox items render their contents as one or more text lines. The search may return incorrect results, if the token includes text that is contained in more than one text line.         
-
-# See Also
-

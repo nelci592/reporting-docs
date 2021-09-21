@@ -99,20 +99,5 @@ JSON-based configuration file:
 
 
 
->important When adding the `Telerik.Reporting` section manually, do not forget to register it in `configSections`             element of configuration file. Failing to do so will result in a             [ConfigurationErrorsException](https://msdn.microsoft.com/en-us/library/system.configuration.configurationerrorsexception(v=vs.110).aspx)             with following text:  *Configuration system failed to initialize* .           
+>important When adding the `Telerik.Reporting` section manually, do not forget to register it in `configSections`             element of configuration file. Failing to do so will result in a              [ConfigurationErrorsException](https://msdn.microsoft.com/en-us/library/system.configuration.configurationerrorsexception(v=vs.110).aspx)              with following text:  *Configuration system failed to initialize* .           
 
-
-# See Also
-
-
- * [How the Runtime Locates Assemblies](https://docs.microsoft.com/en-us/dotnet/framework/deployment/how-the-runtime-locates-assemblies)
-
- * [Specifying an Assembly's Location](https://docs.microsoft.com/en-us/dotnet/framework/configure-apps/specify-assembly-location)
-
- * [```<probing>``` Element](https://docs.microsoft.com/en-us/dotnet/framework/configure-apps/file-schema/runtime/probing-element)
-
- * [Application Configuration Files](http://msdn.microsoft.com/en-us/library/windows/desktop/aa374182(v=vs.85).aspx)
-
- * [User Functions]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/extending-expressions/user-functions%})
-
- * [User Aggregate Functions]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/extending-expressions/user-aggregate-functions%})

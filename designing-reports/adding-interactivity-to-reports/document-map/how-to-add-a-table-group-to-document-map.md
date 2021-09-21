@@ -31,12 +31,3 @@ A user can click items in the document map to jump      	to areas within a repor
 1. Repeat steps 1-4 for every group that you want to appear in the document map.
 
 1. Run the report - the document map displays the group values. Click any document map node to jump to the report page with that item.
-
-# See Also
-
-
- * [Document Map]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/document-map/overview%})
-
- * [How to Add a Report Item to Document Map]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/document-map/how-to-add-a-report-item-to-document-map%})
-
- * [How to Add a Report group to Document Map]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/document-map/how-to-add-a-report-group-to-document-map%})

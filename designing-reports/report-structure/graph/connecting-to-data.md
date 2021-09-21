@@ -51,6 +51,3 @@ Depending on the series type the Graph item can visualize one or more measures:
 * Range series (Range Bar and Range Area) emphasize on the distance between two values/measures;
 
 * __Line__  series including all derived subtypes (Scatter, etc.) allows to identify the correlation between three different measures.
-
-# See Also
-

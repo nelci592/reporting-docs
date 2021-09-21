@@ -10,7 +10,7 @@ position: 2
 
 # How to Add Telerik Reporting REST ServiceStack to Web Application
 
-.org/packages/ServiceStack/3.9.70                 )               NuGet package.             
+t.org/packages/ServiceStack/3.9.70                 )                NuGet package.             
 
 1. Add references to the following Telerik Reporting assemblies (required):
    + Telerik.Reporting.dll
@@ -75,7 +75,7 @@ position: 2
 	End Class
 ````
 
-    The provided sample implementation will resolve .trdp|.trdx report definitions from the               /*Reports*  subfolder of the hosting ASP.NET application root. Another option is to reference               a reports library and provide report               [type assembly qualified name](http://msdn.microsoft.com/en-us/library/system.type.assemblyqualifiedname.aspx)               from the service clients.             
+    The provided sample implementation will resolve .trdp|.trdx report definitions from the               /*Reports*  subfolder of the hosting ASP.NET application root. Another option is to reference               a reports library and provide report                [type assembly qualified name](http://msdn.microsoft.com/en-us/library/system.type.assemblyqualifiedname.aspx)                from the service clients.             
 
     >tip Do not forget to add all necessary (i.e., referred from the report definitions) connection strings to the application configuration file.               
 

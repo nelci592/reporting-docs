@@ -12,12 +12,12 @@ position: 2
 
 
 
->important The following article guides you how to use the Blazor Web Report Designer in a                     [Blazor](https://dotnet.microsoft.com/apps/aspnet/web-apps/blazor)                     web application.                 
+>important The following article guides you how to use the Blazor Web Report Designer in a                      [Blazor](https://dotnet.microsoft.com/apps/aspnet/web-apps/blazor)                      web application.                 
 
 
 ## Prerequisites
 
-* [Visual Studio 2019, version 16.4 or later](https://www.visualstudio.com/vs/)
+*  [Visual Studio 2019, version 16.4 or later](https://www.visualstudio.com/vs/) 
 
 * Existing ASP.NET Core 3.1, .NET 5, or .NET 6 Blazor Server or WebAssembly application                         
 
@@ -124,7 +124,7 @@ public class ReportDesignerController : ReportDesignerControllerBase
 
 
 
-1. Add                             [Telerik Kendo UI Sass-Based Themes](https://docs.telerik.com/kendo-ui/styles-and-layout/sass-themes)                             to the __head__  element of the                             __Pages/_Host.cshtml__  (Blazor Server) or __wwwroot/index.html__  (Blazor WebAssembly).                             The Razor syntax for a server application differs and you need to escape the __@__  symbol as __@@__ :                         
+1. Add                              [Telerik Kendo UI Sass-Based Themes](https://docs.telerik.com/kendo-ui/styles-and-layout/sass-themes)                              to the __head__  element of the                             __Pages/_Host.cshtml__  (Blazor Server) or __wwwroot/index.html__  (Blazor WebAssembly).                             The Razor syntax for a server application differs and you need to escape the __@__  symbol as __@@__ :                         
 
 	
     ````html

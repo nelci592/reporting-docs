@@ -30,7 +30,7 @@ This document gives a brief overview of the available Report Designers.
 
    + No need to upgrade - you can directly open older report definition with a newer version of the                    [Standalone Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview%}), report viewer or report service;                   The report definition will be automatically upgraded when edited and saved with the [Standalone Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview%});                 
 
-   + This format can be stored and managed with the                   [Report Server](http://docs.telerik.com/report-server/introduction) and other kinds of storages such as a database;                 
+   + This format can be stored and managed with the                    [Report Server](http://docs.telerik.com/report-server/introduction)  and other kinds of storages such as a database;                 
 
    + The recommended XML report definition format is TRDP due to the following reasons:                 
 

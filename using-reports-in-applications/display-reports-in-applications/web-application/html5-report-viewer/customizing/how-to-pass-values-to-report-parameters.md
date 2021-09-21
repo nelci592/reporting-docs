@@ -18,7 +18,7 @@ To give an example we will use the Invoice report from our examples and will upd
 
 ##Pass values to report parameters
 
->tip All path references in the described steps should be adapted according             to your project setup. For more information please refer to the MSDN article             [ASP.NET Web Project Paths](http://msdn.microsoft.com/en-us/library/ms178116.aspx)
+>tip All path references in the described steps should be adapted according             to your project setup. For more information please refer to the MSDN article              [ASP.NET Web Project Paths](http://msdn.microsoft.com/en-us/library/ms178116.aspx) 
 
 
 1. Add a new html page CustomParameters.html to the CSharp.Html5Demo or VB.Html5Demo project.

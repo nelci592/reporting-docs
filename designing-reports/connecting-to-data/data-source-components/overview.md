@@ -29,10 +29,10 @@ The Telerik Reporting engine includes the following data source objects:
 * [ObjectDataSource]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/objectdatasource-component/overview%})– Enables you to work
     with business objects or other classes and allows you to create reports that display data from the middle-tier.For backwards compatibility reasons Telerik Reporting supports binding directly to *IEnumberable* /*IListSource*  objects (*incl.*  arrays, collections, DataSet, DataTable, DataView, DbDataAdapter).     Our recommendation is to avoid them and use the ObjectDataSource component that can handle these types of data sources.     
 
-* [EntityDataSource]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/entitydatasource-component/overview%})– Enables you to connect to the[ADO.NET Entity Framework](http://msdn.microsoft.com/en-us/library/bb399572.aspx)
+* [EntityDataSource]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/entitydatasource-component/overview%})– Enables you to connect to the [ADO.NET Entity Framework](http://msdn.microsoft.com/en-us/library/bb399572.aspx) 
 
 * [CubeDataSource]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/cubedatasource-component/overview%})
 
 * [OpenClientDataSource]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/openclientdatasource-component/overview%})
 
-* [OpenAccessDataSource]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/openaccessdatasource-component/overview%})- Enables you to connect to[Telerik Data Access (DISCONTINUED)](http://www.telerik.com/data-access)
+* [OpenAccessDataSource]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/openaccessdatasource-component/overview%})- Enables you to connect to [Telerik Data Access (DISCONTINUED)](http://www.telerik.com/data-access) 

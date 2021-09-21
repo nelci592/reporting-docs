@@ -37,8 +37,3 @@ The following Bubble chart sample report has a category set to sales person so t
 * The bubble chart requires an additional value (Size of the bubble) per data point. 
 
 * Scatter charts are most suitable for handling the distribution of values and clusters of data points. This is the best    			chart type if your dataset contains many points (for example, several thousand points). Displaying multiple series on a point    			chart is visually distracting and should be avoided. In this scenario, consider using a line chart.
-
-# See Also
-
-
- * [Chart Types]({%slug telerikreporting/designing-reports/report-structure/graph/chart-types/overview%})[LineSeries](/reporting/api/Telerik.Reporting.LineSeries)

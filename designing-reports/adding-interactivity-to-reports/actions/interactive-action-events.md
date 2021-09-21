@@ -24,7 +24,7 @@ All the events provide arguments that contain a reference to the underlying     
 
 Based on the used report viewer, the arguments can contain also:       
 
-* A reference to the element, associated with the action ([FrameworkElement](https://msdn.microsoft.com/en-us/library/system.windows.frameworkelement(v=vs.110).aspx)             for WPF and Silverlight,             [HTML DOM element](http://www.w3schools.com/js/js_htmldom_elements.asp)             for Html5-based viewers).           
+* A reference to the element, associated with the action ( [FrameworkElement](https://msdn.microsoft.com/en-us/library/system.windows.frameworkelement(v=vs.110).aspx)              for WPF and Silverlight,              [HTML DOM element](http://www.w3schools.com/js/js_htmldom_elements.asp)              for Html5-based viewers).           
 
 * The coordinates of the mouse cursor in pixels at the time of raising the event (for WinForms, WPF and SilverLight viewers). These coordinates are relative to the report item that triggered the action.           
 

@@ -79,6 +79,3 @@ INNER JOIN Production.ProductCategory AS PC ON PS.ProductCategoryID = PC.Product
    1. Set the __Y__  value to *=IsNull(Sum(Fields.LineTotal), 0) / 1000.0* 
 
 1. Set the color palette, the formatting of the labels, the values of the legend and any other improvements as needed.             For more information, see [Formatting a Graph]({%slug telerikreporting/designing-reports/report-structure/graph/formatting-a-graph/overview%}).             
-
-# See Also
-

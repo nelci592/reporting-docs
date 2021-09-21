@@ -18,7 +18,7 @@ The following image displays a pie chart with a legend:
 
 ## Pie Chart Variations
 
-* __Doughnut__ . A pie chart that has an open space in the center. The Pie Chart property that controls the width of the open space               is the                [PolarCoordinateSystem.InnerRadiusRatio](https://docs.telerik.com/reporting/p-telerik-reporting-polarcoordinatesystem-innerradiusratio).             
+* __Doughnut__ . A pie chart that has an open space in the center. The Pie Chart property that controls the width of the open space               is the                 [PolarCoordinateSystem.InnerRadiusRatio](https://docs.telerik.com/reporting/p-telerik-reporting-polarcoordinatesystem-innerradiusratio) .             
 
 ## Design Considerations for Pie Charts
 
@@ -76,8 +76,3 @@ To turn on the merge logic, change the [Telerik.Reporting.MergedDataPoints.Merge
 By default, the merged slice is labeled in the chart’s legend as __Others__ . You can change this by setting the            [Telerik.Reporting.MergedDataPoints.LegendItemLabel](/reporting/api/Telerik.Reporting.MergedDataPoints#Telerik_Reporting_MergedDataPoints_LegendItemLabel). It supports expressions.         
 
 The styling of the merged data point, its label or the corresponding legend item can be customized using the corresponding Conditional Formatting property using the Filter:                      = IsMergedData() | Operator.Equals | = True           
-
-# See Also
-
-
- * [Chart Types]({%slug telerikreporting/designing-reports/report-structure/graph/chart-types/overview%})[BarSeries](/reporting/api/Telerik.Reporting.BarSeries)[DataPointLabelStyle](/reporting/api/Telerik.Reporting.GraphSeriesBase#Telerik_Reporting_GraphSeriesBase_DataPointLabelStyle)[DataPointLabel](/reporting/api/Telerik.Reporting.GraphSeriesBase#Telerik_Reporting_GraphSeriesBase_DataPointLabel)[DataPointLabelAlignment](/reporting/api/Telerik.Reporting.BarSeries#Telerik_Reporting_BarSeries_DataPointLabelAlignment)

@@ -47,6 +47,3 @@ The SQL Data Source Wizard allows you to create a new or edit an existing SqlDat
    >note Specifying design-time values for the parameters is necessary because the designer might need to execute the                  __SQL__  query or stored procedure of the data source to populate the schema                 displayed in the  __Explorer__  tool window                 and the  __Edit Expression__  dialog.                 These values do not affect the execution of the  __SQL__  query at                 runtime.               
 
 1. __Preview Data Source Results__ Preview the result set returned by the __SqlDataSource__  before completing the               wizard. Click *Execute Query*  to execute the __SQL__  query               or stored procedure and display the retrieved data.             If the data source has parameters, the preview uses the Design Time Parameters values.             This is the last step of the wizard. After pressing *"Finish"*  the wizard will               configure the __SqlDataSource__  component with the specified settings and close.             
-
-# See Also
-

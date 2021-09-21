@@ -12,7 +12,7 @@ position: 2
 
 
 
-The article elaborates on how to localize the messages displayed by the HTML5 Report Viewer. This feature is available since version [R2 2018 SP1 (12.1.18.620)](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-r2-2018-sp1-12-1-18-620).       
+The article elaborates on how to localize the messages displayed by the HTML5 Report Viewer. This feature is available since version  [R2 2018 SP1 (12.1.18.620)](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-r2-2018-sp1-12-1-18-620) .       
 
 ## 
 

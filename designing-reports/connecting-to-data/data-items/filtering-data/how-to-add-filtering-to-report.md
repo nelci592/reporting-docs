@@ -67,8 +67,3 @@ To add filters to the Report use the following steps:
 
 >tip The Report can have a complex structure due to added groups.             You can filter data per group by using the corresponding group's Filters collection.           The [Group Explorer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/group-explorer%}) can be used for checking the             Report's structure and the each group's properties.           
 
-
-# See Also
-[Report](/reporting/api/Telerik.Reporting.Report)[Filter](/reporting/api/Telerik.Reporting.Filter)[FilterCollection](/reporting/api/Telerik.Reporting.FilterCollection)
-
- * [Using Expressions]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/overview%})

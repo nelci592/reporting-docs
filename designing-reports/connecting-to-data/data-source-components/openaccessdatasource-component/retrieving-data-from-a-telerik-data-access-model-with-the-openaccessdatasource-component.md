@@ -220,7 +220,3 @@ The sample code that binds the OpenAccessDataSource component to that method is 
 	
 ````
 
-
-
-# See Also
-

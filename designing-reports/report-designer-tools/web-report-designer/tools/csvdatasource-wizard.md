@@ -33,6 +33,3 @@ The CSV Data Source Wizard allows you to create a new or edit an existing CsvDat
 1. __Map Columns to Type__ The Available Columns will be populated based on the CSV data. If __"This CSV has header row"__  option was selected in previous stage, the first column                will show the values from the that header-row and the second column show the data-type. The column names and types can be edited. All columns will have a default type of String,                and these can be modified by selecting a different type in the dropdown menu.             __CSV fields type conversion__  has two separators for numeric types, and a __Date format__  to define the format of a DateTime string.             
 
 1. __Preview Data Source Results__ Preview the data-set and see that it returns the expected data. Click __Finish__  to exit out of the Wizard and save the data source component.             
-
-# See Also
-

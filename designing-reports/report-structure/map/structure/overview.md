@@ -59,7 +59,7 @@ The Map Legend is a collection of legend items that are used to distinguish the 
 
 ## Scale
 
-The [MapScaleLegend](/reporting/api/Telerik.Reporting.MapScaleLegend) shows the scale of the current map extent,           measured at the middle between its minimum and maximum latitude.           The scale is calculated using the           [Haversine formula](http://en.wikipedia.org/wiki/Haversine_formula)           , assuming the Earth is a perfect sphere.         
+The [MapScaleLegend](/reporting/api/Telerik.Reporting.MapScaleLegend) shows the scale of the current map extent,           measured at the middle between its minimum and maximum latitude.           The scale is calculated using the            [Haversine formula](http://en.wikipedia.org/wiki/Haversine_formula)            , assuming the Earth is a perfect sphere.         
 
 * __Formatting the Scale Legend__ The __ScaleLegend__  allows the user to see the map scale in metric, imperial or both units, depending how the               [ScaleUnits](/reporting/api/Telerik.Reporting.MapScaleLegend#Telerik_Reporting_MapScaleLegend_ScaleUnits) property is set.               The value of the shown scale depends on the [Size](/reporting/api/Telerik.Reporting.MapScaleLegend#Telerik_Reporting_MapScaleLegend_Size) property -               the processing engine calculates the nearest round value that can be               shown on the scale, using all the available width. The [Height](/reporting/api/Telerik.Reporting.Drawing.SizeU#Telerik_Reporting_Drawing_SizeU_Height)               property in conjunction with [VerticalAlign](/reporting/api/Telerik.Reporting.Drawing.VerticalAlign) property               determines how the scale will be positioned vertically. If the __Size.Height__  is set to a very small value (e.g. 0.1),               the __ScaleLegend__  will grow vertically to display its content.             
 
@@ -71,7 +71,7 @@ The projection is the representation model used to project the globe or celestia
 
 
 
-* [Mercator Projection](http://en.wikipedia.org/wiki/Mercator_projection) - a conformal map projection of which the meridians are drawn parallel to each other and the parallels of latitude               are straight lines whose distance from each other increases with their distance from the equator.             
+*  [Mercator Projection](http://en.wikipedia.org/wiki/Mercator_projection)  - a conformal map projection of which the meridians are drawn parallel to each other and the parallels of latitude               are straight lines whose distance from each other increases with their distance from the equator.             
 
 ## Extent
 

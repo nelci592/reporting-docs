@@ -14,7 +14,7 @@ position: 1
 
 A filter defined on a report/table group limits the group members to       a certain values. These filters operate over the group members after the       groups are calculated. Group filters are similar to the HAVING clause in       a SQL statement. 		
 
-We will use the filter to hide/show the dynamic groups members. 		Additionally we add the possibility for dynamic filtering by using report 		parameters. The example shown is based on the [ProductSales](https://demos.telerik.com/reporting/product-sales/silverlight-demo.aspx)  demo report
+We will use the filter to hide/show the dynamic groups members. 		Additionally we add the possibility for dynamic filtering by using report 		parameters. The example shown is based on the  [ProductSales](https://demos.telerik.com/reporting/product-sales/silverlight-demo.aspx)   demo report
 
 ###Using dynamic filter to show/hide crosstab group members
 

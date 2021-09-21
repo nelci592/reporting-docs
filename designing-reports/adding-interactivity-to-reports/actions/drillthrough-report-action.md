@@ -27,8 +27,3 @@ To define a drill-through action add a [NavigateToReportAction](/reporting/api/T
 
 >tip We recommend the usage of TypeReportSource ('Type name' option) or UriReportSource ('Url or file' option)             in the [Load Report Dialog]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/load-report-dialog%}) on configuring the target report.             InstanceReportSource ('Object instance' option) is only supported for WinForms and WPF Report Viewers in Embedded mode.           
 
-
-# See Also
-
-
- * [How to: Add a Drillthrough Report Action]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/actions/how-to/how-to-add-a-drillthrough-navigate-to-report-action%})

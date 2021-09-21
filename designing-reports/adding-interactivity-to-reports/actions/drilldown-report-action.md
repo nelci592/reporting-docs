@@ -20,12 +20,3 @@ To define a drilldown action add a [ToggleVisibilityAction](/reporting/api/Teler
 
 >note The report item that you use for the  __toggle visibility__  action must be in a containing scope that controls the item that you want to show or hide.  	Example: to hide a row group, the report item must be in a row group associated with the parent group or higher in the containment hierarchy.
 
-
-# See Also
-
-
- * [How to Add a Drilldown/Toggle Visibility Action]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/actions/how-to/how-to-add-a-drilldown-toggle-visibility-action%})
-
- * [Drillthrough Report Action]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/actions/drillthrough-report-action%})
-
- * [How to Add a Drillthrough/Navigate To Report Action]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/actions/how-to/how-to-add-a-drillthrough-navigate-to-report-action%})

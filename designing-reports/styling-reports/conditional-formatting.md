@@ -48,10 +48,10 @@ You can change the Text, Background, Edges and Line Style for the given item usi
 
 ## Samples with Conditional Formatting
 
-* [Display Reports with alternating style rows](https://docs.telerik.com/reporting/knowledge-base/how-to-display-alternating-style-rows);               
+*  [Display Reports with alternating style rows](https://docs.telerik.com/reporting/knowledge-base/how-to-display-alternating-style-rows) ;               
 
-* [Change row color based on a value in the row](https://docs.telerik.com/reporting/knowledge-base/change-row-color-based-on-value);             
+*  [Change row color based on a value in the row](https://docs.telerik.com/reporting/knowledge-base/change-row-color-based-on-value) ;             
 
-* [Display "No Data" message for Reports and Subreports](https://docs.telerik.com/reporting/knowledge-base/how-to-display-no-data-message-for-reports-and-subreports);             
+*  [Display "No Data" message for Reports and Subreports](https://docs.telerik.com/reporting/knowledge-base/how-to-display-no-data-message-for-reports-and-subreports) ;             
 
-* [How to create waterfall chart with Graph item](https://docs.telerik.com/reporting/knowledge-base/how-to-create-waterfall-chart-using-graph).             
+*  [How to create waterfall chart with Graph item](https://docs.telerik.com/reporting/knowledge-base/how-to-create-waterfall-chart-using-graph) .             

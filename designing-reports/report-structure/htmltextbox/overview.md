@@ -26,7 +26,7 @@ With the HtmlTextBox report item, you can:
 
 * Set an alignment value for any individual string of text.           
 
-For the full list with special entities like "?" and TAB and their expression, refer to this         [w3.org page](http://www.w3.org/TR/xhtml1/DTD/xhtml-special.ent).       
+For the full list with special entities like "?" and TAB and their expression, refer to this          [w3.org page](http://www.w3.org/TR/xhtml1/DTD/xhtml-special.ent) .       
 
 >note  __Known Limitations:__ 
 * The HtmlTextBox works with the -text formatting options only- .
@@ -73,7 +73,7 @@ You can style the text with the following CSS attributes:
 
 * color
 
->note When you import text that contains HTML markup, the data is always parsed by the HtmlTextBox first. Because             only a subset of HTML tags is supported, the HTML that is shown in the rendered report may differ from your             original HTML.           Also according to the HTML specification (and the general XML specification as well) the "&", "```<" and ">```"             characters are considered special (markup delimiters), so they need to be encoded in order to be treated as regular             text. For example the "&" character can be escaped with the "& amp;" entity. You can find more information on the subject in                [this w3.org article](http://www.w3.org/TR/REC-xml/#syntax).           
+>note When you import text that contains HTML markup, the data is always parsed by the HtmlTextBox first. Because             only a subset of HTML tags is supported, the HTML that is shown in the rendered report may differ from your             original HTML.           Also according to the HTML specification (and the general XML specification as well) the "&", "```<" and ">```"             characters are considered special (markup delimiters), so they need to be encoded in order to be treated as regular             text. For example the "&" character can be escaped with the "& amp;" entity. You can find more information on the subject in                 [this w3.org article](http://www.w3.org/TR/REC-xml/#syntax) .           
 
 
 Any other HTML markup tags will be ignored during report processing. If the HTML represented by the expression in the           HtmlTextBox is not well formed, the HtmlTextBox would throw an exception. All HTML tags are case-insensitive.         

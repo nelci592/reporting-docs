@@ -57,15 +57,3 @@ A report can contain links to other reports. The report that opens when you clic
 	
 ````
 
-
-
-# See Also
-
-
- * [How to: Add a Bookmark Action]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/actions/how-to/how-to-add-a-bookmark-action%})
-
- * [How to: Add a Hyperlink Action]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/actions/how-to/how-to-add-a-hyperlink-action%})
-
- * [Expressions]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/overview%})
-
- * [Data Items]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/overview%})

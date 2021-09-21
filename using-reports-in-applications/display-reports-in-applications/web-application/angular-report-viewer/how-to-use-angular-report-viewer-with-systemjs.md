@@ -101,7 +101,7 @@ packages: {
 
 
 
-1. Import the TelerikReportingModule in [your application root module](https://angular.io/docs/ts/latest/guide/ngmodule.html#!#angular-modularity):                 
+1. Import the TelerikReportingModule in  [your application root module](https://angular.io/docs/ts/latest/guide/ngmodule.html#!#angular-modularity) :                 
 
 	
     ````js
@@ -147,7 +147,7 @@ export class AppComponent {
 
     For all available report viewer options, refer to [Options]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/api-reference/options%}).                 
 
-1. Style the viewer using the desired Kendo UI theme (еither using [Less-Based Themes](http://docs.telerik.com/kendo-ui/styles-and-layout/appearance-styling) or [Sass-Based Themes](http://docs.telerik.com/kendo-ui/styles-and-layout/sass-themes)):                     Add references to the Less-based CSS files in the ```<head>``` element of index.html:
+1. Style the viewer using the desired Kendo UI theme (еither using  [Less-Based Themes](http://docs.telerik.com/kendo-ui/styles-and-layout/appearance-styling)  or  [Sass-Based Themes](http://docs.telerik.com/kendo-ui/styles-and-layout/sass-themes) ):                     Add references to the Less-based CSS files in the ```<head>``` element of index.html:
 
 	
     ````html
@@ -158,7 +158,7 @@ export class AppComponent {
 
 
 
-    >tip To get the Sass-based Kendo UI themes, you can use either the pre-build CSS files or the NPM packages ([Getting the Sass-Based Themes](http://docs.telerik.com/kendo-ui/styles-and-layout/sass-themes#getting-the-themes)).                   
+    >tip To get the Sass-based Kendo UI themes, you can use either the pre-build CSS files or the NPM packages ( [Getting the Sass-Based Themes](http://docs.telerik.com/kendo-ui/styles-and-layout/sass-themes#getting-the-themes) ).                   
 
     If you use the __styleUrls__  attribute to reference the CSS, it is required to set                   the view encapsulation to __None__ :                 
 
@@ -177,8 +177,4 @@ import { Component, ViewEncapsulation } from '@angular/core';
     ````powershell
 npm run start
 ````
-
-
-
-# See Also
 

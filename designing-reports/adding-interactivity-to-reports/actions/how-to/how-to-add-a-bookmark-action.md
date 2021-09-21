@@ -50,15 +50,3 @@ position: 1
 	
 ````
 
-
-
-# See Also
-
-
- * [How to: Add a Drillthrough Report Action]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/actions/how-to/how-to-add-a-drillthrough-navigate-to-report-action%})
-
- * [How to: Add a Hyperlink Action]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/actions/how-to/how-to-add-a-hyperlink-action%})
-
- * [Expressions]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/overview%})
-
- * [Data Items]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/overview%})

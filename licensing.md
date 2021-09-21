@@ -14,21 +14,21 @@ position: 10
 
 Telerik Reporting is available under a developer (commercial) or a trial license.       
 
-Reardless of the license version you hold, to use Telerik Reporting, you have to agree to the         __End User License Agreement for Progress Telerik Reporting and Telerik Report Designerhttps://www.telerik.com/purchase/license-agreement/reporting-dlw-s__ .       
+Reardless of the license version you hold, to use Telerik Reporting, you have to agree to the         __[End User License Agreement for Progress Telerik Reporting and Telerik Report Designer](https://www.telerik.com/purchase/license-agreement/reporting-dlw-s)__.       
 
 ## Developer Licenses
 
 Developer licenses come with modified DLLs which work without           license keys. If you own a Developer license for one or more           Telerik products, only make sure that you are using the           developer build when you download the desired controls.           The file names of the developer builds contain the           `Dev` abbreviation.         
 
-For more information on the commercial terms, refer to the pricing list of the           [available developer licenses which include Telerik Reporting](https://www.telerik.com/purchase/individual/reporting.aspx).         
+For more information on the commercial terms, refer to the pricing list of the            [available developer licenses which include Telerik Reporting](https://www.telerik.com/purchase/individual/reporting.aspx) .         
 
 ## Trial Licenses
 
 Trial licenses provide free and fully functional access to all Telerik Reporting products.           While the trial version is unlimited in time, each page displays a copyright message.         
 
-To download the Telerik Reporting trial version, refer to the           __Telerik Reporting Downloadhttps://www.telerik.com/download__  page.         
+To download the Telerik Reporting trial version, refer to the           __[Telerik Reporting Download](https://www.telerik.com/download)__ page.         
 
-To download a developer build with a trial license, log into your           [Telerik account](http://www.telerik.com/clientnet/).         
+To download a developer build with a trial license, log into your            [Telerik account](http://www.telerik.com/clientnet/) .         
 
 ## Upgrading Trial to Purchase
 
@@ -70,4 +70,4 @@ Your purchase of Telerik Reporting includes a run-time royalty-free license to r
 
    + Open source products.                 
 
-For more information, refer to the           __End User License Agreement for Progress Telerik Reporting and Telerik Report Designerhttps://www.telerik.com/purchase/license-agreement/reporting-dlw-s__ .           or send an email to           [sales@Telerik.com](mailto:sales@Telerik.com)           to discuss your planned use of the controls.         
+For more information, refer to the           __[End User License Agreement for Progress Telerik Reporting and Telerik Report Designer](https://www.telerik.com/purchase/license-agreement/reporting-dlw-s)__.           or send an email to            [sales@Telerik.com](mailto:sales@Telerik.com)            to discuss your planned use of the controls.         

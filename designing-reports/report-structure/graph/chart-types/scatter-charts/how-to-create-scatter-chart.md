@@ -77,6 +77,3 @@ INNER JOIN Person.Contact ON HumanResources.Employee.ContactID = Person.Contact.
    1. Set the __DataPointStyle.Visible__  to __True__ .                 
 
 1. Set the color palette, the formatting of the labels, the values of the legend and any other improvements as needed.             For more information, see [Formatting a Graph]({%slug telerikreporting/designing-reports/report-structure/graph/formatting-a-graph/overview%}).             
-
-# See Also
-

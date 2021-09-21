@@ -99,11 +99,24 @@ Some article titles contain '/' that is interpreted as new subfolder and their n
 	D:\Work\reporting-docs\using-reports-in-applications\export-and-configure\configure-the-export-formats\wpfxaml\wpfxamlinteractive-device-information-settings.md
 
 
-replace these code blocks with single blocks manually in the CS/VB snippets and correct the mamls:
+replace these code blocks with single blocks manually in the CS/VB snippets and correct the mamls. use Partial classes to avoid very long snippets:
 In some articles there are code blocks that have what should appear as a single code snippet by two code blocks - for example:
 VB codes in file:///D:/Work/2018/Hotfix/Documentation/Help/Content/report-items-html-text-box-validation.aml - done
 all code in file:///D:/Work/2018/Hotfix/Documentation/Help/Content/report-viewer-localization2.aml - done
 all code in file:///D:/Work/2018/Hotfix/Documentation/Help/Content/report-viewer-localization3.aml - done
+
+
+
+http://arabadzhiev:1589/reporting/designing-reports/connecting-to-data/data-source-components/objectdatasource-component/overview
+Reason: legacyBold/externalLink transformation not working as expected
+Fix: new legacyBold template with choose
+
+
+
+Kotorov -    See Also секцията е празна навсякъде
+Looks like the problem is in the text 'See Also'. The MD file seems correct and when you change the text, e.g. "Seems Also" the section appears.
+This is a feature that moves element with ID 'see-also' on the side when it has only links
+Removed relatedTopics with commented code only
 
 
 
@@ -162,12 +175,6 @@ Merge TOC of documentation and API reference - D:\Work\reporting-docs\_assetsApi
 Feedback:
 
 seems like the other paragraphs in the generated MD file   -	There are missing paragraphs in page sections consisting only of bullet lists. Thus, the 20px font size style is not applied and the text looks small. For example you can check the Prerequisites section here - https://reportinghost:446/reporting/installation
-
-
-[5:14 PM] Kaloyan Kotorov
-    See Also секцията е празна навсякъде
-
-
 
 
 Problematic pages:	
@@ -275,8 +282,16 @@ working list, broken tabbed snippets
 
 
 
-http://arabadzhiev:1589/reporting/designing-reports/connecting-to-data/data-source-components/objectdatasource-component/overview
-Reason: legacyBold/externalLink transformation not working as expected
 
 
 http://arabadzhiev:1589/reporting/designing-reports/connecting-to-data/how-to-set-a-no-data-message
+
+
+file:///D:/Work/2018/Hotfix/Documentation/Help/Content/report-sources-viewers.aml - links to sections at the end of the article (o to section link) not working
+
+
+http://arabadzhiev:1589/reporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/objectdatasource-wizard:
+second VB code snippet not full. I suspect this is due to character '<' that starts on the next line: '<System.ComponentModel.DataObjectMethod(System.ComponentModel.DataObjectMethodType.Select)>'
+
+http://arabadzhiev:1589/reporting/using-reports-in-applications/display-reports-in-applications/how-to-set-reportsource-for-report-viewers
+correct section links

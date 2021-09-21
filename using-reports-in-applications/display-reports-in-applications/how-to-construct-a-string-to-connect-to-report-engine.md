@@ -5,7 +5,7 @@ description: How to Construct a string to connect to Report Engine
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/how-to-construct-a-string-to-connect-to-report-engine
 tags: how,to,construct,a,string,to,connect,to,report,engine
 published: True
-position: 5
+position: 6
 ---
 
 # How to Construct a string to connect to Report Engine

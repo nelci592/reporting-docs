@@ -40,7 +40,7 @@ The toolbar on the Silverlight Report Viewer provides basic functionality for i
 
 * Print Preview: switches between __Logical__  and __Physical__  page renderer. See [Rendering and Paging]({%slug telerikreporting/designing-reports/rendering-and-paging/overview%}) for more info.             
 
-* Print: use [Telerik.ReportViewer.Silverlight.ReportViewer.UseNativePrinting](/reporting/api/Telerik.ReportViewer.Silverlight.ReportViewer#Telerik_ReportViewer_Silverlight_ReportViewer_UseNativePrinting)               to switch between Silverlight native print and [True Print]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/aspdotnet-web-forms-report-viewer/true-print%}).             
+* Print: use [Telerik.ReportViewer.Silverlight.ReportViewer.UseNativePrinting](/reporting/api/Telerik.ReportViewer.Silverlight.ReportViewer#Telerik_ReportViewer_Silverlight_ReportViewer_UseNativePrinting)               to switch between Silverlight native print and [True Print]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/asp.net-web-forms-report-viewer/true-print%}).             
 
 * Export: see [Export Formats]({%slug telerikreporting/using-reports-in-applications/export-and-configure/export-formats%}) for available export formats.             
 
@@ -52,11 +52,11 @@ The toolbar on the Silverlight Report Viewer provides basic functionality for i
 
 ## Silverlight report viewer specific properties
 
-* [Telerik.ReportViewer.Silverlight.ReportViewer.ReportServiceUri](/reporting/api/Telerik.ReportViewer.Silverlight.ReportViewer#Telerik_ReportViewer_Silverlight_ReportViewer_ReportServiceUri)               - the location of the report service - absolute or relative [Uri](http://msdn.microsoft.com/en-us/library/system.uri%28VS.95%29.aspx).               If the uri is absolute, the same instance is returned. If the uri is relative,               a new absolute Uri based on the combination of Source of the current application and the given relative uri is created. The Source usually points to the application package (XAP).             
+* [Telerik.ReportViewer.Silverlight.ReportViewer.ReportServiceUri](/reporting/api/Telerik.ReportViewer.Silverlight.ReportViewer#Telerik_ReportViewer_Silverlight_ReportViewer_ReportServiceUri)               - the location of the report service - absolute or relative  [Uri](http://msdn.microsoft.com/en-us/library/system.uri%28VS.95%29.aspx) .               If the uri is absolute, the same instance is returned. If the uri is relative,               a new absolute Uri based on the combination of Source of the current application and the given relative uri is created. The Source usually points to the application package (XAP).             
 
-* [Telerik.ReportViewer.Silverlight.ReportViewer.Report](/reporting/api/Telerik.ReportViewer.Silverlight.ReportViewer#Telerik_ReportViewer_Silverlight_ReportViewer_Report)               - the [assembly qualified name](http://msdn.microsoft.com/en-us/library/system.type.assemblyqualifiedname.aspx) of the Report type for the viewer to display;             
+* [Telerik.ReportViewer.Silverlight.ReportViewer.Report](/reporting/api/Telerik.ReportViewer.Silverlight.ReportViewer#Telerik_ReportViewer_Silverlight_ReportViewer_Report)               - the  [assembly qualified name](http://msdn.microsoft.com/en-us/library/system.type.assemblyqualifiedname.aspx)  of the Report type for the viewer to display;             
 
-* [Telerik.ReportViewer.Silverlight.ReportViewer.UseNativePrinting](/reporting/api/Telerik.ReportViewer.Silverlight.ReportViewer#Telerik_ReportViewer_Silverlight_ReportViewer_UseNativePrinting)               - Specifies whether to use native Silverlight printing or [True Print]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/aspdotnet-web-forms-report-viewer/true-print%}). Default value is true.             
+* [Telerik.ReportViewer.Silverlight.ReportViewer.UseNativePrinting](/reporting/api/Telerik.ReportViewer.Silverlight.ReportViewer#Telerik_ReportViewer_Silverlight_ReportViewer_UseNativePrinting)               - Specifies whether to use native Silverlight printing or [True Print]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/asp.net-web-forms-report-viewer/true-print%}). Default value is true.             
 
 ## 
 
@@ -68,7 +68,7 @@ In order to use our Silverlight Report Viewer, you need a Silverlight applicati
 
 * Silverlight 5
 
-* The latest version of [Silverlight Tools/SDK](http://silverlight.net/getstarted) for Visual Studio 2010+ is needed for development             
+* The latest version of  [Silverlight Tools/SDK](http://silverlight.net/getstarted)  for Visual Studio 2010+ is needed for development             
 
 * (optional) Expression Blend
 

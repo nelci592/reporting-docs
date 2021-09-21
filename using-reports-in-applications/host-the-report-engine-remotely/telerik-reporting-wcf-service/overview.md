@@ -37,7 +37,7 @@ The service main purpose is to provide access for the Silverlight Report Viewer 
 
 ## Deploying the service
 
-The __Telerik Reporting WCF Service__  is a standard WCF service and is compatible with all hosted models described in the [Hosting Services](http://msdn.microsoft.com/en-us/library/ms730158).         
+The __Telerik Reporting WCF Service__  is a standard WCF service and is compatible with all hosted models described in the  [Hosting Services](http://msdn.microsoft.com/en-us/library/ms730158) .         
 
 [Telerik Reporting configuration settings]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/overview%}) must be applied in the service project configuration file.
 

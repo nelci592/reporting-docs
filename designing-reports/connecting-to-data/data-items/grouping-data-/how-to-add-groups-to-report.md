@@ -183,7 +183,3 @@ Report groups are defined by adding __Group__  objects to the report’s __Group
 	        report1.Groups.Add(group1)
 ````
 
-
-
-# See Also
-[Report](/reporting/api/Telerik.Reporting.Report)[Groups](/reporting/api/Telerik.Reporting.Report#Telerik_Reporting_Report_Groups)

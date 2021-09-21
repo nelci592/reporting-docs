@@ -82,8 +82,3 @@ If you have data that is logarithmically proportional, you may want to consider 
 In some cases, especially when using a __Logarithmic Scale__ , it is useful to have the axis ticks and labels           exactly where your datapoints are. This behavior is controlled by the           [DataPointTicks](/reporting/api/Telerik.Reporting.NumericalScaleBase#Telerik_Reporting_NumericalScaleBase_DataPointTicks) property. When set to           __true__ , the axis will display the ticks and labels for every data point in the data set.         
 
 Please note that using this feature means that some of the scale properties like __MajorStep__ ,           __MinorStep__  and __LabelStep__  will not be respected, since the step will not be calculated.         
-
-# See Also
-
-
- * [Graph Structure]({%slug telerikreporting/designing-reports/report-structure/graph/structure%})[GraphAxis](/reporting/api/Telerik.Reporting.GraphAxis)[LabelFormat](/reporting/api/Telerik.Reporting.GraphAxis#Telerik_Reporting_GraphAxis_LabelFormat)[LabelPlacement](/reporting/api/Telerik.Reporting.GraphAxis#Telerik_Reporting_GraphAxis_LabelPlacement)[Scale](/reporting/api/Telerik.Reporting.GraphAxis#Telerik_Reporting_GraphAxis_Scale)[Scale](/reporting/api/Telerik.Reporting.Scale)[MajorStep](/reporting/api/Telerik.Reporting.NumericalScale#Telerik_Reporting_NumericalScale_MajorStep)[MinorStep](/reporting/api/Telerik.Reporting.NumericalScale#Telerik_Reporting_NumericalScale_MinorStep)

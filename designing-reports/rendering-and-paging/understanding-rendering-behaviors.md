@@ -92,10 +92,3 @@ The following rules apply to page headers and footers when rendered on the page:
 * In multi-column reports (supported only in Physical paging), there is only one page header and footer per page,            regardless of the number of columns.
 
 * Page Footer section Visibility should NOT depend on [PageCount]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/functions/page-functions%}).               The total page count depends on the Visibility of the Page Footer section as this changes the available space for the rest of the report content. Hence, if the Visibility of the Page Footer is set to depend on the PageCount, uncertainty will be introduced. The result will be incorrect PageCount.             
-
-# See Also
-
-
- * [Rendering and Paging]({%slug telerikreporting/designing-reports/rendering-and-paging/overview%})
-
- * [Understanding Pagination]({%slug telerikreporting/designing-reports/rendering-and-paging/understanding-pagination%})

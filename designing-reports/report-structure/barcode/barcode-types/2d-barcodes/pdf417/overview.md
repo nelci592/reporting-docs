@@ -37,6 +37,3 @@ The __Left Row Indicator__  codewords, as well as the __Right Row Indicator__   
 The __Start__  and __Stop__  patterns are present on each row in the PDF417.           The signal when the data and row indicators start and end. Each start/stop cluster is identical for each row.         
 
 Additionally, there is a minimum of two modules on each side of the PDF417 barcode, dedicated to the quiet zone.           This gives space and separates the barcode from other visual elements on the page, allowing the reader to more reliably detect it.         
-
-# See Also
-

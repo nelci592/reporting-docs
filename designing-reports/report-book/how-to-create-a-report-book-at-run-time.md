@@ -53,7 +53,3 @@ In the sample below we add two reports:
 	        reportBook.ReportSources.Add(glossaryReportSource)
 ````
 
-
-
-# See Also
-

@@ -43,8 +43,3 @@ The easiest way to setup drill-down graph categories is to use the Graph Wizard.
 ## 
 
 Adding an action to a series group is identical to the approach shown above.         
-
-# See Also
-
-
- * [Actions]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/actions/overview%})[Action](/reporting/api/Telerik.Reporting.GraphGroup#Telerik_Reporting_GraphGroup_Action)

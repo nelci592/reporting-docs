@@ -5,7 +5,7 @@ description: Requirements For Desktop Viewers Using Remote Report Sources
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/requirements-for-desktop-viewers-using-remote-report-sources
 tags: requirements,for,desktop,viewers,using,remote,report,sources
 published: True
-position: 10
+position: 11
 ---
 
 # Requirements For Desktop Viewers Using Remote Report Sources
@@ -18,13 +18,13 @@ When using WinForms and WPF report viewers to show reports that are hosted in a 
 
 * __Telerik.Reporting.Services.HttpClient.dll__  - this assembly contains the client used to make requests               and process response from the REST service Web API. The assembly can be found in the __\bin__  subfolder of the Telerik Reporting installation folder.               Make sure the *CopyLocal*  property is set to __true__ .             
 
-* [                   System.Net.Http.Formatting.dll                 ](                   https://msdn.microsoft.com/en-us/library/system.net.http.formatting(v=vs.118).aspx                 )               - contains classes for serializing and deserializing HTTP message body in a format based on the requested media type.             
+*  [                   System.Net.Http.Formatting.dll                 ](                   https://msdn.microsoft.com/en-us/library/system.net.http.formatting(v=vs.118).aspx                 )                - contains classes for serializing and deserializing HTTP message body in a format based on the requested media type.             
 
-* [                   System.Net.Http.dll                 ](                   https://msdn.microsoft.com/en-us/library/system.net.http(v=vs.118).aspx                 )               - contains classes of HTTP attributes.             
+*  [                   System.Net.Http.dll                 ](                   https://msdn.microsoft.com/en-us/library/system.net.http(v=vs.118).aspx                 )                - contains classes of HTTP attributes.             
 
-* [                   Newtonsoft.Json.dll                 ](                   https://msdn.microsoft.com/en-us/library/system.net.http(v=vs.118).aspx                 )               - a popular high-performance JSON framework for .NET             
+*  [                   Newtonsoft.Json.dll                 ](                   https://msdn.microsoft.com/en-us/library/system.net.http(v=vs.118).aspx                 )                - a popular high-performance JSON framework for .NET             
 
-The recommended way of obtaining the three third-party assemblies is via NuGet package. The package that contains all three of them is           [               Microsoft ASP.NET Web API Client v.4.0.30506 NuGet package.             ](               https://www.nuget.org/packages/Microsoft.AspNet.WebApi.Client/4.0.30506             )           Note that the higher versions of this package require updating the project's target framework to .NET 4.5 or later.         
+The recommended way of obtaining the three third-party assemblies is via NuGet package. The package that contains all three of them is            [               Microsoft ASP.NET Web API Client v.4.0.30506 NuGet package.             ](               https://www.nuget.org/packages/Microsoft.AspNet.WebApi.Client/4.0.30506             )            Note that the higher versions of this package require updating the project's target framework to .NET 4.5 or later.         
 
 # See Also
 

@@ -45,7 +45,7 @@ or it can specify a global connection string that can be used by all reports cre
 
 
 
-For more information, see         [Application Configuration Files](http://msdn.microsoft.com/en-us/library/ms229689%28v=vs.90%29.aspx).        
+For more information, see          [Application Configuration Files](http://msdn.microsoft.com/en-us/library/ms229689%28v=vs.90%29.aspx) .        
 
 ## Default Configuration
 

@@ -12,16 +12,16 @@ position: 1
 
 
 
->important The following article guides you how to use Blazor Report Viewer in a           [Blazor](https://dotnet.microsoft.com/apps/aspnet/web-apps/blazor)           web application.         
+>important The following article guides you how to use Blazor Report Viewer in a            [Blazor](https://dotnet.microsoft.com/apps/aspnet/web-apps/blazor)            web application.         
 
 
 ## 
 
-* [Visual Studio 2019, version 16.4 or later](https://www.visualstudio.com/vs/)
+*  [Visual Studio 2019, version 16.4 or later](https://www.visualstudio.com/vs/) 
 
 * Existing ASP.NET Core 3.1 Blazor Server App or ASP.NET Core 3.1-hosted Blazor WebAssembly App             
 
-* The report viewer consumes reports generated and served from a running Reports Web Service.               Such can be referenced from another application or Telerik Report Server instance               or it can be hosted locally in the Blazor application.               In case you need to host it locally follow the article [How to Host Reports Service in ASP.NET Core 3.1]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/aspdotnet-core-web-api-implementation/how-to-host-reports-service-in-aspdotnet-core-3dot1%}).             
+* The report viewer consumes reports generated and served from a running Reports Web Service.               Such can be referenced from another application or Telerik Report Server instance               or it can be hosted locally in the Blazor application.               In case you need to host it locally follow the article [How to Host Reports Service in ASP.NET Core 3.1]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-core-web-api-implementation/how-to-host-reports-service-in-asp.net-core-3.1%}).             
 
 ## Adding the HTML5 Report Viewer component
 
@@ -49,14 +49,14 @@ app.UseStaticFiles();
 
 
 
-1. Add               [Telerik Kendo UI Sass-Based Themes](https://docs.telerik.com/kendo-ui/styles-and-layout/sass-themes)               to the __head__  element of the               __Pages/_Host.cshtml__  (Blazor Server) or __wwwroot/index.html__  (Blazor WebAssembly).               The Razor syntax for a server application differs and you need to escape the __@__  symbol as __@@__ :             
+1. Add                [Telerik Kendo UI Sass-Based Themes](https://docs.telerik.com/kendo-ui/styles-and-layout/sass-themes)                to the __head__  element of the               __Pages/_Host.cshtml__  (Blazor Server) or __wwwroot/index.html__  (Blazor WebAssembly).               The Razor syntax for a server application differs and you need to escape the __@__  symbol as __@@__ :             
 
 	
     ````html
     <link rel="stylesheet" href="https://unpkg.com/@progress/kendo-theme-default@latest/dist/all.css" />
 ````
 
-Alternatively you can use the               [Kendo UI Less-Based Themes](https://docs.telerik.com/kendo-ui/styles-and-layout/appearance-styling)               (Kendo UI Less-Based Themes are not compatible with Telerik UI for Blazor and should not be used together):             
+Alternatively you can use the                [Kendo UI Less-Based Themes](https://docs.telerik.com/kendo-ui/styles-and-layout/appearance-styling)                (Kendo UI Less-Based Themes are not compatible with Telerik UI for Blazor and should not be used together):             
 
 	
     ````html

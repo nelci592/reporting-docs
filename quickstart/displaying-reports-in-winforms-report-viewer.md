@@ -45,7 +45,7 @@ __How to display a report in the Windows Forms Report Viewer:__
 
   ![](images/QuickStart035.png)
 
-1. Add report viewer to the form as explained in [WinForms ReportViewer: Manual Setup]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/windows-forms-application/how-to-add-manually-report-viewer-to-a-windows-forms'-dotnet-framework-project%}) topic.             
+1. Add report viewer to the form as explained in [WinForms ReportViewer: Manual Setup]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/windows-forms-application/how-to-add-manually-report-viewer-to-a-windows-forms'-.net-framework-project%}) topic.             
 
 1. From the ToolBox drag a Telerik ReportViewer control to the Windows form.
 

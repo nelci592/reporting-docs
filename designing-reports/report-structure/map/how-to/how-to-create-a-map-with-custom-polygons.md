@@ -12,7 +12,7 @@ position: 8
 
 
 
-This topic explains how to create a map that shows custom-defined shapes. The Map item processes and renders polygon primitives         using [ShapeMapSeries](/reporting/api/Telerik.Reporting.ShapeMapSeries),         which accept         [Well-known text/Well-known binary](http://en.wikipedia.org/wiki/Well-known_text)         or         [ESRI Shapefile](http://en.wikipedia.org/wiki/Shapefile)         as a source. Since creating __ESRI Shapefiles__  requires additional tools, in this example the WKT polygon representation         will be used. The resulting report will display three American states whose coordinates will be obtained from a CSV data source.       
+This topic explains how to create a map that shows custom-defined shapes. The Map item processes and renders polygon primitives         using [ShapeMapSeries](/reporting/api/Telerik.Reporting.ShapeMapSeries),         which accept          [Well-known text/Well-known binary](http://en.wikipedia.org/wiki/Well-known_text)          or          [ESRI Shapefile](http://en.wikipedia.org/wiki/Shapefile)          as a source. Since creating __ESRI Shapefiles__  requires additional tools, in this example the WKT polygon representation         will be used. The resulting report will display three American states whose coordinates will be obtained from a CSV data source.       
 
 ###Displaying custom polygons using the Map item
 
@@ -31,7 +31,7 @@ This topic explains how to create a map that shows custom-defined shapes. The Ma
 
 
 
-    >tip Note that the WKT consists of closed polygons (i.e. the last point coincides with the first one) that are enumerated in a counter-clockwise order.                 See the                 [OGC 10-032r8 ](https://portal.opengeospatial.org/files/?artifact_id=56866)                 specification for more information.               
+    >tip Note that the WKT consists of closed polygons (i.e. the last point coincides with the first one) that are enumerated in a counter-clockwise order.                 See the                  [OGC 10-032r8 ](https://portal.opengeospatial.org/files/?artifact_id=56866)                  specification for more information.               
 
     Click __Next__  when ready.             
 

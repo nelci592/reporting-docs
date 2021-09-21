@@ -133,12 +133,3 @@ Use a __try-catch block__  to handle the exception:
 	    End Sub
 ````
 
-
-
-{{source=CodeSnippets\VB\API\Telerik\Reporting\Processing\HtmlTextBoxSnippets.vb region=Validate_Xhtml_Using_Event_And_ValueError1_Snippet}}
-
-
-
-
-# See Also
-

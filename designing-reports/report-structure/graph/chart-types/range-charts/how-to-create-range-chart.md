@@ -72,6 +72,3 @@ INNER JOIN Sales.SalesTerritory AS ST ON SOH.TerritoryID = ST.TerritoryID
    1. Set the __Y0__  value to *=Sum(IIF(Fields.OrderDate.Year=2003, Fields.TotalDue, 0))* 
 
 1. Set the color palette, the formatting of the labels, the values of the legend and any other improvements as needed.             For more information, see [Formatting a Graph]({%slug telerikreporting/designing-reports/report-structure/graph/formatting-a-graph/overview%}).             
-
-# See Also
-

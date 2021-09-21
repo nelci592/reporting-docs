@@ -40,7 +40,7 @@ When Visual Studio crashes while working with Telerik Reporting,           the w
 
 __devenv.exe.config__  resides in C:\Program Files (x86)\Microsoft Visual Studio X.0\Common7\IDE by default (it is recommended to create a backup copy before modifying it).             
 
-* Start Visual Studio with the log switch: [/Log (devenv.exe)](https://msdn.microsoft.com/en-us/library/ms241272.aspx)               which could also provide more info on the error.             
+* Start Visual Studio with the log switch:  [/Log (devenv.exe)](https://msdn.microsoft.com/en-us/library/ms241272.aspx)                which could also provide more info on the error.             
 
 * Check the event viewer logs for any logs that could provide more info about the problem.
 
@@ -50,27 +50,24 @@ After you generate the log files from the above steps, archive them and attach t
 
 ## The report cannot be built and opened in Visual Studio Report Designer
 
-Please refer to the information from the following KB article: [The report cannot be built and opened in Visual Studio Report Designer](./knowledge-base/report-cannot-be-built-and-opened-in-vs-report-designer)
+Please refer to the information from the following KB article:  [The report cannot be built and opened in Visual Studio Report Designer](./knowledge-base/report-cannot-be-built-and-opened-in-vs-report-designer) 
 
 ## The Visual Studio Report Designer is blank
 
-Please refer to the information from the following KB article: [The Visual Studio Report Designer is blank](./knowledge-base/vs-report-designer-is-blank)
+Please refer to the information from the following KB article:  [The Visual Studio Report Designer is blank](./knowledge-base/vs-report-designer-is-blank) 
 
 ## Missing Telerik menu in Visual Studio
 
-Please refer to the information from the following KB article: [Missing Telerik menu in Visual Studio](./knowledge-base/missing-telerik-menu-in-visual-studio)
+Please refer to the information from the following KB article:  [Missing Telerik menu in Visual Studio](./knowledge-base/missing-telerik-menu-in-visual-studio) 
 
 ## Visual Studio missing Telerik Reporting Toolbox items
 
-Please refer to the information from the following KB article: [Telerik Reporting Toolbox items are missing.](http://www.telerik.com/support/kb/reporting/general/missing-toolbox-items.aspx)
+Please refer to the information from the following KB article:  [Telerik Reporting Toolbox items are missing.](http://www.telerik.com/support/kb/reporting/general/missing-toolbox-items.aspx) 
 
 ## Visual Studio missing Telerik Reporting DataSource components
 
-Please refer to the information from the following KB article: [Telerik Reporting DataSource components are missing.](http://www.telerik.com/support/kb/reporting/details/telerik-reporting-datasource-components-are-missing)
+Please refer to the information from the following KB article:  [Telerik Reporting DataSource components are missing.](http://www.telerik.com/support/kb/reporting/details/telerik-reporting-datasource-components-are-missing) 
 
 ## Visual Studio missing Telerik Reporting Item Template
 
-Please refer to the information from the following KB article: [Telerik Reporting Item Template is missing.](http://www.telerik.com/support/kb/reporting/general/missing-item-template.aspx)
-
-# See Also
-
+Please refer to the information from the following KB article:  [Telerik Reporting Item Template is missing.](http://www.telerik.com/support/kb/reporting/general/missing-item-template.aspx) 

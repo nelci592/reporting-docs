@@ -33,6 +33,3 @@ The graph series can be oriented towards both axes of its corresponding coordina
 
 >note Performing this action will cause the selected series to swap their X / Y values.           Additionally, the coordinate system referred by the series will also have its axes swapped.         If only some of the series sharing a coordinate system are rotated, a new coordinate system will be created and assigned to them.             The new coordinate system will share it's axes with the original but with interchanged places ( XAxis / YAxis, AngleAxis / RadiusAxis).             Upon reversing the operation or changing the orientation of the rest of the series,              sharing the former coordinate system, the two coordinate systems will be merged based on their axes.            
 
-
-# See Also
-

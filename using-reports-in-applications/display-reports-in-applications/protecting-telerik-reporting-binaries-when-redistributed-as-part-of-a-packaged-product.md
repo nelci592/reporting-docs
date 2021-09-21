@@ -5,7 +5,7 @@ description: Protecting Telerik Reporting binaries when redistributed as part of
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/protecting-telerik-reporting-binaries-when-redistributed-as-part-of-a-packaged-product
 tags: protecting,telerik,reporting,binaries,when,redistributed,as,part,of,a,packaged,product
 published: False
-position: 9
+position: 10
 ---
 
 # Protecting Telerik Reporting binaries when redistributed as part of a packaged product

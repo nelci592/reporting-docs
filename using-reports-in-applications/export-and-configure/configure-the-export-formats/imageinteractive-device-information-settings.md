@@ -20,7 +20,7 @@ The following table lists the device information settings for rendering in IMAGE
 | Name | Type | Description |
 | ------ | ------ | ------ |
 |OutputFormat|String|Defines the output format of the produced image. Supported formats are: __BMP__ , __EMF__ , __EMFPLUS__ , __GIF__ , __JPEG__ , __PNG__ .|
-|TextRenderingHint|string|Sets the rendering mode for text using a[TextRenderingHint](https://msdn.microsoft.com/en-us/library/ssazt6bs(v=vs.110).aspx)enumeration member. The default value depends on the machine settings - if it has[ClearType](https://www.microsoft.com/en-us/Typography/ClearTypeInfo.aspx)enabled, then __ClearTypeGridFit__ will be used. Otherwise the rendering algorithm will use __AntiAliasGridFit__ hinting.                 If text rendering hinting is not supported, the __SystemDefault__ value will be used|
+|TextRenderingHint|string|Sets the rendering mode for text using a [TextRenderingHint](https://msdn.microsoft.com/en-us/library/ssazt6bs(v=vs.110).aspx) enumeration member. The default value depends on the machine settings - if it has [ClearType](https://www.microsoft.com/en-us/Typography/ClearTypeInfo.aspx) enabled, then __ClearTypeGridFit__ will be used. Otherwise the rendering algorithm will use __AntiAliasGridFit__ hinting.                 If text rendering hinting is not supported, the __SystemDefault__ value will be used|
 
 
 

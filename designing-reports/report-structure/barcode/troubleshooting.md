@@ -29,6 +29,3 @@ This section elaborates on the most common errors which occur when using the Bar
 * Some encoders (Intelligent Mail, PLANET) require the barcode value to have specific lengths. For Intelligent Mail barcode the supported lengths are 20, 25, 29 or 31             characters. For PLANET barcode the supported lengths are 11 or 13 characters. If the barcode value does not satisfy these conditions, a descriptive error message is shown.             
 
   ![barcode-errors-invalid-content-length](images/Barcodes/barcode-errors-invalid-content-length.png)
-
-# See Also
-

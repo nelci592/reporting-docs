@@ -41,7 +41,7 @@ The report viewer currently exposes two ways for binding event handlers to event
 
 For a complete list of event handler options please check [Report Viewer Initialization]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/report-viewer-initialization%})           and for a complete list of all event names exposed through telerikReportViewer.Events please check           [Events]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/telerikreportviewer-namespace/events%}).         
 
-The report viewer passes one argument to the event handler, the Event object.           This is the Event object implemented by jQuery so for more information you can check the official jQuery documentation.           The sender of the event is passed through            [jQuery's event.data](https://api.jquery.com/event.data/) - e.data.sender and for all events this is the report viewer.         
+The report viewer passes one argument to the event handler, the Event object.           This is the Event object implemented by jQuery so for more information you can check the official jQuery documentation.           The sender of the event is passed through             [jQuery's event.data](https://api.jquery.com/event.data/)  - e.data.sender and for all events this is the report viewer.         
 
 ## Unbind from a report viewer widget event
 

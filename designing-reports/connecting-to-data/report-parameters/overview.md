@@ -100,6 +100,9 @@ For example, the first parameter could present a list of product categories.    
 
 * [How to Cascade Parameters with applied filtering on data source level]({%slug telerikreporting/designing-reports/connecting-to-data/report-parameters/how-to-cascade-parameters-with-applied-filtering-on-data-source-level%})
 
+>note The Report Parameter is processed as a whole entity. Its evaluation starts after all its dependencies, for example, other Report Parameter values have been evaluated.             If, for example, the  *Text*  property             is set with an Expression that can be evaluated and the  *Value*  property depends on another Report Parameter, which value is unknown/invalid,              neither the Text, nor the Value property will be set.           
+
+
 ## Parameter area
 
 When at least one report parameter has its           __Visible__  property turned on, a parameter area is shown           as part of the report viewer. This helps the report developer to easily provide an input method for the end users.           Based on the settings of the parameters, a suitable editor UI is created.           The parameter's layout on the parameter area is formatted automatically. The order is determined by the order in which the parameters appear in           the [ReportParameters](/reporting/api/Telerik.Reporting.Report#Telerik_Reporting_Report_ReportParameters) collection.            The end user can enter or select values in the editors. When at least one visible report parameter has the           __AutoRefresh__  property turned off, a __Preview__  button is available.           In this case, to preview the report, the end user must click the __Preview__  button.           If all parameters have default values, the report runs automatically on first view.           You can show or hide the parameters area from the __Parameters__  button in the report viewer’s toolbar.         

@@ -67,7 +67,7 @@ Here the "ProviderName" parameter specifies the __ADO.NET__  provider, and the "
 </Telerik.Reporting>
 ````
 
-Here the "BackendName" parameter specifies the name of the chosen backend. Complete list of the backends is available in the             [Backend Strings and Provider Names List](http://docs.telerik.com/data-access/developers-guide/database-specifics/database-specifics-backend-strings-provider-names-list) article. The "ConnectionString" specifies the connection string to the database.             The connection string can be specified either as a named connection, configured in the "connectionStrings" section of the configuration file, or directly             as an inline connection string.           __Binding Redirects__ In case you use __Telerik Data Access__  version greater than 2015.1.225.1, you have to redirect all assemblies required by the Database Cache Provider to their             latest versions. To do this, add the following bindingRedirects to your configuration file and replace the x.x.x.x with the exact version of __Telerik Data Access__  assemblies:           
+Here the "BackendName" parameter specifies the name of the chosen backend. Complete list of the backends is available in the              [Backend Strings and Provider Names List](http://docs.telerik.com/data-access/developers-guide/database-specifics/database-specifics-backend-strings-provider-names-list)  article. The "ConnectionString" specifies the connection string to the database.             The connection string can be specified either as a named connection, configured in the "connectionStrings" section of the configuration file, or directly             as an inline connection string.           __Binding Redirects__ In case you use __Telerik Data Access__  version greater than 2015.1.225.1, you have to redirect all assemblies required by the Database Cache Provider to their             latest versions. To do this, add the following bindingRedirects to your configuration file and replace the x.x.x.x with the exact version of __Telerik Data Access__  assemblies:           
 
 	
     ````xml
@@ -92,13 +92,3 @@ Here the "BackendName" parameter specifies the name of the chosen backend. Compl
 </configuration>
 ````
 
-
-
-# See Also
-
-
- * [Configuring Cache]({%slug telerikreporting/using-reports-in-applications/export-and-configure/cache-management/other-reportviewer-controls/configuring-cache%})
-
- * [Configuring the File Cache Provider]({%slug telerikreporting/using-reports-in-applications/export-and-configure/cache-management/other-reportviewer-controls/configuring-the-file-cache-provider%})
-
- * [Telerik Reporting Configuration Section]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/overview%})

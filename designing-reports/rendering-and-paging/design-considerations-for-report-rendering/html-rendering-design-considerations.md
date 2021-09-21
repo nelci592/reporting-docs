@@ -45,9 +45,9 @@ The legacy ASP.NET viewer renders tooltips on SVG elements using the ```<title>`
 
 ### Browsers and limitations
 
-* Internet Explorer Quirks Mode is not supported, since it is based on Internet Explorer 5.5. For more details check the [Defining document compatibility](http://msdn.microsoft.com/en-us/library/cc288325(v=vs.85).aspx) MSDN article.                 
+* Internet Explorer Quirks Mode is not supported, since it is based on Internet Explorer 5.5. For more details check the  [Defining document compatibility](http://msdn.microsoft.com/en-us/library/cc288325(v=vs.85).aspx)  MSDN article.                 
 
-* Compatibility View for Internet Explorer is not supported, since it is based on Internet Explorer 7. For more details check the [Defining document compatibility](http://msdn.microsoft.com/en-us/library/cc288325(v=vs.85).aspx) MSDN article.                 
+* Compatibility View for Internet Explorer is not supported, since it is based on Internet Explorer 7. For more details check the  [Defining document compatibility](http://msdn.microsoft.com/en-us/library/cc288325(v=vs.85).aspx)  MSDN article.                 
 
 * Internet Explorer has a limitation for the number of HTML elements that can be rendered on a single page. This limitation may prevent the displaying of reports with large amount of items rendered without page breaks. Displaying the report in Print preview will page the content.
 

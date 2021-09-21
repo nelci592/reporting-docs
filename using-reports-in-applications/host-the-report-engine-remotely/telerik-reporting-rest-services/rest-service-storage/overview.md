@@ -31,10 +31,3 @@ The following implementations of the IStorage interface support the service to b
 * [FileStorage](/reporting/api/Telerik.Reporting.Cache.File.FileStorage) - Use the               [#ctor](/reporting/api/Telerik.Reporting.Cache.File.FileStorage#Telerik_Reporting_Cache_File_FileStorage_#ctor)               method in order to create a storage instance. All Visual Studio item templates for adding the Reporting REST service use the default               __FileStorage__  constructor. The second overload of the FileStorage constructor allows you to               specify a folder, and it is recommended for usage in production environment.             
 
 * [DatabaseStorage](/reporting/api/Telerik.Reporting.Cache.Database.DatabaseStorage) - Use the               [#ctor](/reporting/api/Telerik.Reporting.Cache.Database.DatabaseStorage#Telerik_Reporting_Cache_Database_DatabaseStorage_#ctor)               method in order to create a storage instance. This storage option requires reference to __Telerik.Reporting.Cache.Database.dll__                that has dependencies on Telerik Data Access which can be checked in the version               corresponding [Upgrade article]({%slug telerikreporting/upgrade/overview%});             
-
-# See Also
-
-
- * [How to implement the ReportsController in an application]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/aspdotnet-web-api-implementation/how-to-implement-the-reportscontroller-in-an-application%})
-
- * [How to Add Telerik Reporting REST ServiceStack to Web Application]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/servicestack-implementation/how-to-add-telerik-reporting-rest-servicestack-to-web-application%})

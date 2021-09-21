@@ -18,13 +18,13 @@ This topic explains how to setup the WPF Report Viewer to work with Telerik Repo
 
 * Running               [ Telerik Reporting REST Service ]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview%}) instance.             
 
-* In case you are not using [Item Templates ]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/windows-forms-application/how-to-add-report-viewer-to-a-windows-forms'-dotnet-framework-project%}),               add references to all the assemblies listed               [here]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/requirements-for-desktop-viewers-using-remote-report-sources%}).             
+* In case you are not using [Item Templates ]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/windows-forms-application/how-to-add-report-viewer-to-a-windows-forms'-.net-framework-project%}),               add references to all the assemblies listed               [here]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/requirements-for-desktop-viewers-using-remote-report-sources%}).             
 
 ##Configuring the WPF Report Viewer to work with REST Service
 
 ###
 
-1. To create a form and host the report viewer in it, you can either use the item template, as explained                   [here]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/windows-forms-application/how-to-add-report-viewer-to-a-windows-forms'-dotnet-framework-project%}), or place it yourself through drag-and-drop from the toolbox.                 
+1. To create a form and host the report viewer in it, you can either use the item template, as explained                   [here]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/windows-forms-application/how-to-add-report-viewer-to-a-windows-forms'-.net-framework-project%}), or place it yourself through drag-and-drop from the toolbox.                 
 
 1. As soon as the report viewer is on your form, select it and locate the __ReportEngineConnection__  property.                   invoke the UI editor by pressing the ellipsis button. The Report Engine Connection dialog should appear:                   
 
@@ -35,12 +35,12 @@ This topic explains how to setup the WPF Report Viewer to work with Telerik Repo
 
    + *REST Service*  - the reports will be processed at the machine that hosts configured and running REST Service instance.                     
 
-   + *Report Server*  - the reports will be processed and rendered at the machine that hosts configured and running                       [Telerik Report Server ](http://docs.telerik.com/report-server/introduction) instance.                     
+   + *Report Server*  - the reports will be processed and rendered at the machine that hosts configured and running                        [Telerik Report Server ](http://docs.telerik.com/report-server/introduction)  instance.                     
     Select *REST Service* .                 
 
 1. In __URL__  textbox enter the address and port (if needed) of the machine that hosts the REST Service instance.                   Note that the */api/reports*  part is already added so you need to prefix it with the service address.                 
 
-1. Check the __Use default credentials__  checkbox if you need the default credentials to be sent with the requests by the                   [HTTP client handler ](https://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l&EN-US&k=k(System.Net.Http.HttpClientHandler.UseDefaultCredentials))                   that is used internally to communicate with the REST service.                 
+1. Check the __Use default credentials__  checkbox if you need the default credentials to be sent with the requests by the                    [HTTP client handler ](https://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l&EN-US&k=k(System.Net.Http.HttpClientHandler.UseDefaultCredentials))                    that is used internally to communicate with the REST service.                 
 
 1. In the __Document timeout__  textbox you can change the timeout for rendering a document, the default is 100 seconds.                 
 
@@ -76,7 +76,7 @@ The following table shows the most common reasons for failure when using the Tel
 
 | Problem | Cause |
 | ------ | ------ |
-|The viewer displays the message:`A problem occurred while registering client.`|Check if the REST service is active and running - the easiest way is to make a request for the available document formats, as explained[ here ]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/aspdotnet-web-api-implementation/how-to-add-telerik-reporting-rest-web-api-to-web-application%}).|
+|The viewer displays the message:`A problem occurred while registering client.`|Check if the REST service is active and running - the easiest way is to make a request for the available document formats, as explained[ here ]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-web-api-implementation/how-to-add-telerik-reporting-rest-web-api-to-web-application%}).|
 |The viewer displays the message:`System.OperationCanceledException: *{ReportName}* report cannot be resolved.`|Make sure the URL or type name specified in the __report source__ property is valid and can be resolved by the REST service.|
 |The viewer displays the message:`System.Net.WebException: The remote name could not be resolved: {name}`|Make sure that the address specified in the connection string exists and represents a valid and running REST service instance|
 

@@ -85,7 +85,7 @@ When using Windows Forms ReportViewer on a machine with Windows Vista and later 
 
 Since Windows 10 Anniversary Update, the Windows runtime has improved the UX for Windows Forms applications that are not declared as DPI-aware. Unfortunately in some cases this behavior leads to incorrect calculation of interactive item positions. We recommend always declaring the Windows Forms application as DPI-aware.         
 
-You can read more about writing DPI-aware desktop applications           [               here.             ](               https://msdn.microsoft.com/en-us/library/windows/desktop/dn469266(v=vs.85).aspx             )
+You can read more about writing DPI-aware desktop applications            [               here.             ](               https://msdn.microsoft.com/en-us/library/windows/desktop/dn469266(v=vs.85).aspx             ) 
 
 ## Keyboard shortcuts
 
@@ -113,7 +113,7 @@ The following table lists the keyboard and mouse commands used in Windows Forms 
 # See Also
 
 
- * [How to Add report viewer to a Windows Forms' .NET Framework project]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/windows-forms-application/how-to-add-report-viewer-to-a-windows-forms'-dotnet-framework-project%})
+ * [How to Add report viewer to a Windows Forms' .NET Framework project]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/windows-forms-application/how-to-add-report-viewer-to-a-windows-forms'-.net-framework-project%})
 
  * [Report Viewer Localization]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/windows-forms-application/report-viewer-localization%})
 

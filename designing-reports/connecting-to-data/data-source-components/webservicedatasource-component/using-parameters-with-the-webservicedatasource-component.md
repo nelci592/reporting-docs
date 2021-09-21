@@ -20,7 +20,7 @@ The __WebServiceDataSource__  component can request data in JSON format from a r
 
   ![Web Service Data Source Urlx 750](images/WebServiceDataSourceUrlx750.png)In the next step of the Wizard it is necessary to set the run-time and the design-time values for the parameter:                 
 
-  ![Web Service Data Source Inline Parameterx 750](images/WebServiceDataSourceInlineParameterx750.png)The final request made by the WebServiceDataSource component to the web service with the design-time                 parameter value as captured by                 [Fiddler](https://www.telerik.com/download/fiddler)                 will look like:                 
+  ![Web Service Data Source Inline Parameterx 750](images/WebServiceDataSourceInlineParameterx750.png)The final request made by the WebServiceDataSource component to the web service with the design-time                 parameter value as captured by                  [Fiddler](https://www.telerik.com/download/fiddler)                  will look like:                 
 
   ![Web Service Data Source Inline Parameter Request Urlx 750](images/WebServiceDataSourceInlineParameterRequestUrlx750.png)The entire Service URL can also be set to a WebServiceDataSource parameter, for example to                 __@serviceUrl__ . This allows for larger flexibility in using different end-points of a Web Service,                 or even different Web Services for the same data item.               
 

@@ -24,9 +24,9 @@ Telerik Reporting offers numerous ways to [Display Reports in Applications]({%sl
 
 * [HTML5 Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview%}) - an HTML/CSS/JS client-side widget suitable for any web application                 that works with JavaScript.                
 
-* [HTML5 MVC Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-aspdotnet-mvc-report-viewer/overview%}) - a server-side wrapper that allows you to configure the HTML5 Viewer in MVC applications.             
+* [HTML5 MVC Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-mvc-report-viewer/overview%}) - a server-side wrapper that allows you to configure the HTML5 Viewer in MVC applications.             
 
-* [HTML5 WebForms Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-aspdotnet-web-forms-report-viewer/overview%}) - a server-side wrapper that allows you to configure the HTML5 Viewer in WebForms applications.                   
+* [HTML5 WebForms Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-web-forms-report-viewer/overview%}) - a server-side wrapper that allows you to configure the HTML5 Viewer in WebForms applications.                   
 
 * [Angular Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/angular-report-viewer-overview%}) - an Angular component that wraps the HTML5 Report Viewer.                 
 
@@ -40,13 +40,13 @@ Telerik Reporting offers numerous ways to [Display Reports in Applications]({%sl
 
 ## How to add the report engine
 
-There are many ways to add the report engine. You can [Host the Report Engine Remotely]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/overview%}), you can           [Call the Report Engine via APIs]({%slug telerikreporting/using-reports-in-applications/call-the-report-engine-via-apis/embedded-report-engine%}),           or you can use the [Telerik Report Server](https://www.telerik.com/report-server):         
+There are many ways to add the report engine. You can [Host the Report Engine Remotely]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/overview%}), you can           [Call the Report Engine via APIs]({%slug telerikreporting/using-reports-in-applications/call-the-report-engine-via-apis/embedded-report-engine%}),           or you can use the  [Telerik Report Server](https://www.telerik.com/report-server) :         
 
 ### Host report engine remotely
 
 * [Telerik Reporting Services]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview%}) - provide an Application Programming Interface (API) over HTTP to the report’s               generation engine. It can be used by web and desktop report viewers as well as by any third-party client applications.             
 
-* [Telerik Reporting WCF Service]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-wcf-service/overview%}) - is based on [Windows Communication Foundation (WCF)](https://docs.microsoft.com/en-us/previous-versions/dotnet/netframework-4.0/dd456779(v=vs.100)?redirectedfrom=MSDN) and is designed               for the purposes of the  [Telerik Silverlight Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/silverlight-application/overview%}).              
+* [Telerik Reporting WCF Service]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-wcf-service/overview%}) - is based on  [Windows Communication Foundation (WCF)](https://docs.microsoft.com/en-us/previous-versions/dotnet/netframework-4.0/dd456779(v=vs.100)?redirectedfrom=MSDN)  and is designed               for the purposes of the  [Telerik Silverlight Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/silverlight-application/overview%}).              
 
 ### Use an embedded engine
 
@@ -60,9 +60,9 @@ Connect the Report Viewer to the Telerik Report Server’s engine:
 
 * [How To: Use HTML5 Report Viewer With Report Server ]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/how-to-use-html5-report-viewer-with-report-server%})
 
-* [How To: Use HTML5 ASP.NET MVC Report Viewer With Report Server  ]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-aspdotnet-mvc-report-viewer/how-to-use-html5-aspdotnet-mvc-report-viewer-with-report-server%})
+* [How To: Use HTML5 ASP.NET MVC Report Viewer With Report Server  ]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-mvc-report-viewer/how-to-use-html5-asp.net-mvc-report-viewer-with-report-server%})
 
-* [How To: Use HTML5 ASP.NET Web Forms Report Viewer With Report Server   ]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-aspdotnet-web-forms-report-viewer/how-to-use-html5-aspdotnet-web-forms-report-viewer-with-report-server%})
+* [How To: Use HTML5 ASP.NET Web Forms Report Viewer With Report Server   ]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-web-forms-report-viewer/how-to-use-html5-asp.net-web-forms-report-viewer-with-report-server%})
 
 * [How To: Use Windows Forms Report Viewer With Report Server ]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/windows-forms-application/how-to-use-windows-forms-report-viewer-with-report-server%})
 
@@ -88,7 +88,4 @@ If you are just starting with Telerik Reporting, look at our [First Steps]({%slu
 
 Wondering about specific report design? You might find helpful suggestions on how to present the data in           [Report Structure]({%slug telerikreporting/designing-reports/report-structure/overview%}) section.         
 
-Are you into ASP.NET Core? See how to display reports in a .NET Core application for Windows, Linux, and macOS platforms here -           [.NET Core Support]({%slug telerikreporting/using-reports-in-applications/dotnet-core-support%}).         
-
-# See Also
-
+Are you into ASP.NET Core? See how to display reports in a .NET Core application for Windows, Linux, and macOS platforms here -           [.NET Core Support]({%slug telerikreporting/using-reports-in-applications/dot-net-core-support%}).         

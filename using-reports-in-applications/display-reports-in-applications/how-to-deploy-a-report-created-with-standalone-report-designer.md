@@ -5,7 +5,7 @@ description: How to Deploy a report created with Standalone Report Designer
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/how-to-deploy-a-report-created-with-standalone-report-designer
 tags: how,to,deploy,a,report,created,with,standalone,report,designer
 published: True
-position: 7
+position: 8
 ---
 
 # How to Deploy a report created with Standalone Report Designer

@@ -72,7 +72,7 @@ INNER JOIN Person.Contact AS C ON C.ContactID = E.ContactID
 ##        Live examples
       
 
-You can download the described report as a __.trdx__  report definition from the following link:           [Nested Graph Item in a Table Item](http://blogs.telerik.com/docs/default-source/reporting/nestedgraphiteminatableitem583E43B84F9C.zip?sfvrsn=2)
+You can download the described report as a __.trdx__  report definition from the following link:            [Nested Graph Item in a Table Item](http://blogs.telerik.com/docs/default-source/reporting/nestedgraphiteminatableitem583E43B84F9C.zip?sfvrsn=2) 
 
 The same approach is used in the __Product Sales__  example report which is shipped with the Telerik Reporting installation.           This report displays the monthly sales trend using a line chart for the product subcategories and a column chart for the total fields.           You can see the report in action if you have a valid connection to the __AdventureWorks__  sample database.         
 
@@ -80,4 +80,4 @@ The same approach is used in the __Product Sales__  example report which is ship
 
  * [Graph Structure]({%slug telerikreporting/designing-reports/report-structure/graph/structure%})
 
- * [How to use the ReportItem.DataObject in expressions]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/how-to-use-the-reportitemdotdataobject-property-in-expressions%})
+ * [How to use the ReportItem.DataObject in expressions]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/how-to-use-the-reportitem.dataobject-property-in-expressions%})

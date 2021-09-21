@@ -16,17 +16,17 @@ This topic explains how to setup the Windows Forms Report Viewer to work with Te
 
 ##Prerequisites
 
-* Installed and running               [Telerik Report Server](http://docs.telerik.com/report-server/introduction) R2 2016 (2.1.16.x) or higher version.             
+* Installed and running                [Telerik Report Server](http://docs.telerik.com/report-server/introduction)  R2 2016 (2.1.16.x) or higher version.             
 
 * A valid (enabled) user account - the built-in __Guest__  user account can be used as well.             
 
-* In case you are not using [Item Templates ]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/windows-forms-application/how-to-add-report-viewer-to-a-windows-forms'-dotnet-framework-project%}),               add references to all the assemblies listed               [here]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/requirements-for-desktop-viewers-using-remote-report-sources%}).             
+* In case you are not using [Item Templates ]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/windows-forms-application/how-to-add-report-viewer-to-a-windows-forms'-.net-framework-project%}),               add references to all the assemblies listed               [here]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/requirements-for-desktop-viewers-using-remote-report-sources%}).             
 
 ##Configuring the Windows Forms Report Viewer to work with Report Server
 
 ###
 
-1. To create a form and host the report viewer in it, you can either use the item template, as explained                   [here]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/windows-forms-application/how-to-add-report-viewer-to-a-windows-forms'-dotnet-framework-project%}), or place it yourself through drag-and-drop from the toolbox.                 
+1. To create a form and host the report viewer in it, you can either use the item template, as explained                   [here]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/windows-forms-application/how-to-add-report-viewer-to-a-windows-forms'-.net-framework-project%}), or place it yourself through drag-and-drop from the toolbox.                 
 
 1. As soon as the report viewer is on your form, select it and locate the __ReportEngineConnection__  property.                   invoke the UI editor by pressing the ellipsis button. The Report Engine Connection Editor dialog should appear:                   
 
@@ -37,7 +37,7 @@ This topic explains how to setup the Windows Forms Report Viewer to work with Te
 
    + *REST Service*  - the reports will be processed at the machine that hosts configured and running REST Service instance.                     
 
-   + *Report Server*  - the reports will be processed and rendered at the machine that hosts configured and running                       [Telerik Report Server ](http://docs.telerik.com/report-server/introduction) instance.                     
+   + *Report Server*  - the reports will be processed and rendered at the machine that hosts configured and running                        [Telerik Report Server ](http://docs.telerik.com/report-server/introduction)  instance.                     
     Select *Report Server* .                 
 
 1. In __Report Server URL__  textbox enter the address and port (if needed) of the machine that hosts the Report Server instance.                 

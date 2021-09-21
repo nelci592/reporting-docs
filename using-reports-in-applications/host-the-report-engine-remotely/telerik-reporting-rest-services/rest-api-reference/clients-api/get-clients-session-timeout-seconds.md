@@ -46,7 +46,3 @@ The body contains the clients session timeout in seconds
                 {"clientSessionTimeout":900}
 ````
 
-
-
-# See Also
-

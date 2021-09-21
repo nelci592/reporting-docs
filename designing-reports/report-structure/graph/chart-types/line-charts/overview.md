@@ -33,8 +33,3 @@ The following image displays a line chart that contains three series.
 * A line chart requires at least two points to draw a line.
 
 * A series that is drawn as a line will not take up much space within a chart area.    				For this reason, line charts are frequently combined with other chart types such as column charts.
-
-# See Also
-
-
- * [Chart Types]({%slug telerikreporting/designing-reports/report-structure/graph/chart-types/overview%})[LineSeries](/reporting/api/Telerik.Reporting.LineSeries)

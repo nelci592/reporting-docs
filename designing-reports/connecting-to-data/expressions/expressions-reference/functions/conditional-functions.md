@@ -29,6 +29,3 @@ Conditional functions can use the following data types: Boolean, DateTime, Integ
 
 >warning The reporting engine first evaluates the function parameters and then passes the result values to the function. This means that 	you need to make sure the parameters of the function are valid statements prior to executing the function. 	
 
-
-# See Also
-

@@ -127,6 +127,3 @@ At runtime you can access the report parameters through the          [Telerik.Re
    and click __Preview__  .  
 
   ![](images/DesignParameters009.png)
-
-# See Also
-

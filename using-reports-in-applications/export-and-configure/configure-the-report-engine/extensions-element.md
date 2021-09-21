@@ -195,7 +195,7 @@ JSON-based configuration file:
 
 ## Set rendering parameters programmatically
 
-To define device rendering parameters programmatically, we need a key/value pair, and what better than a 					[HashTable](http://msdn.microsoft.com/en-us/library/system.collections.hashtable.aspx) 					which represents collection of key/value pairs. If the collection contains rendering parameters that are not supported by 					the specified rendering extension, they would be ignored. 				
+To define device rendering parameters programmatically, we need a key/value pair, and what better than a 					 [HashTable](http://msdn.microsoft.com/en-us/library/system.collections.hashtable.aspx)  					which represents collection of key/value pairs. If the collection contains rendering parameters that are not supported by 					the specified rendering extension, they would be ignored. 				
 
 {{source=CodeSnippets\CS\API\Telerik\Reporting\Processing\ReportProcessorSnippets.cs region=Add_Device_Settings_Snippet}}
 ````C#
@@ -235,8 +235,4 @@ To define device rendering parameters programmatically, we need a key/value pair
 	        Dim result As Telerik.Reporting.Processing.RenderingResult = reportProcessor.RenderReport("PDF", typeReportSource, deviceInfo)
 	
 ````
-
-
-
-# See Also
 

@@ -44,7 +44,7 @@ The Getting Started guide includes the following articles:
 
 ## Installing Telerik Reporting
 
-1. Log in to your               [Telerik account](https://www.telerik.com/account) and click on __Downloads__ .             
+1. Log in to your                [Telerik account](https://www.telerik.com/account)  and click on __Downloads__ .             
 
 1. Select __Progress Telerik Reporting__ .             
 

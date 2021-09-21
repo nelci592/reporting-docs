@@ -25,6 +25,3 @@ The advantages of a Self-Hosted service:
 * Flexible: You can easily control the lifetime of your services.
 
 * Supports all bindings and transport.
-
-# See Also
-

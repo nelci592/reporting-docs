@@ -26,7 +26,7 @@ The following table shows the supported encodations and provides information abo
 
 * __Text__  - Used primarily for lower-case alphanumerics.               The lower-case alphanumeric characters use 5.33 bits.               The upper-case and special characters use 10.66 bits.             
 
-* __X12__  - Uses the characters from               [ANSI X12 EDI data set](https://edi3.dicentral.com/ansi-x12).               Each character takes 5.33 bits.             
+* __X12__  - Uses the characters from                [ANSI X12 EDI data set](https://edi3.dicentral.com/ansi-x12) .               Each character takes 5.33 bits.             
 
 * __EDIFACT__  - Used to encode ASCII values in the 32-94 range.               Each character takes 6 bits.             
 

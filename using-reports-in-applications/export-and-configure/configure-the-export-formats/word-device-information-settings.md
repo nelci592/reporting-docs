@@ -23,7 +23,7 @@ The following table lists the device information settings for rendering in Word 
 | ------ | ------ | ------ |
 |StartPage|Integer|The first page of the report to render. A value of __0__ indicates that all pages are rendered.|
 |EndPage|Integer|The last page of the report to render.|
-|UseMetafile|Boolean|A flag specifying whether to render Graph, Map and Barcode items as[Metafile (EMF)](http://msdn.microsoft.com/en-us/library/windows/desktop/ms536391(v=vs.85).aspx)or[Bitmap](http://msdn.microsoft.com/en-us/library/windows/desktop/ms536393(v=vs.85).aspx)images. The default value is true|
+|UseMetafile|Boolean|A flag specifying whether to render Graph, Map and Barcode items as [Metafile (EMF)](http://msdn.microsoft.com/en-us/library/windows/desktop/ms536391(v=vs.85).aspx) or [Bitmap](http://msdn.microsoft.com/en-us/library/windows/desktop/ms536393(v=vs.85).aspx) images. The default value is true|
 
 
 

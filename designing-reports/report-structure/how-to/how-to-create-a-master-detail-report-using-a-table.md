@@ -12,7 +12,7 @@ position: 5
 
 
 
-The following walkthrough demonstrates how to create a Master-Detail report using a Table report item         to contain the detail data. The master report data in this example consists of product categories from the         AdventureWorks database. The detail table displays product names and numbers.          The [ReportItem.DataObject]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/how-to-use-the-reportitemdotdataobject-property-in-expressions%}) property is used to filter the detail         table on product category.       
+The following walkthrough demonstrates how to create a Master-Detail report using a Table report item         to contain the detail data. The master report data in this example consists of product categories from the         AdventureWorks database. The detail table displays product names and numbers.          The [ReportItem.DataObject]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/how-to-use-the-reportitem.dataobject-property-in-expressions%}) property is used to filter the detail         table on product category.       
 
 ## Create the Master Report
 
@@ -64,7 +64,7 @@ The master report will contain only a simple listing of product categories.
 
 ## Configure the Table Filter
 
-This next set of steps creates a filter that uses the [ReportItem.DataObject]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/how-to-use-the-reportitemdotdataobject-property-in-expressions%}) property to           pass in the current ProductCategoryID for each record and the detail table prints all products that have that ProductCategoryID.         
+This next set of steps creates a filter that uses the [ReportItem.DataObject]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/how-to-use-the-reportitem.dataobject-property-in-expressions%}) property to           pass in the current ProductCategoryID for each record and the detail table prints all products that have that ProductCategoryID.         
 
 1. Select the Table item.             
 

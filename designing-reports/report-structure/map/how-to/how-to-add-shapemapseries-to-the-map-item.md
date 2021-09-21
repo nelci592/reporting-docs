@@ -48,7 +48,7 @@ To add new ShapeMap series to the map follow these steps:
 
   ![Choropleth Map Relation Pairs Dialog](images/Map/Choropleth/Choropleth_MapRelationPairsDialog.png)
 
-   >note The engine will join the analytical data set with the spatial data set, preserving all the records from the spatial data set.                     In terms of SQL, if the spatial data set is "left" and the analytical data set is "right", the processing engine will produce a                     [Left outer join](http://en.wikipedia.org/wiki/Join_(SQL)#Left_outer_join).                   
+   >note The engine will join the analytical data set with the spatial data set, preserving all the records from the spatial data set.                     In terms of SQL, if the spatial data set is "left" and the analytical data set is "right", the processing engine will produce a                      [Left outer join](http://en.wikipedia.org/wiki/Join_(SQL)#Left_outer_join) .                   
 
 1. If needed, you can apply some additional styling properties to the data points in order to make their boundaries more distinctive from each other.             
 

@@ -69,7 +69,3 @@ When the return status is Created the body contains report instance identifier s
           “a5f3”
 ````
 
-
-
-# See Also
-

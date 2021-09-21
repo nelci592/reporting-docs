@@ -12,7 +12,7 @@ position: 0
 
 
 
-The Telerik Reporting REST service provides an Application Programming Interface (API) over HTTP         to the reports generation engine. This engine allows exporting report documents in all supported         rendering formats. The server-client communication relies on simple         [Data Transfer Objects](http://martinfowler.com/eaaCatalog/dataTransferObject.html)         (DTOs). All DTOs are JSON encoded.       
+The Telerik Reporting REST service provides an Application Programming Interface (API) over HTTP         to the reports generation engine. This engine allows exporting report documents in all supported         rendering formats. The server-client communication relies on simple          [Data Transfer Objects](http://martinfowler.com/eaaCatalog/dataTransferObject.html)          (DTOs). All DTOs are JSON encoded.       
 
 The primary usage of the service is in the         [HTML5 Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview%}) ecosystem.         It leverages the pure client-side implementation of the viewer.       
 
@@ -57,11 +57,8 @@ Furthermore, each of the steps listed above allows you additional configuration 
 
    >note An exception is the [Register Client]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/clients-api/register-client%})                   endpoint, which can enforce regeneration to support the Refresh Report                   functionality. To achieve that, add a useCache = false setting to the request's body.                 
 
-* In some scenarios, you need to share the service with more than one app.           For these, you may need to turn on           [Cross-Origin Resource Sharing](http://www.w3.org/TR/cors).         
+* In some scenarios, you need to share the service with more than one app.           For these, you may need to turn on            [Cross-Origin Resource Sharing](http://www.w3.org/TR/cors) .         
 
 * If all new report requests get executed simultaneously, the host will get overloaded.           To avoid this, the service executes the report generation requests in a task queue.           The count of the simultaneously rendered reports is           [configurable]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/restreportservice-element%}).           
 
 * In some scenarios, you need to host two or more report services in a single application.           To achieve that, assign a unique HostAppId property to each implementing controller.           This will produce a dedicated task queue for each service instance.           Additionally, you must set the appropriate worker count for each queue to avoid system overload.         
-
-# See Also
-

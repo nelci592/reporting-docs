@@ -27,6 +27,3 @@ By default all non-aggregating functions are usually evaluated in 		the default 
 Aggregate functions always operate over the entire set of data 		defined by their scope. If the current scope is a detail section or a 		detail group the calculations are performed over a single item of the 		data source. 		
 
 You can set the scope of the expression evaluation by using the 		built-in __Exec__  function.
-
-# See Also
-

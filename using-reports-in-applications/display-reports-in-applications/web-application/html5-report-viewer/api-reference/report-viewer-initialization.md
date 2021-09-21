@@ -27,12 +27,12 @@ The Telerik HTML5 Report Viewer is a jQuery plugin - __jQuery.fn.telerik_ReportV
 | __sendEmail__ | *object* , *required to show the* ;                    Available properties:<br/>*  __enabled__ ( *bool* , *required* ) - Indicates whether to show the Send Mail Message toolbar button. Default value: false;<br/>*  __from__ ( *string* , *optional* ) - E-mail address used for the MailMessage FROM value;<br/>*  __to__ ( *string* , *optional* ) - E-mail address used for the MailMessage TO value;<br/>*  __cc__ ( *string* , *optional* ) - E-mail address used for the MailMessage Carbon Copy value;<br/>*  __subject__ ( *string* , *optional* ) - A string used for the MailMessage Subject value;<br/>*  __body__ ( *string* , *optional* ) - Sentences used for the MailMessage Content value;<br/>*  __format__ ( *string* , *optional* ) - The preselected report document format.|
 | __scale__ | *number* , *optional* ; Sets the scale factor for the report pages.                 The scale takes effect when __scaleMode__ is set to *“SPECIFIC”* . Default value is 1.0 (100%);|
 | __scaleMode__ | *string* , *optional* ; Sets how the report pages to be scaled. Available options are:<br/>*  *“FIT_PAGE_WIDTH”* - the pages are scaled proportional to fit the entire width in the viewer’s view port;<br/>*  *“FIT_PAGE”* - the pages are scaled proportional to fit the entire page in the view port;<br/>*  *“SPECIFIC”* - the pages are scaled with the __scale value__ ;Default value is: *“FIT_PAGE”* .|
-| __viewMode__ | *string* , *optional* ;                 Sets if the report is displayed in interactive mode or in print preview. The available values are:<br/>*  *“INTERACTIVE”* - enables drill-down interactivity, etc;<br/>*  *“PRINT_PREVIEW”* - the report is paged according to the page settings;For more information please see[Interactive vs. Print Layout]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/interactive-vsdot-print-layout%}). Default value is: *'INTERACTIVE'* .|
+| __viewMode__ | *string* , *optional* ;                 Sets if the report is displayed in interactive mode or in print preview. The available values are:<br/>*  *“INTERACTIVE”* - enables drill-down interactivity, etc;<br/>*  *“PRINT_PREVIEW”* - the report is paged according to the page settings;For more information please see[Interactive vs. Print Layout]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/interactive-vs.-print-layout%}). Default value is: *'INTERACTIVE'* .|
 | __pageMode__ | *string* , *optional* ;                 Sets if the report is displayed in Single page or Continuous scroll mode. The available values are:<br/>*  *“SINGLE_PAGE”* - only one page is loaded in the view port;<br/>*  *“CONTINUOUS_SCROLL”* - more than one page could be loaded in the view port;Default value is: *'CONTINUOUS_SCROLL'* .|
 | __printMode__ | *string* , *optional* ;                 Specifies whether the viewer will use the PDF plug-in of the browser for printing, or will directly export to a PDF file containing a special 'print' script.                  The available values are:<br/>*  *"AUTO_SELECT"* - the widget will try to automatically determine whether to export the report document or use the browser's PDF plug-in.                      First, the viewer widget tries to use the PDF plug-in of the browser for printing. When it is not available or not supported,                      the widget falls back to exporting to a PDF file containing a special 'print' script;<br/>*  *"FORCE_PDF_PLUGIN"* - the widget will always try to use the PDF plug-in of the browser.                      If the browser doesn't have a PDF plug-in or it does not support the 'print' script nothing will happen;<br/>*  *"FORCE_PDF_FILE"* - the widget will always export the report document to a PDF file with a special 'print' script;Default value is: *"AUTO_SELECT"* .|
 | __parametersAreaPosition__ | *string* , *optional* .                 Specifies where the Parameters Area should be displayed                 The available values are:<br/>*  *“RIGHT”* <br/>*  *“TOP”* <br/>*  *“LEFT”* <br/>*  *“BOTTOM”* Default value: *RIGHT* ;|
 | __documentMapAreaPosition__ | *string* , *optional* .                 Specifies where the Document Map should be displayed                 The available values are:<br/>*  *“RIGHT”* <br/>*  *“LEFT”* Default value: *LEFT* ;|
-| __persistSession__ | *boolean* , *optional* . Sets whether the viewer’s client session                 to be persisted between the page’s refreshes(ex. postback). The session is stored in the browser’s[sessionStorage](https://developer.mozilla.org/en-US/docs/Web/Guide/API/DOM/Storage)and is available                 for the duration of the page session. A page session lasts for as long as the browser is open and survives over page reloads and restores.                 Opening a page in a new tab or window will cause a new session to be initiated.The viewer’s state is persisted in the global sessionStorage object under a key defined by the viewer’s __id__ .                 In order to enable the correct session to be loaded on the next page reload please use the same __id__ as in the first load. This means that if you need to persist the client session between page reloads you should                 set the viewer’s __id__ (or the id of the target element) to a constant value that should not be changed dynamically                 during the page lifecycle.Default Value is: *false* ;|
+| __persistSession__ | *boolean* , *optional* . Sets whether the viewer’s client session                 to be persisted between the page’s refreshes(ex. postback). The session is stored in the browser’s [sessionStorage](https://developer.mozilla.org/en-US/docs/Web/Guide/API/DOM/Storage) and is available                 for the duration of the page session. A page session lasts for as long as the browser is open and survives over page reloads and restores.                 Opening a page in a new tab or window will cause a new session to be initiated.The viewer’s state is persisted in the global sessionStorage object under a key defined by the viewer’s __id__ .                 In order to enable the correct session to be loaded on the next page reload please use the same __id__ as in the first load. This means that if you need to persist the client session between page reloads you should                 set the viewer’s __id__ (or the id of the target element) to a constant value that should not be changed dynamically                 during the page lifecycle.Default Value is: *false* ;|
 | __parameters__ | *object* , *optional* ;                 Allows the user to define options for the report parameters|
 
 
@@ -42,15 +42,15 @@ The Telerik HTML5 Report Viewer is a jQuery plugin - __jQuery.fn.telerik_ReportV
 
 *  __singleSelect__ ( *string* , *optional* ) - defines the editor type for the single select parameters. The available values are:
 
-   +  *“COMBO_BOX”* - uses[Kendo UI ComboBox](https://docs.telerik.com/kendo-ui/api/javascript/ui/combobox)widget as an editor;
+   +  *“COMBO_BOX”* - uses [Kendo UI ComboBox](https://docs.telerik.com/kendo-ui/api/javascript/ui/combobox) widget as an editor;
 
-   +  *“LIST_VIEW”* - uses[Kendo UI ListView](https://docs.telerik.com/kendo-ui/api/javascript/ui/listview)widget as an editor;Default value is: *'LIST_VIEW'* 
+   +  *“LIST_VIEW”* - uses [Kendo UI ListView](https://docs.telerik.com/kendo-ui/api/javascript/ui/listview) widget as an editor;Default value is: *'LIST_VIEW'* 
 
 *  __multiSelect__ ( *string* , *optional* ) - defines the editor type for the multi select parameters. The available values are:
 
-   +  *“COMBO_BOX”* - uses[Kendo UI MultiSelect](https://docs.telerik.com/kendo-ui/api/javascript/ui/multiselect)widget as an editor;
+   +  *“COMBO_BOX”* - uses [Kendo UI MultiSelect](https://docs.telerik.com/kendo-ui/api/javascript/ui/multiselect) widget as an editor;
 
-   +  *“LIST_VIEW”* - uses[Kendo UI ListView](https://docs.telerik.com/kendo-ui/api/javascript/ui/listview)widget as an editor;Default value is: *'LIST_VIEW'* 
+   +  *“LIST_VIEW”* - uses [Kendo UI ListView](https://docs.telerik.com/kendo-ui/api/javascript/ui/listview) widget as an editor;Default value is: *'LIST_VIEW'* 
 
 	
 ````js
@@ -125,9 +125,3 @@ To get the __ReportViewer__  object from the HTML element:
           var reportViewer = $("#reportViewer1").data("telerik_ReportViewer");
 ````
 
-
-
-# See Also
-
-
- * [Printing Reports]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/printing-reports%})

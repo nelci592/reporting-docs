@@ -64,7 +64,7 @@ To reduce the load on your reporting environment, you can use our Report Server 
 
 * __Expressions__ Complicated expressions (especially with many report items) require some time to be evaluated and they can also lead to slowness.               It is a good idea to replace these expressions with [User Functions]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/extending-expressions/user-functions%}) because user functions are an already               compiled code;             
 
-* __Number of Subreport items__ The subreport item references a report definition that should be processed separately.                This is expensive process and can be avoided with Table or List item that is bound to the same datasource and has the same layout as the subreport                report definition. If you need some data from the master data item (report) datasource for the child data item datasource parameter you can take                advantage of the [Data Source Components]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/overview%}) relations capability as elaborated in the                [How to use the ReportItem.DataObject property in expressions]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/how-to-use-the-reportitemdotdataobject-property-in-expressions%}) article;             
+* __Number of Subreport items__ The subreport item references a report definition that should be processed separately.                This is expensive process and can be avoided with Table or List item that is bound to the same datasource and has the same layout as the subreport                report definition. If you need some data from the master data item (report) datasource for the child data item datasource parameter you can take                advantage of the [Data Source Components]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/overview%}) relations capability as elaborated in the                [How to use the ReportItem.DataObject property in expressions]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/how-to-use-the-reportitem.dataobject-property-in-expressions%}) article;             
 
 * __Number of HtmlTextBox items__ The HtmlTextBox content is parsed with a HTML parser and this is resource consuming process.               When performance is important our recommendation is to avoid the extensive use of this item.               Instead of the complex text styling in a single HtmlTextBox you can try to achieve the desired layout with multiple textboxes;             
 
@@ -76,7 +76,7 @@ To reduce the load on your reporting environment, you can use our Report Server 
 
 ## For additional assistance
 
-If your case is not listed above, or you have tried all suggestions, but still experience slow rendering, please open a  		[new support ticket](http://www.telerik.com/account/support-tickets.aspx) and send us the following so that we can investigate your case and check what is causing your troubles:
+If your case is not listed above, or you have tried all suggestions, but still experience slow rendering, please open a  		 [new support ticket](http://www.telerik.com/account/support-tickets.aspx)  and send us the following so that we can investigate your case and check what is causing your troubles:
 
 1. Why do you think the report is slow (benchmarks, comparisons, etc);         
 

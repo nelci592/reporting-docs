@@ -113,7 +113,7 @@ Using a method instead of a property has the additional benefit that you can pas
 
 
 
-Another common problem is related to the lazy loading feature of the [ADO.NET Entity Framework](http://msdn.microsoft.com/en-us/library/aa697427%28VS.80%29.aspx). For example, let us        	consider the following expression that obtains the category of a given product
+Another common problem is related to the lazy loading feature of the  [ADO.NET Entity Framework](http://msdn.microsoft.com/en-us/library/aa697427%28VS.80%29.aspx) . For example, let us        	consider the following expression that obtains the category of a given product
 
 =Fields.ProductSubcategory.ProductCategory.Name
 
@@ -228,8 +228,4 @@ The sample code that binds the EntityDataSource component to that method is show
 	        report.DataSource = entityDataSource
 	
 ````
-
-
-
-# See Also
 

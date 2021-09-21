@@ -127,6 +127,3 @@ To create cascading report parameters with applied filtering on report level fol
 1. Click __OK__  .
 
 1. Preview the report. Use the Product Category and Product Subcategory parameters to filter the list of products shown in the report.
-
-# See Also
-

@@ -24,11 +24,6 @@ The resource files should be in a folder with the name of the target culture.   
 
 The default localization resources are provided within the Telerik Reporting installation directory           (%PROGRAMFILES(x86)%\Progress\Telerik Reporting {{site.suiteversion}}\Bin\Resources)         
 
-We provide reference translations for some popular languages in this GitHub repository:           [telerik/reporting-docs/report-designer-translations](https://github.com/telerik/reporting-docs/tree/master/report-designer-translations)           For the reference translations we have partially used Azure Cognitive Services.            To edit the provided resx reference files, use Visual Studio or a resx editing tool of your choice.            In order to merge the changes with our next release resources create a pull request with the changes.           Any pull requests will be carefully reviewed and included in the next release.         
+We provide reference translations for some popular languages in this GitHub repository:            [telerik/reporting-docs/report-designer-translations](https://github.com/telerik/reporting-docs/tree/master/report-designer-translations)            For the reference translations we have partially used Azure Cognitive Services.            To edit the provided resx reference files, use Visual Studio or a resx editing tool of your choice.            In order to merge the changes with our next release resources create a pull request with the changes.           Any pull requests will be carefully reviewed and included in the next release.         
 
 If the resources are modified or the Report Designer language            is changed restart of the Report Designer is required.          
-
-# See Also
-
-
- * [Windows Language Packs](https://support.microsoft.com/en-us/help/14236/language-packs)

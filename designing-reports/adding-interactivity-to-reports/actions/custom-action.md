@@ -62,13 +62,3 @@ Here is an example how to get the custom action's parameters in __InteractiveAct
 	    End Sub
 ````
 
-
-
-# See Also
-
-
- * [Overview]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/actions/overview%})
-
- * [Interactive Action Events]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/actions/interactive-action-events%})
-
- * [How to Add a Custom Action]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/actions/how-to/how-to-add-a-custom-action%})

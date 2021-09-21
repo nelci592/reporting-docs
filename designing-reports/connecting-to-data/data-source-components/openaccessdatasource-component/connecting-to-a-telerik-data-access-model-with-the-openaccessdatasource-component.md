@@ -158,6 +158,3 @@ You can bind the __OpenAccessDataSource__  component to that method with the fol
 
 >note The names and types of the parameters in the  __Parameters__  collection should match exactly the names and  	types of the method arguments. In case this requirement is not fulfilled the  __OpenAccessDataSource__  component will  	not be able to resolve or call correctly the method and will raise an exception at runtime.
 
-
-# See Also
-

@@ -18,7 +18,7 @@ This error might occur if you are using website and you have the           repor
 
 ## Unable to serialize the session state. In 'StateServer' and 'SQLServer' mode, ASP.NET will serialize the session state objects, and as a result non-serializable objects or MarshalByRef objects are not permitted. The same restriction applies if similar serialization is done by the custom session state store in 'Custom' mode.
 
-This exception might surface if you try to use objects which           do not implement ISerializable for a Report/Data Item data source. For example, if           this is an IList, you can try using a List instead as shown in our           [cars example](http://demos.telerik.com/reporting/list-bound-report).           You can also use the NeedDataSource event of the report and assign the data source to the "processing report", thus avoiding any need for serialization/deserialization.           Another approach is to use a DataSet/DataTable:         
+This exception might surface if you try to use objects which           do not implement ISerializable for a Report/Data Item data source. For example, if           this is an IList, you can try using a List instead as shown in our            [cars example](http://demos.telerik.com/reporting/list-bound-report) .           You can also use the NeedDataSource event of the report and assign the data source to the "processing report", thus avoiding any need for serialization/deserialization.           Another approach is to use a DataSet/DataTable:         
 
 	
 ````C#
@@ -40,7 +40,7 @@ This exception might surface if you try to use objects which           do not im
 
 ## When deploying a project with Telerik Reporting on a server, you  get the following error: Could not load file or assembly 'Telerik.ReportViewer.WebForms, Version=x.x.x.x, Culture=neutral, PublicKeyToken=a9d7983dfcc261be' or one of its dependencies. The system cannot find the file specified.
 
-During the installation of Telerik Reporting on a dev machine,           the Telerik Reporting assemblies are added to GAC. When deploying a project           using Visual Studio's built-in functionality, the assemblies from the GAC           are not copied automatically, so you need to make sure the assemblies physically exist in the bin folder of your application.           Full details are available in the [Deploying Web Applications]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/aspdotnet-web-forms-report-viewer/deploying-web-applications%}) help article.         
+During the installation of Telerik Reporting on a dev machine,           the Telerik Reporting assemblies are added to GAC. When deploying a project           using Visual Studio's built-in functionality, the assemblies from the GAC           are not copied automatically, so you need to make sure the assemblies physically exist in the bin folder of your application.           Full details are available in the [Deploying Web Applications]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/asp.net-web-forms-report-viewer/deploying-web-applications%}) help article.         
 
 ## The expression contains undefined function call MyUserFunction()
 

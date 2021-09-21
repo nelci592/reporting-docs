@@ -14,7 +14,7 @@ position: 12
 
 Localization is used to display the reports in the language of a specific culture.          The article elaborates how to localize reports with resource files.          The resource files format depends on the used Report Designer:       
 
-* [Visual Studio Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/overview%})              - RESX files. They are siblings to the report code file in the file system. For more information on the             RESX file format see [Resources in .Resx File Format ](https://docs.microsoft.com/en-us/previous-versions/dotnet/netframework-3.0/ekyft91f(v=vs.85))
+* [Visual Studio Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/overview%})              - RESX files. They are siblings to the report code file in the file system. For more information on the             RESX file format see  [Resources in .Resx File Format ](https://docs.microsoft.com/en-us/previous-versions/dotnet/netframework-3.0/ekyft91f(v=vs.85)) 
 
 * [Standalone Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview%})             - RES files that are part of the TRDP archive.             The RES files contain a key-value list. The first row begins with a __key__               after the key follows whitespace and the __value__  surrounded in             double quotation mark. After the last unescaped double quotation mark follows a new line.             The key cannot contain any whitespace characters.             The value can contain any character including whitespaces and double quotation mark but the              double quotation mark should be escaped with another double quotation mark.           
 
@@ -22,7 +22,7 @@ Localization is used to display the reports in the language of a specific cultur
 
 ## 
 
-Telerik Reporting uses a similar methodology for localization as Visual Studio uses for Windows Forms.           The designer lets you define static text for the report (e.g. column headings, titles) in each language that you specify.           A resource file is automatically created for each language to store translated text. For more background information on           localizing applications see the MSDN article           [Globalizing and Localizing Applications](https://msdn.microsoft.com/en-us/library/1021kkz0.aspx).         
+Telerik Reporting uses a similar methodology for localization as Visual Studio uses for Windows Forms.           The designer lets you define static text for the report (e.g. column headings, titles) in each language that you specify.           A resource file is automatically created for each language to store translated text. For more background information on           localizing applications see the MSDN article            [Globalizing and Localizing Applications](https://msdn.microsoft.com/en-us/library/1021kkz0.aspx) .         
 >caption Localized documents displayed in English and Spanish (see figure below):
 
   

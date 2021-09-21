@@ -38,7 +38,7 @@ The available report sources are:
 
 * __UriReportSource__ The URI report source allows you to load a report document (.TRDP/.TRDX,               usually produced by the [Standalone Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview%})) either from a file path or from an Url.             An example is illustrated in the API Reference: [UriReportSource](/reporting/api/Telerik.Reporting.UriReportSource).             
 
-* __TypeReportSource__ The reports created with [Visual Studio Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/overview%}) are usually stored as .NET classes inheriting               *Telerik.Reporting.Report|ReportBook* .               To access a .NET class declaratively you can use the [assembly qualified name](http://msdn.microsoft.com/en-us/library/30wyt9tk) of the report's type. The Reporting engine will use [Reflection](https://msdn.microsoft.com/en-us/library/ms173183(v=vs.110).aspx) to create an instance of the report class by using its default parameterless constructor.             An example is illustrated in the API Reference: [TypeReportSource](/reporting/api/Telerik.Reporting.TypeReportSource).             
+* __TypeReportSource__ The reports created with [Visual Studio Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/overview%}) are usually stored as .NET classes inheriting               *Telerik.Reporting.Report|ReportBook* .               To access a .NET class declaratively you can use the  [assembly qualified name](http://msdn.microsoft.com/en-us/library/30wyt9tk)  of the report's type. The Reporting engine will use  [Reflection](https://msdn.microsoft.com/en-us/library/ms173183(v=vs.110).aspx)  to create an instance of the report class by using its default parameterless constructor.             An example is illustrated in the API Reference: [TypeReportSource](/reporting/api/Telerik.Reporting.TypeReportSource).             
 
 * __InstanceReportSource__ This report source is used when you have a reference to an already instantiated report (*Telerik.Reporting.Report*  instance),               and you want to pass it to the reporting engine. Typical scenarios include reports created or modified in code, dynamically generated ReportBook objects               or report instances result of [deserializing]({%slug telerikreporting/using-reports-in-applications/program-the-report-definition/serialize-report-definition-in-xml%})               or [unpackaging]({%slug telerikreporting/using-reports-in-applications/program-the-report-definition/package-report-definition%}) content produced by the Standalone Report Designer.             An example is illustrated in the API Reference: [InstanceReportSource](/reporting/api/Telerik.Reporting.InstanceReportSource).             
 
@@ -57,10 +57,3 @@ Report parameters values can be passed from the report source object. Each repor
 
 >note The Report Source is not aware of the currently displayed report and its ReportParameters collection.             To send a value from the report source object, you need to know the report parameter's key (Name).           
 
-
-# See Also
-
-
- * [How to: Set ReportSource for Report Viewers]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/how-to-set-reportsource-for-report-viewers%})
-
- * [How to: Set ReportSource for ReportProcessor]({%slug telerikreporting/using-reports-in-applications/reference-report-definitions-in-applications%})[ReportSource](/reporting/api/Telerik.Reporting.ReportSource)[ReportProcessor](/reporting/api/Telerik.Reporting.Processing.ReportProcessor)

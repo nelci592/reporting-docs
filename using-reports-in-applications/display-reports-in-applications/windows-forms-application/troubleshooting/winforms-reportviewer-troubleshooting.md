@@ -18,7 +18,7 @@ The Windows Forms ReportViewer displays content rendered through the [          
 
 ##Report is not displayed by the viewer.
 
-The WinForms ReportViewer control requires its RefreshReport method to be called after setting the ReportSource property.           For more details, please check [Assign report to the viewer programatically]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/windows-forms-application/how-to-add-manually-report-viewer-to-a-windows-forms'-dotnet-framework-project%}).         
+The WinForms ReportViewer control requires its RefreshReport method to be called after setting the ReportSource property.           For more details, please check [Assign report to the viewer programatically]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/windows-forms-application/how-to-add-manually-report-viewer-to-a-windows-forms'-.net-framework-project%}).         
 
 ##        "An error has occurred while rendering the report: System.Runtime.InteropServices.ExternalException: A generic error occurred in GDI+." or
         "System.OutOfMemoryException: Exception of type 'System.OutOfMemoryException' was thrown." error on displaying a report.
@@ -32,4 +32,4 @@ The WinForms ReportViewer control uses Image rendering to display content.      
         on connecting the WinForms ReportViewer with Telerik Report Server or Reporting REST service.
       
 
-The WinForms ReportViewer control requires [Microsoft.AspNet.WebApi.Client](https://www.nuget.org/packages/Microsoft.AspNet.WebApi.Client/4.0.30506) suitable for .NET4 that can be installed via [Visual Studio Package Manager Console](https://docs.nuget.org/consume/package-manager-console).           For more details, please check [How To: Use Windows Forms Report Viewer with Report Server]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/windows-forms-application/how-to-use-windows-forms-report-viewer-with-report-server%}).         
+The WinForms ReportViewer control requires  [Microsoft.AspNet.WebApi.Client](https://www.nuget.org/packages/Microsoft.AspNet.WebApi.Client/4.0.30506)  suitable for .NET4 that can be installed via  [Visual Studio Package Manager Console](https://docs.nuget.org/consume/package-manager-console) .           For more details, please check [How To: Use Windows Forms Report Viewer with Report Server]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/windows-forms-application/how-to-use-windows-forms-report-viewer-with-report-server%}).         

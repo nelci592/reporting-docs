@@ -60,6 +60,3 @@ The [Standalone Report Designer]({%slug telerikreporting/designing-reports/repor
 
 >tip If the report will be displayed in an HTML5 Viewer or Silverlight ReportViewer, the main report is rendered in HTML (XAML respectively) and it is loaded at the client.             The rendered content contains a link rendered for the NavigateToReportAction, that will not be valid and working if the target report is specified via InstanceReportSource or XmlReportSource.           
 
-
-# See Also
-

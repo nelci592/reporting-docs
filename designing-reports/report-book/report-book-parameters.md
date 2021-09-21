@@ -84,6 +84,3 @@ You can control parameter merging via the           [Mergeable](/reporting/api/T
 
 
    >note If you do not use the specified syntax and you refer to the report parameter directly by Name property's value,                 the value will be set only for the first occurrence of report parameter in the report book.               
-
-# See Also
-

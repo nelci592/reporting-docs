@@ -160,6 +160,3 @@ You can bind the EntityDataSource component to that method with the following co
 
 >note The names and types of the parameters in the  __Parameters__  collection should match exactly the names and  	types of the method arguments. In case this requirement is not fulfilled the  __EntityDataSource__  component will  	not be able to resolve or call correctly the method and will raise an exception at runtime.
 
-
-# See Also
-

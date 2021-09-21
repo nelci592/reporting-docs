@@ -107,6 +107,3 @@ Instead of specifying an inline connection string you can assign the name of an 
 
   ![](images/DataSources/BusinessApplicationStructure.png)The above schema assumes that the different parts of the business application are represented as  	separate projects in the solution, each with its own configuration file. Initially, when you create the  	 __Telerik Data Access Model__  in the  __Business Logic__  project, the connection string is stored automatically in the  	configuration file of that project. Later, when creating new reports in the  __Report Library__  project, you need  	to add the connection string to the configuration file of that project, because this is where  __Report Designer__  	searches for existing connection strings. Finally, when deploying your application or web site in production, 	you need to add the connection string to the configuration file of your  __Main Application__ .
 
-
-# See Also
-

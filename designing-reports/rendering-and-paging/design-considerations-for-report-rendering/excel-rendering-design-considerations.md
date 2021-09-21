@@ -51,7 +51,7 @@ The page header and footer render differently depending on the [Excel 2003 Devic
 
 With default configuration (__UseNativePageHeader__  is False and __UseNativePageFooter__  is True),           the page header is rendered as frozen rows at the top of the worksheet and the page footer is rendered in the native Excel page footer.         
 
-The native Excel page header/footer is not displayed on the Excel worksheet in Normal view - it is displayed only in Page Layout view and on the printed pages.           For more information see           [Headers and footers in a worksheet](https://support.office.com/en-us/article/Headers-and-footers-in-a-worksheet-cae2a88c-64a7-42ab-96a4-28d2fc16ad31).         
+The native Excel page header/footer is not displayed on the Excel worksheet in Normal view - it is displayed only in Page Layout view and on the printed pages.           For more information see            [Headers and footers in a worksheet](https://support.office.com/en-us/article/Headers-and-footers-in-a-worksheet-cae2a88c-64a7-42ab-96a4-28d2fc16ad31) .         
 
 >caution The  __PageNumber__  and  __PageCount__  global objects' behavior depends on the              __UseNativePageHeader__  and  __UseNativePageFooter__  configuration. Since the report             rendered to Excel is not in a page-oriented format and is contained in a single worksheet (regarded as a single page)              __PageNumber__  and  __PageCount__  will always return a value of 1.             However, if you intend to print the Excel document and would like to let Excel handle the page numbering instead, you can do so by             setting both  __UseNativePageHeader__  and  __UseNativePageFooter__  to  __True__ .             This configuration will force the Reporting engine to use the native Excel page number and page count tokens, instead of the default value of 1,             so the page number and count are correct when the document is printed in Excel.             When the native Excel page tokens are used, any arithmetic operations on the PageNumber/PageCount are not supported.             Since the PageNumber() and PageCount() functions use arithmetic operations internally, they are also not supported in the             native page header/page footer sections.           
 
@@ -166,7 +166,7 @@ The following standard paper kinds are supported:
 
 If any other paper size is specified, the default printer settings will be used. In this manner you can use custom paper sizes.
 
->important The page layout in Excel depends on the selected printer and its DPI settings, so additional automatic page breaks may appear when printing the document.             To ensure the uniform look of the printed document, please check the  *Scaling*  options in Excel's Page Setup dialog. You can read             [here](https://support.office.com/en-us/article/Scale-a-worksheet-34a91eb5-8b4e-4a8a-ab28-b6492012eaae)             for more information.           
+>important The page layout in Excel depends on the selected printer and its DPI settings, so additional automatic page breaks may appear when printing the document.             To ensure the uniform look of the printed document, please check the  *Scaling*  options in Excel's Page Setup dialog. You can read              [here](https://support.office.com/en-us/article/Scale-a-worksheet-34a91eb5-8b4e-4a8a-ab28-b6492012eaae)              for more information.           
 
 
 ## Formatting Strings
@@ -243,7 +243,7 @@ Excel places limitations on exported reports due to the format capabilities. The
 
 * Excel does not support background images for individual cells, so Background images for report items                   (including Report) are ignored.                 
 
-* Excel native page headers and footers support a maximum of 255 characters including                   [Formatting and VBA Codes for Headers and Footers](http://msdn.microsoft.com/en-us/library/bb225426.aspx). The rendering extension truncates the string at 255 characters.                 
+* Excel native page headers and footers support a maximum of 255 characters including                    [Formatting and VBA Codes for Headers and Footers](http://msdn.microsoft.com/en-us/library/bb225426.aspx) . The rendering extension truncates the string at 255 characters.                 
 
 * Excel does not support Watermarks.
 

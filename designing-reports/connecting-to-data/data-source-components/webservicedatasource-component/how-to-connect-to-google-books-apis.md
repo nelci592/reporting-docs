@@ -12,15 +12,15 @@ position: 2
 
 
 
-In this article we are going to review the process of creating a report which retrieves data from the         [Google Books APIs](https://developers.google.com/books/)         using the WebServiceDataSource component.       
+In this article we are going to review the process of creating a report which retrieves data from the          [Google Books APIs](https://developers.google.com/books/)          using the WebServiceDataSource component.       
 
 ###Create a report and retrieve data from the Google Books APIs.
 
-1. To connect to Google Books APIs first we need to get access to the API. There are multiple ways to achieve this described in               [Using the API](https://developers.google.com/books/docs/v1/using).               For this how-to we are going to acquire and use an API key according to the Google Books APIs documentation.               
+1. To connect to Google Books APIs first we need to get access to the API. There are multiple ways to achieve this described in                [Using the API](https://developers.google.com/books/docs/v1/using) .               For this how-to we are going to acquire and use an API key according to the Google Books APIs documentation.               
 
   ![Google Books Api Key](images/DataSources/GoogleBooksApiKey.png)
 
-1. After the API key is acquired we need to enable the Google Books API inside the Library menu or follow the direct link:               [Google Books API](https://console.developers.google.com/apis/library/books.googleapis.com).             
+1. After the API key is acquired we need to enable the Google Books API inside the Library menu or follow the direct link:                [Google Books API](https://console.developers.google.com/apis/library/books.googleapis.com) .             
 
 1. Create a new report using the report designer of your choice. We are going to use the Standalone Report Designer for this article.
 
@@ -28,7 +28,7 @@ In this article we are going to review the process of creating a report which re
 
   ![Web Service Data Source Component](images/DataSources/WebServiceDataSourceComponent.png)
 
-1. Setup the web service HTTP request properties. For this how-to we would like to retrieve books data from the APIs according to               the search terms we input as parameters in the report. We are going to use the               [GET https://www.googleapis.com/books/v1/volumes?q={search terms}](https://developers.google.com/books/docs/v1/reference/volumes/list) endpoint.               We enter the exact service URL in the wizard page and select the appropriate HTTP request method.               Since we will be using an API key, no authentication type is required at this point.               
+1. Setup the web service HTTP request properties. For this how-to we would like to retrieve books data from the APIs according to               the search terms we input as parameters in the report. We are going to use the                [GET https://www.googleapis.com/books/v1/volumes?q={search terms}](https://developers.google.com/books/docs/v1/reference/volumes/list)  endpoint.               We enter the exact service URL in the wizard page and select the appropriate HTTP request method.               Since we will be using an API key, no authentication type is required at this point.               
 
   ![Google Books Url](images/DataSources/GoogleBooksUrl.png)
 

@@ -25,12 +25,3 @@ Add bookmarks to a report when you want to provide a customized table of content
 
 >note The [BookmarkId](/reporting/api/Telerik.Reporting.Group#Telerik_Reporting_Group_BookmarkId) can be any  	string, but it must be unique in the report. If the  __BookmarkID__  is not unique, 	an action to the bookmark finds the first matching bookmark.
 
-
-# See Also
-
-
- * [Bookmarks]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/bookmarks/overview%})
-
- * [How to Add Bookmarks to a Report item]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/bookmarks/how-to-add-bookmarks-to-a-report-item%})
-
- * [How to Add Bookmarks to a Table group]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/bookmarks/how-to-add-bookmarks-to-a-table-group%})

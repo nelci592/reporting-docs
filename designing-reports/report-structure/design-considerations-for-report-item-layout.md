@@ -20,7 +20,7 @@ If you have two report items positioned vertically with 1in space between them, 
 
 In Telerik Reporting versions prior to R3 2016, sections/Panel item can grow to accommodate their children but cannot shrink/take space that is no longer occupied.           To remove such space in a container (report section or panel item), set its height to a very small value (e.g. 1mm, but not zero unit). If you want a section/panel to           shrink only at runtime you can set its Height property in the report constructor or via expression. For the purpose, place the Height property assignment code just after           the IntializeComponent() method call or use a [binding]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/bindings%}) to the item's Height property.         
 
-__As of__ 
+__[Telerik Reporting R3 2016](http://www.telerik.com/support/whats-new/reporting/release-history/telerik-reporting-r3-2016-(version-10-2-16-914))__
 
 >note Report items can grow vertically even when their  __CanGrow__  property is set to false.             This behavior can be observed when the report item height is smaller than the report item font height, which causes the item to grow             vertically in order to accommodate at least a single line of text with the specified font style.           
 

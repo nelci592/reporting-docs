@@ -32,6 +32,3 @@ The __OpenAccessDataSource__  component enables data items to connect to an __Te
 ## Supported developer platforms
 
 * .NET Framework 4.0 and above             
-
-# See Also
-

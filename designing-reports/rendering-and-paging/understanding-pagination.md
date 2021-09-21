@@ -116,10 +116,3 @@ page 1 (first part of table)|page 2 (second part)|page 3 (third part)|
 ## Report sections
 
 Report sections automatically grow and can shrink (controlled by property) to accommodate the report items contained within. They do not reflect           the physical page size and can grow beyond the boundaries of the physical page size to span multiple report pages.           Exception in this rule make the PageHeader and PageFooter sections, which can only grow horizontally, and cannot shrink in any dimension.           Page sections can be only hidden, and in that case their space is taken up from the rest of the report content.         
-
-# See Also
-
-
- * [Rendering and Paging]({%slug telerikreporting/designing-reports/rendering-and-paging/overview%})
-
- * [Understanding Rendering Behaviors]({%slug telerikreporting/designing-reports/rendering-and-paging/understanding-rendering-behaviors%})

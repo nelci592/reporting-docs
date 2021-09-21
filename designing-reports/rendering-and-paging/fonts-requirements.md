@@ -29,6 +29,3 @@ Telerik Reporting engine uses GDI+ methods to create reports with native objects
 * Depending on the tool used for reading the rendered Telerik Reports, the client machine may need to have the fonts installed. In the case of the PDF rendering,               you can embed all custom fonts in the PDF file - [Design Considerations for PDF Rendering]({%slug telerikreporting/designing-reports/rendering-and-paging/design-considerations-for-report-rendering/pdf-rendering-design-considerations%}).               In case of providing a web preview in browser, you can distribute fonts as [private fonts]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/privatefonts-element%}).             
 
 For more details about each rendering format, you can check the corresponding article           under [Design Considerations for Report Rendering]({%slug telerikreporting/designing-reports/rendering-and-paging/design-considerations-for-report-rendering/overview%}).         
-
-# See Also
-

@@ -12,7 +12,7 @@ position: 7
 
 
 
-In this how-to article we will show you how to create a Map which will present the         [countries with the most medals won in Olympic Games](http://en.wikipedia.org/wiki/All-time_Olympic_Games_medal_table)          divided by their continental         [Association of National Olympic Committees](http://www.olympic.org/ioc-governance-national-olympic-committees).         We will also add some interactivity to the report, giving the user the option to choose which countries to be displayed         on the map, highlighting the currently selected country and displaying an additional chart with         detailed information about it. We will be using the [Standalone Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview%})         to demonstrate how such a complex report can be done without writing any code.       
+In this how-to article we will show you how to create a Map which will present the          [countries with the most medals won in Olympic Games](http://en.wikipedia.org/wiki/All-time_Olympic_Games_medal_table)           divided by their continental          [Association of National Olympic Committees](http://www.olympic.org/ioc-governance-national-olympic-committees) .         We will also add some interactivity to the report, giving the user the option to choose which countries to be displayed         on the map, highlighting the currently selected country and displaying an additional chart with         detailed information about it. We will be using the [Standalone Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview%})         to demonstrate how such a complex report can be done without writing any code.       
 
 >important This article assumes that you have obtained a valid  __Location Provider key__  to authenticate your geocoding requests.           If you don't want to use a location provider, you need to provide the geographical coordinates of your points yourself and setup the MapSeries accordingly.           For more information please take a look at the [Location Providers]({%slug telerikreporting/designing-reports/report-structure/map/structure/location-providers%}) article.         
 
@@ -30,7 +30,7 @@ In this how-to article we will show you how to create a Map which will present t
 
 
 1. Add new               [CSV Data Source]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/csvdatasource-wizard%})               and name it __medalsData__ . This data source will hold the information about the               countries, the ID of their respective olympic association, which place and how many times they have occupied it.             
-   1. Download the                   [MedalsData.csv file](http://blogs.telerik.com/docs/default-source/reporting/medalsdata.csv?sfvrsn=2)                   , save it locally and insert its path into the *Select a file to import*  textbox.                   The information in this file is an example data set that shows how many times a national olympic team had occupied a first, a second                   or a third place in the Olympic Games. It also has a relation with the Association of National Olympic Committees table                   that we will build later.                 
+   1. Download the                    [MedalsData.csv file](http://blogs.telerik.com/docs/default-source/reporting/medalsdata.csv?sfvrsn=2)                    , save it locally and insert its path into the *Select a file to import*  textbox.                   The information in this file is an example data set that shows how many times a national olympic team had occupied a first, a second                   or a third place in the Olympic Games. It also has a relation with the Association of National Olympic Committees table                   that we will build later.                 
 
    1. Press __Next__  until you get to the __CSV Headers__  page.                   Note that the CSV file has headers, so you should check the *The CSV has headers*  checkbox.                 
 
@@ -196,7 +196,7 @@ In this how-to article we will show you how to create a Map which will present t
 
 In this example we demonstrated some of the newest features of Telerik Reporting along with a couple of advanced techniques that can be used             to make your reports more dynamic and more interactive, and all that without writing a single line of code.           
 
-You can download this example report as a __.trdx__  report definition from the following link:             [How to: Create а map with ColumnChart series using CSV data source.](http://blogs.telerik.com/docs/default-source/reporting/olympicmedalsbynationalteams.trdx?sfvrsn=2)
+You can download this example report as a __.trdx__  report definition from the following link:              [How to: Create а map with ColumnChart series using CSV data source.](http://blogs.telerik.com/docs/default-source/reporting/olympicmedalsbynationalteams.trdx?sfvrsn=2) 
 
  * [How to Setup a Map Using the Map Wizard]({%slug telerikreporting/designing-reports/report-structure/map/how-to/how-to-setup-a-map-using-the-map-wizard%})
 

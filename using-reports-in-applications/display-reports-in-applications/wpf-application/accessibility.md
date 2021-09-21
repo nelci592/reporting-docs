@@ -12,11 +12,11 @@ position: 8
 
 
 
-Telerik Reporting aims to provide a reporting solution accessible to a wider user audience.         This includes users with motor control restrictions and ones working with assistive technologies.         In our product we follow the recommended practices in         [Section 508 of the Rehabilitation Act](http://www.section508.gov/)         adding accessibility features to our WPF report viewer.       
+Telerik Reporting aims to provide a reporting solution accessible to a wider user audience.         This includes users with motor control restrictions and ones working with assistive technologies.         In our product we follow the recommended practices in          [Section 508 of the Rehabilitation Act](http://www.section508.gov/)          adding accessibility features to our WPF report viewer.       
 
 ## Setting up accessibility features in WPF viewer
 
-The accessibility features are enabled or disabled using a Boolean dependency property named           __EnableAccessibility__ . When the property is set to __true__ , the XAML renderer produces enriched markup for the report content           and the report viewer controls’ behavior is changed so they respond differently to the user’s input. The default value of this property is __false__ .           This option also affects the accessibility of the exported PDF documents, i.e. if __enableAccessibility__            is set to __true__ , the exported PDF will be created according to           [               PDF/UA (ISO standard 14289-1)             ](https://en.wikipedia.org/wiki/PDF/UA)           specification.         
+The accessibility features are enabled or disabled using a Boolean dependency property named           __EnableAccessibility__ . When the property is set to __true__ , the XAML renderer produces enriched markup for the report content           and the report viewer controls’ behavior is changed so they respond differently to the user’s input. The default value of this property is __false__ .           This option also affects the accessibility of the exported PDF documents, i.e. if __enableAccessibility__            is set to __true__ , the exported PDF will be created according to            [               PDF/UA (ISO standard 14289-1)             ](https://en.wikipedia.org/wiki/PDF/UA)            specification.         
 
 >warning The accessibility routines access the report viewer parts through the theme template  __Telerik.ReportViewer.Wpf.xaml__ .              In case you have modified the template, the accessibility features might be affected or disabled.           
 
@@ -49,7 +49,7 @@ The accessibility routines capture the keyboard events to provide shortcut key a
 
 
 
-Since the accessibility uses the theme template, the modification of the accessibility key map must be done after the template is loaded.           We recommend using the report viewer's           [Loaded](https://msdn.microsoft.com/en-us/library/system.windows.frameworkelement.loaded(v=vs.110).aspx)                     event handler.         
+Since the accessibility uses the theme template, the modification of the accessibility key map must be done after the template is loaded.           We recommend using the report viewer's            [Loaded](https://msdn.microsoft.com/en-us/library/system.windows.frameworkelement.loaded(v=vs.110).aspx)                      event handler.         
 
 All the accessibility messages and labels support localization. You can modify them, following the procedure, described           [here]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/windows-forms-application/report-viewer-localization%}).         
 
@@ -73,7 +73,7 @@ The WPF report viewer supports the following important accessibility features:
 
 ## Supported accessibility features in rendered report contents
 
-All the report items have a property called [AccessibleDescription](/reporting/api/Telerik.Reporting.ReportItemBase#Telerik_Reporting_ReportItemBase_AccessibleDescription).           The property value is an expression and it determines what will be the accessibility label when the report is rendered.           Its value is set as a meta-information label that is output to the screen readers through the standard           [               Windows Automation API             ](https://docs.microsoft.com/en-us/dotnet/framework/ui-automation/ui-automation-overview).         
+All the report items have a property called [AccessibleDescription](/reporting/api/Telerik.Reporting.ReportItemBase#Telerik_Reporting_ReportItemBase_AccessibleDescription).           The property value is an expression and it determines what will be the accessibility label when the report is rendered.           Its value is set as a meta-information label that is output to the screen readers through the standard            [               Windows Automation API             ](https://docs.microsoft.com/en-us/dotnet/framework/ui-automation/ui-automation-overview) .         
 
 The value of this label is created using the following pattern: `{type} {additional information} {description} `:         
 

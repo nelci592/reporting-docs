@@ -33,12 +33,3 @@ You can add a document map, which acts like a table of contents. A user can clic
 You can run the report without initially displaying the document map by setting the __ReportViewer.DocumentMapVisible__         	property to false (true by default), and then click the Show/Hide button on the report viewer toolbar to toggle its display        	whenever needed. 		
 
 If you want to restrict the user from showing/hiding the document map, you can hide the corresponding button by altering        	the viewer's __ShowDocumentMapButton__  (true by default) property.
-
-# See Also
-
-
- * [Document Map]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/document-map/overview%})
-
- * [How to Add a Report group to Document Map]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/document-map/how-to-add-a-report-group-to-document-map%})
-
- * [How to Add a Table group to Document Map]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/document-map/how-to-add-a-table-group-to-document-map%})

@@ -30,7 +30,7 @@ The dialog offers the available report sources, which are:
 
   ![reportsource-dialog-winforms-viewer](images/reportsource-dialog-winforms-viewer.png)
 
-When the __Report server__  option is selected, the dialog will try to connect to a           [Telerik Report Server](http://docs.telerik.com/report-server/introduction)           instance using the connection details, provided by the report viewer. In case the connection succeeds, the dialog will read the categories and report names that are accessible           to the user and populate the editor fields:           
+When the __Report server__  option is selected, the dialog will try to connect to a            [Telerik Report Server](http://docs.telerik.com/report-server/introduction)            instance using the connection details, provided by the report viewer. In case the connection succeeds, the dialog will read the categories and report names that are accessible           to the user and populate the editor fields:           
 
   ![reportsource-dialog-html 5webforms-viewer](images/reportsource-dialog-html5webforms-viewer.png)
 
@@ -45,8 +45,3 @@ Reports can be stored in different locations and in different formats so use the
 
 >important When choosing  __Type name__  for a source, you must make sure that both reports use the same Telerik Reporting version then rebuild the application in order to load the sub-report report source.           
 
-
-# See Also
-
-
- * [Report Sources]({%slug telerikreporting/designing-reports/report-sources/overview%})[UriReportSource](/reporting/api/Telerik.Reporting.UriReportSource)[TypeReportSource](/reporting/api/Telerik.Reporting.TypeReportSource)[InstanceReportSource](/reporting/api/Telerik.Reporting.InstanceReportSource)[XmlReportSource](/reporting/api/Telerik.Reporting.XmlReportSource)

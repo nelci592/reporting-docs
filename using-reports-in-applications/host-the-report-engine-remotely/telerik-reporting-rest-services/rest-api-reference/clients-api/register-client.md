@@ -46,7 +46,3 @@ The body contains the newly registered client’s identifier.
                 {"clientId":"a5f3"}
 ````
 
-
-
-# See Also
-

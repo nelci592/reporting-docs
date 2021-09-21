@@ -39,7 +39,7 @@ You can connect to a SQL database using the Telerik         __SqlDataSource__  c
 
    + __Server name box:__  Enter the address or name for your SQL Server instance.                     
 
-   + __Logon to the server/database__ : Enter the logon credentials, or if it is supported by the .NET data provider,                       select to 'Use Windows Authentication'. Select the option that is appropriate for accessing and running the SQL Server database.                       The settings are turned into standard connection strings attributes. For more details, check [The Connection Strings Reference](https://www.connectionstrings.com/).                     
+   + __Logon to the server/database__ : Enter the logon credentials, or if it is supported by the .NET data provider,                       select to 'Use Windows Authentication'. Select the option that is appropriate for accessing and running the SQL Server database.                       The settings are turned into standard connection strings attributes. For more details, check  [The Connection Strings Reference](https://www.connectionstrings.com/) .                     
 
    + __Select or enter a database name:__  The option depends on the selected .NET data provider and the required attributes for building the connection string.                       If the option is visible, enter a valid database on the server e.g. __AdventureWorks__  (MSSQL database used by Telerik Reporting local examples).                     At the end, click __Test connection__  to verify that your connection works.                   Click __OK__ . You should see the connection string's attributes written in the __Connection string__  text-box.                 
 
@@ -63,7 +63,7 @@ You can connect to a SQL database using the Telerik         __SqlDataSource__  c
 
 
 1. Click __Next__                to continue to the __Data Connection Options__  dialog. Where you can:             
-   + Select __Use a shared connection__ , which option saves the connection string by the name typed in the __Alias__  box, in the current project's CONFIG file,                   under the __connectionStrings element__ .                 This will let you reuse the connection string for other SqlDataSource components. The Reporting Engine uses a [ConfigurationManager(msdn)](https://msdn.microsoft.com/en-us/library/system.configuration.configurationmanager(v=vs.110).aspx) to search connection strings by name in the current project's configuration file.                 
+   + Select __Use a shared connection__ , which option saves the connection string by the name typed in the __Alias__  box, in the current project's CONFIG file,                   under the __connectionStrings element__ .                 This will let you reuse the connection string for other SqlDataSource components. The Reporting Engine uses a  [ConfigurationManager(msdn)](https://msdn.microsoft.com/en-us/library/system.configuration.configurationmanager(v=vs.110).aspx)  to search connection strings by name in the current project's configuration file.                 
 
    + Select __Embed in the report definition__ , which option saves the connection string                   the way it is written in the __Connection string__  text-box as __SqlDataSource.ConnectionString property__ .                 
     For the purpose of this tutorial, we will use the __Use a shared connection__  option.               Type __AdventureWorksConnection__  as *Alias* .                 Click __Next__ .             

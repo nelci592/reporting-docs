@@ -14,7 +14,7 @@ position: 6
 
 The Graph item supports actions on the axis labels defined by the Graph's category groups (__Graph.CategoryGroups.Action__ ),         and on series' data points (__Graph.SeriesGroups.Action__ ).       
 
-The labels for an axis with __CategoryScale__  are produced by the graph's category groups.         They are layout in levels based on the corresponding category group from the group hierarchy.         Graph groups that are part of the         [CategoryGroups](/reporting/api/Telerik.Reporting.Graph#Telerik_Reporting_Graph_CategoryGroups)         hierarchy support interactive actions.         The added actions will make the graph axis labels interactive (clickable).       
+The labels for an axis with __CategoryScale__  are produced by the graph's category groups.         They are layout in levels based on the corresponding category group from the group hierarchy.         Graph groups that are part of the          [CategoryGroups](/reporting/api/Telerik.Reporting.Graph#Telerik_Reporting_Graph_CategoryGroups)          hierarchy support interactive actions.         The added actions will make the graph axis labels interactive (clickable).       
 
 >note When the axis uses a NumericalScale, LogarithmicScale, DateTimeScale, the labels for an axis are produced           automatically based on the Scale properties. In such case, only data points are clickable           after setting the Graph.CategoryGroups.Action property.         
 

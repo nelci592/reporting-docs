@@ -19,7 +19,7 @@ t.org/packages/ServiceStack/3.9.70                 )                NuGet packag
 
 
 1. Add references to the following Telerik Reporting assemblies (optional):             
-   + Telerik.Reporting.Cache.Database.dll - only if [DatabaseStorage](/reporting/api/Telerik.Reporting.Cache.Database.DatabaseStorage) caching mechanism is intended.                   For more details check [Reporting REST Service Storage]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-service-storage/overview%}).                   The assembly has dependencies on Telerik Data Access which can be checked in the version                   corresponding [Upgrade article]({%slug telerikreporting/upgrade/overview%});                 
+   + Telerik.Reporting.Cache.Database.dll - only if  [DatabaseStorage](/reporting/api/Telerik.Reporting.Cache.Database.DatabaseStorage)  caching mechanism is intended.                   For more details check [Reporting REST Service Storage]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-service-storage/overview%}).                   The assembly has dependencies on Telerik Data Access which can be checked in the version                   corresponding [Upgrade article]({%slug telerikreporting/upgrade/overview%});                 
 
    + Telerik.Reporting.OpenXmlRendering.dll - depends on [Third-Party Dependencies]({%slug telerikreporting/using-reports-in-applications/third-party-dependencies%}). Required if you need to export in OpenXML formats (DOCX, PPTX, XLSX);                 
 
@@ -28,8 +28,8 @@ t.org/packages/ServiceStack/3.9.70                 )                NuGet packag
    + Telerik.Reporting.Adomd.dll - required if you use [CubeDataSource]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/cubedatasource-component/overview%}) components in reports.                   The assembly has dependencies on *Microsoft.AnalysisServices.AdomdClient.dll*  v.10.0.0.0 or [above with proper binding redirects]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/cubedatasource-component/configuring-your-project-for-using-microsoft-analysis-services%});                 
 
 
-1. Create a new class which derives from               [ReportsHostBase](/reporting/api/Telerik.Reporting.Services.ServiceStack.ReportsHostBase).               It could be called *ReportsHost*  for example:             
-   + Set the [ReportServiceConfiguration](/reporting/api/Telerik.Reporting.Services.ServiceStack.ReportsHostBase#Telerik_Reporting_Services_ServiceStack_ReportsHostBase_ReportServiceConfiguration)                   property. The __ReportSourceResolver__  and __Storage__  configuration settings are required.                   See the [IReportServiceConfiguration](/reporting/api/Telerik.Reporting.Services.IReportServiceConfiguration) interface                   for more details.                 
+1. Create a new class which derives from                [ReportsHostBase](/reporting/api/Telerik.Reporting.Services.ServiceStack.ReportsHostBase) .               It could be called *ReportsHost*  for example:             
+   + Set the  [ReportServiceConfiguration](/reporting/api/Telerik.Reporting.Services.ServiceStack.ReportsHostBase#Telerik_Reporting_Services_ServiceStack_ReportsHostBase_ReportServiceConfiguration)                    property. The __ReportSourceResolver__  and __Storage__  configuration settings are required.                   See the  [IReportServiceConfiguration](/reporting/api/Telerik.Reporting.Services.IReportServiceConfiguration)  interface                   for more details.                 
     Here is a sample implementation with the setup:             
 
 {{source=CodeSnippets\MvcCS\ServiceStack\ReportsHost.cs region=ReportsHost_Implementation}}
@@ -81,9 +81,9 @@ t.org/packages/ServiceStack/3.9.70                 )                NuGet packag
 
 
 
-    >tip The above implementation uses the [FileStorage](/reporting/api/Telerik.Reporting.Cache.File.FileStorage)                 method in order to create a cache object instance. All Visual Studio item templates for adding the Reporting REST service use the default                  __FileStorage__  constructor. The second overload of the FileStorage constructor allows you to                 specify a folder, and it is recommended for usage in production environment.               
+    >tip The above implementation uses the  [FileStorage](/reporting/api/Telerik.Reporting.Cache.File.FileStorage)                  method in order to create a cache object instance. All Visual Studio item templates for adding the Reporting REST service use the default                  __FileStorage__  constructor. The second overload of the FileStorage constructor allows you to                 specify a folder, and it is recommended for usage in production environment.               
 
-        __To configure the Telerik Reporting REST service from the application configuration file__ , set the value of the               [ReportServiceConfiguration](/reporting/api/Telerik.Reporting.Services.ServiceStack.ReportsHostBase#Telerik_Reporting_Services_ServiceStack_ReportsHostBase_ReportServiceConfiguration) property to an instance of the               [ConfigSectionReportServiceConfiguration](/reporting/api/Telerik.Reporting.Services.ConfigSectionReportServiceConfiguration) class.             
+        __To configure the Telerik Reporting REST service from the application configuration file__ , set the value of the                [ReportServiceConfiguration](/reporting/api/Telerik.Reporting.Services.ServiceStack.ReportsHostBase#Telerik_Reporting_Services_ServiceStack_ReportsHostBase_ReportServiceConfiguration)  property to an instance of the                [ConfigSectionReportServiceConfiguration](/reporting/api/Telerik.Reporting.Services.ConfigSectionReportServiceConfiguration)  class.             
 
 {{source=CodeSnippets\MvcCS\ServiceStack\ReportsHostConfigSection.cs region=ReportsHostConfigSectionImplementation}}
 ````C#
@@ -180,10 +180,4 @@ t.org/packages/ServiceStack/3.9.70                 )                NuGet packag
 | __http://localhost:[portnumber]/api/reports/formats__ |
 
 
-    If the request is successful you should receive the document formats encoded in JSON. For more information see: [Get Available Document Formats]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/general-api/get-available-document-formats%}).             [UriReportSourceResolver](/reporting/api/Telerik.Reporting.Services.UriReportSourceResolver)[TypeReportSourceResolver](/reporting/api/Telerik.Reporting.Services.TypeReportSourceResolver)
-
- * [HTML5 Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview%})
-
- * [Overview]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-service-report-source-resolver/overview%})
-
- * [Manual Setup]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/manual-setup%})
+    If the request is successful you should receive the document formats encoded in JSON. For more information see: [Get Available Document Formats]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/general-api/get-available-document-formats%}).             

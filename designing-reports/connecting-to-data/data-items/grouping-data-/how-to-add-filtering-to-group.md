@@ -16,7 +16,7 @@ A filter defined on a report/table group limits the group members to       a cer
 
 We will use the filter to hide/show the dynamic groups members. 		Additionally we add the possibility for dynamic filtering by using report 		parameters. The example shown is based on the  [ProductSales](https://demos.telerik.com/reporting/product-sales/silverlight-demo.aspx)   demo report
 
-###Using dynamic filter to show/hide crosstab group members
+## Using dynamic filter to show/hide crosstab group members
 
 1. Open the report in the designer and show the Group explorer               
 

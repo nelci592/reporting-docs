@@ -14,7 +14,7 @@ position: 4
 
 You can connect to a SQL database using the Telerik         __SqlDataSource__  component. To do this, you need a valid .NET data provider, connection string and access         rights to the SQL database. Then, you can use the SqlDataSource component         to provide data to [data items (Report, Table, Graph, Map)]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/overview%})         and [report parameters]({%slug telerikreporting/designing-reports/connecting-to-data/report-parameters/overview%}).       
 
-###To connect to a SQL database using the SqlDataSource component
+## To connect to a SQL database using the SqlDataSource component
 
 1. Open a Telerik Reporting in a [Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/overview%})
    + __In Microsoft Visual Studio__ : From the Telerik Reporting {{site.suiteversion}} group in the Toolbox, select the                   SqlDataSource component and click on the design surface to add it to the Report.                 
@@ -89,15 +89,3 @@ You can connect to a SQL database using the Telerik         __SqlDataSource__  c
 1. To test your query, click __Next__ , and then               click __Execute Query__  in the __Preview data source results__  step of the wizard.             
 
 1. Click __Finish__ . The SqlDataSource Wizard would close               and the SqlDataSource component would be ready for use by the data               items.             
-
- * [SqlDataSource Wizard]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/sqldatasource-wizard/overview%})
-
- * [Using Parameters with the SqlDataSource component]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/sqldatasource-component/using-parameters-with-the-sqldatasource-component%})
-
- * [The Connection Strings Reference](https://www.connectionstrings.com/)
-
- * [Data provider is missing in the SqlDataSource wizard](http://www.telerik.com/support/kb/reporting/details/data-provider-is-missing-in-the-sqldatasource-wizard)
-
- * [How to use MultiValue Report Parameter in a SQL query](http://www.telerik.com/support/kb/reporting/accessing-and-managing-data/details/how-to-use-multivalue-report-parameter-in-a-sql-query)
-
- * [How to configure Stored Procedure with Temporary Tables for use with SqlDataSource component](http://www.telerik.com/support/kb/reporting/accessing-and-managing-data/details/how-to-configure-stored-procedure-with-temporary-tables-for-use-with-sqldatasource-component)

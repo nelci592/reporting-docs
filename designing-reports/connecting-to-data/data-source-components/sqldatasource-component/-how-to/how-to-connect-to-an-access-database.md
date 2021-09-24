@@ -14,7 +14,7 @@ position: 2
 
 You can connect to a Microsoft Access database using the Telerik        SqlDataSource component. To do this, you need a connection string and an        Access data file. Then, you can use the SqlDataSource component to provide        data to data items (Report, Table, Chart).
 
-###To connect to an Access database using the SqlDataSource control
+## To connect to an Access database using the SqlDataSource control
 
 1. In Microsoft Visual Studio, open a Telerik Report. From the              Telerik Reporting {{site.suiteversion}} group in the Toolbox, select the              SqlDataSource component and click on the design surface to add it              to the Report.
 
@@ -40,6 +40,3 @@ You can connect to a Microsoft Access database using the Telerik        SqlDataS
 1. To test your query, click __Next__ , and then             click __Execute Query__ 
 
 1. Click __Finish__ . The Wizard would close and the SqlDataSource              component would be ready for usage by the data items.
-
->note Parametrized Access Queries (stored procedures) are not supported, because  	the OLE DB provider cannot retrieve the procedures' parameter information.
-

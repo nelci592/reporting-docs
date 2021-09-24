@@ -14,7 +14,7 @@ position: 2
 
 This article will explain how to use          [Redis storage](http://redis.io/)          for report engine storage       
 
-##Adding the necessary dependencies
+## Adding the necessary dependencies
 
 Telerik Reporting uses __StackExchange.Redis__  client library to access a Redis database.           When adding a reference to __Telerik.Reporting.Cache.StackExchangeRedis__ , the version of StackExchange.Redis client must be considered,           because version 2.0+ introduces breaking changes and is not compatible with previous versions.         
 
@@ -44,10 +44,6 @@ Telerik Reporting uses __StackExchange.Redis__  client library to access a Redis
    + Add reference to the                       __Telerik.Reporting.Cache.StackExchangeRedis.2__                        library located in the {Telerik Reportng installation folder}/Bin/netstandard2.0 folder.                     
 
 
-##Using the Redis storage
+## Using the Redis storage
 
-Where needed in your application create an instance of the           [RedisStorage](/reporting/api/Telerik.Reporting.Cache.StackExchangeRedis.RedisStorage)           class. It takes as a parameter an __StackExchange.Redis.ConnectionMultiplexer__            object which should be reused for the application lifetime. See            [(StackExchange.Redis) Basic Usage](https://github.com/StackExchange/StackExchange.Redis/blob/master/docs/Basics.md)  for more information.         
-
- * [Overview]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-service-storage/overview%})
-
- * [REST Report Service Configuration]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/restreportservice-element%})
+Where needed in your application create an instance of the            [RedisStorage](/reporting/api/Telerik.Reporting.Cache.StackExchangeRedis.RedisStorage)            class. It takes as a parameter an __StackExchange.Redis.ConnectionMultiplexer__            object which should be reused for the application lifetime. See            [(StackExchange.Redis) Basic Usage](https://github.com/StackExchange/StackExchange.Redis/blob/master/docs/Basics.md)  for more information.         

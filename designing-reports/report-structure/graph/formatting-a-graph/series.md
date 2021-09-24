@@ -25,7 +25,7 @@ The Area and the Line series have an additional pair of properties named respect
 
 ## Formatting data points
 
-Each data point has graphical representation in accordance with the selected chart type. Its styling can be set through the            __DataPointStyle__  property and changed in runtime using the __DataPointConditionalFormatting__  property.           In most cases, depending on the chart type, the shape of the data point can be changed as well using the           [MarkerType](/reporting/api/Telerik.Reporting.LineSeries#Telerik_Reporting_LineSeries_MarkerType) enumeration.         
+Each data point has graphical representation in accordance with the selected chart type. Its styling can be set through the            __DataPointStyle__  property and changed in runtime using the __DataPointConditionalFormatting__  property.           In most cases, depending on the chart type, the shape of the data point can be changed as well using the            [MarkerType](/reporting/api/Telerik.Reporting.LineSeries#Telerik_Reporting_LineSeries_MarkerType)  enumeration.         
 
 ###To change the data point shape in a series where it's applicable: 
 
@@ -112,7 +112,9 @@ You can select a palette or define a custom palette. Custom palettes are report-
 
 1. Click __Add__  to add more colors to the palette.                 
 
-1. When you are done, click __OK__ .                 If you are using a custom color palette, you can change the order of the colors to change the color of different series.
+1. When you are done, click __OK__ .                 
+
+If you are using a custom color palette, you can change the order of the colors to change the color of different series.
 
 ###            To define custom __monochromatic palette__ :
           

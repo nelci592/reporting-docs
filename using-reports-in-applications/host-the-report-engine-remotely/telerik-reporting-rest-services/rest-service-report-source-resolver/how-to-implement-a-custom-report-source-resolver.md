@@ -12,11 +12,11 @@ position: 1
 
 
 
-This article explains how to create a custom report source resolver for the __Telerik Reporting REST service__ .         In this example, the resolver purpose will be to return a [XmlReportSource](/reporting/api/Telerik.Reporting.XmlReportSource) with an XML         report definition obtained from an SQL Server database.       
+This article explains how to create a custom report source resolver for the __Telerik Reporting REST service__ .         In this example, the resolver purpose will be to return a  [XmlReportSource](/reporting/api/Telerik.Reporting.XmlReportSource)  with an XML         report definition obtained from an SQL Server database.       
 
-###How to implement a custom report source resolver:
+## How to implement a custom report source resolver:
 
-1. Create a class which implements the [IReportSourceResolver](/reporting/api/Telerik.Reporting.Services.IReportSourceResolver)               interface. Its [Resolve](/reporting/api/Telerik.Reporting.Services.IReportSourceResolver#Telerik_Reporting_Services_IReportSourceResolver_Resolve_System_String_Telerik_Reporting_Services_OperationOrigin_System_Collections_Generic_IDictionary{System_String_System_Object}_)                method will be called whenever the engine needs to create a               [ReportSource](/reporting/api/Telerik.Reporting.ReportSource) instance based on the parameter named *report* .               The value of the *report*  parameter will be initialized with the value of the __Report__  property of the report viewer's ReportSource object.             
+1. Create a class which implements the  [IReportSourceResolver](/reporting/api/Telerik.Reporting.Services.IReportSourceResolver)                interface. Its  [Resolve](/reporting/api/Telerik.Reporting.Services.IReportSourceResolver#Telerik_Reporting_Services_IReportSourceResolver_Resolve_System_String_Telerik_Reporting_Services_OperationOrigin_System_Collections_Generic_IDictionary{System_String_System_Object}_)                 method will be called whenever the engine needs to create a                [ReportSource](/reporting/api/Telerik.Reporting.ReportSource)  instance based on the parameter named *report* .               The value of the *report*  parameter will be initialized with the value of the __Report__  property of the report viewer's ReportSource object.             
 
 {{source=CodeSnippets\MvcCS\Controllers\CustomResolverReportsController.cs region=CustomReportResolver_Implementation}}
 ````C#
@@ -87,7 +87,7 @@ This article explains how to create a custom report source resolver for the __Te
 
 
 
-1. Find the __ReportSourceResolver property__  in the [ReportServiceConfiguration](/reporting/api/Telerik.Reporting.Services.WebApi.ReportsControllerBase#Telerik_Reporting_Services_WebApi_ReportsControllerBase_ReportServiceConfiguration) settings of the               implementation of the [ReportsControllerBase](/reporting/api/Telerik.Reporting.Services.WebApi.ReportsControllerBase)               class, and set it to an instance of the custom report source resolver or to a chain of resolver instances including the custom one:             
+1. Find the __ReportSourceResolver property__  in the  [ReportServiceConfiguration](/reporting/api/Telerik.Reporting.Services.WebApi.ReportsControllerBase#Telerik_Reporting_Services_WebApi_ReportsControllerBase_ReportServiceConfiguration)  settings of the               implementation of the  [ReportsControllerBase](/reporting/api/Telerik.Reporting.Services.WebApi.ReportsControllerBase)                class, and set it to an instance of the custom report source resolver or to a chain of resolver instances including the custom one:             
 
 {{source=CodeSnippets\MvcCS\Controllers\CustomResolverReportsController.cs region=CustomReportResolver_ReportsController_Implementation}}
 ````C#
@@ -190,8 +190,7 @@ GO
 
 1. To enter some data into the database you can manually edit the __Reports__  table.               XML report definitions can be obtained from the sample __.trdx__  report files installed               together with the product and are located in               __[Telerik_Reporting_Install_Dir]\Report Designer\Examples__ .                 In newer versions, all sample reports of the Standalone Report Designer are in TRDP format. You can use the               *Standalone Report Designer - File - Save As*  option to convert them to TRDX files.             
 
-###        How to implement and use custom IReportSourceResolver with fallback mechanism:
-      
+## How to implement and use custom IReportSourceResolver with fallback mechanism:
 
 1. Add to your IReportSourceResolver implementation a constructor with parameter IReportSourceResolver parentResolver.               Then use the parentResolver if the custom report source resolving mechanism fails.             
 

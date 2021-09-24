@@ -16,7 +16,7 @@ User aggregate functions allow you to apply custom logic        when accumulatin
 
 ## Implementing a custom aggregate function
 
-User aggregates are __public__  or __internal__          (__Public__  or __Friend__  in VB.NET)         classes that implement the [IAggregateFunction](/reporting/api/Telerik.Reporting.Expressions.IAggregateFunction) interface.
+User aggregates are __public__  or __internal__          (__Public__  or __Friend__  in VB.NET)         classes that implement the  [IAggregateFunction](/reporting/api/Telerik.Reporting.Expressions.IAggregateFunction)  interface.
 
 Aggregate function implementation accumulates values from each row          using the __Accumulate__  method. The aggregate          can take an arbitrary number of input parameters and will receive them          as items in the object array parameter passed in this method.
 
@@ -24,7 +24,7 @@ The function merges its value with other instances of the aggregate          usi
 
 The function returns value using the __GetValue__  method.
 
-Apply [AggregateFunctionAttribute](/reporting/api/Telerik.Reporting.Expressions.AggregateFunctionAttribute)         to the custom aggregate class implementation to define an interface          for the users of the aggregate function. The __Name__           parameter of the attribute defines how to refer to the function in expressions.
+Apply  [AggregateFunctionAttribute](/reporting/api/Telerik.Reporting.Expressions.AggregateFunctionAttribute)          to the custom aggregate class implementation to define an interface          for the users of the aggregate function. The __Name__           parameter of the attribute defines how to refer to the function in expressions.
 
 {{source=CodeSnippets\CS\API\Telerik\Reporting\Expressions\IAggregateFunctionSnippets.cs region=AggregateFunctionImplementation}}
 ````C#

@@ -22,5 +22,5 @@ Add bookmarks to a report when you want to provide a customized table of content
 	type a string that is the label for this bookmark. Alternatively, click the ellipsis to open the __Expression__  dialog box to 
 	specify an expression that evaluates to text. Typically for a group, the expression you type should be the group expression.
 
->note The [BookmarkId](/reporting/api/Telerik.Reporting.TableGroup#Telerik_Reporting_TableGroup_BookmarkId) can be any string,  	but it must be unique in the report. If the  __BookmarkID__  is not unique, an action to the bookmark finds the first matching bookmark.
+>note The  [BookmarkId](/reporting/api/Telerik.Reporting.TableGroup#Telerik_Reporting_TableGroup_BookmarkId)  can be any string,  	but it must be unique in the report. If the  __BookmarkID__  is not unique, an action to the bookmark finds the first matching bookmark.
 

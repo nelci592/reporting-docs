@@ -80,7 +80,7 @@ Any other HTML markup tags will be ignored during report processing. If the HTML
 
 ## Growing and Shrinking
 
-By default, HtmlTextBoxes are a set size. If you want to allow an HtmlTextBox to expand vertically based on its contents,           set the [CanGrow](/reporting/api/Telerik.Reporting.TextItemBase#Telerik_Reporting_TextItemBase_CanGrow) property           to True (default value).           If you want to allow a TextBox to shrink based on its contents, set the           [CanShrink](/reporting/api/Telerik.Reporting.TextItemBase#Telerik_Reporting_TextItemBase_CanShrink) property to           True (default value is False). The HtmlTextBox would always grow to accommodate the first line of text even when CanGrow is False.         
+By default, HtmlTextBoxes are a set size. If you want to allow an HtmlTextBox to expand vertically based on its contents,           set the  [CanGrow](/reporting/api/Telerik.Reporting.TextItemBase#Telerik_Reporting_TextItemBase_CanGrow)  property           to True (default value).           If you want to allow a TextBox to shrink based on its contents, set the            [CanShrink](/reporting/api/Telerik.Reporting.TextItemBase#Telerik_Reporting_TextItemBase_CanShrink)  property to           True (default value is False). The HtmlTextBox would always grow to accommodate the first line of text even when CanGrow is False.         
 
 ## Embedded expressions
 
@@ -121,6 +121,8 @@ The design time editor supports two modes:
 
 # See Also
 
+
+# See Also
 
  * [HtmlTextBox with Anchor tag vs Hyperlink Action](http://www.telerik.com/support/kb/reporting/report-items/details/htmltextbox-with-anchor-tag-vs-hyperlink-action)
 

@@ -18,7 +18,7 @@ The current article elaborates on how to setup a Map without using the __Map Wiz
 
 1. Open the Visual Studio toolbox and select the Map item from the *Telerik Reporting*  tab.                 
 
-1. Click on the design surface where you want the upper-left corner of the map.                     The map item is initialized on the selected design surface with default values for                   [IProjection](/reporting/api/Telerik.Reporting.IProjection)                   and [ITileProvider](/reporting/api/Telerik.Reporting.ITileProvider).                 
+1. Click on the design surface where you want the upper-left corner of the map.                     The map item is initialized on the selected design surface with default values for                    [IProjection](/reporting/api/Telerik.Reporting.IProjection)                    and  [ITileProvider](/reporting/api/Telerik.Reporting.ITileProvider) .                 
 
 1. Set your Data Source to one of the available [Data Source Components]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/overview%}).                 
 
@@ -28,7 +28,7 @@ The current article elaborates on how to setup a Map without using the __Map Wiz
 
 + 
 
-In case you would like to use a geocoding service to obtain geographical coordinates by addresses from your data source,                       you need to configure the [Location Providers]({%slug telerikreporting/designing-reports/report-structure/map/structure/location-providers%}) and the                       [GeoLocationMapGroup](/reporting/api/Telerik.Reporting.GeoLocationMapGroup):                     
+In case you would like to use a geocoding service to obtain geographical coordinates by addresses from your data source,                       you need to configure the [Location Providers]({%slug telerikreporting/designing-reports/report-structure/map/structure/location-providers%}) and the                        [GeoLocationMapGroup](/reporting/api/Telerik.Reporting.GeoLocationMapGroup) :                     
 
 * Open the Property Grid.
 
@@ -36,7 +36,7 @@ In case you would like to use a geocoding service to obtain geographical coordin
 
 * Select a [Location Provider]({%slug telerikreporting/designing-reports/report-structure/map/structure/location-providers%}) that will be used to geocode the geographical coordinates by the requests supplied from the GeoLocationGroup.                           
 
-In case your data source can provide geographical coordinates to be used for the data points,                       you need to set the Series' [Latitude](/reporting/api/Telerik.Reporting.PointMapSeries#Telerik_Reporting_PointMapSeries_Latitude) and                       [Longitude](/reporting/api/Telerik.Reporting.PointMapSeries#Telerik_Reporting_PointMapSeries_Longitude) to the appropriate data source fields.                      
+In case your data source can provide geographical coordinates to be used for the data points,                       you need to set the Series'  [Latitude](/reporting/api/Telerik.Reporting.PointMapSeries#Telerik_Reporting_PointMapSeries_Latitude)  and                        [Longitude](/reporting/api/Telerik.Reporting.PointMapSeries#Telerik_Reporting_PointMapSeries_Longitude)  to the appropriate data source fields.                      
 
 # See Also
 

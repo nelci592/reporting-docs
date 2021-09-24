@@ -120,9 +120,9 @@ Below are listed the most important characteristics of a PDF document generated 
 
 * *Annotations*  - all the links in the document will have a respective link annotation object in the PDF structure.             
 
-* *Document Title*  - the title should be provided from the device information settings object. In case it is unavailable, the               [DocumentName](/reporting/api/Telerik.Reporting.Report#Telerik_Reporting_Report_DocumentName) property               of the report will be used instead.             
+* *Document Title*  - the title should be provided from the device information settings object. In case it is unavailable, the                [DocumentName](/reporting/api/Telerik.Reporting.Report#Telerik_Reporting_Report_DocumentName)  property               of the report will be used instead.             
 
-* *Document Natural Language*  - the document language should be provided from the device information settings object.               In case it is unavailable, the __Name__  of the               [Culture](/reporting/api/Telerik.Reporting.Report#Telerik_Reporting_Report_Culture) property               of the report will be used instead.             
+* *Document Natural Language*  - the document language should be provided from the device information settings object.               In case it is unavailable, the __Name__  of the                [Culture](/reporting/api/Telerik.Reporting.Report#Telerik_Reporting_Report_Culture)  property               of the report will be used instead.             
 
 ## SVG Rendering
 

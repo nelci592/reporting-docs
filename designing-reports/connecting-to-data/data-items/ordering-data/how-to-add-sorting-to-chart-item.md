@@ -14,7 +14,7 @@ position: 3
 
 In the Chart item the sorting is performed at data item level and sets       the order of appearance of the detail rows.
 
-##Adding sorting to Table/Crosstab data item using Report Designer
+## Adding sorting to Table/Crosstab data item using Report Designer
 
 
 
@@ -34,7 +34,7 @@ For each sort expression, follow these steps:
 
 1. Click OK.
 
-##Adding sorting to Chart data item programatically
+## Adding sorting to Chart data item programatically
 
 {{source=CodeSnippets\CS\API\Telerik\Reporting\ChartSnippets.cs region=AddNewSortSnippet}}
 ````C#
@@ -56,4 +56,3 @@ For each sort expression, follow these steps:
 	        chart1.Sortings.Add(sorting1)
 ````
 
-[Chart](/reporting/api/Telerik.Reporting.Chart)[Sorting](/reporting/api/Telerik.Reporting.Sorting)[SortingCollection](/reporting/api/Telerik.Reporting.SortingCollection)

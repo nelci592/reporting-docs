@@ -33,7 +33,7 @@ The error message indicates that the viewer's ID cannot be found in the cache st
 
 ##Access to the path 'xxxxxx\value.dat' is denied.
 
-The error message indicates that the Reporting REST service cannot access the configured file storage.           Verify the Reporting REST service has an unique [HostAppId](/reporting/api/Telerik.Reporting.Services.ReportServiceConfiguration#Telerik_Reporting_Services_ReportServiceConfiguration_HostAppId)           in its configuration and the application has read/write access to the folder specified by the FileStorage instance in the Reporting REST service configuration           - [ REST Service Storage]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-service-storage/overview%}).         
+The error message indicates that the Reporting REST service cannot access the configured file storage.           Verify the Reporting REST service has an unique  [HostAppId](/reporting/api/Telerik.Reporting.Services.ReportServiceConfiguration#Telerik_Reporting_Services_ReportServiceConfiguration_HostAppId)            in its configuration and the application has read/write access to the folder specified by the FileStorage instance in the Reporting REST service configuration           - [ REST Service Storage]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-service-storage/overview%}).         
 
 ##The HTML5 Report Viewer does not display a report that uses Table/List/Crosstab item in Internet Explorer.
 

@@ -14,7 +14,7 @@ position: 2
 
 To define a sorting for the __Table__  or __Crosstab__  items use the following steps: 
 
-##Adding sorting to Table/Crosstab data item using Report Designer
+## Adding sorting to Table/Crosstab data item using Report Designer
 
 
 
@@ -34,7 +34,7 @@ For each sort expression, follow these steps:
 
 1. Click OK.
 
-##Adding sorting to Table/Crosstab Group (Row/Column Group) using Report Designer
+## Adding sorting to Table/Crosstab Group (Row/Column Group) using Report Designer
 
 
 
@@ -61,7 +61,7 @@ For each sort expression, follow these steps:
 
 1. Click OK.
 
-##Adding sorting to Table/Crosstab data item programatically
+## Adding sorting to Table/Crosstab data item programatically
 
 {{source=CodeSnippets\CS\API\Telerik\Reporting\TableSnippets.cs region=AddNewSortSnippet}}
 ````C#
@@ -83,6 +83,3 @@ For each sort expression, follow these steps:
 	        table1.Sortings.Add(sorting1)
 ````
 
-[Table](/reporting/api/Telerik.Reporting.Table)[Sorting](/reporting/api/Telerik.Reporting.Sorting)[SortingCollection](/reporting/api/Telerik.Reporting.SortingCollection)
-
- * [How to Add groups to Table item and Crosstab item]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/grouping-data-/how-to-add-groups-to-table-item-and-crosstab-item%})

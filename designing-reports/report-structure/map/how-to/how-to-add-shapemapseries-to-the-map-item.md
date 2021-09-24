@@ -12,31 +12,31 @@ position: 6
 
 
 
-The [ShapeMapSeries](/reporting/api/Telerik.Reporting.ShapeMapSeries) uses its own source to obtain a set of coordinates which will         determine the shape of the data points. These series does not use a LocationProvider or a GeoLocationMapGroup, because the data points         are not determined by a single location on the map surface, as with the [LocationMapSeries](/reporting/api/Telerik.Reporting.LocationMapSeries)
+The  [ShapeMapSeries](/reporting/api/Telerik.Reporting.ShapeMapSeries)  uses its own source to obtain a set of coordinates which will         determine the shape of the data points. These series does not use a LocationProvider or a GeoLocationMapGroup, because the data points         are not determined by a single location on the map surface, as with the  [LocationMapSeries](/reporting/api/Telerik.Reporting.LocationMapSeries) 
 
-##Adding a ShapeMapSeries instance to the map
+## Adding a ShapeMapSeries instance to the map
 
 To add new ShapeMap series to the map follow these steps:         
 
-1. Open __Series__  collection editor and __Add__  new               [ShapeMapSeries](/reporting/api/Telerik.Reporting.ShapeMapSeries) item, as shown below:               
+1. Open __Series__  collection editor and __Add__  new                [ShapeMapSeries](/reporting/api/Telerik.Reporting.ShapeMapSeries)  item, as shown below:               
 
   ![Choropleth Add Shape Map Series](images/Map/Choropleth/Choropleth_AddShapeMapSeries.png)
 
-1. Set the [ShapeMapGroup](/reporting/api/Telerik.Reporting.ShapeMapSeries#Telerik_Reporting_ShapeMapSeries_ShapeMapGroup) to an existing               [ShapeMapGroup](/reporting/api/Telerik.Reporting.ShapeMapGroup) instance or create a new one from scratch.             
+1. Set the  [ShapeMapGroup](/reporting/api/Telerik.Reporting.ShapeMapSeries#Telerik_Reporting_ShapeMapSeries_ShapeMapGroup)  to an existing                [ShapeMapGroup](/reporting/api/Telerik.Reporting.ShapeMapGroup)  instance or create a new one from scratch.             
 
-1. Set the [SeriesGroup](/reporting/api/Telerik.Reporting.MapSeriesBase#Telerik_Reporting_MapSeriesBase_SeriesGroup) to an existing               [MapGroup](/reporting/api/Telerik.Reporting.MapGroup) instance or create a new one from scratch.             
+1. Set the  [SeriesGroup](/reporting/api/Telerik.Reporting.MapSeriesBase#Telerik_Reporting_MapSeriesBase_SeriesGroup)  to an existing                [MapGroup](/reporting/api/Telerik.Reporting.MapGroup)  instance or create a new one from scratch.             
 
-1. Set an expression for the [ColorData](/reporting/api/Telerik.Reporting.ShapeMapSeries#Telerik_Reporting_ShapeMapSeries_ColorData) field to define the value               that will be used to calculate the data point color.             
+1. Set an expression for the  [ColorData](/reporting/api/Telerik.Reporting.ShapeMapSeries#Telerik_Reporting_ShapeMapSeries_ColorData)  field to define the value               that will be used to calculate the data point color.             
 
-1. Set the [RangeGrouping](/reporting/api/Telerik.Reporting.ShapeMapSeries#Telerik_Reporting_ShapeMapSeries_RangeGrouping) property to one of the available options:               None, EqualInterval or EqualDistribution.               __None__  means that no grouping will be used and every data point will be colored according to its respective color data value.               __EqualInterval__  will split the interval between the minimum and maximum values by the colors count, assigning a separate color to each interval.               __EqualDistribution__  will try to distribute the data evenly among the groups defined by the ColorsCount property, assigning a separate color to each group.             
+1. Set the  [RangeGrouping](/reporting/api/Telerik.Reporting.ShapeMapSeries#Telerik_Reporting_ShapeMapSeries_RangeGrouping)  property to one of the available options:               None, EqualInterval or EqualDistribution.               __None__  means that no grouping will be used and every data point will be colored according to its respective color data value.               __EqualInterval__  will split the interval between the minimum and maximum values by the colors count, assigning a separate color to each interval.               __EqualDistribution__  will try to distribute the data evenly among the groups defined by the ColorsCount property, assigning a separate color to each group.             
 
-   >note When the  __RangeGrouping__  property is set to  __None__ ,                 the [ColorsCount](/reporting/api/Telerik.Reporting.ShapeMapSeries#Telerik_Reporting_ShapeMapSeries_ColorsCount) value is not respected.               
+   >note When the  __RangeGrouping__  property is set to  __None__ ,                 the  [ColorsCount](/reporting/api/Telerik.Reporting.ShapeMapSeries#Telerik_Reporting_ShapeMapSeries_ColorsCount)  value is not respected.               
 
-1. Set the [ColorsCount](/reporting/api/Telerik.Reporting.ShapeMapSeries#Telerik_Reporting_ShapeMapSeries_ColorsCount) property depending on on how many groups               you would want to split the data values. When the __RangeGrouping__  is set to __None__ , the legend               will contain only two items, showing the minimum and maximum data values. However, if the data set contains less records than the desired               colors count, the legend will display items only for the available data records.                           
+1. Set the  [ColorsCount](/reporting/api/Telerik.Reporting.ShapeMapSeries#Telerik_Reporting_ShapeMapSeries_ColorsCount)  property depending on on how many groups               you would want to split the data values. When the __RangeGrouping__  is set to __None__ , the legend               will contain only two items, showing the minimum and maximum data values. However, if the data set contains less records than the desired               colors count, the legend will display items only for the available data records.                           
 
 1. Setup the __LegendItem.Value__  expression, using the specific references `RangeMin` and               `RangeMax` that determine the minimum and maximum values of the respective data range.             
 
-1. Setup the [ColorPalette](/reporting/api/Telerik.Reporting.GraphSeriesBase#Telerik_Reporting_GraphSeriesBase_ColorPalette) property in order to define a range of               colors that will be used when displaying the data points. In the most cases the               [GradientPalette](/reporting/api/Telerik.Reporting.Drawing.GradientPalette) will be the best choice.             
+1. Setup the  [ColorPalette](/reporting/api/Telerik.Reporting.GraphSeriesBase#Telerik_Reporting_GraphSeriesBase_ColorPalette)  property in order to define a range of               colors that will be used when displaying the data points. In the most cases the                [GradientPalette](/reporting/api/Telerik.Reporting.Drawing.GradientPalette)  will be the best choice.             
 
 1. 
 
@@ -55,6 +55,9 @@ To add new ShapeMap series to the map follow these steps:
 When all the properties are set, the __ShapeMapSeries__  instance should look similar to the following one in the           __Property Grid__ :           
 
   ![Choropleth Shape Map Series Layout In Property Grid](images/Map/Choropleth/Choropleth_ShapeMapSeries_LayoutInPropertyGrid.png)
+
+# See Also
+
 
  * [Map Overview]({%slug telerikreporting/designing-reports/report-structure/map/structure/overview%})
 

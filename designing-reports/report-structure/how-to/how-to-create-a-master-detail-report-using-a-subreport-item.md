@@ -96,7 +96,7 @@ This next set of steps ties both reports together using a SubReport to display t
 
 1. Drag a [SubReport]({%slug telerikreporting/designing-reports/report-structure/subreport%}) from the Toolbox to the detail               section of the report.             
 
-1. In the Properties Window for the SubReport, open the [ReportSource]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/load-report-dialog%}) dialog, select __Type name__  ([TypeReportSource](/reporting/api/Telerik.Reporting.TypeReportSource)) and set it to the DetailReport.               Note that you should build the project first in order the type(s) to appear in the wizard.              
+1. In the Properties Window for the SubReport, open the [ReportSource]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/load-report-dialog%}) dialog, select __Type name__  ( [TypeReportSource](/reporting/api/Telerik.Reporting.TypeReportSource) ) and set it to the DetailReport.               Note that you should build the project first in order the type(s) to appear in the wizard.              
 
 1. Click the __Edit Parameters__  button that would display the __Edit Parameters__                dialog.             
 

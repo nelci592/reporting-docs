@@ -14,7 +14,7 @@ position: 3
 
 __Watermarks__  are text or pictures that appear commingled with the report content. They often add interest or identify status, such         as marking a generated report as a Draft. You can see watermarks in Print Preview Layout of the report viewers and when printing or         exporting. You have the ability to set the __Opacity__  of the text or image, specify its __Position__          and whether it is displayed on first (__PrintOnFirstPage__ ) and last page (__PrintOnLastPage__ ).       
 
-Watermarks are [PageSettings](/reporting/api/Telerik.Reporting.Drawing.PageSettings) member, processed during the paging of the report. At this moment the report data source is not available anymore, and thus data fields used in expressions would not be evaluated.       
+Watermarks are  [PageSettings](/reporting/api/Telerik.Reporting.Drawing.PageSettings)  member, processed during the paging of the report. At this moment the report data source is not available anymore, and thus data fields used in expressions would not be evaluated.       
 
 ## Add Text Watermark using Report Designer
 

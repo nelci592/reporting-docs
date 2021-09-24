@@ -14,7 +14,7 @@ position: 1
 
 This article will explain how to configure an MSSQL database for report engine storage.
 
-###How to configure an MSSQL database storage:
+## How to configure an MSSQL database storage:
 
 1. Ensure a database instance is available for report engine storage.             This may be a dedicated database or a shared database for both app data             and report engine storage.
 
@@ -28,8 +28,6 @@ This article will explain how to configure an MSSQL database for report engine s
 
 1. Click on the *Create schema*  button to start the database schema creation.             
 
-1. A message box should be displayed, confirming that the storage tables are successfully created. Use the connection string specified above when initializing an instance of [MsSqlServerStorage](/reporting/api/Telerik.Reporting.Cache.MsSqlServerStorage) in your application.             
+1. A message box should be displayed, confirming that the storage tables are successfully created. Use the connection string specified above when initializing an instance of  [MsSqlServerStorage](/reporting/api/Telerik.Reporting.Cache.MsSqlServerStorage)  in your application.             
 
 1. In case you want to cleanup the storage tables in an existing database, use the button *Clear cache data* .             
-
- * [Overview]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-service-storage/overview%})

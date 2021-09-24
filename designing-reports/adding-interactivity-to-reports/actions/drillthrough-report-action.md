@@ -20,7 +20,7 @@ A drillthrough report serves a different purpose than a subreport. A subreport i
 
 A drillthrough report typically contains parameters that are passed to it by the summary report. When you           set a drillthrough report link on a report item, set a value for the parameter of the target report as well. When           the user clicks the link in the summary report, the target detail report opens and displays the information for that specific value.         
 
-To define a drill-through action add a [NavigateToReportAction](/reporting/api/Telerik.Reporting.NavigateToReportAction) on an item.         
+To define a drill-through action add a  [NavigateToReportAction](/reporting/api/Telerik.Reporting.NavigateToReportAction)  on an item.         
 
 >note The Target report of a drill-through action should always have a default constructor, so it can be instantiated.
 

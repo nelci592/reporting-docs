@@ -42,6 +42,8 @@ To include aggregated values in your report, use the __Aggregates__  node in the
 # See Also
 
 
+# See Also
+
  * [How to create custom aggregate functions](https://www.telerik.com/support/kb/reporting/styling-and-formatting-reports/details/implementing-custom-aggregate-functions-)
 
  * [Apply custom logic with user aggregate functions ]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/extending-expressions/user-aggregate-functions%})

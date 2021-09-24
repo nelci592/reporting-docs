@@ -14,7 +14,7 @@ position: 3
 
 You can use the Telerik SqlDataSource component to connect to any        ODBC–compliant data source. You connect the component to an ODBC data        source by specifying the appropriate ODBC driver in the connection string        along with relevant server and authentication information.
 
-###To use the SqlDataSource control to connect to an ODBC database
+## To use the SqlDataSource control to connect to an ODBC database
 
 1. In Microsoft Visual Studio, open a Telerik Report. From the              Telerik Reporting {{site.suiteversion}} group in the Toolbox, select the              SqlDataSource component and click on the design surface to add it              to the Report.
 

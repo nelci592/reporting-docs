@@ -14,7 +14,7 @@ position: 0
 
 This topic explains how to update the report parameters with values passed from a custom UI instead of using the report viewer's default          parameters area. The report identifier and all required parameters values for it are packed in a ReportSource object.         To update the report source, the [setReportSource(rs)]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/api-reference/methods%}) method is used.       
 
-###Pass values to report parameters from the application UI
+## Pass values to report parameters from the application UI
 
 1. Add the custom UI in your application. For example:
 
@@ -47,6 +47,9 @@ export class AppComponent {
 ````
 
     The setReportSource(rs) method will automatically refresh the report with the new parameter values.
+
+# See Also
+
 
  * [How To: Use Angular Report Viewer with Angular CLI]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/how-to-use-angular-report-viewer-with-angular-cli%})
 

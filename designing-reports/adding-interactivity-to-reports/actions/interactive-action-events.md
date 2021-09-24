@@ -20,7 +20,7 @@ __InteractiveActionEnter__  event is raised when the mouse cursor enters the are
 
 __InteractiveActionLeave__  event is raised when the mouse cursor leaves the area of a report item that has an interactive action defined.       
 
-All the events provide arguments that contain a reference to the underlying         [IAction](/reporting/api/Telerik.Reporting.Processing.IAction) instance         and its properties, evaluated during report processing.       
+All the events provide arguments that contain a reference to the underlying          [IAction](/reporting/api/Telerik.Reporting.Processing.IAction)  instance         and its properties, evaluated during report processing.       
 
 Based on the used report viewer, the arguments can contain also:       
 

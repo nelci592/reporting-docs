@@ -164,7 +164,7 @@ The REST service works as a backend and is responsible for storage operations li
 
 1. Implement a Report Designer controller. Create the __Controllers__  folder if it doesn't exist, right-click on it                and add a new item: Add > New item... > __API Controller - Empty__  item.               Name it ReportDesignerController. This will be our Telerik Web Report Designer REST service in the               project.             
 
-1. Inherit the [ReportDesignerControllerBase](/reporting/api/Telerik.Reporting.Services.WebApi.ReportDesignerControllerBase)               type and inject the required configuration settings in the constructor. Along with the ReportServiceConfiguration               there is another configuration instance named ReportDesignerServiceConfiguration, which will initialize the               definition storage. This is the class responsible for opening, saving, etc. the report definitions. This is               how a basic implementation of the controller should look like:             
+1. Inherit the  [ReportDesignerControllerBase](/reporting/api/Telerik.Reporting.Services.WebApi.ReportDesignerControllerBase)                type and inject the required configuration settings in the constructor. Along with the ReportServiceConfiguration               there is another configuration instance named ReportDesignerServiceConfiguration, which will initialize the               definition storage. This is the class responsible for opening, saving, etc. the report definitions. This is               how a basic implementation of the controller should look like:             
 
 	
     ````c#

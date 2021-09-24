@@ -61,7 +61,7 @@ The toolbar on the Windows Forms Report Viewer provides basic functionality for 
 
 The Windows Forms ReportViewer control is a composite of standard Windows Forms controls.         
 
->note The Windows Forms ReportViewer control's toolbar is immutable. To build custom UI for the toolbar and work with the rendered report in the viewer,             you can use the Windows Forms [ReportViewer](/reporting/api/Telerik.ReportViewer.WinForms.ReportViewer).           
+>note The Windows Forms ReportViewer control's toolbar is immutable. To build custom UI for the toolbar and work with the rendered report in the viewer,             you can use the Windows Forms  [ReportViewer](/reporting/api/Telerik.ReportViewer.WinForms.ReportViewer) .           
 
 
 The purpose of the Windows Forms ReportViewer control is to display Telerik Reports and allow the user to interact with them.           Reports are processed and rendered on the client machine. The report in the viewer is rendered through Telerik Reporting IMAGE rendering mechanism based on the           [Design Considerations for Image Rendering]({%slug telerikreporting/designing-reports/rendering-and-paging/design-considerations-for-report-rendering/image-rendering-design-considerations%}).         

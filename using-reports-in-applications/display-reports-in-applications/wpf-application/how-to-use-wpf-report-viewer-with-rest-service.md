@@ -14,13 +14,13 @@ position: 10
 
 This topic explains how to setup the WPF Report Viewer to work with Telerik Reporting REST Service
 
-##Prerequisites
+## Prerequisites
 
 * Running               [ Telerik Reporting REST Service ]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview%}) instance.             
 
 * In case you are not using [Item Templates ]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/windows-forms-application/how-to-add-report-viewer-to-a-windows-forms'-.net-framework-project%}),               add references to all the assemblies listed               [here]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/requirements-for-desktop-viewers-using-remote-report-sources%}).             
 
-##Configuring the WPF Report Viewer to work with REST Service
+## Configuring the WPF Report Viewer to work with REST Service
 
 ###
 
@@ -52,11 +52,11 @@ This topic explains how to setup the WPF Report Viewer to work with Telerik Repo
 
   ![Wpf Report Source Editor](images/WpfReportSourceEditor.png)
 
-    >tip When the                     [ReportEngineConnection](/reporting/api/Telerik.ReportViewer.Wpf.ReportViewer#Telerik_ReportViewer_Wpf_ReportViewer_ReportEngineConnection)                     property has  __Engine__  set to  *RestService*  or  *ReportServer* ,                     the viewer will serialize the report source identifier property                     ( __URI__  for                     [UriReportSource](/reporting/api/Telerik.Reporting.UriReportSource),                      __TypeName__  for                     [TypeReportSource](/reporting/api/Telerik.Reporting.TypeReportSource),                      __ReportDocument__  for                     [InstanceReportSource](/reporting/api/Telerik.Reporting.InstanceReportSource) and                      __XML__  for                     [XmlReportSource](/reporting/api/Telerik.Reporting.XmlReportSource)) and send it to the service resolver.                   The  *REST service*  will use the  __ReportSourceResolver__  instances included in its                     [ReportServiceConfiguration](/reporting/api/Telerik.Reporting.Service.ReportServiceConfiguration) to resolve the report by the provided identifier.                     However, the  *REST service* 's default implementation includes only                     [UriReportSourceResolver](/reporting/api/Telerik.Reporting.Service.UriReportSourceResolver) and                     [TypeReportSourceResolver](/reporting/api/Telerik.Reporting.Service.TypeReportSourceResolver),                     so you need to provide a                     [Custom Report Source Resolver]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-service-report-source-resolver/how-to-implement-a-custom-report-source-resolver%}) if you use another type of                     [ReportSource](/reporting/api/Telerik.Reporting.ReportSource).                   
+    >tip When the                      [ReportEngineConnection](/reporting/api/Telerik.ReportViewer.Wpf.ReportViewer#Telerik_ReportViewer_Wpf_ReportViewer_ReportEngineConnection)                      property has  __Engine__  set to  *RestService*  or  *ReportServer* ,                     the viewer will serialize the report source identifier property                     ( __URI__  for                      [UriReportSource](/reporting/api/Telerik.Reporting.UriReportSource) ,                      __TypeName__  for                      [TypeReportSource](/reporting/api/Telerik.Reporting.TypeReportSource) ,                      __ReportDocument__  for                      [InstanceReportSource](/reporting/api/Telerik.Reporting.InstanceReportSource)  and                      __XML__  for                      [XmlReportSource](/reporting/api/Telerik.Reporting.XmlReportSource) ) and send it to the service resolver.                   The  *REST service*  will use the  __ReportSourceResolver__  instances included in its                      [ReportServiceConfiguration](/reporting/api/Telerik.Reporting.Service.ReportServiceConfiguration)  to resolve the report by the provided identifier.                     However, the  *REST service* 's default implementation includes only                      [UriReportSourceResolver](/reporting/api/Telerik.Reporting.Service.UriReportSourceResolver)  and                      [TypeReportSourceResolver](/reporting/api/Telerik.Reporting.Service.TypeReportSourceResolver) ,                     so you need to provide a                     [Custom Report Source Resolver]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-service-report-source-resolver/how-to-implement-a-custom-report-source-resolver%}) if you use another type of                      [ReportSource](/reporting/api/Telerik.Reporting.ReportSource) .                   
 
 
 
-1. In this scenario we will use a [UriReportSource](/reporting/api/Telerik.Reporting.UriReportSource).                   Select the __UriReportSource__  entry. Confirm by clicking __OK__ .                 
+1. In this scenario we will use a  [UriReportSource](/reporting/api/Telerik.Reporting.UriReportSource) .                   Select the __UriReportSource__  entry. Confirm by clicking __OK__ .                 
 
 1. Expand the __ReportSource__  node in Properties window. In the provided __Uri__  textbox enter the category and the name of the report you want to display using the following format: `{Category}/{ReportName}`, as shown below:                   
 
@@ -66,10 +66,10 @@ This topic explains how to setup the WPF Report Viewer to work with Telerik Repo
 
 1. Build and run your application. If your settings are configured correctly, you should see the report displayed in the report viewer of your WPF application.                   If not, check the                   [Troubleshooting](#Troubleshooting) section below.                 
 
->important When setting [ReportEngineConnection](/reporting/api/Telerik.ReportViewer.Wpf.ReportViewer#Telerik_ReportViewer_Wpf_ReportViewer_ReportEngineConnection) with code, make sure you call             the [RefreshReport](/reporting/api/Telerik.ReportViewer.Wpf.ReportViewer#Telerik_ReportViewer_Wpf_ReportViewer_RefreshReport)() method             or set the [ReportSource](/reporting/api/Telerik.ReportViewer.Wpf.ReportViewer#Telerik_ReportViewer_Wpf_ReportViewer_ReportSource) property afterwards,             so the connection's new value will be respected.           
+>important When setting  [ReportEngineConnection](/reporting/api/Telerik.ReportViewer.Wpf.ReportViewer#Telerik_ReportViewer_Wpf_ReportViewer_ReportEngineConnection)  with code, make sure you call             the  [RefreshReport](/reporting/api/Telerik.ReportViewer.Wpf.ReportViewer#Telerik_ReportViewer_Wpf_ReportViewer_RefreshReport) () method             or set the  [ReportSource](/reporting/api/Telerik.ReportViewer.Wpf.ReportViewer#Telerik_ReportViewer_Wpf_ReportViewer_ReportSource)  property afterwards,             so the connection's new value will be respected.           
 
 
-##Troubleshooting
+## Troubleshooting
 
 The following table shows the most common reasons for failure when using the Telerik Reporting REST Service. It is strongly recommended to use a tool like           Fiddler or any other web debugger when investigating such a problem.         
 
@@ -83,6 +83,9 @@ The following table shows the most common reasons for failure when using the Tel
 
 
 
+# See Also
+
+
  * [How to Use WPF Report Viewer With Report Server]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/wpf-application/how-to-use-wpf-report-viewer-with-report-server%})
 
- * [How to Construct a string to connect to Report Engine]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/how-to-construct-a-string-to-connect-to-report-engine%})[EmbeddedConnectionInfo](/reporting/api/Telerik.ReportViewer.Common.EmbeddedConnectionInfo)[ReportServerConnectionInfo](/reporting/api/Telerik.ReportViewer.Common.ReportServerConnectionInfo)[RestServiceConnectionInfo](/reporting/api/Telerik.ReportViewer.Common.RestServiceConnectionInfo)
+ * [How to Construct a string to connect to Report Engine]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/how-to-construct-a-string-to-connect-to-report-engine%}) * [EmbeddedConnectionInfo](/reporting/api/Telerik.ReportViewer.Common.EmbeddedConnectionInfo)  * [ReportServerConnectionInfo](/reporting/api/Telerik.ReportViewer.Common.ReportServerConnectionInfo)  * [RestServiceConnectionInfo](/reporting/api/Telerik.ReportViewer.Common.RestServiceConnectionInfo) 

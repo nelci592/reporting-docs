@@ -16,14 +16,14 @@ position: 1
 
 Often one or more reports that are part of a report book will contain report parameters.           The report book is shown as a single document in the report viewer and the parameters area represents the visible report parameters defined in all child reports.         
 
-Telerik Reporting provides a mechanism known as parameter merging.           If the [Name](/reporting/api/Telerik.Reporting.IReportParameter#Telerik_Reporting_IReportParameter_Name)           and [Type](/reporting/api/Telerik.Reporting.IReportParameter#Telerik_Reporting_IReportParameter_Type)           of two (or more) parameters from different reports are the same,           then they are considered equivalent and are displayed as a single parameter in the viewer's Parameters Area.         
+Telerik Reporting provides a mechanism known as parameter merging.           If the  [Name](/reporting/api/Telerik.Reporting.IReportParameter#Telerik_Reporting_IReportParameter_Name)            and  [Type](/reporting/api/Telerik.Reporting.IReportParameter#Telerik_Reporting_IReportParameter_Type)            of two (or more) parameters from different reports are the same,           then they are considered equivalent and are displayed as a single parameter in the viewer's Parameters Area.         
 
 >note When one or more parameters are merged the UI settings of the  __first__  one are used for the generated input control in the parameters area.           
   
 
   ![](images/ReportBook3_MergedParameters.png)
 
-You can control parameter merging via the           [Mergeable](/reporting/api/Telerik.Reporting.IReportParameter#Telerik_Reporting_IReportParameter_Mergeable) boolean           property of the ReportParameter class. The default value of the Mergeable property is true. Set           the Mergeable property to false if you want to prevent a parameter from being merged with its equivalent ones.           
+You can control parameter merging via the            [Mergeable](/reporting/api/Telerik.Reporting.IReportParameter#Telerik_Reporting_IReportParameter_Mergeable)  boolean           property of the ReportParameter class. The default value of the Mergeable property is true. Set           the Mergeable property to false if you want to prevent a parameter from being merged with its equivalent ones.           
 
   ![](images/ReportBook4_MergedParameters2.png)
 

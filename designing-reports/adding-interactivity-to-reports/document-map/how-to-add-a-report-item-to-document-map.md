@@ -25,7 +25,7 @@ You can add a document map, which acts like a table of contents. A user can clic
 
 1. Click __Preview__ . The report runs and the document map displays the text you created. Click any link to  	jump to the report page and the exact location of that item. 		
 
->note Report items positioned in the Page Header/Page Footer section of the report cannot be used to create nodes in the document map.             Setting the [DocumentMapText](/reporting/api/Telerik.Reporting.ReportItemBase#Telerik_Reporting_ReportItemBase_DocumentMapText) property of such item will have no effect.           
+>note Report items positioned in the Page Header/Page Footer section of the report cannot be used to create nodes in the document map.             Setting the  [DocumentMapText](/reporting/api/Telerik.Reporting.ReportItemBase#Telerik_Reporting_ReportItemBase_DocumentMapText)  property of such item will have no effect.           
 
 
 ## Hiding the document map when you view a report

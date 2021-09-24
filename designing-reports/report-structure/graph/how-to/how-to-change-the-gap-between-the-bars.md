@@ -10,13 +10,13 @@ position: 6
 
 # How to Change the Gap Between the Bars
 
-g/api/Telerik.Reporting.Scale#Telerik_Reporting_Scale_SpacingSlotCount)         property of the [Scale](/reporting/api/Telerik.Reporting.Scale) class.       
+ng/api/Telerik.Reporting.Scale#Telerik_Reporting_Scale_SpacingSlotCount)          property of the  [Scale](/reporting/api/Telerik.Reporting.Scale)  class.       
 
 This property defines the ratio between the empty space per single data slot and the space that the datapoints will occupy when placed in it.         The processing engine calculates how many data slots will be created on the axis, depending on the used scale and groupings.         Then, using the formula `Empty Space = SpacingSlotCount * DataPoint_SlotWidth` (where the         `DataPoint_SlotWidth` is the width of a single data point), the engine calculates the empty space         for each slot. Half of the empty space is placed at the beginning of the slot, the other half is placed at the end and the data points         are arranged in the remaining space, adjacent to each other.       
 
 ## 
 
-The following pictures show how the column chart would look like with different values for the           [SpacingSlotCount](/reporting/api/Telerik.Reporting.Scale#Telerik_Reporting_Scale_SpacingSlotCount) property:         
+The following pictures show how the column chart would look like with different values for the            [SpacingSlotCount](/reporting/api/Telerik.Reporting.Scale#Telerik_Reporting_Scale_SpacingSlotCount)  property:         
 
 
 
@@ -62,4 +62,10 @@ To change the __Scale.SpacingSlotCount__  property, follow these steps:
 # See Also
 
 
- * [How to: change the space between chart's series](http://www.telerik.com/support/kb/reporting/details/how-to-change-the-space-between-charts-series)[SpacingSlotCount](/reporting/api/Telerik.Reporting.Scale#Telerik_Reporting_Scale_SpacingSlotCount)[Scale](/reporting/api/Telerik.Reporting.Scale)
+# See Also
+
+ * [How to: change the space between chart's series](http://www.telerik.com/support/kb/reporting/details/how-to-change-the-space-between-charts-series)
+
+ * [SpacingSlotCount](/reporting/api/Telerik.Reporting.Scale#Telerik_Reporting_Scale_SpacingSlotCount) 
+
+ * [Scale](/reporting/api/Telerik.Reporting.Scale) 

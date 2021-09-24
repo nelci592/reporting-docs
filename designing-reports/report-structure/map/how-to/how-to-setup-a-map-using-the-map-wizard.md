@@ -17,7 +17,7 @@ In this how-to article we will show you how to create a Map which will present t
 >important This article assumes that you have obtained a valid  __Location Provider key__  to authenticate your geocoding requests.           If you don't want to use a location provider, you need to provide the geographical coordinates of your points yourself and setup the MapSeries accordingly.           For more information please take a look at the [Location Providers]({%slug telerikreporting/designing-reports/report-structure/map/structure/location-providers%}) article.         
 
 
-###
+## 
 
 1. Start the Map Wizard:
    + If you create a new report, select the __Map Wizard__  icon from the __Available Templates__  page.                   
@@ -82,7 +82,7 @@ AND PC.Name = 'Bikes'
 
   ![Arrange Map Fields](images/Map/ArrangeMapFields.png)    Once the mandatory fields are set up, the __Next__  button will get enabled and you can go to the next page.             
 
-1. On the __Choose a location provider__  page you have to select the location provider that will be used to geocode               the __State__  field that was dragged in the *Categories (location)*  box on the previous page.               Currently the supported providers are               [MapQuestOpenAPILocationProvider](/reporting/api/Telerik.Reporting.MapQuestOpenAPILocationProvider)               ,               [MapQuestLocationProvider](/reporting/api/Telerik.Reporting.MapQuestLocationProvider)               and               [BingLocationProvider](/reporting/api/Telerik.Reporting.BingLocationProvider).               They both require a valid client token (key) to authenticate the geocoding requests that will be sent from the Map item.               Once you have obtained the key, you should paste it in the *Client token*  box, as shown below:               
+1. On the __Choose a location provider__  page you have to select the location provider that will be used to geocode               the __State__  field that was dragged in the *Categories (location)*  box on the previous page.               Currently the supported providers are                [MapQuestOpenAPILocationProvider](/reporting/api/Telerik.Reporting.MapQuestOpenAPILocationProvider)                ,                [MapQuestLocationProvider](/reporting/api/Telerik.Reporting.MapQuestLocationProvider)                and                [BingLocationProvider](/reporting/api/Telerik.Reporting.BingLocationProvider) .               They both require a valid client token (key) to authenticate the geocoding requests that will be sent from the Map item.               Once you have obtained the key, you should paste it in the *Client token*  box, as shown below:               
 
   ![ChooseALocation Provider](images/Map/ChooseALocationProvider.png)
 
@@ -90,7 +90,12 @@ AND PC.Name = 'Bikes'
 
   ![Map Pie Chart Done](images/Map/MapPieChart_Done.png)
 
+
+
 In this example we demonstrated how to setup a Map item from scratch, how to add PieChart series to it and how to initialize and           use the __Location Provider__ . All the described steps are valid for both           [Standalone Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview%})           and [Visual Studio Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/overview%}) and           can be reproduced with code as well.         
+
+# See Also
+
 
  * [Map Overview]({%slug telerikreporting/designing-reports/report-structure/map/structure/overview%})
 

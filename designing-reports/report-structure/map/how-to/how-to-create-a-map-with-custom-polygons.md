@@ -12,7 +12,7 @@ position: 8
 
 
 
-This topic explains how to create a map that shows custom-defined shapes. The Map item processes and renders polygon primitives         using [ShapeMapSeries](/reporting/api/Telerik.Reporting.ShapeMapSeries),         which accept          [Well-known text/Well-known binary](http://en.wikipedia.org/wiki/Well-known_text)          or          [ESRI Shapefile](http://en.wikipedia.org/wiki/Shapefile)          as a source. Since creating __ESRI Shapefiles__  requires additional tools, in this example the WKT polygon representation         will be used. The resulting report will display three American states whose coordinates will be obtained from a CSV data source.       
+This topic explains how to create a map that shows custom-defined shapes. The Map item processes and renders polygon primitives         using  [ShapeMapSeries](/reporting/api/Telerik.Reporting.ShapeMapSeries) ,         which accept          [Well-known text/Well-known binary](http://en.wikipedia.org/wiki/Well-known_text)          or          [ESRI Shapefile](http://en.wikipedia.org/wiki/Shapefile)          as a source. Since creating __ESRI Shapefiles__  requires additional tools, in this example the WKT polygon representation         will be used. The resulting report will display three American states whose coordinates will be obtained from a CSV data source.       
 
 ###Displaying custom polygons using the Map item
 
@@ -49,11 +49,13 @@ This topic explains how to create a map that shows custom-defined shapes. The Ma
 
 1. The __Choropleth setup__  expects to setup the fields required to create a choropleth.               Since our data source doesn't include any analytical information that could be used, just drag one of the two available fields in the               *Color data field* box. Click __Finish__ .             
 
-1. When the wizard closes, the Map item should display the three polygons that roughly represent the state borders of North Dakota, Wyoming and New Mexico.               Depending on your scenario, you can setup a               [TileProvider](/reporting/api/Telerik.Reporting.TileProvider) and add some additional styling to the data points and map:               
+1. When the wizard closes, the Map item should display the three polygons that roughly represent the state borders of North Dakota, Wyoming and New Mexico.               Depending on your scenario, you can setup a                [TileProvider](/reporting/api/Telerik.Reporting.TileProvider)  and add some additional styling to the data points and map:               
 
   ![Map CustomWKT](images/Map/MapCustomWKT.png)
 
-In this article we demonstrated how to display custom-shaped polygons using             [ShapeMapSeries](/reporting/api/Telerik.Reporting.ShapeMapSeries) and Choropleth wizard. This approach is useful when is needed to             show an additional layer or layers of geospatial data in a report.           
+
+
+In this article we demonstrated how to display custom-shaped polygons using              [ShapeMapSeries](/reporting/api/Telerik.Reporting.ShapeMapSeries)  and Choropleth wizard. This approach is useful when is needed to             show an additional layer or layers of geospatial data in a report.           
 
  * [Map Overview]({%slug telerikreporting/designing-reports/report-structure/map/structure/overview%})
 

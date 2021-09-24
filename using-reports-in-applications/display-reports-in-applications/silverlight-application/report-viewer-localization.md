@@ -228,7 +228,7 @@ Instead of a hard-coded string the property can be set in a method/contructor or
 
 ## Related articles
 
-[TextResources](/reporting/api/Telerik.ReportViewer.Silverlight.TextResources)
+ [TextResources](/reporting/api/Telerik.ReportViewer.Silverlight.TextResources) 
 
 [Silverlight Application]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/silverlight-application/overview%})
 
@@ -236,6 +236,8 @@ Instead of a hard-coded string the property can be set in a method/contructor or
 
 # See Also
 
+
+# See Also
 
  * [Hierarchical Organization of Resources for Localization](http://msdn2.microsoft.com/en-us/library/756hydy4(VS.71).aspx)
 

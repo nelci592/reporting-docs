@@ -14,7 +14,7 @@ position: 0
 
 You can connect to a Microsoft SQL Server database using the Telerik       __SqlDataSource__  component. To do this, you need a connection string and access       rights to a SQL Server database. Then, you can use the SqlDataSource component       to provide data to data items (Report, Table, Chart).
 
-###To connect to a SQL Server database using the SqlDataSource component
+## To connect to a SQL Server database using the SqlDataSource component
 
 1. In Microsoft Visual Studio, open a Telerik Report. From the              Telerik Reporting {{site.suiteversion}} group in the Toolbox, select the              SqlDataSource component and click on the design surface to add it              to the Report.
 

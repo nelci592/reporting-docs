@@ -14,7 +14,7 @@ position: 1
 
 The quickest way to add a WPF Report Viewer to your WPF project is with the __Telerik Report Viewer Window__  item template.       
 
-##Telerik Report Viewer Window Item Template
+## Telerik Report Viewer Window Item Template
 
 The item template is available in the             [Add New Item](https://msdn.microsoft.com/en-us/library/w0572c5b%28v=vs.100%29.aspx)             dialog box under the __WPF category__ .         
 
@@ -53,11 +53,3 @@ If the selected engine is __REST Service__  additionally it will do the followin
 * 
 
    >note In some cases the solution must be rebuilt in order to invalidate the NuGet packages and start the REST service project correctly.               
-
- * [How to Add  manually report viewer to a WPF .NET Framework project]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/wpf-application/how-to-add--manually-report-viewer-to-a-wpf-.net-framework-project%})
-
- * [Report Sources]({%slug telerikreporting/designing-reports/report-sources/overview%})
-
- * [WPF Application]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/wpf-application/overview%})
-
- * [Setting a Theme (Using Implicit Styles)]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/wpf-application/setting-a-theme-(using-implicit-styles)%})

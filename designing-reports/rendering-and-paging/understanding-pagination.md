@@ -81,7 +81,7 @@ If the report body cannot fit in the available page width, a new page will be ad
 
 In the vertical direction, by default sections are not split across different pages, unless their KeepTogether property is           set to false. If you want to force a page break before or after a section, use the section’s PageBreak property.         
 
-Table/Crosstab items also support page breaks before and/or after each TableGroup instance. This is supported in both horizontal and vertical direction           and is controlled using the [Telerik.Reporting.TableGroup.PageBreak](/reporting/api/Telerik.Reporting.TableGroup#Telerik_Reporting_TableGroup_PageBreak) property.         
+Table/Crosstab items also support page breaks before and/or after each TableGroup instance. This is supported in both horizontal and vertical direction           and is controlled using the  [Telerik.Reporting.TableGroup.PageBreak](/reporting/api/Telerik.Reporting.TableGroup#Telerik_Reporting_TableGroup_PageBreak)  property.         
 
 In older Telerik Reporting versions, simple report items (i.e. non-container items) are always kept together on a page if possible. If not, they are rendered at           the beginning of the next page. If they still cannot fit, because they are longer than a whole page, they are split.           The PictureBox, Shape and Chart items are always kept together.__In recent Telerik Reporting versions all items can be split between pages, if they do not fit in.__ 
 

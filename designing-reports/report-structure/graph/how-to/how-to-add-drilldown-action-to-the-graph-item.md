@@ -12,11 +12,11 @@ position: 1
 
 
 
-In this article we will show you how to create a [Column chart]({%slug telerikreporting/designing-reports/report-structure/graph/chart-types/column-charts/overview%})         and add [drill-down capabilities]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/actions/drilldown-report-action%})         on its category groups using the [Graph](/reporting/api/Telerik.Reporting.Graph) item and the          [AdventureWorks](http://msftdbprodsamples.codeplex.com/releases/view/55330)          sample database.          The chart will display the amount of sales by product categories per year, and the attached drill-down actions will give you         a more detailed view over the sales, showing the subcategories for the selected product category.       
+In this article we will show you how to create a [Column chart]({%slug telerikreporting/designing-reports/report-structure/graph/chart-types/column-charts/overview%})         and add [drill-down capabilities]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/actions/drilldown-report-action%})         on its category groups using the  [Graph](/reporting/api/Telerik.Reporting.Graph)  item and the          [AdventureWorks](http://msftdbprodsamples.codeplex.com/releases/view/55330)          sample database.          The chart will display the amount of sales by product categories per year, and the attached drill-down actions will give you         a more detailed view over the sales, showing the subcategories for the selected product category.       
 
 You can use a report designer of your choice - the described approach is valid for both         [Standalone Telerik Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview%})         and         [Integrated Visual Studio Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/overview%}).       
 
-###How to: Add a drill-down action to the Graph Item
+## How to: Add a drill-down action to the Graph Item
 
 1. Start the report designer and create a new report:             
    + In Standalone Report Designer: *File - New - Blank Report;* 
@@ -74,13 +74,15 @@ ON SOD.SalesOrderID = SOH.SalesOrderID
 
   ![How To Add Drill Down Action 5 Drill Down Graph](images/Graph/HowToAddDrillDownAction/HowToAddDrillDownAction_5_DrillDownGraph.png)
 
-1. To see what the __Graph Wizard__  has done, you can examine the Graph’s               [CategoryGroups](/reporting/api/Telerik.Reporting.Graph#Telerik_Reporting_Graph_CategoryGroups).               You will notice that the Graph wizard created one __CategoryGroup__  instance for the product categories and has added               a child group to it for the product subcategories - __CategoryGroups -> ChildGroups__ . The wizard has also created a               [ToggleVisibilityAction](/reporting/api/Telerik.Reporting.ToggleVisibilityAction)               and set its [Targets](/reporting/api/Telerik.Reporting.ToggleVisibilityAction#Telerik_Reporting_ToggleVisibilityAction_Targets)               to the __ProductSubCategoryGroup__ , providing the ability to show or hide this group by clicking its parent’s toggle mark.               Initially the __ProductSubCategoryGroup.Visible property__  is set to false to provide more compact view.               The expanded view of the Graph’s __CategoryGroups__  should look like this:               
+1. To see what the __Graph Wizard__  has done, you can examine the Graph’s                [CategoryGroups](/reporting/api/Telerik.Reporting.Graph#Telerik_Reporting_Graph_CategoryGroups) .               You will notice that the Graph wizard created one __CategoryGroup__  instance for the product categories and has added               a child group to it for the product subcategories - __CategoryGroups -> ChildGroups__ . The wizard has also created a                [ToggleVisibilityAction](/reporting/api/Telerik.Reporting.ToggleVisibilityAction)                and set its  [Targets](/reporting/api/Telerik.Reporting.ToggleVisibilityAction#Telerik_Reporting_ToggleVisibilityAction_Targets)                to the __ProductSubCategoryGroup__ , providing the ability to show or hide this group by clicking its parent’s toggle mark.               Initially the __ProductSubCategoryGroup.Visible property__  is set to false to provide more compact view.               The expanded view of the Graph’s __CategoryGroups__  should look like this:               
 
   ![How To Add Drill Down Action 6 Expanded Category Groups](images/Graph/HowToAddDrillDownAction/HowToAddDrillDownAction_6_ExpandedCategoryGroups.png)
 
+
+
 __In conclusion:__ 
 
-In this how-to article we demonstrated how to add a drill-down capabilities to the [Graph](/reporting/api/Telerik.Reporting.Graph) item,             having the __Graph Wizard__  to create the groups hierarchy and the toggle visibility actions for us.           
+In this how-to article we demonstrated how to add a drill-down capabilities to the  [Graph](/reporting/api/Telerik.Reporting.Graph)  item,             having the __Graph Wizard__  to create the groups hierarchy and the toggle visibility actions for us.           
 
 To learn how to add more actions and set them up manually, you can look at the following documentation articles:           
 

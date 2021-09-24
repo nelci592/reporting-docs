@@ -14,7 +14,7 @@ position: 0
 
 The simplest way to add a __Graph__  item to your report is to run the Graph Wizard for Visual Studio report designer or to run          a *new Bar* , *Column* , *Area* , *Line* ,          *Pie* , *Scatter* , or *Others*  chart wizard in the standalone designer.          After you add a Graph item to the design surface, you can click the chart elements to edit the selected element's properties in the          *Properties*  grid or in the standalone Report Designer you can use the ribbon tools.               
 
-###To add a graph to a report by using the Visual Studio report designer Graph Wizard
+## To add a graph to a report by using the Visual Studio report designer Graph Wizard
 
 1. Open the Visual Studio toolbox and select Graph Wizard from the Telerik Reporting tab.
 
@@ -24,7 +24,7 @@ The simplest way to add a __Graph__  item to your report is to run the Graph Wiz
 
 1. When you finish the wizard a new Graph item will be created on the design surface. 
 
-###To add a graph to a report by using the standalone Report Designer Graph Wizard
+## To add a graph to a report by using the standalone Report Designer Graph Wizard
 
 1. Open the *Insert*  tab from the ribbon bar and select the desired chart type.             The graph will be placed in the center of the selected container.
 
@@ -32,10 +32,7 @@ The simplest way to add a __Graph__  item to your report is to run the Graph Wiz
 
 1. When you finish the wizard a new Graph item will be created on the design surface. 
 
->note Please note that the datapoint labels in the produced chart can be invisible because their default visibility depends on the selected chart type.           All charts that have visible axes, which can give you information about the measured value, have their labels visibility set to            __False__  by default. However, on some chart types like the [Pie Charts]({%slug telerikreporting/designing-reports/report-structure/graph/chart-types/pie-charts/overview%})           the labels are visible by default, while the axes are invisible.
-
-
-##To insert a graph to a report
+## To insert a graph to a report
 
 >note Graph item for direct insertion is only available in the Visual Studio report designer.For the     		standalone report designer, please use a Graph wizard for the specific chart type.
 

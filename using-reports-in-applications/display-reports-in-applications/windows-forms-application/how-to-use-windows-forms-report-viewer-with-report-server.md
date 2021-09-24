@@ -14,7 +14,7 @@ position: 7
 
 This topic explains how to setup the Windows Forms Report Viewer to work with Telerik Report Server
 
-##Prerequisites
+## Prerequisites
 
 * Installed and running                [Telerik Report Server](http://docs.telerik.com/report-server/introduction)  R2 2016 (2.1.16.x) or higher version.             
 
@@ -22,7 +22,7 @@ This topic explains how to setup the Windows Forms Report Viewer to work with Te
 
 * In case you are not using [Item Templates ]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/windows-forms-application/how-to-add-report-viewer-to-a-windows-forms'-.net-framework-project%}),               add references to all the assemblies listed               [here]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/requirements-for-desktop-viewers-using-remote-report-sources%}).             
 
-##Configuring the Windows Forms Report Viewer to work with Report Server
+## Configuring the Windows Forms Report Viewer to work with Report Server
 
 ###
 
@@ -62,7 +62,7 @@ This topic explains how to setup the Windows Forms Report Viewer to work with Te
 
 1. Build and run your application. If your settings are configured correctly, you should see the report, hosted on your Report Server instance, displayed in the report viewer of your WinForms application.                   If not, check the                   [Troubleshooting](#Troubleshooting) section below.                 
 
-##Troubleshooting
+## Troubleshooting
 
 The most common reasons for failure are related with the authentication against Report Server. It is strongly recommended to use a tool like           Fiddler or any other web debugger when investigating such a problem.         
 
@@ -76,6 +76,9 @@ The most common reasons for failure are related with the authentication against 
 
 
 
+# See Also
+
+
  * [How to Construct a string to connect to Report Engine]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/how-to-construct-a-string-to-connect-to-report-engine%})
 
- * [How to Use Windows Forms Report Viewer With REST Service]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/windows-forms-application/how-to-use-windows-forms-report-viewer-with-rest-service%})[EmbeddedConnectionInfo](/reporting/api/Telerik.ReportViewer.Common.EmbeddedConnectionInfo)[ReportServerConnectionInfo](/reporting/api/Telerik.ReportViewer.Common.ReportServerConnectionInfo)[RestServiceConnectionInfo](/reporting/api/Telerik.ReportViewer.Common.RestServiceConnectionInfo)
+ * [How to Use Windows Forms Report Viewer With REST Service]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/windows-forms-application/how-to-use-windows-forms-report-viewer-with-rest-service%}) * [EmbeddedConnectionInfo](/reporting/api/Telerik.ReportViewer.Common.EmbeddedConnectionInfo)  * [ReportServerConnectionInfo](/reporting/api/Telerik.ReportViewer.Common.ReportServerConnectionInfo)  * [RestServiceConnectionInfo](/reporting/api/Telerik.ReportViewer.Common.RestServiceConnectionInfo) 

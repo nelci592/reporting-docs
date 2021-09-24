@@ -20,7 +20,7 @@ You can add a table of contents to the report and click on entries in the table 
 
 1. Select a report group which you want to appear in the table of contents. The properties for the selected group appear in the __Properties__  pane.             
 
-1. In the [TocText](/reporting/api/Telerik.Reporting.Group#Telerik_Reporting_Group_TocText) property, type the text               that you want to appear in the table of contents. Alternatively, click the ellipsis to open the __Expression__  dialog box to specify an               expression that evaluates to a text.               Typically for a group, the expression you type should match the group expression.             
+1. In the  [TocText](/reporting/api/Telerik.Reporting.Group#Telerik_Reporting_Group_TocText)  property, type the text               that you want to appear in the table of contents. Alternatively, click the ellipsis to open the __Expression__  dialog box to specify an               expression that evaluates to a text.               Typically for a group, the expression you type should match the group expression.             
 
 1. Click __OK__ .             
 

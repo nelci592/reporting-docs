@@ -18,17 +18,17 @@ The TextBox report item is used to display text on a report. This screenshot sho
 
 TextBox can display literal text for titles, descriptions, and labels, or dynamic text based on expressions. Every         cell in a Table or CrossTab also contains a TextBox, which can be formatted the same way as stand-alone TextBoxes in your report.         The expressions in a TextBox can contain literal text, point to a database field or calculate data.       
 
-Use a Panel item when you want to control the TextBox layout and dependency with other report items. For more information,         see [Panel](/reporting/api/Telerik.Reporting.Panel).       
+Use a Panel item when you want to control the TextBox layout and dependency with other report items. For more information,         see  [Panel](/reporting/api/Telerik.Reporting.Panel) .       
 
-In order to format separate chunks of text (i.e. different words) or insert HTML-formatted text into a report, use the         [HtmlTextBox](/reporting/api/Telerik.Reporting.HtmlTextBox) report item.       
+In order to format separate chunks of text (i.e. different words) or insert HTML-formatted text into a report, use the          [HtmlTextBox](/reporting/api/Telerik.Reporting.HtmlTextBox)  report item.       
 
 ## Growing and Shrinking
 
-By default, TextBox items are a set size. If you want to allow a TextBox to expand vertically based on its contents,           set the [CanGrow](/reporting/api/Telerik.Reporting.TextItemBase#Telerik_Reporting_TextItemBase_CanGrow) property to True (default value).           If you want to allow a TextBox to shrink based on its contents set the           [CanShrink](/reporting/api/Telerik.Reporting.TextItemBase#Telerik_Reporting_TextItemBase_CanShrink) property to           True (default value is False). The TextBox would always grow to accomodate the first line of text even when CanGrow is False.         
+By default, TextBox items are a set size. If you want to allow a TextBox to expand vertically based on its contents,           set the  [CanGrow](/reporting/api/Telerik.Reporting.TextItemBase#Telerik_Reporting_TextItemBase_CanGrow)  property to True (default value).           If you want to allow a TextBox to shrink based on its contents set the            [CanShrink](/reporting/api/Telerik.Reporting.TextItemBase#Telerik_Reporting_TextItemBase_CanShrink)  property to           True (default value is False). The TextBox would always grow to accomodate the first line of text even when CanGrow is False.         
 
 ## Text Orientation
 
-You can use the [Angle](/reporting/api/Telerik.Reporting.TextItemBase#Telerik_Reporting_TextItemBase_Angle)           property to change the text orientation in a TextBox item. This can help you create           more readable reports, support locale-specific text orientation, fit more columns on a printed report that           has fixed page size, and create reports with a better graphical appeal. The layout of the tilted text starts from the very           corner of the item's client rectangle and fits the text until finished. This produces short initial text lines which can be avoided            if desired by adding some empty lines at the beginning of the text/expression:         
+You can use the  [Angle](/reporting/api/Telerik.Reporting.TextItemBase#Telerik_Reporting_TextItemBase_Angle)            property to change the text orientation in a TextBox item. This can help you create           more readable reports, support locale-specific text orientation, fit more columns on a printed report that           has fixed page size, and create reports with a better graphical appeal. The layout of the tilted text starts from the very           corner of the item's client rectangle and fits the text until finished. This produces short initial text lines which can be avoided            if desired by adding some empty lines at the beginning of the text/expression:         
 
 	
 ````cs
@@ -40,7 +40,7 @@ You can use the [Angle](/reporting/api/Telerik.Reporting.TextItemBase#Telerik_Re
 
 
 
-The item grows vertically enough to accommodate a full tilted line from the left to the right edge.           This might produce significant growth of the item, specifically for angles closer to 90 degrees.           To avoid that, you may set the [CanGrow](/reporting/api/Telerik.Reporting.TextItemBase#Telerik_Reporting_TextItemBase_CanGrow)           property to false. For the angles 90 and 270 degrees, the item will grow until the whole text gets fitted on a single line.           This also can be controlled using the [CanGrow](/reporting/api/Telerik.Reporting.TextItemBase#Telerik_Reporting_TextItemBase_CanGrow)           property.         
+The item grows vertically enough to accommodate a full tilted line from the left to the right edge.           This might produce significant growth of the item, specifically for angles closer to 90 degrees.           To avoid that, you may set the  [CanGrow](/reporting/api/Telerik.Reporting.TextItemBase#Telerik_Reporting_TextItemBase_CanGrow)            property to false. For the angles 90 and 270 degrees, the item will grow until the whole text gets fitted on a single line.           This also can be controlled using the  [CanGrow](/reporting/api/Telerik.Reporting.TextItemBase#Telerik_Reporting_TextItemBase_CanGrow)            property.         
 
 Reconsider the usage of tilted text for busy reports that will need to break the item into two pages. A split tilted text is hardly readable.         
 
@@ -97,4 +97,4 @@ The item supports [embedded expressions]({%slug telerikreporting/designing-repor
 # See Also
 
 
- * [Using Styles to Customize Reports]({%slug telerikreporting/designing-reports/styling-reports/using-styles-to-customize-reports%})[TextBox](/reporting/api/Telerik.Reporting.TextBox)[Angle](/reporting/api/Telerik.Reporting.TextItemBase#Telerik_Reporting_TextItemBase_Angle)[Format](/reporting/api/Telerik.Reporting.TextItemBase#Telerik_Reporting_TextItemBase_Format)[HtmlTextBox](/reporting/api/Telerik.Reporting.HtmlTextBox)
+ * [Using Styles to Customize Reports]({%slug telerikreporting/designing-reports/styling-reports/using-styles-to-customize-reports%}) * [TextBox](/reporting/api/Telerik.Reporting.TextBox)  * [Angle](/reporting/api/Telerik.Reporting.TextItemBase#Telerik_Reporting_TextItemBase_Angle)  * [Format](/reporting/api/Telerik.Reporting.TextItemBase#Telerik_Reporting_TextItemBase_Format)  * [HtmlTextBox](/reporting/api/Telerik.Reporting.HtmlTextBox) 

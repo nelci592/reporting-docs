@@ -196,7 +196,7 @@ The last supported type of __ConnectionStrings__  configuration uses an array to
 
 1. Implement a Reports controller. Right-click on the __Controllers__                              folder and add a new item: __Add > New item > Web API Controller Class__  item.                             Name it __ReportsController__ . This will be our Telerik Reporting REST service in the project.                         
 
-1. Inherit the [ReportsControllerBase](/reporting/api/Telerik.Reporting.Services.WebApi.ReportsControllerBase) type                             and inject the configuration settings in the constructor.                             This is how a basic implementation of the controller should look like:                         
+1. Inherit the  [ReportsControllerBase](/reporting/api/Telerik.Reporting.Services.WebApi.ReportsControllerBase)  type                             and inject the configuration settings in the constructor.                             This is how a basic implementation of the controller should look like:                         
 
 	
     ````c#
@@ -270,5 +270,7 @@ Activate the above policy for the application by adding the next code in the *Co
 
 # See Also
 
+
+# See Also
 
  * [YouTube video "How to set up a Telerik Reporting REST Service in .NET 5?"](https://www.youtube.com/watch?v=qU_ByzMgJBo)

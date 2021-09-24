@@ -76,18 +76,24 @@ Determines the size of the quiet zone (quiet area) - unprinted border around the
 
 ## ValidateBillData
 
-Determines whether the data provided in the [BillData](/reporting/api/Telerik.Reporting.Barcodes.SwissQRCodeEncoder#Telerik_Reporting_Barcodes_SwissQRCodeEncoder_BillData) property will be validated, or not.           If set to __false__ , the data will not be validated.           If set to __true__ , the data will be validated under the following conditions:         
+Determines whether the data provided in the  [BillData](/reporting/api/Telerik.Reporting.Barcodes.SwissQRCodeEncoder#Telerik_Reporting_Barcodes_SwissQRCodeEncoder_BillData)  property will be validated, or not.           If set to __false__ , the data will not be validated.           If set to __true__ , the data will be validated under the following conditions:         
 
-* At design-time the validation will be performed only if the [BillData](/reporting/api/Telerik.Reporting.Barcodes.SwissQRCodeEncoder#Telerik_Reporting_Barcodes_SwissQRCodeEncoder_BillData) property contains static values, i.e. its fields must not contain any expression.             
+* At design-time the validation will be performed only if the  [BillData](/reporting/api/Telerik.Reporting.Barcodes.SwissQRCodeEncoder#Telerik_Reporting_Barcodes_SwissQRCodeEncoder_BillData)  property contains static values, i.e. its fields must not contain any expression.             
 
 * At run-time (during the report processing stage) the validation will be always performed, because all the expressions will be evaluated against the current data context.             
 
 ## ValueFromBillData
 
-Determines whether the barcode [Value](/reporting/api/Telerik.Reporting.Barcode#Telerik_Reporting_Barcode_Value) property will obtain its value from the data configured in the [BillData](/reporting/api/Telerik.Reporting.Barcodes.SwissQRCodeEncoder#Telerik_Reporting_Barcodes_SwissQRCodeEncoder_BillData) property, or not.           If set to __true__ , the data will be constructed from the fields in the *BillData*  property.           If set to __false__ , the *BillData*  fields will not be respected and the barcode item will encode the raw data used in the *Value*  field.         
+Determines whether the barcode  [Value](/reporting/api/Telerik.Reporting.Barcode#Telerik_Reporting_Barcode_Value)  property will obtain its value from the data configured in the  [BillData](/reporting/api/Telerik.Reporting.Barcodes.SwissQRCodeEncoder#Telerik_Reporting_Barcodes_SwissQRCodeEncoder_BillData)  property, or not.           If set to __true__ , the data will be constructed from the fields in the *BillData*  property.           If set to __false__ , the *BillData*  fields will not be respected and the barcode item will encode the raw data used in the *Value*  field.         
 
 # See Also
 
 
+# See Also
+
  * [          Swiss Implementation Guidelines QR-bill (PDF)
-        ](https://www.paymentstandards.ch/dam/downloads/ig-qr-bill-2019-en.pdf)[Telerik.Reporting.Barcodes.SwissQRBillData](/reporting/api/Telerik.Reporting.Barcodes.SwissQRBillData)[Telerik.Reporting.Barcodes.SwissQRCodeEncoder](/reporting/api/Telerik.Reporting.Barcodes.SwissQRCodeEncoder)
+        ](https://www.paymentstandards.ch/dam/downloads/ig-qr-bill-2019-en.pdf)
+
+ * [Telerik.Reporting.Barcodes.SwissQRBillData](/reporting/api/Telerik.Reporting.Barcodes.SwissQRBillData) 
+
+ * [Telerik.Reporting.Barcodes.SwissQRCodeEncoder](/reporting/api/Telerik.Reporting.Barcodes.SwissQRCodeEncoder) 

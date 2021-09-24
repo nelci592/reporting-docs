@@ -14,7 +14,7 @@ position: 1
 
 To define a sorting for the __Report__  item use the following steps:     	
 
-##Adding sorting to Report using Report Designer
+## Adding sorting to Report using Report Designer
 
 
 
@@ -34,7 +34,7 @@ For each sort expression, follow these steps:
 
 1. Click OK.
 
-##Adding sorting to Report Group using Report Designer
+## Adding sorting to Report Group using Report Designer
 
 
 
@@ -61,7 +61,7 @@ For each sort expression, follow these steps:
 
 1. Click OK.
 
-##Adding sorting to Report programatically
+## Adding sorting to Report programatically
 
 
 
@@ -85,6 +85,3 @@ For each sort expression, follow these steps:
 	        report1.Sortings.Add(sorting1)
 ````
 
-[Report](/reporting/api/Telerik.Reporting.Report)[Sorting](/reporting/api/Telerik.Reporting.Sorting)[SortingCollection](/reporting/api/Telerik.Reporting.SortingCollection)
-
- * [How to Add groups to Report]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/grouping-data-/how-to-add-groups-to-report%})

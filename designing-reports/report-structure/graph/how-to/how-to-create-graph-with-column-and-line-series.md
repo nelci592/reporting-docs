@@ -14,7 +14,7 @@ position: 9
 
 In this how-to article we will show you how to create a graph with both column and line series, showing the maximum         and the average amount of sales on a monthly basis using the __AdventureWorks__  sample database.       
 
-###How to create a Graph with Column and Line Series
+## How to create a Graph with Column and Line Series
 
 1. Start the Graph Wizard:
    + If you use [Standalone Telerik Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview%})From the __Insert__  menu select __Column__  and then __Clustered Column__ .                   This will bring up the __Graph Wizard__  which will help you create the first series.                   
@@ -57,7 +57,7 @@ and S.SalesPersonId = 283
 
   ![Graph Layout 1](images/Graph/HowToBarLineSeries/GraphLayout1.png)
 
-1. The graph is displaying the date-time values on its X-axis, and the 'Auto' scale option divides each column into one column per month.               To make the label for the X-axis easier to read, first select the X-axis, and in the *Property Browser*  set a proper               [LabelFormat](/reporting/api/Telerik.Reporting.GraphAxis#Telerik_Reporting_GraphAxis_LabelFormat)               (i.e. `{0:Y}`) and               [LabelAngle](/reporting/api/Telerik.Reporting.GraphAxis#Telerik_Reporting_GraphAxis_LabelAngle)                to 90º.             
+1. The graph is displaying the date-time values on its X-axis, and the 'Auto' scale option divides each column into one column per month.               To make the label for the X-axis easier to read, first select the X-axis, and in the *Property Browser*  set a proper                [LabelFormat](/reporting/api/Telerik.Reporting.GraphAxis#Telerik_Reporting_GraphAxis_LabelFormat)                (i.e. `{0:Y}`) and                [LabelAngle](/reporting/api/Telerik.Reporting.GraphAxis#Telerik_Reporting_GraphAxis_LabelAngle)                 to 90º.             
 
 1. To add another series to the graph, you can right-click on the graph and select *Add Graph Series…*                 from the context menu. This will bring up a dialog window with all the chart types to select from.                Select __Line, Line with Markers__  and click __OK__ .                The Graph wizard will be displayed again. Repeat __step 4__  for choosing and dragging the data source fields to                *Categories*  and *Values*  boxes, but this time choose __Avg__                 as an aggregate function for the __LineTotal__  field. Click __Next__  and __Finish__  when you are ready.             
 
@@ -65,8 +65,11 @@ and S.SalesPersonId = 283
 
 
 
-1. Name the series’ legend items accordingly using the property LegendItem.[Value](/reporting/api/Telerik.Reporting.LegendItem#Telerik_Reporting_LegendItem_Value) of both of your series.               Finally your graph should look like the one shown below:               
+1. Name the series’ legend items accordingly using the property LegendItem. [Value](/reporting/api/Telerik.Reporting.LegendItem#Telerik_Reporting_LegendItem_Value)  of both of your series.               Finally your graph should look like the one shown below:               
 
   ![Graph Layout 3](images/Graph/HowToBarLineSeries/GraphLayout3.png)
 
- * [Graph Structure]({%slug telerikreporting/designing-reports/report-structure/graph/structure%})[GraphAxis](/reporting/api/Telerik.Reporting.GraphAxis)[LabelFormat](/reporting/api/Telerik.Reporting.GraphAxis#Telerik_Reporting_GraphAxis_LabelFormat)[LabelPlacement](/reporting/api/Telerik.Reporting.GraphAxis#Telerik_Reporting_GraphAxis_LabelPlacement)[Scale](/reporting/api/Telerik.Reporting.GraphAxis#Telerik_Reporting_GraphAxis_Scale)
+# See Also
+
+
+ * [Graph Structure]({%slug telerikreporting/designing-reports/report-structure/graph/structure%}) * [GraphAxis](/reporting/api/Telerik.Reporting.GraphAxis)  * [LabelFormat](/reporting/api/Telerik.Reporting.GraphAxis#Telerik_Reporting_GraphAxis_LabelFormat)  * [LabelPlacement](/reporting/api/Telerik.Reporting.GraphAxis#Telerik_Reporting_GraphAxis_LabelPlacement)  * [Scale](/reporting/api/Telerik.Reporting.GraphAxis#Telerik_Reporting_GraphAxis_Scale) 

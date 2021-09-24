@@ -116,12 +116,24 @@ Fix: new legacyBold template with choose
 Kotorov -    See Also секцията е празна навсякъде
 Looks like the problem is in the text 'See Also'. The MD file seems correct and when you change the text, e.g. "Seems Also" the section appears.
 This is a feature that moves element with ID 'see-also' on the side when it has only links
-Removed relatedTopics with commented code only
+Handled with code the codeEntityReference elements in relatedTopics (http://arabadzhiev:1589/reporting/designing-reports/connecting-to-data/how-to-set-a-no-data-message)
 
+Removed all commented code in maml with xslt
+
+There are 4 document types:
+	developerTroubleshootingDocument
+	developerWalkthroughDocument
+	developerHowToDocument - handled
+	developerConceptualDocument - handled
 
 
 
 Remaining:
+
+
+Document types to handle:
+	developerTroubleshootingDocument
+	developerWalkthroughDocument
 
 
 how to pass the real tokes to _config.yml
@@ -284,14 +296,12 @@ working list, broken tabbed snippets
 
 
 
-http://arabadzhiev:1589/reporting/designing-reports/connecting-to-data/how-to-set-a-no-data-message
 
 
-file:///D:/Work/2018/Hotfix/Documentation/Help/Content/report-sources-viewers.aml - links to sections at the end of the article (o to section link) not working
-
+file:///D:/Work/2018/Hotfix/Documentation/Help/Content/report-sources-viewers.aml - links to sections at the end of the article (go to section link) not working
+http://arabadzhiev:1589/reporting/using-reports-in-applications/display-reports-in-applications/how-to-set-reportsource-for-report-viewers
+correct section links
 
 http://arabadzhiev:1589/reporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/objectdatasource-wizard:
 second VB code snippet not full. I suspect this is due to character '<' that starts on the next line: '<System.ComponentModel.DataObjectMethod(System.ComponentModel.DataObjectMethodType.Select)>'
 
-http://arabadzhiev:1589/reporting/using-reports-in-applications/display-reports-in-applications/how-to-set-reportsource-for-report-viewers
-correct section links

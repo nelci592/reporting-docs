@@ -22,8 +22,7 @@ The report resolvers implement the IReportResolver interface. This interface has
 
 If you use the Silverlight report viewer the report description is provided by the __ReportViewer.Report property__ .       
 
-###        Extending Telerik Reporting WCF service with custom IReportResolver implementation:
-      
+## Extending Telerik Reporting WCF service with custom IReportResolver implementation:
 
 1. 
 
@@ -257,6 +256,8 @@ If you use the Silverlight report viewer the report description is provided by t
 	    </system.serviceModel>
 	</configuration>
 ````
+
+
 
 
 

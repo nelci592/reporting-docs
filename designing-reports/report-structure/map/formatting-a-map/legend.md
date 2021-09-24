@@ -16,7 +16,7 @@ When the data appearing in a map chart contains multiple variables, the chart ma
 
 A legend always contains one or more legend items, where each legend item consists of a colored box that represents the series,         and a text string that describes the series.       
 
->important When using a [ShapeMapSeries](/reporting/api/Telerik.Reporting.ShapeMapSeries), the legend items depend on its           [ColorsCount](/reporting/api/Telerik.Reporting.ShapeMapSeries#Telerik_Reporting_ShapeMapSeries_ColorsCount) property.         
+>important When using a  [ShapeMapSeries](/reporting/api/Telerik.Reporting.ShapeMapSeries) , the legend items depend on its            [ColorsCount](/reporting/api/Telerik.Reporting.ShapeMapSeries#Telerik_Reporting_ShapeMapSeries_ColorsCount)  property.         
 
 
 You can format a legend with the Legends properties.         Click the legend to change the legend position, size, title and items style, background color and borders.       
@@ -31,7 +31,7 @@ Items are ordered in the legend according to the order that they are processed b
 
 You can change the legend items text by changing the Map.MapSeries Legend [Expression]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/overview%}).         
 
->important When using a [ShapeMapSeries](/reporting/api/Telerik.Reporting.ShapeMapSeries), the LegendItem.Value expression allows the usage             of two specific references: `RangeMin` and `RangeMax`, that determine the minimum and maximum values             of the respective data range.           
+>important When using a  [ShapeMapSeries](/reporting/api/Telerik.Reporting.ShapeMapSeries) , the LegendItem.Value expression allows the usage             of two specific references: `RangeMin` and `RangeMax`, that determine the minimum and maximum values             of the respective data range.           
 
 
 ## Changing the Color of a Legend Item
@@ -86,7 +86,7 @@ The legend can be absolutely or automatically sized.           If the Height or 
 * Relatively positioned - TopLeft, TopCenter, TopRight, BottomLeft, BottomCenter, BottomRight:             The height is absolute if set, otherwise the legend can grow vertically.               The legend can stretch up to the PlotArea height when IsInsidePlotArea = True and no more than half of the map height when IsInsidePlotArea = False.             The width is taken into account, only if all items can fit in the provided space.               Otherwise the legend grows horizontally, stretching to the limits of the map at maximum.             The ordering of the items is "across then down", forming rows.             
 
 # See Also
-[MapLegend](/reporting/api/Telerik.Reporting.MapLegend)[Legends](/reporting/api/Telerik.Reporting.Map#Telerik_Reporting_Map_Legends)
+ * [MapLegend](/reporting/api/Telerik.Reporting.MapLegend)  * [Legends](/reporting/api/Telerik.Reporting.Map#Telerik_Reporting_Map_Legends) 
 
  * [Map Overview]({%slug telerikreporting/designing-reports/report-structure/map/structure/overview%})
 

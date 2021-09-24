@@ -173,7 +173,7 @@ services.TryAddSingleton<IReportServiceConfiguration>(sp =>
 
 1. Implement a Reports controller. Right-click on the __Controllers__                folder and add a new item: Add - New item - __Web API Controller Class__  item.               Name it ReportsController. This will be our Telerik Reporting REST service in the project.             
 
-1. Inherit the [ReportsControllerBase](/reporting/api/Telerik.Reporting.Services.WebApi.ReportsControllerBase) type               and inject the configuration settings in the constructor.               This is how a basic implementation of the controller should look like:             
+1. Inherit the  [ReportsControllerBase](/reporting/api/Telerik.Reporting.Services.WebApi.ReportsControllerBase)  type               and inject the configuration settings in the constructor.               This is how a basic implementation of the controller should look like:             
 
 	
     ````c#

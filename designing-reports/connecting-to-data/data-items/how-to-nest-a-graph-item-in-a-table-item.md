@@ -20,7 +20,7 @@ As a real life scenario, in the current example we will list the top 5 performin
 
 We will use the __AdventureWorks__  sample database and the [Telerik Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview%}).       
 
-###How to nest a Graph item in a Table item
+## How to nest a Graph item in a Table item
 
 1. Open the Telerik Report Designer and create a new report.
 
@@ -69,12 +69,14 @@ INNER JOIN Person.Contact AS C ON C.ContactID = E.ContactID
 
   ![di Nest Graph In Table Bindings Editor](images/DataItems/di_NestGraphInTable_BindingsEditor.png)    Since we are explicitly binding the __DataSource__  property, we don't need to declare it               in the Graph's properties, so you can set it to __No Data Source__ . Please note that this will               cancel the design-time support and the data will not be previewed in the graph designer.                 Your report is now ready. When you preview it, you will see that the pie chart is displayed on every               cross-section of a sales person and an year, showing the percentage of the product categories sales.             
 
-##        Live examples
-      
+## Live examples
 
 You can download the described report as a __.trdx__  report definition from the following link:            [Nested Graph Item in a Table Item](http://blogs.telerik.com/docs/default-source/reporting/nestedgraphiteminatableitem583E43B84F9C.zip?sfvrsn=2) 
 
 The same approach is used in the __Product Sales__  example report which is shipped with the Telerik Reporting installation.           This report displays the monthly sales trend using a line chart for the product subcategories and a column chart for the total fields.           You can see the report in action if you have a valid connection to the __AdventureWorks__  sample database.         
+
+# See Also
+
 
  * [Table/Crosstab/List]({%slug telerikreporting/designing-reports/report-structure/table-crosstab-list/overview%})
 

@@ -16,7 +16,7 @@ This topic explains how to use custom parameters UI to update the report paramet
 
 To give an example we will use the Invoice report from our examples and will update its __OrderNumber__  parameter         from a custom parameter UI.       
 
-##Pass values to report parameters
+## Pass values to report parameters
 
 >tip All path references in the described steps should be adapted according             to your project setup. For more information please refer to the MSDN article              [ASP.NET Web Project Paths](http://msdn.microsoft.com/en-us/library/ms178116.aspx) 
 
@@ -184,5 +184,3 @@ To give an example we will use the Invoice report from our examples and will upd
 
 
 1. Run the project and verify that the __Invoice Id__  selection really updates the report.                 
-
- * [How To: Create a Custom Parameter Editor]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/customizing/how-to-create-a-custom-parameter-editor%})

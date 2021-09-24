@@ -14,7 +14,7 @@ position: 2
 
 In this article we are going to review the process of creating a report which retrieves data from the          [Google Books APIs](https://developers.google.com/books/)          using the WebServiceDataSource component.       
 
-###Create a report and retrieve data from the Google Books APIs.
+## Create a report and retrieve data from the Google Books APIs.
 
 1. To connect to Google Books APIs first we need to get access to the API. There are multiple ways to achieve this described in                [Using the API](https://developers.google.com/books/docs/v1/using) .               For this how-to we are going to acquire and use an API key according to the Google Books APIs documentation.               
 

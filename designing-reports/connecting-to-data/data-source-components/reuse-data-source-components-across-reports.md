@@ -14,7 +14,7 @@ position: 13
 
 The article elaborates how to reuse a [Data Source component]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/overview%}) across multiple reports.       
 
-##Reuse data source components across reports in Visual Studio
+## Reuse data source components across reports in Visual Studio
 
 You can create a custom component, inheriting a Telerik Reporting Data Source component, that is configured with the desired settings.
 
@@ -50,10 +50,8 @@ Inherits Telerik.Reporting.SqlDataSource
 
 1. The Project Data Source is now listed under the __Project Data Sources__  node,                 if you run Project -> Add New Item -> Telerik Report [VERSION] Wizard.                 And the Prject Data Source is available in the Visual Studio Toolbox, if you open a report in the Visual Studio Report Designer.               
 
-##Reuse data source components across reports in the Standalone Report Designer
+## Reuse data source components across reports in the Standalone Report Designer
 
 The Standalone Report Designer can load data from external assemblies, which excludes custom data source components.           For more details, check [Extending Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/configuration/extending-report-designer%}).         
 
-Instead, you can create __templates__  with initial settings like configured data source components and layout           elements - [Report Templates]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/report-templates%}).         [Use DataObject as a datasource for nested data items (data-binding via expressions)](50936e55-b122-4378-8abd-4031e7ae713d#DataObjectAsDataSource)
-
- * [How to Databind to Collection Properties (data-binding via expressions)](http://www.telerik.com/support/kb/reporting/details/how-to-databind-to-collection-properties)
+Instead, you can create __templates__  with initial settings like configured data source components and layout           elements - [Report Templates]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/report-templates%}).         

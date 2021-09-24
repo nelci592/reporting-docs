@@ -14,7 +14,7 @@ position: 7
 
 This tutorial elaborates how to implement the SendMailMessage method of the [ReportsController]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-web-api-implementation/how-to-implement-the-reportscontroller-in-an-application%}).         This is required to enable the send document endpoint used for [HTML5 Report Viewer Send Mail Message]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/send-mail-message%}) functionality.       
 
-##To send e-mail use the MailMessage with SMTP client as shown in the following code snippet:
+## To send e-mail use the MailMessage with SMTP client as shown in the following code snippet:
 
 {{source=CodeSnippets\MvcCS\Controllers\ReportsController.cs region=SendMailMessage_Implementation}}
 ````C#
@@ -43,6 +43,3 @@ This tutorial elaborates how to implement the SendMailMessage method of the [Rep
 	    End Function
 ````
 
-
-
- * [Send Mail Message]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/send-mail-message%})

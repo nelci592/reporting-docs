@@ -122,8 +122,3 @@ position: 3
 |netsh http delete urlacl url=http://+:8080/|
 
 
-
-
- * [Localization]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/localization%})
-
- * [Hosting ASP.NET Web API](http://www.asp.net/web-api/overview/hosting-aspnet-web-api)

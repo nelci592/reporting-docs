@@ -16,6 +16,8 @@ The following example illustrates how to use a DataSet as the source for an Obje
 
 In the code snippet below a DataSet object is filled with three tables and then used for the DataSource property of the ObjectDataSource component. The DataMemeber property of the ObjectDataSource component is set to indicate to which one of the three tables to bind to. Additionally a sample calculated field is added which can be used in the report definition in the same way as a regular field.
 
+## 
+
 
 
 {{source=CodeSnippets\CS\API\Telerik\Reporting\ObjectDataSourceSnippets.cs region=HowToBindToDataSetSnippet}}

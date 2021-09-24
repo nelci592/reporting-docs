@@ -10,11 +10,11 @@ position: 2
 
 # How to Add Telerik Reporting REST Web API to Web Application
 
-ssary files and packages to host the Telerik Reporting REST service instance.         
+essary files and packages to host the Telerik Reporting REST service instance.         
 
 The project has a preconfigured implementation of reports controller that uses the *"~\Reports"*  path for           its report source resolver. This directory is not automatically created and needs to be created, or the path to be modified accordingly prior to running the project.         
 
-##Manually configuring Telerik.Reporting REST Service on IIS
+## Manually configuring Telerik.Reporting REST Service on IIS
 
 ###To host and configure the Telerik.Reporting REST Service on IIS follow the steps below:
 
@@ -63,7 +63,7 @@ The project has a preconfigured implementation of reports controller that uses t
 
 1. (Only for Empty Web Application) Add new item "Global Application Class";
 
-1. Invoke                   [RegisterRoutes](/reporting/api/Telerik.Reporting.Services.WebApi.ReportsControllerConfiguration#Telerik_Reporting_Services_WebApi_ReportsControllerConfiguration_RegisterRoutes_System_Web_Http_HttpConfiguration_)                   at the beginning of the `Global.Application_Start (Global.asax)` method:                 
+1. Invoke                    [RegisterRoutes](/reporting/api/Telerik.Reporting.Services.WebApi.ReportsControllerConfiguration#Telerik_Reporting_Services_WebApi_ReportsControllerConfiguration_RegisterRoutes_System_Web_Http_HttpConfiguration_)                    at the beginning of the `Global.Application_Start (Global.asax)` method:                 
 
 {{source=CodeSnippets\MvcCS\Global.asax.cs region=ReportsControllerConfiguration_RegisterRoutes}}
 ````c#
@@ -135,6 +135,3 @@ GlobalConfiguration.Configuration.EnableCors();
 ````
 
 
-
-
- * [Localization]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/localization%})

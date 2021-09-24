@@ -17,7 +17,7 @@ In this how-to article we will show you how to create a Map which will present t
 >important This article assumes that you have obtained a valid  __Location Provider key__  to authenticate your geocoding requests.           If you don't want to use a location provider, you need to provide the geographical coordinates of your points yourself and setup the MapSeries accordingly.           For more information please take a look at the [Location Providers]({%slug telerikreporting/designing-reports/report-structure/map/structure/location-providers%}) article.         
 
 
-###
+## 
 
 1. Start the Map Wizard:
    + If you create a new report, select the __Map Wizard__  icon from the __Available Templates__  page.                   
@@ -59,7 +59,7 @@ In this how-to article we will show you how to create a Map which will present t
 
   ![Column Chart Arrange Map Fields](images/Map/ColumnChart_ArrangeMapFields.png)    Once the mandatory fields are set up, the __Next__  button will get enabled and you can go to the next page.             
 
-1. On the __Choose a location provider__  page you have to select the location provider that will be used to geocode               the __State__  field that was dragged in the *Categories (location)*  box on the previous page.               Currently the supported providers are               [MapQuestOpenAPILocationProvider](/reporting/api/Telerik.Reporting.MapQuestOpenAPILocationProvider)               ,               [MapQuestLocationProvider](/reporting/api/Telerik.Reporting.MapQuestLocationProvider)               and               [BingLocationProvider](/reporting/api/Telerik.Reporting.BingLocationProvider).               They both require a valid client token (key) to authenticate the geocoding requests that will be sent from the Map item.               Once you have obtained the key, you should paste it in the *Client token*  box, as shown below:               
+1. On the __Choose a location provider__  page you have to select the location provider that will be used to geocode               the __State__  field that was dragged in the *Categories (location)*  box on the previous page.               Currently the supported providers are                [MapQuestOpenAPILocationProvider](/reporting/api/Telerik.Reporting.MapQuestOpenAPILocationProvider)                ,                [MapQuestLocationProvider](/reporting/api/Telerik.Reporting.MapQuestLocationProvider)                and                [BingLocationProvider](/reporting/api/Telerik.Reporting.BingLocationProvider) .               They both require a valid client token (key) to authenticate the geocoding requests that will be sent from the Map item.               Once you have obtained the key, you should paste it in the *Client token*  box, as shown below:               
 
   ![ChooseALocation Provider](images/Map/ChooseALocationProvider.png)
 
@@ -67,7 +67,7 @@ In this how-to article we will show you how to create a Map which will present t
 
   ![Map Column Chart Done](images/Map/MapColumnChart_Done.png)
 
-1. Now we will add a               [PointMapSeries](/reporting/api/Telerik.Reporting.PointMapSeries)               that will display a circle around each column chart. The circle size will be relevant to the               whole number of medals each team has won.                 The easiest way to add a series to the already created __Map__  or __Graph__  is to select it               and then start the respective Wizard. In this case you should start the MapWizard again by clicking the Map toolbar icon and on the               __Arrange map fields__  page perform the following steps:             
+1. Now we will add a                [PointMapSeries](/reporting/api/Telerik.Reporting.PointMapSeries)                that will display a circle around each column chart. The circle size will be relevant to the               whole number of medals each team has won.                 The easiest way to add a series to the already created __Map__  or __Graph__  is to select it               and then start the respective Wizard. In this case you should start the MapWizard again by clicking the Map toolbar icon and on the               __Arrange map fields__  page perform the following steps:             
    + Select the __Point__  radiobutton from the *Datapoints type*  box.                 
 
    + Select the __Team__  field and drag it to *Categories (location)*  box.                 
@@ -82,13 +82,13 @@ In this how-to article we will show you how to create a Map which will present t
 
    + Since the PointMapSeries will use the same grouping as the ColumnMapSeries, you should set its GeoLocationGroup to                   __teamGroup__  and its SeriesGroup to __seriesGroup__ , which were created along with the                   ColumnMapSeries.                 
 
-   + As you have the __pointMapSeries1__  selected, set its                   [DataPointStyle](/reporting/api/Telerik.Reporting.GraphSeriesBase#Telerik_Reporting_GraphSeriesBase_DataPointStyle)                   .                   [BackgroundColor](/reporting/api/Telerik.Reporting.Drawing.Style#Telerik_Reporting_Drawing_Style_BackgroundColor)                   to __White__  and the                   [LineColor](/reporting/api/Telerik.Reporting.Drawing.Style#Telerik_Reporting_Drawing_Style_LineColor)                   to a color of your choice. In the example report is used the __DarkSlateBlue__                    color from the __Web__  palette.                 
+   + As you have the __pointMapSeries1__  selected, set its                    [DataPointStyle](/reporting/api/Telerik.Reporting.GraphSeriesBase#Telerik_Reporting_GraphSeriesBase_DataPointStyle)                    .                    [BackgroundColor](/reporting/api/Telerik.Reporting.Drawing.Style#Telerik_Reporting_Drawing_Style_BackgroundColor)                    to __White__  and the                    [LineColor](/reporting/api/Telerik.Reporting.Drawing.Style#Telerik_Reporting_Drawing_Style_LineColor)                    to a color of your choice. In the example report is used the __DarkSlateBlue__                    color from the __Web__  palette.                 
 
-   + Set the                   [DataPointLabel](/reporting/api/Telerik.Reporting.GraphSeriesBase#Telerik_Reporting_GraphSeriesBase_DataPointLabel)                   expression to `=Fields.Team` to display the name of the national team above the point.                 
+   + Set the                    [DataPointLabel](/reporting/api/Telerik.Reporting.GraphSeriesBase#Telerik_Reporting_GraphSeriesBase_DataPointLabel)                    expression to `=Fields.Team` to display the name of the national team above the point.                 
 
-   + Set the                   [DataPointLabelStyle](/reporting/api/Telerik.Reporting.GraphSeriesBase#Telerik_Reporting_GraphSeriesBase_DataPointLabelStyle).                   [Visible](/reporting/api/Telerik.Reporting.Drawing.Style#Telerik_Reporting_Drawing_Style_Visible)                   property to __True__ .                 
+   + Set the                    [DataPointLabelStyle](/reporting/api/Telerik.Reporting.GraphSeriesBase#Telerik_Reporting_GraphSeriesBase_DataPointLabelStyle) .                    [Visible](/reporting/api/Telerik.Reporting.Drawing.Style#Telerik_Reporting_Drawing_Style_Visible)                    property to __True__ .                 
 
-   + Select the __columnMapSeries1__  item from the __Members:__  pane and set its                   [MarkerMinSize](/reporting/api/Telerik.Reporting.PointMapSeries#Telerik_Reporting_PointMapSeries_MarkerMinSize) to __6mm__  and                   [MarkerMaxSize](/reporting/api/Telerik.Reporting.PointMapSeries#Telerik_Reporting_PointMapSeries_MarkerMaxSize) to __10mm__ .                 
+   + Select the __columnMapSeries1__  item from the __Members:__  pane and set its                    [MarkerMinSize](/reporting/api/Telerik.Reporting.PointMapSeries#Telerik_Reporting_PointMapSeries_MarkerMinSize)  to __6mm__  and                    [MarkerMaxSize](/reporting/api/Telerik.Reporting.PointMapSeries#Telerik_Reporting_PointMapSeries_MarkerMaxSize)  to __10mm__ .                 
 
    + In order to match the column series colors with the real world medal colors, you need to define a custom ColorPalette.                   The process is explained [here]({%slug telerikreporting/designing-reports/report-structure/graph/formatting-a-graph/series%})                   and the colors used for this example are shown on the following screenshot:                   
 
@@ -99,13 +99,13 @@ In this how-to article we will show you how to create a Map which will present t
   ![Map Point And Column Chart Done](images/Map/MapPointAndColumnChart_Done.png)
 
 
-1. As you may have noticed, the information about the occupied places is present in the CSV file as integer numbers, that's why the               legend displays it this way. But the report will look better if the information about the places is displayed with medal names -                __Gold__ , __Silver__  and __Bronze__ .                This can be achieved using an expression for the               [LegendItem](/reporting/api/Telerik.Reporting.LegendItem).               [Value](/reporting/api/Telerik.Reporting.LegendItem#Telerik_Reporting_LegendItem_Value), but we will use a               [Calculated Field]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/calculated-fields%})               , added to the CSV Data Source. The benefit of this approach is that we can use the calculated field as any other field, without having to               use an expression every time we need to address it.                 Select the __medalsData__  data source, add a calculated field named __Medal__                 of type `String` to it and set its expression to:             
+1. As you may have noticed, the information about the occupied places is present in the CSV file as integer numbers, that's why the               legend displays it this way. But the report will look better if the information about the places is displayed with medal names -                __Gold__ , __Silver__  and __Bronze__ .                This can be achieved using an expression for the                [LegendItem](/reporting/api/Telerik.Reporting.LegendItem) .                [Value](/reporting/api/Telerik.Reporting.LegendItem#Telerik_Reporting_LegendItem_Value) , but we will use a               [Calculated Field]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/calculated-fields%})               , added to the CSV Data Source. The benefit of this approach is that we can use the calculated field as any other field, without having to               use an expression every time we need to address it.                 Select the __medalsData__  data source, add a calculated field named __Medal__                 of type `String` to it and set its expression to:             
 
 	
               =IIF(Fields.Place = 1, 'Gold', IIF(Fields.Place = 2, 'Silver', IIF(Fields.Place = 3, 'Bronze', 'none')))
             
 
-    Now you can set the __columnMapSeries'__ [LegendItem](/reporting/api/Telerik.Reporting.LegendItem).[Value](/reporting/api/Telerik.Reporting.LegendItem#Telerik_Reporting_LegendItem_Value) expression to               `=Fields.Medal` and style the legend by your choice.             
+    Now you can set the __columnMapSeries'__  [LegendItem](/reporting/api/Telerik.Reporting.LegendItem) . [Value](/reporting/api/Telerik.Reporting.LegendItem#Telerik_Reporting_LegendItem_Value)  expression to               `=Fields.Medal` and style the legend by your choice.             
 
 1. In case we want to reduce the amount of displayed information on the map, one of the best options is to use               [Report Parameters]({%slug telerikreporting/designing-reports/connecting-to-data/report-parameters/overview%})               and  apply               [Filtering]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/filtering-data/filter-rules%}). In this case the filtering will be based on the                __AssociationId__  field.                 In order to display the meaningful names of the olympic associations, we will add another CSV Data Source, which has a relation with the               current data source's `AssociationId` field and will be used only for displaying the report parameters.             
    + Add a new CSV Data Source, select the tab *Enter CSV as text*  and paste the following text in the box:                 
@@ -173,7 +173,7 @@ In this how-to article we will show you how to create a Map which will present t
 
    + To make the currently selected crosstab row more distinctive, we can apply a conditional formatting to it.                   Select the whole row, clicking on its header. This will select its three cells. Add new conditional formatting rule and set                   its expression to `=Fields.Team` and its value to `=Parameters.teamParam.Value`.                   Set an appropriate color as a style background to denote the selected state of the row.                 
 
-   + We can apply conditional formatting to the map series as well, outlining the currently selected national team so it would be easier to                   find it among the data points on the map. Select the __PointMapSeries__  and set a new                   [DataPointConditionalFormatting](/reporting/api/Telerik.Reporting.GraphSeriesBase#Telerik_Reporting_GraphSeriesBase_DataPointConditionalFormatting)                   rule, as shown here:                   
+   + We can apply conditional formatting to the map series as well, outlining the currently selected national team so it would be easier to                   find it among the data points on the map. Select the __PointMapSeries__  and set a new                    [DataPointConditionalFormatting](/reporting/api/Telerik.Reporting.GraphSeriesBase#Telerik_Reporting_GraphSeriesBase_DataPointConditionalFormatting)                    rule, as shown here:                   
 
   ![Point Map Data Point Conditional Formatting](images/Map/PointMapDataPointConditionalFormatting.png)
 
@@ -194,9 +194,14 @@ In this how-to article we will show you how to create a Map which will present t
 
   ![Map Olympic Medals Done](images/Map/MapOlympicMedals_Done.png)
 
+
+
 In this example we demonstrated some of the newest features of Telerik Reporting along with a couple of advanced techniques that can be used             to make your reports more dynamic and more interactive, and all that without writing a single line of code.           
 
 You can download this example report as a __.trdx__  report definition from the following link:              [How to: Create а map with ColumnChart series using CSV data source.](http://blogs.telerik.com/docs/default-source/reporting/olympicmedalsbynationalteams.trdx?sfvrsn=2) 
+
+# See Also
+
 
  * [How to Setup a Map Using the Map Wizard]({%slug telerikreporting/designing-reports/report-structure/map/how-to/how-to-setup-a-map-using-the-map-wizard%})
 

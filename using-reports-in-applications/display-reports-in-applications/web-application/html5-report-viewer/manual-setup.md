@@ -14,7 +14,7 @@ position: 4
 
 In this topic, we demonstrate how to manually add the HTML5 Report Viewer to an HTML page and to display a report. The approach that we use here allows for full control over         the configuration. If you are looking for a less complicated approach,          consider using the [Visual Studio item templates]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/how-to-use-html5-report-viewer-with-rest-service%}).       
 
-##Prerequisites
+## Prerequisites
 
 Before you continue, make sure that the following prerequisites are met:         
 
@@ -28,7 +28,7 @@ Before you continue, make sure that the following prerequisites are met:
 
    >note You must load only one version of Telerik Kendo UI styles and scripts on the page.                 For more information see [](143e5c03-e69d-416f-9ac0-85c397b22b8e#KendoWidgetsRequirements).               
 
-##Utilizing the HTML5 Report Viewer in an HTML page
+## Utilizing the HTML5 Report Viewer in an HTML page
 
 The following steps produce an HTML page with settings similar to these of the local Html5Demo project           installed by default under __[TelerikReporting_InstallDir]\Examples__ :         
 
@@ -175,7 +175,7 @@ kendo.all.min.js or kendo.web.min.js can be used as well if Kendo is used outsid
 
     where x.x.x.x is the HTML5 ReportViewer/Telerik Reporting version (e.g. {{site.buildversion}}).                   The relative paths that you use must reflect the project's structure.                     The default template is using TelerikWebUI icons. If you prefer a template with *FontAwesome*  icons, you have to set the                    templateUrl option to /ReportViewer/templates/telerikReportViewerTemplate-FA-x.x.x.x.html                 
 
-    >tip The viewer's  __reportSource__  consists of report and parameters attributes,                     where  __report__  is the string description of the report that will be displayed, and                      __parameters__  is a collection of parameter keys and values that will be sent to the report.                     The report's string description is handled on the server by the                     [report source resolver used in the Reporting REST service]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-service-report-source-resolver/overview%}).                       The above example uses the  [assembly qualified name](http://msdn.microsoft.com/en-us/library/30wyt9tk)  of a report's type (report created in Visual Studio Report Designer).                     This string description will be handled automatically by the  [ReportTypeResolver](/reporting/api/Telerik.Reporting.Services.WebApi.ReportTypeResolver).                   
+    >tip The viewer's  __reportSource__  consists of report and parameters attributes,                     where  __report__  is the string description of the report that will be displayed, and                      __parameters__  is a collection of parameter keys and values that will be sent to the report.                     The report's string description is handled on the server by the                     [report source resolver used in the Reporting REST service]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-service-report-source-resolver/overview%}).                       The above example uses the  [assembly qualified name](http://msdn.microsoft.com/en-us/library/30wyt9tk)  of a report's type (report created in Visual Studio Report Designer).                     This string description will be handled automatically by the   [ReportTypeResolver](/reporting/api/Telerik.Reporting.Services.WebApi.ReportTypeResolver) .                   
 
 
 

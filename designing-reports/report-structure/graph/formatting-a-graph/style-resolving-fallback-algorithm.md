@@ -30,4 +30,4 @@ The boxes on the top row represent the report items contained in a Graph series.
 
  * [Conditional Formatting]({%slug telerikreporting/designing-reports/styling-reports/conditional-formatting%})
 
- * [Style Inheritance and Overriding]({%slug telerikreporting/designing-reports/styling-reports/style-inheritance-and-overriding%})[GraphSeries](/reporting/api/Telerik.Reporting.GraphSeries)
+ * [Style Inheritance and Overriding]({%slug telerikreporting/designing-reports/styling-reports/style-inheritance-and-overriding%}) * [GraphSeries](/reporting/api/Telerik.Reporting.GraphSeries) 

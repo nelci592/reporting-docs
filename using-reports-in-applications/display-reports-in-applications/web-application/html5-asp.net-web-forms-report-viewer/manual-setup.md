@@ -18,7 +18,7 @@ This tutorial shows how to use HTML5 ASP.NET Web Forms Report Viewer in ASP.NET 
 
 * Review the HTML5 Report Viewer [System Requirements]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/requirements-and-browser-support%}).             
 
-* Copy of the "Product Catalog.trdx" report file from __[TelerikReporting_InstallDir]\ReportDesigner\Examples__                in the folder used by the [ReportFileResolver](/reporting/api/Telerik.Reporting.Services.WebApi.ReportFileResolver)               in the Reporting REST service implementation.             
+* Copy of the "Product Catalog.trdx" report file from __[TelerikReporting_InstallDir]\ReportDesigner\Examples__                in the folder used by the  [ReportFileResolver](/reporting/api/Telerik.Reporting.Services.WebApi.ReportFileResolver)                in the Reporting REST service implementation.             
 
 * Entry with the default connection string used by Telerik Reporting sample reports in the __web.config__  file               of the project hosting the Reporting REST service:             
 
@@ -134,7 +134,7 @@ kendo.mobile.min.js - optional, if gestures/touch support is required
 
 1. Configure the HTML5 ASP.NET Web Forms Report Viewer ReportSource using Visual Studio Property Grid.                  For this you can use the  "Product Catalog.trdp" report file (Prerequisites).
 
-    >tip If you use a UriReportSource, the Identifier must point to a TRDP/TRDX file's path that will be mapped to the                         folder used by the [ReportFileResolver](/reporting/api/Telerik.Reporting.Services.WebApi.ReportFileResolver)                         in the Reporting REST service implementation.                       
+    >tip If you use a UriReportSource, the Identifier must point to a TRDP/TRDX file's path that will be mapped to the                         folder used by the  [ReportFileResolver](/reporting/api/Telerik.Reporting.Services.WebApi.ReportFileResolver)                          in the Reporting REST service implementation.                       
 
 
 

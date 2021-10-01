@@ -27,7 +27,7 @@ This guide uses the __AdventureWorks__  database that is provided by Telerik Rep
 1. On the screen that loads, fill in the __Select Statement__  field with the following query.               The query will extract only the first 14 employees and they will be listed in ascending order according to their id, that is,               the employee with id=1 will be the first one, the employee with id=2 will come second, and so on.             
 
 	
-      ````sql
+    ````sql
 
 SELECT
 [HumanResources].[vEmployee].[EmployeeID] ,

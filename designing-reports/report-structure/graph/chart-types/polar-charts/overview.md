@@ -16,7 +16,7 @@ A polar chart displays a series as a set of points that are grouped by category 
 
 The following image displays a Rose polar chart:  
 
-  ![Polar Chart\Polar Chart](images/Graph/PolarChart.png)
+  ![Polar Chart](images/Graph/PolarChart.png)
 
 ## Polar Chart Variations
 

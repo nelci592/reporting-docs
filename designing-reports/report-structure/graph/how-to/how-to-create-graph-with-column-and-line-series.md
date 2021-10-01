@@ -30,7 +30,7 @@ In this how-to article we will show you how to create a graph with both column a
    1. Set the query to the following one:
 
 	
-      ````sql
+    ````sql
 
 SELECT SOD.LineTotal, SOH.OrderDate
 FROM

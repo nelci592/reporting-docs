@@ -19,7 +19,7 @@ This article is part of the Demo report guide on getting started with Telerik Re
 1. Add a new SqlDatasource component for the graph with the following query:             
 
 	
-      ````sql
+    ````sql
 
 SELECT DISTINCT YEAR(OrderDate) AS Year
 FROM         Sales.SalesOrderHeader
@@ -42,7 +42,7 @@ ORDER BY Year
 1. Change the WHERE clause in the following way:             
 
 	
-      ````sql
+    ````sql
 
 WHERE  (YEAR(SOH.OrderDate) = @Year)
 ````

@@ -14,9 +14,7 @@ position: 0
 
 A line chart displays a series as a set of points connected by a single line. Line charts are used to representing        large amounts of data that occur over a continuous period of time. They can also be used to display a series of data points,        typically to show trends over a period of time. One or more series of data can be used and the appearance for each series        can be tailored to emphasize the data using unique colors, line thickness, pen style, and point marks.       
 
-The following image displays a line chart that contains three series.         
-
-  ![Line Chart\Line Chart](images/Graph/LineChart.png)
+The following image displays a line chart that contains three series.       
 
 ## Line Chart Variations  
 

@@ -27,7 +27,7 @@ Here are the exact steps taken:
 1. Use the markup below for your ToolsFile.xml file
 
 	
-      ````xml
+    ````xml
 <?xml version="1.0" encoding="utf-8" ?>
 <root>
   <modules>
@@ -82,7 +82,7 @@ Here are the exact steps taken:
 1. Since the inline text-decoration css property is not supported, disable the                             __FixUlBoldItalic__  filter:                         
 
 	
-      ````C#
+    ````C#
 RadEditor1.DisableFilter(Telerik.Web.UI.EditorFilters.FixUlBoldItalic);````
 ````VB
 RadEditor1.DisableFilter(Telerik.Web.UI.EditorFilters.FixUlBoldItalic)````
@@ -93,7 +93,7 @@ RadEditor1.DisableFilter(Telerik.Web.UI.EditorFilters.FixUlBoldItalic)````
 1. Since __HtmlTextBox__  works with font tags, disable the __ConvertFontToSpan__  filter,                             which converts the non __XHTML__  compliant Font tags with Span tags                         
 
 	
-      ````C#
+    ````C#
 RadEditor1.DisableFilter(Telerik.Web.UI.EditorFilters.ConvertFontToSpan);````
 ````VB
 RadEditor1.DisableFilter(Telerik.Web.UI.EditorFilters.ConvertFontToSpan)````
@@ -106,7 +106,7 @@ RadEditor1.DisableFilter(Telerik.Web.UI.EditorFilters.ConvertFontToSpan)````
 1. Use the following custom content filter, which will remove unsupported __HTML__  tags. Supported                             tags are: FONT, STRONG, B, EM, I, U, A, OL, UL, SUB, SUP, LI, DIV, SPAN, P, BR, CENTER.                         
 
 	
-      ````XML
+    ````XML
     <telerik:RadEditor ID="RadEditor1" StripFormattingOptions="AllExceptNewLines" ToolsFile="~/HtmlTextBoxToolsFile.xml" OnClientLoad="editorLoaded" runat="server">
     </telerik:RadEditor>
 ````

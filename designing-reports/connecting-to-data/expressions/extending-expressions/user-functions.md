@@ -10,22 +10,14 @@ position: 1
 
 # User Functions
 
-
-
-User functions allow you to extend the default behavior of the Telerik Reporting engine. User functions are __public static__  (__Public Shared__  in VB.NET) methods that should always return a value and can take an arbitrary number of input parameters.       
-
-## 
-
-There are two ways to utilize user functions:
+ functions:
 
 1. When any __public static__  (__Public Shared__  in               VB.NET) method is part of the current report class. In this case they can be invoked from an expression by their name,               specifying the necessary parameters in the braces:             
 
 
 
-|   |   |
-| ------ | ------ |
- __Invoking an User Function from the same report class__ |
-|= ResolveUrl("~/Images/Logo.jpg"|
+| __Invoking an User Function from the same report class__ |
+|= ResolveUrl("~/Images/Logo.jpg")|
 
 
 
@@ -34,10 +26,8 @@ There are two ways to utilize user functions:
 
 
 
-|   |   |
-| ------ | ------ |
- __Invoking an User Function from loaded assembly__ |
-|= Telerik.Reporting.Report.Report1.ResolveUrl("~/Images/Logo.jpg"|
+| __Invoking an User Function from loaded assembly__ |
+|= Telerik.Reporting.Report.Report1.ResolveUrl("~/Images/Logo.jpg")|
 
 
 
@@ -62,6 +52,9 @@ __Example:__
 	    }
 	    
 ````
+
+
+
 {{source=CodeSnippets\VB\API\Telerik\Reporting\Expressions\UserFunctionsSnippets.vb region=UserFunctionsAttributeIsVisibleSnippet}}
 ````VB
 	Public Class Report1
@@ -107,6 +100,9 @@ __Example:__
 	    }
 	
 ````
+
+
+
 {{source=CodeSnippets\VB\API\Telerik\Reporting\Expressions\UserFunctionsSnippets.vb region=UserFunctionsAttributeSnippet}}
 ````VB
 	Public NotInheritable Class MyUserFunctions
@@ -123,7 +119,7 @@ To invoke this function, set the following expression:
 
 
 
-|= My.Greet("John Doe"|
+|= My.Greet("John Doe")|
 
 
 

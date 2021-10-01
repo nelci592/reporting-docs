@@ -63,7 +63,7 @@ Telerik Reporting relies on the ConfigurationManager to resolve named connection
    1. Change the PropertyGroup section to look like:                 
 
 	
-      ````html
+    ````html
 <PropertyGroup>
   <TargetFramework>net461</TargetFramework>
 </PropertyGroup>
@@ -99,7 +99,7 @@ For Office OpenXML document formats (XLSX, DOCX and PPTX) install the           
 1. Implement a Reports controller. Right-click on the __Controllers__                folder and add a new item: Add - New item - __Web API Controller Class__  item.               Name it ReportsController. This will be our Telerik Reporting REST service in the project.             Inherit the __ReportsControllerBase__  type               and provide proper settings for ReportSourceResolver and Storage.               This is how a basic implementation of the controller should look like:             
 
 	
-      ````c#
+    ````c#
 namespace WebApplication1.Controllers
 {
     using System.IO;
@@ -148,7 +148,7 @@ namespace WebApplication1.Controllers
 1. Add the HTML5 Report Viewer. For a detailed explanation, check the HTML5 Report Viewer               [Manual Setup]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/manual-setup%}) help article.               The required references to jQuery and Telerik Kendo UI CSS and JS files are listed in the example below.               Copy the Kendo subset from {Telerik Reporting installation path}\Html5\ReportViewer folder to wwwroot.             The complete report viewer page should look like this:
 
 	
-      ````html
+    ````html
 <!DOCTYPE html> 
 <html> 
 <head> 

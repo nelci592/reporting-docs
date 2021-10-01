@@ -10,11 +10,7 @@ position: 6
 
 # privateFonts Element
 
-
-
-Defines a collection that allows the Reporting Engine to use a private version         of an existing font without the requirement to install the font on the host machine.         If the font is already installed the installed font is used.       
-
->warning  __Known issue with the Windows Platform:__ If you order the fonts in the PrivateFontCollection first regular then bold           the GDI+ measure string size for bold font style is incorrect.            This is observed in Windows 8.1 and newer and may lead to unexpected rendering and aligning issues.           For more information see            [               Wrong Measurements from MeasureString             ](               https://github.com/Microsoft/DirectXTK/issues/34             ) .          __Known issue with Azure:__ The required .NET API for handling private fonts is making GDI calls that are blocked in Azure App Services.           If private fonts are required our recommendation is to use Cloud Service plan. More details can be found in             [               PrivateFontCollection is not working             ](               https://feedback.azure.com/forums/34192--general-feedback/suggestions/31381390-privatefontcollection-is-not-working             ) .         
+ection first regular then bold           the GDI+ measure string size for bold font style is incorrect.            This is observed in Windows 8.1 and newer and may lead to unexpected rendering and aligning issues.           For more information see            [               Wrong Measurements from MeasureString             ](               https://github.com/Microsoft/DirectXTK/issues/34             ) .          __Known issue with Azure:__ The required .NET API for handling private fonts is making GDI calls that are blocked in Azure App Services.           If private fonts are required our recommendation is to use Cloud Service plan. More details can be found in             [               PrivateFontCollection is not working             ](               https://feedback.azure.com/forums/34192--general-feedback/suggestions/31381390-privatefontcollection-is-not-working             ) .         
 
 
 >warning  __Known issue with PDF rendering in .NET Core application on Linux:__ The PDF rendering engine needs to obtain the bytes for fonts used in the report. The font resolving mechanism currently relies on the  __privateFonts__            element to provide path to each font along with a style description. This includes the substitute fonts that are picked by the runtime when the font,            used in the report, is not available.         
@@ -41,11 +37,16 @@ The following sections describe attributes, child elements, and parent elements.
 >caption ```<privateFonts>``` element
 
 
-|   |   |
-| ------ | ------ |
-Attributes|None|
-|Child Elements|*  __add__ - Optional element. Adds a font to the collection.|
-|Parent Elements|*  __configuration__ - Specifies the root element in every configuration file that is used by<br/>                  the common language runtime and the .NET Framework applications.<br/>*  __Telerik.Reporting__ - Configures all settings that Telerik Reporting Engine uses|
+|Attributes|None|
+|Child Elements|
+
+*  __add__ - Optional element. Adds a font to the collection.|
+|Parent Elements|
+
+*  __configuration__ - Specifies the root element in every configuration file that is used by
+                  the common language runtime and the .NET Framework applications.
+
+*  __Telerik.Reporting__ - Configures all settings that Telerik Reporting Engine uses.|
 
 
 
@@ -54,7 +55,7 @@ Attributes|None|
 >caption ```<add>``` element
 
 
-|Attribut|
+|Attribute|
 
 
 
@@ -65,14 +66,12 @@ Attributes|None|
 | __fontStyle__ |The attribute is optional with valid values Regular, Bold, Italic, Strikeout and Underline.
                     The default value is Regular.
                     Specify this attribute if you have to specify font family with multiple font
-                    files for different style or if specified font file is not containing Regular style.
+                    files for different style or if specified font file is not containing Regular style.|
 
 
-|   |   |
-| ------ | ------ |
 |
 |Child elements|None|
-|Parent element| __privateFonts__|
+|Parent element| __privateFonts__ |
 
 
 

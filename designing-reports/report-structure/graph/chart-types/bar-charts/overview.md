@@ -14,9 +14,7 @@ position: 0
 
 Bar charts display series as sets of horizontal bars. Usually they are used to graphically summarize and display categories        of data and let the user easily compare amounts or values between different categories. Bar charts are also useful for comparing multiple        series of data (i.e. providing snapshots of data at particular points in time). For this reason, it is popular for representing data that        occurs over time, with a finite start and end date. It is also popular for showing categorical information since the categories can be        displayed horizontally.
 
-The following image shows a typical bar chart. The bar chart is well suited for this data because all three series share a common time        period, allowing for valid comparisons to be made.  
-
-  ![graph bars\Bar Chart](images/Graph/BarChart.png)
+The following image shows a typical bar chart. The bar chart is well suited for this data because all three series share a common time        period, allowing for valid comparisons to be made.
 
 ## Bar Chart Variations
 

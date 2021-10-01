@@ -32,7 +32,7 @@ You can control parameter merging via the            [Mergeable](/reporting/api/
 * __When report parameters have unique names or the target parameters are merged:__                If a parameter is distinguishable by its Name property or the Name denotes several merged parameters,               refer to the parameter directly by the value of its Name property.             
 
 {{source=CodeSnippets\CS\API\Telerik\Reporting\ReportSourceSnippets.cs region=Set_Values_For_Unique_Or_Mergable_ReportParameters_In_ReportSource_Snippet}}
-  ````c#
+````c#
 	            var typeReportSource = new Telerik.Reporting.TypeReportSource();
 	            typeReportSource.TypeName = typeof(MyReportBook).AssemblyQualifiedName;
 	
@@ -40,11 +40,8 @@ You can control parameter merging via the            [Mergeable](/reporting/api/
 	            // for all reports part of the report book thru the report source
 	            typeReportSource.Parameters.Add(new Telerik.Reporting.Parameter("ProductCategory", "Bikes"));
 ````
-
-
-
 {{source=CodeSnippets\VB\API\Telerik\Reporting\ReportSourceSnippets.vb region=Set_Values_For_Unique_Or_Mergable_ReportParameters_In_ReportSource_Snippet}}
-  ````vb
+````vb
 	        Dim typeReportSource As New Telerik.Reporting.TypeReportSource()
 	        typeReportSource.TypeName = GetType(MyReportBook).AssemblyQualifiedName
 	
@@ -58,7 +55,7 @@ You can control parameter merging via the            [Mergeable](/reporting/api/
 * __When report parameters have repeating names but they are not merged:__                In this case you need to refer to the individual occurrence of the parameter in a particular report.               This is done by denoting the target report by its zero-based index inside the report book.             
 
 {{source=CodeSnippets\CS\API\Telerik\Reporting\ReportSourceSnippets.cs region=Set_Values_For_NotMergable_ReportParameters_In_ReportSource_Snippet}}
-  ````c#
+````c#
 	            var typeReportSource = new Telerik.Reporting.TypeReportSource();
 	            typeReportSource.TypeName = typeof(MyReportBook).AssemblyQualifiedName;
 	
@@ -70,11 +67,8 @@ You can control parameter merging via the            [Mergeable](/reporting/api/
 	            // thru the report source
 	            typeReportSource.Parameters.Add(new Telerik.Reporting.Parameter("reports(1).ClientID", 103));
 ````
-
-
-
 {{source=CodeSnippets\VB\API\Telerik\Reporting\ReportSourceSnippets.vb region=Set_Values_For_NotMergable_ReportParameters_In_ReportSource_Snippet}}
-  ````vb
+````vb
 	        Dim typeReportSource As New Telerik.Reporting.TypeReportSource()
 	        typeReportSource.TypeName = GetType(MyReportBook).AssemblyQualifiedName
 	

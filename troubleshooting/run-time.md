@@ -59,7 +59,7 @@ There are three cases in which this error message occurs:
 1. Check if the web report viewer's http handler is registered in the web.config file. If the app is deployed on IIS7 and setup to work in integrated mode,                make sure preCondition attribute is present at the end of Telerik.ReportViewer handler:             
 
 	
-      ````XML
+    ````XML
 							<add 
 								name="Telerik.ReportViewer.axd_*" 
 								type="Telerik.ReportViewer.WebForms.HttpHandler, Telerik.ReportViewer.WebForms, Version=x.x.x.x, Culture=neutral, PublicKeyToken=a9d7983dfcc261be" 

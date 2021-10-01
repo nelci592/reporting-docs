@@ -12,9 +12,7 @@ position: 1
 
 
 
-In this article we will show you how to create an Area chart using the Graph item.         
-
-  ![Stacked Area Chart](images/Graph/StackedAreaChart.png)
+In this article we will show you how to create an Area chart using the Graph item.       
 
 ## 
 
@@ -27,7 +25,7 @@ In this article we will show you how to create an Area chart using the Graph ite
    1. Set the query to the following one:
 
 	
-      ````sql
+    ````sql
 
 SELECT SOD.LineTotal, SOH.OrderDate, PC.Name AS Category
 FROM Sales.SalesOrderHeader AS SOH

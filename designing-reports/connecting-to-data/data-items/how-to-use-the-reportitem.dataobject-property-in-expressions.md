@@ -10,17 +10,7 @@ position: 6
 
 # How to use the ReportItem.DataObject property in expressions
 
-
-
-This topic illustrates how to use the ReportItem.DataObject property in an expressions and master-detail scenarios.
-
-DataObject is an object instance that represents the data that an item is bound to when processed.         In the examples below we will illustrate how to use it in the most common scenarios.       
-
-When used in the context of data item (table, subreport, grapth and etc.) expression ReportItem.DataObject references the parent's data item data.       
-
-## Work with raw data type's methods and properties
-
-The DataObject implements  [IDataObject](/reporting/api/Telerik.Reporting.Processing.IDataObject)  interface which defines the RawData property.           This property is the actual data object that is being wrapped by the IDataObject and referring to DataObject, we actually refer to its RawData values.           Thus to get the actual data object you can work with __ReportItem.DataObject.RawData__ .           The __RawData__  object exposes all properties and methods of the data object's type.         
+  [IDataObject](/reporting/api/Telerik.Reporting.Processing.IDataObject)  interface which defines the RawData property.           This property is the actual data object that is being wrapped by the IDataObject and referring to DataObject, we actually refer to its RawData values.           Thus to get the actual data object you can work with __ReportItem.DataObject.RawData__ .           The __RawData__  object exposes all properties and methods of the data object's type.         
 
 For example:       
 
@@ -35,6 +25,10 @@ public class Phone
      }
  }
 ````
+
+
+
+	
 ````vb.net
 Public Class Phone
 	Public Property Number() As String
@@ -63,7 +57,7 @@ In the context of data item ReportItem.DataObject references the parent's data i
 
 | Name | Type | Value |
 | ------ | ------ | ------ |
-|@MyParameter|string|= ReportItem.DataObject.MyFiel|
+|@MyParameter|string|= ReportItem.DataObject.MyField|
 
 
 
@@ -83,7 +77,7 @@ When complicated logic should be applied or .NET framework routines need to be u
 1. Put the following text in the SqlDataSource's SelectCommand value:
 
 	
-      ````sql
+    ````sql
 
 select Contact.*
 from Person.Contact
@@ -99,7 +93,7 @@ where Contact.AdditionalContactInfo is not null
 
 
 
-|=Fields.FirstNam|
+|=Fields.FirstName|
 
 
 
@@ -107,7 +101,7 @@ where Contact.AdditionalContactInfo is not null
 1. Switch to code window and place the following code snippet:
 
 {{source=CodeSnippets\CS\API\Telerik\Reporting\Expressions\ReportItemDataObjectSnippets.cs region=ReportItemDataObjectGetContactInfo}}
-  ````C#
+````C#
 	        public static string GetContactInfo(object sender)
 	        {
 	            var dataObject = (Telerik.Reporting.Processing.IDataObject)sender;
@@ -124,7 +118,7 @@ where Contact.AdditionalContactInfo is not null
 
 
 {{source=CodeSnippets\VB\API\Telerik\Reporting\Expressions\ReportItemDataObjectSnippets.vb region=ReportItemDataObjectGetContactInfo}}
-  ````VB
+````VB
 	    Public Shared Function GetContactInfo(sender As Object) As String
 	        Dim dataObject = DirectCast(sender, Telerik.Reporting.Processing.IDataObject)
 	        Dim contactInfo = TryCast(dataObject("AdditionalContactInfo"), String)
@@ -143,7 +137,7 @@ In this step we process the passed data argument as IDataObject, retrieving the 
 
 
 
-|= YourNamespace.GetContactInfo(ReportItem.DataObject|
+|= YourNamespace.GetContactInfo(ReportItem.DataObject)|
 
 
 
@@ -156,9 +150,7 @@ In this step we process the passed data argument as IDataObject, retrieving the 
 
 This scenario takes place when the currently bound data object have to be used as a datasource for a nested report item           - table, graph or a subreport - for example, when it is needed to process some grouped data and show summary           in the group header. The following example uses the __AdventureWorks’ Product__            table, groups products by their __SafetyStockLevel__  field and shows summary info about the           products color in a crosstab placed in the group header.         
 
-The following screenshot shows the expected report output that should be created as a result of this example:  
-
-  ![dataobject-report-output](images/DataItems/dataobject-report-output.png)
+The following screenshot shows the expected report output that should be created as a result of this example:![dataobject-report-output](images/DataItems/dataobject-report-output.png)
 
 ### Steps:
 
@@ -167,7 +159,7 @@ The following screenshot shows the expected report output that should be created
 1. Add an SqlDataSource as a report's DataSource and set its SelectCommand property to:
 
 	
-      ````sql
+    ````sql
 
 select top 100 Product.Name, Product.ProductNumber, Product.Color, Product.SafetyStockLevel
 from Production.Product
@@ -182,14 +174,14 @@ order by Product.Name, Product.Color
 
 
 
-|= Fields.Nam|
+|= Fields.Name|
 
 
 and
 
 
 
-|= Fields.Colo|
+|= Fields.Color|
 
 
 respectively.             
@@ -198,7 +190,7 @@ respectively.
 
 
 
-|= Fields.SafetyStockLeve|
+|= Fields.SafetyStockLevel|
 
 
 
@@ -207,7 +199,7 @@ respectively.
 
 
 
-|= 'SafetyStockLevel: '+Fields.SafetyStockLeve|
+|= 'SafetyStockLevel: '+Fields.SafetyStockLevel|
 
 
 
@@ -216,25 +208,22 @@ respectively.
 
 
 
-|= Fields.Colo|
+|= Fields.Color|
 
 
 as a grouping expression. Set the detail textbox's expression to             
 
 
 
-|= Count(Fields.Color|
+|= Count(Fields.Color)|
 
 
 Alternatively you may use the crosstab wizard choosing the SqlDataSource used for the whole report,               so that you have design-time support (Data explorer, Expression Builder in the context of the crosstab).             
 
 1. Add a[binding]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/bindings%})to the crosstab using __DataSource__  as a __PropertyPath__  and __=ReportItem.DataObject__  as an __Expression__  , as shown in the following screenshot.
             This means that when the crosstab is processed its data source will be replaced with the result
-            of the binding expression evaluation. This way it will be populated with the data of the current group insance.  
-
-  ![dataobject-edit-bindings](images/DataItems/dataobject-edit-bindings.png)
+            of the binding expression evaluation. This way it will be populated with the data of the current group insance.![dataobject-edit-bindings](images/DataItems/dataobject-edit-bindings.png)
 
 1. Preview or start your report. You should now see the products information listed in the details section for every group and a summary info about the products colors summarized in the group headers.
 
 >note This approach might also be used when you need to have page breaks in a  __Table, Crosstab__  or  __List__ .             Because having page breaks in these data items’ groups is not supported by design, you can create a report group,             add and bind a data item in the report group header and set the report group footer section  __PageBreak__  property as required.           
-

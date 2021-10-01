@@ -12,7 +12,7 @@ position: 8
 
 
 
-## Standalone Report Designer Crashes
+##Standalone Report Designer Crashes
 
 When the Standalone Report Designer crashes while working with Telerik Reporting,           the way to determine what has caused the problem is described in the following steps:         
 
@@ -23,7 +23,7 @@ When the Standalone Report Designer crashes while working with Telerik Reporting
 * Provide us with a log file containing detailed information about the Standalone Report Designer crash.               To create the log file, turn on tracing for the Standalone Report Designer and perform the actions which caused the crash.               Below is the XML you need to add to the __Telerik.ReportDesigner(.x86).exe.config__  file to enable tracing:             
 
 	
-      ````xml
+    ````xml
 <?xml version ="1.0"?>
 <configuration>
     ...
@@ -46,6 +46,6 @@ More details about the Standalone Report Designer's configuration file are avail
 
 After you generate the log files from the above steps, archive them and attach them to a support ticket.           Include the steps which have to be followed in order to reproduce the issue.         
 
-## The report cannot be opened in the Standalone Report Designer
+##The report cannot be opened in the Standalone Report Designer
 
 Please refer to the information from the following KB article:  [The report cannot be opened in the Standalone Report Designer](./knowledge-base/report-cannot-be-opened-in-standalone-report-designer) 

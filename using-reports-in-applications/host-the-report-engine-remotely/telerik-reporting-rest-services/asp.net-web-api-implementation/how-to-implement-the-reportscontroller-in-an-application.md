@@ -44,7 +44,7 @@ The Telerik Reporting REST Web API service is represented by the abstract  [Repo
    + Set the  [ReportServiceConfiguration](/reporting/api/Telerik.Reporting.Services.WebApi.ReportsControllerBase#Telerik_Reporting_Services_WebApi_ReportsControllerBase_ReportServiceConfiguration)                    property. The __ReportSourceResolver__  and __Storage__  configuration settings are required.                   See the  [IReportServiceConfiguration](/reporting/api/Telerik.Reporting.Services.IReportServiceConfiguration)  interface                   for more details.                 
 
 {{source=CodeSnippets\MvcCS\Controllers\ReportsController.cs region=ReportsControllerImplementation}}
-  ````C#
+````C#
 	    using System.Web;
 	    using Telerik.Reporting.Services;
 	    using Telerik.Reporting.Services.WebApi;
@@ -78,11 +78,8 @@ The Telerik Reporting REST Web API service is represented by the abstract  [Repo
 	            return HttpStatusCode.OK;
 	        }
 ````
-
-
-
 {{source=CodeSnippets\MvcVB\Controllers\ReportsController.vb region=ReportsControllerImplementation}}
-  ````VB
+````VB
 	Imports System.Web
 	Imports Telerik.Reporting.Cache.Interfaces
 	Imports Telerik.Reporting.Services
@@ -136,7 +133,7 @@ The Telerik Reporting REST Web API service is represented by the abstract  [Repo
    + To configure the Telerik Reporting REST service from the application configuration file, set the value of the                    [ReportServiceConfiguration](/reporting/api/Telerik.Reporting.Services.WebApi.ReportsControllerBase#Telerik_Reporting_Services_WebApi_ReportsControllerBase_ReportServiceConfiguration)  property to an instance of the                    [ConfigSectionReportServiceConfiguration](/reporting/api/Telerik.Reporting.Services.ConfigSectionReportServiceConfiguration)  class.                 
 
 {{source=CodeSnippets\MvcCS\Controllers\ReportsControllerConfigSection.cs region=ReportsControllerConfigSectionImplementation}}
-  ````C#
+````C#
 	    public class ReportsController : ReportsControllerBase
 	    {
 	        static Telerik.Reporting.Services.ConfigSectionReportServiceConfiguration configSectionConfigurationInstance =
@@ -148,11 +145,8 @@ The Telerik Reporting REST Web API service is represented by the abstract  [Repo
 	        }
 	    }
 ````
-
-
-
 {{source=CodeSnippets\MvcVB\Controllers\ReportsControllerConfigSection.vb region=ReportsControllerConfigSectionImplementation}}
-  ````VB
+````VB
 	    Public Class ReportsController
 	        Inherits ReportsControllerBase
 	
@@ -169,7 +163,7 @@ The Telerik Reporting REST Web API service is represented by the abstract  [Repo
    + Then add the __restReportService__  configuration element containing the service settings to the                   [Telerik Reporting Configuration Section]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/overview%}).                 
 
 {{source=CodeSnippets\MvcCS\ReportServiceConfigurationSnippets\ConfigSectionConfiguration.xml}}
-  ````XML
+````XML
 	<Telerik.Reporting>
 	  <restReportService hostAppId="Application1" reportSharingTimeout="10" clientSessionTimeout="10">
 	    <reportResolver provider="type" />

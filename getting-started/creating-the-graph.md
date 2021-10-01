@@ -23,7 +23,7 @@ The controls which the __Report Header__  and the __Report Footer__  contain are
 1. Add a new SQL Datasource component for the graph with the following query:             
 
 	
-      ````sql
+    ````sql
 
 SELECT
 P.Name AS ProductName, SOD.LineTotal / 1000 AS LineTotal,

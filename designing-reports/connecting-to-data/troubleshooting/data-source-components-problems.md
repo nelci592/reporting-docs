@@ -14,7 +14,7 @@ position: 0
 
 This help article lists common issues on configuring Telerik Reporting DataSource components.         Before proceeding with the troubleshooting, test if the problem is reproducible with the latest         available Telerik Reporting version.       
 
-## SqlDataSource Component
+##SqlDataSource Component
 
 The SqlDataSource component uses the installed on the machine .NET data providers,           the corresponding ADO.NET classes and the information from the provided connection string           to establish a connection and retrieve data. Errors can occurs due to a connection string           misconfuguration or inavalid SQL queries.         
 
@@ -30,11 +30,9 @@ The SqlDataSource component uses the installed on the machine .NET data provider
 
 * __SQL parameters are not listed at the 'Configure data source parameters' step of the SqlDataSource Wizard__ The [SqlDataSource wizard]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/sqldatasource-wizard/overview%}) relies on the selected .NET data provider               to evaluate the SQL query and to provide information about any detected SQL parameters. The syntax of the SQL query must be               considered with the selected .NET data provider in order SQL parameters to be listed at the 'Configure data source parameters'               step of the SqlDataSource Wizard. In case the .NET data provider does not return information about SQL parameters, you can configure               manually the SqlDataSource component's Parameters collection.             
 
-## 
 
 
-
-## ObjectDataSource Component
+##ObjectDataSource Component
 
 The ObjectDataSource component can wrap any business object, where most issues are due to the custom           logic of the used data retrieval method.         
 
@@ -44,11 +42,9 @@ The ObjectDataSource component can wrap any business object, where most issues a
 
 * __Report Designer Preview is not working when using ObjectDataSource.__ Such issues can occur due to errors on retrieving data through the wrapped data access method,               or missing configuration required by the wrapped data access method. For more details and solutions check  [Report Designer Preview is not working when using ObjectDataSource](http://www.telerik.com/support/kb/reporting/details/visual-studio-preview-is-not-working-when-using-objectdatasource) 
 
-## 
 
 
-
-## EntityDataSource Component
+##EntityDataSource Component
 
 The EntityDataSource component wraps EF data models, where in design-time the Report Designer needs to create a data context to load the data schema.           Most common issues are caused by improperly configured EF data model or by locked assemblies.         
 
@@ -59,7 +55,7 @@ The EntityDataSource component wraps EF data models, where in design-time the Re
 * __"Error Message: GenericArguments[0], 'Context' on '[TContext]' violates the constraint of type 'TContext'." on design preview of report__ The error can be seen in Visual Studio only. Changes in the way Visual Studio works causes the same EF data model to be loaded multiple               times on build and on configuring the EntityDatasource component, where the assembly gets locked.               Thus types exist more than once in the VS Report Designer and cause the error.             The common solutions for the problem are to restart Visual Studio to unlock the assemblies or use a project with a Viewer control               to preview the changes in the report.             The recommended approach is to use the [Standalone Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview%}) tool               for desiging reports. To load the assembly with the EF data model in the Standalone Report Designer, you need to extend its               configuration - [Extending Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/configuration/extending-report-designer%}). For example:             
 
 	
-      ````XML
+    ````XML
 <Telerik.Reporting>
    <AssemblyReferences>
        <add name="MyEFModelCustomAssembly" version="1.0.0.0" culture="neutral" publicKeyToken="null" />
@@ -71,11 +67,9 @@ The EntityDataSource component wraps EF data models, where in design-time the Re
 
 
 
-## 
 
 
-
-## OpenAccessDataSource Component
+##OpenAccessDataSource Component
 
 The OpenAccessDataSource component wraps data models created by the means of Telerik Data Access,           where in design-time the Report Designer needs to create a data context to load the data schema.           Most common issues are caused by improperly configured data model or by locked assemblies.         
 

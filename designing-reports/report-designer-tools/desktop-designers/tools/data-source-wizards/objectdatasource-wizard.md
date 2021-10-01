@@ -25,7 +25,7 @@ After the __ObjectDataSource__  wizard appears you have to perform the following
    >note When the  __"Show data components only"__  check box is checked, only the types marked with the DataObjectAttribute                     are listed. This is useful for distinguishing the types appropriate for data binding from the regular ones.                   
 
 	
-      ````c#
+    ````c#
         [System.ComponentModel.DataObject()]
         public class Cars : List<Car>;
         {
@@ -73,7 +73,7 @@ After the __ObjectDataSource__  wizard appears you have to perform the following
    + __When the "Show data components only" check box is checked__ , only the methods that are marked                       with the __DataObjectMethodAttribute__  attribute are listed, and only if the specified type of the data method                       is __DataObjectMethodType.Select__ .                     Here are some sample Cars class methods:
 
 {{source=CodeSnippets\CS\API\Telerik\Reporting\ObjectDataSourceSnippets.cs region=DataMethodSnippet}}
-  ````C#
+````C#
 	
 	        [System.ComponentModel.DataObject]
 	        public class Cars : System.Collections.Generic.List<Car>
@@ -101,11 +101,8 @@ After the __ObjectDataSource__  wizard appears you have to perform the following
 	        }
 	
 ````
-
-
-
 {{source=CodeSnippets\VB\API\Telerik\Reporting\ObjectDataSourceSnippets.vb region=DataMethodSnippet}}
-  ````VB
+````VB
 	
 	    <System.ComponentModel.DataObject()>
 	    Public Class Cars

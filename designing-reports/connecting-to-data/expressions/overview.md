@@ -20,9 +20,6 @@ Parameters can be used with expressions to provide additional 		flexibility for 
 
 Expressions begin with an equal (=) and can include a combination 		of constants, operators, and references to built-in values (fields, parameters, 		and functions), and to external or custom code.
 
->important The Expressions cannot begin with whitespace. The expression ' =Fields.Data', will be interpreted as a hardcoded string.           The correct value is '=Fields.Data'.         
-
-
 >important Expressions are case-insensitive. Thus, it is strongly recommended that the data fields, functions,           and other objects used in expressions throughout the report are case-insensitive unique. Otherwise,            the expression engine will not be able to distinguish between the objects which may lead to unexpected results.         
 
 

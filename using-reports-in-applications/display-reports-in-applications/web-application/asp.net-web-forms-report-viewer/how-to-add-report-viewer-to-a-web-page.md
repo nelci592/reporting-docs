@@ -27,7 +27,7 @@ To use Telerik Reports in web application, you need the Web report viewer:
 >In the __```<system.web>```\```<httpHandlers>```__  section:             
 
 	
-      ````XML
+    ````XML
 <system.web>
 ....
 	<httpHandlers>

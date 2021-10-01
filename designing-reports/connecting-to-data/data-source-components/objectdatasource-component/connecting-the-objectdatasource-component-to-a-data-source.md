@@ -78,7 +78,7 @@ For security reasons the ObjectDataSource can resolve only types that are declar
    1. Add an                   [AssemblyReferences]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/assemblyreferences-element%})                   in __Telerik.Reporting__  section of application configuration file:                 
 
 	
-      ````xml
+    ````xml
 <?xml version="1.0"?>
 <configuration>
     <configSections>

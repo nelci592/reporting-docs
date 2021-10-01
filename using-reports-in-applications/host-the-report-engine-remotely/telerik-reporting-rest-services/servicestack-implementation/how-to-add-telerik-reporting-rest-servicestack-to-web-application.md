@@ -10,18 +10,7 @@ position: 2
 
 # How to Add Telerik Reporting REST ServiceStack to Web Application
 
-
-
-This article describes the steps required to host the __Telerik Reporting ServiceStack REST Service__          implementation on top of the classic __ASP.NET__  hosting infrastructure supported by the         __IIS__  (Internet Information Services) server.       
-
->note Telerik Reporting ServiceStack assembly requires  __V3__  of the ServiceStack framework.         
-
-
-## How to host the ServiceStack implementation of Telerik Reporting REST service in IIS:
-
-1. Create a new __ASP.NET Empty Web Application__ .             
-
-1. Install the                [                   ServiceStack 3.9.70.0                 ](                   https://www.nuget.org/packages/ServiceStack/3.9.70                 )                NuGet package.             
+t.org/packages/ServiceStack/3.9.70                 )                NuGet package.             
 
 1. Add references to the following Telerik Reporting assemblies (required):
    + Telerik.Reporting.dll
@@ -62,6 +51,9 @@ This article describes the steps required to host the __Telerik Reporting Servic
 	        }
 	    }
 ````
+
+
+
 {{source=CodeSnippets\MvcVB\ServiceStack\ReportsHost.vb region=ReportsHost_Implementation}}
 ````VB
 	Imports Telerik.Reporting.Services
@@ -105,6 +97,9 @@ This article describes the steps required to host the __Telerik Reporting Servic
 	        }
 	    }
 ````
+
+
+
 {{source=CodeSnippets\MvcVB\ServiceStack\ReportsHostConfigSection.vb region=ReportsHostConfigSectionImplementation}}
 ````VB
 	    Public Class ReportsHost
@@ -140,6 +135,9 @@ This article describes the steps required to host the __Telerik Reporting Servic
 	            new ReportsHost().Init();
 	        }
 ````
+
+
+
 {{source=CodeSnippets\MvcVB\ServiceStack\Application.vb region=ServiceStack_Application_Start}}
 ````VB
 	    Protected Sub Application_Start()
@@ -179,7 +177,7 @@ This article describes the steps required to host the __Telerik Reporting Servic
 
 
 
-| __http://localhost:[portnumber]/api/reports/formats__|
+| __http://localhost:[portnumber]/api/reports/formats__ |
 
 
     If the request is successful you should receive the document formats encoded in JSON. For more information see: [Get Available Document Formats]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/general-api/get-available-document-formats%}).             

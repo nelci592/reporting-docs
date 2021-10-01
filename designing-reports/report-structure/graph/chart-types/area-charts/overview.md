@@ -14,9 +14,7 @@ position: 0
 
 An area chart displays a series as a set of points connected by a line, with all the area filled in below the line.         Area charts are appropriate for visualizing data that fluctuates over a period of time and can be useful for emphasizing trends.         Values that don't vary too wildly work best for area charts.       
 
-The following image shows an example of a stacked area chart:  
-
-  ![Stacked Area Chart](images/Graph/StackedAreaChart.png)
+The following image shows an example of a stacked area chart:
 
 ## Variations of the Area Charts
 

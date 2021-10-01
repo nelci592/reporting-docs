@@ -224,8 +224,8 @@ Instead of a hard-coded string the property can be set in a method/contructor or
 
 # See Also
 
- * [Hierarchical Organization of Resources for Localization](https://docs.microsoft.com/en-us/previous-versions/visualstudio/visual-studio-2013/756hydy4(v=vs.120))
+ * [Hierarchical Organization of Resources for Localization](http://msdn2.microsoft.com/en-us/library/756hydy4(VS.71).aspx)
 
  * [WPF Globalization and Localization Overview](http://msdn.microsoft.com/en-us/library/ms788718(v=VS.85).aspx)
 
- * [Create satellite assemblies for .NET apps](https://docs.microsoft.com/en-us/dotnet/core/extensions/create-satellite-assemblies)
+ * [Security and Localized Satellite Assemblies](http://msdn2.microsoft.com/en-us/library/ff8dk041(VS.71).aspx)

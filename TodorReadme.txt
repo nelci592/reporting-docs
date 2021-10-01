@@ -1,16 +1,4 @@
-WHOM YOU MAY ASK FOR HELP:
-
 Петър Милчев - Ajax support
-
-
-Konstantin Klisurski is no longer with the company, so here is the up-to-date information about who is responsible for system administration of the DevTools docs, demos and forums applications.
-Quoting Kynan Reid: 
-"Marc Vigneault (US), Jessica Whistler (US), Jari Ahonen (Rotterdam) and I who primarily manage the applications in Bedford, have all received access and training to support these environments.  That being said, these environment are still relatively new to us.
-You can enter requests for anything you need and one of us will be able to help.  Also, if you have a release coming up or are  working on a larger initiative which will require support from us, please give me as much advanced notice as possible so we can make sure we have resources available."
-https://wiki.progress.com/display/DTS/Points+of+Contact+and+Escalation#PointsofContactandEscalation-LiveServicesPointsofContact
-
-
-
 
 
 
@@ -133,25 +121,19 @@ Handled with code the codeEntityReference elements in relatedTopics (http://arab
 Removed all commented code in maml with xslt
 
 There are 4 document types:
-	developerTroubleshootingDocument - handled
-	developerWalkthroughDocument - handled
+	developerTroubleshootingDocument
+	developerWalkthroughDocument
 	developerHowToDocument - handled
 	developerConceptualDocument - handled
 
-
-REWRITE IT IN MD - Kaloyan Kotorov recommendation : graphhowtocreatechart.maml - table and part of content are not there.
-Reason: table in table
-
-graphhowtocreatebarchart.maml - lists are not correct; images are missing
-There are nested ordered lists
-The images that are not directly in Media folder may not be included. Edit CSProject.GetImages???
-Some images in the shfbproj file have 2 IDs and AltText.
-Id was not matched when searching for the image. I united the two IDs and used string.Contains
 
 
 Remaining:
 
 
+Document types to handle:
+	developerTroubleshootingDocument
+	developerWalkthroughDocument
 
 
 how to pass the real tokes to _config.yml

@@ -39,7 +39,7 @@ While the methods above are quickest to get an image onto your report, one doesn
 * __Binding to a Binary Image__ You can directly assign a reference to an  [Image](http://msdn2.microsoft.com/en-us/library/system.drawing.image.aspx)                 to the Value property of a PictureBox:             
 
 	
-      ````c#
+    ````c#
         using System.Drawing;
         Image image1 = Image.FromFile(@"C:\MyPictures\MyPicture.jpg");
         this.pictureBox1.Value = image1;
@@ -57,14 +57,14 @@ While the methods above are quickest to get an image onto your report, one doesn
 While in design-time, if you click the ellipsis of the Value property of a selected PictureBox, you will be presented               with a dialog to choose the desired image. After you have selected the image, the Designer will automatically store it in               the resources file for the report (.resx) and add a line of code to the InitializeComponent method that obtains a reference               to the image stored in the resources and assigns it to the Value property of the PictureBox:             
 
 	
-      ````c#
+    ````c#
 			    this.pictureBox1.Value = ((object)(resources.GetObject("pictureBox1.Value")));
 ````
 
 When the database field contains relative path (be it file path or URI) you can use [User Functions]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/extending-expressions/user-functions%})               to specify the correct path to the image:             
 
 	
-      ````c#
+    ````c#
 public static Image LoadImage(string imageLocation)
 {
      string absoluteLocation = "C:\\" + imageLocation;
@@ -83,7 +83,7 @@ and set the Value of the PictureBox item to the correct expression: =LoadImage(F
 * __Binding to an Expression/URI/Base64-encoded image/SVG markup__ Alternatively you can assign a string value to the Value property of a PictureBox. This string value can be either an                [item binding expression]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/overview%}),               an  [URI](http://en.wikipedia.org/wiki/URI)                a string representing a Base64-encoded image,               or a valid SVG markup.               Both __absolute__  and __relative__  URIs are supported.               When binding to a data field with an expression, the Value property will accept both __binary and string data fields__ .               For optimization the engine initially checks the length of the string value. If it is less than 80 characters, the value is                considered to be an URI. Otherwise the string is tested whether it is SVG markup (if its first 256 characters contain                __<svg__ ) or a Base64-encoded string. In case the string is neither a valid SVG nor Base64-encoded string,                the engine will still accept the string as URI and will try to instantiate an image from it. In other words, your data source                column may store the image object, its Base64 string representation, an SVG markup or a relative or absolute                __URI__  pointing to the image:             
 
 	
-      ````c#
+    ````c#
       this.pictureBox1.Value = "=Fields.MyImageBinary";//a binary data column 
       this.pictureBox2.Value = "=Fields.MyImageURI";//a data column containing an URI
       this.pictureBox3.Value = @"C:\MyPictures\MyPicture.png";//absolute file path to a PNG file

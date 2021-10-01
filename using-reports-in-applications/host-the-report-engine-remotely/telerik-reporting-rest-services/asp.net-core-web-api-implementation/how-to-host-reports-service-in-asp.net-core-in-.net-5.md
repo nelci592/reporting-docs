@@ -65,7 +65,7 @@ The __ConfigureServices__  method inside the __Startup.cs__  in the project shou
 1. Make sure the application is configured for WebAPI controllers and call the __AddNewtonsoftJson__  on                       the IMvcBuilder object to place the NewtonsoftJson serialization:                     
 
 	
-      ````c#
+    ````c#
 services.AddControllers().AddNewtonsoftJson();
 ````
 
@@ -74,7 +74,7 @@ services.AddControllers().AddNewtonsoftJson();
 1. Add the dedicated configuration object needed from the Reports Service in the dependency container.                             Note how the report source resolver will target the Reports folder we created earlier.                         
 
 	
-      ````c#
+    ````c#
 // Configure dependencies for ReportsController.
 services.TryAddSingleton<IReportServiceConfiguration>(sp =>
     new ReportServiceConfiguration
@@ -92,7 +92,7 @@ services.TryAddSingleton<IReportServiceConfiguration>(sp =>
 1. Make sure the endpoints configuration inside the __Configure__  method of the __Startup.cs__                      are configured for API controllers by adding the following line in the lambda expression argument:                 
 
 	
-      ````c#
+    ````c#
 app.UseEndpoints(endpoints =>
 {
     endpoints.MapControllers();
@@ -199,7 +199,7 @@ The last supported type of __ConnectionStrings__  configuration uses an array to
 1. Inherit the  [ReportsControllerBase](/reporting/api/Telerik.Reporting.Services.WebApi.ReportsControllerBase)  type                             and inject the configuration settings in the constructor.                             This is how a basic implementation of the controller should look like:                         
 
 	
-      ````c#
+    ````c#
 namespace CSharp.Net5.ReportingRestServiceCorsDemo.Controllers
 {
     using Microsoft.AspNetCore.Mvc;

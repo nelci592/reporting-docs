@@ -61,7 +61,7 @@ At runtime you can access the report parameters through the           [Telerik.R
   the following query:
 
 {{source=CodeSnippets\CS\API\Telerik\Reporting\Processing\ParametersSqlDataSourceQuery.sql}}
-  ````SQL
+````SQL
 	SELECT        M.ManagerID, C.FirstName + ' ' + C.LastName AS Name
 	FROM          (SELECT DISTINCT ManagerID
 	               FROM      HumanResources.Employee) AS M INNER JOIN
@@ -86,7 +86,7 @@ At runtime you can access the report parameters through the           [Telerik.R
 1. Add the following code to the NeedDataSource event handler:
 
 {{source=CodeSnippets\CS\API\Telerik\Reporting\Processing\ParameterSnippets.cs region=Pass_Parameter_In_NeedDataSource}}
-  ````C#
+````C#
 	
 	            private void Report1_NeedDataSource(object sender, System.EventArgs e)
 	            {
@@ -102,11 +102,8 @@ At runtime you can access the report parameters through the           [Telerik.R
 	            }
 	
 ````
-
-
-
 {{source=CodeSnippets\VB\API\Telerik\Reporting\Processing\ParameterSnippets.vb region=Pass_Parameter_In_NeedDataSource}}
-  ````VB
+````VB
 	
 	        Private Sub Report1_NeedDataSource(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.NeedDataSource
 	            'Take the Telerik.Reporting.Processing.Report instance

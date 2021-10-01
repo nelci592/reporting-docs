@@ -58,7 +58,7 @@ __How to display a report in the Windows Forms Report Viewer:__
 1. Add a call to the RefreshReport() method of the viewer in the form Load event:             
 
 	
-      ````C#
+    ````C#
 		private void MainForm_Load(object sender, System.EventArgs e)
         {
             this.reportViewer1.RefreshReport();

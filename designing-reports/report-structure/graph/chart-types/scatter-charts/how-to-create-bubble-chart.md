@@ -25,7 +25,7 @@ In this article we will show you how to create a Bubble chart using the Graph it
    1. Set the __query__  to the following one:                 
 
 	
-      ````sql
+    ````sql
 
 SELECT Sales.SalesOrderHeader.SubTotal, Person.Contact.FirstName+ ' '+ Person.Contact.LastName as [Name],
 Sales.SalesOrderHeader.OrderDate

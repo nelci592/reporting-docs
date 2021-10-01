@@ -1,40 +1,20 @@
 ---
-title: NullReferenceException 'Object reference not set to an instance of an object.' when you load and unload the WPF ReportViewer control from Visual Tree.
+title: NullReferenceException 'Object reference not set to an instance of an object.' when you load and unload the WPF ReportViewer control from visual tree
 description: NullReferenceException "Object reference not set to an instance of an object." when you load and unload the WPF ReportViewer control from visual tree. 
 type: how-to
 page_title: NullReferenceException "Object reference not set to an instance of an object." when you load and unload the WPF ReportViewer control from visual tree
 slug: nullreferenceexception-object-reference-not-set-to-an-instance-of-an-object.-when-you-load-and-unload-the-wpf-reportviewer-control-from-visual-tree
 res_type: kb
 ---  
-
-## Environment
-
-<table>
-	<tbody>
-		<tr>
-			<td>Product</td>
-			<td>Progress® Telerik® Reporting</td>
-		</tr>
-    	<tr>
-			<td>Version</td>
-			<td>R1 2017</td>
-		</tr>
-		<tr>
-			<td>Report Viewer</td>
-			<td>WPF</td>
-		</tr>
-	</tbody>
-</table>
   
-## Description
 
-The error is thrown when you load and unload the WPF ReportViewer control from visual tree e.g., on switching between tabs of a *TabControl* or docking and undocking panes of a Docking control.  
+## Problem  
+**NullReferenceException: "Object reference not set to an instance of an object."** when you load and unload the WPF ReportViewer control from visual tree e.g., on switching between tabs of a TabControl or docking and undocking panes of a Docking control.  
   
-## Cause  
-
-In **Telerik Reporting R1 2017** we changed the way the WPF ReportViewer control's model is handled. The model was released too early in some cases as when the viewer control is used in a control like TabControl or Docking control.  
+## Description  
+In **Telerik Reporting R1 2017** we change the way the WPF ReportViewer control's model is handled. The model was released too early in some cases as when the viewer control is used in a control like TabControl or Docking control.  
   
-## Error Message
+ The error message for comparison:
 
 ```
 Object reference not set to an instance of an object.
@@ -78,9 +58,10 @@ Object reference not set to an instance of an object.
 ```
 
 ## Solution
-
+> Note
+> <br>
 > A fix is provided in **Telerik Reporting R1 2017 SP2 version 11.0.17.406** and newer releases. 
 
-If you need to upgrade, MSI files for installing Telerik Reporting can be found in [your Telerik account](https://www.telerik.com/account/) -> Downloads -> Reporting -> MSI.  
- 
-For more details, check [Installing Telerik Reporting](../installation-installing-from-msi) and the changes mentioned in the corresponding [Upgrade Path](../upgradepathoverview) article.
+If you need to upgrade, MSI files for installing Telerik Reporting can be found in[your Telerik account](/account/)- Downloads - Reporting - MSI.  
+ For more details, check [Installing Telerik Reporting](../installation-installing-from-msi) and the changes mentioned in the corresponding [Upgrade Path](../upgradepathoverview) article.
+

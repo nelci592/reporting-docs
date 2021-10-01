@@ -14,10 +14,6 @@ res_type: kb
 <table>
 	<tbody>
 		<tr>
-			<td>OS</td>
-			<td>Docker for Linux</td>
-		</tr>
-		<tr>
 			<td>Product Version</td>
 			<td>13.0.19.116 +</td>
 		</tr>
@@ -30,7 +26,7 @@ res_type: kb
 
 
 ## Description
-_System.NullReferenceException: Object reference not set to an instance of an object_ when rendering report in a Docker container on Linux
+System.NullReferenceException: Object reference not set to an instance of an object when rendering report in a Docker container on Linux
 
 ## Error Message
 ```
@@ -42,6 +38,6 @@ System.NullReferenceException: Object reference not set to an instance of an obj
 ```
 
 ## Solution
-[Install the Microsoft true type fonts](https://www.maketecheasier.com/install-microsoft-truetype-fonts-linux/) in the container and point the fonts folder in the application configuratino file, for example, __app.config__ file for desktop applications.
+Install the Microsoft true type fonts in the container and point the fonts folder in app.config file.
 
 

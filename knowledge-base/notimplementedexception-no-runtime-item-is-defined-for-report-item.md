@@ -1,34 +1,17 @@
 ---
-title: System.NotImplementedException 'No runtime item is defined for Telerik.Reporting.Report item' error.
-description: System.NotImplementedException 'No runtime item is defined for Telerik.Reporting.Report item' error is thrown.
+title: System.NotImplementedException 'No runtime item is defined for Telerik.Reporting.Report item'
+description: System.NotImplementedException 'No runtime item is defined for Telerik.Reporting.Report item'.
 type: how-to
-page_title: System.NotImplementedException 'No runtime item is defined for Telerik.Reporting.Report item' error is fired.
+page_title: System.NotImplementedException 'No runtime item is defined for Telerik.Reporting.Report item'
 slug: notimplementedexception-no-runtime-item-is-defined-for-report-item
 res_type: kb
 ---
 
-## Environment
-
-<table>
-	<tr>
-		<td>Product</td>
-		<td>Progress® Telerik® Reporting</td>
-	</tr>
-  	<tr>
-		<td>Version</td>
-		<td>Q1 2013 and newer</td>
-	</tr>
-</table>
-
-## Description 
-
-**"System.NotImplementedException: No runtime item is defined for Telerik.Reporting.Report item"** is displayed on processing a report or in [Visual Studio Output window](https://msdn.microsoft.com/en-us/library/3hk6fby3.aspx).
-
-## Cause
-
-To distribute Telerik Reporting assemblie, you want merge them into a single **EXE** or **DLL** that can be used by the custom application. **ILMerge** or other tool manages to gather the DLLs successfully, but when you try to run an application, which uses the merged DLL|EXE, you get the above mentioned error. 
   
-## Error Message   
+## Problem  
+**"System.NotImplementedException: No runtime item is defined for Telerik.Reporting.Report item"** is displayed on processing a report or in [Visual Studio Output window](https://msdn.microsoft.com/en-us/library/3hk6fby3.aspx).  
+
+The full stack trace is included below for comparison:  
 
 ```
 An error has occurred while rendering a report:
@@ -42,12 +25,15 @@ System.NotImplementedException: No runtime item is defined for Telerik.Reporting
    at Telerik.ReportViewer.Common.ReportRenderer.Render(ReportRendererArgs args)
 ```
   
+  
+## Description 
+
+To distribute Telerik Reporting assemblies you want to merge them into a single EXE or DLL that can be used by the custom application. ILMerge or other tool manages to gather the DLLs successfully, but when you try to run an application, which uses the merged DLL|EXE, you get the above mentioned error.   
+
+The problem is related to changes in Telerik.Reporting.dll introduced in Q1 2013 and is applicable for v7.x and newer.  
+  
 ## Solution 
 
-You are allowed to distribute Telerik Reporting assemblies required for running the application.
+You are allowed to distribute Telerik Reporting assemblies required for running the application. This excludes design-time assemblies provided by your Telerik Reporting installation.
+For more details, check [Telerik Reporting License Agreement](https://www.telerik.com/purchase/license-agreement/reporting-dlw-s) - 4. License for Redistribution.
 
-> This excludes design-time assemblies provided by your Telerik Reporting installation.
-
-## See Also
-
-[Telerik Reporting License Agreement - 4. License for Redistribution.](https://www.telerik.com/purchase/license-agreement/reporting-dlw-s)

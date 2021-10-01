@@ -14,7 +14,7 @@ position: 1
 
 In this article we will show you how to create a Polar chart using the Graph item.         
 
-  ![Polar Chart](images/Graph/PolarChart.png)
+  ![Polar Chart\Polar Chart](images/Graph/PolarChart.png)
 
 ## 
 
@@ -27,7 +27,7 @@ In this article we will show you how to create a Polar chart using the Graph ite
    1. Set the query to the following one:
 
 	
-    ````sql
+      ````sql
 
 SELECT SOD.LineTotal, SOH.OrderDate, PC.Name AS Category
 FROM Sales.SalesOrderHeader AS SOH

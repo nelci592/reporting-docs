@@ -12,7 +12,11 @@ position: 1
 
 
 
-In this article we will show you how to create a Bar chart using the Graph item.       
+In this article we will show you how to create a Bar chart using the Graph item.         
+
+  ![graph bars\Bar Chart](images/Graph/BarChart.png)
+
+## 
 
 1. Add a new graph item to the report.
 
@@ -23,7 +27,7 @@ In this article we will show you how to create a Bar chart using the Graph item.
    1. Set the query to the following one:
 
 	
-    ````sql
+      ````sql
 
 SELECT SOD.LineTotal, SOH.OrderDate, PC.Name AS Category
 FROM Sales.SalesOrderHeader AS SOH

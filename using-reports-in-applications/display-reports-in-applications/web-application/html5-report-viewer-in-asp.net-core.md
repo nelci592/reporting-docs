@@ -89,7 +89,7 @@ For Office OpenXML document formats (XLSX, DOCX and PPTX) install the           
 1. Implement a Reports controller. Right-click on the __Controllers__                folder and add a new item: Add - New item - Installed - ASP.NET - __Web API Controller Class__  item.               Name it ReportsController. This will be our Telerik Reporting REST service in the project.             You will have to inherit the __ReportsControllerBase__  type               and provide proper settings for the service's ReportResolver and Storage.               This is how a basic implementation of the controller should look like:             
 
 	
-    ````c#
+      ````c#
 namespace WebApplication1.Controllers
 {
     using System.IO;
@@ -122,7 +122,7 @@ namespace WebApplication1.Controllers
 1. After the Reports controller is set up, you have to create an MVC page view with the HTML5 report viewer. To do so,               open the HomeController, added by the VS ASP.NET Core project template, and add an action method named Report:             
 
 	
-    ````c#
+      ````c#
 public IActionResult Report()
 {
     ViewBag.Message = "Your reports page.";
@@ -150,7 +150,7 @@ public IActionResult Report()
 instead of simply pasting the path.The complete Report view (Report.cshtml) should look like this:
 
 	
-    ````html
+      ````html
 @{
     Layout = null;
 }
@@ -255,14 +255,14 @@ instead of simply pasting the path.The complete Report view (Report.cshtml) shou
 1. To add a link to the __Report__  view in the __Home__  page navigation open               *Views\Shared\_Layout.cshtml*  page and add:             
 
 	
-    ````html
+      ````html
 	<li><a asp-area="" asp-controller="Home" asp-action="Report">Report</a></li>
 ````
 
 list item to the navigation. It should become like this:             
 
 	
-    ````html
+      ````html
     <li><a asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>
     <li><a asp-area="" asp-controller="Home" asp-action="About">About</a></li>
     <li><a asp-area="" asp-controller="Home" asp-action="Contact">Contact</a></li>

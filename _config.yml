@@ -63,7 +63,7 @@ navigation:
     designing-reports/report-structure:
         position: 1200
         title: "Report Structure"
-    designing-reports/report-structure/table:
+    designing-reports/report-structure/table-crosstab-list:
         position: 1000
         title: "Table/Crosstab/List"    
     designing-reports/report-structure/graph:

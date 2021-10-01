@@ -21,7 +21,7 @@ To show a report created with the [Overview]({%slug telerikreporting/designing-r
 * __Use [UriReportSource](/reporting/api/Telerik.Reporting.UriReportSource)__  and a path to the TRDX|TRDP file:             
 
 {{source=CodeSnippets\CS\API\Telerik\Reporting\ReportSourceSnippets.cs region=CreateUriReportSourceSnippet}}
-````C#
+  ````C#
 	            var uriReportSource = new Telerik.Reporting.UriReportSource();
 	
 	            // Specifying an URL or a file path
@@ -30,8 +30,11 @@ To show a report created with the [Overview]({%slug telerikreporting/designing-r
 	            // Adding the initial parameter values
 	            uriReportSource.Parameters.Add(new Telerik.Reporting.Parameter("OrderNumber", "SO43659"));
 ````
+
+
+
 {{source=CodeSnippets\VB\API\Telerik\Reporting\ReportSourceSnippets.vb region=CreateUriReportSourceSnippet}}
-````VB
+  ````VB
 	        Dim uriReportSource As New Telerik.Reporting.UriReportSource()
 	
 	        ' Specifying an URL or a file path
@@ -46,7 +49,7 @@ To show a report created with the [Overview]({%slug telerikreporting/designing-r
 * __Use [XmlReportSource](/reporting/api/Telerik.Reporting.XmlReportSource)__  and read the plain XML of a TRDX file:             
 
 {{source=CodeSnippets\CS\API\Telerik\Reporting\ReportSourceSnippets.cs region=CreateXmlReportSourceSnippet}}
-````C#
+  ````C#
 	            var xmlReportSource = new Telerik.Reporting.XmlReportSource();
 	
 	            // Specifying the XML markup of the report
@@ -76,8 +79,11 @@ To show a report created with the [Overview]({%slug telerikreporting/designing-r
 	            // Adding the initial parameter values
 	            xmlReportSource.Parameters.Add(new Telerik.Reporting.Parameter("OrderNumber", "SO43659"));
 ````
+
+
+
 {{source=CodeSnippets\VB\API\Telerik\Reporting\ReportSourceSnippets.vb region=CreateXmlReportSourceSnippet}}
-````VB
+  ````VB
 	        Dim xmlReportSource As New Telerik.Reporting.XmlReportSource()
 	
 	        ' Specifying the XML markup of the report

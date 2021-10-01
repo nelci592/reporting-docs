@@ -35,7 +35,7 @@ In this how-to article we will show you how to create a Map which will present t
    + Paste the following query in the *Select Statement*  box:                 
 
 	
-    ````sql
+      ````sql
 
 SELECT
 PS.Name AS ProductSubCategory,

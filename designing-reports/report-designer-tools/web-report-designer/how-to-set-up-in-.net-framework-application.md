@@ -38,7 +38,7 @@ The REST service works as a backend and is responsible for storage operations li
 1. Inherit the  [ReportDesignerControllerBase](/reporting/api/Telerik.Reporting.Services.WebApi.ReportDesignerControllerBase)  type               and setup the `ReportServiceConfiguration` instance. Notice that there is another configuration               instance named `ReportDesignerServiceConfiguration`, which will initialize the definition storage.               This is the class, responsible for opening, saving etc. the report definitions. This is how a basic               implementation of the controller should look like:             
 
 	
-    ````c#
+      ````c#
 namespace CSharp.MvcDemo.Controllers
 {
     using System;
@@ -99,7 +99,7 @@ namespace CSharp.MvcDemo.Controllers
 1. Navigate to __Views__  -> __Home__  and add a new CSHTML Page for the Web Report Designer. Name the file __Index.cshtml__ .               Add the required references to load the font, jQuery, Telerik Kendo UI libraries,               telerikReportViewer and webReportDesigner scripts listed in the example below. Finally,               add the initialization of the telerik_WebReportDesigner widget. Note that the Web Report Designer container has a minimum width of 1200px.             The complete report viewer page should look like this:
 
 	
-    ````html
+      ````html
 @using Telerik.Reporting
 @{
     Layout = null;
@@ -141,7 +141,7 @@ The *ReportDesignerController*  we added above is configured to search for its r
 1. Register the *ReportsControllerConfiguration*  and *ReportDesignerControllerConfiguration*  routes in                the `Application_Start()` method of the __Global.asax__  file.               It is important to register them before the default routes as shown below:             
 
 	
-    ````html
+      ````html
         protected void Application_Start()
         {
             AreaRegistration.RegisterAllAreas();

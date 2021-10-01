@@ -14,7 +14,9 @@ position: 0
 
 Pie charts are used to display the contribution of fractional parts to a whole. Pie charts are most commonly         used to make comparisons between groups. They have no axes. When a numeric field is used, the chart can calculate         the percentage of each value to the total.       
 
-The following image displays a pie chart with a legend:
+The following image displays a pie chart with a legend:  
+
+  ![Pie Chart\Pie Chart](images/Graph/PieChart.png)
 
 ## Pie Chart Variations
 

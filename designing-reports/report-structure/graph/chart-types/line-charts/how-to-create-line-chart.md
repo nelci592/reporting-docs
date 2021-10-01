@@ -12,7 +12,9 @@ position: 1
 
 
 
-In this article we will show you how to create a Line chart using the Graph item.       
+In this article we will show you how to create a Line chart using the Graph item.         
+
+  ![Line Chart\Line Chart](images/Graph/LineChart.png)
 
 ## 
 
@@ -25,7 +27,7 @@ In this article we will show you how to create a Line chart using the Graph item
    1. Set the query to the following one:
 
 	
-    ````sql
+      ````sql
 
 SELECT PC.Name AS ProductCategory, SOD.LineTotal, SOH.OrderDate
 FROM Production.Product AS P

@@ -18,7 +18,7 @@ Spaklines and data bars are created by adding the required [chart type]({%slug t
 
 The image below shows a typical usage of the sparkline chart type in a table:  
 
-  ![Sparkline Chart](images/Graph/SparklineChart.png)
+  ![Sparkline Chart\Sparkline Chart](images/Graph/SparklineChart.png)
 
 ## Sparklines Chart Variations
 

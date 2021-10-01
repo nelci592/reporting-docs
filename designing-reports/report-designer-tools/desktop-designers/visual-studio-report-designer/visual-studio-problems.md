@@ -23,7 +23,7 @@ When Visual Studio crashes while working with Telerik Reporting,           the w
 * Provide us with a log file containing detailed information about the Visual Studio crash.               To create the log file, turn on tracing for the Visual Studio IDE and perform the actions which caused the crash.               Below is the XML you need to add to the __devenv.exe.config__  file to enable tracing:             
 
 	
-    ````xml
+      ````xml
 <?xml version ="1.0"?>
 <configuration>
     ...

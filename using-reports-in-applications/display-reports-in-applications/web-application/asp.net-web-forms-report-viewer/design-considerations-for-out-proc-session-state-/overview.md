@@ -29,14 +29,17 @@ The ReportViewer control uses the __ASP.NET session state__  to preserve the rep
             Instead the report item should be taken from the Items collection of the report. Consider the following examples:__Wrong__ 
 
 {{source=CodeSnippets\CS\API\Telerik\Reporting\Processing\OutProcSnippets.cs region=WrongItemDataBinding}}
-````C#
+  ````C#
 	        void Report1_WrongItemDataBinding(object sender, System.EventArgs e)
 	        {
 	            this.textBox1.Value = "New Value";
 	        }
 ````
+
+
+
 {{source=CodeSnippets\VB\API\Telerik\Reporting\Processing\OutProcSnippets.vb region=WrongItemDataBinding}}
-````VB
+  ````VB
 	    Private Sub Report1_WrongItemDataBinding(sender As System.Object, e As System.EventArgs) Handles MyBase.NeedDataSource
 	        Me.TextBox1.Value = "New Value"
 	    End Sub
@@ -45,7 +48,7 @@ The ReportViewer control uses the __ASP.NET session state__  to preserve the rep
 __Correct__ 
 
 {{source=CodeSnippets\CS\API\Telerik\Reporting\Processing\OutProcSnippets.cs region=CorrectItemDataBinding}}
-````C#
+  ````C#
 	        void Report1_CorrectItemDataBinding(object sender, System.EventArgs e)
 	        {
 	            Telerik.Reporting.Processing.Report processingReport = (Telerik.Reporting.Processing.Report)sender;
@@ -54,8 +57,11 @@ __Correct__
 	            textBox.Value = "New Value";
 	        }
 ````
+
+
+
 {{source=CodeSnippets\VB\API\Telerik\Reporting\Processing\OutProcSnippets.vb region=CorrectItemDataBinding}}
-````VB
+  ````VB
 	    Private Sub Report1_CorrectItemDataBinding(sender As System.Object, e As System.EventArgs) Handles MyBase.NeedDataSource
 	        Dim processingReport = DirectCast(sender, Telerik.Reporting.Processing.Report)
 	        Dim reportDef = DirectCast(processingReport.ItemDefinition, Telerik.Reporting.Report)
@@ -70,7 +76,7 @@ __Correct__
             them in the ItemDataBinding event of the Report. For example:
 
 {{source=CodeSnippets\CS\API\Telerik\Reporting\Processing\OutProcSnippets.cs region=AttachItemsEvents}}
-````C#
+  ````C#
 	        void Report1_ItemDataBinding(object sender, System.EventArgs e)
 	        {
 	            Telerik.Reporting.Processing.Report processingReport = (Telerik.Reporting.Processing.Report)sender;
@@ -86,8 +92,11 @@ __Correct__
 	            // . . .
 	        }
 ````
+
+
+
 {{source=CodeSnippets\VB\API\Telerik\Reporting\Processing\OutProcSnippets.vb region=AttachItemsEvents}}
-````VB
+  ````VB
 	    Private Sub Report1_ItemDataBinding(sender As System.Object, e As System.EventArgs) Handles MyBase.ItemDataBinding
 	        Dim processingReport = DirectCast(sender, Telerik.Reporting.Processing.Report)
 	        Dim reportDef = DirectCast(processingReport.ItemDefinition, Telerik.Reporting.Report)

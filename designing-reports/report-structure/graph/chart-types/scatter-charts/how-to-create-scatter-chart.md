@@ -25,7 +25,7 @@ In this article we will show you how to create a Scatter chart using the __Graph
    1. Set the __query__  to the following one:
 
 	
-    ````sql
+      ````sql
 
 SELECT Sales.SalesOrderHeader.SubTotal, Person.Contact.FirstName+ ' '+ Person.Contact.LastName as [Name],
 Sales.SalesOrderHeader.OrderDate

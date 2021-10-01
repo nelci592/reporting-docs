@@ -12,7 +12,9 @@ position: 1
 
 
 
-In this article we will show you how to create a Pie chart using the Graph item.       
+In this article we will show you how to create a Pie chart using the Graph item.         
+
+  ![Pie Chart\Pie Chart](images/Graph/PieChart.png)
 
 ## 
 
@@ -25,7 +27,7 @@ In this article we will show you how to create a Pie chart using the Graph item.
    1. Set the query to the following one:
 
 	
-    ````sql
+      ````sql
 
 SELECT S.Name AS StoreName, SOH.SubTotal
 FROM Sales.Customer AS CU

@@ -34,14 +34,14 @@ The toolbar of the HTML5 report viewer provides basic functionality for interact
 ||Stop rendering|
 ||Refresh report|
 ||Go to first page, previous page, specific page / total number of pages, next page, last page|
-||Print Preview: switches between __Logical__ and __Physical__ page                 renderer. Check[Rendering and Paging]({%slug telerikreporting/designing-reports/rendering-and-paging/overview%})article for more info.|
-||Export: check[Export Formats]({%slug telerikreporting/using-reports-in-applications/export-and-configure/export-formats%})for available export formats.|
-||Print: check[Printing Reports]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/printing-reports%})article for more information.|
+||Print Preview: switches between __Logical__ and __Physical__ page                 renderer. Check [Rendering and Paging]({%slug telerikreporting/designing-reports/rendering-and-paging/overview%})article for more info.|
+||Export: check [Export Formats]({%slug telerikreporting/using-reports-in-applications/export-and-configure/export-formats%})for available export formats.|
+||Print: check [Printing Reports]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/printing-reports%})article for more information.|
 ||Toggles the document map area|
-||Toggles the send email window that allows sending a report as an attachment, with specific paramaters, to a list of users.                 Check the[send email message article]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/send-mail-message%})for more information.|
+||Toggles the send email window that allows sending a report as an attachment, with specific paramaters, to a list of users.                 Check the [send email message article]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/send-mail-message%})for more information.|
 ||Toggles the parameters area|
 ||Scale the pages for best viewing experience including __full page__ , __page width__ or __custom scale factor__ .|
-||Toggles the search window widget that allows searching in report contents. Check the[search article]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/search%})for more information|
+||Toggles the search window widget that allows searching in report contents. Check the [search article]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/search%})for more information|
 
 
 

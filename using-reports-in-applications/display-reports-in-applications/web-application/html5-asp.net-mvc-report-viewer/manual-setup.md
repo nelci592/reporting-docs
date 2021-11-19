@@ -25,7 +25,7 @@ This tutorial shows how to use HTML5 Report Viewer's ASP.NET MVC wrapper in ASP.
 * Entry with the default connection string used by Telerik Reporting sample reports in the __web.config__  file               of the project hosting the Reporting REST service:             
 
 	
-    ````xml
+      ````xml
 <connectionStrings>
 	 <add name="Telerik.Reporting.Examples.CSharp.Properties.Settings.TelerikConnectionString"
 	            connectionString="Data Source=(local);Initial Catalog=AdventureWorks;Integrated Security=SSPI"
@@ -107,7 +107,9 @@ The following steps produce a view with settings similar to these of the local M
    + __Telerik.Reporting__ 
 
    + __Telerik.ReportViewer.Mvc__ 
-    assemblies and set their __Copy Local__  properties to true in Visual Studio.                 
+
+   + __Newtonsoft.Json, Version 9.0.0.0 or higher__ 
+    assemblies and set their __Copy Local__  properties to true in Visual Studio.                   The Telerik Reporting assemblies may be found by default in the folder __[TelerikReporting_InstallDir]\Bin__ .                 
 
     >tip Without setting Telerik Reporting references' Copy Local to true the assemblies may not be loaded correctly on running the application.
 

@@ -10,7 +10,13 @@ position: 2
 
 # How to Add Telerik Reporting REST Web API to Web Application
 
-essary files and packages to host the Telerik Reporting REST service instance.         
+
+
+In this case the Web API will be hosted on top of the classic ASP.NET hosting infrastructure, supported by the IIS (Internet Information Services) server.         The REST service setup can be done either by using the Telerik Reporting REST Service project template or manually, as explained below.       
+
+## Using the REST Service Project Template
+
+In Visual Studio open the __Add New Project__  dialog and select *Telerik Reporting REST Service*            project template, which appears when selecting __Reporting__  category from the left pane.           This will add a new project in your solution that contains all the necessary files and packages to host the Telerik Reporting REST service instance.         
 
 The project has a preconfigured implementation of reports controller that uses the *"~\Reports"*  path for           its report source resolver. This directory is not automatically created and needs to be created, or the path to be modified accordingly prior to running the project.         
 
@@ -71,9 +77,6 @@ The project has a preconfigured implementation of reports controller that uses t
 	        {
 	            ReportsControllerConfiguration.RegisterRoutes(GlobalConfiguration.Configuration);
 ````
-
-
-
 {{source=CodeSnippets\MvcVB\Global.asax.vb region=ReportsControllerConfiguration_RegisterRoutes}}
 ````vb
 	    Sub Application_Start()
@@ -88,7 +91,7 @@ The project has a preconfigured implementation of reports controller that uses t
 
 
 
-| __http://localhost:[portnumber]/api/reports/formats__ |
+| __http://localhost: [portnumber]/api/reports/formats__|
 
 
     If the request is successful you should receive the document formats encoded in JSON. For more information see: [Get Available Document Formats]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/general-api/get-available-document-formats%}).                 
@@ -103,16 +106,11 @@ The project has a preconfigured implementation of reports controller that uses t
    1. Add the following code at the beginning of the __Global.Application_Start__  (Global.asax) method:                     
 
 	
-    ````c#
+      ````c#
 
 GlobalConfiguration.Configuration.EnableCors();
 ````
-
-
-
-
-	
-    ````vb
+````vb
 
 GlobalConfiguration.Configuration.EnableCors();
 ````
@@ -123,15 +121,10 @@ GlobalConfiguration.Configuration.EnableCors();
    1. Add the following attribute to the __ReportsController__  class (requires reference to __System.Web.Http.Cors__ ):                     
 
 	
-    ````c#
+      ````c#
                       [EnableCors(origins:"*", headers:"*", methods:"*")]
 ````
-
-
-
-	
-    ````vb
+````vb
                       <EnableCors(origins:"*", headers:"*", methods:"*")>
 ````
-
 

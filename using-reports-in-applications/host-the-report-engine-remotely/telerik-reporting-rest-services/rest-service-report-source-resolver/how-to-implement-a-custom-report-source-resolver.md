@@ -194,99 +194,116 @@ GO
 
 1. Add to your IReportSourceResolver implementation a constructor with parameter IReportSourceResolver parentResolver.               Then use the parentResolver if the custom report source resolving mechanism fails.             
 
+{{source=CodeSnippets\MvcCS\Controllers\CustomResolverReportsController.cs region=CustomReportSourceResolverFallBack_Implementation}}
+````C#
+	    class CustomReportSourceResolverWithFallBack : IReportSourceResolver
+	    {
+	        readonly IReportSourceResolver parentResolver;
 	
-    ````C#
-class ReportSourceResolverWithFallBack : IReportSourceResolver
-{
-    readonly IReportSourceResolver parentResolver;
-    public ReportSourceResolverWithFallBack(IReportSourceResolver parentResolver)
-    {
-        this.parentResolver = parentResolver;
-    }
-    public ReportSource Resolve(string report)
-    {
-        ReportSource reportDocument = null;
-        reportDocument = this.ResolveCustomReportSource(report);
-        if (null == reportDocument && null != this.parentResolver)
-        {
-            reportDocument = this.parentResolver.Resolve(report);
-        }
-        return reportDocument;
-    }
-    public ReportSource ResolveCustomReportSource(string report)
-    {
-        //TODO implement custom report resolving mechanism
-        return null;
-    }
-}
+	        public CustomReportSourceResolverWithFallBack(IReportSourceResolver parentResolver)
+	        {
+	            this.parentResolver = parentResolver;
+	        }
+	
+	        public ReportSource Resolve(string report, OperationOrigin operationOrigin, IDictionary<string, object> currentParameterValues)
+	        {
+	            ReportSource reportDocument = null;
+	            reportDocument = this.ResolveCustomReportSource(report, operationOrigin, currentParameterValues);
+	
+	            if (null == reportDocument && null != this.parentResolver)
+	            {
+	                reportDocument = this.parentResolver.Resolve(report, operationOrigin, currentParameterValues);
+	            }
+	
+	            return reportDocument;
+	        }
+	
+	        public ReportSource ResolveCustomReportSource(string report, OperationOrigin operationOrigin, IDictionary<string, object> currentParameterValues)
+	        {
+	            //TODO implement custom report resolving mechanism
+	            return null;
+	        }
+	    }
 ````
+{{source=CodeSnippets\MvcVB\Controllers\CustomResolverReportsController.vb region=CustomReportSourceResolverFallBack_Implementation}}
 ````VB
-Class ReportSourceResolverWithFallBack
-    Implements IReportSourceResolver
-    ReadOnly parentResolver As IReportSourceResolver
-    Public Sub New(parentResolver As IReportSourceResolver)
-        Me.parentResolver = parentResolver
-    End Sub
-    Public Function Resolve(report As String) As ReportSource Implements IReportSourceResolver.Resolve
-        Dim reportDocument As IReportDocument = Nothing
-        reportDocument = Me.ResolveCustomReportSource(report)
-        If reportDocument Is Nothing AndAlso Me.parentResolver IsNot Nothing Then
-            reportDocument = Me.parentResolver.Resolve(report)
-        End If
-        Return reportDocument
-    End Function
-    Public Function ResolveCustomReportSource(report As String) As ReportSource
-        'TODO implement custom report resolving mechanism
-        Return Nothing
-    End Function
-End Class
+	Class CustomReportSourceResolverWithFallBack
+	    Implements IReportSourceResolver
+	    ReadOnly parentResolver As IReportSourceResolver
+	
+	    Public Sub New(parentResolver As IReportSourceResolver)
+	        Me.parentResolver = parentResolver
+	    End Sub
+	
+	    Public Function Resolve(report As String, operationOrigin As OperationOrigin, currentParameterValues As IDictionary(Of String, Object)) As Telerik.Reporting.ReportSource Implements IReportSourceResolver.Resolve
+	        Dim reportDocument As IReportDocument = Nothing
+	        reportDocument = Me.ResolveCustomReportSource(report, operationOrigin, currentParameterValues)
+	
+	        If reportDocument Is Nothing AndAlso Me.parentResolver IsNot Nothing Then
+	            reportDocument = Me.parentResolver.Resolve(report, operationOrigin, currentParameterValues)
+	        End If
+	
+	        Return reportDocument
+	    End Function
+	
+	    Public Function ResolveCustomReportSource(report As String, operationOrigin As OperationOrigin, currentParameterValues As IDictionary(Of String, Object)) As ReportSource
+	        'TODO implement custom report resolving mechanism
+	        Return Nothing
+	    End Function
+	End Class
 ````
 
 
 
 1. Add to the ReportServiceConfiguration the IReportSourceResolver implementations in a chain. Thus the custom one will be executed               first, if it fails the second one and so on.             
 
+{{source=CodeSnippets\MvcCS\Controllers\CustomResolverReportsController.cs region=CustomResolverWithFallback_ReportsController_Implementation}}
+````C#
+	    public class CustomResolverWithFallbackReportsController : ReportsControllerBase
+	    {
+	        static ReportServiceConfiguration configurationInstance;
 	
-    ````C#
-public class CustomResolverWithFallbackReportsController : ReportsControllerBase
-{
-    static ReportServiceConfiguration configurationInstance;
-    static CustomResolverWithFallbackReportsController()
-    {
-        var resolver = new ReportSourceResolverWithFallBack()
-            .AddFallbackResolver(new TypeReportSourceResolver()
-                .AddFallbackResolver(new UriReportSourceResolver(HttpContext.Current.Server.MapPath("~/Reports"))));
-        configurationInstance = new ReportServiceConfiguration
-        {
-            HostAppId = "Application1",
-            ReportSourceResolver = resolver,
-            Storage = new Telerik.Reporting.Cache.File.FileStorage(),
-        };
-    }
-    public CustomResolverWithFallbackReportsController()
-    {
-        this.ReportServiceConfiguration = configurationInstance;
-    }
-}
+	        static CustomResolverWithFallbackReportsController()
+	        {
+	            var resolver = new CustomReportSourceResolverWithFallBack(new TypeReportSourceResolver()
+	                    .AddFallbackResolver(new UriReportSourceResolver(HttpContext.Current.Server.MapPath("~/Reports"))));
+	
+	            configurationInstance = new ReportServiceConfiguration
+	            {
+	                HostAppId = "Application1",
+	                ReportSourceResolver = resolver,
+	                Storage = new Telerik.Reporting.Cache.File.FileStorage(),
+	            };
+	        }
+	
+	        public CustomResolverWithFallbackReportsController()
+	        {
+	            this.ReportServiceConfiguration = configurationInstance;
+	        }
+	    }
 ````
+{{source=CodeSnippets\MvcVB\Controllers\CustomResolverReportsController.vb region=CustomResolverWithFallback_ReportsController_Implementation}}
 ````VB
-Public Class CustomResolverWithFallbackReportsController
-    Inherits Telerik.Reporting.Services.WebApi.ReportsControllerBase
-    Shared configurationInstance As ReportServiceConfiguration
-    Shared Sub New()
-        Dim resolver = New ReportSourceResolverWithFallBack() _
-            .AddFallbackResolver(New TypeReportSourceResolver() _
-                .AddFallbackResolver(New UriReportSourceResolver(HttpContext.Current.Server.MapPath("~/Reports"))))
-        Dim reportServiceConfiguration As New ReportServiceConfiguration()
-        reportServiceConfiguration.HostAppId = "Application1"
-        reportServiceConfiguration.ReportSourceResolver = resolver
-        reportServiceConfiguration.Storage = New Telerik.Reporting.Cache.File.FileStorage()
-        configurationInstance = reportServiceConfiguration
-    End Sub
-    Public Sub New()
-        Me.ReportServiceConfiguration = configurationInstance
-    End Sub
-End Class
+	Public Class CustomResolverWithFallbackReportsController
+	    Inherits Telerik.Reporting.Services.WebApi.ReportsControllerBase
+	
+	    Shared configurationInstance As ReportServiceConfiguration
+	
+	    Shared Sub New()
+	        Dim resolver = New CustomReportSourceResolverWithFallBack(New TypeReportSourceResolver() _
+	                .AddFallbackResolver(New UriReportSourceResolver(HttpContext.Current.Server.MapPath("~/Reports"))))
+	
+	        Dim reportServiceConfiguration As New ReportServiceConfiguration()
+	        reportServiceConfiguration.HostAppId = "Application1"
+	        reportServiceConfiguration.ReportSourceResolver = resolver
+	        reportServiceConfiguration.Storage = New Telerik.Reporting.Cache.File.FileStorage()
+	        configurationInstance = reportServiceConfiguration
+	    End Sub
+	
+	    Public Sub New()
+	        Me.ReportServiceConfiguration = configurationInstance
+	    End Sub
+	End Class
 ````
 
     You can use for fallback the default IReportSourceResolver implementations:             

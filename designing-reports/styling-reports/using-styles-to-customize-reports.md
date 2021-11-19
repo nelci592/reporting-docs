@@ -33,7 +33,7 @@ To create a style sheet for a report, follow these steps:
 1. Click in the __Selectors__  property, click the ellipsis button to open the TypeSelector Collection Editor.
 
 1. Click the drop-down arrow on the __Add__  button and select the type of selector to add. 
-        		See the type of selectors in[Understanding Style Selectors]({%slug telerikreporting/designing-reports/styling-reports/understanding-style-selectors%})
+        		See the type of selectors in [Understanding Style Selectors]({%slug telerikreporting/designing-reports/styling-reports/understanding-style-selectors%})
 
 1. Use the properties area of the TypeSelector Collection Editor to customize the new selector. For example, the screenshot below shows a __StyleSelector__  named __DataField__  which applies to __TextBox__  report items only.  
 

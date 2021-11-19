@@ -32,7 +32,7 @@ For more details and examples on the different report sources, please refer to  
 
 When the report engine is embedded in the current application (i.e. the *Telerik.Reporting*  assembly is referenced)           it is possible to use the Report Processor to manually render           ( [RenderReport](/reporting/api/Telerik.Reporting.Processing.ReportProcessor#Telerik_Reporting_Processing_ReportProcessor_RenderReport_System_String_Telerik_Reporting_ReportSource_System_Collections_Hashtable_) )           or print           ( [PrintReport](/reporting/api/Telerik.Reporting.Processing.ReportProcessor#Telerik_Reporting_Processing_ReportProcessor_PrintReport_Telerik_Reporting_ReportSource_System_Drawing_Printing_PrinterSettings_) )           a report. For this purpose it is required to pass an argument of ReportSource type which uniquely identifies the report.         
 
-For this example we will use a TypeReportSource. The TypeReportSource specifies the report by its Assembly Qualified Name. The Reporting Engine uses  [Reflection](https://msdn.microsoft.com/en-us/library/ms173183(v=vs.110).aspx)  to create an instance of the report class through its default parameterless constructor.         
+For this example we will use a TypeReportSource. The TypeReportSource specifies the report by its  [Assembly Qualified Name](https://docs.microsoft.com/en-us/dotnet/api/system.type.assemblyqualifiedname) . The Reporting Engine uses  [Reflection](https://docs.microsoft.com/en-us/previous-versions/visualstudio/visual-studio-2012/ms173183(v=vs.110))  to create an instance of the report class through its default parameterless constructor.         
 
 {{source=CodeSnippets\CS\API\Telerik\Reporting\Processing\ReportProcessorSnippets.cs region=Export_Single_Stream_Snippet}}
 ````C#
@@ -73,13 +73,16 @@ For this example we will use a TypeReportSource. The TypeReportSource specifies 
 	
 	            Telerik.Reporting.Processing.RenderingResult result = reportProcessor.RenderReport("PDF", reportSource, deviceInfo);
 	
-	            string fileName = result.DocumentName + "." + result.Extension;
-	            string path = System.IO.Path.GetTempPath();
-	            string filePath = System.IO.Path.Combine(path, fileName);
-	
-	            using (System.IO.FileStream fs = new System.IO.FileStream(filePath, System.IO.FileMode.Create))
+	            if (!result.HasErrors)
 	            {
-	                fs.Write(result.DocumentBytes, 0, result.DocumentBytes.Length);
+	                string fileName = result.DocumentName + "." + result.Extension;
+	                string path = System.IO.Path.GetTempPath();
+	                string filePath = System.IO.Path.Combine(path, fileName);
+	
+	                using (System.IO.FileStream fs = new System.IO.FileStream(filePath, System.IO.FileMode.Create))
+	                {
+	                    fs.Write(result.DocumentBytes, 0, result.DocumentBytes.Length);
+	                }
 	            }
 ````
 {{source=CodeSnippets\VB\API\Telerik\Reporting\Processing\ReportProcessorSnippets.vb region=Export_Single_Stream_Snippet}}
@@ -120,13 +123,15 @@ For this example we will use a TypeReportSource. The TypeReportSource specifies 
 	
 	        Dim result As Telerik.Reporting.Processing.RenderingResult = reportProcessor.RenderReport("PDF", reportSource, deviceInfo)
 	
-	        Dim fileName As String = result.DocumentName + "." + result.Extension
-	        Dim path As String = System.IO.Path.GetTempPath()
-	        Dim filePath As String = System.IO.Path.Combine(path, fileName)
+	        If Not result.HasErrors Then
+	            Dim fileName As String = result.DocumentName + "." + result.Extension
+	            Dim path As String = System.IO.Path.GetTempPath()
+	            Dim filePath As String = System.IO.Path.Combine(path, fileName)
 	
-	        Using fs As New System.IO.FileStream(filePath, System.IO.FileMode.Create)
-	            fs.Write(result.DocumentBytes, 0, result.DocumentBytes.Length)
-	        End Using
+	            Using fs As New System.IO.FileStream(filePath, System.IO.FileMode.Create)
+	                fs.Write(result.DocumentBytes, 0, result.DocumentBytes.Length)
+	            End Using
+	        End If
 	
 ````
 

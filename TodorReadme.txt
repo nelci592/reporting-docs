@@ -128,7 +128,7 @@ There are 4 document types:
 
 
 
-Remaining:
+REMAINING:
 
 
 Document types to handle:
@@ -294,6 +294,9 @@ working list, broken tabbed snippets
 
 
 
+relative links with {%slug ...%} in ">note " don't work - "...\designing-reports\localizing-reports.md"
+
+relative links with {%slug ...%} don't work for KB articles - "...\designing-reports\converting-reports-from-other-reporting-solutions\overview.md"
 
 
 

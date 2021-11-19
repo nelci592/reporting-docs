@@ -83,13 +83,15 @@ In the vertical direction, by default sections are not split across different pa
 
 Table/Crosstab items also support page breaks before and/or after each TableGroup instance. This is supported in both horizontal and vertical direction           and is controlled using the  [Telerik.Reporting.TableGroup.PageBreak](/reporting/api/Telerik.Reporting.TableGroup#Telerik_Reporting_TableGroup_PageBreak)  property.         
 
-In older Telerik Reporting versions, simple report items (i.e. non-container items) are always kept together on a page if possible. If not, they are rendered at           the beginning of the next page. If they still cannot fit, because they are longer than a whole page, they are split.           The PictureBox, Shape and Chart items are always kept together.__In recent Telerik Reporting versions all items can be split between pages, if they do not fit in.__ 
+In older Telerik Reporting versions, simple report items (i.e. non-container items) are always kept together on a page if possible. If not, they are rendered at           the beginning of the next page. If they still cannot fit, because they are longer than a whole page, they are split.           The PictureBox, Shape and Chart items are always kept together. __In recent Telerik Reporting versions all items can be split between pages, if they do not fit in__.
 
 By default, groups are not kept together on a single page. You can instruct the rendering engine to try to keep the entire           group or the group header with the first detail on a single page if possible by setting the GroupKeepTogether property of the           Group component. If group is kept together using GroupKeepTogether property, the engine will ignore the PageBreak property set for           the Detail section.         
 
 By default, Table item is kept together. To force nested table to break set KeepTogether=False for parent table's row/column           that contains nested table.         
 
->note If the content that should be kept together is too large to fit on a single page, it is not moved and is left on the current             page, forcing the rest of the content to move to next page, as if KeepTogether is false.           Example: Report group has GroupKeepTogether=FirstDetail, this means that the summary height of the group header,             height of all child group headers (if any) and height of the first detail should be able to fit on a single page in order for the             KeepTogether algorithm to work and move the whole Group on a new page.           
+>note If the content that should be kept together is too large to fit on a single page, it is not moved and is left on the current             page, forcing the rest of the content to move to next page, as if KeepTogether is false.
+>
+>Example: Report group has GroupKeepTogether=FirstDetail, this means that the summary height of the group header,             height of all child group headers (if any) and height of the first detail should be able to fit on a single page in order for the KeepTogether algorithm to work and move the whole Group on a new page.           
 
 
 ##Horizontal Paging
@@ -100,13 +102,13 @@ If the report spans over several pages in width then its sections are stretched 
 
   ![](images/SectionSpan.jpg)
 
->caution               If your report item (table) is too wide to fit on the page it will cause a horizontal overflow and will continue on the next page.              However whenever this happens if there is additional content below the table a blank page for each additional page              (needed by the table) will be generated. To understand this better consider the following example:            
+>caution If your report item (table) is too wide to fit on the page it will cause a horizontal overflow and will continue on the next page. However whenever this happens if there is additional content below the table a blank page for each additional page (needed by the table) will be generated. To understand this better consider the following example:            
 
 
 
 
-|   |   |
-| ------ | ------ |
+|   |   |   |
+| ------ | ------ | ------ |
 page 1 (first part of table)|page 2 (second part)|page 3 (third part)|
 |page 4 (another content here)|page 5 (empty)|page 6 (empty|
 
@@ -116,3 +118,9 @@ page 1 (first part of table)|page 2 (second part)|page 3 (third part)|
 ## Report sections
 
 Report sections automatically grow and can shrink (controlled by property) to accommodate the report items contained within. They do not reflect           the physical page size and can grow beyond the boundaries of the physical page size to span multiple report pages.           Exception in this rule make the PageHeader and PageFooter sections, which can only grow horizontally, and cannot shrink in any dimension.           Page sections can be only hidden, and in that case their space is taken up from the rest of the report content.         
+
+# See Also
+
+ * [Rendering and Paging]({%slug telerikreporting/designing-reports/rendering-and-paging/overview%})
+
+ * [Understanding Rendering Behaviors]({%slug telerikreporting/designing-reports/rendering-and-paging/understanding-rendering-behaviors%})

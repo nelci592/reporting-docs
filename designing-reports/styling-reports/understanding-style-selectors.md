@@ -28,6 +28,7 @@ Style Selectors are used to define how a style will be applied globally to item
 
 A __TypeSelector__  applies to all report items of a particular type, for example a __Telerik.Reporting.TextBox__  or a __Telerik.Reporting.PageFooterSection__ .
 
+
 When a style is defined as a __TypeSelector__ , the formatting for that style is automatically applied to all items on the report that match the type.
 
 ### AttributeSelector

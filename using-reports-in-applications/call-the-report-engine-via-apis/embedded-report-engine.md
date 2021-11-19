@@ -61,13 +61,16 @@ Some formats (MHTML, PDF, XLS(X), RTF, DOCX, PPTX, CSV) produce a single documen
 	
 	            Telerik.Reporting.Processing.RenderingResult result = reportProcessor.RenderReport("PDF", reportSource, deviceInfo);
 	
-	            string fileName = result.DocumentName + "." + result.Extension;
-	            string path = System.IO.Path.GetTempPath();
-	            string filePath = System.IO.Path.Combine(path, fileName);
-	
-	            using (System.IO.FileStream fs = new System.IO.FileStream(filePath, System.IO.FileMode.Create))
+	            if (!result.HasErrors)
 	            {
-	                fs.Write(result.DocumentBytes, 0, result.DocumentBytes.Length);
+	                string fileName = result.DocumentName + "." + result.Extension;
+	                string path = System.IO.Path.GetTempPath();
+	                string filePath = System.IO.Path.Combine(path, fileName);
+	
+	                using (System.IO.FileStream fs = new System.IO.FileStream(filePath, System.IO.FileMode.Create))
+	                {
+	                    fs.Write(result.DocumentBytes, 0, result.DocumentBytes.Length);
+	                }
 	            }
 ````
 {{source=CodeSnippets\VB\API\Telerik\Reporting\Processing\ReportProcessorSnippets.vb region=Export_Single_Stream_Snippet}}
@@ -108,13 +111,15 @@ Some formats (MHTML, PDF, XLS(X), RTF, DOCX, PPTX, CSV) produce a single documen
 	
 	        Dim result As Telerik.Reporting.Processing.RenderingResult = reportProcessor.RenderReport("PDF", reportSource, deviceInfo)
 	
-	        Dim fileName As String = result.DocumentName + "." + result.Extension
-	        Dim path As String = System.IO.Path.GetTempPath()
-	        Dim filePath As String = System.IO.Path.Combine(path, fileName)
+	        If Not result.HasErrors Then
+	            Dim fileName As String = result.DocumentName + "." + result.Extension
+	            Dim path As String = System.IO.Path.GetTempPath()
+	            Dim filePath As String = System.IO.Path.Combine(path, fileName)
 	
-	        Using fs As New System.IO.FileStream(filePath, System.IO.FileMode.Create)
-	            fs.Write(result.DocumentBytes, 0, result.DocumentBytes.Length)
-	        End Using
+	            Using fs As New System.IO.FileStream(filePath, System.IO.FileMode.Create)
+	                fs.Write(result.DocumentBytes, 0, result.DocumentBytes.Length)
+	            End Using
+	        End If
 	
 ````
 

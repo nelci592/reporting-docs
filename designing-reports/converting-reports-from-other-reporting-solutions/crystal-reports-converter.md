@@ -16,7 +16,7 @@ This article explains how to convert a report created with SAP Crystal Reports t
 
 ## Changes Information
 
-The Telerik Crystal Reports Converter is built against Crystal Reports 13.0.20.2399. In case you need to convert a Crystal Reports definition that has version lower than 13.0.2000, please use Telerik Reporting R3 2019 or earlier           and check this KB article for more details: {{site.KB-converting-reports-from-various-versions-of-crystalreports}}.           
+The Telerik Crystal Reports Converter is built against Crystal Reports 13.0.20.2399. In case you need to convert a Crystal Reports definition that has version lower than 13.0.2000, please use Telerik Reporting R3 2019 or earlier and check this KB article for more details: [Converting reports from Active Reports]({%slug telerikreporting/knowledge-base/converting-reports-from-activereports%}).           
 
   ![crystal-reports-converter](images/Designer/crystal-reports-converter.png)
 
@@ -57,20 +57,20 @@ In order to load the Crystal Reports assemblies needed for the conversion, prope
 The Crystal Reports assemblies are stored in machine’s GAC (Global Assembly Cache). The GAC folder for .NET Framework v.4.0 and later is          *%windir%\Microsoft.NET\assembly* , and for earlier versions is *%windir%\assembly* .          Search the GAC for assemblies named *CrystalDecisions.Shared.dll*  or *CrystalDecisions.CrystalReports.Engine.dll* .           The assembly version can be obtained either from the assembly subfolder name, or by using the            [gacutil.exe](https://docs.microsoft.com/en-us/dotnet/framework/tools/gacutil-exe-gac-tool) :                   
 
 	
-````
-            C:\WINDOWS\system32>gacutil -l CrystalDecisions.Shared
-            Microsoft (R) .NET Global Assembly Cache Utility.  Version 4.0.30319.0
-            Copyright (c) Microsoft Corporation.  All rights reserved.
-            The Global Assembly Cache contains the following assemblies:
-              CrystalDecisions.Shared, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL
-````
+```
+ C:\WINDOWS\system32>gacutil -l CrystalDecisions.Shared
+ Microsoft (R) .NET Global Assembly Cache Utility.  Version 4.0.30319.0
+ Copyright (c) Microsoft Corporation.  All rights reserved.
+ The Global Assembly Cache contains the following assemblies:
+   CrystalDecisions.Shared, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL
+```
 
 
 
 The output from the *gacutil.exe*  above shows that the current version of the installed Crystal Reports runtime assemblies is __13.0.3500.0__ .            Here is how the configuration file with added binding redirects will look like:         
 
 	
-````xml
+```xml
             <runtime>
                 <assemblyBinding xmlns="urn:schemas-microsoft-com:asm.v1">
                 ...
@@ -93,7 +93,7 @@ The output from the *gacutil.exe*  above shows that the current version of the i
                 ...
                 </assemblyBinding>
             </runtime>
-````
+```
 
 
 

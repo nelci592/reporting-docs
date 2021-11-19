@@ -37,3 +37,10 @@ __The value of the TextBox in the PageHeader is equal to = "Page: " + PageNumber
   
 
   ![](images/ReportBook_PageNumberingStyleResetNumberingAndCount.png)
+
+
+# See Also
+
+ * [Report Book Parameters]({%slug telerikreporting/designing-reports/report-book/report-book-parameters%})
+
+ * [Page Settings, sizes and naming]({%slug telerikreporting/designing-reports/report-book/page-settings-sizes-and-namings%})

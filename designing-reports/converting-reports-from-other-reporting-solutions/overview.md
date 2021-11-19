@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Converting reports from other reporting solutions Overview
+# Overview
 
 
 
@@ -28,7 +28,7 @@ The converters are compiled against the 3rd party product version specified abov
 
 * [Converting reports from Crystal Reports]({%slug telerikreporting/designing-reports/converting-reports-from-other-reporting-solutions/crystal-reports-converter%})
 
-* {{site.KB-converting-reports-from-various-versions-of-activereports}}
+* [Converting reports from Active Reports](/knowledge-base/converting-reports-from-activereports)  
 
 Converting from XtraReports does not require any additional steps. It is built against the version described in the right-hand panel of the information panel of the "Report Choice Page" of the "Report Wizard".
 

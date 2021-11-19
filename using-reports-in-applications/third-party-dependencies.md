@@ -22,7 +22,7 @@ ADOMD.NET is a .NET object model that is used for building client applications w
 
 ## Deploying Open XML
 
-To export its reports in Open XML formats (such as `.docs`, `.xlsx`, or `.pptx`),           Telerik Reporting requires the Open XML SDK (`DocumentFormat.OpenXml.dll`).         
+To export its reports in Open XML formats (such as `.docx`, `.xlsx`, or `.pptx`),           Telerik Reporting requires the Open XML SDK (`DocumentFormat.OpenXml.dll`).         
 
 Open XML is an open ECMA 376 standard that is approved as the ISO/IEC 29500 standard for           defining a set of XML schemas for representing spreadsheets, charts, presentations, and word-processing documents.           All MS Office Word 2007, Excel 2007, and PowerPoint 2007 use Open XML as their default file format.         
 

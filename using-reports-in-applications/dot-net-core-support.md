@@ -105,7 +105,7 @@ The fonts used in the reports should be installed on the Linux machine, otherwis
 1. Install  [libgdiplus](https://www.mono-project.com/docs/gui/libgdiplus/)  using  [Homebrew](https://brew.sh/) 
 
 	
-    ````
+      ````
                 brew install mono-libgdiplus
 ````
 
@@ -120,7 +120,7 @@ The fonts used in the reports should be installed on the Linux machine, otherwis
 1. Build
 
 	
-    ````
+      ````
                   dotnet build
 ````
 

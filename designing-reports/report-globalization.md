@@ -26,7 +26,7 @@ When determining what Culture to use for formatting strings and text direction, 
 
 1. If the Report has no Culture defined, the Culture of the __CurrentThread__  is used.
 
->tip         	The Culture of the CurrentThread is determined by the Regional Settings of the machine the application is running on. (Control Panel->Regional Settings->Regional Options->Standards And Formats)        
+>tip The Culture of the CurrentThread is determined by the Regional Settings of the machine the application is running on. (Control Panel->Regional Settings->Regional Options->Standards And Formats)        
 
 
 ## Culture Dependant Properties

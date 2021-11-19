@@ -28,7 +28,7 @@ Trial licenses provide free and fully functional access to all Telerik Reporting
 
 To download the Telerik Reporting trial version, refer to the           __[Telerik Reporting Download](https://www.telerik.com/download)__ page.         
 
-To download a developer build with a trial license, log into your            [Telerik account](http://www.telerik.com/clientnet/) .         
+To download a developer build with a trial license, log into your            [Telerik account](https://www.telerik.com/account/) .         
 
 ## Upgrading Trial to Purchase
 

@@ -12,7 +12,7 @@ position: 8
 
 
 
->note The improved Telerik NuGet v3 is now available for beta testing at  __https://nuget.telerik.com/v3/index.json__ .         The new v3 API is faster, lighter, and reduces the number of requests from NuGet clients. You are welcome to try it.         
+>note The legacy https://nuget.telerik.com/nuget server will be deprecated. Make sure to switch to the new            https://nuget.telerik.com/v3/index.json server, which is faster, lighter, and reduces the number of requests from your NuGet client.         
 
 
 Telerik provides NuGet packages from private NuGet feed.          The article elaborates on how to add the Telerik NuGet feed to the Visual Studio NuGet package manager.        
@@ -31,7 +31,7 @@ Telerik provides NuGet packages from private NuGet feed.          The article el
 
 1. Go to __Tools__  > __NuGet Package Manager__  > __Package Manager Settings__ , select __Package Manager Sources__  and then click the __+__  button.             
 
-1. Choose feed __Name__ , set the feed __URL__  to: __https://nuget.telerik.com/nuget__  and click __OK__ .             
+1. Choose feed __Name__ , set the feed __URL__  to: __https://nuget.telerik.com/v3/index.json__  and click __OK__ .             
 >caption Figure 1: Visual Studio NuGet Package Manager and Telerik NuGet Feed:
 
   
@@ -69,7 +69,7 @@ Telerik provides NuGet packages from private NuGet feed.          The article el
 	
     ````powershell
 
-NuGet Sources Add -Name "telerik.com" -Source "https://nuget.telerik.com/nuget" ^
+NuGet Sources Add -Name "telerik.com" -Source "https://nuget.telerik.com/v3/index.json" ^
 -UserName "your login email" -Password "your password"
 ````
 
@@ -79,7 +79,7 @@ NuGet Sources Add -Name "telerik.com" -Source "https://nuget.telerik.com/nuget" 
 	
     ````powershell
 
-NuGet Sources Add -Name "telerik.com" -Source "https://nuget.telerik.com/nuget" ^
+NuGet Sources Add -Name "telerik.com" -Source "https://nuget.telerik.com/v3/index.json" ^
 -UserName "your login email" -Password "your password" ^
 -StorePasswordInClearText
 ````
@@ -90,7 +90,7 @@ NuGet Sources Add -Name "telerik.com" -Source "https://nuget.telerik.com/nuget" 
 	
     ````powershell
 
-NuGet Sources Update -Name "telerik.com" -Source "https://nuget.telerik.com/nuget" ^
+NuGet Sources Update -Name "telerik.com" -Source "https://nuget.telerik.com/v3/index.json" ^
 -UserName "your login email" -Password "your password" ^
 -StorePasswordInClearText
 ````
@@ -107,6 +107,6 @@ After changing your Telerik password,               you need to reset your crede
 	
 ````powershell
 
-NuGet Sources Update -Name "telerik.com" -Source "https://nuget.telerik.com/nuget" -UserName "your login email" -Password "your new password"
+NuGet Sources Update -Name "telerik.com" -Source "https://nuget.telerik.com/v3/index.json" -UserName "your login email" -Password "your new password"
 ````
 

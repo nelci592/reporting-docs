@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Report Book Overview
+# Overview
 
 
 
@@ -31,4 +31,4 @@ A Report Book is a class inheriting *Telerik.Reporting.ReportBook* .           T
 >note Note that  __Instance__  and  __XML__  Report Sources cannot be used with the ReportBook.           
 
 
-The  [Report Book online demo](https://demos.telerik.com/reporting/report-book)  is available also in the local Examples installed by default under *...Progress\Reporting* .           An example how to create a ReportBook instance at run-time can be found in [How to: Create a Report Book at run-time]({%slug telerikreporting/designing-reports/report-book/how-to-create-a-report-book-at-run-time%}).         
+The  [Report Book online demo](https://demos.telerik.com/reporting/report-book)  is available also in the local Examples installed by default under *...Progress\Telerik Reporting R3 2021\Examples* .           An example how to create a ReportBook instance at run-time can be found in [How to: Create a Report Book at run-time]({%slug telerikreporting/designing-reports/report-book/how-to-create-a-report-book-at-run-time%}).         

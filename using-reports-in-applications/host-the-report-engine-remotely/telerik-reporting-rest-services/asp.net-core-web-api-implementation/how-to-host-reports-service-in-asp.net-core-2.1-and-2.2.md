@@ -176,7 +176,7 @@ services.TryAddSingleton<IReportServiceConfiguration>(sp =>
 1. Inherit the  [ReportsControllerBase](/reporting/api/Telerik.Reporting.Services.WebApi.ReportsControllerBase)  type               and inject the configuration settings in the constructor.               This is how a basic implementation of the controller should look like:             
 
 	
-    ````c#
+      ````c#
 namespace AspNetCoreDemo.Controllers
 {
     using Microsoft.AspNetCore.Mvc;

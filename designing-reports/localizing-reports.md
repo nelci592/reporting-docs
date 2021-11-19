@@ -18,9 +18,8 @@ Localization is used to display the reports in the language of a specific cultur
 
 * [Standalone Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview%})             - RES files that are part of the TRDP archive.             The RES files contain a key-value list. The first row begins with a __key__               after the key follows whitespace and the __value__  surrounded in             double quotation mark. After the last unescaped double quotation mark follows a new line.             The key cannot contain any whitespace characters.             The value can contain any character including whitespaces and double quotation mark but the              double quotation mark should be escaped with another double quotation mark.           
 
-   >note The Standalone Report Designer supports two XML report formats (TRDP and TRDX).               The localization mechanism described in this article is supported only in the TRDP report format.               Currently, no out of the box solution is available for localizing TRDX report definitions.               If TRDX report format with localization is required the recommended approach is to create a                [user function]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/extending-expressions/user-functions%})               that will accept resource key and optionally                [string report parameter]({%slug telerikreporting/designing-reports/connecting-to-data/report-parameters/overview%})                specifying the culture code and return a localized string that is used               for the report item property value.             
+   >note The Standalone Report Designer supports two XML report formats (TRDP and TRDX).               The localization mechanism described in this article is supported only in the TRDP report format.               Currently, no out of the box solution is available for localizing TRDX report definitions.               If TRDX report format with localization is required the recommended approach is to create a                [user function](/designing-reports/connecting-to-data/expressions/extending-expressions/user-functions)               that will accept resource key and optionally                [string report parameter](/designing-reports/connecting-to-data/report-parameters/overview)                specifying the culture code and return a localized string that is used               for the report item property value.             
 
-## 
 
 Telerik Reporting uses a similar methodology for localization as Visual Studio uses for Windows Forms.           The designer lets you define static text for the report (e.g. column headings, titles) in each language that you specify.           A resource file is automatically created for each language to store translated text. For more background information on           localizing applications see the MSDN article            [Globalizing and Localizing Applications](https://msdn.microsoft.com/en-us/library/1021kkz0.aspx) .         
 >caption Localized documents displayed in English and Spanish (see figure below):
@@ -61,41 +60,39 @@ To run the localized report in a specific language that is different from the th
 
 {{source=CodeSnippets\CS\API\Telerik\Reporting\LocalizationSnippets.cs region=SetThreadCulture}}
 ````C#
-	            //Create new CultureInfo
-	            var cultureInfo = new System.Globalization.CultureInfo("es-MX");
+	//Create new CultureInfo
+	var cultureInfo = new System.Globalization.CultureInfo("es-MX");
 	
-			    // Set the language for static text (i.e. column headings, titles)
-			    System.Threading.Thread.CurrentThread.CurrentUICulture = cultureInfo;
+	// Set the language for static text (i.e. column headings, titles)
+	System.Threading.Thread.CurrentThread.CurrentUICulture = cultureInfo;
 	
-			    // Set the language for dynamic text (i.e. date, time, money)
-			    System.Threading.Thread.CurrentThread.CurrentCulture = cultureInfo; 
+	// Set the language for dynamic text (i.e. date, time, money)
+	System.Threading.Thread.CurrentThread.CurrentCulture = cultureInfo; 
 	
-	            reportViewer1.ReportSource = new Telerik.Reporting.InstanceReportSource
-	                {
-	                    ReportDocument = new Report1()
-	                };
+	reportViewer1.ReportSource = new Telerik.Reporting.InstanceReportSource
+	    {
+	        ReportDocument = new Report1()
+	    };
 	
-			    // If this is a Windows application, refresh the report
-			    reportViewer1.RefreshReport();
+	// If this is a Windows application, refresh the report
+	reportViewer1.RefreshReport();
 ````
 {{source=CodeSnippets\VB\API\Telerik\Reporting\LocalizationSnippets.vb region=SetThreadCulture}}
 ````VB
+	'Create new CultureInfo
+	Dim cultureInfo = New System.Globalization.CultureInfo("es-MX")
 	
-	        'Create new CultureInfo
-	        Dim cultureInfo = New System.Globalization.CultureInfo("es-MX")
+	' Set the language for static text (i.e. column headings, titles)
+	System.Threading.Thread.CurrentThread.CurrentUICulture = cultureInfo
 	
-	        ' Set the language for static text (i.e. column headings, titles)
-	        System.Threading.Thread.CurrentThread.CurrentUICulture = cultureInfo
+	' Set the language for dynamic text (i.e. date, time, money)
+	System.Threading.Thread.CurrentThread.CurrentCulture = cultureInfo
 	
-	        ' Set the language for dynamic text (i.e. date, time, money)
-	        System.Threading.Thread.CurrentThread.CurrentCulture = cultureInfo
+	reportViewer1.ReportSource = New Telerik.Reporting.InstanceReportSource() With { _
+	        .ReportDocument = New Report1()}
 	
-	        reportViewer1.ReportSource = New Telerik.Reporting.InstanceReportSource() With { _
-	                .ReportDocument = New Report1()}
-	
-	        ' If this is a Windows application, refresh the report
-	        reportViewer1.RefreshReport()
-	
+	' If this is a Windows application, refresh the report
+	reportViewer1.RefreshReport()
 ````
 
 

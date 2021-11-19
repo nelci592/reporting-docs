@@ -23,7 +23,7 @@ This tutorial shows how to use HTML5 ASP.NET Web Forms Report Viewer in ASP.NET 
 * Entry with the default connection string used by Telerik Reporting sample reports in the __web.config__  file               of the project hosting the Reporting REST service:             
 
 	
-    ````xml
+      ````xml
 <connectionStrings>
 	 <add name="Telerik.Reporting.Examples.CSharp.Properties.Settings.TelerikConnectionString"
 	            connectionString="Data Source=(local);Initial Catalog=AdventureWorks;Integrated Security=SSPI"
@@ -45,6 +45,18 @@ The following steps produce a view with settings similar to these of the local W
 1. Create new ASP.NET Web Forms Application.
 
 1. Add new WebForm that does not use a Master page.
+
+1. Add references to:
+   + __Telerik.Reporting__ 
+
+   + __Telerik.ReportViewer.Html5.WebForms__ 
+
+   + __Newtonsoft.Json, Version 9.0.0.0 or higher__ 
+    assemblies and set their __Copy Local__  properties to true in Visual Studio.                   The Telerik Reporting assemblies may be found by default in the folder __[TelerikReporting_InstallDir]\Bin__ .                 
+
+    >tip Without setting Telerik Reporting references' Copy Local to true the assemblies may not be loaded correctly on running the application.
+
+
 
 1. To ensure that the browser will start in the latest rendering mode verify the page is using the following DOCTYPE directive:                 
 

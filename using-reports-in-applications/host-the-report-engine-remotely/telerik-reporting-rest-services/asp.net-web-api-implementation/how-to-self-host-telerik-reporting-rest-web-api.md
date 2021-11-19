@@ -10,11 +10,17 @@ position: 3
 
 # How to Self Host Telerik Reporting REST Web API
 
-             
+
+
+ASP.NET Web API does not require IIS. You can self-host a Web API in your own host process.         This tutorial shows how to host a Telerik Reporting REST Web API inside a console application. For more information on the hosting options see:          [Hosting ASP.NET Web API](http://www.asp.net/web-api/overview/hosting-aspnet-web-api) 
+
+## To create a self-hosted HTTP service follow the steps below:
+
+1. On an elevated console (“Run as administrator”), execute the following command for example to allow the running user to listen on port 8080:             
 
 
 
-|netsh http add urlacl url=http://+:8080/ user=DOMAIN\user|
+|netsh http add urlacl url=http://+:8080/ user=DOMAIN\use|
 
 
 
@@ -75,9 +81,6 @@ position: 3
 	        }
 	    }
 ````
-
-
-
 {{source=CodeSnippets\MvcVB\SelfHostedSnippets\Program.vb region=SelfHostedRestService}}
 ````VB
 	Imports System.Web.Http.SelfHost
@@ -110,7 +113,7 @@ position: 3
 
 
 
-| __http://localhost:[portnumber]/api/reports/formats__ |
+| __http://localhost: [portnumber]/api/reports/formats__|
 
 
     If the request is successful you should receive the document formats encoded in JSON. For more information see: [Get Available Document Formats]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/general-api/get-available-document-formats%}).             
@@ -119,6 +122,7 @@ position: 3
 
 
 
-|netsh http delete urlacl url=http://+:8080/|
+|netsh http delete urlacl url=http://+:8080|
+
 
 

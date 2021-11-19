@@ -51,7 +51,7 @@ The specified report is processed locally on the same machine where the ReportVi
 * __Set the Report Source programmatically__ 
 
 {{source=CodeSnippets\CS\API\Telerik\Reporting\ReportSourceSnippets.cs region=CreateUriReportSourceSnippet}}
-````C#
+  ````C#
 	            var uriReportSource = new Telerik.Reporting.UriReportSource();
 	
 	            // Specifying an URL or a file path
@@ -60,8 +60,11 @@ The specified report is processed locally on the same machine where the ReportVi
 	            // Adding the initial parameter values
 	            uriReportSource.Parameters.Add(new Telerik.Reporting.Parameter("OrderNumber", "SO43659"));
 ````
+
+
+
 {{source=CodeSnippets\VB\API\Telerik\Reporting\ReportSourceSnippets.vb region=CreateUriReportSourceSnippet}}
-````VB
+  ````VB
 	        Dim uriReportSource As New Telerik.Reporting.UriReportSource()
 	
 	        ' Specifying an URL or a file path
@@ -118,7 +121,7 @@ __Setting the Client-Side ReportSource:__
 * __[HTML5 Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview%})__ The HTML5 Viewer is a client-side widget that has a __client-side reportSource__ .               The __reportSource.report__  part is a string - the *report description string*                that can be a path to a TRDP or TRDX file, an assembly qualified name               of a report class, or other custom information set via string. For example:             
 
 	
-    ````html
+      ````html
 reportSource: { 
 			report: "Dashboard.trdp",
 			parameters: { CultureID: "en" }
@@ -128,7 +131,7 @@ reportSource: {
 or
 
 	
-    ````html
+      ````html
 reportSource: { 
 			report: "Telerik.Reporting.Examples.CSharp.ProductCatalog, CSharp.ReportLibrary",
 			parameters: { CultureID: "en" }
@@ -150,7 +153,7 @@ The *report description string*  is sent to the [Telerik Reporting REST service]
    + __ReportSource(string report, IDictionary```<string, object>``` parameters)__                    - The *report description string*  is obtained from the ReportSource                   method's string __report__  argument. The  *client parameters*  can be set through the ReportSource                   method's IDictionary __parameters__  argument.                 __Example:__ 
 
 {{source=CodeSnippets\MvcCS\Views\Home\InvoiceParameters.cshtml region=ParametersExample}}
-````c#
+  ````c#
 	@{
 	    var typeReportSource = new TypeReportSource() { TypeName = typeof(Invoice).AssemblyQualifiedName };
 	    typeReportSource.Parameters.Add("OrderNumber", Model.SelectedInvoice);
@@ -167,8 +170,11 @@ The *report description string*  is sent to the [Telerik Reporting REST service]
 	        .Scale(1.0)
 	)
 ````
+
+
+
 {{source=CodeSnippets\MvcVB\Views\Home\InvoiceParameters.vbhtml region=ParametersExample}}
-````vb.net
+  ````vb.net
 	@Code
 	    Dim typeReportSource = New TypeReportSource() With {.TypeName = GetType(Invoice).AssemblyQualifiedName}
 	    typeReportSource.Parameters.Add("OrderNumber", Model.SelectedInvoice)
@@ -197,7 +203,7 @@ To display another report or to update the *client parameters* ' values of the c
    + The  [Telerik.ReportViewer.Html5.WebForms.ReportSource.IdentifierType](/reporting/api/Telerik.ReportViewer.Html5.WebForms.ReportSource#Telerik_ReportViewer_Html5_WebForms_ReportSource_IdentifierType)  property                   hints which resolver can be used for resolving the report description string on the server.                 __Example of setting the client-side ReportSource in code-behind:__ 
 
 	
-    ````c#
+      ````c#
                 var clientReportSource = new Telerik.ReportViewer.Html5.WebForms.ReportSource();
                 clientReportSource.IdentifierType = IdentifierType.TypeReportSource;
                 clientReportSource.Identifier = typeof(ReportCatalog).AssemblyQualifiedName;//or <namespace>.<class>, <assembly> e.g. "MyReports.Report1, MyReportsLibrary"
@@ -225,7 +231,7 @@ __Example of setting the client-side ReportSource via mark-up:__
    1. Click __Edit Parameters__  button - __Edit Parameters__  dialog appears. Click __New__ .                   In the __Parameter Name__  column select the name of a report parameter in the report.                   In the __Parameter Value__ , type or select the value to pass to the parameter in the report.                 
 
 	
-    ````html
+      ````html
     <form runat="server">
         <telerik:ReportViewer Width="" Height=""
             ID="reportViewer1"

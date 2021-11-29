@@ -5,7 +5,7 @@ description: viewMode(vm)
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/methods/viewmode(vm)
 tags: viewmode(vm)
 published: True
-position: 18
+position: 19
 ---
 
 # viewMode(vm)

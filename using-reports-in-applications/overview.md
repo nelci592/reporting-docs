@@ -38,6 +38,8 @@ Telerik Reporting offers numerous ways to [Display Reports in Applications]({%sl
 
 * [WPF Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/wpf-application/overview%}) - a composite of Telerik UI for WPF controls that is suitable for WPF and WinForms projects.             
 
+* [WinUI Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/winui-3-desktop-application/overview%}) - a composite of Telerik UI for WinUI desktop controls that is suitable for WinUI 3 projects.                 
+
 ## How to add the report engine
 
 There are many ways to add the report engine. You can [Host the Report Engine Remotely]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/overview%}), you can           [Call the Report Engine via APIs]({%slug telerikreporting/using-reports-in-applications/call-the-report-engine-via-apis/embedded-report-engine%}),           or you can use the  [Telerik Report Server](https://www.telerik.com/report-server) :         

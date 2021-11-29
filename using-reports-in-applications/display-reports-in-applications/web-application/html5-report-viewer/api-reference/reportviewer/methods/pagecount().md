@@ -5,7 +5,7 @@ description: pageCount()
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/methods/pagecount()
 tags: pagecount()
 published: True
-position: 7
+position: 8
 ---
 
 # pageCount()

@@ -5,7 +5,7 @@ description: scale(scale)
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/methods/scale(scale)
 tags: scale(scale)
 published: True
-position: 14
+position: 15
 ---
 
 # scale(scale)

@@ -78,8 +78,6 @@ Currently the WinUI Report Viewer does not provide the following functionalities
 
 * Search in report contents.
 
-* Displaying tooltips over rendered report items.
-
 * Enabled accessibility features for the report viewer and rendered report.
 
 * Localization of the report viewer.

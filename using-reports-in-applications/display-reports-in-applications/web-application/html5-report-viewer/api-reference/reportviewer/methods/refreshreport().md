@@ -5,7 +5,7 @@ description: refreshReport()
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/methods/refreshreport()
 tags: refreshreport()
 published: True
-position: 10
+position: 11
 ---
 
 # refreshReport()

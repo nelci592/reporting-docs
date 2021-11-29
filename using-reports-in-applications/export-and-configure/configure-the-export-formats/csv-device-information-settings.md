@@ -22,6 +22,7 @@ The following table lists the device information settings for rendering in CSV f
 | Name | Type | Description |
 | ------ | ------ | ------ |
 |FieldDelimiter|String|The delimiter string to put in the result. The default value is a comma (,).|
+|RecordSeparator|String|Specifies the string that is used to separate each record(row) in the produced CSV.               By default, the NewLine string is taken from the environment. It is the newline character for the corresponding operating system (OS).                For example, for Windows OS this is the carriage return and line feed '\r\n'. For Linux OS this is the '\n' character.|
 |NoHeader|Boolean|Indicates whether the header row is excluded from the output. The default value is __false__ .|
 |NoStaticText|Boolean|Indicates whether static text is excluded from the output. From Telerik Reporting point of view a TextBox item                 which value is a string that does not start with = is considered static; otherwise it is evaluated as an expression. The default value is __false__ .|
 |Qualifier|String|The qualifier string to put around results that contain the field delimiter. If the results contain the qualifier, the qualifier is repeated. The Qualifier setting must be different from the FieldDelimiter setting. The default value is a quotation mark (").|

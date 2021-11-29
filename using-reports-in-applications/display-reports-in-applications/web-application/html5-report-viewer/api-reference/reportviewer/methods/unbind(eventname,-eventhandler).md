@@ -5,7 +5,7 @@ description: unbind(eventName, eventHandler)
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/methods/unbind(eventname,-eventhandler)
 tags: unbind(eventname,,eventhandler)
 published: True
-position: 16
+position: 17
 ---
 
 # unbind(eventName, eventHandler)

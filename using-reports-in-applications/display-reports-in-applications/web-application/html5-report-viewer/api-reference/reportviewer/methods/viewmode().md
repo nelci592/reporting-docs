@@ -5,7 +5,7 @@ description: viewMode()
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/methods/viewmode()
 tags: viewmode()
 published: True
-position: 17
+position: 18
 ---
 
 # viewMode()

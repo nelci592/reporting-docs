@@ -5,7 +5,7 @@ description: pageMode()
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/methods/pagemode()
 tags: pagemode()
 published: True
-position: 8
+position: 9
 ---
 
 # pageMode()

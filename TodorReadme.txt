@@ -294,9 +294,11 @@ working list, broken tabbed snippets
 
 
 
-relative links with {%slug ...%} in ">note " don't work - "...\designing-reports\localizing-reports.md"
+relative links with {%slug ...%} in ">note " don't work - "...\designing-reports\localizing-reports.md", "..\rendering-and-paging\design-considerations-for-report-rendering\
+ANOTHER EXAMPLE: ">note You can change the field delimiter to any character that you want, by changing the device information settings. For more information, see [CSV Device Information Settings](../../../using-reports-in-applications/export-and-configure/configure-the-export-formats/csv-device-information-settings)."
 
 relative links with {%slug ...%} don't work for KB articles - "...\designing-reports\converting-reports-from-other-reporting-solutions\overview.md"
+
 
 
 
@@ -308,3 +310,11 @@ correct section links
 http://arabadzhiev:1589/reporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/objectdatasource-wizard:
 second VB code snippet not full. I suspect this is due to character '<' that starts on the next line: '<System.ComponentModel.DataObjectMethod(System.ComponentModel.DataObjectMethodType.Select)>'
 
+
+
+Tool for code snippets - change for Reporting:
+CodeMainPathCS = pathToSourceCodeFiles + @"\SamplesCS\";
+CodeMainPathVB = pathToSourceCodeFiles + @"\SamplesVB\";
+...
+string workspaceName = "WinForms_Scrum";
+string projectPath = @"$/WinForms_Scrum/Development/Help";
